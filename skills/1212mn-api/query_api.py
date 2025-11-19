@@ -2,6 +2,7 @@
 """
 1212.mn API Query Module
 Handles queries to Mongolia's National Statistical Office open data API
+NEW API: https://data.1212.mn/api/v1/
 """
 
 import json
@@ -11,11 +12,12 @@ import sys
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Any
+from urllib.parse import quote
 import requests
 
 # API Configuration
-BASE_URL = "http://opendata.1212.mn/api"
-DEFAULT_TYPE = "en"  # Language: 'en' for English, 'mn' for Mongolian
+BASE_URL = "https://data.1212.mn/api/v1"
+DEFAULT_LANG = "en"  # Language: 'en' for English, 'mn' for Mongolian
 
 # Paths
 SCRIPT_DIR = Path(__file__).parent
@@ -24,40 +26,22 @@ DB_PATH = METADATA_DIR / "tables.db"
 
 
 class API1212:
-    """Client for interacting with 1212.mn API"""
+    """Client for interacting with 1212.mn API (new v1 API)"""
 
-    def __init__(self, language: str = DEFAULT_TYPE):
+    def __init__(self, language: str = DEFAULT_LANG):
         self.language = language
+        self.base_path = f"{BASE_URL}/{language}/NSO"
         self.session = requests.Session()
         self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (compatible; 1212mn-skill/1.0)',
+            'User-Agent': 'Mozilla/5.0 (compatible; 1212mn-skill/2.0)',
             'Accept': 'application/json'
         })
 
-    def _get(self, endpoint: str, params: Optional[Dict] = None) -> Any:
+    def _get(self, path: str) -> Any:
         """Make GET request to API"""
-        if params is None:
-            params = {}
-        params['type'] = self.language
-
-        url = f"{BASE_URL}/{endpoint}"
+        url = f"{self.base_path}/{path}" if path else self.base_path + "/"
         try:
-            response = self.session.get(url, params=params, timeout=30)
-            response.raise_for_status()
-            return response.json()
-        except requests.RequestException as e:
-            print(f"Error querying API: {e}", file=sys.stderr)
-            return None
-
-    def _post(self, endpoint: str, data: Dict, params: Optional[Dict] = None) -> Any:
-        """Make POST request to API"""
-        if params is None:
-            params = {}
-        params['type'] = self.language
-
-        url = f"{BASE_URL}/{endpoint}"
-        try:
-            response = self.session.post(url, json=data, params=params, timeout=30)
+            response = self.session.get(url, timeout=30)
             response.raise_for_status()
             return response.json()
         except requests.RequestException as e:
@@ -65,36 +49,41 @@ class API1212:
             return None
 
     def get_sectors(self) -> Optional[List[Dict]]:
-        """Get list of all sectors"""
-        return self._get("Sector")
+        """
+        Get list of all main sectors
+        Returns: List of {'id': str, 'type': str, 'text': str}
+        """
+        return self._get("")
 
     def get_subsectors(self, sector_id: str) -> Optional[List[Dict]]:
-        """Get list of subsectors for a sector"""
-        return self._get("Sector", params={'subid': sector_id})
-
-    def get_tables(self) -> Optional[List[Dict]]:
-        """Get list of all tables"""
-        return self._get("Itms")
-
-    def get_table_info(self, table_id: str) -> Optional[Dict]:
-        """Get detailed information about a table including classifications"""
-        return self._get(f"Itms/{table_id}")
-
-    def get_data(self, query: Dict) -> Optional[Any]:
         """
-        Get statistical data
-
+        Get list of subsectors for a sector
         Args:
-            query: Query parameters as dict, typically includes:
-                - TBL_ID: Table ID
-                - PERIOD: Time period filter
-                - CODE: Classification codes
+            sector_id: Sector ID (English name)
+        Returns: List of {'id': str, 'type': str, 'text': str}
         """
-        return self._post("Data", data=query)
+        return self._get(f"{quote(sector_id)}/")
 
-    def get_package_data(self, query: Dict) -> Optional[Any]:
-        """Get package statistical data"""
-        return self._post("Package", data=query)
+    def get_tables(self, sector_id: str, subsector_id: str) -> Optional[List[Dict]]:
+        """
+        Get list of tables in a subsector
+        Args:
+            sector_id: Sector ID (English name)
+            subsector_id: Subsector ID
+        Returns: List of {'id': str, 'type': str, 'text': str, 'updated': str}
+        """
+        return self._get(f"{quote(sector_id)}/{quote(subsector_id)}/")
+
+    def get_data(self, sector_id: str, subsector_id: str, table_id: str) -> Optional[Dict]:
+        """
+        Get statistical data for a table
+        Args:
+            sector_id: Sector ID (English name)
+            subsector_id: Subsector ID
+            table_id: Table ID (e.g., 'DT_NSO_0300_001V2.px')
+        Returns: Dict with 'title', 'variables' (list of variable definitions)
+        """
+        return self._get(f"{quote(sector_id)}/{quote(subsector_id)}/{quote(table_id)}")
 
 
 class MetadataStore:
@@ -114,43 +103,44 @@ class MetadataStore:
                 id TEXT PRIMARY KEY,
                 name_en TEXT,
                 name_mn TEXT,
-                description TEXT,
+                type TEXT,
                 updated_at TEXT
             )
         """)
         conn.execute("""
             CREATE TABLE IF NOT EXISTS subsectors (
-                id TEXT PRIMARY KEY,
+                id TEXT,
                 sector_id TEXT,
                 name_en TEXT,
                 name_mn TEXT,
-                description TEXT,
+                type TEXT,
                 updated_at TEXT,
+                PRIMARY KEY (sector_id, id),
                 FOREIGN KEY (sector_id) REFERENCES sectors(id)
             )
         """)
         conn.execute("""
             CREATE TABLE IF NOT EXISTS tables (
-                id TEXT PRIMARY KEY,
+                id TEXT,
                 subsector_id TEXT,
+                sector_id TEXT,
                 name_en TEXT,
                 name_mn TEXT,
-                description TEXT,
-                keywords TEXT,
-                unit TEXT,
-                frequency TEXT,
+                type TEXT,
                 last_updated TEXT,
-                metadata TEXT,
+                keywords TEXT,
+                full_path TEXT,
                 updated_at TEXT,
-                FOREIGN KEY (subsector_id) REFERENCES subsectors(id)
+                PRIMARY KEY (sector_id, subsector_id, id)
             )
         """)
         conn.execute("""
             CREATE VIRTUAL TABLE IF NOT EXISTS tables_fts USING fts5(
                 id,
                 name_en,
-                description,
+                name_mn,
                 keywords,
+                full_path,
                 content=tables,
                 content_rowid=rowid
             )
@@ -167,92 +157,149 @@ class MetadataStore:
         # Fetch and store sectors
         print("Fetching sectors...")
         sectors = api.get_sectors()
-        if sectors:
-            for sector in sectors:
-                conn.execute("""
-                    INSERT OR REPLACE INTO sectors (id, name_en, name_mn, description, updated_at)
-                    VALUES (?, ?, ?, ?, ?)
-                """, (
-                    sector.get('ID', sector.get('id', '')),
-                    sector.get('NAME_EN', sector.get('name_en', '')),
-                    sector.get('NAME_MN', sector.get('name_mn', '')),
-                    sector.get('DESCRIPTION', sector.get('description', '')),
-                    now
-                ))
-            conn.commit()
-            print(f"  Stored {len(sectors)} sectors")
+        if not sectors:
+            print("ERROR: Could not fetch sectors from API")
+            conn.close()
+            return
 
-        # Fetch and store all tables
-        print("Fetching tables...")
-        tables = api.get_tables()
-        if tables:
-            for table in tables:
-                table_id = table.get('TBL_ID', table.get('id', ''))
+        sector_count = 0
+        for sector in sectors:
+            sector_id = sector.get('id', '')
+            conn.execute("""
+                INSERT OR REPLACE INTO sectors (id, name_en, name_mn, type, updated_at)
+                VALUES (?, ?, ?, ?, ?)
+            """, (
+                sector_id,
+                sector_id,  # id is the English name
+                sector.get('text', ''),  # text is the Mongolian name
+                sector.get('type', ''),
+                now
+            ))
+            sector_count += 1
+        conn.commit()
+        print(f"  ✓ Stored {sector_count} sectors")
 
-                # Extract keywords from name and description
-                name = table.get('TBL_NM_EN', table.get('name_en', ''))
-                desc = table.get('TBL_DESC_EN', table.get('description', ''))
-                keywords = self._extract_keywords(name, desc)
+        # Fetch subsectors for each sector
+        print("Fetching subsectors...")
+        subsector_count = 0
+        for sector in sectors:
+            sector_id = sector.get('id', '')
+            if not sector_id:
+                continue
 
-                conn.execute("""
-                    INSERT OR REPLACE INTO tables
-                    (id, subsector_id, name_en, name_mn, description, keywords,
-                     unit, frequency, last_updated, metadata, updated_at)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                """, (
-                    table_id,
-                    table.get('SUBSECTOR_ID', ''),
-                    name,
-                    table.get('TBL_NM_MN', ''),
-                    desc,
-                    keywords,
-                    table.get('UNIT', ''),
-                    table.get('FREQUENCY', ''),
-                    table.get('LAST_UPDATE', ''),
-                    json.dumps(table),
-                    now
-                ))
+            subsectors = api.get_subsectors(sector_id)
+            if subsectors:
+                for subsector in subsectors:
+                    subsector_id = subsector.get('id', '')
+                    conn.execute("""
+                        INSERT OR REPLACE INTO subsectors
+                        (id, sector_id, name_en, name_mn, type, updated_at)
+                        VALUES (?, ?, ?, ?, ?, ?)
+                    """, (
+                        subsector_id,
+                        sector_id,
+                        subsector_id,
+                        subsector.get('text', ''),
+                        subsector.get('type', ''),
+                        now
+                    ))
+                    subsector_count += 1
+        conn.commit()
+        print(f"  ✓ Stored {subsector_count} subsectors")
 
-            # Update FTS index
-            conn.execute("INSERT INTO tables_fts(tables_fts) VALUES('rebuild')")
-            conn.commit()
-            print(f"  Stored {len(tables)} tables")
+        # Fetch tables for each subsector
+        print("Fetching tables (this may take a while)...")
+        table_count = 0
+        cursor = conn.execute("SELECT sector_id, id FROM subsectors")
+        subsector_pairs = cursor.fetchall()
 
+        for sector_id, subsector_id in subsector_pairs:
+            tables = api.get_tables(sector_id, subsector_id)
+            if tables:
+                for table in tables:
+                    table_id = table.get('id', '')
+                    name_mn = table.get('text', '')
+
+                    # Extract English name from Mongolian (basic heuristic)
+                    # In practice, we'll use the table_id as the identifier
+                    name_en = table_id
+
+                    # Generate keywords
+                    keywords = self._extract_keywords(name_en, name_mn)
+
+                    # Build full path for API access
+                    full_path = f"{sector_id}/{subsector_id}/{table_id}"
+
+                    conn.execute("""
+                        INSERT OR REPLACE INTO tables
+                        (id, subsector_id, sector_id, name_en, name_mn, type,
+                         last_updated, keywords, full_path, updated_at)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """, (
+                        table_id,
+                        subsector_id,
+                        sector_id,
+                        name_en,
+                        name_mn,
+                        table.get('type', ''),
+                        table.get('updated', ''),
+                        keywords,
+                        full_path,
+                        now
+                    ))
+                    table_count += 1
+
+                    if table_count % 10 == 0:
+                        print(f"    {table_count} tables processed...", end='\r')
+
+        # Update FTS index
+        conn.execute("INSERT INTO tables_fts(tables_fts) VALUES('rebuild')")
+        conn.commit()
         conn.close()
-        print(f"Metadata refresh completed at {now}")
+        print(f"\n  ✓ Stored {table_count} tables")
+        print(f"\nMetadata refresh completed at {now}")
+        print(f"Total: {sector_count} sectors, {subsector_count} subsectors, {table_count} tables")
 
-    def _extract_keywords(self, name: str, description: str) -> str:
-        """Extract searchable keywords from name and description"""
+    def _extract_keywords(self, name_en: str, name_mn: str) -> str:
+        """Extract searchable keywords from names"""
         # Combine and lowercase
-        text = f"{name} {description}".lower()
+        text = f"{name_en} {name_mn}".lower()
 
-        # Common synonyms and related terms
-        synonyms = {
-            'apartment': ['housing', 'residential', 'dwelling', 'home'],
-            'price': ['cost', 'value', 'rate', 'tariff'],
-            'average': ['mean', 'typical'],
-            'district': ['region', 'area', 'zone'],
-            'income': ['earnings', 'salary', 'wage'],
-            'population': ['demographic', 'inhabitants', 'residents'],
-            'gdp': ['gross domestic product', 'economy'],
-            'employment': ['job', 'work', 'labor', 'occupation'],
+        # Common English-Mongolian term mappings
+        # These are common statistical terms
+        keyword_map = {
+            'population': ['хүн ам', 'inhabitants', 'residents', 'demographic'],
+            'household': ['өрх', 'family', 'dwelling'],
+            'employment': ['ажил эрхлэлт', 'хөдөлмөр', 'job', 'work', 'labor'],
+            'unemployment': ['ажилгүйдэл', 'jobless'],
+            'income': ['орлого', 'earnings', 'salary', 'wage'],
+            'gdp': ['дотоод нийт бүтээгдэхүүн', 'economy', 'gross domestic product'],
+            'price': ['үнэ', 'cost', 'value', 'rate'],
+            'apartment': ['орон сууц', 'housing', 'residential', 'dwelling', 'home'],
+            'district': ['дүүрэг', 'region', 'area', 'zone'],
+            'average': ['дундаж', 'mean', 'typical'],
+            'education': ['боловсрол', 'school', 'learning'],
+            'health': ['эрүүл мэнд', 'medical', 'healthcare'],
+            'trade': ['худалдаа', 'commerce', 'export', 'import'],
+            'agriculture': ['хөдөө аж ахуй', 'farming', 'livestock'],
         }
 
-        # Extract keywords
         keywords = set()
+
+        # Add all words from the text
         for word in text.split():
-            if len(word) > 3:  # Only words longer than 3 chars
+            if len(word) > 2:
                 keywords.add(word.strip('.,;:()[]{}'))
 
-        # Add synonyms for matched keywords
-        for key, values in synonyms.items():
-            if key in text:
-                keywords.update(values)
-                keywords.add(key)
-            for value in values:
-                if value in text:
-                    keywords.add(key)
-                    keywords.update(values)
+        # Add mapped keywords
+        for eng, related in keyword_map.items():
+            if eng in text:
+                keywords.add(eng)
+                keywords.update(related)
+            for rel in related:
+                if rel in text:
+                    keywords.add(eng)
+                    keywords.update(related)
 
         return ' '.join(sorted(keywords))
 
@@ -265,17 +312,22 @@ class MetadataStore:
         search_terms = query.lower().split()
         fts_query = ' OR '.join(search_terms)
 
-        cursor = conn.execute("""
-            SELECT t.*,
-                   bm25(tables_fts) as rank
-            FROM tables t
-            JOIN tables_fts ON tables_fts.id = t.id
-            WHERE tables_fts MATCH ?
-            ORDER BY rank
-            LIMIT ?
-        """, (fts_query, limit))
+        try:
+            cursor = conn.execute("""
+                SELECT t.*,
+                       bm25(tables_fts) as rank
+                FROM tables t
+                JOIN tables_fts ON tables_fts.id = t.id
+                WHERE tables_fts MATCH ?
+                ORDER BY rank
+                LIMIT ?
+            """, (fts_query, limit))
 
-        results = [dict(row) for row in cursor.fetchall()]
+            results = [dict(row) for row in cursor.fetchall()]
+        except Exception as e:
+            print(f"Search error: {e}", file=sys.stderr)
+            results = []
+
         conn.close()
         return results
 
@@ -290,16 +342,24 @@ class MetadataStore:
 
         return dict(result) if result else None
 
-    def list_all_tables(self) -> List[Dict]:
-        """List all tables in the database"""
+    def list_all_tables(self, sector: Optional[str] = None) -> List[Dict]:
+        """List all tables in the database, optionally filtered by sector"""
         conn = sqlite3.connect(self.db_path)
         conn.row_factory = sqlite3.Row
 
-        cursor = conn.execute("""
-            SELECT id, name_en, description, unit, frequency, last_updated
-            FROM tables
-            ORDER BY name_en
-        """)
+        if sector:
+            cursor = conn.execute("""
+                SELECT id, sector_id, subsector_id, name_en, name_mn, last_updated, full_path
+                FROM tables
+                WHERE sector_id = ?
+                ORDER BY name_mn
+            """, (sector,))
+        else:
+            cursor = conn.execute("""
+                SELECT id, sector_id, subsector_id, name_en, name_mn, last_updated, full_path
+                FROM tables
+                ORDER BY sector_id, subsector_id, name_mn
+            """)
 
         results = [dict(row) for row in cursor.fetchall()]
         conn.close()
@@ -322,10 +382,9 @@ def query_data(query_text: str, detailed: bool = False) -> Dict:
 
     # Check if metadata exists
     if not DB_PATH.exists() or os.path.getsize(DB_PATH) < 1024:
-        print("Metadata not found. Please run with --refresh flag first.")
         return {
             'error': 'Metadata not initialized',
-            'message': 'Run: python query_api.py --refresh'
+            'message': 'Run: python3 query_api.py --refresh'
         }
 
     # Search for relevant tables
@@ -348,25 +407,22 @@ def query_data(query_text: str, detailed: bool = False) -> Dict:
     for table in tables:
         table_info = {
             'id': table['id'],
-            'name': table['name_en'],
-            'description': table['description'],
-            'unit': table['unit'],
-            'frequency': table['frequency'],
-            'last_updated': table['last_updated']
+            'name_en': table['name_en'],
+            'name_mn': table['name_mn'],
+            'sector': table['sector_id'],
+            'subsector': table['subsector_id'],
+            'last_updated': table['last_updated'],
+            'full_path': table['full_path']
         }
 
         # If detailed, fetch actual data
         if detailed:
-            print(f"  Fetching data for: {table['name_en']}...")
-            table_meta = api.get_table_info(table['id'])
-            if table_meta:
-                table_info['classifications'] = table_meta
-
-            # You would construct appropriate query here based on the table structure
-            # This is a placeholder - actual query construction needs table-specific logic
-            data = api.get_data({'TBL_ID': table['id']})
+            print(f"  Fetching data for: {table['name_mn']}...")
+            data = api.get_data(table['sector_id'], table['subsector_id'], table['id'])
             if data:
                 table_info['data'] = data
+                table_info['title'] = data.get('title', '')
+                table_info['variables'] = data.get('variables', [])
 
         result['matched_tables'].append(table_info)
 
@@ -377,36 +433,61 @@ def main():
     """CLI interface for the API"""
     import argparse
 
-    parser = argparse.ArgumentParser(description='Query 1212.mn Mongolia Statistical API')
+    parser = argparse.ArgumentParser(description='Query 1212.mn Mongolia Statistical API (v1)')
     parser.add_argument('query', nargs='*', help='Search query')
     parser.add_argument('--refresh', action='store_true', help='Refresh metadata from API')
     parser.add_argument('--list', action='store_true', help='List all available tables')
+    parser.add_argument('--sectors', action='store_true', help='List all sectors')
+    parser.add_argument('--sector', type=str, help='Filter by sector')
     parser.add_argument('--detailed', action='store_true', help='Fetch detailed data (slower)')
     parser.add_argument('--json', action='store_true', help='Output as JSON')
+    parser.add_argument('--lang', type=str, default=DEFAULT_LANG, choices=['en', 'mn'],
+                        help='Language (en or mn)')
 
     args = parser.parse_args()
 
     if args.refresh:
-        api = API1212()
+        api = API1212(language=args.lang)
         store = MetadataStore()
         store.refresh_metadata(api)
         print("\n✓ Metadata refresh complete")
         return
 
+    if args.sectors:
+        api = API1212(language=args.lang)
+        sectors = api.get_sectors()
+
+        if args.json:
+            print(json.dumps(sectors, indent=2, ensure_ascii=False))
+        else:
+            print(f"\nAvailable Sectors ({len(sectors) if sectors else 0}):\n")
+            if sectors:
+                for sector in sectors:
+                    print(f"  [{sector['id']}]")
+                    print(f"      EN: {sector['id']}")
+                    print(f"      MN: {sector['text']}")
+                    print()
+        return
+
     if args.list:
         store = MetadataStore()
-        tables = store.list_all_tables()
+        tables = store.list_all_tables(sector=args.sector)
 
         if args.json:
             print(json.dumps(tables, indent=2, ensure_ascii=False))
         else:
-            print(f"\nAvailable Tables ({len(tables)}):\n")
-            for table in tables:
-                print(f"  [{table['id']}] {table['name_en']}")
-                if table['description']:
-                    print(f"      {table['description'][:80]}...")
-                print(f"      Unit: {table['unit']}, Frequency: {table['frequency']}")
+            filter_msg = f" in sector '{args.sector}'" if args.sector else ""
+            print(f"\nAvailable Tables{filter_msg} ({len(tables)}):\n")
+            for table in tables[:50]:  # Show first 50
+                print(f"  [{table['id']}]")
+                print(f"      Sector: {table['sector_id']}")
+                print(f"      Subsector: {table['subsector_id']}")
+                print(f"      Name (MN): {table['name_mn']}")
+                print(f"      Updated: {table['last_updated']}")
                 print()
+            if len(tables) > 50:
+                print(f"\n  ... and {len(tables) - 50} more tables")
+                print("  Use --json flag to see all results")
         return
 
     if not args.query:
@@ -423,16 +504,22 @@ def main():
         print(f"Found {len(result['matched_tables'])} relevant table(s)\n")
 
         for i, table in enumerate(result['matched_tables'], 1):
-            print(f"{i}. {table['name']}")
+            print(f"{i}. {table['name_mn']}")
             print(f"   ID: {table['id']}")
-            if table['description']:
-                print(f"   Description: {table['description']}")
-            print(f"   Unit: {table['unit']}")
-            print(f"   Frequency: {table['frequency']}")
+            print(f"   Sector: {table['sector']}")
+            print(f"   Subsector: {table['subsector']}")
             print(f"   Last Updated: {table['last_updated']}")
 
-            if 'data' in table:
-                print(f"   Data: {json.dumps(table['data'], indent=2, ensure_ascii=False)[:200]}...")
+            if 'title' in table:
+                print(f"   Title: {table['title']}")
+
+            if 'variables' in table:
+                print(f"   Variables:")
+                for var in table['variables'][:3]:  # Show first 3 variables
+                    print(f"      - {var['text']}: {len(var['values'])} values")
+                if len(table['variables']) > 3:
+                    print(f"      ... and {len(table['variables']) - 3} more variables")
+
             print()
 
         if 'message' in result:

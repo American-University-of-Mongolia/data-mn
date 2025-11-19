@@ -99,8 +99,9 @@ Note: The data provides price per square meter, not total apartment price.
 
 ### 1212.mn (Mongolia NSO)
 - **Website**: https://1212.mn
-- **API Documentation**: http://opendata.1212.mn/en/doc
-- **Coverage**: 34+ sectors including demographics, economy, housing, employment, health, education, and more
+- **API**: https://data.1212.mn/api/v1/
+- **API Version**: v1 (hierarchical path-based)
+- **Coverage**: 8 sectors including demographics, economy, housing, employment, health, education, and more
 - **Update Frequency**: Varies by dataset (monthly, quarterly, annual)
 - **Language**: English and Mongolian
 
@@ -171,7 +172,7 @@ This project is provided as-is for working with publicly available data sources.
 
 - **Claude Code Documentation**: https://code.claude.com/docs
 - **1212.mn NSO**: https://1212.mn
-- **Open Data Portal**: http://opendata.1212.mn
+- **API v1**: https://data.1212.mn/api/v1/
 
 ## Acknowledgments
 

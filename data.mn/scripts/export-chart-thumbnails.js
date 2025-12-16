@@ -151,9 +151,22 @@ async function exportChart(specPath, outputPath) {
   const vegaSpec = vegaLite.compile(chartSpec).spec;
 
   // Create Vega view with loader for resolving /datasets/*.csv
-  const loader = vega.loader({
+  // Custom loader that strips query parameters (e.g., ?v=2 cache busters)
+  const baseLoader = vega.loader({
     baseURL: path.resolve(__dirname, '../public'),
   });
+
+  const loader = {
+    ...baseLoader,
+    load: (uri, options) => {
+      // Strip query parameters from URLs for local file loading
+      const cleanUri = uri.split('?')[0];
+      return baseLoader.load(cleanUri, options);
+    },
+    sanitize: baseLoader.sanitize.bind(baseLoader),
+    http: baseLoader.http.bind(baseLoader),
+    file: baseLoader.file.bind(baseLoader),
+  };
 
   // Create Vega view for server-side rendering
   // Use 'none' renderer, then toCanvas() will use node-canvas

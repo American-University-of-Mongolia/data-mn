@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Monthly average air temperature across 5 regions of Mongolia (2020-2025). Full data (2005-2025) available in CSV.",
+  "data": {
+    "url": "/datasets/temperature-regional-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "toDate(datum.month + '-01')", "as": "date"},
+    {"filter": "year(datum.date) >= 2020"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Date",
+      "axis": {
+        "format": "%Y-%m",
+        "labelAngle": -45,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "temperature",
+      "type": "quantitative",
+      "title": "Temperature (°C)",
+      "axis": {
+        "format": ".1f",
+        "grid": true,
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "station",
+      "type": "nominal",
+      "title": "Station",
+      "legend": {"orient": "top"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout",
+            "fields": ["date"]
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "month", "title": "Month", "type": "nominal"},
+          {"field": "station", "title": "Station", "type": "nominal"},
+          {"field": "temperature", "title": "Temperature (°C)", "type": "quantitative", "format": ".1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

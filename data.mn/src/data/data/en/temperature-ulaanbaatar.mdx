@@ -1,0 +1,31 @@
+---
+title: "Ulaanbaatar Monthly Temperature (2005-2025)"
+publishDate: 2025-12-16
+excerpt: "Ulaanbaatar's monthly average temperature ranges from -24°C in January to 19°C in July, showing Mongolia's extreme continental climate."
+category: "Environment"
+tags: ["mongolia", "temperature", "climate", "weather", "ulaanbaatar", "environment"]
+keywords: ["ulaanbaatar temperature", "mongolia climate", "weather data", "monthly temperature"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-16
+dataFiles:
+  - path: "/datasets/temperature-ulaanbaatar-en.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "Download as CSV"
+  - path: "/datasets/temperature-ulaanbaatar.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2400_022V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/temperature-ulaanbaatar-en.json"
+  title="Ulaanbaatar Monthly Temperature (2005-2025)"
+/>

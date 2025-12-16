@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Улаанбаатарын температурын хазайлт 1981-2010 оны суурь утгаас",
+  "data": {
+    "url": "/datasets/temperature-anomaly-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "toDate(datum['сар'] + '-01')", "as": "огноо"},
+    {"calculate": "datum['хазайлт'] >= 0 ? 'Дулаан' : 'Хүйтэн'", "as": "чиглэл"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "title": "Огноо",
+      "axis": {
+        "format": "%Y",
+        "labelAngle": 0,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "хазайлт",
+      "type": "quantitative",
+      "title": "Температурын хазайлт (°C)",
+      "axis": {
+        "format": ".1f",
+        "grid": true,
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "чиглэл",
+      "type": "nominal",
+      "legend": {"orient": "top", "title": null},
+      "scale": {
+        "domain": ["Дулаан", "Хүйтэн"],
+        "range": ["#ef4444", "#3b82f6"]
+      }
+    }
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

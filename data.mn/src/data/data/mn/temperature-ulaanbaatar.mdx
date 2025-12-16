@@ -1,0 +1,31 @@
+---
+title: "Улаанбаатар хотын сарын дундаж температур (2005-2025)"
+publishDate: 2025-12-16
+excerpt: "Улаанбаатар хотын сарын дундаж температур 1-р сарын -24°C-ээс 7-р сарын 19°C хүртэл хэлбэлздэг нь Монгол Улсын эрс тэс уур амьсгалыг харуулж байна."
+category: "Байгаль орчин"
+tags: ["монгол", "температур", "уур амьсгал", "цаг агаар", "улаанбаатар", "байгаль орчин"]
+keywords: ["улаанбаатар температур", "монгол уур амьсгал", "цаг агаарын мэдээ", "сарын температур"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-16
+dataFiles:
+  - path: "/datasets/temperature-ulaanbaatar-mn.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "CSV татах"
+  - path: "/datasets/temperature-ulaanbaatar.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2400_022V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/temperature-ulaanbaatar-mn.json"
+  title="Улаанбаатар хотын сарын дундаж температур (2005-2025)"
+/>

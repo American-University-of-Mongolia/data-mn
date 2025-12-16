@@ -1,0 +1,31 @@
+---
+title: "Улаанбаатар хотын температурын хэт утга (2005-2025)"
+publishDate: 2025-12-16
+excerpt: "Улаанбаатар хотод -42°C-ээс 39°C хүртэл температур бүртгэгдсэн бөгөөд жилийн 60°C-ээс дээш хэлбэлзэл нь дэлхийн нийслэлүүдээс хамгийн их зөрүүтэй хотуудын нэг юм."
+category: "Байгаль орчин"
+tags: ["монгол", "температур", "уур амьсгал", "цаг агаар", "улаанбаатар", "хэт утга", "байгаль орчин"]
+keywords: ["улаанбаатар температур", "хэт температур", "хамгийн их бага температур", "уур амьсгалын хэт утга"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-16
+dataFiles:
+  - path: "/datasets/temperature-extremes-ulaanbaatar-mn.csv"
+    format: "csv"
+    size: "24 KB"
+    description: "CSV татах"
+  - path: "/datasets/temperature-extremes-ulaanbaatar.xlsx"
+    format: "xlsx"
+    size: "30 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2400_022V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/temperature-extremes-ulaanbaatar-mn.json"
+  title="Улаанбаатар хотын температурын хэт утга (2020-2025)"
+/>

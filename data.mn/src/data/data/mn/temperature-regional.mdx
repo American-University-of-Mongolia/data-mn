@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын температур бүс нутгаар (2005-2025)"
+publishDate: 2025-12-16
+excerpt: "Монгол Улсын 5 үндсэн цаг уурын станцын температурын харьцуулалт: Улаанбаатар, Дархан, Даланзадгад, Чойбалсан, Ховд - бүс нутгийн уур амьсгалын ялгааг харуулж байна."
+category: "Байгаль орчин"
+tags: ["монгол", "температур", "уур амьсгал", "цаг агаар", "бүс нутаг", "байгаль орчин"]
+keywords: ["монгол температур", "бүс нутгийн уур амьсгал", "цаг уурын станц", "температурын харьцуулалт"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-16
+dataFiles:
+  - path: "/datasets/temperature-regional-mn.csv"
+    format: "csv"
+    size: "37 KB"
+    description: "CSV татах"
+  - path: "/datasets/temperature-regional.xlsx"
+    format: "xlsx"
+    size: "45 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2400_022V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/temperature-regional-mn.json"
+  title="Монгол Улсын температур бүс нутгаар (2020-2025)"
+/>

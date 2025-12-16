@@ -1,0 +1,31 @@
+---
+title: "Mongolia Temperature Anomaly vs 1981-2010 Baseline"
+publishDate: 2025-12-16
+excerpt: "Over 60% of months since 2005 have been warmer than the 1981-2010 historical average in Ulaanbaatar, indicating a warming trend consistent with global climate change."
+category: "Environment"
+tags: ["mongolia", "temperature", "climate", "climate-change", "anomaly", "environment"]
+keywords: ["temperature anomaly", "climate change mongolia", "global warming", "historical comparison"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-16
+dataFiles:
+  - path: "/datasets/temperature-anomaly-en.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "Download as CSV"
+  - path: "/datasets/temperature-anomaly.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2400_022V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/temperature-anomaly-en.json"
+  title="Ulaanbaatar Temperature Anomaly vs 1981-2010 Baseline"
+/>

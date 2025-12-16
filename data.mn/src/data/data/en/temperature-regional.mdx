@@ -1,0 +1,31 @@
+---
+title: "Mongolia Temperature by Region (2005-2025)"
+publishDate: 2025-12-16
+excerpt: "Temperature comparison across 5 major weather stations in Mongolia: Ulaanbaatar, Darkhan, Dalanzadgad, Choibalsan, and Khovd, showing regional climate variations."
+category: "Environment"
+tags: ["mongolia", "temperature", "climate", "weather", "regional", "environment"]
+keywords: ["mongolia temperature", "regional climate", "weather stations", "temperature comparison"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-16
+dataFiles:
+  - path: "/datasets/temperature-regional-en.csv"
+    format: "csv"
+    size: "28 KB"
+    description: "Download as CSV"
+  - path: "/datasets/temperature-regional.xlsx"
+    format: "xlsx"
+    size: "45 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2400_022V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/temperature-regional-en.json"
+  title="Mongolia Temperature by Region (2020-2025)"
+/>

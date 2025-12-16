@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Ulaanbaatar temperature anomaly compared to 1981-2010 baseline",
+  "data": {
+    "url": "/datasets/temperature-anomaly-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "toDate(datum.month + '-01')", "as": "date"},
+    {"calculate": "datum.anomaly >= 0 ? 'Warmer' : 'Cooler'", "as": "direction"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Date",
+      "axis": {
+        "format": "%Y",
+        "labelAngle": 0,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "anomaly",
+      "type": "quantitative",
+      "title": "Temperature Anomaly (°C)",
+      "axis": {
+        "format": ".1f",
+        "grid": true,
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "direction",
+      "type": "nominal",
+      "legend": {"orient": "top", "title": null},
+      "scale": {
+        "domain": ["Warmer", "Cooler"],
+        "range": ["#ef4444", "#3b82f6"]
+      }
+    }
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

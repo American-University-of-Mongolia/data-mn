@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын 5 бүс нутгийн сарын дундаж агаарын температур (2020-2025). Бүх өгөгдөл (2005-2025) CSV файлд байна.",
+  "data": {
+    "url": "/datasets/temperature-regional-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "toDate(datum['сар'] + '-01')", "as": "огноо"},
+    {"filter": "year(datum['огноо']) >= 2020"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "title": "Огноо",
+      "axis": {
+        "format": "%Y-%m",
+        "labelAngle": -45,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "температур",
+      "type": "quantitative",
+      "title": "Температур (°C)",
+      "axis": {
+        "format": ".1f",
+        "grid": true,
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "станц",
+      "type": "nominal",
+      "title": "Станц",
+      "legend": {"orient": "top"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout",
+            "fields": ["огноо"]
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "сар", "title": "Сар", "type": "nominal"},
+          {"field": "станц", "title": "Станц", "type": "nominal"},
+          {"field": "температур", "title": "Температур (°C)", "type": "quantitative", "format": ".1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

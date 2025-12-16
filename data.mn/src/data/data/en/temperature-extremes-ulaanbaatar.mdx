@@ -1,0 +1,31 @@
+---
+title: "Ulaanbaatar Temperature Extremes (2005-2025)"
+publishDate: 2025-12-16
+excerpt: "Ulaanbaatar has recorded temperatures from -42°C to 39°C, with an annual range of over 60°C - one of the largest temperature swings of any capital city."
+category: "Environment"
+tags: ["mongolia", "temperature", "climate", "weather", "ulaanbaatar", "extremes", "environment"]
+keywords: ["ulaanbaatar temperature", "extreme temperature", "max min temperature", "climate extremes"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-16
+dataFiles:
+  - path: "/datasets/temperature-extremes-ulaanbaatar-en.csv"
+    format: "csv"
+    size: "16 KB"
+    description: "Download as CSV"
+  - path: "/datasets/temperature-extremes-ulaanbaatar.xlsx"
+    format: "xlsx"
+    size: "30 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2400_022V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/temperature-extremes-ulaanbaatar-en.json"
+  title="Ulaanbaatar Temperature Extremes (2020-2025)"
+/>

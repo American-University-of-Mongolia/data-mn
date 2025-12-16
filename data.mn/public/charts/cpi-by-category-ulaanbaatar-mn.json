@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Улаанбаатар хотын ХҮИ ангиллаар (2020-2025). 5 үндсэн бүлэгт хуваасан.",
   "data": {
-    "url": "/datasets/cpi-by-category-ulaanbaatar-mn.csv",
+    "url": "/datasets/cpi-by-category-ulaanbaatar-mn.csv?v=2",
     "format": {"type": "csv"}
   },
   "encoding": {

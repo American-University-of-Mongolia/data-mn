@@ -1,0 +1,30 @@
+---
+title: "Улаанбаатар дахь махны долоо хоногийн үнэ (2021-2025)"
+publishDate: 2025-12-16
+excerpt: "Улаанбаатар хотын хонины мах, үхрийн мах, адууны мах, ямааны махны долоо хоног тутмын үнийн мэдээ. 2025 оны 12 дугаар сард хонины махны үнэ дунджаар 17,000 төг/кг, үхрийн мах 16,500 төг/кг орчим байна."
+category: "Үнэ & Инфляци"
+tags: ["монгол", "үнэ", "мах", "улаанбаатар", "долоо хоног"]
+keywords: ["улаанбаатар махны үнэ", "монгол махны үнэ", "хонины мах үнэ", "үхрийн мах үнэ"]
+dataFiles:
+  - path: "/datasets/weekly-meat-prices-ulaanbaatar-mn.csv"
+    format: "csv"
+    size: "43 KB"
+    description: "CSV татах"
+  - path: "/datasets/weekly-meat-prices-ulaanbaatar.xlsx"
+    format: "xlsx"
+    size: "49 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0600_001V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Улаанбаатар хотын хонины мах, үхрийн мах, адууны мах, ямааны махны долоо хоног тутмын үнийн мэдээ. 2025 оны 12 дугаар сард хонины махны үнэ дунджаар 17,000 төг/кг, үхрийн мах 16,500 төг/кг орчим байна.
+
+<VegaChart
+  spec="/charts/weekly-meat-prices-ulaanbaatar-mn.json"
+  title="Улаанбаатар дахь махны үнэ"
+/>

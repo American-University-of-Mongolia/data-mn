@@ -1,0 +1,30 @@
+---
+title: "Weekly Grocery Prices in Ulaanbaatar (2021-2025)"
+publishDate: 2025-12-16
+excerpt: "Weekly price tracking for common grocery items in Ulaanbaatar, including vegetable oil, sugar, green tea, and eggs. Egg prices show significant seasonal variation, ranging from 400-700 MNT/piece."
+category: "Prices & Inflation"
+tags: ["mongolia", "prices", "groceries", "food", "ulaanbaatar", "weekly"]
+keywords: ["ulaanbaatar grocery prices", "mongolia food prices", "egg price mongolia"]
+dataFiles:
+  - path: "/datasets/weekly-grocery-prices-ulaanbaatar-en.csv"
+    format: "csv"
+    size: "45 KB"
+    description: "Download as CSV"
+  - path: "/datasets/weekly-grocery-prices-ulaanbaatar.xlsx"
+    format: "xlsx"
+    size: "37 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0600_001V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Weekly price tracking for common grocery items in Ulaanbaatar, including vegetable oil, sugar, green tea, and eggs. Egg prices show significant seasonal variation, ranging from 400-700 MNT/piece.
+
+<VegaChart
+  spec="/charts/weekly-grocery-prices-ulaanbaatar-en.json"
+  title="Grocery Prices in Ulaanbaatar"
+/>

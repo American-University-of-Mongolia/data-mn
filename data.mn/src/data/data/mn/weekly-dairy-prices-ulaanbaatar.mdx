@@ -1,0 +1,30 @@
+---
+title: "Улаанбаатар дахь сүү, сүүн бүтээгдэхүүний долоо хоногийн үнэ (2021-2025)"
+publishDate: 2025-12-16
+excerpt: "Улаанбаатар хотын задгай сүү, пастержуулсан сүү, тараг, зөөхийн долоо хоног тутмын үнийн мэдээ. Задгай сүүний үнэ харьцангуй тогтвортой 3,500-4,000 төг/л орчим байна."
+category: "Үнэ & Инфляци"
+tags: ["монгол", "үнэ", "сүү", "улаанбаатар", "долоо хоног"]
+keywords: ["улаанбаатар сүүний үнэ", "монгол сүүний үнэ", "тараг үнэ"]
+dataFiles:
+  - path: "/datasets/weekly-dairy-prices-ulaanbaatar-mn.csv"
+    format: "csv"
+    size: "60 KB"
+    description: "CSV татах"
+  - path: "/datasets/weekly-dairy-prices-ulaanbaatar.xlsx"
+    format: "xlsx"
+    size: "45 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0600_001V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Улаанбаатар хотын задгай сүү, пастержуулсан сүү, тараг, зөөхийн долоо хоног тутмын үнийн мэдээ. Задгай сүүний үнэ харьцангуй тогтвортой 3,500-4,000 төг/л орчим байна.
+
+<VegaChart
+  spec="/charts/weekly-dairy-prices-ulaanbaatar-mn.json"
+  title="Улаанбаатар дахь сүү, сүүн бүтээгдэхүүний үнэ"
+/>

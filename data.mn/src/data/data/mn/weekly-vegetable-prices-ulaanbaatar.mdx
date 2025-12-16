@@ -1,0 +1,30 @@
+---
+title: "Улаанбаатар дахь хүнсний ногооны долоо хоногийн үнэ (2021-2025)"
+publishDate: 2025-12-16
+excerpt: "Улаанбаатар хотын төмс, лууван, байцаа, сонгино, манжин, алимны долоо хоног тутмын үнийн мэдээ. Үнэ улирлаас хамааран ихээхэн хэлбэлздэг, өвлийн үнэ зуны үнээс 2-3 дахин өндөр байдаг."
+category: "Үнэ & Инфляци"
+tags: ["монгол", "үнэ", "хүнсний ногоо", "улаанбаатар", "долоо хоног"]
+keywords: ["улаанбаатар ногооны үнэ", "монгол хүнсний ногооны үнэ", "төмсний үнэ"]
+dataFiles:
+  - path: "/datasets/weekly-vegetable-prices-ulaanbaatar-mn.csv"
+    format: "csv"
+    size: "46 KB"
+    description: "CSV татах"
+  - path: "/datasets/weekly-vegetable-prices-ulaanbaatar.xlsx"
+    format: "xlsx"
+    size: "56 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0600_001V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Улаанбаатар хотын төмс, лууван, байцаа, сонгино, манжин, алимны долоо хоног тутмын үнийн мэдээ. Үнэ улирлаас хамааран ихээхэн хэлбэлздэг, өвлийн үнэ зуны үнээс 2-3 дахин өндөр байдаг.
+
+<VegaChart
+  spec="/charts/weekly-vegetable-prices-ulaanbaatar-mn.json"
+  title="Улаанбаатар дахь хүнсний ногооны үнэ"
+/>

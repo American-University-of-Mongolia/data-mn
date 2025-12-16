@@ -1,0 +1,30 @@
+---
+title: "Weekly Dairy Prices in Ulaanbaatar (2021-2025)"
+publishDate: 2025-12-16
+excerpt: "Weekly price tracking for dairy products in Ulaanbaatar, including fresh milk, pasteurized milk, yoghurt, and butter cream. Fresh milk prices have remained relatively stable around 3,500-4,000 MNT/liter."
+category: "Prices & Inflation"
+tags: ["mongolia", "prices", "dairy", "milk", "ulaanbaatar", "weekly"]
+keywords: ["ulaanbaatar dairy prices", "mongolia milk prices", "yoghurt price mongolia"]
+dataFiles:
+  - path: "/datasets/weekly-dairy-prices-ulaanbaatar-en.csv"
+    format: "csv"
+    size: "60 KB"
+    description: "Download as CSV"
+  - path: "/datasets/weekly-dairy-prices-ulaanbaatar.xlsx"
+    format: "xlsx"
+    size: "45 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0600_001V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Weekly price tracking for dairy products in Ulaanbaatar, including fresh milk, pasteurized milk, yoghurt, and butter cream. Fresh milk prices have remained relatively stable around 3,500-4,000 MNT/liter.
+
+<VegaChart
+  spec="/charts/weekly-dairy-prices-ulaanbaatar-en.json"
+  title="Dairy Prices in Ulaanbaatar"
+/>

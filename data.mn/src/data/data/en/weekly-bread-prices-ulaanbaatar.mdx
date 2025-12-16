@@ -1,0 +1,30 @@
+---
+title: "Weekly Bread & Grain Prices in Ulaanbaatar (2021-2025)"
+publishDate: 2025-12-16
+excerpt: "Weekly price tracking for bread, flour, and rice in Ulaanbaatar. Grade 1 flour prices have increased from around 1,800 MNT/kg in 2021 to 2,500 MNT/kg in 2025."
+category: "Prices & Inflation"
+tags: ["mongolia", "prices", "bread", "flour", "grain", "ulaanbaatar", "weekly"]
+keywords: ["ulaanbaatar bread prices", "mongolia flour prices", "rice price mongolia"]
+dataFiles:
+  - path: "/datasets/weekly-bread-prices-ulaanbaatar-en.csv"
+    format: "csv"
+    size: "51 KB"
+    description: "Download as CSV"
+  - path: "/datasets/weekly-bread-prices-ulaanbaatar.xlsx"
+    format: "xlsx"
+    size: "45 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0600_001V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Weekly price tracking for bread, flour, and rice in Ulaanbaatar. Grade 1 flour prices have increased from around 1,800 MNT/kg in 2021 to 2,500 MNT/kg in 2025.
+
+<VegaChart
+  spec="/charts/weekly-bread-prices-ulaanbaatar-en.json"
+  title="Bread & Grain Prices in Ulaanbaatar"
+/>

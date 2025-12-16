@@ -1,0 +1,30 @@
+---
+title: "Улаанбаатар дахь талх, гурилын бүтээгдэхүүний долоо хоногийн үнэ (2021-2025)"
+publishDate: 2025-12-16
+excerpt: "Улаанбаатар хотын талх, гурил, цагаан будааны долоо хоног тутмын үнийн мэдээ. I зэрэглэлийн гурилын үнэ 2021 оны 1,800 төг/кг-аас 2025 онд 2,500 төг/кг болж өссөн."
+category: "Үнэ & Инфляци"
+tags: ["монгол", "үнэ", "талх", "гурил", "улаанбаатар", "долоо хоног"]
+keywords: ["улаанбаатар талхны үнэ", "монгол гурилын үнэ", "будааны үнэ"]
+dataFiles:
+  - path: "/datasets/weekly-bread-prices-ulaanbaatar-mn.csv"
+    format: "csv"
+    size: "51 KB"
+    description: "CSV татах"
+  - path: "/datasets/weekly-bread-prices-ulaanbaatar.xlsx"
+    format: "xlsx"
+    size: "45 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0600_001V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Улаанбаатар хотын талх, гурил, цагаан будааны долоо хоног тутмын үнийн мэдээ. I зэрэглэлийн гурилын үнэ 2021 оны 1,800 төг/кг-аас 2025 онд 2,500 төг/кг болж өссөн.
+
+<VegaChart
+  spec="/charts/weekly-bread-prices-ulaanbaatar-mn.json"
+  title="Улаанбаатар дахь талх, гурилын үнэ"
+/>

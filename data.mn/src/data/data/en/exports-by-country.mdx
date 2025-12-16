@@ -1,0 +1,39 @@
+---
+title: "Mongolia Exports by Trading Partner, Million USD (2005-2024)"
+description: "Mongolia's exports to major trading partners from 2005 to 2024. China's share grew from 48% in 2005 to 91.4% in 2024, reflecting increasing economic dependence on its southern neighbor."
+category: "Economy"
+tags: ["exports", "trade", "international trade", "China", "trading partners", "Mongolia"]
+keywords:
+  - "exports by country"
+  - "trading partners"
+  - "China exports"
+  - "Mongolia trade"
+  - "international trade"
+chart: "/charts/exports-by-country-en.json"
+chartThumbnail: "/thumbnails/exports-by-country-en.webp"
+dataFiles:
+  - path: "/datasets/exports-by-country-en.csv"
+    format: "CSV"
+    size: "1.9 KB"
+    description: "Chart data (top 6 trading partners)"
+  - path: "/datasets/exports-by-country-all-en.csv"
+    format: "CSV"
+    size: "48 KB"
+    description: "Complete data (all countries)"
+  - path: "/datasets/exports-by-country.xlsx"
+    format: "XLSX"
+    size: "19 KB"
+    description: "Excel format (wide layout)"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  table: "DT_NSO_1400_006V3.px"
+publishDate: 2024-12-16
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+import DataDownload from '~/components/ui/DataDownload.astro';
+
+<VegaChart spec={frontmatter.chart} thumbnail={frontmatter.chartThumbnail} />
+
+<DataDownload files={frontmatter.dataFiles} />

@@ -1,0 +1,39 @@
+---
+title: "Монгол Улсын экспорт худалдааны түншээр, сая ам.доллар (2005-2024)"
+description: "Монгол Улсын экспорт худалдааны гол түншүүд руу 2005-2024 онд. Хятадын эзлэх хувь 2005 онд 48%-аас 2024 онд 91.4% болж өссөн нь өмнөд хөршдөө эдийн засгийн хамаарал нэмэгдэж байгааг харуулж байна."
+category: "Эдийн засаг"
+tags: ["экспорт", "худалдаа", "гадаад худалдаа", "Хятад", "худалдааны түнш", "Монгол Улс"]
+keywords:
+  - "экспорт улсаар"
+  - "худалдааны түнш"
+  - "Хятад экспорт"
+  - "Монголын худалдаа"
+  - "гадаад худалдаа"
+chart: "/charts/exports-by-country-mn.json"
+chartThumbnail: "/thumbnails/exports-by-country-mn.webp"
+dataFiles:
+  - path: "/datasets/exports-by-country-mn.csv"
+    format: "CSV"
+    size: "1.3 KB"
+    description: "График өгөгдөл (6 гол түнш)"
+  - path: "/datasets/exports-by-country-all-mn.csv"
+    format: "CSV"
+    size: "62 KB"
+    description: "Бүрэн өгөгдөл (бүх улс орон)"
+  - path: "/datasets/exports-by-country.xlsx"
+    format: "XLSX"
+    size: "19 KB"
+    description: "Excel формат (өргөн хэлбэр)"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  table: "DT_NSO_1400_006V3.px"
+publishDate: 2024-12-16
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+import DataDownload from '~/components/ui/DataDownload.astro';
+
+<VegaChart spec={frontmatter.chart} thumbnail={frontmatter.chartThumbnail} />
+
+<DataDownload files={frontmatter.dataFiles} />

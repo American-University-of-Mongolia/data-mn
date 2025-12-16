@@ -1,0 +1,31 @@
+---
+title: "Үхрийн махны долоо хоногийн үнэ, бүсээр (2024-2025)"
+publishDate: 2025-12-09
+excerpt: "Монгол Улсын үхрийн махны дундаж үнэ 2025 оны 12 сарын байдлаар 17,667 төг/кг байсан бөгөөд Орхонд 17,000 төг, Дархан-Уул болон Ховдод 18,000 төг байв."
+category: "Үнэ ба инфляци"
+tags: ["монгол", "үнэ", "үхрийн мах", "мах", "долоо хоног", "бүс нутаг", "эдийн засаг"]
+keywords: ["үхрийн махны үнэ", "махны үнэ монгол", "хүнсний үнэ"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-09
+dataFiles:
+  - path: "/datasets/weekly-beef-prices-aimags-all-mn.csv"
+    format: "csv"
+    size: "67 KB"
+    description: "CSV татах (бүх бүс нутаг)"
+  - path: "/datasets/weekly-beef-prices-aimags.xlsx"
+    format: "xlsx"
+    size: "13 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_010V5.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/weekly-beef-prices-aimags-mn.json"
+  title="Үхрийн махны долоо хоногийн үнэ, бүсээр (2024-2025)"
+/>

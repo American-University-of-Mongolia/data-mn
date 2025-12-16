@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын урсгал дансны тэнцэл (2009-2025). Сарын өгөгдөл, ашиг (эерэг) болон алдагдал (сөрөг) сая ам.доллараар.",
+  "data": {
+    "url": "/datasets/bop-current-account-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.value >= 0",
+      "as": "isPositive"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "сар",
+      "type": "temporal",
+      "title": "Сар",
+      "axis": {
+        "format": "%Y",
+        "tickCount": 8,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "утга",
+      "type": "quantitative",
+      "title": "Сая ам.доллар",
+      "axis": {
+        "format": ".0f"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "line": {
+          "strokeWidth": 2,
+          "stroke": "#1f77b4"
+        },
+        "interpolate": "monotone",
+        "color": {
+          "x1": 1,
+          "y1": 1,
+          "x2": 1,
+          "y2": 0,
+          "gradient": "linear",
+          "stops": [
+            {
+              "offset": 0,
+              "color": "rgba(31, 119, 180, 0.02)"
+            },
+            {
+              "offset": 1,
+              "color": "rgba(31, 119, 180, 0.35)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "сар",
+            "type": "temporal",
+            "title": "Сар",
+            "format": "%Y-%m"
+          },
+          {
+            "field": "утга",
+            "type": "quantitative",
+            "title": "Тэнцэл (Сая ам.доллар)",
+            "format": ",.1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

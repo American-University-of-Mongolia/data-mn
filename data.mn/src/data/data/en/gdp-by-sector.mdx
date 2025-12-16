@@ -1,0 +1,31 @@
+---
+title: "Mongolia GDP by Economic Sector (2024)"
+publishDate: 2025-12-03
+excerpt: "Mining dominates Mongolia's economy in 2024, contributing 22 trillion MNT (27% of GDP), followed by wholesale/retail trade at 8.8 trillion MNT and net taxes at 8.2 trillion MNT."
+category: "Economy"
+tags: ["mongolia", "gdp", "economy", "sectors"]
+keywords: ["mongolia gdp by sector", "economic sectors", "gdp breakdown", "mining gdp"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-03
+dataFiles:
+  - path: "/datasets/gdp-by-sector-en.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "Download as CSV"
+  - path: "/datasets/gdp-by-sector.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0500_001V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/gdp-by-sector-en.json"
+  title="Mongolia GDP by Economic Sector (2024)"
+/>

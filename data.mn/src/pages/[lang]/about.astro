@@ -1,0 +1,217 @@
+---
+import Brands from '~/components/widgets/Brands.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import { useTranslations, type Language } from '~/i18n';
+
+// Import partner logos from src/assets for proper Astro image optimization
+import aumLogo from '~/assets/images/partners/aum-logo-grey.png';
+import kraftLogo from '~/assets/images/partners/kraft-logo-grey.png';
+import cariqLogo from '~/assets/images/partners/cariq-logo-grey.png';
+import cymbolLogo from '~/assets/images/partners/cymbol-logo-grey.png';
+
+export const getStaticPaths = () => {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'mn' } },
+  ];
+};
+
+const { lang } = Astro.params;
+const currentLang = (lang as Language) || 'mn';
+const t = useTranslations(currentLang);
+
+const metadata = {
+  title: t('about.title'),
+};
+
+// Content varies by language
+const content = {
+  en: {
+    title: 'About Data.mn',
+    subtitle: `Data.mn is an open data platform created by Robert Ritz at the American University of Mongolia. Our mission is to make Mongolian government data more accessible and useful for the public, researchers, journalists, and businesses.`,
+    description: `Mongolia's government agencies publish valuable statistics on everything from population demographics to economic indicators. However, this data is often difficult to find, hard to use, or buried in PDF reports. Data.mn solves this by collecting, cleaning, and presenting this information in user-friendly formats with interactive visualizations and downloadable datasets.`,
+    partners: {
+      title: 'Trusted By',
+    },
+    approach: {
+      title: 'Our Approach',
+      subtitle: 'How we make data work for you',
+      items: [
+        {
+          title: 'Government Sources',
+          description: 'We collect data from official Mongolian sources including the National Statistics Office, Bank of Mongolia, and other government agencies.',
+          icon: 'tabler:building-bank',
+        },
+        {
+          title: 'Open & Free',
+          description: 'All data on this platform is freely available. Download datasets in CSV or Excel format, or use our interactive charts.',
+          icon: 'tabler:lock-open',
+        },
+        {
+          title: 'Clear Attribution',
+          description: 'Every dataset includes its original source and methodology. We believe in transparency about where data comes from.',
+          icon: 'tabler:quote',
+        },
+        {
+          title: 'Regular Updates',
+          description: 'We monitor our sources and update datasets when new data becomes available, typically on a quarterly basis.',
+          icon: 'tabler:refresh',
+        },
+      ],
+    },
+    faqs: {
+      title: 'Frequently Asked Questions',
+      subtitle: 'Common questions about Data.mn',
+      items: [
+        {
+          title: 'Is this official government data?',
+          description: 'Data.mn is not a government website. We aggregate and republish data from official Mongolian government sources like the National Statistics Office (1212.mn) and Bank of Mongolia. We always cite our sources and link to the original data. Think of us as a more user-friendly way to access public government statistics.',
+          icon: 'tabler:help',
+        },
+        {
+          title: 'Can I use this data for my research or business?',
+          description: 'Yes! All data on Data.mn is free to use for any purpose, including academic research, journalism, business analysis, and personal projects. We encourage you to cite Data.mn and the original government source when publishing.',
+          icon: 'tabler:license',
+        },
+        {
+          title: 'How do I cite data from Data.mn?',
+          description: 'For academic citations, include both Data.mn and the original source. Example: "Population of Mongolia (2024). Data.mn, sourced from National Statistics Office of Mongolia." Each dataset page shows the specific source to cite.',
+          icon: 'tabler:blockquote',
+        },
+        {
+          title: 'How often is the data updated?',
+          description: 'Update frequency depends on the source. Most economic and demographic data is updated quarterly when new government releases are available. Some datasets like exchange rates may update more frequently. Each dataset page shows when it was last updated.',
+          icon: 'tabler:calendar-repeat',
+        },
+        {
+          title: 'How can I contribute or report an error?',
+          description: 'We welcome feedback! If you find an error, have a suggestion for new datasets, or want to collaborate, please contact us at robert@aum.edu.mn. We\'re especially interested in hearing from researchers and journalists about what data would be most useful.',
+          icon: 'tabler:message-circle',
+        },
+      ],
+    },
+  },
+  mn: {
+    title: 'Data.mn-ийн тухай',
+    subtitle: `Data.mn нь Америкийн Монгол Их Сургуулийн Роберт Ритзийн бүтээсэн нээлттэй өгөгдлийн платформ юм. Бидний зорилго бол Монголын засгийн газрын өгөгдлийг олон нийт, судлаачид, сэтгүүлчид, бизнес эрхлэгчдэд илүү хүртээмжтэй, ашиглахад хялбар болгох явдал юм.`,
+    description: `Монгол Улсын төрийн байгууллагууд хүн амын статистикаас эхлээд эдийн засгийн үзүүлэлтүүд хүртэл үнэ цэнэтэй мэдээллийг нийтэлдэг. Гэвч энэ өгөгдлийг олоход хэцүү, ашиглахад төвөгтэй, эсвэл PDF тайлангуудад нуугдсан байдаг. Data.mn энэ мэдээллийг цуглуулж, цэгцэлж, интерактив график болон татаж авах боломжтой форматаар хэрэглэгчдэд ээлтэй байдлаар толилуулдаг.`,
+    partners: {
+      title: 'Бидэнд итгэдэг',
+    },
+    approach: {
+      title: 'Бидний арга барил',
+      subtitle: 'Өгөгдлийг танд хэрхэн ашигтай болгодог',
+      items: [
+        {
+          title: 'Төрийн эх сурвалж',
+          description: 'Бид Үндэсний Статистикийн Хороо, Монголбанк болон бусад төрийн байгууллагуудаас албан ёсны мэдээлэл цуглуулдаг.',
+          icon: 'tabler:building-bank',
+        },
+        {
+          title: 'Нээлттэй & Үнэгүй',
+          description: 'Энэ платформ дээрх бүх өгөгдөл үнэ төлбөргүй. CSV эсвэл Excel форматаар татаж авах, эсвэл интерактив графикуудыг ашиглах боломжтой.',
+          icon: 'tabler:lock-open',
+        },
+        {
+          title: 'Тодорхой эх сурвалж',
+          description: 'Өгөгдөл бүр анхны эх сурвалж, арга зүйгээ агуулдаг. Бид өгөгдөл хаанаас ирснийг ил тод байлгахыг чухалчилдаг.',
+          icon: 'tabler:quote',
+        },
+        {
+          title: 'Тогтмол шинэчлэл',
+          description: 'Бид эх сурвалжуудаа хянаж, шинэ өгөгдөл гарах үед шинэчилдэг, ихэвчлэн улирал тутам.',
+          icon: 'tabler:refresh',
+        },
+      ],
+    },
+    faqs: {
+      title: 'Түгээмэл асуултууд',
+      subtitle: 'Data.mn-ийн талаарх түгээмэл асуултууд',
+      items: [
+        {
+          title: 'Энэ албан ёсны төрийн өгөгдөл үү?',
+          description: 'Data.mn нь төрийн вэбсайт биш юм. Бид Үндэсний Статистикийн Хороо (1212.mn), Монголбанк зэрэг албан ёсны эх сурвалжуудаас өгөгдлийг нэгтгэн дахин нийтэлдэг. Бид үргэлж эх сурвалжаа дурдаж, анхны өгөгдөлд холбоос өгдөг. Биднийг төрийн статистикт хандах илүү хэрэглэгчдэд ээлтэй арга гэж ойлгоорой.',
+          icon: 'tabler:help',
+        },
+        {
+          title: 'Би энэ өгөгдлийг судалгаа эсвэл бизнестээ ашиглаж болох уу?',
+          description: 'Тийм! Data.mn дээрх бүх өгөгдлийг эрдэм шинжилгээ, сэтгүүл зүй, бизнесийн шинжилгээ, хувийн төсөл зэрэг ямар ч зорилгоор үнэ төлбөргүй ашиглаж болно. Нийтлэхдээ Data.mn болон анхны төрийн эх сурвалжийг дурдахыг зөвлөж байна.',
+          icon: 'tabler:license',
+        },
+        {
+          title: 'Data.mn-ээс авсан өгөгдлийг хэрхэн эшлэх вэ?',
+          description: 'Эрдэм шинжилгээний эшлэлд Data.mn болон анхны эх сурвалжийг хоёуланг нь оруулна уу. Жишээ: "Монгол Улсын хүн ам (2024). Data.mn, Үндэсний Статистикийн Хорооноос авсан." Өгөгдөл бүрийн хуудсанд эшлэх эх сурвалжийг харуулсан байгаа.',
+          icon: 'tabler:blockquote',
+        },
+        {
+          title: 'Өгөгдөл хэр тогтмол шинэчлэгддэг вэ?',
+          description: 'Шинэчлэлийн давтамж эх сурвалжаас хамаарна. Ихэнх эдийн засаг, хүн ам зүйн өгөгдөл засгийн газрын шинэ мэдээлэл гарах үед улирал тутам шинэчлэгддэг. Валютын ханш зэрэг зарим өгөгдөл илүү олон удаа шинэчлэгдэж болно. Өгөгдөл бүрийн хуудсанд хамгийн сүүлд хэзээ шинэчлэгдсэнийг харуулдаг.',
+          icon: 'tabler:calendar-repeat',
+        },
+        {
+          title: 'Хэрхэн хувь нэмэр оруулах эсвэл алдаа мэдээлэх вэ?',
+          description: 'Бид санал хүсэлтийг тавтай хүлээн авна! Хэрэв та алдаа олсон, шинэ өгөгдлийн санал байгаа, эсвэл хамтран ажиллахыг хүсвэл robert@aum.edu.mn хаягаар холбогдоно уу. Бид ялангуяа судлаачид, сэтгүүлчдээс ямар өгөгдөл хамгийн хэрэгтэй байхыг сонсохыг хүсэж байна.',
+          icon: 'tabler:message-circle',
+        },
+      ],
+    },
+  },
+};
+
+const c = content[currentLang];
+
+// Partner logos - using imported images for proper Astro optimization
+// tall: true for square/vertical logos that need more height
+const partnerLogos = [
+  { src: aumLogo, alt: 'American University of Mongolia', href: 'https://aum.edu.mn' },
+  { src: kraftLogo, alt: 'Kraft Tavilgiin Beldets', href: 'https://kraft.mn' },
+  { src: cariqLogo, alt: 'CarIQ', href: 'https://cariq.mn' },
+  { src: cymbolLogo, alt: 'Cymbol Diamonds', tall: true, href: 'https://cymboljewelry.com' },
+];
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Section ******************* -->
+  <section class="relative not-prose">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-12 md:py-16">
+      <div class="text-center">
+        <h1 class="text-3xl md:text-4xl font-bold mb-6 font-heading dark:text-gray-200">
+          {c.title}
+        </h1>
+        <p class="text-xl text-muted mb-6 dark:text-slate-300 max-w-3xl mx-auto">
+          {c.subtitle}
+        </p>
+        <p class="text-lg text-muted dark:text-slate-400 max-w-3xl mx-auto">
+          {c.description}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Widget ****************** -->
+  <Brands
+    title={c.partners.title}
+    images={partnerLogos}
+    classes={{ container: 'max-w-5xl' }}
+  />
+
+  <!-- Approach Widget ************** -->
+  <Features3
+    title={c.approach.title}
+    subtitle={c.approach.subtitle}
+    columns={2}
+    items={c.approach.items}
+    classes={{ container: 'max-w-5xl' }}
+  />
+
+  <!-- FAQs Widget ************** -->
+  <FAQs
+    title={c.faqs.title}
+    subtitle={c.faqs.subtitle}
+    columns={1}
+    items={c.faqs.items}
+    classes={{ container: 'max-w-5xl' }}
+  />
+</Layout>

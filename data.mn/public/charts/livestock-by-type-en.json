@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia livestock by type from 1970 to 2024",
+  "data": {
+    "url": "/datasets/livestock-by-type-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "timeUnit": "year",
+      "title": "Year",
+      "axis": {
+        "format": "%Y",
+        "labelAngle": 0,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Livestock Count (thousands)",
+      "stack": "zero",
+      "axis": {
+        "format": ",.0f"
+      }
+    },
+    "color": {
+      "field": "type_of_livestock",
+      "type": "nominal",
+      "title": "Livestock Type",
+      "scale": {
+        "domain": [
+          "Horse",
+          "Cattle",
+          "Camel",
+          "Sheep",
+          "Goat"
+        ]
+      },
+      "legend": {
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "line": true,
+        "point": false
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "temporal",
+            "timeUnit": "year",
+            "title": "Year",
+            "format": "%Y"
+          },
+          {
+            "field": "type_of_livestock",
+            "type": "nominal",
+            "title": "Type"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Count",
+            "format": ",.1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "strokeWidth": 0,
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

@@ -1,0 +1,31 @@
+---
+title: "Mongolia GDP Growth Rate (1991-2024)"
+publishDate: 2025-12-03
+excerpt: "Mongolia's GDP grew 5.1% in 2024. The economy has seen significant volatility, including a -9.3% contraction in 1992 and 17.3% peak growth in 2011 during the mining boom."
+category: "Economy"
+tags: ["mongolia", "gdp", "economy", "growth-rate"]
+keywords: ["mongolia gdp growth", "economic growth rate", "gdp change", "mongolia economy"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-03
+dataFiles:
+  - path: "/datasets/gdp-growth-rate-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/gdp-growth-rate.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0500_001V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/gdp-growth-rate-en.json"
+  title="Mongolia GDP Growth Rate (1991-2024)"
+/>

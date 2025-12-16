@@ -1,0 +1,31 @@
+---
+title: "Mongolia GDP at Current Prices (1990-2024)"
+publishDate: 2025-12-03
+excerpt: "Mongolia's nominal GDP grew from 12.8 billion MNT in 1990 to 80.7 trillion MNT in 2024, reflecting over 6,000-fold growth in monetary terms over 34 years."
+category: "Economy"
+tags: ["mongolia", "gdp", "economy", "national-accounts"]
+keywords: ["mongolia gdp", "nominal gdp", "gdp current prices", "mongolia economy"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-03
+dataFiles:
+  - path: "/datasets/gdp-nominal-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/gdp-nominal.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0500_001V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/gdp-nominal-en.json"
+  title="Mongolia GDP at Current Prices (1990-2024)"
+/>

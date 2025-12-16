@@ -1,0 +1,31 @@
+---
+title: "Weekly Flour Prices by Region in Mongolia (2024-2025)"
+publishDate: 2025-12-09
+excerpt: "Flour prices in Mongolia averaged 2,635 MNT/kg as of December 2025, ranging from 2,367 MNT in Orkhon to 3,000 MNT in Khovd."
+category: "Prices & Inflation"
+tags: ["mongolia", "prices", "flour", "food", "weekly", "regional", "economy"]
+keywords: ["flour prices mongolia", "food prices", "grain prices mongolia", "regional prices", "weekly prices"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-09
+dataFiles:
+  - path: "/datasets/weekly-flour-prices-aimags-all-en.csv"
+    format: "csv"
+    size: "53 KB"
+    description: "Download as CSV (all regions)"
+  - path: "/datasets/weekly-flour-prices-aimags.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_010V5.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/weekly-flour-prices-aimags-en.json"
+  title="Weekly Flour Prices by Region in Mongolia (2024-2025)"
+/>

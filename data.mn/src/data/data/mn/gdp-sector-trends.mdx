@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын ДНБ үндсэн салбаруудаар (1990-2024)"
+publishDate: 2025-12-03
+excerpt: "Монголын уул уурхайн салбар 1990 онд 1.6 тэрбум төгрөгөөс 2024 онд 22 их наяд төгрөг болж өсөж, 2000 оноос хойш хөдөө аж ахуйг гүйцэж эдийн засгийн тэргүүлэх салбар болсон."
+category: "Эдийн засаг"
+tags: ["монгол", "днб", "эдийн засаг", "салбар", "динамик"]
+keywords: ["монгол днб динамик", "салбарын өсөлт", "эдийн засгийн түүх"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-03
+dataFiles:
+  - path: "/datasets/gdp-sector-trends-mn.csv"
+    format: "csv"
+    size: "6 KB"
+    description: "CSV татах"
+  - path: "/datasets/gdp-sector-trends.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0500_001V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/gdp-sector-trends-mn.json"
+  title="Монгол Улсын ДНБ үндсэн салбаруудаар (1990-2024)"
+/>

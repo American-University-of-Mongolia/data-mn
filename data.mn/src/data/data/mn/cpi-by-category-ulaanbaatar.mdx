@@ -1,0 +1,31 @@
+---
+title: "Улаанбаатар хотын ХҮИ ангиллаар, % (2025 оны 11-р сар)"
+publishDate: 2025-12-16
+excerpt: "2025 оны 11-р сард Амралт, чөлөөт цаг, соёлын бараа, үйлчилгээний үнэ хамгийн их 2.5%-иар өссөн бол Орон сууц, ус, цахилгаан, түлшний үнэ хамгийн бага -0.7%-иар өөрчлөгдсөн."
+category: "Эдийн засаг"
+tags: ["mongolia", "cpi", "inflation", "prices", "ulaanbaatar", "categories", "consumer-prices"]
+keywords: ["mongolia cpi", "inflation categories", "ulaanbaatar prices", "consumer price index"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-16
+dataFiles:
+  - path: "/datasets/cpi-by-category-ulaanbaatar-mn.csv"
+    format: "csv"
+    size: "779 B"
+    description: "CSV татах"
+  - path: "/datasets/cpi-by-category-ulaanbaatar.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0600_003V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/cpi-by-category-ulaanbaatar-mn.json"
+  title="Улаанбаатар хотын ХҮИ ангиллаар, % (2025 оны 11-р сар)"
+/>

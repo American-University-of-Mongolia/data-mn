@@ -1,0 +1,31 @@
+---
+title: "Залуучуудын ажилгүйдлийн түвшин (15-24), хувь (2009-2024)"
+publishDate: 2025-12-07
+excerpt: "15-24 насны залуучуудын ажилгүйдлийн түвшин 2009-2024 онд."
+category: "Хөдөлмөрийн зах зээл"
+tags: ["монгол", "ажилгүйдэл", "залуучууд", "хөдөлмөр"]
+keywords: ["youth unemployment", "young people", "15-24", "labor market"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-07
+dataFiles:
+  - path: "/datasets/unemployment-rate-youth-mn.csv"
+    format: "csv"
+    size: "451 B"
+    description: "CSV татах"
+  - path: "/datasets/unemployment-rate-youth.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0400_049V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/unemployment-rate-youth-mn.json"
+  title="Залуучуудын ажилгүйдлийн түвшин (15-24), хувь (2009-2024)"
+/>

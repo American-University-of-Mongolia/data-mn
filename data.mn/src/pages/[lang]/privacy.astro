@@ -1,0 +1,190 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { useTranslations, type Language } from '~/i18n';
+
+export const getStaticPaths = () => {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'mn' } },
+  ];
+};
+
+const { lang } = Astro.params;
+const currentLang = (lang as Language) || 'mn';
+const t = useTranslations(currentLang);
+
+const metadata = {
+  title: currentLang === 'en' ? 'Privacy Policy' : 'Нууцлалын бодлого',
+};
+
+const content = {
+  en: {
+    title: 'Privacy Policy',
+    lastUpdated: 'Last updated: November 29, 2025',
+    sections: [
+      {
+        title: 'Introduction',
+        content: 'At Data.mn ("we," "our," or "us"), we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our open data platform.',
+      },
+      {
+        title: 'Information We Collect',
+        content: `<strong>Currently</strong><br>
+Data.mn is a free, public platform. We do not currently require user accounts, and we do not collect personal information from visitors.<br><br>
+<strong>Analytics</strong><br>
+We may use Cloudflare Analytics, a privacy-focused analytics service that does not use cookies and does not collect personal data. It only provides aggregate traffic statistics.<br><br>
+<strong>Future Services</strong><br>
+If we introduce user accounts, newsletters, or paid reports in the future, we may collect:<br>
+- Name and email address for account registration<br>
+- Payment information processed through secure third-party providers (we do not store payment details)<br>
+- Communication preferences and subscription settings`,
+      },
+      {
+        title: 'How We Use Your Information',
+        content: `Any information we collect is used to:<br>
+- Provide and maintain our services<br>
+- Process transactions and manage subscriptions (if applicable)<br>
+- Send you updates and newsletters (if you subscribe)<br>
+- Respond to your inquiries<br>
+- Improve our platform and user experience<br>
+- Comply with legal obligations`,
+      },
+      {
+        title: 'Information Sharing and Disclosure',
+        content: `We do not sell, trade, or rent your personal information to third parties. We may share your information only:<br>
+- With service providers necessary to operate our platform (e.g., hosting, analytics, payment processing)<br>
+- To comply with legal obligations or respond to lawful requests<br>
+- To protect our rights, privacy, safety, or property`,
+      },
+      {
+        title: 'Cookies and Tracking',
+        content: 'We use privacy-focused analytics through Cloudflare Analytics, which does not use cookies or track personal information. Our platform is designed to respect your privacy.',
+      },
+      {
+        title: 'Data Security',
+        content: 'We implement appropriate technical and organizational security measures to protect any information we collect. However, no method of transmission over the Internet is 100% secure.',
+      },
+      {
+        title: 'Third-Party Data Sources',
+        content: 'Data.mn aggregates and presents data from external data sources including government agencies and public institutions. We do not collect personal data from these sources.',
+      },
+      {
+        title: 'Your Rights',
+        content: `Depending on your location, you may have the right to:<br>
+- Access your personal information<br>
+- Correct inaccurate information<br>
+- Delete your personal information<br>
+- Object to processing<br><br>
+To exercise these rights, please contact us at contact@data.mn.`,
+      },
+      {
+        title: 'Children\'s Privacy',
+        content: 'Our platform is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.',
+      },
+      {
+        title: 'Changes to This Privacy Policy',
+        content: 'We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.',
+      },
+      {
+        title: 'Contact Us',
+        content: `If you have any questions about this Privacy Policy, please contact us at:<br><br>
+Email: contact@data.mn<br>
+Website: data.mn`,
+      },
+    ],
+  },
+  mn: {
+    title: 'Нууцлалын бодлого',
+    lastUpdated: 'Сүүлд шинэчилсэн: 2025 оны 11-р сарын 29',
+    sections: [
+      {
+        title: 'Танилцуулга',
+        content: 'Data.mn ("бид", "бидний", "манай") нь таны нууцлалыг хамгаалахад үүрэг хүлээдэг. Энэхүү Нууцлалын бодлого нь манай нээлттэй өгөгдлийн платформыг ашиглахад таны мэдээллийг хэрхэн цуглуулж, ашиглаж, хамгаалахыг тайлбарладаг.',
+      },
+      {
+        title: 'Бидний цуглуулдаг мэдээлэл',
+        content: `<strong>Одоогоор</strong><br>
+Data.mn нь үнэ төлбөргүй, нийтийн платформ юм. Бид одоогоор хэрэглэгчийн бүртгэл шаарддаггүй бөгөөд зочдоос хувийн мэдээлэл цуглуулдаггүй.<br><br>
+<strong>Аналитик</strong><br>
+Бид Cloudflare Analytics ашиглаж болох бөгөөд энэ нь нууцлалд чиглэсэн аналитик үйлчилгээ бөгөөд күүки ашигладаггүй, хувийн мэдээлэл цуглуулдаггүй. Зөвхөн нэгдсэн урсгалын статистик өгдөг.<br><br>
+<strong>Ирээдүйн үйлчилгээ</strong><br>
+Хэрэв бид ирээдүйд хэрэглэгчийн бүртгэл, мэдээллийн товхимол эсвэл төлбөртэй тайлан нэвтрүүлбэл дараахийг цуглуулж болно:<br>
+- Бүртгүүлэхэд нэр, имэйл хаяг<br>
+- Аюулгүй гуравдагч талын үйлчилгээ үзүүлэгчээр дамжуулан боловсруулсан төлбөрийн мэдээлэл (бид төлбөрийн мэдээллийг хадгалдаггүй)<br>
+- Харилцааны сонголт болон захиалгын тохиргоо`,
+      },
+      {
+        title: 'Таны мэдээллийг хэрхэн ашигладаг',
+        content: `Бидний цуглуулсан мэдээллийг дараахад ашигладаг:<br>
+- Үйлчилгээгээ үзүүлэх, хадгалах<br>
+- Гүйлгээ боловсруулах, захиалга удирдах (хамаарах тохиолдолд)<br>
+- Шинэчлэлт, мэдээллийн товхимол илгээх (захиалсан бол)<br>
+- Таны асуултад хариулах<br>
+- Платформ болон хэрэглэгчийн туршлагыг сайжруулах<br>
+- Хуулийн үүргийг биелүүлэх`,
+      },
+      {
+        title: 'Мэдээлэл хуваалцах ба задруулах',
+        content: `Бид таны хувийн мэдээллийг гуравдагч этгээдэд зардаггүй, арилжаалдаггүй, түрээслэдэггүй. Бид таны мэдээллийг зөвхөн дараах тохиолдолд хуваалцаж болно:<br>
+- Платформыг ажиллуулахад шаардлагатай үйлчилгээ үзүүлэгчидтэй (жишээ нь: хостинг, аналитик, төлбөр боловсруулалт)<br>
+- Хуулийн үүргийг биелүүлэх эсвэл хууль ёсны хүсэлтэд хариулах<br>
+- Бидний эрх, нууцлал, аюулгүй байдал, өмчийг хамгаалах`,
+      },
+      {
+        title: 'Күүки ба хянах',
+        content: 'Бид Cloudflare Analytics-ээр дамжуулан нууцлалд чиглэсэн аналитик ашигладаг бөгөөд энэ нь күүки ашигладаггүй, хувийн мэдээлэл хянадаггүй. Манай платформ таны нууцлалыг хүндэтгэхээр бүтээгдсэн.',
+      },
+      {
+        title: 'Мэдээллийн аюулгүй байдал',
+        content: 'Бид цуглуулсан мэдээллээ хамгаалахын тулд зохих техникийн болон зохион байгуулалтын аюулгүй байдлын арга хэмжээг хэрэгжүүлдэг. Гэхдээ интернетээр дамжуулах ямар ч арга 100% аюулгүй биш.',
+      },
+      {
+        title: 'Гуравдагч талын мэдээллийн эх сурвалж',
+        content: 'Data.mn нь төрийн байгууллагууд болон олон нийтийн институцуудыг оролцуулсан гадны эх сурвалжаас мэдээллийг нэгтгэн харуулдаг. Бид эдгээр эх сурвалжаас хувийн мэдээлэл цуглуулдаггүй.',
+      },
+      {
+        title: 'Таны эрхүүд',
+        content: `Байршлаас хамааран та дараах эрхтэй байж болно:<br>
+- Хувийн мэдээлэлдээ хандах<br>
+- Буруу мэдээллийг засах<br>
+- Хувийн мэдээллээ устгах<br>
+- Боловсруулалтыг эсэргүүцэх<br><br>
+Эдгээр эрхийг хэрэгжүүлэхийн тулд contact@data.mn хаягаар бидэнтэй холбогдоно уу.`,
+      },
+      {
+        title: 'Хүүхдийн нууцлал',
+        content: 'Манай платформ 13-аас доош насны хүүхдүүдэд зориулагдаагүй. Бид 13-аас доош насны хүүхдүүдээс хувийн мэдээлэл зориудаар цуглуулдаггүй.',
+      },
+      {
+        title: 'Энэхүү Нууцлалын бодлогын өөрчлөлт',
+        content: 'Бид энэхүү Нууцлалын бодлогыг үе үе шинэчилж болно. Бид шинэ Нууцлалын бодлогыг энэ хуудсанд байршуулж, "Сүүлд шинэчилсэн" огноог шинэчлэх замаар аливаа өөрчлөлтийг танд мэдэгдэх болно.',
+      },
+      {
+        title: 'Холбоо барих',
+        content: `Хэрэв танд энэхүү Нууцлалын бодлогын талаар асуулт байвал бидэнтэй холбогдоно уу:<br><br>
+Имэйл: contact@data.mn<br>
+Вэбсайт: data.mn`,
+      },
+    ],
+  },
+};
+
+const c = content[currentLang];
+---
+
+<Layout metadata={metadata}>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12 md:py-16">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold tracking-tight dark:text-white mb-2">{c.title}</h1>
+      <p class="text-muted dark:text-slate-400">{c.lastUpdated}</p>
+    </header>
+
+    <article class="prose prose-lg dark:prose-invert max-w-none">
+      {c.sections.map((section) => (
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold dark:text-white mb-3">{section.title}</h2>
+          <div class="text-muted dark:text-slate-300 leading-relaxed" set:html={section.content} />
+        </section>
+      ))}
+    </article>
+  </div>
+</Layout>

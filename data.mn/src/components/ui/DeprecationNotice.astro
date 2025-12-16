@@ -1,0 +1,126 @@
+---
+/**
+ * DeprecationNotice Component
+ *
+ * Displays a notice when viewing a deprecated dataset.
+ * Used as part of the URL stability system.
+ *
+ * See docs/principles/url-stability.md for full documentation.
+ *
+ * Usage in MDX:
+ * <DeprecationNotice
+ *   deprecatedAt="2025-01-15"
+ *   reason="Methodology changed in 2024 census"
+ *   successorSlug="population-census-2024"
+ *   successorTitle="Population Census 2024"
+ * />
+ */
+
+import { useTranslations, type Language } from '~/i18n';
+import { formatDate } from '~/i18n/utils';
+
+interface Props {
+  deprecatedAt: string;
+  reason?: string;
+  successorSlug?: string;
+  successorTitle?: string;
+  lang?: Language;
+}
+
+const {
+  deprecatedAt,
+  reason,
+  successorSlug,
+  successorTitle,
+  lang = 'mn',
+} = Astro.props;
+
+const t = useTranslations(lang);
+
+// Determine successor URL based on current language
+const successorUrl = successorSlug ? `/${lang}/data/${successorSlug}` : null;
+---
+
+<div
+  class="deprecation-notice bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4 mb-6"
+  role="alert"
+>
+  <div class="flex items-start gap-3">
+    <div class="flex-shrink-0 mt-0.5">
+      <svg
+        class="h-5 w-5 text-amber-600 dark:text-amber-400"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </div>
+
+    <div class="flex-1">
+      <h3 class="text-amber-800 dark:text-amber-200 font-semibold text-base">
+        {t('deprecated.notice')}
+      </h3>
+
+      <div class="mt-2 text-sm text-amber-700 dark:text-amber-300 space-y-1">
+        <p>
+          <span class="font-medium">{t('deprecated.asOf')}:</span>
+          {formatDate(deprecatedAt, lang)}
+        </p>
+
+        {
+          reason && (
+            <p>
+              <span class="font-medium">{t('deprecated.reason')}:</span> {reason}
+            </p>
+          )
+        }
+      </div>
+
+      {
+        successorUrl && (
+          <div class="mt-3">
+            <a
+              href={successorUrl}
+              class="inline-flex items-center gap-1.5 text-amber-700 dark:text-amber-300 hover:text-amber-900 dark:hover:text-amber-100 font-medium text-sm underline underline-offset-2 decoration-amber-400/50 hover:decoration-amber-500 transition-colors"
+            >
+              <svg
+                class="h-4 w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              {successorTitle || t('deprecated.replacement')}
+            </a>
+          </div>
+        )
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  .deprecation-notice {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

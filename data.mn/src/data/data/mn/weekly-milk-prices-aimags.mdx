@@ -1,0 +1,31 @@
+---
+title: "Сүүний долоо хоногийн үнэ, бүсээр (2024-2025)"
+publishDate: 2025-12-09
+excerpt: "Монгол Улсын сүүний дундаж үнэ 2025 оны 12 сарын байдлаар 4,275 төг/литр байсан бөгөөд Орхонд 3,500 төг, Өмнөговь болон Ховдод 5,000 төг байв."
+category: "Үнэ ба инфляци"
+tags: ["монгол", "үнэ", "сүү", "сүүн бүтээгдэхүүн", "хүнс", "долоо хоног", "бүс нутаг", "эдийн засаг"]
+keywords: ["сүүний үнэ", "сүүн бүтээгдэхүүний үнэ монгол", "хүнсний үнэ"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-09
+dataFiles:
+  - path: "/datasets/weekly-milk-prices-aimags-all-mn.csv"
+    format: "csv"
+    size: "65 KB"
+    description: "CSV татах (бүх бүс нутаг)"
+  - path: "/datasets/weekly-milk-prices-aimags.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_010V5.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/weekly-milk-prices-aimags-mn.json"
+  title="Сүүний долоо хоногийн үнэ, бүсээр (2024-2025)"
+/>

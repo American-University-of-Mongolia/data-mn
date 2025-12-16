@@ -1,0 +1,61 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { Icon } from 'astro-icon/components';
+import { useTranslations, type Language } from '~/i18n';
+
+export const getStaticPaths = () => {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'mn' } },
+  ];
+};
+
+const { lang } = Astro.params;
+const currentLang = (lang as Language) || 'mn';
+const t = useTranslations(currentLang);
+
+const metadata = {
+  title: t('contact.title'),
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="py-16 md:py-24 lg:py-32">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center">
+        <!-- Icon -->
+        <div class="mb-8">
+          <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 dark:bg-primary/20">
+            <Icon name="tabler:mail" class="w-10 h-10 text-primary" />
+          </div>
+        </div>
+
+        <!-- Heading -->
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+          {t('contact.heading')}
+        </h1>
+
+        <!-- Context -->
+        <p class="text-lg text-muted dark:text-slate-400 mb-10 max-w-xl mx-auto">
+          {t('contact.description')}
+        </p>
+
+        <!-- Email Card -->
+        <div class="inline-block rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow-lg p-8 md:p-10">
+          <p class="text-sm text-muted dark:text-slate-400 uppercase tracking-wider mb-3">
+            {t('contact.emailLabel')}
+          </p>
+          <a
+            href="mailto:contact@data.mn"
+            class="text-2xl md:text-3xl font-semibold text-primary hover:underline underline-offset-4 transition-colors"
+          >
+            contact@data.mn
+          </a>
+          <p class="text-sm text-muted dark:text-slate-400 mt-4">
+            {t('contact.responseTime')}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

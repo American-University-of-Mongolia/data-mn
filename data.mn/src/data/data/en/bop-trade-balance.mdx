@@ -1,0 +1,31 @@
+---
+title: "Mongolia Trade Balance - Goods, Million USD (2009-2025)"
+publishDate: 2025-12-09
+excerpt: "Mongolia exported $1,617.3M and imported $1,032.0M worth of goods in September 2025, resulting in a trade surplus of $585.3M."
+category: "Trade"
+tags: ["mongolia", "balance-of-payments", "economy"]
+keywords: ['Mongolia trade balance', 'exports', 'imports', 'merchandise trade', 'trade surplus', 'trade deficit']
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-09
+dataFiles:
+  - path: "/datasets/bop-trade-balance-en.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "Download as CSV"
+  - path: "/datasets/bop-trade-balance.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0100_001V10.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/bop-trade-balance-en.json"
+  title="Mongolia Trade Balance - Goods, Million USD (2009-2025)"
+/>

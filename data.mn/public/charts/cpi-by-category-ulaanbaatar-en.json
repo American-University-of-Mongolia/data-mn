@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "CPI change by category in Ulaanbaatar, November 2025",
+  "data": {
+    "url": "/datasets/cpi-by-category-ulaanbaatar-en.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 4
+  },
+  "encoding": {
+    "x": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Month-on-Month Change (%)",
+      "axis": {"format": ".1f", "grid": true}
+    },
+    "y": {
+      "field": "category",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x",
+      "axis": {"labelLimit": 250}
+    },
+    "color": {
+      "condition": {
+        "test": "datum.value >= 0",
+        "value": "#54a24b"
+      },
+      "value": "#e45756"
+    },
+    "tooltip": [
+      {"field": "category", "title": "Category"},
+      {"field": "value", "title": "Change", "format": ".1f"}
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

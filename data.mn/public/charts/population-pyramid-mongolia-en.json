@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Population pyramid of Mongolia for 2024. Shows age and sex distribution of the population.",
+  "data": {
+    "url": "/datasets/population-pyramid-mongolia-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.sex === 'Male' ? -datum.value : datum.value",
+      "as": "signed_population"
+    }
+  ],
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "on": "pointerover",
+        "clear": "pointerout",
+        "nearest": true
+      }
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cursor": "pointer"
+  },
+  "encoding": {
+    "y": {
+      "field": "age_group",
+      "type": "ordinal",
+      "title": "Age Group",
+      "sort": [
+        "0-4",
+        "5-9",
+        "10-14",
+        "15-19",
+        "20-24",
+        "25-29",
+        "30-34",
+        "35-39",
+        "40-44",
+        "45-49",
+        "50-54",
+        "55-59",
+        "60-64",
+        "65-69",
+        "70+"
+      ]
+    },
+    "x": {
+      "field": "signed_population",
+      "type": "quantitative",
+      "title": "Population",
+      "axis": {
+        "format": ".2s",
+        "labelExpr": "abs(datum.value) >= 1000000 ? format(abs(datum.value) / 1000000, '.1f') + 'M' : format(abs(datum.value) / 1000, '.0f') + 'K'",
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "sex",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Male",
+          "Female"
+        ]
+      },
+      "legend": {
+        "title": "Sex",
+        "orient": "top"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "hover",
+        "empty": true,
+        "value": 1
+      },
+      "value": 0.7
+    },
+    "tooltip": [
+      {
+        "field": "age_group",
+        "title": "Age Group"
+      },
+      {
+        "field": "sex",
+        "title": "Sex"
+      },
+      {
+        "field": "value",
+        "title": "Population",
+        "format": ","
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

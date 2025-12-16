@@ -1,0 +1,31 @@
+---
+/**
+ * HrefLangTags - SEO hreflang tags for multi-language support
+ *
+ * Generates alternate language links for search engines
+ */
+
+import { SITE } from 'astrowind:config';
+
+// Get the current URL and path
+const currentUrl = Astro.url;
+const pathname = currentUrl.pathname;
+
+// Extract path parts
+const pathParts = pathname.split('/').filter(Boolean);
+const currentLang = pathParts[0] === 'en' || pathParts[0] === 'mn' ? pathParts[0] : 'mn';
+const pathWithoutLang = pathParts[0] === 'en' || pathParts[0] === 'mn'
+  ? '/' + pathParts.slice(1).join('/')
+  : pathname;
+
+// Get base URL
+const baseUrl = SITE?.site || currentUrl.origin;
+
+// Generate alternate URLs
+const enUrl = `${baseUrl}/en${pathWithoutLang}`;
+const mnUrl = `${baseUrl}/mn${pathWithoutLang}`;
+---
+
+<link rel="alternate" hreflang="en" href={enUrl} />
+<link rel="alternate" hreflang="mn" href={mnUrl} />
+<link rel="alternate" hreflang="x-default" href={mnUrl} />

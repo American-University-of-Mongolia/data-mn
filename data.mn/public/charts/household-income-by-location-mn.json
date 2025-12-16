@@ -1,0 +1,105 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/household-income-by-location-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "axis": {
+        "title": "Он",
+        "format": "d",
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "утга",
+      "type": "quantitative",
+      "axis": {
+        "title": "Сарын орлого (₮)",
+        "format": ",.0f"
+      }
+    },
+    "color": {
+      "field": "байршил",
+      "type": "nominal",
+      "legend": {
+        "title": "Байршил",
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "type": "quantitative",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "байршил",
+            "type": "nominal",
+            "title": "Байршил"
+          },
+          {
+            "field": "утга",
+            "type": "quantitative",
+            "title": "Орлого (₮)",
+            "format": ",.0f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

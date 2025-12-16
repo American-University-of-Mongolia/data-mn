@@ -1,0 +1,115 @@
+---
+/**
+ * DataDownload Component
+ *
+ * Displays downloadable data files with metadata.
+ *
+ * Usage in MDX:
+ * <DataDownload files={dataFiles} />
+ *
+ * Where dataFiles comes from frontmatter or is passed directly
+ */
+
+import { Icon } from 'astro-icon/components';
+
+export interface DataFile {
+  path: string;
+  format: string;
+  size?: string;
+  description?: string;
+}
+
+export interface Props {
+  files?: DataFile[];
+  title?: string;
+  description?: string;
+}
+
+const { files = [], title = 'Download Data', description } = Astro.props;
+
+// Icon mapping for file formats
+const formatIcons: Record<string, string> = {
+  csv: 'tabler:file-spreadsheet',
+  xlsx: 'tabler:file-spreadsheet',
+  xls: 'tabler:file-spreadsheet',
+  json: 'tabler:json',
+  xml: 'tabler:file-code',
+  pdf: 'tabler:file-text',
+  zip: 'tabler:file-zip',
+};
+
+const getFormatIcon = (format: string) => {
+  return formatIcons[format.toLowerCase()] || 'tabler:file-download';
+};
+
+const getFormatColor = (format: string) => {
+  const colors: Record<string, string> = {
+    csv: 'text-green-600 dark:text-green-400',
+    xlsx: 'text-emerald-600 dark:text-emerald-400',
+    json: 'text-blue-600 dark:text-blue-400',
+    xml: 'text-purple-600 dark:text-purple-400',
+    pdf: 'text-red-600 dark:text-red-400',
+    zip: 'text-yellow-600 dark:text-yellow-400',
+  };
+  return colors[format.toLowerCase()] || 'text-gray-600 dark:text-gray-400';
+};
+---
+
+<div class="data-download-section my-8 p-6 bg-gray-50 dark:bg-slate-800 rounded-lg border border-gray-200 dark:border-slate-700">
+  <div class="flex items-center gap-2 mb-4">
+    <Icon name="tabler:download" class="w-6 h-6 text-primary" />
+    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">{title}</h3>
+  </div>
+
+  {description && <p class="text-gray-600 dark:text-gray-400 mb-4">{description}</p>}
+
+  {
+    files.length > 0 ? (
+      <div class="space-y-3">
+        {files.map((file) => (
+          <a
+            href={file.path}
+            download
+            class="flex items-center justify-between p-4 bg-white dark:bg-slate-900 rounded-lg border border-gray-200 dark:border-slate-600 hover:border-primary dark:hover:border-primary transition-colors group"
+          >
+            <div class="flex items-center gap-3">
+              <Icon
+                name={getFormatIcon(file.format)}
+                class={`w-8 h-8 ${getFormatColor(file.format)}`}
+              />
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-medium text-gray-900 dark:text-gray-100 group-hover:text-primary">
+                    {file.format.toUpperCase()} Format
+                  </span>
+                  {file.size && (
+                    <span class="text-sm text-gray-500 dark:text-gray-400">({file.size})</span>
+                  )}
+                </div>
+                {file.description && (
+                  <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">{file.description}</p>
+                )}
+              </div>
+            </div>
+            <Icon
+              name="tabler:download"
+              class="w-5 h-5 text-gray-400 group-hover:text-primary transition-colors"
+            />
+          </a>
+        ))}
+      </div>
+    ) : (
+      <p class="text-gray-500 dark:text-gray-400 italic">No data files available for download.</p>
+    )
+  }
+</div>
+
+<style>
+  .data-download-section a:hover {
+    transform: translateY(-1px);
+  }
+
+  .data-download-section a {
+    transition: all 0.2s ease;
+  }
+</style>

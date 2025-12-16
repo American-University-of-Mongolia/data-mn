@@ -1,0 +1,26 @@
+{
+  "dataset_id": "nso-population-by-age-sex",
+  "version": 1,
+  "table_id": "DT_NSO_0300_003V1.px",
+  "source": "NSO 1212.mn",
+  "source_updated_at": "2025-09-16T17:07:54",
+  "fetched_at": "2025-11-27T13:28:08.924208",
+  "row_count": 1920,
+  "columns": [
+    "Хүйс_code",
+    "Хүйс",
+    "Насны бүлэг_code",
+    "Насны бүлэг",
+    "Он_code",
+    "Он",
+    "value"
+  ],
+  "data_hash": "69ede1853d08f9a5a596e5e9cdcc20938650f399ed58f9b662b45fb03dcdf8fc",
+  "title_en": "POPULATION OF MONGOLIA, by sex, age group, and by year",
+  "title_mn": "ХҮН АМЫН ТОО, хүйс, насны бүлэг, жилээр",
+  "dimensions": {
+    "Хүйс": 3,
+    "Насны бүлэг": 16,
+    "Он": 40
+  }
+}

@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын хөдөлмөрийн оролцооны түвшин хүйсээр, % (1992-2024)"
+publishDate: 2025-12-06
+excerpt: "Монгол Улсын хөдөлмөрийн оролцооны түвшин 1992-2024 онд, эрэгтэй болон эмэгтэй ажилчдаар ялгаатай."
+category: "Хөдөлмөрийн зах зээл"
+tags: ["монгол", "хөдөлмөр", "оролцоо", "хөдөлмөр эрхлэлт", "хүйс"]
+keywords: ["labour force", "participation rate", "by sex", "gender", "employment"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-06
+dataFiles:
+  - path: "/datasets/labor-participation-by-sex-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/labor-participation-by-sex.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0400_018V1_1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/labor-participation-by-sex-mn.json"
+  title="Монгол Улсын хөдөлмөрийн оролцооны түвшин хүйсээр, % (1992-2024)"
+/>

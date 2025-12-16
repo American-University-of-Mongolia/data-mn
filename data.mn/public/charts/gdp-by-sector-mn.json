@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын ДНБ эдийн засгийн салбараар, 2024 он.",
+  "data": {
+    "url": "/datasets/gdp-by-sector-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "on": "pointerover",
+        "clear": "pointerout",
+        "nearest": true
+      }
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cursor": "pointer"
+  },
+  "encoding": {
+    "y": {
+      "field": "салбар",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x",
+      "axis": {
+        "labelLimit": 300
+      }
+    },
+    "x": {
+      "field": "утга",
+      "type": "quantitative",
+      "title": "ДНБ (Сая төгрөг)",
+      "axis": {
+        "format": ".2s",
+        "grid": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "салбар",
+        "title": "Салбар"
+      },
+      {
+        "field": "утга",
+        "title": "ДНБ (Сая төгрөг)",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "total_2024": 3544835,
+  "total_1956": 845481,
+  "growth_factor": 4.2,
+  "growth_pct": 319.3,
+  "male_2024": 1736360,
+  "female_2024": 1808475,
+  "sex_ratio": 96.0,
+  "youth_pct": 30.9,
+  "working_pct": 63.8,
+  "elderly_pct": 5.3,
+  "trend_data": [
+    {
+      "year": 1956,
+      "population": 845481
+    },
+    {
+      "year": 1963,
+      "population": 1017158
+    },
+    {
+      "year": 1969,
+      "population": 1197595
+    },
+    {
+      "year": 1979,
+      "population": 1595006
+    },
+    {
+      "year": 1989,
+      "population": 2043954
+    },
+    {
+      "year": 1990,
+      "population": 2153466
+    },
+    {
+      "year": 1995,
+      "population": 2242998
+    },
+    {
+      "year": 2000,
+      "population": 2403105
+    },
+    {
+      "year": 2005,
+      "population": 2551081
+    },
+    {
+      "year": 2010,
+      "population": 2760968
+    },
+    {
+      "year": 2015,
+      "population": 3057778
+    },
+    {
+      "year": 2020,
+      "population": 3357542
+    },
+    {
+      "year": 2024,
+      "population": 3544835
+    }
+  ],
+  "pyramid_data": [
+    {
+      "age": "0-4",
+      "male": -174398,
+      "female": 165879
+    },
+    {
+      "age": "5-9",
+      "male": -197034,
+      "female": 186965
+    },
+    {
+      "age": "10-14",
+      "male": -190491,
+      "female": 182034
+    },
+    {
+      "age": "15-19",
+      "male": -142033,
+      "female": 136545
+    },
+    {
+      "age": "20-24",
+      "male": -112835,
+      "female": 109355
+    },
+    {
+      "age": "25-29",
+      "male": -120014,
+      "female": 118313
+    },
+    {
+      "age": "30-34",
+      "male": -137736,
+      "female": 137571
+    },
+    {
+      "age": "35-39",
+      "male": -149092,
+      "female": 152145
+    },
+    {
+      "age": "40-44",
+      "male": -120723,
+      "female": 126414
+    },
+    {
+      "age": "45-49",
+      "male": -104331,
+      "female": 113759
+    },
+    {
+      "age": "50-54",
+      "male": -88833,
+      "female": 101682
+    },
+    {
+      "age": "55-59",
+      "male": -70347,
+      "female": 86508
+    },
+    {
+      "age": "60-64",
+      "male": -56792,
+      "female": 75089
+    },
+    {
+      "age": "65-69",
+      "male": -34712,
+      "female": 51391
+    },
+    {
+      "age": "70+",
+      "male": -36989,
+      "female": 64825
+    }
+  ],
+  "years_span": "1956-2024",
+  "num_years": 40
+}

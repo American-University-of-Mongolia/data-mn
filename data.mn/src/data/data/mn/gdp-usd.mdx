@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын ДНБ ам.доллараар (1990-2024)"
+publishDate: 2025-12-03
+excerpt: "Монгол Улсын ДНБ 2024 онд 23.8 тэрбум ам.доллар болж, 1990 оны 3.3 тэрбум ам.доллараас 34 жилийн хугацаанд 7 дахин нэмэгдсэн."
+category: "Эдийн засаг"
+tags: ["монгол", "днб", "эдийн засаг", "ам.доллар"]
+keywords: ["монгол днб доллар", "эдийн засаг", "днб олон улс"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-03
+dataFiles:
+  - path: "/datasets/gdp-usd-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/gdp-usd.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0500_001V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/gdp-usd-mn.json"
+  title="Монгол Улсын ДНБ ам.доллараар (1990-2024)"
+/>

@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Average monthly salary by economic sector in Mongolia (2024)",
+  "data": {
+    "url": "/datasets/salary-by-sector-2024-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "y": {
+      "field": "Sector",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x",
+      "axis": {
+        "labelLimit": 300
+      }
+    },
+    "x": {
+      "field": "Salary (MNT 1000s)",
+      "type": "quantitative",
+      "title": "Average Monthly Salary (MNT '000)",
+      "axis": {
+        "format": ",.0f",
+        "grid": false,
+        "gridOpacity": 0.3
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Sector",
+        "type": "nominal",
+        "title": "Sector"
+      },
+      {
+        "field": "Salary (MNT 1000s)",
+        "type": "quantitative",
+        "title": "Salary (MNT '000)",
+        "format": ",.1f"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  },
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "nearest": true,
+        "on": "pointerover",
+        "clear": "pointerout"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын нийт малын тоо, сая толгой (1970-2024)"
+publishDate: 2025-12-06
+excerpt: "Монгол Улсын нийт малын тоо 1970 оноос 2024 он хүртэл. 22.5 сая толгойноос 57.6 сая толгой болж өссөн байна."
+category: "Хөдөө аж ахуй"
+tags: ["монгол", "мал аж ахуй", "хөдөө аж ахуй", "малчин", "нүүдэлчин"]
+keywords: ["livestock", "animal husbandry", "pastoral", "nomadic"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-06
+dataFiles:
+  - path: "/datasets/livestock-total-mn.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "CSV татах"
+  - path: "/datasets/livestock-total.xlsx"
+    format: "xlsx"
+    size: "1 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1001_109V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/livestock-total-mn.json"
+  title="Монгол Улсын нийт малын тоо, сая толгой (1970-2024)"
+/>

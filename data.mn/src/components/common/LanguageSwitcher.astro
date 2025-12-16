@@ -1,0 +1,56 @@
+---
+/**
+ * LanguageSwitcher - Toggle between English and Mongolian
+ *
+ * Usage:
+ * <LanguageSwitcher lang={currentLang} />
+ */
+
+import { languages, getAlternateLang, localizedPath, type Language } from '~/i18n';
+
+interface Props {
+  lang: Language;
+  class?: string;
+}
+
+const { lang, class: className = '' } = Astro.props;
+
+// Get the current path without language prefix
+const pathname = Astro.url.pathname;
+const pathParts = pathname.split('/').filter(Boolean);
+const pathWithoutLang = pathParts[0] === 'en' || pathParts[0] === 'mn'
+  ? '/' + pathParts.slice(1).join('/')
+  : pathname;
+
+// Get alternate language
+const altLang = getAlternateLang(lang);
+const altUrl = localizedPath(altLang, pathWithoutLang || '/');
+---
+
+<div class:list={['language-switcher flex items-center gap-1', className]}>
+  <a
+    href={localizedPath('mn', pathWithoutLang || '/')}
+    class:list={[
+      'px-2 py-1 text-sm font-medium rounded transition-colors',
+      lang === 'mn'
+        ? 'bg-primary text-white'
+        : 'text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary'
+    ]}
+    aria-label="Монгол хэл"
+  >
+    MN
+  </a>
+  <span class="text-gray-300 dark:text-gray-600">|</span>
+  <a
+    href={localizedPath('en', pathWithoutLang || '/')}
+    class:list={[
+      'px-2 py-1 text-sm font-medium rounded transition-colors',
+      lang === 'en'
+        ? 'bg-primary text-white'
+        : 'text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary'
+    ]}
+    aria-label="English"
+  >
+    EN
+  </a>
+</div>

@@ -1,0 +1,83 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '~/layouts/PageLayout.astro';
+import GridCards from '~/components/blog/GridCards.astro';
+import Headline from '~/components/blog/Headline.astro';
+import CategoryFilter from '~/components/ui/CategoryFilter.astro';
+import { getLangFromUrl, useTranslations, type Language } from '~/i18n';
+
+export const prerender = true;
+
+export const getStaticPaths = () => {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'mn' } },
+  ];
+};
+
+const { lang } = Astro.params;
+const currentLang = (lang as Language) || 'en';
+const t = useTranslations(currentLang);
+
+// Get all data pages for the current language
+const allDataPages = await getCollection('data', ({ id, data }) =>
+  id.startsWith(`${currentLang}/`) && data.draft !== true
+);
+
+// Sort by publish date, most recent first
+const sortedData = allDataPages.sort((a, b) => {
+  const dateA = a.data.publishDate ? new Date(a.data.publishDate).valueOf() : 0;
+  const dateB = b.data.publishDate ? new Date(b.data.publishDate).valueOf() : 0;
+  return dateB - dateA;
+});
+
+// Extract unique categories for filter
+const categories = [...new Set(sortedData.map((item) => item.data.category).filter(Boolean))];
+
+// Transform to format expected by GridCards component
+const posts = sortedData.map((item) => {
+  // Extract slug from ID by removing language prefix and extension
+  const slug = item.id.replace(/^(en|mn)\//, '').replace(/\.mdx?$/, '');
+
+  return {
+    id: item.id,
+    slug: slug,
+    permalink: `/${currentLang}/data/${slug}`,
+    publishDate: item.data.publishDate || new Date(),
+    updateDate: item.data.updateDate,
+    title: item.data.title,
+    excerpt: item.data.excerpt,
+    image: item.data.image,
+    category: item.data.category ? { slug: item.data.category, title: item.data.category } : undefined,
+    tags: item.data.tags?.map((tag) => ({ slug: tag, title: tag })) || [],
+    author: item.data.author,
+    draft: item.data.draft || false,
+    metadata: item.data.metadata || {},
+  };
+});
+
+const metadata = {
+  title: t('nav.data'),
+  description: currentLang === 'en'
+    ? 'Browse our collection of statistical data, charts, and datasets.'
+    : 'Статистик мэдээлэл, график, өгөгдлийн цуглуулга',
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+const allLabel = currentLang === 'en' ? 'All' : 'Бүгд';
+---
+
+<Layout metadata={metadata}>
+  <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-5xl">
+    <Headline subtitle={currentLang === 'en'
+      ? 'Browse statistical data, interactive charts, and downloadable datasets'
+      : 'Статистик мэдээлэл, интерактив график, өгөгдлийн цуглуулга'}>
+      {t('nav.data')}
+    </Headline>
+    <CategoryFilter categories={categories} allLabel={allLabel} />
+    <GridCards posts={posts} showCategory={true} showTags={true} contentType="data" />
+  </section>
+</Layout>

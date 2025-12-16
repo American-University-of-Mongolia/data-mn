@@ -1,0 +1,55 @@
+=================================================================
+DATASET VERSION BACKUP - inflation-annual v1
+=================================================================
+
+Created: 2024-12-06
+Backed up: 2024-12-16
+
+PURPOSE
+-------
+This version backup was created to preserve the existing inflation-annual
+dataset data before any future updates from the NSO 1212.mn API.
+
+CONTENTS
+--------
+✓ data-en.csv      - English version (336 bytes, 34 rows)
+✓ data-mn.csv      - Mongolian version (374 bytes, 34 rows)
+✓ metadata.json    - Version metadata with statistics
+✓ SUMMARY.txt      - This file
+
+DATA SUMMARY
+------------
+Dataset ID:    inflation-annual
+Source:        NSO 1212.mn
+Table ID:      DT_NSO_0600_013V2.px
+Time Period:   1991-2024 (34 years)
+Rows:          34
+Latest Value:  9.0% (2024)
+Peak Value:    325.5% (1992 - Hyperinflation)
+Lowest Value:  1.3% (2016)
+
+DEFINITION FILE
+---------------
+Location: tools/sources/nso-1212/datasets/inflation-annual.md
+Status:   ✓ Created
+
+PURPOSE OF DEFINITION FILE
+---------------------------
+The definition file documents:
+- NSO API table ID and sector/subsector paths
+- Data structure and variables
+- Update instructions for future fetches
+- Chart configuration
+- Translation mappings for EN/MN versions
+- Historical context and validation rules
+
+NEXT STEPS
+----------
+When updating this dataset:
+1. Check NSO API for updated data (table DT_NSO_0600_013V2.px)
+2. Fetch new data using definition file instructions
+3. Create new version directory (v2/)
+4. Update registry to point to new version
+5. Regenerate charts and MDX pages if needed
+
+=================================================================

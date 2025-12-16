@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Breakdown of Mongolia's GDP by economic sector in 2024.",
+  "data": {
+    "url": "/datasets/gdp-by-sector-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "on": "pointerover",
+        "clear": "pointerout",
+        "nearest": true
+      }
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cursor": "pointer"
+  },
+  "encoding": {
+    "y": {
+      "field": "sector",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x",
+      "axis": {
+        "labelLimit": 250
+      }
+    },
+    "x": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "GDP (Million MNT)",
+      "axis": {
+        "format": ".2s",
+        "grid": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "sector",
+        "title": "Sector"
+      },
+      {
+        "field": "value",
+        "title": "GDP (Million MNT)",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

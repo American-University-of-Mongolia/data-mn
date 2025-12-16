@@ -1,0 +1,130 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын барааны худалдааны тэнцэл (2009-2025). Сарын экспорт, импорт, цэвэр тэнцэл сая ам.доллараар.",
+  "data": {
+    "url": "/datasets/bop-trade-balance-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "fold": [
+        "экспорт",
+        "импорт",
+        "цэвэр"
+      ],
+      "as": [
+        "category",
+        "value"
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "сар",
+      "type": "temporal",
+      "title": "Сар",
+      "axis": {
+        "format": "%Y",
+        "tickCount": 8,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Сая ам.доллар",
+      "axis": {
+        "format": ".0f"
+      }
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "экспорт",
+          "импорт",
+          "цэвэр"
+        ]
+      },
+      "legend": {
+        "title": "Ангилал",
+        "labelExpr": "datum.label === 'экспорт' ? 'Экспорт' : datum.label === 'импорт' ? 'Импорт' : 'Цэвэр тэнцэл'",
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "сар",
+            "type": "temporal",
+            "title": "Сар",
+            "format": "%Y-%m"
+          },
+          {
+            "field": "category",
+            "type": "nominal",
+            "title": "Төрөл"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Сая ам.доллар",
+            "format": ",.1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

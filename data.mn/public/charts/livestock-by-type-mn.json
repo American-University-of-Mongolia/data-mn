@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын мал төрлөөр 1970-2024",
+  "data": {
+    "url": "/datasets/livestock-by-type-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "temporal",
+      "timeUnit": "year",
+      "title": "Он",
+      "axis": {
+        "format": "%Y",
+        "labelAngle": 0,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "утга",
+      "type": "quantitative",
+      "title": "Малын тоо (мянгаар)",
+      "stack": "zero",
+      "axis": {
+        "format": ",.0f"
+      }
+    },
+    "color": {
+      "field": "малын_төрөл",
+      "type": "nominal",
+      "title": "Малын төрөл",
+      "scale": {
+        "domain": [
+          "Адуу",
+          "Үхэр",
+          "Тэмээ",
+          "Хонь",
+          "Ямаа"
+        ]
+      },
+      "legend": {
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "line": true,
+        "point": false
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "type": "temporal",
+            "timeUnit": "year",
+            "title": "Он",
+            "format": "%Y"
+          },
+          {
+            "field": "малын_төрөл",
+            "type": "nominal",
+            "title": "Төрөл"
+          },
+          {
+            "field": "утга",
+            "type": "quantitative",
+            "title": "Тоо",
+            "format": ",.1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "strokeWidth": 0,
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

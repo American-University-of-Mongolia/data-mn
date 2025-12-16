@@ -1,0 +1,43 @@
+---
+/**
+ * GrainOverlay Component
+ *
+ * Adds a subtle noise texture overlay for visual depth.
+ * Uses an inline SVG filter for performance (no external image load).
+ *
+ * Props:
+ * - opacity: Overlay opacity (0-1). Defaults to 0.03 for light, 0.06 for dark.
+ * - class: Additional CSS classes to apply
+ */
+
+export interface Props {
+  opacity?: number;
+  class?: string;
+}
+
+const { opacity, class: className } = Astro.props;
+---
+
+<div
+  class:list={[
+    'grain-overlay pointer-events-none absolute inset-0',
+    className,
+  ]}
+  style={opacity ? `--grain-opacity: ${opacity}` : undefined}
+  aria-hidden="true"
+/>
+
+<style>
+  .grain-overlay {
+    --grain-opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: var(--grain-opacity);
+    mix-blend-mode: overlay;
+  }
+
+  /* Slightly stronger grain in dark mode for visibility */
+  :global(.dark) .grain-overlay {
+    --grain-opacity: 0.06;
+    mix-blend-mode: soft-light;
+  }
+</style>

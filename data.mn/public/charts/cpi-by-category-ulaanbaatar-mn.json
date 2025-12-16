@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Улаанбаатар хотын ХҮИ ангиллаар, 2025 оны 11-р сар",
+  "data": {
+    "url": "/datasets/cpi-by-category-ulaanbaatar-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 4
+  },
+  "encoding": {
+    "x": {
+      "field": "утга",
+      "type": "quantitative",
+      "title": "Сараас сард өөрчлөлт (%)",
+      "axis": {"format": ".1f", "grid": true}
+    },
+    "y": {
+      "field": "ангилал",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x",
+      "axis": {"labelLimit": 250}
+    },
+    "color": {
+      "condition": {
+        "test": "datum.утга >= 0",
+        "value": "#54a24b"
+      },
+      "value": "#e45756"
+    },
+    "tooltip": [
+      {"field": "ангилал", "title": "Ангилал"},
+      {"field": "утга", "title": "Өөрчлөлт", "format": ".1f"}
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

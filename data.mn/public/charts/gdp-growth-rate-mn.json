@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын ДНБ-ий жилийн өсөлтийн хувь 1991-2024 онд.",
+  "data": {
+    "url": "/datasets/gdp-growth-rate-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.year >= 1991"
+    }
+  ],
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "on": "pointerover",
+        "clear": "pointerout",
+        "nearest": true
+      }
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cursor": "pointer"
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 5,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "утга",
+      "type": "quantitative",
+      "title": "ДНБ-ий өсөлт (%)",
+      "axis": {
+        "format": ".1f"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "hover",
+        "empty": true,
+        "value": 1
+      },
+      "value": 0.7
+    },
+    "tooltip": [
+      {
+        "field": "он",
+        "title": "Он",
+        "format": "d"
+      },
+      {
+        "field": "утга",
+        "title": "Өсөлт (%)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

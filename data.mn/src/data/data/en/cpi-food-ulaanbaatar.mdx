@@ -1,0 +1,31 @@
+---
+title: "Food Price Changes in Ulaanbaatar, % MoM (2020-2025)"
+publishDate: 2025-12-16
+excerpt: "In January 2025, food prices in Ulaanbaatar changed by 1.9% compared to the previous month. Food represents a major component of household spending in Mongolia, tracking these changes helps understand inflation impacts on daily life."
+category: "Economy"
+tags: ["mongolia", "cpi", "inflation", "food", "prices", "ulaanbaatar", "monthly"]
+keywords: ["food prices", "inflation", "consumer price index", "Mongolia", "Ulaanbaatar"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-16
+dataFiles:
+  - path: "/datasets/cpi-food-ulaanbaatar-en.csv"
+    format: "csv"
+    size: "747 B"
+    description: "Download as CSV"
+  - path: "/datasets/cpi-food-ulaanbaatar.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0600_003V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/cpi-food-ulaanbaatar-en.json"
+  title="Food Price Changes in Ulaanbaatar, % MoM (2020-2025)"
+/>

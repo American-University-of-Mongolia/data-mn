@@ -1,0 +1,130 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia Trade Balance - Goods (2009-2025). Monthly exports, imports, and net trade balance in million USD.",
+  "data": {
+    "url": "/datasets/bop-trade-balance-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "fold": [
+        "exports",
+        "imports",
+        "net"
+      ],
+      "as": [
+        "category",
+        "value"
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "temporal",
+      "title": "Month",
+      "axis": {
+        "format": "%Y",
+        "tickCount": 8,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Million USD",
+      "axis": {
+        "format": ".0f"
+      }
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "exports",
+          "imports",
+          "net"
+        ]
+      },
+      "legend": {
+        "title": "Category",
+        "labelExpr": "datum.label === 'exports' ? 'Exports' : datum.label === 'imports' ? 'Imports' : 'Net Balance'",
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "month",
+            "type": "temporal",
+            "title": "Month",
+            "format": "%B %Y"
+          },
+          {
+            "field": "category",
+            "type": "nominal",
+            "title": "Type"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Million USD",
+            "format": ",.1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

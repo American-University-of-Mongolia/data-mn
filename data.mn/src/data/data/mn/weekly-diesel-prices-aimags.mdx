@@ -1,0 +1,31 @@
+---
+title: "Дизелийн түлшний долоо хоногийн үнэ, бүсээр (2024-2025)"
+publishDate: 2025-12-09
+excerpt: "Монгол Улсын дизелийн түлшний дундаж үнэ 2025 оны 12 сарын байдлаар 3,387 төг/литр байсан бөгөөд Орхонд 3,200 төг, Ховдод 3,760 төг байв."
+category: "Үнэ ба инфляци"
+tags: ["монгол", "үнэ", "дизель", "түлш", "долоо хоног", "бүс нутаг", "эдийн засаг"]
+keywords: ["дизелийн үнэ", "дизелийн түлшний үнэ монгол", "түлшний үнэ"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-09
+dataFiles:
+  - path: "/datasets/weekly-diesel-prices-aimags-all-mn.csv"
+    format: "csv"
+    size: "66 KB"
+    description: "CSV татах (бүх бүс нутаг)"
+  - path: "/datasets/weekly-diesel-prices-aimags.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_010V5.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/weekly-diesel-prices-aimags-mn.json"
+  title="Дизелийн түлшний долоо хоногийн үнэ, бүсээр (2024-2025)"
+/>

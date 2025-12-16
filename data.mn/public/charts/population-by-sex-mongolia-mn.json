@@ -1,0 +1,112 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "1956-2024 оны Монгол Улсын хүн ам хүйсээр. Эрэгтэй болон эмэгтэй хүн амын өсөлтийн чиг хандлагыг харьцуулна.",
+  "data": {
+    "url": "/datasets/population-by-sex-mongolia-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 10,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "утга",
+      "type": "quantitative",
+      "title": "Хүн ам",
+      "axis": {
+        "format": ".2s"
+      }
+    },
+    "color": {
+      "field": "хүйс",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Эрэгтэй",
+          "Эмэгтэй"
+        ]
+      },
+      "legend": {
+        "title": "Хүйс",
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "хүйс",
+            "title": "Хүйс"
+          },
+          {
+            "field": "он",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "утга",
+            "title": "Хүн ам",
+            "format": ",.0f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

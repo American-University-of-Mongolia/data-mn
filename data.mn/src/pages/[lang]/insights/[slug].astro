@@ -1,0 +1,108 @@
+---
+import { getCollection, render } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Layout from '~/layouts/PageLayout.astro';
+import { useTranslations, formatDate, type Language } from '~/i18n';
+
+export const prerender = true;
+
+export const getStaticPaths = (async () => {
+  const insights = await getCollection('insights', ({ data }) => {
+    return data.draft !== true;
+  });
+
+  return insights.map((insight) => {
+    // ID format is 'en/understanding-demographic-transitions' or 'mn/understanding-demographic-transitions'
+    const [lang, ...slugParts] = insight.id.split('/');
+    const slug = slugParts.join('/').replace(/\.mdx?$/, '');
+
+    return {
+      params: { lang, slug },
+      props: { insight },
+    };
+  });
+}) satisfies GetStaticPaths;
+
+const { insight } = Astro.props;
+const { lang } = Astro.params;
+const currentLang = (lang as Language) || 'en';
+const t = useTranslations(currentLang);
+
+const { Content } = await render(insight);
+
+const { title, excerpt, image, publishDate, updateDate, author, category, tags } = insight.data;
+
+const metadata = {
+  title: title,
+  description: excerpt,
+  image: image,
+  ...insight.data.metadata,
+};
+
+// Localized labels
+const publishedLabel = currentLang === 'en' ? 'Published' : 'Нийтэлсэн';
+const updatedLabel = currentLang === 'en' ? 'Updated' : 'Шинэчилсэн';
+const byLabel = currentLang === 'en' ? 'By' : 'Зохиогч';
+---
+
+<Layout metadata={metadata}>
+  <article class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
+    <header class="mb-8">
+      {category && (
+        <div class="mb-2">
+          <a
+            href={`/${currentLang}/insights?category=${category}`}
+            class="text-sm text-primary hover:underline uppercase tracking-wider font-semibold"
+          >
+            {category}
+          </a>
+        </div>
+      )}
+
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 text-gray-900 dark:text-gray-100">
+        {title}
+      </h1>
+
+      {excerpt && <p class="text-xl text-gray-600 dark:text-gray-400 mb-6">{excerpt}</p>}
+
+      <div class="flex flex-wrap items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
+        {publishDate && (
+          <time datetime={publishDate.toISOString()}>
+            {publishedLabel}: {formatDate(publishDate, currentLang)}
+          </time>
+        )}
+        {updateDate && (
+          <time datetime={updateDate.toISOString()}>
+            {updatedLabel}: {formatDate(updateDate, currentLang)}
+          </time>
+        )}
+        {author && <span>{byLabel} {author}</span>}
+      </div>
+
+      {tags && tags.length > 0 && (
+        <div class="flex flex-wrap gap-2 mt-4">
+          {tags.map((tag) => (
+            <a
+              href={`/${currentLang}/insights?tag=${tag}`}
+              class="px-3 py-1 text-sm bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 rounded-full hover:bg-primary hover:text-white transition-colors"
+            >
+              {tag}
+            </a>
+          ))}
+        </div>
+      )}
+    </header>
+
+    {image && (
+      <img
+        src={image}
+        alt={title}
+        class="w-full rounded-lg mb-8 shadow-lg"
+      />
+    )}
+
+    <div class="prose prose-lg dark:prose-invert max-w-none">
+      <Content />
+    </div>
+  </article>
+</Layout>

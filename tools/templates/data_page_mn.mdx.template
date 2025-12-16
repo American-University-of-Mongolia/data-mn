@@ -1,0 +1,35 @@
+---
+title: "{TITLE_MN}"
+publishDate: {PUBLISH_DATE}
+excerpt: "{EXCERPT_MN}"
+category: "{CATEGORY}"
+tags: {TAGS_JSON}
+keywords: {KEYWORDS_JSON}
+author: "Data.mn"
+dataVersion: {VERSION}
+dataDate: {DATA_DATE}
+dataFiles:
+  - path: "/datasets/{DATASET_ID}.csv"
+    format: "csv"
+    size: "{CSV_SIZE}"
+    description: "CSV татах"
+  - path: "/datasets/{DATASET_ID}.xlsx"
+    format: "xlsx"
+    size: "{XLSX_SIZE}"
+    description: "Excel татах"
+source:
+  name: "{SOURCE_NAME_MN}"
+  url: "{SOURCE_URL}"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+import DataDownload from '~/components/ui/DataDownload.astro';
+
+{EXCERPT_MN}
+
+<VegaChart
+  spec="/charts/{CHART_SPEC}"
+  title="{CHART_TITLE_MN}"
+/>
+
+<DataDownload files={frontmatter.dataFiles} title="Өгөгдөл татах" />

@@ -1,0 +1,31 @@
+---
+title: "Weekly Fresh Milk Prices by Region in Mongolia (2024-2025)"
+publishDate: 2025-12-09
+excerpt: "Fresh milk prices in Mongolia averaged 4,275 MNT/liter as of December 2025, ranging from 3,500 MNT in Orkhon to 5,000 MNT in Umnugovi and Khovd."
+category: "Prices & Inflation"
+tags: ["mongolia", "prices", "milk", "dairy", "food", "weekly", "regional", "economy"]
+keywords: ["milk prices mongolia", "dairy prices", "food prices mongolia", "regional prices", "weekly prices"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-09
+dataFiles:
+  - path: "/datasets/weekly-milk-prices-aimags-all-en.csv"
+    format: "csv"
+    size: "52 KB"
+    description: "Download as CSV (all regions)"
+  - path: "/datasets/weekly-milk-prices-aimags.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_010V5.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/weekly-milk-prices-aimags-en.json"
+  title="Weekly Fresh Milk Prices by Region in Mongolia (2024-2025)"
+/>

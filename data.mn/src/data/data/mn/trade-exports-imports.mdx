@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын экспорт, импорт, сая ам.доллар (1924-2024)"
+publishDate: 2025-12-06
+excerpt: "Монгол Улсын экспорт болон импорт 1924-2024 онд. Гадаад худалдааны чиглэлийн задаргаа сая ам.доллараар."
+category: "Худалдаа"
+tags: ["монгол", "худалдаа", "эдийн засаг", "гадаад худалдаа", "экспорт", "импорт"]
+keywords: ["Mongolia exports", "Mongolia imports", "foreign trade", "trade balance"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-06
+dataFiles:
+  - path: "/datasets/trade-exports-imports-mn.csv"
+    format: "csv"
+    size: "4 KB"
+    description: "CSV татах"
+  - path: "/datasets/trade-exports-imports.xlsx"
+    format: "xlsx"
+    size: "1 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1400_001V1_year.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/trade-exports-imports-mn.json"
+  title="Монгол Улсын экспорт, импорт, сая ам.доллар (1924-2024)"
+/>

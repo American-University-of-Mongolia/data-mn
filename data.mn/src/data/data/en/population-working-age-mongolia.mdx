@@ -1,0 +1,30 @@
+---
+title: "Working Age Population of Mongolia (15-64)"
+publishDate: 2025-12-05
+excerpt: "Mongolia's working age population (15-64 years) grew from 535,831 in 1956 to 2,260,117 in 2024, a 4.2x increase."
+category: "Demographics"
+tags: ["mongolia", "population", "working age", "labor force", "demographics"]
+keywords: ["mongolia working age population", "labor force demographics", "population 15-64"]
+dataFiles:
+  - path: "/datasets/population-working-age-mongolia-en.csv"
+    format: "csv"
+    size: "527 B"
+    description: "Download as CSV"
+  - path: "/datasets/population-working-age-mongolia.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_003V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Mongolia's **working age population (15-64 years)** grew from **535,831 in 1956** to **2,260,117 in 2024**, representing a **4.2x increase** and comprising approximately 64% of the total population.
+
+<VegaChart
+  spec="/charts/population-working-age-mongolia-en.json"
+  title="Working Age Population of Mongolia (1956-2024)"
+/>

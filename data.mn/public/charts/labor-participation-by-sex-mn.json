@@ -1,0 +1,114 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын хөдөлмөрийн оролцооны түвшин хүйсээр (1992-2024)",
+  "data": {
+    "url": "/datasets/labor-participation-by-sex-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "axis": {
+        "title": "Он",
+        "format": "d",
+        "labelAngle": 0,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "утга",
+      "type": "quantitative",
+      "title": "Оролцооны түвшин (%)",
+      "axis": {
+        "format": ".1f"
+      }
+    },
+    "color": {
+      "field": "хүйс",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Эрэгтэй",
+          "Эмэгтэй"
+        ]
+      },
+      "legend": {
+        "title": "Хүйс",
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "type": "quantitative",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "хүйс",
+            "type": "nominal",
+            "title": "Хүйс"
+          },
+          {
+            "field": "утга",
+            "type": "quantitative",
+            "title": "Түвшин (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

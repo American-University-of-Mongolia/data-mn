@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын өрхийн сарын дундаж орлого, төгрөг (1997-2024)"
+publishDate: 2025-12-06
+excerpt: "Монгол Улсын өрхийн сарын дундаж орлого (төгрөгөөр) 1997-2024 онд, бараг гурван арван жилийн туршид тогтвортой өсөлтийг харуулж байна."
+category: "Өрх ба орлого"
+tags: ["монгол", "өрх", "орлого", "эдийн засаг", "статистик"]
+keywords: ["household income", "average income", "Mongolia income"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-06
+dataFiles:
+  - path: "/datasets/household-income-total-mn.csv"
+    format: "csv"
+    size: "410 B"
+    description: "CSV татах"
+  - path: "/datasets/household-income-total-mn.xlsx"
+    format: "xlsx"
+    size: "5.2 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1900_001V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/household-income-total-mn.json"
+  title="Монгол Улсын өрхийн сарын дундаж орлого, төгрөг (1997-2024)"
+/>

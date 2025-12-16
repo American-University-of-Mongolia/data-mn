@@ -1,0 +1,35 @@
+---
+title: "{TITLE_EN}"
+publishDate: {PUBLISH_DATE}
+excerpt: "{EXCERPT_EN}"
+category: "{CATEGORY}"
+tags: {TAGS_JSON}
+keywords: {KEYWORDS_JSON}
+author: "Data.mn"
+dataVersion: {VERSION}
+dataDate: {DATA_DATE}
+dataFiles:
+  - path: "/datasets/{DATASET_ID}.csv"
+    format: "csv"
+    size: "{CSV_SIZE}"
+    description: "Download as CSV"
+  - path: "/datasets/{DATASET_ID}.xlsx"
+    format: "xlsx"
+    size: "{XLSX_SIZE}"
+    description: "Open in Excel"
+source:
+  name: "{SOURCE_NAME}"
+  url: "{SOURCE_URL}"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+import DataDownload from '~/components/ui/DataDownload.astro';
+
+{EXCERPT_EN}
+
+<VegaChart
+  spec="/charts/{CHART_SPEC}"
+  title="{CHART_TITLE_EN}"
+/>
+
+<DataDownload files={frontmatter.dataFiles} />

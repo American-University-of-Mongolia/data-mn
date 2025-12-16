@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia's annual GDP growth rate from 1991 to 2024, showing economic expansion and contraction.",
+  "data": {
+    "url": "/datasets/gdp-growth-rate-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.year >= 1991"
+    }
+  ],
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "on": "pointerover",
+        "clear": "pointerout",
+        "nearest": true
+      }
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cursor": "pointer"
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 5,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "GDP Growth Rate (%)",
+      "axis": {
+        "format": ".1f"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "hover",
+        "empty": true,
+        "value": 1
+      },
+      "value": 0.7
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "title": "Year",
+        "format": "d"
+      },
+      {
+        "field": "value",
+        "title": "Growth Rate (%)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

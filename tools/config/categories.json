@@ -1,0 +1,110 @@
+{
+  "_description": "Canonical category definitions for data.mn. Edit this file to add/modify categories.",
+  "_usage": "This is the single source of truth for allowed categories. Validation scripts read from this file.",
+  "_updated": "2025-12-16",
+
+  "categories": [
+    {
+      "id": "economy",
+      "en": "Economy",
+      "mn": "Эдийн засаг",
+      "description": "GDP, national accounts, economic growth"
+    },
+    {
+      "id": "prices",
+      "en": "Prices & Inflation",
+      "mn": "Үнэ ба инфляци",
+      "description": "Consumer prices, inflation rates, commodity prices"
+    },
+    {
+      "id": "labor-market",
+      "en": "Labor Market",
+      "mn": "Хөдөлмөрийн зах зээл",
+      "description": "Employment, unemployment, wages, labor force participation"
+    },
+    {
+      "id": "trade",
+      "en": "Trade",
+      "mn": "Худалдаа",
+      "description": "Imports, exports, trade balance, trade partners"
+    },
+    {
+      "id": "finance",
+      "en": "Finance",
+      "mn": "Санхүү",
+      "description": "Banking, FDI, foreign reserves, remittances"
+    },
+    {
+      "id": "demographics",
+      "en": "Demographics",
+      "mn": "Хүн ам зүй",
+      "description": "Population, age distribution, migration, vital statistics"
+    },
+    {
+      "id": "household",
+      "en": "Household & Income",
+      "mn": "Өрх ба орлого",
+      "description": "Household income, expenditure, poverty, living standards"
+    },
+    {
+      "id": "agriculture",
+      "en": "Agriculture",
+      "mn": "Хөдөө аж ахуй",
+      "description": "Livestock, crops, farming, agricultural production"
+    },
+    {
+      "id": "mining",
+      "en": "Mining & Resources",
+      "mn": "Уул уурхай",
+      "description": "Coal, copper, gold, mineral extraction"
+    },
+    {
+      "id": "education",
+      "en": "Education",
+      "mn": "Боловсрол",
+      "description": "Schools, enrollment, literacy, educational attainment"
+    },
+    {
+      "id": "health",
+      "en": "Health",
+      "mn": "Эрүүл мэнд",
+      "description": "Healthcare, disease, mortality, health indicators"
+    },
+    {
+      "id": "infrastructure",
+      "en": "Infrastructure",
+      "mn": "Дэд бүтэц",
+      "description": "Housing, transport, energy, telecommunications"
+    }
+  ],
+
+  "aliases": {
+    "_description": "Maps old/variant category names to canonical IDs for backward compatibility",
+    "en": {
+      "Labor": "labor-market",
+      "Labour Market": "labor-market",
+      "Labour & Employment": "labor-market",
+      "Employment": "labor-market",
+      "Inflation": "prices",
+      "Consumer Prices": "prices",
+      "Housing": "infrastructure",
+      "Transport": "infrastructure",
+      "Energy": "infrastructure",
+      "Technology": "infrastructure",
+      "Tourism": "economy",
+      "Environment": "economy"
+    },
+    "mn": {
+      "Хөдөлмөр": "labor-market",
+      "Хөдөлмөр эрхлэлт": "labor-market",
+      "Хөдөлмөр ба Ажлын байр": "labor-market",
+      "Инфляци": "prices",
+      "Орон сууц": "infrastructure",
+      "Тээвэр": "infrastructure",
+      "Эрчим хүч": "infrastructure",
+      "Технологи": "infrastructure",
+      "Аялал жуулчлал": "economy",
+      "Байгаль орчин": "economy"
+    }
+  }
+}

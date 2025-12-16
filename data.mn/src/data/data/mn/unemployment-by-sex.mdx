@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын ажилгүйдлийн түвшин хүйсээр (2009-2024)"
+publishDate: 2025-12-06
+excerpt: "Монгол Улсын ажилгүйдлийн түвшин хүйсээр (эрэгтэй, эмэгтэй) ангилсан 2009-2024 онд."
+category: "Хөдөлмөрийн зах зээл"
+tags: ["монгол", "ажилгүйдэл", "эдийн засаг", "хөдөлмөр", "хүйс", "хөдөлмөрийн зах зээл"]
+keywords: ["mongolia unemployment rate", "unemployment by sex", "gender labor market", "male female unemployment"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-06
+dataFiles:
+  - path: "/datasets/unemployment-by-sex-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/unemployment-by-sex-mn.xlsx"
+    format: "xlsx"
+    size: "5.0 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0400_049V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/unemployment-by-sex-mn.json"
+  title="Монгол Улсын ажилгүйдлийн түвшин хүйсээр (2009-2024)"
+/>

@@ -1,0 +1,31 @@
+---
+title: "Mongolia Foreign Direct Investment, Net, Million USD (2009-2025)"
+publishDate: 2025-12-09
+excerpt: "Net foreign direct investment outflow was $158.9M in September 2025, reflecting ongoing capital movements in the mining sector."
+category: "Finance"
+tags: ["mongolia", "balance-of-payments", "economy"]
+keywords: ['Mongolia FDI', 'foreign direct investment', 'mining investment', 'capital flows']
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-09
+dataFiles:
+  - path: "/datasets/bop-fdi-net-en.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "Download as CSV"
+  - path: "/datasets/bop-fdi-net.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0100_001V10.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/bop-fdi-net-en.json"
+  title="Mongolia Foreign Direct Investment, Net, Million USD (2009-2025)"
+/>

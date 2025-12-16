@@ -1,0 +1,31 @@
+---
+title: "Mongolia Average Monthly Salary, MNT (2001-2024)"
+publishDate: 2025-12-06
+excerpt: "Mongolia's average monthly salary has grown from 65,200 MNT in 2001 to 2,332,400 MNT in 2024, showing significant wage growth over two decades."
+category: "Labor Market"
+tags: ["mongolia", "salary", "wages", "economy", "labor", "average", "national", "statistics"]
+keywords: ["mongolia salary", "average wage", "monthly salary", "labor statistics"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-06
+dataFiles:
+  - path: "/datasets/salary-average-national-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/salary-average-national.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0400_022V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/salary-average-national-en.json"
+  title="Mongolia Average Monthly Salary, MNT (2001-2024)"
+/>

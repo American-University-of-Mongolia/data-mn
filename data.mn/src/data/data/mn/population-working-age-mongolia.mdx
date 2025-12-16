@@ -1,0 +1,30 @@
+---
+title: "Монгол Улсын ажиллах насны хүн ам (15-64)"
+publishDate: 2025-12-05
+excerpt: "Монгол Улсын ажиллах насны хүн ам (15-64 нас) 1956 оны 535,831-ээс 2024 онд 2,260,117 болж 4.2 дахин өссөн байна."
+category: "Хүн ам зүй"
+tags: ["монгол", "хүн ам", "хөдөлмөрийн нас", "ажиллах хүч", "хүн ам зүй"]
+keywords: ["монгол ажиллах насны хүн ам", "хөдөлмөрийн нөөц", "15-64 насны хүн ам"]
+dataFiles:
+  - path: "/datasets/population-working-age-mongolia-mn.csv"
+    format: "csv"
+    size: "527 B"
+    description: "CSV татах"
+  - path: "/datasets/population-working-age-mongolia.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_003V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Монгол Улсын **ажиллах насны хүн ам (15-64 нас)** **1956 оны 535,831-ээс 2024 онд 2,260,117 болж** **4.2 дахин өссөн** бөгөөд нийт хүн амын ойролцоогоор 64%-ийг эзэлж байна.
+
+<VegaChart
+  spec="/charts/population-working-age-mongolia-mn.json"
+  title="Монгол Улсын ажиллах насны хүн ам (1956-2024)"
+/>

@@ -1,0 +1,31 @@
+---
+title: "Mongolia Annual Inflation Rate (1991-2024)"
+publishDate: 2024-12-06
+excerpt: "Mongolia's inflation rate was 9.0% at the end of 2024. The country experienced hyperinflation in the early 1990s, reaching 325.5% in 1992."
+category: "Prices & Inflation"
+tags: ["mongolia", "inflation", "economy", "cpi", "prices"]
+keywords: ["mongolia inflation rate", "consumer prices", "price index", "inflation mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-12-06
+dataFiles:
+  - path: "/datasets/inflation-annual-en.csv"
+    format: "csv"
+    size: "336 B"
+    description: "Download as CSV"
+  - path: "/datasets/inflation-annual.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0600_013V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/inflation-annual-en.json"
+  title="Mongolia Annual Inflation Rate (1991-2024)"
+/>

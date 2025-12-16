@@ -1,0 +1,31 @@
+---
+title: "Average Monthly Salary by Economic Sector, MNT (2024)"
+publishDate: 2025-12-06
+excerpt: "Mining sector leads with 4.9 million MNT average salary, followed by extraterritorial organizations at 4.8 million MNT in 2024."
+category: "Labor Market"
+tags: ["mongolia", "salary", "wages", "economy", "sector", "industry", "2024"]
+keywords: ["mongolia salary by sector", "industry wages", "sector comparison"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-06
+dataFiles:
+  - path: "/datasets/salary-by-sector-2024-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/salary-by-sector-2024.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0400_022V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/salary-by-sector-2024-en.json"
+  title="Average Monthly Salary by Economic Sector, MNT (2024)"
+/>

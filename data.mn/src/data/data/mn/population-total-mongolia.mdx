@@ -1,0 +1,30 @@
+---
+title: "Монгол Улсын нийт хүн ам"
+publishDate: 2025-12-05
+excerpt: "Монгол Улсын хүн ам 1956 оны 845,481-ээс 2024 онд 3,544,835 болж 68 жилийн хугацаанд 4.2 дахин өссөн байна."
+category: "Хүн ам зүй"
+tags: ["монгол", "хүн ам", "хүн ам зүй", "тооллого"]
+keywords: ["монгол хүн ам", "хүн амын өсөлт", "нийт хүн ам", "хүн ам зүйн чиг хандлага"]
+dataFiles:
+  - path: "/datasets/population-total-mongolia-mn.csv"
+    format: "csv"
+    size: "530 B"
+    description: "CSV татах"
+  - path: "/datasets/population-total-mongolia.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_003V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Монгол Улсын хүн ам **1956 оны 845,481-ээс 2024 онд 3,544,835 болж** 68 жилийн хугацаанд **4.2 дахин өссөн** байна.
+
+<VegaChart
+  spec="/charts/population-total-mongolia-mn.json"
+  title="Монгол Улсын нийт хүн ам (1956-2024)"
+/>

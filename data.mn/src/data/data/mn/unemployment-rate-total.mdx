@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын ажилгүйдлийн түвшин, хувь (2009-2024)"
+publishDate: 2025-12-07
+excerpt: "Монгол Улсын нийт ажилгүйдлийн түвшин 2009-2024 онд, хөдөлмөрийн зах зээлийн чиг хандлагыг харуулсан."
+category: "Хөдөлмөрийн зах зээл"
+tags: ["монгол", "ажилгүйдэл", "эдийн засаг", "хөдөлмөр", "хөдөлмөрийн зах зээл"]
+keywords: ["mongolia unemployment rate", "jobless rate", "labor market", "employment"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-07
+dataFiles:
+  - path: "/datasets/unemployment-rate-total-mn.csv"
+    format: "csv"
+    size: "310 B"
+    description: "CSV татах"
+  - path: "/datasets/unemployment-rate-total.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0400_049V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/unemployment-rate-total-mn.json"
+  title="Монгол Улсын ажилгүйдлийн түвшин, хувь (2009-2024)"
+/>

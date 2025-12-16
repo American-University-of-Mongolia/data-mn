@@ -1,0 +1,90 @@
+---
+/**
+ * Sparkline - Simple SVG sparkline chart component
+ *
+ * Usage:
+ * <Sparkline data={[10, 20, 15, 25, 30, 22, 35]} color="#2563eb" />
+ */
+
+interface Props {
+  data: number[];
+  width?: number;
+  height?: number;
+  color?: string;
+  strokeWidth?: number;
+  showArea?: boolean;
+  class?: string;
+}
+
+const {
+  data,
+  width = 100,
+  height = 40,
+  color = '#2563eb',
+  strokeWidth = 2,
+  showArea = true,
+  class: className = '',
+} = Astro.props;
+
+// Calculate the SVG path for the sparkline
+const padding = 0;
+const chartWidth = width - padding * 2;
+const chartHeight = height - padding * 2;
+
+const min = Math.min(...data);
+const max = Math.max(...data);
+const range = max - min || 1;
+
+// Generate points
+const points = data.map((value, index) => {
+  const x = padding + (index / (data.length - 1)) * chartWidth;
+  const y = padding + chartHeight - ((value - min) / range) * chartHeight;
+  return { x, y };
+});
+
+// Create the line path
+const linePath = points.map((point, i) => (i === 0 ? `M ${point.x},${point.y}` : `L ${point.x},${point.y}`)).join(' ');
+
+// Create the area path (for gradient fill)
+const areaPath = linePath + ` L ${points[points.length - 1].x},${height} L 0,${height} Z`;
+
+// Unique ID for gradient
+const gradientId = `sparkline-gradient-${Math.random().toString(36).substr(2, 9)}`;
+---
+
+<svg
+  viewBox={`0 0 ${width} ${height}`}
+  class:list={['sparkline', className]}
+  preserveAspectRatio="none"
+>
+  <defs>
+    <linearGradient id={gradientId} x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style={`stop-color: ${color}; stop-opacity: 0.3`} />
+      <stop offset="100%" style={`stop-color: ${color}; stop-opacity: 0.05`} />
+    </linearGradient>
+  </defs>
+
+  {showArea && (
+    <path
+      d={areaPath}
+      fill={`url(#${gradientId})`}
+    />
+  )}
+
+  <path
+    d={linePath}
+    fill="none"
+    stroke={color}
+    stroke-width={strokeWidth}
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+<style>
+  .sparkline {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>

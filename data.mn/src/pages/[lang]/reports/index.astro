@@ -1,0 +1,83 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '~/layouts/PageLayout.astro';
+import GridCards from '~/components/blog/GridCards.astro';
+import Headline from '~/components/blog/Headline.astro';
+import CategoryFilter from '~/components/ui/CategoryFilter.astro';
+import { getLangFromUrl, useTranslations, type Language } from '~/i18n';
+
+export const prerender = true;
+
+export const getStaticPaths = () => {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'mn' } },
+  ];
+};
+
+const { lang } = Astro.params;
+const currentLang = (lang as Language) || 'en';
+const t = useTranslations(currentLang);
+
+// Get all reports for the current language
+const allReports = await getCollection('reports', ({ id, data }) =>
+  id.startsWith(`${currentLang}/`) && data.draft !== true
+);
+
+// Sort by publish date, most recent first
+const sortedReports = allReports.sort((a, b) => {
+  const dateA = a.data.publishDate ? new Date(a.data.publishDate).valueOf() : 0;
+  const dateB = b.data.publishDate ? new Date(b.data.publishDate).valueOf() : 0;
+  return dateB - dateA;
+});
+
+// Extract unique categories for filter
+const categories = [...new Set(sortedReports.map((item) => item.data.category).filter(Boolean))];
+
+// Transform to format expected by GridCards component
+const posts = sortedReports.map((item) => {
+  // Extract slug from ID by removing language prefix and extension
+  const slug = item.id.replace(/^(en|mn)\//, '').replace(/\.mdx?$/, '');
+
+  return {
+    id: item.id,
+    slug: slug,
+    permalink: `/${currentLang}/reports/${slug}`,
+    publishDate: item.data.publishDate || new Date(),
+    updateDate: item.data.updateDate,
+    title: item.data.title,
+    excerpt: item.data.excerpt,
+    image: item.data.image,
+    category: item.data.category ? { slug: item.data.category, title: item.data.category } : undefined,
+    tags: item.data.tags?.map((tag) => ({ slug: tag, title: tag })) || [],
+    author: item.data.author,
+    draft: item.data.draft || false,
+    metadata: item.data.metadata || {},
+  };
+});
+
+const metadata = {
+  title: t('nav.reports'),
+  description: currentLang === 'en'
+    ? 'In-depth analytical reports and research papers on various topics.'
+    : 'Олон сэдвээр гүнзгий шинжилгээ, судалгааны тайлан',
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+const allLabel = currentLang === 'en' ? 'All' : 'Бүгд';
+---
+
+<Layout metadata={metadata}>
+  <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-5xl">
+    <Headline subtitle={currentLang === 'en'
+      ? 'In-depth analytical reports and research papers'
+      : 'Гүнзгий шинжилгээ, судалгааны тайлан'}>
+      {t('nav.reports')}
+    </Headline>
+    <CategoryFilter categories={categories} allLabel={allLabel} />
+    <GridCards posts={posts} showCategory={true} showTags={true} contentType="reports" />
+  </section>
+</Layout>

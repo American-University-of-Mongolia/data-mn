@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia Unemployment Rate by Sex (2009-2024)",
+  "data": {
+    "url": "/datasets/unemployment-by-sex-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "timeUnit": "year",
+      "axis": {
+        "title": "Year",
+        "format": "%Y",
+        "labelAngle": 0,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {
+        "title": "Unemployment Rate (%)"
+      },
+      "scale": {
+        "zero": false
+      }
+    },
+    "color": {
+      "field": "Category",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Male",
+          "Female"
+        ]
+      },
+      "legend": {
+        "title": "Sex",
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Year",
+            "type": "temporal",
+            "timeUnit": "year",
+            "title": "Year",
+            "format": "%Y"
+          },
+          {
+            "field": "Category",
+            "type": "nominal",
+            "title": "Sex"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Unemployment Rate",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

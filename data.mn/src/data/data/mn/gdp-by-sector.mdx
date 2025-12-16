@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын ДНБ эдийн засгийн салбараар (2024)"
+publishDate: 2025-12-03
+excerpt: "Уул уурхай нь 2024 онд Монголын эдийн засгийг тэргүүлж, ДНБ-ий 27%-ийг буюу 22 их наяд төгрөгийг бүрдүүлж, дараа нь бөөний/жижиглэн худалдаа 8.8 их наяд, цэвэр татвар 8.2 их наяд төгрөг байна."
+category: "Эдийн засаг"
+tags: ["монгол", "днб", "эдийн засаг", "салбар"]
+keywords: ["монгол днб салбараар", "эдийн засгийн салбар", "днб хуваарилалт"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-03
+dataFiles:
+  - path: "/datasets/gdp-by-sector-mn.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "CSV татах"
+  - path: "/datasets/gdp-by-sector.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0500_001V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/gdp-by-sector-mn.json"
+  title="Монгол Улсын ДНБ эдийн засгийн салбараар (2024)"
+/>

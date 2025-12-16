@@ -1,0 +1,31 @@
+---
+title: "Mongolia Current Account Balance, Million USD (2009-2025)"
+publishDate: 2025-12-09
+excerpt: "Mongolia's current account recorded a surplus of $244.1 million in September 2025, reflecting strong export performance in goods trade."
+category: "Finance"
+tags: ["mongolia", "balance-of-payments", "current-account", "economy", "trade"]
+keywords: ["Mongolia current account", "balance of payments", "trade balance", "current account deficit", "current account surplus"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-09
+dataFiles:
+  - path: "/datasets/bop-current-account-en.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "Download as CSV"
+  - path: "/datasets/bop-current-account.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0100_001V10.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/bop-current-account-en.json"
+  title="Mongolia Current Account Balance, Million USD (2009-2025)"
+/>

@@ -1,0 +1,28 @@
+---
+/**
+ * MongoliaMap - SVG map of Mongolia for decorative use
+ *
+ * Usage:
+ * <MongoliaMap class="w-full h-auto opacity-20" />
+ */
+
+interface Props {
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props;
+---
+
+<img
+  src="/images/mongolia-map.svg"
+  alt=""
+  aria-hidden="true"
+  class:list={['mongolia-map', className]}
+/>
+
+<style>
+  .mongolia-map {
+    display: block;
+    object-fit: contain;
+  }
+</style>

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "2024 оны Монгол Улсын хүн амын пирамид. Хүн амын нас, хүйсний бүтцийг харуулна.",
+  "data": {
+    "url": "/datasets/population-pyramid-mongolia-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.sex === 'Эрэгтэй' ? -datum.value : datum.value",
+      "as": "signed_population"
+    }
+  ],
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "on": "pointerover",
+        "clear": "pointerout",
+        "nearest": true
+      }
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cursor": "pointer"
+  },
+  "encoding": {
+    "y": {
+      "field": "насны_бүлэг",
+      "type": "ordinal",
+      "title": "Насны бүлэг",
+      "sort": [
+        "0-4",
+        "5-9",
+        "10-14",
+        "15-19",
+        "20-24",
+        "25-29",
+        "30-34",
+        "35-39",
+        "40-44",
+        "45-49",
+        "50-54",
+        "55-59",
+        "60-64",
+        "65-69",
+        "70+"
+      ]
+    },
+    "x": {
+      "field": "signed_population",
+      "type": "quantitative",
+      "title": "Хүн ам",
+      "axis": {
+        "format": ".2s",
+        "labelExpr": "abs(datum.value) >= 1000000 ? format(abs(datum.value) / 1000000, '.1f') + 'М' : format(abs(datum.value) / 1000, '.0f') + 'М'",
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "хүйс",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Эрэгтэй",
+          "Эмэгтэй"
+        ]
+      },
+      "legend": {
+        "title": "Хүйс",
+        "orient": "top"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "hover",
+        "empty": true,
+        "value": 1
+      },
+      "value": 0.7
+    },
+    "tooltip": [
+      {
+        "field": "насны_бүлэг",
+        "title": "Насны бүлэг"
+      },
+      {
+        "field": "хүйс",
+        "title": "Хүйс"
+      },
+      {
+        "field": "утга",
+        "title": "Хүн ам",
+        "format": ","
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

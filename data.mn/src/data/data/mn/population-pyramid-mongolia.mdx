@@ -1,0 +1,30 @@
+---
+title: "Монгол Улсын хүн амын пирамид"
+publishDate: 2025-12-05
+excerpt: "2024 оны Монгол Улсын хүн амын пирамид харьцангуй залуу хүн амыг харуулж байгаа бөгөөд 30-44 насны бүлэг хамгийн том хэсгийг эзэлж байна."
+category: "Хүн ам зүй"
+tags: ["монгол", "хүн ам", "насны бүтэц", "пирамид", "хүн ам зүй"]
+keywords: ["монгол хүн амын пирамид", "насны бүтэц", "хүн ам зүйн бүтэц"]
+dataFiles:
+  - path: "/datasets/population-pyramid-mongolia-mn.csv"
+    format: "csv"
+    size: "839 B"
+    description: "CSV татах"
+  - path: "/datasets/population-pyramid-mongolia.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_003V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+**2024 оны Монгол Улсын хүн амын пирамид** харьцангуй залуу хүн амыг харуулж байгаа бөгөөд **30-44 насны бүлэг хамгийн том** хэсгийг эзэлж байна.
+
+<VegaChart
+  spec="/charts/population-pyramid-mongolia-mn.json"
+  title="Монгол Улсын хүн амын пирамид (2024)"
+/>

@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын мал төрлөөр, сая толгой (1970-2024)"
+publishDate: 2025-12-06
+excerpt: "Монгол Улсын малын тоо төрлөөр (адуу, үхэр, тэмээ, хонь, ямаа) 1970-2024 он. Үндэсний сүргийн бүрэлдэхүүнийг харуулж байна."
+category: "Хөдөө аж ахуй"
+tags: ["монгол", "мал аж ахуй", "хөдөө аж ахуй", "адуу", "үхэр", "тэмээ", "хонь", "ямаа"]
+keywords: ["livestock types", "horse", "cattle", "camel", "sheep", "goat"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-06
+dataFiles:
+  - path: "/datasets/livestock-by-type-mn.csv"
+    format: "csv"
+    size: "10 KB"
+    description: "CSV татах"
+  - path: "/datasets/livestock-by-type.xlsx"
+    format: "xlsx"
+    size: "1 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1001_109V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/livestock-by-type-mn.json"
+  title="Монгол Улсын мал төрлөөр, сая толгой (1970-2024)"
+/>

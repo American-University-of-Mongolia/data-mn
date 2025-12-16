@@ -1,0 +1,245 @@
+{
+  "version": "2.0",
+  "class": "dataset",
+  "label": "INFLATION RATE by Indicator and Year",
+  "source": "Consumer price survey of National Statistics Office",
+  "updated": "2024-01-10T00:00:00Z",
+  "note": [
+    "It is a measure of the average change in prices over time fixed in terms of quantity and quality of goods and services purchased either by all consumers. The CPI reflects the collective experience of inflation for all households in a particular expenditure range.",
+    "Methodology for Consumer price index (Order No. A/131 of Chairperson of NSO, 19 August 2022)"
+  ],
+  "id": [
+    "Үзүүлэлт",
+    "Он"
+  ],
+  "size": [
+    2,
+    34
+  ],
+  "dimension": {
+    "ContentsCode": {
+      "label": "EliminatedContents",
+      "category": {
+        "index": {
+          "EliminatedValue": 0
+        },
+        "label": {
+          "EliminatedValue": "INFLATION RATE"
+        },
+        "unit": {
+          "EliminatedValue": {
+            "base": "%",
+            "decimals": 1
+          }
+        }
+      },
+      "extension": {
+        "elimination": true
+      }
+    },
+    "Үзүүлэлт": {
+      "label": "Indicator",
+      "category": {
+        "index": {
+          "0": 0,
+          "1": 1
+        },
+        "label": {
+          "0": "Inflation rate, at the end of the year",
+          "1": "Inflation rate, average of the year"
+        }
+      },
+      "extension": {
+        "elimination": false,
+        "show": "value"
+      }
+    },
+    "Он": {
+      "label": "Year",
+      "category": {
+        "index": {
+          "0": 0,
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 5,
+          "6": 6,
+          "7": 7,
+          "8": 8,
+          "9": 9,
+          "10": 10,
+          "11": 11,
+          "12": 12,
+          "13": 13,
+          "14": 14,
+          "15": 15,
+          "16": 16,
+          "17": 17,
+          "18": 18,
+          "19": 19,
+          "20": 20,
+          "21": 21,
+          "22": 22,
+          "23": 23,
+          "24": 24,
+          "25": 25,
+          "26": 26,
+          "27": 27,
+          "28": 28,
+          "29": 29,
+          "30": 30,
+          "31": 31,
+          "32": 32,
+          "33": 33
+        },
+        "label": {
+          "0": "2024",
+          "1": "2023",
+          "2": "2022",
+          "3": "2021",
+          "4": "2020",
+          "5": "2019",
+          "6": "2018",
+          "7": "2017",
+          "8": "2016",
+          "9": "2015",
+          "10": "2014",
+          "11": "2013",
+          "12": "2012",
+          "13": "2011",
+          "14": "2010",
+          "15": "2009",
+          "16": "2008",
+          "17": "2007",
+          "18": "2006",
+          "19": "2005",
+          "20": "2004",
+          "21": "2003",
+          "22": "2002",
+          "23": "2001",
+          "24": "2000",
+          "25": "1999",
+          "26": "1998",
+          "27": "1997",
+          "28": "1996",
+          "29": "1995",
+          "30": "1994",
+          "31": "1993",
+          "32": "1992",
+          "33": "1991"
+        }
+      },
+      "extension": {
+        "elimination": false,
+        "show": "value"
+      }
+    }
+  },
+  "extension": {
+    "noteMandatory": {
+      "0": true
+    },
+    "px": {
+      "tableid": "DT_NSO_0600_013V2",
+      "decimals": 1,
+      "official-statistics": false,
+      "aggregallowed": true,
+      "language": "mn",
+      "matrix": "DT_NSO_0600_013V2",
+      "subject-code": "DT_NSO_0600_013V2"
+    },
+    "contact": [
+      {
+        "raw": "The modified Laspeyres index is used for the compilation of the CPI.csv"
+      }
+    ]
+  },
+  "value": [
+    9,
+    7.9,
+    13.2,
+    13.8,
+    2.3,
+    5.2,
+    8.1,
+    6.4,
+    1.3,
+    1.9,
+    11,
+    12.5,
+    14,
+    8.9,
+    13,
+    4.2,
+    22.1,
+    17.8,
+    6.2,
+    9.5,
+    11,
+    4.7,
+    1.6,
+    8,
+    8.1,
+    10,
+    6,
+    20.5,
+    44.6,
+    53.1,
+    66.3,
+    183,
+    325.5,
+    52.7,
+    6.8,
+    10.4,
+    15.2,
+    7.3,
+    3.7,
+    7.3,
+    6.8,
+    4.3,
+    0.7,
+    6.6,
+    12.8,
+    10.5,
+    14.3,
+    9.2,
+    10.1,
+    8,
+    28,
+    9.6,
+    4.3,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "status": {
+    "53": "..",
+    "54": "..",
+    "55": "..",
+    "56": "..",
+    "57": "..",
+    "58": "..",
+    "59": "..",
+    "60": "..",
+    "61": "..",
+    "62": "..",
+    "63": "..",
+    "64": "..",
+    "65": "..",
+    "66": "..",
+    "67": ".."
+  }
+}

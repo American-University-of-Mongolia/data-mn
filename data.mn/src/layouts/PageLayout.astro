@@ -1,0 +1,102 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import Header from '~/components/widgets/Header.astro';
+import Footer from '~/components/widgets/Footer.astro';
+import Announcement from '~/components/widgets/Announcement.astro';
+
+import { UI } from 'astrowind:config';
+import { getLangFromUrl, useTranslations, type Language } from '~/i18n';
+import { getAsset } from '~/utils/permalinks';
+
+import type { MetaData } from '~/types';
+
+export interface Props {
+  metadata?: MetaData;
+  lang?: Language;
+}
+
+const { metadata, lang: propLang } = Astro.props;
+const showAnnouncement = UI?.showAnnouncement ?? false;
+
+// Detect language from URL or use prop
+const urlLang = getLangFromUrl(Astro.url);
+const currentLang = propLang || urlLang;
+const t = useTranslations(currentLang);
+
+// Language-aware home URL
+const homeUrl = `/${currentLang}`;
+
+// Generate language-aware header navigation
+const headerData = {
+  links: [
+    {
+      text: t('nav.data'),
+      href: `/${currentLang}/data`,
+    },
+    // TEMPORARILY HIDDEN - Reports section
+    // {
+    //   text: t('nav.reports'),
+    //   href: `/${currentLang}/reports`,
+    // },
+    {
+      text: t('nav.insights'),
+      href: `/${currentLang}/insights`,
+    },
+    {
+      text: t('nav.about'),
+      href: `/${currentLang}/about`,
+    },
+  ],
+  actions: [{ text: t('nav.search'), href: `/${currentLang}/search`, icon: 'tabler:search' }],
+};
+
+// Generate language-aware footer data
+const footerData = {
+  links: [
+    {
+      title: t('footer.content'),
+      links: [
+        { text: t('nav.data'), href: `/${currentLang}/data` },
+        // TEMPORARILY HIDDEN - Reports section
+        // { text: t('nav.reports'), href: `/${currentLang}/reports` },
+        { text: t('nav.insights'), href: `/${currentLang}/insights` },
+        { text: t('nav.search'), href: `/${currentLang}/search` },
+      ],
+    },
+    {
+      title: t('footer.resources'),
+      links: [
+        { text: t('nav.about'), href: `/${currentLang}/about` },
+        { text: t('footer.contact'), href: `/${currentLang}/contact` },
+        { text: t('footer.changelog'), href: `/${currentLang}/changelog` },
+        { text: t('footer.terms'), href: `/${currentLang}/terms` },
+        { text: t('footer.privacy'), href: `/${currentLang}/privacy` },
+      ],
+    },
+  ],
+  secondaryLinks: [],
+  socialLinks: [
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
+  ],
+  footNote: `Data.mn · ${t('footer.allRightsReserved')}.`,
+};
+---
+
+<Layout metadata={metadata}>
+  {showAnnouncement && (
+    <slot name="announcement">
+      <Announcement />
+    </slot>
+  )}
+  <slot name="header">
+    <Header {...headerData} lang={currentLang} homeUrl={homeUrl} isSticky showToggleTheme />
+  </slot>
+  <main>
+    <slot />
+  </main>
+  <slot name="footer">
+    <Footer {...footerData} />
+  </slot>
+</Layout>

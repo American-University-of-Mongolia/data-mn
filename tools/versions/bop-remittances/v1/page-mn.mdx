@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын хувийн гуйвуулга, сая ам.доллар (2009-2025)"
+publishDate: 2025-12-09
+excerpt: "Хувийн гуйвуулгын цэвэр гарах урсгал 2025 оны 9-р сард 4.7 сая ам.доллар байсан нь гадаадад буй Монгол иргэд болон тэдний гэр бүлийн хоорондын шилжүүлгийг харуулж байна."
+category: "Санхүү"
+tags: ["монгол", "төлбөрийн тэнцэл", "эдийн засаг", "гуйвуулга", "шилжүүлэг"]
+keywords: ['Монгол гуйвуулга', 'хувийн шилжүүлэг', 'мөнгөн гуйвуулга']
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-09
+dataFiles:
+  - path: "/datasets/bop-remittances-mn.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "CSV татах"
+  - path: "/datasets/bop-remittances.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0100_001V10.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/bop-remittances-mn.json"
+  title="Монгол Улсын хувийн гуйвуулга, сая ам.доллар (2009-2025)"
+/>

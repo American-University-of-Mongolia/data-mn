@@ -1,0 +1,30 @@
+# Name of your application. Used to uniquely configure containers.
+service: datamn
+
+# Name of the container image.
+image: robertritz/datamn
+
+# Deploy to these servers.
+servers:
+  - 78.46.40.253
+
+# Credentials for your image host.
+registry:
+  username: robertritz
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+
+# Configure builder setup.
+builder:
+  arch: amd64
+
+# Proxy configuration for SSL and routing.
+proxy:
+  app_port: 8080
+  hosts:
+    - data.mn
+    - www.data.mn
+  ssl: true
+  forward_headers: true
+  healthcheck:
+    path: /

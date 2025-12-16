@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын 4 аймгийн (Дархан-Уул, Орхон, Өмнөговь, Ховд) хонины мах долоо хоногийн үнэ, 2024 оны 1 сараас.",
+  "data": {
+    "url": "/datasets/weekly-mutton-prices-aimags-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "title": "Огноо",
+      "axis": {
+        "format": "%b %Y",
+        "tickCount": 12,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "үнэ",
+      "type": "quantitative",
+      "title": "Үнэ (₮/кг)",
+      "axis": {
+        "format": ",.0f"
+      }
+    },
+    "color": {
+      "field": "бүс",
+      "type": "nominal",
+      "legend": {
+        "title": "Аймаг",
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "бүс",
+            "title": "Аймаг"
+          },
+          {
+            "field": "огноо",
+            "title": "Огноо",
+            "type": "temporal",
+            "format": "%Y-%m-%d"
+          },
+          {
+            "field": "үнэ",
+            "title": "Үнэ (₮/кг)",
+            "format": ",.0f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

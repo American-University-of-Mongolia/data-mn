@@ -1,0 +1,31 @@
+---
+title: "Сарын дундаж цалин эдийн засгийн салбараар, төгрөг (2024)"
+publishDate: 2025-12-06
+excerpt: "Уул уурхай салбар 4.9 сая төгрөгийн дундаж цалинтай тэргүүлж, олон улсын байгууллагууд 4.8 сая төгрөгтэй 2024 онд."
+category: "Хөдөлмөрийн зах зээл"
+tags: ["монгол", "цалин", "хөлс", "эдийн засаг", "салбар", "үйлдвэрлэл", "2024"]
+keywords: ["mongolia salary by sector", "industry wages", "sector comparison"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-06
+dataFiles:
+  - path: "/datasets/salary-by-sector-2024-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/salary-by-sector-2024.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0400_022V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/salary-by-sector-2024-mn.json"
+  title="Сарын дундаж цалин эдийн засгийн салбараар, төгрөг (2024)"
+/>

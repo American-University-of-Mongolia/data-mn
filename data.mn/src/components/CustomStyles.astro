@@ -1,0 +1,95 @@
+---
+import '@fontsource-variable/inter';
+import '@fontsource-variable/golos-text';
+
+// Typography notes:
+// - Golos Text: Designed by Paratype for Russian/Cyrillic government websites
+//   Excellent Cyrillic support, authoritative yet readable
+// - Inter: Great for body text and UI at small sizes
+//
+// Color palette inspired by Mongolian symbolism:
+// - Primary Blue: Хөх тэнгэр (Eternal Blue Sky)
+// - Secondary Gold: Soyombo symbol, prosperity
+// - Accent Earth: Steppe earth tones, traditional red
+---
+
+<style is:inline>
+  :root {
+    /* Typography: Golos for headings, Inter for body */
+    --aw-font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+    --aw-font-serif: 'Inter Variable', ui-serif, Georgia, serif;
+    --aw-font-heading: 'Golos Text Variable', 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+    /* Mongolian-inspired color palette */
+    /* Primary: Eternal Blue Sky (Хөх тэнгэр) - indigo-shifted to differentiate from Inside Mongolia */
+    --aw-color-primary: rgb(37 99 235);
+    --aw-color-primary-light: rgb(59 130 246);
+    --aw-color-primary-dark: rgb(29 78 216);
+
+    /* Secondary: Soyombo Gold */
+    --aw-color-secondary: rgb(212 175 55);
+    --aw-color-secondary-light: rgb(232 201 103);
+
+    /* Accent: Steppe Earth Red */
+    --aw-color-accent: rgb(166 77 52);
+    --aw-color-accent-alt: rgb(139 90 43);
+
+    /* Chart/data visualization colors - unified with primary palette */
+    --aw-color-chart-1: rgb(37 99 235);
+    --aw-color-chart-2: rgb(236 72 153);
+    --aw-color-chart-3: rgb(16 185 129);
+    --aw-color-chart-4: rgb(245 158 11);
+    --aw-color-chart-5: rgb(139 92 246);
+
+    /* Text colors */
+    --aw-color-text-heading: rgb(0 0 0);
+    --aw-color-text-default: rgb(16 16 16);
+    --aw-color-text-muted: rgb(16 16 16 / 66%);
+
+    /* Backgrounds */
+    --aw-color-bg-page: rgb(255 255 255);
+    --aw-color-bg-page-dark: rgb(3 6 32);
+
+    ::selection {
+      background-color: rgb(212 175 55 / 30%);
+    }
+  }
+
+  .dark {
+    /* Typography (same fonts, just restated for clarity) */
+    --aw-font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+    --aw-font-serif: 'Inter Variable', ui-serif, Georgia, serif;
+    --aw-font-heading: 'Golos Text Variable', 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+    /* Adjusted colors for dark mode visibility - lightened for contrast */
+    --aw-color-primary: rgb(96 165 250);
+    --aw-color-primary-light: rgb(147 197 253);
+    --aw-color-primary-dark: rgb(59 130 246);
+
+    --aw-color-secondary: rgb(232 201 103);
+    --aw-color-secondary-light: rgb(245 220 140);
+
+    --aw-color-accent: rgb(217 119 97);
+    --aw-color-accent-alt: rgb(180 130 80);
+
+    /* Chart colors - brightened for dark mode visibility */
+    --aw-color-chart-1: rgb(96 165 250);
+    --aw-color-chart-2: rgb(244 114 182);
+    --aw-color-chart-3: rgb(52 211 153);
+    --aw-color-chart-4: rgb(251 191 36);
+    --aw-color-chart-5: rgb(167 139 250);
+
+    /* Text colors */
+    --aw-color-text-heading: rgb(247 248 248);
+    --aw-color-text-default: rgb(229 236 246);
+    --aw-color-text-muted: rgb(229 236 246 / 66%);
+
+    /* Background */
+    --aw-color-bg-page: rgb(3 6 32);
+
+    ::selection {
+      background-color: rgb(96 165 250 / 40%);
+      color: snow;
+    }
+  }
+</style>

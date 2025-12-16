@@ -1,0 +1,23 @@
+# Data.mn Conda Environment
+#
+# Create environment:
+#   conda env create -f environment.yml
+#
+# Activate:
+#   conda activate datamn
+#
+# Update environment:
+#   conda env update -f environment.yml
+
+name: datamn
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - requests>=2.31
+  - pandas>=2.1
+  - openpyxl>=3.1
+  - pip:
+    - pdfplumber>=0.10.0

@@ -1,0 +1,31 @@
+---
+title: "Гурилын долоо хоногийн үнэ, бүсээр (2024-2025)"
+publishDate: 2025-12-09
+excerpt: "Монгол Улсын гурилын дундаж үнэ 2025 оны 12 сарын байдлаар 2,635 төг/кг байсан бөгөөд Орхонд 2,367 төг, Ховдод 3,000 төг байв."
+category: "Үнэ ба инфляци"
+tags: ["монгол", "үнэ", "гурил", "хүнс", "долоо хоног", "бүс нутаг", "эдийн засаг"]
+keywords: ["гурилын үнэ", "хүнсний үнэ монгол", "гурил монгол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-09
+dataFiles:
+  - path: "/datasets/weekly-flour-prices-aimags-all-mn.csv"
+    format: "csv"
+    size: "66 KB"
+    description: "CSV татах (бүх бүс нутаг)"
+  - path: "/datasets/weekly-flour-prices-aimags.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_010V5.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/weekly-flour-prices-aimags-mn.json"
+  title="Гурилын долоо хоногийн үнэ, бүсээр (2024-2025)"
+/>

@@ -1,0 +1,127 @@
+---
+/**
+ * LatestInsights - Language-aware latest insights widget
+ *
+ * Displays the most recent insights from the insights collection
+ * with proper language-prefixed URLs.
+ */
+
+import { getCollection } from 'astro:content';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Button from '~/components/ui/Button.astro';
+import Image from '~/components/common/Image.astro';
+import { findImage } from '~/utils/images';
+import type { Widget } from '~/types';
+import type { Language } from '~/i18n';
+
+export interface Props extends Widget {
+  title?: string;
+  linkText?: string;
+  linkUrl?: string | URL;
+  information?: string;
+  count?: number;
+  lang?: Language;
+}
+
+const {
+  title = await Astro.slots.render('title'),
+  linkText = 'View all insights',
+  linkUrl,
+  information = await Astro.slots.render('information'),
+  count = 3,
+  lang = 'mn',
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+// Fetch insights for the current language
+const allInsights = await getCollection('insights', ({ id: itemId, data }) =>
+  itemId.startsWith(`${lang}/`) && data.draft !== true
+);
+
+// Sort by publish date and take the most recent
+const insights = allInsights
+  .sort((a, b) => {
+    const dateA = a.data.publishDate ? new Date(a.data.publishDate).valueOf() : 0;
+    const dateB = b.data.publishDate ? new Date(b.data.publishDate).valueOf() : 0;
+    return dateB - dateA;
+  })
+  .slice(0, count);
+
+// Helper to get slug from id
+const getSlug = (itemId: string) => {
+  const parts = itemId.split('/');
+  return parts.slice(1).join('/').replace(/\.mdx?$/, '');
+};
+---
+
+{insights.length > 0 && (
+  <WidgetWrapper id={id} isDark={isDark} containerClass={classes?.container as string} bg={bg}>
+    <div class="flex flex-col lg:justify-between lg:flex-row mb-8">
+      {title && (
+        <div class="md:max-w-sm">
+          <h2
+            class:list={[
+              "text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none group font-heading mb-2",
+              { "text-white": isDark }
+            ]}
+            set:html={title}
+          />
+          {linkText && linkUrl && (
+            <Button variant="link" href={linkUrl} class={isDark ? "text-white hover:text-primary" : ""}>
+              {' '}
+              {linkText} »
+            </Button>
+          )}
+        </div>
+      )}
+
+      {information && <p class:list={["lg:text-sm lg:max-w-md", isDark ? "text-gray-300" : "text-muted dark:text-slate-400"]} set:html={information} />}
+    </div>
+
+    <div class="grid gap-6 row-gap-5 md:grid-cols-2 lg:grid-cols-3 -mb-6">
+      {insights.map(async (insight) => {
+        const image = await findImage(insight.data.image);
+        const slug = getSlug(insight.id);
+        const link = `/${lang}/insights/${slug}`;
+
+        return (
+          <article class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+            <div class:list={["relative md:h-64 rounded shadow-lg mb-6", isDark ? "bg-white/10" : "bg-gray-400 dark:bg-slate-700"]}>
+              {image && (
+                <a href={link}>
+                  <Image
+                    src={image}
+                    class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                    widths={[400, 900]}
+                    width={400}
+                    sizes="(max-width: 900px) 400px, 900px"
+                    alt={insight.data.title}
+                    aspectRatio="16:9"
+                    layout="cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </a>
+              )}
+            </div>
+
+            <h3 class:list={["text-xl sm:text-2xl font-bold leading-tight mb-2 font-heading", isDark ? "text-white" : "dark:text-slate-300"]}>
+              <a
+                class="inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200"
+                href={link}
+              >
+                {insight.data.title}
+              </a>
+            </h3>
+
+            <p class:list={["text-lg", isDark ? "text-gray-300" : "text-muted dark:text-slate-400"]}>{insight.data.excerpt}</p>
+          </article>
+        );
+      })}
+    </div>
+  </WidgetWrapper>
+)}

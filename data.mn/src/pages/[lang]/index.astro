@@ -1,0 +1,441 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '~/layouts/PageLayout.astro';
+import { Icon } from 'astro-icon/components';
+import Stats from '~/components/widgets/Stats.astro';
+import LatestInsights from '~/components/widgets/LatestInsights.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Button from '~/components/ui/Button.astro';
+import Image from '~/components/common/Image.astro';
+import OpenDataStats from '~/components/widgets/OpenDataStats.astro';
+import GrainOverlay from '~/components/ui/GrainOverlay.astro';
+import { getLangFromUrl, useTranslations, type Language } from '~/i18n';
+
+// Get language from URL parameter
+const { lang } = Astro.params;
+const currentLang = (lang as Language) || 'mn';
+const t = useTranslations(currentLang);
+
+// Add getStaticPaths for static generation
+export const getStaticPaths = () => {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'mn' } },
+  ];
+};
+
+const metadata = {
+  title: `${t('site.name')} - ${t('site.tagline')}`,
+  description: t('site.description'),
+};
+
+// Get content counts - filter by language
+const allData = await getCollection('data', ({ id, data }) =>
+  id.startsWith(`${currentLang}/`) && data.draft !== true
+);
+const allReports = await getCollection('reports', ({ id, data }) =>
+  id.startsWith(`${currentLang}/`) && data.draft !== true
+);
+const allInsights = await getCollection('insights', ({ id, data }) =>
+  id.startsWith(`${currentLang}/`) && data.draft !== true
+);
+
+// Get trending/featured data (most recent 6)
+const trendingData = allData
+  .sort((a, b) => {
+    const dateA = a.data.publishDate ? new Date(a.data.publishDate).valueOf() : 0;
+    const dateB = b.data.publishDate ? new Date(b.data.publishDate).valueOf() : 0;
+    return dateB - dateA;
+  })
+  .slice(0, 6);
+
+// Get featured reports (most recent 4)
+const featuredReports = allReports
+  .sort((a, b) => {
+    const dateA = a.data.publishDate ? new Date(a.data.publishDate).valueOf() : 0;
+    const dateB = b.data.publishDate ? new Date(b.data.publishDate).valueOf() : 0;
+    return dateB - dateA;
+  })
+  .slice(0, 4);
+
+// Import generated categories from registry database
+import generatedCategories from '~/data/categories.generated.json';
+
+// Build popular topics from generated categories
+const popularTopics = generatedCategories.map((category) => ({
+  name: currentLang === 'en' ? category.en : category.mn,
+  slug: currentLang === 'en' ? category.en : category.mn,
+  count: category.count,
+}));
+
+// Count visualizations (data pages with charts)
+const visualizationCount = allData.length; // All data pages have charts
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Section ******************* -->
+  <section class="relative not-prose overflow-hidden min-h-[60vh] md:min-h-[70vh] flex flex-col" id="hero-section">
+    <!-- Background Image (set randomly via JS) -->
+    <div
+      id="hero-bg"
+      class="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-500"
+      style="background-image: url('/images/hero/hero-1.webp');"
+      aria-hidden="true"
+    ></div>
+
+    <!-- Gradient Overlay - dark at top for text readability -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 via-50% to-transparent" aria-hidden="true"></div>
+
+    <!-- Bottom fade to page background for seamless transition -->
+    <div class="absolute inset-x-0 bottom-0 h-32 md:h-40 bg-gradient-to-t from-white dark:from-slate-900 to-transparent" aria-hidden="true"></div>
+
+    <!-- Content - centered vertically -->
+    <div class="relative flex-1 flex items-center max-w-7xl mx-auto px-4 sm:px-6 w-full">
+      <div class="pt-[76px] md:pt-[84px] pb-24 md:pb-36 w-full">
+        <div class="text-center max-w-4xl mx-auto">
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-10 font-heading text-white drop-shadow-lg lg:whitespace-nowrap"
+          >
+            {t('home.hero.title')}
+          </h1>
+          <div class="max-w-3xl mx-auto">
+            {/* Subtitle commented out - may not be needed
+            <p class="text-xl md:text-2xl text-white/90 mb-10 drop-shadow-md font-light">
+              {t('home.hero.subtitle')}
+            </p>
+            */}
+
+            <!-- Search Box with entrance animation -->
+            <div class="max-w-2xl mx-auto hero-search">
+              <form action={`/${currentLang}/search`} method="get" class="relative">
+                <input
+                  type="search"
+                  name="q"
+                  placeholder={t('search.placeholder')}
+                  class="w-full px-6 py-5 pr-16 text-lg border-0 rounded-2xl bg-white/95 backdrop-blur-sm text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-white/30 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)]"
+                />
+                <button
+                  type="submit"
+                  class="absolute right-3 top-1/2 transform -translate-y-1/2 p-3 bg-primary hover:bg-primary/90 rounded-xl text-white transition-colors shadow-lg"
+                  aria-label="Search"
+                >
+                  <Icon name="tabler:search" class="w-6 h-6" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Random Hero Image Selection -->
+  <script is:inline>
+    (function() {
+      const heroImages = [
+        '/images/hero/hero-1.webp',
+        '/images/hero/hero-2.webp',
+        '/images/hero/hero-3.webp',
+        '/images/hero/hero-4.webp',
+        '/images/hero/hero-5.webp',
+        '/images/hero/hero-6.webp',
+        '/images/hero/hero-7.webp',
+      ];
+
+      function setRandomHeroImage() {
+        const heroBg = document.getElementById('hero-bg');
+        if (heroBg) {
+          const randomImage = heroImages[Math.floor(Math.random() * heroImages.length)];
+          heroBg.style.backgroundImage = `url('${randomImage}')`;
+        }
+      }
+
+      // Run on initial load
+      setRandomHeroImage();
+
+      // Also run on Astro View Transitions navigation
+      document.addEventListener('astro:page-load', setRandomHeroImage);
+    })();
+  </script>
+
+  <!-- Stats Section - overlaps into hero for seamless transition -->
+  <div class="relative z-10 -mt-32 md:-mt-44">
+    <OpenDataStats lang={currentLang} />
+  </div>
+
+  <!-- Trending Data Section ******************* -->
+  <WidgetWrapper containerClass="max-w-7xl">
+    <div class="mb-8">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl font-heading">{t('home.trendingData')}</h2>
+        <Button variant="link" href={`/${currentLang}/data`}>{t('home.viewAllData')} »</Button>
+      </div>
+    </div>
+
+    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {
+        trendingData.map((item, index) => {
+          const slug = item.id.replace(/^(en|mn)\//, '').replace(/\.mdx?$/, '');
+          // Auto-derive thumbnail URL from slug (same convention as GridCards)
+          const thumbnailUrl = `/thumbnails/${slug}-${currentLang}.webp`;
+          return (
+          <a
+            href={`/${currentLang}/data/${slug}`}
+            class="group relative flex items-center gap-4 p-4 bg-white dark:bg-slate-900 rounded-lg border border-gray-200 dark:border-slate-800 hover:border-primary dark:hover:border-primary transition-all duration-200 hover:shadow-[0_8px_20px_-6px_rgba(0,0,0,0.12)] dark:hover:shadow-[0_8px_20px_-6px_rgba(0,0,0,0.35)] hover:-translate-y-0.5 motion-safe:opacity-0 motion-safe:animate-fade"
+            style={`animation-delay: ${index * 75}ms`}
+          >
+            {/* Chart thumbnail from auto-generated WebP (16:9 aspect ratio) */}
+            <div class="relative w-28 flex-shrink-0 overflow-hidden rounded-lg bg-gradient-to-br from-primary/10 to-primary/5">
+              <div class="aspect-video">
+                <img
+                  src={thumbnailUrl}
+                  alt={item.data.title}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                  width={112}
+                  height={63}
+                  loading="lazy"
+                  decoding="async"
+                  onerror="this.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';"
+                />
+              </div>
+              {/* Fallback icon if thumbnail fails to load */}
+              <div class="absolute inset-0 items-center justify-center hidden">
+                <Icon name="tabler:chart-bar" class="w-8 h-8 text-primary" />
+              </div>
+            </div>
+
+            <div class="flex-1 min-w-0">
+              <h3 class="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary transition-colors line-clamp-2">
+                {item.data.title}
+              </h3>
+              {item.data.category && (
+                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">{item.data.category}</p>
+              )}
+            </div>
+
+            <Icon name="tabler:chevron-right" class="w-5 h-5 text-gray-400 group-hover:text-primary transition-colors flex-shrink-0" />
+          </a>
+          );
+        })
+      }
+    </div>
+  </WidgetWrapper>
+
+  <!-- Stats Section (commented out for now - uncomment when we have more content)
+  <Stats
+    title="Data.mn by the numbers"
+    stats={[
+      { amount: allData.length.toString(), title: 'Datasets' },
+      { amount: visualizationCount.toString(), title: 'Visualizations' },
+      { amount: allReports.length.toString(), title: 'Reports' },
+      { amount: allInsights.length.toString(), title: 'Insights' },
+    ]}
+  />
+  -->
+
+  <!-- Popular Topics Section ******************* -->
+  <WidgetWrapper containerClass="max-w-6xl">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl font-heading mb-4">{t('home.exploreByTopic')}</h2>
+      {/* <p class="text-lg text-muted dark:text-slate-400">{t('home.browseCategories')}</p> */}
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-3">
+      {
+        popularTopics.map((topic, index) => (
+          <a
+            href={`/${currentLang}/data?category=${encodeURIComponent(topic.slug)}`}
+            class="topic-pill group relative inline-flex items-center gap-2 px-6 py-3 rounded-full text-base font-medium bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 motion-safe:opacity-0 motion-safe:animate-fade"
+            style={`animation-delay: ${index * 50}ms`}
+          >
+            {topic.name}
+            <span class="inline-flex items-center justify-center w-6 h-6 text-xs font-semibold rounded-full bg-gray-200 dark:bg-slate-700 text-gray-600 dark:text-gray-400 group-hover:bg-white group-hover:text-primary transition-all">
+              {topic.count}
+            </span>
+          </a>
+        ))
+      }
+    </div>
+  </WidgetWrapper>
+
+  {/* <!-- TEMPORARILY HIDDEN - Featured Reports Section *******************
+  <section class="relative not-prose scroll-mt-[72px] overflow-hidden">
+    <div class="absolute inset-0 bg-dark dark:bg-transparent" aria-hidden="true">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(0,82,204,0.15)_0%,transparent_50%),radial-gradient(ellipse_at_80%_80%,rgba(212,175,55,0.08)_0%,transparent_50%)]"></div>
+      <GrainOverlay opacity={0.04} />
+    </div>
+    <div class="relative mx-auto max-w-7xl px-4 md:px-6 py-12 md:py-16 lg:py-20 text-default dark">
+      <div class="mb-8">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl font-heading text-white">{t('home.featuredReports')}</h2>
+          <Button variant="link" href={`/${currentLang}/reports`} class="text-white hover:text-primary">{t('home.viewAllReports')} »</Button>
+        </div>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {
+          featuredReports.map((report, index) => {
+            const slug = report.id.replace(/^(en|mn)\//, '').replace(/\.mdx?$/, '');
+            return (
+            <article class="group relative flex flex-col h-full bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 overflow-hidden hover:border-primary transition-all duration-200 hover:shadow-lg hover:-translate-y-1 motion-safe:opacity-0 motion-safe:animate-fade" style={`animation-delay: ${index * 100}ms`}>
+            <a href={`/${currentLang}/reports/${slug}`} class="block">
+              {report.data.image ? (
+                <div class="relative h-48 overflow-hidden">
+                  <Image
+                    src={report.data.image}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    widths={[400]}
+                    width={400}
+                    sizes="(max-width: 768px) 100vw, 400px"
+                    alt={report.data.title}
+                    aspectRatio="16:9"
+                    loading="lazy"
+                  />
+                </div>
+              ) : (
+                <div class="relative h-48 bg-gradient-to-br from-primary/20 to-primary/5">
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <Icon name="tabler:file-analytics" class="w-16 h-16 text-white/30" />
+                  </div>
+                </div>
+              )}
+            </a>
+
+            <div class="flex flex-col flex-grow p-5">
+              {report.data.category && (
+                <span class="inline-block text-xs font-semibold text-primary mb-2">{report.data.category}</span>
+              )}
+
+              <h3 class="text-lg font-bold leading-tight mb-2">
+                <a
+                  href={`/${currentLang}/reports/${slug}`}
+                  class="text-white hover:text-primary transition-colors"
+                >
+                  {report.data.title}
+                </a>
+              </h3>
+
+              {report.data.excerpt && (
+                <p class="text-sm text-gray-300 line-clamp-2 mb-3">{report.data.excerpt}</p>
+              )}
+
+              <div class="mt-auto flex items-center text-xs text-gray-400">
+                {report.data.publishDate && (
+                  <time datetime={report.data.publishDate.toISOString()}>
+                    {report.data.publishDate.toLocaleDateString('en-US', {
+                      month: 'short',
+                      day: 'numeric',
+                      year: 'numeric',
+                    })}
+                  </time>
+                )}
+              </div>
+            </div>
+          </article>
+            );
+          })
+        }
+      </div>
+    </div>
+  </section>
+  --> */}
+
+  <!-- Latest Insights Section ******************* -->
+  <section class="relative not-prose scroll-mt-[72px] overflow-hidden">
+    <!-- Textured background with gradient glow -->
+    <div class="absolute inset-0 bg-dark dark:bg-transparent" aria-hidden="true">
+      <!-- Radial gradient glows for atmosphere -->
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(0,82,204,0.15)_0%,transparent_50%),radial-gradient(ellipse_at_80%_80%,rgba(212,175,55,0.08)_0%,transparent_50%)]"></div>
+      <!-- Grain overlay for texture -->
+      <GrainOverlay opacity={0.04} />
+    </div>
+    <div class="relative mx-auto max-w-7xl px-4 md:px-6 py-12 md:py-16 lg:py-20">
+      <LatestInsights
+        title={t('home.latestInsights')}
+        information={t('home.insightsDescription')}
+        linkText={t('home.viewAllInsights')}
+        linkUrl={`/${currentLang}/insights`}
+        count={3}
+        lang={currentLang}
+        isDark={true}
+      />
+    </div>
+  </section>
+
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-slate-900/50"></div>
+  </Fragment>
+</Layout>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Hero search box entrance animation */
+  .hero-search {
+    animation: searchAppear 0.6s ease-out 0.3s both;
+  }
+
+  @keyframes searchAppear {
+    from {
+      opacity: 0;
+      transform: translateY(20px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-search {
+      animation: none;
+    }
+  }
+
+  /* Make header fixed on homepage so hero can start at very top */
+  :global(header#header) {
+    position: fixed !important;
+  }
+
+  /* Push main content up to start at viewport top (header is now fixed/out of flow) */
+  :global(main) {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Make header text white ONLY when NOT scrolled (over hero image) */
+  :global(header#header:not(.scroll) a),
+  :global(header#header:not(.scroll) button),
+  :global(header#header:not(.scroll) .text-muted),
+  :global(header#header:not(.scroll) span) {
+    color: white !important;
+  }
+
+  :global(header#header:not(.scroll) a:hover),
+  :global(header#header:not(.scroll) button:hover) {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+
+  /* Logo text white when not scrolled */
+  :global(header#header:not(.scroll) .font-bold) {
+    color: white !important;
+  }
+
+  /* Language switcher adjustments when not scrolled */
+  :global(header#header:not(.scroll) .language-switcher a) {
+    color: white !important;
+  }
+  :global(header#header:not(.scroll) .language-switcher span) {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+
+  /* Mobile hamburger menu white when not scrolled */
+  :global(header#header:not(.scroll) [data-aw-toggle-menu] span) {
+    background-color: white !important;
+  }
+</style>

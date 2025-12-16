@@ -1,0 +1,220 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { useTranslations, type Language } from '~/i18n';
+
+export const getStaticPaths = () => {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'mn' } },
+  ];
+};
+
+const { lang } = Astro.params;
+const currentLang = (lang as Language) || 'mn';
+const t = useTranslations(currentLang);
+
+const metadata = {
+  title: currentLang === 'en' ? 'Terms of Service' : 'Үйлчилгээний нөхцөл',
+};
+
+const content = {
+  en: {
+    title: 'Terms of Service',
+    lastUpdated: 'Last updated: November 29, 2025',
+    sections: [
+      {
+        title: 'Acceptance of Terms',
+        content: 'By accessing or using Data.mn ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our Service.',
+      },
+      {
+        title: 'Description of Service',
+        content: 'Data.mn is an open data platform that provides free access to statistics, reports, and insights about Mongolia. We aggregate data from official government sources and present it in accessible formats with visualizations and downloadable files.',
+      },
+      {
+        title: 'Use of Service',
+        content: `<strong>Permitted Use</strong><br>
+You may use our Service for:<br>
+- Research and analysis<br>
+- Business and investment decisions<br>
+- Educational purposes<br>
+- Journalism and reporting<br>
+- Personal interest<br>
+- Any lawful purpose<br><br>
+<strong>Prohibited Use</strong><br>
+You may not:<br>
+- Use our Service for illegal activities<br>
+- Attempt to disrupt or compromise our systems<br>
+- Misrepresent the source of data obtained from our platform<br>
+- Use automated tools to overload our servers`,
+      },
+      {
+        title: 'User Accounts and Future Services',
+        content: `Currently, Data.mn does not require user accounts. In the future, we may introduce:<br>
+- User accounts for personalized features<br>
+- Paid reports and premium content<br>
+- Newsletter subscriptions<br><br>
+If you create an account, you are responsible for maintaining the security of your credentials and for all activities under your account.`,
+      },
+      {
+        title: 'Intellectual Property',
+        content: `<strong>Our Content</strong><br>
+The Data.mn website design, branding, original analysis, and presentation are our intellectual property.<br><br>
+<strong>Data Sources</strong><br>
+Most data presented on Data.mn is sourced from government agencies and public institutions. We provide attribution to original sources. The underlying data from these sources remains subject to their respective terms and licenses.<br><br>
+<strong>Your Use</strong><br>
+You are free to use, share, and build upon the data and content from Data.mn, provided you give appropriate credit to Data.mn and the original data sources.`,
+      },
+      {
+        title: 'Data Accuracy Disclaimer',
+        content: `<strong>Third-Party Data</strong><br>
+Data.mn aggregates data from external data sources including government agencies and public institutions. While we strive for accuracy in presenting this data, we provide it "as-is" without warranty.<br><br>
+<strong>No Guarantee</strong><br>
+We do not guarantee the accuracy, completeness, or timeliness of any data from third-party sources. Users should verify critical information through the original sources.<br><br>
+<strong>Not Professional Advice</strong><br>
+Content on Data.mn is for informational purposes only and should not be considered professional, legal, financial, or investment advice.`,
+      },
+      {
+        title: 'Service Availability',
+        content: `- We aim to maintain high availability but do not guarantee uninterrupted service<br>
+- We may modify, suspend, or discontinue features at any time<br>
+- Scheduled maintenance will be announced when possible`,
+      },
+      {
+        title: 'Limitation of Liability',
+        content: 'To the maximum extent permitted by law, Data.mn shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or business opportunities arising from your use of the Service or reliance on data presented on the platform.',
+      },
+      {
+        title: 'Indemnification',
+        content: 'You agree to indemnify and hold Data.mn harmless from any claims, damages, or expenses arising from your use of the Service or violation of these Terms.',
+      },
+      {
+        title: 'Privacy',
+        content: 'Your privacy is important to us. Please review our <a href="privacy" class="text-primary hover:underline">Privacy Policy</a>, which also governs your use of the Service.',
+      },
+      {
+        title: 'Governing Law',
+        content: 'These Terms are governed by the laws of Mongolia. Any disputes will be resolved in the courts of Mongolia.',
+      },
+      {
+        title: 'Changes to Terms',
+        content: 'We may modify these Terms at any time. We will notify users of significant changes by posting the updated Terms on this page and updating the "Last updated" date. Continued use after changes constitutes acceptance of the new Terms.',
+      },
+      {
+        title: 'Contact Information',
+        content: `For questions about these Terms, please contact us at:<br><br>
+Email: contact@data.mn<br>
+Website: data.mn`,
+      },
+    ],
+  },
+  mn: {
+    title: 'Үйлчилгээний нөхцөл',
+    lastUpdated: 'Сүүлд шинэчилсэн: 2025 оны 11-р сарын 29',
+    sections: [
+      {
+        title: 'Нөхцөлийг хүлээн зөвшөөрөх',
+        content: 'Data.mn ("Үйлчилгээ")-д хандах эсвэл ашиглахдаа та эдгээр Үйлчилгээний нөхцөлийг ("Нөхцөл") дагаж мөрдөхийг зөвшөөрч байна. Хэрэв та эдгээр Нөхцлийг зөвшөөрөхгүй бол манай Үйлчилгээг бүү ашиглана уу.',
+      },
+      {
+        title: 'Үйлчилгээний тодорхойлолт',
+        content: 'Data.mn нь Монгол Улсын статистик, тайлан, дүн шинжилгээнд үнэ төлбөргүй хандах боломж олгодог нээлттэй өгөгдлийн платформ юм. Бид албан ёсны төрийн эх сурвалжаас өгөгдлийг нэгтгэж, визуалчлал болон татаж авах боломжтой файлуудаар хүртээмжтэй хэлбэрээр толилуулдаг.',
+      },
+      {
+        title: 'Үйлчилгээний хэрэглээ',
+        content: `<strong>Зөвшөөрөгдсөн хэрэглээ</strong><br>
+Та манай Үйлчилгээг дараахад ашиглаж болно:<br>
+- Судалгаа, шинжилгээ<br>
+- Бизнес болон хөрөнгө оруулалтын шийдвэр<br>
+- Боловсролын зорилго<br>
+- Сэтгүүл зүй, мэдээлэл<br>
+- Хувийн сонирхол<br>
+- Аливаа хууль ёсны зорилго<br><br>
+<strong>Хориглосон хэрэглээ</strong><br>
+Та дараахийг хийж болохгүй:<br>
+- Хууль бус үйл ажиллагаанд манай Үйлчилгээг ашиглах<br>
+- Манай системийг тасалдуулах эсвэл эвдэхийг оролдох<br>
+- Манай платформоос авсан өгөгдлийн эх сурвалжийг буруу мэдэгдэх<br>
+- Серверүүдийг хэт ачаалахын тулд автоматжуулсан хэрэгсэл ашиглах`,
+      },
+      {
+        title: 'Хэрэглэгчийн бүртгэл ба ирээдүйн үйлчилгээ',
+        content: `Одоогоор Data.mn хэрэглэгчийн бүртгэл шаарддаггүй. Ирээдүйд бид дараахийг нэвтрүүлж болно:<br>
+- Хувийн тохиргоотой функцүүдийн хэрэглэгчийн бүртгэл<br>
+- Төлбөртэй тайлан ба дээд зэрэглэлийн агуулга<br>
+- Мэдээллийн товхимлын захиалга<br><br>
+Хэрэв та бүртгэл үүсгэвэл нэвтрэх мэдээллийнхээ аюулгүй байдал болон бүртгэлийнхээ доорх бүх үйл ажиллагааг хариуцна.`,
+      },
+      {
+        title: 'Оюуны өмч',
+        content: `<strong>Манай агуулга</strong><br>
+Data.mn вэбсайтын дизайн, брэнд, эх шинжилгээ, толилуулга нь манай оюуны өмч юм.<br><br>
+<strong>Өгөгдлийн эх сурвалж</strong><br>
+Data.mn дээр толилуулсан ихэнх өгөгдөл нь төрийн байгууллагууд болон олон нийтийн институцуудаас авсан. Бид анхны эх сурвалжид хаяглалт өгдөг. Эдгээр эх сурвалжаас авсан үндсэн өгөгдөл нь тус тусын нөхцөл, лицензийн дагуу хүчинтэй хэвээр байна.<br><br>
+<strong>Таны хэрэглээ</strong><br>
+Та Data.mn болон анхны өгөгдлийн эх сурвалжид зохих хаяглалт өгсөн тохиолдолд Data.mn-ийн өгөгдөл, агуулгыг чөлөөтэй ашиглах, хуваалцах, дээр нь тулгуурлан бүтээх боломжтой.`,
+      },
+      {
+        title: 'Өгөгдлийн үнэн зөв байдлын анхааруулга',
+        content: `<strong>Гуравдагч талын өгөгдөл</strong><br>
+Data.mn нь төрийн байгууллагууд болон олон нийтийн институцуудыг оролцуулсан гадны эх сурвалжаас өгөгдлийг нэгтгэдэг. Бид энэ өгөгдлийг үнэн зөв толилуулахыг хичээсэн ч баталгаагүйгээр "байгаагаар нь" өгдөг.<br><br>
+<strong>Баталгаа байхгүй</strong><br>
+Бид гуравдагч талын эх сурвалжаас авсан ямар ч өгөгдлийн үнэн зөв, бүрэн бүтэн эсвэл цаг тухайд нь байдлыг баталгаажуулдаггүй. Хэрэглэгчид чухал мэдээллийг анхны эх сурвалжаар баталгаажуулах ёстой.<br><br>
+<strong>Мэргэжлийн зөвлөгөө биш</strong><br>
+Data.mn дээрх агуулга нь зөвхөн мэдээллийн зорилготой бөгөөд мэргэжлийн, хуулийн, санхүүгийн эсвэл хөрөнгө оруулалтын зөвлөгөө гэж үзэх ёсгүй.`,
+      },
+      {
+        title: 'Үйлчилгээний боломжтой байдал',
+        content: `- Бид өндөр боломжтой байдлыг хангахыг зорьдог боловч тасралтгүй үйлчилгээг баталгаажуулдаггүй<br>
+- Бид хүссэн үедээ функцуудыг өөрчлөх, зогсоох эсвэл болиулж болно<br>
+- Товлосон засвар үйлчилгээг боломжтой үед зарлана`,
+      },
+      {
+        title: 'Хариуцлагын хязгаарлалт',
+        content: 'Хуулиар зөвшөөрөгдсөн хамгийн дээд хэмжээнд Data.mn нь Үйлчилгээг ашигласан эсвэл платформд толилуулсан өгөгдөлд найдсанаас үүссэн ашиг, өгөгдөл, бизнесийн боломж алдагдсан зэрэг шууд бус, санамсаргүй, онцгой, үр дагавартай эсвэл шийтгэлийн хохирлыг хариуцахгүй.',
+      },
+      {
+        title: 'Нөхөн төлбөр',
+        content: 'Та Үйлчилгээг ашигласан эсвэл эдгээр Нөхцөлийг зөрчсөнөөс үүссэн аливаа нэхэмжлэл, хохирол, зардлаас Data.mn-ийг чөлөөлж, хор хохиролгүй байлгахыг зөвшөөрч байна.',
+      },
+      {
+        title: 'Нууцлал',
+        content: 'Таны нууцлал бидний хувьд чухал. Үйлчилгээг ашиглахад мөн хамаарах манай <a href="privacy" class="text-primary hover:underline">Нууцлалын бодлого</a>-ыг уншина уу.',
+      },
+      {
+        title: 'Хамаарах хууль',
+        content: 'Эдгээр Нөхцөл нь Монгол Улсын хуулиар зохицуулагдана. Аливаа маргааныг Монгол Улсын шүүхээр шийдвэрлэнэ.',
+      },
+      {
+        title: 'Нөхцөлийн өөрчлөлт',
+        content: 'Бид эдгээр Нөхцлийг хүссэн үедээ өөрчилж болно. Бид шинэчилсэн Нөхцлийг энэ хуудсанд байршуулж, "Сүүлд шинэчилсэн" огноог шинэчлэх замаар хэрэглэгчдэд чухал өөрчлөлтүүдийг мэдэгдэх болно. Өөрчлөлтийн дараа үргэлжлүүлэн ашиглах нь шинэ Нөхцлийг хүлээн зөвшөөрсөнд тооцогдоно.',
+      },
+      {
+        title: 'Холбоо барих мэдээлэл',
+        content: `Эдгээр Нөхцөлийн талаар асуултууд байвал бидэнтэй холбогдоно уу:<br><br>
+Имэйл: contact@data.mn<br>
+Вэбсайт: data.mn`,
+      },
+    ],
+  },
+};
+
+const c = content[currentLang];
+---
+
+<Layout metadata={metadata}>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12 md:py-16">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold tracking-tight dark:text-white mb-2">{c.title}</h1>
+      <p class="text-muted dark:text-slate-400">{c.lastUpdated}</p>
+    </header>
+
+    <article class="prose prose-lg dark:prose-invert max-w-none">
+      {c.sections.map((section) => (
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold dark:text-white mb-3">{section.title}</h2>
+          <div class="text-muted dark:text-slate-300 leading-relaxed" set:html={section.content} />
+        </section>
+      ))}
+    </article>
+  </div>
+</Layout>

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын ажилгүйдлийн түвшин хүйсээр (2009-2024)",
+  "data": {
+    "url": "/datasets/unemployment-by-sex-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Он",
+      "type": "temporal",
+      "timeUnit": "year",
+      "axis": {
+        "title": "Он",
+        "format": "%Y",
+        "labelAngle": 0,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "утга",
+      "type": "quantitative",
+      "axis": {
+        "title": "Ажилгүйдлийн түвшин (%)"
+      },
+      "scale": {
+        "zero": false
+      }
+    },
+    "color": {
+      "field": "Ангилал",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Эрэгтэй",
+          "Эмэгтэй"
+        ]
+      },
+      "legend": {
+        "title": "Хүйс",
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Он",
+            "type": "temporal",
+            "timeUnit": "year",
+            "title": "Он",
+            "format": "%Y"
+          },
+          {
+            "field": "Ангилал",
+            "type": "nominal",
+            "title": "Хүйс"
+          },
+          {
+            "field": "утга",
+            "type": "quantitative",
+            "title": "Ажилгүйдлийн түвшин",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

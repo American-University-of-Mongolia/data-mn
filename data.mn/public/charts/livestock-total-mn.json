@@ -1,0 +1,123 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын нийт малын тоо 1970-2024",
+  "data": {
+    "url": "/datasets/livestock-total-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "temporal",
+      "timeUnit": "year",
+      "title": "Он",
+      "axis": {
+        "format": "%Y",
+        "labelAngle": 0,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "утга",
+      "type": "quantitative",
+      "title": "Нийт малын тоо (мянгаар)",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "format": ",.0f"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "line": {
+          "stroke": "#1f77b4",
+          "strokeWidth": 2
+        },
+        "point": false,
+        "opacity": 0.7,
+        "color": {
+          "x1": 1,
+          "y1": 1,
+          "x2": 1,
+          "y2": 0,
+          "gradient": "linear",
+          "stops": [
+            {
+              "offset": 0,
+              "color": "rgba(31, 119, 180, 0.02)"
+            },
+            {
+              "offset": 1,
+              "color": "rgba(31, 119, 180, 0.35)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "type": "temporal",
+            "timeUnit": "year",
+            "title": "Он",
+            "format": "%Y"
+          },
+          {
+            "field": "утга",
+            "type": "quantitative",
+            "title": "Нийт малын тоо",
+            "format": ",.1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "strokeWidth": 0,
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

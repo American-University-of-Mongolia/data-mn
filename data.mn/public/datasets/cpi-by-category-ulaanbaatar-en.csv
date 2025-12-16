@@ -1,14 +1,301 @@
-category,value
-Recreation and culture,2.5
-Miscellaneous goods and services,2.2
-"Clothing, footwear and cloth",1.9
-Alcoholic beverages and tobacco,0.5
-"Furnishings, household equipment and tools",0.4
-Transport,0.4
-Restaurants and hotels,0.2
-"Health, medical care and services",0.1
-Food and non-alcaholic beverages,0.1
-Education services,0.0
-Communication,0.0
-Insurance and financial services,0.0
-"Housing, water, electricity and fuels",-0.7
+month,category,value
+2020-02,Food & Dining,2.3000000000000003
+2020-02,Housing & Utilities,0.26666666666666666
+2020-02,Other Goods,0.0
+2020-02,Services,0.125
+2020-02,Transport,1.4
+2020-03,Food & Dining,1.6666666666666667
+2020-03,Housing & Utilities,0.03333333333333333
+2020-03,Other Goods,0.1
+2020-03,Services,0.075
+2020-03,Transport,1.7
+2020-04,Food & Dining,0.6333333333333334
+2020-04,Housing & Utilities,-0.13333333333333333
+2020-04,Other Goods,-0.55
+2020-04,Services,0.0
+2020-04,Transport,-2.5
+2020-05,Food & Dining,0.7000000000000001
+2020-05,Housing & Utilities,0.3
+2020-05,Other Goods,0.25
+2020-05,Services,0.07500000000000001
+2020-05,Transport,-2.7
+2020-06,Food & Dining,0.6999999999999998
+2020-06,Housing & Utilities,0.06666666666666667
+2020-06,Other Goods,0.15000000000000002
+2020-06,Services,0.05
+2020-06,Transport,-0.1
+2020-07,Food & Dining,0.7999999999999999
+2020-07,Housing & Utilities,0.06666666666666667
+2020-07,Other Goods,0.2
+2020-07,Services,0.025
+2020-07,Transport,0.4
+2020-08,Food & Dining,-1.5333333333333332
+2020-08,Housing & Utilities,0.13333333333333333
+2020-08,Other Goods,1.05
+2020-08,Services,0.4
+2020-08,Transport,0.1
+2020-09,Food & Dining,-0.8000000000000002
+2020-09,Housing & Utilities,0.3666666666666667
+2020-09,Other Goods,0.6
+2020-09,Services,0.275
+2020-09,Transport,1.5
+2020-10,Food & Dining,0.5
+2020-10,Housing & Utilities,0.2333333333333333
+2020-10,Other Goods,1.05
+2020-10,Services,0.3
+2020-10,Transport,2.3
+2020-11,Food & Dining,0.7333333333333334
+2020-11,Housing & Utilities,0.3333333333333333
+2020-11,Other Goods,0.0
+2020-11,Services,0.07500000000000001
+2020-11,Transport,0.0
+2020-12,Food & Dining,0.3333333333333333
+2020-12,Housing & Utilities,-4.933333333333334
+2020-12,Other Goods,0.5
+2020-12,Services,0.125
+2020-12,Transport,0.0
+2021-01,Food & Dining,0.6666666666666666
+2021-01,Housing & Utilities,0.39999999999999997
+2021-01,Other Goods,-0.45
+2021-01,Services,0.07500000000000001
+2021-01,Transport,0.0
+2021-02,Food & Dining,2.066666666666667
+2021-02,Housing & Utilities,0.3333333333333333
+2021-02,Other Goods,0.10000000000000003
+2021-02,Services,0.1
+2021-02,Transport,0.3
+2021-03,Food & Dining,1.5333333333333332
+2021-03,Housing & Utilities,0.16666666666666666
+2021-03,Other Goods,0.4
+2021-03,Services,0.025
+2021-03,Transport,0.1
+2021-04,Food & Dining,1.5999999999999999
+2021-04,Housing & Utilities,5.8
+2021-04,Other Goods,0.0
+2021-04,Services,0.05
+2021-04,Transport,0.0
+2021-05,Food & Dining,1.0666666666666667
+2021-05,Housing & Utilities,0.06666666666666667
+2021-05,Other Goods,0.25
+2021-05,Services,0.225
+2021-05,Transport,1.6
+2021-06,Food & Dining,1.3
+2021-06,Housing & Utilities,0.13333333333333333
+2021-06,Other Goods,0.25
+2021-06,Services,0.325
+2021-06,Transport,3.0
+2021-07,Food & Dining,0.3
+2021-07,Housing & Utilities,0.03333333333333333
+2021-07,Other Goods,0.15
+2021-07,Services,0.15
+2021-07,Transport,6.4
+2021-08,Food & Dining,-0.33333333333333326
+2021-08,Housing & Utilities,0.6
+2021-08,Other Goods,0.65
+2021-08,Services,4.8
+2021-08,Transport,1.9
+2021-09,Food & Dining,-0.10000000000000002
+2021-09,Housing & Utilities,0.8333333333333334
+2021-09,Other Goods,0.75
+2021-09,Services,0.45
+2021-09,Transport,0.5
+2021-10,Food & Dining,1.6666666666666667
+2021-10,Housing & Utilities,-2.2
+2021-10,Other Goods,0.65
+2021-10,Services,0.1
+2021-10,Transport,0.2
+2021-11,Food & Dining,1.3333333333333333
+2021-11,Housing & Utilities,0.4666666666666666
+2021-11,Other Goods,0.3
+2021-11,Services,0.15
+2021-11,Transport,1.5
+2021-12,Food & Dining,2.9333333333333336
+2021-12,Housing & Utilities,1.7333333333333334
+2021-12,Other Goods,3.4
+2021-12,Services,1.45
+2021-12,Transport,0.5
+2022-01,Food & Dining,1.9333333333333336
+2022-01,Housing & Utilities,1.5999999999999999
+2022-01,Other Goods,4.25
+2022-01,Services,1.9749999999999999
+2022-01,Transport,-2.0
+2022-02,Food & Dining,0.46666666666666673
+2022-02,Housing & Utilities,0.7666666666666666
+2022-02,Other Goods,1.9000000000000001
+2022-02,Services,1.95
+2022-02,Transport,0.5
+2022-03,Food & Dining,0.43333333333333335
+2022-03,Housing & Utilities,0.43333333333333335
+2022-03,Other Goods,0.75
+2022-03,Services,0.35000000000000003
+2022-03,Transport,1.7
+2022-04,Food & Dining,1.3666666666666665
+2022-04,Housing & Utilities,4.433333333333334
+2022-04,Other Goods,1.3
+2022-04,Services,2.025
+2022-04,Transport,0.7
+2022-05,Food & Dining,2.2333333333333334
+2022-05,Housing & Utilities,0.26666666666666666
+2022-05,Other Goods,1.35
+2022-05,Services,0.9249999999999999
+2022-05,Transport,0.5
+2022-06,Food & Dining,2.233333333333333
+2022-06,Housing & Utilities,0.7666666666666666
+2022-06,Other Goods,0.65
+2022-06,Services,0.125
+2022-06,Transport,1.3
+2022-07,Food & Dining,0.3333333333333333
+2022-07,Housing & Utilities,0.7333333333333334
+2022-07,Other Goods,0.95
+2022-07,Services,0.075
+2022-07,Transport,1.2
+2022-08,Food & Dining,-0.8333333333333334
+2022-08,Housing & Utilities,0.6
+2022-08,Other Goods,2.25
+2022-08,Services,3.025
+2022-08,Transport,-0.5
+2022-09,Food & Dining,-0.20000000000000004
+2022-09,Housing & Utilities,0.6
+2022-09,Other Goods,1.5
+2022-09,Services,0.625
+2022-09,Transport,-0.5
+2022-10,Food & Dining,1.0333333333333334
+2022-10,Housing & Utilities,0.7000000000000001
+2022-10,Other Goods,1.5
+2022-10,Services,0.32499999999999996
+2022-10,Transport,0.3
+2022-11,Food & Dining,1.0333333333333334
+2022-11,Housing & Utilities,0.7666666666666666
+2022-11,Other Goods,1.5
+2022-11,Services,0.375
+2022-11,Transport,0.0
+2022-12,Food & Dining,0.8666666666666667
+2022-12,Housing & Utilities,0.39999999999999997
+2022-12,Other Goods,2.95
+2022-12,Services,0.04999999999999999
+2022-12,Transport,0.2
+2023-01,Food & Dining,1.6666666666666667
+2023-01,Housing & Utilities,0.6666666666666666
+2023-01,Other Goods,1.4
+2023-01,Services,0.8999999999999999
+2023-01,Transport,0.4
+2023-02,Food & Dining,1.4333333333333333
+2023-02,Housing & Utilities,0.4666666666666666
+2023-02,Other Goods,2.05
+2023-02,Services,0.175
+2023-02,Transport,0.2
+2023-03,Food & Dining,2.6999999999999997
+2023-03,Housing & Utilities,0.7666666666666667
+2023-03,Other Goods,0.050000000000000044
+2023-03,Services,0.25
+2023-03,Transport,0.0
+2023-04,Food & Dining,2.533333333333333
+2023-04,Housing & Utilities,0.2333333333333333
+2023-04,Other Goods,1.8
+2023-04,Services,0.2
+2023-04,Transport,-0.3
+2023-05,Food & Dining,1.1666666666666667
+2023-05,Housing & Utilities,0.20000000000000004
+2023-05,Other Goods,1.0
+2023-05,Services,0.22499999999999998
+2023-05,Transport,-0.3
+2023-06,Food & Dining,0.9666666666666667
+2023-06,Housing & Utilities,0.3333333333333333
+2023-06,Other Goods,1.35
+2023-06,Services,0.15000000000000002
+2023-06,Transport,0.2
+2023-07,Food & Dining,-0.03333333333333336
+2023-07,Housing & Utilities,0.03333333333333333
+2023-07,Other Goods,0.75
+2023-07,Services,0.6
+2023-07,Transport,-0.7
+2023-08,Food & Dining,-0.5333333333333332
+2023-08,Housing & Utilities,0.03333333333333333
+2023-08,Other Goods,1.4000000000000001
+2023-08,Services,5.875
+2023-08,Transport,0.1
+2023-09,Food & Dining,0.06666666666666665
+2023-09,Housing & Utilities,-0.2333333333333333
+2023-09,Other Goods,1.1500000000000001
+2023-09,Services,0.2
+2023-09,Transport,0.0
+2023-10,Food & Dining,0.3333333333333333
+2023-10,Housing & Utilities,0.3333333333333333
+2023-10,Other Goods,0.65
+2023-10,Services,0.125
+2023-10,Transport,0.3
+2023-11,Food & Dining,0.5
+2023-11,Housing & Utilities,1.1333333333333333
+2023-11,Other Goods,1.55
+2023-11,Services,0.025
+2023-11,Transport,0.5
+2023-12,Food & Dining,0.2333333333333333
+2023-12,Housing & Utilities,0.13333333333333333
+2023-12,Other Goods,0.25
+2023-12,Services,0.0
+2023-12,Transport,0.0
+2024-01,Food & Dining,0.7999999999999999
+2024-01,Housing & Utilities,0.6
+2024-01,Other Goods,0.2
+2024-01,Services,0.85
+2024-01,Transport,0.0
+2024-02,Food & Dining,0.7666666666666666
+2024-02,Housing & Utilities,0.16666666666666666
+2024-02,Other Goods,0.55
+2024-02,Services,0.07500000000000001
+2024-02,Transport,-0.5
+2024-03,Food & Dining,0.6
+2024-03,Housing & Utilities,1.3
+2024-03,Other Goods,0.1
+2024-03,Services,0.65
+2024-03,Transport,0.0
+2024-04,Food & Dining,0.6666666666666666
+2024-04,Housing & Utilities,0.3333333333333333
+2024-04,Other Goods,-0.05
+2024-04,Services,0.0
+2024-04,Transport,0.0
+2024-05,Food & Dining,1.5999999999999999
+2024-05,Housing & Utilities,0.2333333333333333
+2024-05,Other Goods,0.65
+2024-05,Services,0.15
+2024-05,Transport,-1.3
+2024-06,Food & Dining,0.5333333333333333
+2024-06,Housing & Utilities,0.26666666666666666
+2024-06,Other Goods,0.35
+2024-06,Services,0.05
+2024-06,Transport,0.3
+2024-07,Food & Dining,-0.19999999999999998
+2024-07,Housing & Utilities,0.7333333333333334
+2024-07,Other Goods,0.3
+2024-07,Services,0.025
+2024-07,Transport,0.0
+2024-08,Food & Dining,-0.7666666666666666
+2024-08,Housing & Utilities,0.8333333333333334
+2024-08,Other Goods,3.25
+2024-08,Services,5.7749999999999995
+2024-08,Transport,0.8
+2024-09,Food & Dining,0.9
+2024-09,Housing & Utilities,0.3666666666666667
+2024-09,Other Goods,1.65
+2024-09,Services,0.125
+2024-09,Transport,-0.5
+2024-10,Food & Dining,0.3666666666666667
+2024-10,Housing & Utilities,1.1333333333333335
+2024-10,Other Goods,1.05
+2024-10,Services,0.225
+2024-10,Transport,1.0
+2024-11,Food & Dining,0.3333333333333333
+2024-11,Housing & Utilities,4.6000000000000005
+2024-11,Other Goods,0.25
+2024-11,Services,0.225
+2024-11,Transport,0.9
+2024-12,Food & Dining,1.2333333333333334
+2024-12,Housing & Utilities,0.8000000000000002
+2024-12,Other Goods,0.8
+2024-12,Services,0.025
+2024-12,Transport,1.9
+2025-01,Food & Dining,2.6
+2025-01,Housing & Utilities,1.1666666666666667
+2025-01,Other Goods,1.15
+2025-01,Services,3.85
+2025-01,Transport,0.1

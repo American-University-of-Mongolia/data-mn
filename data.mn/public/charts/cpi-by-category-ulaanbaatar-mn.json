@@ -1,40 +1,71 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Улаанбаатар хотын ХҮИ ангиллаар, 2025 оны 11-р сар",
+  "description": "Улаанбаатар хотын ХҮИ ангиллаар (2020-2025). 5 үндсэн бүлэгт хуваасан.",
   "data": {
     "url": "/datasets/cpi-by-category-ulaanbaatar-mn.csv",
     "format": {"type": "csv"}
   },
-  "mark": {
-    "type": "bar",
-    "cornerRadiusEnd": 4
-  },
   "encoding": {
     "x": {
-      "field": "утга",
-      "type": "quantitative",
-      "title": "Сараас сард өөрчлөлт (%)",
-      "axis": {"format": ".1f", "grid": true}
+      "field": "сар",
+      "type": "temporal",
+      "title": "Сар",
+      "axis": {"grid": false, "format": "%Y"}
     },
     "y": {
-      "field": "ангилал",
-      "type": "nominal",
-      "title": null,
-      "sort": "-x",
-      "axis": {"labelLimit": 250}
+      "field": "утга",
+      "type": "quantitative",
+      "title": "Сарын өөрчлөлт (%)",
+      "axis": {"format": ".1f"}
     },
     "color": {
-      "condition": {
-        "test": "datum.утга >= 0",
-        "value": "#54a24b"
-      },
-      "value": "#e45756"
-    },
-    "tooltip": [
-      {"field": "ангилал", "title": "Ангилал"},
-      {"field": "утга", "title": "Өөрчлөлт", "format": ".1f"}
-    ]
+      "field": "ангилал",
+      "type": "nominal",
+      "title": "Ангилал",
+      "legend": {"orient": "top"},
+      "scale": {
+        "domain": ["Хүнс, хоол", "Орон сууц, хэрэгсэл", "Тээвэр", "Үйлчилгээ", "Бусад бараа"]
+      }
+    }
   },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "ангилал", "title": "Ангилал"},
+          {"field": "сар", "title": "Сар", "type": "temporal", "format": "%Y-%m"},
+          {"field": "утга", "title": "Өөрчлөлт (%)", "format": ".1f"}
+        ]
+      }
+    }
+  ],
   "config": {
     "axis": {
       "labelFontSize": 14,
@@ -42,12 +73,10 @@
       "labelColor": "#64748b",
       "titleColor": "#334155"
     },
-    "view": {
-      "stroke": "transparent"
-    },
     "legend": {
       "labelFontSize": 13,
       "titleFontSize": 14
-    }
+    },
+    "view": {"stroke": "transparent"}
   }
 }

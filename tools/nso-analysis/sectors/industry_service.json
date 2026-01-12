@@ -1,0 +1,134 @@
+{
+  "sector": "Industry, service",
+  "table_count": 16,
+  "tables": [
+    {
+      "table_id": "DT_NSO_1600_001V1.px",
+      "title": "TOTAL TRADE TURNOVER, by trade sub-sector, and by year by Indicator and Year",
+      "subsector": "Trade, hotel and restaurant",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1200_013V5.px",
+      "title": "NUMBER OF IMPORTED VEHICLES, by country, type of vehicle, and by year by Indicator and Year",
+      "subsector": "Transportation",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1001_001V1.px",
+      "title": "GROSS LIVESTOCK OUTPUT, by year by Gross livestock output and Year",
+      "subsector": "Livestock",
+      "recommendation": "T2-Recommended",
+      "score": 72,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1600_002V1_month.px",
+      "title": "TOTAL TRADE TURNOVER, by aimags and the Capital, and by month by Region and Month",
+      "subsector": "Trade, hotel and restaurant",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1600_002V1_year.px",
+      "title": "TOTAL TRADE TURNOVER, by regions, aimags and the Capital, and by year by Region and Year",
+      "subsector": "Trade, hotel and restaurant",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1001_008V1.px",
+      "title": "NUMBER OF SURVIVAL, by type of livestock, aimags and the Capital, and by quarter by Type of livestock, Region and Quarter",
+      "subsector": "Livestock",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1001_011V1.px",
+      "title": "LOSSES OF ADULT ANIMALS, by type of livestock, aimags and the Capital, and by quarter by Type of livestock, Region and Quarter",
+      "subsector": "Livestock",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1001_040V2.px",
+      "title": "AVERAGE MARKET PRICE OF LIVESTOCK PRODUCTS, by month, aimags and the Capital by Indicator, Region and Month",
+      "subsector": "Livestock",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1100_015V2.px",
+      "title": "CONSTRUCTION COST INDEX,construction type by quarter",
+      "subsector": "Construction",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1100_010V1.px",
+      "title": "BALANCE OF COAL, by year by Indicators and Year",
+      "subsector": "Industry",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1100_016V4.px",
+      "title": "INDUSTRIAL PRODUCER PRICE INDEX, 2015=100, by division and month by Statistical indicator , Sector and Time",
+      "subsector": "Industry",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "COPYRIGHT, BY TYPES OF WORK",
+      "title": "COPYRIGHT, BY TYPES OF WORK",
+      "subsector": "Intellectual property",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "THE WORKS PROTECTED BY COPYRIGHT",
+      "title": "THE WORKS PROTECTED BY COPYRIGHT",
+      "subsector": "Intellectual property",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1800_005V2.px",
+      "title": "INBOUND FOREIGN PASSENGERS, by purpose of travel, geographical region, and by year by Geographical region, Purpose of visit and Year",
+      "subsector": "Tourism",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "Number of inbound and outbound foreign passengers by country of origin",
+      "title": "Number of inbound and outbound foreign passengers by country of origin",
+      "subsector": "Tourism",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1602_002V1.px",
+      "title": "INCOME OF THE FOOD SERVICE SECTOR by Region and Month",
+      "subsector": "Trade, hotel and restaurant",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    }
+  ]
+}

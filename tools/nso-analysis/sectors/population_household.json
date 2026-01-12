@@ -1,0 +1,158 @@
+{
+  "sector": "Population, household",
+  "table_count": 19,
+  "tables": [
+    {
+      "table_id": "DT_NSO_0300_001V2.px",
+      "title": "RESIDENT POPULATION IN MONGOLIA, by sex, single year of age, and by year by Sex, Age and Year",
+      "subsector": "1_Population, household",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_001V3.px",
+      "title": "POPULATION OF MONGOLIA, by sex, single year of age, and by year by Sex, Age and Year",
+      "subsector": "1_Population, household",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_003V1.px",
+      "title": "POPULATION OF MONGOLIA, by sex, age group, and by year by Sex, Age group and Year",
+      "subsector": "1_Population, household",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_027V1.px",
+      "title": "POPULATION OF MONGOLIA, by location, sex, and by year by Location and Year",
+      "subsector": "1_Population, household",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_076V12.px",
+      "title": "2020-2050 POPULATION PROJECTION BASED ON RESIDENT POPULATION OF MONGOLIA, by sex, age group, and by medium scenario 1B by Gender, Age group and Year",
+      "subsector": "4_Population projection",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_076V13.px",
+      "title": "2020-2050 POPULATION PROJECTION BASED ON TOTAL POPULATION OF MONGOLIA, by sex, age group, and by medium scenario 2B by Gender, Age Group and Year",
+      "subsector": "4_Population projection",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_029V1.px",
+      "title": "BIRTH RATES, by year by Age group and Year",
+      "subsector": "2_Regular movement of population",
+      "recommendation": "T2-Recommended",
+      "score": 72,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_002V1.px",
+      "title": "MID-YEAR TOTAL POPULATION, by aimags and the Capital, and by year by Region and Year",
+      "subsector": "1_Population, household",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_004V1.px",
+      "title": "POPULATION OF MONGOLIA, by location, aimags and the Capital, and by year by Location, Region and Year",
+      "subsector": "1_Population, household",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_040V1.px",
+      "title": "POPULATION MIGRATION, by aimags and the Capital, and by year by Indicator, Region and Year",
+      "subsector": "1_Population, household",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_001V1.px",
+      "title": "BIRTHS, DEATHS AND NATURAL INCREASE PER 1000 POPULATION, by aimags and the Capital, and by quarter by Indicators, Region and Quarter",
+      "subsector": "2_Regular movement of population",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_020V1.px",
+      "title": "MARRIAGES AND DIVORCES, by per 1000 population, aimags and the Capital, and by year by Marital status, Region and Year",
+      "subsector": "2_Regular movement of population",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_024V1.px",
+      "title": "BIRTH, DEATH AND NATURAL INCREASE, by per 1000 population, aimags and the Capital, and by year by Indicator, Aimag/Capital and Year",
+      "subsector": "2_Regular movement of population",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_052V1.px",
+      "title": "ADOPTION, by per 1000 population, aimags and the Capital, and by year by Indicator, Region and Year",
+      "subsector": "2_Regular movement of population",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_076V11.px",
+      "title": "2020-2050 POPULATION PROJECTION BASED ON RESIDENT POPULATION OF MONGOLIA, by sex, age group, aimags and the Capital, and by medium scenario 1B by Age group, Sex, Region and Year",
+      "subsector": "4_Population projection",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1001_031V1.px",
+      "title": "GROUPING OF LIVESTOCK, by herder households, aimags and the Capital, and by year by Herder households, Region and Year",
+      "subsector": "3_Herdsmen",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_3500_003V0.px",
+      "title": "THE NUMBER OF HOUSES, by type of dwelling, number of room and by census year by Type of dwellings, Number of room and Year",
+      "subsector": "3_Infrastructure, housing",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_3500_003V2.px",
+      "title": "THE NUMBER OF DWELLINGS, by type of dwelling, basic floor material, and by census year by Type of dwellings, Basic floor material and Year",
+      "subsector": "3_Infrastructure, housing",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_3500_005V1.px",
+      "title": "HOUSEHOLDS WHO LIVE IN APARTMENT WITH CENTRALIZED AND INDEPENDENT ENGINEERING SYSTEMS, by Indicator, Region and Year",
+      "subsector": "3_Infrastructure, housing",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    }
+  ]
+}

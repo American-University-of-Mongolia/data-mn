@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын ажилгүйдлийн түвшин, % (2009-2024)"
+publishDate: 2026-01-03
+excerpt: "Монгол Улсын ажилгүйдлийн түвшин 2009-2024 оны хооронд 5.3%-иас 11.6% хооронд хэлбэлзсэн бөгөөд хамгийн өндөр түвшин 2009 онд, хамгийн бага түвшин 2023 онд бүртгэгджээ."
+category: "Хөдөлмөр эрхлэлт"
+tags: ["монгол", "ажилгүйдэл", "хөдөлмөр эрхлэлт", "статистик", "үсх"]
+keywords: ["монгол ажилгүйдэл", "ажилгүйдлийн түвшин", "хөдөлмөрийн хүч"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-01-03
+dataFiles:
+  - path: "/datasets/unemployment-rate-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/unemployment-rate.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0400_049V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/unemployment-rate-mn.json"
+  title="Монгол Улсын ажилгүйдлийн түвшин, % (2009-2024)"
+/>

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia exports by commodity category 1995-2024, showing mineral product dominance",
+  "data": {
+    "url": "/datasets/exports-by-category-en.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {"format": "d", "tickMinStep": 5, "grid": false}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Thousands USD",
+      "axis": {"format": ".2s"}
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "legend": {"orient": "top", "title": null, "labelLimit": 250, "columns": 3},
+      "sort": {"field": "value", "op": "sum", "order": "descending"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "category", "type": "nominal", "title": "Category"},
+          {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
+          {"field": "value", "type": "quantitative", "title": "Thousands USD", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

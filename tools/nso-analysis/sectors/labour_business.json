@@ -1,0 +1,342 @@
+{
+  "sector": "Labour, business",
+  "table_count": 42,
+  "tables": [
+    {
+      "table_id": "DT_NSO_0400_049V1.px",
+      "title": "8.5.2 UNEMPLOYMENT RATE, by sex, age group, persons with disabilities, and by year by Category and Year",
+      "subsector": "Decent work",
+      "recommendation": "T1-Essential",
+      "score": 110,
+      "already_added": true
+    },
+    {
+      "table_id": "DT_NSO_0400_047V1.px",
+      "title": "8.2.1 ANNUAL GROWTH RATE OF REAL GDP PER EMPLOYED PERSON, by year by Indicator and Year",
+      "subsector": "Decent work",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_053V1.px",
+      "title": "10.4.1 LABOUR SHARE OF GDP, COMPRISING WAGES AND SOCIAL PROTECTION TRANSFERS, by year by Indicator and Year",
+      "subsector": "Decent work",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_001V2.px",
+      "title": "SMALL AND MEDIUM-SIZED LEGAL ENTITIES VALUE ADDED SHARES IN GDP, by economic activity, and by year by Economic activity and Year",
+      "subsector": "SMEs",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_066V1.px",
+      "title": "CONT-5 INFLATION AVERAGE RATE OF YEAR (CPI), by region, and by year by Indicator and Year",
+      "subsector": "Decent work",
+      "recommendation": "T1-Essential",
+      "score": 80,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_045V1.px",
+      "title": "1.3.1 PROPORTION OF POPULATION COVERED BY SOCIAL PROTECTION FLOORS/SYSTEMS PERCENT, by sex, age group, location, region, and by year by Indicator and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_060V1.px",
+      "title": "SECU-1 PROPORTION OF POPULATION RECEIVING OLD-AGE PENSION, by year by Category and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_061V1.px",
+      "title": "DIAL-1 Trade union density rate (percentage) by Category and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_064V1.px",
+      "title": "CONT-2 ESTIMATED PERCENTAGE OF WORKING AGE POPULATION WHO ARE HIV POSITIVE, by year by Indicator and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_068V1.px",
+      "title": "CONT-7 EDUCATION OF ADULT POPULATION (ADULT LITERACE RATE),IN PERCENTAGE, by sex, and by census year by Category and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "EMPLOYMENT INDICATORS OF POPULATION AGED 15 AND OVER, by national level",
+      "title": "EMPLOYMENT INDICATORS OF POPULATION AGED 15 AND OVER, by national level",
+      "subsector": "Labour",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_001V10.px",
+      "title": "SHARE TO TOTAL EXPORTS AND IMPORTS OF SMALL AND MEDIUM-SIZED LEGAL ENTITIES, by year by Indicator, Category and Year",
+      "subsector": "SMEs",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_001V9.px",
+      "title": "SMALL AND MEDIUM-SIZED LEGAL ENTITIES VALUE ADDED SHARES IN GDP, by aimags and the Capital, and by year by Region and Year",
+      "subsector": "SMEs",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "REAL WAGE INDEX (2015=100), by divisions of economic activities",
+      "title": "REAL WAGE INDEX (2015=100), by divisions of economic activities",
+      "subsector": "Wages",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "EMPLOYMENT TO POPULATION RATIO, by sex, age group, aimags and the Capital",
+      "title": "EMPLOYMENT TO POPULATION RATIO, by sex, age group, aimags and the Capital",
+      "subsector": "Labour",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_056V1.px",
+      "title": "EARN-1 WORKING POVERTY RATE OF EMPLOYED PERSONS (WPRE, percent), by sex, age group, aimags and the Capital, and by year by Indicator and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_048V1.px",
+      "title": "8.5.1 AVERAGE HOURLY EARNINGS OF FEMALE AND MALE EMPLOYEES, by occupation, age, sex, location, region, and by year by Category and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_050V1.px",
+      "title": "8.6.1 PROPORTION OF YOUTH (AGED 15-24) NOT IN EDUCATION, EMPLOYMENT OR TRAINING PERCENT, by sex, location, region, and by year by Indicator and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_051V1.px",
+      "title": "8.8.1 INCIDENCE RATES OF FATAL AND NON-FATAL OCCUPATIONAL INJURIES, by sex, and by year by Indicator, Sex and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_052V1.px",
+      "title": "8.7.1 NUMBER OF CHILDREN AGED 5-17 YEARS ENGAGED IN CHILDLABOUR, by sex, age group, location and region, and by year of survey by Statistical indicator, Indicator and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_055V1.px",
+      "title": "EMPL-1 EMPLOYMENT-TO-POPULATIAN RATIO PERCENT, by sex, age group, location, and by year by Category and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_057V1.px",
+      "title": "EARN-2 EMPLOYEES WITH LOW PAY RATE (ELPR), by sex, age group, location, region, and by year by Indicator and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_058V1.px",
+      "title": "TIME-1. EMPLOYMENT IN EXCESSIVE WORKING TIME (more than 48 hours per week), by sex, age group, location, region, and by year by Indicator and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_059V1.px",
+      "title": "EQUA-1 OCCUPATIONAL SEGREGATION: FEMALE SHARE OF EMPLOYMENT by occupation, and by year by Indicator and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_065V1.px",
+      "title": "CONT-4 INCOME INEQUALITY (90:10 RATIO), by age, sex, location, region, and by year by Indicator and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_067V1.px",
+      "title": "CONT-6 EMPLOYMENT, by classification of economic activities, and by year by Economic activity and Year",
+      "subsector": "Decent work",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_39V1_2.px",
+      "title": "FOREIGN WORKERS WITH LABOUR CONTRACT, by country, and by quarter by Country, Sex and Quarter",
+      "subsector": "Labour",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0400_40V1.px",
+      "title": "FOREIGN WORKERS WITH LABOUR CONTRACT, by economic activity, and by quarter by Divisions, Sex and Quarter",
+      "subsector": "Labour",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_001V6.px",
+      "title": "EMPLOYEES WORKING ABROAD ON A CONTRACTUAL BASIS, by economic activity, and by quarter by Sex, Divisions and Quarter",
+      "subsector": "Labour",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "EMPLOYEES WORKING ABROAD ON A CONTRACTUAL BASIS, by country",
+      "title": "EMPLOYEES WORKING ABROAD ON A CONTRACTUAL BASIS, by country",
+      "subsector": "Labour",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_BR_01V33.px",
+      "title": "SMALL AND MEDIUM-SIZED LEGAL ENTITIES, by employment size group and sales size group, and by year by Employment size group, Sales size group and Year",
+      "subsector": "SMEs",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2600_008V1.px",
+      "title": "NUMBER OF LEGAL ENTITIES, by employment size class and ownership type, and by quarter by Size group of employees, Ownership type and Quarter",
+      "subsector": "Statistical Business Register",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2600_014V3.px",
+      "title": "NUMBER OF LEGAL ENTITIES, by economic activity and employment size class, and by year by Size group of employment, Economic activity and Quarter",
+      "subsector": "Statistical Business Register",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2600_015V4.px",
+      "title": "NUMBER OF LEGAL ENTITIES, by division of economic activity and size group of employees, and by quarter by Size group of employment, Division of economic activity and Quarter",
+      "subsector": "Statistical Business Register",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2600_016V4.px",
+      "title": "NUMBER OF LEGAL ENTITIES, by group of economic activity and activity status, and by quarter by Employment size group, Group of economic activity and Quarter",
+      "subsector": "Statistical Business Register",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "EMPLOYEES, by group of wages,and share to total",
+      "title": "EMPLOYEES, by group of wages,and share to total",
+      "subsector": "Wages",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "MONTHLY AVERAGE NOMINAL WAGES , by legal status and gender",
+      "title": "MONTHLY AVERAGE NOMINAL WAGES , by legal status and gender",
+      "subsector": "Wages",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "MONTHLY AVERAGE NOMINAL WAGES , by type of ownership and gender",
+      "title": "MONTHLY AVERAGE NOMINAL WAGES , by type of ownership and gender",
+      "subsector": "Wages",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "MONTHLY AVERAGE NOMINAL WAGES OF EMPLOYEE, by employees size class and gender",
+      "title": "MONTHLY AVERAGE NOMINAL WAGES OF EMPLOYEE, by employees size class and gender",
+      "subsector": "Wages",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "MONTHLY AVERAGE NOMINAL WAGES, by division of economic activities",
+      "title": "MONTHLY AVERAGE NOMINAL WAGES, by division of economic activities",
+      "subsector": "Wages",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "MONTHLY AVERAGE NOMINAL WAGES, by occupation and gender",
+      "title": "MONTHLY AVERAGE NOMINAL WAGES, by occupation and gender",
+      "subsector": "Wages",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "MONTHLY MEDIAN WAGES OF EMPLOYEES",
+      "title": "MONTHLY MEDIAN WAGES OF EMPLOYEES",
+      "subsector": "Wages",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    }
+  ]
+}

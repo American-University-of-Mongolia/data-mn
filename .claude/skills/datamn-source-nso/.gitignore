@@ -1,0 +1,22 @@
+# Metadata cache
+metadata/tables.db
+metadata/tables.db-journal
+metadata/*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын экспорт ангиллаар 1995-2024, эрдэс бүтээгдэхүүний давамгайлал",
+  "data": {
+    "url": "/datasets/exports-by-category-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 5, "grid": false}
+    },
+    "y": {
+      "field": "утга",
+      "type": "quantitative",
+      "title": "Мянган ам.доллар",
+      "axis": {"format": ".2s"}
+    },
+    "color": {
+      "field": "ангилал",
+      "type": "nominal",
+      "legend": {"orient": "top", "title": null, "labelLimit": 250, "columns": 3},
+      "sort": {"field": "утга", "op": "sum", "order": "descending"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "ангилал", "type": "nominal", "title": "Ангилал"},
+          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
+          {"field": "утга", "type": "quantitative", "title": "Мянган ам.доллар", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

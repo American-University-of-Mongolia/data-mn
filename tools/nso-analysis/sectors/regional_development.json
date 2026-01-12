@@ -1,0 +1,294 @@
+{
+  "sector": "Regional development",
+  "table_count": 36,
+  "tables": [
+    {
+      "table_id": "DT_NSO_0600_013V2.px",
+      "title": "INFLATION RATE by Indicator and Year",
+      "subsector": "Price",
+      "recommendation": "T1-Essential",
+      "score": 110,
+      "already_added": true
+    },
+    {
+      "table_id": "DT_NSO_1001_109V1.px",
+      "title": "NUMBER OF LIVESTOCK, by type of livestock, aimags and the Capital, and by year by Type of livestock, Region and Year",
+      "subsector": "Livestock",
+      "recommendation": "T1-Essential",
+      "score": 92,
+      "already_added": true
+    },
+    {
+      "table_id": "DT_NSO_0600_001V3.px",
+      "title": "NATIONAL BASE CONSUMER PRICE INDEX, by group and month by Reference year, Group and Month",
+      "subsector": "Price",
+      "recommendation": "T1-Essential",
+      "score": 80,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_002V1.px",
+      "title": "NATIONAL CONSUMER PRICE INDEX, 1991-1-16=100 by Indicator and Year",
+      "subsector": "Price",
+      "recommendation": "T1-Essential",
+      "score": 80,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_009V1.px",
+      "title": "NATIONAL CONSUMER PRICE INDEX, by group, monthly percent change by Reference year, Group and Month",
+      "subsector": "Price",
+      "recommendation": "T1-Essential",
+      "score": 80,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_007V1 (2).px",
+      "title": "GROSS DOMESTIC PRODUCT, by aimags and the Capital, and by year by Region and Year",
+      "subsector": "National accounts",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_011V1.px",
+      "title": "GROSS DOMESTIC PRODUCT PER CAPITA, by aimags and the Capital, and by year by Region and Year",
+      "subsector": "National accounts",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_021V1.px",
+      "title": "INDUSTRIAL COMPOSITION OF GROSS DOMESTIC PRODUCT, by aimags and the Capital, and by year by Region, Economic activity and Year",
+      "subsector": "National accounts",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_021V2.px",
+      "title": "GROSS DOMESTIC PRODUCT, by economic activity, aimags and the Capital, and by year by Region, Economic activity and Year",
+      "subsector": "National accounts",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_001V9.px",
+      "title": "SMALL AND MEDIUM-SIZED ENTERPRISES VALUE ADDED SHARES IN GDP, by aimags and the Capital, and by year by Region and Year",
+      "subsector": "SMEs",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1200_013V5.px",
+      "title": "NUMBER OF IMPORTED VEHICLES, by country, type of vehicle, and by year by Indicator and Year",
+      "subsector": "Transportation",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_008V1.px",
+      "title": "NATIONAL CONSUMER PRICE INDEX, by groups and percent changes compared with the end of previous year by Reference year, Group and Month",
+      "subsector": "Price",
+      "recommendation": "T2-Recommended",
+      "score": 70,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_010V1.px",
+      "title": "NATIONAL CONSUMER PRICE INDEX, by groups and percent changes, compared with the same period of previous year by Reference year, Group and Month",
+      "subsector": "Price",
+      "recommendation": "T2-Recommended",
+      "score": 70,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_004V1.px",
+      "title": "POPULATION OF MONGOLIA, by location, aimags and the Capital, and by year by Location, Region and Year",
+      "subsector": "Population and household",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_020V1.px",
+      "title": "MARRIAGES AND DIVORCES, by per 1000 population, aimags and the Capital, and by year by Marital status, Region and Year",
+      "subsector": "Population and household",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_040V1.px",
+      "title": "POPULATION MIGRATION, by aimags and the Capital, and by year by Indicator, Region and Year",
+      "subsector": "Population and household",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1600_002V1_month.px",
+      "title": "TOTAL TRADE TURNOVER, by aimags and Capital, and by month by Region and Month",
+      "subsector": "Trade",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1600_002V1_year.px",
+      "title": "TOTAL TRADE TURNOVER, by Aimag and Time (Annual)",
+      "subsector": "Trade",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2300_024V1.px",
+      "title": "CRIME OF LIVESTOCK THEFT, by region, aimag and the capital, year by Aimag and TIME",
+      "subsector": "Justice and crime",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1001_108V1.px",
+      "title": "SURVIVALS OF YOUNG ANIMALS, aimags and the Capital, and by year by Type of livestock, Region and Year",
+      "subsector": "Livestock",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1001_133V1.px",
+      "title": "NUMBER OF MISCARRAGE FEMALE ANIMALS, aimags and the Capital, and by year by Type of livestock, Region and Year",
+      "subsector": "Livestock",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1001_134V1.px",
+      "title": "NUMBER OF BARREN FEMALE ANIMALS, by type of livestock, aimag and the Capital, and by year by Type of livestock, Region and Year",
+      "subsector": "Livestock",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1001_135V1.px",
+      "title": "NUMBER OF BREEDING STOCK, by type of livestock, aimags and the Capital, and by year by Type of livestock, Region and Year",
+      "subsector": "Livestock",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1001_136V1.px",
+      "title": "LOSSES OF ADULT ANIMALS, by type of livestock, aimags and the Capital, and by year by Type of livestock, Region and Year",
+      "subsector": "Livestock",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_001V3.px",
+      "title": "MONTHLY AVERAGE INCOME PER HOUSEHOLD, by region, and by year /2007-2024/ by Region, Types of income and Year",
+      "subsector": "Population livelihood",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_002V3.px",
+      "title": "MONTHLY AVERAGE EXPENDITURE PER HOUSEHOLD, by region, and by year /2007-2024/ by Region, Types of expenditure and Year",
+      "subsector": "Population livelihood",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_003V3.px",
+      "title": "COMPOSITION OF MONTHLY AVERAGE INCOME PER HOUSEHOLD, by region, and by year /2007-2024/ by Region, Types of income and Year",
+      "subsector": "Population livelihood",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_004V3.px",
+      "title": "COMPOSITION OF MONTHLY AVERAGE EXPENDITURE PER HOUSEHOLD, by region, and by year /2007-2024/ by Region, Types of expenditure and Year",
+      "subsector": "Population livelihood",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_036V4.px",
+      "title": "INEQUALITY, based on monthly consumption per capita, by region, and by year /Gini coefficient and Theil index, by every 2 years/ by Indicator, Region and Year",
+      "subsector": "Population livelihood",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0303_07V71.px",
+      "title": "CONSUMER PRICE INDEX, compared with the previous month, by aimags and the Capital, and by month by Reference year, Region, Groups and Month",
+      "subsector": "Price",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0303_07V81.px",
+      "title": "CONSUMER PRICE INDEX, compared with the same period of the previous year, by aimags and the Capital city, and by month by Reference year, Region, Groups and Month",
+      "subsector": "Price",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0303_07V91.px",
+      "title": "CONSUMER PRICE INDEX, compared with the end of the previous year, by aimags and the Capital, and by month by Reference year, Region, Groups and Month",
+      "subsector": "Price",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1602_003V1.px",
+      "title": "INCOME OF THE HOTEL SECTOR by Region and Quarter",
+      "subsector": "Trade",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1602_003V1_1.px",
+      "title": "INCOME OF THE HOTEL SECTOR by Region and Month",
+      "subsector": "Trade",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1602_004V1.px",
+      "title": "\u201cINCOME OF THE FOOD SECTOR by Region and Quarter",
+      "subsector": "Trade",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1602_004V1_1.px",
+      "title": "INCOME OF THE FOOD SECTOR by Region and Month",
+      "subsector": "Trade",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    }
+  ]
+}

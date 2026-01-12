@@ -1,0 +1,134 @@
+{
+  "sector": "Education, health",
+  "table_count": 16,
+  "tables": [
+    {
+      "table_id": "DT_NSO_2100_012V1.px",
+      "title": "NEW CASES OF CANCER, per 10000 population, by type of cancer by Type malignant neoplasms and Annual",
+      "subsector": "Births, deaths",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2100_013V1.px",
+      "title": "DEATHS OF CANCER, per 10000 population, by year by Indicator and Year",
+      "subsector": "Disease",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_071V02.px",
+      "title": "INPATIENTS PER 10000 POPULATION, 10 leading classification of diseases, and by year by Classification of disease and Year",
+      "subsector": "Main indicators for Health sector",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_029V1.px",
+      "title": "BIRTH RATES, by year by Age group and Year",
+      "subsector": "Births, deaths",
+      "recommendation": "T2-Recommended",
+      "score": 72,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2100_045V1.px",
+      "title": "NEW CASES AND MORTALITY OF CANCER, per 10000 population, aimags and the Capital, and by year by Indicator, Region and Year",
+      "subsector": "Disease",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2100_014V2.px",
+      "title": "INFANT MORTALITY RATE, per 1000 live births, aimags and the Capital and by month by Region and Month",
+      "subsector": "Births, deaths",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2100_015V1.px",
+      "title": "INFANT MORTALITY RATE, per 1000 live births, aimags and the Capital and by month by Region and Month",
+      "subsector": "Births, deaths",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2100_040V2.px",
+      "title": "NEONATAL MORTALITY RATE, per 1000 live births, aimags and the Capital and by month by Region and Month",
+      "subsector": "Births, deaths",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2100_047V1.px",
+      "title": "ADOLESCENT BIRTH RATE (aged 10\u201314 years and aged 15\u201319 years) per 1,000 women in that age group, aimags and the Capital, and by year by Indicator, Region and Year",
+      "subsector": "Births, deaths",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2100_051V1.px",
+      "title": "PERCENTAGE OF WOMEN AGE 15-49 YEARS WHO ARE CURRENTLY MARRIED OR IN UNION WITH UNMET AND PERCENTAGE OF DEMAND FOR FAMILY PLANNING SATISFIED by Indicators and Time (Annual)",
+      "subsector": "Births, deaths",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2002_065V1.px",
+      "title": "NET INTAKE RATE (NIR) IN THE FIRST GRADE OF PRIMARY, by sex, and by year by Sex, Region and Year",
+      "subsector": "General educational schools",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2002_055V1.px",
+      "title": "EXPENDITURE ON EDUCATIONAL SECTOR, by type, and year, at current prices by Type and Year",
+      "subsector": "General indicators for Education",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2100_033V1.px",
+      "title": "REVENUE AND EXPENDITURE OF HEALTH INSURANCE FUND, by type, and by month (cumulative) by Indicator and Month",
+      "subsector": "Health insurance",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2100_30V001.px",
+      "title": "REVENUE AND EXPENDITURE OF HEALTH INSURANCE FUND, by type, and by year by Indicator and Year",
+      "subsector": "Health insurance",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2100_030V1.px",
+      "title": "EXPENDITURE ON HEALTH SECTOR, by year by Indicator and Year",
+      "subsector": "Main indicators for Health sector",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2100_033V1.px",
+      "title": "REVENUE AND EXPENDITURE OF HEALTH INSURANCE FUND, by type, and by month (cumulative) by Indicator and Month",
+      "subsector": "Main indicators for Health sector",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    }
+  ]
+}

@@ -40,8 +40,7 @@ data/
 │   │   └── generate_astro_redirects.py # URL redirect generation
 │   ├── templates/          # MDX generation templates
 │   ├── versions/           # Dataset version history
-│   ├── nso-catalog-status.csv      # Full 1212.mn table catalog (1135 tables)
-│   ├── nso-missing-datasets.csv    # NSO tables not yet in registry
+│   ├── data-registry.xlsx  # Master registry (open in Excel to browse)
 │   └── TRANSLATION_GUIDE.md        # Single-language source translation guide
 ├── CLAUDE.md               # This file
 ├── requirements.txt        # Python dependencies
@@ -156,7 +155,7 @@ python3 query_api.py --sectors
 python3 fetch_data.py  # Edit DATASETS list first
 ```
 
-**Reference Data**: The full catalog of 1,135 NSO tables is available at `tools/nso-catalog-status.csv`.
+**Reference Data**: The full catalog of 1,135 NSO tables is in the "NSO Catalog" sheet of `tools/data-registry.xlsx`.
 
 ### `datamn-registry`
 Query and manage the dataset registry database.
@@ -267,6 +266,22 @@ python3 tools/scripts/validate_mdx_datafiles.py path/to/file.mdx
 This catches:
 - Missing CSV/XLSX files in dataFiles frontmatter
 - Wrong language suffixes (e.g., `-en.csv` in an MN page)
+
+### `tools/scripts/validate_dataset.py`
+Comprehensive validation for individual dataset files.
+
+```bash
+# Validate MDX file
+python3 tools/scripts/validate_dataset.py --mdx path/to/file.mdx
+
+# Validate CSV file
+python3 tools/scripts/validate_dataset.py --csv path/to/file.csv
+
+# Validate all files for a dataset
+python3 tools/scripts/validate_dataset.py --all DATASET_ID
+```
+
+Used by worker agents for parallel validation when a full build isn't possible.
 
 ### `tools/scripts/translate_csv.py`
 Translate CSV data between English and Mongolian for single-language sources.
@@ -503,9 +518,21 @@ Car price prediction model using Unegui.mn scraped data.
 
 | File | Location | Description |
 |------|----------|-------------|
-| `nso-catalog-status.csv` | `tools/` | Full catalog of 1,135 NSO 1212.mn tables with status (exists/missing) |
-| `nso-missing-datasets.csv` | `tools/` | NSO tables not yet added to the registry |
-| `data.db` | `tools/registry/` | SQLite registry database |
+| `data-registry.xlsx` | `tools/` | **Master registry** - open in Excel to browse all data |
+| `data.db` | `tools/registry/` | SQLite registry database (programmatic access) |
+
+### data-registry.xlsx Sheets
+
+| Sheet | Contents |
+|-------|----------|
+| Dashboard | Summary stats and category breakdown |
+| NSO Catalog | All 1,135 NSO 1212.mn tables with status |
+| Datasets | All data.mn datasets with metadata |
+| Sources | Data sources (NSO, MRPAM, MongolBank) |
+| Versions | Dataset version history |
+| Activity Log | Recent operations |
+
+**Tip**: The Excel file is a snapshot for browsing. For programmatic access, use the registry Python module or SQLite database.
 
 ---
 

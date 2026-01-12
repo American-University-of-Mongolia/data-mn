@@ -1,0 +1,310 @@
+{
+  "sector": "Society, development",
+  "table_count": 38,
+  "tables": [
+    {
+      "table_id": "DT_NSO_1003_001V1.px",
+      "title": "ANNUAL FOOD CONSUMPTION OF STANDARD POPULATION, by national average, product type and by year by Product type and Year",
+      "subsector": "Food Security",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2300_22V1.px",
+      "title": "PREVALENCE OF FOOD INSECURITY, by population, national average, location and by year by Location, Indicator and Year",
+      "subsector": "Food Security",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_010V1.px",
+      "title": "MINIMUM SUBSISTENCE LEVEL OF POPULATION, per capita per month, by region, and by year /2001-2025/ by Region and Year",
+      "subsector": "Poverty, inequality and minimum subsistence level",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_016V1.px",
+      "title": "MINIMUM SUBSISTENCE LEVEL OF POPULATION, per capita per month, by region, and by year /1999-2000/ by Region and Year",
+      "subsector": "Poverty, inequality and minimum subsistence level",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_007V1.px",
+      "title": "POVERTY MAIN INDICATORS, by region and location, and by year /1995-2020/ by Indicator, Location and Year",
+      "subsector": "Poverty, inequality and minimum subsistence level",
+      "recommendation": "T2-Recommended",
+      "score": 72,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_007V12.px",
+      "title": "POVERTY MAIN INDICATORS, by region and location, and by year /2022/ by Indicator, Location and Year",
+      "subsector": "Poverty, inequality and minimum subsistence level",
+      "recommendation": "T2-Recommended",
+      "score": 72,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_008V1.px",
+      "title": "MONTHLY AVERAGE PER CAPITA CONSUMPTION, by main categories of consumption, poverty status, region, and by year /2003-2020/ by Indicator, Main categories of consumption and Year",
+      "subsector": "Poverty, inequality and minimum subsistence level",
+      "recommendation": "T2-Recommended",
+      "score": 72,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2300_034V1.px",
+      "title": "RECORDED CRIME RATE PER 10000 POPULATION AGED 16 AND ABOVE, by aimags and the Capital, and by year by Region and Year",
+      "subsector": "Law and crime",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2300_036V1.px",
+      "title": "RESOLVED BY COURT CRIMINAL CASE RATE PER 10000 POPULATION AGED 16 AND ABOVE, by aimags and the Capital, and by year by Region and Year",
+      "subsector": "Law and crime",
+      "recommendation": "T2-Recommended",
+      "score": 65,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2300_024V1.px",
+      "title": "CRIME OF LIVESTOCK THEFT, by aimags and the Capital, and by year by Region and Year",
+      "subsector": "Law and crime",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_035V1.px",
+      "title": "POVERTY MAIN INDICATORS, by aimags and region, and by year /2016-2020/ by Indicator, Aimag and Year",
+      "subsector": "Poverty, inequality and minimum subsistence level",
+      "recommendation": "T2-Recommended",
+      "score": 62,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2300_20V1.px",
+      "title": "PREVALENCE OF FOOD INSECURITY, by household, national average, location and by year by Location, Indicator and Year",
+      "subsector": "Food Security",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_001V1.px",
+      "title": "MONTHLY AVERAGE INCOME PER HOUSEHOLD, by location, and by year /1997-2024/ by Location, Types of income and Year",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_001V2.px",
+      "title": "MONTHLY AVERAGE INCOME PER HOUSEHOLD, by region, and by year /2007-2024/ by Region, Types of income and Year",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_002V1.px",
+      "title": "MONTHLY AVERAGE EXPENDITURE PER HOUSEHOLD, by location, and by year /1997-2024/ by Location, Types of expenditure and Year",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_002V2.px",
+      "title": "MONTHLY AVERAGE EXPENDITURE PER HOUSEHOLD, by region, and by year /2007-2024/ by Region, Types of expenditure and Year",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_003V1.px",
+      "title": "COMPOSITION OF MONTHLY AVERAGE INCOME PER HOUSEHOLD, by location, and by year /1997-2024/ by Location, Types of income and Year",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_003V2.px",
+      "title": "COMPOSITION OF MONTHLY AVERAGE INCOME PER HOUSEHOLD, by region, and by year /2007-2024/ by Region, Types of income and Year",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_004V1.px",
+      "title": "COMPOSITION OF MONTHLY AVERAGE EXPENDITURE PER HOUSEHOLD, by location, and by year /1997-2024/ by Location, Types of expenditure and Year",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_004V2.px",
+      "title": "COMPOSITION OF MONTHLY AVERAGE EXPENDITURE PER HOUSEHOLD, by region, and by year /2007-2024/ by Region, Types of expenditure and Year",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_015V1.px",
+      "title": "ANNUAL AVERAGE MONETARY INCOME PER HOUSEHOLD, by location, and by year /1966-1996/ by Location, Types of income and Year",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_017V1.px",
+      "title": "ANNUAL AVERAGE MONETARY EXPENDITURE PER HOUSEHOLD, by location, and by year /1966-1996/ by Location, Types of expenditure and Year",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_018V1.px",
+      "title": "MONTHLY AVERAGE INCOME PER HOUSEHOLD, by location, and by quarter by Location, Types of income and Quarter",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_019V1.px",
+      "title": "MONTHLY AVERAGE EXPENDITURE PER HOUSEHOLD, by location, and by quarter by Location, Types of expenditure and Quarter",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_020V1.px",
+      "title": "COMPOSITION OF MONTHLY AVERAGE INCOME PER HOUSEHOLD, by location, and by quarter by Location, Types of income and Quarter",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_021V1.px",
+      "title": "COMPOSITION OF MONTHLY AVERAGE EXPENDITURE PER HOUSEHOLD, by location, and by quarter by Location, Types of expenditure and Quarter",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_030V2.px",
+      "title": "MONETARY INCOME AND EXPENDITURE GROUPING, share to total of household, by location, and by quarter by Indicator, Location, Grouping and Quarter",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_032V1.px",
+      "title": "MONETARY INCOME GROUPING, share to total of household, by location, at current prices, and by year by Location, Group of monetary income and Year",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_033V1.px",
+      "title": "MONETARY EXPENDITURE GROUPING, share to total of household, by location, at current prices, and by year by Location, Group of monetary expenditure and Year",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_036V2.px",
+      "title": "GINI INDEX, based on monthly expenditure per capita, and by quarter by Region and Quarter",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_036V3.px",
+      "title": "THEIL INDEX, based on monthly expenditure per capita, and by quarter by Region and Quarter",
+      "subsector": "Household income and expenditure",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2300_001A4.px",
+      "title": "REPORT ON DECLARATION OF PRIVATE INTEREST, ASSET AND INCOME, by year by Indicator and Year",
+      "subsector": "Law and crime",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2300_041V1.px",
+      "title": "RESOLVED CRIME ACCORDING TO THE LAW ON FAMILY, by year by Indicator and Year",
+      "subsector": "Law and crime",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_013V1.px",
+      "title": "MONTHLY AVERAGE PER CAPITA CONSUMPTION, by household deciles, location, and by year /2003-2020/ by Location, Group and Year",
+      "subsector": "Poverty, inequality and minimum subsistence level",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_014V1.px",
+      "title": "CONSUMPTION SHARES, by household quintiles, location, and by year by Location, Group and Year",
+      "subsector": "Poverty, inequality and minimum subsistence level",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1900_036V1.px",
+      "title": "INEQUALITY, based on monthly consumption per capita, by region and location, and by year /Gini coefficient and Theil index, by every 2 years/ by Indicator, Location and Year",
+      "subsector": "Poverty, inequality and minimum subsistence level",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "EXPENDITURE OF SOCIAL SINSURANCE FUND, by type",
+      "title": "EXPENDITURE OF SOCIAL SINSURANCE FUND, by type",
+      "subsector": "Social Insurance and Welfare",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_4000_001.px",
+      "title": "\u042f\u0434\u0443\u0443\u0440\u043b\u044b\u043d \u04af\u043d\u0434\u044d\u0441\u043d\u0438\u0439 \u0442\u04af\u0432\u0448\u043d\u044d\u044d\u0441 \u0434\u043e\u043e\u0433\u0443\u0443\u0440 \u0430\u043c\u044c\u0436\u0438\u0440\u0433\u0430\u0430\u0442\u0430\u0439 \u0445\u04af\u043d \u0430\u043c\u044b\u043d \u044d\u0437\u043b\u044d\u0445 \u0445\u0443\u0432\u044c, \u0445\u04af\u0439\u0441\u044d\u044d\u0440, \u043d\u0430\u0441\u043d\u044b \u0431\u04af\u043b\u0433\u044d\u044d\u0440 by \u04ae\u0437\u04af\u04af\u043b\u044d\u043b\u0442 and \u041e\u041d",
+      "subsector": "Sustainable Development Goals",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+---
+title: "Mongolia Exports by Category, Thousands USD (1995-2024)"
+publishDate: 2025-12-16
+excerpt: "Mongolia exported $15.8 billion in goods in 2024, with mineral products accounting for 87% of total exports."
+category: "Trade"
+tags: ["exports", "trade", "commodities", "mining"]
+keywords: ["Mongolia exports", "commodity trade", "mineral exports", "cashmere exports", "export composition"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-16
+dataFiles:
+  - path: "/datasets/exports-by-category-en.csv"
+    format: "csv"
+    size: "8 KB"
+    description: "Download as CSV"
+  - path: "/datasets/exports-by-category.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1400_005V1_year.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/exports-by-category-en.json"
+  title="Mongolia Exports by Category (1995-2024)"
+/>

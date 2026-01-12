@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын экспорт ангиллаар, мянган ам.доллар (1995-2024)"
+publishDate: 2025-12-16
+excerpt: "Монгол Улс 2024 онд 15.8 тэрбум ам.долларын бараа экспортолсон бөгөөд эрдэс бүтээгдэхүүн нийт экспортын 87%-ийг эзэлж байна."
+category: "Худалдаа"
+tags: ["экспорт", "худалдаа", "бараа бүтээгдэхүүн", "уул уурхай"]
+keywords: ["Монгол экспорт", "барааны худалдаа", "эрдэс экспорт", "ноолуур экспорт", "экспортын бүтэц"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-16
+dataFiles:
+  - path: "/datasets/exports-by-category-mn.csv"
+    format: "csv"
+    size: "15 KB"
+    description: "CSV татах"
+  - path: "/datasets/exports-by-category.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1400_005V1_year.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/exports-by-category-mn.json"
+  title="Монгол Улсын экспорт ангиллаар (1995-2024)"
+/>

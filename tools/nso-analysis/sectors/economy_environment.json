@@ -1,0 +1,766 @@
+{
+  "sector": "Economy, environment",
+  "table_count": 95,
+  "tables": [
+    {
+      "table_id": "DT_NSO_0500_001V1.px",
+      "title": "GROSS DOMESTIC PRODUCT, by production approach, by economic activity, and by year by Indicator, Economic activity and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T1-Essential",
+      "score": 115,
+      "already_added": true
+    },
+    {
+      "table_id": "DT_NSO_0100_001V10.px",
+      "title": "BALANCE OF PAYMENTS, by month by Indicator and Month",
+      "subsector": "Balance of Payments",
+      "recommendation": "T1-Essential",
+      "score": 110,
+      "already_added": true
+    },
+    {
+      "table_id": "DT_NSO_0600_013V2.px",
+      "title": "INFLATION RATE by Indicator and Year",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T1-Essential",
+      "score": 110,
+      "already_added": true
+    },
+    {
+      "table_id": "DT_NSO_1400_005V1_year.px",
+      "title": "EXPORTS, by commodity groups and year by Commodity groups and Year",
+      "subsector": "Foreign Trade",
+      "recommendation": "T1-Essential",
+      "score": 105,
+      "already_added": true
+    },
+    {
+      "table_id": "DT_NSO_1400_006V3.px",
+      "title": "EXPORTS, by country and year by Countries and Year",
+      "subsector": "Foreign Trade",
+      "recommendation": "T1-Essential",
+      "score": 105,
+      "already_added": true
+    },
+    {
+      "table_id": "DT_NSO_0600_003V4.px",
+      "title": "CONSUMER PRICE INDEX IN THE CAPITAL, by groups, compared with previous month by Reference year, Group and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T1-Essential",
+      "score": 100,
+      "already_added": true
+    },
+    {
+      "table_id": "DT_NSO_0600_001V4.px",
+      "title": "WEEKLY PRICES OF MAIN PRODUCTS AND GASOLINE",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T1-Essential",
+      "score": 90,
+      "already_added": true
+    },
+    {
+      "table_id": "DT_NSO_0500_001V2.px",
+      "title": "SMALL AND MEDIUM-SIZED LEGAL ENTITIES VALUE ADDED SHARES IN GDP, by economic activity, and by year by Economic activity and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_002V1.px",
+      "title": "INDUSTRIAL COMPOSITION OF GROSS DOMESTIC PRODUCT, by year by Economic activity and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_003V1_annual.px",
+      "title": "GROSS DOMESTIC PRODUCT, by expenditure approach, and by year by Indicator, Components and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_003V1_quarter.px",
+      "title": "GROSS DOMESTIC PRODUCT, by expenditure approach, quarterly by Statistical indicator, Component and year",
+      "subsector": "National Accounts",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_004V1.px",
+      "title": "GROSS DOMESTIC PRODUCT, by production approach, by quarter, by divisions by Statistical indicator, Composition and Time (Quarterly)",
+      "subsector": "National Accounts",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_005V1.px",
+      "title": "PRIVATE SECTOR VALUE ADDED SHARE TO GROSS DOMESTIC PRODUCT, by economic activity, and by year by Economic activity and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_006V1.px",
+      "title": "GROSS DOMESTIC PRODUCT, by income approach, and by year by Indicator, Components and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_010V1.px",
+      "title": "GROSS DOMESTIC PRODUCT PER CAPITA, by year by Indicator, GDP and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_022V1-1.px",
+      "title": "GROSS DOMESTIC PRODUCT, by production approach, by quarter, by 19 divisions, by cumulative by Statistical indicator, Division and YEAR",
+      "subsector": "National Accounts",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_022V1.px",
+      "title": "GROSS DOMESTIC PRODUCT, by production approach, by quarter, by aggregated 10 divisions, by cumulative by Statistical indicator, Composition and Time (Quarterly)",
+      "subsector": "National Accounts",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_022V2.px",
+      "title": "GROSS DOMESTIC PRODUCT, by expenditure approach, by quarter, by cumulative by Statistical Indicator, Components and year",
+      "subsector": "National Accounts",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_010V2.px",
+      "title": "GROSS DOMESTIC PRODUCT PER PERSON EMPLOYED, by economic activity, and by year by Indicator, Economic activity and Year",
+      "subsector": "Productivity",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_011V3.px",
+      "title": "GROSS DOMESTIC PRODUCT PER EMPLOYED, by economic activity, and by quarter by Economic activity and Quarter",
+      "subsector": "Productivity",
+      "recommendation": "T1-Essential",
+      "score": 85,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_010V5.px",
+      "title": "WEEKLY PRICES OF MAIN PRODUCTS AND GASOLINE, aimags",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T1-Essential",
+      "score": 80,
+      "already_added": true
+    },
+    {
+      "table_id": "DT_NSO_0600_001V3.px",
+      "title": "NATIONAL BASE CONSUMER PRICE INDEX, by group and month by Reference year, Group and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T1-Essential",
+      "score": 80,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_002V1.px",
+      "title": "NATIONAL CONSUMER PRICE INDEX, 1991-1-16=100 by Indicator and Year",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T1-Essential",
+      "score": 80,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_009V1.px",
+      "title": "NATIONAL CONSUMER PRICE INDEX, by group, monthly percent change by Reference year, Group and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T1-Essential",
+      "score": 80,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_001V12.px",
+      "title": "GROSS NATIONAL INCOME, GROSS DISPOSABLE INCOME, by quarter by Indicator and Quarter",
+      "subsector": "National Accounts",
+      "recommendation": "T1-Essential",
+      "score": 80,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_009V1.px",
+      "title": "GROSS NATIONAL INCOME, by year by Gross national income, Indicator and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T1-Essential",
+      "score": 80,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_012V1.px",
+      "title": "GROSS NATIONAL INCOME PER CAPITA, by year by Indicator, GNI and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T1-Essential",
+      "score": 80,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1100_015V3_1.px",
+      "title": "TERMS OF TRADE INDEX, by month, 2015=100 by Statistical indicator, Classification and Month",
+      "subsector": "Foreign Trade",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1100_015V3_uliral.px",
+      "title": "TERMS OF TRADE INDEX, by quarter, 2015=100 by Statistical indicator, Classfication and Quarter",
+      "subsector": "Foreign Trade",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1400_001V1_month.px",
+      "title": "FOREIGN TRADE TURNOVER, EXPORTS and IMPORTS, BALANCE, by month (cumulative) by Main indicators of foreign trade and Month (cumulative)",
+      "subsector": "Foreign Trade",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1400_001V1_year.px",
+      "title": "FOREIGN TRADE TURNOVER, EXPORTS and IMPORTS, BALANCE, by year by Main indicators of foreign trade and Year",
+      "subsector": "Foreign Trade",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1400_003V1.px",
+      "title": "FOREIGN TRADE MONTHLY TOTAL TURNOVER, EXPORT, IMPORT by Main indicators of foreign trade and Month",
+      "subsector": "Foreign Trade",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1400_005V1_month.px",
+      "title": "EXPORTS, by commodity groups and month (cumulative) by Commodity groups and Month (cumulative)",
+      "subsector": "Foreign Trade",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1400_006V2_month.px",
+      "title": "EXPORT BY MAIN COMMODITIES, by month (cumulative) by Statistical indicator, Main commodities and Month (cumulative)",
+      "subsector": "Foreign Trade",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1400_006V2_year.px",
+      "title": "EXPORT BY MAIN COMMODITIES, by year by Statistical indicator, Main commodities and Year",
+      "subsector": "Foreign Trade",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1400_009V1_month.px",
+      "title": "IMPORTS, by commodity groups and month (cumulative) by Commodity groups and Month (cumulative)",
+      "subsector": "Foreign Trade",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1400_009V1_year.px",
+      "title": "IMPORTS, by commodity groups and year by Commodity groups and Year",
+      "subsector": "Foreign Trade",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1400_010V2_month.px",
+      "title": "IMPORT BY MAIN COMMODITIES, by month (cumulative) by Statistical indicator, Main commodities and Month",
+      "subsector": "Foreign Trade",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1400_010V2_year.px",
+      "title": "IMPORT BY MAIN COMMODITIES, by year by Statistical indicator, Main commodities and Year",
+      "subsector": "Foreign Trade",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1400_010V3.px",
+      "title": "IMPORTS, by country and year by Countries and Year",
+      "subsector": "Foreign Trade",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1400_016V1.px",
+      "title": "EXPORT PRICE INDEX, by commodity group, month, percent by Statistical indicator, by commodity group and Month",
+      "subsector": "Foreign Trade",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1400_016V2.px",
+      "title": "IMPORT PRICE INDEX, percent by Statistical indicator, by commodity group and month by Statistical indicator, By commodity group and Month",
+      "subsector": "Foreign Trade",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_005V2.px",
+      "title": "PRIVATE SECTOR VALUE ADDED SHARE TO GROSS DOMESTIC PRODUCT, by aimags and the Capital, and by year by Region and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_007V1.px",
+      "title": "GROSS DOMESTIC PRODUCT, by aimags and the Capital, and by year by Region and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_011V1.px",
+      "title": "GROSS DOMESTIC PRODUCT PER CAPITA, by aimags and the Capital, and by year by Region and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_021V1.px",
+      "title": "INDUSTRIAL COMPOSITION OF GROSS DOMESTIC PRODUCT, by aimags and the Capital, and by year by Region, Economic activity and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0500_021V2.px",
+      "title": "GROSS DOMESTIC PRODUCT, by economic activity, aimags and the Capital, and by year by Region, Economic activity and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_3100_003V9.px",
+      "title": "INPUT-OUTPUT TABLE, by non-competitive import type, and by size 20x20 by Economic activity (row), Economic activity (column) and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_3100_009V8.px",
+      "title": "INPUT-OUTPUT TABLE, by competitive import type, and by size 20x20 by Economic activity (row), Economic activity (column) and Year",
+      "subsector": "National Accounts",
+      "recommendation": "T2-Recommended",
+      "score": 75,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2023_001V02.px",
+      "title": "PHYSICAL FLOW ACCOUNTS FOR LIVESTOCK PRODUCTS by Product, Indicator and Year",
+      "subsector": "Environmental-Economic Account",
+      "recommendation": "T2-Recommended",
+      "score": 72,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2023_001V04.px",
+      "title": "ASSET ACCOUNT FOR LIVESTOCK by Type of livestock, Indicator and Year",
+      "subsector": "Environmental-Economic Account",
+      "recommendation": "T2-Recommended",
+      "score": 72,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_002V21.px",
+      "title": "CONSUMER PRICE INDEX, by group, compared to the previous month by Reference year, Region, Group and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T2-Recommended",
+      "score": 70,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_002V22.px",
+      "title": "CONSUMER PRICE INDEX, by group, compared to the end of the previous year by Reference year, Region, Group and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T2-Recommended",
+      "score": 70,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_002V23.px",
+      "title": "REGIONAL CONSUMER PRICE INDEX, by group,compared to the same period of the previous year by Reference year, Region, Group and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T2-Recommended",
+      "score": 70,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_002V24.px",
+      "title": "REGIONAL CONSUMER PRICE INDEX, by group, compared to the end of the previous year by Reference year, Region, Group and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T2-Recommended",
+      "score": 70,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_002V25.px",
+      "title": "REGIONAL CONSUMER PRICE INDEX, by group, compared to the previous month by Reference year, Region, Group and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T2-Recommended",
+      "score": 70,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_002V26.px",
+      "title": "CONSUMER PRICE INDEX, by group, compared to the same period of the previous year by Reference year, Region, Group and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T2-Recommended",
+      "score": 70,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_008V1.px",
+      "title": "NATIONAL CONSUMER PRICE INDEX, by groups and percent changes compared with the end of previous year by Reference year, Group and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T2-Recommended",
+      "score": 70,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_010V1.px",
+      "title": "NATIONAL CONSUMER PRICE INDEX, by groups and percent changes, compared with the same period of previous year by Reference year, Group and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T2-Recommended",
+      "score": 70,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_011V1.px",
+      "title": "CONSUMER PRICE INDEX IN THE CAPITAL, by groups, compared with the end of previous year by Reference year, Group and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T2-Recommended",
+      "score": 70,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0600_012V1.px",
+      "title": "CONSUMER PRICE INDEX IN THE CAPITAL, by groups, compared with the same period of previous year by Indicator, Group and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T2-Recommended",
+      "score": 70,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0303_07V7.px",
+      "title": "CONSUMER PRICE INDEX IN AIMAGS, compared with the previous month, by group by Reference year, Region, Groups and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0303_07V8.px",
+      "title": "CONSUMER PRICE INDEX IN AIMAGS, compared with the same period of the previous year, by group by Reference year, Region, Groups and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0303_07V9.px",
+      "title": "CONSUMER PRICE INDEX IN AIMAGS, compared with the end of the previous year, by group by Reference year, Region, Groups and Month",
+      "subsector": "Consumer Price Index",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2023_001V3.px",
+      "title": "NATIONAL EXPENDITURE FOR ENVIRONMENTAL PROTECTION, by expenditure type by Expenditure and Year",
+      "subsector": "Environmental-Economic Account",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2023_001V4.px",
+      "title": "NATIONAL EXPENDITURE FOR ENVIRONMENTAL PROTECTION, by institutional sectors by Indicator and Year",
+      "subsector": "Environmental-Economic Account",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_2023_001V5.px",
+      "title": "NATIONAL EXPENDITURE FOR ENVIRONMENTAL PROTECTION, by environmental protection activities by Indicator and Year",
+      "subsector": "Environmental-Economic Account",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0800_001V1.px",
+      "title": "GOVERNMENT REVENUE, EXPENDITURE, AND BALANCE, by year by Indicator, Total and Year",
+      "subsector": "Government budget",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0800_001V2.px",
+      "title": "EXPENDITURE OF CENTRAL GOVERNMENT by portfolio of ministers, by year by Indicators and Year",
+      "subsector": "Government budget",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0800_005V1.px",
+      "title": "MONGOLIAN GENERAL GOVERNMENT EXPENDITURE, by classification of expenditure, by month, by cumulative by Indicator, Classification and Month",
+      "subsector": "Government budget",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0800_006V1.px",
+      "title": "EXPENDITURE OF GENERAL GOVERNMENT, by classification of expenditure and by year by Indicator and Year",
+      "subsector": "Government budget",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0800_007V1.px",
+      "title": "LOCAL GOVERNMENT EXPENDITURE, by classification of expenditure and by year by Indicator and Year",
+      "subsector": "Government budget",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0800_008V1.px",
+      "title": "EQUILIBRATED BALANCE OF GENERAL GOVERNMENT BUDGET, by month, by cumulative by Total and Month",
+      "subsector": "Government budget",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_00V1.px",
+      "title": "ANNUAL CHANGE OF HOUSING PRICE, by percent by Indicator and Month",
+      "subsector": "Housing price index",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0300_071V0.px",
+      "title": "HOUSING PRICE INDEX, by months by Reference period and Month",
+      "subsector": "Housing price index",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1700_005V1.px",
+      "title": "COMMISSIONED DWELLING, by type of ownership, and by year by Indicator, Type of ownership and Year",
+      "subsector": "Housing price index",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0901_001V1.px",
+      "title": "INVESTMENT, by financial sources, technological composition, and by year by Investment by type and Year",
+      "subsector": "Investment",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0901_002V1.px",
+      "title": "INVESTMENT, by economic activity, and by year by Economic activity and Year",
+      "subsector": "Investment",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1500_004V3_1.px",
+      "title": "FOREIGN DIRECT INVESTMENT STOCK, by country and year by Country and Year",
+      "subsector": "Investment",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1500_004V3_2.px",
+      "title": "FOREIGN DIRECT INVESTMENT STOCK, by country and quarter by Country and Quarter",
+      "subsector": "Investment",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1500_004V4_1.px",
+      "title": "FOREIGN DIRECT INVESTMENT INFLOWS, by country and year by Country and Year",
+      "subsector": "Investment",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1500_004V4_2.px",
+      "title": "FOREIGN DIRECT INVESTMENT INFLOWS, by country and quarter by Country and Quarter",
+      "subsector": "Investment",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1500_005V3_1.px",
+      "title": "FOREIGN DIRECT INVESTMENT STOCK, by economic sector and year by Economic sector and Year",
+      "subsector": "Investment",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1500_005V3_2.px",
+      "title": "FOREIGN DIRECT INVESTMENT STOCK, by economic sector and quarter by Economic sector and Quarter",
+      "subsector": "Investment",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1500_005V4_1.px",
+      "title": "FOREIGN DIRECT INVESTMENT INFLOWS, by economic sector and year by Economic sector and Year",
+      "subsector": "Investment",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_1500_005V4_2.px",
+      "title": "FOREIGN DIRECT INVESTMENT INFLOWS, by economic sector and quarter by Economic sector and Quarter",
+      "subsector": "Investment",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0700_001V3.px",
+      "title": "AGRICULTURE MARKET, by quarter by Indicators and Quarter",
+      "subsector": "Money and Finance",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0700_008V1.px",
+      "title": "EXCHANGE RATES OF FOREIGN CURRENCIES, by month by Indicators and Month",
+      "subsector": "Money and Finance",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0700_018V1.px",
+      "title": "LOAN RATE, in percent, by month by Indicators and Month",
+      "subsector": "Money and Finance",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "DT_NSO_0700_030V1.px",
+      "title": "REAL AND NOMINAL EFFECTIVE EXCHANGE RATE (NEER, REER) monthly by Indicators and Month",
+      "subsector": "Money and Finance",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "INDUSTRIAL PRODUCER PRICE INDEX",
+      "title": "INDUSTRIAL PRODUCER PRICE INDEX",
+      "subsector": "Producer price index",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "PRODUCER PRICE INDEX OF ACCOMMODATION SECTOR",
+      "title": "PRODUCER PRICE INDEX OF ACCOMMODATION SECTOR",
+      "subsector": "Producer price index",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "PRODUCER PRICE INDEX OF FOOD AND BEVERAGE SERVICE SECTOR",
+      "title": "PRODUCER PRICE INDEX OF FOOD AND BEVERAGE SERVICE SECTOR",
+      "subsector": "Producer price index",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "PRODUCER PRICE INDEX OF INFORMATION AND COMMUNICATION SECTOR",
+      "title": "PRODUCER PRICE INDEX OF INFORMATION AND COMMUNICATION SECTOR",
+      "subsector": "Producer price index",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    },
+    {
+      "table_id": "PRODUCER PRICE INDEX OF TRANSPORTATION SECTOR",
+      "title": "PRODUCER PRICE INDEX OF TRANSPORTATION SECTOR",
+      "subsector": "Producer price index",
+      "recommendation": "T2-Recommended",
+      "score": 60,
+      "already_added": false
+    }
+  ]
+}

@@ -44,6 +44,49 @@ Interactively add a new dataset to track in the registry.
 
 ---
 
+## 🛑 MANDATORY: Post-Creation Validation Checklist
+
+**STOP! Before showing "Next Steps" to the user, you MUST complete ALL of these:**
+
+### Validation Checklist (ALL REQUIRED)
+
+- [ ] **Run `validate_dataset.py --all {dataset_id}` for EACH dataset created**
+  ```bash
+  # From the data/ project root directory:
+  python3 tools/scripts/validate_dataset.py --all {dataset_id} --base-dir data.mn
+  ```
+
+- [ ] **All datasets must show "Valid: 11, Invalid: 0"**
+  - If any show Invalid > 0, FIX THE ISSUES before proceeding
+
+- [ ] **Run `validate_vega.py` on all new charts**
+  ```bash
+  python3 tools/scripts/validate_vega.py data.mn/public/charts/{dataset_id}-en.json
+  ```
+
+- [ ] **Charts must show "✓ Chart is valid" (warnings are OK, errors are NOT)**
+
+### Why Worker Self-Validation Is NOT Enough
+
+The `datamn-dataset-worker` agents report their own validation, but this is NOT sufficient because:
+1. Workers may use different validation logic than the official validators
+2. Workers may miss cross-file consistency issues
+3. Workers may report success even when files are in wrong locations
+4. Independent validation catches issues workers don't check
+
+**⚠️ DO NOT skip this step. DO NOT rely solely on worker-reported validation.**
+
+### If Validation Fails
+
+1. Read the error messages carefully
+2. Fix each specific issue (missing files, wrong paths, invalid chart specs)
+3. Re-run validation
+4. Repeat until ALL checks pass
+
+Only after ALL validation passes should you proceed to show the user "Next Steps".
+
+---
+
 ## Philosophy: Statista-style Data
 
 **IMPORTANT**: Data from sources like 1212.mn is often highly compressed with multiple dimensions (sex, age, region, year, etc.). This makes it confusing for users.
@@ -271,7 +314,7 @@ You can spawn multiple workers in parallel (up to 4 at a time) for independent s
 SPAWN AGENT: datamn-checker-worker
 Prompt: |
   Validate dataset: {dataset_id}
-  base_dir: /home/ritz/Insync/robert@aum.edu.mn/Google Drive/data/data.mn
+  base_dir: data.mn
 ```
 
 Run checker for each dataset created. Parse the report and fix any issues.
@@ -569,7 +612,7 @@ When generating MDX pages for splits, follow these rules strictly:
    - VegaChart component
 3. **The chart IS the content** - Let the visualization tell the story
 
-See `/Users/ritz/Insync/robert@aum.edu.mn/Google Drive/data/data.mn/src/data/data/mn/gdp-per-capita.mdx` as the ideal example structure.
+See `data.mn/src/data/data/mn/gdp-per-capita.mdx` as the ideal example structure.
 
 ### CRITICAL: Bilingual Tags
 
@@ -815,7 +858,7 @@ Task tool:
   subagent_type: "datamn-checker-worker"
   prompt: |
     Validate dataset: {dataset_id}
-    base_dir: /home/ritz/Insync/robert@aum.edu.mn/Google Drive/data/data.mn
+    base_dir: data.mn
 ```
 
 ### When NOT to Use Agents (exceptions)

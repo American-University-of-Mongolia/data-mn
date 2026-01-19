@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын төрөлтийн түвшин, 1,000 хүнд (1980-2024)"
+publishDate: 2026-01-19
+excerpt: "Монгол Улсын төрөлтийн түвшин 1980 онд 1,000 хүн амд 39.2 байсан бол 2024 онд 16.9 болж буурсан нь хүн ам зүйн шилжилт, хотжилтыг илэрхийлж байна."
+category: "Хүн ам зүй"
+tags: ["монгол улс", "төрөлт", "хүн ам зүй", "үржил шим", "хүн ам"]
+keywords: ["Монгол Улсын төрөлтийн түвшин", "төрөлтийн статистик", "үржил шимийн түвшин", "хүн ам зүйн чиг хандлага"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-01-19
+dataFiles:
+  - path: "/datasets/birth-rate-crude-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV файл татах"
+  - path: "/datasets/birth-rate-crude.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel дээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_029V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/birth-rate-crude-mn.json"
+  title="Монгол Улсын төрөлтийн түвшин, 1,000 хүнд (1980-2024)"
+/>

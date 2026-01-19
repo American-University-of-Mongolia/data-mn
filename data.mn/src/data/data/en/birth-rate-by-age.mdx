@@ -1,0 +1,31 @@
+---
+title: "Mongolia Age-Specific Birth Rates, Births per 1,000 Women (1980-2024)"
+publishDate: 2026-01-19
+excerpt: "Mongolia's age-specific birth rates from 1980 to 2024, showing the shift in peak fertility from ages 20-24 in the 1980s to ages 25-29 in the 2020s."
+category: "Demographics"
+tags: ["mongolia", "birth-rate", "fertility", "age", "demographics", "nso"]
+keywords: ["birth rate", "age-specific fertility", "Mongolia demographics", "reproductive health", "fertility rate", "childbearing age"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-01-19
+dataFiles:
+  - path: "/datasets/birth-rate-by-age-en.csv"
+    format: "csv"
+    size: "4 KB"
+    description: "Download as CSV"
+  - path: "/datasets/birth-rate-by-age.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_029V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/birth-rate-by-age-en.json"
+  title="Mongolia Age-Specific Birth Rates, Births per 1,000 Women (1980-2024)"
+/>

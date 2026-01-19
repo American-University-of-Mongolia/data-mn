@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын насны бүлгээрх төрөлтийн түвшин, 1,000 эмэгтэй хүн тутамд (1980-2024)"
+publishDate: 2026-01-19
+excerpt: "Монгол Улсын насны бүлгээрх төрөлтийн түвшин 1980-2024 онд, хамгийн өндөр үржил шимийн нас 1980-аад онд 20-24 наснаас 2020-иод онд 25-29 нас руу шилжсэн байдлыг харуулж байна."
+category: "Хүн ам зүй"
+tags: ["монгол", "төрөлт", "үржил шим", "нас", "хүн ам зүй", "үсх"]
+keywords: ["төрөлтийн түвшин", "насны бүлгээр үржил шим", "Монголын хүн ам зүй", "нөхөн үржихүйн эрүүл мэнд"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-01-19
+dataFiles:
+  - path: "/datasets/birth-rate-by-age-mn.csv"
+    format: "csv"
+    size: "4 KB"
+    description: "CSV татах"
+  - path: "/datasets/birth-rate-by-age.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_029V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/birth-rate-by-age-mn.json"
+  title="Монгол Улсын насны бүлгээрх төрөлтийн түвшин, 1,000 эмэгтэй хүн тутамд (1980-2024)"
+/>

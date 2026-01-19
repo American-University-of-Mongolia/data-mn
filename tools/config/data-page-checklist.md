@@ -3,7 +3,7 @@
 This checklist defines all requirements for a complete, valid data page on data.mn.
 Used by the checker subagent to validate pages after creation or updates.
 
-**Total Checks: 85**
+**Total Checks: 84**
 
 ---
 
@@ -77,15 +77,16 @@ Categories are validated with alias support for backward compatibility.
 
 ---
 
-## 3. MDX Body Content (5 checks)
+## 3. MDX Body Content (4 checks)
 
 | # | Check | Validation | Scripted |
 |---|-------|------------|----------|
 | 3.1 | VegaChart import | Contains `import VegaChart from '~/components/ui/VegaChart.astro';` | Yes |
 | 3.2 | VegaChart component | Contains `<VegaChart ... />` | Yes |
 | 3.3 | Spec path correct | `spec` attribute matches page language (`-en.json` or `-mn.json`) | Yes |
-| 3.4 | Title attribute | VegaChart has `title` attribute | AI |
 | 3.5 | No placeholder text | No "TODO", "TBD", "PLACEHOLDER", or template remnants | AI |
+
+*Note: Check 3.4 (VegaChart title attribute) was removed - page title serves as chart title.*
 
 ---
 
@@ -317,8 +318,8 @@ These catch **silent failures** where charts render but show no data:
 | Type | Count | Tool |
 |------|-------|------|
 | Scripted | ~60 | `validate_dataset.py`, `validate_vega.py`, `registry` |
-| AI Judgment | ~25 | Checker subagent |
-| **Total** | **85** | |
+| AI Judgment | ~24 | Checker subagent |
+| **Total** | **84** | |
 
 ---
 

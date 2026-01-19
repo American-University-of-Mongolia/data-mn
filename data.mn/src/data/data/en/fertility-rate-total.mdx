@@ -1,0 +1,31 @@
+---
+title: "Mongolia Total Fertility Rate, Children per Woman (1980-2024)"
+publishDate: 2026-01-19
+excerpt: "Mongolia's total fertility rate declined from 6.4 to 2.5 children per woman (1980-2024). Currently slightly above replacement level of 2.1."
+category: "Demographics"
+tags: ["mongolia", "fertility", "demographics", "population", "birth-rate", "total-fertility-rate", "tfr"]
+keywords: ["fertility rate", "children per woman", "birth rate", "demographics", "population growth", "replacement level"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-01-19
+dataFiles:
+  - path: "/datasets/fertility-rate-total-en.csv"
+    format: "csv"
+    size: "502 bytes"
+    description: "Download as CSV"
+  - path: "/datasets/fertility-rate-total.xlsx"
+    format: "xlsx"
+    size: "5.4 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_029V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/fertility-rate-total-en.json"
+  title="Mongolia Total Fertility Rate, Children per Woman (1980-2024)"
+/>

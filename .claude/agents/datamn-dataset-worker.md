@@ -511,6 +511,10 @@ if "value" in df.columns:
 
 **USE THE CENTRALIZED MDX GENERATOR** - Do NOT write MDX files manually!
 
+**⚠️ CRITICAL: No Placeholder Text**
+
+NEVER include these in any file: TODO, TBD, FIXME, PLACEHOLDER, XXX, HACK
+
 **⚠️ CRITICAL: Self-Documenting Titles**
 
 Titles MUST include units so users understand the data at a glance without hovering over chart data points:
@@ -523,6 +527,25 @@ Titles MUST include units so users understand the data at a glance without hover
 | "Labour Force Participation (1992-2024)" | "Labour Force Participation, % (1992-2024)" |
 
 **Format pattern:** `{Topic}, {Unit} ({Year Range})`
+
+**⚠️ CRITICAL: Excerpt Requirements**
+
+Excerpts must be factual and descriptive (what, where, when):
+- Minimum 50 characters
+- NEVER start with: "data about", "this dataset contains", "statistics on"
+- Describe the data - no analysis or judgments
+
+Good: "Monthly CPI data for 5 spending categories in Ulaanbaatar from 2020 to 2025."
+Bad: "Data about inflation." or "Food shows the highest volatility."
+
+**⚠️ CRITICAL: Keywords Requirements**
+
+- Minimum 2 keywords
+- MUST include multi-word phrases (e.g., "mongolia gdp growth")
+- NOT all generic terms like "data", "statistics"
+
+Good: `--keywords-en "mongolia inflation" "cpi monthly" "price index"`
+Bad: `--keywords-en "data" "statistics"`
 
 ```bash
 cd data/tools && python3 scripts/generate_mdx.py \

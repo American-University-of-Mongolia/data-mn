@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын нийт төрөлтийн түвшин, эмэгтэй хүн тутам хүүхэд (1980-2024)"
+publishDate: 2026-01-19
+excerpt: "Монгол Улсын нийт төрөлтийн түвшин 6.4-өөс 2.5 хүүхэд болж буурсан (1980-2024). Одоогоор орлуулах түвшин болох 2.1-ээс бага зэрэг дээгүүр байна."
+category: "Хүн ам зүй"
+tags: ["монгол", "үржил шим", "хүн ам зүй", "хүн ам", "төрөлт", "нийт төрөлтийн түвшин"]
+keywords: ["үржил шимийн түвшин", "эмэгтэй хүн тутамд хүүхэд", "төрөлтийн түвшин", "хүн ам зүй", "хүн амын өсөлт", "орлуулах түвшин"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-01-19
+dataFiles:
+  - path: "/datasets/fertility-rate-total-mn.csv"
+    format: "csv"
+    size: "513 bytes"
+    description: "CSV татах"
+  - path: "/datasets/fertility-rate-total.xlsx"
+    format: "xlsx"
+    size: "5.4 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_029V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/fertility-rate-total-mn.json"
+  title="Монгол Улсын нийт төрөлтийн түвшин, эмэгтэй хүн тутам хүүхэд (1980-2024)"
+/>

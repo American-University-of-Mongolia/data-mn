@@ -29,10 +29,13 @@ from conftest import parse_frontmatter, get_mdx_body, DATA_MN_DIR
 
 def check_2_3_excerpt_meaningful(frontmatter: dict) -> tuple[bool, str]:
     """
-    Check 2.3: Excerpt tells meaningful story (not just 'data about X').
+    Check 2.3: Excerpt is descriptive (not just 'data about X').
 
-    Good: "Mongolia's GDP grew from 12.8B to 80.7T MNT, a 6,000-fold increase."
+    Good: "Monthly CPI data for 5 major spending categories in Ulaanbaatar from January 2020 to December 2025."
     Bad: "Data about Mongolia's GDP."
+
+    Note: Excerpts should be factual and descriptive (what, where, when).
+    They should NOT contain analysis or judgments ("highest volatility", "most stable").
     """
     excerpt = frontmatter.get('excerpt', '')
 
@@ -42,7 +45,7 @@ def check_2_3_excerpt_meaningful(frontmatter: dict) -> tuple[bool, str]:
     if len(excerpt) < 50:
         return False, f"Excerpt too short ({len(excerpt)} chars, need 50+)"
 
-    # Bad patterns - generic descriptions
+    # Bad patterns - generic descriptions that say nothing
     bad_patterns = [
         r'^data about',
         r'^this dataset contains',
@@ -55,12 +58,7 @@ def check_2_3_excerpt_meaningful(frontmatter: dict) -> tuple[bool, str]:
         if re.match(pattern, excerpt_lower):
             return False, f"Excerpt uses generic pattern: '{pattern}'"
 
-    # Good pattern - contains actual numbers (sign of real insight)
-    if re.search(r'\d+', excerpt):
-        return True, "Excerpt contains specific data points"
-
-    # OK but could be better
-    return True, "Excerpt is descriptive but could include specific numbers"
+    return True, "Excerpt is descriptive"
 
 
 def check_2_6_keywords_useful(frontmatter: dict) -> tuple[bool, str]:
@@ -130,34 +128,6 @@ def check_2_13_source_tableid(frontmatter: dict) -> tuple[bool, str]:
 # ----------------------------------------------------------------------------
 # SECTION 3: MDX Body AI Checks
 # ----------------------------------------------------------------------------
-
-def check_3_4_vegachart_has_title(body: str) -> tuple[bool, str]:
-    """
-    Check 3.4: VegaChart component has title attribute.
-    """
-    if '<VegaChart' not in body:
-        return False, "No VegaChart component found"
-
-    # Look for title attribute in VegaChart
-    vegachart_match = re.search(r'<VegaChart[^>]*>', body, re.DOTALL)
-    if not vegachart_match:
-        return False, "Could not parse VegaChart component"
-
-    vegachart_tag = vegachart_match.group(0)
-
-    if 'title=' not in vegachart_tag:
-        return False, "VegaChart missing title attribute"
-
-    # Extract title value
-    title_match = re.search(r'title="([^"]*)"', vegachart_tag)
-    if title_match:
-        title = title_match.group(1)
-        if len(title) < 5:
-            return False, f"VegaChart title too short: '{title}'"
-        return True, f"VegaChart has title: '{title[:50]}...'"
-
-    return True, "VegaChart has title attribute"
-
 
 def check_3_5_no_placeholder_text(frontmatter: dict, body: str) -> tuple[bool, str]:
     """
@@ -574,16 +544,6 @@ class TestSection2Frontmatter:
 class TestSection3Body:
     """Tests for Section 3: MDX Body AI Checks"""
 
-    def test_3_4_vegachart_title_good(self, good_mdx_en):
-        body = get_mdx_body(good_mdx_en)
-        passed, reason = check_3_4_vegachart_has_title(body)
-        assert passed, f"Good fixture failed: {reason}"
-
-    def test_3_4_vegachart_title_bad(self):
-        body = '<VegaChart spec="/charts/test.json" />'
-        passed, _ = check_3_4_vegachart_has_title(body)
-        assert not passed, "VegaChart without title should fail"
-
     def test_3_5_no_placeholder_good(self, good_mdx_en):
         fm = parse_frontmatter(good_mdx_en)
         body = get_mdx_body(good_mdx_en)
@@ -690,7 +650,6 @@ def validate_dataset_ai_checks(dataset_id: str) -> dict:
     results['2.3'] = check_2_3_excerpt_meaningful(fm_en)
     results['2.6'] = check_2_6_keywords_useful(fm_en)
     results['2.13'] = check_2_13_source_tableid(fm_en)
-    results['3.4'] = check_3_4_vegachart_has_title(body_en)
     results['3.5'] = check_3_5_no_placeholder_text(fm_en, body_en)
 
     if csv_en.exists():

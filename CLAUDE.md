@@ -559,7 +559,7 @@ New to the project? See **[CONTRIBUTING.md](CONTRIBUTING.md)** for:
 
 Quick start:
 ```bash
-gh repo fork data-dot-mn/data-tools --clone   # Fork and clone
+gh repo fork data-dot-mn/data-mn --clone   # Fork and clone
 cd data
 conda env create -f environment.yml && conda activate datamn
 cd data.mn && npm install && cd ..

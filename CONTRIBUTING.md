@@ -139,7 +139,7 @@ A "fork" is your personal copy of the repository where you can make changes free
 
 ```bash
 # This creates a fork under your GitHub account and clones it locally
-gh repo fork datamn/data --clone
+gh repo fork data-dot-mn/data-tools --clone
 cd data
 ```
 

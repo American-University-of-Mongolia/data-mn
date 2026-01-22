@@ -548,129 +548,20 @@ Car price prediction model using Unegui.mn scraped data.
 
 ---
 
-## Getting Started for Contributors
+## For Contributors
 
-Welcome! This section helps new contributors (including interns) get up and running with the data.mn project.
+New to the project? See **[CONTRIBUTING.md](CONTRIBUTING.md)** for:
 
-### Prerequisites
+- Complete setup instructions (Git, Node.js, Conda, gh CLI, Claude Code)
+- Git workflow for beginners (branches, commits, pull requests)
+- How to use Claude Code and the `/data-*` commands
+- Code standards and validation requirements
 
-| Tool | Purpose | Install |
-|------|---------|---------|
-| **Git** | Version control | `sudo pacman -S git` or equivalent |
-| **Node.js 20+** | Website builds | `nvm install 20` or [nodejs.org](https://nodejs.org) |
-| **Conda/Miniconda** | Python environment | [miniconda docs](https://docs.conda.io/en/latest/miniconda.html) |
-| **Claude Code** | AI-assisted development | `npm install -g @anthropic-ai/claude-code` |
-
-### Initial Setup
-
+Quick start:
 ```bash
-# 1. Clone the repository
-git clone https://github.com/datamn/data.git
+gh repo fork datamn/data --clone   # Fork and clone
 cd data
-
-# 2. Set up Python environment
-conda env create -f environment.yml
-conda activate datamn
-
-# 3. Install website dependencies
-cd data.mn
-npm install
-cd ..
-
-# 4. Verify setup
-python -m registry status  # Should show registry stats
-cd data.mn && npm run dev  # Should start dev server at localhost:4321
+conda env create -f environment.yml && conda activate datamn
+cd data.mn && npm install && cd ..
+claude                              # Start Claude Code
 ```
-
-### How Skills Work
-
-Skills are Claude Code's way of providing context-specific knowledge. This project has several `datamn-*` skills in `.claude/skills/`:
-
-| Skill | Purpose |
-|-------|---------|
-| `datamn-source-nso` | Query Mongolia's NSO API (1212.mn) |
-| `datamn-registry` | Manage the dataset registry |
-| `datamn-chart-vega` | Create Vega-Lite chart specs |
-| `datamn-page-mdx` | Generate bilingual MDX pages |
-| `datamn-transform-split` | Transform and filter data |
-| `datamn-extract-pdf` | Extract tables from PDFs |
-| `datamn-minio` | S3 storage for large datasets |
-
-These skills are automatically available when Claude Code runs from this directory.
-
-### Key Workflows
-
-#### Adding a New Dataset
-
-```bash
-# Start Claude Code from the data directory
-cd ~/projects/data
-claude
-
-# Then use the /data-add command
-/data-add
-```
-
-This interactive workflow:
-1. Helps you find data from sources like NSO 1212.mn
-2. Analyzes table structure and recommends splits
-3. Creates CSV files, MDX pages, and charts
-4. Updates the registry
-
-#### Updating Existing Datasets
-
-```bash
-/data-update
-```
-
-Checks all sources for updates and processes them in parallel.
-
-#### Checking Status
-
-```bash
-/data-status
-```
-
-Shows dataset counts, source health, and recent activity.
-
-### Project Structure Overview
-
-```
-data/
-├── .claude/           # Claude Code configuration
-│   ├── skills/        # datamn-* skills (project-specific)
-│   ├── commands/      # Slash commands (/data-add, /data-update, etc.)
-│   └── agents/        # Worker agent definitions
-├── data.mn/           # Astro website
-│   ├── src/data/      # MDX pages (en/ and mn/)
-│   └── public/        # Static files (datasets/, charts/)
-├── tools/             # Python utilities
-│   ├── registry/      # SQLite database
-│   ├── scripts/       # Validation and translation
-│   └── sources/       # Data source definitions
-└── docs/              # Project documentation
-```
-
-### Documentation to Read
-
-| Doc | Contents |
-|-----|----------|
-| `docs/vision.md` | Mission, principles, and roadmap |
-| `docs/datamn-architecture.md` | Technical architecture details |
-| `docs/principles/url-stability.md` | **CRITICAL** - URL rules (never break links!) |
-| `data.mn/CLAUDE.md` | Website-specific instructions |
-
-### Pull Request Guidelines
-
-1. **Branch naming**: `feature/dataset-name` or `fix/issue-description`
-2. **Commit messages**: Clear, descriptive (e.g., "Add unemployment rate dataset from NSO")
-3. **Validation**: Run `python3 tools/scripts/validate_vega.py --all` before submitting
-4. **Build check**: Ensure `cd data.mn && npm run build` succeeds
-5. **Bilingual**: All datasets need both `-en.csv` and `-mn.csv` files
-
-### Getting Help
-
-- **Check the docs** in `docs/` folder first
-- **Read skill files** in `.claude/skills/` for specific guidance
-- **Ask in Claude Code** - the skills provide context-aware help
-- **Check existing datasets** as examples in `data.mn/src/data/data/`

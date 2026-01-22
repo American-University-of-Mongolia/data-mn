@@ -200,6 +200,15 @@ Always create EN and MN pages in the same operation to ensure:
 - Consistent tags and categories
 - Same chart references
 
+**CRITICAL: Bilingual Consistency Requirements**
+
+These fields MUST be identical between EN and MN pages:
+- `dataVersion` - same integer value
+- `dataDate` - same YYYY-MM-DD date
+
+These should be similar:
+- Tag count - difference should be ≤ 2 between EN and MN
+
 ### 3. Calculate File Sizes
 
 ```python
@@ -222,35 +231,43 @@ def format_size(size_bytes):
 
 ### 4. Writing the Excerpt
 
-The excerpt (both in frontmatter AND as the single sentence in the body) should be a concise, factual summary with key numbers:
+The excerpt should be **factual and descriptive** (what, where, when). It should NOT contain analysis or judgments.
 
-**Good excerpts (one sentence with key metrics):**
-- "Mongolia's population grew from **845,000 in 1956** to **3.5 million in 2024**, a **4.2x increase**."
-- "In 2024, women earned **80.6% of men's wages**, with men averaging **2.58M MNT/month** and women **2.08M MNT/month**."
-- "GDP reached **$40.3 billion in 2024**, up **5.6% from the previous year**."
+**REQUIREMENTS:**
+- Minimum 50 characters
+- NEVER start with: "data about", "this dataset contains", "statistics on", "information about"
+- Describe the data: topic, geography, time range
 
-**The body content is literally just this one sentence again** (often with slight expansion/boldface for emphasis).
+**Good excerpts (factual, descriptive):**
+- "Monthly CPI data for 5 major spending categories in Ulaanbaatar from January 2020 to December 2025."
+- "Annual population figures for Mongolia from 1956 to 2024, broken down by sex."
+- "Weekly beef prices across 21 aimags from January 2024 to present."
 
-**Bad excerpts (too much detail):**
-- Including analysis or explanations
-- Multiple sentences with trends
-- Comparisons to other countries
-- Interpretations of causes
+**Bad excerpts:**
+- "Data about Mongolia's GDP." ← Too generic
+- "Track inflation trends across categories. Food shows the highest volatility." ← Contains analysis/judgment
+- "This dataset contains population statistics." ← Generic pattern
 
-**Extract key metrics from data:**
-```python
-import pandas as pd
+**The body content is literally just this one sentence again.**
 
-df = pd.read_csv(f"data/data.mn/public/datasets/{dataset_id}.csv")
+### 5. Writing Keywords
 
-# For time series
-first_year = df['year'].min()
-last_year = df['year'].max()
-first_value = df[df['year'] == first_year]['value'].iloc[0]
-last_value = df[df['year'] == last_year]['value'].iloc[0]
-growth = last_value / first_value
+Keywords are used for SEO. They should help users find the data via search engines.
 
-excerpt = f"Value grew from {first_value:,.0f} in {first_year} to {last_value:,.0f} in {last_year}, a {growth:.1f}x increase."
+**REQUIREMENTS:**
+- Minimum 2 keywords
+- Must include **multi-word phrases** (e.g., "mongolia gdp growth")
+- NOT all generic terms like "data", "statistics", "mongolia"
+
+**Good keywords:**
+```yaml
+keywords: ["mongolia population growth", "population by sex", "census data mongolia"]
+```
+
+**Bad keywords:**
+```yaml
+keywords: ["data", "statistics"]  # Too generic, fails validation
+keywords: ["mongolia", "population"]  # No multi-word phrases
 ```
 
 ## Common Source Names

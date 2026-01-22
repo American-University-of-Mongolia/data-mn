@@ -123,6 +123,26 @@ Every dataset shows:
 - API access for developers
 - Embeddable widgets
 
+## Long-Term Ambitions
+
+### Holy Grail Data
+
+Beyond official statistics, certain datasets would be transformative for transparency in Mongolia:
+
+- **Company ownership records** - Complete registry of all business entities and their ownership chains
+- **Land ownership records** - Comprehensive database of land parcels and owners nationwide
+- **Public official dossiers** - Compiled public information on MPs and senior government officials (declarations, voting records, public statements)
+
+These require sustained effort and potentially partnerships with government agencies.
+
+### Sustainability Path
+
+| Phase | Focus |
+|-------|-------|
+| **Phase 1** (Current) | Open data aggregation, volunteer/intern maintenance |
+| **Phase 2** | Insight generation, blog content, awareness building |
+| **Phase 3** | Reports, sponsorships, membership model |
+
 ## Non-Goals
 
 Things we intentionally do NOT do:

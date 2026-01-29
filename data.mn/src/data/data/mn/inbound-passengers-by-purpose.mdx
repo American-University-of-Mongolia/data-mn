@@ -1,0 +1,39 @@
+---
+title: "Ирсэн зорчигчид зорилгоор (2006-2025)"
+publishDate: 2025-01-29
+excerpt: "Монгол Улс руу ирсэн зорчигчдын жилийн тоо аяллын зорилгоор 2006-2025 он. Жуулчлал 2025 онд ирэлтийн 44%-ийг эзэлж, цар тахлын дараах хүчтэй сэргэлт."
+category: "Аялал жуулчлал"
+tags:
+  - монгол
+  - аялал жуулчлал
+  - зорчигч
+  - аялал
+  - ирсэн
+  - статистик
+keywords:
+  - монгол ирсэн зорчигч зорилго
+  - жуулчлалын статистик монгол
+  - зочдын зорилго аяллын өгөгдөл
+dataFiles:
+  - path: "/datasets/inbound-passengers-by-purpose-all-mn.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "CSV татах (бүх өгөгдөл)"
+  - path: "/datasets/inbound-passengers-by-purpose.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel татах"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1800_005V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Монгол Улс руу ирсэн зорчигчдын жилийн тоо аяллын зорилгоор 2006-2025 он. Жуулчлал 2025 онд ирэлтийн 44%-ийг эзэлж (417,935 зорчигч), COVID-19 цар тахлын үеийн 2021 оны 1,010 жуулчнаас хүчтэй сэргэсэн.
+
+<VegaChart
+  spec="/charts/inbound-passengers-by-purpose-mn.json"
+  title="Ирсэн зорчигчид аяллын зорилгоор"
+/>

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Total inbound foreign passengers to Mongolia from 2006 to 2025",
+  "data": {
+    "url": "/datasets/inbound-passengers-total-en.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {"format": "d", "tickMinStep": 5, "grid": false}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Number of Passengers",
+      "axis": {"format": ",.0f"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "line": {"color": "#4c78a8", "strokeWidth": 2.5},
+        "color": {
+          "x1": 1, "y1": 1, "x2": 1, "y2": 0,
+          "gradient": "linear",
+          "stops": [
+            {"offset": 0, "color": "rgba(76, 120, 168, 0.01)"},
+            {"offset": 1, "color": "rgba(76, 120, 168, 0.3)"}
+          ]
+        },
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [{"name": "hover", "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}}],
+      "mark": {"type": "point", "filled": true, "color": "#4c78a8", "size": 100},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "year", "title": "Year", "format": "d"},
+          {"field": "value", "title": "Passengers", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

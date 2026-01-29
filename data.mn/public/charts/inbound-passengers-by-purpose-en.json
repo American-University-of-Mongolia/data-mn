@@ -1,0 +1,109 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Inbound passengers to Mongolia by purpose of visit (2006-2025), showing composition over time",
+  "data": {
+    "url": "/datasets/inbound-passengers-by-purpose-en.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {"format": "d", "tickMinStep": 5, "grid": false}
+    },
+    "y": {
+      "field": "passengers",
+      "type": "quantitative",
+      "title": "Passengers",
+      "stack": "zero",
+      "axis": {"format": ".2s"}
+    },
+    "color": {
+      "field": "purpose",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "Tourism",
+          "Business",
+          "Personal",
+          "Work",
+          "Other",
+          "Transit",
+          "Permanent residence",
+          "Study"
+        ],
+        "range": [
+          "#4c78a8",
+          "#f58518",
+          "#e45756",
+          "#72b7b2",
+          "#54a24b",
+          "#eeca3b",
+          "#b279a2",
+          "#ff9da6"
+        ]
+      },
+      "legend": {
+        "orient": "top",
+        "columns": 4,
+        "symbolType": "square",
+        "symbolSize": 100
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "opacity": 0.8
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
+          {"field": "purpose", "type": "nominal", "title": "Purpose"},
+          {"field": "passengers", "type": "quantitative", "title": "Passengers", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

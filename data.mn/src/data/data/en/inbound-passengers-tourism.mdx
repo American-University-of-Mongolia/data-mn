@@ -1,0 +1,38 @@
+---
+title: "Tourism Arrivals to Mongolia (2006-2025)"
+publishDate: 2025-01-29
+excerpt: "Annual tourism arrivals to Mongolia from 2006 to 2025. Tourism peaked at 417,935 visitors in 2025, recovering strongly from the pandemic low of 1,010 in 2021."
+category: "Tourism"
+tags:
+  - mongolia
+  - tourism
+  - arrivals
+  - visitors
+  - travel
+keywords:
+  - mongolia tourism arrivals
+  - tourism statistics mongolia
+  - visitor numbers mongolia
+dataFiles:
+  - path: "/datasets/inbound-passengers-tourism-all-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV (all data)"
+  - path: "/datasets/inbound-passengers-tourism.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1800_005V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Annual tourism arrivals to Mongolia from 2006 to 2025. Tourism peaked at 417,935 visitors in 2025, recovering strongly from the pandemic low of 1,010 in 2021 - a remarkable 60% increase above the pre-pandemic 2019 level of 260,078.
+
+<VegaChart
+  spec="/charts/inbound-passengers-tourism-en.json"
+  title="Tourism Arrivals to Mongolia"
+/>

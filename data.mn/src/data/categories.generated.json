@@ -1,13 +1,18 @@
 [
   {
+    "en": "Economy",
+    "mn": "Эдийн засаг",
+    "count": 13
+  },
+  {
     "en": "Labor Market",
     "mn": "Хөдөлмөрийн зах зээл",
     "count": 12
   },
   {
-    "en": "Economy",
-    "mn": "Эдийн засаг",
-    "count": 9
+    "en": "Demographics",
+    "mn": "Хүн ам зүй",
+    "count": 8
   },
   {
     "en": "Prices & Inflation",
@@ -15,13 +20,13 @@
     "count": 7
   },
   {
-    "en": "Demographics",
-    "mn": "Хүн ам зүй",
+    "en": "Finance",
+    "mn": "Санхүү",
     "count": 4
   },
   {
-    "en": "Finance",
-    "mn": "Санхүү",
+    "en": "Tourism",
+    "mn": "Аялал жуулчлал",
     "count": 4
   },
   {
@@ -35,8 +40,18 @@
     "count": 2
   },
   {
+    "en": "Education",
+    "mn": "Боловсрол",
+    "count": 2
+  },
+  {
     "en": "Household & Income",
     "mn": "Өрх ба орлого",
     "count": 2
+  },
+  {
+    "en": "Employment",
+    "mn": "Хөдөлмөр эрхлэлт",
+    "count": 1
   }
 ]

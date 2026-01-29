@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын их, дээд сургуулийн төгсөгчид мэргэжлийн чиглэлээр 2019-2024 он",
+  "data": {
+    "url": "/datasets/university-graduates-by-field-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 1, "grid": false}
+    },
+    "y": {
+      "field": "төгсөгч",
+      "type": "quantitative",
+      "title": "Төгсөгчдийн тоо",
+      "axis": {"format": ",.0f"},
+      "stack": "zero"
+    },
+    "color": {
+      "field": "чиглэл",
+      "type": "nominal",
+      "title": "Мэргэжлийн чиглэл",
+      "scale": {
+        "domain": [
+          "Бизнес, удирдахуй, хууль, эрх зүй",
+          "Боловсрол",
+          "Эрүүл мэнд, нийгмийн хамгаалал",
+          "Инженер, үйлдвэрлэл, барилга угсралт",
+          "Урлаг, хүмүүнлэг",
+          "Нийгмийн шинжлэх ухаан, мэдээлэл, сэтгүүл зүй",
+          "Мэдээлэл, харилцаа холбооны технологи",
+          "Үйлчилгээ",
+          "Байгалийн шинжлэх ухаан, математик, статистик",
+          "Хөдөө аж ахуй, ой, загасны аж ахуй, мал эмнэлэг"
+        ],
+        "range": [
+          "#4c78a8",
+          "#f58518",
+          "#e45756",
+          "#72b7b2",
+          "#54a24b",
+          "#eeca3b",
+          "#b279a2",
+          "#ff9da6",
+          "#9d755d",
+          "#bab0ac"
+        ]
+      },
+      "legend": {"orient": "top", "title": null, "columns": 2}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "чиглэл", "title": "Мэргэжлийн чиглэл"},
+          {"field": "он", "title": "Он", "format": "d"},
+          {"field": "төгсөгч", "title": "Төгсөгч", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

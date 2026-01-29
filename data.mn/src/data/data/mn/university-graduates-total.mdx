@@ -1,0 +1,37 @@
+---
+title: "Монгол Улсын их, дээд сургуулийн төгсөгчид (2019-2024)"
+publishDate: 2025-01-29
+excerpt: "Монгол Улсын их, дээд сургуулийн нийт төгсөгчид 2019-2024 он. 2021 онд 32,925 хүрч оргил үзүүлсэн бол 2024 онд 23,768 болж буурсан."
+category: "Боловсрол"
+tags:
+  - монгол
+  - боловсрол
+  - их сургууль
+  - төгсөгч
+  - дээд боловсрол
+keywords:
+  - монгол их сургуулийн төгсөгч
+  - дээд боловсролын статистик монгол
+dataFiles:
+  - path: "/datasets/university-graduates-total-all-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах (бүх өгөгдөл)"
+  - path: "/datasets/university-graduates-total.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel татах"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2001_014V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Монгол Улсын их, дээд сургуулийн нийт төгсөгчид 2019-2024 он. 2021 онд 32,925 хүрч оргил үзүүлсэн бол 2024 онд 23,768 болж буурсан.
+
+<VegaChart
+  spec="/charts/university-graduates-total-mn.json"
+  title="Их, дээд сургуулийн төгсөгчид"
+/>

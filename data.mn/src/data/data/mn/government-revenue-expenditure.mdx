@@ -1,0 +1,39 @@
+---
+title: "Монгол Улсын засгийн газрын орлого, зарлага (1991-2025)"
+publishDate: 2025-01-29
+excerpt: "Монгол Улсын засгийн газрын орлого, зарлага 1991-2025 он. Орлого 1991 оны 7.2 тэрбум төгрөгөөс 2025 онд 30 их наяд төгрөг болж өссөн."
+category: "Эдийн засаг"
+tags:
+  - монгол
+  - засгийн газар
+  - төсөв
+  - орлого
+  - зарлага
+  - санхүү
+keywords:
+  - монгол засгийн газрын орлого
+  - засгийн газрын зарлага монгол
+  - төсвийн өгөгдөл монгол
+dataFiles:
+  - path: "/datasets/government-revenue-expenditure-all-mn.csv"
+    format: "csv"
+    size: "6 KB"
+    description: "CSV татах (бүх өгөгдөл)"
+  - path: "/datasets/government-revenue-expenditure.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Excel татах"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0800_001V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Монгол Улсын засгийн газрын орлого, зарлага 1991-2025 он, зөвлөлтийн үеэс зах зээлийн эдийн засаг руу шилжсэн санхүүгийн өөрчлөлтийг харуулж байна. Орлого 1991 оны 7.2 тэрбум төгрөгөөс 2025 онд 30 их наяд төгрөг болж өссөн. Ихэнх жилүүдэд зарлага орлогоосоо давсан байна.
+
+<VegaChart
+  spec="/charts/government-revenue-expenditure-mn.json"
+  title="Засгийн газрын орлого, зарлага"
+/>

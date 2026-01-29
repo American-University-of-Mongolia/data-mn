@@ -1,0 +1,39 @@
+---
+title: "Монгол Улсын төсвийн тэнцэл (1991-2025)"
+publishDate: 2025-01-29
+excerpt: "Монгол Улсын төсвийн тэнцэл 1991-2025 он. Хамгийн их алдагдал 2020 онд -4.4 их наяд төгрөг (COVID-19), 2023 онд 785.9 тэрбум төгрөгийн ашигтай гарсан."
+category: "Эдийн засаг"
+tags:
+  - монгол
+  - төсөв
+  - тэнцэл
+  - алдагдал
+  - ашиг
+  - санхүү
+keywords:
+  - монгол төсвийн тэнцэл
+  - засгийн газрын алдагдал монгол
+  - санхүүгийн тэнцэл монгол
+dataFiles:
+  - path: "/datasets/government-balance-all-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах (бүх өгөгдөл)"
+  - path: "/datasets/government-balance.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel татах"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0800_001V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Монгол Улсын төсвийн тэнцэл 1991-2025 он, ашигтай (эерэг) болон алдагдалтай (сөрөг) жилүүдийг харуулж байна. Хамгийн их алдагдал COVID-19 үед 2020 онд -4.4 их наяд төгрөг байсан бол 2023 онд 785.9 тэрбум төгрөгийн ашигтай гарсан.
+
+<VegaChart
+  spec="/charts/government-balance-mn.json"
+  title="Төсвийн тэнцэл"
+/>

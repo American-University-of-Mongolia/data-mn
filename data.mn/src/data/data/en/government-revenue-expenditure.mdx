@@ -1,0 +1,39 @@
+---
+title: "Mongolia Government Revenue and Expenditure (1991-2025)"
+publishDate: 2025-01-29
+excerpt: "Mongolia's government revenue and expenditure from 1991 to 2025. Revenue grew from 7.2 billion MNT in 1991 to over 30 trillion MNT by 2025."
+category: "Economy"
+tags:
+  - mongolia
+  - government
+  - budget
+  - revenue
+  - expenditure
+  - finance
+keywords:
+  - mongolia government revenue
+  - government expenditure mongolia
+  - fiscal data mongolia
+dataFiles:
+  - path: "/datasets/government-revenue-expenditure-all-en.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "Download as CSV (all data)"
+  - path: "/datasets/government-revenue-expenditure.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0800_001V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Mongolia's government revenue and expenditure from 1991 to 2025, showing the fiscal transformation from Soviet-era to market economy. Revenue grew from 7.2 billion MNT in 1991 to over 30 trillion MNT by 2025. Expenditure has consistently exceeded revenue in most years.
+
+<VegaChart
+  spec="/charts/government-revenue-expenditure-en.json"
+  title="Government Revenue and Expenditure"
+/>

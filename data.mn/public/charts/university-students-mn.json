@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Их, дээд сургууль, коллежид суралцагчдын тоо, хүйсээр (2010-2025)",
+  "data": {
+    "url": "/datasets/university-students-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 1, "grid": false}
+    },
+    "y": {
+      "field": "оюутан",
+      "type": "quantitative",
+      "title": "Оюутны тоо",
+      "axis": {"format": ",d"},
+      "scale": {"zero": false}
+    },
+    "color": {
+      "field": "хүйс",
+      "type": "nominal",
+      "title": "Хүйс",
+      "scale": {
+        "domain": ["Эмэгтэй", "Эрэгтэй"],
+        "range": ["#e377c2", "#1f77b4"]
+      },
+      "legend": {"orient": "top"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [{"name": "hover", "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}}],
+      "mark": {"type": "point", "filled": true, "size": 100},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
+          {"field": "хүйс", "type": "nominal", "title": "Хүйс"},
+          {"field": "оюутан", "type": "quantitative", "title": "Оюутан", "format": ",d"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

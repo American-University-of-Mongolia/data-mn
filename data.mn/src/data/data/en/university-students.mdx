@@ -1,0 +1,54 @@
+---
+title: "University Students in Mongolia by Sex (2010-2025)"
+publishDate: 2026-02-01
+excerpt: "Number of students in universities, institutes and colleges in Mongolia by sex, aimags and the Capital from 2010 to 2025."
+category: "Education"
+tags: ["mongolia", "education", "university", "students", "higher-education", "gender"]
+keywords: ["Mongolia university students", "higher education Mongolia", "college students", "university enrollment", "students by sex", "education statistics"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-01
+dataFiles:
+  - path: "/datasets/university-students-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "National totals by sex and year"
+  - path: "/datasets/university-students-all-en.csv"
+    format: "csv"
+    size: "25 KB"
+    description: "Full data with regional breakdown"
+  - path: "/datasets/university-students.xlsx"
+    format: "xlsx"
+    size: "42 KB"
+    description: "Open in Excel (bilingual)"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2001_013V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/university-students-en.json"
+  title="University Students in Mongolia by Sex (2010-2025)"
+/>
+
+## Key Findings
+
+- **Female students outnumber males**: In 2025, there were 99,483 female students compared to 62,408 male students in higher education institutions.
+- **Gender gap widening**: The female-to-male ratio has increased from 1.48 in 2010 to 1.59 in 2025.
+- **Peak enrollment**: Both sexes saw peak enrollment around 2012-2014, with a gradual decline afterward.
+- **Recent recovery**: Student numbers have been recovering since 2020, especially among females.
+
+## Data Coverage
+
+This dataset includes students enrolled in:
+- Universities
+- Institutes
+- Colleges
+
+Data is available by:
+- **Sex**: Male and Female
+- **Region**: All 21 aimags, the Capital (Ulaanbaatar), and 5 regional aggregates
+- **Year**: 2010-2025 (16 years)

@@ -7,20 +7,20 @@
   },
   "encoding": {
     "x": {
-      "field": "year",
+      "field": "он",
       "type": "quantitative",
       "title": "Он",
       "axis": {"format": "d", "tickMinStep": 5, "grid": false}
     },
     "y": {
-      "field": "passengers",
+      "field": "зорчигч",
       "type": "quantitative",
       "title": "Зорчигч",
       "stack": "zero",
       "axis": {"format": ".2s"}
     },
     "color": {
-      "field": "purpose",
+      "field": "зорилго",
       "type": "nominal",
       "title": null,
       "scale": {
@@ -84,9 +84,9 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "year", "type": "quantitative", "title": "Он", "format": "d"},
-          {"field": "purpose", "type": "nominal", "title": "Зорилго"},
-          {"field": "passengers", "type": "quantitative", "title": "Зорчигч", "format": ",.0f"}
+          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
+          {"field": "зорилго", "type": "nominal", "title": "Зорилго"},
+          {"field": "зорчигч", "type": "quantitative", "title": "Зорчигч", "format": ",.0f"}
         ]
       }
     }

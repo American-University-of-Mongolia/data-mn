@@ -7,7 +7,7 @@
   },
   "encoding": {
     "x": {
-      "field": "year",
+      "field": "он",
       "type": "quantitative",
       "title": "Он",
       "axis": {
@@ -17,7 +17,7 @@
       }
     },
     "y": {
-      "field": "value",
+      "field": "утга",
       "type": "quantitative",
       "title": "Нялх хүүхдийн нас баралт",
       "axis": {
@@ -70,8 +70,8 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "year", "title": "Он", "format": "d"},
-          {"field": "value", "title": "Нас баралт", "format": ",.0f"}
+          {"field": "он", "title": "Он", "format": "d"},
+          {"field": "утга", "title": "Нас баралт", "format": ",.0f"}
         ]
       }
     }

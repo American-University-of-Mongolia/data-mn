@@ -3,7 +3,7 @@
 This checklist defines all requirements for a complete, valid data page on data.mn.
 Used by the checker subagent to validate pages after creation or updates.
 
-**Total Checks: 84**
+**Total Checks: 86**
 
 ---
 
@@ -77,16 +77,31 @@ Categories are validated with alias support for backward compatibility.
 
 ---
 
-## 3. MDX Body Content (4 checks)
+## 3. MDX Body Content (6 checks)
 
 | # | Check | Validation | Scripted |
 |---|-------|------------|----------|
 | 3.1 | VegaChart import | Contains `import VegaChart from '~/components/ui/VegaChart.astro';` | Yes |
 | 3.2 | VegaChart component | Contains `<VegaChart ... />` | Yes |
 | 3.3 | Spec path correct | `spec` attribute matches page language (`-en.json` or `-mn.json`) | Yes |
+| 3.4 | No forbidden sections | No "Key Findings", "Overview", "Analysis", "Data Breakdown", etc. (EN or MN) | Yes |
 | 3.5 | No placeholder text | No "TODO", "TBD", "PLACEHOLDER", or template remnants | AI |
+| 3.6 | Nothing after chart | Content ends with VegaChart component (no prose after) | Yes |
 
-*Note: Check 3.4 (VegaChart title attribute) was removed - page title serves as chart title.*
+**Forbidden Sections (3.4)**: Data pages must be minimal - the chart IS the content. These sections are NOT allowed:
+
+| English | Mongolian |
+|---------|-----------|
+| Key Findings | Гол үзүүлэлтүүд |
+| Overview | Тойм |
+| Analysis | Шинжилгээ |
+| Data Breakdown | Өгөгдлийн задаргаа |
+| Trend | Хандлага |
+| Comparison | Харьцуулалт |
+| About the Data | Өгөгдлийн тухай |
+| Download Data | Өгөгдөл татах |
+| Source | Эх сурвалж |
+| Methodology | Арга зүй |
 
 ---
 
@@ -317,9 +332,9 @@ These catch **silent failures** where charts render but show no data:
 
 | Type | Count | Tool |
 |------|-------|------|
-| Scripted | ~60 | `validate_dataset.py`, `validate_vega.py`, `registry` |
+| Scripted | ~62 | `validate_dataset.py`, `validate_vega.py`, `registry` |
 | AI Judgment | ~24 | Checker subagent |
-| **Total** | **84** | |
+| **Total** | **86** | |
 
 ---
 

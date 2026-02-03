@@ -1,0 +1,31 @@
+---
+title: "Ерөнхий боловсролын сургуулийн сурагчдын тоо (2010-2025)"
+publishDate: 2026-02-01
+excerpt: "Монгол Улсын ерөнхий боловсролын сургуульд суралцаж буй сурагчдын нийт тоо, боловсролын түвшин, өмчийн хэлбэр, хүйсээр 2010-2025 онд."
+category: "Боловсрол"
+tags: ["монгол улс", "боловсрол", "сургууль", "сурагч", "бага", "дунд", "оюутан"]
+keywords: ["Монгол сургуулийн сурагч", "ерөнхий боловсрол Монгол", "бага сургуулийн сурагч", "дунд боловсрол", "сургуулийн элсэлт"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-01
+dataFiles:
+  - path: "/datasets/school-pupils-mn.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "CSV файл татах"
+  - path: "/datasets/school-pupils.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Excel дээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2001_018V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/school-pupils-mn.json"
+  title="Ерөнхий боловсролын сургуулийн сурагчид, түвшнээр (2010-2025)"
+/>

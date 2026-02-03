@@ -153,7 +153,7 @@ export const ui = {
     'home.keyIndicators': 'Гол үзүүлэлтүүд',
     'home.trendingData': 'Шинэ өгөгдөл',
     'home.viewAllData': 'Бүх өгөгдөл үзэх',
-    'home.exploreByTopic': 'Сэдвээр судлах',
+    'home.exploreByTopic': 'Сэдвээр ангилан судлах',
     // 'home.browseCategories': 'Хамгийн алдартай ангиллуудыг үзэх',
     'home.featuredReports': 'Онцлох тайлангууд',
     'home.viewAllReports': 'Бүх тайлан үзэх',

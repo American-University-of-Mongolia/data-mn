@@ -1,0 +1,31 @@
+---
+title: "General Educational School Pupils in Mongolia (2010-2025)"
+publishDate: 2026-02-01
+excerpt: "Total number of pupils studying in general educational schools in Mongolia by education level, ownership type, and sex from 2010 to 2025."
+category: "Education"
+tags: ["mongolia", "education", "schools", "pupils", "primary", "secondary", "students"]
+keywords: ["Mongolia school pupils", "general education Mongolia", "primary school students", "secondary education", "school enrollment"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-01
+dataFiles:
+  - path: "/datasets/school-pupils-en.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "Download as CSV"
+  - path: "/datasets/school-pupils.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2001_018V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/school-pupils-en.json"
+  title="General Educational School Pupils by Level (2010-2025)"
+/>

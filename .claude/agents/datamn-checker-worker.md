@@ -64,8 +64,9 @@ For each of these, read the files and make judgments:
 **MDX Content Quality (Section 2, 3, 10):**
 - 2.3: Does excerpt tell a meaningful story (not just "data about X")?
 - 2.13: If from NSO, does source have tableId?
-- 3.4: Does VegaChart have title attribute?
+- 3.4: Are there forbidden sections (Key Findings, Overview, Analysis, Data Breakdown, etc.)?
 - 3.5: Any placeholder text (TODO, TBD, FIXME)?
+- 3.6: Is there any content after the VegaChart component?
 - 10.1: If time-series, does title include year range?
 - 10.2: Does excerpt provide insight, not just description?
 - 10.3: Is source attribution accurate?

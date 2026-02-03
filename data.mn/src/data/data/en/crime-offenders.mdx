@@ -1,0 +1,59 @@
+---
+title: "Crime Offenders in Mongolia by Type (2010-2024)"
+publishDate: 2026-02-01
+excerpt: "Number of crime offenders in Mongolia by classification of crimes from 2010 to 2024, covering 19 crime categories."
+category: "Society"
+tags: ["mongolia", "crime", "offenders", "justice", "law", "statistics"]
+keywords: ["Mongolia crime statistics", "crime offenders", "criminal justice", "crime by type", "law enforcement"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-01
+dataFiles:
+  - path: "/datasets/crime-offenders-en.csv"
+    format: "csv"
+    size: "8 KB"
+    description: "Download as CSV"
+  - path: "/datasets/crime-offenders.xlsx"
+    format: "xlsx"
+    size: "15 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2300_038V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/crime-offenders-en.json"
+  title="Crime Offenders by Type in Mongolia (2010-2024)"
+/>
+
+## Key Findings
+
+- **Total offenders in 2024**: 25,291 individuals convicted of crimes
+- **Most common crime**: Property crimes (53% of all offenders in 2024)
+- **Second most common**: Crimes against health (27% of offenders)
+- **Traffic violations**: 2,718 offenders (11% of total)
+
+## Crime Categories (2024)
+
+| Crime Type | Offenders | % of Total |
+|------------|-----------|------------|
+| Crimes against ownership | 13,493 | 53.4% |
+| Crimes against health | 6,916 | 27.3% |
+| Traffic safety violations | 2,718 | 10.7% |
+| Environmental crimes | 543 | 2.1% |
+| Sexual crimes | 408 | 1.6% |
+| Other crimes | 1,213 | 4.8% |
+
+## Data Coverage
+
+This dataset includes 20 crime classifications covering:
+- Crimes against persons (life, health, freedom, sexual immunity)
+- Property crimes
+- Economic and corruption offenses
+- Public safety and environmental crimes
+- Traffic and military service violations
+- Computer security crimes

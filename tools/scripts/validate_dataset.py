@@ -305,6 +305,57 @@ def validate_mdx(file_path: str, base_dir: Optional[str] = None) -> ValidationRe
     if "import VegaChart from '~/components/ui/VegaChart.astro'" not in body:
         result.add_warning("Missing VegaChart import statement")
 
+    # ============================================
+    # Check for forbidden sections in MDX body
+    # Data pages must be minimal - the chart IS the content
+    # Includes both English and Mongolian patterns
+    # ============================================
+    FORBIDDEN_HEADINGS = [
+        # English patterns
+        (r'^##\s*Key\s*Findings', 'Key Findings'),
+        (r'^##\s*Overview', 'Overview'),
+        (r'^##\s*Analysis', 'Analysis'),
+        (r'^##\s*Data\s*Breakdown', 'Data Breakdown'),
+        (r'^##\s*Trend', 'Trend'),
+        (r'^##\s*Comparison', 'Comparison'),
+        (r'^##\s*About\s*the\s*Data', 'About the Data'),
+        (r'^##\s*Download\s*Data', 'Download Data'),
+        (r'^##\s*Source', 'Source'),
+        (r'^##\s*Methodology', 'Methodology'),
+        # Mongolian patterns (translations of above)
+        (r'^##\s*Гол\s*үзүүлэлтүүд', 'Гол үзүүлэлтүүд (Key Findings)'),
+        (r'^##\s*Тойм', 'Тойм (Overview)'),
+        (r'^##\s*Шинжилгээ', 'Шинжилгээ (Analysis)'),
+        (r'^##\s*Өгөгдлийн\s*задаргаа', 'Өгөгдлийн задаргаа (Data Breakdown)'),
+        (r'^##\s*Хандлага', 'Хандлага (Trend)'),
+        (r'^##\s*Харьцуулалт', 'Харьцуулалт (Comparison)'),
+        (r'^##\s*Өгөгдлийн\s*тухай', 'Өгөгдлийн тухай (About the Data)'),
+        (r'^##\s*Өгөгдөл\s*татах', 'Өгөгдөл татах (Download Data)'),
+        (r'^##\s*Эх\s*сурвалж', 'Эх сурвалж (Source)'),
+        (r'^##\s*Арга\s*зүй', 'Арга зүй (Methodology)'),
+    ]
+
+    for pattern, name in FORBIDDEN_HEADINGS:
+        if re.search(pattern, body, re.IGNORECASE | re.MULTILINE):
+            result.add_error(
+                f"MDX body contains forbidden section: '{name}'. "
+                f"Data pages must be minimal - the chart IS the content. "
+                f"Remove all prose sections."
+            )
+
+    # Check for content after VegaChart (should be empty or whitespace only)
+    vegachart_match = re.search(r'<VegaChart[^>]*/>', body)
+    if vegachart_match:
+        content_after_chart = body[vegachart_match.end():].strip()
+        if content_after_chart:
+            # Allow closing tags but nothing else
+            if not re.match(r'^(\s|<\/\w+>)*$', content_after_chart):
+                result.add_error(
+                    f"MDX has content after VegaChart component. "
+                    f"Data pages must end with the chart - no Key Findings, "
+                    f"Analysis, or other sections allowed."
+                )
+
     result.add_info(f"Frontmatter has {len(frontmatter)} fields")
 
     return result

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Ерөнхий боловсролын сургуулийн сурагчдын тоо (2010-2025)",
+  "data": {
+    "url": "/datasets/school-pupils-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": {"field": "үзүүлэлт", "oneOf": ["Бага", "Дунд", "Ахлах"]}}
+  ],
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 1, "grid": false}
+    },
+    "y": {
+      "field": "сурагч",
+      "type": "quantitative",
+      "title": "Сурагчдын тоо",
+      "axis": {"format": ",d"}
+    },
+    "color": {
+      "field": "үзүүлэлт",
+      "type": "nominal",
+      "title": "Боловсролын түвшин",
+      "scale": {
+        "domain": ["Бага", "Дунд", "Ахлах"],
+        "range": ["#1f77b4", "#ff7f0e", "#2ca02c"]
+      },
+      "legend": {"orient": "top"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [{"name": "hover", "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}}],
+      "mark": {"type": "point", "filled": true, "size": 100},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
+          {"field": "үзүүлэлт", "type": "nominal", "title": "Түвшин"},
+          {"field": "сурагч", "type": "quantitative", "title": "Сурагч", "format": ",d"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын аймагуар тариалсан талбай, мянгаан га (1960-2025)"
+publishDate: 2026-02-04
+excerpt: "Монгол Улсын 22 бүс нутаг дахин нийт тариалсан талбай 1960-2025 онд, мянгаан га тооцоотой. Зурагт 10 хилний бүс нутаг үзүүлэх; бүх аймагын бүрэн өгөгдөл татах боломжтой."
+category: "Хөдөө аж ахуй"
+tags: ["монгол", "хөдөө аж ахуй", "тариалсан талбай", "бүс нутаг", "аймаг", "таниалалт"]
+keywords: ["тариалсан талбай бүс нутгаар", "монгол хөдөө аж ахуйн газар", "аймаг таниалалт", "тариалсан газар монгол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-04
+dataFiles:
+  - path: "/datasets/sown-area-by-region-all-mn.csv"
+    format: "csv"
+    size: "38 KB"
+    description: "CSV татах (бүх өгөгдөл)"
+  - path: "/datasets/sown-area-by-region.xlsx"
+    format: "xlsx"
+    size: "23 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1002_003V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/sown-area-by-region-mn.json"
+  title="Монгол Улсын аймагуар тариалсан талбай, мянгаан га (1960-2025)"
+/>

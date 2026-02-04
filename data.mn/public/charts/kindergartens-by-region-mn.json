@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын аймагуар цэцэрлэгийн тоог 2000-2025 он, сүүн цэцэрлэгийн тоотой top 10 бүс.",
+  "data": {
+    "url": "/datasets/kindergartens-by-region-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 5,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "цэцэрлэг",
+      "type": "quantitative",
+      "title": "Цэцэрлэгийн тоо",
+      "axis": {
+        "format": "d"
+      }
+    },
+    "color": {
+      "field": "бүс",
+      "type": "nominal",
+      "title": "Бүс",
+      "scale": {
+        "domain": ["Улаанбаатар", "Баян-Өлгий", "Өвөрхангай", "Хөвсгөл", "Төв", "Баянхонгор", "Сэлэнгэ", "Завхан", "Ховд", "Орхон"],
+        "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2", "#54a24b", "#eeca3b", "#b07aa1", "#ff9da6", "#9d755d", "#bab0ab"]
+      },
+      "legend": {
+        "orient": "top",
+        "title": null,
+        "columns": 5
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "бүс",
+            "title": "Бүс"
+          },
+          {
+            "field": "цэцэрлэг",
+            "title": "Цэцэрлэг",
+            "format": "d"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

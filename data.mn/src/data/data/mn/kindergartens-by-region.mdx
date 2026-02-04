@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын аймагуар цэцэрлэгийн тоо, тоо (2000-2025)"
+publishDate: 2026-02-04
+excerpt: "Монгол Улсын 22 аймаг болон Улаанбаатар дахин цэцэрлэгийн тоо 2000-2025 онд. Зурагт цэцэрлэгийн тоотой 10 хилний бүс нутаг үзүүлэх; бүх аймагын бүрэн өгөгдөл татах боломжтой."
+category: "Боловсрол"
+tags: ["монгол", "боловсрол", "цэцэрлэг", "сургуулийн өмнөх боловсрол", "бүс нутаг", "аймаг"]
+keywords: ["цэцэрлэгийн тоо бүс нутгаар", "сургуулийн өмнөх боловсрол монгол", "цэцэрлэг аймаг", "монгол цэцэрлэг статистик"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-04
+dataFiles:
+  - path: "/datasets/kindergartens-by-region-all-mn.csv"
+    format: "csv"
+    size: "13 KB"
+    description: "CSV татах (бүх өгөгдөл)"
+  - path: "/datasets/kindergartens-by-region.xlsx"
+    format: "xlsx"
+    size: "11 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2001_011V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/kindergartens-by-region-mn.json"
+  title="Монгол Улсын аймагуар цэцэрлэгийн тоо, тоо (2000-2025)"
+/>

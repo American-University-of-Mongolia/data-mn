@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Number of kindergartens by aimag in Mongolia from 2000 to 2025, showing the top 10 regions by most recent kindergarten count.",
+  "data": {
+    "url": "/datasets/kindergartens-by-region-en.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 5,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "kindergartens",
+      "type": "quantitative",
+      "title": "Number of Kindergartens",
+      "axis": {
+        "format": "d"
+      }
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "title": "Region",
+      "scale": {
+        "domain": ["Ulaanbaatar", "Bayan-Ulgii", "Uvurkhangai", "Khuvsgul", "Tuv", "Bayankhongor", "Selenge", "Zavkhan", "Khovd", "Orkhon"],
+        "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2", "#54a24b", "#eeca3b", "#b07aa1", "#ff9da6", "#9d755d", "#bab0ab"]
+      },
+      "legend": {
+        "orient": "top",
+        "title": null,
+        "columns": 5
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "region",
+            "title": "Region"
+          },
+          {
+            "field": "kindergartens",
+            "title": "Kindergartens",
+            "format": "d"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

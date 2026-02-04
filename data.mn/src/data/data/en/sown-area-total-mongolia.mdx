@@ -1,0 +1,31 @@
+---
+title: "Mongolia Total Sown Area, Thousand Hectares (1960-2025)"
+publishDate: 2026-02-04
+excerpt: "Annual total sown area in thousand hectares for Mongolia from 1960 to 2025, covering 66 years of national agricultural land use data from NSO."
+category: "Agriculture"
+tags: ["mongolia", "agriculture", "sown-area", "crops", "farming"]
+keywords: ["mongolia sown area", "agricultural land mongolia", "crop area mongolia 2025"]
+author: "Data.mn"
+dataVersion: 2
+dataDate: 2026-02-04
+dataFiles:
+  - path: "/datasets/sown-area-total-mongolia-all-en.csv"
+    format: "csv"
+    size: "741 B"
+    description: "Download as CSV (all data)"
+  - path: "/datasets/sown-area-total-mongolia.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1002_003V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/sown-area-total-mongolia-en.json"
+  title="Mongolia Total Sown Area, Thousand Hectares (1960-2025)"
+/>

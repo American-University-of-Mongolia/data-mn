@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын тариалсан талбай төрөлөөр 1978-2025 онд, сая гектарын нэгж.",
+  "data": {
+    "url": "/datasets/sown-area-by-crop-type-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 5,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "утга",
+      "type": "quantitative",
+      "title": "Тариалсан талбай (Сая гектар)",
+      "axis": {
+        "format": ".1f"
+      }
+    },
+    "color": {
+      "field": "төрөл",
+      "type": "nominal",
+      "title": "Төрөл",
+      "scale": {
+        "domain": ["Үр тариа", "Техникийн ургамал", "Тэжээлийн ургамал", "Төмс", "Хүнсний ногоо"],
+        "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2", "#54a24b"]
+      },
+      "legend": {
+        "orient": "top",
+        "title": null
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "он", "title": "Он", "format": "d"},
+          {"field": "төрөл", "title": "Төрөл"},
+          {"field": "утга", "title": "Сая гектар", "format": ",.2f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

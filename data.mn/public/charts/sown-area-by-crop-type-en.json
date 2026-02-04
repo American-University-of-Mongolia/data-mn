@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia's sown area by crop type from 1978 to 2025, showing Cereals, Fodder crops, Industrial crops, Potatoes, and Vegetables in thousand hectares.",
+  "data": {
+    "url": "/datasets/sown-area-by-crop-type-en.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 5,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Sown Area (Thousand Hectares)",
+      "axis": {
+        "format": ".1f"
+      }
+    },
+    "color": {
+      "field": "crop_type",
+      "type": "nominal",
+      "title": "Crop Type",
+      "scale": {
+        "domain": ["Cereals", "Industrial crops", "Fodder crops", "Potatoes", "Vegetables"],
+        "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2", "#54a24b"]
+      },
+      "legend": {
+        "orient": "top",
+        "title": null
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "year", "title": "Year", "format": "d"},
+          {"field": "crop_type", "title": "Crop Type"},
+          {"field": "value", "title": "Thousand Hectares", "format": ",.2f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

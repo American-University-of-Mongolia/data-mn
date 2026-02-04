@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын тариалсан талбай төрөлөөр, Сая гектар (1978-2025)"
+publishDate: 2026-02-04
+excerpt: "Монгол Улсын жилийн тариалсан талбай 1978-2025 онд, үр тариа, техникийн ургамал, тэжээлийн ургамал, төмс болон хүнсний ногоoog хамарсан."
+category: "Хөдөө аж ахуй"
+tags: ["монгол", "хөдөө аж ахуй", "тариалсан талбай", "ургамал", "үр тариа"]
+keywords: ["монгол тариалсан талбай", "ургамлын маш гектар", "хөдөө аж ахуйн газар ашиглалт"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-04
+dataFiles:
+  - path: "/datasets/sown-area-by-crop-type-all-mn.csv"
+    format: "csv"
+    size: "8 KB"
+    description: "CSV татах"
+  - path: "/datasets/sown-area-by-crop-type.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0100_01T012.px / DT_NSO_1001_033V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/sown-area-by-crop-type-mn.json"
+  title="Монгол Улсын тариалсан талбай төрөлөөр, Сая гектар (1978-2025)"
+/>

@@ -1,0 +1,31 @@
+---
+title: "Mongolia Sown Area by Crop Type, Thousand Hectares (1978-2025)"
+publishDate: 2026-02-04
+excerpt: "Annual sown area for five major crop categories in Mongolia from 1978 to 2025, including cereals, industrial crops, fodder crops, potatoes, and vegetables."
+category: "Agriculture"
+tags: ["mongolia", "agriculture", "sown area", "crops", "cereals"]
+keywords: ["mongolia sown area", "crop area hectares", "mongolian agriculture land use", "cereals fodder crops"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-04
+dataFiles:
+  - path: "/datasets/sown-area-by-crop-type-all-en.csv"
+    format: "csv"
+    size: "8 KB"
+    description: "Download as CSV"
+  - path: "/datasets/sown-area-by-crop-type.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0100_01T012.px / DT_NSO_1001_033V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/sown-area-by-crop-type-en.json"
+  title="Mongolia Sown Area by Crop Type, Thousand Hectares (1978-2025)"
+/>

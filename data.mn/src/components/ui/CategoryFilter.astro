@@ -66,11 +66,12 @@ const uniqueCategories = [...new Set(categories)].filter(Boolean).sort();
       gridItems.forEach((item) => {
         if (item.classList.contains('filter-btn')) return; // Skip filter buttons
 
-        const itemCategory = item.getAttribute('data-category');
+        const el = item as HTMLElement;
+        const itemCategory = el.getAttribute('data-category');
         if (category === 'all' || itemCategory === category) {
-          item.style.display = '';
+          el.style.display = '';
         } else {
-          item.style.display = 'none';
+          el.style.display = 'none';
         }
       });
     }

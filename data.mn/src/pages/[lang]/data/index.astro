@@ -32,7 +32,7 @@ const sortedData = allDataPages.sort((a, b) => {
 });
 
 // Extract unique categories for filter
-const categories = [...new Set(sortedData.map((item) => item.data.category).filter(Boolean))];
+const categories = [...new Set(sortedData.map((item) => item.data.category))].filter((c): c is string => Boolean(c));
 
 // Transform to format expected by GridCards component
 const posts = sortedData.map((item) => {

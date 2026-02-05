@@ -1,0 +1,30 @@
+---
+title: "Wheat Prices by Region in Mongolia (2018-2025)"
+publishDate: 2025-02-05
+excerpt: "Monthly wheat prices across all aimags of Mongolia, including commodity wheat and seed wheat. Compare regional price differences."
+category: "Agriculture"
+tags: ["mongolia", "agriculture", "wheat", "regional prices", "grain"]
+keywords: ["wheat price mongolia", "wheat prices by region", "grain prices", "seed wheat price"]
+dataFiles:
+  - path: "/datasets/wheat-prices-by-region-en.csv"
+    format: "csv"
+    size: "35 KB"
+    description: "Download as CSV"
+  - path: "/datasets/wheat-prices-by-region.xlsx"
+    format: "xlsx"
+    size: "45 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1002_001V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Monthly wheat prices across Mongolia's aimags, covering both commodity wheat and seed wheat. The chart includes a region selector to compare prices across different provinces. Wheat is Mongolia's primary grain crop, mainly grown in Selenge, Tuv, and Bulgan provinces.
+
+<VegaChart
+  spec="/charts/wheat-prices-by-region-en.json"
+  title="Wheat Prices by Region"
+/>

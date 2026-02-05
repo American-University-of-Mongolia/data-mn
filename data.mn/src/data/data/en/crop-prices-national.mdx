@@ -1,0 +1,30 @@
+---
+title: "Average Crop Product Prices in Mongolia (2018-2025)"
+publishDate: 2025-02-05
+excerpt: "Monthly average market prices for crop products including wheat, hay, oat, and wheat bran in Tuv province, Mongolia's main agricultural region."
+category: "Agriculture"
+tags: ["mongolia", "agriculture", "crop prices", "wheat", "hay", "fodder", "tuv"]
+keywords: ["mongolia crop prices", "wheat price mongolia", "hay price", "fodder prices", "agricultural prices"]
+dataFiles:
+  - path: "/datasets/crop-prices-national-en.csv"
+    format: "csv"
+    size: "20 KB"
+    description: "Download as CSV"
+  - path: "/datasets/crop-prices-national.xlsx"
+    format: "xlsx"
+    size: "28 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1002_001V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Monthly average market prices for crop products in Tuv province, Mongolia's agricultural heartland. Data includes wheat (commodity and seed), hay (baled and loose), green feed, oat, and wheat bran. Prices show seasonal patterns with winter months typically higher due to increased demand for animal feed.
+
+<VegaChart
+  spec="/charts/crop-prices-national-en.json"
+  title="Crop Product Prices in Mongolia"
+/>

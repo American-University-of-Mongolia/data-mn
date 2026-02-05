@@ -1,0 +1,30 @@
+---
+title: "Hay and Fodder Prices by Region in Mongolia (2018-2025)"
+publishDate: 2025-02-05
+excerpt: "Monthly prices for hay bales, loose hay, and green feed across all aimags of Mongolia. Critical data for livestock herders."
+category: "Agriculture"
+tags: ["mongolia", "agriculture", "hay", "fodder", "livestock", "regional prices"]
+keywords: ["hay price mongolia", "fodder prices", "livestock feed prices", "hay bale price"]
+dataFiles:
+  - path: "/datasets/hay-prices-by-region-en.csv"
+    format: "csv"
+    size: "75 KB"
+    description: "Download as CSV"
+  - path: "/datasets/hay-prices-by-region.xlsx"
+    format: "xlsx"
+    size: "95 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1002_001V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Monthly prices for hay and fodder products across Mongolia's aimags. Includes hay bales, loose hay, and green feed. This data is critical for Mongolia's livestock sector, which accounts for over 60% of agricultural output. Prices typically spike during harsh winters (dzud) when feed demand increases dramatically.
+
+<VegaChart
+  spec="/charts/hay-prices-by-region-en.json"
+  title="Hay and Fodder Prices by Region"
+/>

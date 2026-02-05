@@ -1,0 +1,30 @@
+---
+title: "Wheat Bran Prices by Region in Mongolia (2018-2025)"
+publishDate: 2025-02-05
+excerpt: "Monthly wheat bran prices (25kg and 50kg bags) across all aimags of Mongolia. Essential animal feed cost data for livestock farmers."
+category: "Agriculture"
+tags: ["mongolia", "agriculture", "wheat bran", "animal feed", "livestock", "regional prices"]
+keywords: ["wheat bran price mongolia", "animal feed prices", "livestock feed cost", "khiveg price"]
+dataFiles:
+  - path: "/datasets/wheat-bran-prices-en.csv"
+    format: "csv"
+    size: "60 KB"
+    description: "Download as CSV"
+  - path: "/datasets/wheat-bran-prices.xlsx"
+    format: "xlsx"
+    size: "75 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1002_001V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Monthly wheat bran prices across Mongolia's aimags, available in 25kg and 50kg bag sizes. Wheat bran is a key animal feed supplement used by livestock farmers throughout Mongolia. Price comparison between regions helps farmers optimize feed sourcing decisions.
+
+<VegaChart
+  spec="/charts/wheat-bran-prices-en.json"
+  title="Wheat Bran Prices by Region"
+/>

@@ -1,0 +1,109 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улс руу ирсэн зорчигчид аяллын зорилгоор (2006-2025), цаг хугацааны дагуух бүрэлдэхүүн",
+  "data": {
+    "url": "/datasets/inbound-passengers-by-purpose-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 5, "grid": false}
+    },
+    "y": {
+      "field": "зорчигч",
+      "type": "quantitative",
+      "title": "Зорчигч",
+      "stack": "zero",
+      "axis": {"format": ".2s"}
+    },
+    "color": {
+      "field": "зорилго",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "Жуулчлал",
+          "Албан ажлаар",
+          "Хувийн журмаар",
+          "Ажиллах",
+          "Бусад",
+          "Дамжин өнгөрөх",
+          "БОС",
+          "Суралцах"
+        ],
+        "range": [
+          "#4c78a8",
+          "#f58518",
+          "#e45756",
+          "#72b7b2",
+          "#54a24b",
+          "#eeca3b",
+          "#b279a2",
+          "#ff9da6"
+        ]
+      },
+      "legend": {
+        "orient": "top",
+        "columns": 4,
+        "symbolType": "square",
+        "symbolSize": 100
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "opacity": 0.8
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
+          {"field": "зорилго", "type": "nominal", "title": "Зорилго"},
+          {"field": "зорчигч", "type": "quantitative", "title": "Зорчигч", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

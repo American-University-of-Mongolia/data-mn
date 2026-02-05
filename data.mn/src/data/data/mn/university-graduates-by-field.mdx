@@ -1,0 +1,37 @@
+---
+title: "Монгол Улсын их сургуулийн төгсөгчид мэргэжлийн чиглэлээр (2019-2024)"
+publishDate: 2025-01-29
+excerpt: "Монгол Улсын их, дээд сургуулийн төгсөгчид мэргэжлийн чиглэлээр 2019-2024 он. Бизнес, удирдахуй, хууль эрх зүйн чиглэлээр хамгийн олон төгсөгч байгаа бол хөдөө аж ахуй хамгийн цөөн."
+category: "Боловсрол"
+tags:
+  - монгол
+  - боловсрол
+  - их сургууль
+  - төгсөгч
+  - мэргэжлийн чиглэл
+keywords:
+  - монгол их сургуулийн төгсөгч мэргэжлээр
+  - дээд боловсролын статистик
+dataFiles:
+  - path: "/datasets/university-graduates-by-field-all-mn.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "CSV татах (бүх өгөгдөл)"
+  - path: "/datasets/university-graduates-by-field.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel татах"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2001_014V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Монгол Улсын их, дээд сургуулийн төгсөгчид мэргэжлийн чиглэлээр 2019-2024 он. Бизнес, удирдахуй, хууль эрх зүйн чиглэлээр хамгийн олон төгсөгч байгаа бол хөдөө аж ахуй хамгийн цөөн.
+
+<VegaChart
+  spec="/charts/university-graduates-by-field-mn.json"
+  title="Төгсөгчид мэргэжлийн чиглэлээр"
+/>

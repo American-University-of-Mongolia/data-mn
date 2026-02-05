@@ -1,0 +1,31 @@
+---
+title: "Mongolia Infant Mortality (2010-2024)"
+publishDate: 2025-01-26
+excerpt: "Number of infant deaths (under 1 year old) in Mongolia from 2010 to 2024. Infant mortality has decreased 45% from 1,275 deaths in 2010 to 702 in 2024."
+category: "Health"
+tags: ["mongolia", "health", "infant-mortality", "demographics"]
+keywords: ["mongolia infant mortality", "child deaths", "health statistics", "infant deaths"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-01-26
+dataFiles:
+  - path: "/datasets/infant-mortality-national-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/infant-mortality-national.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2100_014V2"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/infant-mortality-national-en.json"
+  title="Mongolia Infant Mortality (2010-2024)"
+/>

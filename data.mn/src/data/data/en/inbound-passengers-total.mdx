@@ -1,0 +1,39 @@
+---
+title: "Mongolia Inbound Foreign Passengers (2006-2025)"
+publishDate: 2025-01-29
+excerpt: "Total foreign passengers arriving in Mongolia from 2006 to 2025. Arrivals reached 951,208 in 2025, recovering from the COVID-19 low of 39,236 in 2021."
+category: "Tourism"
+tags:
+  - mongolia
+  - tourism
+  - passengers
+  - inbound
+  - travel
+  - statistics
+keywords:
+  - mongolia tourism passengers
+  - inbound foreign visitors mongolia
+  - travel statistics mongolia
+dataFiles:
+  - path: "/datasets/inbound-passengers-total-all-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV (all data)"
+  - path: "/datasets/inbound-passengers-total.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1800_005V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Total foreign passengers arriving in Mongolia from 2006 to 2025. Arrivals reached 951,208 in 2025 after recovering strongly from the COVID-19 pandemic low of 39,236 in 2021 - exceeding the pre-pandemic 2019 peak of 636,960.
+
+<VegaChart
+  spec="/charts/inbound-passengers-total-en.json"
+  title="Mongolia Inbound Foreign Passengers"
+/>

@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын нялх хүүхдийн нас баралт (2010-2024)"
+publishDate: 2025-01-26
+excerpt: "2010-2024 онд Монгол Улсад нялх хүүхдийн (1 хүртэлх насны) нас барсан тоо. Нялх хүүхдийн нас баралт 2010 оны 1,275-аас 2024 онд 702 болж 45%-иар буурсан."
+category: "Эрүүл мэнд"
+tags: ["монгол", "эрүүл-мэнд", "нялх-хүүхэд", "хүн-ам-зүй"]
+keywords: ["монгол нялх хүүхэд", "хүүхдийн нас баралт", "эрүүл мэндийн статистик"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-01-26
+dataFiles:
+  - path: "/datasets/infant-mortality-national-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/infant-mortality-national.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2100_014V2"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/infant-mortality-national-mn.json"
+  title="Монгол Улсын нялх хүүхдийн нас баралт (2010-2024)"
+/>

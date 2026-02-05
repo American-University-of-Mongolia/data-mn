@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "University and college graduates in Mongolia by professional field from 2019 to 2024",
+  "data": {
+    "url": "/datasets/university-graduates-by-field-en.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {"format": "d", "tickMinStep": 1, "grid": false}
+    },
+    "y": {
+      "field": "graduates",
+      "type": "quantitative",
+      "title": "Number of Graduates",
+      "axis": {"format": ",.0f"},
+      "stack": "zero"
+    },
+    "color": {
+      "field": "field",
+      "type": "nominal",
+      "title": "Professional Field",
+      "scale": {
+        "domain": [
+          "Business, administration and law",
+          "Education",
+          "Health and welfare",
+          "Engineering, manufacturing and construction",
+          "Arts and humanities",
+          "Social sciences, journalism and information",
+          "Information and Communication Technologies",
+          "Services",
+          "Natural sciences, mathematics and statistics",
+          "Agriculture, forestry, fisheries and veterinary"
+        ],
+        "range": [
+          "#4c78a8",
+          "#f58518",
+          "#e45756",
+          "#72b7b2",
+          "#54a24b",
+          "#eeca3b",
+          "#b279a2",
+          "#ff9da6",
+          "#9d755d",
+          "#bab0ac"
+        ]
+      },
+      "legend": {"orient": "top", "title": null, "columns": 2}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "field", "title": "Professional Field"},
+          {"field": "year", "title": "Year", "format": "d"},
+          {"field": "graduates", "title": "Graduates", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

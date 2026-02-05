@@ -1,0 +1,109 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсад ирсэн зорчигчид газарзүйн бүсээр (2006-2025)",
+  "data": {
+    "url": "/datasets/inbound-passengers-by-region-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 2, "grid": false}
+    },
+    "y": {
+      "field": "зорчигч",
+      "type": "quantitative",
+      "title": "Зорчигчид",
+      "axis": {"format": ",.0f"}
+    },
+    "color": {
+      "field": "бүс",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "Зүүн Ази болон Номхон далайн орнууд",
+          "Европ",
+          "Америк",
+          "Ойрхи Дорнод",
+          "Өмнөд Ази",
+          "Африк",
+          "Харьяалалгүй"
+        ],
+        "range": [
+          "#4c78a8",
+          "#f58518",
+          "#e45756",
+          "#72b7b2",
+          "#54a24b",
+          "#eeca3b",
+          "#b279a2"
+        ]
+      },
+      "legend": {"orient": "top", "columns": 4, "symbolSize": 100}
+    },
+    "order": {
+      "field": "зорчигч",
+      "type": "quantitative",
+      "sort": "descending"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "он", "title": "Он", "format": "d"},
+          {"field": "бүс", "title": "Бүс"},
+          {"field": "зорчигч", "title": "Зорчигчид", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

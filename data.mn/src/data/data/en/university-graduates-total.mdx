@@ -1,0 +1,38 @@
+---
+title: "Mongolia University and College Graduates (2019-2024)"
+publishDate: 2025-01-29
+excerpt: "Total university and college graduates in Mongolia from 2019 to 2024. Peaked at 32,925 in 2021 before declining to 23,768 in 2024."
+category: "Education"
+tags:
+  - mongolia
+  - education
+  - university
+  - graduates
+  - higher education
+keywords:
+  - mongolia university graduates
+  - higher education statistics mongolia
+  - college graduates mongolia
+dataFiles:
+  - path: "/datasets/university-graduates-total-all-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV (all data)"
+  - path: "/datasets/university-graduates-total.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2001_014V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Total university and college graduates in Mongolia from 2019 to 2024. Peaked at 32,925 in 2021 before declining to 23,768 in 2024.
+
+<VegaChart
+  spec="/charts/university-graduates-total-en.json"
+  title="University and College Graduates"
+/>

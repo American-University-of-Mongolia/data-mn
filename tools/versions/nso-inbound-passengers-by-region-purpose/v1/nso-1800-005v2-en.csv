@@ -1,0 +1,1441 @@
+Geographical region,Purpose of visit,Year,value
+Total,Total,2025,951208
+Total,Total,2024,853835
+Total,Total,2023,644064
+Total,Total,2022,300520
+Total,Total,2021,39236
+Total,Total,2020,66940
+Total,Total,2019,636960
+Total,Total,2018,598406
+Total,Total,2017,542703
+Total,Total,2016,471242
+Total,Total,2015,467231
+Total,Total,2014,505686
+Total,Total,2013,515205
+Total,Total,2012,623839
+Total,Total,2011,627007
+Total,Total,2010,557483
+Total,Total,2009,464850
+Total,Total,2008,468797
+Total,Total,2007,454762
+Total,Total,2006,408490
+Total,Business,2025,72057
+Total,Business,2024,60583
+Total,Business,2023,34620
+Total,Business,2022,27550
+Total,Business,2021,10935
+Total,Business,2020,19738
+Total,Business,2019,52680
+Total,Business,2018,54359
+Total,Business,2017,53896
+Total,Business,2016,79362
+Total,Business,2015,94458
+Total,Business,2014,131510
+Total,Business,2013,137367
+Total,Business,2012,154843
+Total,Business,2011,137375
+Total,Business,2010,119772
+Total,Business,2009,88164
+Total,Business,2008,85369
+Total,Business,2007,102970
+Total,Business,2006,82679
+Total,Personal,2025,15407
+Total,Personal,2024,112589
+Total,Personal,2023,198291
+Total,Personal,2022,121936
+Total,Personal,2021,18327
+Total,Personal,2020,27996
+Total,Personal,2019,207850
+Total,Personal,2018,204557
+Total,Personal,2017,184739
+Total,Personal,2016,145658
+Total,Personal,2015,149408
+Total,Personal,2014,128280
+Total,Personal,2013,158253
+Total,Personal,2012,196347
+Total,Personal,2011,194524
+Total,Personal,2010,206513
+Total,Personal,2009,181620
+Total,Personal,2008,228099
+Total,Personal,2007,193247
+Total,Personal,2006,154130
+Total,Tourism,2025,417935
+Total,Tourism,2024,389451
+Total,Tourism,2023,320630
+Total,Tourism,2022,122930
+Total,Tourism,2021,1010
+Total,Tourism,2020,7798
+Total,Tourism,2019,260078
+Total,Tourism,2018,222168
+Total,Tourism,2017,191147
+Total,Tourism,2016,150335
+Total,Tourism,2015,120891
+Total,Tourism,2014,123331
+Total,Tourism,2013,115729
+Total,Tourism,2012,115397
+Total,Tourism,2011,111213
+Total,Tourism,2010,96949
+Total,Tourism,2009,100872
+Total,Tourism,2008,103824
+Total,Tourism,2007,127444
+Total,Tourism,2006,134895
+Total,Work,2025,72809
+Total,Work,2024,55619
+Total,Work,2023,25874
+Total,Work,2022,6671
+Total,Work,2021,4491
+Total,Work,2020,5556
+Total,Work,2019,41392
+Total,Work,2018,54374
+Total,Work,2017,61131
+Total,Work,2016,57490
+Total,Work,2015,74566
+Total,Work,2014,108160
+Total,Work,2013,93590
+Total,Work,2012,141796
+Total,Work,2011,163429
+Total,Work,2010,97695
+Total,Work,2009,48260
+Total,Work,2008,19011
+Total,Work,2007,0
+Total,Work,2006,0
+Total,Transit,2025,47791
+Total,Transit,2024,24499
+Total,Transit,2023,23588
+Total,Transit,2022,5492
+Total,Transit,2021,68
+Total,Transit,2020,317
+Total,Transit,2019,8758
+Total,Transit,2018,3877
+Total,Transit,2017,3873
+Total,Transit,2016,2732
+Total,Transit,2015,1044
+Total,Transit,2014,3974
+Total,Transit,2013,2438
+Total,Transit,2012,3012
+Total,Transit,2011,4287
+Total,Transit,2010,5974
+Total,Transit,2009,9366
+Total,Transit,2008,6103
+Total,Transit,2007,9604
+Total,Transit,2006,14895
+Total,Study,2025,10837
+Total,Study,2024,11295
+Total,Study,2023,9274
+Total,Study,2022,1677
+Total,Study,2021,509
+Total,Study,2020,542
+Total,Study,2019,6503
+Total,Study,2018,4757
+Total,Study,2017,3540
+Total,Study,2016,2981
+Total,Study,2015,2369
+Total,Study,2014,2388
+Total,Study,2013,2167
+Total,Study,2012,1798
+Total,Study,2011,1615
+Total,Study,2010,1623
+Total,Study,2009,2464
+Total,Study,2008,1742
+Total,Study,2007,1663
+Total,Study,2006,2141
+Total,Permanent residence,2025,20392
+Total,Permanent residence,2024,59535
+Total,Permanent residence,2023,14903
+Total,Permanent residence,2022,5890
+Total,Permanent residence,2021,1136
+Total,Permanent residence,2020,1983
+Total,Permanent residence,2019,11765
+Total,Permanent residence,2018,9905
+Total,Permanent residence,2017,8723
+Total,Permanent residence,2016,6608
+Total,Permanent residence,2015,4092
+Total,Permanent residence,2014,2294
+Total,Permanent residence,2013,1633
+Total,Permanent residence,2012,4353
+Total,Permanent residence,2011,1603
+Total,Permanent residence,2010,2083
+Total,Permanent residence,2009,2462
+Total,Permanent residence,2008,1651
+Total,Permanent residence,2007,1311
+Total,Permanent residence,2006,1869
+Total,Other,2025,293980
+Total,Other,2024,140264
+Total,Other,2023,16884
+Total,Other,2022,8374
+Total,Other,2021,2760
+Total,Other,2020,3010
+Total,Other,2019,47934
+Total,Other,2018,44409
+Total,Other,2017,35654
+Total,Other,2016,26076
+Total,Other,2015,20403
+Total,Other,2014,5749
+Total,Other,2013,4028
+Total,Other,2012,6293
+Total,Other,2011,12961
+Total,Other,2010,26874
+Total,Other,2009,31642
+Total,Other,2008,22998
+Total,Other,2007,18523
+Total,Other,2006,17881
+        America,Total,2025,25390
+        America,Total,2024,21498
+        America,Total,2023,17786
+        America,Total,2022,11086
+        America,Total,2021,2054
+        America,Total,2020,1862
+        America,Total,2019,27174
+        America,Total,2018,25767
+        America,Total,2017,24096
+        America,Total,2016,21949
+        America,Total,2015,19607
+        America,Total,2014,19131
+        America,Total,2013,21323
+        America,Total,2012,22884
+        America,Total,2011,21498
+        America,Total,2010,16708
+        America,Total,2009,14368
+        America,Total,2008,16044
+        America,Total,2007,15564
+        America,Total,2006,15022
+        America,Business,2025,2262
+        America,Business,2024,1726
+        America,Business,2023,1677
+        America,Business,2022,1353
+        America,Business,2021,601
+        America,Business,2020,366
+        America,Business,2019,2431
+        America,Business,2018,1927
+        America,Business,2017,2463
+        America,Business,2016,2592
+        America,Business,2015,2437
+        America,Business,2014,3295
+        America,Business,2013,5028
+        America,Business,2012,5318
+        America,Business,2011,5816
+        America,Business,2010,3757
+        America,Business,2009,2380
+        America,Business,2008,1555
+        America,Business,2007,2041
+        America,Business,2006,2458
+        America,Personal,2025,103
+        America,Personal,2024,903
+        America,Personal,2023,2993
+        America,Personal,2022,3027
+        America,Personal,2021,883
+        America,Personal,2020,610
+        America,Personal,2019,6699
+        America,Personal,2018,6490
+        America,Personal,2017,6378
+        America,Personal,2016,6741
+        America,Personal,2015,7151
+        America,Personal,2014,6229
+        America,Personal,2013,5580
+        America,Personal,2012,4581
+        America,Personal,2011,4160
+        America,Personal,2010,3661
+        America,Personal,2009,4183
+        America,Personal,2008,4709
+        America,Personal,2007,3003
+        America,Personal,2006,1635
+        America,Tourism,2025,18869
+        America,Tourism,2024,14008
+        America,Tourism,2023,11289
+        America,Tourism,2022,5200
+        America,Tourism,2021,155
+        America,Tourism,2020,296
+        America,Tourism,2019,14103
+        America,Tourism,2018,13865
+        America,Tourism,2017,12692
+        America,Tourism,2016,10481
+        America,Tourism,2015,7645
+        America,Tourism,2014,7750
+        America,Tourism,2013,7819
+        America,Tourism,2012,9479
+        America,Tourism,2011,9160
+        America,Tourism,2010,7855
+        America,Tourism,2009,6827
+        America,Tourism,2008,8468
+        America,Tourism,2007,9047
+        America,Tourism,2006,8670
+        America,Work,2025,462
+        America,Work,2024,518
+        America,Work,2023,466
+        America,Work,2022,411
+        America,Work,2021,192
+        America,Work,2020,248
+        America,Work,2019,1342
+        America,Work,2018,1241
+        America,Work,2017,1092
+        America,Work,2016,910
+        America,Work,2015,788
+        America,Work,2014,1268
+        America,Work,2013,2205
+        America,Work,2012,2674
+        America,Work,2011,1404
+        America,Work,2010,0
+        America,Work,2009,14
+        America,Work,2008,0
+        America,Work,2007,0
+        America,Work,2006,0
+        America,Transit,2025,581
+        America,Transit,2024,308
+        America,Transit,2023,281
+        America,Transit,2022,45
+        America,Transit,2021,4
+        America,Transit,2020,5
+        America,Transit,2019,167
+        America,Transit,2018,90
+        America,Transit,2017,66
+        America,Transit,2016,167
+        America,Transit,2015,45
+        America,Transit,2014,47
+        America,Transit,2013,59
+        America,Transit,2012,104
+        America,Transit,2011,167
+        America,Transit,2010,125
+        America,Transit,2009,136
+        America,Transit,2008,150
+        America,Transit,2007,192
+        America,Transit,2006,425
+        America,Study,2025,75
+        America,Study,2024,93
+        America,Study,2023,73
+        America,Study,2022,86
+        America,Study,2021,18
+        America,Study,2020,17
+        America,Study,2019,83
+        America,Study,2018,92
+        America,Study,2017,78
+        America,Study,2016,116
+        America,Study,2015,82
+        America,Study,2014,130
+        America,Study,2013,106
+        America,Study,2012,139
+        America,Study,2011,132
+        America,Study,2010,106
+        America,Study,2009,75
+        America,Study,2008,121
+        America,Study,2007,92
+        America,Study,2006,122
+        America,Permanent residence,2025,873
+        America,Permanent residence,2024,2668
+        America,Permanent residence,2023,838
+        America,Permanent residence,2022,463
+        America,Permanent residence,2021,96
+        America,Permanent residence,2020,193
+        America,Permanent residence,2019,804
+        America,Permanent residence,2018,794
+        America,Permanent residence,2017,726
+        America,Permanent residence,2016,462
+        America,Permanent residence,2015,151
+        America,Permanent residence,2014,98
+        America,Permanent residence,2013,65
+        America,Permanent residence,2012,87
+        America,Permanent residence,2011,77
+        America,Permanent residence,2010,94
+        America,Permanent residence,2009,110
+        America,Permanent residence,2008,111
+        America,Permanent residence,2007,55
+        America,Permanent residence,2006,110
+        America,Other,2025,2165
+        America,Other,2024,1274
+        America,Other,2023,169
+        America,Other,2022,501
+        America,Other,2021,105
+        America,Other,2020,127
+        America,Other,2019,1545
+        America,Other,2018,1268
+        America,Other,2017,601
+        America,Other,2016,480
+        America,Other,2015,1308
+        America,Other,2014,314
+        America,Other,2013,461
+        America,Other,2012,502
+        America,Other,2011,582
+        America,Other,2010,1110
+        America,Other,2009,643
+        America,Other,2008,930
+        America,Other,2007,1134
+        America,Other,2006,1602
+        Africa,Total,2025,1699
+        Africa,Total,2024,1796
+        Africa,Total,2023,1835
+        Africa,Total,2022,1391
+        Africa,Total,2021,401
+        Africa,Total,2020,422
+        Africa,Total,2019,2444
+        Africa,Total,2018,1848
+        Africa,Total,2017,1520
+        Africa,Total,2016,1165
+        Africa,Total,2015,982
+        Africa,Total,2014,1126
+        Africa,Total,2013,1600
+        Africa,Total,2012,1457
+        Africa,Total,2011,12336
+        Africa,Total,2010,606
+        Africa,Total,2009,503
+        Africa,Total,2008,626
+        Africa,Total,2007,814
+        Africa,Total,2006,1083
+        Africa,Business,2025,318
+        Africa,Business,2024,290
+        Africa,Business,2023,270
+        Africa,Business,2022,205
+        Africa,Business,2021,97
+        Africa,Business,2020,105
+        Africa,Business,2019,329
+        Africa,Business,2018,287
+        Africa,Business,2017,306
+        Africa,Business,2016,328
+        Africa,Business,2015,265
+        Africa,Business,2014,481
+        Africa,Business,2013,684
+        Africa,Business,2012,427
+        Africa,Business,2011,813
+        Africa,Business,2010,174
+        Africa,Business,2009,139
+        Africa,Business,2008,102
+        Africa,Business,2007,247
+        Africa,Business,2006,210
+        Africa,Personal,2025,67
+        Africa,Personal,2024,102
+        Africa,Personal,2023,254
+        Africa,Personal,2022,189
+        Africa,Personal,2021,46
+        Africa,Personal,2020,47
+        Africa,Personal,2019,291
+        Africa,Personal,2018,319
+        Africa,Personal,2017,298
+        Africa,Personal,2016,236
+        Africa,Personal,2015,289
+        Africa,Personal,2014,118
+        Africa,Personal,2013,145
+        Africa,Personal,2012,163
+        Africa,Personal,2011,977
+        Africa,Personal,2010,159
+        Africa,Personal,2009,128
+        Africa,Personal,2008,197
+        Africa,Personal,2007,214
+        Africa,Personal,2006,104
+        Africa,Tourism,2025,376
+        Africa,Tourism,2024,428
+        Africa,Tourism,2023,321
+        Africa,Tourism,2022,103
+        Africa,Tourism,2021,3
+        Africa,Tourism,2020,5
+        Africa,Tourism,2019,284
+        Africa,Tourism,2018,305
+        Africa,Tourism,2017,271
+        Africa,Tourism,2016,230
+        Africa,Tourism,2015,160
+        Africa,Tourism,2014,242
+        Africa,Tourism,2013,211
+        Africa,Tourism,2012,206
+        Africa,Tourism,2011,260
+        Africa,Tourism,2010,131
+        Africa,Tourism,2009,171
+        Africa,Tourism,2008,209
+        Africa,Tourism,2007,249
+        Africa,Tourism,2006,603
+        Africa,Work,2025,360
+        Africa,Work,2024,382
+        Africa,Work,2023,501
+        Africa,Work,2022,555
+        Africa,Work,2021,202
+        Africa,Work,2020,183
+        Africa,Work,2019,1121
+        Africa,Work,2018,627
+        Africa,Work,2017,394
+        Africa,Work,2016,241
+        Africa,Work,2015,151
+        Africa,Work,2014,261
+        Africa,Work,2013,519
+        Africa,Work,2012,644
+        Africa,Work,2011,10191
+        Africa,Work,2010,0
+        Africa,Work,2009,0
+        Africa,Work,2008,0
+        Africa,Work,2007,0
+        Africa,Work,2006,0
+        Africa,Transit,2025,57
+        Africa,Transit,2024,53
+        Africa,Transit,2023,47
+        Africa,Transit,2022,4
+        Africa,Transit,2021,0
+        Africa,Transit,2020,0
+        Africa,Transit,2019,15
+        Africa,Transit,2018,6
+        Africa,Transit,2017,0
+        Africa,Transit,2016,4
+        Africa,Transit,2015,3
+        Africa,Transit,2014,2
+        Africa,Transit,2013,6
+        Africa,Transit,2012,1
+        Africa,Transit,2011,0
+        Africa,Transit,2010,6
+        Africa,Transit,2009,2
+        Africa,Transit,2008,5
+        Africa,Transit,2007,8
+        Africa,Transit,2006,56
+        Africa,Study,2025,12
+        Africa,Study,2024,11
+        Africa,Study,2023,11
+        Africa,Study,2022,12
+        Africa,Study,2021,2
+        Africa,Study,2020,1
+        Africa,Study,2019,7
+        Africa,Study,2018,1
+        Africa,Study,2017,2
+        Africa,Study,2016,8
+        Africa,Study,2015,7
+        Africa,Study,2014,10
+        Africa,Study,2013,10
+        Africa,Study,2012,1
+        Africa,Study,2011,9
+        Africa,Study,2010,2
+        Africa,Study,2009,3
+        Africa,Study,2008,6
+        Africa,Study,2007,6
+        Africa,Study,2006,3
+        Africa,Permanent residence,2025,347
+        Africa,Permanent residence,2024,416
+        Africa,Permanent residence,2023,363
+        Africa,Permanent residence,2022,220
+        Africa,Permanent residence,2021,33
+        Africa,Permanent residence,2020,72
+        Africa,Permanent residence,2019,232
+        Africa,Permanent residence,2018,175
+        Africa,Permanent residence,2017,158
+        Africa,Permanent residence,2016,68
+        Africa,Permanent residence,2015,16
+        Africa,Permanent residence,2014,6
+        Africa,Permanent residence,2013,7
+        Africa,Permanent residence,2012,0
+        Africa,Permanent residence,2011,2
+        Africa,Permanent residence,2010,9
+        Africa,Permanent residence,2009,12
+        Africa,Permanent residence,2008,5
+        Africa,Permanent residence,2007,7
+        Africa,Permanent residence,2006,3
+        Africa,Other,2025,162
+        Africa,Other,2024,114
+        Africa,Other,2023,68
+        Africa,Other,2022,103
+        Africa,Other,2021,18
+        Africa,Other,2020,9
+        Africa,Other,2019,165
+        Africa,Other,2018,128
+        Africa,Other,2017,91
+        Africa,Other,2016,50
+        Africa,Other,2015,91
+        Africa,Other,2014,6
+        Africa,Other,2013,18
+        Africa,Other,2012,15
+        Africa,Other,2011,84
+        Africa,Other,2010,125
+        Africa,Other,2009,48
+        Africa,Other,2008,102
+        Africa,Other,2007,83
+        Africa,Other,2006,104
+        Europe,Total,2025,299380
+        Europe,Total,2024,274040
+        Europe,Total,2023,260606
+        Europe,Total,2022,177833
+        Europe,Total,2021,21419
+        Europe,Total,2020,35931
+        Europe,Total,2019,205230
+        Europe,Total,2018,189161
+        Europe,Total,2017,164392
+        Europe,Total,2016,138152
+        Europe,Total,2015,120089
+        Europe,Total,2014,119969
+        Europe,Total,2013,123342
+        Europe,Total,2012,133010
+        Europe,Total,2011,150892
+        Europe,Total,2010,168826
+        Europe,Total,2009,148753
+        Europe,Total,2008,154612
+        Europe,Total,2007,144269
+        Europe,Total,2006,130455
+        Europe,Business,2025,6120
+        Europe,Business,2024,11788
+        Europe,Business,2023,5293
+        Europe,Business,2022,8430
+        Europe,Business,2021,2239
+        Europe,Business,2020,9626
+        Europe,Business,2019,15258
+        Europe,Business,2018,17523
+        Europe,Business,2017,14345
+        Europe,Business,2016,21599
+        Europe,Business,2015,15623
+        Europe,Business,2014,28529
+        Europe,Business,2013,25745
+        Europe,Business,2012,28033
+        Europe,Business,2011,25428
+        Europe,Business,2010,19818
+        Europe,Business,2009,18506
+        Europe,Business,2008,15156
+        Europe,Business,2007,12804
+        Europe,Business,2006,14257
+        Europe,Personal,2025,9582
+        Europe,Personal,2024,70682
+        Europe,Personal,2023,129971
+        Europe,Personal,2022,90371
+        Europe,Personal,2021,14527
+        Europe,Personal,2020,20156
+        Europe,Personal,2019,100286
+        Europe,Personal,2018,87320
+        Europe,Personal,2017,79706
+        Europe,Personal,2016,53172
+        Europe,Personal,2015,55412
+        Europe,Personal,2014,37622
+        Europe,Personal,2013,44040
+        Europe,Personal,2012,50131
+        Europe,Personal,2011,69622
+        Europe,Personal,2010,97965
+        Europe,Personal,2009,82434
+        Europe,Personal,2008,92809
+        Europe,Personal,2007,83255
+        Europe,Personal,2006,62128
+        Europe,Tourism,2025,99145
+        Europe,Tourism,2024,87289
+        Europe,Tourism,2023,102730
+        Europe,Tourism,2022,65644
+        Europe,Tourism,2021,290
+        Europe,Tourism,2020,3331
+        Europe,Tourism,2019,74143
+        Europe,Tourism,2018,72290
+        Europe,Tourism,2017,60592
+        Europe,Tourism,2016,54872
+        Europe,Tourism,2015,40248
+        Europe,Tourism,2014,46793
+        Europe,Tourism,2013,48165
+        Europe,Tourism,2012,47215
+        Europe,Tourism,2011,47295
+        Europe,Tourism,2010,39640
+        Europe,Tourism,2009,36308
+        Europe,Tourism,2008,39187
+        Europe,Tourism,2007,38602
+        Europe,Tourism,2006,39717
+        Europe,Work,2025,1401
+        Europe,Work,2024,1165
+        Europe,Work,2023,1261
+        Europe,Work,2022,1245
+        Europe,Work,2021,1636
+        Europe,Work,2020,1100
+        Europe,Work,2019,2594
+        Europe,Work,2018,2411
+        Europe,Work,2017,1743
+        Europe,Work,2016,2142
+        Europe,Work,2015,1762
+        Europe,Work,2014,2134
+        Europe,Work,2013,2518
+        Europe,Work,2012,2897
+        Europe,Work,2011,1869
+        Europe,Work,2010,2196
+        Europe,Work,2009,310
+        Europe,Work,2008,2
+        Europe,Work,2007,0
+        Europe,Work,2006,0
+        Europe,Transit,2025,16410
+        Europe,Transit,2024,10926
+        Europe,Transit,2023,11262
+        Europe,Transit,2022,3983
+        Europe,Transit,2021,48
+        Europe,Transit,2020,138
+        Europe,Transit,2019,3221
+        Europe,Transit,2018,1023
+        Europe,Transit,2017,1605
+        Europe,Transit,2016,1255
+        Europe,Transit,2015,537
+        Europe,Transit,2014,583
+        Europe,Transit,2013,724
+        Europe,Transit,2012,1300
+        Europe,Transit,2011,2221
+        Europe,Transit,2010,3242
+        Europe,Transit,2009,3035
+        Europe,Transit,2008,2962
+        Europe,Transit,2007,4413
+        Europe,Transit,2006,6352
+        Europe,Study,2025,869
+        Europe,Study,2024,1143
+        Europe,Study,2023,1655
+        Europe,Study,2022,1025
+        Europe,Study,2021,336
+        Europe,Study,2020,145
+        Europe,Study,2019,727
+        Europe,Study,2018,517
+        Europe,Study,2017,452
+        Europe,Study,2016,424
+        Europe,Study,2015,494
+        Europe,Study,2014,571
+        Europe,Study,2013,613
+        Europe,Study,2012,639
+        Europe,Study,2011,653
+        Europe,Study,2010,694
+        Europe,Study,2009,830
+        Europe,Study,2008,550
+        Europe,Study,2007,585
+        Europe,Study,2006,852
+        Europe,Permanent residence,2025,5160
+        Europe,Permanent residence,2024,14188
+        Europe,Permanent residence,2023,6115
+        Europe,Permanent residence,2022,3020
+        Europe,Permanent residence,2021,622
+        Europe,Permanent residence,2020,722
+        Europe,Permanent residence,2019,3853
+        Europe,Permanent residence,2018,3430
+        Europe,Permanent residence,2017,2900
+        Europe,Permanent residence,2016,2412
+        Europe,Permanent residence,2015,1672
+        Europe,Permanent residence,2014,978
+        Europe,Permanent residence,2013,671
+        Europe,Permanent residence,2012,944
+        Europe,Permanent residence,2011,824
+        Europe,Permanent residence,2010,1264
+        Europe,Permanent residence,2009,741
+        Europe,Permanent residence,2008,697
+        Europe,Permanent residence,2007,525
+        Europe,Permanent residence,2006,951
+        Europe,Other,2025,160693
+        Europe,Other,2024,76859
+        Europe,Other,2023,2319
+        Europe,Other,2022,4115
+        Europe,Other,2021,1721
+        Europe,Other,2020,713
+        Europe,Other,2019,5148
+        Europe,Other,2018,4647
+        Europe,Other,2017,3049
+        Europe,Other,2016,2276
+        Europe,Other,2015,4341
+        Europe,Other,2014,2759
+        Europe,Other,2013,866
+        Europe,Other,2012,1851
+        Europe,Other,2011,2980
+        Europe,Other,2010,4007
+        Europe,Other,2009,6589
+        Europe,Other,2008,3249
+        Europe,Other,2007,4085
+        Europe,Other,2006,6198
+        East Asia and the Pacific,Total,2025,599997
+        East Asia and the Pacific,Total,2024,540279
+        East Asia and the Pacific,Total,2023,350738
+        East Asia and the Pacific,Total,2022,103374
+        East Asia and the Pacific,Total,2021,12799
+        East Asia and the Pacific,Total,2020,27806
+        East Asia and the Pacific,Total,2019,390323
+        East Asia and the Pacific,Total,2018,372876
+        East Asia and the Pacific,Total,2017,345648
+        East Asia and the Pacific,Total,2016,303255
+        East Asia and the Pacific,Total,2015,320191
+        East Asia and the Pacific,Total,2014,359397
+        East Asia and the Pacific,Total,2013,362074
+        East Asia and the Pacific,Total,2012,461035
+        East Asia and the Pacific,Total,2011,432654
+        East Asia and the Pacific,Total,2010,367161
+        East Asia and the Pacific,Total,2009,298086
+        East Asia and the Pacific,Total,2008,294144
+        East Asia and the Pacific,Total,2007,291253
+        East Asia and the Pacific,Total,2006,259130
+        East Asia and the Pacific,Business,2025,58866
+        East Asia and the Pacific,Business,2024,43417
+        East Asia and the Pacific,Business,2023,23884
+        East Asia and the Pacific,Business,2022,15091
+        East Asia and the Pacific,Business,2021,6790
+        East Asia and the Pacific,Business,2020,9195
+        East Asia and the Pacific,Business,2019,31482
+        East Asia and the Pacific,Business,2018,31414
+        East Asia and the Pacific,Business,2017,34233
+        East Asia and the Pacific,Business,2016,51791
+        East Asia and the Pacific,Business,2015,73834
+        East Asia and the Pacific,Business,2014,96134
+        East Asia and the Pacific,Business,2013,101854
+        East Asia and the Pacific,Business,2012,118100
+        East Asia and the Pacific,Business,2011,102254
+        East Asia and the Pacific,Business,2010,93880
+        East Asia and the Pacific,Business,2009,66055
+        East Asia and the Pacific,Business,2008,67862
+        East Asia and the Pacific,Business,2007,87079
+        East Asia and the Pacific,Business,2006,64885
+        East Asia and the Pacific,Personal,2025,5318
+        East Asia and the Pacific,Personal,2024,40247
+        East Asia and the Pacific,Personal,2023,63509
+        East Asia and the Pacific,Personal,2022,26849
+        East Asia and the Pacific,Personal,2021,2169
+        East Asia and the Pacific,Personal,2020,6980
+        East Asia and the Pacific,Personal,2019,98608
+        East Asia and the Pacific,Personal,2018,108877
+        East Asia and the Pacific,Personal,2017,96936
+        East Asia and the Pacific,Personal,2016,84269
+        East Asia and the Pacific,Personal,2015,85015
+        East Asia and the Pacific,Personal,2014,83222
+        East Asia and the Pacific,Personal,2013,107597
+        East Asia and the Pacific,Personal,2012,140678
+        East Asia and the Pacific,Personal,2011,118254
+        East Asia and the Pacific,Personal,2010,104067
+        East Asia and the Pacific,Personal,2009,94000
+        East Asia and the Pacific,Personal,2008,129218
+        East Asia and the Pacific,Personal,2007,105984
+        East Asia and the Pacific,Personal,2006,89937
+        East Asia and the Pacific,Tourism,2025,292388
+        East Asia and the Pacific,Tourism,2024,283129
+        East Asia and the Pacific,Tourism,2023,202609
+        East Asia and the Pacific,Tourism,2022,50658
+        East Asia and the Pacific,Tourism,2021,515
+        East Asia and the Pacific,Tourism,2020,4083
+        East Asia and the Pacific,Tourism,2019,166972
+        East Asia and the Pacific,Tourism,2018,132991
+        East Asia and the Pacific,Tourism,2017,115321
+        East Asia and the Pacific,Tourism,2016,82844
+        East Asia and the Pacific,Tourism,2015,71322
+        East Asia and the Pacific,Tourism,2014,67237
+        East Asia and the Pacific,Tourism,2013,58290
+        East Asia and the Pacific,Tourism,2012,57415
+        East Asia and the Pacific,Tourism,2011,51416
+        East Asia and the Pacific,Tourism,2010,48341
+        East Asia and the Pacific,Tourism,2009,56669
+        East Asia and the Pacific,Tourism,2008,54955
+        East Asia and the Pacific,Tourism,2007,78721
+        East Asia and the Pacific,Tourism,2006,84842
+        East Asia and the Pacific,Work,2025,67051
+        East Asia and the Pacific,Work,2024,51204
+        East Asia and the Pacific,Work,2023,22052
+        East Asia and the Pacific,Work,2022,3836
+        East Asia and the Pacific,Work,2021,2196
+        East Asia and the Pacific,Work,2020,3955
+        East Asia and the Pacific,Work,2019,35859
+        East Asia and the Pacific,Work,2018,49813
+        East Asia and the Pacific,Work,2017,57709
+        East Asia and the Pacific,Work,2016,54023
+        East Asia and the Pacific,Work,2015,71617
+        East Asia and the Pacific,Work,2014,104126
+        East Asia and the Pacific,Work,2013,87880
+        East Asia and the Pacific,Work,2012,135154
+        East Asia and the Pacific,Work,2011,148553
+        East Asia and the Pacific,Work,2010,95497
+        East Asia and the Pacific,Work,2009,47936
+        East Asia and the Pacific,Work,2008,19009
+        East Asia and the Pacific,Work,2007,0
+        East Asia and the Pacific,Work,2006,0
+        East Asia and the Pacific,Transit,2025,23556
+        East Asia and the Pacific,Transit,2024,10494
+        East Asia and the Pacific,Transit,2023,10175
+        East Asia and the Pacific,Transit,2022,1343
+        East Asia and the Pacific,Transit,2021,16
+        East Asia and the Pacific,Transit,2020,154
+        East Asia and the Pacific,Transit,2019,5286
+        East Asia and the Pacific,Transit,2018,2741
+        East Asia and the Pacific,Transit,2017,2194
+        East Asia and the Pacific,Transit,2016,1292
+        East Asia and the Pacific,Transit,2015,451
+        East Asia and the Pacific,Transit,2014,3336
+        East Asia and the Pacific,Transit,2013,1644
+        East Asia and the Pacific,Transit,2012,1593
+        East Asia and the Pacific,Transit,2011,1873
+        East Asia and the Pacific,Transit,2010,2599
+        East Asia and the Pacific,Transit,2009,6184
+        East Asia and the Pacific,Transit,2008,2975
+        East Asia and the Pacific,Transit,2007,4956
+        East Asia and the Pacific,Transit,2006,8004
+        East Asia and the Pacific,Study,2025,9827
+        East Asia and the Pacific,Study,2024,10005
+        East Asia and the Pacific,Study,2023,7497
+        East Asia and the Pacific,Study,2022,532
+        East Asia and the Pacific,Study,2021,146
+        East Asia and the Pacific,Study,2020,376
+        East Asia and the Pacific,Study,2019,5663
+        East Asia and the Pacific,Study,2018,4116
+        East Asia and the Pacific,Study,2017,2983
+        East Asia and the Pacific,Study,2016,2393
+        East Asia and the Pacific,Study,2015,1744
+        East Asia and the Pacific,Study,2014,1558
+        East Asia and the Pacific,Study,2013,1344
+        East Asia and the Pacific,Study,2012,939
+        East Asia and the Pacific,Study,2011,754
+        East Asia and the Pacific,Study,2010,774
+        East Asia and the Pacific,Study,2009,1511
+        East Asia and the Pacific,Study,2008,1034
+        East Asia and the Pacific,Study,2007,941
+        East Asia and the Pacific,Study,2006,1119
+        East Asia and the Pacific,Permanent residence,2025,13370
+        East Asia and the Pacific,Permanent residence,2024,40593
+        East Asia and the Pacific,Permanent residence,2023,7090
+        East Asia and the Pacific,Permanent residence,2022,1980
+        East Asia and the Pacific,Permanent residence,2021,338
+        East Asia and the Pacific,Permanent residence,2020,970
+        East Asia and the Pacific,Permanent residence,2019,6663
+        East Asia and the Pacific,Permanent residence,2018,5372
+        East Asia and the Pacific,Permanent residence,2017,4799
+        East Asia and the Pacific,Permanent residence,2016,3597
+        East Asia and the Pacific,Permanent residence,2015,2217
+        East Asia and the Pacific,Permanent residence,2014,1200
+        East Asia and the Pacific,Permanent residence,2013,883
+        East Asia and the Pacific,Permanent residence,2012,3317
+        East Asia and the Pacific,Permanent residence,2011,688
+        East Asia and the Pacific,Permanent residence,2010,693
+        East Asia and the Pacific,Permanent residence,2009,1574
+        East Asia and the Pacific,Permanent residence,2008,809
+        East Asia and the Pacific,Permanent residence,2007,709
+        East Asia and the Pacific,Permanent residence,2006,777
+        East Asia and the Pacific,Other,2025,129621
+        East Asia and the Pacific,Other,2024,61190
+        East Asia and the Pacific,Other,2023,13922
+        East Asia and the Pacific,Other,2022,3085
+        East Asia and the Pacific,Other,2021,629
+        East Asia and the Pacific,Other,2020,2093
+        East Asia and the Pacific,Other,2019,39790
+        East Asia and the Pacific,Other,2018,37552
+        East Asia and the Pacific,Other,2017,31473
+        East Asia and the Pacific,Other,2016,23046
+        East Asia and the Pacific,Other,2015,13991
+        East Asia and the Pacific,Other,2014,2584
+        East Asia and the Pacific,Other,2013,2582
+        East Asia and the Pacific,Other,2012,3839
+        East Asia and the Pacific,Other,2011,8862
+        East Asia and the Pacific,Other,2010,21310
+        East Asia and the Pacific,Other,2009,24157
+        East Asia and the Pacific,Other,2008,18282
+        East Asia and the Pacific,Other,2007,12863
+        East Asia and the Pacific,Other,2006,9566
+        Middle East,Total,2025,16394
+        Middle East,Total,2024,10215
+        Middle East,Total,2023,8741
+        Middle East,Total,2022,4668
+        Middle East,Total,2021,1917
+        Middle East,Total,2020,620
+        Middle East,Total,2019,5289
+        Middle East,Total,2018,4806
+        Middle East,Total,2017,3884
+        Middle East,Total,2016,3830
+        Middle East,Total,2015,4013
+        Middle East,Total,2014,3766
+        Middle East,Total,2013,4213
+        Middle East,Total,2012,3138
+        Middle East,Total,2011,2469
+        Middle East,Total,2010,2569
+        Middle East,Total,2009,1637
+        Middle East,Total,2008,1614
+        Middle East,Total,2007,1331
+        Middle East,Total,2006,1282
+        Middle East,Business,2025,3253
+        Middle East,Business,2024,2393
+        Middle East,Business,2023,2751
+        Middle East,Business,2022,1886
+        Middle East,Business,2021,1001
+        Middle East,Business,2020,398
+        Middle East,Business,2019,1855
+        Middle East,Business,2018,2071
+        Middle East,Business,2017,1663
+        Middle East,Business,2016,1640
+        Middle East,Business,2015,1334
+        Middle East,Business,2014,1773
+        Middle East,Business,2013,2488
+        Middle East,Business,2012,1578
+        Middle East,Business,2011,900
+        Middle East,Business,2010,1324
+        Middle East,Business,2009,519
+        Middle East,Business,2008,303
+        Middle East,Business,2007,299
+        Middle East,Business,2006,317
+        Middle East,Personal,2025,78
+        Middle East,Personal,2024,415
+        Middle East,Personal,2023,968
+        Middle East,Personal,2022,1098
+        Middle East,Personal,2021,608
+        Middle East,Personal,2020,113
+        Middle East,Personal,2019,857
+        Middle East,Personal,2018,673
+        Middle East,Personal,2017,603
+        Middle East,Personal,2016,726
+        Middle East,Personal,2015,1044
+        Middle East,Personal,2014,824
+        Middle East,Personal,2013,585
+        Middle East,Personal,2012,520
+        Middle East,Personal,2011,456
+        Middle East,Personal,2010,384
+        Middle East,Personal,2009,433
+        Middle East,Personal,2008,431
+        Middle East,Personal,2007,297
+        Middle East,Personal,2006,160
+        Middle East,Tourism,2025,4773
+        Middle East,Tourism,2024,2736
+        Middle East,Tourism,2023,2280
+        Middle East,Tourism,2022,916
+        Middle East,Tourism,2021,38
+        Middle East,Tourism,2020,40
+        Middle East,Tourism,2019,1787
+        Middle East,Tourism,2018,1680
+        Middle East,Tourism,2017,1398
+        Middle East,Tourism,2016,1269
+        Middle East,Tourism,2015,1052
+        Middle East,Tourism,2014,879
+        Middle East,Tourism,2013,859
+        Middle East,Tourism,2012,755
+        Middle East,Tourism,2011,928
+        Middle East,Tourism,2010,666
+        Middle East,Tourism,2009,531
+        Middle East,Tourism,2008,643
+        Middle East,Tourism,2007,490
+        Middle East,Tourism,2006,555
+        Middle East,Work,2025,364
+        Middle East,Work,2024,621
+        Middle East,Work,2023,533
+        Middle East,Work,2022,275
+        Middle East,Work,2021,110
+        Middle East,Work,2020,27
+        Middle East,Work,2019,177
+        Middle East,Work,2018,41
+        Middle East,Work,2017,38
+        Middle East,Work,2016,50
+        Middle East,Work,2015,67
+        Middle East,Work,2014,138
+        Middle East,Work,2013,165
+        Middle East,Work,2012,174
+        Middle East,Work,2011,108
+        Middle East,Work,2010,1
+        Middle East,Work,2009,0
+        Middle East,Work,2008,0
+        Middle East,Work,2007,0
+        Middle East,Work,2006,0
+        Middle East,Transit,2025,6916
+        Middle East,Transit,2024,2657
+        Middle East,Transit,2023,1776
+        Middle East,Transit,2022,113
+        Middle East,Transit,2021,0
+        Middle East,Transit,2020,19
+        Middle East,Transit,2019,52
+        Middle East,Transit,2018,14
+        Middle East,Transit,2017,5
+        Middle East,Transit,2016,8
+        Middle East,Transit,2015,6
+        Middle East,Transit,2014,2
+        Middle East,Transit,2013,4
+        Middle East,Transit,2012,12
+        Middle East,Transit,2011,3
+        Middle East,Transit,2010,1
+        Middle East,Transit,2009,5
+        Middle East,Transit,2008,1
+        Middle East,Transit,2007,27
+        Middle East,Transit,2006,20
+        Middle East,Study,2025,27
+        Middle East,Study,2024,16
+        Middle East,Study,2023,17
+        Middle East,Study,2022,10
+        Middle East,Study,2021,4
+        Middle East,Study,2020,1
+        Middle East,Study,2019,13
+        Middle East,Study,2018,17
+        Middle East,Study,2017,12
+        Middle East,Study,2016,22
+        Middle East,Study,2015,27
+        Middle East,Study,2014,92
+        Middle East,Study,2013,56
+        Middle East,Study,2012,47
+        Middle East,Study,2011,30
+        Middle East,Study,2010,32
+        Middle East,Study,2009,34
+        Middle East,Study,2008,23
+        Middle East,Study,2007,28
+        Middle East,Study,2006,36
+        Middle East,Permanent residence,2025,263
+        Middle East,Permanent residence,2024,879
+        Middle East,Permanent residence,2023,216
+        Middle East,Permanent residence,2022,61
+        Middle East,Permanent residence,2021,12
+        Middle East,Permanent residence,2020,7
+        Middle East,Permanent residence,2019,89
+        Middle East,Permanent residence,2018,41
+        Middle East,Permanent residence,2017,40
+        Middle East,Permanent residence,2016,28
+        Middle East,Permanent residence,2015,22
+        Middle East,Permanent residence,2014,8
+        Middle East,Permanent residence,2013,5
+        Middle East,Permanent residence,2012,3
+        Middle East,Permanent residence,2011,4
+        Middle East,Permanent residence,2010,7
+        Middle East,Permanent residence,2009,9
+        Middle East,Permanent residence,2008,9
+        Middle East,Permanent residence,2007,2
+        Middle East,Permanent residence,2006,6
+        Middle East,Other,2025,720
+        Middle East,Other,2024,498
+        Middle East,Other,2023,200
+        Middle East,Other,2022,309
+        Middle East,Other,2021,144
+        Middle East,Other,2020,15
+        Middle East,Other,2019,459
+        Middle East,Other,2018,269
+        Middle East,Other,2017,125
+        Middle East,Other,2016,87
+        Middle East,Other,2015,461
+        Middle East,Other,2014,50
+        Middle East,Other,2013,51
+        Middle East,Other,2012,49
+        Middle East,Other,2011,40
+        Middle East,Other,2010,154
+        Middle East,Other,2009,106
+        Middle East,Other,2008,204
+        Middle East,Other,2007,188
+        Middle East,Other,2006,188
+        South Asia,Total,2025,8334
+        South Asia,Total,2024,5997
+        South Asia,Total,2023,4349
+        South Asia,Total,2022,2157
+        South Asia,Total,2021,643
+        South Asia,Total,2020,296
+        South Asia,Total,2019,6463
+        South Asia,Total,2018,3909
+        South Asia,Total,2017,3127
+        South Asia,Total,2016,2876
+        South Asia,Total,2015,2329
+        South Asia,Total,2014,2295
+        South Asia,Total,2013,2650
+        South Asia,Total,2012,2310
+        South Asia,Total,2011,7149
+        South Asia,Total,2010,1597
+        South Asia,Total,2009,1451
+        South Asia,Total,2008,1370
+        South Asia,Total,2007,1271
+        South Asia,Total,2006,1407
+        South Asia,Business,2025,1238
+        South Asia,Business,2024,969
+        South Asia,Business,2023,745
+        South Asia,Business,2022,585
+        South Asia,Business,2021,207
+        South Asia,Business,2020,48
+        South Asia,Business,2019,1321
+        South Asia,Business,2018,1132
+        South Asia,Business,2017,884
+        South Asia,Business,2016,1412
+        South Asia,Business,2015,965
+        South Asia,Business,2014,1298
+        South Asia,Business,2013,1568
+        South Asia,Business,2012,1387
+        South Asia,Business,2011,2163
+        South Asia,Business,2010,818
+        South Asia,Business,2009,561
+        South Asia,Business,2008,385
+        South Asia,Business,2007,496
+        South Asia,Business,2006,548
+        South Asia,Personal,2025,259
+        South Asia,Personal,2024,235
+        South Asia,Personal,2023,594
+        South Asia,Personal,2022,394
+        South Asia,Personal,2021,94
+        South Asia,Personal,2020,89
+        South Asia,Personal,2019,1092
+        South Asia,Personal,2018,859
+        South Asia,Personal,2017,800
+        South Asia,Personal,2016,512
+        South Asia,Personal,2015,480
+        South Asia,Personal,2014,264
+        South Asia,Personal,2013,306
+        South Asia,Personal,2012,272
+        South Asia,Personal,2011,1049
+        South Asia,Personal,2010,271
+        South Asia,Personal,2009,403
+        South Asia,Personal,2008,391
+        South Asia,Personal,2007,292
+        South Asia,Personal,2006,152
+        South Asia,Tourism,2025,2377
+        South Asia,Tourism,2024,1858
+        South Asia,Tourism,2023,1398
+        South Asia,Tourism,2022,407
+        South Asia,Tourism,2021,9
+        South Asia,Tourism,2020,43
+        South Asia,Tourism,2019,2787
+        South Asia,Tourism,2018,1034
+        South Asia,Tourism,2017,866
+        South Asia,Tourism,2016,633
+        South Asia,Tourism,2015,461
+        South Asia,Tourism,2014,429
+        South Asia,Tourism,2013,382
+        South Asia,Tourism,2012,325
+        South Asia,Tourism,2011,2153
+        South Asia,Tourism,2010,315
+        South Asia,Tourism,2009,364
+        South Asia,Tourism,2008,349
+        South Asia,Tourism,2007,296
+        South Asia,Tourism,2006,437
+        South Asia,Work,2025,3171
+        South Asia,Work,2024,1729
+        South Asia,Work,2023,1061
+        South Asia,Work,2022,349
+        South Asia,Work,2021,155
+        South Asia,Work,2020,43
+        South Asia,Work,2019,299
+        South Asia,Work,2018,238
+        South Asia,Work,2017,152
+        South Asia,Work,2016,124
+        South Asia,Work,2015,181
+        South Asia,Work,2014,233
+        South Asia,Work,2013,303
+        South Asia,Work,2012,253
+        South Asia,Work,2011,1304
+        South Asia,Work,2010,1
+        South Asia,Work,2009,0
+        South Asia,Work,2008,0
+        South Asia,Work,2007,0
+        South Asia,Work,2006,0
+        South Asia,Transit,2025,271
+        South Asia,Transit,2024,61
+        South Asia,Transit,2023,47
+        South Asia,Transit,2022,4
+        South Asia,Transit,2021,0
+        South Asia,Transit,2020,1
+        South Asia,Transit,2019,17
+        South Asia,Transit,2018,3
+        South Asia,Transit,2017,3
+        South Asia,Transit,2016,6
+        South Asia,Transit,2015,2
+        South Asia,Transit,2014,4
+        South Asia,Transit,2013,1
+        South Asia,Transit,2012,2
+        South Asia,Transit,2011,23
+        South Asia,Transit,2010,0
+        South Asia,Transit,2009,2
+        South Asia,Transit,2008,5
+        South Asia,Transit,2007,4
+        South Asia,Transit,2006,29
+        South Asia,Study,2025,27
+        South Asia,Study,2024,27
+        South Asia,Study,2023,21
+        South Asia,Study,2022,12
+        South Asia,Study,2021,2
+        South Asia,Study,2020,1
+        South Asia,Study,2019,9
+        South Asia,Study,2018,10
+        South Asia,Study,2017,12
+        South Asia,Study,2016,14
+        South Asia,Study,2015,15
+        South Asia,Study,2014,27
+        South Asia,Study,2013,38
+        South Asia,Study,2012,33
+        South Asia,Study,2011,37
+        South Asia,Study,2010,15
+        South Asia,Study,2009,11
+        South Asia,Study,2008,6
+        South Asia,Study,2007,10
+        South Asia,Study,2006,7
+        South Asia,Permanent residence,2025,377
+        South Asia,Permanent residence,2024,790
+        South Asia,Permanent residence,2023,278
+        South Asia,Permanent residence,2022,146
+        South Asia,Permanent residence,2021,34
+        South Asia,Permanent residence,2020,19
+        South Asia,Permanent residence,2019,123
+        South Asia,Permanent residence,2018,93
+        South Asia,Permanent residence,2017,99
+        South Asia,Permanent residence,2016,39
+        South Asia,Permanent residence,2015,14
+        South Asia,Permanent residence,2014,4
+        South Asia,Permanent residence,2013,2
+        South Asia,Permanent residence,2012,1
+        South Asia,Permanent residence,2011,8
+        South Asia,Permanent residence,2010,11
+        South Asia,Permanent residence,2009,12
+        South Asia,Permanent residence,2008,13
+        South Asia,Permanent residence,2007,7
+        South Asia,Permanent residence,2006,15
+        South Asia,Other,2025,614
+        South Asia,Other,2024,328
+        South Asia,Other,2023,205
+        South Asia,Other,2022,260
+        South Asia,Other,2021,142
+        South Asia,Other,2020,52
+        South Asia,Other,2019,815
+        South Asia,Other,2018,540
+        South Asia,Other,2017,311
+        South Asia,Other,2016,136
+        South Asia,Other,2015,211
+        South Asia,Other,2014,36
+        South Asia,Other,2013,50
+        South Asia,Other,2012,37
+        South Asia,Other,2011,412
+        South Asia,Other,2010,166
+        South Asia,Other,2009,98
+        South Asia,Other,2008,221
+        South Asia,Other,2007,166
+        South Asia,Other,2006,219
+        Stateless,Total,2025,14
+        Stateless,Total,2024,10
+        Stateless,Total,2023,9
+        Stateless,Total,2022,11
+        Stateless,Total,2021,3
+        Stateless,Total,2020,3
+        Stateless,Total,2019,37
+        Stateless,Total,2018,39
+        Stateless,Total,2017,36
+        Stateless,Total,2016,15
+        Stateless,Total,2015,20
+        Stateless,Total,2014,2
+        Stateless,Total,2013,3
+        Stateless,Total,2012,5
+        Stateless,Total,2011,9
+        Stateless,Total,2010,16
+        Stateless,Total,2009,52
+        Stateless,Total,2008,387
+        Stateless,Total,2007,260
+        Stateless,Total,2006,111
+        Stateless,Business,2025,0
+        Stateless,Business,2024,0
+        Stateless,Business,2023,0
+        Stateless,Business,2022,0
+        Stateless,Business,2021,0
+        Stateless,Business,2020,0
+        Stateless,Business,2019,4
+        Stateless,Business,2018,5
+        Stateless,Business,2017,2
+        Stateless,Business,2016,0
+        Stateless,Business,2015,0
+        Stateless,Business,2014,0
+        Stateless,Business,2013,0
+        Stateless,Business,2012,0
+        Stateless,Business,2011,1
+        Stateless,Business,2010,1
+        Stateless,Business,2009,4
+        Stateless,Business,2008,6
+        Stateless,Business,2007,4
+        Stateless,Business,2006,4
+        Stateless,Personal,2025,0
+        Stateless,Personal,2024,5
+        Stateless,Personal,2023,2
+        Stateless,Personal,2022,8
+        Stateless,Personal,2021,0
+        Stateless,Personal,2020,1
+        Stateless,Personal,2019,17
+        Stateless,Personal,2018,19
+        Stateless,Personal,2017,18
+        Stateless,Personal,2016,2
+        Stateless,Personal,2015,17
+        Stateless,Personal,2014,1
+        Stateless,Personal,2013,0
+        Stateless,Personal,2012,2
+        Stateless,Personal,2011,6
+        Stateless,Personal,2010,6
+        Stateless,Personal,2009,39
+        Stateless,Personal,2008,344
+        Stateless,Personal,2007,202
+        Stateless,Personal,2006,14
+        Stateless,Tourism,2025,7
+        Stateless,Tourism,2024,3
+        Stateless,Tourism,2023,3
+        Stateless,Tourism,2022,2
+        Stateless,Tourism,2021,0
+        Stateless,Tourism,2020,0
+        Stateless,Tourism,2019,2
+        Stateless,Tourism,2018,3
+        Stateless,Tourism,2017,7
+        Stateless,Tourism,2016,6
+        Stateless,Tourism,2015,3
+        Stateless,Tourism,2014,1
+        Stateless,Tourism,2013,3
+        Stateless,Tourism,2012,2
+        Stateless,Tourism,2011,1
+        Stateless,Tourism,2010,1
+        Stateless,Tourism,2009,2
+        Stateless,Tourism,2008,13
+        Stateless,Tourism,2007,39
+        Stateless,Tourism,2006,71
+        Stateless,Work,2025,0
+        Stateless,Work,2024,0
+        Stateless,Work,2023,0
+        Stateless,Work,2022,0
+        Stateless,Work,2021,0
+        Stateless,Work,2020,0
+        Stateless,Work,2019,0
+        Stateless,Work,2018,3
+        Stateless,Work,2017,3
+        Stateless,Work,2016,0
+        Stateless,Work,2015,0
+        Stateless,Work,2014,0
+        Stateless,Work,2013,0
+        Stateless,Work,2012,0
+        Stateless,Work,2011,0
+        Stateless,Work,2010,0
+        Stateless,Work,2009,0
+        Stateless,Work,2008,0
+        Stateless,Work,2007,0
+        Stateless,Work,2006,0
+        Stateless,Transit,2025,0
+        Stateless,Transit,2024,0
+        Stateless,Transit,2023,0
+        Stateless,Transit,2022,0
+        Stateless,Transit,2021,0
+        Stateless,Transit,2020,0
+        Stateless,Transit,2019,0
+        Stateless,Transit,2018,0
+        Stateless,Transit,2017,0
+        Stateless,Transit,2016,0
+        Stateless,Transit,2015,0
+        Stateless,Transit,2014,0
+        Stateless,Transit,2013,0
+        Stateless,Transit,2012,0
+        Stateless,Transit,2011,0
+        Stateless,Transit,2010,1
+        Stateless,Transit,2009,2
+        Stateless,Transit,2008,5
+        Stateless,Transit,2007,4
+        Stateless,Transit,2006,9
+        Stateless,Study,2025,0
+        Stateless,Study,2024,0
+        Stateless,Study,2023,0
+        Stateless,Study,2022,0
+        Stateless,Study,2021,1
+        Stateless,Study,2020,1
+        Stateless,Study,2019,1
+        Stateless,Study,2018,4
+        Stateless,Study,2017,1
+        Stateless,Study,2016,4
+        Stateless,Study,2015,0
+        Stateless,Study,2014,0
+        Stateless,Study,2013,0
+        Stateless,Study,2012,0
+        Stateless,Study,2011,0
+        Stateless,Study,2010,0
+        Stateless,Study,2009,0
+        Stateless,Study,2008,2
+        Stateless,Study,2007,1
+        Stateless,Study,2006,2
+        Stateless,Permanent residence,2025,2
+        Stateless,Permanent residence,2024,1
+        Stateless,Permanent residence,2023,3
+        Stateless,Permanent residence,2022,0
+        Stateless,Permanent residence,2021,1
+        Stateless,Permanent residence,2020,0
+        Stateless,Permanent residence,2019,1
+        Stateless,Permanent residence,2018,0
+        Stateless,Permanent residence,2017,1
+        Stateless,Permanent residence,2016,2
+        Stateless,Permanent residence,2015,0
+        Stateless,Permanent residence,2014,0
+        Stateless,Permanent residence,2013,0
+        Stateless,Permanent residence,2012,1
+        Stateless,Permanent residence,2011,0
+        Stateless,Permanent residence,2010,5
+        Stateless,Permanent residence,2009,4
+        Stateless,Permanent residence,2008,7
+        Stateless,Permanent residence,2007,6
+        Stateless,Permanent residence,2006,7
+        Stateless,Other,2025,5
+        Stateless,Other,2024,1
+        Stateless,Other,2023,1
+        Stateless,Other,2022,1
+        Stateless,Other,2021,1
+        Stateless,Other,2020,1
+        Stateless,Other,2019,12
+        Stateless,Other,2018,5
+        Stateless,Other,2017,4
+        Stateless,Other,2016,1
+        Stateless,Other,2015,0
+        Stateless,Other,2014,0
+        Stateless,Other,2013,0
+        Stateless,Other,2012,0
+        Stateless,Other,2011,1
+        Stateless,Other,2010,2
+        Stateless,Other,2009,1
+        Stateless,Other,2008,10
+        Stateless,Other,2007,4
+        Stateless,Other,2006,4

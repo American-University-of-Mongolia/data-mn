@@ -1,0 +1,39 @@
+---
+title: "Mongolia Government Budget Balance (1991-2025)"
+publishDate: 2025-01-29
+excerpt: "Mongolia's government budget balance from 1991 to 2025. The largest deficit was -4.4 trillion MNT in 2020 (COVID-19), while 2023 recorded a surplus of 785.9 billion MNT."
+category: "Economy"
+tags:
+  - mongolia
+  - budget
+  - balance
+  - deficit
+  - surplus
+  - finance
+keywords:
+  - mongolia budget balance
+  - government deficit mongolia
+  - fiscal balance mongolia
+dataFiles:
+  - path: "/datasets/government-balance-all-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV (all data)"
+  - path: "/datasets/government-balance.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0800_001V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Mongolia's government budget balance from 1991 to 2025, showing surplus (positive) and deficit (negative) years. The largest deficit was -4.4 trillion MNT in 2020 during COVID-19, while 2023 recorded a surplus of 785.9 billion MNT.
+
+<VegaChart
+  spec="/charts/government-balance-en.json"
+  title="Government Budget Balance"
+/>

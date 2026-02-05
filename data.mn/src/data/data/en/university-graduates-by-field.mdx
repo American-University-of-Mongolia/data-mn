@@ -1,0 +1,38 @@
+---
+title: "Mongolia University Graduates by Professional Field (2019-2024)"
+publishDate: 2025-01-29
+excerpt: "University and college graduates in Mongolia by professional field from 2019 to 2024. Business, administration and law consistently produces the most graduates, while Agriculture has the fewest."
+category: "Education"
+tags:
+  - mongolia
+  - education
+  - university
+  - graduates
+  - professional field
+keywords:
+  - mongolia university graduates by field
+  - higher education statistics mongolia
+  - professional field graduates
+dataFiles:
+  - path: "/datasets/university-graduates-by-field-all-en.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "Download as CSV (all data)"
+  - path: "/datasets/university-graduates-by-field.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2001_014V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+University and college graduates in Mongolia by professional field from 2019 to 2024. Business, administration and law consistently produces the most graduates, while Agriculture has the fewest.
+
+<VegaChart
+  spec="/charts/university-graduates-by-field-en.json"
+  title="University Graduates by Professional Field"
+/>

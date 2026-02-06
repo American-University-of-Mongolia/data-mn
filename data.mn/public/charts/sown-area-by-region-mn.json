@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын аймагуар нийт тариалсан талбай 1960-2025 он, сүүн цэвэр тариалсан talbain top 10 бүс.",
+  "data": {
+    "url": "/datasets/sown-area-by-region-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 5,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "тариалсан_талбай",
+      "type": "quantitative",
+      "title": "Тариалсан талбай (мянгаан га)",
+      "axis": {
+        "format": ".1f"
+      }
+    },
+    "color": {
+      "field": "бүс",
+      "type": "nominal",
+      "title": "Бүс",
+      "scale": {
+        "domain": ["Сэлэнгэ", "Төв", "Булган", "Хэнтий", "Дорнод", "Увс", "Хөвсгөл", "Өвөрхангай", "Дархан-Уул", "Сүхбаатар"],
+        "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2", "#54a24b", "#eeca3b", "#b07aa1", "#ff9da6", "#9d755d", "#bab0ab"]
+      },
+      "legend": {
+        "orient": "top",
+        "title": null,
+        "columns": 5
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "бүс",
+            "title": "Бүс"
+          },
+          {
+            "field": "тариалсан_талбай",
+            "title": "Тариалсан талбай (мянгаан га)",
+            "format": ",.2f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

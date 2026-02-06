@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын нийт тариалсан талбай, мянгаан га (1960-2025)"
+publishDate: 2026-02-04
+excerpt: "Монгол Улсын жилийн нийт тариалсан талбай (мянгаан га) 1960-2025 оны өгөгдөл, 66 жилийн үндэсний хөдөө аж ахуйн газрын ашиглалт статистик."
+category: "Хөдөө аж ахуй"
+tags: ["монгол", "хөдөө аж ахуй", "тариалсан талбай", "таривар"]
+keywords: ["mongolia sown area", "agricultural land mongolia", "тариалсан талбай 2025"]
+author: "Data.mn"
+dataVersion: 2
+dataDate: 2026-02-04
+dataFiles:
+  - path: "/datasets/sown-area-total-mongolia-all-mn.csv"
+    format: "csv"
+    size: "763 B"
+    description: "CSV татах (бүх өгөгдөл)"
+  - path: "/datasets/sown-area-total-mongolia.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1002_003V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/sown-area-total-mongolia-mn.json"
+  title="Монгол Улсын нийт тариалсан талбай, мянгаан га (1960-2025)"
+/>

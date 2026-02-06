@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Төв аймгийн таримал бүтээгдэхүүний дундаж зах зээлийн үнэ (2018-2025)",
+  "data": {
+    "url": "/datasets/crop-prices-national-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Огноо",
+      "axis": {"grid": false, "format": "%Y-%m"}
+    },
+    "y": {
+      "field": "price",
+      "type": "quantitative",
+      "title": "Үнэ (₮)",
+      "axis": {"format": ",.0f"}
+    },
+    "color": {
+      "field": "product",
+      "type": "nominal",
+      "legend": {"orient": "top", "title": "Бүтээгдэхүүн"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 100},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "product", "title": "Бүтээгдэхүүн"},
+          {"field": "date", "type": "temporal", "title": "Огноо", "format": "%Y-%m"},
+          {"field": "price", "title": "Үнэ (₮)", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14},
+    "view": {"stroke": "transparent"}
+  }
+}

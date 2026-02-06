@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Hay and fodder prices by region in Mongolia (2018-2025)",
+  "data": {
+    "url": "/datasets/hay-prices-by-region-en.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [
+    {
+      "name": "regionSelect",
+      "value": "Tuv",
+      "bind": {
+        "input": "select",
+        "options": ["Arkhangai", "Bayan-Ulgii", "Bayankhongor", "Bulgan", "Darkhan-Uul", "Dornod", "Dornogovi", "Dundgovi", "Govi-Altai", "Govisumber", "Khentii", "Khovd", "Khuvsgul", "Orkhon", "Selenge", "Sukhbaatar", "Tuv", "Ulaanbaatar city", "Umnugovi", "Uvs", "Uvurkhangai", "Zavkhan"],
+        "name": "Region: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.region == regionSelect"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Date",
+      "axis": {"grid": false, "format": "%b %Y"}
+    },
+    "y": {
+      "field": "price",
+      "type": "quantitative",
+      "title": "Price (MNT)",
+      "axis": {"format": ",.0f"}
+    },
+    "color": {
+      "field": "product",
+      "type": "nominal",
+      "legend": {"orient": "top", "title": "Product"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 100},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "region", "title": "Region"},
+          {"field": "product", "title": "Product"},
+          {"field": "date", "type": "temporal", "title": "Date", "format": "%Y-%m"},
+          {"field": "price", "title": "Price (MNT)", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14},
+    "view": {"stroke": "transparent"}
+  }
+}

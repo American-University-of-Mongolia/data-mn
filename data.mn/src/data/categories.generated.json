@@ -20,6 +20,11 @@
     "count": 7
   },
   {
+    "en": "Agriculture",
+    "mn": "Хөдөө аж ахуй",
+    "count": 5
+  },
+  {
     "en": "Finance",
     "mn": "Санхүү",
     "count": 4
@@ -35,14 +40,9 @@
     "count": 4
   },
   {
-    "en": "Agriculture",
-    "mn": "Хөдөө аж ахуй",
-    "count": 2
-  },
-  {
     "en": "Education",
     "mn": "Боловсрол",
-    "count": 2
+    "count": 3
   },
   {
     "en": "Household & Income",

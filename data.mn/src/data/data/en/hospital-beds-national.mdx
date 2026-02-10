@@ -1,0 +1,33 @@
+---
+title: "Mongolia Hospital Beds, Count (1989-2024)"
+publishDate: 2026-02-10
+excerpt: "Total number of hospital beds in Mongolia from 1989 to 2024, showing healthcare infrastructure capacity over 35 years."
+category: "Health"
+tags: ["mongolia", "health", "hospital beds", "healthcare", "infrastructure"]
+keywords: ["mongolia hospital beds", "healthcare capacity", "hospital infrastructure"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-10
+dataFiles:
+  - path: "/datasets/hospital-beds-national-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/hospital-beds-national.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2100_005V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Mongolia had **30,117 hospital beds** in 2024, up from 24,160 in 1989.
+
+<VegaChart
+  spec="/charts/hospital-beds-national-en.json"
+  title="Mongolia Hospital Beds, Count (1989-2024)"
+/>

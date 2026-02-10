@@ -1,0 +1,124 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын сургуулийн элсэлт боловсролын түвшнээр (2010-2025)",
+  "data": {
+    "url": "/datasets/school-enrollment-by-level-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 1,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "суралцагчид",
+      "type": "quantitative",
+      "title": "Суралцагчдын тоо",
+      "stack": "zero",
+      "axis": {
+        "format": ",.0f"
+      }
+    },
+    "color": {
+      "field": "түвшин",
+      "type": "nominal",
+      "title": "Боловсролын түвшин",
+      "scale": {
+        "domain": [
+          "Ерөнхий боловсрол",
+          "Сургуулийн өмнөх боловсрол",
+          "Дээд боловсрол",
+          "Мэргэжлийн боловсрол"
+        ],
+        "range": ["#3b82f6", "#f59e0b", "#10b981", "#8b5cf6"]
+      },
+      "legend": {
+        "orient": "top"
+      }
+    },
+    "order": {
+      "field": "түвшин",
+      "sort": ["Ерөнхий боловсрол", "Сургуулийн өмнөх боловсрол", "Дээд боловсрол", "Мэргэжлийн боловсрол"]
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "line": true,
+        "point": false
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "type": "quantitative",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "түвшин",
+            "type": "nominal",
+            "title": "Түвшин"
+          },
+          {
+            "field": "суралцагчид",
+            "type": "quantitative",
+            "title": "Суралцагчид",
+            "format": ",.0f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "strokeWidth": 0,
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

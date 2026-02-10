@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын сургуулийн элсэлт боловсролын түвшнээр (2010-2025)"
+publishDate: 2026-02-10
+excerpt: "Монгол Улсын боловсролын байгууллагад суралцагчдын тоо — сургуулийн өмнөх, ерөнхий, мэргэжлийн, дээд боловсролын түвшнээр 2010-2025 онд."
+category: "Боловсрол"
+tags: ["монгол улс", "боловсрол", "элсэлт", "суралцагч", "сургууль", "их сургууль", "мэргэжлийн"]
+keywords: ["сургуулийн элсэлт Монгол", "боловсролын түвшин", "суралцагчид түвшнээр", "сургуулийн өмнөх боловсрол", "ерөнхий боловсрол", "мэргэжлийн боловсрол", "дээд боловсрол Монгол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-10
+dataFiles:
+  - path: "/datasets/school-enrollment-by-level-mn.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "CSV татах"
+  - path: "/datasets/school-enrollment-by-level.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2002_069V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/school-enrollment-by-level-mn.json"
+  title="Монгол Улсын сургуулийн элсэлт боловсролын түвшнээр (2010-2025)"
+/>

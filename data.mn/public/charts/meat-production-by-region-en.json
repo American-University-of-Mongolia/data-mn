@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Meat production in Mongolia by region from 2010 to 2024",
+  "data": {
+    "url": "/datasets/meat-production-by-region-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 1,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "production_tonnes",
+      "type": "quantitative",
+      "title": "Tonnes",
+      "axis": {
+        "format": ",.0f"
+      }
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "Western region",
+          "Khangai region",
+          "Central region",
+          "Eastern region",
+          "Ulaanbaatar"
+        ],
+        "range": [
+          "#4c78a8",
+          "#f58518",
+          "#e45756",
+          "#72b7b2",
+          "#54a24b"
+        ]
+      },
+      "legend": {
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "region",
+            "title": "Region"
+          },
+          {
+            "field": "production_tonnes",
+            "title": "Production (tonnes)",
+            "format": ",.0f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

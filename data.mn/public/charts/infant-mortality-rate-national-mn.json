@@ -1,0 +1,119 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын нялхсын эндэгдлийн түвшин 1000 амьд төрөлтөнд 2016-2025",
+  "data": {
+    "url": "/datasets/infant-mortality-rate-national-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Сар",
+      "type": "temporal",
+      "title": "Он",
+      "axis": {
+        "format": "%Y",
+        "grid": false,
+        "tickCount": "year"
+      }
+    },
+    "y": {
+      "field": "Түвшин",
+      "type": "quantitative",
+      "title": "1000 амьд төрөлтөнд",
+      "axis": {
+        "format": ".0f"
+      },
+      "scale": {
+        "zero": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "line": {
+          "color": "#3b82f6",
+          "strokeWidth": 2.5
+        },
+        "color": {
+          "x1": 1,
+          "y1": 1,
+          "x2": 1,
+          "y2": 0,
+          "gradient": "linear",
+          "stops": [
+            {
+              "offset": 0,
+              "color": "rgba(59, 130, 246, 0.01)"
+            },
+            {
+              "offset": 1,
+              "color": "rgba(59, 130, 246, 0.3)"
+            }
+          ]
+        },
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#3b82f6",
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Сар",
+            "title": "Сар",
+            "type": "temporal",
+            "format": "%Y-%m"
+          },
+          {
+            "field": "Түвшин",
+            "title": "1000 амьд төрөлтөнд",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

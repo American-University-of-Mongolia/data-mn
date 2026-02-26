@@ -1,469 +1,469 @@
 indicator,year,gwh
-Agriculture,1989,123.0
-Consumption,1989,2880.0
-Distribution total,1989,3726.0
-Export,1989,0.0
 Generation,1989,3568.0
-Household and housing,1989,370.0
 Imports,1989,158.0
+Consumption,1989,2880.0
+Export,1989,0.0
+Resources total,1989,3726.0
+Distribution total,1989,3726.0
+Station internal use,1989,566.0
 Industry and construction,1989,1911.0
+Agriculture,1989,123.0
+Transport and communication,1989,185.0
+Household and housing,1989,370.0
 Other,1989,291.0
 Per capita (kWh),1989,1778.01
-Resources total,1989,3726.0
-Station internal use,1989,566.0
-Transport and communication,1989,185.0
-Agriculture,1990,116.0
-Consumption,1990,2719.0
-Distribution total,1990,3576.0
-Export,1990,0.0
 Generation,1990,3348.0
-Household and housing,1990,349.0
 Imports,1990,228.0
+Consumption,1990,2719.0
+Export,1990,0.0
+Resources total,1990,3576.0
+Distribution total,1990,3576.0
+Station internal use,1990,534.0
 Industry and construction,1990,1803.0
+Agriculture,1990,116.0
+Transport and communication,1990,175.0
+Household and housing,1990,349.0
 Other,1990,276.0
 Per capita (kWh),1990,1663.8
-Resources total,1990,3576.0
-Station internal use,1990,534.0
-Transport and communication,1990,175.0
-Agriculture,1991,75.0
-Consumption,1991,2400.0
-Distribution total,1991,3313.0
-Export,1991,0.0
 Generation,1991,3229.0
-Household and housing,1991,362.0
 Imports,1991,84.0
+Consumption,1991,2400.0
+Export,1991,0.0
+Resources total,1991,3313.0
+Distribution total,1991,3313.0
+Station internal use,1991,573.0
 Industry and construction,1991,1498.0
+Agriculture,1991,75.0
+Transport and communication,1991,110.0
+Household and housing,1991,362.0
 Other,1991,355.0
 Per capita (kWh),1991,1514.72
-Resources total,1991,3313.0
-Station internal use,1991,573.0
-Transport and communication,1991,110.0
-Agriculture,1992,44.0
-Consumption,1992,2175.0
-Distribution total,1992,3031.1
-Export,1992,0.0
 Generation,1992,2929.0
-Household and housing,1992,308.0
 Imports,1992,101.9
+Consumption,1992,2175.0
+Export,1992,0.0
+Resources total,1992,3031.0
+Distribution total,1992,3031.1
+Station internal use,1992,571.5
 Industry and construction,1992,1413.4
+Agriculture,1992,44.0
+Transport and communication,1992,101.2
+Household and housing,1992,308.0
 Other,1992,308.4
 Per capita (kWh),1992,1368.4
-Resources total,1992,3031.0
-Station internal use,1992,571.5
-Transport and communication,1992,101.2
-Agriculture,1993,24.0
-Consumption,1993,2006.0
-Distribution total,1993,2779.0
-Export,1993,0.0
 Generation,1993,2582.0
-Household and housing,1993,310.0
 Imports,1993,197.0
+Consumption,1993,2006.0
+Export,1993,0.0
+Resources total,1993,2779.0
+Distribution total,1993,2779.0
+Station internal use,1993,482.0
 Industry and construction,1993,1177.0
+Agriculture,1993,24.0
+Transport and communication,1993,88.0
+Household and housing,1993,310.0
 Other,1993,407.0
 Per capita (kWh),1993,1235.11
-Resources total,1993,2779.0
-Station internal use,1993,482.0
-Transport and communication,1993,88.0
-Agriculture,1994,49.0
-Consumption,1994,1861.0
-Distribution total,1994,2930.0
-Export,1994,0.0
 Generation,1994,2715.0
-Household and housing,1994,430.0
 Imports,1994,215.0
+Consumption,1994,1861.0
+Export,1994,0.0
+Resources total,1994,2930.0
+Distribution total,1994,2930.0
+Station internal use,1994,597.0
 Industry and construction,1994,1189.0
+Agriculture,1994,49.0
+Transport and communication,1994,59.0
+Household and housing,1994,430.0
 Other,1994,134.0
 Per capita (kWh),1994,1285.09
-Resources total,1994,2930.0
-Station internal use,1994,597.0
-Transport and communication,1994,59.0
-Agriculture,1995,59.0
-Consumption,1995,1909.0
-Distribution total,1995,3009.0
-Export,1995,0.0
 Generation,1995,2628.0
-Household and housing,1995,518.0
 Imports,1995,381.0
+Consumption,1995,1909.0
+Export,1995,0.0
+Resources total,1995,3009.0
+Distribution total,1995,3009.0
+Station internal use,1995,598.0
 Industry and construction,1995,1105.0
+Agriculture,1995,59.0
+Transport and communication,1995,69.0
+Household and housing,1995,518.0
 Other,1995,158.0
 Per capita (kWh),1995,1298.38
-Resources total,1995,3009.0
-Station internal use,1995,598.0
-Transport and communication,1995,69.0
-Agriculture,1996,60.0
-Consumption,1996,1936.0
-Distribution total,1996,2997.0
-Export,1996,0.0
 Generation,1996,2614.0
-Household and housing,1996,380.0
 Imports,1996,383.0
+Consumption,1996,1936.0
+Export,1996,0.0
+Resources total,1996,2997.0
+Distribution total,1996,2997.0
+Station internal use,1996,579.0
 Industry and construction,1996,1226.0
+Agriculture,1996,60.0
+Transport and communication,1996,62.0
+Household and housing,1996,380.0
 Other,1996,208.0
 Per capita (kWh),1996,1273.53
-Resources total,1996,2997.0
-Station internal use,1996,579.0
-Transport and communication,1996,62.0
-Agriculture,1997,33.0
-Consumption,1997,1939.0
-Distribution total,1997,3096.0
-Export,1997,42.0
 Generation,1997,2720.0
-Household and housing,1997,414.0
 Imports,1997,376.0
+Consumption,1997,1939.0
+Export,1997,42.0
+Resources total,1997,3096.0
+Distribution total,1997,3096.0
+Station internal use,1997,608.0
 Industry and construction,1997,1264.0
+Agriculture,1997,33.0
+Transport and communication,1997,78.0
+Household and housing,1997,414.0
 Other,1997,150.0
 Per capita (kWh),1997,1297.0
-Resources total,1997,3096.0
-Station internal use,1997,608.0
-Transport and communication,1997,78.0
-Agriculture,1998,11.0
-Consumption,1998,1929.0
-Distribution total,1998,3042.0
-Export,1998,60.0
 Generation,1998,2675.0
-Household and housing,1998,426.0
 Imports,1998,367.0
+Consumption,1998,1929.0
+Export,1998,60.0
+Resources total,1998,3042.0
+Distribution total,1998,3042.0
+Station internal use,1998,588.0
 Industry and construction,1998,1210.0
+Agriculture,1998,11.0
+Transport and communication,1998,63.0
+Household and housing,1998,426.0
 Other,1998,219.0
 Per capita (kWh),1998,1257.0
-Resources total,1998,3042.0
-Station internal use,1998,588.0
-Transport and communication,1998,63.0
-Agriculture,1999,27.0
-Consumption,1999,1867.0
-Distribution total,1999,3045.0
-Export,1999,59.0
 Generation,1999,2842.0
-Household and housing,1999,444.0
 Imports,1999,203.0
+Consumption,1999,1867.0
+Export,1999,59.0
+Resources total,1999,3045.0
+Distribution total,1999,3045.0
+Station internal use,1999,610.0
 Industry and construction,1999,959.0
+Agriculture,1999,27.0
+Transport and communication,1999,67.0
+Household and housing,1999,444.0
 Other,1999,370.0
 Per capita (kWh),1999,1253.0
-Resources total,1999,3045.0
-Station internal use,1999,610.0
-Transport and communication,1999,67.0
-Agriculture,2000,21.0
-Consumption,2000,1910.0
-Distribution total,2000,3127.0
-Export,2000,25.0
 Generation,2000,2946.0
-Household and housing,2000,463.0
 Imports,2000,181.0
+Consumption,2000,1910.0
+Export,2000,25.0
+Resources total,2000,3127.0
+Distribution total,2000,3127.0
+Station internal use,2000,616.0
 Industry and construction,2000,1182.0
+Agriculture,2000,21.0
+Transport and communication,2000,79.0
+Household and housing,2000,463.0
 Other,2000,165.0
 Per capita (kWh),2000,1307.0
-Resources total,2000,3127.0
-Station internal use,2000,616.0
-Transport and communication,2000,79.0
-Agriculture,2001,17.0
-Consumption,2001,1948.0
-Distribution total,2001,3213.0
-Export,2001,18.0
 Generation,2001,3017.0
-Household and housing,2001,476.0
 Imports,2001,196.0
+Consumption,2001,1948.0
+Export,2001,18.0
+Resources total,2001,3213.0
+Distribution total,2001,3213.0
+Station internal use,2001,644.0
 Industry and construction,2001,1204.0
+Agriculture,2001,17.0
+Transport and communication,2001,87.0
+Household and housing,2001,476.0
 Other,2001,164.0
 Per capita (kWh),2001,1235.0
-Resources total,2001,3213.0
-Station internal use,2001,644.0
-Transport and communication,2001,87.0
-Agriculture,2002,25.8
-Consumption,2002,2031.7
-Distribution total,2002,3279.0
-Export,2002,15.5
 Generation,2002,3111.7
-Household and housing,2002,727.2
 Imports,2002,167.3
+Consumption,2002,2031.7
+Export,2002,15.5
+Resources total,2002,3279.0
+Distribution total,2002,3279.0
+Station internal use,2002,649.0
 Industry and construction,2002,1000.4
+Agriculture,2002,25.8
+Transport and communication,2002,81.2
+Household and housing,2002,727.2
 Other,2002,197.1
 Per capita (kWh),2002,1265.43
-Resources total,2002,3279.0
-Station internal use,2002,649.0
-Transport and communication,2002,81.2
-Agriculture,2003,7.85
-Consumption,2003,2194.65
-Distribution total,2003,3308.98
-Export,2003,6.73
 Generation,2003,3137.7
-Household and housing,2003,616.3
 Imports,2003,171.28
+Consumption,2003,2194.65
+Export,2003,6.73
+Resources total,2003,3308.98
+Distribution total,2003,3308.98
+Station internal use,2003,618.4
 Industry and construction,2003,1213.1
+Agriculture,2003,7.85
+Transport and communication,2003,29.5
+Household and housing,2003,616.3
 Other,2003,327.9
 Per capita (kWh),2003,1260.27
-Resources total,2003,3308.98
-Station internal use,2003,618.4
-Transport and communication,2003,29.5
-Agriculture,2004,25.6
-Consumption,2004,2357.0
-Distribution total,2004,3474.3
-Export,2004,8.2
 Generation,2004,3303.4
-Household and housing,2004,567.6
 Imports,2004,170.8
+Consumption,2004,2357.0
+Export,2004,8.2
+Resources total,2004,3474.3
+Distribution total,2004,3474.3
+Station internal use,2004,628.8
 Industry and construction,2004,1458.8
+Agriculture,2004,25.6
+Transport and communication,2004,98.5
+Household and housing,2004,567.6
 Other,2004,206.5
 Per capita (kWh),2004,1311.6
-Resources total,2004,3474.3
-Station internal use,2004,628.8
-Transport and communication,2004,98.5
-Agriculture,2005,27.5
-Consumption,2005,2534.0
-Distribution total,2005,3586.4
-Export,2005,11.9
 Generation,2005,3418.9
-Household and housing,2005,609.3
 Imports,2005,167.5
+Consumption,2005,2534.0
+Export,2005,11.9
+Resources total,2005,3586.4
+Distribution total,2005,3586.4
+Station internal use,2005,620.8
 Industry and construction,2005,1569.1
+Agriculture,2005,27.5
+Transport and communication,2005,105.8
+Household and housing,2005,609.3
 Other,2005,222.3
 Per capita (kWh),2005,1341.9
-Resources total,2005,3586.4
-Station internal use,2005,620.8
-Transport and communication,2005,105.8
-Agriculture,2006,24.3
-Consumption,2006,2619.7
-Distribution total,2006,3712.5
-Export,2006,20.8
 Generation,2006,3544.2
-Household and housing,2006,629.2
 Imports,2006,168.3
+Consumption,2006,2619.7
+Export,2006,20.8
+Resources total,2006,3712.5
+Distribution total,2006,3712.5
+Station internal use,2006,629.6
 Industry and construction,2006,1627.0
+Agriculture,2006,24.3
+Transport and communication,2006,109.4
+Household and housing,2006,629.2
 Other,2006,229.9
 Per capita (kWh),2006,1374.44
-Resources total,2006,3712.5
-Station internal use,2006,629.6
-Transport and communication,2006,109.4
-Agriculture,2007,26.1
-Consumption,2007,2829.1
-Distribution total,2007,3896.1
-Export,2007,10.1
 Generation,2007,3700.7
-Household and housing,2007,694.6
 Imports,2007,195.4
+Consumption,2007,2829.1
+Export,2007,10.1
+Resources total,2007,3896.1
+Distribution total,2007,3896.1
+Station internal use,2007,614.5
 Industry and construction,2007,1745.6
+Agriculture,2007,26.1
+Transport and communication,2007,117.3
+Household and housing,2007,694.6
 Other,2007,245.5
 Per capita (kWh),2007,1415.4
-Resources total,2007,3896.1
-Station internal use,2007,614.5
-Transport and communication,2007,117.3
-Agriculture,2008,32.65
-Consumption,2008,3093.3
-Distribution total,2008,4198.2
-Export,2008,15.9
 Generation,2008,4000.57
-Household and housing,2008,742.33
 Imports,2008,197.6
+Consumption,2008,3093.3
+Export,2008,15.9
+Resources total,2008,4198.2
+Distribution total,2008,4198.2
+Station internal use,2008,653.17
 Industry and construction,2008,1918.15
+Agriculture,2008,32.65
+Transport and communication,2008,128.73
+Household and housing,2008,742.33
 Other,2008,271.47
 Per capita (kWh),2008,1504.43
-Resources total,2008,4198.2
-Station internal use,2008,653.17
-Transport and communication,2008,128.73
-Agriculture,2009,32.05
-Consumption,2009,3034.09
-Distribution total,2009,4195.39
-Export,2009,18.06
 Generation,2009,4038.84
-Household and housing,2009,727.61
 Imports,2009,156.55
+Consumption,2009,3034.09
+Export,2009,18.06
+Resources total,2009,4195.39
+Distribution total,2009,4195.39
+Station internal use,2009,649.37
 Industry and construction,2009,1883.08
+Agriculture,2009,32.05
+Transport and communication,2009,126.22
+Household and housing,2009,727.61
 Other,2009,265.13
 Per capita (kWh),2009,1500.81
-Resources total,2009,4195.39
-Station internal use,2009,649.37
-Transport and communication,2009,126.22
-Agriculture,2010,35.64
-Consumption,2010,3375.86
-Distribution total,2010,4575.72
-Export,2010,22.18
 Generation,2010,4312.82
-Household and housing,2010,809.75
 Imports,2010,262.9
+Consumption,2010,3375.86
+Export,2010,22.18
+Resources total,2010,4575.72
+Distribution total,2010,4575.72
+Station internal use,2010,672.22
 Industry and construction,2010,2093.85
+Agriculture,2010,35.64
+Transport and communication,2010,140.41
+Household and housing,2010,809.75
 Other,2010,296.22
 Per capita (kWh),2010,1574.81
-Resources total,2010,4575.72
-Station internal use,2010,672.22
-Transport and communication,2010,140.41
-Agriculture,2011,36.44
-Consumption,2011,3452.96
-Distribution total,2011,4811.89
-Export,2011,23.77
 Generation,2011,4536.38
-Household and housing,2011,829.48
 Imports,2011,275.51
+Consumption,2011,3452.96
+Export,2011,23.77
+Resources total,2011,4811.89
+Distribution total,2011,4811.89
+Station internal use,2011,690.85
 Industry and construction,2011,2140.81
+Agriculture,2011,36.44
+Transport and communication,2011,143.65
+Household and housing,2011,829.48
 Other,2011,302.58
 Per capita (kWh),2011,1693.2
-Resources total,2011,4811.89
-Station internal use,2011,690.85
-Transport and communication,2011,143.65
-Agriculture,2012,39.81
-Consumption,2012,3772.64
-Distribution total,2012,5181.59
-Export,2012,21.16
 Generation,2012,4815.57
-Household and housing,2012,906.72
 Imports,2012,366.02
+Consumption,2012,3772.64
+Export,2012,21.16
+Resources total,2012,5181.59
+Distribution total,2012,5181.59
+Station internal use,2012,712.4
 Industry and construction,2012,2338.86
+Agriculture,2012,39.81
+Transport and communication,2012,156.84
+Household and housing,2012,906.72
 Other,2012,330.42
 Per capita (kWh),2012,1762.29
-Resources total,2012,5181.59
-Station internal use,2012,712.4
-Transport and communication,2012,156.84
-Agriculture,2013,49.87
-Consumption,2013,4732.07
-Distribution total,2013,6215.03
-Export,2013,18.21
 Generation,2013,5019.54
-Household and housing,2013,1139.22
 Imports,2013,1195.49
+Consumption,2013,4732.07
+Export,2013,18.21
+Resources total,2013,6215.03
+Distribution total,2013,6215.03
+Station internal use,2013,725.26
 Industry and construction,2013,2930.67
+Agriculture,2013,49.87
+Transport and communication,2013,196.9
+Household and housing,2013,1139.22
 Other,2013,415.4
 Per capita (kWh),2013,1797.91
-Resources total,2013,6215.03
-Station internal use,2013,725.26
-Transport and communication,2013,196.9
-Agriculture,2014,63.7
-Consumption,2014,5158.4
-Distribution total,2014,6725.0
-Export,2014,33.4
 Generation,2014,5375.8
-Household and housing,2014,1251.4
 Imports,2014,1349.2
+Consumption,2014,5158.4
+Export,2014,33.4
+Resources total,2014,6725.0
+Distribution total,2014,6725.0
+Station internal use,2014,772.4
 Industry and construction,2014,3171.6
+Agriculture,2014,63.7
+Transport and communication,2014,211.4
+Household and housing,2014,1251.4
 Other,2014,460.4
 Per capita (kWh),2014,1866.2
-Resources total,2014,6725.0
-Station internal use,2014,772.4
-Transport and communication,2014,211.4
-Agriculture,2015,54.8
-Consumption,2015,5283.5
-Distribution total,2015,6930.0
-Export,2015,50.8
 Generation,2015,5513.2
-Household and housing,2015,1277.5
 Imports,2015,1416.8
+Consumption,2015,5283.5
+Export,2015,50.8
+Resources total,2015,6930.0
+Distribution total,2015,6930.0
+Station internal use,2015,778.2
 Industry and construction,2015,3261.4
+Agriculture,2015,54.8
+Transport and communication,2015,216.5
+Household and housing,2015,1277.5
 Other,2015,473.3
 Per capita (kWh),2015,1860.0
-Resources total,2015,6930.0
-Station internal use,2015,778.2
-Transport and communication,2015,216.5
-Agriculture,2016,56.6
-Consumption,2016,5445.7
-Distribution total,2016,7113.4
-Export,2016,36.0
 Generation,2016,5667.1
-Household and housing,2016,1321.3
 Imports,2016,1446.3
+Consumption,2016,5445.7
+Export,2016,36.0
+Resources total,2016,7113.4
+Distribution total,2016,7113.4
+Station internal use,2016,748.7
 Industry and construction,2016,3356.3
+Agriculture,2016,56.6
+Transport and communication,2016,222.9
+Household and housing,2016,1321.3
 Other,2016,488.6
 Per capita (kWh),2016,1872.2
-Resources total,2016,7113.4
-Station internal use,2016,748.7
-Transport and communication,2016,222.9
-Agriculture,2017,62.8
-Consumption,2017,5948.7
-Distribution total,2017,7601.7
-Export,2017,25.7
 Generation,2017,6027.3
-Household and housing,2017,1426.6
 Imports,2017,1574.3
+Consumption,2017,5948.7
+Export,2017,25.7
+Resources total,2017,7601.7
+Distribution total,2017,7601.7
+Station internal use,2017,816.4
 Industry and construction,2017,3692.0
+Agriculture,2017,62.8
+Transport and communication,2017,247.5
+Household and housing,2017,1426.6
 Other,2017,519.8
 Per capita (kWh),2017,1945.8
-Resources total,2017,7601.7
-Station internal use,2017,816.4
-Transport and communication,2017,247.5
-Agriculture,2018,68.1
-Consumption,2018,6449.7
-Distribution total,2018,8201.0
-Export,2018,26.7
 Generation,2018,6535.3
-Household and housing,2018,1546.7
 Imports,2018,1665.7
+Consumption,2018,6449.7
+Export,2018,26.7
+Resources total,2018,8201.0
+Distribution total,2018,8201.0
+Station internal use,2018,849.3
 Industry and construction,2018,4003.0
+Agriculture,2018,68.1
+Transport and communication,2018,268.3
+Household and housing,2018,1546.7
 Other,2018,563.6
 Per capita (kWh),2018,2068.8
-Resources total,2018,8201.0
-Station internal use,2018,849.3
-Transport and communication,2018,268.3
-Agriculture,2019,72.3
-Consumption,2019,6846.4
-Distribution total,2019,8623.1
-Export,2019,24.1
 Generation,2019,6900.4
-Household and housing,2019,1641.9
 Imports,2019,1722.7
+Consumption,2019,6846.4
+Export,2019,24.1
+Resources total,2019,8623.1
+Distribution total,2019,8623.1
+Station internal use,2019,860.9
 Industry and construction,2019,4249.2
+Agriculture,2019,72.3
+Transport and communication,2019,284.8
+Household and housing,2019,1641.9
 Other,2019,598.3
 Per capita (kWh),2019,2162.0
-Resources total,2019,8623.1
-Station internal use,2019,860.9
-Transport and communication,2019,284.8
-Agriculture,2020,72.0
-Consumption,2020,6816.8
-Distribution total,2020,8754.6
-Export,2020,41.5
 Generation,2020,7069.7
-Household and housing,2020,1634.7
 Imports,2020,1684.9
+Consumption,2020,6816.8
+Export,2020,41.5
+Resources total,2020,8754.6
+Distribution total,2020,8754.6
+Station internal use,2020,933.7
 Industry and construction,2020,4230.8
+Agriculture,2020,72.0
+Transport and communication,2020,283.6
+Household and housing,2020,1634.7
 Other,2020,595.7
 Per capita (kWh),2020,2192.1
-Resources total,2020,8754.6
-Station internal use,2020,933.7
-Transport and communication,2020,283.6
-Agriculture,2021,81.5
-Consumption,2021,7718.9
-Distribution total,2021,9648.4
-Export,2021,23.9
 Generation,2021,7825.3
-Household and housing,2021,1851.1
 Imports,2021,1823.1
+Consumption,2021,7718.9
+Export,2021,23.9
+Resources total,2021,9648.4
+Distribution total,2021,9648.4
+Station internal use,2021,887.1
 Industry and construction,2021,4790.6
+Agriculture,2021,81.5
+Transport and communication,2021,321.1
+Household and housing,2021,1851.1
 Other,2021,674.5
 Per capita (kWh),2021,2383.7
-Resources total,2021,9648.4
-Station internal use,2021,887.1
-Transport and communication,2021,321.1
-Agriculture,2022,85.5
-Consumption,2022,8095.4
-Distribution total,2022,10142.3
-Export,2022,25.3
 Generation,2022,8035.0
-Household and housing,2022,1941.4
 Imports,2022,2107.4
+Consumption,2022,8095.4
+Export,2022,25.3
+Resources total,2022,10142.3
+Distribution total,2022,10142.3
+Station internal use,2022,930.4
 Industry and construction,2022,5024.3
+Agriculture,2022,85.5
+Transport and communication,2022,336.8
+Household and housing,2022,1941.4
 Other,2022,707.4
 Per capita (kWh),2022,2405.3
-Resources total,2022,10142.3
-Station internal use,2022,930.4
-Transport and communication,2022,336.8
-Agriculture,2023,91.3
-Consumption,2023,8639.3
-Distribution total,2023,10914.3
-Export,2023,37.0
 Generation,2023,8487.4
-Household and housing,2023,2071.8
 Imports,2023,2426.9
+Consumption,2023,8639.3
+Export,2023,37.0
+Resources total,2023,10914.3
+Distribution total,2023,10914.3
+Station internal use,2023,1059.4
 Industry and construction,2023,5361.9
+Agriculture,2023,91.3
+Transport and communication,2023,359.4
+Household and housing,2023,2071.8
 Other,2023,754.9
 Per capita (kWh),2023,2509.1
-Resources total,2023,10914.3
-Station internal use,2023,1059.4
-Transport and communication,2023,359.4
-Agriculture,2024,96.5
-Consumption,2024,9131.9
-Distribution total,2024,11445.9
-Export,2024,12.0
 Generation,2024,8692.8
-Household and housing,2024,2189.9
 Imports,2024,2753.0
+Consumption,2024,9131.9
+Export,2024,12.0
+Resources total,2024,11445.9
+Distribution total,2024,11445.9
+Station internal use,2024,1138.3
 Industry and construction,2024,5667.6
+Agriculture,2024,96.5
+Transport and communication,2024,379.9
+Household and housing,2024,2189.9
 Other,2024,798.0
 Per capita (kWh),2024,2542.4
-Resources total,2024,11445.9
-Station internal use,2024,1138.3
-Transport and communication,2024,379.9

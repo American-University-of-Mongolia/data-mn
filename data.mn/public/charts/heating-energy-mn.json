@@ -1,0 +1,114 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Heating energy balance in Mongolia (1995-2024)",
+  "data": {
+    "url": "/datasets/heating-energy-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {
+        "format": "d",
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "мянган_Гкал",
+      "type": "quantitative",
+      "title": "Мянган Гкал"
+    },
+    "color": {
+      "field": "үзүүлэлт",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Үйлдвэрлэсэн",
+          "Түгээсэн-Бүгд",
+          "Түгээлтийн алдагдал"
+        ],
+        "range": [
+          "#3b82f6",
+          "#10b981",
+          "#ef4444"
+        ]
+      },
+      "legend": {
+        "orient": "top",
+        "title": null
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "үзүүлэлт",
+            "title": "Үзүүлэлт"
+          },
+          {
+            "field": "мянган_Гкал",
+            "title": "Мянган Гкал",
+            "format": ","
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

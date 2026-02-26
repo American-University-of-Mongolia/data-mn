@@ -1,76 +1,76 @@
 year,region,production_tonnes
-2010,Central region,74919.5
-2010,Eastern region,30486.0
-2010,Khangai region,82585.7
 2010,Ulaanbaatar,5960.3
+2010,Eastern region,30486.0
 2010,Western region,47118.5
-2011,Central region,66195.5
-2011,Eastern region,48816.7
-2011,Khangai region,90042.9
+2010,Central region,74919.5
+2010,Khangai region,82585.7
 2011,Ulaanbaatar,5652.8
 2011,Western region,40640.0
-2012,Central region,68650.0
-2012,Eastern region,48601.6
-2012,Khangai region,95589.1
+2011,Eastern region,48816.7
+2011,Central region,66195.5
+2011,Khangai region,90042.9
 2012,Ulaanbaatar,5198.9
 2012,Western region,45375.9
-2013,Central region,76901.9
-2013,Eastern region,48400.8
-2013,Khangai region,111459.4
+2012,Eastern region,48601.6
+2012,Central region,68650.0
+2012,Khangai region,95589.1
 2013,Ulaanbaatar,5692.3
+2013,Eastern region,48400.8
 2013,Western region,56826.4
-2014,Central region,74263.6
-2014,Eastern region,47545.1
-2014,Khangai region,107655.9
+2013,Central region,76901.9
+2013,Khangai region,111459.4
 2014,Ulaanbaatar,4854.5
+2014,Eastern region,47545.1
 2014,Western region,57336.7
-2015,Central region,118371.9
-2015,Eastern region,64695.4
-2015,Khangai region,168339.1
+2014,Central region,74263.6
+2014,Khangai region,107655.9
 2015,Ulaanbaatar,8709.6
+2015,Eastern region,64695.4
 2015,Western region,88039.8
-2016,Central region,108614.3
-2016,Eastern region,71545.2
-2016,Khangai region,137929.3
+2015,Central region,118371.9
+2015,Khangai region,168339.1
 2016,Ulaanbaatar,7647.1
+2016,Eastern region,71545.2
 2016,Western region,75848.7
-2017,Central region,107362.9
-2017,Eastern region,43860.2
-2017,Khangai region,175058.9
+2016,Central region,108614.3
+2016,Khangai region,137929.3
 2017,Ulaanbaatar,8626.4
+2017,Eastern region,43860.2
 2017,Western region,91259.9
-2018,Central region,121236.9
-2018,Eastern region,82776.4
-2018,Khangai region,184093.6
+2017,Central region,107362.9
+2017,Khangai region,175058.9
 2018,Ulaanbaatar,9532.7
+2018,Eastern region,82776.4
 2018,Western region,117543.1
-2019,Central region,125109.2
-2019,Eastern region,95406.1
-2019,Khangai region,203005.9
+2018,Central region,121236.9
+2018,Khangai region,184093.6
 2019,Ulaanbaatar,8094.4
+2019,Eastern region,95406.1
 2019,Western region,113413.6
-2020,Central region,156941.4
-2020,Eastern region,106995.4
-2020,Khangai region,313579.5
+2019,Central region,125109.2
+2019,Khangai region,203005.9
 2020,Ulaanbaatar,7410.6
+2020,Eastern region,106995.4
+2020,Central region,156941.4
 2020,Western region,159589.1
-2021,Central region,141665.8
-2021,Eastern region,84610.1
-2021,Khangai region,174359.3
+2020,Khangai region,313579.5
 2021,Ulaanbaatar,9341.3
+2021,Eastern region,84610.1
 2021,Western region,102702.7
-2022,Central region,164404.8
-2022,Eastern region,106085.5
-2022,Khangai region,205303.2
+2021,Central region,141665.8
+2021,Khangai region,174359.3
 2022,Ulaanbaatar,9161.3
+2022,Eastern region,106085.5
+2022,Central region,164404.8
 2022,Western region,169011.8
-2023,Central region,173757.3
-2023,Eastern region,115241.4
-2023,Khangai region,216948.7
+2022,Khangai region,205303.2
 2023,Ulaanbaatar,6492.6
 2023,Western region,109642.8
-2024,Central region,121646.6
-2024,Eastern region,58589.0
-2024,Khangai region,176453.7
+2023,Eastern region,115241.4
+2023,Central region,173757.3
+2023,Khangai region,216948.7
 2024,Ulaanbaatar,5149.7
+2024,Eastern region,58589.0
 2024,Western region,88604.1
+2024,Central region,121646.6
+2024,Khangai region,176453.7

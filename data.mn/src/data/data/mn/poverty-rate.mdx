@@ -1,0 +1,35 @@
+---
+title: "Монголын ядуурлын түвшин, байршлаар, % (1995-2022)"
+publishDate: 2026-02-10
+excerpt: "Монгол Улсын ядуурлын хамралтын хүрээ 1995-2022 он, улсын дундаж, хот, хөдөөгөөр. Үндэсний Статистикийн Хорооны мэдээлэл."
+category: "Өрх & Орлого"
+tags: ["монгол", "ядуурал", "өрх", "орлого", "статистик", "үсх"]
+keywords: ["Монгол ядуурал", "ядуурлын түвшин", "хот хөдөө ядуурал", "ядуурлын статистик"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-10
+dataFiles:
+  - path: "/datasets/poverty-rate-mn.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "CSV татах"
+  - path: "/datasets/poverty-rate.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel татах"
+  - path: "/datasets/poverty-rate-all-mn.csv"
+    format: "csv"
+    size: "12 KB"
+    description: "Бүх үзүүлэлт & байршил (CSV)"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1900_007V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/poverty-rate-mn.json"
+  title="Монголын ядуурлын түвшин, байршлаар, % (1995-2022)"
+/>

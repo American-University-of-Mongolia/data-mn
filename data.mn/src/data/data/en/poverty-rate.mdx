@@ -1,0 +1,35 @@
+---
+title: "Mongolia Poverty Rate by Location, % (1995-2022)"
+publishDate: 2026-02-10
+excerpt: "Poverty headcount rate in Mongolia from 1995 to 2022, showing national average, urban, and rural trends. Data from the National Statistics Office."
+category: "Household & Income"
+tags: ["mongolia", "poverty", "household", "income", "statistics", "nso"]
+keywords: ["Mongolia poverty rate", "poverty headcount", "urban rural poverty", "Mongolia poverty statistics", "poverty trend"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-10
+dataFiles:
+  - path: "/datasets/poverty-rate-en.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "Download as CSV"
+  - path: "/datasets/poverty-rate.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+  - path: "/datasets/poverty-rate-all-en.csv"
+    format: "csv"
+    size: "12 KB"
+    description: "All indicators & locations (CSV)"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1900_007V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/poverty-rate-en.json"
+  title="Mongolia Poverty Rate by Location, % (1995-2022)"
+/>

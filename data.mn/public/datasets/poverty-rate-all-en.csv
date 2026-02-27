@@ -1,0 +1,382 @@
+indicator,location,year,percent
+Poverty Headcount,National average,1995,36.3
+Poverty Headcount,Urban,1995,38.5
+Poverty Headcount,Rural,1995,33.1
+Poverty Gap,National average,1995,10.9
+Poverty Gap,Urban,1995,12.2
+Poverty Gap,Rural,1995,8.9
+Poverty Severity,National average,1995,4.8
+Poverty Severity,Urban,1995,5.7
+Poverty Severity,Rural,1995,3.6
+Poverty Headcount,National average,1998,35.6
+Poverty Headcount,Urban,1998,39.4
+Poverty Headcount,Rural,1998,32.6
+Poverty Gap,National average,1998,11.7
+Poverty Gap,Urban,1998,13.9
+Poverty Gap,Rural,1998,9.8
+Poverty Severity,National average,1998,5.6
+Poverty Severity,Urban,1998,7.1
+Poverty Severity,Rural,1998,4.4
+Poverty Headcount,National average,2003,36.1
+Poverty Headcount,Urban,2003,30.3
+Poverty Headcount,Rural,2003,43.4
+Poverty Headcount,Western region,2003,51.1
+Poverty Headcount,Khangai region,2003,38.7
+Poverty Headcount,Central region,2003,34.4
+Poverty Headcount,Eastern region,2003,34.5
+Poverty Headcount,Ulaanbaatar,2003,27.3
+Poverty Headcount,Aimag center,2003,33.9
+Poverty Headcount,Soum center,2003,44.5
+Poverty Headcount,Rural area,2003,42.7
+Poverty Gap,National average,2003,11.0
+Poverty Gap,Urban,2003,9.2
+Poverty Gap,Rural,2003,13.2
+Poverty Gap,Western region,2003,14.6
+Poverty Gap,Khangai region,2003,12.3
+Poverty Gap,Central region,2003,10.1
+Poverty Gap,Eastern region,2003,12.4
+Poverty Gap,Ulaanbaatar,2003,8.1
+Poverty Gap,Aimag center,2003,10.5
+Poverty Gap,Soum center,2003,14.4
+Poverty Gap,Rural area,2003,12.6
+Poverty Severity,National average,2003,4.7
+Poverty Severity,Urban,2003,4.0
+Poverty Severity,Rural,2003,5.6
+Poverty Severity,Western region,2003,5.7
+Poverty Severity,Khangai region,2003,5.2
+Poverty Severity,Central region,2003,4.3
+Poverty Severity,Eastern region,2003,6.6
+Poverty Severity,Ulaanbaatar,2003,3.3
+Poverty Severity,Aimag center,2003,4.7
+Poverty Severity,Soum center,2003,6.4
+Poverty Severity,Rural area,2003,5.1
+Poverty Headcount,National average,2008,35.2
+Poverty Headcount,Urban,2008,26.9
+Poverty Headcount,Rural,2008,46.6
+Poverty Headcount,Western region,2008,47.1
+Poverty Headcount,Khangai region,2008,46.6
+Poverty Headcount,Central region,2008,30.7
+Poverty Headcount,Eastern region,2008,46.7
+Poverty Headcount,Ulaanbaatar,2008,21.9
+Poverty Headcount,Aimag center,2008,34.9
+Poverty Headcount,Soum center,2008,42.0
+Poverty Headcount,Rural area,2008,49.7
+Poverty Gap,National average,2008,10.1
+Poverty Gap,Urban,2008,7.7
+Poverty Gap,Rural,2008,13.4
+Poverty Gap,Western region,2008,12.8
+Poverty Gap,Khangai region,2008,13.6
+Poverty Gap,Central region,2008,8.4
+Poverty Gap,Eastern region,2008,14.9
+Poverty Gap,Ulaanbaatar,2008,6.3
+Poverty Gap,Aimag center,2008,9.9
+Poverty Gap,Soum center,2008,12.7
+Poverty Gap,Rural area,2008,13.9
+Poverty Severity,National average,2008,4.0
+Poverty Severity,Urban,2008,3.1
+Poverty Severity,Rural,2008,5.2
+Poverty Severity,Western region,2008,4.7
+Poverty Severity,Khangai region,2008,5.3
+Poverty Severity,Central region,2008,3.3
+Poverty Severity,Eastern region,2008,6.6
+Poverty Severity,Ulaanbaatar,2008,2.6
+Poverty Severity,Aimag center,2008,3.9
+Poverty Severity,Soum center,2008,5.2
+Poverty Severity,Rural area,2008,5.3
+Poverty Headcount,National average,2009,38.7
+Poverty Headcount,Urban,2009,30.6
+Poverty Headcount,Rural,2009,49.6
+Poverty Headcount,Western region,2009,48.7
+Poverty Headcount,Khangai region,2009,55.2
+Poverty Headcount,Central region,2009,29.3
+Poverty Headcount,Eastern region,2009,43.8
+Poverty Headcount,Ulaanbaatar,2009,26.7
+Poverty Headcount,Aimag center,2009,37.0
+Poverty Headcount,Soum center,2009,42.6
+Poverty Headcount,Rural area,2009,53.2
+Poverty Gap,National average,2009,10.6
+Poverty Gap,Urban,2009,7.9
+Poverty Gap,Rural,2009,14.4
+Poverty Gap,Western region,2009,12.5
+Poverty Gap,Khangai region,2009,17.4
+Poverty Gap,Central region,2009,7.7
+Poverty Gap,Eastern region,2009,12.4
+Poverty Gap,Ulaanbaatar,2009,6.4
+Poverty Gap,Aimag center,2009,10.3
+Poverty Gap,Soum center,2009,12.9
+Poverty Gap,Rural area,2009,15.1
+Poverty Severity,National average,2009,4.1
+Poverty Severity,Urban,2009,2.9
+Poverty Severity,Rural,2009,5.6
+Poverty Severity,Western region,2009,4.6
+Poverty Severity,Khangai region,2009,7.2
+Poverty Severity,Central region,2009,2.8
+Poverty Severity,Eastern region,2009,4.8
+Poverty Severity,Ulaanbaatar,2009,2.3
+Poverty Severity,Aimag center,2009,4.0
+Poverty Severity,Soum center,2009,5.3
+Poverty Severity,Rural area,2009,5.8
+Poverty Headcount,National average,2010,38.8
+Poverty Headcount,Urban,2010,33.2
+Poverty Headcount,Rural,2010,49.0
+Poverty Headcount,Western region,2010,52.7
+Poverty Headcount,Khangai region,2010,51.9
+Poverty Headcount,Central region,2010,29.9
+Poverty Headcount,Eastern region,2010,42.3
+Poverty Headcount,Ulaanbaatar,2010,31.2
+Poverty Headcount,Aimag center,2010,37.3
+Poverty Headcount,Soum center,2010,39.7
+Poverty Headcount,Rural area,2010,56.1
+Poverty Gap,National average,2010,11.5
+Poverty Gap,Urban,2010,9.4
+Poverty Gap,Rural,2010,15.2
+Poverty Gap,Western region,2010,16.9
+Poverty Gap,Khangai region,2010,16.1
+Poverty Gap,Central region,2010,8.3
+Poverty Gap,Eastern region,2010,13.2
+Poverty Gap,Ulaanbaatar,2010,8.5
+Poverty Gap,Aimag center,2010,11.2
+Poverty Gap,Soum center,2010,11.9
+Poverty Gap,Rural area,2010,17.7
+Poverty Severity,National average,2010,4.6
+Poverty Severity,Urban,2010,3.7
+Poverty Severity,Rural,2010,6.4
+Poverty Severity,Western region,2010,7.2
+Poverty Severity,Khangai region,2010,6.8
+Poverty Severity,Central region,2010,3.2
+Poverty Severity,Eastern region,2010,5.6
+Poverty Severity,Ulaanbaatar,2010,3.2
+Poverty Severity,Aimag center,2010,4.6
+Poverty Severity,Soum center,2010,4.9
+Poverty Severity,Rural area,2010,7.5
+Poverty Headcount,National average,2011,33.7
+Poverty Headcount,Urban,2011,28.7
+Poverty Headcount,Rural,2011,43.2
+Poverty Headcount,Western region,2011,40.5
+Poverty Headcount,Khangai region,2011,49.1
+Poverty Headcount,Central region,2011,28.1
+Poverty Headcount,Eastern region,2011,40.0
+Poverty Headcount,Ulaanbaatar,2011,25.8
+Poverty Headcount,Aimag center,2011,34.6
+Poverty Headcount,Soum center,2011,35.8
+Poverty Headcount,Rural area,2011,47.2
+Poverty Gap,National average,2011,9.2
+Poverty Gap,Urban,2011,7.7
+Poverty Gap,Rural,2011,11.8
+Poverty Gap,Western region,2011,11.2
+Poverty Gap,Khangai region,2011,13.6
+Poverty Gap,Central region,2011,7.4
+Poverty Gap,Eastern region,2011,12.1
+Poverty Gap,Ulaanbaatar,2011,6.6
+Poverty Gap,Aimag center,2011,9.9
+Poverty Gap,Soum center,2011,9.9
+Poverty Gap,Rural area,2011,12.8
+Poverty Severity,National average,2011,3.5
+Poverty Severity,Urban,2011,3.0
+Poverty Severity,Rural,2011,4.5
+Poverty Severity,Western region,2011,4.4
+Poverty Severity,Khangai region,2011,5.2
+Poverty Severity,Central region,2011,2.8
+Poverty Severity,Eastern region,2011,5.0
+Poverty Severity,Ulaanbaatar,2011,2.5
+Poverty Severity,Aimag center,2011,4.0
+Poverty Severity,Soum center,2011,3.9
+Poverty Severity,Rural area,2011,4.8
+Poverty Headcount,National average,2012,27.4
+Poverty Headcount,Urban,2012,23.3
+Poverty Headcount,Rural,2012,35.4
+Poverty Headcount,Western region,2012,32.3
+Poverty Headcount,Khangai region,2012,38.5
+Poverty Headcount,Central region,2012,28.2
+Poverty Headcount,Eastern region,2012,33.4
+Poverty Headcount,Ulaanbaatar,2012,19.9
+Poverty Headcount,Aimag center,2012,30.4
+Poverty Headcount,Soum center,2012,27.5
+Poverty Headcount,Rural area,2012,39.6
+Poverty Gap,National average,2012,7.1
+Poverty Gap,Urban,2012,6.2
+Poverty Gap,Rural,2012,8.8
+Poverty Gap,Western region,2012,7.7
+Poverty Gap,Khangai region,2012,10.1
+Poverty Gap,Central region,2012,7.2
+Poverty Gap,Eastern region,2012,9.8
+Poverty Gap,Ulaanbaatar,2012,5.1
+Poverty Gap,Aimag center,2012,8.4
+Poverty Gap,Soum center,2012,7.3
+Poverty Gap,Rural area,2012,9.6
+Poverty Severity,National average,2012,2.7
+Poverty Severity,Urban,2012,2.4
+Poverty Severity,Rural,2012,3.2
+Poverty Severity,Western region,2012,2.6
+Poverty Severity,Khangai region,2012,3.7
+Poverty Severity,Central region,2012,2.7
+Poverty Severity,Eastern region,2012,4.0
+Poverty Severity,Ulaanbaatar,2012,2.0
+Poverty Severity,Aimag center,2012,3.3
+Poverty Severity,Soum center,2012,2.8
+Poverty Severity,Rural area,2012,3.3
+Poverty Headcount,National average,2014,21.6
+Poverty Headcount,Urban,2014,18.8
+Poverty Headcount,Rural,2014,26.4
+Poverty Headcount,Western region,2014,26.0
+Poverty Headcount,Khangai region,2014,25.3
+Poverty Headcount,Central region,2014,22.2
+Poverty Headcount,Eastern region,2014,31.4
+Poverty Headcount,Ulaanbaatar,2014,16.4
+Poverty Headcount,Aimag center,2014,23.8
+Poverty Headcount,Soum center,2014,24.7
+Poverty Headcount,Rural area,2014,27.9
+Poverty Gap,National average,2014,5.2
+Poverty Gap,Urban,2014,4.9
+Poverty Gap,Rural,2014,5.8
+Poverty Gap,Western region,2014,5.3
+Poverty Gap,Khangai region,2014,5.4
+Poverty Gap,Central region,2014,5.5
+Poverty Gap,Eastern region,2014,8.6
+Poverty Gap,Ulaanbaatar,2014,4.5
+Poverty Gap,Aimag center,2014,5.8
+Poverty Gap,Soum center,2014,5.7
+Poverty Gap,Rural area,2014,6.0
+Poverty Severity,National average,2014,1.9
+Poverty Severity,Urban,2014,1.9
+Poverty Severity,Rural,2014,2.0
+Poverty Severity,Western region,2014,1.7
+Poverty Severity,Khangai region,2014,1.7
+Poverty Severity,Central region,2014,2.1
+Poverty Severity,Eastern region,2014,3.3
+Poverty Severity,Ulaanbaatar,2014,1.7
+Poverty Severity,Aimag center,2014,2.1
+Poverty Severity,Soum center,2014,2.0
+Poverty Severity,Rural area,2014,1.9
+Poverty Headcount,National average,2016,29.6
+Poverty Headcount,Urban,2016,27.1
+Poverty Headcount,Rural,2016,34.9
+Poverty Headcount,Western region,2016,36.0
+Poverty Headcount,Khangai region,2016,33.6
+Poverty Headcount,Central region,2016,26.8
+Poverty Headcount,Eastern region,2016,43.9
+Poverty Headcount,Ulaanbaatar,2016,24.8
+Poverty Headcount,Aimag center,2016,31.8
+Poverty Headcount,Soum center,2016,32.3
+Poverty Headcount,Rural area,2016,38.0
+Poverty Gap,National average,2016,7.7
+Poverty Gap,Urban,2016,7.2
+Poverty Gap,Rural,2016,8.8
+Poverty Gap,Western region,2016,9.7
+Poverty Gap,Khangai region,2016,8.2
+Poverty Gap,Central region,2016,7.0
+Poverty Gap,Eastern region,2016,12.5
+Poverty Gap,Ulaanbaatar,2016,6.4
+Poverty Gap,Aimag center,2016,8.8
+Poverty Gap,Soum center,2016,8.5
+Poverty Gap,Rural area,2016,9.2
+Poverty Severity,National average,2016,2.9
+Poverty Severity,Urban,2016,2.8
+Poverty Severity,Rural,2016,3.2
+Poverty Severity,Western region,2016,3.7
+Poverty Severity,Khangai region,2016,2.9
+Poverty Severity,Central region,2016,2.7
+Poverty Severity,Eastern region,2016,4.8
+Poverty Severity,Ulaanbaatar,2016,2.5
+Poverty Severity,Aimag center,2016,3.4
+Poverty Severity,Soum center,2016,3.2
+Poverty Severity,Rural area,2016,3.2
+Poverty Headcount,National average,2018,28.4
+Poverty Headcount,Urban,2018,27.2
+Poverty Headcount,Rural,2018,30.8
+Poverty Headcount,Western region,2018,31.8
+Poverty Headcount,Khangai region,2018,30.8
+Poverty Headcount,Central region,2018,26.1
+Poverty Headcount,Eastern region,2018,37.4
+Poverty Headcount,Ulaanbaatar,2018,25.9
+Poverty Headcount,Aimag center,2018,30.1
+Poverty Headcount,Soum center,2018,28.9
+Poverty Headcount,Rural area,2018,32.9
+Poverty Gap,National average,2018,7.2
+Poverty Gap,Urban,2018,7.2
+Poverty Gap,Rural,2018,7.2
+Poverty Gap,Western region,2018,7.8
+Poverty Gap,Khangai region,2018,7.3
+Poverty Gap,Central region,2018,6.6
+Poverty Gap,Eastern region,2018,10.0
+Poverty Gap,Ulaanbaatar,2018,6.7
+Poverty Gap,Aimag center,2018,8.2
+Poverty Gap,Soum center,2018,7.0
+Poverty Gap,Rural area,2018,7.4
+Poverty Severity,National average,2018,2.7
+Poverty Severity,Urban,2018,2.8
+Poverty Severity,Rural,2018,2.4
+Poverty Severity,Western region,2018,2.8
+Poverty Severity,Khangai region,2018,2.5
+Poverty Severity,Central region,2018,2.4
+Poverty Severity,Eastern region,2018,3.7
+Poverty Severity,Ulaanbaatar,2018,2.6
+Poverty Severity,Aimag center,2018,3.2
+Poverty Severity,Soum center,2018,2.4
+Poverty Severity,Rural area,2018,2.4
+Poverty Headcount,National average,2020,27.8
+Poverty Headcount,Urban,2020,26.5
+Poverty Headcount,Rural,2020,30.5
+Poverty Headcount,Western region,2020,31.5
+Poverty Headcount,Khangai region,2020,31.4
+Poverty Headcount,Central region,2020,25.2
+Poverty Headcount,Eastern region,2020,33.3
+Poverty Headcount,Ulaanbaatar,2020,25.4
+Poverty Headcount,Aimag center,2020,29.1
+Poverty Headcount,Soum center,2020,30.5
+Poverty Headcount,Rural area,2020,30.5
+Poverty Gap,National average,2020,7.4
+Poverty Gap,Urban,2020,7.3
+Poverty Gap,Rural,2020,7.5
+Poverty Gap,Western region,2020,8.3
+Poverty Gap,Khangai region,2020,7.8
+Poverty Gap,Central region,2020,6.5
+Poverty Gap,Eastern region,2020,9.2
+Poverty Gap,Ulaanbaatar,2020,7.0
+Poverty Gap,Aimag center,2020,8.1
+Poverty Gap,Soum center,2020,7.5
+Poverty Gap,Rural area,2020,7.5
+Poverty Severity,National average,2020,2.8
+Poverty Severity,Urban,2020,2.9
+Poverty Severity,Rural,2020,2.7
+Poverty Severity,Western region,2020,3.1
+Poverty Severity,Khangai region,2020,2.8
+Poverty Severity,Central region,2020,2.4
+Poverty Severity,Eastern region,2020,3.6
+Poverty Severity,Ulaanbaatar,2020,2.8
+Poverty Severity,Aimag center,2020,3.2
+Poverty Severity,Soum center,2020,2.7
+Poverty Severity,Rural area,2020,2.7
+Poverty Headcount,National average,2022,27.1
+Poverty Headcount,Urban,2022,23.0
+Poverty Headcount,Rural,2022,35.6
+Poverty Headcount,Western region,2022,36.5
+Poverty Headcount,Khangai region,2022,33.5
+Poverty Headcount,Central region,2022,24.6
+Poverty Headcount,Eastern region,2022,35.3
+Poverty Headcount,Ulaanbaatar,2022,21.6
+Poverty Headcount,Aimag center,2022,26.1
+Poverty Headcount,Soum center,2022,30.6
+Poverty Headcount,Rural area,2022,41.2
+Poverty Gap,National average,2022,6.5
+Poverty Gap,Urban,2022,5.8
+Poverty Gap,Rural,2022,7.9
+Poverty Gap,Western region,2022,7.9
+Poverty Gap,Khangai region,2022,7.8
+Poverty Gap,Central region,2022,5.2
+Poverty Gap,Eastern region,2022,8.8
+Poverty Gap,Ulaanbaatar,2022,5.7
+Poverty Gap,Aimag center,2022,6.1
+Poverty Gap,Soum center,2022,7.0
+Poverty Gap,Rural area,2022,9.0
+Poverty Severity,National average,2022,2.3
+Poverty Severity,Urban,2022,2.1
+Poverty Severity,Rural,2022,2.6
+Poverty Severity,Western region,2022,2.6
+Poverty Severity,Khangai region,2022,2.6
+Poverty Severity,Central region,2022,1.7
+Poverty Severity,Eastern region,2022,3.2
+Poverty Severity,Ulaanbaatar,2022,2.1
+Poverty Severity,Aimag center,2022,2.1
+Poverty Severity,Soum center,2022,2.4
+Poverty Severity,Rural area,2022,2.9

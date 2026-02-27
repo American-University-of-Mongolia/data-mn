@@ -1,0 +1,33 @@
+---
+title: "Монгол Улсын эмнэлгийн ор, тоо (1989-2024)"
+publishDate: 2026-02-10
+excerpt: "Монгол Улсын эмнэлгийн орны нийт тоо 1989-2024 оны хооронд, эрүүл мэндийн үйлчилгээний дэд бүтцийн хүчин чадлыг харуулна."
+category: "Эрүүл мэнд"
+tags: ["монгол", "эрүүл мэнд", "эмнэлгийн ор", "эрүүл мэндийн тусламж", "дэд бүтэц"]
+keywords: ["монгол эмнэлгийн ор", "эрүүл мэндийн хүчин чадал", "эмнэлгийн дэд бүтэц"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-10
+dataFiles:
+  - path: "/datasets/hospital-beds-national-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/hospital-beds-national-mn.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2100_005V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Монгол Улсад **2024 онд 30,117 эмнэлгийн ор** байсан бөгөөд энэ нь 1989 оны 24,160 орноос өссөн байна.
+
+<VegaChart
+  spec="/charts/hospital-beds-national-mn.json"
+  title="Монгол Улсын эмнэлгийн ор, тоо (1989-2024)"
+/>

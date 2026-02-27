@@ -1,0 +1,31 @@
+---
+title: "Mongolia Life Expectancy at Birth, Years (1992–2024)"
+publishDate: 2026-02-26
+excerpt: "Life expectancy at birth in Mongolia rose from 62.8 years in 1992 to 71.8 years in 2024, reflecting steady improvements in public health over three decades."
+category: "Health"
+tags: ["health", "life expectancy", "demographics", "mortality", "Mongolia"]
+keywords: ["mongolia life expectancy", "life expectancy at birth", "mongolia health", "mongolia demographics", "mortality statistics"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-12-31
+dataFiles:
+  - path: "/datasets/life-expectancy-national-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/life-expectancy-national.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_0300_039V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/life-expectancy-national-en.json"
+  title="Mongolia Life Expectancy at Birth, Years (1992–2024)"
+/>

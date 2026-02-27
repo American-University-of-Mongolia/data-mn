@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын төрөхөд дундаж наслалт, нийт хүн ам, 1992-2024",
+  "data": {
+    "url": "/datasets/life-expectancy-national-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 5, "grid": false}
+    },
+    "y": {
+      "field": "дундаж_наслалт_жил",
+      "type": "quantitative",
+      "title": "Дундаж наслалт, жил",
+      "scale": {"zero": false},
+      "axis": {"format": ".1f"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "line": {"color": "#3b82f6", "strokeWidth": 2.5},
+        "color": {
+          "x1": 1, "y1": 1, "x2": 1, "y2": 0,
+          "gradient": "linear",
+          "stops": [
+            {"offset": 0, "color": "rgba(59, 130, 246, 0.01)"},
+            {"offset": 1, "color": "rgba(59, 130, 246, 0.3)"}
+          ]
+        },
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [{"name": "hover", "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}}],
+      "mark": {"type": "point", "filled": true, "color": "#3b82f6", "size": 100},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "title": "Он", "format": "d"},
+          {"field": "дундаж_наслалт_жил", "title": "Дундаж наслалт (жил)", "format": ".1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Төрөхөд дундаж наслалт хүйсээр, Монгол Улс (1992-2024)",
+  "data": {
+    "url": "/datasets/life-expectancy-by-sex-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "axis": {
+        "title": "Он",
+        "format": "d",
+        "labelAngle": 0,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "дундаж_наслалт_жил",
+      "type": "quantitative",
+      "axis": {
+        "title": "Дундаж наслалт (жил)",
+        "format": ".1f"
+      }
+    },
+    "color": {
+      "field": "хүйс",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Эрэгтэй", "Эмэгтэй"],
+        "range": ["#3b82f6", "#ec4899"]
+      },
+      "legend": {
+        "title": "Хүйс",
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "type": "quantitative",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "хүйс",
+            "type": "nominal",
+            "title": "Хүйс"
+          },
+          {
+            "field": "дундаж_наслалт_жил",
+            "type": "quantitative",
+            "title": "Дундаж наслалт (жил)",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

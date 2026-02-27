@@ -1,0 +1,31 @@
+---
+title: "School Enrollment by Education Level in Mongolia (2010-2025)"
+publishDate: 2026-02-10
+excerpt: "Number of students enrolled in educational institutions in Mongolia by education level — early childhood, general, vocational, and higher education — from 2010 to 2025."
+category: "Education"
+tags: ["mongolia", "education", "enrollment", "students", "schools", "university", "vocational"]
+keywords: ["school enrollment Mongolia", "education level", "students by level", "early childhood education", "general education", "vocational education", "higher education Mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-10
+dataFiles:
+  - path: "/datasets/school-enrollment-by-level-en.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "Download as CSV"
+  - path: "/datasets/school-enrollment-by-level.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2002_069V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/school-enrollment-by-level-en.json"
+  title="School Enrollment by Education Level in Mongolia (2010-2025)"
+/>

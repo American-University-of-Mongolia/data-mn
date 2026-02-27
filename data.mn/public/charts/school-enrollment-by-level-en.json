@@ -1,0 +1,124 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "School enrollment by education level in Mongolia (2010-2025)",
+  "data": {
+    "url": "/datasets/school-enrollment-by-level-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 1,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "students",
+      "type": "quantitative",
+      "title": "Number of Students",
+      "stack": "zero",
+      "axis": {
+        "format": ",.0f"
+      }
+    },
+    "color": {
+      "field": "level",
+      "type": "nominal",
+      "title": "Education Level",
+      "scale": {
+        "domain": [
+          "General education",
+          "Early childhood education",
+          "Higher education",
+          "Vocational education"
+        ],
+        "range": ["#3b82f6", "#f59e0b", "#10b981", "#8b5cf6"]
+      },
+      "legend": {
+        "orient": "top"
+      }
+    },
+    "order": {
+      "field": "level",
+      "sort": ["General education", "Early childhood education", "Higher education", "Vocational education"]
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "line": true,
+        "point": false
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "level",
+            "type": "nominal",
+            "title": "Level"
+          },
+          {
+            "field": "students",
+            "type": "quantitative",
+            "title": "Students",
+            "format": ",.0f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "strokeWidth": 0,
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

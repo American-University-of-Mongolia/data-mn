@@ -1,0 +1,106 @@
+type,year,production_thousand_tonnes
+Beef,1940,38.8
+Mutton and goat meat,1940,69.1
+Pork,1940,
+Beef,1950,48.7
+Mutton and goat meat,1950,76.4
+Pork,1950,
+Beef,1960,62.3
+Mutton and goat meat,1960,96.2
+Pork,1960,0.2
+Beef,1961,62.5
+Mutton and goat meat,1961,91.9
+Pork,1961,0.4
+Beef,1962,46.8
+Mutton and goat meat,1962,80.4
+Pork,1962,0.1
+Beef,1963,40.6
+Mutton and goat meat,1963,80.7
+Pork,1963,0.3
+Beef,1964,42.6
+Mutton and goat meat,1964,78.3
+Pork,1964,0.3
+Beef,1965,47.7
+Mutton and goat meat,1965,95.5
+Pork,1965,0.5
+Beef,1966,53.1
+Mutton and goat meat,1966,93.1
+Pork,1966,0.5
+Beef,1967,57.8
+Mutton and goat meat,1967,98.4
+Pork,1967,0.3
+Beef,1968,52.0
+Mutton and goat meat,1968,86.5
+Pork,1968,0.4
+Beef,1969,54.2
+Mutton and goat meat,1969,92.6
+Pork,1969,0.4
+Beef,1970,51.7
+Mutton and goat meat,1970,95.8
+Pork,1970,0.3
+Beef,1971,51.5
+Mutton and goat meat,1971,94.4
+Pork,1971,0.4
+Beef,1972,65.1
+Mutton and goat meat,1972,99.6
+Pork,1972,0.4
+Beef,1973,55.7
+Mutton and goat meat,1973,98.9
+Pork,1973,0.5
+Beef,1974,59.1
+Mutton and goat meat,1974,116.2
+Pork,1974,0.5
+Beef,1975,60.6
+Mutton and goat meat,1975,132.1
+Pork,1975,0.6
+Beef,1976,68.2
+Mutton and goat meat,1976,116.9
+Pork,1976,0.5
+Beef,1977,62.5
+Mutton and goat meat,1977,96.7
+Pork,1977,0.4
+Beef,1978,70.7
+Mutton and goat meat,1978,120.6
+Pork,1978,0.6
+Beef,1979,75.2
+Mutton and goat meat,1979,118.1
+Pork,1979,0.9
+Beef,1980,70.6
+Mutton and goat meat,1980,115.8
+Pork,1980,1.0
+Beef,1981,69.9
+Mutton and goat meat,1981,126.8
+Pork,1981,1.4
+Beef,1982,65.5
+Mutton and goat meat,1982,132.0
+Pork,1982,1.3
+Beef,1983,68.1
+Mutton and goat meat,1983,123.7
+Pork,1983,1.5
+Beef,1984,68.2
+Mutton and goat meat,1984,126.3
+Pork,1984,1.9
+Beef,1985,68.1
+Mutton and goat meat,1985,116.2
+Pork,1985,2.2
+Beef,1986,75.3
+Mutton and goat meat,1986,132.8
+Pork,1986,2.4
+Beef,1987,72.7
+Mutton and goat meat,1987,120.8
+Pork,1987,3.1
+Beef,1988,73.3
+Mutton and goat meat,1988,112.4
+Pork,1988,4.0
+Beef,1989,72.8
+Mutton and goat meat,1989,121.9
+Pork,1989,5.5
+Beef,1990,66.2
+Mutton and goat meat,1990,132.3
+Pork,1990,7.9
+Beef,1991,83.8
+Mutton and goat meat,1991,135.9
+Pork,1991,3.8
+Beef,1992,75.7
+Mutton and goat meat,1992,116.3
+Pork,1992,1.8

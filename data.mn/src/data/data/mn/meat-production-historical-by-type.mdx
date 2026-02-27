@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын мах үйлдвэрлэл төрлөөр, мянган тонн (1940-1992)"
+publishDate: 2026-02-10
+excerpt: "Монгол Улсын түүхэн махны үйлдвэрлэлийн өгөгдөл: үхрийн мах, хонь ямааны мах, гахайн мах 1940-1992 он."
+category: "Хөдөө аж ахуй"
+tags: ["монгол", "хөдөө аж ахуй", "мах", "үйлдвэрлэл", "түүхэн", "үхрийн мах", "хонины мах", "гахайн мах"]
+keywords: ["монгол махны үйлдвэрлэл", "түүхэн хөдөө аж ахуй", "үхэр хонь гахай"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-10
+dataFiles:
+  - path: "/datasets/meat-production-historical-by-type-all-mn.csv"
+    format: "csv"
+    size: "4 KB"
+    description: "Татаж авах CSV"
+  - path: "/datasets/meat-production-historical-by-type-mn.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0100_01T010.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/meat-production-historical-by-type-mn.json"
+  title="Монгол Улсын мах үйлдвэрлэл төрлөөр, мянган тонн (1940-1992)"
+/>

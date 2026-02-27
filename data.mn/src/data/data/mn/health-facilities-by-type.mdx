@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын эрүүл мэндийн байгууллага төрлөөр (2024)"
+publishDate: 2026-02-26
+excerpt: "2024 онд Монгол Улсад 4,914 эрүүл мэндийн байгууллага бүртгэлтэй байсан бөгөөд хувийн эмийн сан (2,117) болон үүдэн хувийн эмнэлэг (1,588) нийт байгууллагын олонхийг эзэлж байна."
+category: "Эрүүл мэнд"
+tags: ["эрүүл мэнд", "эмнэлэг", "эмийн сан", "эрүүл мэндийн төв", "Монгол"]
+keywords: ["монгол эрүүл мэндийн байгууллага", "эмнэлгийн тоо", "эрүүл мэндийн дэд бүтэц", "хувийн эмнэлэг"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-12-31
+dataFiles:
+  - path: "/datasets/health-facilities-by-type-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/health-facilities-by-type.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_2100_008V3.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/health-facilities-by-type-mn.json"
+  title="Монгол Улсын эрүүл мэндийн байгууллага төрлөөр (2024)"
+/>

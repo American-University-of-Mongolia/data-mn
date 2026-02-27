@@ -1,0 +1,33 @@
+---
+title: "Health Facilities by Aimag, Mongolia (2024)"
+publishDate: 2026-02-26
+excerpt: "Mongolia's 22 aimags and the capital Ulaanbaatar together had 4,914 health facilities in 2024, with Ulaanbaatar accounting for the largest concentration."
+category: "Health"
+tags: ["mongolia", "health", "aimag", "health infrastructure", "regional"]
+keywords: ["mongolia health facilities by aimag", "aimag health infrastructure", "regional health facilities mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-12-31
+dataFiles:
+  - path: "/datasets/health-facilities-by-aimag-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/health-facilities-by-aimag.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_2100_008V3.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Mongolia's 22 aimags and the capital Ulaanbaatar together had 4,914 health facilities in 2024, with Ulaanbaatar accounting for the largest concentration.
+
+<VegaChart
+  spec="/charts/health-facilities-by-aimag-en.json"
+  title="Health Facilities by Aimag, Mongolia (2024)"
+/>

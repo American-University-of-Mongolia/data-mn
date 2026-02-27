@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Health facilities by aimag, Mongolia 2024",
+  "data": {
+    "url": "/datasets/health-facilities-by-aimag-en.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [{"name": "hover", "select": {"type": "point", "on": "pointerover", "clear": "pointerout"}}],
+  "mark": {"type": "bar", "cursor": "pointer", "cornerRadiusEnd": 4},
+  "encoding": {
+    "y": {
+      "field": "aimag",
+      "type": "nominal",
+      "title": "Aimag / City",
+      "sort": "-x",
+      "axis": {"labelLimit": 200}
+    },
+    "x": {
+      "field": "facilities_count",
+      "type": "quantitative",
+      "title": "Number of Facilities",
+      "axis": {"format": ",.0f", "grid": true}
+    },
+    "color": {
+      "value": "#4c78a8"
+    },
+    "opacity": {"condition": {"param": "hover", "empty": true, "value": 1}, "value": 0.7},
+    "tooltip": [
+      {"field": "aimag", "title": "Aimag"},
+      {"field": "facilities_count", "title": "Facilities", "format": ","}
+    ]
+  },
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14},
+    "view": {"stroke": "transparent"}
+  }
+}

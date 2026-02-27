@@ -1,0 +1,31 @@
+---
+title: "Mongolia Heating Energy Balance, Thousand Gcal (1995-2024)"
+publishDate: 2026-02-10
+excerpt: "Mongolia's heating energy balance from 1995 to 2024. Gross generation rose from 6,832 to 17,383 thousand Gcal, driven by rapid urbanization and new residential construction."
+category: "Infrastructure"
+tags: ["mongolia", "heating", "energy", "infrastructure", "thermal"]
+keywords: ["Mongolia heating energy", "thermal energy", "heating production", "district heating", "Gcal"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-10
+dataFiles:
+  - path: "/datasets/heating-energy-en.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "Download as CSV"
+  - path: "/datasets/heating-energy.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1100_011V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/heating-energy-en.json"
+  title="Mongolia Heating Energy Balance, Thousand Gcal (1995-2024)"
+/>

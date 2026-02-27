@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын ядуурлын хамралтын хүрээ байршлаар (Хот, Хөдөө), 1995-2020",
+  "data": {
+    "url": "/datasets/poverty-rate-urban-rural-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 5, "grid": false}
+    },
+    "y": {
+      "field": "ядуурлын_түвшин",
+      "type": "quantitative",
+      "title": "Ядуурлын түвшин (%)",
+      "axis": {"format": ".1f"}
+    },
+    "color": {
+      "field": "байршил",
+      "type": "nominal",
+      "title": "Байршил",
+      "scale": {
+        "domain": ["Хот", "Хөдөө"],
+        "range": ["#3b82f6", "#f59e0b"]
+      },
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "он", "title": "Он", "format": "d"},
+          {"field": "байршил", "title": "Байршил"},
+          {"field": "ядуурлын_түвшин", "title": "Ядуурлын түвшин (%)", "format": ".1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

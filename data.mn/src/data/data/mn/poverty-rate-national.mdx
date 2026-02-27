@@ -1,0 +1,33 @@
+---
+title: "Монгол Улсын ядуурлын түвшин, % (1995–2020)"
+publishDate: 2026-02-27
+excerpt: "Монгол Улсын ядуурлын түвшин 2003 онд 36.1%-д хүрч, 2020 он гэхэд 27.8% болж буурсан."
+category: "Өрх ба орлого"
+tags: ["ядуурал", "нийгэм", "тэгш бус байдал"]
+keywords: ["монгол ядуурлын түвшин", "ядуурлын хамралтын хүрээ монгол", "монгол тэгш бус байдал", "үндэсний ядуурлын статистик"]
+author: "Dlgvn"
+dataVersion: 1
+dataDate: 2020-12-31
+dataFiles:
+  - path: "/datasets/poverty-rate-national-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/poverty-rate-national.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel татах"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://www.1212.mn"
+  tableId: "DT_NSO_1900_007V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Нийт хүн амын эзлэх хувиар илэрхийлсэн ядуурлын түвшин, 1995–2020 он.
+
+<VegaChart
+  spec="/charts/poverty-rate-national-mn.json"
+  title="Монгол Улсын ядуурлын түвшин, % (1995–2020)"
+/>

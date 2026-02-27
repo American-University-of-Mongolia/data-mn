@@ -1,0 +1,33 @@
+---
+title: "Mongolia Total Meat Production, Tonnes (2010-2024)"
+publishDate: 2026-02-10
+excerpt: "Total meat production in Mongolia from 2010 to 2024, measured in tonnes."
+category: "Agriculture"
+tags: ["mongolia", "agriculture", "meat", "production", "livestock"]
+keywords: ["mongolia meat production", "meat output", "livestock production"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-10
+dataFiles:
+  - path: "/datasets/meat-production-total-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/meat-production-total-en.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1001_041V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Mongolia produced **744,516 tonnes** of meat in 2024, up from 241,050 tonnes in 2010.
+
+<VegaChart
+  spec="/charts/meat-production-total-en.json"
+  title="Mongolia Total Meat Production, Tonnes (2010-2024)"
+/>

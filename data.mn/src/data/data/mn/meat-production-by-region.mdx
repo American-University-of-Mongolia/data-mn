@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын мах үйлдвэрлэл бүсээр, тонн (2010-2024)"
+publishDate: 2026-02-10
+excerpt: "Монгол Улсын 5 гол бүсийн жилийн мах үйлдвэрлэлийн өгөгдөл 2010-2024, тонноор."
+category: "Хөдөө аж ахуй"
+tags: ["монгол", "хөдөө аж ахуй", "мах", "үйлдвэрлэл", "бүс нутаг", "мал аж ахуй"]
+keywords: ["монгол мах үйлдвэрлэл", "бүсийн үйлдвэрлэл", "мал аж ахуй"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-10
+dataFiles:
+  - path: "/datasets/meat-production-by-region-mn.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "Татаж авах CSV"
+  - path: "/datasets/meat-production-by-region-mn.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Улсын Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1001_041V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/meat-production-by-region-mn.json"
+  title="Монгол Улсын мах үйлдвэрлэл бүсээр, тонн (2010-2024)"
+/>

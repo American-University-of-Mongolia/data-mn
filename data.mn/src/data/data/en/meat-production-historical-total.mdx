@@ -1,0 +1,45 @@
+---
+title: "Mongolia Historical Meat Production, Thousand Tonnes (1940-1992)"
+publishDate: 2026-02-10
+excerpt: "Total meat production in Mongolia from 1940 to 1992, measured in slaughter weight (thousand tonnes)."
+category: "Agriculture"
+tags:
+  - mongolia
+  - agriculture
+  - meat
+  - production
+  - historical
+  - livestock
+keywords:
+  - mongolia meat production
+  - historical agriculture
+  - livestock slaughter
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-10
+dataFiles:
+  - path: "/datasets/meat-production-historical-total-en.csv"
+    format: "csv"
+    size: "417B"
+    description: "download as csv"
+  - path: "/datasets/meat-production-historical-total.xlsx"
+    format: "xlsx"
+    size: "5.4K"
+    description: "open in excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0100_01T010.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+import DataDownload from '~/components/ui/DataDownload.astro';
+
+Total meat production in Mongolia from 1940 to 1992, measured in slaughter weight (thousand tonnes).
+
+<DataDownload files={frontmatter.dataFiles} />
+
+<VegaChart
+  spec="/charts/meat-production-historical-total-en.json"
+  title="Mongolia Historical Meat Production, Thousand Tonnes (1940-1992)"
+/>

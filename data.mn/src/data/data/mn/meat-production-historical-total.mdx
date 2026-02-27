@@ -1,0 +1,45 @@
+---
+title: "Монгол Улсын мах үйлдвэрлэлийн түүхэн мэдээ, Мянган тонн (1940-1992)"
+publishDate: 2026-02-10
+excerpt: "Монгол Улсын нийт мах үйлдвэрлэл 1940-1992 онд, нядалгааны жингээр (мянган тонн)."
+category: "Хөдөө аж ахуй"
+tags:
+  - монгол
+  - хөдөө аж ахуй
+  - мах
+  - үйлдвэрлэл
+  - түүхэн
+  - мал аж ахуй
+keywords:
+  - монгол мах үйлдвэрлэл
+  - түүхэн хөдөө аж ахуй
+  - мал нядалгаа
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-10
+dataFiles:
+  - path: "/datasets/meat-production-historical-total-mn.csv"
+    format: "csv"
+    size: "433B"
+    description: "csv татах"
+  - path: "/datasets/meat-production-historical-total-mn.xlsx"
+    format: "xlsx"
+    size: "5.4K"
+    description: "excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0100_01T010.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+import DataDownload from '~/components/ui/DataDownload.astro';
+
+Монгол Улсын нийт мах үйлдвэрлэл 1940-1992 онд, нядалгааны жингээр (мянган тонн).
+
+<DataDownload files={frontmatter.dataFiles} title="Өгөгдөл татах" />
+
+<VegaChart
+  spec="/charts/meat-production-historical-total-mn.json"
+  title="Монгол Улсын мах үйлдвэрлэлийн түүхэн мэдээ, Мянган тонн (1940-1992)"
+/>

@@ -1,0 +1,31 @@
+---
+title: "Mongolia Electricity Balance: Generation, Imports, and Consumption (1989-2024)"
+publishDate: 2026-02-10
+excerpt: "Annual electricity generation, imports, and consumption in Mongolia in million kWh from 1989 to 2024, showing the growing gap between domestic production and demand."
+category: "Infrastructure"
+tags: ["mongolia", "electricity", "energy", "infrastructure", "power", "generation", "imports"]
+keywords: ["Mongolia electricity", "power generation", "electricity imports", "energy consumption", "electricity balance", "infrastructure Mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-10
+dataFiles:
+  - path: "/datasets/electricity-balance-en.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "Download as CSV"
+  - path: "/datasets/electricity-balance.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1100_009V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/electricity-balance-en.json"
+  title="Mongolia Electricity Balance (1989-2024)"
+/>

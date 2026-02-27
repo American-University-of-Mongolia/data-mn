@@ -1,0 +1,33 @@
+---
+title: "Total Health Facilities in Mongolia (2015–2024)"
+publishDate: 2026-02-26
+excerpt: "Mongolia had 4,914 registered health facilities in 2024, up from 3,244 in 2015, reflecting a 52% increase over the decade."
+category: "Health"
+tags: ["mongolia", "health", "hospitals", "health infrastructure"]
+keywords: ["mongolia health facilities", "total health institutions", "hospital count mongolia", "health infrastructure mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-12-31
+dataFiles:
+  - path: "/datasets/health-facilities-national-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/health-facilities-national.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_2100_008V3.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Mongolia had 4,914 registered health facilities in 2024, up from 3,244 in 2015, reflecting a 52% increase over the decade.
+
+<VegaChart
+  spec="/charts/health-facilities-national-en.json"
+  title="Total Health Facilities in Mongolia (2015–2024)"
+/>

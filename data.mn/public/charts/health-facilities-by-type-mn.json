@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын эрүүл мэндийн байгууллага төрлөөр (2024)",
+  "data": {
+    "url": "/datasets/health-facilities-by-type-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type": "bar", "color": "#10b981", "cornerRadiusEnd": 4},
+  "encoding": {
+    "x": {
+      "field": "тоо",
+      "type": "quantitative",
+      "title": "Байгууллагын тоо",
+      "axis": {"format": ",.0f"},
+      "scale": {"zero": true}
+    },
+    "y": {
+      "field": "байгууллагын_төрөл",
+      "type": "nominal",
+      "title": "Байгууллагын төрөл",
+      "sort": "-x",
+      "axis": {"labelLimit": 300}
+    },
+    "tooltip": [
+      {"field": "байгууллагын_төрөл", "title": "Байгууллагын төрөл"},
+      {"field": "тоо", "title": "Байгууллагын тоо", "format": ",.0f"}
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

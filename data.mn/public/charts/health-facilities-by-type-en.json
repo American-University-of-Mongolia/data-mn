@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Health Facilities by Type, Mongolia (2024)",
+  "data": {
+    "url": "/datasets/health-facilities-by-type-en.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type": "bar", "color": "#10b981", "cornerRadiusEnd": 4},
+  "encoding": {
+    "x": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Number of Facilities",
+      "axis": {"format": ",.0f"},
+      "scale": {"zero": true}
+    },
+    "y": {
+      "field": "facility_type",
+      "type": "nominal",
+      "title": "Facility Type",
+      "sort": "-x",
+      "axis": {"labelLimit": 250}
+    },
+    "tooltip": [
+      {"field": "facility_type", "title": "Facility Type"},
+      {"field": "count", "title": "Number of Facilities", "format": ",.0f"}
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

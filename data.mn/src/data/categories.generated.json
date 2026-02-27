@@ -10,6 +10,11 @@
     "count": 12
   },
   {
+    "en": "Agriculture",
+    "mn": "Хөдөө аж ахуй",
+    "count": 8
+  },
+  {
     "en": "Demographics",
     "mn": "Хүн ам зүй",
     "count": 8
@@ -18,11 +23,6 @@
     "en": "Prices & Inflation",
     "mn": "Үнэ ба инфляци",
     "count": 7
-  },
-  {
-    "en": "Agriculture",
-    "mn": "Хөдөө аж ахуй",
-    "count": 5
   },
   {
     "en": "Trade",
@@ -42,7 +42,7 @@
   {
     "en": "Education",
     "mn": "Боловсрол",
-    "count": 2
+    "count": 3
   },
   {
     "en": "Household & Income",
@@ -52,6 +52,11 @@
   {
     "en": "Employment",
     "mn": "Хөдөлмөр эрхлэлт",
+    "count": 1
+  },
+  {
+    "en": "Health",
+    "mn": "Эрүүл мэнд",
     "count": 1
   }
 ]

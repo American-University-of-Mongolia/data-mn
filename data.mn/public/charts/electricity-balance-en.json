@@ -1,0 +1,114 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia electricity balance: generation, imports, and consumption (1989-2024)",
+  "data": {
+    "url": "/datasets/electricity-balance-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 1,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "gwh",
+      "type": "quantitative",
+      "title": "Million kWh",
+      "axis": {
+        "format": ",.0f"
+      }
+    },
+    "color": {
+      "field": "indicator",
+      "type": "nominal",
+      "title": "Indicator",
+      "scale": {
+        "domain": ["Generation", "Consumption", "Imports"],
+        "range": ["#3b82f6", "#f59e0b", "#10b981"]
+      },
+      "legend": {
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "indicator",
+            "type": "nominal",
+            "title": "Indicator"
+          },
+          {
+            "field": "gwh",
+            "type": "quantitative",
+            "title": "Million kWh",
+            "format": ",.1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "strokeWidth": 0,
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

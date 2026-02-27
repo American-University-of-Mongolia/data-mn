@@ -45,6 +45,11 @@
     "count": 3
   },
   {
+    "en": "Health",
+    "mn": "Эрүүл мэнд",
+    "count": 3
+  },
+  {
     "en": "Household & Income",
     "mn": "Өрх ба орлого",
     "count": 2
@@ -52,11 +57,6 @@
   {
     "en": "Employment",
     "mn": "Хөдөлмөр эрхлэлт",
-    "count": 1
-  },
-  {
-    "en": "Health",
-    "mn": "Эрүүл мэнд",
     "count": 1
   }
 ]

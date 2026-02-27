@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын төрөхөд дундаж наслалт, жил (1992–2024)"
+publishDate: 2026-02-26
+excerpt: "Монгол Улсад төрөхөд дундаж наслалт 1992 оны 62.8 жилээс 2024 онд 71.8 жил болж өсөн, гурван арван жилийн хугацаанд нийгмийн эрүүл мэндийн тогтмол дэвшлийг харуулж байна."
+category: "Эрүүл мэнд"
+tags: ["эрүүл мэнд", "дундаж наслалт", "хүн ам зүй", "нас баралт", "Монгол"]
+keywords: ["монгол дундаж наслалт", "төрөхөд наслалт", "монгол эрүүл мэнд", "хүн ам зүйн статистик", "нас баралтын үзүүлэлт"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-12-31
+dataFiles:
+  - path: "/datasets/life-expectancy-national-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/life-expectancy-national.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_0300_039V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/life-expectancy-national-mn.json"
+  title="Монгол Улсын төрөхөд дундаж наслалт, жил (1992–2024)"
+/>

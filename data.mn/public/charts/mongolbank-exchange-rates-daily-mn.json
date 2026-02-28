@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монголбанкаас нийтэлсэн USD, EUR, CNY, RUB, JPY, KRW валютуудын өдрийн ханш. Эхний өдрийн утгыг 100 болгон индексжүүлсэн.",
+  "data": {
+    "url": "/datasets/mongolbank-exchange-rates-daily-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "joinaggregate": [{"op": "min", "field": "ханш_төгрөг", "as": "base_rate"}],
+      "groupby": ["валютын_код"]
+    },
+    {
+      "calculate": "datum['ханш_төгрөг'] / datum.base_rate * 100",
+      "as": "indexed_rate"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "title": "Огноо",
+      "axis": {"format": "%m/%Y", "labelAngle": -45, "grid": false}
+    },
+    "y": {
+      "field": "indexed_rate",
+      "type": "quantitative",
+      "title": "Индекс (эхний өдөр = 100)",
+      "scale": {"zero": false},
+      "axis": {"format": ".0f"}
+    },
+    "color": {
+      "field": "валютын_код",
+      "type": "nominal",
+      "title": "Валют",
+      "scale": {
+        "domain": ["USD", "EUR", "CNY", "RUB", "JPY", "KRW"],
+        "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2", "#54a24b", "#eeca3b"]
+      },
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "огноо", "type": "temporal", "title": "Огноо", "format": "%Y-%m-%d"},
+          {"field": "валютын_код", "type": "nominal", "title": "Валют"},
+          {"field": "валютын_нэр", "type": "nominal", "title": "Нэр"},
+          {"field": "ханш_төгрөг", "type": "quantitative", "title": "Ханш (₮)", "format": ",.2f"},
+          {"field": "indexed_rate", "type": "quantitative", "title": "Индекс", "format": ".1f"}
+        ]
+      }
+    }
+  ],
+  "autosize": {"type": "fit", "contains": "padding"},
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

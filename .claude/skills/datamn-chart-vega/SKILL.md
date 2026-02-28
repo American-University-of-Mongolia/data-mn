@@ -1,7 +1,8 @@
 ---
 name: datamn-chart-vega
-description: Create and validate Vega-Lite chart specifications for data.mn. Use when creating charts, visualizations, or data graphics. Includes templates for area charts, line charts, bar charts, population pyramids, and stacked areas with brand guidelines.
+description: "Create and validate Vega-Lite chart specifications for data.mn. Use when creating charts, visualizations, or data graphics. Includes templates for area charts, line charts, bar charts, population pyramids, and stacked areas with brand guidelines."
 ---
+
 
 # Vega-Lite Charts Skill
 

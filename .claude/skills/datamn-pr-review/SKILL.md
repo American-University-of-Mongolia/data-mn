@@ -1,3 +1,8 @@
+---
+name: datamn-pr-review
+description: "Validate and optionally merge/deploy PRs for data.mn. Checks only datasets added/modified in the PR."
+---
+
 # datamn-pr-review
 
 Validate and optionally merge/deploy PRs for data.mn. Checks only datasets added/modified in the PR.

@@ -1,11 +1,8 @@
 ---
 name: datamn-source-nso
 description: "Search and browse the full 1212.mn API catalog (1135+ statistical tables). Use this skill to: list all available NSO data, find specific datasets by keyword, check what tables exist for a topic, get table metadata/structure, or download data to CSV. Covers population, GDP, inflation, unemployment, wages, trade, livestock, education, health, crime, housing prices, and all other official Mongolian government statistics."
-dependencies:
-  - python3
-  - python3-requests
-  - sqlite3
 ---
+
 
 # NSO 1212.mn Data Source Skill
 

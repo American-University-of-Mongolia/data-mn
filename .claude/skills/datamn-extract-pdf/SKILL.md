@@ -1,11 +1,8 @@
 ---
 name: datamn-extract-pdf
-description: Extract tabular data from PDF documents. Use when downloading and parsing PDF reports from government agencies like MRPAM, ministries, or when data is only available in PDF format. Uses Playwright MCP for navigation and pdfplumber for extraction.
-dependencies:
-  - python3
-  - pdfplumber
-  - requests
+description: "Extract tabular data from PDF documents. Use when downloading and parsing PDF reports from government agencies like MRPAM, ministries, or when data is only available in PDF format. Uses Playwright MCP for navigation and pdfplumber for extraction."
 ---
+
 
 # PDF Data Extraction Skill
 

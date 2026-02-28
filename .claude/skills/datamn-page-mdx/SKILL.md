@@ -1,7 +1,8 @@
 ---
 name: datamn-page-mdx
-description: Generate bilingual MDX data pages for data.mn. Use when creating dataset pages with frontmatter, VegaChart components, and DataDownload links. Creates both EN and MN versions in a single pass for consistency.
+description: "Generate bilingual MDX data pages for data.mn. Use when creating dataset pages with frontmatter, VegaChart components, and DataDownload links. Creates both EN and MN versions in a single pass for consistency."
 ---
+
 
 # MDX Page Generation Skill
 

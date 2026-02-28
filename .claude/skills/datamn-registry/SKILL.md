@@ -1,10 +1,8 @@
 ---
 name: datamn-registry
-description: Query and manage the data.mn dataset registry. Use when checking dataset status, listing sources, viewing dataset details, registering new datasets, or tracking data versions.
-dependencies:
-  - python3
-  - sqlite3
+description: "Query and manage the data.mn dataset registry. Use when checking dataset status, listing sources, viewing dataset details, registering new datasets, or tracking data versions."
 ---
+
 
 # Data.mn Registry Skill
 

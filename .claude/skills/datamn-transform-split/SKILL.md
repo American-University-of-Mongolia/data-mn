@@ -1,11 +1,8 @@
 ---
 name: datamn-transform-split
-description: Transform and split multi-dimensional datasets into user-friendly filtered views. Use when filtering parent data for splits, generating CSV/XLSX exports, or processing Statista-style dataset splits.
-dependencies:
-  - python3
-  - pandas
-  - openpyxl
+description: "Transform and split multi-dimensional datasets into user-friendly filtered views. Use when filtering parent data for splits, generating CSV/XLSX exports, or processing Statista-style dataset splits."
 ---
+
 
 # Data Transformation & Splitting Skill
 

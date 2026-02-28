@@ -1,0 +1,127 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia key lending and deposit reference rates",
+  "data": {
+    "url": "/datasets/mongolbank-reference-rates-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": "Date",
+      "axis": {
+        "grid": false,
+        "labelAngle": -45
+      }
+    },
+    "y": {
+      "field": "Rate (%)",
+      "type": "quantitative",
+      "title": "Interest Rate (%)",
+      "axis": {
+        "format": ".1f",
+        "grid": true,
+        "gridOpacity": 0.3
+      },
+      "scale": {
+        "zero": false
+      }
+    },
+    "color": {
+      "field": "Rate Type",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Lending Rate (MNT)",
+          "Deposit Rate (MNT)",
+          "Deposit Rate (FX)"
+        ],
+        "range": [
+          "#ef4444",
+          "#3b82f6",
+          "#10b981"
+        ]
+      },
+      "legend": {
+        "title": "Rate Type",
+        "orient": "top",
+        "columns": 3
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Rate Type",
+            "type": "nominal",
+            "title": "Rate Type"
+          },
+          {
+            "field": "Date",
+            "type": "temporal",
+            "title": "Date",
+            "format": "%Y-%m"
+          },
+          {
+            "field": "Rate (%)",
+            "type": "quantitative",
+            "title": "Interest Rate (%)",
+            "format": ".2f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

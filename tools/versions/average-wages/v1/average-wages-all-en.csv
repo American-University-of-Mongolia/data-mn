@@ -1,0 +1,529 @@
+Sector,Year,Salary (MNT 1000s)
+National average,2001,65.2
+"Agriculture, forestry, fishing and hunting",2001,50.3
+Mining and quarrying,2001,57.3
+Manufacturing,2001,66.6
+"Electricity, gas, steam and air conditioning supply",2001,77.5
+"Water supply, sewerage, waste management and remedation activities",2001,
+Construction,2001,73.7
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2001,54.9
+Transportation and storage,2001,84.1
+Accomodation and food service activities,2001,70.8
+Information and communication,2001,
+Financial and insurance activities,2001,59.2
+Real estate activities,2001,58.7
+"Professional, scientific and technical activities",2001,
+Administrative and support service activities,2001,
+Public administration and defense; compulsory social security,2001,59.3
+Education,2001,60.8
+Human health and social work activities,2001,48.4
+"Arts, entertainment and recreation",2001,
+Other service activities,2001,47.9
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2001,0.0
+Activities of extraterritorial organizations and bodies,2001,
+National average,2002,71.3
+"Agriculture, forestry, fishing and hunting",2002,46.2
+Mining and quarrying,2002,77.4
+Manufacturing,2002,68.7
+"Electricity, gas, steam and air conditioning supply",2002,81.0
+"Water supply, sewerage, waste management and remedation activities",2002,
+Construction,2002,90.6
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2002,57.6
+Transportation and storage,2002,90.9
+Accomodation and food service activities,2002,80.4
+Information and communication,2002,
+Financial and insurance activities,2002,83.2
+Real estate activities,2002,55.3
+"Professional, scientific and technical activities",2002,
+Administrative and support service activities,2002,
+Public administration and defense; compulsory social security,2002,66.5
+Education,2002,64.5
+Human health and social work activities,2002,51.5
+"Arts, entertainment and recreation",2002,
+Other service activities,2002,50.7
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2002,
+Activities of extraterritorial organizations and bodies,2002,
+National average,2003,81.5
+"Agriculture, forestry, fishing and hunting",2003,48.0
+Mining and quarrying,2003,88.7
+Manufacturing,2003,82.7
+"Electricity, gas, steam and air conditioning supply",2003,97.1
+"Water supply, sewerage, waste management and remedation activities",2003,
+Construction,2003,85.9
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2003,64.6
+Transportation and storage,2003,106.1
+Accomodation and food service activities,2003,88.0
+Information and communication,2003,
+Financial and insurance activities,2003,103.8
+Real estate activities,2003,65.3
+"Professional, scientific and technical activities",2003,
+Administrative and support service activities,2003,
+Public administration and defense; compulsory social security,2003,78.2
+Education,2003,77.5
+Human health and social work activities,2003,60.8
+"Arts, entertainment and recreation",2003,
+Other service activities,2003,53.7
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2003,
+Activities of extraterritorial organizations and bodies,2003,
+National average,2004,93.1
+"Agriculture, forestry, fishing and hunting",2004,52.6
+Mining and quarrying,2004,89.7
+Manufacturing,2004,92.8
+"Electricity, gas, steam and air conditioning supply",2004,111.8
+"Water supply, sewerage, waste management and remedation activities",2004,
+Construction,2004,99.6
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2004,73.8
+Transportation and storage,2004,109.0
+Accomodation and food service activities,2004,100.4
+Information and communication,2004,
+Financial and insurance activities,2004,125.4
+Real estate activities,2004,66.0
+"Professional, scientific and technical activities",2004,
+Administrative and support service activities,2004,
+Public administration and defense; compulsory social security,2004,94.4
+Education,2004,88.2
+Human health and social work activities,2004,79.9
+"Arts, entertainment and recreation",2004,
+Other service activities,2004,62.4
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2004,
+Activities of extraterritorial organizations and bodies,2004,
+National average,2005,101.2
+"Agriculture, forestry, fishing and hunting",2005,52.8
+Mining and quarrying,2005,122.8
+Manufacturing,2005,100.5
+"Electricity, gas, steam and air conditioning supply",2005,119.6
+"Water supply, sewerage, waste management and remedation activities",2005,
+Construction,2005,110.9
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2005,73.0
+Transportation and storage,2005,112.4
+Accomodation and food service activities,2005,116.1
+Information and communication,2005,
+Financial and insurance activities,2005,163.9
+Real estate activities,2005,68.3
+"Professional, scientific and technical activities",2005,
+Administrative and support service activities,2005,
+Public administration and defense; compulsory social security,2005,106.2
+Education,2005,92.8
+Human health and social work activities,2005,84.6
+"Arts, entertainment and recreation",2005,
+Other service activities,2005,68.4
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2005,
+Activities of extraterritorial organizations and bodies,2005,
+National average,2006,127.7
+"Agriculture, forestry, fishing and hunting",2006,72.6
+Mining and quarrying,2006,147.7
+Manufacturing,2006,129.4
+"Electricity, gas, steam and air conditioning supply",2006,139.3
+"Water supply, sewerage, waste management and remedation activities",2006,
+Construction,2006,137.1
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2006,84.0
+Transportation and storage,2006,130.8
+Accomodation and food service activities,2006,122.8
+Information and communication,2006,
+Financial and insurance activities,2006,265.5
+Real estate activities,2006,93.0
+"Professional, scientific and technical activities",2006,
+Administrative and support service activities,2006,
+Public administration and defense; compulsory social security,2006,140.8
+Education,2006,105.2
+Human health and social work activities,2006,120.1
+"Arts, entertainment and recreation",2006,
+Other service activities,2006,91.3
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2006,
+Activities of extraterritorial organizations and bodies,2006,
+National average,2007,173.0
+"Agriculture, forestry, fishing and hunting",2007,90.5
+Mining and quarrying,2007,219.7
+Manufacturing,2007,160.2
+"Electricity, gas, steam and air conditioning supply",2007,165.7
+"Water supply, sewerage, waste management and remedation activities",2007,
+Construction,2007,167.7
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2007,123.1
+Transportation and storage,2007,174.1
+Accomodation and food service activities,2007,153.2
+Information and communication,2007,
+Financial and insurance activities,2007,361.9
+Real estate activities,2007,132.4
+"Professional, scientific and technical activities",2007,
+Administrative and support service activities,2007,
+Public administration and defense; compulsory social security,2007,194.0
+Education,2007,174.3
+Human health and social work activities,2007,166.0
+"Arts, entertainment and recreation",2007,
+Other service activities,2007,147.1
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2007,
+Activities of extraterritorial organizations and bodies,2007,
+National average,2008,274.2
+"Agriculture, forestry, fishing and hunting",2008,158.1
+Mining and quarrying,2008,328.6
+Manufacturing,2008,268.0
+"Electricity, gas, steam and air conditioning supply",2008,240.9
+"Water supply, sewerage, waste management and remedation activities",2008,
+Construction,2008,223.2
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2008,193.8
+Transportation and storage,2008,255.6
+Accomodation and food service activities,2008,193.2
+Information and communication,2008,
+Financial and insurance activities,2008,471.4
+Real estate activities,2008,251.7
+"Professional, scientific and technical activities",2008,
+Administrative and support service activities,2008,
+Public administration and defense; compulsory social security,2008,327.3
+Education,2008,289.2
+Human health and social work activities,2008,295.8
+"Arts, entertainment and recreation",2008,
+Other service activities,2008,213.9
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2008,
+Activities of extraterritorial organizations and bodies,2008,
+National average,2009,300.5
+"Agriculture, forestry, fishing and hunting",2009,174.6
+Mining and quarrying,2009,405.4
+Manufacturing,2009,271.8
+"Electricity, gas, steam and air conditioning supply",2009,296.0
+"Water supply, sewerage, waste management and remedation activities",2009,
+Construction,2009,234.8
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2009,214.3
+Transportation and storage,2009,294.6
+Accomodation and food service activities,2009,239.7
+Information and communication,2009,
+Financial and insurance activities,2009,599.9
+Real estate activities,2009,264.7
+"Professional, scientific and technical activities",2009,
+Administrative and support service activities,2009,
+Public administration and defense; compulsory social security,2009,332.0
+Education,2009,297.3
+Human health and social work activities,2009,298.5
+"Arts, entertainment and recreation",2009,
+Other service activities,2009,264.9
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2009,
+Activities of extraterritorial organizations and bodies,2009,148.8
+National average,2010,341.5
+"Agriculture, forestry, fishing and hunting",2010,172.5
+Mining and quarrying,2010,572.2
+Manufacturing,2010,326.2
+"Electricity, gas, steam and air conditioning supply",2010,337.5
+"Water supply, sewerage, waste management and remedation activities",2010,
+Construction,2010,247.5
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2010,231.6
+Transportation and storage,2010,369.0
+Accomodation and food service activities,2010,267.1
+Information and communication,2010,
+Financial and insurance activities,2010,696.7
+Real estate activities,2010,277.3
+"Professional, scientific and technical activities",2010,
+Administrative and support service activities,2010,
+Public administration and defense; compulsory social security,2010,351.1
+Education,2010,311.6
+Human health and social work activities,2010,319.1
+"Arts, entertainment and recreation",2010,
+Other service activities,2010,257.6
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2010,
+Activities of extraterritorial organizations and bodies,2010,159.8
+National average,2011,424.2
+"Agriculture, forestry, fishing and hunting",2011,203.1
+Mining and quarrying,2011,732.8
+Manufacturing,2011,402.4
+"Electricity, gas, steam and air conditioning supply",2011,411.3
+"Water supply, sewerage, waste management and remedation activities",2011,
+Construction,2011,341.7
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2011,273.0
+Transportation and storage,2011,487.2
+Accomodation and food service activities,2011,298.3
+Information and communication,2011,
+Financial and insurance activities,2011,886.9
+Real estate activities,2011,330.1
+"Professional, scientific and technical activities",2011,
+Administrative and support service activities,2011,
+Public administration and defense; compulsory social security,2011,434.3
+Education,2011,366.1
+Human health and social work activities,2011,382.4
+"Arts, entertainment and recreation",2011,
+Other service activities,2011,305.3
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2011,
+Activities of extraterritorial organizations and bodies,2011,162.2
+National average,2012,557.6
+"Agriculture, forestry, fishing and hunting",2012,244.5
+Mining and quarrying,2012,814.5
+Manufacturing,2012,498.5
+"Electricity, gas, steam and air conditioning supply",2012,540.8
+"Water supply, sewerage, waste management and remedation activities",2012,
+Construction,2012,485.1
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2012,356.8
+Transportation and storage,2012,521.3
+Accomodation and food service activities,2012,377.6
+Information and communication,2012,
+Financial and insurance activities,2012,1066.7
+Real estate activities,2012,490.7
+"Professional, scientific and technical activities",2012,
+Administrative and support service activities,2012,
+Public administration and defense; compulsory social security,2012,613.9
+Education,2012,529.4
+Human health and social work activities,2012,553.7
+"Arts, entertainment and recreation",2012,
+Other service activities,2012,436.3
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2012,
+Activities of extraterritorial organizations and bodies,2012,377.5
+National average,2013,774.9
+"Agriculture, forestry, fishing and hunting",2013,324.7
+Mining and quarrying,2013,1418.4
+Manufacturing,2013,613.8
+"Electricity, gas, steam and air conditioning supply",2013,933.1
+"Water supply, sewerage, waste management and remedation activities",2013,560.2
+Construction,2013,719.0
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2013,735.9
+Transportation and storage,2013,822.1
+Accomodation and food service activities,2013,601.4
+Information and communication,2013,861.6
+Financial and insurance activities,2013,1190.0
+Real estate activities,2013,593.7
+"Professional, scientific and technical activities",2013,729.9
+Administrative and support service activities,2013,589.2
+Public administration and defense; compulsory social security,2013,719.5
+Education,2013,663.2
+Human health and social work activities,2013,708.6
+"Arts, entertainment and recreation",2013,554.4
+Other service activities,2013,446.6
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2013,
+Activities of extraterritorial organizations and bodies,2013,1139.1
+National average,2014,796.6
+"Agriculture, forestry, fishing and hunting",2014,752.9
+Mining and quarrying,2014,1550.8
+Manufacturing,2014,765.2
+"Electricity, gas, steam and air conditioning supply",2014,1133.0
+"Water supply, sewerage, waste management and remedation activities",2014,609.1
+Construction,2014,678.7
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2014,723.7
+Transportation and storage,2014,924.5
+Accomodation and food service activities,2014,532.7
+Information and communication,2014,774.9
+Financial and insurance activities,2014,1067.6
+Real estate activities,2014,769.9
+"Professional, scientific and technical activities",2014,1080.6
+Administrative and support service activities,2014,625.5
+Public administration and defense; compulsory social security,2014,776.4
+Education,2014,705.2
+Human health and social work activities,2014,725.0
+"Arts, entertainment and recreation",2014,596.9
+Other service activities,2014,601.2
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2014,486.5
+Activities of extraterritorial organizations and bodies,2014,1433.6
+National average,2015,808.0
+"Agriculture, forestry, fishing and hunting",2015,643.9
+Mining and quarrying,2015,1895.4
+Manufacturing,2015,770.1
+"Electricity, gas, steam and air conditioning supply",2015,1137.3
+"Water supply, sewerage, waste management and remedation activities",2015,634.9
+Construction,2015,662.8
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2015,695.3
+Transportation and storage,2015,885.0
+Accomodation and food service activities,2015,527.8
+Information and communication,2015,798.5
+Financial and insurance activities,2015,1049.7
+Real estate activities,2015,810.9
+"Professional, scientific and technical activities",2015,1144.7
+Administrative and support service activities,2015,662.3
+Public administration and defense; compulsory social security,2015,788.9
+Education,2015,735.5
+Human health and social work activities,2015,776.4
+"Arts, entertainment and recreation",2015,619.8
+Other service activities,2015,722.0
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2015,561.3
+Activities of extraterritorial organizations and bodies,2015,1460.8
+National average,2016,861.9
+"Agriculture, forestry, fishing and hunting",2016,631.5
+Mining and quarrying,2016,1989.4
+Manufacturing,2016,887.0
+"Electricity, gas, steam and air conditioning supply",2016,1213.4
+"Water supply, sewerage, waste management and remedation activities",2016,646.7
+Construction,2016,729.5
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2016,742.5
+Transportation and storage,2016,984.8
+Accomodation and food service activities,2016,555.4
+Information and communication,2016,818.3
+Financial and insurance activities,2016,1082.3
+Real estate activities,2016,815.2
+"Professional, scientific and technical activities",2016,1267.0
+Administrative and support service activities,2016,683.2
+Public administration and defense; compulsory social security,2016,780.1
+Education,2016,712.9
+Human health and social work activities,2016,739.6
+"Arts, entertainment and recreation",2016,587.6
+Other service activities,2016,724.3
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2016,560.9
+Activities of extraterritorial organizations and bodies,2016,1387.6
+National average,2017,944.5
+"Agriculture, forestry, fishing and hunting",2017,681.5
+Mining and quarrying,2017,2119.1
+Manufacturing,2017,1088.2
+"Electricity, gas, steam and air conditioning supply",2017,1334.2
+"Water supply, sewerage, waste management and remedation activities",2017,678.0
+Construction,2017,852.3
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2017,793.0
+Transportation and storage,2017,1022.5
+Accomodation and food service activities,2017,585.0
+Information and communication,2017,865.8
+Financial and insurance activities,2017,1131.6
+Real estate activities,2017,870.1
+"Professional, scientific and technical activities",2017,1569.7
+Administrative and support service activities,2017,760.3
+Public administration and defense; compulsory social security,2017,832.2
+Education,2017,720.8
+Human health and social work activities,2017,767.1
+"Arts, entertainment and recreation",2017,605.2
+Other service activities,2017,751.1
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2017,594.4
+Activities of extraterritorial organizations and bodies,2017,1710.0
+National average,2018,1002.9
+"Agriculture, forestry, fishing and hunting",2018,736.4
+Mining and quarrying,2018,2221.4
+Manufacturing,2018,1150.8
+"Electricity, gas, steam and air conditioning supply",2018,1403.3
+"Water supply, sewerage, waste management and remedation activities",2018,726.8
+Construction,2018,1032.7
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2018,818.6
+Transportation and storage,2018,1046.8
+Accomodation and food service activities,2018,621.4
+Information and communication,2018,979.0
+Financial and insurance activities,2018,1160.6
+Real estate activities,2018,1022.8
+"Professional, scientific and technical activities",2018,1546.9
+Administrative and support service activities,2018,829.4
+Public administration and defense; compulsory social security,2018,898.0
+Education,2018,760.2
+Human health and social work activities,2018,800.4
+"Arts, entertainment and recreation",2018,624.2
+Other service activities,2018,809.8
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2018,672.9
+Activities of extraterritorial organizations and bodies,2018,1479.9
+National average,2019,1124.3
+"Agriculture, forestry, fishing and hunting",2019,833.1
+Mining and quarrying,2019,2590.0
+Manufacturing,2019,1171.1
+"Electricity, gas, steam and air conditioning supply",2019,1452.0
+"Water supply, sewerage, waste management and remedation activities",2019,830.2
+Construction,2019,1161.9
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2019,904.8
+Transportation and storage,2019,1117.0
+Accomodation and food service activities,2019,691.5
+Information and communication,2019,1086.6
+Financial and insurance activities,2019,1343.1
+Real estate activities,2019,1197.7
+"Professional, scientific and technical activities",2019,1580.6
+Administrative and support service activities,2019,995.8
+Public administration and defense; compulsory social security,2019,1030.0
+Education,2019,903.3
+Human health and social work activities,2019,940.7
+"Arts, entertainment and recreation",2019,738.1
+Other service activities,2019,910.7
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2019,799.3
+Activities of extraterritorial organizations and bodies,2019,1778.0
+National average,2020,1220.6
+"Agriculture, forestry, fishing and hunting",2020,949.6
+Mining and quarrying,2020,2877.4
+Manufacturing,2020,1163.9
+"Electricity, gas, steam and air conditioning supply",2020,1558.9
+"Water supply, sewerage, waste management and remedation activities",2020,977.1
+Construction,2020,1273.9
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2020,1001.7
+Transportation and storage,2020,1203.4
+Accomodation and food service activities,2020,730.2
+Information and communication,2020,1196.8
+Financial and insurance activities,2020,1453.7
+Real estate activities,2020,1378.3
+"Professional, scientific and technical activities",2020,1648.3
+Administrative and support service activities,2020,1084.4
+Public administration and defense; compulsory social security,2020,1093.2
+Education,2020,1013.0
+Human health and social work activities,2020,1108.6
+"Arts, entertainment and recreation",2020,844.0
+Other service activities,2020,1019.1
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2020,906.8
+Activities of extraterritorial organizations and bodies,2020,1822.7
+National average,2021,1279.4
+"Agriculture, forestry, fishing and hunting",2021,1002.8
+Mining and quarrying,2021,2997.8
+Manufacturing,2021,1227.7
+"Electricity, gas, steam and air conditioning supply",2021,1603.3
+"Water supply, sewerage, waste management and remedation activities",2021,1019.3
+Construction,2021,1227.0
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2021,1063.1
+Transportation and storage,2021,1287.0
+Accomodation and food service activities,2021,801.7
+Information and communication,2021,1317.6
+Financial and insurance activities,2021,1515.8
+Real estate activities,2021,1401.4
+"Professional, scientific and technical activities",2021,1665.2
+Administrative and support service activities,2021,1162.5
+Public administration and defense; compulsory social security,2021,1140.7
+Education,2021,1045.2
+Human health and social work activities,2021,1277.5
+"Arts, entertainment and recreation",2021,873.4
+Other service activities,2021,1098.0
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2021,1042.9
+Activities of extraterritorial organizations and bodies,2021,1994.1
+National average,2022,1503.8
+"Agriculture, forestry, fishing and hunting",2022,1152.3
+Mining and quarrying,2022,3601.9
+Manufacturing,2022,1443.8
+"Electricity, gas, steam and air conditioning supply",2022,1815.2
+"Water supply, sewerage, waste management and remedation activities",2022,1183.6
+Construction,2022,1431.0
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2022,1257.4
+Transportation and storage,2022,1646.2
+Accomodation and food service activities,2022,968.6
+Information and communication,2022,1728.4
+Financial and insurance activities,2022,1927.8
+Real estate activities,2022,1743.6
+"Professional, scientific and technical activities",2022,1656.5
+Administrative and support service activities,2022,1264.8
+Public administration and defense; compulsory social security,2022,1290.6
+Education,2022,1211.6
+Human health and social work activities,2022,1474.6
+"Arts, entertainment and recreation",2022,971.4
+Other service activities,2022,1278.3
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2022,1205.0
+Activities of extraterritorial organizations and bodies,2022,4826.3
+National average,2023,1881.8
+"Agriculture, forestry, fishing and hunting",2023,1463.9
+Mining and quarrying,2023,4587.2
+Manufacturing,2023,1733.0
+"Electricity, gas, steam and air conditioning supply",2023,2245.1
+"Water supply, sewerage, waste management and remedation activities",2023,1530.9
+Construction,2023,1818.5
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2023,1479.8
+Transportation and storage,2023,2100.1
+Accomodation and food service activities,2023,1170.7
+Information and communication,2023,1937.0
+Financial and insurance activities,2023,2261.5
+Real estate activities,2023,2072.5
+"Professional, scientific and technical activities",2023,2072.6
+Administrative and support service activities,2023,1561.5
+Public administration and defense; compulsory social security,2023,1825.8
+Education,2023,1515.1
+Human health and social work activities,2023,1786.9
+"Arts, entertainment and recreation",2023,1368.6
+Other service activities,2023,1567.8
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2023,1743.3
+Activities of extraterritorial organizations and bodies,2023,4455.9
+National average,2024,2332.4
+"Agriculture, forestry, fishing and hunting",2024,1929.8
+Mining and quarrying,2024,4935.9
+Manufacturing,2024,2125.9
+"Electricity, gas, steam and air conditioning supply",2024,2923.7
+"Water supply, sewerage, waste management and remedation activities",2024,2101.8
+Construction,2024,2166.9
+"Wholesale and retail trade, repair of motor vehicles and motorcycles",2024,1818.6
+Transportation and storage,2024,2541.6
+Accomodation and food service activities,2024,1420.7
+Information and communication,2024,2467.8
+Financial and insurance activities,2024,2897.0
+Real estate activities,2024,2461.3
+"Professional, scientific and technical activities",2024,2709.2
+Administrative and support service activities,2024,1950.6
+Public administration and defense; compulsory social security,2024,2454.7
+Education,2024,2018.1
+Human health and social work activities,2024,2249.1
+"Arts, entertainment and recreation",2024,1843.3
+Other service activities,2024,1955.2
+Activities of households as employers; undifferentiated goods-and services-producing activities of household for own use,2024,2194.2
+Activities of extraterritorial organizations and bodies,2024,4758.1

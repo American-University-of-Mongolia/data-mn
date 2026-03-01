@@ -1,0 +1,35 @@
+---
+title: "Монголын багш нар, боловсролын түвшингээр (2010-2025)"
+publishDate: 2026-02-10
+excerpt: "Монгол Улсын бүх шатны боловсролын байгууллагын үндсэн багш нарын тоо 2010-2025 он, цэцэрлэг, ерөнхий боловсролын сургууль, мэргэжлийн сургалтын байгууллага, их дээд сургуулиар."
+category: "Боловсрол"
+tags: ["монгол", "багш", "боловсрол", "сургууль", "статистик", "үсх"]
+keywords: ["Монгол багш нар", "боловсролын түвшин", "сургуулийн багш", "их сургуулийн багш", "мэргэжлийн багш", "цэцэрлэгийн багш"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-10
+dataFiles:
+  - path: "/datasets/teachers-by-level-mn.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "CSV татах"
+  - path: "/datasets/teachers-by-level.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel татах"
+  - path: "/datasets/teachers-by-level-all-mn.csv"
+    format: "csv"
+    size: "6 KB"
+    description: "Бүх ангилал, эмэгтэй оруулсан (CSV)"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2002_067V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/teachers-by-level-mn.json"
+  title="Монголын багш нар, боловсролын түвшингээр (2010-2025)"
+/>

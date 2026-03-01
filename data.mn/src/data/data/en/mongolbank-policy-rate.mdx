@@ -1,0 +1,31 @@
+---
+title: "Mongolia Monetary Policy Rate, % (2016-2025)"
+publishDate: 2026-02-28
+excerpt: "Mongolia's official monetary policy rate set by the Bank of Mongolia, showing rate decisions from May 2016 to December 2025. The rate peaked at 15.0% in August 2016 and stood at 12.0% as of December 2025."
+category: "Finance"
+tags: ["mongolia", "monetary-policy", "interest-rate", "policy-rate", "bank-of-mongolia", "finance"]
+keywords: ["mongolia policy rate", "mongolbank interest rate", "monetary policy rate", "bank of mongolia rate", "central bank rate"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-11
+dataFiles:
+  - path: "/datasets/mongolbank-policy-rate-en.csv"
+    format: "csv"
+    size: "542 B"
+    description: "Download as CSV"
+  - path: "/datasets/mongolbank-policy-rate.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "Bank of Mongolia"
+  url: "https://www.mongolbank.mn/en/policy-interest-rate"
+  tableId: "policy-interest-rate"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-policy-rate-en.json"
+  title="Mongolia Monetary Policy Rate, % (2016-2025)"
+/>

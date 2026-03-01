@@ -1,0 +1,35 @@
+---
+title: "Mongolia Average Monthly Wages by Economic Sector (2001-2024)"
+publishDate: 2025-02-10
+excerpt: "Average monthly nominal wages across major economic sectors in Mongolia from 2001 to 2024, showing how wages in mining, finance, IT, construction, education, manufacturing, and agriculture compare over time."
+category: "Labor Market"
+tags: ["mongolia", "wages", "salary", "sectors", "economy", "labor", "mining", "finance", "education"]
+keywords: ["mongolia wages by sector", "average salary by industry", "wage comparison", "sector wages", "monthly wages"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-02-10
+dataFiles:
+  - path: "/datasets/average-wages-en.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "Download as CSV"
+  - path: "/datasets/average-wages.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Open in Excel"
+  - path: "/datasets/average-wages-all-en.csv"
+    format: "csv"
+    size: "14 KB"
+    description: "All 22 sectors (CSV)"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0400_022V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/average-wages-en.json"
+  title="Average Monthly Wages by Economic Sector (2001-2024)"
+/>

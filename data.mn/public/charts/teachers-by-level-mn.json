@@ -1,0 +1,120 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монголын багш нарын тоо, боловсролын түвшингээр (2010-2025)",
+  "data": {
+    "url": "/datasets/teachers-by-level-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {
+        "format": "d",
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "багш",
+      "type": "quantitative",
+      "title": "Багш нар",
+      "axis": {
+        "format": ","
+      }
+    },
+    "color": {
+      "field": "түвшин",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Цэцэрлэг",
+          "Ерөнхий боловсролын сургууль",
+          "Техникийн болон мэргэжлийн боловсролын сургалтын байгууллага",
+          "Их, дээд сургууль, коллеж"
+        ],
+        "range": [
+          "#f59e0b",
+          "#3b82f6",
+          "#10b981",
+          "#ef4444"
+        ]
+      },
+      "legend": {
+        "orient": "top",
+        "title": null,
+        "columns": 2
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "түвшин",
+            "title": "Түвшин"
+          },
+          {
+            "field": "багш",
+            "title": "Багш нар",
+            "format": ","
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

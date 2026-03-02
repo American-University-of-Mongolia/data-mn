@@ -1,0 +1,127 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын зээл, хадгаламжийн лавлагааны хүү",
+  "data": {
+    "url": "/datasets/mongolbank-reference-rates-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Огноо",
+      "type": "temporal",
+      "title": "Огноо",
+      "axis": {
+        "grid": false,
+        "labelAngle": -45
+      }
+    },
+    "y": {
+      "field": "Хүү (%)",
+      "type": "quantitative",
+      "title": "Хүү (%)",
+      "axis": {
+        "format": ".1f",
+        "grid": true,
+        "gridOpacity": 0.3
+      },
+      "scale": {
+        "zero": false
+      }
+    },
+    "color": {
+      "field": "Хүүгийн төрөл",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Зээлийн хүү (төгрөг)",
+          "Хадгаламжийн хүү (төгрөг)",
+          "Хадгаламжийн хүү (валют)"
+        ],
+        "range": [
+          "#ef4444",
+          "#3b82f6",
+          "#10b981"
+        ]
+      },
+      "legend": {
+        "title": "Хүүгийн төрөл",
+        "orient": "top",
+        "columns": 3
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Хүүгийн төрөл",
+            "type": "nominal",
+            "title": "Хүүгийн төрөл"
+          },
+          {
+            "field": "Огноо",
+            "type": "temporal",
+            "title": "Огноо",
+            "format": "%Y-%m"
+          },
+          {
+            "field": "Хүү (%)",
+            "type": "quantitative",
+            "title": "Хүү (%)",
+            "format": ".2f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

@@ -1,0 +1,35 @@
+---
+title: "Монгол Улсын зээл, хадгаламжийн лавлагааны хүү, сар бүр (2016-2026)"
+publishDate: 2025-02-10
+excerpt: "2016 оны 3 сараас 2026 оны 1 сар хүртэлх Монгол Улсын зээл, хадгаламжийн жигнэсэн дундаж хүүгийн хөдөлгөөн. Зээл-хадгаламжийн хүүгийн зөрүү ~4пп-аас ~4.8пп хүртэл тогтворжсон."
+category: "Санхүү"
+tags: ["монгол", "хүү", "зээл", "хадгаламж", "төв банк", "санхүү", "банк"]
+keywords: ["монгол хүү", "зээлийн хүү", "хадгаламжийн хүү", "монголбанк хүү", "банкны хүү"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-02-10
+dataFiles:
+  - path: "/datasets/mongolbank-reference-rates-mn.csv"
+    format: "csv"
+    size: "9 KB"
+    description: "CSV татах"
+  - path: "/datasets/mongolbank-reference-rates.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Excel-ээр нээх"
+  - path: "/datasets/mongolbank-reference-rates-all-mn.csv"
+    format: "csv"
+    size: "14 KB"
+    description: "Бүх хүүгийн төрлүүдийн бүрэн түүх (CSV)"
+source:
+  name: "Монголбанк"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-142,report-172"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-reference-rates-mn.json"
+  title="Монгол Улсын зээл, хадгаламжийн лавлагааны хүү (2016-2026)"
+/>

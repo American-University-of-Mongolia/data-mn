@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia poverty headcount rate by location (Urban vs Rural), 1995-2020",
+  "data": {
+    "url": "/datasets/poverty-rate-urban-rural-en.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {"format": "d", "tickMinStep": 5, "grid": false}
+    },
+    "y": {
+      "field": "poverty_rate",
+      "type": "quantitative",
+      "title": "Poverty Rate (%)",
+      "axis": {"format": ".1f"}
+    },
+    "color": {
+      "field": "location",
+      "type": "nominal",
+      "title": "Location",
+      "scale": {
+        "domain": ["Urban", "Rural"],
+        "range": ["#3b82f6", "#f59e0b"]
+      },
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "year", "title": "Year", "format": "d"},
+          {"field": "location", "title": "Location"},
+          {"field": "poverty_rate", "title": "Poverty Rate (%)", "format": ".1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

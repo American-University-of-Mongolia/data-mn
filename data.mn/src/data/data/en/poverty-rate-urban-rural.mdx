@@ -1,0 +1,33 @@
+---
+title: "Mongolia Poverty Rate by Location (1995–2020)"
+publishDate: 2026-02-27
+excerpt: "Poverty headcount rate comparing urban and rural populations in Mongolia from 1995 to 2020. Rural poverty exceeded urban poverty in 2020 at 30.5% versus 26.5%."
+category: "Society"
+tags: ["poverty", "society", "inequality", "urban", "rural"]
+keywords: ["mongolia poverty rate", "urban rural poverty mongolia", "poverty headcount mongolia", "mongolia inequality"]
+author: "Dlgvn"
+dataVersion: 1
+dataDate: 2020-12-31
+dataFiles:
+  - path: "/datasets/poverty-rate-urban-rural-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/poverty-rate-urban-rural.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://www.1212.mn"
+  tableId: "DT_NSO_1900_007V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Poverty headcount rate comparing urban and rural populations in Mongolia from 1995 to 2020. Rural poverty exceeded urban poverty in 2020 at 30.5% versus 26.5%.
+
+<VegaChart
+  spec="/charts/poverty-rate-urban-rural-en.json"
+  title="Mongolia Poverty Rate by Location (1995–2020)"
+/>

@@ -1,0 +1,33 @@
+---
+title: "Mongolia Poverty Rate, % (1995–2020)"
+publishDate: 2026-02-27
+excerpt: "Mongolia's poverty rate peaked at 36.1% in 2003 and declined to 27.8% by 2020, with significant improvements following economic reforms."
+category: "Household & Income"
+tags: ["poverty", "society", "inequality"]
+keywords: ["mongolia poverty rate", "poverty headcount mongolia", "mongolia inequality", "national poverty statistics"]
+author: "Dlgvn"
+dataVersion: 1
+dataDate: 2020-12-31
+dataFiles:
+  - path: "/datasets/poverty-rate-national-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/poverty-rate-national.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://www.1212.mn"
+  tableId: "DT_NSO_1900_007V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+National poverty headcount rate as a percentage of the population, from 1995 to 2020.
+
+<VegaChart
+  spec="/charts/poverty-rate-national-en.json"
+  title="Mongolia Poverty Rate, % (1995–2020)"
+/>

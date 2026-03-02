@@ -2,7 +2,7 @@
 
 Skill for fetching data from the Bank of Mongolia (mongolbank.mn).
 
-Base directory for this skill: /Users/dlgvnbyr/Documents/internship/data-mn/.claude/skills/datamn-source-mongolbank
+Base directory for this skill (repo-relative): `.claude/skills/datamn-source-mongolbank`
 
 ---
 

@@ -1,0 +1,33 @@
+---
+title: "Монгол Улсын ядуурлын түвшин байршлаар (1995–2020)"
+publishDate: 2026-02-27
+excerpt: "Монгол Улсын хот, хөдөөгийн ядуурлын түвшний харьцуулалт, 1995–2020 он. 2020 онд хөдөөгийн ядуурлын түвшин 30.5%, хотынх 26.5% байв."
+category: "Нийгэм"
+tags: ["ядуурал", "нийгэм", "тэгш бус байдал", "хот", "хөдөө"]
+keywords: ["монгол ядуурлын түвшин", "хот хөдөө ядуурал монгол", "ядуурлын хамралтын хүрээ", "монгол тэгш бус байдал"]
+author: "Dlgvn"
+dataVersion: 1
+dataDate: 2020-12-31
+dataFiles:
+  - path: "/datasets/poverty-rate-urban-rural-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/poverty-rate-urban-rural.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel татах"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://www.1212.mn"
+  tableId: "DT_NSO_1900_007V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Монгол Улсын хот, хөдөөгийн ядуурлын түвшний харьцуулалт, 1995–2020 он. 2020 онд хөдөөгийн ядуурлын түвшин 30.5%, хотынх 26.5% байв.
+
+<VegaChart
+  spec="/charts/poverty-rate-urban-rural-mn.json"
+  title="Монгол Улсын ядуурлын түвшин байршлаар (1995–2020)"
+/>

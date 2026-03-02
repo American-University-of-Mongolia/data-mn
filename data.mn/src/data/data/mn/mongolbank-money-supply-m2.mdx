@@ -1,0 +1,35 @@
+---
+title: "Монгол Улсын М2 мөнгөний нийлүүлэлт, сар бүр (2000-2025)"
+publishDate: 2025-02-10
+excerpt: "2000 оны 1 сараас 2025 оны 12 сар хүртэлх Монгол Улсын сар бүрийн М2 мөнгөний нийлүүлэлт. М2 2000 онд 211 тэрбум төгрөгөөс 2025 онд 47 их наяд төгрөг хүртэл өсчээ."
+category: "Эдийн засаг"
+tags: ["монгол", "мөнгөний нийлүүлэлт", "М2", "мөнгөний бодлого", "төв банк", "санхүү", "эдийн засаг"]
+keywords: ["мөнгөний нийлүүлэлт", "М2 монгол", "мөнгөний статистик", "монголбанк"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-02-10
+dataFiles:
+  - path: "/datasets/mongolbank-money-supply-m2-mn.csv"
+    format: "csv"
+    size: "8 KB"
+    description: "CSV татах"
+  - path: "/datasets/mongolbank-money-supply-m2.xlsx"
+    format: "xlsx"
+    size: "15 KB"
+    description: "Excel-ээр нээх"
+  - path: "/datasets/mongolbank-money-supply-m2-all-mn.csv"
+    format: "csv"
+    size: "24 KB"
+    description: "М2, М1, Бусад хадгаламжийн задаргаа (CSV)"
+source:
+  name: "Монголбанк"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-84"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-money-supply-m2-mn.json"
+  title="Монгол Улсын М2 мөнгөний нийлүүлэлт, сар бүр (2000-2025)"
+/>

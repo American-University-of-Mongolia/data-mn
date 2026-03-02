@@ -1,0 +1,35 @@
+---
+title: "Mongolia Teachers by Education Level (2010-2025)"
+publishDate: 2026-02-10
+excerpt: "Number of full-time teachers in Mongolia by education level from 2010 to 2025, covering kindergartens, general schools, vocational institutions, and universities."
+category: "Education"
+tags: ["mongolia", "teachers", "education", "schools", "statistics", "nso"]
+keywords: ["Mongolia teachers", "education level", "school teachers", "university teachers", "vocational teachers", "kindergarten teachers"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-10
+dataFiles:
+  - path: "/datasets/teachers-by-level-en.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "Download as CSV"
+  - path: "/datasets/teachers-by-level.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+  - path: "/datasets/teachers-by-level-all-en.csv"
+    format: "csv"
+    size: "6 KB"
+    description: "All classifications incl. female (CSV)"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2002_067V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/teachers-by-level-en.json"
+  title="Mongolia Teachers by Education Level (2010-2025)"
+/>

@@ -1,0 +1,193 @@
+Sector,Year,Salary (MNT 1000s)
+Mining,2001,57.3
+Finance & Insurance,2001,59.2
+IT & Communication,2001,
+Construction,2001,73.7
+Education,2001,60.8
+Manufacturing,2001,66.6
+Agriculture,2001,50.3
+National Average,2001,65.2
+Mining,2002,77.4
+Finance & Insurance,2002,83.2
+IT & Communication,2002,
+Construction,2002,90.6
+Education,2002,64.5
+Manufacturing,2002,68.7
+Agriculture,2002,46.2
+National Average,2002,71.3
+Mining,2003,88.7
+Finance & Insurance,2003,103.8
+IT & Communication,2003,
+Construction,2003,85.9
+Education,2003,77.5
+Manufacturing,2003,82.7
+Agriculture,2003,48.0
+National Average,2003,81.5
+Mining,2004,89.7
+Finance & Insurance,2004,125.4
+IT & Communication,2004,
+Construction,2004,99.6
+Education,2004,88.2
+Manufacturing,2004,92.8
+Agriculture,2004,52.6
+National Average,2004,93.1
+Mining,2005,122.8
+Finance & Insurance,2005,163.9
+IT & Communication,2005,
+Construction,2005,110.9
+Education,2005,92.8
+Manufacturing,2005,100.5
+Agriculture,2005,52.8
+National Average,2005,101.2
+Mining,2006,147.7
+Finance & Insurance,2006,265.5
+IT & Communication,2006,
+Construction,2006,137.1
+Education,2006,105.2
+Manufacturing,2006,129.4
+Agriculture,2006,72.6
+National Average,2006,127.7
+Mining,2007,219.7
+Finance & Insurance,2007,361.9
+IT & Communication,2007,
+Construction,2007,167.7
+Education,2007,174.3
+Manufacturing,2007,160.2
+Agriculture,2007,90.5
+National Average,2007,173.0
+Mining,2008,328.6
+Finance & Insurance,2008,471.4
+IT & Communication,2008,
+Construction,2008,223.2
+Education,2008,289.2
+Manufacturing,2008,268.0
+Agriculture,2008,158.1
+National Average,2008,274.2
+Mining,2009,405.4
+Finance & Insurance,2009,599.9
+IT & Communication,2009,
+Construction,2009,234.8
+Education,2009,297.3
+Manufacturing,2009,271.8
+Agriculture,2009,174.6
+National Average,2009,300.5
+Mining,2010,572.2
+Finance & Insurance,2010,696.7
+IT & Communication,2010,
+Construction,2010,247.5
+Education,2010,311.6
+Manufacturing,2010,326.2
+Agriculture,2010,172.5
+National Average,2010,341.5
+Mining,2011,732.8
+Finance & Insurance,2011,886.9
+IT & Communication,2011,
+Construction,2011,341.7
+Education,2011,366.1
+Manufacturing,2011,402.4
+Agriculture,2011,203.1
+National Average,2011,424.2
+Mining,2012,814.5
+Finance & Insurance,2012,1066.7
+IT & Communication,2012,
+Construction,2012,485.1
+Education,2012,529.4
+Manufacturing,2012,498.5
+Agriculture,2012,244.5
+National Average,2012,557.6
+Mining,2013,1418.4
+Finance & Insurance,2013,1190.0
+IT & Communication,2013,861.6
+Construction,2013,719.0
+Education,2013,663.2
+Manufacturing,2013,613.8
+Agriculture,2013,324.7
+National Average,2013,774.9
+Mining,2014,1550.8
+Finance & Insurance,2014,1067.6
+IT & Communication,2014,774.9
+Construction,2014,678.7
+Education,2014,705.2
+Manufacturing,2014,765.2
+Agriculture,2014,752.9
+National Average,2014,796.6
+Mining,2015,1895.4
+Finance & Insurance,2015,1049.7
+IT & Communication,2015,798.5
+Construction,2015,662.8
+Education,2015,735.5
+Manufacturing,2015,770.1
+Agriculture,2015,643.9
+National Average,2015,808.0
+Mining,2016,1989.4
+Finance & Insurance,2016,1082.3
+IT & Communication,2016,818.3
+Construction,2016,729.5
+Education,2016,712.9
+Manufacturing,2016,887.0
+Agriculture,2016,631.5
+National Average,2016,861.9
+Mining,2017,2119.1
+Finance & Insurance,2017,1131.6
+IT & Communication,2017,865.8
+Construction,2017,852.3
+Education,2017,720.8
+Manufacturing,2017,1088.2
+Agriculture,2017,681.5
+National Average,2017,944.5
+Mining,2018,2221.4
+Finance & Insurance,2018,1160.6
+IT & Communication,2018,979.0
+Construction,2018,1032.7
+Education,2018,760.2
+Manufacturing,2018,1150.8
+Agriculture,2018,736.4
+National Average,2018,1002.9
+Mining,2019,2590.0
+Finance & Insurance,2019,1343.1
+IT & Communication,2019,1086.6
+Construction,2019,1161.9
+Education,2019,903.3
+Manufacturing,2019,1171.1
+Agriculture,2019,833.1
+National Average,2019,1124.3
+Mining,2020,2877.4
+Finance & Insurance,2020,1453.7
+IT & Communication,2020,1196.8
+Construction,2020,1273.9
+Education,2020,1013.0
+Manufacturing,2020,1163.9
+Agriculture,2020,949.6
+National Average,2020,1220.6
+Mining,2021,2997.8
+Finance & Insurance,2021,1515.8
+IT & Communication,2021,1317.6
+Construction,2021,1227.0
+Education,2021,1045.2
+Manufacturing,2021,1227.7
+Agriculture,2021,1002.8
+National Average,2021,1279.4
+Mining,2022,3601.9
+Finance & Insurance,2022,1927.8
+IT & Communication,2022,1728.4
+Construction,2022,1431.0
+Education,2022,1211.6
+Manufacturing,2022,1443.8
+Agriculture,2022,1152.3
+National Average,2022,1503.8
+Mining,2023,4587.2
+Finance & Insurance,2023,2261.5
+IT & Communication,2023,1937.0
+Construction,2023,1818.5
+Education,2023,1515.1
+Manufacturing,2023,1733.0
+Agriculture,2023,1463.9
+National Average,2023,1881.8
+Mining,2024,4935.9
+Finance & Insurance,2024,2897.0
+IT & Communication,2024,2467.8
+Construction,2024,2166.9
+Education,2024,2018.1
+Manufacturing,2024,2125.9
+Agriculture,2024,1929.8
+National Average,2024,2332.4

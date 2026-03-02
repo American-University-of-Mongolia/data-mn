@@ -1,0 +1,35 @@
+---
+title: "Монгол Улсын эдийн засгийн салбар тус бүрийн сарын дундаж цалин (2001-2024)"
+publishDate: 2025-02-10
+excerpt: "2001-2024 оны Монгол Улсын эдийн засгийн гол салбаруудын сарын дундаж нэрлэсэн цалин. Уул уурхай, санхүү, мэдээллийн технологи, барилга, боловсрол, боловсруулах үйлдвэрлэл, хөдөө аж ахуйн салбарын цалингийн харьцуулалт."
+category: "Хөдөлмөрийн зах зээл"
+tags: ["монгол", "цалин", "салбар", "эдийн засаг", "хөдөлмөр", "уул уурхай", "санхүү", "боловсрол"]
+keywords: ["салбар тус бүрийн цалин", "дундаж цалин", "цалингийн харьцуулалт", "сарын цалин"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-02-10
+dataFiles:
+  - path: "/datasets/average-wages-mn.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "CSV татах"
+  - path: "/datasets/average-wages.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Excel-ээр нээх"
+  - path: "/datasets/average-wages-all-mn.csv"
+    format: "csv"
+    size: "14 KB"
+    description: "Бүх 22 салбар (CSV)"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0400_022V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/average-wages-mn.json"
+  title="Эдийн засгийн салбар тус бүрийн сарын дундаж цалин (2001-2024)"
+/>

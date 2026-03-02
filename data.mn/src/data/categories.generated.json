@@ -52,11 +52,16 @@
   {
     "en": "Household & Income",
     "mn": "Өрх ба орлого",
-    "count": 2
+    "count": 3
   },
   {
     "en": "Employment",
     "mn": "Хөдөлмөр эрхлэлт",
+    "count": 1
+  },
+  {
+    "en": "Society",
+    "mn": "Нийгэм",
     "count": 1
   }
 ]

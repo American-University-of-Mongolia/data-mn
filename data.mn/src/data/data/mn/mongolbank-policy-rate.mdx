@@ -1,0 +1,31 @@
+---
+title: "Монголбанкны бодлогын хүү, % (2016-2025)"
+publishDate: 2026-02-28
+excerpt: "Монголбанкнаас 2016 оны 5-р сараас 2025 оны 12-р сар хүртэл гаргасан бодлогын хүүгийн шийдвэрүүд. Хамгийн өндөр нь 2016 оны 8-р сард 15.0% байсан бөгөөд 2025 оны 12-р сарын байдлаар 12.0% байна."
+category: "Санхүү"
+tags: ["монгол", "мөнгөний-бодлого", "хүүгийн-хувь", "бодлогын-хүү", "монголбанк", "санхүү"]
+keywords: ["монголбанк бодлогын хүү", "мөнгөний бодлогын хүү", "банкны хүү", "монголбанкны хүү"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-11
+dataFiles:
+  - path: "/datasets/mongolbank-policy-rate-mn.csv"
+    format: "csv"
+    size: "565 B"
+    description: "CSV татах"
+  - path: "/datasets/mongolbank-policy-rate.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel татах"
+source:
+  name: "Монголбанк"
+  url: "https://www.mongolbank.mn/mn/policy-interest-rate"
+  tableId: "policy-interest-rate"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-policy-rate-mn.json"
+  title="Монголбанкны бодлогын хүү, % (2016-2025)"
+/>

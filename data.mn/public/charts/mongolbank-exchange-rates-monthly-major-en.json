@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia monthly average exchange rates for major currencies (USD, EUR, CNY, RUB, JPY, KRW) vs MNT, Bank of Mongolia.",
+  "data": {
+    "url": "/datasets/mongolbank-exchange-rates-monthly-major-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "joinaggregate": [{"op": "min", "field": "rate_mnt", "as": "base_rate"}],
+      "groupby": ["currency_code"]
+    },
+    {
+      "calculate": "datum.rate_mnt / datum.base_rate * 100",
+      "as": "indexed_rate"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Month",
+      "axis": {"format": "%b %Y", "labelAngle": -45, "grid": false}
+    },
+    "y": {
+      "field": "indexed_rate",
+      "type": "quantitative",
+      "title": "Exchange Rate Index (start = 100)",
+      "scale": {"zero": false},
+      "axis": {"format": ".0f"}
+    },
+    "color": {
+      "field": "currency_code",
+      "type": "nominal",
+      "title": "Currency",
+      "scale": {
+        "domain": ["USD", "EUR", "CNY", "RUB", "JPY", "KRW"],
+        "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2", "#54a24b", "#eeca3b"]
+      },
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "date", "type": "temporal", "title": "Month", "format": "%Y-%m"},
+          {"field": "currency_code", "type": "nominal", "title": "Currency"},
+          {"field": "currency_name", "type": "nominal", "title": "Name"},
+          {"field": "rate_mnt", "type": "quantitative", "title": "Avg Rate (MNT)", "format": ",.2f"},
+          {"field": "indexed_rate", "type": "quantitative", "title": "Index", "format": ".1f"}
+        ]
+      }
+    }
+  ],
+  "autosize": {"type": "fit", "contains": "padding"},
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

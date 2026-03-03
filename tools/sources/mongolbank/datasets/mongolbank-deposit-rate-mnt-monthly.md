@@ -10,7 +10,7 @@
 ## Source Reference
 
 - **Portal**: https://www.mongolbank.mn/mn/p/interest-rate-statistics
-- **Script**: `.claude/skills/datamn-source-mongolbank/fetch_bulletin_table.py --indicator deposit-rate`
+- **Script**: Derived from `mongolbank-reference-rates-all-en.csv` (stat.mongolbank.mn API, indicator 84982: MNT weighted average deposit rate). Portal scraper (`fetch_bulletin_table.py --indicator deposit-rate`) was unavailable at time of creation. For future updates, use the stat API directly (see Update Instructions in `mongolbank-reference-rates.md`) or retry the portal scraper.
 - **Language**: MN-only source (translated via fetch_bulletin_table.py)
 
 ## Title
@@ -23,6 +23,7 @@
 Monthly weighted average interest rate on MNT-denominated bank deposits in Mongolia.
 Sourced from the Bank of Mongolia interest rate statistics portal via the `stat.mongolbank.mn`
 statistics API (indicator 84982: Deposit weighted average rate, MNT, outstanding).
+Coverage is quarterly from 2008-12 to 2010-12, and monthly from 2011-01 onward.
 
 ## Distinction from mongolbank-reference-rates
 
@@ -58,3 +59,8 @@ Then apply MNT filter if needed and copy files to:
 - `data.mn/public/datasets/mongolbank-deposit-rate-mnt-monthly-en.csv`
 - `data.mn/public/datasets/mongolbank-deposit-rate-mnt-monthly-mn.csv`
 - `tools/versions/mongolbank-deposit-rate-mnt-monthly/v1/`
+
+Note: Registry `version` and file path fields (Data, MDX, Chart) are not automatically
+populated by the CLI — this is consistent with all other mongolbank datasets (e.g.,
+`mongolbank-exchange-rates-daily`). The registry tracks URL stability and publication
+status; file paths are resolved by convention from the dataset ID.

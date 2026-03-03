@@ -25,7 +25,7 @@
     "y": {
       "field": "indexed_rate",
       "type": "quantitative",
-      "title": "Exchange Rate Index (start = 100)",
+      "title": "Exchange Rate Index (min = 100)",
       "scale": {"zero": false},
       "axis": {"format": ".0f"}
     },

@@ -44,7 +44,7 @@ This dataset provides monthly averages for trend analysis. The daily dataset
 
 1. Run `fetch_exchange_rates.py --start <last_date> --output /tmp/new-daily`
 2. Re-run aggregation script to recompute monthly averages (or append new months)
-3. Copy updated CSVs to `data.mn/public/datasets/` and `tools/versions/v1/`
+3. Copy updated CSVs to `data.mn/public/datasets/` and `tools/versions/mongolbank-exchange-rates-monthly-major/v1/`
 
 ## Validation
 

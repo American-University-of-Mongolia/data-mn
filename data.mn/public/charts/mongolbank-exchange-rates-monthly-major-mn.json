@@ -25,7 +25,7 @@
     "y": {
       "field": "indexed_rate",
       "type": "quantitative",
-      "title": "Ханшны индекс (эхлэл = 100)",
+      "title": "Ханшны индекс (мин = 100)",
       "scale": {"zero": false},
       "axis": {"format": ".0f"}
     },

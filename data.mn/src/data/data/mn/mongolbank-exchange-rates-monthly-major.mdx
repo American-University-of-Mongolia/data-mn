@@ -15,17 +15,17 @@ dataFiles:
     description: "CSV татах"
   - path: "/datasets/mongolbank-exchange-rates-monthly-major.xlsx"
     format: "xlsx"
-    size: "28 KB"
+    size: "26 KB"
     description: "Excel татах"
 source:
   name: "Монголбанк"
-  url: "https://www.mongolbank.mn/mn/currency-rates"
+  url: "https://www.mongolbank.mn/mn/currency-rate-movement/monthly"
   tableId: "currency-rate-movement-monthly"
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
-Монголбанкаас нийтэлдэг өдрийн хаалтын ханшийг дундажлан тооцсон USD, EUR, CNY, RUB, JPY, KRW зургаан гол валютын сарын дундаж ханш. Графикт эхний сарын утгыг 100 болгон индексжүүлсэн тул өөр өөр хэмжигдэхүүнтэй валютуудыг харьцуулахад хялбар.
+Монголбанкаас нийтэлдэг өдрийн хаалтын ханшийг дундажлан тооцсон USD, EUR, CNY, RUB, JPY, KRW зургаан гол валютын сарын дундаж ханш. Графикт хамгийн бага утгыг 100 болгон индексжүүлсэн тул өөр өөр хэмжигдэхүүнтэй валютуудыг харьцуулахад хялбар.
 
 <VegaChart
   spec="/charts/mongolbank-exchange-rates-monthly-major-mn.json"

@@ -1,0 +1,33 @@
+---
+title: "Mongolia MNT Deposit Rate, Monthly (2008–2026)"
+publishDate: 2026-03-03
+excerpt: "Monthly weighted average interest rate on MNT-denominated deposits in Mongolia, published by the Bank of Mongolia."
+category: "Finance"
+tags: ["deposit rate", "interest rate", "MNT", "finance", "Bank of Mongolia", "banking"]
+keywords: ["mongolia deposit rate", "mongolbank deposit interest", "MNT deposit rate monthly", "mongolia banking rates", "tugrik deposit rate"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-03
+dataFiles:
+  - path: "/datasets/mongolbank-deposit-rate-mnt-monthly-en.csv"
+    format: "csv"
+    size: "3.1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mongolbank-deposit-rate-mnt-monthly.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Open in Excel"
+source:
+  name: "Bank of Mongolia"
+  url: "https://www.mongolbank.mn/mn/p/interest-rate-statistics"
+  tableId: "interest-rate-statistics"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Monthly weighted average interest rate on MNT-denominated deposits in Mongolia's banking system, published by the Bank of Mongolia via its interest rate statistics portal. This dataset covers MNT deposits only; see `mongolbank-reference-rates` for a multi-rate comparison including FX deposit rates sourced from the statistics API.
+
+<VegaChart
+  spec="/charts/mongolbank-deposit-rate-mnt-monthly-en.json"
+  title="Mongolia MNT Deposit Rate, Monthly"
+/>

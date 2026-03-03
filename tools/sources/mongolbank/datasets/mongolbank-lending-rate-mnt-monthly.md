@@ -22,7 +22,7 @@
 
 Monthly weighted average interest rate on MNT-denominated loans issued by Mongolia's banking system.
 Sourced from the Bank of Mongolia interest rate statistics portal (stat API indicator 171821).
-Data begins March 2016 (119 rows through January 2026). Dates are stored as YYYY-MM (first of month).
+Data begins March 2016 (119 rows through January 2026). Dates are stored as YYYY-MM-DD (first day of month).
 
 ## Distinction from mongolbank-reference-rates
 
@@ -32,7 +32,7 @@ Data begins March 2016 (119 rows through January 2026). Dates are stored as YYYY
 
 ## Variables
 
-- **date** (огноо): Year-month of observation, format YYYY-MM
+- **date** (огноо): First day of month, ISO format YYYY-MM-DD
 - **lending_rate_pct** (зээлийн_хүү_хувь): Monthly weighted average MNT lending rate (%)
 
 ## Update Instructions

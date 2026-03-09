@@ -1,0 +1,33 @@
+---
+title: "Mongolia Total Household Expenditure, MNT (1997-2024)"
+publishDate: 2026-03-09
+excerpt: "Annual average monthly household total expenditure in Mongolian tugrik (MNT) for Mongolia from 1997 to 2024."
+category: "Household & Income"
+tags: ["mongolia", "household", "expenditure", "income", "economy"]
+keywords: ["mongolia household expenditure", "household spending mongolia", "monthly expenditure MNT"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-05-23
+dataFiles:
+  - path: "/datasets/household-expenditure-total-all-en.csv"
+    format: "csv"
+    size: "364 B"
+    description: "Download as CSV (all data)"
+  - path: "/datasets/household-expenditure-total.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1900_002V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Annual average monthly household total expenditure in Mongolian tugrik (MNT) for Mongolia from 1997 to 2024.
+
+<VegaChart
+  spec="/charts/household-expenditure-total-en.json"
+  title="Mongolia Total Household Expenditure, MNT (1997-2024)"
+/>

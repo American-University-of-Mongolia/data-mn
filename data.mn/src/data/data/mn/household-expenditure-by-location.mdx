@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын өрхийн зарлага байршлаар, төгрөг (1997–2024)"
+publishDate: 2026-03-09
+excerpt: "Монгол Улсын хот, хөдөөгийн өрхийн сарын дундаж зарлага (төгрөгөөр) 1997-2024 онд."
+category: "Өрх ба орлого"
+tags: ["монгол", "өрх", "зарлага", "хот", "хөдөө", "нийгэм"]
+keywords: ["монгол өрхийн зарлага", "хот хөдөөгийн зарлага", "өрхийн хэрэглээ монгол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-09
+dataFiles:
+  - path: "/datasets/household-expenditure-by-location-mn.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "CSV татах"
+  - path: "/datasets/household-expenditure-by-location.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1900_002V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/household-expenditure-by-location-mn.json"
+  title="Монгол Улсын өрхийн зарлага байршлаар, төгрөг (1997–2024)"
+/>

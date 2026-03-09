@@ -7,11 +7,6 @@
       "type": "csv"
     }
   },
-  "transform": [
-    {
-      "filter": "datum.Currency === 'US Dollar' || datum.Currency === 'Euro' || datum.Currency === 'Chinese Yuan' || datum.Currency === 'Russian Ruble'"
-    }
-  ],
   "encoding": {
     "x": {
       "field": "Year",
@@ -39,24 +34,10 @@
     "color": {
       "field": "Currency",
       "type": "nominal",
-      "scale": {
-        "domain": [
-          "US Dollar",
-          "Euro",
-          "Chinese Yuan",
-          "Russian Ruble"
-        ],
-        "range": [
-          "#2563eb",
-          "#16a34a",
-          "#dc2626",
-          "#7c3aed"
-        ]
-      },
       "legend": {
         "title": "Currency",
         "orient": "top",
-        "columns": 4
+        "columns": 3
       }
     }
   },

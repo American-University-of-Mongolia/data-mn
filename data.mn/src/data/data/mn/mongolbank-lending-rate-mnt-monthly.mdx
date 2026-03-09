@@ -1,0 +1,33 @@
+---
+title: "Монгол Улсын төгрөгийн зээлийн хүү, сар бүр (2016–2026)"
+publishDate: 2026-03-03
+excerpt: "Монголбанкаас нийтэлсэн Монголын банкны системд олгосон төгрөгийн зээлийн жигнэсэн дундаж хүү."
+category: "Санхүү"
+tags: ["зээлийн хүү", "хүүгийн хэмжээ", "төгрөг", "санхүү", "Монголбанк", "зээл"]
+keywords: ["монгол зээлийн хүү", "монголбанк зээл", "төгрөгийн зээлийн хүү", "банкны зээлийн хүү"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-03
+dataFiles:
+  - path: "/datasets/mongolbank-lending-rate-mnt-monthly-mn.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "CSV татах"
+  - path: "/datasets/mongolbank-lending-rate-mnt-monthly.xlsx"
+    format: "xlsx"
+    size: "9 KB"
+    description: "Excel татах"
+source:
+  name: "Монголбанк"
+  url: "https://www.mongolbank.mn/mn/p/interest-rate-statistics"
+  tableId: "interest-rate-statistics"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Монголын банкны системд олгосон төгрөгийн зээлийн жигнэсэн дундаж хүүгийн сарын мэдээлэл. Монголбанкны хүүгийн статистикийн порталаас авсан. Энэ датасет зөвхөн төгрөгийн зээлийн хүүг хамарна. Хадгаламж болон валютын хүүтэй харьцуулахдаа `mongolbank-reference-rates` датасетийг ашиглана уу.
+
+<VegaChart
+  spec="/charts/mongolbank-lending-rate-mnt-monthly-mn.json"
+  title="Монгол Улсын төгрөгийн зээлийн хүү, сар бүр"
+/>

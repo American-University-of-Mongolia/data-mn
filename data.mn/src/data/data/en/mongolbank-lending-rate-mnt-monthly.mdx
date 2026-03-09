@@ -1,0 +1,33 @@
+---
+title: "Mongolia MNT Lending Rate, Monthly (2016–2026)"
+publishDate: 2026-03-03
+excerpt: "Monthly weighted average interest rate on MNT-denominated loans in Mongolia, published by the Bank of Mongolia."
+category: "Finance"
+tags: ["lending rate", "interest rate", "MNT", "finance", "Bank of Mongolia", "banking", "credit"]
+keywords: ["mongolia lending rate", "mongolbank loan interest", "MNT lending rate monthly", "mongolia credit rates", "tugrik loan rate"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-03
+dataFiles:
+  - path: "/datasets/mongolbank-lending-rate-mnt-monthly-en.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mongolbank-lending-rate-mnt-monthly.xlsx"
+    format: "xlsx"
+    size: "9 KB"
+    description: "Open in Excel"
+source:
+  name: "Bank of Mongolia"
+  url: "https://www.mongolbank.mn/mn/p/interest-rate-statistics"
+  tableId: "interest-rate-statistics"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Monthly weighted average interest rate on MNT-denominated loans issued by Mongolia's banking system, published by the Bank of Mongolia. This dataset is single-purpose (MNT lending rate only); see `mongolbank-reference-rates` for a multi-rate comparison including deposit rates and FX series.
+
+<VegaChart
+  spec="/charts/mongolbank-lending-rate-mnt-monthly-en.json"
+  title="Mongolia MNT Lending Rate, Monthly"
+/>

@@ -1,0 +1,116 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia official annual average exchange rates for major currencies (MNT per 1 unit of foreign currency), 1993-2026",
+  "data": {
+    "url": "/datasets/mongolbank-exchange-rates-annual-average-major-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {
+        "grid": false,
+        "labelAngle": -45,
+        "format": "%Y"
+      }
+    },
+    "y": {
+      "field": "Rate (MNT)",
+      "type": "quantitative",
+      "title": "Exchange Rate (MNT per 1 unit)",
+      "axis": {
+        "format": ",.0f",
+        "grid": true,
+        "gridOpacity": 0.3
+      },
+      "scale": {
+        "zero": false
+      }
+    },
+    "color": {
+      "field": "Currency",
+      "type": "nominal",
+      "legend": {
+        "title": "Currency",
+        "orient": "top",
+        "columns": 3
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Currency",
+            "type": "nominal",
+            "title": "Currency"
+          },
+          {
+            "field": "Year",
+            "type": "temporal",
+            "title": "Year",
+            "format": "%Y"
+          },
+          {
+            "field": "Rate (MNT)",
+            "type": "quantitative",
+            "title": "Rate (MNT)",
+            "format": ",.2f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

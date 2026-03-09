@@ -26,7 +26,11 @@
         "opacity": {
           "condition": {"param": "hover", "empty": false, "value": 1},
           "value": 0
-        }
+        },
+        "tooltip": [
+          {"field": "огноо", "type": "temporal", "title": "Сар", "format": "%Y-%m"},
+          {"field": "зээлийн_хүү_хувь", "type": "quantitative", "title": "Зээлийн хүү (%)", "format": ".2f"}
+        ]
       }
     }
   ],
@@ -43,11 +47,7 @@
       "title": "Зээлийн хүү (%)",
       "scale": {"zero": false},
       "axis": {"format": ".1f"}
-    },
-    "tooltip": [
-      {"field": "огноо", "type": "temporal", "title": "Сар", "format": "%Y-%m"},
-      {"field": "зээлийн_хүү_хувь", "type": "quantitative", "title": "Зээлийн хүү (%)", "format": ".2f"}
-    ]
+    }
   },
   "autosize": {"type": "fit", "contains": "padding"},
   "config": {

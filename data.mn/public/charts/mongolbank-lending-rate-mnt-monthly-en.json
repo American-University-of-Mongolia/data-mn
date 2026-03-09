@@ -26,7 +26,11 @@
         "opacity": {
           "condition": {"param": "hover", "empty": false, "value": 1},
           "value": 0
-        }
+        },
+        "tooltip": [
+          {"field": "date", "type": "temporal", "title": "Month", "format": "%Y-%m"},
+          {"field": "lending_rate_pct", "type": "quantitative", "title": "Lending Rate (%)", "format": ".2f"}
+        ]
       }
     }
   ],
@@ -43,11 +47,7 @@
       "title": "Lending Rate (%)",
       "scale": {"zero": false},
       "axis": {"format": ".1f"}
-    },
-    "tooltip": [
-      {"field": "date", "type": "temporal", "title": "Month", "format": "%Y-%m"},
-      {"field": "lending_rate_pct", "type": "quantitative", "title": "Lending Rate (%)", "format": ".2f"}
-    ]
+    }
   },
   "autosize": {"type": "fit", "contains": "padding"},
   "config": {

@@ -85,6 +85,20 @@ INDICATORS = {
         "unit": "percent",
         "language": "mn-only",
     },
+    "credit-private-sector": {
+        "title_en": "Credit to Private Sector",
+        "title_mn": "Хувийн хэвшлийн зээл",
+        "source_type": "stat_api",
+        "report_id": 90,
+        "parent_id": 88,
+        "indicator_id": "60870",
+        "output_id": "mongolbank-credit-private-sector",
+        "frequency": "monthly",
+        "columns_mn": ["огноо", "зээл_тэрбум_төгрөг"],
+        "columns_en": ["date", "credit_billion_mnt"],
+        "unit": "billion MNT",
+        "language": "bilingual",
+    },
 }
 
 # ─── HTTP helpers ─────────────────────────────────────────────────────────────

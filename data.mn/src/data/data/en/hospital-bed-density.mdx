@@ -1,0 +1,33 @@
+---
+title: "Mongolia Hospital Beds per 1000 Population (1989-2024)"
+publishDate: 2026-03-09
+excerpt: "Hospital bed density in Mongolia measured as beds per 1,000 population from 1989 to 2024, covering 36 years of healthcare infrastructure data."
+category: "Health"
+tags: ["mongolia", "health", "hospital beds", "healthcare", "infrastructure", "beds per 1000"]
+keywords: ["mongolia hospital bed density", "beds per 1000 population", "healthcare capacity mongolia", "hospital infrastructure mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-12-31
+dataFiles:
+  - path: "/datasets/hospital-bed-density-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/hospital-bed-density.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2100_005V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Mongolia had **9 hospital beds per 1,000 population** in 2024, down from a peak of 12 in 1989.
+
+<VegaChart
+  spec="/charts/hospital-bed-density-en.json"
+  title="Mongolia Hospital Beds per 1000 Population (1989-2024)"
+/>

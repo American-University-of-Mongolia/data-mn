@@ -85,11 +85,13 @@
         "tooltip": [
           {
             "field": "он",
+            "type": "quantitative",
             "title": "Он",
             "format": "d"
           },
           {
             "field": "эмнэлгийн_ор",
+            "type": "quantitative",
             "title": "Эмнэлгийн ор",
             "format": ",d"
           }

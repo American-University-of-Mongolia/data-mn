@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын эмнэлгийн ор тасгаар 2024 онд",
+  "data": {
+    "url": "/datasets/hospital-beds-by-type-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type": "bar", "color": "#3b82f6", "cornerRadiusEnd": 4},
+  "encoding": {
+    "x": {
+      "field": "эмнэлгийн_ор",
+      "type": "quantitative",
+      "title": "Эмнэлгийн ор",
+      "axis": {"format": ",d"}
+    },
+    "y": {
+      "field": "тасаг",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x",
+      "axis": {"labelLimit": 220}
+    },
+    "tooltip": [
+      {"field": "тасаг", "title": "Тасаг"},
+      {"field": "эмнэлгийн_ор", "title": "Эмнэлгийн ор", "format": ",d"}
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

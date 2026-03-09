@@ -1,0 +1,31 @@
+---
+title: "Mongolia USD/MNT Exchange Rate, Monthly Average (1993-2026)"
+publishDate: 2026-03-04
+excerpt: "Monthly average official USD/MNT exchange rate from January 1993 to February 2026. The Mongolian Tugrik has depreciated from 150 MNT per USD in 1993 to over 3,500 MNT by 2025, driven by inflation, commodity cycles, and structural balance of payments pressures."
+category: "Finance"
+tags: ["mongolia", "exchange rate", "USD", "tugrik", "MNT", "central bank", "finance", "forex", "currency depreciation"]
+keywords: ["mongolia USD exchange rate", "USD MNT monthly", "mongolian tugrik dollar", "mongolbank USD rate", "MNT depreciation", "mongolia forex monthly"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-04
+dataFiles:
+  - path: "/datasets/mongolbank-usd-mnt-monthly-en.csv"
+    format: "csv"
+    size: "6 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mongolbank-usd-mnt-monthly.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Open in Excel"
+source:
+  name: "Bank of Mongolia"
+  url: "https://www.mongolbank.mn/en/currency-rate-movement/monthly"
+  tableId: "currency-rate-movement-monthly"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-usd-mnt-monthly-en.json"
+  title="Mongolia USD/MNT Exchange Rate, Monthly Average (1993-2026)"
+/>

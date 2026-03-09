@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын жилийн дундаж валютын ханш, гол валютуудаар (1993-2026)"
+publishDate: 2026-03-04
+excerpt: "1993-2026 онд Монголбанкны зарласан АНУ-ын доллар, Евро, Хятадын юань, Оросын рубль, Японы иен, БНСУ-ын вон гэсэн зургаан гол валютын жилийн дундаж ханш. 1993 онд 150 төгрөг байсан ам.долларын ханш 2025 он гэхэд 3500-аас дээш төгрөгт хүрсэн нь Монгол Улсын эдийн засгийн өөрчлөлтийг тусгаж байна."
+category: "Санхүү"
+tags: ["монгол", "валютын ханш", "валют", "төгрөг", "АНУ доллар", "евро", "юань", "монголбанк", "санхүү", "форекс"]
+keywords: ["монголын валютын ханш", "монгол төгрөг", "ам доллар төгрөг", "евро төгрөг", "юань төгрөг", "монголбанк ханш", "жилийн дундаж ханш монгол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-04
+dataFiles:
+  - path: "/datasets/mongolbank-exchange-rates-annual-average-major-mn.csv"
+    format: "csv"
+    size: "8 KB"
+    description: "CSV татах (урт хэлбэр)"
+  - path: "/datasets/mongolbank-exchange-rates-annual-average-major.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Excel-д нээх (өргөн хэлбэр)"
+source:
+  name: "Монголбанк"
+  url: "https://www.mongolbank.mn/mn/currency-rate-movement/monthly"
+  tableId: "currency-rate-movement-monthly"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-exchange-rates-annual-average-major-mn.json"
+  title="Монгол Улсын жилийн дундаж валютын ханш: АНУ доллар, Евро, Юань, Рубль (1993-2026)"
+/>

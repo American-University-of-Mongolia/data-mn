@@ -1,0 +1,31 @@
+---
+title: "Mongolia Annual Average Exchange Rates, Major Currencies (1993-2026)"
+publishDate: 2026-03-04
+excerpt: "Annual average official exchange rates for six major currencies (USD, EUR, CNY, RUB, JPY, KRW) against the Mongolian Tugrik from 1993 to 2026. The USD has risen from 150 MNT in 1993 to over 3,500 MNT by 2025, reflecting Mongolia's economic transformation."
+category: "Finance"
+tags: ["mongolia", "exchange rate", "currency", "tugrik", "USD", "EUR", "CNY", "central bank", "finance", "forex"]
+keywords: ["mongolia exchange rate", "mongolian tugrik", "USD MNT", "EUR MNT", "CNY MNT", "mongolbank exchange rate", "annual average exchange rate mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-04
+dataFiles:
+  - path: "/datasets/mongolbank-exchange-rates-annual-average-major-en.csv"
+    format: "csv"
+    size: "8 KB"
+    description: "Download as CSV (long format)"
+  - path: "/datasets/mongolbank-exchange-rates-annual-average-major.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Open in Excel (wide format)"
+source:
+  name: "Bank of Mongolia"
+  url: "https://www.mongolbank.mn/en/currency-rate-movement/monthly"
+  tableId: "currency-rate-movement-monthly"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-exchange-rates-annual-average-major-en.json"
+  title="Mongolia Annual Average Exchange Rates: USD, EUR, CNY, RUB (1993-2026)"
+/>

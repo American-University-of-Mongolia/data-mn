@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын мөнгөний нийлүүлэлт М1, тэрбум төгрөг (2000-2025)"
+publishDate: 2026-03-09
+excerpt: "2000 оны 1 сараас 2026 оны 1 сар хүртэлх Монгол Улсын сар бүрийн М1 мөнгөний нийлүүлэлт. М1 нь эргэлтэд байгаа мөнгө болон харагдах хадгаламжийг багтаасан бөгөөд 2000 онд 103 тэрбум төгрөгөөс 2026 онд 11 их наяд төгрөг хүртэл өслөө."
+category: "Эдийн засаг"
+tags: ["монгол", "мөнгөний нийлүүлэлт", "М1", "мөнгөний бодлого", "төв банк", "санхүү", "эдийн засаг"]
+keywords: ["мөнгөний нийлүүлэлт М1", "М1 монгол", "мөнгөний статистик", "монголбанк М1", "нарийн мөнгө монгол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-01-01
+dataFiles:
+  - path: "/datasets/mongolbank-money-supply-m1-mn.csv"
+    format: "csv"
+    size: "6 KB"
+    description: "CSV татах"
+  - path: "/datasets/mongolbank-money-supply-m1.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Монголбанк"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-84"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-money-supply-m1-mn.json"
+  title="Монгол Улсын мөнгөний нийлүүлэлт М1, тэрбум төгрөг (2000-2025)"
+/>

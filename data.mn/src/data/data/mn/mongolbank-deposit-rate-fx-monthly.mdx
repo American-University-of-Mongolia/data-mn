@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын гадаад валютын хадгаламжийн хүү, сар бүр (2008-2026)"
+publishDate: 2026-03-04
+excerpt: "2008 оны 12-р сараас 2026 оны 1-р сар хүртэлх Монгол Улсын гадаад валютаар байршуулсан хадгаламжийн үлдэгдэлд жигнэж тооцсон дундаж хүүгийн сарын мэдээлэл. Валютын хадгаламжийн хүү 2008 онд 7.4%-тай байснаа 2025 он гэхэд 4 орчим хувьд буурсан нь дэлхийн хүүгийн бага мөчлөг болон хадгаламжийн шилжилтийг харуулж байна."
+category: "Санхүү"
+tags: ["монгол", "хадгаламжийн хүү", "хүүгийн хэмжээ", "гадаад валют", "монголбанк", "банк", "санхүү", "мөнгөний бодлого"]
+keywords: ["монгол валютын хадгаламжийн хүү", "монголбанк гадаад валютын хадгаламж", "монгол хүүгийн хэмжээ", "валютын хадгаламж монгол", "монголбанк хадгаламжийн хүү сарын"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-04
+dataFiles:
+  - path: "/datasets/mongolbank-deposit-rate-fx-monthly-mn.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "CSV татах"
+  - path: "/datasets/mongolbank-deposit-rate-fx-monthly.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монголбанк"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-142-indicator-84992"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-deposit-rate-fx-monthly-mn.json"
+  title="Монгол Улсын гадаад валютын хадгаламжийн хүү, сар бүр (2008-2026)"
+/>

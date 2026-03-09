@@ -1,0 +1,31 @@
+---
+title: "Mongolia Gross Crop Production by Type (1941-1992)"
+publishDate: 2026-03-09
+excerpt: "National gross crop production in Mongolia by type from 1941 to 1992, measured in thousand tonnes. Wheat dominated output, peaking at 782 thousand tonnes in 1990, while total cereals reached 839 thousand tonnes in 1989."
+category: "Agriculture"
+tags: ["mongolia", "agriculture", "crops", "wheat", "production", "historical"]
+keywords: ["mongolia crop production", "wheat production mongolia", "barley mongolia", "gross harvest mongolia", "agricultural output mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-09
+dataFiles:
+  - path: "/datasets/crop-production-by-type-en.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "Download as CSV"
+  - path: "/datasets/crop-production-by-type.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0100_01T013.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/crop-production-by-type-en.json"
+  title="Mongolia Gross Crop Production by Type (1941-1992)"
+/>

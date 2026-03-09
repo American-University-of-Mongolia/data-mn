@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын таримлын нийт ургац төрлөөр (1941-1992)"
+publishDate: 2026-03-09
+excerpt: "Монгол Улсад 1941-1992 онд таримлын нийт ургац төрлөөр, мянган тоннд илэрхийлэв. Буудай хамгийн их ургацтай байсан бөгөөд 1990 онд 782 мянган тоннд хүрсэн, нийт үр тариа 1989 онд 839 мянган тонн байжээ."
+category: "Хөдөө аж ахуй"
+tags: ["монгол", "хөдөө-аж-ахуй", "таримал", "буудай", "ургац", "түүхэн-өгөгдөл"]
+keywords: ["монгол ургац", "буудайн ургац монгол", "арвай монгол", "нийт ургац монгол", "хөдөө аж ахуйн гарц"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-09
+dataFiles:
+  - path: "/datasets/crop-production-by-type-mn.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "CSV татах"
+  - path: "/datasets/crop-production-by-type.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0100_01T013.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/crop-production-by-type-mn.json"
+  title="Монгол Улсын таримлын нийт ургац төрлөөр (1941-1992)"
+/>

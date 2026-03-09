@@ -1,0 +1,281 @@
+year,crop_type,production_thousand_tonnes
+1941,Cereals,14.9
+1943,Cereals,36.9
+1952,Cereals,34.5
+1953,Cereals,40.0
+1955,Cereals,47.2
+1956,Cereals,57.9
+1957,Cereals,46.9
+1958,Cereals,77.5
+1959,Cereals,139.8
+1960,Cereals,227.4
+1961,Cereals,125.6
+1962,Cereals,326.5
+1963,Cereals,320.2
+1964,Cereals,371.0
+1965,Cereals,322.0
+1966,Cereals,297.2
+1967,Cereals,357.3
+1970,Cereals,284.8
+1971,Cereals,372.9
+1972,Cereals,205.0
+1973,Cereals,455.4
+1974,Cereals,315.8
+1975,Cereals,482.5
+1976,Cereals,376.3
+1977,Cereals,414.4
+1978,Cereals,354.9
+1979,Cereals,330.7
+1980,Cereals,258.5
+1981,Cereals,320.5
+1982,Cereals,513.7
+1983,Cereals,812.8
+1984,Cereals,586.2
+1985,Cereals,889.6
+1986,Cereals,869.4
+1987,Cereals,689.3
+1988,Cereals,814.3
+1989,Cereals,839.1
+1990,Cereals,718.3
+1991,Cereals,595.3
+1992,Cereals,493.9
+1941,Wheat,
+1943,Wheat,15.6
+1952,Wheat,9.6
+1953,Wheat,11.8
+1955,Wheat,14.1
+1956,Wheat,20.2
+1957,Wheat,19.4
+1958,Wheat,37.5
+1959,Wheat,104.4
+1960,Wheat,195.4
+1961,Wheat,98.4
+1962,Wheat,288.4
+1963,Wheat,289.3
+1964,Wheat,335.2
+1965,Wheat,291.2
+1966,Wheat,252.9
+1967,Wheat,310.9
+1970,Wheat,250.2
+1971,Wheat,316.4
+1972,Wheat,169.7
+1973,Wheat,339.6
+1974,Wheat,250.2
+1975,Wheat,365.7
+1976,Wheat,280.3
+1977,Wheat,318.0
+1978,Wheat,279.3
+1979,Wheat,239.6
+1980,Wheat,206.9
+1981,Wheat,275.1
+1982,Wheat,410.6
+1983,Wheat,647.6
+1984,Wheat,458.7
+1985,Wheat,692.3
+1986,Wheat,663.7
+1987,Wheat,543.3
+1988,Wheat,672.2
+1989,Wheat,686.9
+1990,Wheat,596.2
+1991,Wheat,538.3
+1992,Wheat,453.2
+1941,Barley,
+1943,Barley,8.8
+1952,Barley,11.7
+1953,Barley,13.4
+1955,Barley,13.6
+1956,Barley,15.9
+1957,Barley,12.4
+1958,Barley,8.0
+1959,Barley,6.9
+1960,Barley,3.3
+1961,Barley,11.4
+1962,Barley,16.9
+1963,Barley,15.6
+1964,Barley,11.4
+1965,Barley,8.6
+1966,Barley,11.4
+1967,Barley,11.8
+1970,Barley,9.0
+1971,Barley,20.2
+1972,Barley,17.3
+1973,Barley,47.9
+1974,Barley,34.1
+1975,Barley,64.1
+1976,Barley,53.7
+1977,Barley,505.0
+1978,Barley,48.6
+1979,Barley,54.9
+1980,Barley,31.8
+1981,Barley,30.8
+1982,Barley,63.0
+1983,Barley,88.8
+1984,Barley,79.6
+1985,Barley,132.3
+1986,Barley,
+1987,Barley,
+1988,Barley,
+1989,Barley,
+1990,Barley,
+1991,Barley,
+1992,Barley,
+1941,Oats,
+1943,Oats,6.6
+1952,Oats,8.1
+1953,Oats,9.9
+1955,Oats,9.2
+1956,Oats,15.3
+1957,Oats,11.0
+1958,Oats,28.0
+1959,Oats,30.0
+1960,Oats,25.9
+1961,Oats,15.0
+1962,Oats,18.1
+1963,Oats,11.3
+1964,Oats,19.7
+1965,Oats,10.1
+1966,Oats,31.0
+1967,Oats,32.5
+1970,Oats,23.9
+1971,Oats,35.8
+1972,Oats,16.7
+1973,Oats,64.0
+1974,Oats,29.2
+1975,Oats,49.4
+1976,Oats,39.4
+1977,Oats,43.5
+1978,Oats,5.9
+1979,Oats,34.6
+1980,Oats,19.4
+1981,Oats,12.1
+1982,Oats,31.6
+1983,Oats,57.2
+1984,Oats,35.7
+1985,Oats,52.5
+1986,Oats,
+1987,Oats,
+1988,Oats,
+1989,Oats,
+1990,Oats,
+1991,Oats,
+1992,Oats,
+1941,Potatoes,
+1943,Potatoes,
+1952,Potatoes,2.8
+1953,Potatoes,1.8
+1955,Potatoes,7.1
+1956,Potatoes,8.8
+1957,Potatoes,17.0
+1958,Potatoes,11.7
+1959,Potatoes,14.9
+1960,Potatoes,18.5
+1961,Potatoes,16.4
+1962,Potatoes,23.9
+1963,Potatoes,22.0
+1964,Potatoes,26.5
+1965,Potatoes,24.4
+1966,Potatoes,24.3
+1967,Potatoes,22.0
+1970,Potatoes,20.8
+1971,Potatoes,18.6
+1972,Potatoes,10.2
+1973,Potatoes,35.3
+1974,Potatoes,22.8
+1975,Potatoes,40.7
+1976,Potatoes,36.0
+1977,Potatoes,44.6
+1978,Potatoes,48.5
+1979,Potatoes,72.4
+1980,Potatoes,39.3
+1981,Potatoes,40.4
+1982,Potatoes,75.1
+1983,Potatoes,97.5
+1984,Potatoes,122.9
+1985,Potatoes,114.1
+1986,Potatoes,132.8
+1987,Potatoes,147.6
+1988,Potatoes,103.2
+1989,Potatoes,155.6
+1990,Potatoes,131.1
+1991,Potatoes,97.5
+1992,Potatoes,78.5
+1941,Vegetables,
+1943,Vegetables,
+1952,Vegetables,4.2
+1953,Vegetables,4.1
+1955,Vegetables,10.0
+1956,Vegetables,12.8
+1957,Vegetables,23.7
+1958,Vegetables,18.5
+1959,Vegetables,5.9
+1960,Vegetables,6.8
+1961,Vegetables,8.6
+1962,Vegetables,13.3
+1963,Vegetables,14.2
+1964,Vegetables,17.1
+1965,Vegetables,15.8
+1966,Vegetables,9.1
+1967,Vegetables,11.7
+1970,Vegetables,12.7
+1971,Vegetables,14.2
+1972,Vegetables,10.9
+1973,Vegetables,22.4
+1974,Vegetables,21.2
+1975,Vegetables,21.2
+1976,Vegetables,29.1
+1977,Vegetables,16.8
+1978,Vegetables,24.6
+1979,Vegetables,23.5
+1980,Vegetables,26.0
+1981,Vegetables,29.1
+1982,Vegetables,36.1
+1983,Vegetables,34.3
+1984,Vegetables,34.2
+1985,Vegetables,41.3
+1986,Vegetables,46.4
+1987,Vegetables,48.0
+1988,Vegetables,56.3
+1989,Vegetables,59.5
+1990,Vegetables,41.7
+1991,Vegetables,23.3
+1992,Vegetables,16.4
+1941,Fodder crops,
+1943,Fodder crops,
+1952,Fodder crops,0.4
+1953,Fodder crops,0.2
+1955,Fodder crops,14.7
+1956,Fodder crops,16.5
+1957,Fodder crops,12.0
+1958,Fodder crops,54.6
+1959,Fodder crops,8.4
+1960,Fodder crops,37.1
+1961,Fodder crops,74.1
+1962,Fodder crops,186.5
+1963,Fodder crops,136.9
+1964,Fodder crops,116.4
+1965,Fodder crops,58.6
+1966,Fodder crops,97.9
+1967,Fodder crops,100.3
+1970,Fodder crops,34.7
+1971,Fodder crops,60.9
+1972,Fodder crops,59.8
+1973,Fodder crops,145.3
+1974,Fodder crops,128.4
+1975,Fodder crops,164.5
+1976,Fodder crops,166.8
+1977,Fodder crops,170.0
+1978,Fodder crops,141.1
+1979,Fodder crops,200.3
+1980,Fodder crops,102.8
+1981,Fodder crops,136.1
+1982,Fodder crops,160.8
+1983,Fodder crops,172.8
+1984,Fodder crops,268.3
+1985,Fodder crops,286.0
+1986,Fodder crops,586.1
+1987,Fodder crops,607.9
+1988,Fodder crops,529.3
+1989,Fodder crops,551.0
+1990,Fodder crops,527.1
+1991,Fodder crops,213.1
+1992,Fodder crops,138.3

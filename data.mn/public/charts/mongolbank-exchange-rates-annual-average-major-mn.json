@@ -1,0 +1,135 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын жилийн дундаж валютын ханш, гол валютуудаар (1 нэгж гадаад валютын төгрөгийн ханш), 1993-2026",
+  "data": {
+    "url": "/datasets/mongolbank-exchange-rates-annual-average-major-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum['Валют'] === 'АНУ-ын доллар' || datum['Валют'] === 'Евро' || datum['Валют'] === 'Хятадын юань' || datum['Валют'] === 'Оросын рубль'"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Жил",
+      "type": "temporal",
+      "title": "Жил",
+      "axis": {
+        "grid": false,
+        "labelAngle": -45,
+        "format": "%Y"
+      }
+    },
+    "y": {
+      "field": "Ханш (₮)",
+      "type": "quantitative",
+      "title": "Ханш (₮, 1 нэгжид)",
+      "axis": {
+        "format": ",.0f",
+        "grid": true,
+        "gridOpacity": 0.3
+      },
+      "scale": {
+        "zero": false
+      }
+    },
+    "color": {
+      "field": "Валют",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "АНУ-ын доллар",
+          "Евро",
+          "Хятадын юань",
+          "Оросын рубль"
+        ],
+        "range": [
+          "#2563eb",
+          "#16a34a",
+          "#dc2626",
+          "#7c3aed"
+        ]
+      },
+      "legend": {
+        "title": "Валют",
+        "orient": "top",
+        "columns": 4
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Валют",
+            "type": "nominal",
+            "title": "Валют"
+          },
+          {
+            "field": "Жил",
+            "type": "temporal",
+            "title": "Жил",
+            "format": "%Y"
+          },
+          {
+            "field": "Ханш (₮)",
+            "type": "quantitative",
+            "title": "Ханш (₮)",
+            "format": ",.2f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

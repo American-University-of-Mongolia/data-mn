@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын АНУ доллар/Төгрөгийн ханш, сарын дундаж (1993-2026)"
+publishDate: 2026-03-04
+excerpt: "1993 оны 1-р сараас 2026 оны 2-р сар хүртэлх Монголбанкны зарласан ам.долларын сарын дундаж ханш. Монгол төгрөг 1993 онд 1 долларт 150 төгрөг байснаа 2025 он гэхэд 3500-аас дээш төгрөгт хүрч, инфляци, эрдэс баялгийн мөчлөг, бүтцийн төлбөрийн тэнцлийн дарамтаас болж сулрасаар байна."
+category: "Санхүү"
+tags: ["монгол", "валютын ханш", "АНУ доллар", "төгрөг", "монголбанк", "санхүү", "форекс", "валютын сулрал"]
+keywords: ["монгол ам доллар ханш", "ам доллар төгрөг сарын", "монгол төгрөг доллар", "монголбанк ам доллар ханш", "төгрөг сулрал", "монгол форекс сарын"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-04
+dataFiles:
+  - path: "/datasets/mongolbank-usd-mnt-monthly-mn.csv"
+    format: "csv"
+    size: "6 KB"
+    description: "CSV татах"
+  - path: "/datasets/mongolbank-usd-mnt-monthly.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монголбанк"
+  url: "https://www.mongolbank.mn/mn/currency-rate-movement/monthly"
+  tableId: "currency-rate-movement-monthly"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-usd-mnt-monthly-mn.json"
+  title="Монгол Улсын АНУ доллар/Төгрөгийн ханш, сарын дундаж (1993-2026)"
+/>

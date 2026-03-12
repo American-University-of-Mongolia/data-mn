@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "dataset_id": "crop-production-by-type",
+  "fetched_at": "2026-03-09",
+  "source_updated_at": "2025-12-30T16:05:49",
+  "row_count": 280,
+  "data_as_of": "1992",
+  "change_type": "initial",
+  "notes": "Initial fetch. 280 rows (7 crop types x 40 years), 1941-1992. NSO table DT_NSO_0100_01T013.px, Historical data / Agriculture. National gross production, no regional breakdown."
+}

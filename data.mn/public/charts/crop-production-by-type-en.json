@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Gross crop production by type in Mongolia from 1941 to 1992 (thousand tonnes).",
+  "data": {
+    "url": "/datasets/crop-production-by-type-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 5,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "production_thousand_tonnes",
+      "type": "quantitative",
+      "title": "Production (thousand tonnes)",
+      "axis": {
+        "format": ",.0f"
+      }
+    },
+    "color": {
+      "field": "crop_type",
+      "type": "nominal",
+      "title": "Crop Type",
+      "scale": {
+        "domain": [
+          "Cereals",
+          "Wheat",
+          "Barley",
+          "Oats",
+          "Potatoes",
+          "Vegetables",
+          "Fodder crops"
+        ],
+        "range": [
+          "#3b82f6",
+          "#f59e0b",
+          "#10b981",
+          "#6366f1",
+          "#ec4899",
+          "#14b8a6",
+          "#8b5cf6"
+        ]
+      },
+      "legend": {
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout",
+            "fields": [
+              "year"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 60
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "crop_type",
+            "type": "nominal",
+            "title": "Crop Type"
+          },
+          {
+            "field": "production_thousand_tonnes",
+            "type": "quantitative",
+            "title": "Production (000 tonnes)",
+            "format": ",.1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсад 1941-1992 онд таримлын төрлөөр авсан нийт ургац (мянган тонн).",
+  "data": {
+    "url": "/datasets/crop-production-by-type-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 5,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "ургац_мянган_тонн",
+      "type": "quantitative",
+      "title": "Ургац (мянган тонн)",
+      "axis": {
+        "format": ",.0f"
+      }
+    },
+    "color": {
+      "field": "таримлын_төрөл",
+      "type": "nominal",
+      "title": "Таримлын төрөл",
+      "scale": {
+        "domain": [
+          "Үр тариа-бүгд",
+          "Буудай",
+          "Арвай",
+          "Овъёос",
+          "Төмс",
+          "Хүнсний ногоо",
+          "Тэжээлийн ургамал"
+        ],
+        "range": [
+          "#3b82f6",
+          "#f59e0b",
+          "#10b981",
+          "#6366f1",
+          "#ec4899",
+          "#14b8a6",
+          "#8b5cf6"
+        ]
+      },
+      "legend": {
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout",
+            "fields": [
+              "он"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 60
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "type": "quantitative",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "таримлын_төрөл",
+            "type": "nominal",
+            "title": "Таримлын төрөл"
+          },
+          {
+            "field": "ургац_мянган_тонн",
+            "type": "quantitative",
+            "title": "Ургац (мян.тн)",
+            "format": ",.1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

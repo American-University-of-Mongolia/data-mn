@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia monthly weighted average MNT deposit interest rate, Bank of Mongolia.",
+  "data": {
+    "url": "/datasets/mongolbank-deposit-rate-mnt-monthly-en.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Month",
+      "axis": {"format": "%b %Y", "labelAngle": -45, "grid": false}
+    },
+    "y": {
+      "field": "deposit_rate_pct",
+      "type": "quantitative",
+      "title": "Deposit Rate (%)",
+      "scale": {"zero": false},
+      "axis": {"format": ".1f"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2,
+        "interpolate": "monotone",
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "color": "#3b82f6", "size": 80},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "date", "type": "temporal", "title": "Month", "format": "%Y-%m"},
+          {"field": "deposit_rate_pct", "type": "quantitative", "title": "Deposit Rate (%)", "format": ".2f"}
+        ]
+      }
+    }
+  ],
+  "autosize": {"type": "fit", "contains": "padding"},
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

@@ -1,0 +1,33 @@
+---
+title: "Монголбанкны сарын дундаж валютын ханш, төгрөгөөр (2020–2026)"
+publishDate: 2026-03-03
+excerpt: "Монголбанкаас нийтэлсэн өдрийн ханшийг үндэслэн тооцсон USD, EUR, CNY, RUB, JPY, KRW валютуудын 2020-2026 оны сарын дундаж ханш."
+category: "Санхүү"
+tags: ["валютын ханш", "валют", "төгрөг", "санхүү", "Монголбанк", "доллар"]
+keywords: ["монгол валютын ханш сар", "монголбанк дундаж ханш", "төгрөгийн сарын ханш", "валютын дундаж"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-03
+dataFiles:
+  - path: "/datasets/mongolbank-exchange-rates-monthly-major-mn.csv"
+    format: "csv"
+    size: "19 KB"
+    description: "CSV татах"
+  - path: "/datasets/mongolbank-exchange-rates-monthly-major.xlsx"
+    format: "xlsx"
+    size: "26 KB"
+    description: "Excel татах"
+source:
+  name: "Монголбанк"
+  url: "https://www.mongolbank.mn/mn/currency-rate-movement/monthly"
+  tableId: "currency-rate-movement-monthly"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Монголбанкаас нийтэлдэг өдрийн хаалтын ханшийг дундажлан тооцсон USD, EUR, CNY, RUB, JPY, KRW зургаан гол валютын сарын дундаж ханш. Графикт хамгийн бага утгыг 100 болгон индексжүүлсэн тул өөр өөр хэмжигдэхүүнтэй валютуудыг харьцуулахад хялбар.
+
+<VegaChart
+  spec="/charts/mongolbank-exchange-rates-monthly-major-mn.json"
+  title="Монголбанкны сарын дундаж валютын ханш (2020–2026)"
+/>

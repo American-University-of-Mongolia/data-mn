@@ -1,0 +1,33 @@
+---
+title: "Mongolia Monthly Average Exchange Rates, MNT per Unit (2020–2026)"
+publishDate: 2026-03-03
+excerpt: "Monthly average exchange rates for USD, EUR, CNY, RUB, JPY, and KRW against the Mongolian Tugrik, derived from official daily closing rates published by the Bank of Mongolia."
+category: "Finance"
+tags: ["exchange rates", "currency", "MNT", "finance", "Bank of Mongolia", "USD", "EUR", "CNY"]
+keywords: ["mongolia monthly exchange rates", "mongolian tugrik monthly", "mongolbank average rates", "MNT monthly average", "mongolia forex monthly"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-03
+dataFiles:
+  - path: "/datasets/mongolbank-exchange-rates-monthly-major-en.csv"
+    format: "csv"
+    size: "15 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mongolbank-exchange-rates-monthly-major.xlsx"
+    format: "xlsx"
+    size: "26 KB"
+    description: "Open in Excel"
+source:
+  name: "Bank of Mongolia"
+  url: "https://www.mongolbank.mn/mn/currency-rate-movement/monthly"
+  tableId: "currency-rate-movement-monthly"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Monthly average exchange rates for six major currencies (USD, EUR, CNY, RUB, JPY, KRW) against the Mongolian Tugrik (MNT), derived by averaging official daily closing rates published by the Bank of Mongolia. The chart indexes each currency to 100 at its series minimum to enable comparison across currencies with different absolute values.
+
+<VegaChart
+  spec="/charts/mongolbank-exchange-rates-monthly-major-en.json"
+  title="Mongolia Monthly Average Exchange Rates (2020–2026)"
+/>

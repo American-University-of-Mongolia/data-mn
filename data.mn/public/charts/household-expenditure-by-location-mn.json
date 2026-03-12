@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын өрхийн сарын дундаж зарлага байршлаар (Улсын дүн, Хот, Хөдөө) 1997-2024 он",
+  "data": {
+    "url": "/datasets/household-expenditure-by-location-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 5, "grid": false}
+    },
+    "y": {
+      "field": "зарлага_төгрөг",
+      "type": "quantitative",
+      "title": "Сарын зарлага (төгрөг)",
+      "axis": {"format": ",.0f"}
+    },
+    "color": {
+      "field": "байршил",
+      "type": "nominal",
+      "title": "Байршил",
+      "scale": {
+        "domain": ["Улсын дүн", "Хот", "Хөдөө"],
+        "range": ["#3b82f6", "#ef4444", "#10b981"]
+      },
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
+          {"field": "байршил", "type": "nominal", "title": "Байршил"},
+          {"field": "зарлага_төгрөг", "type": "quantitative", "title": "Зарлага (төгрөг)", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {"stroke": "transparent"},
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

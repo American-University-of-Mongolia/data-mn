@@ -1,0 +1,31 @@
+---
+title: "Mongolia Household Expenditure by Location, MNT (1997–2024)"
+publishDate: 2026-03-09
+excerpt: "Average monthly household expenditure in Mongolian Tugrik (MNT) for National, Urban, and Rural populations from 1997 to 2024."
+category: "Household & Income"
+tags: ["mongolia", "household", "expenditure", "urban", "rural", "society"]
+keywords: ["mongolia household expenditure", "urban rural expenditure", "household spending mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-09
+dataFiles:
+  - path: "/datasets/household-expenditure-by-location-en.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "Download as CSV"
+  - path: "/datasets/household-expenditure-by-location.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1900_002V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/household-expenditure-by-location-en.json"
+  title="Mongolia Household Expenditure by Location, MNT (1997–2024)"
+/>

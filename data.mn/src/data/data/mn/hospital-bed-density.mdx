@@ -1,0 +1,33 @@
+---
+title: "Монгол Улсын мянган хүн тутамд ноогдох эмнэлгийн ортын тоо (1989–2024)"
+publishDate: 2026-03-09
+excerpt: "Монгол Улсад мянган хүнд ноогдох эмнэлгийн ортын тоо 1989-2024 онуудад, 36 жилийн эрүүл мэндийн дэд бүтцийн мэдээллийг хамарсан."
+category: "Эрүүл мэнд"
+tags: ["монгол", "эрүүл мэнд", "эмнэлгийн ор", "эрүүл мэндийн тусламж", "дэд бүтэц", "мянган хүнд ноогдох ор"]
+keywords: ["монгол эмнэлгийн ортын нягтшил", "мянган хүнд ноогдох ор", "эрүүл мэндийн хүчин чадал монгол", "эмнэлгийн дэд бүтэц монгол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-12-31
+dataFiles:
+  - path: "/datasets/hospital-bed-density-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/hospital-bed-density.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2100_005V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Монгол Улсад **2024 онд мянган хүнд 9 эмнэлгийн ор** ноогдож байсан бөгөөд энэ нь 1989 оны 12 орноос буурсан байна.
+
+<VegaChart
+  spec="/charts/hospital-bed-density-mn.json"
+  title="Монгол Улсын мянган хүн тутамд ноогдох эмнэлгийн ортын тоо (1989–2024)"
+/>

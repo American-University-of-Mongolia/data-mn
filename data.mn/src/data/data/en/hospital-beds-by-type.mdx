@@ -1,0 +1,33 @@
+---
+title: "Mongolia Hospital Beds by Department Type, Count (2024)"
+publishDate: 2026-03-09
+excerpt: "Number of hospital beds across 9 department types in Mongolia for 2024, from internal medicine to pediatrics."
+category: "Health"
+tags: ["mongolia", "health", "hospital beds", "healthcare", "departments"]
+keywords: ["mongolia hospital beds by type", "hospital department beds", "healthcare capacity mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-12-31
+dataFiles:
+  - path: "/datasets/hospital-beds-by-type-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/hospital-beds-by-type.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2100_005V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+In 2024, Mongolia had **30,117 hospital beds** across all departments. Internal medicine accounted for the largest share with **7,564 beds**, followed by Pediatrics (4,134) and Surgery and traumatology (3,441).
+
+<VegaChart
+  spec="/charts/hospital-beds-by-type-en.json"
+  title="Mongolia Hospital Beds by Department Type, Count (2024)"
+/>

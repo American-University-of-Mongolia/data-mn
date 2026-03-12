@@ -1,0 +1,33 @@
+---
+title: "Монгол Улсын эмнэлгийн ор төрлөөр, тоо (2024)"
+publishDate: 2026-03-09
+excerpt: "Монгол Улсын 9 тасгийн эмнэлгийн орны тоо 2024 онд, дотрын тасгаас хүүхдийн тасаг хүртэл."
+category: "Эрүүл мэнд"
+tags: ["монгол", "эрүүл мэнд", "эмнэлгийн ор", "эрүүл мэндийн тусламж", "тасаг"]
+keywords: ["монгол эмнэлгийн ор тасгаар", "эмнэлгийн тасгийн ор", "эрүүл мэндийн хүчин чадал монгол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-12-31
+dataFiles:
+  - path: "/datasets/hospital-beds-by-type-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/hospital-beds-by-type.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2100_005V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+2024 онд Монгол Улсад нийт **30,117 эмнэлгийн ор** байсан. Дотрын тасаг хамгийн олон **7,564 ортой** байсан бөгөөд хүүхдийн тасаг (4,134), мэс заслын тасаг (3,441) дараалжээ.
+
+<VegaChart
+  spec="/charts/hospital-beds-by-type-mn.json"
+  title="Монгол Улсын эмнэлгийн ор төрлөөр, тоо (2024)"
+/>

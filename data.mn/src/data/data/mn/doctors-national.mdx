@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын их эмчийн тоо (1925-1992)"
+publishDate: 2026-03-09
+excerpt: "Монгол Улсад 1925-1992 онд их эмчийн нийт тоо. Эмчийн тоо 1925 онд ердөө 2 байснаас 1990 он гэхэд 6,000 гаруй болж, Зөвлөлтийн үеийн эрүүл мэндийн системийн хурдацтай хөгжлийг харуулж байна."
+category: "Эрүүл мэнд"
+tags: ["монгол", "эрүүл-мэнд", "эмч", "эрүүл-мэндийн-ажилтан", "түүхэн-өгөгдөл"]
+keywords: ["монгол эмч", "их эмчийн тоо", "эрүүл мэндийн ажилтан", "эмнэлгийн боловсон хүчин", "эрүүл мэндийн статистик"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-09
+dataFiles:
+  - path: "/datasets/doctors-national-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/doctors-national.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0100_01TTT08.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/doctors-national-mn.json"
+  title="Монгол Улсын их эмчийн тоо (1925-1992)"
+/>

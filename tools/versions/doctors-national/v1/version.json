@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "dataset_id": "doctors-national",
+  "fetched_at": "2026-03-09",
+  "source_updated_at": "2025-02-04T09:10:20",
+  "row_count": 42,
+  "data_as_of": "1992",
+  "change_type": "initial",
+  "notes": "Initial fetch. 42 annual observations, 1925-1992. Category 0 (Total number of doctors), NSO table DT_NSO_0100_01TTT08.px."
+}

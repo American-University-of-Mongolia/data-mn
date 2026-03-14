@@ -1,0 +1,31 @@
+---
+title: "Air Pollution Concentration in Ulaanbaatar (2002-2026)"
+publishDate: 2026-03-14
+excerpt: "Monthly average PM2.5 and PM10 particulate matter concentrations in Ulaanbaatar from 2002 to 2026, averaged across city monitoring stations. PM2.5 peaked at 0.622 mg/m³ in winter months — over 40 times the WHO annual guideline of 0.015 mg/m³, highlighting the severity of UB's winter air pollution crisis."
+category: "Environment"
+tags: ["mongolia", "environment", "air quality", "pollution", "ulaanbaatar", "PM2.5", "PM10"]
+keywords: ["ulaanbaatar air pollution", "mongolia air quality", "PM2.5 mongolia", "PM10 ulaanbaatar", "air pollution ulaanbaatar", "ub smog"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-14
+dataFiles:
+  - path: "/datasets/air-pollution-concentration-en.csv"
+    format: "csv"
+    size: "12 KB"
+    description: "Download as CSV"
+  - path: "/datasets/air-pollution-concentration.xlsx"
+    format: "xlsx"
+    size: "20 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2400_015V4.px, DT_NSO_2400_015V5.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/air-pollution-concentration-en.json"
+  title="Air Pollution Concentration in Ulaanbaatar (2002-2026)"
+/>

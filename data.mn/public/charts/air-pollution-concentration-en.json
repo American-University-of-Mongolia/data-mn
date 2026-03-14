@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Monthly average PM2.5 and PM10 concentration in Ulaanbaatar (2002-2026, mg/m³), averaged across UB monitoring stations.",
+  "data": {
+    "url": "/datasets/air-pollution-concentration-en.csv",
+    "format": { "type": "csv" }
+  },
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "temporal",
+      "title": "Month",
+      "axis": { "grid": false, "format": "%Y" }
+    },
+    "y": {
+      "field": "value_mg_m3",
+      "type": "quantitative",
+      "title": "Concentration (mg/m³)",
+      "axis": { "format": ",.3f" }
+    },
+    "color": {
+      "field": "pollutant",
+      "type": "nominal",
+      "title": "Pollutant",
+      "scale": {
+        "domain": ["PM2.5", "PM10"],
+        "range": ["#ef4444", "#f97316"]
+      },
+      "legend": { "orient": "top" }
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "line", "strokeWidth": 1.5, "interpolate": "monotone", "opacity": 0.85 }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout",
+            "fields": ["month"]
+          }
+        }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 40 },
+      "encoding": {
+        "opacity": {
+          "condition": { "param": "hover", "empty": false, "value": 1 },
+          "value": 0
+        },
+        "tooltip": [
+          { "field": "month", "type": "temporal", "title": "Month", "format": "%Y-%m" },
+          { "field": "pollutant", "type": "nominal", "title": "Pollutant" },
+          { "field": "value_mg_m3", "type": "quantitative", "title": "Concentration (mg/m³)", "format": ",.4f" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": { "stroke": "transparent" },
+    "legend": { "labelFontSize": 13, "titleFontSize": 14 }
+  }
+}

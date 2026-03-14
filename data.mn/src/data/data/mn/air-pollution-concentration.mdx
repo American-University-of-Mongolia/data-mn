@@ -1,0 +1,31 @@
+---
+title: "Улаанбаатар хотын агаарын бохирдлын концентраци (2002-2026)"
+publishDate: 2026-03-14
+excerpt: "2002-2026 онуудад Улаанбаатар хотын хяналтын станцуудаар хэмжсэн РМ2.5 болон РМ10 тоосонцорын сарын дундаж концентраци. РМ2.5 өвлийн улиралд 0.622 мг/м³-т хүрсэн нь ДЭМБ-ын жилийн дундаж стандартаас (0.015 мг/м³) 40 дахин илүү байгаа нь УБ хотын өвлийн агаарын бохирдлын хүнд байдлыг харуулж байна."
+category: "Байгаль орчин"
+tags: ["монгол", "байгаль орчин", "агаарын чанар", "бохирдол", "улаанбаатар", "РМ2.5", "РМ10"]
+keywords: ["улаанбаатар агаарын бохирдол", "монгол агаарын чанар", "РМ2.5 монгол", "РМ10 улаанбаатар", "агаарын бохирдол улаанбаатар"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-14
+dataFiles:
+  - path: "/datasets/air-pollution-concentration-mn.csv"
+    format: "csv"
+    size: "14 KB"
+    description: "CSV татах"
+  - path: "/datasets/air-pollution-concentration.xlsx"
+    format: "xlsx"
+    size: "20 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол улсын Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2400_015V4.px, DT_NSO_2400_015V5.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/air-pollution-concentration-mn.json"
+  title="Улаанбаатар хотын агаарын бохирдлын концентраци (2002-2026)"
+/>

@@ -1,0 +1,31 @@
+---
+title: "Монгол улсын гол аж үйлдвэрийн бүтээгдэхүүний үйлдвэрлэл (1989-2024)"
+publishDate: 2026-03-14
+excerpt: "1989-2024 онуудад Монгол улсын гол аж үйлдвэрийн бүтээгдэхүүн болох нүүрс, зэсийн баяжмал, алт, цахилгаан эрчим хүч, газрын тос, төмрийн хүдэр, молибдений баяжмалын үйлдвэрлэлийн жилийн мэдээлэл. Нүүрсний үйлдвэрлэл 2022 онд 51.5 сая тонн хүрч дээд цэгтээ хүрсэн бол зэсийн баяжмал 2023 онд 1.8 сая тонн болсон."
+category: "Аж үйлдвэр"
+tags: ["монгол", "аж үйлдвэр", "уул уурхай", "нүүрс", "зэс", "алт", "үйлдвэрлэл"]
+keywords: ["монгол аж үйлдвэрийн үйлдвэрлэл", "монгол нүүрсний үйлдвэрлэл", "монгол зэсийн үйлдвэрлэл", "монгол алтны үйлдвэрлэл", "монгол уул уурхай"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-14
+dataFiles:
+  - path: "/datasets/industrial-production-national-mn.csv"
+    format: "csv"
+    size: "8 KB"
+    description: "CSV татах"
+  - path: "/datasets/industrial-production-national.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол улсын Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1100_013V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/industrial-production-national-mn.json"
+  title="Монгол улсын гол аж үйлдвэрийн бүтээгдэхүүний үйлдвэрлэл (1989-2024)"
+/>

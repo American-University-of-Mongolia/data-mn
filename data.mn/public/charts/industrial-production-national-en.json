@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Production of major industrial commodities in Mongolia (1989–2024).",
+  "data": {
+    "url": "/datasets/industrial-production-national-en.csv",
+    "format": { "type": "csv" }
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "commodity",
+        "oneOf": ["Coal", "Copper (with concentrate)", "Crude oil", "Electricity", "Gold", "Iron ore", "Molybdenum concentrate (47%)"]
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": { "format": "d", "tickMinStep": 5, "grid": false }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Production (see unit per commodity)",
+      "axis": { "format": ",.0f" }
+    },
+    "color": {
+      "field": "commodity",
+      "type": "nominal",
+      "title": "Commodity",
+      "scale": {
+        "domain": ["Coal", "Copper (with concentrate)", "Crude oil", "Electricity", "Gold", "Iron ore", "Molybdenum concentrate (47%)"],
+        "range": ["#475569", "#f59e0b", "#eab308", "#3b82f6", "#10b981", "#6366f1", "#ec4899"]
+      },
+      "legend": { "orient": "top" }
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "line", "strokeWidth": 2, "interpolate": "monotone" }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout",
+            "fields": ["year"]
+          }
+        }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 60 },
+      "encoding": {
+        "opacity": {
+          "condition": { "param": "hover", "empty": false, "value": 1 },
+          "value": 0
+        },
+        "tooltip": [
+          { "field": "year", "type": "quantitative", "title": "Year", "format": "d" },
+          { "field": "commodity", "type": "nominal", "title": "Commodity" },
+          { "field": "value", "type": "quantitative", "title": "Value", "format": ",.1f" },
+          { "field": "unit", "type": "nominal", "title": "Unit" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": { "stroke": "transparent" },
+    "legend": { "labelFontSize": 13, "titleFontSize": 14 }
+  }
+}

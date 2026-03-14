@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "date": "2026-03-14",
+  "source_table": "DT_NSO_1100_013V1.px",
+  "source_updated": "2025-09-30",
+  "rows": 226,
+  "commodities": ["Coal", "Copper concentrate (35%)", "Gold", "Electricity", "Crude oil", "Iron ore", "Molybdenum concentrate (47%)"],
+  "year_range": "1989-2024",
+  "notes": "7 key industrial commodities selected from 74 available. Units vary per commodity."
+}

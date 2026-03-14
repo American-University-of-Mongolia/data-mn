@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "date": "2026-03-14",
+  "source_tables": ["DT_NSO_0100_01T37.px"],
+  "source_updated": "2025-10-08",
+  "rows": 264,
+  "indicators": 12,
+  "year_range": "1940 to 1992",
+  "notes": "Long-form dataset. Nulls dropped (480 raw rows → 264). 1950 telephone points outlier (3600) excluded."
+}

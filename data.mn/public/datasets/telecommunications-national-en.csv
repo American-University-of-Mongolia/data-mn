@@ -1,0 +1,265 @@
+year,indicator,unit,value
+1940,Post offices,count,25.0
+1947,Post offices,count,30.0
+1950,Post offices,count,37.0
+1952,Post offices,count,58.0
+1953,Post offices,count,59.0
+1954,Post offices,count,59.0
+1955,Post offices,count,152.0
+1956,Post offices,count,179.0
+1957,Post offices,count,181.0
+1958,Post offices,count,186.0
+1960,Post offices,count,230.0
+1961,Post offices,count,250.0
+1962,Post offices,count,285.0
+1963,Post offices,count,346.0
+1965,Post offices,count,376.0
+1966,Post offices,count,384.0
+1967,Post offices,count,393.0
+1970,Post offices,count,401.0
+1971,Post offices,count,400.0
+1972,Post offices,count,392.0
+1973,Post offices,count,392.0
+1974,Post offices,count,394.0
+1975,Post offices,count,391.0
+1976,Post offices,count,382.0
+1977,Post offices,count,392.0
+1978,Post offices,count,393.0
+1979,Post offices,count,399.0
+1980,Post offices,count,404.0
+1981,Post offices,count,408.0
+1982,Post offices,count,411.0
+1983,Post offices,count,414.0
+1984,Post offices,count,418.0
+1985,Post offices,count,420.0
+1986,Post offices,count,422.0
+1987,Post offices,count,421.0
+1988,Post offices,count,427.0
+1989,Post offices,count,429.0
+1990,Post offices,count,428.0
+1991,Post offices,count,428.0
+1992,Post offices,count,413.0
+1940,Telegraph stations,count,15.0
+1947,Telegraph stations,count,20.0
+1950,Telegraph stations,count,25.0
+1952,Telegraph stations,count,20.0
+1953,Telegraph stations,count,20.0
+1954,Telegraph stations,count,20.0
+1955,Telegraph stations,count,23.0
+1956,Telegraph stations,count,24.0
+1957,Telegraph stations,count,25.0
+1958,Telegraph stations,count,25.0
+1960,Telegraph stations,count,25.0
+1961,Telegraph stations,count,25.0
+1962,Telegraph stations,count,25.0
+1963,Telegraph stations,count,25.0
+1983,Telegraph stations,count,264.0
+1984,Telegraph stations,count,269.0
+1940,Telephone exchanges,count,20.0
+1947,Telephone exchanges,count,25.0
+1952,Telephone exchanges,count,27.0
+1953,Telephone exchanges,count,28.0
+1954,Telephone exchanges,count,28.0
+1955,Telephone exchanges,count,30.0
+1956,Telephone exchanges,count,32.0
+1957,Telephone exchanges,count,31.0
+1958,Telephone exchanges,count,31.0
+1960,Telephone exchanges,count,36.0
+1961,Telephone exchanges,count,60.0
+1962,Telephone exchanges,count,65.0
+1963,Telephone exchanges,count,54.0
+1965,Telephone exchanges,count,67.0
+1966,Telephone exchanges,count,72.0
+1967,Telephone exchanges,count,77.0
+1970,Telephone exchanges,count,93.0
+1971,Telephone exchanges,count,115.0
+1972,Telephone exchanges,count,141.0
+1973,Telephone exchanges,count,162.0
+1974,Telephone exchanges,count,186.0
+1975,Telephone exchanges,count,211.0
+1976,Telephone exchanges,count,218.0
+1977,Telephone exchanges,count,219.0
+1978,Telephone exchanges,count,223.0
+1979,Telephone exchanges,count,224.0
+1980,Telephone exchanges,count,252.0
+1981,Telephone exchanges,count,255.0
+1982,Telephone exchanges,count,258.0
+1940,Telegraph and telephone lines,thousand km,10.9
+1947,Telegraph and telephone lines,thousand km,11.6
+1952,Telegraph and telephone lines,thousand km,11.6
+1953,Telegraph and telephone lines,thousand km,11.8
+1954,Telegraph and telephone lines,thousand km,12.3
+1955,Telegraph and telephone lines,thousand km,13.1
+1956,Telegraph and telephone lines,thousand km,13.4
+1957,Telegraph and telephone lines,thousand km,13.6
+1960,Telegraph and telephone lines,thousand km,13.8
+1961,Telegraph and telephone lines,thousand km,13.8
+1962,Telegraph and telephone lines,thousand km,16.3
+1963,Telegraph and telephone lines,thousand km,14.5
+1965,Telegraph and telephone lines,thousand km,14.1
+1970,Telegraph and telephone lines,thousand km,16.8
+1971,Telegraph and telephone lines,thousand km,17.2
+1972,Telegraph and telephone lines,thousand km,17.4
+1973,Telegraph and telephone lines,thousand km,18.8
+1974,Telegraph and telephone lines,thousand km,19.0
+1975,Telegraph and telephone lines,thousand km,21.6
+1976,Telegraph and telephone lines,thousand km,22.3
+1977,Telegraph and telephone lines,thousand km,23.3
+1978,Telegraph and telephone lines,thousand km,23.7
+1979,Telegraph and telephone lines,thousand km,24.8
+1980,Telegraph and telephone lines,thousand km,25.0
+1981,Telegraph and telephone lines,thousand km,26.0
+1982,Telegraph and telephone lines,thousand km,27.2
+1983,Telegraph and telephone lines,thousand km,27.6
+1984,Telegraph and telephone lines,thousand km,28.2
+1957,Telephone points,thousands,4.616
+1960,Telephone points,thousands,5.554
+1961,Telephone points,thousands,9.289
+1962,Telephone points,thousands,9.835
+1963,Telephone points,thousands,9.694
+1965,Telephone points,thousands,11.8
+1966,Telephone points,thousands,13.3
+1967,Telephone points,thousands,14.7
+1970,Telephone points,thousands,19.5
+1971,Telephone points,thousands,21.6
+1972,Telephone points,thousands,22.6
+1973,Telephone points,thousands,24.0
+1974,Telephone points,thousands,26.2
+1975,Telephone points,thousands,31.0
+1976,Telephone points,thousands,33.4
+1977,Telephone points,thousands,34.4
+1978,Telephone points,thousands,35.7
+1979,Telephone points,thousands,37.7
+1980,Telephone points,thousands,39.8
+1981,Telephone points,thousands,41.5
+1982,Telephone points,thousands,42.9
+1983,Telephone points,thousands,44.6
+1984,Telephone points,thousands,46.7
+1985,Telephone points,thousands,49.3
+1986,Telephone points,thousands,51.7
+1987,Telephone points,thousands,55.0
+1988,Telephone points,thousands,58.3
+1989,Telephone points,thousands,62.6
+1990,Telephone points,thousands,66.4
+1991,Telephone points,thousands,68.4
+1992,Telephone points,thousands,69.2
+1950,Radio stations,count,21.0
+1957,Radio stations,count,17.0
+1960,Radio stations,count,44.0
+1961,Radio stations,count,63.0
+1962,Radio stations,count,85.0
+1963,Radio stations,count,114.0
+1965,Radio stations,count,134.0
+1966,Radio stations,count,135.0
+1967,Radio stations,count,139.0
+1970,Radio stations,count,141.0
+1971,Radio stations,count,135.0
+1972,Radio stations,count,118.0
+1973,Radio stations,count,126.0
+1974,Radio stations,count,109.0
+1975,Radio stations,count,103.0
+1976,Radio stations,count,90.0
+1977,Radio stations,count,77.0
+1950,Radio nodes,count,34.0
+1957,Radio nodes,count,54.0
+1960,Radio nodes,count,71.0
+1961,Radio nodes,count,118.0
+1962,Radio nodes,count,148.0
+1966,Radio nodes,count,360.0
+1967,Radio nodes,count,364.0
+1940,Radio concentration points,count,16.0
+1960,Radio concentration points,count,71.0
+1965,Radio concentration points,count,353.0
+1970,Radio concentration points,count,365.0
+1971,Radio concentration points,count,361.0
+1972,Radio concentration points,count,359.0
+1973,Radio concentration points,count,361.0
+1974,Radio concentration points,count,361.0
+1975,Radio concentration points,count,362.0
+1976,Radio concentration points,count,359.0
+1977,Radio concentration points,count,356.0
+1978,Radio concentration points,count,359.0
+1979,Radio concentration points,count,361.0
+1980,Radio concentration points,count,367.0
+1981,Radio concentration points,count,372.0
+1982,Radio concentration points,count,371.0
+1983,Radio concentration points,count,376.0
+1984,Radio concentration points,count,381.0
+1940,Radio points,thousands,4.4
+1950,Radio points,thousands,9.4
+1960,Radio points,thousands,33.7
+1965,Radio points,thousands,53.2
+1966,Radio points,thousands,54.0
+1967,Radio points,thousands,57.2
+1970,Radio points,thousands,66.6
+1971,Radio points,thousands,67.4
+1972,Radio points,thousands,70.8
+1973,Radio points,thousands,80.2
+1974,Radio points,thousands,85.4
+1975,Radio points,thousands,90.9
+1976,Radio points,thousands,98.1
+1977,Radio points,thousands,104.4
+1978,Radio points,thousands,110.4
+1979,Radio points,thousands,117.6
+1980,Radio points,thousands,134.4
+1981,Radio points,thousands,142.9
+1982,Radio points,thousands,157.7
+1983,Radio points,thousands,169.7
+1984,Radio points,thousands,181.8
+1985,Radio points,thousands,394.2
+1986,Radio points,thousands,409.1
+1987,Radio points,thousands,420.4
+1988,Radio points,thousands,431.6
+1989,Radio points,thousands,444.1
+1990,Radio points,thousands,443.2
+1991,Radio points,thousands,399.5
+1992,Radio points,thousands,171.0
+1950,Receivers,thousands,0.1
+1960,Receivers,thousands,19.0
+1965,Receivers,thousands,82.7
+1966,Receivers,thousands,83.9
+1967,Receivers,thousands,90.9
+1970,Receivers,thousands,99.8
+1971,Receivers,thousands,98.7
+1972,Receivers,thousands,101.4
+1973,Receivers,thousands,110.3
+1974,Receivers,thousands,114.4
+1975,Receivers,thousands,116.5
+1976,Receivers,thousands,124.7
+1977,Receivers,thousands,130.9
+1978,Receivers,thousands,140.4
+1979,Receivers,thousands,150.3
+1980,Receivers,thousands,164.3
+1981,Receivers,thousands,171.4
+1982,Receivers,thousands,179.6
+1983,Receivers,thousands,186.6
+1984,Receivers,thousands,194.2
+1970,Televisions,thousands,14.8
+1973,Televisions,thousands,24.9
+1974,Televisions,thousands,27.1
+1975,Televisions,thousands,31.4
+1976,Televisions,thousands,33.8
+1977,Televisions,thousands,36.7
+1978,Televisions,thousands,40.9
+1979,Televisions,thousands,46.4
+1980,Televisions,thousands,52.9
+1981,Televisions,thousands,58.0
+1982,Televisions,thousands,65.3
+1983,Televisions,thousands,70.7
+1984,Televisions,thousands,78.1
+1985,Televisions,thousands,88.1
+1986,Televisions,thousands,99.4
+1987,Televisions,thousands,110.5
+1988,Televisions,thousands,122.8
+1989,Televisions,thousands,132.9
+1990,Televisions,thousands,137.4
+1991,Televisions,thousands,145.0
+1992,Televisions,thousands,148.4
+1985,TV transmission stations,count,259.0
+1986,TV transmission stations,count,320.0
+1987,TV transmission stations,count,354.0
+1988,TV transmission stations,count,389.0
+1989,TV transmission stations,count,408.0
+1990,TV transmission stations,count,502.0
+1991,TV transmission stations,count,616.0
+1992,TV transmission stations,count,491.0

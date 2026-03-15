@@ -2,7 +2,7 @@
   {
     "en": "Economy",
     "mn": "Эдийн засаг",
-    "count": 13
+    "count": 14
   },
   {
     "en": "Labor Market",
@@ -10,13 +10,23 @@
     "count": 12
   },
   {
+    "en": "Finance",
+    "mn": "Санхүү",
+    "count": 11
+  },
+  {
     "en": "Agriculture",
     "mn": "Хөдөө аж ахуй",
-    "count": 9
+    "count": 8
   },
   {
     "en": "Demographics",
     "mn": "Хүн ам зүй",
+    "count": 8
+  },
+  {
+    "en": "Health",
+    "mn": "Эрүүл мэнд",
     "count": 8
   },
   {
@@ -25,18 +35,13 @@
     "count": 7
   },
   {
-    "en": "Health",
-    "mn": "Эрүүл мэнд",
-    "count": 7
-  },
-  {
     "en": "Trade",
     "mn": "Худалдаа",
     "count": 5
   },
   {
-    "en": "Finance",
-    "mn": "Санхүү",
+    "en": "Household & Income",
+    "mn": "Өрх ба орлого",
     "count": 4
   },
   {
@@ -50,18 +55,13 @@
     "count": 3
   },
   {
-    "en": "Household & Income",
-    "mn": "Өрх ба орлого",
-    "count": 3
-  },
-  {
     "en": "Employment",
     "mn": "Хөдөлмөр эрхлэлт",
     "count": 1
   },
   {
-    "en": "Society",
-    "mn": "Нийгэм",
+    "en": "Public Safety",
+    "mn": "Нийтийн аюулгүй байдал",
     "count": 1
   }
 ]

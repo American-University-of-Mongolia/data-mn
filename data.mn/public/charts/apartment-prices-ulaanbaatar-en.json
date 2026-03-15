@@ -1,0 +1,116 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Average apartment price per sqm in Ulaanbaatar, new vs old, monthly (2022-2026)",
+  "data": {
+    "url": "/datasets/apartment-prices-ulaanbaatar-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "temporal",
+      "title": "Month",
+      "axis": {
+        "format": "%b %Y",
+        "labelAngle": -45,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "price_million_mnt_per_sqm",
+      "type": "quantitative",
+      "title": "Price (million MNT / sqm)",
+      "scale": {
+        "zero": false
+      },
+      "axis": {
+        "format": ".2f"
+      }
+    },
+    "color": {
+      "field": "indicator",
+      "type": "nominal",
+      "title": "Type",
+      "scale": {
+        "domain": ["Average price of new apartment", "Average price of old apartment"],
+        "range": ["#2563eb", "#f59e0b"]
+      },
+      "legend": {
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "month",
+            "type": "temporal",
+            "title": "Month",
+            "format": "%b %Y"
+          },
+          {
+            "field": "indicator",
+            "type": "nominal",
+            "title": "Type"
+          },
+          {
+            "field": "price_million_mnt_per_sqm",
+            "type": "quantitative",
+            "title": "Price (million MNT/sqm)",
+            "format": ".2f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "strokeWidth": 0,
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

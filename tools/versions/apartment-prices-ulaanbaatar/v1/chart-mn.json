@@ -1,0 +1,116 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Улаанбаатар хотын орон сууцны нэг м.кв-ын дундаж үнэ, шинэ ба хуучин, сар бүр (2022-2026)",
+  "data": {
+    "url": "/datasets/apartment-prices-ulaanbaatar-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "сар",
+      "type": "temporal",
+      "title": "Сар",
+      "axis": {
+        "format": "%b %Y",
+        "labelAngle": -45,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "үнэ_сая_төг_м_кв",
+      "type": "quantitative",
+      "title": "Үнэ (сая төг / м.кв)",
+      "scale": {
+        "zero": false
+      },
+      "axis": {
+        "format": ".2f"
+      }
+    },
+    "color": {
+      "field": "үзүүлэлт",
+      "type": "nominal",
+      "title": "Төрөл",
+      "scale": {
+        "domain": ["Шинэ орон сууцны дундаж үнэ", "Хуучин орон сууцны дундаж үнэ"],
+        "range": ["#2563eb", "#f59e0b"]
+      },
+      "legend": {
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "сар",
+            "type": "temporal",
+            "title": "Сар",
+            "format": "%b %Y"
+          },
+          {
+            "field": "үзүүлэлт",
+            "type": "nominal",
+            "title": "Төрөл"
+          },
+          {
+            "field": "үнэ_сая_төг_м_кв",
+            "type": "quantitative",
+            "title": "Үнэ (сая төг/м.кв)",
+            "format": ".2f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "strokeWidth": 0,
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

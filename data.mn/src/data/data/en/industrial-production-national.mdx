@@ -1,0 +1,31 @@
+---
+title: "Mongolia Major Industrial Commodity Production (1989-2024)"
+publishDate: 2026-03-14
+excerpt: "Annual production of key industrial commodities in Mongolia from 1989 to 2024, including coal, copper concentrate, gold, electricity, crude oil, iron ore, and molybdenum. Coal peaked at 51.5 million tonnes in 2022 while copper concentrate reached 1.8 million tonnes in 2023."
+category: "Industry"
+tags: ["mongolia", "industry", "mining", "coal", "copper", "gold", "production"]
+keywords: ["mongolia industrial production", "mongolia coal production", "mongolia copper production", "mongolia gold production", "mongolia mining output"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-14
+dataFiles:
+  - path: "/datasets/industrial-production-national-en.csv"
+    format: "csv"
+    size: "8 KB"
+    description: "Download as CSV"
+  - path: "/datasets/industrial-production-national.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1100_013V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/industrial-production-national-en.json"
+  title="Mongolia Major Industrial Commodity Production (1989-2024)"
+/>

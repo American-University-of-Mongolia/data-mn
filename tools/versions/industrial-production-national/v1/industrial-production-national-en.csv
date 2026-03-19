@@ -1,0 +1,214 @@
+year,commodity,unit,value
+1989,Coal,thousand tonnes,8044.5
+1989,Electricity,million kWh,3568.3
+1989,Molybdenum concentrate (47%),tonnes,3361.0
+1990,Coal,thousand tonnes,7157.0
+1990,Electricity,million kWh,3347.9
+1990,Molybdenum concentrate (47%),tonnes,4208.0
+1991,Coal,thousand tonnes,7037.0
+1991,Electricity,million kWh,3228.6
+1991,Gold,kg,722.6
+1991,Molybdenum concentrate (47%),tonnes,3718.0
+1992,Coal,thousand tonnes,6247.3
+1992,Electricity,million kWh,2928.6
+1992,Gold,kg,776.0
+1992,Molybdenum concentrate (47%),tonnes,3500.0
+1993,Coal,thousand tonnes,5617.0
+1993,Electricity,million kWh,2131.7
+1993,Gold,kg,1117.0
+1993,Molybdenum concentrate (47%),tonnes,4367.0
+1994,Coal,thousand tonnes,5158.0
+1994,Electricity,million kWh,2122.7
+1994,Gold,kg,1789.5
+1994,Molybdenum concentrate (47%),tonnes,4396.0
+1995,Coal,thousand tonnes,5019.0
+1995,Electricity,million kWh,2628.0
+1995,Gold,kg,4504.0
+1995,Molybdenum concentrate (47%),tonnes,3906.0
+1996,Coal,thousand tonnes,5110.6
+1996,Electricity,million kWh,2614.0
+1996,Gold,kg,6976.4
+1996,Molybdenum concentrate (47%),tonnes,4684.0
+1997,Coal,thousand tonnes,4924.0
+1997,Electricity,million kWh,2662.0
+1997,Gold,kg,8451.0
+1997,Molybdenum concentrate (47%),tonnes,4238.3
+1998,Coal,thousand tonnes,5057.0
+1998,Crude oil,thousand barrels,44.8
+1998,Electricity,million kWh,2675.0
+1998,Gold,kg,9531.4
+1998,Molybdenum concentrate (47%),tonnes,4240.0
+1999,Coal,thousand tonnes,4964.0
+1999,Crude oil,thousand barrels,71.9
+1999,Electricity,million kWh,2842.0
+1999,Gold,kg,10246.2
+1999,Molybdenum concentrate (47%),tonnes,4157.0
+2000,Coal,thousand tonnes,5185.0
+2000,Crude oil,thousand barrels,65.5
+2000,Electricity,million kWh,2946.0
+2000,Gold,kg,11808.1
+2000,Molybdenum concentrate (47%),tonnes,2843.0
+2001,Coal,thousand tonnes,5141.0
+2001,Crude oil,thousand barrels,73.7
+2001,Electricity,million kWh,3017.0
+2001,Gold,kg,13674.6
+2001,Molybdenum concentrate (47%),tonnes,3028.0
+2002,Coal,thousand tonnes,5544.4
+2002,Copper (with concentrate),thousand tonnes,4889.0
+2002,Crude oil,thousand barrels,139.2
+2002,Electricity,million kWh,3111.7
+2002,Gold,kg,12097.1
+2002,Molybdenum concentrate (47%),tonnes,3384.0
+2003,Coal,thousand tonnes,5666.1
+2003,Copper (with concentrate),thousand tonnes,1852.4
+2003,Crude oil,thousand barrels,183.0
+2003,Electricity,million kWh,3137.7
+2003,Gold,kg,11111.3
+2003,Molybdenum concentrate (47%),tonnes,3836.6
+2004,Coal,thousand tonnes,6865.0
+2004,Copper (with concentrate),thousand tonnes,2893.2
+2004,Crude oil,thousand barrels,215.7
+2004,Electricity,million kWh,3303.4
+2004,Gold,kg,19417.6
+2004,Iron ore,thousand tonnes,33.5
+2004,Molybdenum concentrate (47%),tonnes,2428.0
+2005,Coal,thousand tonnes,7517.1
+2005,Copper (with concentrate),thousand tonnes,515.8
+2005,Crude oil,thousand barrels,200.7
+2005,Electricity,million kWh,3418.9
+2005,Gold,kg,24121.9
+2005,Iron ore,thousand tonnes,167.7
+2005,Molybdenum concentrate (47%),tonnes,2528.0
+2006,Coal,thousand tonnes,8074.1
+2006,Copper (with concentrate),thousand tonnes,537.7
+2006,Crude oil,thousand barrels,366.8
+2006,Electricity,million kWh,3544.2
+2006,Gold,kg,22561.3
+2006,Iron ore,thousand tonnes,180.0
+2006,Molybdenum concentrate (47%),tonnes,2987.0
+2007,Coal,thousand tonnes,9237.6
+2007,Copper (with concentrate),thousand tonnes,543.1
+2007,Crude oil,thousand barrels,833.2
+2007,Electricity,million kWh,3700.7
+2007,Gold,kg,17138.8
+2007,Iron ore,thousand tonnes,265.1
+2007,Molybdenum concentrate (47%),tonnes,4209.1
+2008,Coal,thousand tonnes,10071.9
+2008,Copper (with concentrate),thousand tonnes,525.3
+2008,Crude oil,thousand barrels,1174.2
+2008,Electricity,million kWh,4000.6
+2008,Gold,kg,14494.1
+2008,Iron ore,thousand tonnes,1387.4
+2008,Molybdenum concentrate (47%),tonnes,4042.0
+2009,Coal,thousand tonnes,14442.1
+2009,Copper (with concentrate),thousand tonnes,533.1
+2009,Crude oil,thousand barrels,1870.0
+2009,Electricity,million kWh,4038.8
+2009,Gold,kg,9341.2
+2009,Iron ore,thousand tonnes,1379.0
+2009,Molybdenum concentrate (47%),tonnes,5125.0
+2010,Coal,thousand tonnes,25161.9
+2010,Copper (with concentrate),thousand tonnes,522.0
+2010,Crude oil,thousand barrels,2181.4
+2010,Electricity,million kWh,4312.8
+2010,Gold,kg,5998.6
+2010,Iron ore,thousand tonnes,3076.6
+2010,Molybdenum concentrate (47%),tonnes,4677.0
+2011,Coal,thousand tonnes,32029.7
+2011,Copper (with concentrate),thousand tonnes,513.7
+2011,Crude oil,thousand barrels,2548.9
+2011,Electricity,million kWh,4536.4
+2011,Gold,kg,5457.0
+2011,Iron ore,thousand tonnes,5193.9
+2011,Molybdenum concentrate (47%),tonnes,4163.1
+2012,Coal,thousand tonnes,29926.1
+2012,Copper (with concentrate),thousand tonnes,517.9
+2012,Crude oil,thousand barrels,3636.0
+2012,Electricity,million kWh,4815.6
+2012,Gold,kg,5977.1
+2012,Iron ore,thousand tonnes,6898.0
+2012,Molybdenum concentrate (47%),tonnes,4050.2
+2013,Coal,thousand tonnes,30123.3
+2013,Copper (with concentrate),thousand tonnes,803.0
+2013,Crude oil,thousand barrels,5128.9
+2013,Electricity,million kWh,5019.5
+2013,Gold,kg,8900.9
+2013,Iron ore,thousand tonnes,5011.9
+2013,Molybdenum concentrate (47%),tonnes,3869.2
+2014,Coal,thousand tonnes,25287.8
+2014,Copper (with concentrate),thousand tonnes,1080.4
+2014,Crude oil,thousand barrels,7405.3
+2014,Electricity,million kWh,5375.8
+2014,Gold,kg,11503.8
+2014,Iron ore,thousand tonnes,6293.1
+2014,Molybdenum concentrate (47%),tonnes,4254.0
+2015,Coal,thousand tonnes,24205.9
+2015,Copper (with concentrate),thousand tonnes,1334.7
+2015,Crude oil,thousand barrels,8769.3
+2015,Electricity,million kWh,5513.2
+2015,Gold,kg,14532.8
+2015,Iron ore,thousand tonnes,4273.6
+2015,Molybdenum concentrate (47%),tonnes,5441.0
+2016,Coal,thousand tonnes,35522.3
+2016,Copper (with concentrate),thousand tonnes,1445.1
+2016,Crude oil,thousand barrels,8249.8
+2016,Electricity,million kWh,5667.1
+2016,Gold,kg,18435.7
+2016,Iron ore,thousand tonnes,4936.2
+2016,Molybdenum concentrate (47%),tonnes,5718.1
+2017,Coal,thousand tonnes,48145.1
+2017,Copper (with concentrate),thousand tonnes,1317.6
+2017,Crude oil,thousand barrels,7624.1
+2017,Electricity,million kWh,6027.3
+2017,Gold,kg,19849.0
+2017,Iron ore,thousand tonnes,7694.7
+2017,Molybdenum concentrate (47%),tonnes,6220.4
+2018,Coal,thousand tonnes,51401.3
+2018,Copper (with concentrate),thousand tonnes,1310.8
+2018,Crude oil,thousand barrels,6388.6
+2018,Electricity,million kWh,6535.3
+2018,Gold,kg,20655.2
+2018,Iron ore,thousand tonnes,6225.4
+2018,Molybdenum concentrate (47%),tonnes,5836.4
+2019,Coal,thousand tonnes,55799.4
+2019,Copper (with concentrate),thousand tonnes,1262.6
+2019,Crude oil,thousand barrels,6876.1
+2019,Electricity,million kWh,6900.4
+2019,Gold,kg,16234.9
+2019,Iron ore,thousand tonnes,8572.2
+2019,Molybdenum concentrate (47%),tonnes,5722.3
+2020,Coal,thousand tonnes,43844.8
+2020,Copper (with concentrate),thousand tonnes,1276.7
+2020,Crude oil,thousand barrels,4105.9
+2020,Electricity,million kWh,7069.7
+2020,Gold,kg,20225.5
+2020,Iron ore,thousand tonnes,9224.4
+2020,Molybdenum concentrate (47%),tonnes,0.0
+2021,Coal,thousand tonnes,33691.8
+2021,Copper (with concentrate),thousand tonnes,1326.3
+2021,Crude oil,thousand barrels,4667.1
+2021,Electricity,million kWh,7825.3
+2021,Gold,kg,19054.4
+2021,Iron ore,thousand tonnes,9171.9
+2021,Molybdenum concentrate (47%),tonnes,0.0
+2022,Coal,thousand tonnes,37294.7
+2022,Copper (with concentrate),thousand tonnes,1189.8
+2022,Crude oil,thousand barrels,2565.4
+2022,Electricity,million kWh,8035.0
+2022,Gold,kg,19382.7
+2022,Iron ore,thousand tonnes,7659.9
+2022,Molybdenum concentrate (47%),tonnes,0.0
+2023,Coal,thousand tonnes,85262.3
+2023,Copper (with concentrate),thousand tonnes,1395.3
+2023,Crude oil,thousand barrels,4888.9
+2023,Electricity,million kWh,8487.4
+2023,Gold,kg,14854.8
+2023,Iron ore,thousand tonnes,5334.8
+2023,Molybdenum concentrate (47%),tonnes,0.0
+2024,Coal,thousand tonnes,103401.3
+2024,Copper (with concentrate),thousand tonnes,1562.2
+2024,Crude oil,thousand barrels,4188.3
+2024,Electricity,million kWh,8692.8
+2024,Gold,kg,12594.9
+2024,Iron ore,thousand tonnes,6642.2
+2024,Molybdenum concentrate (47%),tonnes,0.0

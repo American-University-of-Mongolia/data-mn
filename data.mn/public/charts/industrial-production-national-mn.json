@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол улсын гол аж үйлдвэрийн бүтээгдэхүүний үйлдвэрлэл (1989–2024).",
+  "data": {
+    "url": "/datasets/industrial-production-national-mn.csv",
+    "format": { "type": "csv" }
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "бараа_бүтээгдэхүүн",
+        "oneOf": ["Нүүрс", "Зэс, баяжмалаараа", "Газрын тос", "Цахилгаан эрчим хүч", "Алт", "Төмрийн хүдэр", "Молибдений баяжмал (47%)"]
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": { "format": "d", "tickMinStep": 5, "grid": false }
+    },
+    "y": {
+      "field": "утга",
+      "type": "quantitative",
+      "title": "Үйлдвэрлэл (хэмжих нэгжийг харна уу)",
+      "axis": { "format": ",.0f" }
+    },
+    "color": {
+      "field": "бараа_бүтээгдэхүүн",
+      "type": "nominal",
+      "title": "Бүтээгдэхүүн",
+      "scale": {
+        "domain": ["Нүүрс", "Зэс, баяжмалаараа", "Газрын тос", "Цахилгаан эрчим хүч", "Алт", "Төмрийн хүдэр", "Молибдений баяжмал (47%)"],
+        "range": ["#475569", "#f59e0b", "#eab308", "#3b82f6", "#10b981", "#6366f1", "#ec4899"]
+      },
+      "legend": { "orient": "top" }
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "line", "strokeWidth": 2, "interpolate": "monotone" }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout",
+            "fields": ["он"]
+          }
+        }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 60 },
+      "encoding": {
+        "opacity": {
+          "condition": { "param": "hover", "empty": false, "value": 1 },
+          "value": 0
+        },
+        "tooltip": [
+          { "field": "он", "type": "quantitative", "title": "Он", "format": "d" },
+          { "field": "бараа_бүтээгдэхүүн", "type": "nominal", "title": "Бүтээгдэхүүн" },
+          { "field": "утга", "type": "quantitative", "title": "Утга", "format": ",.1f" },
+          { "field": "хэмжих_нэгж", "type": "nominal", "title": "Хэмжих нэгж" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": { "stroke": "transparent" },
+    "legend": { "labelFontSize": 13, "titleFontSize": 14 }
+  }
+}

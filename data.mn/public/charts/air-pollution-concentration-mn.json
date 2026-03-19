@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Улаанбаатар хотын РМ2.5 болон РМ10 тоосонцорын сарын дундаж концентраци (2002-2026, мг/м³), хотын хяналтын станцуудын дундаж.",
+  "data": {
+    "url": "/datasets/air-pollution-concentration-mn.csv",
+    "format": { "type": "csv" }
+  },
+  "encoding": {
+    "x": {
+      "field": "сар",
+      "type": "temporal",
+      "title": "Сар",
+      "axis": { "grid": false, "format": "%Y" }
+    },
+    "y": {
+      "field": "утга_мг_м3",
+      "type": "quantitative",
+      "title": "Концентраци (мг/м³)",
+      "axis": { "format": ",.3f" }
+    },
+    "color": {
+      "field": "бохирдуулагч",
+      "type": "nominal",
+      "title": "Бохирдуулагч",
+      "scale": {
+        "domain": ["Тоосонцор РМ2.5", "Тоосонцор РМ10"],
+        "range": ["#ef4444", "#f97316"]
+      },
+      "legend": { "orient": "top" }
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "line", "strokeWidth": 1.5, "interpolate": "monotone", "opacity": 0.85 }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout",
+            "fields": ["сар"]
+          }
+        }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 40 },
+      "encoding": {
+        "opacity": {
+          "condition": { "param": "hover", "empty": false, "value": 1 },
+          "value": 0
+        },
+        "tooltip": [
+          { "field": "сар", "type": "temporal", "title": "Сар", "format": "%Y-%m" },
+          { "field": "бохирдуулагч", "type": "nominal", "title": "Бохирдуулагч" },
+          { "field": "утга_мг_м3", "type": "quantitative", "title": "Концентраци (мг/м³)", "format": ",.4f" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": { "stroke": "transparent" },
+    "legend": { "labelFontSize": 13, "titleFontSize": 14 }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "date": "2026-03-14",
+  "source_tables": ["DT_NSO_2400_015V4.px (PM10)", "DT_NSO_2400_015V5.px (PM2.5)"],
+  "source_updated": "2026-03-10",
+  "rows": 580,
+  "pollutants": ["PM2.5", "PM10"],
+  "locations": "17 Ulaanbaatar monitoring stations (averaged)",
+  "month_range": "2002-01 to 2026-02",
+  "notes": "Monthly averages across UB stations. Values in mg/m3."
+}

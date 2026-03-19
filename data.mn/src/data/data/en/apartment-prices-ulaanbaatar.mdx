@@ -1,0 +1,31 @@
+---
+title: "Ulaanbaatar Apartment Prices per sqm, New vs Old, Monthly (2022-2026)"
+publishDate: 2026-03-16
+excerpt: "Monthly average apartment price per square meter in Ulaanbaatar's 6 central districts. New apartments reached 5.05 million MNT/sqm in late 2025."
+category: "Prices & Inflation"
+tags: ["mongolia", "apartment", "housing", "real-estate", "ulaanbaatar", "prices"]
+keywords: ["apartment price", "housing price", "real estate", "sqm price", "Ulaanbaatar"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-16
+dataFiles:
+  - path: "/datasets/apartment-prices-ulaanbaatar-en.csv"
+    format: "csv"
+    size: "4 KB"
+    description: "Download as CSV"
+  - path: "/datasets/apartment-prices-ulaanbaatar.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0300_00V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/apartment-prices-ulaanbaatar-en.json"
+  title="Ulaanbaatar Apartment Prices per sqm, New vs Old, Monthly (2022-2026)"
+/>

@@ -1,0 +1,31 @@
+---
+title: "Монгол улсын харилцаа холбооны дэд бүтэц (1940–1992)"
+publishDate: 2026-03-14
+excerpt: "1940-1992 онуудад Монгол улсын харилцаа холбооны дэд бүтцийн 12 үзүүлэлтийн түүхэн мэдээлэл: шуудангийн салбар, телефон цэг, радио цэг, телевизор болон бусад. Социализмын үеийн харилцаа холбооны дэд бүтцийн хөгжлийг харуулж байна."
+category: "Дэд бүтэц"
+tags: ["монгол", "харилцаа холбоо", "дэд бүтэц", "түүхэн", "радио", "телефон", "телевизор"]
+keywords: ["монгол харилцаа холбоо", "монгол телефоны түүх", "монгол радиогийн түүх", "монгол телевизийн түүх", "шуудангийн салбар монгол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-14
+dataFiles:
+  - path: "/datasets/telecommunications-national-mn.csv"
+    format: "csv"
+    size: "13 KB"
+    description: "CSV татах"
+  - path: "/datasets/telecommunications-national.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол улсын Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0100_01T37.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/telecommunications-national-mn.json"
+  title="Монгол улсын харилцаа холбооны дэд бүтэц (1940–1992)"
+/>

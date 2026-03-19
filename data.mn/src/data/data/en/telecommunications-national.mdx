@@ -1,0 +1,31 @@
+---
+title: "Mongolia Telecommunications Infrastructure (1940–1992)"
+publishDate: 2026-03-14
+excerpt: "Historical data on Mongolia's telecommunications infrastructure from 1940 to 1992, covering 12 indicators including post offices, telephone points, radio points, and televisions. The data captures the growth of communications infrastructure during the socialist era."
+category: "Infrastructure"
+tags: ["mongolia", "telecommunications", "infrastructure", "historical", "radio", "telephone", "television"]
+keywords: ["mongolia telecommunications", "mongolia telephone history", "mongolia radio history", "mongolia tv history", "mongolia post offices"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-14
+dataFiles:
+  - path: "/datasets/telecommunications-national-en.csv"
+    format: "csv"
+    size: "10 KB"
+    description: "Download as CSV"
+  - path: "/datasets/telecommunications-national.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0100_01T37.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/telecommunications-national-en.json"
+  title="Mongolia Telecommunications Infrastructure (1940–1992)"
+/>

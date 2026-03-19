@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын Хувийн хэвшлийн зээл, сараар (2004–2026)"
+publishDate: 2026-03-09
+excerpt: "Монгол Улсын хадгаламж эрхлэх байгууллагуудаас хувийн хэвшилд олгосон зээлийн үлдэгдэл. 2026 оны 1 дүгээр сард 17.1 их наяд төгрөгт хүрсэн."
+category: "Санхүү"
+tags: ["монгол", "зээл", "хувийн хэвшил", "банкны статистик", "мөнгөний бодлого", "санхүү"]
+keywords: ["Монгол хувийн хэвшлийн зээл", "банкны зээл Монгол", "Монголбанкны мөнгөний статистик", "монголбанк зээл", "хувийн хэвшлийн зээл"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-01-01
+dataFiles:
+  - path: "/datasets/mongolbank-credit-private-sector-mn.csv"
+    format: "csv"
+    size: "4 KB"
+    description: "CSV татах"
+  - path: "/datasets/mongolbank-credit-private-sector.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Монголбанк"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-90"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-credit-private-sector-mn.json"
+  title="Монгол Улсын Хувийн хэвшлийн зээл, сараар (2004–2026)"
+/>

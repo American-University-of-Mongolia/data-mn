@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын ЖДБ-ийн зээлийн үлдэгдэл, тэрбум төгрөг (2017-2026)"
+publishDate: 2026-03-20
+excerpt: "2017 оны 1 сараас 2026 оны 1 сар хүртэлх жижиг, дунд бизнес эрхлэгчдэд олгосон зээлийн сар бүрийн үлдэгдэл. ЖДБ-ийн зээл 2017 оны эхэнд 1,317 тэрбум төгрөгөөс 2026 оны 1 сард 4,786 тэрбум төгрөг болтлоо өссөн нь жижиг бизнесийн зээлд чиглэсэн бодлогын дэмжлэгийг харуулж байна."
+category: "Санхүү"
+tags: ["монгол", "жжб", "зээл", "жижиг дунд бизнес", "банк", "санхүү"]
+keywords: ["ЖДБ зээл монгол", "жижиг дунд бизнесийн зээл монгол", "монголбанк ЖДБ зээл", "ЖДБ зээлийн үлдэгдэл"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-01-01
+dataFiles:
+  - path: "/datasets/mongolbank-sme-loans-mn.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "CSV татах"
+  - path: "/datasets/mongolbank-sme-loans.xlsx"
+    format: "xlsx"
+    size: "9 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Монголбанк"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-128"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-sme-loans-mn.json"
+  title="Монгол Улсын ЖДБ-ийн зээлийн үлдэгдэл, тэрбум төгрөг (2017-2026)"
+/>

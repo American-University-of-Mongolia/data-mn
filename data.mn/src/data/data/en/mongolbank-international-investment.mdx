@@ -1,0 +1,31 @@
+---
+title: "Mongolia International Investment Position, USD Million (2000-2025)"
+publishDate: 2026-03-20
+excerpt: "Quarterly international investment position (IIP) of Mongolia from Q1 2000 to Q3 2025, showing total external assets, total liabilities, and net IIP in million USD. Mongolia's net IIP stood at -45,905 million USD in Q3 2025, reflecting significant foreign liabilities relative to external assets."
+category: "Economy"
+tags: ["mongolia", "international-investment", "iip", "external-assets", "external-liabilities", "balance-of-payments", "economy"]
+keywords: ["mongolia international investment position", "mongolia iip", "external assets mongolia", "external liabilities mongolia", "mongolbank iip", "net iip mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-10-01
+dataFiles:
+  - path: "/datasets/mongolbank-international-investment-en.csv"
+    format: "csv"
+    size: "4 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mongolbank-international-investment.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Open in Excel"
+source:
+  name: "Bank of Mongolia"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-1106"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-international-investment-en.json"
+  title="Mongolia International Investment Position, USD Million (2000-2025)"
+/>

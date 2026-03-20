@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын банкнаас шинээр олгосон зээлийн сар бүрийн урсгал",
+  "data": {
+    "url": "/datasets/mongolbank-new-issued-loans-mn.csv",
+    "format": { "type": "csv" }
+  },
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "title": "Огноо",
+      "axis": { "grid": false, "labelAngle": -45 }
+    },
+    "y": {
+      "field": "шинэ_зээлийн_олголт_тэрбум_төгрөг",
+      "type": "quantitative",
+      "title": "Шинэ зээлийн олголт (тэрбум төгрөг)",
+      "scale": { "zero": true },
+      "axis": { "format": ",.0f", "grid": true, "gridOpacity": 0.3 }
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "bar", "color": "#6366f1", "opacity": 0.8 }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": { "type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout" }
+        }
+      ],
+      "mark": { "type": "point", "filled": true, "color": "#6366f1", "size": 0 },
+      "encoding": {
+        "opacity": { "value": 0 },
+        "tooltip": [
+          { "field": "огноо", "type": "temporal", "title": "Огноо", "format": "%Y-%m" },
+          { "field": "шинэ_зээлийн_олголт_тэрбум_төгрөг", "type": "quantitative", "title": "Шинэ зээл (тэрбум төгрөг)", "format": ",.1f" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": { "stroke": "transparent" },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": { "labelFontSize": 13, "titleFontSize": 14 }
+  }
+}

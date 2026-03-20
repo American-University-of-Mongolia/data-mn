@@ -1,0 +1,31 @@
+---
+title: "Mongolia Newly Issued Bank Loans, MNT Billion (2000-2026)"
+publishDate: 2026-03-20
+excerpt: "Monthly flow of newly issued bank loans in Mongolia from March 2000 to January 2026. This is a flow variable showing the volume of new credit created each month, growing from 25 billion MNT in 2000 to over 5,497 billion MNT per month by January 2026."
+category: "Finance"
+tags: ["mongolia", "loans", "credit", "banking", "new-loans", "credit-flow", "finance"]
+keywords: ["mongolia newly issued loans", "new bank loans mongolia", "mongolbank loan issuance", "credit creation mongolia", "monthly loan flow mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-01-01
+dataFiles:
+  - path: "/datasets/mongolbank-new-issued-loans-en.csv"
+    format: "csv"
+    size: "4 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mongolbank-new-issued-loans.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Open in Excel"
+source:
+  name: "Bank of Mongolia"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-99"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-new-issued-loans-en.json"
+  title="Mongolia Newly Issued Bank Loans, MNT Billion (2000-2026)"
+/>

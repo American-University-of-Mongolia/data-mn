@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia consolidated bank balance sheet — total assets, liabilities, and capital",
+  "data": {
+    "url": "/datasets/mongolbank-bank-balance-sheet-en.csv",
+    "format": { "type": "csv" }
+  },
+  "transform": [
+    {
+      "fold": ["total_assets_billion_mnt", "total_liabilities_billion_mnt", "capital_billion_mnt"],
+      "as": ["series", "value"]
+    },
+    {
+      "calculate": "datum.series === 'total_assets_billion_mnt' ? 'Total Assets' : datum.series === 'total_liabilities_billion_mnt' ? 'Total Liabilities' : 'Capital'",
+      "as": "series_label"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Date",
+      "axis": { "grid": false, "labelAngle": -45 }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "MNT Billion",
+      "scale": { "zero": true },
+      "axis": { "format": ",.0f", "grid": true, "gridOpacity": 0.3 }
+    },
+    "color": {
+      "field": "series_label",
+      "type": "nominal",
+      "title": "Balance Sheet Item",
+      "scale": {
+        "domain": ["Total Assets", "Total Liabilities", "Capital"],
+        "range": ["#3b82f6", "#f97316", "#10b981"]
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "line", "strokeWidth": 2, "interpolate": "monotone" }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": { "type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout" }
+        }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 60 },
+      "encoding": {
+        "opacity": {
+          "condition": { "param": "hover", "empty": false, "value": 1 },
+          "value": 0
+        },
+        "tooltip": [
+          { "field": "date", "type": "temporal", "title": "Date", "format": "%Y-%m" },
+          { "field": "series_label", "type": "nominal", "title": "Item" },
+          { "field": "value", "type": "quantitative", "title": "MNT billion", "format": ",.1f" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": { "stroke": "transparent" },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": { "labelFontSize": 13, "titleFontSize": 14 }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын банкны нэгдсэн баланс — нийт хөрөнгө, өр төлбөр, өөрийн хөрөнгө",
+  "data": {
+    "url": "/datasets/mongolbank-bank-balance-sheet-mn.csv",
+    "format": { "type": "csv" }
+  },
+  "transform": [
+    {
+      "fold": ["нийт_хөрөнгө_тэрбум_төгрөг", "нийт_өр_төлбөр_тэрбум_төгрөг", "өөрийн_хөрөнгө_тэрбум_төгрөг"],
+      "as": ["series", "value"]
+    },
+    {
+      "calculate": "datum.series === 'нийт_хөрөнгө_тэрбум_төгрөг' ? 'Нийт хөрөнгө' : datum.series === 'нийт_өр_төлбөр_тэрбум_төгрөг' ? 'Нийт өр төлбөр' : 'Өөрийн хөрөнгө'",
+      "as": "series_label"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "title": "Огноо",
+      "axis": { "grid": false, "labelAngle": -45 }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Тэрбум төгрөг",
+      "scale": { "zero": true },
+      "axis": { "format": ",.0f", "grid": true, "gridOpacity": 0.3 }
+    },
+    "color": {
+      "field": "series_label",
+      "type": "nominal",
+      "title": "Баланс",
+      "scale": {
+        "domain": ["Нийт хөрөнгө", "Нийт өр төлбөр", "Өөрийн хөрөнгө"],
+        "range": ["#3b82f6", "#f97316", "#10b981"]
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "line", "strokeWidth": 2, "interpolate": "monotone" }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": { "type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout" }
+        }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 60 },
+      "encoding": {
+        "opacity": {
+          "condition": { "param": "hover", "empty": false, "value": 1 },
+          "value": 0
+        },
+        "tooltip": [
+          { "field": "огноо", "type": "temporal", "title": "Огноо", "format": "%Y-%m" },
+          { "field": "series_label", "type": "nominal", "title": "Үзүүлэлт" },
+          { "field": "value", "type": "quantitative", "title": "Тэрбум төгрөг", "format": ",.1f" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": { "stroke": "transparent" },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": { "labelFontSize": 13, "titleFontSize": 14 }
+  }
+}

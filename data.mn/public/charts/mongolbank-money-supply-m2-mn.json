@@ -9,7 +9,7 @@
   },
   "encoding": {
     "x": {
-      "field": "Огноо",
+      "field": "огноо",
       "type": "temporal",
       "title": "Огноо",
       "axis": {
@@ -18,9 +18,12 @@
       }
     },
     "y": {
-      "field": "М2 (тэрбум төг)",
+      "field": "м2_тэрбум_төгрөг",
       "type": "quantitative",
       "title": "М2 мөнгөний нийлүүлэлт (тэрбум төг)",
+      "scale": {
+        "zero": true
+      },
       "axis": {
         "format": ",.0f",
         "grid": true,
@@ -71,6 +74,7 @@
       "mark": {
         "type": "point",
         "filled": true,
+        "color": "#3b82f6",
         "size": 80
       },
       "encoding": {
@@ -84,13 +88,13 @@
         },
         "tooltip": [
           {
-            "field": "Огноо",
+            "field": "огноо",
             "type": "temporal",
             "title": "Огноо",
             "format": "%Y-%m"
           },
           {
-            "field": "М2 (тэрбум төг)",
+            "field": "м2_тэрбум_төгрөг",
             "type": "quantitative",
             "title": "М2 (тэрбум төг)",
             "format": ",.1f"

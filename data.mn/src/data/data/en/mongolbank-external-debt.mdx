@@ -1,0 +1,31 @@
+---
+title: "Mongolia Gross External Debt Position, USD Million (2000-2025)"
+publishDate: 2026-03-21
+excerpt: "Quarterly gross external debt position of Mongolia from Q1 2000 to Q4 2025. External debt grew from 4.2 billion USD in 2000 to over 40 billion USD by end of 2025, reflecting increased sovereign and private borrowing."
+category: "Economy"
+tags: ["mongolia", "external debt", "sovereign debt", "macroeconomic", "central bank", "finance", "economy"]
+keywords: ["mongolia external debt", "gross external debt mongolia", "sovereign debt mongolia", "mongolbank external debt", "mongolia debt position"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-01
+dataFiles:
+  - path: "/datasets/mongolbank-external-debt-en.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mongolbank-external-debt.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Open in Excel"
+source:
+  name: "Bank of Mongolia"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-1109"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-external-debt-en.json"
+  title="Mongolia Gross External Debt Position, USD Million (2000-2025)"
+/>

@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын ипотекийн зээлийн үлдэгдэл, тэрбум төгрөг (2013-2026)"
+publishDate: 2026-03-21
+excerpt: "2013 оны 6 сараас 2026 оны 2 сар хүртэлх Монгол Улсын сар бүрийн ипотекийн зээлийн үлдэгдэл. Ипотекийн зээл 2013 онд 1 их наяд төгрөгөөс 2026 онд 12 их наяд төгрөг хүртэл өсчээ."
+category: "Санхүү"
+tags: ["монгол", "ипотек", "орон сууц", "зээл", "төв банк", "санхүү", "эдийн засаг", "үл хөдлөх хөрөнгө"]
+keywords: ["монгол ипотекийн зээл", "орон сууцны зээл монгол", "ипотекийн зээлийн үлдэгдэл", "монголбанк ипотек"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-01
+dataFiles:
+  - path: "/datasets/mongolbank-mortgage-loans-mn.csv"
+    format: "csv"
+    size: "4 KB"
+    description: "CSV татах"
+  - path: "/datasets/mongolbank-mortgage-loans.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Монголбанк"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-149"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-mortgage-loans-mn.json"
+  title="Монгол Улсын ипотекийн зээлийн үлдэгдэл, тэрбум төгрөг (2013-2026)"
+/>

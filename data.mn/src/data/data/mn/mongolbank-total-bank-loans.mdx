@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын банкны нийт зээлийн үлдэгдэл, тэрбум төгрөг (2000-2026)"
+publishDate: 2026-03-21
+excerpt: "2000 оны 3 сараас 2026 оны 2 сар хүртэлх Монгол Улсын банкны нийт зээлийн үлдэгдэл. Банкны зээл 2000 онд 50 тэрбум төгрөгөөс 2026 онд 44 их наяд төгрөг хүртэл өсчээ."
+category: "Санхүү"
+tags: ["монгол", "банкны зээл", "зээл", "зээлдүүлэлт", "төв банк", "санхүү", "эдийн засаг"]
+keywords: ["монгол банкны зээл", "нийт зээлийн үлдэгдэл", "зээлийн статистик", "монголбанк зээл"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-01
+dataFiles:
+  - path: "/datasets/mongolbank-total-bank-loans-mn.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "CSV татах"
+  - path: "/datasets/mongolbank-total-bank-loans.xlsx"
+    format: "xlsx"
+    size: "9 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Монголбанк"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-98"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-total-bank-loans-mn.json"
+  title="Монгол Улсын банкны нийт зээлийн үлдэгдэл, тэрбум төгрөг (2000-2026)"
+/>

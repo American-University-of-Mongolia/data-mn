@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын иргэдийн зээлийн үлдэгдэл, тэрбум төгрөг (2000-2026)"
+publishDate: 2026-03-21
+excerpt: "2000 оны 3 сараас 2026 оны 2 сар хүртэлх Монгол Улсын иргэдийн зээлийн үлдэгдэл. Иргэдийн зээл 2000 онд 4 тэрбум төгрөгөөс 2026 онд 26 их наяд төгрөг хүртэл өсчээ."
+category: "Санхүү"
+tags: ["монгол", "иргэдийн зээл", "хэрэглээний зээл", "өрхийн өр", "төв банк", "санхүү", "эдийн засаг"]
+keywords: ["монгол иргэдийн зээл", "хэрэглээний зээл монгол", "өрхийн өр монгол", "монголбанк иргэдийн зээл"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-01
+dataFiles:
+  - path: "/datasets/mongolbank-individual-loans-mn.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "CSV татах"
+  - path: "/datasets/mongolbank-individual-loans.xlsx"
+    format: "xlsx"
+    size: "9 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Монголбанк"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-103"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-individual-loans-mn.json"
+  title="Монгол Улсын иргэдийн зээлийн үлдэгдэл, тэрбум төгрөг (2000-2026)"
+/>

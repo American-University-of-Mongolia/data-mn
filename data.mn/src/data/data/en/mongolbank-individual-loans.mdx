@@ -1,0 +1,31 @@
+---
+title: "Mongolia Individual Outstanding Loans, MNT Billion (2000-2026)"
+publishDate: 2026-03-21
+excerpt: "Outstanding individual/consumer loans in Mongolia from March 2000 to February 2026. Individual lending grew from 4 billion MNT in 2000 to over 26 trillion MNT by 2026, reflecting rapid growth in household credit."
+category: "Finance"
+tags: ["mongolia", "individual loans", "consumer credit", "household debt", "central bank", "finance", "economy"]
+keywords: ["mongolia individual loans", "consumer loans mongolia", "household debt mongolia", "mongolbank individual lending", "personal loans mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-01
+dataFiles:
+  - path: "/datasets/mongolbank-individual-loans-en.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mongolbank-individual-loans.xlsx"
+    format: "xlsx"
+    size: "9 KB"
+    description: "Open in Excel"
+source:
+  name: "Bank of Mongolia"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-103"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-individual-loans-en.json"
+  title="Mongolia Individual Outstanding Loans, MNT Billion (2000-2026)"
+/>

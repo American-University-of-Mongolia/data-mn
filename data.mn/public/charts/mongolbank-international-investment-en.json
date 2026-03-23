@@ -35,7 +35,8 @@
       "scale": {
         "domain": ["Total Assets", "Total Liabilities", "Net IIP"],
         "range": ["#10b981", "#f97316", "#3b82f6"]
-      }
+      },
+      "legend": { "orient": "top" }
     }
   },
   "layer": [

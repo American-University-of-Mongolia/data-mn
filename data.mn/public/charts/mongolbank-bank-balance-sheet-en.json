@@ -36,7 +36,8 @@
       "scale": {
         "domain": ["Total Assets", "Total Liabilities", "Capital"],
         "range": ["#3b82f6", "#f97316", "#10b981"]
-      }
+      },
+      "legend": { "orient": "top" }
     }
   },
   "layer": [

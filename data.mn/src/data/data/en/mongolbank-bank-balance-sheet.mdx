@@ -1,0 +1,31 @@
+---
+title: "Mongolia Consolidated Bank Balance Sheet, MNT Billion (2004-2026)"
+publishDate: 2026-03-20
+excerpt: "Monthly consolidated balance sheet of Mongolia's active banking sector from January 2004 to February 2026, showing total assets, total liabilities, and capital. Total banking sector assets grew from 1,185 billion MNT in 2004 to over 80,000 billion MNT by February 2026."
+category: "Finance"
+tags: ["mongolia", "banking", "balance-sheet", "assets", "liabilities", "capital", "financial-sector", "finance"]
+keywords: ["mongolia bank balance sheet", "mongolian banking sector assets", "mongolbank balance sheet", "consolidated bank assets mongolia", "banking sector mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-01
+dataFiles:
+  - path: "/datasets/mongolbank-bank-balance-sheet-en.csv"
+    format: "csv"
+    size: "11 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mongolbank-bank-balance-sheet.xlsx"
+    format: "xlsx"
+    size: "24 KB"
+    description: "Open in Excel"
+source:
+  name: "Bank of Mongolia"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-86"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-bank-balance-sheet-en.json"
+  title="Mongolia Consolidated Bank Balance Sheet, MNT Billion (2004-2026)"
+/>

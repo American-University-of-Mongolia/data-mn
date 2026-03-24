@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын банкны нэгдсэн баланс, тэрбум төгрөг (2004-2026)"
+publishDate: 2026-03-20
+excerpt: "2004 оны 1 сараас 2026 оны 2 сар хүртэлх Монгол Улсын идэвхтэй банкуудын нэгдсэн балансын сар бүрийн мэдээлэл — нийт хөрөнгө, нийт өр төлбөр, өөрийн хөрөнгийг харуулсан. Банкны салбарын нийт хөрөнгө 2004 онд 1,185 тэрбум төгрөгөөс 2026 оны 2 сард 80,068 тэрбум төгрөг болтлоо өсөв."
+category: "Санхүү"
+tags: ["монгол", "банк", "баланс", "хөрөнгө", "өр төлбөр", "санхүүгийн салбар", "санхүү"]
+keywords: ["монгол банкны баланс", "банкны салбарын хөрөнгө монгол", "монголбанк баланс", "нэгдсэн банкны хөрөнгө монгол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-02-01
+dataFiles:
+  - path: "/datasets/mongolbank-bank-balance-sheet-mn.csv"
+    format: "csv"
+    size: "11 KB"
+    description: "CSV татах"
+  - path: "/datasets/mongolbank-bank-balance-sheet.xlsx"
+    format: "xlsx"
+    size: "24 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Монголбанк"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-86"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-bank-balance-sheet-mn.json"
+  title="Монгол Улсын банкны нэгдсэн баланс, тэрбум төгрөг (2004-2026)"
+/>

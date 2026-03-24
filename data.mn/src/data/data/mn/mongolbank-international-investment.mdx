@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын олон улсын хөрөнгийн байршил, сая ам.доллар (2000-2025)"
+publishDate: 2026-03-20
+excerpt: "2000 оны 1-р улирлаас 2025 оны 3-р улирал хүртэлх Монгол Улсын улирал бүрийн олон улсын хөрөнгийн байршил (ОУХБайршил) — гадаад нийт хөрөнгө, нийт өр төлбөр, цэвэр байршлыг сая ам.долларт харуулсан. 2025 оны 3-р улирлын байдлаар цэвэр ОУХБайршил -45,905 сая ам.доллар байгаа нь гадаадын өр төлбөр дийлэнх байгааг харуулж байна."
+category: "Эдийн засаг"
+tags: ["монгол", "олон улсын хөрөнгийн байршил", "гадаад хөрөнгө", "гадаад өр төлбөр", "төлбөрийн тэнцэл", "эдийн засаг"]
+keywords: ["монгол олон улсын хөрөнгийн байршил", "монгол ОУХБайршил", "гадаад хөрөнгө монгол", "гадаад өр төлбөр монгол", "монголбанк ОУХБайршил"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-10-01
+dataFiles:
+  - path: "/datasets/mongolbank-international-investment-mn.csv"
+    format: "csv"
+    size: "4 KB"
+    description: "CSV татах"
+  - path: "/datasets/mongolbank-international-investment.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Монголбанк"
+  url: "https://stat.mongolbank.mn"
+  tableId: "report-1106"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mongolbank-international-investment-mn.json"
+  title="Монгол Улсын олон улсын хөрөнгийн байршил, сая ам.доллар (2000-2025)"
+/>

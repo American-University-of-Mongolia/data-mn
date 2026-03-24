@@ -2,6 +2,11 @@
   {
     "en": "Economy",
     "mn": "Эдийн засаг",
+    "count": 15
+  },
+  {
+    "en": "Finance",
+    "mn": "Санхүү",
     "count": 13
   },
   {
@@ -12,7 +17,7 @@
   {
     "en": "Agriculture",
     "mn": "Хөдөө аж ахуй",
-    "count": 9
+    "count": 8
   },
   {
     "en": "Demographics",
@@ -20,24 +25,24 @@
     "count": 8
   },
   {
-    "en": "Prices & Inflation",
-    "mn": "Үнэ ба инфляци",
-    "count": 7
-  },
-  {
-    "en": "Finance",
-    "mn": "Санхүү",
-    "count": 6
-  },
-  {
     "en": "Health",
     "mn": "Эрүүл мэнд",
-    "count": 7
+    "count": 8
+  },
+  {
+    "en": "Prices & Inflation",
+    "mn": "Үнэ ба инфляци",
+    "count": 8
   },
   {
     "en": "Trade",
     "mn": "Худалдаа",
     "count": 5
+  },
+  {
+    "en": "Household & Income",
+    "mn": "Өрх ба орлого",
+    "count": 4
   },
   {
     "en": "Tourism",
@@ -50,13 +55,28 @@
     "count": 3
   },
   {
-    "en": "Household & Income",
-    "mn": "Өрх ба орлого",
+    "en": "Infrastructure",
+    "mn": "Дэд бүтэц",
     "count": 2
   },
   {
     "en": "Employment",
     "mn": "Хөдөлмөр эрхлэлт",
+    "count": 1
+  },
+  {
+    "en": "Environment",
+    "mn": "Байгаль орчин",
+    "count": 1
+  },
+  {
+    "en": "Industry",
+    "mn": "Аж үйлдвэр",
+    "count": 1
+  },
+  {
+    "en": "Public Safety",
+    "mn": "Нийтийн аюулгүй байдал",
     "count": 1
   }
 ]

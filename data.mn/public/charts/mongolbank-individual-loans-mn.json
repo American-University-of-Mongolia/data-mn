@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын иргэдийн зээлийн үлдэгдлийн чиг хандлага",
+  "data": {
+    "url": "/datasets/mongolbank-individual-loans-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "title": "Огноо",
+      "axis": {
+        "grid": false,
+        "labelAngle": -45
+      }
+    },
+    "y": {
+      "field": "иргэдийн_зээл_тэрбум_төгрөг",
+      "type": "quantitative",
+      "title": "Иргэдийн зээлийн үлдэгдэл (тэрбум төгрөг)",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "format": ",.0f",
+        "grid": true,
+        "gridOpacity": 0.3
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "line": {
+          "strokeWidth": 2.5,
+          "stroke": "#06b6d4"
+        },
+        "interpolate": "monotone",
+        "color": {
+          "x1": 1,
+          "y1": 1,
+          "x2": 1,
+          "y2": 0,
+          "gradient": "linear",
+          "stops": [
+            {
+              "offset": 0,
+              "color": "rgba(6, 182, 212, 0.02)"
+            },
+            {
+              "offset": 1,
+              "color": "rgba(6, 182, 212, 0.35)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#06b6d4",
+        "size": 80
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "огноо",
+            "type": "temporal",
+            "title": "Огноо",
+            "format": "%Y-%m"
+          },
+          {
+            "field": "иргэдийн_зээл_тэрбум_төгрөг",
+            "type": "quantitative",
+            "title": "Иргэдийн зээл (тэрбум төгрөг)",
+            "format": ",.1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

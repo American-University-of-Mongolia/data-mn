@@ -29,10 +29,8 @@ import pdfplumber
 
 # ─── Constants ────────────────────────────────────────────────────────────────
 
-# Resolve from repo root (skill is at .claude/skills/datamn-source-mrpam/)
-_REPO_ROOT = Path(__file__).resolve().parents[3]
-CACHE_DIR = _REPO_ROOT / "tools" / "temp" / "mrpam-pdfs"
-OUTPUT_DIR = _REPO_ROOT / "tools" / "temp" / "mrpam-extracted"
+CACHE_DIR = Path(__file__).resolve().parents[4] / "tools" / "temp" / "mrpam-pdfs"
+OUTPUT_DIR = Path(__file__).resolve().parents[4] / "tools" / "temp" / "mrpam-extracted"
 
 YEAR_PAGE_IDS = {
     2021: 169, 2022: 177, 2023: 196,
@@ -511,20 +509,8 @@ MN_COLUMNS = {
 
 
 def parse_year_month_from_filename(filename: str) -> tuple[int, int] | None:
-    """
-    Extract year and month from various MRPAM PDF filename patterns:
-      2025.1.stat.report.mon.pdf
-      2025.01.stat.report.mon.pdf
-      2021-01-mon.pdf
-      2022-01.pdf
-      2021-02-stat-report-mon.pdf
-    """
-    # Pattern: YYYY.M. or YYYY.MM.
-    m = re.search(r"(\d{4})\.(\d{1,2})[.\-]", filename)
-    if m:
-        return int(m.group(1)), int(m.group(2))
-    # Pattern: YYYY-MM
-    m = re.search(r"(\d{4})-(\d{1,2})", filename)
+    """Extract year and month from a PDF filename like 2025.1.stat.report.mon.pdf"""
+    m = re.search(r"(\d{4})\.(\d{1,2})\.", filename)
     if m:
         return int(m.group(1)), int(m.group(2))
     return None
@@ -550,9 +536,9 @@ def extract_dataset_from_pdf(pdf_path: Path, dataset_id: str) -> pd.DataFrame | 
         return None
 
 
-def collect_pdfs_for_year(year: int, cache_dir: Path | None = None) -> list[Path]:
+def collect_pdfs_for_year(year: int) -> list[Path]:
     """Return all cached PDFs for a given year, sorted by filename."""
-    year_dir = (cache_dir or CACHE_DIR) / str(year)
+    year_dir = CACHE_DIR / str(year)
     if not year_dir.exists():
         return []
     return sorted(year_dir.glob("*.pdf"))
@@ -602,7 +588,6 @@ def main():
     parser.add_argument("--all", action="store_true", help="Extract all datasets")
     parser.add_argument("--debug", action="store_true", help="Debug table detection")
     parser.add_argument("--output", type=Path, default=OUTPUT_DIR, help="Output directory")
-    parser.add_argument("--cache-dir", type=Path, default=CACHE_DIR, help="PDF cache directory")
     args = parser.parse_args()
 
     if args.debug:
@@ -619,7 +604,7 @@ def main():
     if args.pdf:
         pdf_files = [args.pdf]
     elif args.year:
-        pdf_files = collect_pdfs_for_year(args.year, args.cache_dir)
+        pdf_files = collect_pdfs_for_year(args.year)
         if not pdf_files:
             print(f"No PDFs found in {CACHE_DIR}/{args.year}/")
             print("Run fetch_report.py first.")

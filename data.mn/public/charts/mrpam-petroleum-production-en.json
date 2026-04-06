@@ -1,0 +1,119 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/mrpam-petroleum-production-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "fold": [
+        "production_barrels",
+        "export_barrels"
+      ],
+      "as": [
+        "type",
+        "value"
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "quantitative",
+      "title": "Month",
+      "axis": {
+        "format": "d",
+        "grid": false,
+        "tickCount": 12
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Barrels",
+      "axis": {
+        "format": ",.0f",
+        "grid": true,
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": {
+        "orient": "top",
+        "title": "Category"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "month",
+            "title": "Month",
+            "format": "d"
+          },
+          {
+            "field": "type",
+            "title": "Category"
+          },
+          {
+            "field": "value",
+            "title": "Barrels",
+            "format": ",.1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

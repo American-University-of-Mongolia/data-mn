@@ -1,0 +1,31 @@
+---
+title: "Mongolia Monthly Petroleum Production and Export (2025)"
+publishDate: 2025-12-31
+excerpt: "Monthly crude petroleum production and export volumes in Mongolia for 2025, measured in barrels. Data sourced from MRPAM monthly statistical reports."
+category: "Mining"
+tags: ["mongolia", "petroleum", "oil", "production", "export", "energy", "mrpam"]
+keywords: ["mongolia petroleum production", "crude oil export", "monthly oil production", "MRPAM petroleum"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-31
+dataFiles:
+  - path: "/datasets/mrpam-petroleum-production-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mrpam-petroleum-production.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "Mineral Resources and Petroleum Authority of Mongolia"
+  url: "https://mrpam.gov.mn"
+  tableId: "Table 4.1/4.2"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mrpam-petroleum-production-en.json"
+  title="Monthly Petroleum Production and Export (2025)"
+/>

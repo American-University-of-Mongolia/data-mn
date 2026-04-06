@@ -1,0 +1,31 @@
+---
+title: "Mongolia Mining Permits by Province — Exploration and Extraction (2025)"
+publishDate: 2025-12-31
+excerpt: "Monthly counts and total area (hectares) of exploration and extraction permits across Mongolia's provinces in 2025. Data sourced from MRPAM monthly statistical reports."
+category: "Mining"
+tags: ["mongolia", "mining permits", "exploration", "extraction", "provinces", "licenses", "mrpam"]
+keywords: ["mongolia mining permits", "exploration licenses", "extraction permits", "mining licenses by province", "MRPAM permits"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-31
+dataFiles:
+  - path: "/datasets/mrpam-mining-permits-en.csv"
+    format: "csv"
+    size: "11 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mrpam-mining-permits.xlsx"
+    format: "xlsx"
+    size: "28 KB"
+    description: "Open in Excel"
+source:
+  name: "Mineral Resources and Petroleum Authority of Mongolia"
+  url: "https://mrpam.gov.mn"
+  tableId: "Table 1.1"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mrpam-mining-permits-en.json"
+  title="Mining Permits by Type — Exploration and Extraction (2025)"
+/>

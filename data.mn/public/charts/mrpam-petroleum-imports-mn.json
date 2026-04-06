@@ -1,0 +1,112 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/mrpam-petroleum-imports-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum['бүтээгдэхүүн'] !== 'Нийт'"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "сар",
+      "type": "quantitative",
+      "title": "Сар",
+      "axis": {
+        "format": "d",
+        "grid": false,
+        "tickCount": 12
+      }
+    },
+    "y": {
+      "field": "хэмжээ_тн",
+      "type": "quantitative",
+      "title": "Хэмжээ (тонн)",
+      "stack": "zero",
+      "axis": {
+        "format": ",.0f",
+        "grid": true,
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "бүтээгдэхүүн",
+      "type": "nominal",
+      "legend": {
+        "orient": "top",
+        "title": "Бүтээгдэхүүн"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "сар",
+            "title": "Сар",
+            "format": "d"
+          },
+          {
+            "field": "бүтээгдэхүүн",
+            "title": "Бүтээгдэхүүн"
+          },
+          {
+            "field": "хэмжээ_тн",
+            "title": "Хэмжээ (тн)",
+            "format": ",.0f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

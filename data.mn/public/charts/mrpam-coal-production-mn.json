@@ -1,0 +1,120 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/mrpam-coal-production-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "fold": [
+        "олборлолт_мян_тн",
+        "борлуулалт_мян_тн",
+        "экспорт_мян_тн"
+      ],
+      "as": [
+        "төрөл",
+        "утга"
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "сар",
+      "type": "quantitative",
+      "title": "Сар",
+      "axis": {
+        "format": "d",
+        "grid": false,
+        "tickCount": 12
+      }
+    },
+    "y": {
+      "field": "утга",
+      "type": "quantitative",
+      "title": "Мянган тонн",
+      "axis": {
+        "format": ",.0f",
+        "grid": true,
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "төрөл",
+      "type": "nominal",
+      "legend": {
+        "orient": "top",
+        "title": "Ангилал"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "сар",
+            "title": "Сар",
+            "format": "d"
+          },
+          {
+            "field": "төрөл",
+            "title": "Ангилал"
+          },
+          {
+            "field": "утга",
+            "title": "Мян.тн",
+            "format": ",.1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/mrpam-petroleum-imports-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.product !== 'Total'"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "quantitative",
+      "title": "Month",
+      "axis": {
+        "format": "d",
+        "grid": false,
+        "tickCount": 12
+      }
+    },
+    "y": {
+      "field": "volume_t",
+      "type": "quantitative",
+      "title": "Volume (tonnes)",
+      "stack": "zero",
+      "axis": {
+        "format": ",.0f",
+        "grid": true,
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "product",
+      "type": "nominal",
+      "legend": {
+        "orient": "top",
+        "title": "Product"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "month",
+            "title": "Month",
+            "format": "d"
+          },
+          {
+            "field": "product",
+            "title": "Product"
+          },
+          {
+            "field": "volume_t",
+            "title": "Volume (t)",
+            "format": ",.0f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

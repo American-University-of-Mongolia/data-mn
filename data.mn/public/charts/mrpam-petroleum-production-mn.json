@@ -8,6 +8,10 @@
   },
   "transform": [
     {
+      "calculate": "datetime(datum.year, datum.month - 1)",
+      "as": "date"
+    },
+    {
       "fold": [
         "олборлолт_баррель",
         "экспорт_баррель"
@@ -20,13 +24,13 @@
   ],
   "encoding": {
     "x": {
-      "field": "сар",
-      "type": "quantitative",
-      "title": "Сар",
+      "field": "date",
+      "type": "temporal",
+      "title": "Огноо",
       "axis": {
-        "format": "d",
+        "format": "%b %Y",
         "grid": false,
-        "tickCount": 12
+        "labelAngle": -30
       }
     },
     "y": {
@@ -84,9 +88,9 @@
         },
         "tooltip": [
           {
-            "field": "сар",
-            "title": "Сар",
-            "format": "d"
+            "field": "date",
+            "title": "Огноо",
+            "format": "%B %Y"
           },
           {
             "field": "төрөл",

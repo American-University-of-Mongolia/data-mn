@@ -8,6 +8,10 @@
   },
   "transform": [
     {
+      "calculate": "datetime(datum.year, datum.month - 1)",
+      "as": "date"
+    },
+    {
       "fold": [
         "production_barrels",
         "export_barrels"
@@ -20,13 +24,13 @@
   ],
   "encoding": {
     "x": {
-      "field": "month",
-      "type": "quantitative",
-      "title": "Month",
+      "field": "date",
+      "type": "temporal",
+      "title": "Date",
       "axis": {
-        "format": "d",
+        "format": "%b %Y",
         "grid": false,
-        "tickCount": 12
+        "labelAngle": -30
       }
     },
     "y": {
@@ -84,9 +88,9 @@
         },
         "tooltip": [
           {
-            "field": "month",
-            "title": "Month",
-            "format": "d"
+            "field": "date",
+            "title": "Date",
+            "format": "%B %Y"
           },
           {
             "field": "type",

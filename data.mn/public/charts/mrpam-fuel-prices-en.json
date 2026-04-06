@@ -8,6 +8,10 @@
   },
   "transform": [
     {
+      "calculate": "datetime(datum.year, datum.month - 1)",
+      "as": "date"
+    },
+    {
       "filter": "datum.province === 'National Average'"
     },
     {
@@ -25,13 +29,13 @@
   ],
   "encoding": {
     "x": {
-      "field": "month",
-      "type": "quantitative",
-      "title": "Month",
+      "field": "date",
+      "type": "temporal",
+      "title": "Date",
       "axis": {
-        "format": "d",
+        "format": "%b %Y",
         "grid": false,
-        "tickCount": 12
+        "labelAngle": -30
       }
     },
     "y": {
@@ -89,9 +93,9 @@
         },
         "tooltip": [
           {
-            "field": "month",
-            "title": "Month",
-            "format": "d"
+            "field": "date",
+            "title": "Date",
+            "format": "%B %Y"
           },
           {
             "field": "fuel_type",

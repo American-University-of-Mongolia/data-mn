@@ -8,10 +8,6 @@
   },
   "transform": [
     {
-      "calculate": "datetime(datum.year, datum.month - 1)",
-      "as": "date"
-    },
-    {
       "aggregate": [
         {
           "op": "sum",
@@ -28,6 +24,10 @@
         "year",
         "month"
       ]
+    },
+    {
+      "calculate": "datetime(datum.year - 0, datum.month - 1)",
+      "as": "date"
     },
     {
       "fold": [
@@ -108,7 +108,8 @@
           {
             "field": "date",
             "title": "Date",
-            "format": "%B %Y"
+            "format": "%B %Y",
+            "type": "temporal"
           },
           {
             "field": "type",

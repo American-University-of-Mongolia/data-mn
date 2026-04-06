@@ -8,7 +8,7 @@
   },
   "transform": [
     {
-      "calculate": "datetime(datum.year, datum.month - 1)",
+      "calculate": "datetime(datum.year - 0, datum.month - 1)",
       "as": "date"
     },
     {
@@ -93,7 +93,8 @@
           {
             "field": "date",
             "title": "Огноо",
-            "format": "%B %Y"
+            "format": "%B %Y",
+            "type": "temporal"
           },
           {
             "field": "бараа",

@@ -9,7 +9,7 @@
   },
   "encoding": {
     "x": {
-      "field": "Date",
+      "field": "date",
       "type": "temporal",
       "title": "Date",
       "axis": {
@@ -18,9 +18,12 @@
       }
     },
     "y": {
-      "field": "M2 (MNT billion)",
+      "field": "m2_billion_mnt",
       "type": "quantitative",
       "title": "M2 Money Supply (MNT billion)",
+      "scale": {
+        "zero": true
+      },
       "axis": {
         "format": ",.0f",
         "grid": true,
@@ -71,6 +74,7 @@
       "mark": {
         "type": "point",
         "filled": true,
+        "color": "#3b82f6",
         "size": 80
       },
       "encoding": {
@@ -84,13 +88,13 @@
         },
         "tooltip": [
           {
-            "field": "Date",
+            "field": "date",
             "type": "temporal",
             "title": "Date",
             "format": "%Y-%m"
           },
           {
-            "field": "M2 (MNT billion)",
+            "field": "m2_billion_mnt",
             "type": "quantitative",
             "title": "M2 (MNT billion)",
             "format": ",.1f"

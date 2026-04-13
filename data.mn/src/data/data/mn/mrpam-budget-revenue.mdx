@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын уул уурхайн салбараас улсын төсөвт төвлөрүүлэх орлого (2023–2025)"
+publishDate: 2025-12-31
+excerpt: "2023–2025 оны уул уурхайн салбараас улсын төсөвт орлогын төрлөөр сарын хуримтлал (сая.төг). Өгөгдлийг АМГТГ-ын сарын статистикийн тайлангаас авав."
+category: "Уул уурхай"
+tags: ["монгол", "төсвийн орлого", "уул уурхай", "улсын төсөв", "татвар", "санхүү", "амгтг"]
+keywords: ["уул уурхайн орлого", "улсын төсөв", "уул уурхайн татвар", "төсвийн орлого", "АМГТГ"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-31
+dataFiles:
+  - path: "/datasets/mrpam-budget-revenue-mn.csv"
+    format: "csv"
+    size: "6 KB"
+    description: "CSV татах"
+  - path: "/datasets/mrpam-budget-revenue.xlsx"
+    format: "xlsx"
+    size: "10 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Ашигт малтмал, газрын тосны газар"
+  url: "https://mrpam.gov.mn"
+  tableId: "Хүснэгт 5.1"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mrpam-budget-revenue-mn.json"
+  title="Уул уурхайн салбараас улсын төсөвт төвлөрүүлэх орлого (2025)"
+/>

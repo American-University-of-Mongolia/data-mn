@@ -1,0 +1,127 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/mrpam-budget-revenue-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datetime(datum.year - 0, datum.month - 1)",
+      "as": "date"
+    },
+    {
+      "filter": "datum.revenue_type === 'Total'"
+    },
+    {
+      "fold": [
+        "plan_mln_mnt",
+        "actual_mln_mnt"
+      ],
+      "as": [
+        "type",
+        "value"
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Date",
+      "axis": {
+        "format": "%b %Y",
+        "grid": false,
+        "labelAngle": -30
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Million MNT",
+      "axis": {
+        "format": ",.0f",
+        "grid": true,
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": {
+        "orient": "top",
+        "title": "Category"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "title": "Date",
+            "format": "%B %Y",
+            "type": "temporal"
+          },
+          {
+            "field": "type",
+            "title": "Category"
+          },
+          {
+            "field": "value",
+            "title": "Million MNT",
+            "format": ",.1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

@@ -2,20 +2,17 @@
 """
 Extract tables from MRPAM monthly statistical report PDFs.
 
-Finds sections by Mongolian heading text (NOT by page number — pages shift
-between report months). Handles merged cells and noisy whitespace.
+Uses text-based parsing (page.extract_text()) with year.ROMAN_MONTH matching
+instead of pdfplumber table detection — MRPAM PDFs include bar charts that
+pdfplumber incorrectly detects as tables, producing garbage data.
+
+Mining permits (Table 1.1) is the exception: it uses word-coordinate alignment
+because province names appear outside the bordered table.
 
 Usage:
-    # Extract a specific dataset from all PDFs in a year's cache
     python3 extract_tables.py --dataset mrpam-coal-production --year 2025
-
-    # Extract all datasets from a single PDF
     python3 extract_tables.py --pdf /path/to/report.pdf --all
-
-    # Extract a specific dataset from a single PDF
     python3 extract_tables.py --pdf /path/to/report.pdf --dataset mrpam-coal-production
-
-    # Debug: print all pages and detected tables
     python3 extract_tables.py --pdf /path/to/report.pdf --debug
 """
 
@@ -29,26 +26,30 @@ import pdfplumber
 
 # ─── Constants ────────────────────────────────────────────────────────────────
 
-# Resolve from repo root (skill is at .claude/skills/datamn-source-mrpam/)
 _REPO_ROOT = Path(__file__).resolve().parents[3]
 CACHE_DIR = _REPO_ROOT / "tools" / "temp" / "mrpam-pdfs"
 OUTPUT_DIR = _REPO_ROOT / "tools" / "temp" / "mrpam-extracted"
 
-YEAR_PAGE_IDS = {
-    2021: 169, 2022: 177, 2023: 196,
-    2024: 202, 2025: 714, 2026: 732,
+INT_TO_ROMAN = {
+    1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI",
+    7: "VII", 8: "VIII", 9: "IX", 10: "X", 11: "XI", 12: "XII",
 }
 
-# ─── Section Keywords (search for these in page text) ─────────────────────────
+# Province name prefixes used to identify data rows in fuel prices table (4.6)
+# Covers all 21 aimags + Ulaanbaatar + national average variants
+_PROV_PREFIXES = (
+    "Архангай", "Баян", "Булган", "Говь", "Дархан", "Дорно",
+    "Дунд", "Завхан", "Орхон", "Өвөр", "Өмнө", "Сүх", "Сэлэн",
+    "Төв", "Увс", "Улаанбаатар", "Улсын", "УЛСЫН", "Ховд", "Хөвс", "Хэнтий",
+)
 
-SECTION_KEYWORDS = {
-    "licenses": ["тусгай зөвшөөрөл", "special permit"],
-    "coal": ["нүүрс", "coal"],
-    "petroleum_prod": ["газрын тос", "petroleum"],
-    "fuel_prices": ["шатахуун", "fuel price", "бензин"],
-    "budget": ["улсын төсвийн орлого", "budget revenue"],
-    "commodity_prices": ["дэлхийн зах зээл", "world market", "commodity price"],
-}
+# Known revenue types for budget revenue table (5.1)
+_BUDGET_REV_TYPES = [
+    "Ашигт малтмалын нөөц ашигласны төлбөр",
+    "Газрын тосны нөөц ашигласны төлбөр",
+    "Аж ахуйн нэгжийн орлогын татвар",
+    "Нийт",
+]
 
 # ─── Cleaning Helpers ─────────────────────────────────────────────────────────
 
@@ -81,31 +82,48 @@ def forward_fill_none(rows: list[list]) -> list[list]:
 
 
 def to_float(val) -> float | None:
-    """Parse a numeric cell that may have spaces/commas as separators."""
+    """Parse a numeric value that may use spaces or commas as thousand separators.
+
+    Commas are stripped (NOT converted to dots) to avoid corrupting numbers
+    like '7,987.8' → '7.987.8' which was the root cause of garbage extraction.
+    """
     if val is None:
         return None
-    s = str(val).replace(" ", "").replace(",", ".").replace("\xa0", "")
+    s = str(val).replace(" ", "").replace(",", "").replace("\xa0", "")
     s = re.sub(r"[^\d.\-]", "", s)
+    if s.count(".") > 1:
+        return None  # multiple dots = not a valid number
     try:
         return float(s) if s else None
     except ValueError:
         return None
 
 
-def clean_df(df: pd.DataFrame) -> pd.DataFrame:
-    """Drop all-empty rows and columns, strip cell whitespace."""
-    df = df.dropna(how="all").dropna(axis=1, how="all")
-    for col in df.select_dtypes(include="object").columns:
-        df[col] = df[col].apply(lambda v: clean_cell(v))
-    df = df[df.apply(lambda r: any(v is not None for v in r), axis=1)]
-    return df.reset_index(drop=True)
+def extract_price_nums(text: str) -> list[float]:
+    """Split text on whitespace, return floats for each token, skip %-containing tokens."""
+    result = []
+    for token in text.split():
+        if "%" in token:
+            continue
+        v = to_float(token)
+        if v is not None:
+            result.append(v)
+    return result
+
+
+def extract_pct(text: str) -> float | None:
+    """Extract first percentage value from text (e.g., '93.4%' → 93.4)."""
+    m = re.search(r"([\d.,]+)%", text)
+    if m:
+        return to_float(m.group(1))
+    return None
 
 
 # ─── PDF Utilities ────────────────────────────────────────────────────────────
 
 
 def find_pages_with_keyword(pdf, keywords: list[str]) -> list[int]:
-    """Return 0-based page indices that contain any of the keywords (case-insensitive)."""
+    """Return 0-based page indices containing any of the keywords (case-insensitive)."""
     matches = []
     for i, page in enumerate(pdf.pages):
         text = (page.extract_text() or "").lower()
@@ -116,7 +134,6 @@ def find_pages_with_keyword(pdf, keywords: list[str]) -> list[int]:
 
 def extract_table_from_page(page, table_idx: int = 0) -> list[list] | None:
     """Extract the n-th table from a page, with fallback settings."""
-    # Try line-based detection first (most accurate for bordered tables)
     for strategy in (
         {"vertical_strategy": "lines", "horizontal_strategy": "lines"},
         {"vertical_strategy": "text", "horizontal_strategy": "lines"},
@@ -144,86 +161,76 @@ def extract_largest_table(page) -> list[list] | None:
     return None
 
 
+def _find_roman_line(text: str, year: int, month: int) -> str | None:
+    """Find the text line starting with '{year}.{ROMAN}' for the given month."""
+    roman = INT_TO_ROMAN[month]
+    target = f"{year}.{roman}"
+    for line in text.splitlines():
+        stripped = line.strip()
+        if re.match(rf"^{re.escape(target)}\b", stripped):
+            return stripped
+    return None
+
+
 # ─── Dataset Extractors ───────────────────────────────────────────────────────
 
 
 def extract_coal_production(pdf, year: int, month: int) -> pd.DataFrame | None:
     """
-    Extract coal production/export/domestic data (Tables 3.16, 3.17).
-    Looks for pages mentioning 'нүүрс' (coal) with a monthly breakdown.
-    Returns DataFrame with columns: year, month, production_kt, export_kt, domestic_kt
+    Extract coal production/sales/export data (Table 3.17).
+
+    Text rows: '{year}.{ROMAN}  production_kt  sales_kt  export_kt'
+    Example:   '2025.III  7,987.8  4,921.5  3,897.0'
+
+    Returns DataFrame: year, month, production_kt, sales_kt, export_kt
     """
-    pages = find_pages_with_keyword(pdf, ["нүүрс", "3.16", "3.17"])
-    if not pages:
-        return None
+    pages = find_pages_with_keyword(pdf, ["нүүрс", "3.17"])
+    roman = INT_TO_ROMAN[month]
+    target = f"{year}.{roman}"
 
-    all_rows = []
     for pg_idx in pages:
-        page = pdf.pages[pg_idx]
-        raw = extract_largest_table(page)
-        if not raw:
+        text = pdf.pages[pg_idx].extract_text() or ""
+        line = _find_roman_line(text, year, month)
+        if not line:
             continue
-
-        raw = forward_fill_none(raw)
-        raw = [[clean_cell(c) for c in row] for row in raw]
-
-        # Look for a row that matches our target month (cumulative or monthly)
-        for row in raw:
-            # Try to find the row for this specific month
-            row_text = " ".join(str(c) for c in row if c)
-            # Mongolian months in order: 1 сар ... 12 сар
-            month_str = str(month)
-            if not (re.search(rf"\b{month_str}\b", row_text) or
-                    re.search(rf"{month_str}\s*сар", row_text)):
-                continue
-
-            nums = [to_float(c) for c in row if to_float(c) is not None]
-            if len(nums) >= 2:
-                all_rows.append({
-                    "year": year,
-                    "month": month,
-                    "production_kt": nums[0] if len(nums) > 0 else None,
-                    "export_kt": nums[1] if len(nums) > 1 else None,
-                    "domestic_kt": nums[2] if len(nums) > 2 else None,
-                })
-                break  # take first match per page
-
-    if not all_rows:
-        return None
-
-    return pd.DataFrame(all_rows)
+        # Strip the 'year.ROMAN' prefix before parsing numbers
+        rest = line[len(target):].strip()
+        nums = extract_price_nums(rest)
+        if len(nums) >= 3:
+            return pd.DataFrame([{
+                "year": year, "month": month,
+                "production_kt": nums[0],
+                "sales_kt": nums[1],
+                "export_kt": nums[2],
+            }])
+    return None
 
 
 def extract_petroleum_production(pdf, year: int, month: int) -> pd.DataFrame | None:
     """
-    Extract petroleum production/export (Tables 4.1, 4.2).
+    Extract petroleum production/export data (Table 4.2).
+
+    Text rows: '{year}.{ROMAN}  production_barrels  export_barrels'
+
     Returns DataFrame: year, month, production_barrels, export_barrels
     """
-    pages = find_pages_with_keyword(pdf, ["газрын тос", "4.1", "4.2", "баррель"])
-    if not pages:
-        return None
+    pages = find_pages_with_keyword(pdf, ["газрын тосны олборлолт", "баррель"])
+    roman = INT_TO_ROMAN[month]
+    target = f"{year}.{roman}"
 
     for pg_idx in pages:
-        page = pdf.pages[pg_idx]
-        raw = extract_largest_table(page)
-        if not raw:
+        text = pdf.pages[pg_idx].extract_text() or ""
+        line = _find_roman_line(text, year, month)
+        if not line:
             continue
-
-        raw = forward_fill_none(raw)
-        raw = [[clean_cell(c) for c in row] for row in raw]
-
-        for row in raw:
-            row_text = " ".join(str(c) for c in row if c)
-            if not re.search(rf"\b{month}\b", row_text):
-                continue
-            nums = [to_float(c) for c in row if to_float(c) is not None]
-            if len(nums) >= 1:
-                return pd.DataFrame([{
-                    "year": year,
-                    "month": month,
-                    "production_barrels": nums[0] if len(nums) > 0 else None,
-                    "export_barrels": nums[1] if len(nums) > 1 else None,
-                }])
+        rest = line[len(target):].strip()
+        nums = extract_price_nums(rest)
+        if len(nums) >= 2:
+            return pd.DataFrame([{
+                "year": year, "month": month,
+                "production_barrels": nums[0],
+                "export_barrels": nums[1],
+            }])
     return None
 
 
@@ -231,11 +238,12 @@ def extract_mining_permits(pdf, year: int, month: int) -> pd.DataFrame | None:
     """
     Extract mining permits by province (Table 1.1).
 
-    Province names are in a left-side text column (x≈67) separate from the
+    Province names are in a left-side text column (x<150) separate from the
     bordered table. We align them to table rows by matching y-coordinates.
 
-    Returns DataFrame: year, month, province, exploration_count, exploration_area_ha,
-                       extraction_count, extraction_area_ha
+    Returns DataFrame: year, month, province, total_count, total_area_kha,
+                       extraction_count, extraction_area_kha,
+                       exploration_count, exploration_area_kha
     """
     pages = find_pages_with_keyword(pdf, ["тусгай зөвшөөрөл", "1.1", "хайгуулын"])
     if not pages:
@@ -246,16 +254,13 @@ def extract_mining_permits(pdf, year: int, month: int) -> pd.DataFrame | None:
 
         # --- Step 1: extract province names from left text column ---
         words = page.extract_words()
-        # Province names sit at x < 150, below the header (y > 200)
-        province_words: dict[float, str] = {}  # y_center → name
+        province_words: dict[float, str] = {}
         for w in words:
             if w["x0"] < 150 and w["top"] > 200:
                 y = round(w["top"])
-                # Collect multi-word province names on the same line
                 existing = province_words.get(y, "")
                 province_words[y] = (existing + " " + w["text"]).strip()
 
-        # Filter out non-province entries (footnotes, headers)
         known_prefixes = (
             "Архангай", "Баян", "Булган", "Говь", "Дархан", "Дорно",
             "Дунд", "Завхан", "Орхон", "Өвөр", "Өмнө", "Сүх", "Сэлэн",
@@ -272,7 +277,6 @@ def extract_mining_permits(pdf, year: int, month: int) -> pd.DataFrame | None:
         if not raw:
             continue
 
-        # Find data rows (rows where first cell looks numeric = permit count)
         data_rows = []
         for row in raw:
             nums = [to_float(c) for c in row if to_float(c) is not None]
@@ -282,7 +286,6 @@ def extract_mining_permits(pdf, year: int, month: int) -> pd.DataFrame | None:
         if not data_rows or not province_ys:
             continue
 
-        # Skip the first data row if it's the national total (highest permit count)
         if len(data_rows) > len(province_ys):
             data_rows = data_rows[len(data_rows) - len(province_ys):]
 
@@ -308,148 +311,274 @@ def extract_mining_permits(pdf, year: int, month: int) -> pd.DataFrame | None:
 def extract_commodity_prices(pdf, year: int, month: int) -> pd.DataFrame | None:
     """
     Extract world commodity prices (Table 3.8).
-    Returns DataFrame: year, month, commodity, price, unit, source
+
+    Text rows: '{commodity}  {unit}  {prev_price}  {curr_price}  {change%}'
+    Unit tokens contain 'ам.долл' (USD). Current price = last non-% number.
+
+    Returns DataFrame: year, month, commodity, price, unit
     """
     pages = find_pages_with_keyword(pdf, ["дэлхийн зах зээл", "3.8", "алт", "зэс"])
     if not pages:
         return None
 
     for pg_idx in pages:
-        page = pdf.pages[pg_idx]
-        raw = extract_largest_table(page)
-        if not raw:
-            continue
-
-        raw = [[clean_cell(c) for c in row] for row in raw]
+        text = pdf.pages[pg_idx].extract_text() or ""
         rows_out = []
-        for row in raw[1:]:
-            if not row or not row[0]:
+
+        for line in text.splitlines():
+            stripped = line.strip()
+            if not stripped:
                 continue
-            commodity = row[0]
-            if len(row) >= 2:
-                price = to_float(row[-1]) or to_float(row[1])
-                unit = row[2] if len(row) > 2 else None
-                rows_out.append({
-                    "year": year,
-                    "month": month,
-                    "commodity": commodity,
-                    "price": price,
-                    "unit": unit,
-                })
+
+            # Data rows contain a USD unit token
+            unit_match = re.search(r"ам\.долл\S*|\$\/\S+|USD\S*", stripped, re.IGNORECASE)
+            if not unit_match:
+                continue
+
+            nums = extract_price_nums(stripped)
+            if len(nums) < 2:
+                continue
+
+            # Commodity name = text before the unit token
+            commodity = stripped[: unit_match.start()].strip()
+            if not commodity:
+                continue
+
+            rows_out.append({
+                "year": year,
+                "month": month,
+                "commodity": commodity,
+                "price": nums[-1],  # last number = most recent (current month) price
+                "unit": unit_match.group(0),
+            })
 
         if rows_out:
             return pd.DataFrame(rows_out)
+
     return None
 
 
 def extract_fuel_prices(pdf, year: int, month: int) -> pd.DataFrame | None:
     """
     Extract retail fuel prices by province (Table 4.6).
-    Returns DataFrame: year, month, province, gasoline_price, diesel_price
+
+    Text rows: '{province}  prev_A80  curr_A80  prev_AI92  curr_AI92  prev_AI95  curr_AI95  prev_diesel  curr_diesel'
+    Current prices sit at odd indices [1, 3, 5, 7] of the 8 non-% numbers.
+
+    Some reports split 'УЛСЫН ДУНДАЖ' (national average) across two lines:
+    province name on one line, numbers on the next. Handled via lookahead.
+
+    Returns DataFrame: year, month, province, a80_price, ai92_price, ai95_price, diesel_price
     """
     pages = find_pages_with_keyword(pdf, ["шатахуун", "4.6", "бензин", "дизель"])
     if not pages:
         return None
 
     for pg_idx in pages:
-        page = pdf.pages[pg_idx]
-        raw = extract_largest_table(page)
-        if not raw:
-            continue
-
-        raw = forward_fill_none(raw)
-        raw = [[clean_cell(c) for c in row] for row in raw]
-
+        text = pdf.pages[pg_idx].extract_text() or ""
         rows_out = []
-        for row in raw[1:]:
-            if not row or not row[0]:
+        lines = text.splitlines()
+
+        i = 0
+        while i < len(lines):
+            line = lines[i].strip()
+
+            starts_prov = any(line.startswith(p) for p in _PROV_PREFIXES)
+            if not starts_prov:
+                i += 1
                 continue
-            province = row[0]
-            nums = [to_float(c) for c in row[1:] if to_float(c) is not None]
-            if len(nums) >= 1:
+
+            nums = extract_price_nums(line)
+
+            # Handle split lines: province name only, numbers on next line
+            if len(nums) < 6 and (i + 1) < len(lines):
+                next_nums = extract_price_nums(lines[i + 1].strip())
+                if len(next_nums) >= 6:
+                    # Province name is current line (stripped of any trailing text)
+                    province = re.sub(r"\s+[\d,.].*", "", line).strip() or line
+                    nums = next_nums
+                    i += 2
+                else:
+                    i += 1
+                    continue
+            elif len(nums) >= 6:
+                # Province name + numbers on same line
+                m = re.match(r"^([^\d]+)", line)
+                province = m.group(1).strip() if m else line
+                i += 1
+            else:
+                i += 1
+                continue
+
+            # Normalize national average label; skip region subtotals
+            if province.upper().startswith("УЛСЫН"):
+                province = "Улсын дундаж"
+            if "бүс" in province.lower():
+                continue  # skip region subtotals (Баруун бүс, Хангайн бүс, etc.)
+
+            if len(nums) >= 8:
                 rows_out.append({
-                    "year": year,
-                    "month": month,
+                    "year": year, "month": month,
                     "province": province,
-                    "gasoline_price": nums[0] if len(nums) > 0 else None,
-                    "diesel_price": nums[1] if len(nums) > 1 else None,
+                    "a80_price": nums[1],
+                    "ai92_price": nums[3],
+                    "ai95_price": nums[5],
+                    "diesel_price": nums[7],
+                })
+            elif len(nums) >= 6:
+                # Some reports may lack A80 column
+                rows_out.append({
+                    "year": year, "month": month,
+                    "province": province,
+                    "a80_price": None,
+                    "ai92_price": nums[1],
+                    "ai95_price": nums[3],
+                    "diesel_price": nums[5],
                 })
 
-        if rows_out:
+        # The province table always has 20+ rows (21 aimags + UB + national avg).
+        # Fewer rows means we matched a wrong page — keep searching.
+        if len(rows_out) >= 20:
             return pd.DataFrame(rows_out)
+
     return None
 
 
 def extract_petroleum_imports(pdf, year: int, month: int) -> pd.DataFrame | None:
     """
     Extract petroleum product imports (Table 4.3).
-    Returns DataFrame: year, month, product, volume, unit
+
+    Rows use '{year}.{ROMAN}' prefix (same as coal/petroleum production tables).
+    2024+ columns: БҮГД, А-80, АИ-92, АИ-95, Дизель, Онгоцны (ТС-1), LPG, Бусад
+
+    Returns DataFrame: year, month, product, volume_t
     """
-    pages = find_pages_with_keyword(pdf, ["импорт", "4.3", "шатахуун импорт"])
+    roman = INT_TO_ROMAN[month]
+    target = f"{year}.{roman}"
+
+    # Product names by position (Mongolian) — 2024+ format (8 cols including total)
+    # Note: unit is tonnes (тонн), NOT thousand tonnes
+    products_8 = [
+        "Нийт", "А-80 бензин", "АИ-92 бензин", "АИ-95 бензин",
+        "Дизелийн түлш", "Онгоцны түлш ТС-1", "Шингэрүүлсэн шатдаг хий", "Бусад",
+    ]
+
+    pages = find_pages_with_keyword(pdf, ["газрын тосны бүтээгдэхүүний импорт"])
     if not pages:
         return None
 
     for pg_idx in pages:
-        page = pdf.pages[pg_idx]
-        raw = extract_largest_table(page)
-        if not raw:
+        text = pdf.pages[pg_idx].extract_text() or ""
+        line = _find_roman_line(text, year, month)
+        if not line:
             continue
 
-        raw = [[clean_cell(c) for c in row] for row in raw]
-        rows_out = []
-        for row in raw[1:]:
-            if not row or not row[0]:
-                continue
-            product = row[0]
-            nums = [to_float(c) for c in row[1:] if to_float(c) is not None]
-            if len(nums) >= 1:
-                rows_out.append({
-                    "year": year,
-                    "month": month,
-                    "product": product,
-                    "volume": nums[0],
-                    "unit": row[2] if len(row) > 2 else None,
-                })
+        rest = line[len(target):].strip()
+        nums = extract_price_nums(rest)
+        if len(nums) < 2:
+            continue
 
-        if rows_out:
-            return pd.DataFrame(rows_out)
+        products = products_8[:len(nums)]
+        rows = [
+            {"year": year, "month": month, "product": prod, "volume_t": vol}
+            for prod, vol in zip(products, nums)
+        ]
+        return pd.DataFrame(rows)
+
     return None
 
 
 def extract_budget_revenue(pdf, year: int, month: int) -> pd.DataFrame | None:
     """
-    Extract state budget revenue from mining (Table 5.1).
-    Returns DataFrame: year, month, revenue_type, plan_bln_mnt, actual_bln_mnt, pct_of_plan
+    Extract state budget revenue from the mining sector (Table 5.1).
+
+    Units are million MNT (сая төгрөгөөр), NOT billion.
+
+    Format: revenue type name (may wrap across lines), then plan_mln actual_mln pct%
+    Revenue types vary by year; we use generic parsing rather than hard-coded names.
+
+    Returns DataFrame: year, month, revenue_type, plan_mln_mnt, actual_mln_mnt, pct_of_plan
     """
-    pages = find_pages_with_keyword(pdf, ["улсын төсвийн орлого", "5.1", "төсөв"])
+    pages = find_pages_with_keyword(pdf, ["улсын төсвийн орлог", "5.1", "гүйцэтгэл"])
     if not pages:
         return None
 
     for pg_idx in pages:
-        page = pdf.pages[pg_idx]
-        raw = extract_largest_table(page)
-        if not raw:
-            continue
+        text = pdf.pages[pg_idx].extract_text() or ""
 
-        raw = [[clean_cell(c) for c in row] for row in raw]
+        # Scope the text to just the 5.1 section
+        m = re.search(r"5\.1\.", text)
+        if not m:
+            continue
+        section = text[m.start():]
+        end = re.search(r"5\.2\.|Эх сурвалж", section[10:])
+        if end:
+            section = section[: 10 + end.start()]
+
+        lines = section.splitlines()
+
+        # Skip header lines (find where data rows begin — after "Гүйцэтгэл"/"Биелэлт" header)
+        data_start = 0
+        for j, line in enumerate(lines):
+            if "Гүйцэтгэл" in line or "Биелэлт" in line:
+                data_start = j + 1
+                break
+
         rows_out = []
-        for row in raw[1:]:
-            if not row or not row[0]:
+        name_parts: list[str] = []
+        # PDF layout quirk: when a name wraps, the tail of the name appears
+        # AFTER the data numbers (not before). Detect this by checking whether
+        # the data line starts with a digit (no inline name prefix).
+        expect_tail = False  # True when next text-only line is tail of last row
+
+        for line in lines[data_start:]:
+            stripped = line.strip()
+            if not stripped:
                 continue
-            rev_type = row[0]
-            nums = [to_float(c) for c in row[1:] if to_float(c) is not None]
-            if len(nums) >= 1:
-                rows_out.append({
-                    "year": year,
-                    "month": month,
-                    "revenue_type": rev_type,
-                    "plan_bln_mnt": nums[0] if len(nums) > 0 else None,
-                    "actual_bln_mnt": nums[1] if len(nums) > 1 else None,
-                    "pct_of_plan": nums[2] if len(nums) > 2 else None,
-                })
+
+            nums = extract_price_nums(stripped)
+            pct = extract_pct(stripped)
+
+            if len(nums) >= 2:
+                # Check if line has a text prefix (name + data on same line)
+                m_prefix = re.match(r"^([^\d,]+)", stripped)
+                prefix = m_prefix.group(1).strip() if m_prefix else ""
+                # Avoid treating percentage / decimal artifacts as prefix
+                if re.match(r"^[\d,.]", stripped):
+                    prefix = ""
+
+                if prefix:
+                    name_parts.append(prefix)
+                    expect_tail = False  # name ended inline, no tail needed
+                else:
+                    expect_tail = True   # data started with digit → tail follows
+
+                revenue_type = " ".join(p for p in name_parts if p).strip()
+                name_parts = []
+
+                if revenue_type:
+                    rows_out.append({
+                        "year": year,
+                        "month": month,
+                        "revenue_type": revenue_type,
+                        "plan_mln_mnt": nums[0],
+                        "actual_mln_mnt": nums[1],
+                        "pct_of_plan": pct,
+                    })
+            else:
+                if expect_tail:
+                    # This text-only line is the trailing part of the previous row's name
+                    if rows_out:
+                        rows_out[-1]["revenue_type"] = (
+                            rows_out[-1]["revenue_type"] + " " + stripped
+                        ).strip()
+                    expect_tail = False
+                elif stripped and not re.match(r"^[\d.]", stripped):
+                    name_parts.append(stripped)
 
         if rows_out:
             return pd.DataFrame(rows_out)
+
     return None
 
 
@@ -465,13 +594,13 @@ DATASET_EXTRACTORS = {
     "mrpam-budget-revenue": extract_budget_revenue,
 }
 
-# Mongolian column name mappings for each dataset
+# Mongolian column name mappings (applied by save_bilingual to create -mn.csv)
 MN_COLUMNS = {
     "mrpam-coal-production": {
         "year": "он", "month": "сар",
         "production_kt": "олборлолт_мян_тн",
+        "sales_kt": "борлуулалт_мян_тн",
         "export_kt": "экспорт_мян_тн",
-        "domestic_kt": "дотоод_мян_тн",
     },
     "mrpam-petroleum-production": {
         "year": "он", "month": "сар",
@@ -488,20 +617,25 @@ MN_COLUMNS = {
         "exploration_area_kha": "хайгуулын_талбай_мян_га",
     },
     "mrpam-commodity-prices": {
-        "year": "он", "month": "сар", "commodity": "бараа",
-        "price": "үнэ", "unit": "нэгж",
+        "year": "он", "month": "сар",
+        "commodity": "бараа", "price": "үнэ", "unit": "нэгж",
     },
     "mrpam-fuel-prices": {
         "year": "он", "month": "сар", "province": "аймаг",
-        "gasoline_price": "бензин_үнэ", "diesel_price": "дизель_үнэ",
+        "a80_price": "а80_үнэ",
+        "ai92_price": "аи92_үнэ",
+        "ai95_price": "аи95_үнэ",
+        "diesel_price": "дизель_үнэ",
     },
     "mrpam-petroleum-imports": {
-        "year": "он", "month": "сар", "product": "бүтээгдэхүүн",
-        "volume": "хэмжээ", "unit": "нэгж",
+        "year": "он", "month": "сар",
+        "product": "бүтээгдэхүүн", "volume_t": "хэмжээ_тн",
     },
     "mrpam-budget-revenue": {
-        "year": "он", "month": "сар", "revenue_type": "орлогын_төрөл",
-        "plan_bln_mnt": "төлөвлөгөө_тэрбум", "actual_bln_mnt": "гүйцэтгэл_тэрбум",
+        "year": "он", "month": "сар",
+        "revenue_type": "орлогын_төрөл",
+        "plan_mln_mnt": "төлөвлөгөө_сая_төг",
+        "actual_mln_mnt": "гүйцэтгэл_сая_төг",
         "pct_of_plan": "хувь",
     },
 }
@@ -512,18 +646,15 @@ MN_COLUMNS = {
 
 def parse_year_month_from_filename(filename: str) -> tuple[int, int] | None:
     """
-    Extract year and month from various MRPAM PDF filename patterns:
+    Extract year and month from MRPAM PDF filename patterns:
       2025.1.stat.report.mon.pdf
       2025.01.stat.report.mon.pdf
       2021-01-mon.pdf
       2022-01.pdf
-      2021-02-stat-report-mon.pdf
     """
-    # Pattern: YYYY.M. or YYYY.MM.
     m = re.search(r"(\d{4})\.(\d{1,2})[.\-]", filename)
     if m:
         return int(m.group(1)), int(m.group(2))
-    # Pattern: YYYY-MM
     m = re.search(r"(\d{4})-(\d{1,2})", filename)
     if m:
         return int(m.group(1)), int(m.group(2))
@@ -576,7 +707,7 @@ def save_bilingual(df_en: pd.DataFrame, dataset_id: str, output_dir: Path):
 
 
 def debug_pdf(pdf_path: Path):
-    """Print all pages, detected tables, and raw text for debugging."""
+    """Print page text and table counts for debugging."""
     print(f"\nDebugging: {pdf_path.name}")
     with pdfplumber.open(pdf_path) as pdf:
         print(f"Total pages: {len(pdf.pages)}")
@@ -585,7 +716,7 @@ def debug_pdf(pdf_path: Path):
             tables = page.extract_tables()
             print(f"\n--- Page {i+1} ---")
             print(f"  Tables detected: {len(tables)}")
-            print(f"  Text snippet: {text[:200].replace(chr(10), ' ')}")
+            print(f"  Text snippet: {text[:300].replace(chr(10), ' | ')}")
             for j, t in enumerate(tables):
                 if t:
                     print(f"  Table {j}: {len(t)} rows × {len(t[0]) if t else 0} cols")
@@ -615,7 +746,6 @@ def main():
     if not datasets or datasets == [None]:
         parser.error("Specify --dataset DATASET_ID or --all")
 
-    # Determine which PDFs to process
     if args.pdf:
         pdf_files = [args.pdf]
     elif args.year:
@@ -628,7 +758,6 @@ def main():
     else:
         parser.error("Specify --pdf or --year")
 
-    # Extract and accumulate
     for dataset_id in datasets:
         print(f"\nExtracting: {dataset_id}")
         frames = []

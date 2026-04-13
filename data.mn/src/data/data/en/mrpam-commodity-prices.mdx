@@ -1,0 +1,31 @@
+---
+title: "World Mineral Commodity Prices — Gold, Copper, Coal and More (2021–2025)"
+publishDate: 2025-12-31
+excerpt: "Monthly world market prices for key mineral commodities including gold, silver, copper, zinc, fluorspar, iron ore, and coal from 2022 to 2025. Data sourced from MRPAM monthly statistical reports."
+category: "Mining"
+tags: ["mongolia", "commodity prices", "gold", "copper", "coal", "world market", "minerals", "mrpam"]
+keywords: ["gold price", "copper price", "coal price", "mineral commodity prices", "world market prices", "MRPAM"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-31
+dataFiles:
+  - path: "/datasets/mrpam-commodity-prices-en.csv"
+    format: "csv"
+    size: "6 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mrpam-commodity-prices.xlsx"
+    format: "xlsx"
+    size: "14 KB"
+    description: "Open in Excel"
+source:
+  name: "Mineral Resources and Petroleum Authority of Mongolia"
+  url: "https://mrpam.gov.mn"
+  tableId: "Table 3.8"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mrpam-commodity-prices-en.json"
+  title="World Mineral Commodity Prices (2025)"
+/>

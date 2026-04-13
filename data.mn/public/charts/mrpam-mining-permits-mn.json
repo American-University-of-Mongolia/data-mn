@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/mrpam-mining-permits-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "хайгуулын_тоо",
+          "as": "хайгуулын_тоо"
+        },
+        {
+          "op": "sum",
+          "field": "ашиглалтын_тоо",
+          "as": "ашиглалтын_тоо"
+        }
+      ],
+      "groupby": [
+        "он",
+        "сар"
+      ]
+    },
+    {
+      "calculate": "datetime(datum.year - 0, datum.month - 1)",
+      "as": "date"
+    },
+    {
+      "fold": [
+        "хайгуулын_тоо",
+        "ашиглалтын_тоо"
+      ],
+      "as": [
+        "төрөл",
+        "тоо"
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Огноо",
+      "axis": {
+        "format": "%b %Y",
+        "grid": false,
+        "labelAngle": -30
+      }
+    },
+    "y": {
+      "field": "тоо",
+      "type": "quantitative",
+      "title": "Тусгай зөвшөөрлийн тоо",
+      "axis": {
+        "format": ",.0f",
+        "grid": true,
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "төрөл",
+      "type": "nominal",
+      "legend": {
+        "orient": "top",
+        "title": "Зөвшөөрлийн төрөл"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "title": "Огноо",
+            "format": "%B %Y",
+            "type": "temporal"
+          },
+          {
+            "field": "төрөл",
+            "title": "Зөвшөөрлийн төрөл"
+          },
+          {
+            "field": "тоо",
+            "title": "Тоо",
+            "format": ",.0f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

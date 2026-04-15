@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia national average fuel prices by type, MNT per litre (2022–2025)",
+  "data": {
+    "url": "/datasets/mrpam-fuel-prices-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "aggregate": [
+        {"op": "mean", "field": "gasoline_ai92", "as": "avg_ai92"},
+        {"op": "mean", "field": "gasoline_ai95", "as": "avg_ai95"},
+        {"op": "mean", "field": "diesel", "as": "avg_diesel"}
+      ],
+      "groupby": ["year", "month"]
+    },
+    {
+      "calculate": "datum.year + '-' + (datum.month < 10 ? '0' + datum.month : '' + datum.month) + '-01'",
+      "as": "date"
+    },
+    {
+      "fold": ["avg_ai92", "avg_ai95", "avg_diesel"],
+      "as": ["fuel_type", "value"]
+    },
+    {
+      "calculate": "datum.fuel_type === 'avg_ai92' ? 'Gasoline AI-92' : datum.fuel_type === 'avg_ai95' ? 'Gasoline AI-95' : 'Diesel'",
+      "as": "fuel_label"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Date",
+      "axis": {"format": "%b %Y", "labelAngle": -45, "grid": false}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "MNT per litre",
+      "scale": {"zero": false},
+      "axis": {"format": ",.0f", "grid": true, "gridOpacity": 0.3}
+    },
+    "color": {
+      "field": "fuel_label",
+      "type": "nominal",
+      "title": "Fuel Type",
+      "scale": {
+        "domain": ["Gasoline AI-92", "Gasoline AI-95", "Diesel"],
+        "range": ["#f58518", "#e45756", "#4c78a8"]
+      },
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "date", "type": "temporal", "title": "Date", "format": "%b %Y"},
+          {"field": "fuel_label", "type": "nominal", "title": "Fuel Type"},
+          {"field": "value", "type": "quantitative", "title": "MNT/litre", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "autosize": {"type": "fit", "contains": "padding"},
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

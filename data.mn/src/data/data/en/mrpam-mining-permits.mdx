@@ -1,0 +1,32 @@
+---
+title: "Mongolia Mining Permits by Province (2022–2025)"
+publishDate: 2026-04-01
+excerpt: "Monthly mining permit counts and areas across all 22 provinces in Mongolia from 2022 to 2025. Tuv province consistently leads in permit counts, followed by Dornogovi and Khentii. The dataset covers both extraction and exploration permits."
+category: "Mining"
+tags: ["mongolia", "mining permits", "extraction", "exploration", "provinces", "MRPAM"]
+keywords: ["mongolia mining permits", "mining license mongolia", "extraction permits", "exploration permits", "MRPAM permits by province"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-01
+dataFiles:
+  - path: "/datasets/mrpam-mining-permits-en.csv"
+    format: "csv"
+    size: "10 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mrpam-mining-permits.xlsx"
+    format: "xlsx"
+    size: "28 KB"
+    description: "Open in Excel"
+source:
+  name: "MRPAM"
+  url: "https://mrpam.gov.mn"
+  tableId: "page-714"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mrpam-mining-permits-en.json"
+  title="Mining Permits by Province, Top 10 (December 2025)"
+
+/>

@@ -1,0 +1,31 @@
+---
+title: "Mongolia Mining Budget Revenue: Plan vs Actual (2022–2025)"
+publishDate: 2026-04-01
+excerpt: "Monthly cumulative mining sector budget revenue in Mongolia from 2022 to 2025, comparing planned and actual figures. Covers mining license fees, exploration reimbursements, petroleum export revenue, and other MRPAM budget items."
+category: "Government"
+tags: ["mongolia", "budget", "revenue", "mining", "government", "MRPAM", "fiscal"]
+keywords: ["mongolia mining revenue", "MRPAM budget", "mining license fees", "petroleum revenue mongolia", "budget execution"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-01
+dataFiles:
+  - path: "/datasets/mrpam-budget-revenue-en.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mrpam-budget-revenue.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Open in Excel"
+source:
+  name: "MRPAM"
+  url: "https://mrpam.gov.mn"
+  tableId: "page-714"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mrpam-budget-revenue-en.json"
+  title="Mongolia Mining Budget Revenue: Plan vs Actual (2022–2025)"
+/>

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Уул уурхайн тусгай зөвшөөрөл аймгаар: ашиглалт ба хайгуул, топ 10 аймаг (2025 оны 12 сар)",
+  "data": {
+    "url": "/datasets/mrpam-mining-permits-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum['сар'] === '12' && datum['он'] === '2025'"},
+    {
+      "window": [{"op": "rank", "as": "rank"}],
+      "sort": [{"field": "нийт_тоо", "order": "descending"}]
+    },
+    {"filter": "datum.rank <= 10"},
+    {
+      "calculate": "toNumber(datum['ашиглалтын_тоо']) || 0",
+      "as": "extraction"
+    },
+    {
+      "calculate": "toNumber(datum['нийт_тоо']) - (toNumber(datum['ашиглалтын_тоо']) || 0)",
+      "as": "exploration_other"
+    },
+    {
+      "fold": ["extraction", "exploration_other"],
+      "as": ["permit_type", "count"]
+    },
+    {
+      "calculate": "datum.permit_type === 'extraction' ? 'Ашиглалт' : 'Хайгуул ба бусад'",
+      "as": "permit_label"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "province_mn",
+      "type": "nominal",
+      "title": "Аймаг",
+      "sort": "-x",
+      "axis": {"labelFontSize": 12}
+    },
+    "x": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Тусгай зөвшөөрлийн тоо",
+      "stack": "zero",
+      "axis": {"format": ",.0f", "grid": true, "gridOpacity": 0.3}
+    },
+    "color": {
+      "field": "permit_label",
+      "type": "nominal",
+      "title": "Зөвшөөрлийн төрөл",
+      "scale": {
+        "domain": ["Ашиглалт", "Хайгуул ба бусад"],
+        "range": ["#4c78a8", "#f58518"]
+      },
+      "legend": {"orient": "top", "title": null}
+    },
+    "tooltip": [
+      {"field": "province_mn", "type": "nominal", "title": "Аймаг"},
+      {"field": "permit_label", "type": "nominal", "title": "Төрөл"},
+      {"field": "count", "type": "quantitative", "title": "Тусгай зөвшөөрөл", "format": ",.0f"},
+      {"field": "нийт_талбай_мян_га", "type": "quantitative", "title": "Нийт талбай (мян.га)", "format": ",.1f"}
+    ]
+  },
+  "mark": {"type": "bar", "cornerRadiusEnd": 3},
+  "autosize": {"type": "fit", "contains": "padding"},
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

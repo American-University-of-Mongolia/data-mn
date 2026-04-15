@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын түлшний үнэ аймгаар (2022–2025)"
+publishDate: 2026-04-01
+excerpt: "2022–2025 оны Монгол Улсын 21 аймаг болон Улаанбаатар хотын түлшний сарын үнэ. Бензин А-80, АИ-92, АИ-95 болон дизелийн үнийг хамруулсан. Баруун аймгууд тогтмол өндөр үнэтэй байсан нь тээврийн зардлыг тусгасан."
+category: "Эрчим хүч"
+tags: ["монгол", "түлшний үнэ", "бензин", "дизель", "эрчим хүч", "аймаг", "АМГТГ"]
+keywords: ["монгол түлшний үнэ", "бензин үнэ", "дизель үнэ", "аймгийн түлшний үнэ", "АМГТГ түлш"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-01
+dataFiles:
+  - path: "/datasets/mrpam-fuel-prices-mn.csv"
+    format: "csv"
+    size: "13 KB"
+    description: "CSV татах"
+  - path: "/datasets/mrpam-fuel-prices.xlsx"
+    format: "xlsx"
+    size: "24 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "АМГТГ"
+  url: "https://mrpam.gov.mn"
+  tableId: "page-714"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mrpam-fuel-prices-mn.json"
+  title="Монгол Улсын түлшний дундаж үнэ (2022–2025)"
+/>

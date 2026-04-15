@@ -1,0 +1,32 @@
+---
+title: "Монгол Улсын уул уурхайн тусгай зөвшөөрөл аймгаар (2022–2025)"
+publishDate: 2026-04-01
+excerpt: "2022–2025 оны Монгол Улсын 22 аймгийн уул уурхайн тусгай зөвшөөрлийн сарын тоо, талбай. Төв аймаг зөвшөөрлийн тоогоор тэргүүлж, Дорноговь, Хэнтий дараалав. Ашиглалт болон хайгуулын зөвшөөрлийг хамруулсан."
+category: "Уул уурхай"
+tags: ["монгол", "уул уурхайн тусгай зөвшөөрөл", "ашиглалт", "хайгуул", "аймаг", "АМГТГ"]
+keywords: ["монгол уул уурхайн зөвшөөрөл", "ашигт малтмалын тусгай зөвшөөрөл", "ашиглалтын зөвшөөрөл", "хайгуулын зөвшөөрөл", "АМГТГ аймгаар"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-01
+dataFiles:
+  - path: "/datasets/mrpam-mining-permits-mn.csv"
+    format: "csv"
+    size: "12 KB"
+    description: "CSV татах"
+  - path: "/datasets/mrpam-mining-permits.xlsx"
+    format: "xlsx"
+    size: "28 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "АМГТГ"
+  url: "https://mrpam.gov.mn"
+  tableId: "page-714"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mrpam-mining-permits-mn.json"
+  title="Уул уурхайн тусгай зөвшөөрөл аймгаар, топ 10 (2025 оны 12 сар)"
+
+/>

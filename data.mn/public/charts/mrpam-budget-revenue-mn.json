@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "АМГТГ-ын төсвийн орлого: төлөвлөгөө ба гүйцэтгэл (2022–2025)",
+  "data": {
+    "url": "/datasets/mrpam-budget-revenue-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum.revenue_type_mn === 'БҮГД'"},
+    {
+      "calculate": "datum['он'] + '-' + (datum['сар'] < 10 ? '0' + datum['сар'] : '' + datum['сар']) + '-01'",
+      "as": "date"
+    },
+    {
+      "fold": ["төлөвлөгөө_сая_төг", "гүйцэтгэл_сая_төг"],
+      "as": ["metric", "value"]
+    },
+    {
+      "calculate": "datum.metric === 'төлөвлөгөө_сая_төг' ? 'Төлөвлөгөө' : 'Гүйцэтгэл'",
+      "as": "metric_label"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Огноо",
+      "axis": {"format": "%b %Y", "labelAngle": -45, "grid": false}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Сая төгрөг",
+      "scale": {"zero": true},
+      "axis": {"format": ",.0f", "grid": true, "gridOpacity": 0.3}
+    },
+    "xOffset": {"field": "metric_label"},
+    "color": {
+      "field": "metric_label",
+      "type": "nominal",
+      "title": "Төрөл",
+      "scale": {
+        "domain": ["Төлөвлөгөө", "Гүйцэтгэл"],
+        "range": ["#94a3b8", "#4c78a8"]
+      },
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "mark": {"type": "bar", "cornerRadiusTopLeft": 3, "cornerRadiusTopRight": 3},
+  "autosize": {"type": "fit", "contains": "padding"},
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

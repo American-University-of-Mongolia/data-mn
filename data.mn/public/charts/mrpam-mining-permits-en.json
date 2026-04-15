@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mining permits by province: extraction vs exploration count, top 10 provinces (December 2025)",
+  "data": {
+    "url": "/datasets/mrpam-mining-permits-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum.month === '12' && datum.year === '2025'"},
+    {
+      "window": [{"op": "rank", "as": "rank"}],
+      "sort": [{"field": "total_count", "order": "descending"}]
+    },
+    {"filter": "datum.rank <= 10"},
+    {
+      "calculate": "toNumber(datum.extraction_count) || 0",
+      "as": "extraction"
+    },
+    {
+      "calculate": "toNumber(datum.total_count) - (toNumber(datum.extraction_count) || 0)",
+      "as": "exploration_other"
+    },
+    {
+      "fold": ["extraction", "exploration_other"],
+      "as": ["permit_type", "count"]
+    },
+    {
+      "calculate": "datum.permit_type === 'extraction' ? 'Extraction' : 'Exploration & Other'",
+      "as": "permit_label"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "province",
+      "type": "nominal",
+      "title": "Province",
+      "sort": "-x",
+      "axis": {"labelFontSize": 12}
+    },
+    "x": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Number of Permits",
+      "stack": "zero",
+      "axis": {"format": ",.0f", "grid": true, "gridOpacity": 0.3}
+    },
+    "color": {
+      "field": "permit_label",
+      "type": "nominal",
+      "title": "Permit Type",
+      "scale": {
+        "domain": ["Extraction", "Exploration & Other"],
+        "range": ["#4c78a8", "#f58518"]
+      },
+      "legend": {"orient": "top", "title": null}
+    },
+    "tooltip": [
+      {"field": "province", "type": "nominal", "title": "Province"},
+      {"field": "permit_label", "type": "nominal", "title": "Type"},
+      {"field": "count", "type": "quantitative", "title": "Permits", "format": ",.0f"},
+      {"field": "total_area_kha", "type": "quantitative", "title": "Total Area (kha)", "format": ",.1f"}
+    ]
+  },
+  "mark": {"type": "bar", "cornerRadiusEnd": 3},
+  "autosize": {"type": "fit", "contains": "padding"},
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

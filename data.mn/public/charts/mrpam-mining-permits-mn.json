@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Уул уурхайн тусгай зөвшөөрөл аймгаар: ашиглалт ба хайгуул, топ 10 аймаг (2025 оны 12 сар)",
+  "description": "Уул уурхайн тусгай зөвшөөрөл аймгаар: ашиглалт ба хайгуул, топ 10 аймаг (2025 оны 12 сар, 2021–2025 он)",
   "data": {
     "url": "/datasets/mrpam-mining-permits-mn.csv",
     "format": {"type": "csv"}

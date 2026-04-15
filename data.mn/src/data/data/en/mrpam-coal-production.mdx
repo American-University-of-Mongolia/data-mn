@@ -1,0 +1,31 @@
+---
+title: "Mongolia Coal Production, Sales, and Export (2021–2025)"
+publishDate: 2026-04-01
+excerpt: "Monthly coal production, domestic sales, and export volumes in Mongolia from 2021 to 2025. Covers production, sales, and export in thousand tonnes per month across all reporting months."
+category: "Mining"
+tags: ["mongolia", "coal", "mining", "production", "export", "MRPAM"]
+keywords: ["mongolia coal production", "coal export mongolia", "coal mining statistics", "MRPAM coal data", "coal sales mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-01
+dataFiles:
+  - path: "/datasets/mrpam-coal-production-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mrpam-coal-production.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Open in Excel"
+source:
+  name: "MRPAM"
+  url: "https://mrpam.gov.mn"
+  tableId: "page-714"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mrpam-coal-production-en.json"
+  title="Mongolia Coal Production, Sales, and Export (2021–2025)"
+/>

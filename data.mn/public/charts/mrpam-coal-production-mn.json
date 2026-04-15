@@ -1,30 +1,22 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын түлшний дундаж үнэ, төрлөөр, литрийн төгрөг (2021–2025)",
+  "description": "Монгол Улсын нүүрсний олборлолт, борлуулалт, экспорт, мянган тонн (2021–2025)",
   "data": {
-    "url": "/datasets/mrpam-fuel-prices-mn.csv",
+    "url": "/datasets/mrpam-coal-production-mn.csv",
     "format": {"type": "csv"}
   },
   "transform": [
-    {
-      "aggregate": [
-        {"op": "mean", "field": "бензин_аи92_төг", "as": "avg_ai92"},
-        {"op": "mean", "field": "бензин_аи95_төг", "as": "avg_ai95"},
-        {"op": "mean", "field": "дизель_төг", "as": "avg_diesel"}
-      ],
-      "groupby": ["он", "сар"]
-    },
     {
       "calculate": "datum['он'] + '-' + (datum['сар'] < 10 ? '0' + datum['сар'] : '' + datum['сар']) + '-01'",
       "as": "date"
     },
     {
-      "fold": ["avg_ai92", "avg_ai95", "avg_diesel"],
-      "as": ["fuel_type", "value"]
+      "fold": ["олборлолт_мян_тн", "борлуулалт_мян_тн", "экспорт_мян_тн"],
+      "as": ["metric", "value"]
     },
     {
-      "calculate": "datum.fuel_type === 'avg_ai92' ? 'Бензин АИ-92' : datum.fuel_type === 'avg_ai95' ? 'Бензин АИ-95' : 'Дизель'",
-      "as": "fuel_label"
+      "calculate": "datum.metric === 'олборлолт_мян_тн' ? 'Олборлолт' : datum.metric === 'борлуулалт_мян_тн' ? 'Борлуулалт' : 'Экспорт'",
+      "as": "metric_label"
     }
   ],
   "encoding": {
@@ -37,17 +29,17 @@
     "y": {
       "field": "value",
       "type": "quantitative",
-      "title": "Литрийн төгрөг",
-      "scale": {"zero": false},
+      "title": "Мянган тонн",
+      "scale": {"zero": true},
       "axis": {"format": ",.0f", "grid": true, "gridOpacity": 0.3}
     },
     "color": {
-      "field": "fuel_label",
+      "field": "metric_label",
       "type": "nominal",
-      "title": "Түлшний төрөл",
+      "title": "Үзүүлэлт",
       "scale": {
-        "domain": ["Бензин АИ-92", "Бензин АИ-95", "Дизель"],
-        "range": ["#f58518", "#e45756", "#4c78a8"]
+        "domain": ["Олборлолт", "Борлуулалт", "Экспорт"],
+        "range": ["#4c78a8", "#f58518", "#e45756"]
       },
       "legend": {"orient": "top", "title": null}
     }
@@ -76,8 +68,8 @@
         },
         "tooltip": [
           {"field": "date", "type": "temporal", "title": "Огноо", "format": "%b %Y"},
-          {"field": "fuel_label", "type": "nominal", "title": "Түлшний төрөл"},
-          {"field": "value", "type": "quantitative", "title": "Төгрөг/литр", "format": ",.0f"}
+          {"field": "metric_label", "type": "nominal", "title": "Үзүүлэлт"},
+          {"field": "value", "type": "quantitative", "title": "Мянган тонн", "format": ",.1f"}
         ]
       }
     }

@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mining permits by province: extraction vs exploration count, top 10 provinces (December 2025)",
+  "description": "Mining permits by province: extraction vs exploration count, top 10 provinces (December 2025, 2021–2025 data)",
   "data": {
     "url": "/datasets/mrpam-mining-permits-en.csv",
     "format": {"type": "csv"}

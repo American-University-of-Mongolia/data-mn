@@ -1,53 +1,45 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын түлшний дундаж үнэ, төрлөөр, литрийн төгрөг (2021–2025)",
+  "description": "Mongolia monthly coal production, sales, and export in thousand tonnes (2021–2025)",
   "data": {
-    "url": "/datasets/mrpam-fuel-prices-mn.csv",
+    "url": "/datasets/mrpam-coal-production-en.csv",
     "format": {"type": "csv"}
   },
   "transform": [
     {
-      "aggregate": [
-        {"op": "mean", "field": "бензин_аи92_төг", "as": "avg_ai92"},
-        {"op": "mean", "field": "бензин_аи95_төг", "as": "avg_ai95"},
-        {"op": "mean", "field": "дизель_төг", "as": "avg_diesel"}
-      ],
-      "groupby": ["он", "сар"]
-    },
-    {
-      "calculate": "datum['он'] + '-' + (datum['сар'] < 10 ? '0' + datum['сар'] : '' + datum['сар']) + '-01'",
+      "calculate": "datum.year + '-' + (datum.month < 10 ? '0' + datum.month : '' + datum.month) + '-01'",
       "as": "date"
     },
     {
-      "fold": ["avg_ai92", "avg_ai95", "avg_diesel"],
-      "as": ["fuel_type", "value"]
+      "fold": ["production_kt", "sales_kt", "export_kt"],
+      "as": ["metric", "value"]
     },
     {
-      "calculate": "datum.fuel_type === 'avg_ai92' ? 'Бензин АИ-92' : datum.fuel_type === 'avg_ai95' ? 'Бензин АИ-95' : 'Дизель'",
-      "as": "fuel_label"
+      "calculate": "datum.metric === 'production_kt' ? 'Production' : datum.metric === 'sales_kt' ? 'Sales' : 'Export'",
+      "as": "metric_label"
     }
   ],
   "encoding": {
     "x": {
       "field": "date",
       "type": "temporal",
-      "title": "Огноо",
+      "title": "Date",
       "axis": {"format": "%b %Y", "labelAngle": -45, "grid": false}
     },
     "y": {
       "field": "value",
       "type": "quantitative",
-      "title": "Литрийн төгрөг",
-      "scale": {"zero": false},
+      "title": "Thousand Tonnes",
+      "scale": {"zero": true},
       "axis": {"format": ",.0f", "grid": true, "gridOpacity": 0.3}
     },
     "color": {
-      "field": "fuel_label",
+      "field": "metric_label",
       "type": "nominal",
-      "title": "Түлшний төрөл",
+      "title": "Metric",
       "scale": {
-        "domain": ["Бензин АИ-92", "Бензин АИ-95", "Дизель"],
-        "range": ["#f58518", "#e45756", "#4c78a8"]
+        "domain": ["Production", "Sales", "Export"],
+        "range": ["#4c78a8", "#f58518", "#e45756"]
       },
       "legend": {"orient": "top", "title": null}
     }
@@ -75,9 +67,9 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "date", "type": "temporal", "title": "Огноо", "format": "%b %Y"},
-          {"field": "fuel_label", "type": "nominal", "title": "Түлшний төрөл"},
-          {"field": "value", "type": "quantitative", "title": "Төгрөг/литр", "format": ",.0f"}
+          {"field": "date", "type": "temporal", "title": "Date", "format": "%b %Y"},
+          {"field": "metric_label", "type": "nominal", "title": "Metric"},
+          {"field": "value", "type": "quantitative", "title": "Thousand Tonnes", "format": ",.1f"}
         ]
       }
     }

@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын нүүрсний олборлолт, борлуулалт, экспорт (2021–2025)"
+publishDate: 2026-04-01
+excerpt: "2021–2025 оны Монгол Улсын нүүрсний сар бүрийн олборлолт, дотоодын борлуулалт, экспортын хэмжээ. Олборлолт, борлуулалт, экспортыг мянган тоноор хамруулсан."
+category: "Уул уурхай"
+tags: ["монгол", "нүүрс", "уул уурхай", "олборлолт", "экспорт", "АМГТГ"]
+keywords: ["монгол нүүрсний олборлолт", "нүүрсний экспорт", "уул уурхайн статистик", "АМГТГ нүүрс"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-01
+dataFiles:
+  - path: "/datasets/mrpam-coal-production-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/mrpam-coal-production.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "АМГТГ"
+  url: "https://mrpam.gov.mn"
+  tableId: "page-714"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/mrpam-coal-production-mn.json"
+  title="Монгол Улсын нүүрсний олборлолт, борлуулалт, экспорт (2021–2025)"
+/>

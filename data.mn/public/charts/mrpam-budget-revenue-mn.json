@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "АМГТГ-ын төсвийн орлого: төлөвлөгөө ба гүйцэтгэл (2022–2025)",
+  "description": "АМГТГ-ын төсвийн орлого: төлөвлөгөө ба гүйцэтгэл (2021–2025)",
   "data": {
     "url": "/datasets/mrpam-budget-revenue-mn.csv",
     "format": {"type": "csv"}

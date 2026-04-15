@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "MRPAM budget revenue: plan vs actual for total mining revenue (2022–2025)",
+  "description": "MRPAM budget revenue: plan vs actual for total mining revenue (2021–2025)",
   "data": {
     "url": "/datasets/mrpam-budget-revenue-en.csv",
     "format": {"type": "csv"}

@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia national average fuel prices by type, MNT per litre (2022–2025)",
+  "description": "Mongolia national average fuel prices by type, MNT per litre (2021–2025)",
   "data": {
     "url": "/datasets/mrpam-fuel-prices-en.csv",
     "format": {"type": "csv"}

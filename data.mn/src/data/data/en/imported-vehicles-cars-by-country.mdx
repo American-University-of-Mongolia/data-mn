@@ -1,0 +1,31 @@
+---
+title: "Mongolia Passenger Car Imports by Country of Origin (2007–2025)"
+publishDate: 2026-04-28
+excerpt: "Japan supplied 93.3% of Mongolia's 123,023 imported passenger cars in 2024, followed by China (3,546) and Republic of Korea (1,365), reflecting Mongolia's strong dependence on used vehicle imports from East Asia."
+category: "Trade"
+tags: ["vehicles", "imports", "trade", "Japan", "passenger cars", "country of origin"]
+keywords: ["mongolia car imports by country", "japan vehicles mongolia", "passenger car imports mongolia", "vehicle trade mongolia", "used car imports mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-01-01
+dataFiles:
+  - path: "/datasets/imported-vehicles-cars-by-country-en.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "Download as CSV"
+  - path: "/datasets/imported-vehicles-cars-by-country.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_1200_013V5.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/imported-vehicles-cars-by-country-en.json"
+  title="Mongolia Passenger Car Imports by Country of Origin (2007–2025)"
+/>

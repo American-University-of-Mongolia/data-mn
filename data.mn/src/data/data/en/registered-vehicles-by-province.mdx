@@ -1,0 +1,31 @@
+---
+title: "Mongolia Registered Vehicles by Province (2012–2025)"
+publishDate: 2026-04-24
+excerpt: "Ulaanbaatar accounts for nearly 60% of all registered vehicles in Mongolia, with Umnugovi ranking second among the 21 provinces. Annual data from 2012 to 2025 covering all aimags and the capital."
+category: "Infrastructure"
+tags: ["vehicles", "transport", "infrastructure", "province", "aimag", "regional", "mongolia"]
+keywords: ["mongolia registered vehicles", "vehicles by province", "aimag transport", "vehicle registration mongolia", "NSO transport data"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-31
+dataFiles:
+  - path: "/datasets/registered-vehicles-by-province-en.csv"
+    format: "csv"
+    size: "6 KB"
+    description: "Download as CSV"
+  - path: "/datasets/registered-vehicles-by-province.xlsx"
+    format: "xlsx"
+    size: "16 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_1200_013V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/registered-vehicles-by-province-en.json"
+  title="Mongolia Registered Vehicles by Province (2025)"
+/>

@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсад импортолсон суудлын автомашин гарал үүслийн улсаар (2007–2025)",
+  "data": {
+    "url": "/datasets/imported-vehicles-cars-by-country-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 1,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "тоо",
+      "type": "quantitative",
+      "title": "Импортолсон суудлын автомашин",
+      "stack": "zero",
+      "axis": {
+        "format": ",",
+        "grid": true,
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "улс",
+      "type": "nominal",
+      "title": "Гарал үүслийн улс",
+      "scale": {
+        "domain": [
+          "Япон",
+          "БНСУ",
+          "ХБHГУ",
+          "БНХАУ",
+          "Америкийн Нэгдсэн Улс",
+          "ОХУ",
+          "Их Британи",
+          "Канад",
+          "Австри",
+          "Тайланд",
+          "Бусад"
+        ],
+        "range": [
+          "#1e3a5f",
+          "#4c78a8",
+          "#f58518",
+          "#e45756",
+          "#72b7b2",
+          "#54a24b",
+          "#b279a2",
+          "#ff9da6",
+          "#9d755d",
+          "#bab0ac",
+          "#d3d3d3"
+        ]
+      },
+      "legend": {"orient": "top"}
+    },
+    "order": {
+      "field": "улс",
+      "type": "nominal"
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "area", "interpolate": "monotone", "opacity": 0.85}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
+          {"field": "улс", "type": "nominal", "title": "Гарал үүслийн улс"},
+          {"field": "тоо", "type": "quantitative", "title": "Суудлын автомашин", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

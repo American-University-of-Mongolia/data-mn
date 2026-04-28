@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia Passenger Car Imports by Country of Origin (2007–2025)",
+  "data": {
+    "url": "/datasets/imported-vehicles-cars-by-country-en.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 1,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Passenger Cars Imported",
+      "stack": "zero",
+      "axis": {
+        "format": ",",
+        "grid": true,
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "country",
+      "type": "nominal",
+      "title": "Country of Origin",
+      "scale": {
+        "domain": [
+          "Japan",
+          "Republic of Korea",
+          "Federal Republic of Germany",
+          "China",
+          "United States of America",
+          "Russian Federation",
+          "United Kingdom",
+          "Canada",
+          "Austria",
+          "Thailand",
+          "Other"
+        ],
+        "range": [
+          "#1e3a5f",
+          "#4c78a8",
+          "#f58518",
+          "#e45756",
+          "#72b7b2",
+          "#54a24b",
+          "#b279a2",
+          "#ff9da6",
+          "#9d755d",
+          "#bab0ac",
+          "#d3d3d3"
+        ]
+      },
+      "legend": {"orient": "top"}
+    },
+    "order": {
+      "field": "country",
+      "type": "nominal"
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "area", "interpolate": "monotone", "opacity": 0.85}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
+          {"field": "country", "type": "nominal", "title": "Country of Origin"},
+          {"field": "count", "type": "quantitative", "title": "Passenger Cars", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

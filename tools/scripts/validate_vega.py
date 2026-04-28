@@ -855,12 +855,25 @@ class VegaValidator:
         transforms = self.spec.get('transform', [])
         transform_fields = set()  # Fields CREATED by transforms
 
+        # First pass: collect all fields created by transforms (aggregate ops, calculate as, etc.)
         for transform in transforms:
-            # Check FOLD transform - source fields must exist in CSV
+            if 'aggregate' in transform:
+                for agg_op in transform.get('aggregate', []):
+                    if 'as' in agg_op:
+                        transform_fields.add(agg_op['as'])
+            if 'as' in transform:
+                as_field = transform['as']
+                if isinstance(as_field, list):
+                    transform_fields.update(as_field)
+                else:
+                    transform_fields.add(as_field)
+
+        for transform in transforms:
+            # Check FOLD transform - source fields must exist in CSV or be created by transforms
             if 'fold' in transform:
                 fold_fields = transform['fold']
                 for field in fold_fields:
-                    if field not in csv_fields:
+                    if field not in csv_fields and field not in transform_fields:
                         self.result.add_error(
                             f"Fold transform references field '{field}' which doesn't exist in CSV. "
                             f"Available columns: {sorted(csv_fields)}"

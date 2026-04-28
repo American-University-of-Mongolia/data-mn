@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/registered-vehicles-by-age-en.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 1
+      }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Number of Vehicles",
+      "stack": "zero",
+      "axis": {
+        "format": ","
+      }
+    },
+    "color": {
+      "field": "age_group",
+      "type": "nominal",
+      "title": "Vehicle Age",
+      "sort": ["10 or more", "7-9", "4-6", "0-3"],
+      "scale": {
+        "domain": ["10 or more", "7-9", "4-6", "0-3"],
+        "range": ["#1e3a5f", "#4c78a8", "#72acd4", "#b8d4ea"]
+      },
+      "legend": {"orient": "top"}
+    },
+    "tooltip": [
+      {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
+      {"field": "age_group", "type": "nominal", "title": "Vehicle Age"},
+      {"field": "count", "type": "quantitative", "title": "Count", "format": ","}
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

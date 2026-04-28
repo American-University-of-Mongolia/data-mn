@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсад 2025 онд аймаг, нийслэлээр бүртгэлтэй тээврийн хэрэгслийн тоо",
+  "data": {
+    "url": "/datasets/registered-vehicles-by-province-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "filter": "datum.year == 2025"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "#4c78a8",
+    "cornerRadiusEnd": 3
+  },
+  "encoding": {
+    "x": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Бүртгэлтэй тээврийн хэрэгсэл",
+      "axis": {"format": ",.0f", "grid": true, "gridOpacity": 0.3}
+    },
+    "y": {
+      "field": "province",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x"
+    },
+    "tooltip": [
+      {"field": "province", "type": "nominal", "title": "Аймаг / нийслэл"},
+      {"field": "count", "type": "quantitative", "title": "Бүртгэлтэй тээврийн хэрэгсэл", "format": ",.0f"}
+    ]
+  },
+  "autosize": {"type": "fit", "contains": "padding"},
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    }
+  }
+}

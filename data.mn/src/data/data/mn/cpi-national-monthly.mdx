@@ -1,0 +1,37 @@
+---
+title: "Монголын үндэсний хэрэглээний үнийн индекс, сараар (2010–2026)"
+publishDate: 2026-04-20
+excerpt: "Монгол Улсын үндэсний хэрэглээний үнийн индекс (2020=100), 2010 оны 1-р сараас 2026 оны 3-р сар хүртэл, Үндэсний Статистикийн Хорооны мэдээллээр."
+category: "Үнэ ба инфляци"
+tags: ["mongolia", "cpi", "inflation", "prices", "national", "monthly"]
+keywords: ["хэрэглээний үнийн индекс", "ХҮИ", "инфляци", "Монгол", "үндэсний", "сараар", "2020 суурь он"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-31
+dataFiles:
+  - path: "/datasets/cpi-national-monthly-mn.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "CSV татах"
+  - path: "/datasets/cpi-national-monthly-mn.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0600_001V3.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/cpi-national-monthly-mn.json"
+  title="Монголын үндэсний хэрэглээний үнийн индекс, сараар (2010–2026)"
+/>
+
+Монгол Улсын үндэсний хэрэглээний үнийн индекс (суурь он 2020=100) нь 2021 оноос хойш мэдэгдэхүйц өссөн бөгөөд энэ нь дэлхийн түүхий эдийн үнийн өсөлт, дайны дараах эрэлтийн нэмэгдэл болон дотоодын нийлүүлэлтийн хүндрэлтэй холбоотой. Индекс нь 13 ангиллын бараа, үйлчилгээний сагсыг хамардаг.
+
+Ангилал тус бүрийн задаргааг харах бол [ХҮИ ангиллаар](/mn/data/cpi-national-by-category-monthly) хуудсыг үзнэ үү.
+
+Улаанбаатар хотын сарын инфляцийн мэдээллийг харах бол [Улаанбаатарын сарын инфляци](/mn/data/cpi-monthly-ulaanbaatar) хуудсыг үзнэ үү.

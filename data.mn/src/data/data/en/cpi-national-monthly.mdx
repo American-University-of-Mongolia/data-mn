@@ -1,0 +1,37 @@
+---
+title: "Mongolia National Consumer Price Index, Monthly (2010–2026)"
+publishDate: 2026-04-20
+excerpt: "Headline national Consumer Price Index (2020=100) for Mongolia from January 2010 to March 2026, sourced from the National Statistics Office."
+category: "Prices & Inflation"
+tags: ["mongolia", "cpi", "inflation", "prices", "national", "monthly"]
+keywords: ["consumer price index", "CPI", "inflation", "Mongolia", "national", "monthly", "2020 base year"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-31
+dataFiles:
+  - path: "/datasets/cpi-national-monthly-en.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "Download as CSV"
+  - path: "/datasets/cpi-national-monthly-en.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0600_001V3.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/cpi-national-monthly-en.json"
+  title="Mongolia National Consumer Price Index, Monthly (2010–2026)"
+/>
+
+Mongolia's headline Consumer Price Index (base year 2020=100) has risen sharply since 2021, reflecting global commodity price shocks, post-pandemic demand recovery, and domestic supply constraints. The index covers the full national basket of goods and services across 13 categories.
+
+For a breakdown by spending category — food, housing, transport, energy and more — see [Mongolia National CPI by Category](/en/data/cpi-national-by-category-monthly).
+
+For Ulaanbaatar-specific monthly inflation data, see [Monthly Inflation in Ulaanbaatar](/en/data/cpi-monthly-ulaanbaatar).

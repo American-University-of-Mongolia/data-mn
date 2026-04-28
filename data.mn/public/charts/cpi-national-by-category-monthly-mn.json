@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монголын үндэсний ХҮИ ангиллаар (2020=100), сараар 2010-2026",
+  "data": {
+    "url": "/datasets/cpi-national-by-category-monthly-mn.csv",
+    "format": { "type": "csv" }
+  },
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "title": "Сар",
+      "axis": {
+        "format": "%Y",
+        "tickCount": "year",
+        "labelAngle": -45,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "хэрэглээний_үнийн_индекс",
+      "type": "quantitative",
+      "title": "ХҮИ (2020=100)",
+      "scale": { "zero": false },
+      "axis": { "format": ".0f" }
+    },
+    "color": {
+      "field": "ангилал",
+      "type": "nominal",
+      "title": "Ангилал",
+      "legend": { "orient": "top" }
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "line", "strokeWidth": 1.5 }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout",
+            "fields": ["огноо"]
+          }
+        }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 50 },
+      "encoding": {
+        "opacity": {
+          "condition": { "param": "hover", "empty": false, "value": 1 },
+          "value": 0
+        },
+        "tooltip": [
+          { "field": "огноо", "type": "temporal", "title": "Сар", "format": "%Y-%m" },
+          { "field": "ангилал", "type": "nominal", "title": "Ангилал" },
+          { "field": "хэрэглээний_үнийн_индекс", "type": "quantitative", "title": "ХҮИ (2020=100)", "format": ".1f" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": { "strokeWidth": 0, "stroke": "transparent" },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": { "labelFontSize": 13, "titleFontSize": 14 }
+  }
+}

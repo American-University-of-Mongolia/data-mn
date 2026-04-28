@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia national CPI by category (2020=100), monthly 2010-2026",
+  "data": {
+    "url": "/datasets/cpi-national-by-category-monthly-en.csv",
+    "format": { "type": "csv" }
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Month",
+      "axis": {
+        "format": "%Y",
+        "tickCount": "year",
+        "labelAngle": -45,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "cpi_index",
+      "type": "quantitative",
+      "title": "CPI Index (2020=100)",
+      "scale": { "zero": false },
+      "axis": { "format": ".0f" }
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category",
+      "legend": { "orient": "top" }
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "line", "strokeWidth": 1.5 }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout",
+            "fields": ["date"]
+          }
+        }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 50 },
+      "encoding": {
+        "opacity": {
+          "condition": { "param": "hover", "empty": false, "value": 1 },
+          "value": 0
+        },
+        "tooltip": [
+          { "field": "date", "type": "temporal", "title": "Month", "format": "%b %Y" },
+          { "field": "category", "type": "nominal", "title": "Category" },
+          { "field": "cpi_index", "type": "quantitative", "title": "CPI Index (2020=100)", "format": ".1f" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": { "strokeWidth": 0, "stroke": "transparent" },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": { "labelFontSize": 13, "titleFontSize": 14 }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/registered-vehicles-by-age-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 1
+      }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Тээврийн хэрэгслийн тоо",
+      "stack": "zero",
+      "axis": {
+        "format": ","
+      }
+    },
+    "color": {
+      "field": "age_group",
+      "type": "nominal",
+      "title": "Насжилт",
+      "sort": ["10 ба түүнээс дээш", "7-9", "4-6", "0-3"],
+      "scale": {
+        "domain": ["10 ба түүнээс дээш", "7-9", "4-6", "0-3"],
+        "range": ["#1e3a5f", "#4c78a8", "#72acd4", "#b8d4ea"]
+      },
+      "legend": {"orient": "top"}
+    },
+    "tooltip": [
+      {"field": "year", "type": "quantitative", "title": "Он", "format": "d"},
+      {"field": "age_group", "type": "nominal", "title": "Насжилт"},
+      {"field": "count", "type": "quantitative", "title": "Тоо", "format": ","}
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

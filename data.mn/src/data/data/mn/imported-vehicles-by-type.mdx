@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсад импортолсон тээврийн хэрэгсэл төрлөөр (2007–2025)"
+publishDate: 2026-04-28
+excerpt: "Суудлын автомашин нь Монгол Улсын импортын тээврийн хэрэгслийн 80 гаруй хувийг эзэлдэг бөгөөд 2024 онд нийт 154,294 тээврийн хэрэгсэл импортолсон нь 2007 оноос 4 дахин өссөн үзүүлэлт юм."
+category: "Худалдаа"
+tags: ["тээврийн хэрэгсэл", "импорт", "худалдаа", "тээвэр", "суудлын автомашин", "ачааны машин"]
+keywords: ["монгол тээврийн хэрэгсэл импорт", "импортолсон тээврийн хэрэгсэл", "суудлын автомашин импорт", "ачааны машин импорт", "монгол худалдааны статистик"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-01-01
+dataFiles:
+  - path: "/datasets/imported-vehicles-by-type-mn.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "CSV татах"
+  - path: "/datasets/imported-vehicles-by-type.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_1200_013V5.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/imported-vehicles-by-type-mn.json"
+  title="Монгол Улсад импортолсон тээврийн хэрэгсэл төрлөөр (2007–2025)"
+/>

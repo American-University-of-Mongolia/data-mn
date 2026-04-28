@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсад бүртгэлтэй тээврийн хэрэгслийн насны бүтэц (2012–2025)"
+publishDate: 2026-04-24
+excerpt: "2012–2025 оны Монгол Улсад бүртгэлтэй тээврийн хэрэгслийн насны бүтцийн жилийн мэдээлэл. Монголын паркийн 80 гаруй хувь нь 10-аас дээш насны тээврийн хэрэгсэл бөгөөд хуучин автомашины импортоос хамааралтайг харуулж байна."
+category: "Дэд бүтэц"
+tags: ["тээврийн хэрэгсэл", "тээвэр", "дэд бүтэц", "насжилт", "монгол"]
+keywords: ["монгол бүртгэлтэй тээврийн хэрэгсэл", "тээврийн хэрэгслийн насжилт", "тээврийн дэд бүтэц", "паркийн насжилт", "хуучин автомашин монгол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-01-01
+dataFiles:
+  - path: "/datasets/registered-vehicles-by-age-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/registered-vehicles-by-age.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_1200_013V4.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/registered-vehicles-by-age-mn.json"
+  title="Монгол Улсад бүртгэлтэй тээврийн хэрэгслийн насны бүтэц (2012–2025)"
+/>

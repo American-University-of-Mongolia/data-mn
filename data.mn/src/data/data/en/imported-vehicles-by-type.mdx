@@ -1,0 +1,31 @@
+---
+title: "Mongolia Imported Vehicles by Type (2007–2025)"
+publishDate: 2026-04-28
+excerpt: "Passenger cars make up over 80% of Mongolia's vehicle imports, with 2024 recording 154,294 total vehicles imported — a 4-fold increase since 2007."
+category: "Trade"
+tags: ["vehicles", "imports", "trade", "transport", "passenger cars", "freight"]
+keywords: ["mongolia vehicle imports", "imported vehicles mongolia", "passenger car imports", "freight vehicle imports", "mongolia trade statistics"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-01-01
+dataFiles:
+  - path: "/datasets/imported-vehicles-by-type-en.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "Download as CSV"
+  - path: "/datasets/imported-vehicles-by-type.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_1200_013V5.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/imported-vehicles-by-type-en.json"
+  title="Mongolia Imported Vehicles by Type (2007–2025)"
+/>

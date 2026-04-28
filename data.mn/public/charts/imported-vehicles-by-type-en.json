@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Annual breakdown of vehicle imports into Mongolia by vehicle type: passenger cars, freight vehicles, and buses from 2007 to 2025.",
+  "data": {
+    "url": "/datasets/imported-vehicles-by-type-en.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 1,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Imported Vehicles",
+      "stack": "zero",
+      "axis": {
+        "format": ",",
+        "grid": true,
+        "gridOpacity": 0.3
+      }
+    },
+    "color": {
+      "field": "vehicle_type",
+      "type": "nominal",
+      "title": "Vehicle Type",
+      "scale": {
+        "domain": ["Passenger Cars", "Freight Vehicles", "Buses & Large Vehicles"],
+        "range": ["#4c78a8", "#f58518", "#72b7b2"]
+      },
+      "legend": {"orient": "top"}
+    },
+    "order": {
+      "field": "vehicle_type",
+      "type": "nominal"
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "area", "interpolate": "monotone", "opacity": 0.85}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
+          {"field": "vehicle_type", "type": "nominal", "title": "Vehicle Type"},
+          {"field": "count", "type": "quantitative", "title": "Vehicles", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

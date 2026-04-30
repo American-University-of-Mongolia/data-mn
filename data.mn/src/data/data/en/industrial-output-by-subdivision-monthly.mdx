@@ -1,0 +1,31 @@
+---
+title: "Mongolia Gross Industrial Output by Subdivision, Billion MNT (2017-2026)"
+publishDate: 2026-04-29
+excerpt: "Monthly gross industrial output broken down by major subdivision (mining, manufacturing, utilities) in billion MNT from September 2017 to March 2026, sourced from the National Statistics Office."
+category: "Industry"
+tags: ["mongolia", "industry", "industrial output", "monthly", "mining", "manufacturing", "subdivision"]
+keywords: ["mongolia industrial output", "gross industrial output subdivision", "mining manufacturing monthly", "industry subdivision mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2026-03-31
+dataFiles:
+  - path: "/datasets/industrial-output-by-subdivision-monthly-en.csv"
+    format: "csv"
+    size: "28 KB"
+    description: "Download as CSV"
+  - path: "/datasets/industrial-output-by-subdivision-monthly-en.xlsx"
+    format: "xlsx"
+    size: "24 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_1100_001V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/industrial-output-by-subdivision-monthly-en.json"
+  title="Mongolia Gross Industrial Output by Subdivision, Billion MNT (2017-2026)"
+/>

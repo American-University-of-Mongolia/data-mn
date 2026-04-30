@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia gross industrial output by major subdivision (billion MNT), monthly",
+  "data": {
+    "url": "/datasets/industrial-output-by-subdivision-monthly-en.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "timeUnit": "yearmonth",
+      "title": "Month",
+      "axis": {"format": "%Y", "labelAngle": -45, "grid": false}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Output (billion MNT)",
+      "axis": {"format": ".0f"}
+    },
+    "color": {
+      "field": "subdivision",
+      "type": "nominal",
+      "title": "Subdivision",
+      "scale": {
+        "domain": [
+          "Mining and quarrying",
+          "Manufacturing",
+          "Electricity, gas, steam and air conditioning supply",
+          "Water supply; sewerage, waste management and remediation activities"
+        ],
+        "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2"]
+      },
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "date", "type": "temporal", "timeUnit": "yearmonth", "title": "Month", "format": "%b %Y"},
+          {"field": "subdivision", "type": "nominal", "title": "Subdivision"},
+          {"field": "value", "type": "quantitative", "title": "Output (billion MNT)", "format": ",.1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

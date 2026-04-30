@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын аж үйлдвэрийн нийт бүтээгдэхүүн салбараар (тэрбум төгрөг), сараар",
+  "data": {
+    "url": "/datasets/industrial-output-by-subdivision-monthly-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "timeUnit": "yearmonth",
+      "title": "Сар",
+      "axis": {"format": "%Y", "labelAngle": -45, "grid": false}
+    },
+    "y": {
+      "field": "утга",
+      "type": "quantitative",
+      "title": "Бүтээгдэхүүн (тэрбум ₮)",
+      "axis": {"format": ".0f"}
+    },
+    "color": {
+      "field": "салбар",
+      "type": "nominal",
+      "title": "Салбар",
+      "scale": {
+        "domain": [
+          "Уул уурхай, олборлолт",
+          "Боловсруулах үйлдвэрлэл",
+          "Цахилгаан хий, уур, агааржуулалт",
+          "Ус хангамж; бохир ус зайлуулах систем, хог, хаягдлын менежмент болон цэвэрлэх үйл ажиллагаа"
+        ],
+        "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2"]
+      },
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "огноо", "type": "temporal", "timeUnit": "yearmonth", "title": "Сар", "format": "%b %Y"},
+          {"field": "салбар", "type": "nominal", "title": "Салбар"},
+          {"field": "утга", "type": "quantitative", "title": "Бүтээгдэхүүн (тэрбум ₮)", "format": ",.1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

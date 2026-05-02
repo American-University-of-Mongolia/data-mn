@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсад бүртгэгдсэн замын хөдөлгөөний осол бүс нутгаар 2000–2024",
+  "data": {
+    "url": "/datasets/nso-traffic-accidents-by-region-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "calculate": "datetime(datum.он, 0, 1)",
+      "as": "огноо"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "title": "Он",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+    },
+    "y": {
+      "field": "осол",
+      "type": "quantitative",
+      "title": "Замын хөдөлгөөний осол",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "бүс",
+      "type": "nominal",
+      "title": "Бүс нутаг",
+      "scale": {
+        "domain": ["Улаанбаатар", "Төвийн бүс", "Хангайн бүс", "Баруун бүс", "Зүүн бүс"],
+        "range": ["#1565C0", "#2E7D32", "#F57F17", "#6A1B9A", "#BF360C"]
+      },
+      "legend": {"orient": "top"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он"},
+          {"field": "бүс", "type": "nominal", "title": "Бүс нутаг"},
+          {"field": "осол", "type": "quantitative", "title": "Осол", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

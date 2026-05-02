@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Recorded crimes in Mongolia by type 2018–2024",
+  "data": {
+    "url": "/datasets/nso-recorded-crime-by-type-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "calculate": "datetime(datum.year, 0, 1)",
+      "as": "date"
+    },
+    {
+      "filter": "datum.crime_type === 'Crimes against ownership right' || datum.crime_type === 'Crimes against human health immunity' || datum.crime_type === 'Crimes against traffic safety and regulation of vehicle use' || datum.crime_type === 'Crimes against human right to live' || datum.crime_type === 'Crimes against human sexual freedom and immunity' || datum.crime_type === 'Economic crimes'"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Recorded Crimes",
+      "stack": "zero",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "crime_type",
+      "type": "nominal",
+      "title": "Crime Type",
+      "scale": {
+        "domain": [
+          "Crimes against ownership right",
+          "Crimes against human health immunity",
+          "Crimes against traffic safety and regulation of vehicle use",
+          "Crimes against human right to live",
+          "Crimes against human sexual freedom and immunity",
+          "Economic crimes"
+        ],
+        "range": ["#1565C0", "#C62828", "#F57F17", "#6A1B9A", "#00838F", "#2E7D32"]
+      },
+      "legend": {"orient": "top"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "area", "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "crime_type", "type": "nominal", "title": "Crime Type"},
+          {"field": "count", "type": "quantitative", "title": "Recorded Crimes", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14,
+      "labelLimit": 300
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

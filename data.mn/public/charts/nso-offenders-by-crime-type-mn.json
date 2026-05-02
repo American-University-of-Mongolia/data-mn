@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсад гэмт хэрэг үйлдсэн яллагдагчид гэмт хэргийн төрлөөр 2010–2024",
+  "data": {
+    "url": "/datasets/nso-offenders-by-crime-type-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "calculate": "datetime(datum.он, 0, 1)",
+      "as": "огноо"
+    },
+    {
+      "filter": "datum.гэмт_хэргийн_төрөл === 'Өмчлөх эрхийн эсрэг гэмт хэрэг' || datum.гэмт_хэргийн_төрөл === 'Хүний эрүүл мэндийн халдашгүй байдлын эсрэг гэмт хэрэг' || datum.гэмт_хэргийн_төрөл === 'Хөдөлгөөний аюулгүй байдал, тээврийн хэрэгслийн ашиглалтын журмын эсрэг гэмт хэрэг' || datum.гэмт_хэргийн_төрөл === 'Хүрээлэн байгаа орчны эсрэг гэмт хэрэг' || datum.гэмт_хэргийн_төрөл === 'Хүний бэлгийн эрх чөлөө, халдашгүй байдлын эсрэг гэмт хэрэг' || datum.гэмт_хэргийн_төрөл === 'Хүний амьд явах эрхийн эсрэг гэмт хэрэг'"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "title": "Он",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+    },
+    "y": {
+      "field": "яллагдагч",
+      "type": "quantitative",
+      "title": "Яллагдагчдын тоо",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "гэмт_хэргийн_төрөл",
+      "type": "nominal",
+      "title": "Гэмт хэргийн төрөл",
+      "scale": {
+        "domain": [
+          "Өмчлөх эрхийн эсрэг гэмт хэрэг",
+          "Хүний эрүүл мэндийн халдашгүй байдлын эсрэг гэмт хэрэг",
+          "Хөдөлгөөний аюулгүй байдал, тээврийн хэрэгслийн ашиглалтын журмын эсрэг гэмт хэрэг",
+          "Хүрээлэн байгаа орчны эсрэг гэмт хэрэг",
+          "Хүний бэлгийн эрх чөлөө, халдашгүй байдлын эсрэг гэмт хэрэг",
+          "Хүний амьд явах эрхийн эсрэг гэмт хэрэг"
+        ],
+        "range": ["#1565C0", "#C62828", "#F57F17", "#2E7D32", "#00838F", "#6A1B9A"]
+      },
+      "legend": {"orient": "top"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он"},
+          {"field": "гэмт_хэргийн_төрөл", "type": "nominal", "title": "Гэмт хэргийн төрөл"},
+          {"field": "яллагдагч", "type": "quantitative", "title": "Яллагдагч", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14,
+      "labelLimit": 400
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

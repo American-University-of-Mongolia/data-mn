@@ -1,0 +1,286 @@
+year,crime_type,offenders
+2010,Crimes against ownership right,7586
+2010,Crimes against human heath immunity,6020
+2010,Crimes against public safety and interests,2265
+2010,Crimes against traffic safety and regulation of vehicle use,1566
+2010,Crimes against human sexual freedom and immunity,475
+2010,Crimes against human right to be live,301
+2010,Crimes against environment,284
+2010,Crimes against public service interest,234
+2010,Economic crimes,202
+2010,Crimes against national security,139
+2010,Corruption,132
+2010,Crimes against administration of justice,67
+2010,"Crimes against human privacy, political right and liberty",59
+2010,Crimes against human immunity and freedom,32
+2010,Crimes against military service,13
+2010,Crimes against security of computer data,3
+2010,Crimes against health,0
+2010,Crimes against children,0
+2010,Crimes against humanity safety and peace,0
+2011,Crimes against ownership right,6115
+2011,Crimes against human heath immunity,5970
+2011,Crimes against public safety and interests,2243
+2011,Crimes against traffic safety and regulation of vehicle use,1738
+2011,Crimes against human sexual freedom and immunity,484
+2011,Crimes against human right to be live,360
+2011,Crimes against environment,340
+2011,Crimes against public service interest,248
+2011,Economic crimes,129
+2011,Crimes against national security,98
+2011,Crimes against administration of justice,93
+2011,"Crimes against human privacy, political right and liberty",67
+2011,Corruption,67
+2011,Crimes against human immunity and freedom,23
+2011,Crimes against military service,7
+2011,Crimes against security of computer data,0
+2011,Crimes against health,0
+2011,Crimes against children,0
+2011,Crimes against humanity safety and peace,0
+2012,Crimes against ownership right,6977
+2012,Crimes against human heath immunity,6671
+2012,Crimes against public safety and interests,2049
+2012,Crimes against traffic safety and regulation of vehicle use,1887
+2012,Crimes against human sexual freedom and immunity,451
+2012,Crimes against environment,418
+2012,Crimes against human right to be live,335
+2012,Crimes against public service interest,284
+2012,Economic crimes,185
+2012,Crimes against national security,147
+2012,"Crimes against human privacy, political right and liberty",111
+2012,Crimes against administration of justice,104
+2012,Corruption,62
+2012,Crimes against human immunity and freedom,37
+2012,Crimes against military service,16
+2012,Crimes against security of computer data,0
+2012,Crimes against health,0
+2012,Crimes against children,0
+2012,Crimes against humanity safety and peace,0
+2013,Crimes against ownership right,8207
+2013,Crimes against human heath immunity,7724
+2013,Crimes against public safety and interests,2298
+2013,Crimes against traffic safety and regulation of vehicle use,2015
+2013,Crimes against human sexual freedom and immunity,471
+2013,Crimes against environment,422
+2013,Crimes against human right to be live,343
+2013,Crimes against public service interest,264
+2013,Economic crimes,188
+2013,"Crimes against human privacy, political right and liberty",120
+2013,Crimes against administration of justice,95
+2013,Crimes against human immunity and freedom,52
+2013,Corruption,42
+2013,Crimes against national security,35
+2013,Crimes against military service,10
+2013,Crimes against security of computer data,0
+2013,Crimes against health,0
+2013,Crimes against children,0
+2013,Crimes against humanity safety and peace,0
+2014,Crimes against ownership right,9233
+2014,Crimes against human heath immunity,8365
+2014,Crimes against public safety and interests,2146
+2014,Crimes against traffic safety and regulation of vehicle use,2048
+2014,Crimes against human sexual freedom and immunity,417
+2014,Crimes against environment,396
+2014,Crimes against human right to be live,327
+2014,Crimes against public service interest,254
+2014,Economic crimes,182
+2014,"Crimes against human privacy, political right and liberty",141
+2014,Crimes against administration of justice,106
+2014,Crimes against human immunity and freedom,57
+2014,Corruption,40
+2014,Crimes against military service,12
+2014,Crimes against national security,11
+2014,Crimes against security of computer data,2
+2014,Crimes against health,0
+2014,Crimes against children,0
+2014,Crimes against humanity safety and peace,0
+2015,Crimes against ownership right,10326
+2015,Crimes against human heath immunity,8468
+2015,Crimes against public safety and interests,2219
+2015,Crimes against traffic safety and regulation of vehicle use,1956
+2015,Crimes against human sexual freedom and immunity,446
+2015,Crimes against human right to be live,316
+2015,Crimes against environment,304
+2015,Crimes against public service interest,278
+2015,Economic crimes,186
+2015,"Crimes against human privacy, political right and liberty",159
+2015,Crimes against administration of justice,99
+2015,Crimes against human immunity and freedom,58
+2015,Corruption,29
+2015,Crimes against military service,10
+2015,Crimes against security of computer data,2
+2015,Crimes against national security,1
+2015,Crimes against health,0
+2015,Crimes against children,0
+2015,Crimes against humanity safety and peace,0
+2016,Crimes against ownership right,9915
+2016,Crimes against human heath immunity,8503
+2016,Crimes against public safety and interests,1997
+2016,Crimes against traffic safety and regulation of vehicle use,1728
+2016,Crimes against human sexual freedom and immunity,426
+2016,Crimes against human right to be live,296
+2016,Crimes against public service interest,280
+2016,Crimes against environment,210
+2016,Economic crimes,144
+2016,"Crimes against human privacy, political right and liberty",127
+2016,Crimes against administration of justice,90
+2016,Crimes against human immunity and freedom,45
+2016,Corruption,19
+2016,Crimes against military service,13
+2016,Crimes against security of computer data,10
+2016,Crimes against national security,2
+2016,Crimes against health,0
+2016,Crimes against children,0
+2016,Crimes against humanity safety and peace,0
+2017,Crimes against human heath immunity,7267
+2017,Crimes against ownership right,6926
+2017,Crimes against traffic safety and regulation of vehicle use,1273
+2017,Crimes against public safety and interests,1106
+2017,Crimes against human sexual freedom and immunity,496
+2017,Crimes against environment,293
+2017,Crimes against human right to be live,270
+2017,Crimes against public service interest,215
+2017,Economic crimes,102
+2017,Crimes against administration of justice,63
+2017,Crimes against human immunity and freedom,30
+2017,"Crimes against human privacy, political right and liberty",30
+2017,Crimes against national security,17
+2017,Corruption,17
+2017,Crimes against security of computer data,14
+2017,Crimes against military service,5
+2017,Crimes against health,4
+2017,Crimes against children,3
+2017,Crimes against humanity safety and peace,0
+2018,Crimes against human heath immunity,6936
+2018,Crimes against ownership right,6885
+2018,Crimes against traffic safety and regulation of vehicle use,903
+2018,Crimes against human sexual freedom and immunity,392
+2018,Crimes against public safety and interests,329
+2018,Crimes against environment,307
+2018,Crimes against human right to be live,266
+2018,Crimes against public service interest,119
+2018,Crimes against national security,66
+2018,Economic crimes,58
+2018,Crimes against administration of justice,54
+2018,Crimes against human immunity and freedom,34
+2018,Crimes against military service,12
+2018,Crimes against health,10
+2018,Crimes against children,8
+2018,Crimes against security of computer data,7
+2018,Corruption,2
+2018,Crimes against humanity safety and peace,1
+2018,"Crimes against human privacy, political right and liberty",0
+2019,Crimes against ownership right,7641
+2019,Crimes against human heath immunity,6672
+2019,Crimes against traffic safety and regulation of vehicle use,973
+2019,Crimes against human sexual freedom and immunity,388
+2019,Crimes against public safety and interests,366
+2019,Crimes against environment,359
+2019,Crimes against human right to be live,266
+2019,Crimes against public service interest,226
+2019,Economic crimes,104
+2019,Crimes against human immunity and freedom,35
+2019,Crimes against administration of justice,27
+2019,Crimes against children,14
+2019,Crimes against military service,13
+2019,Crimes against security of computer data,12
+2019,Corruption,8
+2019,Crimes against health,1
+2019,"Crimes against human privacy, political right and liberty",0
+2019,Crimes against national security,0
+2019,Crimes against humanity safety and peace,0
+2020,Crimes against ownership right,7036
+2020,Crimes against human heath immunity,6806
+2020,Crimes against traffic safety and regulation of vehicle use,854
+2020,Crimes against environment,588
+2020,Crimes against human sexual freedom and immunity,366
+2020,Crimes against public safety and interests,352
+2020,Crimes against human right to be live,262
+2020,Crimes against public service interest,150
+2020,Crimes against security of computer data,73
+2020,Crimes against human immunity and freedom,53
+2020,Economic crimes,51
+2020,Crimes against administration of justice,35
+2020,Crimes against national security,14
+2020,Crimes against health,10
+2020,Crimes against military service,8
+2020,Crimes against children,7
+2020,Corruption,1
+2020,"Crimes against human privacy, political right and liberty",0
+2020,Crimes against humanity safety and peace,0
+2021,Crimes against ownership right,8039
+2021,Crimes against human heath immunity,6999
+2021,Crimes against traffic safety and regulation of vehicle use,800
+2021,Crimes against environment,570
+2021,Crimes against public safety and interests,448
+2021,Crimes against human sexual freedom and immunity,417
+2021,Crimes against human right to be live,274
+2021,Crimes against public service interest,186
+2021,Economic crimes,105
+2021,Crimes against human immunity and freedom,82
+2021,Crimes against security of computer data,76
+2021,Crimes against children,25
+2021,Crimes against administration of justice,22
+2021,Crimes against military service,14
+2021,Crimes against health,14
+2021,Crimes against national security,3
+2021,Corruption,1
+2021,"Crimes against human privacy, political right and liberty",0
+2021,Crimes against humanity safety and peace,0
+2022,Crimes against ownership right,12639
+2022,Crimes against human heath immunity,7968
+2022,Crimes against traffic safety and regulation of vehicle use,1054
+2022,Crimes against human sexual freedom and immunity,453
+2022,Crimes against environment,448
+2022,Crimes against public safety and interests,292
+2022,Crimes against human right to be live,274
+2022,Crimes against public service interest,182
+2022,Crimes against security of computer data,133
+2022,Crimes against human immunity and freedom,76
+2022,Economic crimes,55
+2022,Crimes against children,41
+2022,Crimes against administration of justice,31
+2022,Crimes against military service,9
+2022,Crimes against health,4
+2022,"Crimes against human privacy, political right and liberty",0
+2022,Crimes against national security,0
+2022,Corruption,0
+2022,Crimes against humanity safety and peace,0
+2023,Crimes against ownership right,13555
+2023,Crimes against human heath immunity,7224
+2023,Crimes against traffic safety and regulation of vehicle use,1015
+2023,Crimes against environment,557
+2023,Crimes against human sexual freedom and immunity,464
+2023,Crimes against public safety and interests,328
+2023,Crimes against public service interest,301
+2023,Crimes against human right to be live,264
+2023,Crimes against security of computer data,155
+2023,Crimes against human immunity and freedom,118
+2023,Economic crimes,66
+2023,Crimes against children,45
+2023,Crimes against administration of justice,23
+2023,Crimes against military service,8
+2023,Crimes against health,8
+2023,"Crimes against human privacy, political right and liberty",1
+2023,Crimes against national security,0
+2023,Corruption,0
+2023,Crimes against humanity safety and peace,0
+2024,Crimes against ownership right,13493
+2024,Crimes against human heath immunity,6916
+2024,Crimes against traffic safety and regulation of vehicle use,2718
+2024,Crimes against environment,543
+2024,Crimes against human sexual freedom and immunity,408
+2024,Crimes against public safety and interests,277
+2024,Crimes against human right to be live,264
+2024,Crimes against public service interest,196
+2024,Crimes against security of computer data,166
+2024,Economic crimes,95
+2024,Crimes against human immunity and freedom,91
+2024,Crimes against children,36
+2024,Crimes against administration of justice,29
+2024,Crimes against military service,14
+2024,"Crimes against human privacy, political right and liberty",8
+2024,Crimes against health,7
+2024,Crimes against national security,0
+2024,Corruption,0
+2024,Crimes against humanity safety and peace,0

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсад бүртгэгдсэн гэмт хэрэг төрлөөр 2018–2024",
+  "data": {
+    "url": "/datasets/nso-recorded-crime-by-type-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "calculate": "datetime(datum.он, 0, 1)",
+      "as": "огноо"
+    },
+    {
+      "filter": "datum.гэмт_хэргийн_төрөл === 'Өмчлөх эрхийн эсрэг' || datum.гэмт_хэргийн_төрөл === 'Хүний эрүүл мэндийн халдашгүй байдлын эсрэг' || datum.гэмт_хэргийн_төрөл === 'ХАБТХАЖ-ын эсрэг гэмт хэрэг' || datum.гэмт_хэргийн_төрөл === 'Хүний амьд явах эрхийн эсрэг' || datum.гэмт_хэргийн_төрөл === 'Хүний халдашгүй чөлөөтэй байх эрхийн эсрэг гэмт хэрэг' || datum.гэмт_хэргийн_төрөл === 'Эдийн засгийн гэмт хэрэг'"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "title": "Он",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+    },
+    "y": {
+      "field": "тоо",
+      "type": "quantitative",
+      "title": "Бүртгэгдсэн гэмт хэрэг",
+      "stack": "zero",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "гэмт_хэргийн_төрөл",
+      "type": "nominal",
+      "title": "Гэмт хэргийн төрөл",
+      "scale": {
+        "domain": [
+          "Өмчлөх эрхийн эсрэг",
+          "Хүний эрүүл мэндийн халдашгүй байдлын эсрэг",
+          "ХАБТХАЖ-ын эсрэг гэмт хэрэг",
+          "Хүний амьд явах эрхийн эсрэг",
+          "Хүний халдашгүй чөлөөтэй байх эрхийн эсрэг гэмт хэрэг",
+          "Эдийн засгийн гэмт хэрэг"
+        ],
+        "range": ["#1565C0", "#C62828", "#F57F17", "#6A1B9A", "#00838F", "#2E7D32"]
+      },
+      "legend": {"orient": "top"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "area", "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он"},
+          {"field": "гэмт_хэргийн_төрөл", "type": "nominal", "title": "Гэмт хэргийн төрөл"},
+          {"field": "тоо", "type": "quantitative", "title": "Бүртгэгдсэн гэмт хэрэг", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14,
+      "labelLimit": 300
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

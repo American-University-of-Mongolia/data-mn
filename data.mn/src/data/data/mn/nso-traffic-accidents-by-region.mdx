@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсад бүртгэгдсэн замын хөдөлгөөний осол бүс нутгаар (2000–2024)"
+publishDate: 2026-05-02
+excerpt: "Монгол Улсад бүс нутгаар бүртгэгдсэн замын хөдөлгөөний ослын тоо 2000–2024 онд. Улаанбаатар нийт ослын 80 гаруй хувийг эзэлдэг бөгөөд 2020 оноос хойш ослын тоо эргэж нэмэгджээ."
+category: "Нийтийн аюулгүй байдал"
+tags: ["монгол", "замын хөдөлгөөний осол", "замын аюулгүй байдал", "нийтийн аюулгүй байдал", "улаанбаатар", "бүс нутаг"]
+keywords: ["монгол замын осол", "бүс нутгаар осол", "замын аюулгүй байдал", "тээврийн статистик", "улаанбаатар осол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-traffic-accidents-by-region-mn.csv"
+    format: "csv"
+    size: "4 KB"
+    description: "CSV татах"
+  - path: "/datasets/nso-traffic-accidents-by-region.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_2300_039V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-traffic-accidents-by-region-mn.json"
+  title="Монгол Улсад бүртгэгдсэн замын хөдөлгөөний осол бүс нутгаар (2000–2024)"
+/>

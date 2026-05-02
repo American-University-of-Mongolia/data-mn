@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсад ирсэн гадаадын жуулчдын тоо (2006–2025)"
+publishDate: 2026-04-28
+excerpt: "Монгол Улсад ирсэн гадаадын жуулчдын жилийн нийт тоо 2006–2025 онд. COVID-19-ийн нөлөөлөл болон коронавирусын дараах сэргэлтийг харуулна."
+category: "Аялал жуулчлал"
+tags: ["монгол", "аялал жуулчлал", "гадаадын жуулчид", "улсын хилээр орсон"]
+keywords: ["монгол аялал жуулчлал", "гадаадын жуулчид", "жуулчдын тоо", "аялал", "статистик"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-01-01
+dataFiles:
+  - path: "/datasets/tourism-arrivals-monthly-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/tourism-arrivals-monthly.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_1800_005V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/tourism-arrivals-monthly-mn.json"
+  title="Монгол Улсад ирсэн гадаадын жуулчдын тоо (2006–2025)"
+/>

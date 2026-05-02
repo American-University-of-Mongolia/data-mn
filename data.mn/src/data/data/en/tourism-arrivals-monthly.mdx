@@ -1,0 +1,31 @@
+---
+title: "Inbound Tourists to Mongolia, Annual Total (2006–2025)"
+publishDate: 2026-04-28
+excerpt: "Annual number of inbound foreign tourists arriving in Mongolia from 2006 to 2025, showing the COVID-19 impact and post-pandemic recovery."
+category: "Tourism"
+tags: ["mongolia", "tourism", "inbound tourists", "travel", "visitors"]
+keywords: ["mongolia tourism", "inbound tourists", "foreign visitors", "tourist arrivals", "travel statistics"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-01-01
+dataFiles:
+  - path: "/datasets/tourism-arrivals-monthly-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/tourism-arrivals-monthly.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_1800_005V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/tourism-arrivals-monthly-en.json"
+  title="Inbound Tourists to Mongolia, Annual Total (2006–2025)"
+/>

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "2006–2025 оны Монгол Улсын жил бүрийн гэрлэлт болон гэрлэлт цуцлалтын тоо.",
+  "data": {
+    "url": "/datasets/nso-marriages-divorces-annual-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 1, "grid": false}
+    },
+    "y": {
+      "field": "тоо",
+      "type": "quantitative",
+      "title": "Тоо",
+      "axis": {"format": ",.0f"}
+    },
+    "color": {
+      "field": "үзүүлэлт",
+      "type": "nominal",
+      "title": "Үзүүлэлт",
+      "scale": {
+        "domain": ["Гэрлэлт", "цуцлалт"],
+        "range": ["#4c78a8", "#e45756"]
+      },
+      "legend": {"orient": "top", "title": "Үзүүлэлт"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "үзүүлэлт", "title": "Үзүүлэлт"},
+          {"field": "он", "title": "Он", "format": "d"},
+          {"field": "тоо", "title": "Тоо", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

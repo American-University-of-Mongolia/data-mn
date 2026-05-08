@@ -1,0 +1,3322 @@
+Region,Month,value
+Total,2026-03,4089
+Total,2026-02,4467
+Total,2026-01,4262
+Total,2025-12,4436
+Total,2025-11,4403
+Total,2025-10,4565
+Total,2025-09,4552
+Total,2025-08,4516
+Total,2025-07,4664
+Total,2025-06,4445
+Total,2025-05,4542
+Total,2025-04,4532
+Total,2025-03,4543
+Total,2025-02,4264
+Total,2025-01,4675
+Total,2024-12,4695
+Total,2024-11,4773
+Total,2024-10,4860
+Total,2024-09,4771
+Total,2024-08,4860
+Total,2024-07,4951
+Total,2024-06,4688
+Total,2024-05,5028
+Total,2024-04,4886
+Total,2024-03,4902
+Total,2024-02,4688
+Total,2024-01,4654
+Total,2023-12,4922
+Total,2023-11,5328
+Total,2023-10,5023
+Total,2023-09,5143
+Total,2023-08,5358
+Total,2023-07,5528
+Total,2023-06,5350
+Total,2023-05,5610
+Total,2023-04,5592
+Total,2023-03,5929
+Total,2023-02,4975
+Total,2023-01,5548
+Total,2022-12,5916
+Total,2022-11,5552
+Total,2022-10,6034
+Total,2022-09,6035
+Total,2022-08,6045
+Total,2022-07,5784
+Total,2022-06,5429
+Total,2022-05,5562
+Total,2022-04,5444
+Total,2022-03,5483
+Total,2022-02,3950
+Total,2022-01,4352
+Total,2021-12,5252
+Total,2021-11,5556
+Total,2021-10,5955
+Total,2021-09,6077
+Total,2021-08,5783
+Total,2021-07,6435
+Total,2021-06,6361
+Total,2021-05,6281
+Total,2021-04,6207
+Total,2021-03,6357
+Total,2021-02,5624
+Total,2021-01,5771
+Total,2020-12,6347
+Total,2020-11,6077
+Total,2020-10,6347
+Total,2020-09,6220
+Total,2020-08,6586
+Total,2020-07,6815
+Total,2020-06,6276
+Total,2020-05,6478
+Total,2020-04,6452
+Total,2020-03,6688
+Total,2020-02,5715
+Total,2020-01,6260
+Total,2019-12,6601
+Total,2019-11,6352
+Total,2019-10,6745
+Total,2019-09,6597
+Total,2019-08,6620
+Total,2019-07,6947
+Total,2019-06,6387
+Total,2019-05,6899
+Total,2019-04,6723
+Total,2019-03,6527
+Total,2019-02,5824
+Total,2019-01,6001
+Total,2018-12,6568
+Total,2018-11,6444
+Total,2018-10,6554
+Total,2018-09,6284
+Total,2018-08,6729
+Total,2018-07,6638
+Total,2018-06,6525
+Total,2018-05,6476
+Total,2018-04,6639
+Total,2018-03,6654
+Total,2018-02,5746
+Total,2018-01,6271
+Total,2017-12,6533
+Total,2017-11,6608
+Total,2017-10,6447
+Total,2017-09,6176
+Total,2017-08,6319
+Total,2017-07,6709
+Total,2017-06,6393
+Total,2017-05,6353
+Total,2017-04,6148
+Total,2017-03,6369
+Total,2017-02,4771
+Total,2017-01,5502
+Total,2016-12,5994
+Total,2016-11,6305
+Total,2016-10,6575
+Total,2016-09,6560
+Total,2016-08,6944
+Total,2016-07,6949
+Total,2016-06,6651
+Total,2016-05,6816
+Total,2016-04,6259
+Total,2016-03,6682
+Total,2016-02,6155
+Total,2016-01,6304
+ Western region,2026-03,583
+ Western region,2026-02,490
+ Western region,2026-01,614
+ Western region,2025-12,600
+ Western region,2025-11,535
+ Western region,2025-10,591
+ Western region,2025-09,608
+ Western region,2025-08,611
+ Western region,2025-07,626
+ Western region,2025-06,584
+ Western region,2025-05,582
+ Western region,2025-04,608
+ Western region,2025-03,582
+ Western region,2025-02,592
+ Western region,2025-01,633
+ Western region,2024-12,605
+ Western region,2024-11,630
+ Western region,2024-10,704
+ Western region,2024-09,625
+ Western region,2024-08,631
+ Western region,2024-07,665
+ Western region,2024-06,636
+ Western region,2024-05,699
+ Western region,2024-04,647
+ Western region,2024-03,628
+ Western region,2024-02,599
+ Western region,2024-01,566
+ Western region,2023-12,603
+ Western region,2023-11,705
+ Western region,2023-10,652
+ Western region,2023-09,715
+ Western region,2023-08,676
+ Western region,2023-07,735
+ Western region,2023-06,714
+ Western region,2023-05,724
+ Western region,2023-04,778
+ Western region,2023-03,795
+ Western region,2023-02,644
+ Western region,2023-01,715
+ Western region,2022-12,727
+ Western region,2022-11,750
+ Western region,2022-10,784
+ Western region,2022-09,767
+ Western region,2022-08,772
+ Western region,2022-07,732
+ Western region,2022-06,742
+ Western region,2022-05,685
+ Western region,2022-04,703
+ Western region,2022-03,627
+ Western region,2022-02,530
+ Western region,2022-01,578
+ Western region,2021-12,734
+ Western region,2021-11,705
+ Western region,2021-10,768
+ Western region,2021-09,819
+ Western region,2021-08,798
+ Western region,2021-07,821
+ Western region,2021-06,823
+ Western region,2021-05,884
+ Western region,2021-04,788
+ Western region,2021-03,836
+ Western region,2021-02,738
+ Western region,2021-01,733
+ Western region,2020-12,862
+ Western region,2020-11,751
+ Western region,2020-10,782
+ Western region,2020-09,829
+ Western region,2020-08,876
+ Western region,2020-07,897
+ Western region,2020-06,874
+ Western region,2020-05,834
+ Western region,2020-04,846
+ Western region,2020-03,913
+ Western region,2020-02,708
+ Western region,2020-01,767
+ Western region,2019-12,796
+ Western region,2019-11,749
+ Western region,2019-10,901
+ Western region,2019-09,814
+ Western region,2019-08,870
+ Western region,2019-07,917
+ Western region,2019-06,783
+ Western region,2019-05,869
+ Western region,2019-04,879
+ Western region,2019-03,839
+ Western region,2019-02,721
+ Western region,2019-01,775
+ Western region,2018-12,824
+ Western region,2018-11,840
+ Western region,2018-10,815
+ Western region,2018-09,751
+ Western region,2018-08,850
+ Western region,2018-07,912
+ Western region,2018-06,850
+ Western region,2018-05,816
+ Western region,2018-04,862
+ Western region,2018-03,853
+ Western region,2018-02,717
+ Western region,2018-01,813
+ Western region,2017-12,774
+ Western region,2017-11,820
+ Western region,2017-10,845
+ Western region,2017-09,751
+ Western region,2017-08,790
+ Western region,2017-07,888
+ Western region,2017-06,912
+ Western region,2017-05,872
+ Western region,2017-04,793
+ Western region,2017-03,846
+ Western region,2017-02,666
+ Western region,2017-01,690
+ Western region,2016-12,742
+ Western region,2016-11,753
+ Western region,2016-10,771
+ Western region,2016-09,791
+ Western region,2016-08,920
+ Western region,2016-07,764
+ Western region,2016-06,797
+ Western region,2016-05,897
+ Western region,2016-04,808
+ Western region,2016-03,810
+ Western region,2016-02,836
+ Western region,2016-01,799
+ Bayan-Ulgii,2026-03,230
+ Bayan-Ulgii,2026-02,165
+ Bayan-Ulgii,2026-01,187
+ Bayan-Ulgii,2025-12,202
+ Bayan-Ulgii,2025-11,169
+ Bayan-Ulgii,2025-10,204
+ Bayan-Ulgii,2025-09,184
+ Bayan-Ulgii,2025-08,221
+ Bayan-Ulgii,2025-07,227
+ Bayan-Ulgii,2025-06,208
+ Bayan-Ulgii,2025-05,210
+ Bayan-Ulgii,2025-04,241
+ Bayan-Ulgii,2025-03,192
+ Bayan-Ulgii,2025-02,184
+ Bayan-Ulgii,2025-01,207
+ Bayan-Ulgii,2024-12,202
+ Bayan-Ulgii,2024-11,193
+ Bayan-Ulgii,2024-10,244
+ Bayan-Ulgii,2024-09,219
+ Bayan-Ulgii,2024-08,213
+ Bayan-Ulgii,2024-07,218
+ Bayan-Ulgii,2024-06,228
+ Bayan-Ulgii,2024-05,239
+ Bayan-Ulgii,2024-04,199
+ Bayan-Ulgii,2024-03,198
+ Bayan-Ulgii,2024-02,179
+ Bayan-Ulgii,2024-01,205
+ Bayan-Ulgii,2023-12,198
+ Bayan-Ulgii,2023-11,212
+ Bayan-Ulgii,2023-10,205
+ Bayan-Ulgii,2023-09,245
+ Bayan-Ulgii,2023-08,220
+ Bayan-Ulgii,2023-07,259
+ Bayan-Ulgii,2023-06,220
+ Bayan-Ulgii,2023-05,229
+ Bayan-Ulgii,2023-04,247
+ Bayan-Ulgii,2023-03,253
+ Bayan-Ulgii,2023-02,202
+ Bayan-Ulgii,2023-01,217
+ Bayan-Ulgii,2022-12,232
+ Bayan-Ulgii,2022-11,252
+ Bayan-Ulgii,2022-10,235
+ Bayan-Ulgii,2022-09,255
+ Bayan-Ulgii,2022-08,249
+ Bayan-Ulgii,2022-07,234
+ Bayan-Ulgii,2022-06,237
+ Bayan-Ulgii,2022-05,240
+ Bayan-Ulgii,2022-04,211
+ Bayan-Ulgii,2022-03,238
+ Bayan-Ulgii,2022-02,189
+ Bayan-Ulgii,2022-01,202
+ Bayan-Ulgii,2021-12,231
+ Bayan-Ulgii,2021-11,226
+ Bayan-Ulgii,2021-10,243
+ Bayan-Ulgii,2021-09,273
+ Bayan-Ulgii,2021-08,250
+ Bayan-Ulgii,2021-07,274
+ Bayan-Ulgii,2021-06,239
+ Bayan-Ulgii,2021-05,261
+ Bayan-Ulgii,2021-04,239
+ Bayan-Ulgii,2021-03,263
+ Bayan-Ulgii,2021-02,216
+ Bayan-Ulgii,2021-01,212
+ Bayan-Ulgii,2020-12,249
+ Bayan-Ulgii,2020-11,207
+ Bayan-Ulgii,2020-10,253
+ Bayan-Ulgii,2020-09,251
+ Bayan-Ulgii,2020-08,259
+ Bayan-Ulgii,2020-07,244
+ Bayan-Ulgii,2020-06,232
+ Bayan-Ulgii,2020-05,236
+ Bayan-Ulgii,2020-04,274
+ Bayan-Ulgii,2020-03,249
+ Bayan-Ulgii,2020-02,181
+ Bayan-Ulgii,2020-01,229
+ Bayan-Ulgii,2019-12,258
+ Bayan-Ulgii,2019-11,199
+ Bayan-Ulgii,2019-10,283
+ Bayan-Ulgii,2019-09,211
+ Bayan-Ulgii,2019-08,275
+ Bayan-Ulgii,2019-07,292
+ Bayan-Ulgii,2019-06,245
+ Bayan-Ulgii,2019-05,263
+ Bayan-Ulgii,2019-04,246
+ Bayan-Ulgii,2019-03,265
+ Bayan-Ulgii,2019-02,222
+ Bayan-Ulgii,2019-01,231
+ Bayan-Ulgii,2018-12,246
+ Bayan-Ulgii,2018-11,244
+ Bayan-Ulgii,2018-10,242
+ Bayan-Ulgii,2018-09,199
+ Bayan-Ulgii,2018-08,258
+ Bayan-Ulgii,2018-07,251
+ Bayan-Ulgii,2018-06,259
+ Bayan-Ulgii,2018-05,247
+ Bayan-Ulgii,2018-04,273
+ Bayan-Ulgii,2018-03,254
+ Bayan-Ulgii,2018-02,199
+ Bayan-Ulgii,2018-01,247
+ Bayan-Ulgii,2017-12,230
+ Bayan-Ulgii,2017-11,236
+ Bayan-Ulgii,2017-10,246
+ Bayan-Ulgii,2017-09,226
+ Bayan-Ulgii,2017-08,215
+ Bayan-Ulgii,2017-07,249
+ Bayan-Ulgii,2017-06,268
+ Bayan-Ulgii,2017-05,237
+ Bayan-Ulgii,2017-04,248
+ Bayan-Ulgii,2017-03,257
+ Bayan-Ulgii,2017-02,220
+ Bayan-Ulgii,2017-01,217
+ Bayan-Ulgii,2016-12,249
+ Bayan-Ulgii,2016-11,206
+ Bayan-Ulgii,2016-10,259
+ Bayan-Ulgii,2016-09,227
+ Bayan-Ulgii,2016-08,261
+ Bayan-Ulgii,2016-07,204
+ Bayan-Ulgii,2016-06,229
+ Bayan-Ulgii,2016-05,260
+ Bayan-Ulgii,2016-04,248
+ Bayan-Ulgii,2016-03,238
+ Bayan-Ulgii,2016-02,227
+ Bayan-Ulgii,2016-01,223
+ Govi-Altai,2026-03,60
+ Govi-Altai,2026-02,57
+ Govi-Altai,2026-01,73
+ Govi-Altai,2025-12,62
+ Govi-Altai,2025-11,70
+ Govi-Altai,2025-10,65
+ Govi-Altai,2025-09,68
+ Govi-Altai,2025-08,61
+ Govi-Altai,2025-07,68
+ Govi-Altai,2025-06,70
+ Govi-Altai,2025-05,67
+ Govi-Altai,2025-04,70
+ Govi-Altai,2025-03,66
+ Govi-Altai,2025-02,73
+ Govi-Altai,2025-01,73
+ Govi-Altai,2024-12,69
+ Govi-Altai,2024-11,73
+ Govi-Altai,2024-10,84
+ Govi-Altai,2024-09,78
+ Govi-Altai,2024-08,54
+ Govi-Altai,2024-07,67
+ Govi-Altai,2024-06,71
+ Govi-Altai,2024-05,86
+ Govi-Altai,2024-04,94
+ Govi-Altai,2024-03,60
+ Govi-Altai,2024-02,63
+ Govi-Altai,2024-01,63
+ Govi-Altai,2023-12,65
+ Govi-Altai,2023-11,107
+ Govi-Altai,2023-10,71
+ Govi-Altai,2023-09,77
+ Govi-Altai,2023-08,95
+ Govi-Altai,2023-07,64
+ Govi-Altai,2023-06,74
+ Govi-Altai,2023-05,81
+ Govi-Altai,2023-04,86
+ Govi-Altai,2023-03,88
+ Govi-Altai,2023-02,81
+ Govi-Altai,2023-01,94
+ Govi-Altai,2022-12,91
+ Govi-Altai,2022-11,90
+ Govi-Altai,2022-10,101
+ Govi-Altai,2022-09,98
+ Govi-Altai,2022-08,87
+ Govi-Altai,2022-07,94
+ Govi-Altai,2022-06,84
+ Govi-Altai,2022-05,88
+ Govi-Altai,2022-04,103
+ Govi-Altai,2022-03,79
+ Govi-Altai,2022-02,62
+ Govi-Altai,2022-01,66
+ Govi-Altai,2021-12,105
+ Govi-Altai,2021-11,96
+ Govi-Altai,2021-10,112
+ Govi-Altai,2021-09,100
+ Govi-Altai,2021-08,117
+ Govi-Altai,2021-07,98
+ Govi-Altai,2021-06,100
+ Govi-Altai,2021-05,124
+ Govi-Altai,2021-04,122
+ Govi-Altai,2021-03,110
+ Govi-Altai,2021-02,104
+ Govi-Altai,2021-01,108
+ Govi-Altai,2020-12,106
+ Govi-Altai,2020-11,118
+ Govi-Altai,2020-10,92
+ Govi-Altai,2020-09,114
+ Govi-Altai,2020-08,140
+ Govi-Altai,2020-07,121
+ Govi-Altai,2020-06,138
+ Govi-Altai,2020-05,125
+ Govi-Altai,2020-04,111
+ Govi-Altai,2020-03,139
+ Govi-Altai,2020-02,101
+ Govi-Altai,2020-01,101
+ Govi-Altai,2019-12,99
+ Govi-Altai,2019-11,111
+ Govi-Altai,2019-10,109
+ Govi-Altai,2019-09,119
+ Govi-Altai,2019-08,127
+ Govi-Altai,2019-07,129
+ Govi-Altai,2019-06,102
+ Govi-Altai,2019-05,117
+ Govi-Altai,2019-04,125
+ Govi-Altai,2019-03,105
+ Govi-Altai,2019-02,106
+ Govi-Altai,2019-01,119
+ Govi-Altai,2018-12,98
+ Govi-Altai,2018-11,98
+ Govi-Altai,2018-10,105
+ Govi-Altai,2018-09,128
+ Govi-Altai,2018-08,100
+ Govi-Altai,2018-07,130
+ Govi-Altai,2018-06,112
+ Govi-Altai,2018-05,111
+ Govi-Altai,2018-04,120
+ Govi-Altai,2018-03,105
+ Govi-Altai,2018-02,95
+ Govi-Altai,2018-01,84
+ Govi-Altai,2017-12,119
+ Govi-Altai,2017-11,98
+ Govi-Altai,2017-10,128
+ Govi-Altai,2017-09,103
+ Govi-Altai,2017-08,99
+ Govi-Altai,2017-07,97
+ Govi-Altai,2017-06,108
+ Govi-Altai,2017-05,106
+ Govi-Altai,2017-04,101
+ Govi-Altai,2017-03,112
+ Govi-Altai,2017-02,63
+ Govi-Altai,2017-01,87
+ Govi-Altai,2016-12,77
+ Govi-Altai,2016-11,92
+ Govi-Altai,2016-10,92
+ Govi-Altai,2016-09,79
+ Govi-Altai,2016-08,120
+ Govi-Altai,2016-07,104
+ Govi-Altai,2016-06,116
+ Govi-Altai,2016-05,113
+ Govi-Altai,2016-04,83
+ Govi-Altai,2016-03,106
+ Govi-Altai,2016-02,99
+ Govi-Altai,2016-01,95
+ Zavkhan,2026-03,65
+ Zavkhan,2026-02,58
+ Zavkhan,2026-01,72
+ Zavkhan,2025-12,83
+ Zavkhan,2025-11,70
+ Zavkhan,2025-10,57
+ Zavkhan,2025-09,74
+ Zavkhan,2025-08,69
+ Zavkhan,2025-07,76
+ Zavkhan,2025-06,66
+ Zavkhan,2025-05,61
+ Zavkhan,2025-04,66
+ Zavkhan,2025-03,76
+ Zavkhan,2025-02,58
+ Zavkhan,2025-01,74
+ Zavkhan,2024-12,56
+ Zavkhan,2024-11,57
+ Zavkhan,2024-10,75
+ Zavkhan,2024-09,67
+ Zavkhan,2024-08,80
+ Zavkhan,2024-07,96
+ Zavkhan,2024-06,90
+ Zavkhan,2024-05,82
+ Zavkhan,2024-04,72
+ Zavkhan,2024-03,83
+ Zavkhan,2024-02,86
+ Zavkhan,2024-01,75
+ Zavkhan,2023-12,88
+ Zavkhan,2023-11,95
+ Zavkhan,2023-10,78
+ Zavkhan,2023-09,91
+ Zavkhan,2023-08,85
+ Zavkhan,2023-07,99
+ Zavkhan,2023-06,93
+ Zavkhan,2023-05,99
+ Zavkhan,2023-04,110
+ Zavkhan,2023-03,113
+ Zavkhan,2023-02,89
+ Zavkhan,2023-01,95
+ Zavkhan,2022-12,86
+ Zavkhan,2022-11,96
+ Zavkhan,2022-10,103
+ Zavkhan,2022-09,105
+ Zavkhan,2022-08,96
+ Zavkhan,2022-07,111
+ Zavkhan,2022-06,107
+ Zavkhan,2022-05,83
+ Zavkhan,2022-04,98
+ Zavkhan,2022-03,82
+ Zavkhan,2022-02,58
+ Zavkhan,2022-01,72
+ Zavkhan,2021-12,92
+ Zavkhan,2021-11,93
+ Zavkhan,2021-10,74
+ Zavkhan,2021-09,98
+ Zavkhan,2021-08,102
+ Zavkhan,2021-07,128
+ Zavkhan,2021-06,130
+ Zavkhan,2021-05,156
+ Zavkhan,2021-04,114
+ Zavkhan,2021-03,123
+ Zavkhan,2021-02,117
+ Zavkhan,2021-01,103
+ Zavkhan,2020-12,131
+ Zavkhan,2020-11,105
+ Zavkhan,2020-10,120
+ Zavkhan,2020-09,99
+ Zavkhan,2020-08,104
+ Zavkhan,2020-07,128
+ Zavkhan,2020-06,128
+ Zavkhan,2020-05,116
+ Zavkhan,2020-04,111
+ Zavkhan,2020-03,126
+ Zavkhan,2020-02,91
+ Zavkhan,2020-01,112
+ Zavkhan,2019-12,110
+ Zavkhan,2019-11,92
+ Zavkhan,2019-10,118
+ Zavkhan,2019-09,99
+ Zavkhan,2019-08,124
+ Zavkhan,2019-07,136
+ Zavkhan,2019-06,102
+ Zavkhan,2019-05,129
+ Zavkhan,2019-04,118
+ Zavkhan,2019-03,119
+ Zavkhan,2019-02,97
+ Zavkhan,2019-01,120
+ Zavkhan,2018-12,117
+ Zavkhan,2018-11,123
+ Zavkhan,2018-10,97
+ Zavkhan,2018-09,107
+ Zavkhan,2018-08,119
+ Zavkhan,2018-07,143
+ Zavkhan,2018-06,124
+ Zavkhan,2018-05,114
+ Zavkhan,2018-04,131
+ Zavkhan,2018-03,124
+ Zavkhan,2018-02,96
+ Zavkhan,2018-01,136
+ Zavkhan,2017-12,99
+ Zavkhan,2017-11,120
+ Zavkhan,2017-10,106
+ Zavkhan,2017-09,108
+ Zavkhan,2017-08,106
+ Zavkhan,2017-07,125
+ Zavkhan,2017-06,160
+ Zavkhan,2017-05,102
+ Zavkhan,2017-04,95
+ Zavkhan,2017-03,113
+ Zavkhan,2017-02,98
+ Zavkhan,2017-01,97
+ Zavkhan,2016-12,99
+ Zavkhan,2016-11,103
+ Zavkhan,2016-10,95
+ Zavkhan,2016-09,117
+ Zavkhan,2016-08,139
+ Zavkhan,2016-07,124
+ Zavkhan,2016-06,120
+ Zavkhan,2016-05,131
+ Zavkhan,2016-04,120
+ Zavkhan,2016-03,133
+ Zavkhan,2016-02,134
+ Zavkhan,2016-01,106
+ Uvs,2026-03,107
+ Uvs,2026-02,99
+ Uvs,2026-01,116
+ Uvs,2025-12,108
+ Uvs,2025-11,101
+ Uvs,2025-10,117
+ Uvs,2025-09,118
+ Uvs,2025-08,114
+ Uvs,2025-07,108
+ Uvs,2025-06,94
+ Uvs,2025-05,118
+ Uvs,2025-04,111
+ Uvs,2025-03,122
+ Uvs,2025-02,121
+ Uvs,2025-01,134
+ Uvs,2024-12,134
+ Uvs,2024-11,141
+ Uvs,2024-10,145
+ Uvs,2024-09,131
+ Uvs,2024-08,136
+ Uvs,2024-07,138
+ Uvs,2024-06,133
+ Uvs,2024-05,142
+ Uvs,2024-04,149
+ Uvs,2024-03,143
+ Uvs,2024-02,124
+ Uvs,2024-01,110
+ Uvs,2023-12,123
+ Uvs,2023-11,124
+ Uvs,2023-10,139
+ Uvs,2023-09,146
+ Uvs,2023-08,126
+ Uvs,2023-07,154
+ Uvs,2023-06,152
+ Uvs,2023-05,153
+ Uvs,2023-04,181
+ Uvs,2023-03,166
+ Uvs,2023-02,133
+ Uvs,2023-01,149
+ Uvs,2022-12,155
+ Uvs,2022-11,134
+ Uvs,2022-10,182
+ Uvs,2022-09,149
+ Uvs,2022-08,166
+ Uvs,2022-07,134
+ Uvs,2022-06,143
+ Uvs,2022-05,128
+ Uvs,2022-04,163
+ Uvs,2022-03,102
+ Uvs,2022-02,109
+ Uvs,2022-01,113
+ Uvs,2021-12,154
+ Uvs,2021-11,131
+ Uvs,2021-10,168
+ Uvs,2021-09,170
+ Uvs,2021-08,163
+ Uvs,2021-07,150
+ Uvs,2021-06,182
+ Uvs,2021-05,152
+ Uvs,2021-04,150
+ Uvs,2021-03,163
+ Uvs,2021-02,143
+ Uvs,2021-01,133
+ Uvs,2020-12,183
+ Uvs,2020-11,150
+ Uvs,2020-10,148
+ Uvs,2020-09,179
+ Uvs,2020-08,171
+ Uvs,2020-07,179
+ Uvs,2020-06,161
+ Uvs,2020-05,176
+ Uvs,2020-04,169
+ Uvs,2020-03,188
+ Uvs,2020-02,168
+ Uvs,2020-01,152
+ Uvs,2019-12,141
+ Uvs,2019-11,157
+ Uvs,2019-10,168
+ Uvs,2019-09,186
+ Uvs,2019-08,161
+ Uvs,2019-07,160
+ Uvs,2019-06,162
+ Uvs,2019-05,160
+ Uvs,2019-04,190
+ Uvs,2019-03,157
+ Uvs,2019-02,134
+ Uvs,2019-01,134
+ Uvs,2018-12,164
+ Uvs,2018-11,176
+ Uvs,2018-10,190
+ Uvs,2018-09,121
+ Uvs,2018-08,157
+ Uvs,2018-07,183
+ Uvs,2018-06,156
+ Uvs,2018-05,151
+ Uvs,2018-04,158
+ Uvs,2018-03,162
+ Uvs,2018-02,141
+ Uvs,2018-01,153
+ Uvs,2017-12,156
+ Uvs,2017-11,169
+ Uvs,2017-10,165
+ Uvs,2017-09,136
+ Uvs,2017-08,192
+ Uvs,2017-07,218
+ Uvs,2017-06,188
+ Uvs,2017-05,203
+ Uvs,2017-04,161
+ Uvs,2017-03,171
+ Uvs,2017-02,143
+ Uvs,2017-01,134
+ Uvs,2016-12,143
+ Uvs,2016-11,179
+ Uvs,2016-10,156
+ Uvs,2016-09,184
+ Uvs,2016-08,187
+ Uvs,2016-07,171
+ Uvs,2016-06,147
+ Uvs,2016-05,196
+ Uvs,2016-04,178
+ Uvs,2016-03,140
+ Uvs,2016-02,184
+ Uvs,2016-01,175
+ Khovd,2026-03,121
+ Khovd,2026-02,111
+ Khovd,2026-01,166
+ Khovd,2025-12,145
+ Khovd,2025-11,125
+ Khovd,2025-10,148
+ Khovd,2025-09,164
+ Khovd,2025-08,146
+ Khovd,2025-07,147
+ Khovd,2025-06,146
+ Khovd,2025-05,126
+ Khovd,2025-04,120
+ Khovd,2025-03,126
+ Khovd,2025-02,156
+ Khovd,2025-01,145
+ Khovd,2024-12,144
+ Khovd,2024-11,166
+ Khovd,2024-10,156
+ Khovd,2024-09,130
+ Khovd,2024-08,148
+ Khovd,2024-07,146
+ Khovd,2024-06,114
+ Khovd,2024-05,150
+ Khovd,2024-04,133
+ Khovd,2024-03,144
+ Khovd,2024-02,147
+ Khovd,2024-01,113
+ Khovd,2023-12,129
+ Khovd,2023-11,167
+ Khovd,2023-10,159
+ Khovd,2023-09,156
+ Khovd,2023-08,150
+ Khovd,2023-07,159
+ Khovd,2023-06,175
+ Khovd,2023-05,162
+ Khovd,2023-04,154
+ Khovd,2023-03,175
+ Khovd,2023-02,139
+ Khovd,2023-01,160
+ Khovd,2022-12,163
+ Khovd,2022-11,178
+ Khovd,2022-10,163
+ Khovd,2022-09,160
+ Khovd,2022-08,174
+ Khovd,2022-07,159
+ Khovd,2022-06,171
+ Khovd,2022-05,146
+ Khovd,2022-04,128
+ Khovd,2022-03,126
+ Khovd,2022-02,112
+ Khovd,2022-01,125
+ Khovd,2021-12,152
+ Khovd,2021-11,159
+ Khovd,2021-10,171
+ Khovd,2021-09,178
+ Khovd,2021-08,166
+ Khovd,2021-07,171
+ Khovd,2021-06,172
+ Khovd,2021-05,191
+ Khovd,2021-04,163
+ Khovd,2021-03,177
+ Khovd,2021-02,158
+ Khovd,2021-01,177
+ Khovd,2020-12,193
+ Khovd,2020-11,171
+ Khovd,2020-10,169
+ Khovd,2020-09,186
+ Khovd,2020-08,202
+ Khovd,2020-07,225
+ Khovd,2020-06,215
+ Khovd,2020-05,181
+ Khovd,2020-04,181
+ Khovd,2020-03,211
+ Khovd,2020-02,167
+ Khovd,2020-01,173
+ Khovd,2019-12,188
+ Khovd,2019-11,190
+ Khovd,2019-10,223
+ Khovd,2019-09,199
+ Khovd,2019-08,183
+ Khovd,2019-07,200
+ Khovd,2019-06,172
+ Khovd,2019-05,200
+ Khovd,2019-04,200
+ Khovd,2019-03,193
+ Khovd,2019-02,162
+ Khovd,2019-01,171
+ Khovd,2018-12,199
+ Khovd,2018-11,199
+ Khovd,2018-10,181
+ Khovd,2018-09,196
+ Khovd,2018-08,216
+ Khovd,2018-07,205
+ Khovd,2018-06,199
+ Khovd,2018-05,193
+ Khovd,2018-04,180
+ Khovd,2018-03,208
+ Khovd,2018-02,186
+ Khovd,2018-01,193
+ Khovd,2017-12,170
+ Khovd,2017-11,197
+ Khovd,2017-10,200
+ Khovd,2017-09,178
+ Khovd,2017-08,178
+ Khovd,2017-07,199
+ Khovd,2017-06,188
+ Khovd,2017-05,224
+ Khovd,2017-04,188
+ Khovd,2017-03,193
+ Khovd,2017-02,142
+ Khovd,2017-01,155
+ Khovd,2016-12,174
+ Khovd,2016-11,173
+ Khovd,2016-10,169
+ Khovd,2016-09,184
+ Khovd,2016-08,213
+ Khovd,2016-07,161
+ Khovd,2016-06,185
+ Khovd,2016-05,197
+ Khovd,2016-04,179
+ Khovd,2016-03,193
+ Khovd,2016-02,192
+ Khovd,2016-01,200
+ Khangai region,2026-03,666
+ Khangai region,2026-02,570
+ Khangai region,2026-01,597
+ Khangai region,2025-12,629
+ Khangai region,2025-11,647
+ Khangai region,2025-10,667
+ Khangai region,2025-09,678
+ Khangai region,2025-08,635
+ Khangai region,2025-07,675
+ Khangai region,2025-06,678
+ Khangai region,2025-05,647
+ Khangai region,2025-04,691
+ Khangai region,2025-03,711
+ Khangai region,2025-02,656
+ Khangai region,2025-01,722
+ Khangai region,2024-12,697
+ Khangai region,2024-11,718
+ Khangai region,2024-10,711
+ Khangai region,2024-09,724
+ Khangai region,2024-08,715
+ Khangai region,2024-07,716
+ Khangai region,2024-06,694
+ Khangai region,2024-05,712
+ Khangai region,2024-04,728
+ Khangai region,2024-03,787
+ Khangai region,2024-02,692
+ Khangai region,2024-01,708
+ Khangai region,2023-12,677
+ Khangai region,2023-11,821
+ Khangai region,2023-10,779
+ Khangai region,2023-09,808
+ Khangai region,2023-08,862
+ Khangai region,2023-07,836
+ Khangai region,2023-06,786
+ Khangai region,2023-05,856
+ Khangai region,2023-04,833
+ Khangai region,2023-03,980
+ Khangai region,2023-02,799
+ Khangai region,2023-01,881
+ Khangai region,2022-12,953
+ Khangai region,2022-11,822
+ Khangai region,2022-10,986
+ Khangai region,2022-09,949
+ Khangai region,2022-08,936
+ Khangai region,2022-07,934
+ Khangai region,2022-06,756
+ Khangai region,2022-05,818
+ Khangai region,2022-04,857
+ Khangai region,2022-03,801
+ Khangai region,2022-02,710
+ Khangai region,2022-01,771
+ Khangai region,2021-12,771
+ Khangai region,2021-11,919
+ Khangai region,2021-10,999
+ Khangai region,2021-09,995
+ Khangai region,2021-08,978
+ Khangai region,2021-07,1122
+ Khangai region,2021-06,1005
+ Khangai region,2021-05,1014
+ Khangai region,2021-04,1051
+ Khangai region,2021-03,1029
+ Khangai region,2021-02,941
+ Khangai region,2021-01,905
+ Khangai region,2020-12,1013
+ Khangai region,2020-11,987
+ Khangai region,2020-10,955
+ Khangai region,2020-09,1046
+ Khangai region,2020-08,1059
+ Khangai region,2020-07,1092
+ Khangai region,2020-06,995
+ Khangai region,2020-05,1003
+ Khangai region,2020-04,1029
+ Khangai region,2020-03,1099
+ Khangai region,2020-02,945
+ Khangai region,2020-01,938
+ Khangai region,2019-12,1059
+ Khangai region,2019-11,1051
+ Khangai region,2019-10,1073
+ Khangai region,2019-09,1036
+ Khangai region,2019-08,1113
+ Khangai region,2019-07,1153
+ Khangai region,2019-06,1059
+ Khangai region,2019-05,1058
+ Khangai region,2019-04,1092
+ Khangai region,2019-03,1070
+ Khangai region,2019-02,917
+ Khangai region,2019-01,981
+ Khangai region,2018-12,1050
+ Khangai region,2018-11,1044
+ Khangai region,2018-10,1078
+ Khangai region,2018-09,991
+ Khangai region,2018-08,1136
+ Khangai region,2018-07,1130
+ Khangai region,2018-06,1045
+ Khangai region,2018-05,991
+ Khangai region,2018-04,1033
+ Khangai region,2018-03,1090
+ Khangai region,2018-02,979
+ Khangai region,2018-01,1065
+ Khangai region,2017-12,1058
+ Khangai region,2017-11,1156
+ Khangai region,2017-10,1018
+ Khangai region,2017-09,1074
+ Khangai region,2017-08,1066
+ Khangai region,2017-07,1216
+ Khangai region,2017-06,1032
+ Khangai region,2017-05,1035
+ Khangai region,2017-04,1059
+ Khangai region,2017-03,1050
+ Khangai region,2017-02,816
+ Khangai region,2017-01,940
+ Khangai region,2016-12,963
+ Khangai region,2016-11,1099
+ Khangai region,2016-10,1081
+ Khangai region,2016-09,1117
+ Khangai region,2016-08,1180
+ Khangai region,2016-07,1139
+ Khangai region,2016-06,1113
+ Khangai region,2016-05,1122
+ Khangai region,2016-04,1061
+ Khangai region,2016-03,1149
+ Khangai region,2016-02,985
+ Khangai region,2016-01,1046
+ Arkhangai,2026-03,95
+ Arkhangai,2026-02,67
+ Arkhangai,2026-01,89
+ Arkhangai,2025-12,76
+ Arkhangai,2025-11,73
+ Arkhangai,2025-10,79
+ Arkhangai,2025-09,91
+ Arkhangai,2025-08,74
+ Arkhangai,2025-07,77
+ Arkhangai,2025-06,84
+ Arkhangai,2025-05,86
+ Arkhangai,2025-04,82
+ Arkhangai,2025-03,104
+ Arkhangai,2025-02,85
+ Arkhangai,2025-01,88
+ Arkhangai,2024-12,85
+ Arkhangai,2024-11,75
+ Arkhangai,2024-10,101
+ Arkhangai,2024-09,89
+ Arkhangai,2024-08,76
+ Arkhangai,2024-07,96
+ Arkhangai,2024-06,84
+ Arkhangai,2024-05,96
+ Arkhangai,2024-04,105
+ Arkhangai,2024-03,98
+ Arkhangai,2024-02,76
+ Arkhangai,2024-01,91
+ Arkhangai,2023-12,78
+ Arkhangai,2023-11,100
+ Arkhangai,2023-10,95
+ Arkhangai,2023-09,108
+ Arkhangai,2023-08,109
+ Arkhangai,2023-07,110
+ Arkhangai,2023-06,96
+ Arkhangai,2023-05,111
+ Arkhangai,2023-04,138
+ Arkhangai,2023-03,135
+ Arkhangai,2023-02,112
+ Arkhangai,2023-01,128
+ Arkhangai,2022-12,132
+ Arkhangai,2022-11,114
+ Arkhangai,2022-10,124
+ Arkhangai,2022-09,107
+ Arkhangai,2022-08,115
+ Arkhangai,2022-07,109
+ Arkhangai,2022-06,89
+ Arkhangai,2022-05,123
+ Arkhangai,2022-04,120
+ Arkhangai,2022-03,116
+ Arkhangai,2022-02,97
+ Arkhangai,2022-01,96
+ Arkhangai,2021-12,96
+ Arkhangai,2021-11,117
+ Arkhangai,2021-10,147
+ Arkhangai,2021-09,113
+ Arkhangai,2021-08,127
+ Arkhangai,2021-07,159
+ Arkhangai,2021-06,152
+ Arkhangai,2021-05,168
+ Arkhangai,2021-04,145
+ Arkhangai,2021-03,128
+ Arkhangai,2021-02,159
+ Arkhangai,2021-01,139
+ Arkhangai,2020-12,135
+ Arkhangai,2020-11,130
+ Arkhangai,2020-10,124
+ Arkhangai,2020-09,136
+ Arkhangai,2020-08,135
+ Arkhangai,2020-07,145
+ Arkhangai,2020-06,148
+ Arkhangai,2020-05,122
+ Arkhangai,2020-04,156
+ Arkhangai,2020-03,167
+ Arkhangai,2020-02,127
+ Arkhangai,2020-01,114
+ Arkhangai,2019-12,138
+ Arkhangai,2019-11,163
+ Arkhangai,2019-10,149
+ Arkhangai,2019-09,135
+ Arkhangai,2019-08,163
+ Arkhangai,2019-07,150
+ Arkhangai,2019-06,119
+ Arkhangai,2019-05,144
+ Arkhangai,2019-04,151
+ Arkhangai,2019-03,139
+ Arkhangai,2019-02,124
+ Arkhangai,2019-01,133
+ Arkhangai,2018-12,145
+ Arkhangai,2018-11,132
+ Arkhangai,2018-10,157
+ Arkhangai,2018-09,137
+ Arkhangai,2018-08,121
+ Arkhangai,2018-07,163
+ Arkhangai,2018-06,154
+ Arkhangai,2018-05,127
+ Arkhangai,2018-04,144
+ Arkhangai,2018-03,157
+ Arkhangai,2018-02,126
+ Arkhangai,2018-01,175
+ Arkhangai,2017-12,128
+ Arkhangai,2017-11,193
+ Arkhangai,2017-10,121
+ Arkhangai,2017-09,169
+ Arkhangai,2017-08,157
+ Arkhangai,2017-07,188
+ Arkhangai,2017-06,151
+ Arkhangai,2017-05,148
+ Arkhangai,2017-04,165
+ Arkhangai,2017-03,190
+ Arkhangai,2017-02,134
+ Arkhangai,2017-01,158
+ Arkhangai,2016-12,131
+ Arkhangai,2016-11,170
+ Arkhangai,2016-10,173
+ Arkhangai,2016-09,171
+ Arkhangai,2016-08,161
+ Arkhangai,2016-07,187
+ Arkhangai,2016-06,175
+ Arkhangai,2016-05,171
+ Arkhangai,2016-04,151
+ Arkhangai,2016-03,161
+ Arkhangai,2016-02,152
+ Arkhangai,2016-01,154
+ Bayankhongor,2026-03,100
+ Bayankhongor,2026-02,103
+ Bayankhongor,2026-01,99
+ Bayankhongor,2025-12,96
+ Bayankhongor,2025-11,107
+ Bayankhongor,2025-10,108
+ Bayankhongor,2025-09,109
+ Bayankhongor,2025-08,109
+ Bayankhongor,2025-07,92
+ Bayankhongor,2025-06,111
+ Bayankhongor,2025-05,95
+ Bayankhongor,2025-04,116
+ Bayankhongor,2025-03,107
+ Bayankhongor,2025-02,117
+ Bayankhongor,2025-01,101
+ Bayankhongor,2024-12,110
+ Bayankhongor,2024-11,123
+ Bayankhongor,2024-10,119
+ Bayankhongor,2024-09,125
+ Bayankhongor,2024-08,103
+ Bayankhongor,2024-07,120
+ Bayankhongor,2024-06,118
+ Bayankhongor,2024-05,119
+ Bayankhongor,2024-04,132
+ Bayankhongor,2024-03,131
+ Bayankhongor,2024-02,118
+ Bayankhongor,2024-01,100
+ Bayankhongor,2023-12,129
+ Bayankhongor,2023-11,135
+ Bayankhongor,2023-10,116
+ Bayankhongor,2023-09,126
+ Bayankhongor,2023-08,134
+ Bayankhongor,2023-07,157
+ Bayankhongor,2023-06,137
+ Bayankhongor,2023-05,137
+ Bayankhongor,2023-04,123
+ Bayankhongor,2023-03,153
+ Bayankhongor,2023-02,131
+ Bayankhongor,2023-01,138
+ Bayankhongor,2022-12,166
+ Bayankhongor,2022-11,125
+ Bayankhongor,2022-10,159
+ Bayankhongor,2022-09,152
+ Bayankhongor,2022-08,184
+ Bayankhongor,2022-07,156
+ Bayankhongor,2022-06,121
+ Bayankhongor,2022-05,131
+ Bayankhongor,2022-04,126
+ Bayankhongor,2022-03,139
+ Bayankhongor,2022-02,107
+ Bayankhongor,2022-01,111
+ Bayankhongor,2021-12,141
+ Bayankhongor,2021-11,144
+ Bayankhongor,2021-10,127
+ Bayankhongor,2021-09,180
+ Bayankhongor,2021-08,176
+ Bayankhongor,2021-07,163
+ Bayankhongor,2021-06,146
+ Bayankhongor,2021-05,168
+ Bayankhongor,2021-04,182
+ Bayankhongor,2021-03,176
+ Bayankhongor,2021-02,134
+ Bayankhongor,2021-01,121
+ Bayankhongor,2020-12,179
+ Bayankhongor,2020-11,161
+ Bayankhongor,2020-10,156
+ Bayankhongor,2020-09,178
+ Bayankhongor,2020-08,186
+ Bayankhongor,2020-07,166
+ Bayankhongor,2020-06,183
+ Bayankhongor,2020-05,179
+ Bayankhongor,2020-04,162
+ Bayankhongor,2020-03,192
+ Bayankhongor,2020-02,149
+ Bayankhongor,2020-01,160
+ Bayankhongor,2019-12,186
+ Bayankhongor,2019-11,182
+ Bayankhongor,2019-10,174
+ Bayankhongor,2019-09,153
+ Bayankhongor,2019-08,169
+ Bayankhongor,2019-07,189
+ Bayankhongor,2019-06,202
+ Bayankhongor,2019-05,205
+ Bayankhongor,2019-04,166
+ Bayankhongor,2019-03,177
+ Bayankhongor,2019-02,148
+ Bayankhongor,2019-01,153
+ Bayankhongor,2018-12,186
+ Bayankhongor,2018-11,198
+ Bayankhongor,2018-10,153
+ Bayankhongor,2018-09,156
+ Bayankhongor,2018-08,186
+ Bayankhongor,2018-07,178
+ Bayankhongor,2018-06,168
+ Bayankhongor,2018-05,171
+ Bayankhongor,2018-04,191
+ Bayankhongor,2018-03,164
+ Bayankhongor,2018-02,137
+ Bayankhongor,2018-01,186
+ Bayankhongor,2017-12,190
+ Bayankhongor,2017-11,198
+ Bayankhongor,2017-10,180
+ Bayankhongor,2017-09,170
+ Bayankhongor,2017-08,151
+ Bayankhongor,2017-07,163
+ Bayankhongor,2017-06,167
+ Bayankhongor,2017-05,190
+ Bayankhongor,2017-04,152
+ Bayankhongor,2017-03,176
+ Bayankhongor,2017-02,134
+ Bayankhongor,2017-01,130
+ Bayankhongor,2016-12,142
+ Bayankhongor,2016-11,151
+ Bayankhongor,2016-10,166
+ Bayankhongor,2016-09,164
+ Bayankhongor,2016-08,200
+ Bayankhongor,2016-07,155
+ Bayankhongor,2016-06,180
+ Bayankhongor,2016-05,158
+ Bayankhongor,2016-04,175
+ Bayankhongor,2016-03,172
+ Bayankhongor,2016-02,144
+ Bayankhongor,2016-01,159
+ Bulgan,2026-03,37
+ Bulgan,2026-02,33
+ Bulgan,2026-01,29
+ Bulgan,2025-12,28
+ Bulgan,2025-11,28
+ Bulgan,2025-10,48
+ Bulgan,2025-09,36
+ Bulgan,2025-08,37
+ Bulgan,2025-07,50
+ Bulgan,2025-06,32
+ Bulgan,2025-05,38
+ Bulgan,2025-04,35
+ Bulgan,2025-03,41
+ Bulgan,2025-02,45
+ Bulgan,2025-01,42
+ Bulgan,2024-12,46
+ Bulgan,2024-11,34
+ Bulgan,2024-10,33
+ Bulgan,2024-09,36
+ Bulgan,2024-08,51
+ Bulgan,2024-07,37
+ Bulgan,2024-06,35
+ Bulgan,2024-05,41
+ Bulgan,2024-04,45
+ Bulgan,2024-03,33
+ Bulgan,2024-02,36
+ Bulgan,2024-01,46
+ Bulgan,2023-12,43
+ Bulgan,2023-11,45
+ Bulgan,2023-10,37
+ Bulgan,2023-09,54
+ Bulgan,2023-08,51
+ Bulgan,2023-07,46
+ Bulgan,2023-06,58
+ Bulgan,2023-05,52
+ Bulgan,2023-04,46
+ Bulgan,2023-03,59
+ Bulgan,2023-02,56
+ Bulgan,2023-01,53
+ Bulgan,2022-12,80
+ Bulgan,2022-11,50
+ Bulgan,2022-10,72
+ Bulgan,2022-09,50
+ Bulgan,2022-08,59
+ Bulgan,2022-07,55
+ Bulgan,2022-06,61
+ Bulgan,2022-05,53
+ Bulgan,2022-04,56
+ Bulgan,2022-03,48
+ Bulgan,2022-02,45
+ Bulgan,2022-01,50
+ Bulgan,2021-12,31
+ Bulgan,2021-11,48
+ Bulgan,2021-10,67
+ Bulgan,2021-09,74
+ Bulgan,2021-08,69
+ Bulgan,2021-07,75
+ Bulgan,2021-06,68
+ Bulgan,2021-05,84
+ Bulgan,2021-04,91
+ Bulgan,2021-03,71
+ Bulgan,2021-02,84
+ Bulgan,2021-01,80
+ Bulgan,2020-12,83
+ Bulgan,2020-11,49
+ Bulgan,2020-10,47
+ Bulgan,2020-09,54
+ Bulgan,2020-08,57
+ Bulgan,2020-07,71
+ Bulgan,2020-06,64
+ Bulgan,2020-05,67
+ Bulgan,2020-04,78
+ Bulgan,2020-03,69
+ Bulgan,2020-02,62
+ Bulgan,2020-01,59
+ Bulgan,2019-12,78
+ Bulgan,2019-11,47
+ Bulgan,2019-10,57
+ Bulgan,2019-09,64
+ Bulgan,2019-08,66
+ Bulgan,2019-07,85
+ Bulgan,2019-06,54
+ Bulgan,2019-05,57
+ Bulgan,2019-04,70
+ Bulgan,2019-03,61
+ Bulgan,2019-02,58
+ Bulgan,2019-01,66
+ Bulgan,2018-12,48
+ Bulgan,2018-11,49
+ Bulgan,2018-10,65
+ Bulgan,2018-09,74
+ Bulgan,2018-08,85
+ Bulgan,2018-07,71
+ Bulgan,2018-06,61
+ Bulgan,2018-05,64
+ Bulgan,2018-04,67
+ Bulgan,2018-03,53
+ Bulgan,2018-02,84
+ Bulgan,2018-01,64
+ Bulgan,2017-12,78
+ Bulgan,2017-11,75
+ Bulgan,2017-10,73
+ Bulgan,2017-09,56
+ Bulgan,2017-08,65
+ Bulgan,2017-07,74
+ Bulgan,2017-06,73
+ Bulgan,2017-05,76
+ Bulgan,2017-04,70
+ Bulgan,2017-03,58
+ Bulgan,2017-02,70
+ Bulgan,2017-01,67
+ Bulgan,2016-12,65
+ Bulgan,2016-11,62
+ Bulgan,2016-10,74
+ Bulgan,2016-09,72
+ Bulgan,2016-08,61
+ Bulgan,2016-07,92
+ Bulgan,2016-06,80
+ Bulgan,2016-05,75
+ Bulgan,2016-04,68
+ Bulgan,2016-03,77
+ Bulgan,2016-02,71
+ Bulgan,2016-01,74
+ Orkhon,2026-03,154
+ Orkhon,2026-02,140
+ Orkhon,2026-01,145
+ Orkhon,2025-12,162
+ Orkhon,2025-11,164
+ Orkhon,2025-10,164
+ Orkhon,2025-09,173
+ Orkhon,2025-08,146
+ Orkhon,2025-07,171
+ Orkhon,2025-06,171
+ Orkhon,2025-05,144
+ Orkhon,2025-04,153
+ Orkhon,2025-03,167
+ Orkhon,2025-02,147
+ Orkhon,2025-01,174
+ Orkhon,2024-12,178
+ Orkhon,2024-11,173
+ Orkhon,2024-10,181
+ Orkhon,2024-09,171
+ Orkhon,2024-08,186
+ Orkhon,2024-07,158
+ Orkhon,2024-06,159
+ Orkhon,2024-05,150
+ Orkhon,2024-04,156
+ Orkhon,2024-03,185
+ Orkhon,2024-02,163
+ Orkhon,2024-01,157
+ Orkhon,2023-12,151
+ Orkhon,2023-11,205
+ Orkhon,2023-10,173
+ Orkhon,2023-09,182
+ Orkhon,2023-08,193
+ Orkhon,2023-07,183
+ Orkhon,2023-06,181
+ Orkhon,2023-05,202
+ Orkhon,2023-04,167
+ Orkhon,2023-03,227
+ Orkhon,2023-02,176
+ Orkhon,2023-01,194
+ Orkhon,2022-12,206
+ Orkhon,2022-11,183
+ Orkhon,2022-10,229
+ Orkhon,2022-09,222
+ Orkhon,2022-08,206
+ Orkhon,2022-07,200
+ Orkhon,2022-06,177
+ Orkhon,2022-05,176
+ Orkhon,2022-04,189
+ Orkhon,2022-03,173
+ Orkhon,2022-02,171
+ Orkhon,2022-01,177
+ Orkhon,2021-12,176
+ Orkhon,2021-11,197
+ Orkhon,2021-10,212
+ Orkhon,2021-09,228
+ Orkhon,2021-08,203
+ Orkhon,2021-07,245
+ Orkhon,2021-06,217
+ Orkhon,2021-05,212
+ Orkhon,2021-04,228
+ Orkhon,2021-03,226
+ Orkhon,2021-02,174
+ Orkhon,2021-01,199
+ Orkhon,2020-12,195
+ Orkhon,2020-11,219
+ Orkhon,2020-10,213
+ Orkhon,2020-09,201
+ Orkhon,2020-08,223
+ Orkhon,2020-07,238
+ Orkhon,2020-06,203
+ Orkhon,2020-05,217
+ Orkhon,2020-04,213
+ Orkhon,2020-03,232
+ Orkhon,2020-02,185
+ Orkhon,2020-01,216
+ Orkhon,2019-12,223
+ Orkhon,2019-11,246
+ Orkhon,2019-10,213
+ Orkhon,2019-09,234
+ Orkhon,2019-08,223
+ Orkhon,2019-07,226
+ Orkhon,2019-06,181
+ Orkhon,2019-05,232
+ Orkhon,2019-04,238
+ Orkhon,2019-03,234
+ Orkhon,2019-02,193
+ Orkhon,2019-01,205
+ Orkhon,2018-12,239
+ Orkhon,2018-11,214
+ Orkhon,2018-10,261
+ Orkhon,2018-09,207
+ Orkhon,2018-08,251
+ Orkhon,2018-07,248
+ Orkhon,2018-06,209
+ Orkhon,2018-05,198
+ Orkhon,2018-04,230
+ Orkhon,2018-03,243
+ Orkhon,2018-02,239
+ Orkhon,2018-01,212
+ Orkhon,2017-12,213
+ Orkhon,2017-11,247
+ Orkhon,2017-10,215
+ Orkhon,2017-09,235
+ Orkhon,2017-08,217
+ Orkhon,2017-07,274
+ Orkhon,2017-06,213
+ Orkhon,2017-05,220
+ Orkhon,2017-04,204
+ Orkhon,2017-03,209
+ Orkhon,2017-02,149
+ Orkhon,2017-01,183
+ Orkhon,2016-12,198
+ Orkhon,2016-11,235
+ Orkhon,2016-10,230
+ Orkhon,2016-09,233
+ Orkhon,2016-08,243
+ Orkhon,2016-07,222
+ Orkhon,2016-06,225
+ Orkhon,2016-05,239
+ Orkhon,2016-04,181
+ Orkhon,2016-03,234
+ Orkhon,2016-02,182
+ Orkhon,2016-01,199
+ Uvurkhangai,2026-03,130
+ Uvurkhangai,2026-02,112
+ Uvurkhangai,2026-01,102
+ Uvurkhangai,2025-12,135
+ Uvurkhangai,2025-11,132
+ Uvurkhangai,2025-10,130
+ Uvurkhangai,2025-09,130
+ Uvurkhangai,2025-08,117
+ Uvurkhangai,2025-07,142
+ Uvurkhangai,2025-06,134
+ Uvurkhangai,2025-05,147
+ Uvurkhangai,2025-04,140
+ Uvurkhangai,2025-03,149
+ Uvurkhangai,2025-02,115
+ Uvurkhangai,2025-01,138
+ Uvurkhangai,2024-12,133
+ Uvurkhangai,2024-11,160
+ Uvurkhangai,2024-10,123
+ Uvurkhangai,2024-09,145
+ Uvurkhangai,2024-08,147
+ Uvurkhangai,2024-07,149
+ Uvurkhangai,2024-06,129
+ Uvurkhangai,2024-05,150
+ Uvurkhangai,2024-04,145
+ Uvurkhangai,2024-03,146
+ Uvurkhangai,2024-02,140
+ Uvurkhangai,2024-01,153
+ Uvurkhangai,2023-12,137
+ Uvurkhangai,2023-11,161
+ Uvurkhangai,2023-10,175
+ Uvurkhangai,2023-09,155
+ Uvurkhangai,2023-08,174
+ Uvurkhangai,2023-07,163
+ Uvurkhangai,2023-06,135
+ Uvurkhangai,2023-05,168
+ Uvurkhangai,2023-04,156
+ Uvurkhangai,2023-03,207
+ Uvurkhangai,2023-02,168
+ Uvurkhangai,2023-01,170
+ Uvurkhangai,2022-12,166
+ Uvurkhangai,2022-11,170
+ Uvurkhangai,2022-10,192
+ Uvurkhangai,2022-09,195
+ Uvurkhangai,2022-08,192
+ Uvurkhangai,2022-07,188
+ Uvurkhangai,2022-06,134
+ Uvurkhangai,2022-05,154
+ Uvurkhangai,2022-04,162
+ Uvurkhangai,2022-03,149
+ Uvurkhangai,2022-02,138
+ Uvurkhangai,2022-01,147
+ Uvurkhangai,2021-12,149
+ Uvurkhangai,2021-11,199
+ Uvurkhangai,2021-10,195
+ Uvurkhangai,2021-09,192
+ Uvurkhangai,2021-08,185
+ Uvurkhangai,2021-07,211
+ Uvurkhangai,2021-06,189
+ Uvurkhangai,2021-05,187
+ Uvurkhangai,2021-04,169
+ Uvurkhangai,2021-03,201
+ Uvurkhangai,2021-02,169
+ Uvurkhangai,2021-01,160
+ Uvurkhangai,2020-12,210
+ Uvurkhangai,2020-11,182
+ Uvurkhangai,2020-10,181
+ Uvurkhangai,2020-09,237
+ Uvurkhangai,2020-08,196
+ Uvurkhangai,2020-07,225
+ Uvurkhangai,2020-06,177
+ Uvurkhangai,2020-05,201
+ Uvurkhangai,2020-04,227
+ Uvurkhangai,2020-03,213
+ Uvurkhangai,2020-02,192
+ Uvurkhangai,2020-01,187
+ Uvurkhangai,2019-12,195
+ Uvurkhangai,2019-11,206
+ Uvurkhangai,2019-10,272
+ Uvurkhangai,2019-09,228
+ Uvurkhangai,2019-08,266
+ Uvurkhangai,2019-07,246
+ Uvurkhangai,2019-06,224
+ Uvurkhangai,2019-05,197
+ Uvurkhangai,2019-04,216
+ Uvurkhangai,2019-03,192
+ Uvurkhangai,2019-02,180
+ Uvurkhangai,2019-01,183
+ Uvurkhangai,2018-12,189
+ Uvurkhangai,2018-11,231
+ Uvurkhangai,2018-10,201
+ Uvurkhangai,2018-09,189
+ Uvurkhangai,2018-08,242
+ Uvurkhangai,2018-07,213
+ Uvurkhangai,2018-06,191
+ Uvurkhangai,2018-05,197
+ Uvurkhangai,2018-04,180
+ Uvurkhangai,2018-03,214
+ Uvurkhangai,2018-02,162
+ Uvurkhangai,2018-01,194
+ Uvurkhangai,2017-12,223
+ Uvurkhangai,2017-11,225
+ Uvurkhangai,2017-10,207
+ Uvurkhangai,2017-09,197
+ Uvurkhangai,2017-08,230
+ Uvurkhangai,2017-07,230
+ Uvurkhangai,2017-06,189
+ Uvurkhangai,2017-05,181
+ Uvurkhangai,2017-04,197
+ Uvurkhangai,2017-03,197
+ Uvurkhangai,2017-02,159
+ Uvurkhangai,2017-01,193
+ Uvurkhangai,2016-12,205
+ Uvurkhangai,2016-11,210
+ Uvurkhangai,2016-10,219
+ Uvurkhangai,2016-09,238
+ Uvurkhangai,2016-08,234
+ Uvurkhangai,2016-07,243
+ Uvurkhangai,2016-06,213
+ Uvurkhangai,2016-05,241
+ Uvurkhangai,2016-04,223
+ Uvurkhangai,2016-03,225
+ Uvurkhangai,2016-02,197
+ Uvurkhangai,2016-01,227
+ Khuvsgul,2026-03,150
+ Khuvsgul,2026-02,115
+ Khuvsgul,2026-01,133
+ Khuvsgul,2025-12,132
+ Khuvsgul,2025-11,143
+ Khuvsgul,2025-10,138
+ Khuvsgul,2025-09,139
+ Khuvsgul,2025-08,152
+ Khuvsgul,2025-07,143
+ Khuvsgul,2025-06,146
+ Khuvsgul,2025-05,137
+ Khuvsgul,2025-04,165
+ Khuvsgul,2025-03,143
+ Khuvsgul,2025-02,147
+ Khuvsgul,2025-01,179
+ Khuvsgul,2024-12,145
+ Khuvsgul,2024-11,153
+ Khuvsgul,2024-10,154
+ Khuvsgul,2024-09,158
+ Khuvsgul,2024-08,152
+ Khuvsgul,2024-07,156
+ Khuvsgul,2024-06,169
+ Khuvsgul,2024-05,156
+ Khuvsgul,2024-04,145
+ Khuvsgul,2024-03,194
+ Khuvsgul,2024-02,159
+ Khuvsgul,2024-01,161
+ Khuvsgul,2023-12,139
+ Khuvsgul,2023-11,175
+ Khuvsgul,2023-10,183
+ Khuvsgul,2023-09,183
+ Khuvsgul,2023-08,201
+ Khuvsgul,2023-07,177
+ Khuvsgul,2023-06,179
+ Khuvsgul,2023-05,186
+ Khuvsgul,2023-04,203
+ Khuvsgul,2023-03,199
+ Khuvsgul,2023-02,156
+ Khuvsgul,2023-01,198
+ Khuvsgul,2022-12,203
+ Khuvsgul,2022-11,180
+ Khuvsgul,2022-10,210
+ Khuvsgul,2022-09,223
+ Khuvsgul,2022-08,180
+ Khuvsgul,2022-07,226
+ Khuvsgul,2022-06,174
+ Khuvsgul,2022-05,181
+ Khuvsgul,2022-04,204
+ Khuvsgul,2022-03,176
+ Khuvsgul,2022-02,152
+ Khuvsgul,2022-01,190
+ Khuvsgul,2021-12,178
+ Khuvsgul,2021-11,214
+ Khuvsgul,2021-10,251
+ Khuvsgul,2021-09,208
+ Khuvsgul,2021-08,218
+ Khuvsgul,2021-07,269
+ Khuvsgul,2021-06,233
+ Khuvsgul,2021-05,195
+ Khuvsgul,2021-04,236
+ Khuvsgul,2021-03,227
+ Khuvsgul,2021-02,221
+ Khuvsgul,2021-01,206
+ Khuvsgul,2020-12,211
+ Khuvsgul,2020-11,246
+ Khuvsgul,2020-10,234
+ Khuvsgul,2020-09,240
+ Khuvsgul,2020-08,262
+ Khuvsgul,2020-07,247
+ Khuvsgul,2020-06,220
+ Khuvsgul,2020-05,217
+ Khuvsgul,2020-04,193
+ Khuvsgul,2020-03,226
+ Khuvsgul,2020-02,230
+ Khuvsgul,2020-01,202
+ Khuvsgul,2019-12,239
+ Khuvsgul,2019-11,207
+ Khuvsgul,2019-10,208
+ Khuvsgul,2019-09,222
+ Khuvsgul,2019-08,226
+ Khuvsgul,2019-07,257
+ Khuvsgul,2019-06,279
+ Khuvsgul,2019-05,223
+ Khuvsgul,2019-04,251
+ Khuvsgul,2019-03,267
+ Khuvsgul,2019-02,214
+ Khuvsgul,2019-01,241
+ Khuvsgul,2018-12,243
+ Khuvsgul,2018-11,220
+ Khuvsgul,2018-10,241
+ Khuvsgul,2018-09,228
+ Khuvsgul,2018-08,251
+ Khuvsgul,2018-07,257
+ Khuvsgul,2018-06,262
+ Khuvsgul,2018-05,234
+ Khuvsgul,2018-04,221
+ Khuvsgul,2018-03,259
+ Khuvsgul,2018-02,231
+ Khuvsgul,2018-01,234
+ Khuvsgul,2017-12,226
+ Khuvsgul,2017-11,218
+ Khuvsgul,2017-10,222
+ Khuvsgul,2017-09,247
+ Khuvsgul,2017-08,246
+ Khuvsgul,2017-07,287
+ Khuvsgul,2017-06,239
+ Khuvsgul,2017-05,220
+ Khuvsgul,2017-04,271
+ Khuvsgul,2017-03,220
+ Khuvsgul,2017-02,170
+ Khuvsgul,2017-01,209
+ Khuvsgul,2016-12,222
+ Khuvsgul,2016-11,271
+ Khuvsgul,2016-10,219
+ Khuvsgul,2016-09,239
+ Khuvsgul,2016-08,281
+ Khuvsgul,2016-07,240
+ Khuvsgul,2016-06,240
+ Khuvsgul,2016-05,238
+ Khuvsgul,2016-04,263
+ Khuvsgul,2016-03,280
+ Khuvsgul,2016-02,239
+ Khuvsgul,2016-01,233
+ Central region,2026-03,473
+ Central region,2026-02,480
+ Central region,2026-01,463
+ Central region,2025-12,508
+ Central region,2025-11,487
+ Central region,2025-10,547
+ Central region,2025-09,524
+ Central region,2025-08,515
+ Central region,2025-07,535
+ Central region,2025-06,507
+ Central region,2025-05,501
+ Central region,2025-04,507
+ Central region,2025-03,543
+ Central region,2025-02,507
+ Central region,2025-01,552
+ Central region,2024-12,559
+ Central region,2024-11,491
+ Central region,2024-10,539
+ Central region,2024-09,571
+ Central region,2024-08,625
+ Central region,2024-07,596
+ Central region,2024-06,543
+ Central region,2024-05,567
+ Central region,2024-04,564
+ Central region,2024-03,546
+ Central region,2024-02,589
+ Central region,2024-01,557
+ Central region,2023-12,591
+ Central region,2023-11,606
+ Central region,2023-10,588
+ Central region,2023-09,646
+ Central region,2023-08,632
+ Central region,2023-07,637
+ Central region,2023-06,645
+ Central region,2023-05,638
+ Central region,2023-04,669
+ Central region,2023-03,699
+ Central region,2023-02,613
+ Central region,2023-01,656
+ Central region,2022-12,671
+ Central region,2022-11,734
+ Central region,2022-10,697
+ Central region,2022-09,697
+ Central region,2022-08,747
+ Central region,2022-07,623
+ Central region,2022-06,644
+ Central region,2022-05,640
+ Central region,2022-04,610
+ Central region,2022-03,620
+ Central region,2022-02,511
+ Central region,2022-01,509
+ Central region,2021-12,716
+ Central region,2021-11,723
+ Central region,2021-10,768
+ Central region,2021-09,764
+ Central region,2021-08,686
+ Central region,2021-07,844
+ Central region,2021-06,841
+ Central region,2021-05,859
+ Central region,2021-04,775
+ Central region,2021-03,917
+ Central region,2021-02,726
+ Central region,2021-01,758
+ Central region,2020-12,848
+ Central region,2020-11,700
+ Central region,2020-10,769
+ Central region,2020-09,756
+ Central region,2020-08,819
+ Central region,2020-07,856
+ Central region,2020-06,753
+ Central region,2020-05,800
+ Central region,2020-04,808
+ Central region,2020-03,767
+ Central region,2020-02,718
+ Central region,2020-01,859
+ Central region,2019-12,851
+ Central region,2019-11,750
+ Central region,2019-10,869
+ Central region,2019-09,852
+ Central region,2019-08,823
+ Central region,2019-07,842
+ Central region,2019-06,765
+ Central region,2019-05,810
+ Central region,2019-04,823
+ Central region,2019-03,771
+ Central region,2019-02,728
+ Central region,2019-01,773
+ Central region,2018-12,801
+ Central region,2018-11,768
+ Central region,2018-10,761
+ Central region,2018-09,835
+ Central region,2018-08,792
+ Central region,2018-07,818
+ Central region,2018-06,799
+ Central region,2018-05,802
+ Central region,2018-04,793
+ Central region,2018-03,804
+ Central region,2018-02,752
+ Central region,2018-01,841
+ Central region,2017-12,807
+ Central region,2017-11,846
+ Central region,2017-10,773
+ Central region,2017-09,790
+ Central region,2017-08,810
+ Central region,2017-07,774
+ Central region,2017-06,729
+ Central region,2017-05,770
+ Central region,2017-04,719
+ Central region,2017-03,833
+ Central region,2017-02,566
+ Central region,2017-01,685
+ Central region,2016-12,674
+ Central region,2016-11,849
+ Central region,2016-10,777
+ Central region,2016-09,825
+ Central region,2016-08,836
+ Central region,2016-07,904
+ Central region,2016-06,829
+ Central region,2016-05,844
+ Central region,2016-04,764
+ Central region,2016-03,872
+ Central region,2016-02,784
+ Central region,2016-01,830
+ Govisumber,2026-03,17
+ Govisumber,2026-02,25
+ Govisumber,2026-01,21
+ Govisumber,2025-12,28
+ Govisumber,2025-11,24
+ Govisumber,2025-10,22
+ Govisumber,2025-09,19
+ Govisumber,2025-08,28
+ Govisumber,2025-07,26
+ Govisumber,2025-06,22
+ Govisumber,2025-05,22
+ Govisumber,2025-04,27
+ Govisumber,2025-03,21
+ Govisumber,2025-02,27
+ Govisumber,2025-01,21
+ Govisumber,2024-12,30
+ Govisumber,2024-11,19
+ Govisumber,2024-10,25
+ Govisumber,2024-09,24
+ Govisumber,2024-08,25
+ Govisumber,2024-07,36
+ Govisumber,2024-06,31
+ Govisumber,2024-05,29
+ Govisumber,2024-04,26
+ Govisumber,2024-03,25
+ Govisumber,2024-02,24
+ Govisumber,2024-01,24
+ Govisumber,2023-12,27
+ Govisumber,2023-11,27
+ Govisumber,2023-10,19
+ Govisumber,2023-09,22
+ Govisumber,2023-08,28
+ Govisumber,2023-07,30
+ Govisumber,2023-06,25
+ Govisumber,2023-05,32
+ Govisumber,2023-04,31
+ Govisumber,2023-03,46
+ Govisumber,2023-02,21
+ Govisumber,2023-01,35
+ Govisumber,2022-12,40
+ Govisumber,2022-11,25
+ Govisumber,2022-10,40
+ Govisumber,2022-09,45
+ Govisumber,2022-08,31
+ Govisumber,2022-07,28
+ Govisumber,2022-06,34
+ Govisumber,2022-05,30
+ Govisumber,2022-04,30
+ Govisumber,2022-03,19
+ Govisumber,2022-02,25
+ Govisumber,2022-01,31
+ Govisumber,2021-12,37
+ Govisumber,2021-11,40
+ Govisumber,2021-10,46
+ Govisumber,2021-09,38
+ Govisumber,2021-08,41
+ Govisumber,2021-07,50
+ Govisumber,2021-06,49
+ Govisumber,2021-05,29
+ Govisumber,2021-04,38
+ Govisumber,2021-03,41
+ Govisumber,2021-02,35
+ Govisumber,2021-01,34
+ Govisumber,2020-12,36
+ Govisumber,2020-11,39
+ Govisumber,2020-10,35
+ Govisumber,2020-09,33
+ Govisumber,2020-08,30
+ Govisumber,2020-07,38
+ Govisumber,2020-06,41
+ Govisumber,2020-05,41
+ Govisumber,2020-04,45
+ Govisumber,2020-03,33
+ Govisumber,2020-02,27
+ Govisumber,2020-01,43
+ Govisumber,2019-12,23
+ Govisumber,2019-11,34
+ Govisumber,2019-10,33
+ Govisumber,2019-09,41
+ Govisumber,2019-08,43
+ Govisumber,2019-07,45
+ Govisumber,2019-06,42
+ Govisumber,2019-05,40
+ Govisumber,2019-04,19
+ Govisumber,2019-03,42
+ Govisumber,2019-02,29
+ Govisumber,2019-01,38
+ Govisumber,2018-12,37
+ Govisumber,2018-11,38
+ Govisumber,2018-10,39
+ Govisumber,2018-09,38
+ Govisumber,2018-08,31
+ Govisumber,2018-07,43
+ Govisumber,2018-06,37
+ Govisumber,2018-05,30
+ Govisumber,2018-04,46
+ Govisumber,2018-03,49
+ Govisumber,2018-02,38
+ Govisumber,2018-01,44
+ Govisumber,2017-12,32
+ Govisumber,2017-11,40
+ Govisumber,2017-10,34
+ Govisumber,2017-09,43
+ Govisumber,2017-08,36
+ Govisumber,2017-07,34
+ Govisumber,2017-06,42
+ Govisumber,2017-05,36
+ Govisumber,2017-04,24
+ Govisumber,2017-03,34
+ Govisumber,2017-02,30
+ Govisumber,2017-01,33
+ Govisumber,2016-12,28
+ Govisumber,2016-11,35
+ Govisumber,2016-10,33
+ Govisumber,2016-09,36
+ Govisumber,2016-08,37
+ Govisumber,2016-07,52
+ Govisumber,2016-06,44
+ Govisumber,2016-05,51
+ Govisumber,2016-04,31
+ Govisumber,2016-03,45
+ Govisumber,2016-02,28
+ Govisumber,2016-01,30
+ Darkhan-Uul,2026-03,134
+ Darkhan-Uul,2026-02,133
+ Darkhan-Uul,2026-01,137
+ Darkhan-Uul,2025-12,141
+ Darkhan-Uul,2025-11,142
+ Darkhan-Uul,2025-10,158
+ Darkhan-Uul,2025-09,158
+ Darkhan-Uul,2025-08,152
+ Darkhan-Uul,2025-07,145
+ Darkhan-Uul,2025-06,139
+ Darkhan-Uul,2025-05,129
+ Darkhan-Uul,2025-04,140
+ Darkhan-Uul,2025-03,169
+ Darkhan-Uul,2025-02,155
+ Darkhan-Uul,2025-01,172
+ Darkhan-Uul,2024-12,148
+ Darkhan-Uul,2024-11,134
+ Darkhan-Uul,2024-10,148
+ Darkhan-Uul,2024-09,163
+ Darkhan-Uul,2024-08,181
+ Darkhan-Uul,2024-07,138
+ Darkhan-Uul,2024-06,154
+ Darkhan-Uul,2024-05,144
+ Darkhan-Uul,2024-04,148
+ Darkhan-Uul,2024-03,162
+ Darkhan-Uul,2024-02,156
+ Darkhan-Uul,2024-01,141
+ Darkhan-Uul,2023-12,177
+ Darkhan-Uul,2023-11,147
+ Darkhan-Uul,2023-10,164
+ Darkhan-Uul,2023-09,183
+ Darkhan-Uul,2023-08,151
+ Darkhan-Uul,2023-07,184
+ Darkhan-Uul,2023-06,169
+ Darkhan-Uul,2023-05,159
+ Darkhan-Uul,2023-04,186
+ Darkhan-Uul,2023-03,180
+ Darkhan-Uul,2023-02,149
+ Darkhan-Uul,2023-01,168
+ Darkhan-Uul,2022-12,183
+ Darkhan-Uul,2022-11,205
+ Darkhan-Uul,2022-10,172
+ Darkhan-Uul,2022-09,175
+ Darkhan-Uul,2022-08,195
+ Darkhan-Uul,2022-07,188
+ Darkhan-Uul,2022-06,181
+ Darkhan-Uul,2022-05,159
+ Darkhan-Uul,2022-04,152
+ Darkhan-Uul,2022-03,167
+ Darkhan-Uul,2022-02,125
+ Darkhan-Uul,2022-01,101
+ Darkhan-Uul,2021-12,170
+ Darkhan-Uul,2021-11,152
+ Darkhan-Uul,2021-10,183
+ Darkhan-Uul,2021-09,181
+ Darkhan-Uul,2021-08,185
+ Darkhan-Uul,2021-07,204
+ Darkhan-Uul,2021-06,172
+ Darkhan-Uul,2021-05,197
+ Darkhan-Uul,2021-04,191
+ Darkhan-Uul,2021-03,207
+ Darkhan-Uul,2021-02,187
+ Darkhan-Uul,2021-01,165
+ Darkhan-Uul,2020-12,158
+ Darkhan-Uul,2020-11,182
+ Darkhan-Uul,2020-10,177
+ Darkhan-Uul,2020-09,192
+ Darkhan-Uul,2020-08,218
+ Darkhan-Uul,2020-07,203
+ Darkhan-Uul,2020-06,170
+ Darkhan-Uul,2020-05,186
+ Darkhan-Uul,2020-04,212
+ Darkhan-Uul,2020-03,194
+ Darkhan-Uul,2020-02,155
+ Darkhan-Uul,2020-01,199
+ Darkhan-Uul,2019-12,188
+ Darkhan-Uul,2019-11,190
+ Darkhan-Uul,2019-10,199
+ Darkhan-Uul,2019-09,202
+ Darkhan-Uul,2019-08,215
+ Darkhan-Uul,2019-07,212
+ Darkhan-Uul,2019-06,200
+ Darkhan-Uul,2019-05,200
+ Darkhan-Uul,2019-04,207
+ Darkhan-Uul,2019-03,206
+ Darkhan-Uul,2019-02,176
+ Darkhan-Uul,2019-01,195
+ Darkhan-Uul,2018-12,205
+ Darkhan-Uul,2018-11,181
+ Darkhan-Uul,2018-10,203
+ Darkhan-Uul,2018-09,191
+ Darkhan-Uul,2018-08,213
+ Darkhan-Uul,2018-07,188
+ Darkhan-Uul,2018-06,212
+ Darkhan-Uul,2018-05,214
+ Darkhan-Uul,2018-04,197
+ Darkhan-Uul,2018-03,204
+ Darkhan-Uul,2018-02,192
+ Darkhan-Uul,2018-01,208
+ Darkhan-Uul,2017-12,200
+ Darkhan-Uul,2017-11,226
+ Darkhan-Uul,2017-10,186
+ Darkhan-Uul,2017-09,187
+ Darkhan-Uul,2017-08,201
+ Darkhan-Uul,2017-07,204
+ Darkhan-Uul,2017-06,178
+ Darkhan-Uul,2017-05,179
+ Darkhan-Uul,2017-04,183
+ Darkhan-Uul,2017-03,209
+ Darkhan-Uul,2017-02,148
+ Darkhan-Uul,2017-01,159
+ Darkhan-Uul,2016-12,171
+ Darkhan-Uul,2016-11,209
+ Darkhan-Uul,2016-10,217
+ Darkhan-Uul,2016-09,219
+ Darkhan-Uul,2016-08,219
+ Darkhan-Uul,2016-07,242
+ Darkhan-Uul,2016-06,205
+ Darkhan-Uul,2016-05,194
+ Darkhan-Uul,2016-04,180
+ Darkhan-Uul,2016-03,212
+ Darkhan-Uul,2016-02,206
+ Darkhan-Uul,2016-01,212
+ Dornogovi,2026-03,84
+ Dornogovi,2026-02,79
+ Dornogovi,2026-01,63
+ Dornogovi,2025-12,72
+ Dornogovi,2025-11,61
+ Dornogovi,2025-10,73
+ Dornogovi,2025-09,78
+ Dornogovi,2025-08,79
+ Dornogovi,2025-07,78
+ Dornogovi,2025-06,81
+ Dornogovi,2025-05,72
+ Dornogovi,2025-04,60
+ Dornogovi,2025-03,60
+ Dornogovi,2025-02,70
+ Dornogovi,2025-01,78
+ Dornogovi,2024-12,74
+ Dornogovi,2024-11,84
+ Dornogovi,2024-10,72
+ Dornogovi,2024-09,82
+ Dornogovi,2024-08,98
+ Dornogovi,2024-07,92
+ Dornogovi,2024-06,86
+ Dornogovi,2024-05,78
+ Dornogovi,2024-04,78
+ Dornogovi,2024-03,89
+ Dornogovi,2024-02,87
+ Dornogovi,2024-01,88
+ Dornogovi,2023-12,98
+ Dornogovi,2023-11,77
+ Dornogovi,2023-10,80
+ Dornogovi,2023-09,82
+ Dornogovi,2023-08,100
+ Dornogovi,2023-07,92
+ Dornogovi,2023-06,89
+ Dornogovi,2023-05,94
+ Dornogovi,2023-04,79
+ Dornogovi,2023-03,93
+ Dornogovi,2023-02,101
+ Dornogovi,2023-01,89
+ Dornogovi,2022-12,117
+ Dornogovi,2022-11,127
+ Dornogovi,2022-10,111
+ Dornogovi,2022-09,114
+ Dornogovi,2022-08,116
+ Dornogovi,2022-07,86
+ Dornogovi,2022-06,93
+ Dornogovi,2022-05,111
+ Dornogovi,2022-04,95
+ Dornogovi,2022-03,92
+ Dornogovi,2022-02,84
+ Dornogovi,2022-01,104
+ Dornogovi,2021-12,111
+ Dornogovi,2021-11,116
+ Dornogovi,2021-10,127
+ Dornogovi,2021-09,126
+ Dornogovi,2021-08,104
+ Dornogovi,2021-07,131
+ Dornogovi,2021-06,141
+ Dornogovi,2021-05,128
+ Dornogovi,2021-04,95
+ Dornogovi,2021-03,157
+ Dornogovi,2021-02,99
+ Dornogovi,2021-01,123
+ Dornogovi,2020-12,136
+ Dornogovi,2020-11,113
+ Dornogovi,2020-10,144
+ Dornogovi,2020-09,129
+ Dornogovi,2020-08,108
+ Dornogovi,2020-07,143
+ Dornogovi,2020-06,103
+ Dornogovi,2020-05,104
+ Dornogovi,2020-04,120
+ Dornogovi,2020-03,105
+ Dornogovi,2020-02,107
+ Dornogovi,2020-01,149
+ Dornogovi,2019-12,139
+ Dornogovi,2019-11,119
+ Dornogovi,2019-10,125
+ Dornogovi,2019-09,125
+ Dornogovi,2019-08,100
+ Dornogovi,2019-07,125
+ Dornogovi,2019-06,103
+ Dornogovi,2019-05,99
+ Dornogovi,2019-04,109
+ Dornogovi,2019-03,97
+ Dornogovi,2019-02,107
+ Dornogovi,2019-01,110
+ Dornogovi,2018-12,112
+ Dornogovi,2018-11,120
+ Dornogovi,2018-10,102
+ Dornogovi,2018-09,135
+ Dornogovi,2018-08,110
+ Dornogovi,2018-07,126
+ Dornogovi,2018-06,101
+ Dornogovi,2018-05,101
+ Dornogovi,2018-04,112
+ Dornogovi,2018-03,124
+ Dornogovi,2018-02,102
+ Dornogovi,2018-01,126
+ Dornogovi,2017-12,121
+ Dornogovi,2017-11,126
+ Dornogovi,2017-10,124
+ Dornogovi,2017-09,124
+ Dornogovi,2017-08,103
+ Dornogovi,2017-07,89
+ Dornogovi,2017-06,115
+ Dornogovi,2017-05,113
+ Dornogovi,2017-04,102
+ Dornogovi,2017-03,119
+ Dornogovi,2017-02,77
+ Dornogovi,2017-01,112
+ Dornogovi,2016-12,84
+ Dornogovi,2016-11,147
+ Dornogovi,2016-10,122
+ Dornogovi,2016-09,110
+ Dornogovi,2016-08,117
+ Dornogovi,2016-07,118
+ Dornogovi,2016-06,126
+ Dornogovi,2016-05,120
+ Dornogovi,2016-04,119
+ Dornogovi,2016-03,124
+ Dornogovi,2016-02,128
+ Dornogovi,2016-01,121
+ Dundgovi,2026-03,37
+ Dundgovi,2026-02,47
+ Dundgovi,2026-01,42
+ Dundgovi,2025-12,42
+ Dundgovi,2025-11,42
+ Dundgovi,2025-10,45
+ Dundgovi,2025-09,33
+ Dundgovi,2025-08,38
+ Dundgovi,2025-07,36
+ Dundgovi,2025-06,50
+ Dundgovi,2025-05,59
+ Dundgovi,2025-04,42
+ Dundgovi,2025-03,51
+ Dundgovi,2025-02,34
+ Dundgovi,2025-01,42
+ Dundgovi,2024-12,51
+ Dundgovi,2024-11,34
+ Dundgovi,2024-10,41
+ Dundgovi,2024-09,47
+ Dundgovi,2024-08,42
+ Dundgovi,2024-07,52
+ Dundgovi,2024-06,42
+ Dundgovi,2024-05,44
+ Dundgovi,2024-04,67
+ Dundgovi,2024-03,37
+ Dundgovi,2024-02,39
+ Dundgovi,2024-01,57
+ Dundgovi,2023-12,50
+ Dundgovi,2023-11,58
+ Dundgovi,2023-10,63
+ Dundgovi,2023-09,46
+ Dundgovi,2023-08,63
+ Dundgovi,2023-07,57
+ Dundgovi,2023-06,58
+ Dundgovi,2023-05,53
+ Dundgovi,2023-04,56
+ Dundgovi,2023-03,63
+ Dundgovi,2023-02,61
+ Dundgovi,2023-01,64
+ Dundgovi,2022-12,50
+ Dundgovi,2022-11,69
+ Dundgovi,2022-10,61
+ Dundgovi,2022-09,54
+ Dundgovi,2022-08,64
+ Dundgovi,2022-07,50
+ Dundgovi,2022-06,48
+ Dundgovi,2022-05,70
+ Dundgovi,2022-04,53
+ Dundgovi,2022-03,53
+ Dundgovi,2022-02,48
+ Dundgovi,2022-01,56
+ Dundgovi,2021-12,66
+ Dundgovi,2021-11,64
+ Dundgovi,2021-10,62
+ Dundgovi,2021-09,70
+ Dundgovi,2021-08,61
+ Dundgovi,2021-07,65
+ Dundgovi,2021-06,82
+ Dundgovi,2021-05,79
+ Dundgovi,2021-04,76
+ Dundgovi,2021-03,102
+ Dundgovi,2021-02,58
+ Dundgovi,2021-01,70
+ Dundgovi,2020-12,79
+ Dundgovi,2020-11,73
+ Dundgovi,2020-10,71
+ Dundgovi,2020-09,58
+ Dundgovi,2020-08,61
+ Dundgovi,2020-07,88
+ Dundgovi,2020-06,74
+ Dundgovi,2020-05,91
+ Dundgovi,2020-04,80
+ Dundgovi,2020-03,80
+ Dundgovi,2020-02,60
+ Dundgovi,2020-01,81
+ Dundgovi,2019-12,85
+ Dundgovi,2019-11,91
+ Dundgovi,2019-10,76
+ Dundgovi,2019-09,92
+ Dundgovi,2019-08,79
+ Dundgovi,2019-07,83
+ Dundgovi,2019-06,69
+ Dundgovi,2019-05,84
+ Dundgovi,2019-04,73
+ Dundgovi,2019-03,65
+ Dundgovi,2019-02,83
+ Dundgovi,2019-01,72
+ Dundgovi,2018-12,71
+ Dundgovi,2018-11,68
+ Dundgovi,2018-10,66
+ Dundgovi,2018-09,75
+ Dundgovi,2018-08,60
+ Dundgovi,2018-07,92
+ Dundgovi,2018-06,88
+ Dundgovi,2018-05,86
+ Dundgovi,2018-04,87
+ Dundgovi,2018-03,64
+ Dundgovi,2018-02,70
+ Dundgovi,2018-01,85
+ Dundgovi,2017-12,83
+ Dundgovi,2017-11,69
+ Dundgovi,2017-10,67
+ Dundgovi,2017-09,81
+ Dundgovi,2017-08,86
+ Dundgovi,2017-07,64
+ Dundgovi,2017-06,76
+ Dundgovi,2017-05,75
+ Dundgovi,2017-04,63
+ Dundgovi,2017-03,82
+ Dundgovi,2017-02,68
+ Dundgovi,2017-01,67
+ Dundgovi,2016-12,59
+ Dundgovi,2016-11,78
+ Dundgovi,2016-10,78
+ Dundgovi,2016-09,80
+ Dundgovi,2016-08,71
+ Dundgovi,2016-07,74
+ Dundgovi,2016-06,85
+ Dundgovi,2016-05,92
+ Dundgovi,2016-04,82
+ Dundgovi,2016-03,87
+ Dundgovi,2016-02,84
+ Dundgovi,2016-01,83
+ Umnugovi,2026-03,86
+ Umnugovi,2026-02,87
+ Umnugovi,2026-01,66
+ Umnugovi,2025-12,91
+ Umnugovi,2025-11,86
+ Umnugovi,2025-10,98
+ Umnugovi,2025-09,101
+ Umnugovi,2025-08,97
+ Umnugovi,2025-07,89
+ Umnugovi,2025-06,88
+ Umnugovi,2025-05,98
+ Umnugovi,2025-04,107
+ Umnugovi,2025-03,91
+ Umnugovi,2025-02,76
+ Umnugovi,2025-01,91
+ Umnugovi,2024-12,101
+ Umnugovi,2024-11,111
+ Umnugovi,2024-10,91
+ Umnugovi,2024-09,95
+ Umnugovi,2024-08,109
+ Umnugovi,2024-07,104
+ Umnugovi,2024-06,101
+ Umnugovi,2024-05,92
+ Umnugovi,2024-04,106
+ Umnugovi,2024-03,83
+ Umnugovi,2024-02,102
+ Umnugovi,2024-01,103
+ Umnugovi,2023-12,91
+ Umnugovi,2023-11,123
+ Umnugovi,2023-10,116
+ Umnugovi,2023-09,132
+ Umnugovi,2023-08,130
+ Umnugovi,2023-07,112
+ Umnugovi,2023-06,129
+ Umnugovi,2023-05,114
+ Umnugovi,2023-04,121
+ Umnugovi,2023-03,114
+ Umnugovi,2023-02,104
+ Umnugovi,2023-01,111
+ Umnugovi,2022-12,107
+ Umnugovi,2022-11,125
+ Umnugovi,2022-10,118
+ Umnugovi,2022-09,127
+ Umnugovi,2022-08,130
+ Umnugovi,2022-07,98
+ Umnugovi,2022-06,97
+ Umnugovi,2022-05,89
+ Umnugovi,2022-04,107
+ Umnugovi,2022-03,95
+ Umnugovi,2022-02,81
+ Umnugovi,2022-01,85
+ Umnugovi,2021-12,143
+ Umnugovi,2021-11,131
+ Umnugovi,2021-10,129
+ Umnugovi,2021-09,117
+ Umnugovi,2021-08,111
+ Umnugovi,2021-07,127
+ Umnugovi,2021-06,140
+ Umnugovi,2021-05,162
+ Umnugovi,2021-04,151
+ Umnugovi,2021-03,161
+ Umnugovi,2021-02,130
+ Umnugovi,2021-01,137
+ Umnugovi,2020-12,165
+ Umnugovi,2020-11,152
+ Umnugovi,2020-10,121
+ Umnugovi,2020-09,122
+ Umnugovi,2020-08,153
+ Umnugovi,2020-07,141
+ Umnugovi,2020-06,138
+ Umnugovi,2020-05,131
+ Umnugovi,2020-04,131
+ Umnugovi,2020-03,125
+ Umnugovi,2020-02,145
+ Umnugovi,2020-01,156
+ Umnugovi,2019-12,161
+ Umnugovi,2019-11,131
+ Umnugovi,2019-10,149
+ Umnugovi,2019-09,154
+ Umnugovi,2019-08,137
+ Umnugovi,2019-07,133
+ Umnugovi,2019-06,139
+ Umnugovi,2019-05,134
+ Umnugovi,2019-04,149
+ Umnugovi,2019-03,131
+ Umnugovi,2019-02,116
+ Umnugovi,2019-01,112
+ Umnugovi,2018-12,130
+ Umnugovi,2018-11,142
+ Umnugovi,2018-10,136
+ Umnugovi,2018-09,141
+ Umnugovi,2018-08,130
+ Umnugovi,2018-07,135
+ Umnugovi,2018-06,118
+ Umnugovi,2018-05,139
+ Umnugovi,2018-04,116
+ Umnugovi,2018-03,124
+ Umnugovi,2018-02,118
+ Umnugovi,2018-01,123
+ Umnugovi,2017-12,130
+ Umnugovi,2017-11,138
+ Umnugovi,2017-10,124
+ Umnugovi,2017-09,113
+ Umnugovi,2017-08,118
+ Umnugovi,2017-07,116
+ Umnugovi,2017-06,86
+ Umnugovi,2017-05,102
+ Umnugovi,2017-04,105
+ Umnugovi,2017-03,108
+ Umnugovi,2017-02,69
+ Umnugovi,2017-01,92
+ Umnugovi,2016-12,113
+ Umnugovi,2016-11,125
+ Umnugovi,2016-10,115
+ Umnugovi,2016-09,113
+ Umnugovi,2016-08,108
+ Umnugovi,2016-07,131
+ Umnugovi,2016-06,130
+ Umnugovi,2016-05,110
+ Umnugovi,2016-04,103
+ Umnugovi,2016-03,137
+ Umnugovi,2016-02,107
+ Umnugovi,2016-01,117
+ Selenge,2026-03,69
+ Selenge,2026-02,69
+ Selenge,2026-01,84
+ Selenge,2025-12,84
+ Selenge,2025-11,84
+ Selenge,2025-10,88
+ Selenge,2025-09,66
+ Selenge,2025-08,64
+ Selenge,2025-07,93
+ Selenge,2025-06,83
+ Selenge,2025-05,70
+ Selenge,2025-04,86
+ Selenge,2025-03,82
+ Selenge,2025-02,102
+ Selenge,2025-01,89
+ Selenge,2024-12,88
+ Selenge,2024-11,64
+ Selenge,2024-10,90
+ Selenge,2024-09,94
+ Selenge,2024-08,105
+ Selenge,2024-07,116
+ Selenge,2024-06,69
+ Selenge,2024-05,109
+ Selenge,2024-04,84
+ Selenge,2024-03,86
+ Selenge,2024-02,116
+ Selenge,2024-01,82
+ Selenge,2023-12,95
+ Selenge,2023-11,120
+ Selenge,2023-10,93
+ Selenge,2023-09,125
+ Selenge,2023-08,94
+ Selenge,2023-07,96
+ Selenge,2023-06,116
+ Selenge,2023-05,109
+ Selenge,2023-04,110
+ Selenge,2023-03,120
+ Selenge,2023-02,106
+ Selenge,2023-01,123
+ Selenge,2022-12,114
+ Selenge,2022-11,107
+ Selenge,2022-10,120
+ Selenge,2022-09,128
+ Selenge,2022-08,134
+ Selenge,2022-07,118
+ Selenge,2022-06,110
+ Selenge,2022-05,98
+ Selenge,2022-04,118
+ Selenge,2022-03,125
+ Selenge,2022-02,86
+ Selenge,2022-01,79
+ Selenge,2021-12,104
+ Selenge,2021-11,132
+ Selenge,2021-10,132
+ Selenge,2021-09,132
+ Selenge,2021-08,98
+ Selenge,2021-07,164
+ Selenge,2021-06,178
+ Selenge,2021-05,162
+ Selenge,2021-04,135
+ Selenge,2021-03,144
+ Selenge,2021-02,121
+ Selenge,2021-01,122
+ Selenge,2020-12,183
+ Selenge,2020-11,57
+ Selenge,2020-10,152
+ Selenge,2020-09,134
+ Selenge,2020-08,172
+ Selenge,2020-07,137
+ Selenge,2020-06,126
+ Selenge,2020-05,139
+ Selenge,2020-04,137
+ Selenge,2020-03,150
+ Selenge,2020-02,123
+ Selenge,2020-01,145
+ Selenge,2019-12,156
+ Selenge,2019-11,113
+ Selenge,2019-10,177
+ Selenge,2019-09,153
+ Selenge,2019-08,148
+ Selenge,2019-07,137
+ Selenge,2019-06,134
+ Selenge,2019-05,147
+ Selenge,2019-04,172
+ Selenge,2019-03,160
+ Selenge,2019-02,136
+ Selenge,2019-01,147
+ Selenge,2018-12,148
+ Selenge,2018-11,122
+ Selenge,2018-10,135
+ Selenge,2018-09,158
+ Selenge,2018-08,141
+ Selenge,2018-07,140
+ Selenge,2018-06,155
+ Selenge,2018-05,154
+ Selenge,2018-04,126
+ Selenge,2018-03,142
+ Selenge,2018-02,142
+ Selenge,2018-01,143
+ Selenge,2017-12,144
+ Selenge,2017-11,152
+ Selenge,2017-10,127
+ Selenge,2017-09,164
+ Selenge,2017-08,166
+ Selenge,2017-07,162
+ Selenge,2017-06,132
+ Selenge,2017-05,154
+ Selenge,2017-04,127
+ Selenge,2017-03,181
+ Selenge,2017-02,91
+ Selenge,2017-01,120
+ Selenge,2016-12,122
+ Selenge,2016-11,149
+ Selenge,2016-10,125
+ Selenge,2016-09,185
+ Selenge,2016-08,179
+ Selenge,2016-07,157
+ Selenge,2016-06,147
+ Selenge,2016-05,160
+ Selenge,2016-04,141
+ Selenge,2016-03,171
+ Selenge,2016-02,147
+ Selenge,2016-01,153
+ Tuv,2026-03,46
+ Tuv,2026-02,40
+ Tuv,2026-01,50
+ Tuv,2025-12,50
+ Tuv,2025-11,48
+ Tuv,2025-10,63
+ Tuv,2025-09,69
+ Tuv,2025-08,57
+ Tuv,2025-07,68
+ Tuv,2025-06,44
+ Tuv,2025-05,51
+ Tuv,2025-04,45
+ Tuv,2025-03,69
+ Tuv,2025-02,43
+ Tuv,2025-01,59
+ Tuv,2024-12,67
+ Tuv,2024-11,45
+ Tuv,2024-10,72
+ Tuv,2024-09,66
+ Tuv,2024-08,65
+ Tuv,2024-07,58
+ Tuv,2024-06,60
+ Tuv,2024-05,71
+ Tuv,2024-04,55
+ Tuv,2024-03,64
+ Tuv,2024-02,65
+ Tuv,2024-01,62
+ Tuv,2023-12,53
+ Tuv,2023-11,54
+ Tuv,2023-10,53
+ Tuv,2023-09,56
+ Tuv,2023-08,66
+ Tuv,2023-07,66
+ Tuv,2023-06,59
+ Tuv,2023-05,77
+ Tuv,2023-04,86
+ Tuv,2023-03,83
+ Tuv,2023-02,71
+ Tuv,2023-01,66
+ Tuv,2022-12,60
+ Tuv,2022-11,76
+ Tuv,2022-10,75
+ Tuv,2022-09,54
+ Tuv,2022-08,77
+ Tuv,2022-07,55
+ Tuv,2022-06,81
+ Tuv,2022-05,83
+ Tuv,2022-04,55
+ Tuv,2022-03,69
+ Tuv,2022-02,62
+ Tuv,2022-01,53
+ Tuv,2021-12,85
+ Tuv,2021-11,88
+ Tuv,2021-10,89
+ Tuv,2021-09,100
+ Tuv,2021-08,86
+ Tuv,2021-07,103
+ Tuv,2021-06,79
+ Tuv,2021-05,102
+ Tuv,2021-04,89
+ Tuv,2021-03,105
+ Tuv,2021-02,96
+ Tuv,2021-01,107
+ Tuv,2020-12,91
+ Tuv,2020-11,84
+ Tuv,2020-10,69
+ Tuv,2020-09,88
+ Tuv,2020-08,77
+ Tuv,2020-07,106
+ Tuv,2020-06,101
+ Tuv,2020-05,108
+ Tuv,2020-04,83
+ Tuv,2020-03,80
+ Tuv,2020-02,101
+ Tuv,2020-01,86
+ Tuv,2019-12,99
+ Tuv,2019-11,72
+ Tuv,2019-10,110
+ Tuv,2019-09,85
+ Tuv,2019-08,101
+ Tuv,2019-07,107
+ Tuv,2019-06,78
+ Tuv,2019-05,106
+ Tuv,2019-04,94
+ Tuv,2019-03,70
+ Tuv,2019-02,81
+ Tuv,2019-01,99
+ Tuv,2018-12,98
+ Tuv,2018-11,97
+ Tuv,2018-10,80
+ Tuv,2018-09,97
+ Tuv,2018-08,107
+ Tuv,2018-07,94
+ Tuv,2018-06,88
+ Tuv,2018-05,78
+ Tuv,2018-04,109
+ Tuv,2018-03,97
+ Tuv,2018-02,90
+ Tuv,2018-01,112
+ Tuv,2017-12,97
+ Tuv,2017-11,95
+ Tuv,2017-10,111
+ Tuv,2017-09,78
+ Tuv,2017-08,100
+ Tuv,2017-07,105
+ Tuv,2017-06,100
+ Tuv,2017-05,111
+ Tuv,2017-04,115
+ Tuv,2017-03,100
+ Tuv,2017-02,83
+ Tuv,2017-01,102
+ Tuv,2016-12,97
+ Tuv,2016-11,106
+ Tuv,2016-10,87
+ Tuv,2016-09,82
+ Tuv,2016-08,105
+ Tuv,2016-07,130
+ Tuv,2016-06,92
+ Tuv,2016-05,117
+ Tuv,2016-04,108
+ Tuv,2016-03,96
+ Tuv,2016-02,84
+ Tuv,2016-01,114
+ Eastern region,2026-03,248
+ Eastern region,2026-02,259
+ Eastern region,2026-01,245
+ Eastern region,2025-12,248
+ Eastern region,2025-11,240
+ Eastern region,2025-10,260
+ Eastern region,2025-09,253
+ Eastern region,2025-08,237
+ Eastern region,2025-07,257
+ Eastern region,2025-06,241
+ Eastern region,2025-05,256
+ Eastern region,2025-04,265
+ Eastern region,2025-03,268
+ Eastern region,2025-02,224
+ Eastern region,2025-01,296
+ Eastern region,2024-12,234
+ Eastern region,2024-11,287
+ Eastern region,2024-10,272
+ Eastern region,2024-09,257
+ Eastern region,2024-08,282
+ Eastern region,2024-07,269
+ Eastern region,2024-06,292
+ Eastern region,2024-05,287
+ Eastern region,2024-04,300
+ Eastern region,2024-03,292
+ Eastern region,2024-02,287
+ Eastern region,2024-01,293
+ Eastern region,2023-12,317
+ Eastern region,2023-11,294
+ Eastern region,2023-10,328
+ Eastern region,2023-09,308
+ Eastern region,2023-08,339
+ Eastern region,2023-07,369
+ Eastern region,2023-06,324
+ Eastern region,2023-05,333
+ Eastern region,2023-04,367
+ Eastern region,2023-03,375
+ Eastern region,2023-02,329
+ Eastern region,2023-01,331
+ Eastern region,2022-12,378
+ Eastern region,2022-11,332
+ Eastern region,2022-10,365
+ Eastern region,2022-09,357
+ Eastern region,2022-08,393
+ Eastern region,2022-07,325
+ Eastern region,2022-06,311
+ Eastern region,2022-05,332
+ Eastern region,2022-04,348
+ Eastern region,2022-03,308
+ Eastern region,2022-02,265
+ Eastern region,2022-01,282
+ Eastern region,2021-12,352
+ Eastern region,2021-11,357
+ Eastern region,2021-10,384
+ Eastern region,2021-09,401
+ Eastern region,2021-08,349
+ Eastern region,2021-07,424
+ Eastern region,2021-06,422
+ Eastern region,2021-05,409
+ Eastern region,2021-04,415
+ Eastern region,2021-03,430
+ Eastern region,2021-02,379
+ Eastern region,2021-01,368
+ Eastern region,2020-12,399
+ Eastern region,2020-11,412
+ Eastern region,2020-10,424
+ Eastern region,2020-09,387
+ Eastern region,2020-08,410
+ Eastern region,2020-07,411
+ Eastern region,2020-06,406
+ Eastern region,2020-05,399
+ Eastern region,2020-04,402
+ Eastern region,2020-03,493
+ Eastern region,2020-02,355
+ Eastern region,2020-01,431
+ Eastern region,2019-12,375
+ Eastern region,2019-11,376
+ Eastern region,2019-10,398
+ Eastern region,2019-09,405
+ Eastern region,2019-08,373
+ Eastern region,2019-07,449
+ Eastern region,2019-06,405
+ Eastern region,2019-05,425
+ Eastern region,2019-04,429
+ Eastern region,2019-03,395
+ Eastern region,2019-02,392
+ Eastern region,2019-01,363
+ Eastern region,2018-12,421
+ Eastern region,2018-11,385
+ Eastern region,2018-10,389
+ Eastern region,2018-09,371
+ Eastern region,2018-08,387
+ Eastern region,2018-07,407
+ Eastern region,2018-06,393
+ Eastern region,2018-05,413
+ Eastern region,2018-04,420
+ Eastern region,2018-03,415
+ Eastern region,2018-02,332
+ Eastern region,2018-01,391
+ Eastern region,2017-12,402
+ Eastern region,2017-11,440
+ Eastern region,2017-10,418
+ Eastern region,2017-09,374
+ Eastern region,2017-08,377
+ Eastern region,2017-07,430
+ Eastern region,2017-06,380
+ Eastern region,2017-05,388
+ Eastern region,2017-04,394
+ Eastern region,2017-03,393
+ Eastern region,2017-02,295
+ Eastern region,2017-01,364
+ Eastern region,2016-12,394
+ Eastern region,2016-11,382
+ Eastern region,2016-10,380
+ Eastern region,2016-09,406
+ Eastern region,2016-08,452
+ Eastern region,2016-07,446
+ Eastern region,2016-06,462
+ Eastern region,2016-05,407
+ Eastern region,2016-04,397
+ Eastern region,2016-03,450
+ Eastern region,2016-02,392
+ Eastern region,2016-01,408
+ Dornod,2026-03,102
+ Dornod,2026-02,102
+ Dornod,2026-01,97
+ Dornod,2025-12,100
+ Dornod,2025-11,109
+ Dornod,2025-10,100
+ Dornod,2025-09,109
+ Dornod,2025-08,101
+ Dornod,2025-07,95
+ Dornod,2025-06,110
+ Dornod,2025-05,112
+ Dornod,2025-04,99
+ Dornod,2025-03,95
+ Dornod,2025-02,96
+ Dornod,2025-01,125
+ Dornod,2024-12,87
+ Dornod,2024-11,133
+ Dornod,2024-10,113
+ Dornod,2024-09,116
+ Dornod,2024-08,126
+ Dornod,2024-07,104
+ Dornod,2024-06,119
+ Dornod,2024-05,110
+ Dornod,2024-04,128
+ Dornod,2024-03,120
+ Dornod,2024-02,83
+ Dornod,2024-01,117
+ Dornod,2023-12,117
+ Dornod,2023-11,115
+ Dornod,2023-10,130
+ Dornod,2023-09,116
+ Dornod,2023-08,122
+ Dornod,2023-07,146
+ Dornod,2023-06,123
+ Dornod,2023-05,122
+ Dornod,2023-04,135
+ Dornod,2023-03,132
+ Dornod,2023-02,122
+ Dornod,2023-01,134
+ Dornod,2022-12,151
+ Dornod,2022-11,141
+ Dornod,2022-10,150
+ Dornod,2022-09,140
+ Dornod,2022-08,165
+ Dornod,2022-07,130
+ Dornod,2022-06,109
+ Dornod,2022-05,120
+ Dornod,2022-04,134
+ Dornod,2022-03,128
+ Dornod,2022-02,99
+ Dornod,2022-01,121
+ Dornod,2021-12,153
+ Dornod,2021-11,136
+ Dornod,2021-10,144
+ Dornod,2021-09,159
+ Dornod,2021-08,132
+ Dornod,2021-07,158
+ Dornod,2021-06,164
+ Dornod,2021-05,162
+ Dornod,2021-04,144
+ Dornod,2021-03,154
+ Dornod,2021-02,136
+ Dornod,2021-01,148
+ Dornod,2020-12,158
+ Dornod,2020-11,161
+ Dornod,2020-10,162
+ Dornod,2020-09,184
+ Dornod,2020-08,160
+ Dornod,2020-07,165
+ Dornod,2020-06,165
+ Dornod,2020-05,153
+ Dornod,2020-04,156
+ Dornod,2020-03,214
+ Dornod,2020-02,148
+ Dornod,2020-01,179
+ Dornod,2019-12,160
+ Dornod,2019-11,150
+ Dornod,2019-10,160
+ Dornod,2019-09,166
+ Dornod,2019-08,158
+ Dornod,2019-07,180
+ Dornod,2019-06,153
+ Dornod,2019-05,168
+ Dornod,2019-04,154
+ Dornod,2019-03,179
+ Dornod,2019-02,151
+ Dornod,2019-01,148
+ Dornod,2018-12,181
+ Dornod,2018-11,155
+ Dornod,2018-10,175
+ Dornod,2018-09,150
+ Dornod,2018-08,155
+ Dornod,2018-07,175
+ Dornod,2018-06,148
+ Dornod,2018-05,176
+ Dornod,2018-04,162
+ Dornod,2018-03,172
+ Dornod,2018-02,140
+ Dornod,2018-01,168
+ Dornod,2017-12,160
+ Dornod,2017-11,170
+ Dornod,2017-10,174
+ Dornod,2017-09,161
+ Dornod,2017-08,162
+ Dornod,2017-07,190
+ Dornod,2017-06,158
+ Dornod,2017-05,141
+ Dornod,2017-04,161
+ Dornod,2017-03,181
+ Dornod,2017-02,126
+ Dornod,2017-01,150
+ Dornod,2016-12,155
+ Dornod,2016-11,152
+ Dornod,2016-10,183
+ Dornod,2016-09,172
+ Dornod,2016-08,201
+ Dornod,2016-07,170
+ Dornod,2016-06,192
+ Dornod,2016-05,182
+ Dornod,2016-04,156
+ Dornod,2016-03,188
+ Dornod,2016-02,166
+ Dornod,2016-01,159
+ Sukhbaatar,2026-03,72
+ Sukhbaatar,2026-02,70
+ Sukhbaatar,2026-01,84
+ Sukhbaatar,2025-12,66
+ Sukhbaatar,2025-11,55
+ Sukhbaatar,2025-10,84
+ Sukhbaatar,2025-09,54
+ Sukhbaatar,2025-08,62
+ Sukhbaatar,2025-07,71
+ Sukhbaatar,2025-06,60
+ Sukhbaatar,2025-05,59
+ Sukhbaatar,2025-04,78
+ Sukhbaatar,2025-03,76
+ Sukhbaatar,2025-02,60
+ Sukhbaatar,2025-01,89
+ Sukhbaatar,2024-12,70
+ Sukhbaatar,2024-11,60
+ Sukhbaatar,2024-10,84
+ Sukhbaatar,2024-09,62
+ Sukhbaatar,2024-08,65
+ Sukhbaatar,2024-07,85
+ Sukhbaatar,2024-06,78
+ Sukhbaatar,2024-05,87
+ Sukhbaatar,2024-04,83
+ Sukhbaatar,2024-03,82
+ Sukhbaatar,2024-02,99
+ Sukhbaatar,2024-01,100
+ Sukhbaatar,2023-12,97
+ Sukhbaatar,2023-11,102
+ Sukhbaatar,2023-10,78
+ Sukhbaatar,2023-09,84
+ Sukhbaatar,2023-08,105
+ Sukhbaatar,2023-07,107
+ Sukhbaatar,2023-06,95
+ Sukhbaatar,2023-05,109
+ Sukhbaatar,2023-04,121
+ Sukhbaatar,2023-03,116
+ Sukhbaatar,2023-02,94
+ Sukhbaatar,2023-01,105
+ Sukhbaatar,2022-12,116
+ Sukhbaatar,2022-11,93
+ Sukhbaatar,2022-10,92
+ Sukhbaatar,2022-09,99
+ Sukhbaatar,2022-08,117
+ Sukhbaatar,2022-07,88
+ Sukhbaatar,2022-06,95
+ Sukhbaatar,2022-05,94
+ Sukhbaatar,2022-04,86
+ Sukhbaatar,2022-03,79
+ Sukhbaatar,2022-02,72
+ Sukhbaatar,2022-01,79
+ Sukhbaatar,2021-12,97
+ Sukhbaatar,2021-11,92
+ Sukhbaatar,2021-10,121
+ Sukhbaatar,2021-09,132
+ Sukhbaatar,2021-08,100
+ Sukhbaatar,2021-07,125
+ Sukhbaatar,2021-06,124
+ Sukhbaatar,2021-05,106
+ Sukhbaatar,2021-04,123
+ Sukhbaatar,2021-03,123
+ Sukhbaatar,2021-02,121
+ Sukhbaatar,2021-01,112
+ Sukhbaatar,2020-12,109
+ Sukhbaatar,2020-11,118
+ Sukhbaatar,2020-10,131
+ Sukhbaatar,2020-09,104
+ Sukhbaatar,2020-08,103
+ Sukhbaatar,2020-07,124
+ Sukhbaatar,2020-06,116
+ Sukhbaatar,2020-05,111
+ Sukhbaatar,2020-04,102
+ Sukhbaatar,2020-03,122
+ Sukhbaatar,2020-02,87
+ Sukhbaatar,2020-01,118
+ Sukhbaatar,2019-12,86
+ Sukhbaatar,2019-11,101
+ Sukhbaatar,2019-10,110
+ Sukhbaatar,2019-09,104
+ Sukhbaatar,2019-08,106
+ Sukhbaatar,2019-07,136
+ Sukhbaatar,2019-06,119
+ Sukhbaatar,2019-05,118
+ Sukhbaatar,2019-04,131
+ Sukhbaatar,2019-03,89
+ Sukhbaatar,2019-02,104
+ Sukhbaatar,2019-01,87
+ Sukhbaatar,2018-12,119
+ Sukhbaatar,2018-11,102
+ Sukhbaatar,2018-10,102
+ Sukhbaatar,2018-09,91
+ Sukhbaatar,2018-08,100
+ Sukhbaatar,2018-07,114
+ Sukhbaatar,2018-06,123
+ Sukhbaatar,2018-05,108
+ Sukhbaatar,2018-04,136
+ Sukhbaatar,2018-03,130
+ Sukhbaatar,2018-02,87
+ Sukhbaatar,2018-01,95
+ Sukhbaatar,2017-12,115
+ Sukhbaatar,2017-11,142
+ Sukhbaatar,2017-10,120
+ Sukhbaatar,2017-09,96
+ Sukhbaatar,2017-08,109
+ Sukhbaatar,2017-07,104
+ Sukhbaatar,2017-06,94
+ Sukhbaatar,2017-05,105
+ Sukhbaatar,2017-04,109
+ Sukhbaatar,2017-03,109
+ Sukhbaatar,2017-02,68
+ Sukhbaatar,2017-01,104
+ Sukhbaatar,2016-12,95
+ Sukhbaatar,2016-11,99
+ Sukhbaatar,2016-10,95
+ Sukhbaatar,2016-09,100
+ Sukhbaatar,2016-08,114
+ Sukhbaatar,2016-07,120
+ Sukhbaatar,2016-06,109
+ Sukhbaatar,2016-05,84
+ Sukhbaatar,2016-04,102
+ Sukhbaatar,2016-03,134
+ Sukhbaatar,2016-02,90
+ Sukhbaatar,2016-01,120
+ Khentii,2026-03,74
+ Khentii,2026-02,87
+ Khentii,2026-01,64
+ Khentii,2025-12,82
+ Khentii,2025-11,76
+ Khentii,2025-10,76
+ Khentii,2025-09,90
+ Khentii,2025-08,74
+ Khentii,2025-07,91
+ Khentii,2025-06,71
+ Khentii,2025-05,85
+ Khentii,2025-04,88
+ Khentii,2025-03,97
+ Khentii,2025-02,68
+ Khentii,2025-01,82
+ Khentii,2024-12,77
+ Khentii,2024-11,94
+ Khentii,2024-10,75
+ Khentii,2024-09,79
+ Khentii,2024-08,91
+ Khentii,2024-07,80
+ Khentii,2024-06,95
+ Khentii,2024-05,90
+ Khentii,2024-04,89
+ Khentii,2024-03,90
+ Khentii,2024-02,105
+ Khentii,2024-01,76
+ Khentii,2023-12,103
+ Khentii,2023-11,77
+ Khentii,2023-10,120
+ Khentii,2023-09,108
+ Khentii,2023-08,112
+ Khentii,2023-07,116
+ Khentii,2023-06,106
+ Khentii,2023-05,102
+ Khentii,2023-04,111
+ Khentii,2023-03,127
+ Khentii,2023-02,113
+ Khentii,2023-01,92
+ Khentii,2022-12,111
+ Khentii,2022-11,98
+ Khentii,2022-10,123
+ Khentii,2022-09,118
+ Khentii,2022-08,111
+ Khentii,2022-07,107
+ Khentii,2022-06,107
+ Khentii,2022-05,118
+ Khentii,2022-04,128
+ Khentii,2022-03,101
+ Khentii,2022-02,94
+ Khentii,2022-01,82
+ Khentii,2021-12,102
+ Khentii,2021-11,129
+ Khentii,2021-10,119
+ Khentii,2021-09,110
+ Khentii,2021-08,117
+ Khentii,2021-07,141
+ Khentii,2021-06,134
+ Khentii,2021-05,141
+ Khentii,2021-04,148
+ Khentii,2021-03,153
+ Khentii,2021-02,122
+ Khentii,2021-01,108
+ Khentii,2020-12,132
+ Khentii,2020-11,133
+ Khentii,2020-10,131
+ Khentii,2020-09,99
+ Khentii,2020-08,147
+ Khentii,2020-07,122
+ Khentii,2020-06,125
+ Khentii,2020-05,135
+ Khentii,2020-04,144
+ Khentii,2020-03,157
+ Khentii,2020-02,120
+ Khentii,2020-01,134
+ Khentii,2019-12,129
+ Khentii,2019-11,125
+ Khentii,2019-10,128
+ Khentii,2019-09,135
+ Khentii,2019-08,109
+ Khentii,2019-07,133
+ Khentii,2019-06,133
+ Khentii,2019-05,139
+ Khentii,2019-04,144
+ Khentii,2019-03,127
+ Khentii,2019-02,137
+ Khentii,2019-01,128
+ Khentii,2018-12,121
+ Khentii,2018-11,128
+ Khentii,2018-10,112
+ Khentii,2018-09,130
+ Khentii,2018-08,132
+ Khentii,2018-07,118
+ Khentii,2018-06,122
+ Khentii,2018-05,129
+ Khentii,2018-04,122
+ Khentii,2018-03,113
+ Khentii,2018-02,105
+ Khentii,2018-01,128
+ Khentii,2017-12,127
+ Khentii,2017-11,128
+ Khentii,2017-10,124
+ Khentii,2017-09,117
+ Khentii,2017-08,106
+ Khentii,2017-07,136
+ Khentii,2017-06,128
+ Khentii,2017-05,142
+ Khentii,2017-04,124
+ Khentii,2017-03,103
+ Khentii,2017-02,101
+ Khentii,2017-01,110
+ Khentii,2016-12,144
+ Khentii,2016-11,131
+ Khentii,2016-10,102
+ Khentii,2016-09,134
+ Khentii,2016-08,137
+ Khentii,2016-07,156
+ Khentii,2016-06,161
+ Khentii,2016-05,141
+ Khentii,2016-04,139
+ Khentii,2016-03,128
+ Khentii,2016-02,136
+ Khentii,2016-01,129
+ Ulaanbaatar,2026-03,2119
+ Ulaanbaatar,2026-02,2668
+ Ulaanbaatar,2026-01,2343
+ Ulaanbaatar,2025-12,2451
+ Ulaanbaatar,2025-11,2494
+ Ulaanbaatar,2025-10,2500
+ Ulaanbaatar,2025-09,2489
+ Ulaanbaatar,2025-08,2518
+ Ulaanbaatar,2025-07,2571
+ Ulaanbaatar,2025-06,2435
+ Ulaanbaatar,2025-05,2556
+ Ulaanbaatar,2025-04,2461
+ Ulaanbaatar,2025-03,2439
+ Ulaanbaatar,2025-02,2285
+ Ulaanbaatar,2025-01,2472
+ Ulaanbaatar,2024-12,2600
+ Ulaanbaatar,2024-11,2647
+ Ulaanbaatar,2024-10,2634
+ Ulaanbaatar,2024-09,2594
+ Ulaanbaatar,2024-08,2607
+ Ulaanbaatar,2024-07,2705
+ Ulaanbaatar,2024-06,2523
+ Ulaanbaatar,2024-05,2763
+ Ulaanbaatar,2024-04,2647
+ Ulaanbaatar,2024-03,2649
+ Ulaanbaatar,2024-02,2521
+ Ulaanbaatar,2024-01,2530
+ Ulaanbaatar,2023-12,2734
+ Ulaanbaatar,2023-11,2902
+ Ulaanbaatar,2023-10,2676
+ Ulaanbaatar,2023-09,2666
+ Ulaanbaatar,2023-08,2849
+ Ulaanbaatar,2023-07,2951
+ Ulaanbaatar,2023-06,2881
+ Ulaanbaatar,2023-05,3059
+ Ulaanbaatar,2023-04,2945
+ Ulaanbaatar,2023-03,3080
+ Ulaanbaatar,2023-02,2590
+ Ulaanbaatar,2023-01,2965
+ Ulaanbaatar,2022-12,3187
+ Ulaanbaatar,2022-11,2914
+ Ulaanbaatar,2022-10,3202
+ Ulaanbaatar,2022-09,3265
+ Ulaanbaatar,2022-08,3197
+ Ulaanbaatar,2022-07,3170
+ Ulaanbaatar,2022-06,2976
+ Ulaanbaatar,2022-05,3087
+ Ulaanbaatar,2022-04,2926
+ Ulaanbaatar,2022-03,3127
+ Ulaanbaatar,2022-02,1934
+ Ulaanbaatar,2022-01,2212
+ Ulaanbaatar,2021-12,2679
+ Ulaanbaatar,2021-11,2852
+ Ulaanbaatar,2021-10,3036
+ Ulaanbaatar,2021-09,3098
+ Ulaanbaatar,2021-08,2972
+ Ulaanbaatar,2021-07,3224
+ Ulaanbaatar,2021-06,3270
+ Ulaanbaatar,2021-05,3115
+ Ulaanbaatar,2021-04,3178
+ Ulaanbaatar,2021-03,3145
+ Ulaanbaatar,2021-02,2840
+ Ulaanbaatar,2021-01,3007
+ Ulaanbaatar,2020-12,3225
+ Ulaanbaatar,2020-11,3227
+ Ulaanbaatar,2020-10,3417
+ Ulaanbaatar,2020-09,3202
+ Ulaanbaatar,2020-08,3422
+ Ulaanbaatar,2020-07,3559
+ Ulaanbaatar,2020-06,3248
+ Ulaanbaatar,2020-05,3442
+ Ulaanbaatar,2020-04,3367
+ Ulaanbaatar,2020-03,3416
+ Ulaanbaatar,2020-02,2989
+ Ulaanbaatar,2020-01,3265
+ Ulaanbaatar,2019-12,3520
+ Ulaanbaatar,2019-11,3426
+ Ulaanbaatar,2019-10,3504
+ Ulaanbaatar,2019-09,3490
+ Ulaanbaatar,2019-08,3441
+ Ulaanbaatar,2019-07,3586
+ Ulaanbaatar,2019-06,3375
+ Ulaanbaatar,2019-05,3737
+ Ulaanbaatar,2019-04,3500
+ Ulaanbaatar,2019-03,3452
+ Ulaanbaatar,2019-02,3066
+ Ulaanbaatar,2019-01,3109
+ Ulaanbaatar,2018-12,3472
+ Ulaanbaatar,2018-11,3407
+ Ulaanbaatar,2018-10,3511
+ Ulaanbaatar,2018-09,3336
+ Ulaanbaatar,2018-08,3564
+ Ulaanbaatar,2018-07,3371
+ Ulaanbaatar,2018-06,3438
+ Ulaanbaatar,2018-05,3454
+ Ulaanbaatar,2018-04,3531
+ Ulaanbaatar,2018-03,3492
+ Ulaanbaatar,2018-02,2966
+ Ulaanbaatar,2018-01,3161
+ Ulaanbaatar,2017-12,3492
+ Ulaanbaatar,2017-11,3346
+ Ulaanbaatar,2017-10,3393
+ Ulaanbaatar,2017-09,3187
+ Ulaanbaatar,2017-08,3276
+ Ulaanbaatar,2017-07,3401
+ Ulaanbaatar,2017-06,3340
+ Ulaanbaatar,2017-05,3288
+ Ulaanbaatar,2017-04,3183
+ Ulaanbaatar,2017-03,3247
+ Ulaanbaatar,2017-02,2428
+ Ulaanbaatar,2017-01,2823
+ Ulaanbaatar,2016-12,3221
+ Ulaanbaatar,2016-11,3222
+ Ulaanbaatar,2016-10,3566
+ Ulaanbaatar,2016-09,3421
+ Ulaanbaatar,2016-08,3556
+ Ulaanbaatar,2016-07,3696
+ Ulaanbaatar,2016-06,3450
+ Ulaanbaatar,2016-05,3546
+ Ulaanbaatar,2016-04,3229
+ Ulaanbaatar,2016-03,3401
+ Ulaanbaatar,2016-02,3158
+ Ulaanbaatar,2016-01,3221

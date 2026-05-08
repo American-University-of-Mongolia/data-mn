@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "2016 оны 1-р сараас 2026 оны 3-р сар хүртэлх Монгол Улсын сар бүрийн амьд төрөлт.",
+  "data": {
+    "url": "/datasets/nso-live-births-monthly-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "temporal",
+      "title": "Сар",
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "births",
+      "type": "quantitative",
+      "title": "Амьд төрөлт",
+      "axis": {"format": ",.0f"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "line": {"color": "#4c78a8", "strokeWidth": 2.5},
+        "color": {
+          "x1": 1, "y1": 1, "x2": 1, "y2": 0,
+          "gradient": "linear",
+          "stops": [
+            {"offset": 0, "color": "rgba(31,119,180,0.02)"},
+            {"offset": 1, "color": "rgba(31,119,180,0.35)"}
+          ]
+        },
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [{"name": "hover", "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}}],
+      "mark": {"type": "point", "filled": true, "color": "#4c78a8", "size": 100},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "month", "title": "Сар", "type": "temporal", "format": "%Y-%m"},
+          {"field": "births", "title": "Амьд төрөлт", "type": "quantitative", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {"stroke": "transparent"},
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

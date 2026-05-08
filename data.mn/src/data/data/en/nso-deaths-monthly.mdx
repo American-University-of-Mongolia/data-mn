@@ -1,0 +1,32 @@
+---
+title: "Mongolia Deaths (2016–2026)"
+publishDate: 2026-05-08
+dataVersion: 1
+dataDate: 2026-03-31
+excerpt: "Monthly death counts for Mongolia from January 2016 to March 2026, including winter mortality spikes, sourced from the National Statistics Office."
+category: "Demographics"
+tags: ["mongolia", "demographics", "deaths", "mortality", "vital-statistics"]
+keywords: ["mongolia deaths monthly", "mongolia mortality data", "vital statistics mongolia", "nso death data"]
+dataFiles:
+  - path: "/datasets/nso-deaths-monthly-en.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "Download as CSV"
+  - path: "/datasets/nso-deaths-monthly.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2100_027V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Monthly death counts for Mongolia from January 2016 to March 2026, including winter mortality spikes, sourced from the National Statistics Office.
+
+<VegaChart
+  spec="/charts/nso-deaths-monthly-en.json"
+  title="Mongolia Deaths (2016–2026)"
+/>

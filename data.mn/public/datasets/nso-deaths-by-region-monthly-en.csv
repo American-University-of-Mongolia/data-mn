@@ -1,0 +1,616 @@
+region,month,deaths
+Central region,2016-01,223
+Eastern region,2016-01,91
+Khangai region,2016-01,260
+Ulaanbaatar,2016-01,576
+Western region,2016-01,167
+Central region,2016-02,233
+Eastern region,2016-02,101
+Khangai region,2016-02,297
+Ulaanbaatar,2016-02,582
+Western region,2016-02,159
+Central region,2016-03,201
+Eastern region,2016-03,115
+Khangai region,2016-03,304
+Ulaanbaatar,2016-03,640
+Western region,2016-03,197
+Central region,2016-04,219
+Eastern region,2016-04,99
+Khangai region,2016-04,293
+Ulaanbaatar,2016-04,617
+Western region,2016-04,183
+Central region,2016-05,217
+Eastern region,2016-05,112
+Khangai region,2016-05,295
+Ulaanbaatar,2016-05,617
+Western region,2016-05,200
+Central region,2016-06,208
+Eastern region,2016-06,106
+Khangai region,2016-06,250
+Ulaanbaatar,2016-06,549
+Western region,2016-06,184
+Central region,2016-07,236
+Eastern region,2016-07,100
+Khangai region,2016-07,275
+Ulaanbaatar,2016-07,557
+Western region,2016-07,173
+Central region,2016-08,204
+Eastern region,2016-08,105
+Khangai region,2016-08,283
+Ulaanbaatar,2016-08,599
+Western region,2016-08,164
+Central region,2016-09,203
+Eastern region,2016-09,93
+Khangai region,2016-09,268
+Ulaanbaatar,2016-09,593
+Western region,2016-09,144
+Central region,2016-10,206
+Eastern region,2016-10,98
+Khangai region,2016-10,234
+Ulaanbaatar,2016-10,575
+Western region,2016-10,142
+Central region,2016-11,238
+Eastern region,2016-11,101
+Khangai region,2016-11,252
+Ulaanbaatar,2016-11,588
+Western region,2016-11,169
+Central region,2016-12,198
+Eastern region,2016-12,90
+Khangai region,2016-12,247
+Ulaanbaatar,2016-12,583
+Western region,2016-12,168
+Central region,2017-01,190
+Eastern region,2017-01,90
+Khangai region,2017-01,242
+Ulaanbaatar,2017-01,687
+Western region,2017-01,148
+Central region,2017-02,170
+Eastern region,2017-02,75
+Khangai region,2017-02,199
+Ulaanbaatar,2017-02,499
+Western region,2017-02,169
+Central region,2017-03,238
+Eastern region,2017-03,86
+Khangai region,2017-03,285
+Ulaanbaatar,2017-03,636
+Western region,2017-03,183
+Central region,2017-04,180
+Eastern region,2017-04,88
+Khangai region,2017-04,244
+Ulaanbaatar,2017-04,550
+Western region,2017-04,144
+Central region,2017-05,218
+Eastern region,2017-05,93
+Khangai region,2017-05,250
+Ulaanbaatar,2017-05,625
+Western region,2017-05,176
+Central region,2017-06,203
+Eastern region,2017-06,97
+Khangai region,2017-06,253
+Ulaanbaatar,2017-06,572
+Western region,2017-06,155
+Central region,2017-07,198
+Eastern region,2017-07,97
+Khangai region,2017-07,275
+Ulaanbaatar,2017-07,551
+Western region,2017-07,158
+Central region,2017-08,193
+Eastern region,2017-08,97
+Khangai region,2017-08,271
+Ulaanbaatar,2017-08,618
+Western region,2017-08,168
+Central region,2017-09,211
+Eastern region,2017-09,105
+Khangai region,2017-09,299
+Ulaanbaatar,2017-09,595
+Western region,2017-09,150
+Central region,2017-10,224
+Eastern region,2017-10,83
+Khangai region,2017-10,293
+Ulaanbaatar,2017-10,603
+Western region,2017-10,175
+Central region,2017-11,208
+Eastern region,2017-11,81
+Khangai region,2017-11,234
+Ulaanbaatar,2017-11,606
+Western region,2017-11,163
+Central region,2017-12,195
+Eastern region,2017-12,105
+Khangai region,2017-12,271
+Ulaanbaatar,2017-12,665
+Western region,2017-12,175
+Central region,2018-01,216
+Eastern region,2018-01,100
+Khangai region,2018-01,269
+Ulaanbaatar,2018-01,726
+Western region,2018-01,175
+Central region,2018-02,225
+Eastern region,2018-02,94
+Khangai region,2018-02,284
+Ulaanbaatar,2018-02,595
+Western region,2018-02,172
+Central region,2018-03,207
+Eastern region,2018-03,101
+Khangai region,2018-03,298
+Ulaanbaatar,2018-03,673
+Western region,2018-03,207
+Central region,2018-04,226
+Eastern region,2018-04,93
+Khangai region,2018-04,275
+Ulaanbaatar,2018-04,615
+Western region,2018-04,166
+Central region,2018-05,227
+Eastern region,2018-05,77
+Khangai region,2018-05,280
+Ulaanbaatar,2018-05,685
+Western region,2018-05,163
+Central region,2018-06,195
+Eastern region,2018-06,105
+Khangai region,2018-06,267
+Ulaanbaatar,2018-06,638
+Western region,2018-06,162
+Central region,2018-07,245
+Eastern region,2018-07,117
+Khangai region,2018-07,290
+Ulaanbaatar,2018-07,721
+Western region,2018-07,160
+Central region,2018-08,212
+Eastern region,2018-08,98
+Khangai region,2018-08,287
+Ulaanbaatar,2018-08,628
+Western region,2018-08,166
+Central region,2018-09,231
+Eastern region,2018-09,94
+Khangai region,2018-09,250
+Ulaanbaatar,2018-09,723
+Western region,2018-09,162
+Central region,2018-10,212
+Eastern region,2018-10,95
+Khangai region,2018-10,276
+Ulaanbaatar,2018-10,705
+Western region,2018-10,173
+Central region,2018-11,198
+Eastern region,2018-11,80
+Khangai region,2018-11,268
+Ulaanbaatar,2018-11,661
+Western region,2018-11,154
+Central region,2018-12,230
+Eastern region,2018-12,99
+Khangai region,2018-12,276
+Ulaanbaatar,2018-12,810
+Western region,2018-12,194
+Central region,2019-01,224
+Eastern region,2019-01,99
+Khangai region,2019-01,286
+Ulaanbaatar,2019-01,779
+Western region,2019-01,185
+Central region,2019-02,196
+Eastern region,2019-02,104
+Khangai region,2019-02,295
+Ulaanbaatar,2019-02,591
+Western region,2019-02,172
+Central region,2019-03,222
+Eastern region,2019-03,82
+Khangai region,2019-03,244
+Ulaanbaatar,2019-03,641
+Western region,2019-03,184
+Central region,2019-04,210
+Eastern region,2019-04,95
+Khangai region,2019-04,239
+Ulaanbaatar,2019-04,697
+Western region,2019-04,190
+Central region,2019-05,200
+Eastern region,2019-05,115
+Khangai region,2019-05,294
+Ulaanbaatar,2019-05,709
+Western region,2019-05,190
+Central region,2019-06,198
+Eastern region,2019-06,80
+Khangai region,2019-06,258
+Ulaanbaatar,2019-06,607
+Western region,2019-06,137
+Central region,2019-07,218
+Eastern region,2019-07,111
+Khangai region,2019-07,291
+Ulaanbaatar,2019-07,625
+Western region,2019-07,165
+Central region,2019-08,214
+Eastern region,2019-08,99
+Khangai region,2019-08,309
+Ulaanbaatar,2019-08,631
+Western region,2019-08,172
+Central region,2019-09,247
+Eastern region,2019-09,85
+Khangai region,2019-09,241
+Ulaanbaatar,2019-09,635
+Western region,2019-09,157
+Central region,2019-10,242
+Eastern region,2019-10,95
+Khangai region,2019-10,288
+Ulaanbaatar,2019-10,758
+Western region,2019-10,159
+Central region,2019-11,195
+Eastern region,2019-11,85
+Khangai region,2019-11,205
+Ulaanbaatar,2019-11,643
+Western region,2019-11,138
+Central region,2019-12,196
+Eastern region,2019-12,106
+Khangai region,2019-12,287
+Ulaanbaatar,2019-12,895
+Western region,2019-12,190
+Central region,2020-01,176
+Eastern region,2020-01,93
+Khangai region,2020-01,254
+Ulaanbaatar,2020-01,684
+Western region,2020-01,159
+Central region,2020-02,199
+Eastern region,2020-02,82
+Khangai region,2020-02,240
+Ulaanbaatar,2020-02,613
+Western region,2020-02,164
+Central region,2020-03,196
+Eastern region,2020-03,91
+Khangai region,2020-03,217
+Ulaanbaatar,2020-03,652
+Western region,2020-03,136
+Central region,2020-04,182
+Eastern region,2020-04,92
+Khangai region,2020-04,226
+Ulaanbaatar,2020-04,639
+Western region,2020-04,171
+Central region,2020-05,181
+Eastern region,2020-05,81
+Khangai region,2020-05,229
+Ulaanbaatar,2020-05,645
+Western region,2020-05,152
+Central region,2020-06,181
+Eastern region,2020-06,101
+Khangai region,2020-06,249
+Ulaanbaatar,2020-06,608
+Western region,2020-06,167
+Central region,2020-07,228
+Eastern region,2020-07,107
+Khangai region,2020-07,282
+Ulaanbaatar,2020-07,608
+Western region,2020-07,177
+Central region,2020-08,185
+Eastern region,2020-08,101
+Khangai region,2020-08,253
+Ulaanbaatar,2020-08,624
+Western region,2020-08,168
+Central region,2020-09,187
+Eastern region,2020-09,77
+Khangai region,2020-09,265
+Ulaanbaatar,2020-09,729
+Western region,2020-09,147
+Central region,2020-10,202
+Eastern region,2020-10,94
+Khangai region,2020-10,253
+Ulaanbaatar,2020-10,726
+Western region,2020-10,152
+Central region,2020-11,163
+Eastern region,2020-11,86
+Khangai region,2020-11,218
+Ulaanbaatar,2020-11,671
+Western region,2020-11,140
+Central region,2020-12,158
+Eastern region,2020-12,83
+Khangai region,2020-12,232
+Ulaanbaatar,2020-12,596
+Western region,2020-12,150
+Central region,2021-01,172
+Eastern region,2021-01,98
+Khangai region,2021-01,204
+Ulaanbaatar,2021-01,540
+Western region,2021-01,137
+Central region,2021-02,177
+Eastern region,2021-02,88
+Khangai region,2021-02,234
+Ulaanbaatar,2021-02,588
+Western region,2021-02,150
+Central region,2021-03,198
+Eastern region,2021-03,103
+Khangai region,2021-03,235
+Ulaanbaatar,2021-03,700
+Western region,2021-03,145
+Central region,2021-04,205
+Eastern region,2021-04,74
+Khangai region,2021-04,233
+Ulaanbaatar,2021-04,826
+Western region,2021-04,146
+Central region,2021-05,186
+Eastern region,2021-05,84
+Khangai region,2021-05,221
+Ulaanbaatar,2021-05,735
+Western region,2021-05,177
+Central region,2021-06,190
+Eastern region,2021-06,90
+Khangai region,2021-06,275
+Ulaanbaatar,2021-06,1008
+Western region,2021-06,152
+Central region,2021-07,252
+Eastern region,2021-07,106
+Khangai region,2021-07,280
+Ulaanbaatar,2021-07,989
+Western region,2021-07,192
+Central region,2021-08,224
+Eastern region,2021-08,90
+Khangai region,2021-08,356
+Ulaanbaatar,2021-08,811
+Western region,2021-08,197
+Central region,2021-09,251
+Eastern region,2021-09,165
+Khangai region,2021-09,395
+Ulaanbaatar,2021-09,973
+Western region,2021-09,242
+Central region,2021-10,335
+Eastern region,2021-10,164
+Khangai region,2021-10,394
+Ulaanbaatar,2021-10,1194
+Western region,2021-10,215
+Central region,2021-11,328
+Eastern region,2021-11,114
+Khangai region,2021-11,313
+Ulaanbaatar,2021-11,1007
+Western region,2021-11,188
+Central region,2021-12,257
+Eastern region,2021-12,99
+Khangai region,2021-12,270
+Ulaanbaatar,2021-12,962
+Western region,2021-12,197
+Central region,2022-01,227
+Eastern region,2022-01,91
+Khangai region,2022-01,234
+Ulaanbaatar,2022-01,634
+Western region,2022-01,159
+Central region,2022-02,240
+Eastern region,2022-02,101
+Khangai region,2022-02,266
+Ulaanbaatar,2022-02,733
+Western region,2022-02,147
+Central region,2022-03,212
+Eastern region,2022-03,74
+Khangai region,2022-03,287
+Ulaanbaatar,2022-03,763
+Western region,2022-03,160
+Central region,2022-04,202
+Eastern region,2022-04,82
+Khangai region,2022-04,281
+Ulaanbaatar,2022-04,821
+Western region,2022-04,172
+Central region,2022-05,209
+Eastern region,2022-05,76
+Khangai region,2022-05,275
+Ulaanbaatar,2022-05,768
+Western region,2022-05,178
+Central region,2022-06,227
+Eastern region,2022-06,81
+Khangai region,2022-06,258
+Ulaanbaatar,2022-06,708
+Western region,2022-06,150
+Central region,2022-07,222
+Eastern region,2022-07,92
+Khangai region,2022-07,297
+Ulaanbaatar,2022-07,661
+Western region,2022-07,166
+Central region,2022-08,212
+Eastern region,2022-08,105
+Khangai region,2022-08,275
+Ulaanbaatar,2022-08,834
+Western region,2022-08,183
+Central region,2022-09,219
+Eastern region,2022-09,78
+Khangai region,2022-09,245
+Ulaanbaatar,2022-09,799
+Western region,2022-09,149
+Central region,2022-10,204
+Eastern region,2022-10,84
+Khangai region,2022-10,261
+Ulaanbaatar,2022-10,772
+Western region,2022-10,164
+Central region,2022-11,204
+Eastern region,2022-11,83
+Khangai region,2022-11,237
+Ulaanbaatar,2022-11,788
+Western region,2022-11,160
+Central region,2022-12,218
+Eastern region,2022-12,97
+Khangai region,2022-12,247
+Ulaanbaatar,2022-12,949
+Western region,2022-12,160
+Central region,2023-01,186
+Eastern region,2023-01,92
+Khangai region,2023-01,265
+Ulaanbaatar,2023-01,736
+Western region,2023-01,151
+Central region,2023-02,213
+Eastern region,2023-02,83
+Khangai region,2023-02,238
+Ulaanbaatar,2023-02,628
+Western region,2023-02,174
+Central region,2023-03,199
+Eastern region,2023-03,87
+Khangai region,2023-03,313
+Ulaanbaatar,2023-03,799
+Western region,2023-03,189
+Central region,2023-04,210
+Eastern region,2023-04,75
+Khangai region,2023-04,210
+Ulaanbaatar,2023-04,699
+Western region,2023-04,150
+Central region,2023-05,228
+Eastern region,2023-05,78
+Khangai region,2023-05,284
+Ulaanbaatar,2023-05,558
+Western region,2023-05,175
+Central region,2023-06,199
+Eastern region,2023-06,78
+Khangai region,2023-06,245
+Ulaanbaatar,2023-06,926
+Western region,2023-06,145
+Central region,2023-07,239
+Eastern region,2023-07,78
+Khangai region,2023-07,306
+Ulaanbaatar,2023-07,705
+Western region,2023-07,191
+Central region,2023-08,208
+Eastern region,2023-08,77
+Khangai region,2023-08,259
+Ulaanbaatar,2023-08,725
+Western region,2023-08,173
+Central region,2023-09,183
+Eastern region,2023-09,96
+Khangai region,2023-09,246
+Ulaanbaatar,2023-09,680
+Western region,2023-09,142
+Central region,2023-10,206
+Eastern region,2023-10,91
+Khangai region,2023-10,255
+Ulaanbaatar,2023-10,621
+Western region,2023-10,152
+Central region,2023-11,226
+Eastern region,2023-11,90
+Khangai region,2023-11,252
+Ulaanbaatar,2023-11,900
+Western region,2023-11,128
+Central region,2023-12,198
+Eastern region,2023-12,98
+Khangai region,2023-12,275
+Ulaanbaatar,2023-12,951
+Western region,2023-12,169
+Central region,2024-01,221
+Eastern region,2024-01,103
+Khangai region,2024-01,254
+Ulaanbaatar,2024-01,754
+Western region,2024-01,151
+Central region,2024-02,192
+Eastern region,2024-02,97
+Khangai region,2024-02,264
+Ulaanbaatar,2024-02,668
+Western region,2024-02,163
+Central region,2024-03,213
+Eastern region,2024-03,90
+Khangai region,2024-03,239
+Ulaanbaatar,2024-03,723
+Western region,2024-03,133
+Central region,2024-04,223
+Eastern region,2024-04,80
+Khangai region,2024-04,275
+Ulaanbaatar,2024-04,683
+Western region,2024-04,144
+Central region,2024-05,220
+Eastern region,2024-05,100
+Khangai region,2024-05,275
+Ulaanbaatar,2024-05,778
+Western region,2024-05,172
+Central region,2024-06,215
+Eastern region,2024-06,96
+Khangai region,2024-06,231
+Ulaanbaatar,2024-06,705
+Western region,2024-06,181
+Central region,2024-07,248
+Eastern region,2024-07,103
+Khangai region,2024-07,268
+Ulaanbaatar,2024-07,740
+Western region,2024-07,207
+Central region,2024-08,204
+Eastern region,2024-08,77
+Khangai region,2024-08,256
+Ulaanbaatar,2024-08,812
+Western region,2024-08,157
+Central region,2024-09,233
+Eastern region,2024-09,103
+Khangai region,2024-09,271
+Ulaanbaatar,2024-09,742
+Western region,2024-09,155
+Central region,2024-10,246
+Eastern region,2024-10,75
+Khangai region,2024-10,302
+Ulaanbaatar,2024-10,822
+Western region,2024-10,151
+Central region,2024-11,230
+Eastern region,2024-11,114
+Khangai region,2024-11,237
+Ulaanbaatar,2024-11,879
+Western region,2024-11,132
+Central region,2024-12,235
+Eastern region,2024-12,109
+Khangai region,2024-12,336
+Ulaanbaatar,2024-12,868
+Western region,2024-12,158
+Central region,2025-01,208
+Eastern region,2025-01,92
+Khangai region,2025-01,237
+Ulaanbaatar,2025-01,811
+Western region,2025-01,134
+Central region,2025-02,174
+Eastern region,2025-02,64
+Khangai region,2025-02,214
+Ulaanbaatar,2025-02,587
+Western region,2025-02,157
+Central region,2025-03,264
+Eastern region,2025-03,104
+Khangai region,2025-03,284
+Ulaanbaatar,2025-03,746
+Western region,2025-03,165
+Central region,2025-04,237
+Eastern region,2025-04,90
+Khangai region,2025-04,243
+Ulaanbaatar,2025-04,778
+Western region,2025-04,148
+Central region,2025-05,230
+Eastern region,2025-05,88
+Khangai region,2025-05,290
+Ulaanbaatar,2025-05,736
+Western region,2025-05,138
+Central region,2025-06,248
+Eastern region,2025-06,84
+Khangai region,2025-06,251
+Ulaanbaatar,2025-06,779
+Western region,2025-06,138
+Central region,2025-07,223
+Eastern region,2025-07,101
+Khangai region,2025-07,282
+Ulaanbaatar,2025-07,729
+Western region,2025-07,158
+Central region,2025-08,187
+Eastern region,2025-08,97
+Khangai region,2025-08,248
+Ulaanbaatar,2025-08,724
+Western region,2025-08,144
+Central region,2025-09,230
+Eastern region,2025-09,100
+Khangai region,2025-09,290
+Ulaanbaatar,2025-09,775
+Western region,2025-09,156
+Central region,2025-10,218
+Eastern region,2025-10,105
+Khangai region,2025-10,272
+Ulaanbaatar,2025-10,830
+Western region,2025-10,147
+Central region,2025-11,208
+Eastern region,2025-11,130
+Khangai region,2025-11,256
+Ulaanbaatar,2025-11,831
+Western region,2025-11,125
+Central region,2025-12,281
+Eastern region,2025-12,105
+Khangai region,2025-12,254
+Ulaanbaatar,2025-12,819
+Western region,2025-12,163
+Central region,2026-01,227
+Eastern region,2026-01,77
+Khangai region,2026-01,239
+Ulaanbaatar,2026-01,773
+Western region,2026-01,157
+Central region,2026-02,223
+Eastern region,2026-02,81
+Khangai region,2026-02,241
+Ulaanbaatar,2026-02,643
+Western region,2026-02,130
+Central region,2026-03,253
+Eastern region,2026-03,94
+Khangai region,2026-03,263
+Ulaanbaatar,2026-03,949
+Western region,2026-03,166

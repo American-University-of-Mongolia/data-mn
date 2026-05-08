@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Monthly live births across Mongolia's four regions and Ulaanbaatar (2016–2026)",
+  "data": {
+    "url": "/datasets/nso-live-births-by-region-monthly-en.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "temporal",
+      "title": "Month",
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "births",
+      "type": "quantitative",
+      "title": "Live Births",
+      "axis": {"format": ",.0f"}
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "title": "Region",
+      "scale": {
+        "domain": ["Central region", "Eastern region", "Khangai region", "Western region", "Ulaanbaatar"],
+        "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2", "#54a24b"]
+      },
+      "legend": {"orient": "top", "title": "Region"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "region", "title": "Region"},
+          {"field": "month", "title": "Month", "timeUnit": "yearmonth"},
+          {"field": "births", "title": "Live Births", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

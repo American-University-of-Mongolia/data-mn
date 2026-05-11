@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсад эрүүл мэндийн ажилтны тоо төрлөөр (2015–2024)"
+publishDate: 2026-05-11
+excerpt: "2015–2024 онд Монгол Улсад эмч болон сувилагчдын нийт тоо. Хоёр мэргэжлийн ажилтны тоо мэдэгдэхүйц өссөн — эмчийн тоо 67 хувиар нэмэгдэж бараг 16,000 болж, сувилагчийн тоо 33 хувиар өсч 15,000-аас давсан нь Монголын эрүүл мэндийн системд хөрөнгө оруулалт тогтмол нэмэгдэж байгааг харуулж байна."
+category: "Эрүүл мэнд"
+tags: ["монгол", "эрүүл мэнд", "эмч", "сувилагч", "эрүүл мэндийн ажилтан", "хүний нөөц", "статистик", "үшх"]
+keywords: ["монгол эрүүл мэндийн ажилтан", "эмч сувилагч монгол", "эрүүл мэндийн хүний нөөц монгол", "монгол эмч сувилагч статистик"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-medical-personnel-by-type-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/nso-medical-personnel-by-type.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_2100_006V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-medical-personnel-by-type-mn.json"
+  title="Монгол Улсад эрүүл мэндийн ажилтны тоо төрлөөр (2015–2024)"
+/>

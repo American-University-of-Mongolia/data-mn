@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсад эмнэлгийн орны тоо төрлөөр (2015–2025)"
+publishDate: 2026-05-11
+excerpt: "2015–2025 онд Монгол Улсад 21 клиникийн тусгай мэргэжлийн чиглэлээр эмнэлгийн орны нийт тоо. Дотрын тасаг 7,600 гаруй ортой тэргүүлж, цаашид хүүхдийн болон уламжлалт анагаах ухааны тасагнууд дагаж байна."
+category: "Эрүүл мэнд"
+tags: ["монгол", "эрүүл мэнд", "эмнэлэг", "ор", "хүчин чадал", "статистик", "үшх"]
+keywords: ["монгол эмнэлгийн ор", "эмнэлгийн хүчин чадал монгол", "клиникийн ор монгол", "эрүүл мэндийн дэд бүтэц монгол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-01-01
+dataFiles:
+  - path: "/datasets/nso-hospital-beds-by-type-mn.csv"
+    format: "csv"
+    size: "7 KB"
+    description: "CSV татах"
+  - path: "/datasets/nso-hospital-beds-by-type.xlsx"
+    format: "xlsx"
+    size: "9 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_2100_005V3.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-hospital-beds-by-type-mn.json"
+  title="Монгол Улсад эмнэлгийн орны тоо төрлөөр (2015–2025)"
+/>

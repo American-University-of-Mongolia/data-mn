@@ -1,0 +1,31 @@
+---
+title: "Medical Personnel in Mongolia by Type (2015–2024)"
+publishDate: 2026-05-11
+excerpt: "National totals of physicians and nurses in Mongolia from 2015 to 2024. Both workforces have grown substantially — physicians increased 67% to nearly 16,000 and nurses grew 33% to over 15,000 — reflecting Mongolia's continued investment in health system capacity."
+category: "Health"
+tags: ["mongolia", "health", "physicians", "nurses", "medical personnel", "workforce", "statistics", "nso"]
+keywords: ["mongolia medical personnel", "physicians nurses Mongolia", "health workforce Mongolia", "doctors nurses Mongolia statistics"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-medical-personnel-by-type-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/nso-medical-personnel-by-type.xlsx"
+    format: "xlsx"
+    size: "5 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_2100_006V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-medical-personnel-by-type-en.json"
+  title="Medical Personnel in Mongolia by Type (2015–2024)"
+/>

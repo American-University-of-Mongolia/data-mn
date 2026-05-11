@@ -1,0 +1,232 @@
+year,type,beds
+2015,Dentist & stamatology,81
+2015,Urology,95
+2015,Palliative care,146
+2015,Nephrology,168
+2015,Oncology,176
+2015,Ophtalmology,230
+2015,Otorhinolaryngology,244
+2015,Anaesthesiology,339
+2015,Dermatology,358
+2015,Other,448
+2015,Tuberculosis,533
+2015,Psychiatry & narcology,705
+2015,Traumatology,838
+2015,Infections,1030
+2015,Gyneacology,1083
+2015,Traditional medicine,1145
+2015,Surgery,1473
+2015,Neurology,1522
+2015,Obstetrics,1738
+2015,Pediatrics,2758
+2015,Internal medicine,6610
+2016,Dentist & stamatology,87
+2016,Urology,95
+2016,Nephrology,168
+2016,Oncology,189
+2016,Palliative care,216
+2016,Ophtalmology,230
+2016,Otorhinolaryngology,244
+2016,Anaesthesiology,339
+2016,Dermatology,358
+2016,Tuberculosis,533
+2016,Psychiatry & narcology,705
+2016,Traumatology,838
+2016,Infections,1030
+2016,Gyneacology,1083
+2016,Other,1346
+2016,Traditional medicine,1398
+2016,Surgery,1473
+2016,Neurology,1522
+2016,Obstetrics,1738
+2016,Pediatrics,2758
+2016,Internal medicine,6610
+2017,Urology,74
+2017,Dentist & stamatology,84
+2017,Nephrology,145
+2017,Oncology,186
+2017,Ophtalmology,238
+2017,Otorhinolaryngology,250
+2017,Palliative care,253
+2017,Anaesthesiology,342
+2017,Dermatology,428
+2017,Other,488
+2017,Tuberculosis,524
+2017,Psychiatry & narcology,764
+2017,Traumatology,873
+2017,Infections,1042
+2017,Gyneacology,1177
+2017,Traditional medicine,1380
+2017,Surgery,1652
+2017,Neurology,1704
+2017,Obstetrics,1828
+2017,Pediatrics,3086
+2017,Internal medicine,7379
+2018,Urology,76
+2018,Dentist & stamatology,90
+2018,Nephrology,157
+2018,Oncology,166
+2018,Ophtalmology,224
+2018,Otorhinolaryngology,257
+2018,Palliative care,305
+2018,Anaesthesiology,342
+2018,Dermatology,426
+2018,Tuberculosis,518
+2018,Other,538
+2018,Psychiatry & narcology,784
+2018,Traumatology,925
+2018,Infections,1035
+2018,Gyneacology,1215
+2018,Traditional medicine,1515
+2018,Surgery,1716
+2018,Neurology,1786
+2018,Obstetrics,1828
+2018,Pediatrics,3275
+2018,Internal medicine,7706
+2019,Urology,86
+2019,Dentist & stamatology,90
+2019,Nephrology,157
+2019,Oncology,178
+2019,Ophtalmology,222
+2019,Otorhinolaryngology,274
+2019,Palliative care,305
+2019,Anaesthesiology,354
+2019,Dermatology,443
+2019,Tuberculosis,525
+2019,Other,627
+2019,Psychiatry & narcology,789
+2019,Traumatology,954
+2019,Infections,1052
+2019,Gyneacology,1258
+2019,Traditional medicine,1571
+2019,Surgery,1687
+2019,Obstetrics,1808
+2019,Neurology,1823
+2019,Pediatrics,3603
+2019,Internal medicine,7855
+2020,Urology,82
+2020,Dentist & stamatology,99
+2020,Nephrology,122
+2020,Oncology,191
+2020,Ophtalmology,236
+2020,Otorhinolaryngology,304
+2020,Palliative care,350
+2020,Anaesthesiology,389
+2020,Dermatology,439
+2020,Tuberculosis,534
+2020,Psychiatry & narcology,822
+2020,Traumatology,1026
+2020,Other,1052
+2020,Infections,1085
+2020,Gyneacology,1333
+2020,Obstetrics,1834
+2020,Traditional medicine,1838
+2020,Surgery,1906
+2020,Neurology,1913
+2020,Pediatrics,3642
+2020,Internal medicine,7886
+2021,Urology,68
+2021,Dentist & stamatology,94
+2021,Nephrology,119
+2021,Oncology,191
+2021,Ophtalmology,219
+2021,Otorhinolaryngology,284
+2021,Dermatology,363
+2021,Palliative care,380
+2021,Anaesthesiology,443
+2021,Tuberculosis,482
+2021,Psychiatry & narcology,841
+2021,Traumatology,881
+2021,Other,1312
+2021,Traditional medicine,1508
+2021,Neurology,1718
+2021,Gyneacology,1726
+2021,Obstetrics,1809
+2021,Surgery,1837
+2021,Pediatrics,3737
+2021,Internal medicine,8182
+2021,Infections,9116
+2022,Urology,90
+2022,Dentist & stamatology,93
+2022,Ophtalmology,196
+2022,Nephrology,211
+2022,Oncology,214
+2022,Otorhinolaryngology,314
+2022,Dermatology,383
+2022,Palliative care,434
+2022,Anaesthesiology,466
+2022,Tuberculosis,547
+2022,Psychiatry & narcology,936
+2022,Traumatology,971
+2022,Other,1041
+2022,Gyneacology,1309
+2022,Traditional medicine,1798
+2022,Neurology,1806
+2022,Obstetrics,1818
+2022,Surgery,1883
+2022,Infections,1983
+2022,Pediatrics,3929
+2022,Internal medicine,9207
+2023,Dentist & stamatology,91
+2023,Urology,94
+2023,Nephrology,151
+2023,Ophtalmology,200
+2023,Oncology,206
+2023,Otorhinolaryngology,312
+2023,Dermatology,377
+2023,Palliative care,409
+2023,Anaesthesiology,479
+2023,Tuberculosis,523
+2023,Psychiatry & narcology,960
+2023,Traumatology,1147
+2023,Infections,1158
+2023,Other,1172
+2023,Gyneacology,1229
+2023,Neurology,1652
+2023,Surgery,1867
+2023,Obstetrics,1873
+2023,Traditional medicine,1966
+2023,Pediatrics,3940
+2023,Internal medicine,9637
+2024,Dentist & stamatology,86
+2024,Urology,105
+2024,Nephrology,182
+2024,Ophtalmology,183
+2024,Oncology,247
+2024,Otorhinolaryngology,287
+2024,Dermatology,369
+2024,Palliative care,486
+2024,Tuberculosis,510
+2024,Anaesthesiology,518
+2024,Psychiatry & narcology,992
+2024,Infections,1109
+2024,Traumatology,1148
+2024,Other,1203
+2024,Gyneacology,1663
+2024,Obstetrics,1857
+2024,Traditional medicine,2113
+2024,Surgery,2293
+2024,Neurology,3068
+2024,Pediatrics,4134
+2024,Internal medicine,7564
+2025,Dentist & stamatology,88
+2025,Urology,95
+2025,Nephrology,131
+2025,Ophtalmology,159
+2025,Oncology,269
+2025,Otorhinolaryngology,289
+2025,Dermatology,363
+2025,Palliative care,493
+2025,Tuberculosis,509
+2025,Anaesthesiology,518
+2025,Psychiatry & narcology,1014
+2025,Other,1091
+2025,Infections,1112
+2025,Traumatology,1222
+2025,Gyneacology,1353
+2025,Obstetrics,1947
+2025,Neurology,2180
+2025,Surgery,2265
+2025,Traditional medicine,2638
+2025,Pediatrics,4094
+2025,Internal medicine,7635

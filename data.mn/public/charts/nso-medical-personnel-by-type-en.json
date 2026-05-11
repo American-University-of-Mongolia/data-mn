@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Medical personnel in Mongolia by type (2015–2024)",
+  "data": {
+    "url": "/datasets/nso-medical-personnel-by-type-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "datetime(datum.year, 0, 1)", "as": "date"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+    },
+    "y": {
+      "field": "personnel",
+      "type": "quantitative",
+      "title": "Medical Personnel",
+      "stack": "zero",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "title": "Personnel Type",
+      "scale": {
+        "domain": ["Physicians", "Nurses"],
+        "range": ["#1565C0", "#00838F"]
+      },
+      "legend": {"orient": "top"}
+    },
+    "order": {
+      "field": "type",
+      "sort": ["Physicians", "Nurses"]
+    }
+  },
+  "layer": [
+    {"mark": {"type": "area", "interpolate": "monotone"}},
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "type", "type": "nominal", "title": "Type"},
+          {"field": "personnel", "type": "quantitative", "title": "Personnel", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14,
+      "labelLimit": 300
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

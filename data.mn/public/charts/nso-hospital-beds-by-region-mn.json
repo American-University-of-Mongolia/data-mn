@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсад эмнэлгийн орны тоо аймгаар (2015–2025)",
+  "data": {
+    "url": "/datasets/nso-hospital-beds-by-region-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "datetime(datum.он, 0, 1)", "as": "огноо"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "title": "Он",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+    },
+    "y": {
+      "field": "ор",
+      "type": "quantitative",
+      "title": "Эмнэлгийн ор",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "аймаг",
+      "type": "nominal",
+      "title": "Аймаг",
+      "scale": {
+        "domain": ["Улаанбаатар", "Орхон", "Дархан-Уул", "Хөвсгөл", "Өвөрхангай", "Сэлэнгэ"],
+        "range": ["#1565C0", "#2E7D32", "#F57F17", "#6A1B9A", "#BF360C", "#00838F"]
+      },
+      "legend": {"orient": "top"}
+    }
+  },
+  "layer": [
+    {"mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}},
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он"},
+          {"field": "аймаг", "type": "nominal", "title": "Аймаг"},
+          {"field": "ор", "type": "quantitative", "title": "Эмнэлгийн ор", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

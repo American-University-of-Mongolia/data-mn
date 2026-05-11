@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсад ирсэн гадаадын жуулчид бүс нутгаар 2006–2025",
+  "data": {
+    "url": "/datasets/tourism-arrivals-by-region-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "filter": "datum.бүс_нутаг !== 'Харьяалалгүй'"
+    },
+    {
+      "calculate": "datetime(datum.он, 0, 1)",
+      "as": "огноо"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "title": "Он",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+    },
+    "y": {
+      "field": "жуулчид",
+      "type": "quantitative",
+      "title": "Жуулчдын тоо",
+      "stack": "zero",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "бүс_нутаг",
+      "type": "nominal",
+      "title": "Бүс нутаг",
+      "scale": {
+        "domain": ["Зүүн Ази болон Номхон далайн орнууд", "Европ", "Америк", "Ойрхи Дорнод", "Өмнөд Ази", "Африк"],
+        "range": ["#1565C0", "#2E7D32", "#F57F17", "#6A1B9A", "#00838F", "#BF360C"]
+      },
+      "legend": {"orient": "top"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "area", "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он"},
+          {"field": "бүс_нутаг", "type": "nominal", "title": "Бүс нутаг"},
+          {"field": "жуулчид", "type": "quantitative", "title": "Жуулчид", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

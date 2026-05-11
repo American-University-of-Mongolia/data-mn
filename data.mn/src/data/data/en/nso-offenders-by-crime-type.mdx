@@ -1,0 +1,31 @@
+---
+title: "Offenders of Crimes in Mongolia by Crime Type (2010–2024)"
+publishDate: 2026-05-02
+excerpt: "Number of criminal offenders in Mongolia by crime category from 2010 to 2024. Property crime offenders consistently dominate, reflecting the structure of recorded crime."
+category: "Public Safety"
+tags: ["mongolia", "crime", "offenders", "public safety", "law enforcement", "criminal justice"]
+keywords: ["mongolia crime offenders", "criminal offenders by type", "crime statistics mongolia", "offender count", "public safety"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-offenders-by-crime-type-en.csv"
+    format: "csv"
+    size: "12 KB"
+    description: "Download as CSV"
+  - path: "/datasets/nso-offenders-by-crime-type.xlsx"
+    format: "xlsx"
+    size: "9 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_2300_038V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-offenders-by-crime-type-en.json"
+  title="Offenders of Crimes in Mongolia by Crime Type (2010–2024)"
+/>

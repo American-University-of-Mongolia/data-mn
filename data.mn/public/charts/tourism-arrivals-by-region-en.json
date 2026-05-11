@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Inbound tourists to Mongolia by geographical region 2006–2025",
+  "data": {
+    "url": "/datasets/tourism-arrivals-by-region-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "filter": "datum.region !== 'Stateless'"
+    },
+    {
+      "calculate": "datetime(datum.year, 0, 1)",
+      "as": "date"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+    },
+    "y": {
+      "field": "tourists",
+      "type": "quantitative",
+      "title": "Inbound Tourists",
+      "stack": "zero",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "title": "Region",
+      "scale": {
+        "domain": ["East Asia and the Pacific", "Europe", "America", "Middle East", "South Asia", "Africa"],
+        "range": ["#1565C0", "#2E7D32", "#F57F17", "#6A1B9A", "#00838F", "#BF360C"]
+      },
+      "legend": {"orient": "top"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "area", "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "region", "type": "nominal", "title": "Region"},
+          {"field": "tourists", "type": "quantitative", "title": "Tourists", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

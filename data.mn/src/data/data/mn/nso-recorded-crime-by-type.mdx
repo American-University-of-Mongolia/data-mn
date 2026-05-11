@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсад бүртгэгдсэн гэмт хэрэг төрлөөр (2018–2024)"
+publishDate: 2026-05-02
+excerpt: "Монгол Улсад жил бүр бүртгэгдсэн гэмт хэрэг гол ангиллаар 2018–2024 онд. Өмчлөх эрхийн эсрэг гэмт хэрэг нийт хэргийн 60 гаруй хувийг эзэлдэг."
+category: "Нийтийн аюулгүй байдал"
+tags: ["монгол", "гэмт хэрэг", "нийтийн аюулгүй байдал", "хууль сахиулах", "гэмт хэргийн статистик"]
+keywords: ["монгол гэмт хэрэг", "гэмт хэргийн төрөл", "өмчлөх эрхийн эсрэг", "гэмт хэргийн статистик", "нийтийн аюулгүй байдал"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-recorded-crime-by-type-mn.csv"
+    format: "csv"
+    size: "10 KB"
+    description: "CSV татах"
+  - path: "/datasets/nso-recorded-crime-by-type.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_2300_046V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-recorded-crime-by-type-mn.json"
+  title="Монгол Улсад бүртгэгдсэн гэмт хэрэг төрлөөр (2018–2024)"
+/>

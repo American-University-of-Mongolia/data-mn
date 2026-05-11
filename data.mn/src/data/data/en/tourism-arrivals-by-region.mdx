@@ -1,0 +1,31 @@
+---
+title: "Inbound Tourists to Mongolia by Geographical Region (2006–2025)"
+publishDate: 2026-04-28
+excerpt: "Annual inbound tourists to Mongolia broken down by geographical region (East Asia and the Pacific, Europe, America, Middle East, South Asia, Africa) from 2006 to 2025."
+category: "Tourism"
+tags: ["mongolia", "tourism", "inbound tourists", "travel", "geographical region"]
+keywords: ["mongolia tourism by region", "inbound tourists", "east asia pacific", "european visitors", "tourist arrivals by region"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-01-01
+dataFiles:
+  - path: "/datasets/tourism-arrivals-by-region-en.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "Download as CSV"
+  - path: "/datasets/tourism-arrivals-by-region.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_1800_005V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/tourism-arrivals-by-region-en.json"
+  title="Inbound Tourists to Mongolia by Geographical Region (2006–2025)"
+/>

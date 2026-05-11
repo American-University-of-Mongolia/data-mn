@@ -1,0 +1,31 @@
+---
+title: "Recorded Crimes in Mongolia by Type (2018–2024)"
+publishDate: 2026-05-02
+excerpt: "Annual recorded crimes in Mongolia broken down by major crime category from 2018 to 2024. Property crimes dominate, accounting for over 60% of all recorded offences."
+category: "Public Safety"
+tags: ["mongolia", "crime", "public safety", "law enforcement", "recorded crimes", "crime statistics"]
+keywords: ["mongolia recorded crimes", "crime by type", "property crime", "crime statistics", "public safety mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-recorded-crime-by-type-en.csv"
+    format: "csv"
+    size: "6 KB"
+    description: "Download as CSV"
+  - path: "/datasets/nso-recorded-crime-by-type.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_2300_046V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-recorded-crime-by-type-en.json"
+  title="Recorded Crimes in Mongolia by Type (2018–2024)"
+/>

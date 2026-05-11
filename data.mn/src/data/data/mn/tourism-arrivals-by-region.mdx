@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсад ирсэн гадаадын жуулчид бүс нутгаар (2006–2025)"
+publishDate: 2026-04-28
+excerpt: "Монгол Улсад ирсэн гадаадын жуулчдын тоо бүс нутгаар (Зүүн Ази болон Номхон далайн орнууд, Европ, Америк, Ойрхи Дорнод, Өмнөд Ази, Африк) 2006–2025 онд."
+category: "Аялал жуулчлал"
+tags: ["монгол", "аялал жуулчлал", "гадаадын жуулчид", "бүс нутаг", "зүүн ази"]
+keywords: ["монгол жуулчлал бүс нутгаар", "гадаадын жуулчид", "зүүн ази номхон далай", "европын жуулчид", "бүс нутгаар"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-01-01
+dataFiles:
+  - path: "/datasets/tourism-arrivals-by-region-mn.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "CSV татах"
+  - path: "/datasets/tourism-arrivals-by-region.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_1800_005V2.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/tourism-arrivals-by-region-mn.json"
+  title="Монгол Улсад ирсэн гадаадын жуулчид бүс нутгаар (2006–2025)"
+/>

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын бүс нутгаар сар бүрийн нас баралт 2016-2026",
+  "data": {
+    "url": "/datasets/nso-deaths-by-region-monthly-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "сар",
+      "type": "temporal",
+      "title": "Сар",
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "нас_баралт",
+      "type": "quantitative",
+      "title": "Нас баралт",
+      "axis": {"format": ",.0f"}
+    },
+    "color": {
+      "field": "бүс",
+      "type": "nominal",
+      "title": "Бүс нутаг",
+      "scale": {
+        "domain": ["Төвийн бүс", "Зүүн бүс", "Хангайн бүс", "Баруун бүс", "Улаанбаатар"],
+        "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2", "#54a24b"]
+      },
+      "legend": {"orient": "top", "title": "Бүс нутаг"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [{"name": "hover", "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}}],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "бүс", "title": "Бүс нутаг"},
+          {"field": "сар", "title": "Сар", "timeUnit": "yearmonth"},
+          {"field": "нас_баралт", "title": "Нас баралт", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

@@ -1,0 +1,33 @@
+---
+title: "Mongolia Live Births (2016–2026)"
+publishDate: 2026-05-08
+dataVersion: 1
+dataDate: 2026-03-31
+excerpt: "Monthly live birth counts for Mongolia from January 2016 to March 2026, sourced from the National Statistics Office."
+category: "Demographics"
+tags: ["mongolia", "demographics", "births", "population", "vital-statistics"]
+keywords: ["mongolia live births", "mongolia birth rate monthly", "vital statistics mongolia", "nso births data"]
+dataFiles:
+  - path: "/datasets/nso-live-births-monthly-en.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "Download as CSV"
+  - path: "/datasets/nso-live-births-monthly.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_2100_018V5.px"
+author: "data.mn"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Monthly live birth counts for Mongolia from January 2016 to March 2026, sourced from the National Statistics Office.
+
+<VegaChart
+  spec="/charts/nso-live-births-monthly-en.json"
+  title="Mongolia Live Births (2016–2026)"
+/>

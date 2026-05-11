@@ -1,0 +1,39 @@
+---
+title: "Mongolia Imports by Top Trading Partners, USD Thousand (2005–2025)"
+publishDate: 2026-05-11
+dataVersion: 1
+dataDate: 2025-12-31
+excerpt: "Annual imports to Mongolia from the top 10 trading partner countries from 2005 to 2025, in USD thousands. China and Russia are the two dominant suppliers. Full dataset covers all partner countries."
+category: "Trade"
+tags: ["mongolia", "imports", "trade partners", "China", "Russia", "by country", "annual"]
+keywords: ["mongolia imports by country", "mongolia china russia trade", "mongolia import sources", "mongolia trading partners"]
+dataFiles:
+  - path: "/datasets/nso-imports-by-country-top-en.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "Download as CSV (top 10)"
+  - path: "/datasets/nso-imports-by-country-top-all-en.csv"
+    format: "csv"
+    size: "55 KB"
+    description: "Download as CSV (all countries)"
+  - path: "/datasets/nso-imports-by-country-top.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://www.1212.mn"
+  tableId: "DT_NSO_1400_010V3.px"
+author: Dlgvn
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Annual imports to Mongolia from the top 10 trading partner countries from 2005 to 2025, in USD thousands.
+
+Mongolia's imports are more geographically diversified than its exports. Russia supplies the majority of petroleum products, making fuel supply a key dependency. China provides manufactured goods, electronics, and construction materials. Japan, South Korea, and Germany contribute machinery and vehicles. This diversification provides some resilience compared to the heavy export concentration on China.
+
+<VegaChart
+  spec="/charts/nso-imports-by-country-top-en.json"
+  title="Mongolia Imports by Top Trading Partners, USD Thousand (2005–2025)"
+/>

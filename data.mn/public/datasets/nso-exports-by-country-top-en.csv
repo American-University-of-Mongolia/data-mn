@@ -1,0 +1,211 @@
+country,year,exports_usd_mn
+China,2005,513422.3
+Switzerland,2005,4182.6
+USA,2005,152476.7
+Russian Federation,2005,27229.9
+Iran,2005,0.0
+Italy,2005,24846.3
+Republic of Korea,2005,65085.6
+Australia,2005,28524.699999999997
+France,2005,663.2
+Japan,2005,5797.9
+China,2006,1049595.0
+Switzerland,2006,6367.7
+USA,2006,119031.5
+Russian Federation,2006,45113.0
+Iran,2006,0.0
+Italy,2006,40395.7
+Republic of Korea,2006,21385.8
+Australia,2006,799.5
+France,2006,1792.0
+Japan,2006,7113.2
+China,2007,1411391.2
+Switzerland,2007,1768.5
+USA,2007,99869.4
+Russian Federation,2007,58485.4
+Iran,2007,108.7
+Italy,2007,56739.2
+Republic of Korea,2007,41521.3
+Australia,2007,2462.9
+France,2007,5411.4
+Japan,2007,15088.5
+China,2008,1635942.4
+Switzerland,2008,2082.0
+USA,2008,114232.6
+Russian Federation,2008,86318.0
+Iran,2008,0.0
+Italy,2008,42218.4
+Republic of Korea,2008,29892.0
+Australia,2008,1555.9
+France,2008,30274.2
+Japan,2008,27589.0
+China,2009,1394000.7
+Switzerland,2009,2815.6
+USA,2009,13892.0
+Russian Federation,2009,68204.7
+Iran,2009,0.0
+Italy,2009,31443.0
+Republic of Korea,2009,15458.1
+Australia,2009,1655.5
+France,2009,2231.6
+Japan,2009,4564.2
+China,2010,2466447.5
+Switzerland,2010,2910.3
+USA,2010,6018.2
+Russian Federation,2010,82747.9
+Iran,2010,6839.3
+Italy,2010,31776.6
+Republic of Korea,2010,30519.9
+Australia,2010,596.3
+France,2010,3909.6
+Japan,2010,2669.7
+China,2011,4439870.9
+Switzerland,2011,18027.6
+USA,2011,5040.0
+Russian Federation,2011,96342.4
+Iran,2011,798.0
+Italy,2011,49816.1
+Republic of Korea,2011,37873.3
+Australia,2011,875.6
+France,2011,7724.5
+Japan,2011,10963.9
+China,2012,4059720.4
+Switzerland,2012,8925.1
+USA,2012,3568.1
+Russian Federation,2012,79565.7
+Iran,2012,214.6
+Italy,2012,31608.2
+Republic of Korea,2012,12295.6
+Australia,2012,1102.9
+France,2012,3639.7
+Japan,2012,5602.6
+China,2013,3706341.0
+Switzerland,2013,3073.9
+USA,2013,3898.1
+Russian Federation,2013,61772.7
+Iran,2013,1966.2
+Italy,2013,51506.2
+Republic of Korea,2013,13023.8
+Australia,2013,16570.5
+France,2013,8528.7
+Japan,2013,10534.3
+China,2014,5073398.8
+Switzerland,2014,28052.0
+USA,2014,15362.8
+Russian Federation,2014,61607.3
+Iran,2014,0.0
+Italy,2014,51412.5
+Republic of Korea,2014,13496.5
+Australia,2014,2328.4
+France,2014,9304.7
+Japan,2014,24451.2
+China,2015,3910120.6
+Switzerland,2015,109167.6
+USA,2015,18732.3
+Russian Federation,2015,76871.7
+Iran,2015,0.0
+Italy,2015,43401.1
+Republic of Korea,2015,66571.9
+Australia,2015,5978.5
+France,2015,7337.7
+Japan,2015,20315.3
+China,2016,3901611.3
+Switzerland,2016,1013.8
+USA,2016,10461.5
+Russian Federation,2016,55769.1
+Iran,2016,55.4
+Italy,2016,33579.3
+Republic of Korea,2016,8470.4
+Australia,2016,2508.8
+France,2016,6933.9
+Japan,2016,14031.7
+China,2017,5307431.8
+Switzerland,2017,658.3
+USA,2017,8299.1
+Russian Federation,2017,67661.1
+Iran,2017,8266.3
+Italy,2017,43299.9
+Republic of Korea,2017,11617.8
+Australia,2017,6940.4
+France,2017,5735.8
+Japan,2017,14816.5
+China,2018,6542824.8
+Switzerland,2018,738.7
+USA,2018,7603.3
+Russian Federation,2018,85936.0
+Iran,2018,9022.3
+Italy,2018,54078.1
+Republic of Korea,2018,21200.4
+Australia,2018,2572.3
+France,2018,5396.6
+Japan,2018,26468.5
+China,2019,6789726.9
+Switzerland,2019,74986.3
+USA,2019,25997.5
+Russian Federation,2019,68093.3
+Iran,2019,21137.9
+Italy,2019,45298.8
+Republic of Korea,2019,27799.0
+Australia,2019,79277.4
+France,2019,5056.3
+Japan,2019,15517.0
+China,2020,5493619.0
+Switzerland,2020,1681588.9
+USA,2020,10824.3
+Russian Federation,2020,57274.8
+Iran,2020,1917.2
+Italy,2020,19403.4
+Republic of Korea,2020,21421.4
+Australia,2020,2566.1
+France,2020,5087.7
+Japan,2020,9628.7
+China,2021,7638572.5
+Switzerland,2021,869738.5
+USA,2021,31029.8
+Russian Federation,2021,112783.9
+Iran,2021,1728.2
+Italy,2021,35559.6
+Republic of Korea,2021,223303.2
+Australia,2021,1383.1
+France,2021,4967.1
+Japan,2021,17732.6
+China,2022,11061576.4
+Switzerland,2022,1030718.8
+USA,2022,9895.4
+Russian Federation,2022,93365.8
+Iran,2022,7995.5
+Italy,2022,88058.0
+Republic of Korea,2022,127495.3
+Australia,2022,2060.8999999999996
+France,2022,6903.4
+Japan,2022,15228.2
+China,2023,13940183.1
+Switzerland,2023,666311.7
+USA,2023,36553.5
+Russian Federation,2023,112709.7
+Iran,2023,34900.1
+Italy,2023,98994.8
+Republic of Korea,2023,126443.2
+Australia,2023,7443.7
+France,2023,11370.8
+Japan,2023,14992.9
+China,2024,14420678.66
+Switzerland,2024,744975.45
+USA,2024,166397.03
+Russian Federation,2024,100712.12
+Iran,2024,66250.55
+Italy,2024,59634.58
+Republic of Korea,2024,52559.86
+Australia,2024,26884.48
+France,2024,20346.25
+Japan,2024,12557.92
+China,2025,14095261.47
+Switzerland,2025,1089184.25
+USA,2025,126826.22
+Russian Federation,2025,60651.8
+Iran,2025,61949.58
+Italy,2025,51291.36
+Republic of Korea,2025,38997.32
+Australia,2025,3797.45
+France,2025,10291.11
+Japan,2025,9131.59

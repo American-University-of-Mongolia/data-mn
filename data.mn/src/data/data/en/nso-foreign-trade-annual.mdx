@@ -1,0 +1,35 @@
+---
+title: "Mongolia Foreign Trade, Million USD (1924–2025)"
+publishDate: 2026-05-11
+dataVersion: 1
+dataDate: 2025-12-31
+excerpt: "Annual foreign trade statistics for Mongolia from 1924 to 2025, covering total turnover, exports, imports, and trade balance in million USD. Data sourced from the National Statistics Office."
+category: "Trade"
+tags: ["mongolia", "foreign trade", "exports", "imports", "trade balance", "annual"]
+keywords: ["mongolia foreign trade annual", "mongolia exports imports", "mongolia trade balance", "mongolia trade statistics"]
+dataFiles:
+  - path: "/datasets/nso-foreign-trade-annual-en.csv"
+    format: "csv"
+    size: "8 KB"
+    description: "Download as CSV"
+  - path: "/datasets/nso-foreign-trade-annual.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://www.1212.mn"
+  tableId: "DT_NSO_1400_001V1_year.px"
+author: Dlgvn
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Annual foreign trade statistics for Mongolia from 1924 to 2025, covering total turnover, exports, imports, and trade balance in million USD.
+
+Mongolia's foreign trade grew from near-zero pre-transition volumes to over $20 billion in annual turnover by the 2010s, driven by mineral exports — primarily coal and copper. The trade balance turned positive in the 2000s as commodity export revenues surged. Data covers the full historical series from 1924, though systematic recording became consistent from 1990 onward.
+
+<VegaChart
+  spec="/charts/nso-foreign-trade-annual-en.json"
+  title="Mongolia Foreign Trade, Million USD (1924–2025)"
+/>

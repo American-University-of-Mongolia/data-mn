@@ -1,0 +1,39 @@
+---
+title: "Mongolia Exports by Top Trading Partners, USD Thousand (2005–2025)"
+publishDate: 2026-05-11
+dataVersion: 1
+dataDate: 2025-12-31
+excerpt: "Annual exports from Mongolia to the top 10 trading partner countries from 2005 to 2025, in USD thousands. China dominates with over 90% share. Full dataset includes all partner countries."
+category: "Trade"
+tags: ["mongolia", "exports", "trade partners", "China", "by country", "annual"]
+keywords: ["mongolia exports by country", "mongolia china trade", "mongolia top trading partners", "mongolia export destinations"]
+dataFiles:
+  - path: "/datasets/nso-exports-by-country-top-en.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "Download as CSV (top 10)"
+  - path: "/datasets/nso-exports-by-country-top-all-en.csv"
+    format: "csv"
+    size: "46 KB"
+    description: "Download as CSV (all countries)"
+  - path: "/datasets/nso-exports-by-country-top.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://www.1212.mn"
+  tableId: "DT_NSO_1400_006V3.px"
+author: Dlgvn
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Annual exports from Mongolia to the top 10 trading partner countries from 2005 to 2025, in USD thousands.
+
+China dominates Mongolia's export landscape, absorbing over 90% of total exports — primarily coal, copper concentrate, and iron ore shipped by rail. Switzerland and the United States appear as secondary destinations, often serving as trading hubs for refined gold and processed minerals. The extreme concentration of Mongolia's export base in a single market represents both a structural feature and a strategic vulnerability.
+
+<VegaChart
+  spec="/charts/nso-exports-by-country-top-en.json"
+  title="Mongolia Exports by Top Trading Partners, USD Thousand (2005–2025)"
+/>

@@ -1,0 +1,35 @@
+---
+title: "Mongolia Unemployment Rate by Aimag, % (2009–2024)"
+publishDate: 2026-05-12
+excerpt: "Unemployment varies significantly across Mongolia's aimags, with some regions consistently above the national average of 5.9% in 2024."
+category: "Labor Market"
+tags: ["labor market", "unemployment", "regional", "aimag", "annual"]
+keywords: ["mongolia unemployment rate", "unemployment by aimag", "regional unemployment"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-12-31
+dataFiles:
+  - path: "/datasets/nso-unemployment-rate-by-region-en.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "Featured aimags (CSV)"
+  - path: "/datasets/nso-unemployment-rate-by-region-all-en.csv"
+    format: "csv"
+    size: "7 KB"
+    description: "All aimags (CSV)"
+  - path: "/datasets/nso-unemployment-rate-by-region.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_0400_020V2_10.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-unemployment-rate-by-region-en.json"
+  title="Unemployment Rate by Aimag, % (2009–2024)"
+/>

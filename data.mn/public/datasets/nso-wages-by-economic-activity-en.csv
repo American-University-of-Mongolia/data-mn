@@ -1,0 +1,151 @@
+year,sector,wages_mnt
+2001,"Agriculture, forestry, fishing and hunting",50.3
+2002,"Agriculture, forestry, fishing and hunting",46.2
+2003,"Agriculture, forestry, fishing and hunting",48.0
+2004,"Agriculture, forestry, fishing and hunting",52.6
+2005,"Agriculture, forestry, fishing and hunting",52.8
+2006,"Agriculture, forestry, fishing and hunting",72.6
+2007,"Agriculture, forestry, fishing and hunting",90.5
+2008,"Agriculture, forestry, fishing and hunting",158.1
+2009,"Agriculture, forestry, fishing and hunting",174.6
+2010,"Agriculture, forestry, fishing and hunting",172.5
+2011,"Agriculture, forestry, fishing and hunting",203.1
+2012,"Agriculture, forestry, fishing and hunting",244.5
+2013,"Agriculture, forestry, fishing and hunting",324.7
+2014,"Agriculture, forestry, fishing and hunting",752.9
+2015,"Agriculture, forestry, fishing and hunting",643.9
+2016,"Agriculture, forestry, fishing and hunting",631.5
+2017,"Agriculture, forestry, fishing and hunting",681.5
+2018,"Agriculture, forestry, fishing and hunting",736.4
+2019,"Agriculture, forestry, fishing and hunting",833.1
+2020,"Agriculture, forestry, fishing and hunting",949.6
+2021,"Agriculture, forestry, fishing and hunting",1002.8
+2022,"Agriculture, forestry, fishing and hunting",1152.3
+2023,"Agriculture, forestry, fishing and hunting",1463.9
+2024,"Agriculture, forestry, fishing and hunting",1929.8
+2025,"Agriculture, forestry, fishing and hunting",2190.1
+2001,Financial and insurance activities,59.2
+2002,Financial and insurance activities,83.2
+2003,Financial and insurance activities,103.8
+2004,Financial and insurance activities,125.4
+2005,Financial and insurance activities,163.9
+2006,Financial and insurance activities,265.5
+2007,Financial and insurance activities,361.9
+2008,Financial and insurance activities,471.4
+2009,Financial and insurance activities,599.9
+2010,Financial and insurance activities,696.7
+2011,Financial and insurance activities,886.9
+2012,Financial and insurance activities,1066.7
+2013,Financial and insurance activities,1190.0
+2014,Financial and insurance activities,1067.6
+2015,Financial and insurance activities,1049.7
+2016,Financial and insurance activities,1082.3
+2017,Financial and insurance activities,1131.6
+2018,Financial and insurance activities,1160.6
+2019,Financial and insurance activities,1343.1
+2020,Financial and insurance activities,1453.7
+2021,Financial and insurance activities,1515.8
+2022,Financial and insurance activities,1927.8
+2023,Financial and insurance activities,2261.5
+2024,Financial and insurance activities,2897.0
+2025,Financial and insurance activities,3263.4
+2001,Manufacturing,66.6
+2002,Manufacturing,68.7
+2003,Manufacturing,82.7
+2004,Manufacturing,92.8
+2005,Manufacturing,100.5
+2006,Manufacturing,129.4
+2007,Manufacturing,160.2
+2008,Manufacturing,268.0
+2009,Manufacturing,271.8
+2010,Manufacturing,326.2
+2011,Manufacturing,402.4
+2012,Manufacturing,498.5
+2013,Manufacturing,613.8
+2014,Manufacturing,765.2
+2015,Manufacturing,770.1
+2016,Manufacturing,887.0
+2017,Manufacturing,1088.2
+2018,Manufacturing,1150.8
+2019,Manufacturing,1171.1
+2020,Manufacturing,1163.9
+2021,Manufacturing,1227.7
+2022,Manufacturing,1443.8
+2023,Manufacturing,1733.0
+2024,Manufacturing,2125.9
+2025,Manufacturing,2885.2
+2001,Mining and quarrying,57.3
+2002,Mining and quarrying,77.4
+2003,Mining and quarrying,88.7
+2004,Mining and quarrying,89.7
+2005,Mining and quarrying,122.8
+2006,Mining and quarrying,147.7
+2007,Mining and quarrying,219.7
+2008,Mining and quarrying,328.6
+2009,Mining and quarrying,405.4
+2010,Mining and quarrying,572.2
+2011,Mining and quarrying,732.8
+2012,Mining and quarrying,814.5
+2013,Mining and quarrying,1418.4
+2014,Mining and quarrying,1550.8
+2015,Mining and quarrying,1895.4
+2016,Mining and quarrying,1989.4
+2017,Mining and quarrying,2119.1
+2018,Mining and quarrying,2221.4
+2019,Mining and quarrying,2590.0
+2020,Mining and quarrying,2877.4
+2021,Mining and quarrying,2997.8
+2022,Mining and quarrying,3601.9
+2023,Mining and quarrying,4587.2
+2024,Mining and quarrying,4935.9
+2025,Mining and quarrying,5273.9
+2001,National average,65.2
+2002,National average,71.3
+2003,National average,81.5
+2004,National average,93.1
+2005,National average,101.2
+2006,National average,127.7
+2007,National average,173.0
+2008,National average,274.2
+2009,National average,300.5
+2010,National average,341.5
+2011,National average,424.2
+2012,National average,557.6
+2013,National average,774.9
+2014,National average,796.6
+2015,National average,808.0
+2016,National average,861.9
+2017,National average,944.5
+2018,National average,1002.9
+2019,National average,1124.3
+2020,National average,1220.6
+2021,National average,1279.4
+2022,National average,1503.8
+2023,National average,1881.8
+2024,National average,2332.4
+2025,National average,2726.9
+2001,Public administration and defense; compulsory social security,59.3
+2002,Public administration and defense; compulsory social security,66.5
+2003,Public administration and defense; compulsory social security,78.2
+2004,Public administration and defense; compulsory social security,94.4
+2005,Public administration and defense; compulsory social security,106.2
+2006,Public administration and defense; compulsory social security,140.8
+2007,Public administration and defense; compulsory social security,194.0
+2008,Public administration and defense; compulsory social security,327.3
+2009,Public administration and defense; compulsory social security,332.0
+2010,Public administration and defense; compulsory social security,351.1
+2011,Public administration and defense; compulsory social security,434.3
+2012,Public administration and defense; compulsory social security,613.9
+2013,Public administration and defense; compulsory social security,719.5
+2014,Public administration and defense; compulsory social security,776.4
+2015,Public administration and defense; compulsory social security,788.9
+2016,Public administration and defense; compulsory social security,780.1
+2017,Public administration and defense; compulsory social security,832.2
+2018,Public administration and defense; compulsory social security,898.0
+2019,Public administration and defense; compulsory social security,1030.0
+2020,Public administration and defense; compulsory social security,1093.2
+2021,Public administration and defense; compulsory social security,1140.7
+2022,Public administration and defense; compulsory social security,1290.6
+2023,Public administration and defense; compulsory social security,1825.8
+2024,Public administration and defense; compulsory social security,2454.7
+2025,Public administration and defense; compulsory social security,2807.3

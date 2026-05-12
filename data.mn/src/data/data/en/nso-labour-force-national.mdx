@@ -1,0 +1,32 @@
+---
+title: "Mongolia Labour Force, Persons (2009–2024)"
+publishDate: 2026-05-12
+dataVersion: 1
+dataDate: 2024-12-31
+excerpt: "Mongolia's total labour force reached 1.44 million persons in 2024, with women making up 48% of the workforce."
+category: "Labor Market"
+tags: ["labor market", "employment", "labor force", "gender", "annual"]
+keywords: ["mongolia labour force", "employment by sex", "annual labour statistics"]
+dataFiles:
+  - path: "/datasets/nso-labour-force-national-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/nso-labour-force-national.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0400_012V1_1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Mongolia's total labour force reached 1.44 million persons in 2024, with women making up 48% of the workforce.
+
+<VegaChart
+  spec="/charts/nso-labour-force-national-en.json"
+  title="Mongolia Labour Force, Persons (2009–2024)"
+/>

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын ажилгүйдлийн түвшин хүйсээр, 2009-2024",
+  "data": {
+    "url": "/datasets/nso-unemployment-rate-annual-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "жил",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 1, "grid": false}
+    },
+    "y": {
+      "field": "ажилгүйдлийн_түвшин",
+      "type": "quantitative",
+      "title": "Ажилгүйдлийн түвшин (%)",
+      "scale": {"zero": true},
+      "axis": {"format": ".1f"}
+    },
+    "color": {
+      "field": "хүйс",
+      "type": "nominal",
+      "title": "Хүйс",
+      "scale": {
+        "domain": ["Нийт", "Эрэгтэй", "Эмэгтэй"],
+        "range": ["#3b82f6", "#6366f1", "#ec4899"]
+      },
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "жил", "title": "Он", "format": "d"},
+          {"field": "хүйс", "title": "Хүйс"},
+          {"field": "ажилгүйдлийн_түвшин", "title": "Ажилгүйдлийн түвшин (%)", "format": ".1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

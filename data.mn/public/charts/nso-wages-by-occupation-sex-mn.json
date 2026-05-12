@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын сарын дундаж нэрлэсэн цалин мэргэжил, хүйсээр, 2025 он (мянган төгрөг)",
+  "data": {
+    "url": "/datasets/nso-wages-by-occupation-sex-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type": "bar", "cornerRadiusEnd": 3},
+  "encoding": {
+    "x": {
+      "field": "цалин_мнт",
+      "type": "quantitative",
+      "title": "Дундаж сарын цалин, мянган төгрөг",
+      "axis": {"format": ",.0f"},
+      "scale": {"zero": true}
+    },
+    "y": {
+      "field": "мэргэжил",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "цалин_мнт",
+        "op": "max",
+        "order": "descending"
+      },
+      "axis": {"labelLimit": 320}
+    },
+    "color": {
+      "field": "хүйс",
+      "type": "nominal",
+      "title": "Хүйс",
+      "scale": {
+        "domain": ["Эрэгтэй", "Эмэгтэй"],
+        "range": ["#6366f1", "#ec4899"]
+      },
+      "legend": {"orient": "top", "title": null}
+    },
+    "xOffset": {
+      "field": "хүйс",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {"field": "мэргэжил", "title": "Мэргэжил"},
+      {"field": "хүйс", "title": "Хүйс"},
+      {"field": "цалин_мнт", "title": "Цалин (мянган төгрөг)", "format": ",.1f"},
+      {"field": "жил", "title": "Он", "format": "d"}
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

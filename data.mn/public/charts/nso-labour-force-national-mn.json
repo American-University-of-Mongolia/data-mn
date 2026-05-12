@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын ажиллах хүч хүйсээр 2009-2024 онд",
+  "data": {
+    "url": "/datasets/nso-labour-force-national-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "жил",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 1, "grid": false}
+    },
+    "y": {
+      "field": "ажиллах_хүч",
+      "type": "quantitative",
+      "title": "Мянган хүн",
+      "axis": {"format": ".2s"},
+      "scale": {"zero": true}
+    },
+    "color": {
+      "field": "хүйс",
+      "type": "nominal",
+      "title": "Хүйс",
+      "scale": {
+        "domain": ["Нийт", "Эрэгтэй", "Эмэгтэй"],
+        "range": ["#3b82f6", "#6366f1", "#ec4899"]
+      },
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "жил", "title": "Он", "format": "d"},
+          {"field": "хүйс", "title": "Хүйс"},
+          {"field": "ажиллах_хүч", "title": "Ажиллах хүч (хүн)", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

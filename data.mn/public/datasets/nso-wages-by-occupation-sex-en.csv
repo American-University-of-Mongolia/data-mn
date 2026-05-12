@@ -1,0 +1,21 @@
+sex,occupation,year,wages_mnt
+Female,Professionals,2025,2728.7
+Male,Professionals,2025,3542.3
+Female,"Plant and machine operators, and assemblers",2025,3121.3
+Male,"Plant and machine operators, and assemblers",2025,3437.5
+Female,Managers,2025,2862.7
+Male,Managers,2025,3303.7
+Female,Technicians and associate professionals,2025,2579.2
+Male,Technicians and associate professionals,2025,3159.7
+Female,Clerical support workers,2025,2382.7
+Male,Clerical support workers,2025,3022.5
+Female,Craft and related trades workers,2025,1905.8
+Male,Craft and related trades workers,2025,2984.0
+Female,Armed forces occupations,2025,2534.6
+Male,Armed forces occupations,2025,2487.0
+Female,Service and sales workers,2025,1696.5
+Male,Service and sales workers,2025,2155.0
+Female,Elementary occupations,2025,1728.1
+Male,Elementary occupations,2025,2100.2
+Female,"Skilled agricultural, forestry and fishery workers",2025,1626.6
+Male,"Skilled agricultural, forestry and fishery workers",2025,1531.8

@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын ажилгүйдлийн түвшин хүйсээр, % (2009-2024)"
+publishDate: 2026-05-12
+excerpt: "Монгол Улсын ажилгүйдлийн түвшин 2024 онд 5.9% байсан бөгөөд эмэгтэйчүүдийн ажилгүйдэл (5.6%) эрэгтэйчүүдийн ажилгүйдэлтэй (6.2%) ойролцоо байна. Хоёулаа 2009, 2016 оны 10%-аас дээш түвшнээс буурчээ."
+category: "Хөдөлмөрийн зах зээл"
+tags: ["хөдөлмөрийн зах зээл", "ажилгүйдэл", "хүйс", "жилийн"]
+keywords: ["монгол ажилгүйдлийн түвшин", "хүйсээр ажилгүйдэл", "хөдөлмөрийн зах зээл монгол", "жилийн ажилгүйдэл"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-12-31
+dataFiles:
+  - path: "/datasets/nso-unemployment-rate-annual-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/nso-unemployment-rate-annual.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_0400_020V2_10.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-unemployment-rate-annual-mn.json"
+  title="Монгол Улсын ажилгүйдлийн түвшин хүйсээр, % (2009-2024)"
+/>

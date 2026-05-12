@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia unemployment rate by aimag (2009–2024), featuring 6 aimags",
+  "data": {
+    "url": "/datasets/nso-unemployment-rate-by-region-en.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {"format": "d", "tickMinStep": 1, "grid": false}
+    },
+    "y": {
+      "field": "unemployment_rate",
+      "type": "quantitative",
+      "title": "Unemployment Rate (%)",
+      "axis": {"format": ".1f"},
+      "scale": {"zero": true}
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "title": "Aimag",
+      "scale": {
+        "domain": ["Govisumber", "Darkhan-Uul", "Bayan-Ulgii", "Khuvsgul", "Orkhon", "Ulaanbaatar"],
+        "range": ["#e45756", "#4c78a8", "#f58518", "#72b7b2", "#54a24b", "#eeca3b"]
+      },
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "year", "title": "Year", "format": "d"},
+          {"field": "region", "title": "Aimag"},
+          {"field": "unemployment_rate", "title": "Unemployment Rate (%)", "format": ".1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

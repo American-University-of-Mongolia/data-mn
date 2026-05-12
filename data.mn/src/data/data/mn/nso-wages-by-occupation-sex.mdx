@@ -1,0 +1,35 @@
+---
+title: "Монгол Улсын сарын дундаж цалин мэргэжил, хүйсээр, мянган төгрөг (2001–2025)"
+publishDate: 2026-05-12
+excerpt: "Монгол Улсад цалингийн ялгаа мэргэжлээр мэдэгдэхүйц ялгаатай байна: 2025 онд эмэгтэй мэргэжилтнүүд ихэнх ангиллаар эрэгтэй хамтынхаасаа бага цалин авч байгаа бөгөөд удирдах ажлын байрны ялгаа хамгийн их байна."
+category: "Хөдөлмөрийн зах зээл"
+tags: ["хөдөлмөрийн зах зээл", "цалин", "дундаж цалин", "хүйсийн ялгаа", "мэргэжил", "жилийн"]
+keywords: ["мэргэжлийн цалин монгол", "хүйсийн цалингийн ялгаа монгол", "мэргэжлийн дундаж цалин", "хөдөлмөрийн зах зээл монгол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-31
+dataFiles:
+  - path: "/datasets/nso-wages-by-occupation-sex-mn.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "2025 оны мэргэжил, хүйсийн өгөгдөл (CSV)"
+  - path: "/datasets/nso-wages-by-occupation-sex.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Excel-ээр нээх"
+  - path: "/datasets/nso-wages-by-occupation-sex-all-mn.csv"
+    format: "csv"
+    size: "65 KB"
+    description: "Бүх жил, бүх ангилал (CSV)"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0400_025V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-wages-by-occupation-sex-mn.json"
+  title="Монгол Улсын сарын дундаж цалин мэргэжил, хүйсээр, мянган төгрөг (2001–2025)"
+/>

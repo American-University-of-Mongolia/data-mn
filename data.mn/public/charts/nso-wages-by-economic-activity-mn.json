@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын сарын дундаж цалин эдийн засгийн салбараар (2001-2025)",
+  "data": {
+    "url": "/datasets/nso-wages-by-economic-activity-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "жил",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 5, "grid": false}
+    },
+    "y": {
+      "field": "цалин_мнт",
+      "type": "quantitative",
+      "title": "Сарын цалин, мянган төгрөг (нэрлэсэн)",
+      "axis": {"format": ".0f"},
+      "scale": {"zero": true}
+    },
+    "color": {
+      "field": "салбар",
+      "type": "nominal",
+      "title": "Эдийн засгийн салбар",
+      "scale": {
+        "domain": [
+          "Улсын дундаж",
+          "Уул уурхай, олборлолт",
+          "Санхүүгийн болон даатгалын үйл ажиллагаа",
+          "Боловсруулах үйлдвэрлэл",
+          "Хөдөө аж ахуй, ойн аж ахуй, загас барилт, ан агнуур",
+          "Төрийн удирдлага ба батлан хамгаалах үйл ажиллагаа, албан журмын нийгмийн хамгаалал"
+        ],
+        "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2", "#54a24b", "#eeca3b"]
+      },
+      "legend": {"orient": "top", "columns": 2, "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "жил", "title": "Он", "format": "d"},
+          {"field": "салбар", "title": "Салбар"},
+          {"field": "цалин_мнт", "title": "Цалин (мянган төгрөг)", "format": ",.1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

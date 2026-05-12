@@ -1,0 +1,32 @@
+---
+title: "Монгол Улсын ажиллах хүч, хүн (2009–2024)"
+publishDate: 2026-05-12
+dataVersion: 1
+dataDate: 2024-12-31
+excerpt: "Монгол Улсын ажиллах хүч 2024 онд 1.44 сая хүнд хүрсэн бөгөөд эмэгтэйчүүд нийт ажиллах хүчний 48%-ийг эзэлж байна."
+category: "Хөдөлмөрийн зах зээл"
+tags: ["хөдөлмөрийн зах зээл", "ажил эрхлэлт", "ажиллах хүч", "хүйс", "жилийн"]
+keywords: ["монгол улсын ажиллах хүч", "хүйсээр ажил эрхлэлт", "ажиллах хүчний статистик"]
+dataFiles:
+  - path: "/datasets/nso-labour-force-national-mn.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "CSV татах"
+  - path: "/datasets/nso-labour-force-national.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel татах"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0400_012V1_1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Монгол Улсын ажиллах хүч 2024 онд 1.44 сая хүнд хүрсэн бөгөөд эмэгтэйчүүд нийт ажиллах хүчний 48%-ийг эзэлж байна.
+
+<VegaChart
+  spec="/charts/nso-labour-force-national-mn.json"
+  title="Монгол Улсын ажиллах хүч, хүн (2009–2024)"
+/>

@@ -1,0 +1,31 @@
+---
+title: "Mongolia Unemployment Rate by Sex, % (2009-2024)"
+publishDate: 2026-05-12
+excerpt: "Mongolia's national unemployment rate stood at 5.9% in 2024. Female unemployment (5.6%) was close to male unemployment (6.2%), with both declining from highs exceeding 10% seen in 2009 and 2016."
+category: "Labor Market"
+tags: ["labor market", "unemployment", "gender", "annual"]
+keywords: ["mongolia unemployment rate", "unemployment by sex", "labor market mongolia", "annual unemployment"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-12-31
+dataFiles:
+  - path: "/datasets/nso-unemployment-rate-annual-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV"
+  - path: "/datasets/nso-unemployment-rate-annual.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_0400_020V2_10.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-unemployment-rate-annual-en.json"
+  title="Mongolia Unemployment Rate by Sex, % (2009-2024)"
+/>

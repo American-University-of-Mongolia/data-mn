@@ -1,0 +1,35 @@
+---
+title: "Монгол Улсын ажилгүйдлийн түвшин аймгаар, % (2009–2024)"
+publishDate: 2026-05-12
+excerpt: "Монгол Улсын аймгуудын ажилгүйдлийн түвшин мэдэгдэхүйц ялгаатай бөгөөд зарим бүс нутаг 2024 оны 5.9%-ийн улсын дунджаас тогтмол давж байна."
+category: "Хөдөлмөрийн зах зээл"
+tags: ["хөдөлмөрийн зах зээл", "ажилгүйдэл", "бүс нутаг", "аймаг", "жилийн"]
+keywords: ["монгол ажилгүйдлийн түвшин", "аймгийн ажилгүйдэл", "бүс нутгийн ажилгүйдэл"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-12-31
+dataFiles:
+  - path: "/datasets/nso-unemployment-rate-by-region-mn.csv"
+    format: "csv"
+    size: "3 KB"
+    description: "Сонгосон аймгууд (CSV)"
+  - path: "/datasets/nso-unemployment-rate-by-region-all-mn.csv"
+    format: "csv"
+    size: "9 KB"
+    description: "Бүх аймаг (CSV)"
+  - path: "/datasets/nso-unemployment-rate-by-region.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Excel-ээр нээх"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_0400_020V2_10.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-unemployment-rate-by-region-mn.json"
+  title="Ажилгүйдлийн түвшин аймгаар, % (2009–2024)"
+/>

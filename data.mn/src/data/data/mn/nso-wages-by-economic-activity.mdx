@@ -1,0 +1,35 @@
+---
+title: "Монгол Улсын сарын дундаж цалин эдийн засгийн салбараар, мянган төгрөг (2001–2025)"
+publishDate: 2026-05-12
+excerpt: "Монгол Улсын сарын дундаж цалин 2025 онд 2,726,900 төгрөгт хүрсэн бөгөөд уул уурхайн салбарын цалин (5,273,900 төгрөг) улсын дунджаас хоёр дахин давж байна."
+category: "Хөдөлмөрийн зах зээл"
+tags: ["хөдөлмөрийн зах зээл", "цалин", "дундаж цалин", "эдийн засгийн салбар", "уул уурхай", "жилийн"]
+keywords: ["салбар тус бүрийн цалин монгол", "сарын дундаж цалин монгол", "уул уурхайн цалин", "хөдөлмөрийн зах зээл монгол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-31
+dataFiles:
+  - path: "/datasets/nso-wages-by-economic-activity-mn.csv"
+    format: "csv"
+    size: "12 KB"
+    description: "Онцлох салбарууд (CSV)"
+  - path: "/datasets/nso-wages-by-economic-activity.xlsx"
+    format: "xlsx"
+    size: "9 KB"
+    description: "Excel-ээр нээх"
+  - path: "/datasets/nso-wages-by-economic-activity-all-mn.csv"
+    format: "csv"
+    size: "161 KB"
+    description: "Бүх 22 салбар, бүх хүйс (CSV)"
+source:
+  name: "Үндэсний Статистикийн Хороо"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0400_022V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-wages-by-economic-activity-mn.json"
+  title="Монгол Улсын сарын дундаж цалин эдийн засгийн салбараар, мянган төгрөг (2001–2025)"
+/>

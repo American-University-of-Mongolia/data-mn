@@ -1,0 +1,790 @@
+sex,occupation,year,wages_mnt
+Female,Clerical support workers,2001,49.0
+Female,Craft and related trades workers,2001,67.2
+Female,Elementary occupations,2001,46.6
+Female,Managers,2001,85.2
+Female,National average,2001,61.0
+Female,"Plant and machine operators, and assemblers",2001,63.1
+Female,Professionals,2001,67.9
+Female,Service and sales workers,2001,50.9
+Female,"Skilled agricultural, forestry and fishery workers",2001,44.2
+Female,Technicians and associate professionals,2001,64.2
+Male,Clerical support workers,2001,55.5
+Male,Craft and related trades workers,2001,73.5
+Male,Elementary occupations,2001,50.3
+Male,Managers,2001,97.8
+Male,National average,2001,69.2
+Male,"Plant and machine operators, and assemblers",2001,67.5
+Male,Professionals,2001,74.0
+Male,Service and sales workers,2001,64.1
+Male,"Skilled agricultural, forestry and fishery workers",2001,43.6
+Male,Technicians and associate professionals,2001,82.3
+National average,Clerical support workers,2001,52.0
+National average,Craft and related trades workers,2001,70.6
+National average,Elementary occupations,2001,48.7
+National average,Managers,2001,93.3
+National average,National average,2001,65.2
+National average,"Plant and machine operators, and assemblers",2001,66.6
+National average,Professionals,2001,70.3
+National average,Service and sales workers,2001,56.2
+National average,"Skilled agricultural, forestry and fishery workers",2001,43.8
+National average,Technicians and associate professionals,2001,73.1
+Female,Clerical support workers,2002,56.5
+Female,Craft and related trades workers,2002,68.6
+Female,Elementary occupations,2002,53.6
+Female,Managers,2002,93.2
+Female,National average,2002,65.9
+Female,"Plant and machine operators, and assemblers",2002,84.2
+Female,Professionals,2002,74.0
+Female,Service and sales workers,2002,56.0
+Female,"Skilled agricultural, forestry and fishery workers",2002,49.4
+Female,Technicians and associate professionals,2002,69.6
+Male,Clerical support workers,2002,65.8
+Male,Craft and related trades workers,2002,83.2
+Male,Elementary occupations,2002,58.8
+Male,Managers,2002,107.0
+Male,National average,2002,76.3
+Male,"Plant and machine operators, and assemblers",2002,78.2
+Male,Professionals,2002,78.6
+Male,Service and sales workers,2002,63.5
+Male,"Skilled agricultural, forestry and fishery workers",2002,55.7
+Male,Technicians and associate professionals,2002,96.3
+National average,Clerical support workers,2002,61.0
+National average,Craft and related trades workers,2002,76.0
+National average,Elementary occupations,2002,56.8
+National average,Managers,2002,102.1
+National average,National average,2002,71.3
+National average,"Plant and machine operators, and assemblers",2002,79.4
+National average,Professionals,2002,75.8
+National average,Service and sales workers,2002,59.2
+National average,"Skilled agricultural, forestry and fishery workers",2002,54.0
+National average,Technicians and associate professionals,2002,81.9
+Female,Clerical support workers,2003,64.9
+Female,Craft and related trades workers,2003,81.4
+Female,Elementary occupations,2003,58.1
+Female,Managers,2003,106.2
+Female,National average,2003,76.0
+Female,"Plant and machine operators, and assemblers",2003,89.3
+Female,Professionals,2003,86.9
+Female,Service and sales workers,2003,63.6
+Female,"Skilled agricultural, forestry and fishery workers",2003,60.5
+Female,Technicians and associate professionals,2003,79.9
+Male,Clerical support workers,2003,70.1
+Male,Craft and related trades workers,2003,92.1
+Male,Elementary occupations,2003,70.3
+Male,Managers,2003,119.9
+Male,National average,2003,86.9
+Male,"Plant and machine operators, and assemblers",2003,89.7
+Male,Professionals,2003,91.0
+Male,Service and sales workers,2003,75.6
+Male,"Skilled agricultural, forestry and fishery workers",2003,63.1
+Male,Technicians and associate professionals,2003,103.7
+National average,Clerical support workers,2003,67.3
+National average,Craft and related trades workers,2003,86.8
+National average,Elementary occupations,2003,65.2
+National average,Managers,2003,114.7
+National average,National average,2003,81.5
+National average,"Plant and machine operators, and assemblers",2003,89.6
+National average,Professionals,2003,88.4
+National average,Service and sales workers,2003,68.6
+National average,"Skilled agricultural, forestry and fishery workers",2003,63.0
+National average,Technicians and associate professionals,2003,90.3
+Female,Clerical support workers,2004,76.9
+Female,Craft and related trades workers,2004,94.4
+Female,Elementary occupations,2004,63.2
+Female,Managers,2004,120.7
+Female,National average,2004,88.0
+Female,"Plant and machine operators, and assemblers",2004,112.7
+Female,Professionals,2004,100.6
+Female,Service and sales workers,2004,73.0
+Female,"Skilled agricultural, forestry and fishery workers",2004,62.9
+Female,Technicians and associate professionals,2004,93.4
+Male,Clerical support workers,2004,76.9
+Male,Craft and related trades workers,2004,105.8
+Male,Elementary occupations,2004,74.2
+Male,Managers,2004,144.4
+Male,National average,2004,98.3
+Male,"Plant and machine operators, and assemblers",2004,103.0
+Male,Professionals,2004,101.3
+Male,Service and sales workers,2004,83.4
+Male,"Skilled agricultural, forestry and fishery workers",2004,56.6
+Male,Technicians and associate professionals,2004,124.4
+National average,Clerical support workers,2004,77.0
+National average,Craft and related trades workers,2004,100.1
+National average,Elementary occupations,2004,69.6
+National average,Managers,2004,135.0
+National average,National average,2004,93.0
+National average,"Plant and machine operators, and assemblers",2004,104.5
+National average,Professionals,2004,100.8
+National average,Service and sales workers,2004,77.4
+National average,"Skilled agricultural, forestry and fishery workers",2004,58.0
+National average,Technicians and associate professionals,2004,106.4
+Female,Clerical support workers,2005,75.3
+Female,Craft and related trades workers,2005,89.6
+Female,Elementary occupations,2005,68.9
+Female,Managers,2005,139.7
+Female,National average,2005,92.3
+Female,"Plant and machine operators, and assemblers",2005,128.8
+Female,Professionals,2005,108.3
+Female,Service and sales workers,2005,81.8
+Female,"Skilled agricultural, forestry and fishery workers",2005,50.7
+Female,Technicians and associate professionals,2005,94.5
+Male,Clerical support workers,2005,76.1
+Male,Craft and related trades workers,2005,116.3
+Male,Elementary occupations,2005,79.4
+Male,Managers,2005,157.7
+Male,National average,2005,110.0
+Male,"Plant and machine operators, and assemblers",2005,127.0
+Male,Professionals,2005,114.8
+Male,Service and sales workers,2005,90.4
+Male,"Skilled agricultural, forestry and fishery workers",2005,68.3
+Male,Technicians and associate professionals,2005,135.8
+National average,Clerical support workers,2005,75.7
+National average,Craft and related trades workers,2005,105.1
+National average,Elementary occupations,2005,74.3
+National average,Managers,2005,150.9
+National average,National average,2005,101.3
+National average,"Plant and machine operators, and assemblers",2005,127.4
+National average,Professionals,2005,111.0
+National average,Service and sales workers,2005,85.7
+National average,"Skilled agricultural, forestry and fishery workers",2005,62.2
+National average,Technicians and associate professionals,2005,110.7
+Female,Clerical support workers,2006,73.0
+Female,Craft and related trades workers,2006,107.0
+Female,Elementary occupations,2006,90.4
+Female,Managers,2006,127.2
+Female,National average,2006,117.3
+Female,"Plant and machine operators, and assemblers",2006,142.1
+Female,Professionals,2006,94.9
+Female,Service and sales workers,2006,72.7
+Female,"Skilled agricultural, forestry and fishery workers",2006,48.8
+Female,Technicians and associate professionals,2006,94.7
+Male,Clerical support workers,2006,136.5
+Male,Craft and related trades workers,2006,142.7
+Male,Elementary occupations,2006,95.6
+Male,Managers,2006,241.3
+Male,National average,2006,138.1
+Male,"Plant and machine operators, and assemblers",2006,150.3
+Male,Professionals,2006,222.6
+Male,Service and sales workers,2006,145.5
+Male,"Skilled agricultural, forestry and fishery workers",2006,86.7
+Male,Technicians and associate professionals,2006,191.5
+National average,Clerical support workers,2006,99.1
+National average,Craft and related trades workers,2006,128.4
+National average,Elementary occupations,2006,92.4
+National average,Managers,2006,197.2
+National average,National average,2006,127.7
+National average,"Plant and machine operators, and assemblers",2006,148.6
+National average,Professionals,2006,146.7
+National average,Service and sales workers,2006,104.6
+National average,"Skilled agricultural, forestry and fishery workers",2006,75.9
+National average,Technicians and associate professionals,2006,133.3
+Female,Clerical support workers,2007,132.8
+Female,Craft and related trades workers,2007,130.7
+Female,Elementary occupations,2007,119.7
+Female,Managers,2007,263.5
+Female,National average,2007,159.3
+Female,"Plant and machine operators, and assemblers",2007,192.7
+Female,Professionals,2007,193.8
+Female,Service and sales workers,2007,129.2
+Female,"Skilled agricultural, forestry and fishery workers",2007,103.3
+Female,Technicians and associate professionals,2007,165.3
+Male,Clerical support workers,2007,148.1
+Male,Craft and related trades workers,2007,177.2
+Male,Elementary occupations,2007,137.0
+Male,Managers,2007,295.9
+Male,National average,2007,186.7
+Male,"Plant and machine operators, and assemblers",2007,201.5
+Male,Professionals,2007,218.1
+Male,Service and sales workers,2007,154.0
+Male,"Skilled agricultural, forestry and fishery workers",2007,141.6
+Male,Technicians and associate professionals,2007,199.7
+National average,Clerical support workers,2007,138.5
+National average,Craft and related trades workers,2007,159.4
+National average,Elementary occupations,2007,129.5
+National average,Managers,2007,282.8
+National average,National average,2007,173.0
+National average,"Plant and machine operators, and assemblers",2007,200.1
+National average,Professionals,2007,203.1
+National average,Service and sales workers,2007,139.7
+National average,"Skilled agricultural, forestry and fishery workers",2007,133.1
+National average,Technicians and associate professionals,2007,179.1
+Female,Clerical support workers,2008,216.7
+Female,Craft and related trades workers,2008,199.9
+Female,Elementary occupations,2008,190.8
+Female,Managers,2008,407.5
+Female,National average,2008,258.1
+Female,"Plant and machine operators, and assemblers",2008,309.4
+Female,Professionals,2008,315.3
+Female,Service and sales workers,2008,196.4
+Female,"Skilled agricultural, forestry and fishery workers",2008,173.0
+Female,Technicians and associate professionals,2008,279.0
+Male,Clerical support workers,2008,218.9
+Male,Craft and related trades workers,2008,259.1
+Male,Elementary occupations,2008,209.3
+Male,Managers,2008,462.2
+Male,National average,2008,291.3
+Male,"Plant and machine operators, and assemblers",2008,324.2
+Male,Professionals,2008,349.1
+Male,Service and sales workers,2008,251.5
+Male,"Skilled agricultural, forestry and fishery workers",2008,220.5
+Male,Technicians and associate professionals,2008,302.5
+National average,Clerical support workers,2008,217.3
+National average,Craft and related trades workers,2008,236.8
+National average,Elementary occupations,2008,201.3
+National average,Managers,2008,439.5
+National average,National average,2008,274.2
+National average,"Plant and machine operators, and assemblers",2008,321.6
+National average,Professionals,2008,327.2
+National average,Service and sales workers,2008,219.0
+National average,"Skilled agricultural, forestry and fishery workers",2008,201.7
+National average,Technicians and associate professionals,2008,288.8
+Female,Clerical support workers,2009,238.6
+Female,Craft and related trades workers,2009,223.2
+Female,Elementary occupations,2009,203.1
+Female,Managers,2009,421.3
+Female,National average,2009,279.9
+Female,"Plant and machine operators, and assemblers",2009,316.8
+Female,Professionals,2009,344.2
+Female,Service and sales workers,2009,219.7
+Female,"Skilled agricultural, forestry and fishery workers",2009,196.2
+Female,Technicians and associate professionals,2009,293.9
+Male,Clerical support workers,2009,266.5
+Male,Craft and related trades workers,2009,285.8
+Male,Elementary occupations,2009,220.1
+Male,Managers,2009,515.6
+Male,National average,2009,322.6
+Male,"Plant and machine operators, and assemblers",2009,331.4
+Male,Professionals,2009,396.5
+Male,Service and sales workers,2009,274.6
+Male,"Skilled agricultural, forestry and fishery workers",2009,253.6
+Male,Technicians and associate professionals,2009,346.3
+National average,Clerical support workers,2009,251.4
+National average,Craft and related trades workers,2009,261.7
+National average,Elementary occupations,2009,212.8
+National average,Managers,2009,475.5
+National average,National average,2009,300.5
+National average,"Plant and machine operators, and assemblers",2009,329.3
+National average,Professionals,2009,363.5
+National average,Service and sales workers,2009,240.9
+National average,"Skilled agricultural, forestry and fishery workers",2009,230.6
+National average,Technicians and associate professionals,2009,314.3
+Female,Clerical support workers,2010,268.9
+Female,Craft and related trades workers,2010,248.5
+Female,Elementary occupations,2010,239.6
+Female,Managers,2010,484.6
+Female,National average,2010,314.5
+Female,"Plant and machine operators, and assemblers",2010,330.5
+Female,Professionals,2010,382.6
+Female,Service and sales workers,2010,252.0
+Female,"Skilled agricultural, forestry and fishery workers",2010,182.2
+Female,Technicians and associate professionals,2010,326.8
+Male,Clerical support workers,2010,308.0
+Male,Craft and related trades workers,2010,359.3
+Male,Elementary occupations,2010,263.8
+Male,Managers,2010,579.8
+Male,National average,2010,370.4
+Male,"Plant and machine operators, and assemblers",2010,403.6
+Male,Professionals,2010,401.9
+Male,Service and sales workers,2010,303.1
+Male,"Skilled agricultural, forestry and fishery workers",2010,408.0
+Male,Technicians and associate professionals,2010,424.4
+National average,Clerical support workers,2010,288.1
+National average,Craft and related trades workers,2010,314.3
+National average,Elementary occupations,2010,253.6
+National average,Managers,2010,538.7
+National average,National average,2010,341.5
+National average,"Plant and machine operators, and assemblers",2010,394.8
+National average,Professionals,2010,389.8
+National average,Service and sales workers,2010,272.8
+National average,"Skilled agricultural, forestry and fishery workers",2010,344.9
+National average,Technicians and associate professionals,2010,363.2
+Female,Clerical support workers,2011,310.6
+Female,Craft and related trades workers,2011,310.1
+Female,Elementary occupations,2011,264.4
+Female,Managers,2011,629.6
+Female,National average,2011,381.3
+Female,"Plant and machine operators, and assemblers",2011,356.9
+Female,Professionals,2011,465.4
+Female,Service and sales workers,2011,294.0
+Female,"Skilled agricultural, forestry and fishery workers",2011,237.6
+Female,Technicians and associate professionals,2011,394.7
+Male,Clerical support workers,2011,302.5
+Male,Craft and related trades workers,2011,442.8
+Male,Elementary occupations,2011,360.0
+Male,Managers,2011,777.1
+Male,National average,2011,470.0
+Male,"Plant and machine operators, and assemblers",2011,572.9
+Male,Professionals,2011,512.6
+Male,Service and sales workers,2011,368.6
+Male,"Skilled agricultural, forestry and fishery workers",2011,415.8
+Male,Technicians and associate professionals,2011,491.7
+National average,Clerical support workers,2011,307.0
+National average,Craft and related trades workers,2011,386.8
+National average,Elementary occupations,2011,324.7
+National average,Managers,2011,712.4
+National average,National average,2011,424.2
+National average,"Plant and machine operators, and assemblers",2011,542.6
+National average,Professionals,2011,483.2
+National average,Service and sales workers,2011,323.4
+National average,"Skilled agricultural, forestry and fishery workers",2011,355.1
+National average,Technicians and associate professionals,2011,430.7
+Female,Clerical support workers,2012,411.4
+Female,Craft and related trades workers,2012,391.3
+Female,Elementary occupations,2012,337.0
+Female,Managers,2012,813.5
+Female,National average,2012,524.3
+Female,"Plant and machine operators, and assemblers",2012,473.0
+Female,Professionals,2012,645.7
+Female,Service and sales workers,2012,415.3
+Female,"Skilled agricultural, forestry and fishery workers",2012,232.9
+Female,Technicians and associate professionals,2012,573.0
+Male,Clerical support workers,2012,420.4
+Male,Craft and related trades workers,2012,560.9
+Male,Elementary occupations,2012,393.4
+Male,Managers,2012,968.8
+Male,National average,2012,593.1
+Male,"Plant and machine operators, and assemblers",2012,614.5
+Male,Professionals,2012,710.2
+Male,Service and sales workers,2012,496.2
+Male,"Skilled agricultural, forestry and fishery workers",2012,418.6
+Male,Technicians and associate professionals,2012,636.0
+National average,Clerical support workers,2012,415.9
+National average,Craft and related trades workers,2012,491.3
+National average,Elementary occupations,2012,371.1
+National average,Managers,2012,897.5
+National average,National average,2012,557.6
+National average,"Plant and machine operators, and assemblers",2012,589.6
+National average,Professionals,2012,670.1
+National average,Service and sales workers,2012,446.9
+National average,"Skilled agricultural, forestry and fishery workers",2012,360.8
+National average,Technicians and associate professionals,2012,596.8
+Female,Armed forces occupations,2013,726.6
+Female,Clerical support workers,2013,815.8
+Female,Craft and related trades workers,2013,863.6
+Female,Elementary occupations,2013,648.9
+Female,Managers,2013,1509.7
+Female,National average,2013,688.5
+Female,"Plant and machine operators, and assemblers",2013,900.7
+Female,Professionals,2013,935.3
+Female,Service and sales workers,2013,607.5
+Female,"Skilled agricultural, forestry and fishery workers",2013,546.8
+Female,Technicians and associate professionals,2013,821.9
+Male,Armed forces occupations,2013,687.0
+Male,Clerical support workers,2013,710.4
+Male,Craft and related trades workers,2013,649.4
+Male,Elementary occupations,2013,494.8
+Male,Managers,2013,1211.1
+Male,National average,2013,860.5
+Male,"Plant and machine operators, and assemblers",2013,619.2
+Male,Professionals,2013,785.0
+Male,Service and sales workers,2013,512.2
+Male,"Skilled agricultural, forestry and fishery workers",2013,501.5
+Male,Technicians and associate professionals,2013,649.0
+National average,Armed forces occupations,2013,719.6
+National average,Clerical support workers,2013,749.0
+National average,Craft and related trades workers,2013,801.5
+National average,Elementary occupations,2013,556.7
+National average,Managers,2013,1368.2
+National average,National average,2013,774.9
+National average,"Plant and machine operators, and assemblers",2013,869.9
+National average,Professionals,2013,837.9
+National average,Service and sales workers,2013,568.3
+National average,"Skilled agricultural, forestry and fishery workers",2013,527.6
+National average,Technicians and associate professionals,2013,723.6
+Female,Armed forces occupations,2014,721.8
+Female,Clerical support workers,2014,663.2
+Female,Craft and related trades workers,2014,647.0
+Female,Elementary occupations,2014,556.9
+Female,Managers,2014,927.3
+Female,National average,2014,733.3
+Female,"Plant and machine operators, and assemblers",2014,768.4
+Female,Professionals,2014,836.6
+Female,Service and sales workers,2014,513.0
+Female,"Skilled agricultural, forestry and fishery workers",2014,397.2
+Female,Technicians and associate professionals,2014,832.5
+Male,Armed forces occupations,2014,798.4
+Male,Clerical support workers,2014,691.8
+Male,Craft and related trades workers,2014,781.0
+Male,Elementary occupations,2014,668.2
+Male,Managers,2014,1059.9
+Male,National average,2014,859.7
+Male,"Plant and machine operators, and assemblers",2014,907.8
+Male,Professionals,2014,1014.5
+Male,Service and sales workers,2014,567.8
+Male,"Skilled agricultural, forestry and fishery workers",2014,448.4
+Male,Technicians and associate professionals,2014,956.1
+National average,Armed forces occupations,2014,782.9
+National average,Clerical support workers,2014,672.6
+National average,Craft and related trades workers,2014,736.4
+National average,Elementary occupations,2014,610.6
+National average,Managers,2014,994.2
+National average,National average,2014,796.6
+National average,"Plant and machine operators, and assemblers",2014,892.1
+National average,Professionals,2014,891.1
+National average,Service and sales workers,2014,532.5
+National average,"Skilled agricultural, forestry and fishery workers",2014,432.6
+National average,Technicians and associate professionals,2014,891.8
+Female,Armed forces occupations,2015,747.8
+Female,Clerical support workers,2015,659.0
+Female,Craft and related trades workers,2015,635.2
+Female,Elementary occupations,2015,553.4
+Female,Managers,2015,890.7
+Female,National average,2015,760.7
+Female,"Plant and machine operators, and assemblers",2015,913.4
+Female,Professionals,2015,859.0
+Female,Service and sales workers,2015,513.4
+Female,"Skilled agricultural, forestry and fishery workers",2015,406.4
+Female,Technicians and associate professionals,2015,842.1
+Male,Armed forces occupations,2015,832.2
+Male,Clerical support workers,2015,689.1
+Male,Craft and related trades workers,2015,813.8
+Male,Elementary occupations,2015,623.0
+Male,Managers,2015,987.1
+Male,National average,2015,856.0
+Male,"Plant and machine operators, and assemblers",2015,938.7
+Male,Professionals,2015,1029.0
+Male,Service and sales workers,2015,553.0
+Male,"Skilled agricultural, forestry and fishery workers",2015,440.4
+Male,Technicians and associate professionals,2015,916.4
+National average,Armed forces occupations,2015,815.7
+National average,Clerical support workers,2015,669.7
+National average,Craft and related trades workers,2015,758.1
+National average,Elementary occupations,2015,588.1
+National average,Managers,2015,939.8
+National average,National average,2015,808.0
+National average,"Plant and machine operators, and assemblers",2015,935.6
+National average,Professionals,2015,914.5
+National average,Service and sales workers,2015,528.8
+National average,"Skilled agricultural, forestry and fishery workers",2015,429.9
+National average,Technicians and associate professionals,2015,880.1
+Female,Armed forces occupations,2016,756.9
+Female,Clerical support workers,2016,771.2
+Female,Craft and related trades workers,2016,715.9
+Female,Elementary occupations,2016,628.4
+Female,Managers,2016,1023.4
+Female,National average,2016,811.0
+Female,"Plant and machine operators, and assemblers",2016,1076.1
+Female,Professionals,2016,905.2
+Female,Service and sales workers,2016,562.2
+Female,"Skilled agricultural, forestry and fishery workers",2016,470.7
+Female,Technicians and associate professionals,2016,899.7
+Male,Armed forces occupations,2016,841.9
+Male,Clerical support workers,2016,859.4
+Male,Craft and related trades workers,2016,905.4
+Male,Elementary occupations,2016,730.6
+Male,Managers,2016,998.2
+Male,National average,2016,913.9
+Male,"Plant and machine operators, and assemblers",2016,1057.4
+Male,Professionals,2016,1094.0
+Male,Service and sales workers,2016,643.2
+Male,"Skilled agricultural, forestry and fishery workers",2016,445.8
+Male,Technicians and associate professionals,2016,1028.7
+National average,Armed forces occupations,2016,824.7
+National average,Clerical support workers,2016,803.2
+National average,Craft and related trades workers,2016,845.6
+National average,Elementary occupations,2016,678.7
+National average,Managers,2016,1010.0
+National average,National average,2016,861.9
+National average,"Plant and machine operators, and assemblers",2016,1060.1
+National average,Professionals,2016,967.1
+National average,Service and sales workers,2016,595.8
+National average,"Skilled agricultural, forestry and fishery workers",2016,453.5
+National average,Technicians and associate professionals,2016,967.1
+Female,Armed forces occupations,2017,980.2
+Female,Clerical support workers,2017,830.1
+Female,Craft and related trades workers,2017,758.4
+Female,Elementary occupations,2017,615.9
+Female,Managers,2017,1009.9
+Female,National average,2017,860.4
+Female,"Plant and machine operators, and assemblers",2017,1202.3
+Female,Professionals,2017,945.4
+Female,Service and sales workers,2017,599.0
+Female,"Skilled agricultural, forestry and fishery workers",2017,538.2
+Female,Technicians and associate professionals,2017,998.9
+Male,Armed forces occupations,2017,1002.7
+Male,Clerical support workers,2017,1067.5
+Male,Craft and related trades workers,2017,1003.5
+Male,Elementary occupations,2017,706.2
+Male,Managers,2017,1132.9
+Male,National average,2017,1029.4
+Male,"Plant and machine operators, and assemblers",2017,1142.1
+Male,Professionals,2017,1276.2
+Male,Service and sales workers,2017,771.7
+Male,"Skilled agricultural, forestry and fishery workers",2017,498.0
+Male,Technicians and associate professionals,2017,1149.7
+National average,Armed forces occupations,2017,997.1
+National average,Clerical support workers,2017,915.9
+National average,Craft and related trades workers,2017,928.3
+National average,Elementary occupations,2017,661.3
+National average,Managers,2017,1073.9
+National average,National average,2017,944.5
+National average,"Plant and machine operators, and assemblers",2017,1150.4
+National average,Professionals,2017,1053.7
+National average,Service and sales workers,2017,671.8
+National average,"Skilled agricultural, forestry and fishery workers",2017,511.7
+National average,Technicians and associate professionals,2017,1083.1
+Female,Armed forces occupations,2018,1007.1
+Female,Clerical support workers,2018,875.1
+Female,Craft and related trades workers,2018,786.1
+Female,Elementary occupations,2018,655.9
+Female,Managers,2018,1027.4
+Female,National average,2018,903.3
+Female,"Plant and machine operators, and assemblers",2018,1268.1
+Female,Professionals,2018,1010.5
+Female,Service and sales workers,2018,627.8
+Female,"Skilled agricultural, forestry and fishery workers",2018,539.0
+Female,Technicians and associate professionals,2018,1046.1
+Male,Armed forces occupations,2018,1072.6
+Male,Clerical support workers,2018,1129.0
+Male,Craft and related trades workers,2018,1082.9
+Male,Elementary occupations,2018,771.7
+Male,Managers,2018,1161.1
+Male,National average,2018,1100.3
+Male,"Plant and machine operators, and assemblers",2018,1179.4
+Male,Professionals,2018,1392.0
+Male,Service and sales workers,2018,783.0
+Male,"Skilled agricultural, forestry and fishery workers",2018,505.7
+Male,Technicians and associate professionals,2018,1308.5
+National average,Armed forces occupations,2018,1056.7
+National average,Clerical support workers,2018,967.9
+National average,Craft and related trades workers,2018,989.5
+National average,Elementary occupations,2018,714.2
+National average,Managers,2018,1097.8
+National average,National average,2018,1002.9
+National average,"Plant and machine operators, and assemblers",2018,1191.1
+National average,Professionals,2018,1138.2
+National average,Service and sales workers,2018,693.5
+National average,"Skilled agricultural, forestry and fishery workers",2018,518.1
+National average,Technicians and associate professionals,2018,1193.6
+Female,Armed forces occupations,2019,1150.5
+Female,Clerical support workers,2019,981.0
+Female,Craft and related trades workers,2019,1140.0
+Female,Elementary occupations,2019,741.8
+Female,Managers,2019,1137.8
+Female,National average,2019,1021.3
+Female,"Plant and machine operators, and assemblers",2019,1388.1
+Female,Professionals,2019,1211.5
+Female,Service and sales workers,2019,704.2
+Female,"Skilled agricultural, forestry and fishery workers",2019,649.0
+Female,Technicians and associate professionals,2019,1174.1
+Male,Armed forces occupations,2019,1261.2
+Male,Clerical support workers,2019,1299.4
+Male,Craft and related trades workers,2019,1303.6
+Male,Elementary occupations,2019,896.9
+Male,Managers,2019,1258.9
+Male,National average,2019,1222.6
+Male,"Plant and machine operators, and assemblers",2019,1284.4
+Male,Professionals,2019,1611.1
+Male,Service and sales workers,2019,873.9
+Male,"Skilled agricultural, forestry and fishery workers",2019,623.9
+Male,Technicians and associate professionals,2019,1483.2
+National average,Armed forces occupations,2019,1234.6
+National average,Clerical support workers,2019,1099.2
+National average,Craft and related trades workers,2019,1250.7
+National average,Elementary occupations,2019,821.9
+National average,Managers,2019,1201.0
+National average,National average,2019,1124.3
+National average,"Plant and machine operators, and assemblers",2019,1296.9
+National average,Professionals,2019,1344.9
+National average,Service and sales workers,2019,776.6
+National average,"Skilled agricultural, forestry and fishery workers",2019,633.9
+National average,Technicians and associate professionals,2019,1350.8
+Female,Armed forces occupations,2020,1246.5
+Female,Clerical support workers,2020,1092.2
+Female,Craft and related trades workers,2020,1019.7
+Female,Elementary occupations,2020,856.7
+Female,Managers,2020,1308.9
+Female,National average,2020,1109.6
+Female,"Plant and machine operators, and assemblers",2020,1451.3
+Female,Professionals,2020,1283.0
+Female,Service and sales workers,2020,777.4
+Female,"Skilled agricultural, forestry and fishery workers",2020,718.3
+Female,Technicians and associate professionals,2020,1303.4
+Male,Armed forces occupations,2020,1355.7
+Male,Clerical support workers,2020,1466.3
+Male,Craft and related trades workers,2020,1362.8
+Male,Elementary occupations,2020,1020.9
+Male,Managers,2020,1418.1
+Male,National average,2020,1326.2
+Male,"Plant and machine operators, and assemblers",2020,1415.6
+Male,Professionals,2020,1603.1
+Male,Service and sales workers,2020,982.2
+Male,"Skilled agricultural, forestry and fishery workers",2020,690.2
+Male,Technicians and associate professionals,2020,1592.2
+National average,Armed forces occupations,2020,1327.9
+National average,Clerical support workers,2020,1235.4
+National average,Craft and related trades workers,2020,1257.1
+National average,Elementary occupations,2020,939.8
+National average,Managers,2020,1366.8
+National average,National average,2020,1220.6
+National average,"Plant and machine operators, and assemblers",2020,1419.8
+National average,Professionals,2020,1391.8
+National average,Service and sales workers,2020,864.6
+National average,"Skilled agricultural, forestry and fishery workers",2020,701.3
+National average,Technicians and associate professionals,2020,1470.6
+Female,Armed forces occupations,2021,1306.0
+Female,Clerical support workers,2021,1130.7
+Female,Craft and related trades workers,2021,1123.6
+Female,Elementary occupations,2021,918.1
+Female,Managers,2021,1309.0
+Female,National average,2021,1163.1
+Female,"Plant and machine operators, and assemblers",2021,1501.8
+Female,Professionals,2021,1358.3
+Female,Service and sales workers,2021,819.8
+Female,"Skilled agricultural, forestry and fishery workers",2021,780.4
+Female,Technicians and associate professionals,2021,1372.0
+Male,Armed forces occupations,2021,1375.8
+Male,Clerical support workers,2021,1578.0
+Male,Craft and related trades workers,2021,1419.6
+Male,Elementary occupations,2021,1073.0
+Male,Managers,2021,1453.9
+Male,National average,2021,1390.1
+Male,"Plant and machine operators, and assemblers",2021,1492.1
+Male,Professionals,2021,1719.4
+Male,Service and sales workers,2021,1041.9
+Male,"Skilled agricultural, forestry and fishery workers",2021,734.7
+Male,Technicians and associate professionals,2021,1675.0
+National average,Armed forces occupations,2021,1359.5
+National average,Clerical support workers,2021,1298.1
+National average,Craft and related trades workers,2021,1329.8
+National average,Elementary occupations,2021,997.5
+National average,Managers,2021,1385.8
+National average,National average,2021,1279.4
+National average,"Plant and machine operators, and assemblers",2021,1493.2
+National average,Professionals,2021,1480.2
+National average,Service and sales workers,2021,913.7
+National average,"Skilled agricultural, forestry and fishery workers",2021,752.5
+National average,Technicians and associate professionals,2021,1541.7
+Female,Armed forces occupations,2022,1519.5
+Female,Clerical support workers,2022,1366.9
+Female,Craft and related trades workers,2022,1283.1
+Female,Elementary occupations,2022,1058.7
+Female,Managers,2022,1633.3
+Female,National average,2022,1360.5
+Female,"Plant and machine operators, and assemblers",2022,1853.4
+Female,Professionals,2022,1574.3
+Female,Service and sales workers,2022,945.8
+Female,"Skilled agricultural, forestry and fishery workers",2022,910.7
+Female,Technicians and associate professionals,2022,1580.0
+Male,Armed forces occupations,2022,1557.4
+Male,Clerical support workers,2022,2010.2
+Male,Craft and related trades workers,2022,1662.2
+Male,Elementary occupations,2022,1234.3
+Male,Managers,2022,1742.3
+Male,National average,2022,1642.8
+Male,"Plant and machine operators, and assemblers",2022,1910.4
+Male,Professionals,2022,1996.4
+Male,Service and sales workers,2022,1164.2
+Male,"Skilled agricultural, forestry and fishery workers",2022,810.9
+Male,Technicians and associate professionals,2022,1888.7
+National average,Armed forces occupations,2022,1548.8
+National average,Clerical support workers,2022,1593.6
+National average,Craft and related trades workers,2022,1549.9
+National average,Elementary occupations,2022,1148.2
+National average,Managers,2022,1691.4
+National average,National average,2022,1503.8
+National average,"Plant and machine operators, and assemblers",2022,1903.5
+National average,Professionals,2022,1714.3
+National average,Service and sales workers,2022,1038.7
+National average,"Skilled agricultural, forestry and fishery workers",2022,851.4
+National average,Technicians and associate professionals,2022,1749.7
+Female,Armed forces occupations,2023,2223.7
+Female,Clerical support workers,2023,1686.8
+Female,Craft and related trades workers,2023,1556.1
+Female,Elementary occupations,2023,1301.4
+Female,Managers,2023,1780.6
+Female,National average,2023,1651.9
+Female,"Plant and machine operators, and assemblers",2023,2281.8
+Female,Professionals,2023,1915.3
+Female,Service and sales workers,2023,1165.0
+Female,"Skilled agricultural, forestry and fishery workers",2023,1156.9
+Female,Technicians and associate professionals,2023,1972.4
+Male,Armed forces occupations,2023,2404.5
+Male,Clerical support workers,2023,2707.2
+Male,Craft and related trades workers,2023,2152.7
+Male,Elementary occupations,2023,1559.6
+Male,Managers,2023,2131.3
+Male,National average,2023,2103.4
+Male,"Plant and machine operators, and assemblers",2023,2342.5
+Male,Professionals,2023,2564.1
+Male,Service and sales workers,2023,1475.8
+Male,"Skilled agricultural, forestry and fishery workers",2023,1036.4
+Male,Technicians and associate professionals,2023,2490.9
+National average,Armed forces occupations,2023,2362.5
+National average,Clerical support workers,2023,2036.3
+National average,Craft and related trades workers,2023,1976.3
+National average,Elementary occupations,2023,1435.1
+National average,Managers,2023,1964.5
+National average,National average,2023,1881.8
+National average,"Plant and machine operators, and assemblers",2023,2335.6
+National average,Professionals,2023,2128.2
+National average,Service and sales workers,2023,1299.1
+National average,"Skilled agricultural, forestry and fishery workers",2023,1084.0
+National average,Technicians and associate professionals,2023,2250.6
+Female,Armed forces occupations,2024,2374.3
+Female,Clerical support workers,2024,2063.4
+Female,Craft and related trades workers,2024,1643.0
+Female,Elementary occupations,2024,1378.8
+Female,Managers,2024,2689.7
+Female,National average,2024,2077.1
+Female,"Plant and machine operators, and assemblers",2024,2669.6
+Female,Professionals,2024,2398.1
+Female,Service and sales workers,2024,1346.8
+Female,"Skilled agricultural, forestry and fishery workers",2024,1340.7
+Female,Technicians and associate professionals,2024,2263.3
+Male,Armed forces occupations,2024,2536.7
+Male,Clerical support workers,2024,2738.1
+Male,Craft and related trades workers,2024,2378.2
+Male,Elementary occupations,2024,1633.4
+Male,Managers,2024,3344.5
+Male,National average,2024,2576.9
+Male,"Plant and machine operators, and assemblers",2024,2775.9
+Male,Professionals,2024,3081.7
+Male,Service and sales workers,2024,1622.0
+Male,"Skilled agricultural, forestry and fishery workers",2024,1206.5
+Male,Technicians and associate professionals,2024,2706.3
+National average,Armed forces occupations,2024,2504.1
+National average,Clerical support workers,2024,2274.3
+National average,Craft and related trades workers,2024,2224.8
+National average,Elementary occupations,2024,1499.4
+National average,Managers,2024,3037.5
+National average,National average,2024,2332.4
+National average,"Plant and machine operators, and assemblers",2024,2768.3
+National average,Professionals,2024,2622.0
+National average,Service and sales workers,2024,1465.0
+National average,"Skilled agricultural, forestry and fishery workers",2024,1254.4
+National average,Technicians and associate professionals,2024,2470.2
+Female,Armed forces occupations,2025,2534.6
+Female,Clerical support workers,2025,2382.7
+Female,Craft and related trades workers,2025,1905.8
+Female,Elementary occupations,2025,1728.1
+Female,Managers,2025,2862.7
+Female,National average,2025,2429.7
+Female,"Plant and machine operators, and assemblers",2025,3121.3
+Female,Professionals,2025,2728.7
+Female,Service and sales workers,2025,1696.5
+Female,"Skilled agricultural, forestry and fishery workers",2025,1626.6
+Female,Technicians and associate professionals,2025,2579.2
+Male,Armed forces occupations,2025,2487.0
+Male,Clerical support workers,2025,3022.5
+Male,Craft and related trades workers,2025,2984.0
+Male,Elementary occupations,2025,2100.2
+Male,Managers,2025,3303.7
+Male,National average,2025,3035.5
+Male,"Plant and machine operators, and assemblers",2025,3437.5
+Male,Professionals,2025,3542.3
+Male,Service and sales workers,2025,2155.0
+Male,"Skilled agricultural, forestry and fishery workers",2025,1531.8
+Male,Technicians and associate professionals,2025,3159.7
+National average,Armed forces occupations,2025,2495.7
+National average,Clerical support workers,2025,2564.9
+National average,Craft and related trades workers,2025,2743.2
+National average,Elementary occupations,2025,1893.8
+National average,Managers,2025,3091.8
+National average,National average,2025,2726.9
+National average,"Plant and machine operators, and assemblers",2025,3411.3
+National average,Professionals,2025,2982.9
+National average,Service and sales workers,2025,1888.7
+National average,"Skilled agricultural, forestry and fishery workers",2025,1566.9
+National average,Technicians and associate professionals,2025,2841.0

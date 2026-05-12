@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia average monthly nominal wages by occupation and sex, 2025 (MNT thousands)",
+  "data": {
+    "url": "/datasets/nso-wages-by-occupation-sex-en.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type": "bar", "cornerRadiusEnd": 3},
+  "encoding": {
+    "x": {
+      "field": "wages_mnt",
+      "type": "quantitative",
+      "title": "Average Monthly Wages, MNT (thousands)",
+      "axis": {"format": ",.0f"},
+      "scale": {"zero": true}
+    },
+    "y": {
+      "field": "occupation",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "wages_mnt",
+        "op": "max",
+        "order": "descending"
+      },
+      "axis": {"labelLimit": 260}
+    },
+    "color": {
+      "field": "sex",
+      "type": "nominal",
+      "title": "Sex",
+      "scale": {
+        "domain": ["Male", "Female"],
+        "range": ["#6366f1", "#ec4899"]
+      },
+      "legend": {"orient": "top", "title": null}
+    },
+    "xOffset": {
+      "field": "sex",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {"field": "occupation", "title": "Occupation"},
+      {"field": "sex", "title": "Sex"},
+      {"field": "wages_mnt", "title": "Wages (MNT thousands)", "format": ",.1f"},
+      {"field": "year", "title": "Year", "format": "d"}
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

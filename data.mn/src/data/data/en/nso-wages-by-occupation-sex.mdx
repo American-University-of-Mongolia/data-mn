@@ -1,0 +1,35 @@
+---
+title: "Mongolia Average Monthly Wages by Occupation and Sex, MNT (2001-2025)"
+publishDate: 2026-05-12
+excerpt: "Mongolia's wage gap varies significantly by occupation: in 2025, female professionals earn less than their male counterparts in most categories, with the gap widest in managerial roles."
+category: "Labor Market"
+tags: ["labor market", "wages", "salary", "gender gap", "occupation", "annual"]
+keywords: ["mongolia wages by occupation", "gender wage gap mongolia", "salary by profession", "occupation wages mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-31
+dataFiles:
+  - path: "/datasets/nso-wages-by-occupation-sex-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "2025 data by occupation and sex (CSV)"
+  - path: "/datasets/nso-wages-by-occupation-sex.xlsx"
+    format: "xlsx"
+    size: "12 KB"
+    description: "Open in Excel"
+  - path: "/datasets/nso-wages-by-occupation-sex-all-en.csv"
+    format: "csv"
+    size: "38 KB"
+    description: "All years, all categories (CSV)"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://data.1212.mn"
+  tableId: "DT_NSO_0400_025V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-wages-by-occupation-sex-en.json"
+  title="Mongolia Average Monthly Wages by Occupation and Sex, MNT (2001-2025)"
+/>

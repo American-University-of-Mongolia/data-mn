@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монголын импорт: шилдэг 10 худалдааны түнш орнуудаар (2005–2025)",
+  "data": {
+    "url": "/datasets/nso-imports-by-country-top-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 5, "grid": false}
+    },
+    "y": {
+      "field": "импорт_сая_ам_дол",
+      "type": "quantitative",
+      "title": "Импорт (мянган ам.дол)",
+      "axis": {"format": ",.0f"}
+    },
+    "color": {
+      "field": "улс",
+      "type": "nominal",
+      "title": "Улс",
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [{"name": "hover", "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}}],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "title": "Он", "format": "d"},
+          {"field": "улс", "title": "Улс"},
+          {"field": "импорт_сая_ам_дол", "title": "Импорт (мянган ам.дол)", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

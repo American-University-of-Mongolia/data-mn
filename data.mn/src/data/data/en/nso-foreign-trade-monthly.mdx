@@ -1,0 +1,35 @@
+---
+title: "Mongolia Foreign Trade Monthly, Million USD (1997–2026)"
+publishDate: 2026-05-11
+dataVersion: 1
+dataDate: 2026-04-30
+excerpt: "Monthly foreign trade data for Mongolia from January 1997 to April 2026, covering total turnover, exports, imports, and trade balance in million USD, sourced from the National Statistics Office."
+category: "Trade"
+tags: ["mongolia", "foreign trade", "exports", "imports", "monthly", "trade balance"]
+keywords: ["mongolia foreign trade monthly", "mongolia monthly exports", "mongolia monthly imports", "mongolia trade 2026"]
+dataFiles:
+  - path: "/datasets/nso-foreign-trade-monthly-en.csv"
+    format: "csv"
+    size: "33 KB"
+    description: "Download as CSV"
+  - path: "/datasets/nso-foreign-trade-monthly.xlsx"
+    format: "xlsx"
+    size: "15 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://www.1212.mn"
+  tableId: "DT_NSO_1400_003V1.px"
+author: Dlgvn
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Monthly foreign trade statistics for Mongolia from January 1997 to April 2026, covering total turnover, exports, imports, and trade balance in million USD.
+
+Monthly data reveals strong seasonality in Mongolia's trade flows — exports spike during summer and autumn coal shipping seasons, while imports rise mid-year alongside construction material deliveries. The 2026 data shows continued post-pandemic recovery with monthly turnover stabilizing above $2.5 billion.
+
+<VegaChart
+  spec="/charts/nso-foreign-trade-monthly-en.json"
+  title="Mongolia Foreign Trade Monthly, Million USD (1997–2026)"
+/>

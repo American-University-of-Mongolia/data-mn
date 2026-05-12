@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia monthly foreign trade: total turnover, exports, imports, and trade balance (2010–2026)",
+  "data": {
+    "url": "/datasets/nso-foreign-trade-monthly-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum.month >= '2010-01'"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "temporal",
+      "title": "Month",
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "value_usd_mn",
+      "type": "quantitative",
+      "title": "Value (USD million)",
+      "axis": {"format": ",.0f"}
+    },
+    "color": {
+      "field": "indicator",
+      "type": "nominal",
+      "title": "Indicator",
+      "scale": {
+        "domain": ["Total turnover", "Exports", "Imports", "Balance"],
+        "range": ["#4c78a8", "#72b7b2", "#e45756", "#f58518"]
+      },
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2, "interpolate": "monotone"}
+    },
+    {
+      "params": [{"name": "hover", "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}}],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "month", "title": "Month", "type": "temporal", "format": "%Y-%m"},
+          {"field": "indicator", "title": "Indicator"},
+          {"field": "value_usd_mn", "title": "Value (USD mn)", "format": ",.1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

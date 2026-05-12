@@ -7,6 +7,11 @@
   {
     "en": "Finance",
     "mn": "Санхүү",
+    "count": 14
+  },
+  {
+    "en": "Demographics",
+    "mn": "Хүн ам зүй",
     "count": 13
   },
   {
@@ -17,11 +22,6 @@
   {
     "en": "Agriculture",
     "mn": "Хөдөө аж ахуй",
-    "count": 8
-  },
-  {
-    "en": "Demographics",
-    "mn": "Хүн ам зүй",
     "count": 8
   },
   {
@@ -37,7 +37,7 @@
   {
     "en": "Trade",
     "mn": "Худалдаа",
-    "count": 5
+    "count": 7
   },
   {
     "en": "Household & Income",
@@ -55,9 +55,14 @@
     "count": 3
   },
   {
+    "en": "Industry",
+    "mn": "Аж үйлдвэр",
+    "count": 3
+  },
+  {
     "en": "Infrastructure",
     "mn": "Дэд бүтэц",
-    "count": 2
+    "count": 3
   },
   {
     "en": "Employment",
@@ -67,11 +72,6 @@
   {
     "en": "Environment",
     "mn": "Байгаль орчин",
-    "count": 1
-  },
-  {
-    "en": "Industry",
-    "mn": "Аж үйлдвэр",
     "count": 1
   },
   {

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia foreign trade: total turnover, exports, imports, and trade balance (1990–2025)",
+  "data": {
+    "url": "/datasets/nso-foreign-trade-annual-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum.year >= 1990"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {"format": "d", "tickMinStep": 5, "grid": false}
+    },
+    "y": {
+      "field": "value_usd_mn",
+      "type": "quantitative",
+      "title": "Value (USD million)",
+      "axis": {"format": ",.0f"}
+    },
+    "color": {
+      "field": "indicator",
+      "type": "nominal",
+      "title": "Indicator",
+      "scale": {
+        "domain": ["Total turnover", "Exports", "Imports", "Balance"],
+        "range": ["#4c78a8", "#72b7b2", "#e45756", "#f58518"]
+      },
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [{"name": "hover", "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}}],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "year", "title": "Year", "format": "d"},
+          {"field": "indicator", "title": "Indicator"},
+          {"field": "value_usd_mn", "title": "Value (USD mn)", "format": ",.1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монголын гадаад худалдааны эргэлт, экспорт, импорт, баланс (1990–2025)",
+  "data": {
+    "url": "/datasets/nso-foreign-trade-annual-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum.он >= 1990"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 5, "grid": false}
+    },
+    "y": {
+      "field": "value_usd_mn",
+      "type": "quantitative",
+      "title": "Утга (сая ам.дол)",
+      "axis": {"format": ",.0f"}
+    },
+    "color": {
+      "field": "үзүүлэлт",
+      "type": "nominal",
+      "title": "Үзүүлэлт",
+      "scale": {
+        "domain": ["Нийт эргэлт", "Экспорт", "Импорт", "Баланс"],
+        "range": ["#4c78a8", "#72b7b2", "#e45756", "#f58518"]
+      },
+      "legend": {"orient": "top", "title": null}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}
+    },
+    {
+      "params": [{"name": "hover", "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}}],
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "title": "Он", "format": "d"},
+          {"field": "үзүүлэлт", "title": "Үзүүлэлт"},
+          {"field": "value_usd_mn", "title": "Утга (сая ам.дол)", "format": ",.1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

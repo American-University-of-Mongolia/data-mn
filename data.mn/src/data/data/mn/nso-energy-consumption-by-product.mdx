@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын эрчим хүчний дотоодын хэрэглээ бүтээгдэхүүнээр (2015–2024)"
+publishDate: 2026-05-12
+excerpt: "Монгол Улс дотоодоо юу хэрэглэдэг вэ: 2015–2024 онд 17 төрлийн бүтээгдэхүүнээр дотоодын эрчим хүчний хэрэглээ. Дулаан болон дизель тус бүр 22 орчим хувийг эзэлж, дараагаар нүүрс, бензин байна. Сэргээгдэх эрчим хүч (салхи, усан цахилгаан)-ний эзлэх хувь 2024 онд 14%-д хүрч өссөн."
+category: "Эрчим хүч"
+tags: ["монгол", "эрчим хүч", "дотоодын хэрэглээ", "нүүрс", "дизель", "дулаан", "сэргээгдэх", "статистик", "үшх"]
+keywords: ["монгол дотоодын эрчим хүчний хэрэглээ", "монгол эрчим хүчний хэрэглээ бүтээгдэхүүнээр", "монгол түлшний хэрэглээ"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-energy-consumption-by-product-mn.csv"
+    format: "csv"
+    size: "8 KB"
+    description: "CSV татах"
+  - path: "/datasets/nso-energy-consumption-by-product.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_3600_008V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-energy-consumption-by-product-mn.json"
+  title="Монгол Улсын эрчим хүчний дотоодын хэрэглээ бүтээгдэхүүнээр (2015–2024)"
+/>

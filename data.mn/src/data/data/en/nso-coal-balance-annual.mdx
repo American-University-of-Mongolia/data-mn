@@ -1,0 +1,31 @@
+---
+title: "Mongolia Coal Balance, Annual (1989–2024)"
+publishDate: 2026-05-12
+excerpt: "Mongolia is the world's fourth-largest coal exporter. This dataset tracks the full coal balance from 1989 to 2024: production, exports, consumption by thermal power stations, distribution to households, and transport losses. Production surged from 8 million tonnes in 1989 to 95 million tonnes in 2024, with exports absorbing nearly 88% of output. Domestic coal use has grown more modestly as gas and renewables expand."
+category: "Energy"
+tags: ["mongolia", "energy", "coal", "mining", "exports", "thermal", "statistics", "nso"]
+keywords: ["mongolia coal production", "mongolia coal exports", "mongolia coal balance", "mongolia thermal power coal consumption"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-coal-balance-annual-en.csv"
+    format: "csv"
+    size: "9 KB"
+    description: "Download as CSV"
+  - path: "/datasets/nso-coal-balance-annual.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_1100_010V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-coal-balance-annual-en.json"
+  title="Mongolia Coal Balance, Annual (1989–2024)"
+/>

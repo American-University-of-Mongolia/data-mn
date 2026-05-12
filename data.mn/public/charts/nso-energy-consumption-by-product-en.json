@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia domestic energy consumption by product (TJ), 2015–2024",
+  "data": {
+    "url": "/datasets/nso-energy-consumption-by-product-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "datetime(datum.year, 0, 1)", "as": "date"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": 0}
+    },
+    "y": {
+      "field": "tj",
+      "type": "quantitative",
+      "title": "Terajoules (TJ)",
+      "stack": "zero",
+      "axis": {"format": "~s"}
+    },
+    "color": {
+      "field": "product",
+      "type": "nominal",
+      "title": "Energy Product",
+      "scale": {"scheme": "tableau20"},
+      "legend": {"orient": "top", "labelLimit": 300}
+    },
+    "order": {"field": "tj", "sort": "descending"}
+  },
+  "layer": [
+    {"mark": {"type": "area", "interpolate": "monotone"}},
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 40},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
+          {"field": "product", "type": "nominal", "title": "Product"},
+          {"field": "tj", "type": "quantitative", "title": "TJ", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14,
+      "labelLimit": 300
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

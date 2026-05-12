@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia thermal energy balance by indicator (thousand Gcal), 1995–2024",
+  "data": {
+    "url": "/datasets/nso-thermal-energy-balance-annual-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "datetime(datum.year, 0, 1)", "as": "date"},
+    {
+      "filter": {
+        "field": "indicator",
+        "oneOf": [
+          "Gross generation",
+          "Distributed to establishments and households",
+          "Industry and construction",
+          "Household and communal housing",
+          "Losses in transmission and distribution",
+          "Other"
+        ]
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+    },
+    "y": {
+      "field": "gcal",
+      "type": "quantitative",
+      "title": "Thousand Gcal",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "indicator",
+      "type": "nominal",
+      "title": "Indicator",
+      "scale": {
+        "domain": [
+          "Gross generation",
+          "Distributed to establishments and households",
+          "Industry and construction",
+          "Household and communal housing",
+          "Losses in transmission and distribution",
+          "Other"
+        ],
+        "range": ["#1e40af", "#10b981", "#f59e0b", "#8b5cf6", "#ef4444", "#94a3b8"]
+      },
+      "legend": {"orient": "top", "columns": 3}
+    }
+  },
+  "layer": [
+    {"mark": {"type": "line", "interpolate": "monotone", "strokeWidth": 2}},
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 50},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
+          {"field": "indicator", "type": "nominal", "title": "Indicator"},
+          {"field": "gcal", "type": "quantitative", "title": "Thousand Gcal", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14,
+      "labelLimit": 350
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

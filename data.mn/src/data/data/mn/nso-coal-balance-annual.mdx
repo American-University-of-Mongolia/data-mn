@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын нүүрсний баланс, жилээр (1989–2024)"
+publishDate: 2026-05-12
+excerpt: "Монгол Улс дэлхийн нүүрс экспортлогч дөрөвдүгээр том орон юм. Энэхүү мэдээлэл нь 1989–2024 оны нийт нүүрсний балансыг харуулна: үйлдвэрлэл, экспорт, дулааны цахилгаан станцын хэрэглээ, өрхөд нийлүүлэлт, тээвэрлэлтийн хорогдол. 2024 онд үйлдвэрлэл 95 сая тоннд хүрч, гаралтын 88 орчим хувийг экспорт эзэлж байна."
+category: "Эрчим хүч"
+tags: ["монгол", "эрчим хүч", "нүүрс", "уул уурхай", "экспорт", "дулааны станц", "статистик", "үшх"]
+keywords: ["монгол нүүрс үйлдвэрлэл", "монгол нүүрс экспорт", "монгол нүүрсний баланс"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-coal-balance-annual-mn.csv"
+    format: "csv"
+    size: "11 KB"
+    description: "CSV татах"
+  - path: "/datasets/nso-coal-balance-annual.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_1100_010V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-coal-balance-annual-mn.json"
+  title="Монгол Улсын нүүрсний баланс, жилээр (1989–2024)"
+/>

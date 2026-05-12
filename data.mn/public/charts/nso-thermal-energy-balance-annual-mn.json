@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын дулааны эрчим хүчний баланс үзүүлэлтүүдээр (мян. Гкал), 1995–2024",
+  "data": {
+    "url": "/datasets/nso-thermal-energy-balance-annual-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "datetime(datum['он'], 0, 1)", "as": "date"},
+    {
+      "filter": {
+        "field": "үзүүлэлт",
+        "oneOf": [
+          "Үйлдвэрлэсэн",
+          "ААНБ болон өрхөд түгээсэн-Бүгд",
+          "Үйлдвэр, барилга",
+          "Өрх, орон сууц, нийтийн аж ахуй",
+          "Түгээлтийн алдагдал",
+          "Бусад"
+        ]
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Он",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+    },
+    "y": {
+      "field": "мян_гкал",
+      "type": "quantitative",
+      "title": "Мян. Гкал",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "үзүүлэлт",
+      "type": "nominal",
+      "title": "Үзүүлэлт",
+      "scale": {
+        "domain": [
+          "Үйлдвэрлэсэн",
+          "ААНБ болон өрхөд түгээсэн-Бүгд",
+          "Үйлдвэр, барилга",
+          "Өрх, орон сууц, нийтийн аж ахуй",
+          "Түгээлтийн алдагдал",
+          "Бусад"
+        ],
+        "range": ["#1e40af", "#10b981", "#f59e0b", "#8b5cf6", "#ef4444", "#94a3b8"]
+      },
+      "legend": {"orient": "top", "columns": 3}
+    }
+  },
+  "layer": [
+    {"mark": {"type": "line", "interpolate": "monotone", "strokeWidth": 2}},
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 50},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
+          {"field": "үзүүлэлт", "type": "nominal", "title": "Үзүүлэлт"},
+          {"field": "мян_гкал", "type": "quantitative", "title": "Мян. Гкал", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14,
+      "labelLimit": 350
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

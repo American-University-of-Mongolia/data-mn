@@ -1,0 +1,31 @@
+---
+title: "Mongolia Electricity Balance, Annual (1989–2024)"
+publishDate: 2026-05-12
+excerpt: "Mongolia's electricity system in one chart: gross generation, imports from Russia and China, exports, transmission losses, and total consumption from 1989 to 2024. Generation has grown from 3,600 GWh in the post-Soviet trough to 8,700 GWh in 2024, yet Mongolia still imports around 2,700 GWh per year — roughly 24% of supply — to cover peak demand."
+category: "Energy"
+tags: ["mongolia", "energy", "electricity", "power", "grid", "imports", "statistics", "nso"]
+keywords: ["mongolia electricity production", "mongolia power generation GWh", "mongolia electricity imports", "mongolia electricity balance", "mongolia grid losses"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-electricity-balance-annual-en.csv"
+    format: "csv"
+    size: "6 KB"
+    description: "Download as CSV"
+  - path: "/datasets/nso-electricity-balance-annual.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_1100_009V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-electricity-balance-annual-en.json"
+  title="Mongolia Electricity Balance, Annual (1989–2024)"
+/>

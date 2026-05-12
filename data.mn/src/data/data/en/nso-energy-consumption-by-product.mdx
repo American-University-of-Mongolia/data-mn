@@ -1,0 +1,31 @@
+---
+title: "Mongolia Domestic Energy Consumption by Product (2015–2024)"
+publishDate: 2026-05-12
+excerpt: "What Mongolia actually burns at home: domestic energy consumption broken down by 17 product types, 2015–2024. Unlike the total supply figure (which includes coal exports), this dataset shows energy used within Mongolia's borders. Heat and diesel each account for roughly 22% of domestic consumption, followed by coal and gasoline. The renewables share — wind and hydro electricity — rose from under 10% to nearly 14% by 2024."
+category: "Energy"
+tags: ["mongolia", "energy", "consumption", "coal", "diesel", "heat", "renewables", "statistics", "nso"]
+keywords: ["mongolia domestic energy consumption", "mongolia energy use by product", "mongolia fuel consumption", "mongolia energy intensity"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-energy-consumption-by-product-en.csv"
+    format: "csv"
+    size: "7 KB"
+    description: "Download as CSV"
+  - path: "/datasets/nso-energy-consumption-by-product.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_3600_008V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-energy-consumption-by-product-en.json"
+  title="Mongolia Domestic Energy Consumption by Product (2015–2024)"
+/>

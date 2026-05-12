@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын эрчим хүчний нийт нийлүүлэлт бүтээгдэхүүнээр (2015–2024)"
+publishDate: 2026-05-12
+excerpt: "Монгол Улсын эрчим хүчний нийт нийлүүлэлт — экспортод зориулсан үйлдвэрлэлийг багтаасан — 18 төрлийн бүтээгдэхүүнээр 2015–2024 онд. Нийт нийлүүлэлтийн 78%-ийг чулуун нүүрс эзэлж, нүүрс экспортлогч томоохон орон болохыг харуулна. Сэргээгдэх эрчим хүчний (салхи, усан цахилгаан) эзлэх хувь бага ч өсч байна."
+category: "Эрчим хүч"
+tags: ["монгол", "эрчим хүч", "нүүрс", "газрын тос", "сэргээгдэх", "нийлүүлэлт", "статистик", "үшх"]
+keywords: ["монгол эрчим хүчний нийлүүлэлт", "монгол эрчим хүчний бүтэц", "монгол нүүрс ТЖ", "монгол сэргээгдэх эрчим хүч"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-energy-supply-by-product-mn.csv"
+    format: "csv"
+    size: "9 KB"
+    description: "CSV татах"
+  - path: "/datasets/nso-energy-supply-by-product.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_3600_005V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-energy-supply-by-product-mn.json"
+  title="Монгол Улсын эрчим хүчний нийт нийлүүлэлт бүтээгдэхүүнээр (2015–2024)"
+/>

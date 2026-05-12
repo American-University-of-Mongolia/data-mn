@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын нүүрсний баланс үзүүлэлтүүдээр (мян. тн), 1989–2024",
+  "data": {
+    "url": "/datasets/nso-coal-balance-annual-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "datetime(datum['он'], 0, 1)", "as": "date"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Он",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+    },
+    "y": {
+      "field": "мян_тн",
+      "type": "quantitative",
+      "title": "Мян. тонн",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "үзүүлэлт",
+      "type": "nominal",
+      "title": "Үзүүлэлт",
+      "scale": {
+        "domain": ["Үйлдвэрлэсэн", "Экспорт", "Нийт хэрэглээ", "ДЦС-д хэрэглэсэн", "ААНБ болон өрхөд нийлүүлсэн", "Импорт", "Тээвэр, хадгалалтын хорогдол"],
+        "range": ["#1e40af", "#ef4444", "#f59e0b", "#10b981", "#8b5cf6", "#06b6d4", "#94a3b8"]
+      },
+      "legend": {"orient": "top", "columns": 2}
+    }
+  },
+  "layer": [
+    {"mark": {"type": "line", "interpolate": "monotone", "strokeWidth": 2}},
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 50},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
+          {"field": "үзүүлэлт", "type": "nominal", "title": "Үзүүлэлт"},
+          {"field": "мян_тн", "type": "quantitative", "title": "Мян. тонн", "format": ",.1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14,
+      "labelLimit": 350
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

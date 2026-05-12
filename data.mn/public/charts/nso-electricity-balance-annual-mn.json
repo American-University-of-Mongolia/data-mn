@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын цахилгаан эрчим хүчний баланс үзүүлэлтүүдээр (МВтц), 1989–2024",
+  "data": {
+    "url": "/datasets/nso-electricity-balance-annual-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "datetime(datum['он'], 0, 1)", "as": "date"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Он",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+    },
+    "y": {
+      "field": "квтц",
+      "type": "quantitative",
+      "title": "МВт·ц",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "үзүүлэлт",
+      "type": "nominal",
+      "title": "Үзүүлэлт",
+      "scale": {
+        "domain": ["Үйлдвэрлэсэн", "Импорт", "Хэрэглэсэн", "Дамжуулалтын алдагдал", "Станцын дотоод хэрэглээ", "Экспорт"],
+        "range": ["#1e40af", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#64748b"]
+      },
+      "legend": {"orient": "top", "columns": 3}
+    }
+  },
+  "layer": [
+    {"mark": {"type": "line", "interpolate": "monotone", "strokeWidth": 2}},
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 50},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
+          {"field": "үзүүлэлт", "type": "nominal", "title": "Үзүүлэлт"},
+          {"field": "квтц", "type": "quantitative", "title": "МВт·ц", "format": ",.1f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14,
+      "labelLimit": 300
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

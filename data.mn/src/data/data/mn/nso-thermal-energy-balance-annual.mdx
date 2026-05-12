@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын дулааны эрчим хүчний баланс, жилээр (1995–2024)"
+publishDate: 2026-05-12
+excerpt: "Зөвлөлтийн үеийн төвлөрсөн дулаан хангамжийн сүлжээ нь Улаанбаатар болон аймгийн төвүүдийн өрх, үйлдвэрийг дулаанаар хангаж байна. Энэхүү мэдээлэл нь 1995–2024 онд нийт дулаан үйлдвэрлэл, өрх болон ААНБ-д түгээлт, салбарын хэрэглээ, сүлжээний алдагдлыг хамарна. Нийт үйлдвэрлэл 154%-иар нэмэгдэж 6,832-аас 17,383 мян. Гкал хүрсэн ч алдагдал хэвээрээ байна."
+category: "Эрчим хүч"
+tags: ["монгол", "эрчим хүч", "дулаан", "дулаан хангамж", "статистик", "үшх"]
+keywords: ["монгол дулааны эрчим хүч", "монгол дулаан хангамж", "монгол дулааны станц", "монгол дулааны алдагдал"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-thermal-energy-balance-annual-mn.csv"
+    format: "csv"
+    size: "12 KB"
+    description: "CSV татах"
+  - path: "/datasets/nso-thermal-energy-balance-annual.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_1100_011V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-thermal-energy-balance-annual-mn.json"
+  title="Монгол Улсын дулааны эрчим хүчний баланс, жилээр (1995–2024)"
+/>

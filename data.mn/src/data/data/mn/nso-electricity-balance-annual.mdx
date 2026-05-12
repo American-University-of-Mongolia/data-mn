@@ -1,0 +1,31 @@
+---
+title: "Монгол Улсын цахилгаан эрчим хүчний баланс, жилээр (1989–2024)"
+publishDate: 2026-05-12
+excerpt: "Монгол Улсын цахилгааны систем: 1989–2024 оны нийт үйлдвэрлэл, Орос болон Хятадаас импорт, экспорт, дамжуулалтын алдагдал, нийт хэрэглээ. Үйлдвэрлэл зөвлөлтийн дараах хямарлын 3,600 МВтц-ээс 2024 оны 8,700 МВтц хүртэл өссөн боловч импортын хамаарал 24 орчим хувиар хадгалагдсаар байна."
+category: "Эрчим хүч"
+tags: ["монгол", "эрчим хүч", "цахилгаан", "импорт", "экспорт", "алдагдал", "статистик", "үшх"]
+keywords: ["монгол цахилгаан үйлдвэрлэл", "монгол цахилгааны баланс", "монгол цахилгаан импорт", "монгол эрчим хүч"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-electricity-balance-annual-mn.csv"
+    format: "csv"
+    size: "7 KB"
+    description: "CSV татах"
+  - path: "/datasets/nso-electricity-balance-annual.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_1100_009V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-electricity-balance-annual-mn.json"
+  title="Монгол Улсын цахилгаан эрчим хүчний баланс, жилээр (1989–2024)"
+/>

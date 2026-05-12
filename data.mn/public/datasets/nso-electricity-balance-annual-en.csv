@@ -1,0 +1,217 @@
+year,indicator,gwh
+1989,Gross generation,3568.0
+1989,Imports,158.0
+1989,Export,0.0
+1989,Consumption,2880.0
+1989,Losses in transmission and distribution,280.0
+1989,Station internal use,566.0
+1990,Gross generation,3348.0
+1990,Imports,228.0
+1990,Export,0.0
+1990,Consumption,2719.0
+1990,Losses in transmission and distribution,323.0
+1990,Station internal use,534.0
+1991,Gross generation,3229.0
+1991,Imports,84.0
+1991,Export,0.0
+1991,Consumption,2400.0
+1991,Losses in transmission and distribution,340.0
+1991,Station internal use,573.0
+1992,Gross generation,2929.0
+1992,Imports,101.9
+1992,Export,0.0
+1992,Consumption,2175.0
+1992,Losses in transmission and distribution,284.6
+1992,Station internal use,571.5
+1993,Gross generation,2582.0
+1993,Imports,197.0
+1993,Export,0.0
+1993,Consumption,2006.0
+1993,Losses in transmission and distribution,291.0
+1993,Station internal use,482.0
+1994,Gross generation,2715.0
+1994,Imports,215.0
+1994,Export,0.0
+1994,Consumption,1861.0
+1994,Losses in transmission and distribution,472.0
+1994,Station internal use,597.0
+1995,Gross generation,2628.0
+1995,Imports,381.0
+1995,Export,0.0
+1995,Consumption,1909.0
+1995,Losses in transmission and distribution,502.0
+1995,Station internal use,598.0
+1996,Gross generation,2614.0
+1996,Imports,383.0
+1996,Export,0.0
+1996,Consumption,1936.0
+1996,Losses in transmission and distribution,482.0
+1996,Station internal use,579.0
+1997,Gross generation,2720.0
+1997,Imports,376.0
+1997,Export,42.0
+1997,Consumption,1939.0
+1997,Losses in transmission and distribution,507.0
+1997,Station internal use,608.0
+1998,Gross generation,2675.0
+1998,Imports,367.0
+1998,Export,60.0
+1998,Consumption,1929.0
+1998,Losses in transmission and distribution,465.0
+1998,Station internal use,588.0
+1999,Gross generation,2842.0
+1999,Imports,203.0
+1999,Export,59.0
+1999,Consumption,1867.0
+1999,Losses in transmission and distribution,509.0
+1999,Station internal use,610.0
+2000,Gross generation,2946.0
+2000,Imports,181.0
+2000,Export,25.0
+2000,Consumption,1910.0
+2000,Losses in transmission and distribution,576.0
+2000,Station internal use,616.0
+2001,Gross generation,3017.0
+2001,Imports,196.0
+2001,Export,18.0
+2001,Consumption,1948.0
+2001,Losses in transmission and distribution,603.0
+2001,Station internal use,644.0
+2002,Gross generation,3111.7
+2002,Imports,167.3
+2002,Export,15.5
+2002,Consumption,2031.7
+2002,Losses in transmission and distribution,582.8
+2002,Station internal use,649.0
+2003,Gross generation,3137.7
+2003,Imports,171.28
+2003,Export,6.73
+2003,Consumption,2194.65
+2003,Losses in transmission and distribution,489.2
+2003,Station internal use,618.4
+2004,Gross generation,3303.4
+2004,Imports,170.8
+2004,Export,8.2
+2004,Consumption,2357.0
+2004,Losses in transmission and distribution,480.4
+2004,Station internal use,628.8
+2005,Gross generation,3418.9
+2005,Imports,167.5
+2005,Export,11.9
+2005,Consumption,2534.0
+2005,Losses in transmission and distribution,419.7
+2005,Station internal use,620.8
+2006,Gross generation,3544.2
+2006,Imports,168.3
+2006,Export,20.8
+2006,Consumption,2619.7
+2006,Losses in transmission and distribution,442.3
+2006,Station internal use,629.6
+2007,Gross generation,3700.7
+2007,Imports,195.4
+2007,Export,10.1
+2007,Consumption,2829.1
+2007,Losses in transmission and distribution,442.4
+2007,Station internal use,614.5
+2008,Gross generation,4000.57
+2008,Imports,197.6
+2008,Export,15.9
+2008,Consumption,3093.3
+2008,Losses in transmission and distribution,435.89
+2008,Station internal use,653.17
+2009,Gross generation,4038.84
+2009,Imports,156.55
+2009,Export,18.06
+2009,Consumption,3034.09
+2009,Losses in transmission and distribution,493.87
+2009,Station internal use,649.37
+2010,Gross generation,4312.82
+2010,Imports,262.9
+2010,Export,22.18
+2010,Consumption,3375.86
+2010,Losses in transmission and distribution,505.41
+2010,Station internal use,672.22
+2011,Gross generation,4536.38
+2011,Imports,275.51
+2011,Export,23.77
+2011,Consumption,3452.96
+2011,Losses in transmission and distribution,644.31
+2011,Station internal use,690.85
+2012,Gross generation,4815.57
+2012,Imports,366.02
+2012,Export,21.16
+2012,Consumption,3772.64
+2012,Losses in transmission and distribution,675.39
+2012,Station internal use,712.4
+2013,Gross generation,5019.54
+2013,Imports,1195.49
+2013,Export,18.21
+2013,Consumption,4732.07
+2013,Losses in transmission and distribution,739.5
+2013,Station internal use,725.26
+2014,Gross generation,5375.8
+2014,Imports,1349.2
+2014,Export,33.4
+2014,Consumption,5158.4
+2014,Losses in transmission and distribution,760.8
+2014,Station internal use,772.4
+2015,Gross generation,5513.2
+2015,Imports,1416.8
+2015,Export,50.8
+2015,Consumption,5283.5
+2015,Losses in transmission and distribution,817.5
+2015,Station internal use,778.2
+2016,Gross generation,5667.1
+2016,Imports,1446.3
+2016,Export,36.0
+2016,Consumption,5445.7
+2016,Losses in transmission and distribution,883.0
+2016,Station internal use,748.7
+2017,Gross generation,6027.3
+2017,Imports,1574.3
+2017,Export,25.7
+2017,Consumption,5948.7
+2017,Losses in transmission and distribution,810.9
+2017,Station internal use,816.4
+2018,Gross generation,6535.3
+2018,Imports,1665.7
+2018,Export,26.7
+2018,Consumption,6449.7
+2018,Losses in transmission and distribution,875.3
+2018,Station internal use,849.3
+2019,Gross generation,6900.4
+2019,Imports,1722.7
+2019,Export,24.1
+2019,Consumption,6846.4
+2019,Losses in transmission and distribution,891.6
+2019,Station internal use,860.9
+2020,Gross generation,7069.7
+2020,Imports,1684.9
+2020,Export,41.5
+2020,Consumption,6816.8
+2020,Losses in transmission and distribution,962.6
+2020,Station internal use,933.7
+2021,Gross generation,7825.3
+2021,Imports,1823.1
+2021,Export,23.9
+2021,Consumption,7718.9
+2021,Losses in transmission and distribution,1018.5
+2021,Station internal use,887.1
+2022,Gross generation,8035.0
+2022,Imports,2107.4
+2022,Export,25.3
+2022,Consumption,8095.4
+2022,Losses in transmission and distribution,1091.2
+2022,Station internal use,930.4
+2023,Gross generation,8487.4
+2023,Imports,2426.9
+2023,Export,37.0
+2023,Consumption,8639.3
+2023,Losses in transmission and distribution,1178.6
+2023,Station internal use,1059.4
+2024,Gross generation,8692.8
+2024,Imports,2753.0
+2024,Export,12.0
+2024,Consumption,9131.9
+2024,Losses in transmission and distribution,1163.6
+2024,Station internal use,1138.3

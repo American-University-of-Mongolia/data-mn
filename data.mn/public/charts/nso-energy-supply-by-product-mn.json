@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын эрчим хүчний нийт нийлүүлэлт бүтээгдэхүүнээр (ТЖ), 2015–2024",
+  "data": {
+    "url": "/datasets/nso-energy-supply-by-product-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "datetime(datum['он'], 0, 1)", "as": "date"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Он",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": 0}
+    },
+    "y": {
+      "field": "тж",
+      "type": "quantitative",
+      "title": "Тераджоуль (ТЖ)",
+      "stack": "zero",
+      "axis": {"format": "~s"}
+    },
+    "color": {
+      "field": "бүтээгдэхүүн",
+      "type": "nominal",
+      "title": "Бүтээгдэхүүн",
+      "scale": {"scheme": "tableau20"},
+      "legend": {"orient": "top", "labelLimit": 300}
+    },
+    "order": {"field": "тж", "sort": "descending"}
+  },
+  "layer": [
+    {"mark": {"type": "area", "interpolate": "monotone"}},
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 40},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
+          {"field": "бүтээгдэхүүн", "type": "nominal", "title": "Бүтээгдэхүүн"},
+          {"field": "тж", "type": "quantitative", "title": "ТЖ", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14,
+      "labelLimit": 300
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

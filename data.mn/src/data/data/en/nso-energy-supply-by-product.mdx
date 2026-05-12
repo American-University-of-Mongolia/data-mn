@@ -1,0 +1,31 @@
+---
+title: "Mongolia Total Energy Supply by Product (2015–2024)"
+publishDate: 2026-05-12
+excerpt: "Mongolia's total energy supply — including production for export — broken down by 18 product types from 2015 to 2024. Hard coal dominates at 78% of the total, reflecting Mongolia's position as a major coal exporter. Renewables (wind and hydro electricity) account for a small but rising share. The dramatic increase from 775,000 TJ in 2015 to 2.6 million TJ in 2024 tracks Mongolia's coal production boom driven by Chinese demand."
+category: "Energy"
+tags: ["mongolia", "energy", "coal", "oil", "renewables", "supply", "statistics", "nso"]
+keywords: ["mongolia energy supply", "mongolia energy mix", "mongolia coal supply TJ", "mongolia renewable energy share"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-energy-supply-by-product-en.csv"
+    format: "csv"
+    size: "8 KB"
+    description: "Download as CSV"
+  - path: "/datasets/nso-energy-supply-by-product.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_3600_005V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-energy-supply-by-product-en.json"
+  title="Mongolia Total Energy Supply by Product (2015–2024)"
+/>

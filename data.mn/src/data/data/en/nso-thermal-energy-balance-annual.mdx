@@ -1,0 +1,31 @@
+---
+title: "Mongolia Thermal Energy Balance, Annual (1995–2024)"
+publishDate: 2026-05-12
+excerpt: "Mongolia's district heating network — a legacy of Soviet-era centralised infrastructure — supplies homes and industry across Ulaanbaatar and major aimag centres. This dataset tracks gross heat generation, distribution to households and enterprises, sector-level consumption, and network losses from 1995 to 2024. Total generation has grown 154%, from 6,832 thousand Gcal in 1995 to 17,383 thousand Gcal in 2024, as urban expansion outpaces efficiency gains."
+category: "Energy"
+tags: ["mongolia", "energy", "thermal", "district heating", "heat", "infrastructure", "statistics", "nso"]
+keywords: ["mongolia thermal energy", "mongolia district heating", "mongolia heat generation", "mongolia heating losses"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2024-01-01
+dataFiles:
+  - path: "/datasets/nso-thermal-energy-balance-annual-en.csv"
+    format: "csv"
+    size: "11 KB"
+    description: "Download as CSV"
+  - path: "/datasets/nso-thermal-energy-balance-annual.xlsx"
+    format: "xlsx"
+    size: "7 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_1100_011V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-thermal-energy-balance-annual-en.json"
+  title="Mongolia Thermal Energy Balance, Annual (1995–2024)"
+/>

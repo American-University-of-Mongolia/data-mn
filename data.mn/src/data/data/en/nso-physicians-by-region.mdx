@@ -1,0 +1,35 @@
+---
+title: "Physicians in Mongolia by Region (1989–2025)"
+publishDate: 2026-05-11
+excerpt: "Number of physicians across Mongolia's major provinces from 1989 to 2025. The physician workforce has more than tripled over 35 years, with Ulaanbaatar hosting over 10,600 doctors in 2025. Regional provinces have seen steady but slower growth."
+category: "Health"
+tags: ["mongolia", "health", "physicians", "doctors", "regions", "aimag", "statistics", "nso"]
+keywords: ["mongolia physicians by region", "doctors Mongolia aimag", "physician workforce Mongolia", "Ulaanbaatar doctors", "health workforce Mongolia"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-01-01
+dataFiles:
+  - path: "/datasets/nso-physicians-by-region-en.csv"
+    format: "csv"
+    size: "4 KB"
+    description: "Download as CSV (featured regions)"
+  - path: "/datasets/nso-physicians-by-region-all-en.csv"
+    format: "csv"
+    size: "14 KB"
+    description: "Download as CSV (all regions)"
+  - path: "/datasets/nso-physicians-by-region.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_2100_006V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-physicians-by-region-en.json"
+  title="Physicians in Mongolia by Region (1989–2025)"
+/>

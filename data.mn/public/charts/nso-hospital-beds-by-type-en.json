@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Hospital beds in Mongolia by bed type (2015–2025)",
+  "data": {
+    "url": "/datasets/nso-hospital-beds-by-type-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "datetime(datum.year, 0, 1)", "as": "date"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+    },
+    "y": {
+      "field": "beds",
+      "type": "quantitative",
+      "title": "Hospital Beds",
+      "stack": "zero",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "title": "Bed Type",
+      "scale": {"scheme": "tableau20"},
+      "legend": {"orient": "top"}
+    },
+    "order": {"field": "type", "sort": "ascending"}
+  },
+  "layer": [
+    {"mark": {"type": "area", "interpolate": "monotone"}},
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "type", "type": "nominal", "title": "Bed Type"},
+          {"field": "beds", "type": "quantitative", "title": "Beds", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14,
+      "labelLimit": 300
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

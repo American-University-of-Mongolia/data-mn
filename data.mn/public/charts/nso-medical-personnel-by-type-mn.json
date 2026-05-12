@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсад эрүүл мэндийн ажилтны тоо төрлөөр (2015–2024)",
+  "data": {
+    "url": "/datasets/nso-medical-personnel-by-type-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "datetime(datum.он, 0, 1)", "as": "огноо"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "title": "Он",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+    },
+    "y": {
+      "field": "ажилтан",
+      "type": "quantitative",
+      "title": "Эрүүл мэндийн ажилтан",
+      "stack": "zero",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "төрөл",
+      "type": "nominal",
+      "title": "Ажилтны төрөл",
+      "scale": {
+        "domain": ["Эмч", "Сувилагч"],
+        "range": ["#1565C0", "#00838F"]
+      },
+      "legend": {"orient": "top"}
+    },
+    "order": {
+      "field": "төрөл",
+      "sort": ["Эмч", "Сувилагч"]
+    }
+  },
+  "layer": [
+    {"mark": {"type": "area", "interpolate": "monotone"}},
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он"},
+          {"field": "төрөл", "type": "nominal", "title": "Төрөл"},
+          {"field": "ажилтан", "type": "quantitative", "title": "Ажилтан", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14,
+      "labelLimit": 300
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

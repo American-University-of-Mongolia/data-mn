@@ -1,0 +1,35 @@
+---
+title: "Монгол Улсад эмнэлгийн орны тоо аймгаар (2015–2025)"
+publishDate: 2026-05-11
+excerpt: "2015–2025 онд Монгол Улсын томоохон аймгуудад эмнэлгийн орны тоо. Улаанбаатар хотод нийт эрүүл мэндийн хүчин чадлын ихэнх хэсэг төвлөрч байхад Орхон, Дархан-Уул, Өвөрхангай, Хөвсгөл зэрэг аймгийн төвүүд бүс нутгийн эрүүл мэндийн дэд бүтцийг хадгалж байна."
+category: "Эрүүл мэнд"
+tags: ["монгол", "эрүүл мэнд", "эмнэлэг", "ор", "аймаг", "бүс нутаг", "статистик", "үшх"]
+keywords: ["монгол эмнэлгийн ор аймгаар", "аймгийн эмнэлгийн хүчин чадал монгол", "аймгийн эрүүл мэндийн дэд бүтэц", "улаанбаатар эмнэлгийн ор"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-01-01
+dataFiles:
+  - path: "/datasets/nso-hospital-beds-by-region-mn.csv"
+    format: "csv"
+    size: "2 KB"
+    description: "CSV татах (сонгосон аймгууд)"
+  - path: "/datasets/nso-hospital-beds-by-region-all-mn.csv"
+    format: "csv"
+    size: "5 KB"
+    description: "CSV татах (бүх аймаг)"
+  - path: "/datasets/nso-hospital-beds-by-region.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_2100_005V3.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-hospital-beds-by-region-mn.json"
+  title="Монгол Улсад эмнэлгийн орны тоо аймгаар (2015–2025)"
+/>

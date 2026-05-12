@@ -1,0 +1,35 @@
+---
+title: "Монгол Улсад эмч нарын тоо аймгаар (1989–2025)"
+publishDate: 2026-05-11
+excerpt: "1989–2025 онд Монгол Улсын томоохон аймгуудад эмч нарын тоо. 35 жилийн хугацаанд эмч нарын тоо гурав дахин нэмэгдэж, 2025 онд Улаанбаатар хотод 10,600 гаруй эмч ажиллаж байна. Аймгийн эмч нарын тоо тогтвортой боловч удаан өссөн."
+category: "Эрүүл мэнд"
+tags: ["монгол", "эрүүл мэнд", "эмч", "аймаг", "бүс нутаг", "статистик", "үшх"]
+keywords: ["монгол эмч аймгаар", "монгол эмч нар", "эрүүл мэндийн ажилтан монгол", "улаанбаатар эмч", "эрүүл мэндийн хүний нөөц монгол"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-01-01
+dataFiles:
+  - path: "/datasets/nso-physicians-by-region-mn.csv"
+    format: "csv"
+    size: "6 KB"
+    description: "CSV татах (сонгосон аймгууд)"
+  - path: "/datasets/nso-physicians-by-region-all-mn.csv"
+    format: "csv"
+    size: "19 KB"
+    description: "CSV татах (бүх аймаг)"
+  - path: "/datasets/nso-physicians-by-region.xlsx"
+    format: "xlsx"
+    size: "8 KB"
+    description: "Excel-д нээх"
+source:
+  name: "Монгол Улсын Үндэсний Статистикийн Хороо"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_2100_006V1.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-physicians-by-region-mn.json"
+  title="Монгол Улсад эмч нарын тоо аймгаар (1989–2025)"
+/>

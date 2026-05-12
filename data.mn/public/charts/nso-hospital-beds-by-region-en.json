@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Hospital beds in Mongolia by region (2015–2025)",
+  "data": {
+    "url": "/datasets/nso-hospital-beds-by-region-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "datetime(datum.year, 0, 1)", "as": "date"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+    },
+    "y": {
+      "field": "beds",
+      "type": "quantitative",
+      "title": "Hospital Beds",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "title": "Region",
+      "scale": {
+        "domain": ["Ulaanbaatar", "Orkhon", "Darkhan-Uul", "Khuvsgul", "Uvurkhangai", "Selenge"],
+        "range": ["#1565C0", "#2E7D32", "#F57F17", "#6A1B9A", "#BF360C", "#00838F"]
+      },
+      "legend": {"orient": "top"}
+    }
+  },
+  "layer": [
+    {"mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}},
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 60},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "region", "type": "nominal", "title": "Region"},
+          {"field": "beds", "type": "quantitative", "title": "Hospital Beds", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

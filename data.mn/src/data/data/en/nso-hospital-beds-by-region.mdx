@@ -1,0 +1,35 @@
+---
+title: "Hospital Beds in Mongolia by Region (2015–2025)"
+publishDate: 2026-05-11
+excerpt: "Hospital bed counts across Mongolia's major provinces from 2015 to 2025. Ulaanbaatar accounts for the majority of national capacity, while provincial capitals like Orkhon, Darkhan-Uul, Uvurkhangai, and Khuvsgul maintain regional health infrastructure."
+category: "Health"
+tags: ["mongolia", "health", "hospital", "beds", "regions", "aimag", "statistics", "nso"]
+keywords: ["mongolia hospital beds by region", "provincial hospital capacity Mongolia", "aimag health infrastructure", "Ulaanbaatar hospital beds"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-01-01
+dataFiles:
+  - path: "/datasets/nso-hospital-beds-by-region-en.csv"
+    format: "csv"
+    size: "1 KB"
+    description: "Download as CSV (featured regions)"
+  - path: "/datasets/nso-hospital-beds-by-region-all-en.csv"
+    format: "csv"
+    size: "4 KB"
+    description: "Download as CSV (all regions)"
+  - path: "/datasets/nso-hospital-beds-by-region.xlsx"
+    format: "xlsx"
+    size: "6 KB"
+    description: "Open in Excel"
+source:
+  name: "National Statistics Office of Mongolia"
+  url: "https://1212.mn"
+  tableId: "DT_NSO_2100_005V3.px"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/nso-hospital-beds-by-region-en.json"
+  title="Hospital Beds in Mongolia by Region (2015–2025)"
+/>

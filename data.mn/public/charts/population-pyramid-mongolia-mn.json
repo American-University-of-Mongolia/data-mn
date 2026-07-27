@@ -9,7 +9,7 @@
   },
   "transform": [
     {
-      "calculate": "datum.sex === 'Эрэгтэй' ? -datum.value : datum.value",
+      "calculate": "datum['хүйс'] === 'Эрэгтэй' ? -datum['утга'] : datum['утга']",
       "as": "signed_population"
     }
   ],

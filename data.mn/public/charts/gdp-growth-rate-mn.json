@@ -9,7 +9,7 @@
   },
   "transform": [
     {
-      "filter": "datum.year >= 1991"
+      "filter": "datum['он'] >= 1991"
     }
   ],
   "params": [

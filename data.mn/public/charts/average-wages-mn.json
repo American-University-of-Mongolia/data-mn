@@ -7,6 +7,12 @@
       "type": "csv"
     }
   },
+  "transform": [
+    {
+      "calculate": "datum['Цалин (мян.төг)']",
+      "as": "цалин"
+    }
+  ],
   "encoding": {
     "x": {
       "field": "Он",
@@ -19,7 +25,7 @@
       }
     },
     "y": {
-      "field": "Цалин (мян.төг)",
+      "field": "цалин",
       "type": "quantitative",
       "title": "Сарын дундаж цалин (мян.төг)",
       "axis": {
@@ -55,8 +61,7 @@
       },
       "legend": {
         "title": "Салбар",
-        "orient": "top",
-        "columns": 4
+        "orient": "top"
       }
     }
   },
@@ -105,7 +110,7 @@
             "format": "d"
           },
           {
-            "field": "Цалин (мян.төг)",
+            "field": "цалин",
             "title": "Цалин (мян.төг)",
             "format": ",.1f"
           }

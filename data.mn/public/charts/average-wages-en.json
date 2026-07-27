@@ -55,8 +55,7 @@
       },
       "legend": {
         "title": "Sector",
-        "orient": "top",
-        "columns": 4
+        "orient": "top"
       }
     }
   },

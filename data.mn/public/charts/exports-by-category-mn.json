@@ -21,7 +21,7 @@
     "color": {
       "field": "ангилал",
       "type": "nominal",
-      "legend": {"orient": "top", "title": null, "labelLimit": 250, "columns": 3},
+      "legend": {"orient": "top", "title": null},
       "sort": {"field": "утга", "op": "sum", "order": "descending"}
     }
   },

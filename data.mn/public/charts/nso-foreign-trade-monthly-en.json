@@ -1,13 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia monthly foreign trade: total turnover, exports, imports, and trade balance (2010–2026)",
+  "description": "Mongolia monthly foreign trade: total turnover, exports, imports, and trade balance (1997–2026)",
   "data": {
     "url": "/datasets/nso-foreign-trade-monthly-en.csv",
     "format": {"type": "csv"}
   },
-  "transform": [
-    {"filter": "datum.month >= '2010-01'"}
-  ],
   "encoding": {
     "x": {
       "field": "month",

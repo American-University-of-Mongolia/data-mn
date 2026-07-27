@@ -1,13 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монголын сарын гадаад худалдааны эргэлт, экспорт, импорт, баланс (2010–2026)",
+  "description": "Монголын сарын гадаад худалдааны эргэлт, экспорт, импорт, баланс (1997–2026)",
   "data": {
     "url": "/datasets/nso-foreign-trade-monthly-mn.csv",
     "format": {"type": "csv"}
   },
-  "transform": [
-    {"filter": "datum.сар >= '2010-01'"}
-  ],
   "encoding": {
     "x": {
       "field": "сар",
@@ -26,7 +23,7 @@
       "type": "nominal",
       "title": "Үзүүлэлт",
       "scale": {
-        "domain": ["Нийт эргэлт", "Экспорт", "Импорт", "Баланс"],
+        "domain": ["Нийт эргэлт", "Экспорт", "Импорт", "Тэнцэл"],
         "range": ["#4c78a8", "#72b7b2", "#e45756", "#f58518"]
       },
       "legend": {"orient": "top", "title": null}

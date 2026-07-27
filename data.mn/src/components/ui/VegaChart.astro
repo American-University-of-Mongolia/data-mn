@@ -129,7 +129,8 @@ const isInlineSpec = typeof spec === 'object';
           return;
         }
 
-        var calculatedHeight = Math.min(Math.max(containerWidth * aspectRatio, 250), 500);
+        var minimumHeight = containerWidth < 480 ? 400 : 250;
+        var calculatedHeight = Math.min(Math.max(containerWidth * aspectRatio, minimumHeight), 500);
 
         try {
           var chartSpec;
@@ -147,12 +148,18 @@ const isInlineSpec = typeof spec === 'object';
           // Asymmetric padding: more on left/bottom for axes, minimal on right/top
           // Use category10 color scheme (D3 default) - brighter than tableau10
           var existingConfig = chartSpec.config || {};
+          var legendColumns = containerWidth < 480 ? 2 : containerWidth < 700 ? 3 : 4;
+          var legendLabelLimit = containerWidth < 480 ? 100 : containerWidth < 700 ? 140 : 240;
           chartSpec = Object.assign({}, chartSpec, {
             width: containerWidth,
             height: calculatedHeight,
             padding: {"left": 5, "right": 5, "top": 5, "bottom": 0},
             autosize: {"type": "fit", "contains": "padding"},
             config: Object.assign({}, existingConfig, {
+              legend: Object.assign({}, existingConfig.legend || {}, {
+                columns: legendColumns,
+                labelLimit: legendLabelLimit
+              }),
               range: Object.assign({}, existingConfig.range || {}, {
                 category: {scheme: "category10"}
               })

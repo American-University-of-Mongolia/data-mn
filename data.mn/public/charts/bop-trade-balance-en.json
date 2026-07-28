@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia Trade Balance - Goods (2009-2025). Monthly exports, imports, and net trade balance in million USD.",
+  "description": "Mongolia Trade Balance - Goods (2009-2026). Monthly exports, imports, and net trade balance in million USD.",
   "data": {
     "url": "/datasets/bop-trade-balance-en.csv",
     "format": {

@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Ulaanbaatar temperature extremes: minimum, average, and maximum (2020-2025). Full data (2005-2025) available in CSV.",
+  "description": "Ulaanbaatar temperature extremes: minimum, average, and maximum (2020-2026). Full data (2005-2026) available in CSV.",
   "data": {
     "url": "/datasets/temperature-extremes-ulaanbaatar-en.csv",
     "format": {"type": "csv"}

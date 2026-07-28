@@ -89,8 +89,8 @@ This multi-dimensional dataset is split into the following user-friendly dataset
 ### 1. temperature-ulaanbaatar
 
 - **ID**: `temperature-ulaanbaatar`
-- **Title EN**: Ulaanbaatar Monthly Temperature (2005-2025)
-- **Title MN**: Улаанбаатар хотын сарын дундаж температур (2005-2025)
+- **Title EN**: Ulaanbaatar Monthly Temperature (2005-2026)
+- **Title MN**: Улаанбаатар хотын сарын дундаж температур (2005-2026)
 - **Filter**:
   - Station location: Ulaanbaatar
   - Indicator: Average air temperature
@@ -109,8 +109,8 @@ This multi-dimensional dataset is split into the following user-friendly dataset
 ### 2. temperature-seasonal-average
 
 - **ID**: `temperature-regional`
-- **Title EN**: Mongolia Temperature by Region (2005-2025)
-- **Title MN**: Монгол Улсын температур бүс нутгаар (2005-2025)
+- **Title EN**: Mongolia Temperature by Region (2005-2026)
+- **Title MN**: Монгол Улсын температур бүс нутгаар (2005-2026)
 - **Filter**:
   - Indicator: Average air temperature
   - Station location: Ulaanbaatar, Darkhan, Dalanzadgad, Choibalsan, Khovd (5 representative stations)
@@ -129,8 +129,8 @@ This multi-dimensional dataset is split into the following user-friendly dataset
 ### 3. temperature-extremes-ulaanbaatar
 
 - **ID**: `temperature-extremes-ulaanbaatar`
-- **Title EN**: Ulaanbaatar Temperature Extremes (2005-2025)
-- **Title MN**: Улаанбаатар хотын температурын хэт утга (2005-2025)
+- **Title EN**: Ulaanbaatar Temperature Extremes (2005-2026)
+- **Title MN**: Улаанбаатар хотын температурын хэт утга (2005-2026)
 - **Filter**:
   - Station location: Ulaanbaatar
   - Indicator: Average air temperature, Maximum temperature, Minimum temperature

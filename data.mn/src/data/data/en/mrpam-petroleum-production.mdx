@@ -1,31 +1,41 @@
 ---
-title: "Mongolia Monthly Petroleum Production and Export (2021–2025)"
-publishDate: 2025-12-31
-excerpt: "Monthly crude petroleum production and export volumes in Mongolia from 2022 to 2025, measured in barrels. Data sourced from MRPAM monthly statistical reports."
-category: "Mining"
-tags: ["mongolia", "petroleum", "oil", "production", "export", "energy", "mrpam"]
-keywords: ["mongolia petroleum production", "crude oil export", "monthly oil production", "MRPAM petroleum"]
-author: "Data.mn"
+title: Mongolia Monthly Petroleum Production and Exports, Barrels (2021–2026)
+publishDate: 2026-04-06
+author: Data.mn
 dataVersion: 1
-dataDate: 2025-12-31
+dataDate: 2026-06-30
+excerpt: Monthly crude petroleum production and export volumes in Mongolia from January 2021 through June 2026, measured in barrels.
+category: Mining & Resources
+tags:
+- mongolia
+- petroleum
+- production
+- exports
+- mining
+keywords:
+- mongolia petroleum production
+- monthly crude oil exports
+- MRPAM petroleum statistics
 dataFiles:
-  - path: "/datasets/mrpam-petroleum-production-en.csv"
-    format: "csv"
-    size: "1 KB"
-    description: "Download as CSV"
-  - path: "/datasets/mrpam-petroleum-production.xlsx"
-    format: "xlsx"
-    size: "6 KB"
-    description: "Open in Excel"
+- path: /datasets/mrpam-petroleum-production-all-en.csv
+  format: csv
+  size: 2 KB
+  description: Download as CSV (all data)
+- path: /datasets/mrpam-petroleum-production.xlsx
+  format: xlsx
+  size: 9 KB
+  description: Open in Excel
 source:
-  name: "Mineral Resources and Petroleum Authority of Mongolia"
-  url: "https://mrpam.gov.mn"
-  tableId: "Table 4.1/4.2"
+  name: Mineral Resources and Petroleum Authority
+  url: https://mrpam.gov.mn
+  tableId: Tables 4.1 and 4.2
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
+Monthly crude petroleum production and export volumes in Mongolia from January 2021 through June 2026, measured in barrels.
+
 <VegaChart
   spec="/charts/mrpam-petroleum-production-en.json"
-  title="Monthly Petroleum Production and Export (2025)"
+  title="Monthly Petroleum Production and Exports, Barrels (2021–2026)"
 />

@@ -6,7 +6,7 @@
 **Title**: PRODUCTION OF MAJOR COMMODITIES, by year
 **Sector**: Industry, service
 **Subsector**: Industry
-**Last Updated**: 2025-09-30T10:35:46
+**Last Updated**: 2026-06-22T11:51:13
 **Frequency**: Annual
 
 ## Variables
@@ -22,17 +22,17 @@
 | selected | Iron ore | Төмрийн хүдэр | thousand tonnes |
 | selected | Molybdenum concentrate (47%) | Молибдений баяжмал (47%) | tonnes |
 
-### Year — 36 values
-Years: 1989–2024
+### Year — 37 values
+Years: 1989–2025
 
 ## Scope (industrial-production-national)
 
 - **7 key industrial commodities** selected from 74 in the source table
 - **Columns EN**: `year`, `commodity`, `unit`, `value`
 - **Columns MN**: `он`, `бараа_бүтээгдэхүүн`, `хэмжих_нэгж`, `утга`
-- **Format**: Long form (226 rows after dropping NaN)
+- **Format**: Long form (233 rows after dropping NaN)
 - **Units**: Vary per commodity (see table above)
-- **Date range**: 1989–2024
+- **Date range**: 1989–2025
 
 ## Notes
 
@@ -41,4 +41,4 @@ Years: 1989–2024
 - Gold: 2 missing values (early years)
 - Iron ore: 15 missing values (early years before large-scale mining)
 - 74 commodities available in source; only 7 strategic ones included
-- Source last updated: 2025-09-30
+- Source last updated: 2026-06-22

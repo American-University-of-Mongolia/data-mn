@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Улаанбаатар хотын сарын дундаж агаарын температур (2005-2025)",
+  "description": "Улаанбаатар хотын сарын дундаж агаарын температур (2005-2026)",
   "data": {
     "url": "/datasets/temperature-ulaanbaatar-mn.csv",
     "format": {"type": "csv"}

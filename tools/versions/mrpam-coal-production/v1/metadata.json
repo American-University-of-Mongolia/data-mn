@@ -1,0 +1,31 @@
+{
+  "dataset_id": "mrpam-coal-production",
+  "version": 1,
+  "created_at": "2026-07-27T13:16:00Z",
+  "data_as_of": "2026-06-30",
+  "coverage_time_start": "2021-01",
+  "coverage_time_end": "2026-06",
+  "coverage_frequency": "monthly",
+  "row_count": 66,
+  "column_count": 5,
+  "data_hash_sha256": "be37d91329d551dec54e69c4c9c88074dd825c6776390ae84d5a909c9ce818d1",
+  "source": {
+    "id": "mrpam",
+    "table": "3.16/3.17",
+    "reports_checked": 69,
+    "direct_report_rows": 58,
+    "historical_rows_recovered": 8,
+    "staged_report_directory": "/tmp/mrpam-pdfs"
+  },
+  "recovered_months": [
+    "2021-05",
+    "2021-06",
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2022-03"
+  ],
+  "recovery_method": "Rows missing from their own report extraction were read from later same-year MRPAM historical coal tables; no values were estimated."
+}

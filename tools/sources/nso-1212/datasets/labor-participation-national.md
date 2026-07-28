@@ -10,9 +10,9 @@
 ## Source Reference
 
 - **Table ID**: `DT_NSO_0400_018V1_1.px`
-- **Sector**: `Labour market`
-- **Subsector**: `4_Labour market`
-- **API Path**: `/en/NSO/Labour market/4_Labour market/DT_NSO_0400_018V1_1.px`
+- **Sector**: `Labour, business`
+- **Subsector**: `Labour/LABOUR FORCE PARTICIPATION RATE, by sex, age group, aimags and the Capital`
+- **API Path**: `/en/NSO/Labour, business/Labour/LABOUR FORCE PARTICIPATION RATE, by sex, age group, aimags and the Capital/DT_NSO_0400_018V1_1.px`
 
 ## Title
 
@@ -39,7 +39,7 @@ Labour force participation rate as percentage (%)
 
 1. Query the table listing endpoint:
    ```
-   GET https://data.1212.mn/api/v1/en/NSO/Labour market/4_Labour market/
+   GET https://data.1212.mn/api/v1/en/NSO/Labour, business/Labour/LABOUR FORCE PARTICIPATION RATE, by sex, age group, aimags and the Capital/
    ```
 
 2. Find `DT_NSO_0400_018V1_1.px` in the response
@@ -63,8 +63,8 @@ Or use direct API calls:
 import requests
 
 BASE_URL = "https://data.1212.mn/api/v1"
-sector = "Labour market"
-subsector = "4_Labour market"
+sector = "Labour, business"
+subsector = "Labour/LABOUR FORCE PARTICIPATION RATE, by sex, age group, aimags and the Capital"
 table_id = "DT_NSO_0400_018V1_1.px"
 
 # Fetch in both English and Mongolian

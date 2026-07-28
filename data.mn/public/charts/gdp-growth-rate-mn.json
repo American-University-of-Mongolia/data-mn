@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын ДНБ-ий жилийн өсөлтийн хувь 1991-2024 онд.",
+  "description": "Монгол Улсын ДНБ-ий жилийн өсөлтийн хувь 1991-2025 онд.",
   "data": {
     "url": "/datasets/gdp-growth-rate-mn.csv",
     "format": {

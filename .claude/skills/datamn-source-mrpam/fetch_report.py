@@ -18,7 +18,7 @@ import re
 import sys
 import time
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import unquote, urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -89,7 +89,10 @@ def scrape_report_links(year: int) -> list[dict]:
             continue
 
         full_url = href if href.startswith("http") else urljoin(BASE_URL, href)
-        filename = full_url.split("/")[-1]
+        # Keep a human-readable filename locally. 2026 report URLs include
+        # percent-encoded spaces/parentheses, which otherwise defeat month
+        # parsing and produce awkward cache names.
+        filename = unquote(Path(urlparse(full_url).path).name)
 
         # Try to extract month from filename or surrounding text
         month = _guess_month(filename, a, year)
@@ -111,10 +114,16 @@ def scrape_report_links(year: int) -> list[dict]:
 
 def _guess_month(filename: str, anchor, year: int) -> int | None:
     """Guess the report month from filename and surrounding HTML."""
-    # Pattern: 2025.1.stat... or 2025.10.stat...
-    m = re.search(rf"{year}\.(\d{{1,2}})\.", filename)
+    filename = unquote(filename)
+
+    # Patterns include 2025.1.stat..., 2026.04opendata..., and
+    # 2026.06 opendata.... The boundary prevents interpreting 2026.13 as a
+    # valid leading "1".
+    m = re.search(rf"(?<!\d){year}[.\-_ ](\d{{1,2}})(?!\d)", filename)
     if m:
-        return int(m.group(1))
+        month = int(m.group(1))
+        if 1 <= month <= 12:
+            return month
 
     # Try link text or parent row text
     text = anchor.get_text(" ", strip=True)
@@ -123,21 +132,20 @@ def _guess_month(filename: str, anchor, year: int) -> int | None:
     combined = f"{text} {row_text}"
 
     # Mongolian month names
-    mn_months = {
-        "1 сар": 1, "нэгдүгээр сар": 1,
-        "2 сар": 2, "хоёрдугаар сар": 2,
-        "3 сар": 3, "гуравдугаар сар": 3,
-        "4 сар": 4, "дөрөвдүгээр сар": 4,
-        "5 сар": 5, "тавдугаар сар": 5,
-        "6 сар": 6, "зургадугаар сар": 6,
-        "7 сар": 7, "долдугаар сар": 7,
-        "8 сар": 8, "наймдугаар сар": 8,
-        "9 сар": 9, "есдүгээр сар": 9,
-        "10 сар": 10, "аравдугаар сар": 10,
-        "11 сар": 11, "арван нэгдүгээр сар": 11,
-        "12 сар": 12, "арван хоёрдугаар сар": 12,
-    }
     combined_lower = combined.lower()
+    numeric_month = re.search(
+        r"(?<!\d)(1[0-2]|[1-9])(?:-р)?\s*сар\b", combined_lower
+    )
+    if numeric_month:
+        return int(numeric_month.group(1))
+
+    mn_months = {
+        "нэгдүгээр сар": 1, "хоёрдугаар сар": 2, "гуравдугаар сар": 3,
+        "дөрөвдүгээр сар": 4, "тавдугаар сар": 5, "зургадугаар сар": 6,
+        "долдугаар сар": 7, "наймдугаар сар": 8, "есдүгээр сар": 9,
+        "аравдугаар сар": 10, "арван нэгдүгээр сар": 11,
+        "арван хоёрдугаар сар": 12,
+    }
     for name, num in mn_months.items():
         if name in combined_lower:
             return num

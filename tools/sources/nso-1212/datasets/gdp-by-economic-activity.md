@@ -21,7 +21,7 @@
 
 ## Description
 
-Gross Domestic Product (GDP) of Mongolia broken down by production approach and economic activity sectors. Includes current prices, constant prices (2005, 2010, 2015 base years), annual growth rates, sector contributions to growth, and USD values. Data spans from 1990 to 2024.
+Gross Domestic Product (GDP) of Mongolia broken down by production approach and economic activity sectors. Includes current prices, constant prices (2005, 2010, 2015 base years), annual growth rates, sector contributions to growth, and USD values. Data spans from 1990 to 2025.
 
 ## Variables
 
@@ -58,7 +58,7 @@ Gross Domestic Product (GDP) of Mongolia broken down by production approach and 
 - `Taxes less subsidies on products`: Net taxes
 
 ### Year (Он)
-Years from 1990 to 2024 (35 data points)
+Years from 1990 to 2025 (36 data points)
 
 ## Update Instructions
 
@@ -96,8 +96,8 @@ This multi-dimensional dataset is split into the following user-friendly dataset
 ### 1. gdp-nominal
 
 - **ID**: `gdp-nominal`
-- **Title EN**: Mongolia GDP at Current Prices (1990-2024)
-- **Title MN**: Монгол Улсын ДНБ өнөөгийн үнээр (1990-2024)
+- **Title EN**: Mongolia GDP at Current Prices (1990-2025)
+- **Title MN**: Монгол Улсын ДНБ өнөөгийн үнээр (1990-2025)
 - **Filter**:
   - Indicator: GDP, at current prices
   - Economic activity: Total
@@ -112,8 +112,8 @@ This multi-dimensional dataset is split into the following user-friendly dataset
 ### 2. gdp-real
 
 - **ID**: `gdp-real`
-- **Title EN**: Mongolia Real GDP at 2015 Prices (1990-2024)
-- **Title MN**: Монгол Улсын бодит ДНБ 2015 оны үнээр (1990-2024)
+- **Title EN**: Mongolia Real GDP at 2015 Prices (1990-2025)
+- **Title MN**: Монгол Улсын бодит ДНБ 2015 оны үнээр (1990-2025)
 - **Filter**:
   - Indicator: GDP, at 2015 constant prices
   - Economic activity: Total
@@ -128,8 +128,8 @@ This multi-dimensional dataset is split into the following user-friendly dataset
 ### 3. gdp-usd
 
 - **ID**: `gdp-usd`
-- **Title EN**: Mongolia GDP in US Dollars (1990-2024)
-- **Title MN**: Монгол Улсын ДНБ ам.доллараар (1990-2024)
+- **Title EN**: Mongolia GDP in US Dollars (1990-2025)
+- **Title MN**: Монгол Улсын ДНБ ам.доллараар (1990-2025)
 - **Filter**:
   - Indicator: GDP, at current price, thousand USD
   - Economic activity: Total
@@ -144,8 +144,8 @@ This multi-dimensional dataset is split into the following user-friendly dataset
 ### 4. gdp-growth-rate
 
 - **ID**: `gdp-growth-rate`
-- **Title EN**: Mongolia GDP Growth Rate (1991-2024)
-- **Title MN**: Монгол Улсын ДНБ-ий өсөлтийн хувь (1991-2024)
+- **Title EN**: Mongolia GDP Growth Rate (1991-2025)
+- **Title MN**: Монгол Улсын ДНБ-ий өсөлтийн хувь (1991-2025)
 - **Filter**:
   - Indicator: Annual changes, by percent
   - Economic activity: Total
@@ -160,11 +160,11 @@ This multi-dimensional dataset is split into the following user-friendly dataset
 ### 5. gdp-by-sector
 
 - **ID**: `gdp-by-sector`
-- **Title EN**: Mongolia GDP by Economic Sector (2024)
-- **Title MN**: Монгол Улсын ДНБ эдийн засгийн салбараар (2024)
+- **Title EN**: Mongolia GDP by Economic Sector (2025)
+- **Title MN**: Монгол Улсын ДНБ эдийн засгийн салбараар (2025)
 - **Filter**:
   - Indicator: GDP, at current prices
-  - Year: 2024
+  - Year: 2025
   - Economic activity: NOT Total (all individual sectors)
 - **Chart Type**: horizontal-bar
 - **Chart Config**:
@@ -178,8 +178,8 @@ This multi-dimensional dataset is split into the following user-friendly dataset
 ### 6. gdp-sector-trends
 
 - **ID**: `gdp-sector-trends`
-- **Title EN**: Mongolia GDP by Major Sectors Over Time (1990-2024)
-- **Title MN**: Монгол Улсын ДНБ үндсэн салбаруудаар (1990-2024)
+- **Title EN**: Mongolia GDP by Major Sectors Over Time (1990-2025)
+- **Title MN**: Монгол Улсын ДНБ үндсэн салбаруудаар (1990-2025)
 - **Filter**:
   - Indicator: GDP, at current prices
   - Economic activity: Top 6 sectors (Mining, Agriculture, Trade, Manufacturing, Construction, Transport)

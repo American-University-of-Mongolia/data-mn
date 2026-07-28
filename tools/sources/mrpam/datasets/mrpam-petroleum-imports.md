@@ -13,22 +13,25 @@ Petroleum product imports by type from MRPAM monthly reports.
 
 ## Description
 
-Monthly imports of petroleum products (gasoline, diesel, LPG, kerosene, etc.) by product type. Sourced from Table 4.3 of the MRPAM monthly statistical report.
+Monthly imports of petroleum products by product type, measured in tonnes.
+Sourced from Table 4.3 of the MRPAM monthly statistical report.
 
 ## CSV Schema
 
 ### English (`mrpam-petroleum-imports-en.csv`)
 ```
-year,month,product,volume,unit
-2025,1,Gasoline AI-92,85000,tonnes
-2025,1,Diesel,210000,tonnes
-2025,1,LPG,12000,tonnes
+year,month,product,volume_t
+2026,6,Gasoline AI-92,57353
+2026,6,Gasoline AI-92 Euro-5,521
+2026,6,Gasoline AI-95,
 ```
 
 ### Mongolian (`mrpam-petroleum-imports-mn.csv`)
 ```
-он,сар,бүтээгдэхүүн,хэмжээ,нэгж
-2025,1,АИ-92 бензин,85000,тонн
+он,сар,бүтээгдэхүүн,хэмжээ_тн
+2026,6,Автобензин АИ-92,57353
+2026,6,АИ-92 /Евро-5/,521
+2026,6,Автобензин АИ-95,
 ```
 
 ## Extraction
@@ -51,3 +54,13 @@ Search for pages containing: `импорт`, `4.3`, `шатахуун импор
 | Шингэрүүлсэн газ (LPG) | LPG |
 | Керосин | Kerosene |
 | Мазут | Fuel oil (mazut) |
+
+## Schema Changes
+
+- Through January 2024, Table 4.3 has nine positions: Total, A-80, AI-92,
+  AI-95, AI-98, diesel, jet fuel TS-1, LPG, and Other.
+- From February 2024 through January 2026, AI-98 is omitted.
+- From February 2026, the nine positions are Total, AI-92, AI-92 Euro-5,
+  AI-95, diesel, diesel Euro-5, jet fuel TS-1, LPG, and Other.
+- Empty cells and `-` remain null. Product labels must be assigned by their
+  source column position before null rows are filtered or aggregated.

@@ -2,7 +2,7 @@
 
 **Dataset ID:** `hospital-beds-national`
 **Source:** NSO 1212.mn
-**Table ID:** DT_NSO_2100_005V1.px
+**Table ID:** DT_NSO_2100_005V3.px
 
 ## Description
 
@@ -26,7 +26,7 @@ Total number of hospital beds in Mongolia at the national level from 1989 to 202
 ```bash
 # Fetch raw data from NSO API
 cd .claude/skills/datamn-source-nso
-python3 fetch_data.py --table DT_NSO_2100_005V1.px --output /path/to/output
+python3 fetch_data.py --table DT_NSO_2100_005V3.px --output /path/to/output
 
 # Process and filter
 # See tools/scripts/fetch_hospital_beds.py for filtering logic

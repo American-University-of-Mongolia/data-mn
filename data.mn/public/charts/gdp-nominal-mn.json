@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын нэрлэсэн ДНБ 1990-2024 онд, сая төгрөгөөр.",
+  "description": "Монгол Улсын нэрлэсэн ДНБ 1990-2025 онд, сая төгрөгөөр.",
   "data": {
     "url": "/datasets/gdp-nominal-mn.csv",
     "format": {

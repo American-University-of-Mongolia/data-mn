@@ -54,7 +54,7 @@ Monthly Balance of Payments data for Mongolia following IMF BPM6 standards. Incl
 - `2. IMF loan`: IMF credit
 
 ### Month (Сар)
-Monthly data from 2009-01 to 2025-09 (201 months)
+Monthly data from 2009-01 to 2026-05 (209 months)
 
 ## Update Instructions
 

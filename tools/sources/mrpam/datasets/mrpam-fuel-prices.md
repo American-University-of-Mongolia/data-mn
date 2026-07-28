@@ -1,6 +1,6 @@
 # mrpam-fuel-prices
 
-Retail fuel prices by province and monthly trend from MRPAM.
+Monthly retail fuel prices by province and city from MRPAM Table 4.6.
 
 ## Dataset Info
 
@@ -8,41 +8,48 @@ Retail fuel prices by province and monthly trend from MRPAM.
 |-------|-------|
 | **Dataset ID** | `mrpam-fuel-prices` |
 | **Source** | `mrpam` |
-| **Source Tables** | 4.6, 4.7 |
+| **Source Table** | 4.6 |
 | **Update Frequency** | Monthly |
 | **Units** | MNT per liter (төгрөг/литр) |
 
 ## Description
 
-Retail fuel prices (gasoline AI-92, AI-95, diesel, LPG) by province (Table 4.6) and monthly time series (Table 4.7). Sourced from the MRPAM monthly statistical report.
+Retail prices for AI-92, AI-92 Euro-5, AI-95, diesel, and diesel Euro-5
+across Mongolia's aimags and cities. Full downloads retain every extracted
+geography and grade. The chart shows arithmetic national averages calculated
+from the available geography rows for each report month.
 
 ## CSV Schema
 
 ### English (`mrpam-fuel-prices-en.csv`)
 ```
-year,month,province,gasoline_price,diesel_price
-2025,1,Ulaanbaatar,2850,2900
-2025,1,Arkhangai,3050,3100
+year,month,province,ai92_price,ai92_euro5_price,ai95_price,diesel_price,diesel_euro5_price
+2026,6,Arkhangai,2700,3180,3740,3560,4150
 ```
 
 ### Mongolian (`mrpam-fuel-prices-mn.csv`)
 ```
-он,сар,аймаг,бензин_үнэ,дизель_үнэ
-2025,1,Улаанбаатар,2850,2900
+он,сар,аймаг,аи92_үнэ,аи92_евро5_үнэ,аи95_үнэ,дизель_үнэ,дизель_евро5_үнэ
+2026,6,Архангай,2700,3180,3740,3560,4150
 ```
 
 ## Extraction
 
 ```bash
-conda run -n datamn python3 extract_tables.py --dataset mrpam-fuel-prices --year 2025
+conda run -n datamn python3 extract_tables.py --dataset mrpam-fuel-prices --year 2026
 ```
 
 ## Section Keywords
 
-Search for pages containing: `шатахуун`, `4.6`, `бензин`, `дизель`
+Search for the exact heading prefix:
+`4.6. ГАЗРЫН ТОСНЫ БҮТЭЭГДЭХҮҮНИЙ ЖИЖИГЛЭН`.
 
 ## Notes
 
-- Table 4.6 = prices by province (cross-sectional)
-- Table 4.7 = monthly trend (time series) — may be a separate dataset split later
-- AI-92 and AI-95 gasoline grades are both reported; use the more widely available grade
+- The unit is MNT per liter.
+- Empty cells and hyphens remain missing; they must not be converted to zero.
+- A monthly history is assembled by extracting Table 4.6 from each report.
+- Chart CSVs contain national averages for five grades; `-all-` downloads
+  contain all extracted province and city rows.
+- The cached August 2023 report is English and does not match the Mongolian
+  extraction contract, so that month is not included in version 1.

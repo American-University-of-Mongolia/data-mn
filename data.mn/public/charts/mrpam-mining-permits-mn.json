@@ -1,125 +1,68 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын хайгуулын болон ашиглалтын тусгай зөвшөөрлийн сарын тоо.",
   "data": {
     "url": "/datasets/mrpam-mining-permits-mn.csv",
-    "format": {
-      "type": "csv"
-    }
+    "format": {"type": "csv"}
   },
   "transform": [
+    {"calculate": "datetime(datum['он'], datum['сар'] - 1, 1)", "as": "огноо"},
+    {"fold": ["хайгуулын_тоо", "ашиглалтын_тоо"], "as": ["үзүүлэлт", "тоо"]},
     {
-      "aggregate": [
-        {
-          "op": "sum",
-          "field": "хайгуулын_тоо",
-          "as": "хайгуулын_тоо"
-        },
-        {
-          "op": "sum",
-          "field": "ашиглалтын_тоо",
-          "as": "ашиглалтын_тоо"
-        }
-      ],
-      "groupby": [
-        "он",
-        "сар"
-      ]
-    },
-    {
-      "calculate": "datetime(datum.year - 0, datum.month - 1)",
-      "as": "date"
-    },
-    {
-      "fold": [
-        "хайгуулын_тоо",
-        "ашиглалтын_тоо"
-      ],
-      "as": [
-        "төрөл",
-        "тоо"
-      ]
+      "calculate": "datum['үзүүлэлт'] === 'хайгуулын_тоо' ? 'Хайгуулын' : 'Ашиглалтын'",
+      "as": "зөвшөөрлийн_төрөл"
     }
   ],
   "encoding": {
     "x": {
-      "field": "date",
+      "field": "огноо",
       "type": "temporal",
-      "title": "Огноо",
-      "axis": {
-        "format": "%b %Y",
-        "grid": false,
-        "labelAngle": -30
-      }
+      "title": "Сар",
+      "axis": {"format": "%Y-%m", "labelAngle": -45, "grid": false}
     },
     "y": {
       "field": "тоо",
       "type": "quantitative",
       "title": "Тусгай зөвшөөрлийн тоо",
-      "axis": {
-        "format": ",.0f",
-        "grid": true,
-        "gridOpacity": 0.3
-      }
+      "scale": {"zero": true},
+      "axis": {"format": ",.0f"}
     },
     "color": {
-      "field": "төрөл",
+      "field": "зөвшөөрлийн_төрөл",
       "type": "nominal",
-      "legend": {
-        "orient": "top",
-        "title": "Зөвшөөрлийн төрөл"
-      }
+      "title": null,
+      "scale": {
+        "domain": ["Хайгуулын", "Ашиглалтын"],
+        "range": ["#4c78a8", "#f58518"]
+      },
+      "legend": {"orient": "top"}
     }
   },
   "layer": [
-    {
-      "mark": {
-        "type": "line",
-        "strokeWidth": 2.5,
-        "interpolate": "monotone"
-      }
-    },
+    {"mark": {"type": "line", "strokeWidth": 2.5}},
     {
       "params": [
         {
           "name": "hover",
           "select": {
             "type": "point",
+            "fields": ["огноо"],
             "nearest": true,
             "on": "pointerover",
             "clear": "pointerout"
           }
         }
       ],
-      "mark": {
-        "type": "point",
-        "filled": true,
-        "size": 100
-      },
+      "mark": {"type": "point", "filled": true, "size": 80},
       "encoding": {
         "opacity": {
-          "condition": {
-            "param": "hover",
-            "empty": false,
-            "value": 1
-          },
+          "condition": {"param": "hover", "empty": false, "value": 1},
           "value": 0
         },
         "tooltip": [
-          {
-            "field": "date",
-            "title": "Огноо",
-            "format": "%B %Y",
-            "type": "temporal"
-          },
-          {
-            "field": "төрөл",
-            "title": "Зөвшөөрлийн төрөл"
-          },
-          {
-            "field": "тоо",
-            "title": "Тоо",
-            "format": ",.0f"
-          }
+          {"field": "огноо", "type": "temporal", "title": "Сар", "format": "%Y-%m"},
+          {"field": "зөвшөөрлийн_төрөл", "type": "nominal", "title": "Зөвшөөрлийн төрөл"},
+          {"field": "тоо", "type": "quantitative", "title": "Тоо", "format": ",.0f"}
         ]
       }
     }
@@ -131,12 +74,7 @@
       "labelColor": "#64748b",
       "titleColor": "#334155"
     },
-    "legend": {
-      "labelFontSize": 13,
-      "titleFontSize": 14
-    },
-    "view": {
-      "stroke": "transparent"
-    }
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
   }
 }

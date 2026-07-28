@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын эдийн засгийн үндсэн салбаруудын өсөлт 1990-2024 онд.",
+  "description": "Монгол Улсын эдийн засгийн үндсэн салбаруудын өсөлт 1990-2025 онд.",
   "data": {
     "url": "/datasets/gdp-sector-trends-mn.csv",
     "format": {

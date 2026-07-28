@@ -1,31 +1,41 @@
 ---
-title: "Монгол Улсын газрын тосны сарын олборлолт, экспорт (2021–2025)"
-publishDate: 2025-12-31
-excerpt: "2021–2025 оны Монгол Улсын газрын тосны сарын олборлолт болон экспортын хэмжээ (баррель). Өгөгдлийг АМГТГ-ын сарын статистикийн тайлангаас авав."
-category: "Уул уурхай"
-tags: ["монгол", "газрын тос", "нефть", "олборлолт", "экспорт", "эрчим хүч", "амгтг"]
-keywords: ["газрын тосны олборлолт", "нефтийн экспорт", "сарын нефть", "АМГТГ статистик"]
-author: "Data.mn"
+title: Монгол Улсын газрын тосны сарын олборлолт, экспорт, баррель (2021–2026)
+publishDate: 2026-04-06
+author: Data.mn
 dataVersion: 1
-dataDate: 2025-12-31
+dataDate: 2026-06-30
+excerpt: Монгол Улсын газрын тосны сарын олборлолт, экспортын хэмжээг 2021 оны 1 сараас 2026 оны 6 сар хүртэл баррелиар харуулав.
+category: Уул уурхай
+tags:
+- монгол
+- газрын тос
+- олборлолт
+- экспорт
+- уул уурхай
+keywords:
+- монгол газрын тосны олборлолт
+- газрын тосны сарын экспорт
+- АМГТГ газрын тосны статистик
 dataFiles:
-  - path: "/datasets/mrpam-petroleum-production-mn.csv"
-    format: "csv"
-    size: "1 KB"
-    description: "CSV татах"
-  - path: "/datasets/mrpam-petroleum-production.xlsx"
-    format: "xlsx"
-    size: "6 KB"
-    description: "Excel-ээр нээх"
+- path: /datasets/mrpam-petroleum-production-all-mn.csv
+  format: csv
+  size: 2 KB
+  description: CSV татах (бүх өгөгдөл)
+- path: /datasets/mrpam-petroleum-production.xlsx
+  format: xlsx
+  size: 9 KB
+  description: Excel татах
 source:
-  name: "Ашигт малтмал, газрын тосны газар"
-  url: "https://mrpam.gov.mn"
-  tableId: "Хүснэгт 4.1/4.2"
+  name: Ашигт малтмал, газрын тосны газар
+  url: https://mrpam.gov.mn
+  tableId: Tables 4.1 and 4.2
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
+Монгол Улсын газрын тосны сарын олборлолт, экспортын хэмжээг 2021 оны 1 сараас 2026 оны 6 сар хүртэл баррелиар харуулав.
+
 <VegaChart
   spec="/charts/mrpam-petroleum-production-mn.json"
-  title="Газрын тосны сарын олборлолт, экспорт (2025)"
+  title="Газрын тосны сарын олборлолт, экспорт, баррель (2021–2026)"
 />

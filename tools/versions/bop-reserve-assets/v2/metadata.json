@@ -1,0 +1,11 @@
+{
+  "dataset_id": "bop-reserve-assets",
+  "version": 2,
+  "fetched_at": "2026-07-27T11:38:37.660048+00:00",
+  "source_updated_at": "2026-07-08T15:25:08",
+  "files": [
+    "bop-reserve-assets-en.csv",
+    "bop-reserve-assets-mn.csv",
+    "bop-reserve-assets.xlsx"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын нөөц хөрөнгийн өөрчлөлт (2009-2025). Төв банкны нөөц хөрөнгийн сарын өөрчлөлт.",
+  "description": "Монгол Улсын нөөц хөрөнгийн өөрчлөлт (2009-2026). Төв банкны нөөц хөрөнгийн сарын өөрчлөлт.",
   "data": {
     "url": "/datasets/bop-reserve-assets-mn.csv",
     "format": {

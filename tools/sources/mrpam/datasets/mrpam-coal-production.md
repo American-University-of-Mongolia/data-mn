@@ -1,6 +1,6 @@
 # mrpam-coal-production
 
-Monthly coal production, export, and domestic consumption data from MRPAM.
+Monthly coal production, sales, and export data from MRPAM.
 
 ## Dataset Info
 
@@ -8,26 +8,29 @@ Monthly coal production, export, and domestic consumption data from MRPAM.
 |-------|-------|
 | **Dataset ID** | `mrpam-coal-production` |
 | **Source** | `mrpam` |
-| **Source Tables** | 3.16, 3.17 |
+| **Source Tables** | 3.16, 3.17 (numbering varies by report edition) |
 | **Update Frequency** | Monthly |
 | **Units** | Thousand tons (мян.тн) |
 
 ## Description
 
-Monthly breakdown of coal production, export volume, and domestic consumption in Mongolia. Sourced from Tables 3.16 and 3.17 of the MRPAM monthly statistical report.
+Monthly coal production, sales, and export volumes for Mongolia. The series
+uses the three-measure monthly row in the MRPAM statistical report. When a
+month's own PDF is not extractable, the same monthly row is recovered from a
+later report's historical table.
 
 ## CSV Schema
 
 ### English (`mrpam-coal-production-en.csv`)
 ```
-year,month,production_kt,export_kt,domestic_kt
-2025,1,4250.5,3100.2,350.1
+year,month,production_kt,sales_kt,export_kt
+2026,6,13036.0,11221.5,10367.4
 ```
 
 ### Mongolian (`mrpam-coal-production-mn.csv`)
 ```
-он,сар,олборлолт_мян_тн,экспорт_мян_тн,дотоод_мян_тн
-2025,1,4250.5,3100.2,350.1
+он,сар,олборлолт_мян_тн,борлуулалт_мян_тн,экспорт_мян_тн
+2026,6,13036.0,11221.5,10367.4
 ```
 
 ## Extraction
@@ -54,6 +57,9 @@ Search for pages containing: `нүүрс`, `3.16`, `3.17`
 
 ## Notes
 
-- Values are cumulative year-to-date in some report versions; verify row labels
-- `domestic_kt` = дотоодын хэрэглээ (domestic consumption)
-- Some early reports (2021) may combine production and export in a single table
+- Values in the dataset are the monthly rows, not annual or year-to-date totals.
+- The source table's measures are production, sales, and exports, all in
+  thousand tonnes.
+- The May–November 2021 and March 2022 rows are recovered from later
+  same-year reports because those months' individual PDFs do not yield the
+  table reliably. No values are estimated.

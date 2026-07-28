@@ -1,0 +1,11 @@
+{
+  "dataset_id": "temperature-anomaly",
+  "version": 1,
+  "fetched_at": "2026-07-27T11:38:37.662488+00:00",
+  "source_updated_at": "2026-07-22T16:12:00",
+  "files": [
+    "temperature-anomaly-en.csv",
+    "temperature-anomaly-mn.csv",
+    "temperature-anomaly.xlsx"
+  ]
+}

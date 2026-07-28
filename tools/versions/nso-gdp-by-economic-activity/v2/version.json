@@ -1,0 +1,10 @@
+{
+  "dataset_id": "nso-gdp-by-economic-activity",
+  "version": 2,
+  "fetched_at": "2026-07-27T11:35:00.998027+00:00",
+  "source_updated_at": "2026-04-20T16:32:03",
+  "source_files": [
+    "nso-gdp-by-economic-activity-en.csv",
+    "nso-gdp-by-economic-activity-mn.csv"
+  ]
+}

@@ -1,0 +1,2739 @@
+Commodities,Year,value
+Electricity /mln.k.W.h/,2025,9576.9
+Electricity /mln.k.W.h/,2024,8692.8
+Electricity /mln.k.W.h/,2023,8487.4
+Electricity /mln.k.W.h/,2022,8035.0
+Electricity /mln.k.W.h/,2021,7825.3
+Electricity /mln.k.W.h/,2020,7069.7
+Electricity /mln.k.W.h/,2019,6900.4
+Electricity /mln.k.W.h/,2018,6535.3
+Electricity /mln.k.W.h/,2017,6027.3
+Electricity /mln.k.W.h/,2016,5667.1
+Electricity /mln.k.W.h/,2015,5513.2
+Electricity /mln.k.W.h/,2014,5375.8
+Electricity /mln.k.W.h/,2013,5019.5
+Electricity /mln.k.W.h/,2012,4815.6
+Electricity /mln.k.W.h/,2011,4536.4
+Electricity /mln.k.W.h/,2010,4312.8
+Electricity /mln.k.W.h/,2009,4038.8
+Electricity /mln.k.W.h/,2008,4000.6
+Electricity /mln.k.W.h/,2007,3700.7
+Electricity /mln.k.W.h/,2006,3544.2
+Electricity /mln.k.W.h/,2005,3418.9
+Electricity /mln.k.W.h/,2004,3303.4
+Electricity /mln.k.W.h/,2003,3137.7
+Electricity /mln.k.W.h/,2002,3111.7
+Electricity /mln.k.W.h/,2001,3017.0
+Electricity /mln.k.W.h/,2000,2946.0
+Electricity /mln.k.W.h/,1999,2842.0
+Electricity /mln.k.W.h/,1998,2675.0
+Electricity /mln.k.W.h/,1997,2662.0
+Electricity /mln.k.W.h/,1996,2614.0
+Electricity /mln.k.W.h/,1995,2628.0
+Electricity /mln.k.W.h/,1994,2122.7
+Electricity /mln.k.W.h/,1993,2131.7
+Electricity /mln.k.W.h/,1992,2928.6
+Electricity /mln.k.W.h/,1991,3228.6
+Electricity /mln.k.W.h/,1990,3347.9
+Electricity /mln.k.W.h/,1989,3568.3
+    Thermal energy / thous.Gkal/,2025,18631.9
+    Thermal energy / thous.Gkal/,2024,17382.7
+    Thermal energy / thous.Gkal/,2023,16393.6
+    Thermal energy / thous.Gkal/,2022,15643.0
+    Thermal energy / thous.Gkal/,2021,14972.9
+    Thermal energy / thous.Gkal/,2020,14121.5
+    Thermal energy / thous.Gkal/,2019,13277.3
+    Thermal energy / thous.Gkal/,2018,12504.8
+    Thermal energy / thous.Gkal/,2017,11296.4
+    Thermal energy / thous.Gkal/,2016,10798.8
+    Thermal energy / thous.Gkal/,2015,10679.5
+    Thermal energy / thous.Gkal/,2014,10032.3
+    Thermal energy / thous.Gkal/,2013,9511.7
+    Thermal energy / thous.Gkal/,2012,9321.8
+    Thermal energy / thous.Gkal/,2011,8682.9
+    Thermal energy / thous.Gkal/,2010,8362.5
+    Thermal energy / thous.Gkal/,2009,8320.5
+    Thermal energy / thous.Gkal/,2008,7759.6
+    Thermal energy / thous.Gkal/,2007,7723.5
+    Thermal energy / thous.Gkal/,2006,7850.4
+    Thermal energy / thous.Gkal/,2005,7805.6
+    Thermal energy / thous.Gkal/,2004,7746.6
+    Thermal energy / thous.Gkal/,2003,7133.3
+    Thermal energy / thous.Gkal/,2002,6867.6
+    Thermal energy / thous.Gkal/,2001,6597.2
+    Thermal energy / thous.Gkal/,2000,6885.4
+    Thermal energy / thous.Gkal/,1999,6420.9
+    Thermal energy / thous.Gkal/,1998,6521.8
+    Thermal energy / thous.Gkal/,1997,6456.8
+    Thermal energy / thous.Gkal/,1996,6403.6
+    Thermal energy / thous.Gkal/,1995,6816.8
+    Thermal energy / thous.Gkal/,1994,6696.8
+    Thermal energy / thous.Gkal/,1993,6264.7
+    Thermal energy / thous.Gkal/,1992,7977.4
+    Thermal energy / thous.Gkal/,1991,8054.0
+    Thermal energy / thous.Gkal/,1990,7311.4
+    Thermal energy / thous.Gkal/,1989,6803.9
+    Distribution of water /thous.m3/,2025,74271.4
+    Distribution of water /thous.m3/,2024,70547.7
+    Distribution of water /thous.m3/,2023,68162.8
+    Distribution of water /thous.m3/,2022,65362.7
+    Distribution of water /thous.m3/,2021,64001.5
+    Distribution of water /thous.m3/,2020,61877.4
+    Distribution of water /thous.m3/,2019,63366.7
+    Distribution of water /thous.m3/,2018,63095.5
+    Distribution of water /thous.m3/,2017,62735.8
+    Distribution of water /thous.m3/,2016,61029.5
+    Distribution of water /thous.m3/,2015,62581.8
+    Distribution of water /thous.m3/,2014,65513.3
+    Distribution of water /thous.m3/,2013,64597.7
+    Distribution of water /thous.m3/,2012,62821.1
+    Distribution of water /thous.m3/,2011,61998.2
+    Distribution of water /thous.m3/,2010,61742.0
+    Distribution of water /thous.m3/,2009,63282.3
+    Distribution of water /thous.m3/,2008,65391.4
+    Distribution of water /thous.m3/,2007,64743.0
+    Distribution of water /thous.m3/,2006,60137.7
+    Distribution of water /thous.m3/,2005,62253.5
+    Distribution of water /thous.m3/,2004,63594.8
+    Distribution of water /thous.m3/,2003,60499.7
+    Distribution of water /thous.m3/,2002,59533.6
+    Distribution of water /thous.m3/,2001,62148.0
+    Distribution of water /thous.m3/,2000,53518.8
+    Distribution of water /thous.m3/,1999,44800.0
+    Distribution of water /thous.m3/,1998,25700.0
+    Distribution of water /thous.m3/,1997,28300.0
+    Distribution of water /thous.m3/,1996,28300.0
+    Distribution of water /thous.m3/,1995,29700.0
+    Distribution of water /thous.m3/,1994,35600.0
+    Distribution of water /thous.m3/,1993,34900.0
+    Distribution of water /thous.m3/,1992,34900.0
+    Distribution of water /thous.m3/,1991,33600.0
+    Distribution of water /thous.m3/,1990,43100.0
+    Distribution of water /thous.m3/,1989,47500.0
+    Coal (thous.t),2025,95540.0
+    Coal (thous.t),2024,95055.8
+    Coal (thous.t),2023,74283.7
+    Coal (thous.t),2022,34708.1
+    Coal (thous.t),2021,28645.0
+    Coal (thous.t),2020,42863.6
+    Coal (thous.t),2019,55799.4
+    Coal (thous.t),2018,51401.3
+    Coal (thous.t),2017,48145.1
+    Coal (thous.t),2016,35522.3
+    Coal (thous.t),2015,24205.9
+    Coal (thous.t),2014,25287.8
+    Coal (thous.t),2013,30123.3
+    Coal (thous.t),2012,29926.1
+    Coal (thous.t),2011,32029.7
+    Coal (thous.t),2010,25161.9
+    Coal (thous.t),2009,14442.1
+    Coal (thous.t),2008,10071.9
+    Coal (thous.t),2007,9237.6
+    Coal (thous.t),2006,8074.1
+    Coal (thous.t),2005,7517.1
+    Coal (thous.t),2004,6865.0
+    Coal (thous.t),2003,5666.1
+    Coal (thous.t),2002,5544.4
+    Coal (thous.t),2001,5141.0
+    Coal (thous.t),2000,5185.0
+    Coal (thous.t),1999,4964.0
+    Coal (thous.t),1998,5057.0
+    Coal (thous.t),1997,4924.0
+    Coal (thous.t),1996,5110.6
+    Coal (thous.t),1995,5019.0
+    Coal (thous.t),1994,5158.0
+    Coal (thous.t),1993,5617.0
+    Coal (thous.t),1992,6247.3
+    Coal (thous.t),1991,7037.0
+    Coal (thous.t),1990,7157.0
+    Coal (thous.t),1989,8044.5
+    Crude oil /thous.barrel/,2025,3775.1
+    Crude oil /thous.barrel/,2024,4188.3
+    Crude oil /thous.barrel/,2023,4888.9
+    Crude oil /thous.barrel/,2022,2565.4
+    Crude oil /thous.barrel/,2021,4667.1
+    Crude oil /thous.barrel/,2020,4105.9
+    Crude oil /thous.barrel/,2019,6876.1
+    Crude oil /thous.barrel/,2018,6388.6
+    Crude oil /thous.barrel/,2017,7624.1
+    Crude oil /thous.barrel/,2016,8249.8
+    Crude oil /thous.barrel/,2015,8769.3
+    Crude oil /thous.barrel/,2014,7405.3
+    Crude oil /thous.barrel/,2013,5128.9
+    Crude oil /thous.barrel/,2012,3636.0
+    Crude oil /thous.barrel/,2011,2548.9
+    Crude oil /thous.barrel/,2010,2181.4
+    Crude oil /thous.barrel/,2009,1870.0
+    Crude oil /thous.barrel/,2008,1174.2
+    Crude oil /thous.barrel/,2007,833.2
+    Crude oil /thous.barrel/,2006,366.8
+    Crude oil /thous.barrel/,2005,200.7
+    Crude oil /thous.barrel/,2004,215.7
+    Crude oil /thous.barrel/,2003,183.0
+    Crude oil /thous.barrel/,2002,139.2
+    Crude oil /thous.barrel/,2001,73.7
+    Crude oil /thous.barrel/,2000,65.5
+    Crude oil /thous.barrel/,1999,71.9
+    Crude oil /thous.barrel/,1998,44.8
+    Crude oil /thous.barrel/,1997,
+    Crude oil /thous.barrel/,1996,
+    Crude oil /thous.barrel/,1995,
+    Crude oil /thous.barrel/,1994,
+    Crude oil /thous.barrel/,1993,
+    Crude oil /thous.barrel/,1992,
+    Crude oil /thous.barrel/,1991,
+    Crude oil /thous.barrel/,1990,
+    Crude oil /thous.barrel/,1989,
+    Copper concentrate with 35% /thous.t/,2025,0.0
+    Copper concentrate with 35% /thous.t/,2024,0.0
+    Copper concentrate with 35% /thous.t/,2023,0.0
+    Copper concentrate with 35% /thous.t/,2022,0.0
+    Copper concentrate with 35% /thous.t/,2021,0.0
+    Copper concentrate with 35% /thous.t/,2020,0.0
+    Copper concentrate with 35% /thous.t/,2019,377.0
+    Copper concentrate with 35% /thous.t/,2018,388.4
+    Copper concentrate with 35% /thous.t/,2017,397.2
+    Copper concentrate with 35% /thous.t/,2016,400.4
+    Copper concentrate with 35% /thous.t/,2015,890.7
+    Copper concentrate with 35% /thous.t/,2014,712.0
+    Copper concentrate with 35% /thous.t/,2013,533.3
+    Copper concentrate with 35% /thous.t/,2012,347.6
+    Copper concentrate with 35% /thous.t/,2011,347.4
+    Copper concentrate with 35% /thous.t/,2010,357.1
+    Copper concentrate with 35% /thous.t/,2009,370.9
+    Copper concentrate with 35% /thous.t/,2008,362.3
+    Copper concentrate with 35% /thous.t/,2007,371.9
+    Copper concentrate with 35% /thous.t/,2006,370.5
+    Copper concentrate with 35% /thous.t/,2005,361.6
+    Copper concentrate with 35% /thous.t/,2004,371.4
+    Copper concentrate with 35% /thous.t/,2003,372.2
+    Copper concentrate with 35% /thous.t/,2002,376.3
+    Copper concentrate with 35% /thous.t/,2001,381.4
+    Copper concentrate with 35% /thous.t/,2000,357.8
+    Copper concentrate with 35% /thous.t/,1999,361.9
+    Copper concentrate with 35% /thous.t/,1998,358.4
+    Copper concentrate with 35% /thous.t/,1997,357.9
+    Copper concentrate with 35% /thous.t/,1996,351.5
+    Copper concentrate with 35% /thous.t/,1995,346.4
+    Copper concentrate with 35% /thous.t/,1994,343.3
+    Copper concentrate with 35% /thous.t/,1993,334.3
+    Copper concentrate with 35% /thous.t/,1992,300.2
+    Copper concentrate with 35% /thous.t/,1991,257.4
+    Copper concentrate with 35% /thous.t/,1990,354.1
+    Copper concentrate with 35% /thous.t/,1989,352.9
+"        Copper, with concentrate /thous.t/",2025,2126.6
+"        Copper, with concentrate /thous.t/",2024,1562.2
+"        Copper, with concentrate /thous.t/",2023,1395.3
+"        Copper, with concentrate /thous.t/",2022,1189.8
+"        Copper, with concentrate /thous.t/",2021,1326.3
+"        Copper, with concentrate /thous.t/",2020,1276.7
+"        Copper, with concentrate /thous.t/",2019,1262.6
+"        Copper, with concentrate /thous.t/",2018,1310.8
+"        Copper, with concentrate /thous.t/",2017,1317.6
+"        Copper, with concentrate /thous.t/",2016,1445.1
+"        Copper, with concentrate /thous.t/",2015,1334.7
+"        Copper, with concentrate /thous.t/",2014,1080.4
+"        Copper, with concentrate /thous.t/",2013,803.0
+"        Copper, with concentrate /thous.t/",2012,517.9
+"        Copper, with concentrate /thous.t/",2011,513.7
+"        Copper, with concentrate /thous.t/",2010,522.0
+"        Copper, with concentrate /thous.t/",2009,533.1
+"        Copper, with concentrate /thous.t/",2008,525.3
+"        Copper, with concentrate /thous.t/",2007,543.1
+"        Copper, with concentrate /thous.t/",2006,537.7
+"        Copper, with concentrate /thous.t/",2005,515.8
+"        Copper, with concentrate /thous.t/",2004,2893.2
+"        Copper, with concentrate /thous.t/",2003,1852.4
+"        Copper, with concentrate /thous.t/",2002,4889.0
+"        Copper, with concentrate /thous.t/",2001,
+"        Copper, with concentrate /thous.t/",2000,
+"        Copper, with concentrate /thous.t/",1999,
+"        Copper, with concentrate /thous.t/",1998,
+"        Copper, with concentrate /thous.t/",1997,
+"        Copper, with concentrate /thous.t/",1996,
+"        Copper, with concentrate /thous.t/",1995,
+"        Copper, with concentrate /thous.t/",1994,
+"        Copper, with concentrate /thous.t/",1993,
+"        Copper, with concentrate /thous.t/",1992,
+"        Copper, with concentrate /thous.t/",1991,
+"        Copper, with concentrate /thous.t/",1990,
+"        Copper, with concentrate /thous.t/",1989,
+    Molybdenium concentrate with 47 % /t/,2025,0.0
+    Molybdenium concentrate with 47 % /t/,2024,0.0
+    Molybdenium concentrate with 47 % /t/,2023,0.0
+    Molybdenium concentrate with 47 % /t/,2022,0.0
+    Molybdenium concentrate with 47 % /t/,2021,0.0
+    Molybdenium concentrate with 47 % /t/,2020,0.0
+    Molybdenium concentrate with 47 % /t/,2019,5722.3
+    Molybdenium concentrate with 47 % /t/,2018,5836.4
+    Molybdenium concentrate with 47 % /t/,2017,6220.4
+    Molybdenium concentrate with 47 % /t/,2016,5718.1
+    Molybdenium concentrate with 47 % /t/,2015,5441.0
+    Molybdenium concentrate with 47 % /t/,2014,4254.0
+    Molybdenium concentrate with 47 % /t/,2013,3869.2
+    Molybdenium concentrate with 47 % /t/,2012,4050.2
+    Molybdenium concentrate with 47 % /t/,2011,4163.1
+    Molybdenium concentrate with 47 % /t/,2010,4677.0
+    Molybdenium concentrate with 47 % /t/,2009,5125.0
+    Molybdenium concentrate with 47 % /t/,2008,4042.0
+    Molybdenium concentrate with 47 % /t/,2007,4209.1
+    Molybdenium concentrate with 47 % /t/,2006,2987.0
+    Molybdenium concentrate with 47 % /t/,2005,2528.0
+    Molybdenium concentrate with 47 % /t/,2004,2428.0
+    Molybdenium concentrate with 47 % /t/,2003,3836.6
+    Molybdenium concentrate with 47 % /t/,2002,3384.0
+    Molybdenium concentrate with 47 % /t/,2001,3028.0
+    Molybdenium concentrate with 47 % /t/,2000,2843.0
+    Molybdenium concentrate with 47 % /t/,1999,4157.0
+    Molybdenium concentrate with 47 % /t/,1998,4240.0
+    Molybdenium concentrate with 47 % /t/,1997,4238.3
+    Molybdenium concentrate with 47 % /t/,1996,4684.0
+    Molybdenium concentrate with 47 % /t/,1995,3906.0
+    Molybdenium concentrate with 47 % /t/,1994,4396.0
+    Molybdenium concentrate with 47 % /t/,1993,4367.0
+    Molybdenium concentrate with 47 % /t/,1992,3500.0
+    Molybdenium concentrate with 47 % /t/,1991,3718.0
+    Molybdenium concentrate with 47 % /t/,1990,4208.0
+    Molybdenium concentrate with 47 % /t/,1989,3361.0
+"        Molybdenium, with concentrate /t/",2025,5508.0
+"        Molybdenium, with concentrate /t/",2024,5498.2
+"        Molybdenium, with concentrate /t/",2023,5643.7
+"        Molybdenium, with concentrate /t/",2022,5914.2
+"        Molybdenium, with concentrate /t/",2021,6326.1
+"        Molybdenium, with concentrate /t/",2020,6147.7
+"        Molybdenium, with concentrate /t/",2019,5302.8
+"        Molybdenium, with concentrate /t/",2018,5486.1
+"        Molybdenium, with concentrate /t/",2017,5759.6
+"        Molybdenium, with concentrate /t/",2016,5174.4
+"        Molybdenium, with concentrate /t/",2015,5207.0
+"        Molybdenium, with concentrate /t/",2014,4054.0
+"        Molybdenium, with concentrate /t/",2013,3732.1
+"        Molybdenium, with concentrate /t/",2012,3933.9
+"        Molybdenium, with concentrate /t/",2011,3977.0
+"        Molybdenium, with concentrate /t/",2010,4448.0
+"        Molybdenium, with concentrate /t/",2009,5263.6
+"        Molybdenium, with concentrate /t/",2008,3795.0
+"        Molybdenium, with concentrate /t/",2007,4002.0
+"        Molybdenium, with concentrate /t/",2006,3022.0
+"        Molybdenium, with concentrate /t/",2005,2469.0
+"        Molybdenium, with concentrate /t/",2004,2334.0
+"        Molybdenium, with concentrate /t/",2003,3519.0
+"        Molybdenium, with concentrate /t/",2002,3069.0
+"        Molybdenium, with concentrate /t/",2001,2310.0
+"        Molybdenium, with concentrate /t/",2000,
+"        Molybdenium, with concentrate /t/",1999,
+"        Molybdenium, with concentrate /t/",1998,
+"        Molybdenium, with concentrate /t/",1997,
+"        Molybdenium, with concentrate /t/",1996,
+"        Molybdenium, with concentrate /t/",1995,
+"        Molybdenium, with concentrate /t/",1994,
+"        Molybdenium, with concentrate /t/",1993,
+"        Molybdenium, with concentrate /t/",1992,
+"        Molybdenium, with concentrate /t/",1991,
+"        Molybdenium, with concentrate /t/",1990,
+"        Molybdenium, with concentrate /t/",1989,
+    Gold /kg/,2025,13028.2
+    Gold /kg/,2024,12594.9
+    Gold /kg/,2023,14854.8
+    Gold /kg/,2022,19382.7
+    Gold /kg/,2021,19054.4
+    Gold /kg/,2020,20225.5
+    Gold /kg/,2019,16234.9
+    Gold /kg/,2018,20655.2
+    Gold /kg/,2017,19849.0
+    Gold /kg/,2016,18435.7
+    Gold /kg/,2015,14532.8
+    Gold /kg/,2014,11503.8
+    Gold /kg/,2013,8900.9
+    Gold /kg/,2012,5977.1
+    Gold /kg/,2011,5457.0
+    Gold /kg/,2010,5998.6
+    Gold /kg/,2009,9341.2
+    Gold /kg/,2008,14494.1
+    Gold /kg/,2007,17138.8
+    Gold /kg/,2006,22561.3
+    Gold /kg/,2005,24121.9
+    Gold /kg/,2004,19417.6
+    Gold /kg/,2003,11111.3
+    Gold /kg/,2002,12097.1
+    Gold /kg/,2001,13674.6
+    Gold /kg/,2000,11808.1
+    Gold /kg/,1999,10246.2
+    Gold /kg/,1998,9531.4
+    Gold /kg/,1997,8451.0
+    Gold /kg/,1996,6976.4
+    Gold /kg/,1995,4504.0
+    Gold /kg/,1994,1789.5
+    Gold /kg/,1993,1117.0
+    Gold /kg/,1992,776.0
+    Gold /kg/,1991,722.6
+    Gold /kg/,1990,
+    Gold /kg/,1989,
+    Flour spar /thous.t/,2025,1505.4
+    Flour spar /thous.t/,2024,1145.8
+    Flour spar /thous.t/,2023,875.3
+    Flour spar /thous.t/,2022,322.7
+    Flour spar /thous.t/,2021,571.4
+    Flour spar /thous.t/,2020,127.3
+    Flour spar /thous.t/,2019,156.1
+    Flour spar /thous.t/,2018,101.2
+    Flour spar /thous.t/,2017,108.9
+    Flour spar /thous.t/,2016,167.7
+    Flour spar /thous.t/,2015,183.5
+    Flour spar /thous.t/,2014,303.0
+    Flour spar /thous.t/,2013,161.7
+    Flour spar /thous.t/,2012,484.4
+    Flour spar /thous.t/,2011,658.7
+    Flour spar /thous.t/,2010,727.0
+    Flour spar /thous.t/,2009,628.8
+    Flour spar /thous.t/,2008,545.8
+    Flour spar /thous.t/,2007,637.9
+    Flour spar /thous.t/,2006,521.9
+    Flour spar /thous.t/,2005,507.9
+    Flour spar /thous.t/,2004,468.2
+    Flour spar /thous.t/,2003,488.2
+    Flour spar /thous.t/,2002,513.9
+    Flour spar /thous.t/,2001,584.7
+    Flour spar /thous.t/,2000,733.5
+    Flour spar /thous.t/,1999,597.1
+    Flour spar /thous.t/,1998,612.0
+    Flour spar /thous.t/,1997,567.1
+    Flour spar /thous.t/,1996,565.1
+    Flour spar /thous.t/,1995,526.9
+    Flour spar /thous.t/,1994,383.2
+    Flour spar /thous.t/,1993,536.8
+    Flour spar /thous.t/,1992,622.1
+    Flour spar /thous.t/,1991,755.2
+    Flour spar /thous.t/,1990,455.9
+    Flour spar /thous.t/,1989,578.2
+    Flour spar concentrate /thous.t/,2025,408.5
+    Flour spar concentrate /thous.t/,2024,261.1
+    Flour spar concentrate /thous.t/,2023,349.0
+    Flour spar concentrate /thous.t/,2022,107.4
+    Flour spar concentrate /thous.t/,2021,165.1
+    Flour spar concentrate /thous.t/,2020,85.0
+    Flour spar concentrate /thous.t/,2019,47.5
+    Flour spar concentrate /thous.t/,2018,80.7
+    Flour spar concentrate /thous.t/,2017,55.2
+    Flour spar concentrate /thous.t/,2016,34.1
+    Flour spar concentrate /thous.t/,2015,47.3
+    Flour spar concentrate /thous.t/,2014,71.9
+    Flour spar concentrate /thous.t/,2013,76.4
+    Flour spar concentrate /thous.t/,2012,157.2
+    Flour spar concentrate /thous.t/,2011,116.4
+    Flour spar concentrate /thous.t/,2010,140.7
+    Flour spar concentrate /thous.t/,2009,115.3
+    Flour spar concentrate /thous.t/,2008,142.9
+    Flour spar concentrate /thous.t/,2007,131.8
+    Flour spar concentrate /thous.t/,2006,137.6
+    Flour spar concentrate /thous.t/,2005,134.1
+    Flour spar concentrate /thous.t/,2004,148.2
+    Flour spar concentrate /thous.t/,2003,198.4
+    Flour spar concentrate /thous.t/,2002,159.8
+    Flour spar concentrate /thous.t/,2001,209.0
+    Flour spar concentrate /thous.t/,2000,210.0
+    Flour spar concentrate /thous.t/,1999,184.2
+    Flour spar concentrate /thous.t/,1998,157.7
+    Flour spar concentrate /thous.t/,1997,135.1
+    Flour spar concentrate /thous.t/,1996,130.0
+    Flour spar concentrate /thous.t/,1995,130.0
+    Flour spar concentrate /thous.t/,1994,98.4
+    Flour spar concentrate /thous.t/,1993,148.1
+    Flour spar concentrate /thous.t/,1992,175.6
+    Flour spar concentrate /thous.t/,1991,218.7
+    Flour spar concentrate /thous.t/,1990,121.9
+    Flour spar concentrate /thous.t/,1989,161.5
+        Iron ore /thous.t/,2025,8751.9
+        Iron ore /thous.t/,2024,6642.2
+        Iron ore /thous.t/,2023,5334.8
+        Iron ore /thous.t/,2022,7659.9
+        Iron ore /thous.t/,2021,9171.9
+        Iron ore /thous.t/,2020,9224.4
+        Iron ore /thous.t/,2019,8572.2
+        Iron ore /thous.t/,2018,6225.4
+        Iron ore /thous.t/,2017,7694.7
+        Iron ore /thous.t/,2016,4936.2
+        Iron ore /thous.t/,2015,4273.6
+        Iron ore /thous.t/,2014,6293.1
+        Iron ore /thous.t/,2013,5011.9
+        Iron ore /thous.t/,2012,6898.0
+        Iron ore /thous.t/,2011,5193.9
+        Iron ore /thous.t/,2010,3076.6
+        Iron ore /thous.t/,2009,1379.0
+        Iron ore /thous.t/,2008,1387.4
+        Iron ore /thous.t/,2007,265.1
+        Iron ore /thous.t/,2006,180.0
+        Iron ore /thous.t/,2005,167.7
+        Iron ore /thous.t/,2004,33.5
+        Iron ore /thous.t/,2003,
+        Iron ore /thous.t/,2002,
+        Iron ore /thous.t/,2001,
+        Iron ore /thous.t/,2000,
+        Iron ore /thous.t/,1999,
+        Iron ore /thous.t/,1998,
+        Iron ore /thous.t/,1997,
+        Iron ore /thous.t/,1996,
+        Iron ore /thous.t/,1995,
+        Iron ore /thous.t/,1994,
+        Iron ore /thous.t/,1993,
+        Iron ore /thous.t/,1992,
+        Iron ore /thous.t/,1991,
+        Iron ore /thous.t/,1990,
+        Iron ore /thous.t/,1989,
+        Zincum concentrate /thous.t/,2025,125.0
+        Zincum concentrate /thous.t/,2024,123.2
+        Zincum concentrate /thous.t/,2023,402.9
+        Zincum concentrate /thous.t/,2022,400.1
+        Zincum concentrate /thous.t/,2021,75.2
+        Zincum concentrate /thous.t/,2020,76.3
+        Zincum concentrate /thous.t/,2019,83.1
+        Zincum concentrate /thous.t/,2018,87.9
+        Zincum concentrate /thous.t/,2017,82.7
+        Zincum concentrate /thous.t/,2016,100.2
+        Zincum concentrate /thous.t/,2015,89.6
+        Zincum concentrate /thous.t/,2014,93.2
+        Zincum concentrate /thous.t/,2013,104.1
+        Zincum concentrate /thous.t/,2012,119.1
+        Zincum concentrate /thous.t/,2011,104.7
+        Zincum concentrate /thous.t/,2010,112.6
+        Zincum concentrate /thous.t/,2009,141.5
+        Zincum concentrate /thous.t/,2008,143.6
+        Zincum concentrate /thous.t/,2007,154.7
+        Zincum concentrate /thous.t/,2006,109.9
+        Zincum concentrate /thous.t/,2005,22.8
+        Zincum concentrate /thous.t/,2004,
+        Zincum concentrate /thous.t/,2003,
+        Zincum concentrate /thous.t/,2002,
+        Zincum concentrate /thous.t/,2001,
+        Zincum concentrate /thous.t/,2000,
+        Zincum concentrate /thous.t/,1999,
+        Zincum concentrate /thous.t/,1998,
+        Zincum concentrate /thous.t/,1997,
+        Zincum concentrate /thous.t/,1996,
+        Zincum concentrate /thous.t/,1995,
+        Zincum concentrate /thous.t/,1994,
+        Zincum concentrate /thous.t/,1993,
+        Zincum concentrate /thous.t/,1992,
+        Zincum concentrate /thous.t/,1991,
+        Zincum concentrate /thous.t/,1990,
+        Zincum concentrate /thous.t/,1989,
+        Salt mining /t/,2025,1588.8
+        Salt mining /t/,2024,1285.1
+        Salt mining /t/,2023,1780.4
+        Salt mining /t/,2022,1343.1
+        Salt mining /t/,2021,1796.0
+        Salt mining /t/,2020,2624.1
+        Salt mining /t/,2019,532.5
+        Salt mining /t/,2018,996.9
+        Salt mining /t/,2017,860.0
+        Salt mining /t/,2016,478.0
+        Salt mining /t/,2015,1685.6
+        Salt mining /t/,2014,1378.4
+        Salt mining /t/,2013,657.6
+        Salt mining /t/,2012,569.2
+        Salt mining /t/,2011,
+        Salt mining /t/,2010,
+        Salt mining /t/,2009,5.0
+        Salt mining /t/,2008,115.0
+        Salt mining /t/,2007,4.0
+        Salt mining /t/,2006,166.7
+        Salt mining /t/,2005,196.7
+        Salt mining /t/,2004,258.5
+        Salt mining /t/,2003,280.5
+        Salt mining /t/,2002,680.2
+        Salt mining /t/,2001,876.6
+        Salt mining /t/,2000,1293.4
+        Salt mining /t/,1999,1516.0
+        Salt mining /t/,1998,103.0
+        Salt mining /t/,1997,1353.9
+        Salt mining /t/,1996,695.7
+        Salt mining /t/,1995,726.0
+        Salt mining /t/,1994,623.8
+        Salt mining /t/,1993,14.0
+        Salt mining /t/,1992,215.9
+        Salt mining /t/,1991,316.2
+        Salt mining /t/,1990,6320.9
+        Salt mining /t/,1989,12308.7
+        Copper 99% /t/,2025,7610.8
+        Copper 99% /t/,2024,6976.3
+        Copper 99% /t/,2023,9661.3
+        Copper 99% /t/,2022,9736.0
+        Copper 99% /t/,2021,9689.9
+        Copper 99% /t/,2020,9488.3
+        Copper 99% /t/,2019,11757.6
+        Copper 99% /t/,2018,14174.6
+        Copper 99% /t/,2017,14689.0
+        Copper 99% /t/,2016,15009.6
+        Copper 99% /t/,2015,14989.5
+        Copper 99% /t/,2014,6992.4
+        Copper 99% /t/,2013,2344.2
+        Copper 99% /t/,2012,2281.7
+        Copper 99% /t/,2011,2388.7
+        Copper 99% /t/,2010,2746.2
+        Copper 99% /t/,2009,2470.1
+        Copper 99% /t/,2008,2586.6
+        Copper 99% /t/,2007,3006.5
+        Copper 99% /t/,2006,2618.4
+        Copper 99% /t/,2005,2474.5
+        Copper 99% /t/,2004,2376.1
+        Copper 99% /t/,2003,1341.1
+        Copper 99% /t/,2002,1500.0
+        Copper 99% /t/,2001,1475.9
+        Copper 99% /t/,2000,641.1
+        Copper 99% /t/,1999,1545.2
+        Copper 99% /t/,1998,2322.3
+        Copper 99% /t/,1997,2702.6
+        Copper 99% /t/,1996,
+        Copper 99% /t/,1995,
+        Copper 99% /t/,1994,
+        Copper 99% /t/,1993,
+        Copper 99% /t/,1992,
+        Copper 99% /t/,1991,
+        Copper 99% /t/,1990,
+        Copper 99% /t/,1989,
+        Metal steel /thous.t/,2025,35.7
+        Metal steel /thous.t/,2024,36.0
+        Metal steel /thous.t/,2023,37.7
+        Metal steel /thous.t/,2022,25.0
+        Metal steel /thous.t/,2021,35.9
+        Metal steel /thous.t/,2020,15.3
+        Metal steel /thous.t/,2019,28.6
+        Metal steel /thous.t/,2018,29.2
+        Metal steel /thous.t/,2017,21.0
+        Metal steel /thous.t/,2016,16.8
+        Metal steel /thous.t/,2015,43.7
+        Metal steel /thous.t/,2014,64.4
+        Metal steel /thous.t/,2013,56.0
+        Metal steel /thous.t/,2012,68.1
+        Metal steel /thous.t/,2011,60.0
+        Metal steel /thous.t/,2010,64.2
+        Metal steel /thous.t/,2009,50.1
+        Metal steel /thous.t/,2008,81.4
+        Metal steel /thous.t/,2007,80.4
+        Metal steel /thous.t/,2006,70.0
+        Metal steel /thous.t/,2005,65.5
+        Metal steel /thous.t/,2004,54.9
+        Metal steel /thous.t/,2003,39.3
+        Metal steel /thous.t/,2002,15.9
+        Metal steel /thous.t/,2001,10.0
+        Metal steel /thous.t/,2000,13.0
+        Metal steel /thous.t/,1999,13.1
+        Metal steel /thous.t/,1998,16.3
+        Metal steel /thous.t/,1997,22.7
+        Metal steel /thous.t/,1996,19.2
+        Metal steel /thous.t/,1995,15.6
+        Metal steel /thous.t/,1994,
+        Metal steel /thous.t/,1993,
+        Metal steel /thous.t/,1992,
+        Metal steel /thous.t/,1991,
+        Metal steel /thous.t/,1990,
+        Metal steel /thous.t/,1989,
+        Metal foundries /thous.t/,2025,33.5
+        Metal foundries /thous.t/,2024,35.0
+        Metal foundries /thous.t/,2023,36.1
+        Metal foundries /thous.t/,2022,26.1
+        Metal foundries /thous.t/,2021,35.6
+        Metal foundries /thous.t/,2020,16.7
+        Metal foundries /thous.t/,2019,26.9
+        Metal foundries /thous.t/,2018,31.6
+        Metal foundries /thous.t/,2017,16.3
+        Metal foundries /thous.t/,2016,16.6
+        Metal foundries /thous.t/,2015,49.5
+        Metal foundries /thous.t/,2014,73.9
+        Metal foundries /thous.t/,2013,69.3
+        Metal foundries /thous.t/,2012,57.0
+        Metal foundries /thous.t/,2011,55.4
+        Metal foundries /thous.t/,2010,61.8
+        Metal foundries /thous.t/,2009,37.7
+        Metal foundries /thous.t/,2008,75.9
+        Metal foundries /thous.t/,2007,67.4
+        Metal foundries /thous.t/,2006,54.2
+        Metal foundries /thous.t/,2005,36.2
+        Metal foundries /thous.t/,2004,29.5
+        Metal foundries /thous.t/,2003,20.7
+        Metal foundries /thous.t/,2002,10.4
+        Metal foundries /thous.t/,2001,7.2
+        Metal foundries /thous.t/,2000,7.4
+        Metal foundries /thous.t/,1999,8.7
+        Metal foundries /thous.t/,1998,6.7
+        Metal foundries /thous.t/,1997,5.7
+        Metal foundries /thous.t/,1996,3.4
+        Metal foundries /thous.t/,1995,6.6
+        Metal foundries /thous.t/,1994,
+        Metal foundries /thous.t/,1993,
+        Metal foundries /thous.t/,1992,
+        Metal foundries /thous.t/,1991,
+        Metal foundries /thous.t/,1990,
+        Metal foundries /thous.t/,1989,
+        Electrical conductor wire /t/,2025,125.7
+        Electrical conductor wire /t/,2024,81.6
+        Electrical conductor wire /t/,2023,70.1
+        Electrical conductor wire /t/,2022,71.1
+        Electrical conductor wire /t/,2021,62.7
+        Electrical conductor wire /t/,2020,74.3
+        Electrical conductor wire /t/,2019,82.1
+        Electrical conductor wire /t/,2018,95.1
+        Electrical conductor wire /t/,2017,50.4
+        Electrical conductor wire /t/,2016,40.0
+        Electrical conductor wire /t/,2015,93.7
+        Electrical conductor wire /t/,2014,228.0
+        Electrical conductor wire /t/,2013,145.9
+        Electrical conductor wire /t/,2012,1414.5
+        Electrical conductor wire /t/,2011,1263.0
+        Electrical conductor wire /t/,2010,147.3
+        Electrical conductor wire /t/,2009,298.5
+        Electrical conductor wire /t/,2008,705.8
+        Electrical conductor wire /t/,2007,294.8
+        Electrical conductor wire /t/,2006,221.2
+        Electrical conductor wire /t/,2005,198.0
+        Electrical conductor wire /t/,2004,90.1
+        Electrical conductor wire /t/,2003,
+        Electrical conductor wire /t/,2002,
+        Electrical conductor wire /t/,2001,
+        Electrical conductor wire /t/,2000,
+        Electrical conductor wire /t/,1999,
+        Electrical conductor wire /t/,1998,
+        Electrical conductor wire /t/,1997,
+        Electrical conductor wire /t/,1996,
+        Electrical conductor wire /t/,1995,
+        Electrical conductor wire /t/,1994,
+        Electrical conductor wire /t/,1993,
+        Electrical conductor wire /t/,1992,
+        Electrical conductor wire /t/,1991,
+        Electrical conductor wire /t/,1990,
+        Electrical conductor wire /t/,1989,
+        Sawn wood /m3/,2025,10240.2
+        Sawn wood /m3/,2024,16555.8
+        Sawn wood /m3/,2023,13645.5
+        Sawn wood /m3/,2022,15295.1
+        Sawn wood /m3/,2021,15399.9
+        Sawn wood /m3/,2020,10428.3
+        Sawn wood /m3/,2019,17001.1
+        Sawn wood /m3/,2018,16149.8
+        Sawn wood /m3/,2017,11150.1
+        Sawn wood /m3/,2016,8578.9
+        Sawn wood /m3/,2015,11412.6
+        Sawn wood /m3/,2014,12574.0
+        Sawn wood /m3/,2013,8994.7
+        Sawn wood /m3/,2012,11721.0
+        Sawn wood /m3/,2011,9431.6
+        Sawn wood /m3/,2010,5234.8
+        Sawn wood /m3/,2009,6181.2
+        Sawn wood /m3/,2008,6925.8
+        Sawn wood /m3/,2007,5687.2
+        Sawn wood /m3/,2006,9613.7
+        Sawn wood /m3/,2005,13210.0
+        Sawn wood /m3/,2004,17810.0
+        Sawn wood /m3/,2003,16600.0
+        Sawn wood /m3/,2002,10200.0
+        Sawn wood /m3/,2001,21000.0
+        Sawn wood /m3/,2000,14900.0
+        Sawn wood /m3/,1999,15700.0
+        Sawn wood /m3/,1998,35500.0
+        Sawn wood /m3/,1997,36500.0
+        Sawn wood /m3/,1996,70200.0
+        Sawn wood /m3/,1995,61200.0
+        Sawn wood /m3/,1994,50300.0
+        Sawn wood /m3/,1993,84500.0
+        Sawn wood /m3/,1992,124500.0
+        Sawn wood /m3/,1991,270400.0
+        Sawn wood /m3/,1990,509000.0
+        Sawn wood /m3/,1989,553100.0
+        Railway sleeper /thous.m3/,2025,9.5
+        Railway sleeper /thous.m3/,2024,10.7
+        Railway sleeper /thous.m3/,2023,10.1
+        Railway sleeper /thous.m3/,2022,9.8
+        Railway sleeper /thous.m3/,2021,13.5
+        Railway sleeper /thous.m3/,2020,13.7
+        Railway sleeper /thous.m3/,2019,13.2
+        Railway sleeper /thous.m3/,2018,16.5
+        Railway sleeper /thous.m3/,2017,16.0
+        Railway sleeper /thous.m3/,2016,10.9
+        Railway sleeper /thous.m3/,2015,6.2
+        Railway sleeper /thous.m3/,2014,5.6
+        Railway sleeper /thous.m3/,2013,7.4
+        Railway sleeper /thous.m3/,2012,12.3
+        Railway sleeper /thous.m3/,2011,10.0
+        Railway sleeper /thous.m3/,2010,12.5
+        Railway sleeper /thous.m3/,2009,14.3
+        Railway sleeper /thous.m3/,2008,16.7
+        Railway sleeper /thous.m3/,2007,16.7
+        Railway sleeper /thous.m3/,2006,18.8
+        Railway sleeper /thous.m3/,2005,19.4
+        Railway sleeper /thous.m3/,2004,20.9
+        Railway sleeper /thous.m3/,2003,38.4
+        Railway sleeper /thous.m3/,2002,18.1
+        Railway sleeper /thous.m3/,2001,18.7
+        Railway sleeper /thous.m3/,2000,15.6
+        Railway sleeper /thous.m3/,1999,16.0
+        Railway sleeper /thous.m3/,1998,14.6
+        Railway sleeper /thous.m3/,1997,14.0
+        Railway sleeper /thous.m3/,1996,13.6
+        Railway sleeper /thous.m3/,1995,14.9
+        Railway sleeper /thous.m3/,1994,11.0
+        Railway sleeper /thous.m3/,1993,11.3
+        Railway sleeper /thous.m3/,1992,8.1
+        Railway sleeper /thous.m3/,1991,15.7
+        Railway sleeper /thous.m3/,1990,20.5
+        Railway sleeper /thous.m3/,1989,30.0
+    Cement /thous.t/,2025,2164.6
+    Cement /thous.t/,2024,1894.7
+    Cement /thous.t/,2023,1713.6
+    Cement /thous.t/,2022,1373.5
+    Cement /thous.t/,2021,1293.3
+    Cement /thous.t/,2020,1182.2
+    Cement /thous.t/,2019,1098.0
+    Cement /thous.t/,2018,933.8
+    Cement /thous.t/,2017,675.2
+    Cement /thous.t/,2016,432.4
+    Cement /thous.t/,2015,410.1
+    Cement /thous.t/,2014,411.3
+    Cement /thous.t/,2013,258.8
+    Cement /thous.t/,2012,349.3
+    Cement /thous.t/,2011,425.8
+    Cement /thous.t/,2010,322.5
+    Cement /thous.t/,2009,234.8
+    Cement /thous.t/,2008,269.3
+    Cement /thous.t/,2007,179.8
+    Cement /thous.t/,2006,140.8
+    Cement /thous.t/,2005,111.9
+    Cement /thous.t/,2004,61.9
+    Cement /thous.t/,2003,162.3
+    Cement /thous.t/,2002,147.6
+    Cement /thous.t/,2001,67.7
+    Cement /thous.t/,2000,91.7
+    Cement /thous.t/,1999,103.5
+    Cement /thous.t/,1998,109.0
+    Cement /thous.t/,1997,111.6
+    Cement /thous.t/,1996,106.0
+    Cement /thous.t/,1995,108.8
+    Cement /thous.t/,1994,85.8
+    Cement /thous.t/,1993,82.3
+    Cement /thous.t/,1992,132.5
+    Cement /thous.t/,1991,226.8
+    Cement /thous.t/,1990,440.8
+    Cement /thous.t/,1989,512.6
+        Lime /thous.t/,2025,67.8
+        Lime /thous.t/,2024,59.1
+        Lime /thous.t/,2023,58.8
+        Lime /thous.t/,2022,66.5
+        Lime /thous.t/,2021,50.7
+        Lime /thous.t/,2020,70.2
+        Lime /thous.t/,2019,77.3
+        Lime /thous.t/,2018,58.7
+        Lime /thous.t/,2017,56.2
+        Lime /thous.t/,2016,47.6
+        Lime /thous.t/,2015,52.3
+        Lime /thous.t/,2014,58.0
+        Lime /thous.t/,2013,56.7
+        Lime /thous.t/,2012,68.2
+        Lime /thous.t/,2011,45.3
+        Lime /thous.t/,2010,50.2
+        Lime /thous.t/,2009,43.1
+        Lime /thous.t/,2008,54.8
+        Lime /thous.t/,2007,43.3
+        Lime /thous.t/,2006,60.4
+        Lime /thous.t/,2005,81.2
+        Lime /thous.t/,2004,30.0
+        Lime /thous.t/,2003,42.1
+        Lime /thous.t/,2002,42.1
+        Lime /thous.t/,2001,30.1
+        Lime /thous.t/,2000,37.0
+        Lime /thous.t/,1999,49.6
+        Lime /thous.t/,1998,55.8
+        Lime /thous.t/,1997,57.6
+        Lime /thous.t/,1996,54.7
+        Lime /thous.t/,1995,51.4
+        Lime /thous.t/,1994,66.4
+        Lime /thous.t/,1993,51.2
+        Lime /thous.t/,1992,67.8
+        Lime /thous.t/,1991,76.3
+        Lime /thous.t/,1990,103.0
+        Lime /thous.t/,1989,95.0
+        Concrete mortar /m3/,2025,107011.0
+        Concrete mortar /m3/,2024,97061.0
+        Concrete mortar /m3/,2023,74520.0
+        Concrete mortar /m3/,2022,57520.0
+        Concrete mortar /m3/,2021,53716.0
+        Concrete mortar /m3/,2020,69681.0
+        Concrete mortar /m3/,2019,54502.0
+        Concrete mortar /m3/,2018,40600.0
+        Concrete mortar /m3/,2017,39400.0
+        Concrete mortar /m3/,2016,22200.0
+        Concrete mortar /m3/,2015,36600.0
+        Concrete mortar /m3/,2014,53700.0
+        Concrete mortar /m3/,2013,76900.0
+        Concrete mortar /m3/,2012,79900.0
+        Concrete mortar /m3/,2011,61300.0
+        Concrete mortar /m3/,2010,18200.0
+        Concrete mortar /m3/,2009,13600.0
+        Concrete mortar /m3/,2008,65400.0
+        Concrete mortar /m3/,2007,29600.0
+        Concrete mortar /m3/,2006,2700.0
+        Concrete mortar /m3/,2005,4800.0
+        Concrete mortar /m3/,2004,2400.0
+        Concrete mortar /m3/,2003,6900.0
+        Concrete mortar /m3/,2002,11900.0
+        Concrete mortar /m3/,2001,17000.0
+        Concrete mortar /m3/,2000,14800.0
+        Concrete mortar /m3/,1999,14700.0
+        Concrete mortar /m3/,1998,11200.0
+        Concrete mortar /m3/,1997,14400.0
+        Concrete mortar /m3/,1996,16200.0
+        Concrete mortar /m3/,1995,13700.0
+        Concrete mortar /m3/,1994,14800.0
+        Concrete mortar /m3/,1993,17100.0
+        Concrete mortar /m3/,1992,42000.0
+        Concrete mortar /m3/,1991,72000.0
+        Concrete mortar /m3/,1990,166800.0
+        Concrete mortar /m3/,1989,165100.0
+        Metal sleeper /thous.pcs/,2025,205.0
+        Metal sleeper /thous.pcs/,2024,171.8
+        Metal sleeper /thous.pcs/,2023,125.9
+        Metal sleeper /thous.pcs/,2022,107.4
+        Metal sleeper /thous.pcs/,2021,154.4
+        Metal sleeper /thous.pcs/,2020,151.1
+        Metal sleeper /thous.pcs/,2019,39.6
+        Metal sleeper /thous.pcs/,2018,21.3
+        Metal sleeper /thous.pcs/,2017,104.6
+        Metal sleeper /thous.pcs/,2016,78.6
+        Metal sleeper /thous.pcs/,2015,80.0
+        Metal sleeper /thous.pcs/,2014,101.9
+        Metal sleeper /thous.pcs/,2013,125.6
+        Metal sleeper /thous.pcs/,2012,151.1
+        Metal sleeper /thous.pcs/,2011,39.2
+        Metal sleeper /thous.pcs/,2010,68.2
+        Metal sleeper /thous.pcs/,2009,78.9
+        Metal sleeper /thous.pcs/,2008,34.5
+        Metal sleeper /thous.pcs/,2007,68.5
+        Metal sleeper /thous.pcs/,2006,45.1
+        Metal sleeper /thous.pcs/,2005,101.5
+        Metal sleeper /thous.pcs/,2004,52.5
+        Metal sleeper /thous.pcs/,2003,36.5
+        Metal sleeper /thous.pcs/,2002,37.5
+        Metal sleeper /thous.pcs/,2001,41.1
+        Metal sleeper /thous.pcs/,2000,40.0
+        Metal sleeper /thous.pcs/,1999,40.3
+        Metal sleeper /thous.pcs/,1998,
+        Metal sleeper /thous.pcs/,1997,5.0
+        Metal sleeper /thous.pcs/,1996,
+        Metal sleeper /thous.pcs/,1995,
+        Metal sleeper /thous.pcs/,1994,
+        Metal sleeper /thous.pcs/,1993,
+        Metal sleeper /thous.pcs/,1992,
+        Metal sleeper /thous.pcs/,1991,
+        Metal sleeper /thous.pcs/,1990,
+        Metal sleeper /thous.pcs/,1989,
+        Bricks made from clay /mln.pcs/,2025,14.8
+        Bricks made from clay /mln.pcs/,2024,16.2
+        Bricks made from clay /mln.pcs/,2023,23.3
+        Bricks made from clay /mln.pcs/,2022,23.4
+        Bricks made from clay /mln.pcs/,2021,20.4
+        Bricks made from clay /mln.pcs/,2020,20.0
+        Bricks made from clay /mln.pcs/,2019,26.5
+        Bricks made from clay /mln.pcs/,2018,28.9
+        Bricks made from clay /mln.pcs/,2017,23.0
+        Bricks made from clay /mln.pcs/,2016,20.5
+        Bricks made from clay /mln.pcs/,2015,39.6
+        Bricks made from clay /mln.pcs/,2014,58.2
+        Bricks made from clay /mln.pcs/,2013,66.3
+        Bricks made from clay /mln.pcs/,2012,58.9
+        Bricks made from clay /mln.pcs/,2011,31.5
+        Bricks made from clay /mln.pcs/,2010,27.7
+        Bricks made from clay /mln.pcs/,2009,18.0
+        Bricks made from clay /mln.pcs/,2008,28.9
+        Bricks made from clay /mln.pcs/,2007,20.8
+        Bricks made from clay /mln.pcs/,2006,22.2
+        Bricks made from clay /mln.pcs/,2005,14.6
+        Bricks made from clay /mln.pcs/,2004,12.5
+        Bricks made from clay /mln.pcs/,2003,22.9
+        Bricks made from clay /mln.pcs/,2002,13.2
+        Bricks made from clay /mln.pcs/,2001,21.0
+        Bricks made from clay /mln.pcs/,2000,17.3
+        Bricks made from clay /mln.pcs/,1999,17.0
+        Bricks made from clay /mln.pcs/,1998,18.9
+        Bricks made from clay /mln.pcs/,1997,16.4
+        Bricks made from clay /mln.pcs/,1996,25.0
+        Bricks made from clay /mln.pcs/,1995,21.5
+        Bricks made from clay /mln.pcs/,1994,33.6
+        Bricks made from clay /mln.pcs/,1993,33.4
+        Bricks made from clay /mln.pcs/,1992,54.0
+        Bricks made from clay /mln.pcs/,1991,108.2
+        Bricks made from clay /mln.pcs/,1990,151.1
+        Bricks made from clay /mln.pcs/,1989,172.8
+        Khurmen block /thous.pcs/,2025,14.8
+        Khurmen block /thous.pcs/,2024,37.0
+        Khurmen block /thous.pcs/,2023,56.9
+        Khurmen block /thous.pcs/,2022,202.3
+        Khurmen block /thous.pcs/,2021,291.3
+        Khurmen block /thous.pcs/,2020,111.8
+        Khurmen block /thous.pcs/,2019,298.3
+        Khurmen block /thous.pcs/,2018,305.9
+        Khurmen block /thous.pcs/,2017,252.1
+        Khurmen block /thous.pcs/,2016,317.5
+        Khurmen block /thous.pcs/,2015,633.2
+        Khurmen block /thous.pcs/,2014,950.1
+        Khurmen block /thous.pcs/,2013,692.2
+        Khurmen block /thous.pcs/,2012,873.3
+        Khurmen block /thous.pcs/,2011,467.7
+        Khurmen block /thous.pcs/,2010,521.3
+        Khurmen block /thous.pcs/,2009,387.5
+        Khurmen block /thous.pcs/,2008,553.6
+        Khurmen block /thous.pcs/,2007,286.3
+        Khurmen block /thous.pcs/,2006,77.8
+        Khurmen block /thous.pcs/,2005,9.4
+        Khurmen block /thous.pcs/,2004,4.5
+        Khurmen block /thous.pcs/,2003,
+        Khurmen block /thous.pcs/,2002,1.1
+        Khurmen block /thous.pcs/,2001,1.6
+        Khurmen block /thous.pcs/,2000,1.0
+        Khurmen block /thous.pcs/,1999,279.1
+        Khurmen block /thous.pcs/,1998,726.5
+        Khurmen block /thous.pcs/,1997,198.3
+        Khurmen block /thous.pcs/,1996,40.0
+        Khurmen block /thous.pcs/,1995,27.3
+        Khurmen block /thous.pcs/,1994,41.3
+        Khurmen block /thous.pcs/,1993,118.1
+        Khurmen block /thous.pcs/,1992,774.4
+        Khurmen block /thous.pcs/,1991,3866.1
+        Khurmen block /thous.pcs/,1990,5586.0
+        Khurmen block /thous.pcs/,1989,5028.5
+        Building wooden door and windows /m2/,2025,189.7
+        Building wooden door and windows /m2/,2024,395.3
+        Building wooden door and windows /m2/,2023,442.5
+        Building wooden door and windows /m2/,2022,1292.0
+        Building wooden door and windows /m2/,2021,4000.7
+        Building wooden door and windows /m2/,2020,631.9
+        Building wooden door and windows /m2/,2019,472.0
+        Building wooden door and windows /m2/,2018,271.2
+        Building wooden door and windows /m2/,2017,3606.7
+        Building wooden door and windows /m2/,2016,4837.0
+        Building wooden door and windows /m2/,2015,7603.3
+        Building wooden door and windows /m2/,2014,14295.9
+        Building wooden door and windows /m2/,2013,11825.1
+        Building wooden door and windows /m2/,2012,6655.5
+        Building wooden door and windows /m2/,2011,13464.8
+        Building wooden door and windows /m2/,2010,13650.6
+        Building wooden door and windows /m2/,2009,2383.6
+        Building wooden door and windows /m2/,2008,6147.1
+        Building wooden door and windows /m2/,2007,2756.2
+        Building wooden door and windows /m2/,2006,3622.9
+        Building wooden door and windows /m2/,2005,2800.0
+        Building wooden door and windows /m2/,2004,1200.0
+        Building wooden door and windows /m2/,2003,58600.0
+        Building wooden door and windows /m2/,2002,2800.0
+        Building wooden door and windows /m2/,2001,4800.0
+        Building wooden door and windows /m2/,2000,1800.0
+        Building wooden door and windows /m2/,1999,1800.0
+        Building wooden door and windows /m2/,1998,2900.0
+        Building wooden door and windows /m2/,1997,5200.0
+        Building wooden door and windows /m2/,1996,3400.0
+        Building wooden door and windows /m2/,1995,7400.0
+        Building wooden door and windows /m2/,1994,8100.0
+        Building wooden door and windows /m2/,1993,9600.0
+        Building wooden door and windows /m2/,1992,15800.0
+        Building wooden door and windows /m2/,1991,98200.0
+        Building wooden door and windows /m2/,1990,398400.0
+        Building wooden door and windows /m2/,1989,417800.0
+        Combed down /t/,2025,4092.2
+        Combed down /t/,2024,908.1
+        Combed down /t/,2023,1165.7
+        Combed down /t/,2022,938.8
+        Combed down /t/,2021,512.0
+        Combed down /t/,2020,516.4
+        Combed down /t/,2019,774.0
+        Combed down /t/,2018,1160.3
+        Combed down /t/,2017,1101.8
+        Combed down /t/,2016,776.3
+        Combed down /t/,2015,754.5
+        Combed down /t/,2014,633.2
+        Combed down /t/,2013,521.8
+        Combed down /t/,2012,417.0
+        Combed down /t/,2011,874.3
+        Combed down /t/,2010,824.7
+        Combed down /t/,2009,1586.7
+        Combed down /t/,2008,1723.8
+        Combed down /t/,2007,1554.7
+        Combed down /t/,2006,1064.4
+        Combed down /t/,2005,581.9
+        Combed down /t/,2004,357.0
+        Combed down /t/,2003,396.9
+        Combed down /t/,2002,622.1
+        Combed down /t/,2001,608.4
+        Combed down /t/,2000,450.9
+        Combed down /t/,1999,612.5
+        Combed down /t/,1998,609.7
+        Combed down /t/,1997,432.2
+        Combed down /t/,1996,517.0
+        Combed down /t/,1995,420.8
+        Combed down /t/,1994,232.1
+        Combed down /t/,1993,121.5
+        Combed down /t/,1992,97.6
+        Combed down /t/,1991,190.7
+        Combed down /t/,1990,240.1
+        Combed down /t/,1989,250.0
+        Scoured wool /thous.t/,2025,0.4
+        Scoured wool /thous.t/,2024,1.1
+        Scoured wool /thous.t/,2023,3.2
+        Scoured wool /thous.t/,2022,5.4
+        Scoured wool /thous.t/,2021,3.6
+        Scoured wool /thous.t/,2020,1.8
+        Scoured wool /thous.t/,2019,3.4
+        Scoured wool /thous.t/,2018,3.3
+        Scoured wool /thous.t/,2017,8.7
+        Scoured wool /thous.t/,2016,7.0
+        Scoured wool /thous.t/,2015,1.8
+        Scoured wool /thous.t/,2014,1.4
+        Scoured wool /thous.t/,2013,0.9
+        Scoured wool /thous.t/,2012,1.1
+        Scoured wool /thous.t/,2011,1.8
+        Scoured wool /thous.t/,2010,2.3
+        Scoured wool /thous.t/,2009,1.3
+        Scoured wool /thous.t/,2008,1.8
+        Scoured wool /thous.t/,2007,1.7
+        Scoured wool /thous.t/,2006,1.1
+        Scoured wool /thous.t/,2005,0.9
+        Scoured wool /thous.t/,2004,1.8
+        Scoured wool /thous.t/,2003,0.5
+        Scoured wool /thous.t/,2002,1.2
+        Scoured wool /thous.t/,2001,2.1
+        Scoured wool /thous.t/,2000,1.4
+        Scoured wool /thous.t/,1999,1.3
+        Scoured wool /thous.t/,1998,0.5
+        Scoured wool /thous.t/,1997,0.8
+        Scoured wool /thous.t/,1996,0.8
+        Scoured wool /thous.t/,1995,1.2
+        Scoured wool /thous.t/,1994,2.1
+        Scoured wool /thous.t/,1993,3.5
+        Scoured wool /thous.t/,1992,7.1
+        Scoured wool /thous.t/,1991,7.2
+        Scoured wool /thous.t/,1990,9.7
+        Scoured wool /thous.t/,1989,10.1
+        Spun thread /t/,2025,0.0
+        Spun thread /t/,2024,0.0
+        Spun thread /t/,2023,0.0
+        Spun thread /t/,2022,0.0
+        Spun thread /t/,2021,0.0
+        Spun thread /t/,2020,0.0
+        Spun thread /t/,2019,0.0
+        Spun thread /t/,2018,7.4
+        Spun thread /t/,2017,2.0
+        Spun thread /t/,2016,0.0
+        Spun thread /t/,2015,0.4
+        Spun thread /t/,2014,6.7
+        Spun thread /t/,2013,9.9
+        Spun thread /t/,2012,11.6
+        Spun thread /t/,2011,10.0
+        Spun thread /t/,2010,90.2
+        Spun thread /t/,2009,56.4
+        Spun thread /t/,2008,28.1
+        Spun thread /t/,2007,32.8
+        Spun thread /t/,2006,38.5
+        Spun thread /t/,2005,69.7
+        Spun thread /t/,2004,57.4
+        Spun thread /t/,2003,55.1
+        Spun thread /t/,2002,55.9
+        Spun thread /t/,2001,45.6
+        Spun thread /t/,2000,40.8
+        Spun thread /t/,1999,14.3
+        Spun thread /t/,1998,66.4
+        Spun thread /t/,1997,135.9
+        Spun thread /t/,1996,183.6
+        Spun thread /t/,1995,344.9
+        Spun thread /t/,1994,351.8
+        Spun thread /t/,1993,737.8
+        Spun thread /t/,1992,1574.4
+        Spun thread /t/,1991,1672.6
+        Spun thread /t/,1990,2285.4
+        Spun thread /t/,1989,2962.4
+    Carpet /thous.m2/,2025,359.7
+    Carpet /thous.m2/,2024,381.7
+    Carpet /thous.m2/,2023,432.8
+    Carpet /thous.m2/,2022,423.7
+    Carpet /thous.m2/,2021,379.3
+    Carpet /thous.m2/,2020,361.4
+    Carpet /thous.m2/,2019,478.3
+    Carpet /thous.m2/,2018,528.2
+    Carpet /thous.m2/,2017,497.9
+    Carpet /thous.m2/,2016,439.1
+    Carpet /thous.m2/,2015,680.1
+    Carpet /thous.m2/,2014,743.6
+    Carpet /thous.m2/,2013,852.9
+    Carpet /thous.m2/,2012,915.8
+    Carpet /thous.m2/,2011,850.8
+    Carpet /thous.m2/,2010,609.6
+    Carpet /thous.m2/,2009,542.2
+    Carpet /thous.m2/,2008,856.5
+    Carpet /thous.m2/,2007,658.1
+    Carpet /thous.m2/,2006,606.3
+    Carpet /thous.m2/,2005,586.9
+    Carpet /thous.m2/,2004,690.4
+    Carpet /thous.m2/,2003,663.1
+    Carpet /thous.m2/,2002,533.9
+    Carpet /thous.m2/,2001,614.8
+    Carpet /thous.m2/,2000,704.8
+    Carpet /thous.m2/,1999,628.6
+    Carpet /thous.m2/,1998,587.7
+    Carpet /thous.m2/,1997,643.6
+    Carpet /thous.m2/,1996,667.0
+    Carpet /thous.m2/,1995,595.7
+    Carpet /thous.m2/,1994,681.5
+    Carpet /thous.m2/,1993,1000.1
+    Carpet /thous.m2/,1992,1037.0
+    Carpet /thous.m2/,1991,1400.2
+    Carpet /thous.m2/,1990,1971.2
+    Carpet /thous.m2/,1989,2128.1
+        Camel woollen blanket /thous.m/,2025,6.1
+        Camel woollen blanket /thous.m/,2024,9.8
+        Camel woollen blanket /thous.m/,2023,7.0
+        Camel woollen blanket /thous.m/,2022,24.0
+        Camel woollen blanket /thous.m/,2021,19.7
+        Camel woollen blanket /thous.m/,2020,17.8
+        Camel woollen blanket /thous.m/,2019,9.9
+        Camel woollen blanket /thous.m/,2018,9.4
+        Camel woollen blanket /thous.m/,2017,30.2
+        Camel woollen blanket /thous.m/,2016,12.2
+        Camel woollen blanket /thous.m/,2015,23.0
+        Camel woollen blanket /thous.m/,2014,18.5
+        Camel woollen blanket /thous.m/,2013,14.7
+        Camel woollen blanket /thous.m/,2012,8.2
+        Camel woollen blanket /thous.m/,2011,25.8
+        Camel woollen blanket /thous.m/,2010,15.3
+        Camel woollen blanket /thous.m/,2009,36.9
+        Camel woollen blanket /thous.m/,2008,35.0
+        Camel woollen blanket /thous.m/,2007,37.7
+        Camel woollen blanket /thous.m/,2006,34.4
+        Camel woollen blanket /thous.m/,2005,33.5
+        Camel woollen blanket /thous.m/,2004,36.8
+        Camel woollen blanket /thous.m/,2003,27.4
+        Camel woollen blanket /thous.m/,2002,38.3
+        Camel woollen blanket /thous.m/,2001,43.1
+        Camel woollen blanket /thous.m/,2000,28.5
+        Camel woollen blanket /thous.m/,1999,21.2
+        Camel woollen blanket /thous.m/,1998,22.1
+        Camel woollen blanket /thous.m/,1997,23.6
+        Camel woollen blanket /thous.m/,1996,31.4
+        Camel woollen blanket /thous.m/,1995,19.4
+        Camel woollen blanket /thous.m/,1994,24.1
+        Camel woollen blanket /thous.m/,1993,48.7
+        Camel woollen blanket /thous.m/,1992,90.6
+        Camel woollen blanket /thous.m/,1991,90.2
+        Camel woollen blanket /thous.m/,1990,91.2
+        Camel woollen blanket /thous.m/,1989,91.6
+        Felt /thous.m/,2025,138.6
+        Felt /thous.m/,2024,173.7
+        Felt /thous.m/,2023,247.2
+        Felt /thous.m/,2022,388.8
+        Felt /thous.m/,2021,171.3
+        Felt /thous.m/,2020,100.5
+        Felt /thous.m/,2019,184.6
+        Felt /thous.m/,2018,112.1
+        Felt /thous.m/,2017,114.9
+        Felt /thous.m/,2016,89.4
+        Felt /thous.m/,2015,125.6
+        Felt /thous.m/,2014,127.9
+        Felt /thous.m/,2013,142.0
+        Felt /thous.m/,2012,219.4
+        Felt /thous.m/,2011,208.0
+        Felt /thous.m/,2010,104.5
+        Felt /thous.m/,2009,70.2
+        Felt /thous.m/,2008,69.0
+        Felt /thous.m/,2007,60.1
+        Felt /thous.m/,2006,68.8
+        Felt /thous.m/,2005,69.1
+        Felt /thous.m/,2004,67.8
+        Felt /thous.m/,2003,303.0
+        Felt /thous.m/,2002,112.9
+        Felt /thous.m/,2001,110.5
+        Felt /thous.m/,2000,113.9
+        Felt /thous.m/,1999,102.0
+        Felt /thous.m/,1998,102.6
+        Felt /thous.m/,1997,75.0
+        Felt /thous.m/,1996,96.2
+        Felt /thous.m/,1995,76.5
+        Felt /thous.m/,1994,107.7
+        Felt /thous.m/,1993,241.4
+        Felt /thous.m/,1992,494.8
+        Felt /thous.m/,1991,583.2
+        Felt /thous.m/,1990,745.1
+        Felt /thous.m/,1989,649.7
+        Felt boots /thous.pairs/,2025,2.5
+        Felt boots /thous.pairs/,2024,3.2
+        Felt boots /thous.pairs/,2023,1.9
+        Felt boots /thous.pairs/,2022,1.3
+        Felt boots /thous.pairs/,2021,1.1
+        Felt boots /thous.pairs/,2020,0.1
+        Felt boots /thous.pairs/,2019,0.6
+        Felt boots /thous.pairs/,2018,0.4
+        Felt boots /thous.pairs/,2017,0.3
+        Felt boots /thous.pairs/,2016,0.5
+        Felt boots /thous.pairs/,2015,12.0
+        Felt boots /thous.pairs/,2014,8.0
+        Felt boots /thous.pairs/,2013,15.2
+        Felt boots /thous.pairs/,2012,22.1
+        Felt boots /thous.pairs/,2011,25.2
+        Felt boots /thous.pairs/,2010,19.2
+        Felt boots /thous.pairs/,2009,6.4
+        Felt boots /thous.pairs/,2008,2.5
+        Felt boots /thous.pairs/,2007,4.5
+        Felt boots /thous.pairs/,2006,7.8
+        Felt boots /thous.pairs/,2005,10.5
+        Felt boots /thous.pairs/,2004,4.9
+        Felt boots /thous.pairs/,2003,9.0
+        Felt boots /thous.pairs/,2002,16.1
+        Felt boots /thous.pairs/,2001,33.4
+        Felt boots /thous.pairs/,2000,34.0
+        Felt boots /thous.pairs/,1999,11.9
+        Felt boots /thous.pairs/,1998,47.9
+        Felt boots /thous.pairs/,1997,48.0
+        Felt boots /thous.pairs/,1996,57.6
+        Felt boots /thous.pairs/,1995,79.0
+        Felt boots /thous.pairs/,1994,90.1
+        Felt boots /thous.pairs/,1993,252.1
+        Felt boots /thous.pairs/,1992,409.1
+        Felt boots /thous.pairs/,1991,444.2
+        Felt boots /thous.pairs/,1990,588.5
+        Felt boots /thous.pairs/,1989,592.3
+        Knitted goods /thous.pcs/,2025,326.8
+        Knitted goods /thous.pcs/,2024,368.1
+        Knitted goods /thous.pcs/,2023,495.2
+        Knitted goods /thous.pcs/,2022,501.2
+        Knitted goods /thous.pcs/,2021,523.9
+        Knitted goods /thous.pcs/,2020,1360.9
+        Knitted goods /thous.pcs/,2019,1729.6
+        Knitted goods /thous.pcs/,2018,1461.3
+        Knitted goods /thous.pcs/,2017,1008.4
+        Knitted goods /thous.pcs/,2016,812.5
+        Knitted goods /thous.pcs/,2015,829.3
+        Knitted goods /thous.pcs/,2014,954.4
+        Knitted goods /thous.pcs/,2013,932.8
+        Knitted goods /thous.pcs/,2012,795.1
+        Knitted goods /thous.pcs/,2011,757.9
+        Knitted goods /thous.pcs/,2010,731.1
+        Knitted goods /thous.pcs/,2009,613.9
+        Knitted goods /thous.pcs/,2008,514.3
+        Knitted goods /thous.pcs/,2007,667.1
+        Knitted goods /thous.pcs/,2006,4529.3
+        Knitted goods /thous.pcs/,2005,3448.5
+        Knitted goods /thous.pcs/,2004,7989.9
+        Knitted goods /thous.pcs/,2003,5148.1
+        Knitted goods /thous.pcs/,2002,5563.6
+        Knitted goods /thous.pcs/,2001,2315.7
+        Knitted goods /thous.pcs/,2000,1233.5
+        Knitted goods /thous.pcs/,1999,696.8
+        Knitted goods /thous.pcs/,1998,352.6
+        Knitted goods /thous.pcs/,1997,319.6
+        Knitted goods /thous.pcs/,1996,307.7
+        Knitted goods /thous.pcs/,1995,522.7
+        Knitted goods /thous.pcs/,1994,513.8
+        Knitted goods /thous.pcs/,1993,990.7
+        Knitted goods /thous.pcs/,1992,1411.7
+        Knitted goods /thous.pcs/,1991,2808.7
+        Knitted goods /thous.pcs/,1990,4248.6
+        Knitted goods /thous.pcs/,1989,4110.5
+        Woollen fabrics /t/,2025,5.7
+        Woollen fabrics /t/,2024,5.9
+        Woollen fabrics /t/,2023,22.8
+        Woollen fabrics /t/,2022,30.2
+        Woollen fabrics /t/,2021,47.4
+        Woollen fabrics /t/,2020,250.2
+        Woollen fabrics /t/,2019,527.0
+        Woollen fabrics /t/,2018,606.6
+        Woollen fabrics /t/,2017,534.1
+        Woollen fabrics /t/,2016,391.7
+        Woollen fabrics /t/,2015,399.5
+        Woollen fabrics /t/,2014,322.4
+        Woollen fabrics /t/,2013,243.0
+        Woollen fabrics /t/,2012,314.9
+        Woollen fabrics /t/,2011,262.6
+        Woollen fabrics /t/,2010,330.2
+        Woollen fabrics /t/,2009,258.7
+        Woollen fabrics /t/,2008,195.8
+        Woollen fabrics /t/,2007,120.2
+        Woollen fabrics /t/,2006,50.4
+        Woollen fabrics /t/,2005,64.8
+        Woollen fabrics /t/,2004,58.7
+        Woollen fabrics /t/,2003,54.6
+        Woollen fabrics /t/,2002,32.0
+        Woollen fabrics /t/,2001,38.0
+        Woollen fabrics /t/,2000,21.0
+        Woollen fabrics /t/,1999,18.5
+        Woollen fabrics /t/,1998,11.0
+        Woollen fabrics /t/,1997,8.1
+        Woollen fabrics /t/,1996,45.2
+        Woollen fabrics /t/,1995,71.1
+        Woollen fabrics /t/,1994,76.7
+        Woollen fabrics /t/,1993,289.9
+        Woollen fabrics /t/,1992,705.8
+        Woollen fabrics /t/,1991,786.4
+        Woollen fabrics /t/,1990,1111.3
+        Woollen fabrics /t/,1989,1978.2
+        Hides large /thous.t/,2025,1.6
+        Hides large /thous.t/,2024,1.1
+        Hides large /thous.t/,2023,0.7
+        Hides large /thous.t/,2022,0.6
+        Hides large /thous.t/,2021,1.6
+        Hides large /thous.t/,2020,2.4
+        Hides large /thous.t/,2019,229.3
+        Hides large /thous.t/,2018,7.4
+        Hides large /thous.t/,2017,5.4
+        Hides large /thous.t/,2016,6.5
+        Hides large /thous.t/,2015,21.1
+        Hides large /thous.t/,2014,0.8
+        Hides large /thous.t/,2013,1.0
+        Hides large /thous.t/,2012,1.2
+        Hides large /thous.t/,2011,0.6
+        Hides large /thous.t/,2010,0.8
+        Hides large /thous.t/,2009,1.0
+        Hides large /thous.t/,2008,1.1
+        Hides large /thous.t/,2007,0.5
+        Hides large /thous.t/,2006,1.0
+        Hides large /thous.t/,2005,2.1
+        Hides large /thous.t/,2004,2.3
+        Hides large /thous.t/,2003,0.7
+        Hides large /thous.t/,2002,0.6
+        Hides large /thous.t/,2001,0.9
+        Hides large /thous.t/,2000,
+        Hides large /thous.t/,1999,0.4
+        Hides large /thous.t/,1998,4.1
+        Hides large /thous.t/,1997,
+        Hides large /thous.t/,1996,0.1
+        Hides large /thous.t/,1995,0.0
+        Hides large /thous.t/,1994,0.0
+        Hides large /thous.t/,1993,0.2
+        Hides large /thous.t/,1992,0.5
+        Hides large /thous.t/,1991,0.8
+        Hides large /thous.t/,1990,1.0
+        Hides large /thous.t/,1989,1.0
+        Goat skin /thous.m2/,2025,110.2
+        Goat skin /thous.m2/,2024,71.2
+        Goat skin /thous.m2/,2023,27.6
+        Goat skin /thous.m2/,2022,38.5
+        Goat skin /thous.m2/,2021,0.4
+        Goat skin /thous.m2/,2020,1.5
+        Goat skin /thous.m2/,2019,7.3
+        Goat skin /thous.m2/,2018,0.0
+        Goat skin /thous.m2/,2017,0.0
+        Goat skin /thous.m2/,2016,0.0
+        Goat skin /thous.m2/,2015,0.0
+        Goat skin /thous.m2/,2014,0.0
+        Goat skin /thous.m2/,2013,0.0
+        Goat skin /thous.m2/,2012,0.0
+        Goat skin /thous.m2/,2011,0.0
+        Goat skin /thous.m2/,2010,0.0
+        Goat skin /thous.m2/,2009,0.0
+        Goat skin /thous.m2/,2008,0.0
+        Goat skin /thous.m2/,2007,0.0
+        Goat skin /thous.m2/,2006,0.0
+        Goat skin /thous.m2/,2005,0.0
+        Goat skin /thous.m2/,2004,0.0
+        Goat skin /thous.m2/,2003,0.0
+        Goat skin /thous.m2/,2002,0.0
+        Goat skin /thous.m2/,2001,0.0
+        Goat skin /thous.m2/,2000,0.0
+        Goat skin /thous.m2/,1999,0.0
+        Goat skin /thous.m2/,1998,0.0
+        Goat skin /thous.m2/,1997,0.0
+        Goat skin /thous.m2/,1996,0.0
+        Goat skin /thous.m2/,1995,0.0
+        Goat skin /thous.m2/,1994,0.0
+        Goat skin /thous.m2/,1993,0.0
+        Goat skin /thous.m2/,1992,0.0
+        Goat skin /thous.m2/,1991,0.0
+        Goat skin /thous.m2/,1990,0.0
+        Goat skin /thous.m2/,1989,0.0
+        Hide skin /thous.m2/,2025,62.4
+        Hide skin /thous.m2/,2024,21.5
+        Hide skin /thous.m2/,2023,0.4
+        Hide skin /thous.m2/,2022,25.8
+        Hide skin /thous.m2/,2021,0.4
+        Hide skin /thous.m2/,2020,4.3
+        Hide skin /thous.m2/,2019,131.4
+        Hide skin /thous.m2/,2018,80.1
+        Hide skin /thous.m2/,2017,8.4
+        Hide skin /thous.m2/,2016,3.9
+        Hide skin /thous.m2/,2015,11.8
+        Hide skin /thous.m2/,2014,1.3
+        Hide skin /thous.m2/,2013,2.7
+        Hide skin /thous.m2/,2012,1.7
+        Hide skin /thous.m2/,2011,2.4
+        Hide skin /thous.m2/,2010,1.6
+        Hide skin /thous.m2/,2009,1.8
+        Hide skin /thous.m2/,2008,1.2
+        Hide skin /thous.m2/,2007,1.9
+        Hide skin /thous.m2/,2006,2.0
+        Hide skin /thous.m2/,2005,5.5
+        Hide skin /thous.m2/,2004,3.5
+        Hide skin /thous.m2/,2003,2.2
+        Hide skin /thous.m2/,2002,8.7
+        Hide skin /thous.m2/,2001,29.6
+        Hide skin /thous.m2/,2000,50.5
+        Hide skin /thous.m2/,1999,
+        Hide skin /thous.m2/,1998,
+        Hide skin /thous.m2/,1997,
+        Hide skin /thous.m2/,1996,
+        Hide skin /thous.m2/,1995,
+        Hide skin /thous.m2/,1994,
+        Hide skin /thous.m2/,1993,
+        Hide skin /thous.m2/,1992,
+        Hide skin /thous.m2/,1991,
+        Hide skin /thous.m2/,1990,
+        Hide skin /thous.m2/,1989,
+"        Leather boots, shoes /thous.pairs/",2025,66.6
+"        Leather boots, shoes /thous.pairs/",2024,69.1
+"        Leather boots, shoes /thous.pairs/",2023,75.8
+"        Leather boots, shoes /thous.pairs/",2022,57.2
+"        Leather boots, shoes /thous.pairs/",2021,37.8
+"        Leather boots, shoes /thous.pairs/",2020,53.5
+"        Leather boots, shoes /thous.pairs/",2019,42.8
+"        Leather boots, shoes /thous.pairs/",2018,44.4
+"        Leather boots, shoes /thous.pairs/",2017,42.3
+"        Leather boots, shoes /thous.pairs/",2016,34.1
+"        Leather boots, shoes /thous.pairs/",2015,49.9
+"        Leather boots, shoes /thous.pairs/",2014,39.7
+"        Leather boots, shoes /thous.pairs/",2013,10.4
+"        Leather boots, shoes /thous.pairs/",2012,9.9
+"        Leather boots, shoes /thous.pairs/",2011,2.9
+"        Leather boots, shoes /thous.pairs/",2010,2.2
+"        Leather boots, shoes /thous.pairs/",2009,2.3
+"        Leather boots, shoes /thous.pairs/",2008,2.7
+"        Leather boots, shoes /thous.pairs/",2007,17.2
+"        Leather boots, shoes /thous.pairs/",2006,4.9
+"        Leather boots, shoes /thous.pairs/",2005,3.0
+"        Leather boots, shoes /thous.pairs/",2004,3.0
+"        Leather boots, shoes /thous.pairs/",2003,4.6
+"        Leather boots, shoes /thous.pairs/",2002,9.5
+"        Leather boots, shoes /thous.pairs/",2001,16.7
+"        Leather boots, shoes /thous.pairs/",2000,5.6
+"        Leather boots, shoes /thous.pairs/",1999,6.6
+"        Leather boots, shoes /thous.pairs/",1998,33.1
+"        Leather boots, shoes /thous.pairs/",1997,41.7
+"        Leather boots, shoes /thous.pairs/",1996,86.6
+"        Leather boots, shoes /thous.pairs/",1995,245.5
+"        Leather boots, shoes /thous.pairs/",1994,406.6
+"        Leather boots, shoes /thous.pairs/",1993,1030.8
+"        Leather boots, shoes /thous.pairs/",1992,2244.7
+"        Leather boots, shoes /thous.pairs/",1991,3994.1
+"        Leather boots, shoes /thous.pairs/",1990,4222.5
+"        Leather boots, shoes /thous.pairs/",1989,4140.0
+    Leather coat /thous.pcs/,2025,7.2
+    Leather coat /thous.pcs/,2024,3.4
+    Leather coat /thous.pcs/,2023,2.5
+    Leather coat /thous.pcs/,2022,3.4
+    Leather coat /thous.pcs/,2021,9.9
+    Leather coat /thous.pcs/,2020,6.2
+    Leather coat /thous.pcs/,2019,8.6
+    Leather coat /thous.pcs/,2018,7.5
+    Leather coat /thous.pcs/,2017,16.2
+    Leather coat /thous.pcs/,2016,10.6
+    Leather coat /thous.pcs/,2015,6.6
+    Leather coat /thous.pcs/,2014,7.1
+    Leather coat /thous.pcs/,2013,5.2
+    Leather coat /thous.pcs/,2012,8.9
+    Leather coat /thous.pcs/,2011,5.0
+    Leather coat /thous.pcs/,2010,5.6
+    Leather coat /thous.pcs/,2009,3.7
+    Leather coat /thous.pcs/,2008,2.7
+    Leather coat /thous.pcs/,2007,1.7
+    Leather coat /thous.pcs/,2006,4.0
+    Leather coat /thous.pcs/,2005,3.6
+    Leather coat /thous.pcs/,2004,2.9
+    Leather coat /thous.pcs/,2003,0.2
+    Leather coat /thous.pcs/,2002,
+    Leather coat /thous.pcs/,2001,
+    Leather coat /thous.pcs/,2000,0.1
+    Leather coat /thous.pcs/,1999,0.6
+    Leather coat /thous.pcs/,1998,0.3
+    Leather coat /thous.pcs/,1997,0.2
+    Leather coat /thous.pcs/,1996,4.6
+    Leather coat /thous.pcs/,1995,12.7
+    Leather coat /thous.pcs/,1994,35.0
+    Leather coat /thous.pcs/,1993,9.4
+    Leather coat /thous.pcs/,1992,40.1
+    Leather coat /thous.pcs/,1991,29.9
+    Leather coat /thous.pcs/,1990,35.7
+    Leather coat /thous.pcs/,1989,41.6
+"        Leather jacket, shirt /thous.pcs/",2025,1.1
+"        Leather jacket, shirt /thous.pcs/",2024,1.6
+"        Leather jacket, shirt /thous.pcs/",2023,0.7
+"        Leather jacket, shirt /thous.pcs/",2022,0.3
+"        Leather jacket, shirt /thous.pcs/",2021,0.0
+"        Leather jacket, shirt /thous.pcs/",2020,0.0
+"        Leather jacket, shirt /thous.pcs/",2019,0.0
+"        Leather jacket, shirt /thous.pcs/",2018,0.2
+"        Leather jacket, shirt /thous.pcs/",2017,0.6
+"        Leather jacket, shirt /thous.pcs/",2016,0.3
+"        Leather jacket, shirt /thous.pcs/",2015,0.7
+"        Leather jacket, shirt /thous.pcs/",2014,0.9
+"        Leather jacket, shirt /thous.pcs/",2013,0.5
+"        Leather jacket, shirt /thous.pcs/",2012,0.8
+"        Leather jacket, shirt /thous.pcs/",2011,0.3
+"        Leather jacket, shirt /thous.pcs/",2010,0.0
+"        Leather jacket, shirt /thous.pcs/",2009,0.0
+"        Leather jacket, shirt /thous.pcs/",2008,0.0
+"        Leather jacket, shirt /thous.pcs/",2007,0.1
+"        Leather jacket, shirt /thous.pcs/",2006,4.2
+"        Leather jacket, shirt /thous.pcs/",2005,4.2
+"        Leather jacket, shirt /thous.pcs/",2004,3.4
+"        Leather jacket, shirt /thous.pcs/",2003,0.1
+"        Leather jacket, shirt /thous.pcs/",2002,
+"        Leather jacket, shirt /thous.pcs/",2001,0.1
+"        Leather jacket, shirt /thous.pcs/",2000,0.1
+"        Leather jacket, shirt /thous.pcs/",1999,0.1
+"        Leather jacket, shirt /thous.pcs/",1998,0.6
+"        Leather jacket, shirt /thous.pcs/",1997,1.0
+"        Leather jacket, shirt /thous.pcs/",1996,6.5
+"        Leather jacket, shirt /thous.pcs/",1995,18.9
+"        Leather jacket, shirt /thous.pcs/",1994,35.3
+"        Leather jacket, shirt /thous.pcs/",1993,160.1
+"        Leather jacket, shirt /thous.pcs/",1992,171.3
+"        Leather jacket, shirt /thous.pcs/",1991,194.2
+"        Leather jacket, shirt /thous.pcs/",1990,264.5
+"        Leather jacket, shirt /thous.pcs/",1989,212.8
+        Sheep skin coat /thous.pcs/,2025,7.0
+        Sheep skin coat /thous.pcs/,2024,12.6
+        Sheep skin coat /thous.pcs/,2023,15.4
+        Sheep skin coat /thous.pcs/,2022,17.0
+        Sheep skin coat /thous.pcs/,2021,9.4
+        Sheep skin coat /thous.pcs/,2020,7.6
+        Sheep skin coat /thous.pcs/,2019,12.9
+        Sheep skin coat /thous.pcs/,2018,9.9
+        Sheep skin coat /thous.pcs/,2017,17.9
+        Sheep skin coat /thous.pcs/,2016,9.2
+        Sheep skin coat /thous.pcs/,2015,10.2
+        Sheep skin coat /thous.pcs/,2014,14.1
+        Sheep skin coat /thous.pcs/,2013,16.8
+        Sheep skin coat /thous.pcs/,2012,9.0
+        Sheep skin coat /thous.pcs/,2011,22.5
+        Sheep skin coat /thous.pcs/,2010,16.6
+        Sheep skin coat /thous.pcs/,2009,12.1
+        Sheep skin coat /thous.pcs/,2008,11.4
+        Sheep skin coat /thous.pcs/,2007,12.4
+        Sheep skin coat /thous.pcs/,2006,7.1
+        Sheep skin coat /thous.pcs/,2005,5.5
+        Sheep skin coat /thous.pcs/,2004,3.5
+        Sheep skin coat /thous.pcs/,2003,3.5
+        Sheep skin coat /thous.pcs/,2002,2.1
+        Sheep skin coat /thous.pcs/,2001,2.4
+        Sheep skin coat /thous.pcs/,2000,1.0
+        Sheep skin coat /thous.pcs/,1999,0.2
+        Sheep skin coat /thous.pcs/,1998,0.5
+        Sheep skin coat /thous.pcs/,1997,2.5
+        Sheep skin coat /thous.pcs/,1996,14.9
+        Sheep skin coat /thous.pcs/,1995,16.8
+        Sheep skin coat /thous.pcs/,1994,57.1
+        Sheep skin coat /thous.pcs/,1993,86.6
+        Sheep skin coat /thous.pcs/,1992,99.4
+        Sheep skin coat /thous.pcs/,1991,111.5
+        Sheep skin coat /thous.pcs/,1990,138.1
+        Sheep skin coat /thous.pcs/,1989,180.2
+        Suits /thous.pairs/,2025,0.0
+        Suits /thous.pairs/,2024,0.0
+        Suits /thous.pairs/,2023,0.0
+        Suits /thous.pairs/,2022,0.0
+        Suits /thous.pairs/,2021,0.0
+        Suits /thous.pairs/,2020,0.0
+        Suits /thous.pairs/,2019,0.0
+        Suits /thous.pairs/,2018,0.0
+        Suits /thous.pairs/,2017,0.0
+        Suits /thous.pairs/,2016,0.0
+        Suits /thous.pairs/,2015,0.0
+        Suits /thous.pairs/,2014,0.0
+        Suits /thous.pairs/,2013,1.2
+        Suits /thous.pairs/,2012,1.6
+        Suits /thous.pairs/,2011,0.8
+        Suits /thous.pairs/,2010,0.4
+        Suits /thous.pairs/,2009,0.2
+        Suits /thous.pairs/,2008,14.7
+        Suits /thous.pairs/,2007,12.8
+        Suits /thous.pairs/,2006,30.4
+        Suits /thous.pairs/,2005,59.8
+        Suits /thous.pairs/,2004,98.5
+        Suits /thous.pairs/,2003,73.5
+        Suits /thous.pairs/,2002,60.7
+        Suits /thous.pairs/,2001,77.2
+        Suits /thous.pairs/,2000,12.3
+        Suits /thous.pairs/,1999,
+        Suits /thous.pairs/,1998,
+        Suits /thous.pairs/,1997,
+        Suits /thous.pairs/,1996,
+        Suits /thous.pairs/,1995,
+        Suits /thous.pairs/,1994,
+        Suits /thous.pairs/,1993,
+        Suits /thous.pairs/,1992,
+        Suits /thous.pairs/,1991,
+        Suits /thous.pairs/,1990,
+        Suits /thous.pairs/,1989,
+"        Milk, dairy products /thous.l/",2025,164003.5
+"        Milk, dairy products /thous.l/",2024,150475.6
+"        Milk, dairy products /thous.l/",2023,126797.4
+"        Milk, dairy products /thous.l/",2022,113575.9
+"        Milk, dairy products /thous.l/",2021,152451.1
+"        Milk, dairy products /thous.l/",2020,136989.9
+"        Milk, dairy products /thous.l/",2019,164720.2
+"        Milk, dairy products /thous.l/",2018,134998.0
+"        Milk, dairy products /thous.l/",2017,86640.2
+"        Milk, dairy products /thous.l/",2016,63285.2
+"        Milk, dairy products /thous.l/",2015,69634.9
+"        Milk, dairy products /thous.l/",2014,70452.9
+"        Milk, dairy products /thous.l/",2013,63316.6
+"        Milk, dairy products /thous.l/",2012,72399.8
+"        Milk, dairy products /thous.l/",2011,55027.7
+"        Milk, dairy products /thous.l/",2010,42043.7
+"        Milk, dairy products /thous.l/",2009,32275.7
+"        Milk, dairy products /thous.l/",2008,16648.0
+"        Milk, dairy products /thous.l/",2007,10070.8
+"        Milk, dairy products /thous.l/",2006,6200.0
+"        Milk, dairy products /thous.l/",2005,7100.0
+"        Milk, dairy products /thous.l/",2004,5900.0
+"        Milk, dairy products /thous.l/",2003,5200.0
+"        Milk, dairy products /thous.l/",2002,3200.0
+"        Milk, dairy products /thous.l/",2001,1200.0
+"        Milk, dairy products /thous.l/",2000,1500.0
+"        Milk, dairy products /thous.l/",1999,1600.0
+"        Milk, dairy products /thous.l/",1998,2600.0
+"        Milk, dairy products /thous.l/",1997,1600.0
+"        Milk, dairy products /thous.l/",1996,1700.0
+"        Milk, dairy products /thous.l/",1995,1800.0
+"        Milk, dairy products /thous.l/",1994,4900.0
+"        Milk, dairy products /thous.l/",1993,13000.0
+"        Milk, dairy products /thous.l/",1992,27700.0
+"        Milk, dairy products /thous.l/",1991,50600.0
+"        Milk, dairy products /thous.l/",1990,59600.0
+"        Milk, dairy products /thous.l/",1989,62000.0
+        Meat /t/,2025,62837.7
+        Meat /t/,2024,58007.7
+        Meat /t/,2023,49491.5
+        Meat /t/,2022,20926.4
+        Meat /t/,2021,26279.8
+        Meat /t/,2020,25583.1
+        Meat /t/,2019,32100.3
+        Meat /t/,2018,45221.7
+        Meat /t/,2017,25538.0
+        Meat /t/,2016,8949.9
+        Meat /t/,2015,12599.8
+        Meat /t/,2014,16784.3
+        Meat /t/,2013,19759.0
+        Meat /t/,2012,13158.9
+        Meat /t/,2011,14035.2
+        Meat /t/,2010,11745.6
+        Meat /t/,2009,18274.8
+        Meat /t/,2008,12009.8
+        Meat /t/,2007,6770.4
+        Meat /t/,2006,7800.0
+        Meat /t/,2005,4800.0
+        Meat /t/,2004,4300.0
+        Meat /t/,2003,11100.0
+        Meat /t/,2002,6800.0
+        Meat /t/,2001,12000.0
+        Meat /t/,2000,6400.0
+        Meat /t/,1999,4300.0
+        Meat /t/,1998,6700.0
+        Meat /t/,1997,7500.0
+        Meat /t/,1996,8500.0
+        Meat /t/,1995,11300.0
+        Meat /t/,1994,11300.0
+        Meat /t/,1993,17300.0
+        Meat /t/,1992,25100.0
+        Meat /t/,1991,49600.0
+        Meat /t/,1990,57800.0
+        Meat /t/,1989,61700.0
+        Canned meat /t/,2025,730.0
+        Canned meat /t/,2024,760.8
+        Canned meat /t/,2023,545.1
+        Canned meat /t/,2022,624.9
+        Canned meat /t/,2021,262.5
+        Canned meat /t/,2020,390.0
+        Canned meat /t/,2019,253.6
+        Canned meat /t/,2018,233.5
+        Canned meat /t/,2017,185.5
+        Canned meat /t/,2016,158.0
+        Canned meat /t/,2015,81.8
+        Canned meat /t/,2014,250.5
+        Canned meat /t/,2013,231.2
+        Canned meat /t/,2012,130.0
+        Canned meat /t/,2011,114.6
+        Canned meat /t/,2010,178.4
+        Canned meat /t/,2009,343.3
+        Canned meat /t/,2008,538.9
+        Canned meat /t/,2007,139.3
+        Canned meat /t/,2006,349.8
+        Canned meat /t/,2005,201.4
+        Canned meat /t/,2004,75.2
+        Canned meat /t/,2003,44.7
+        Canned meat /t/,2002,63.7
+        Canned meat /t/,2001,33.7
+        Canned meat /t/,2000,
+        Canned meat /t/,1999,71.9
+        Canned meat /t/,1998,322.0
+        Canned meat /t/,1997,650.8
+        Canned meat /t/,1996,339.2
+        Canned meat /t/,1995,431.7
+        Canned meat /t/,1994,243.1
+        Canned meat /t/,1993,358.3
+        Canned meat /t/,1992,568.9
+        Canned meat /t/,1991,1054.9
+        Canned meat /t/,1990,1108.5
+        Canned meat /t/,1989,1682.3
+        Sausage products /t/,2025,12040.2
+        Sausage products /t/,2024,11626.9
+        Sausage products /t/,2023,9889.5
+        Sausage products /t/,2022,8808.2
+        Sausage products /t/,2021,8906.6
+        Sausage products /t/,2020,6695.4
+        Sausage products /t/,2019,5772.0
+        Sausage products /t/,2018,5686.8
+        Sausage products /t/,2017,4636.3
+        Sausage products /t/,2016,4628.3
+        Sausage products /t/,2015,3361.0
+        Sausage products /t/,2014,3337.7
+        Sausage products /t/,2013,2260.8
+        Sausage products /t/,2012,2192.2
+        Sausage products /t/,2011,2161.7
+        Sausage products /t/,2010,1705.7
+        Sausage products /t/,2009,1596.6
+        Sausage products /t/,2008,1696.0
+        Sausage products /t/,2007,1322.6
+        Sausage products /t/,2006,1225.4
+        Sausage products /t/,2005,1299.7
+        Sausage products /t/,2004,1272.2
+        Sausage products /t/,2003,1170.6
+        Sausage products /t/,2002,950.6
+        Sausage products /t/,2001,727.5
+        Sausage products /t/,2000,754.7
+        Sausage products /t/,1999,439.1
+        Sausage products /t/,1998,622.5
+        Sausage products /t/,1997,793.2
+        Sausage products /t/,1996,674.0
+        Sausage products /t/,1995,639.2
+        Sausage products /t/,1994,1065.3
+        Sausage products /t/,1993,1245.3
+        Sausage products /t/,1992,3360.0
+        Sausage products /t/,1991,5825.4
+        Sausage products /t/,1990,5522.4
+        Sausage products /t/,1989,5824.3
+        Salt /t/,2025,12.1
+        Salt /t/,2024,21.5
+        Salt /t/,2023,18.1
+        Salt /t/,2022,17.5
+        Salt /t/,2021,20.6
+        Salt /t/,2020,23.8
+        Salt /t/,2019,22.3
+        Salt /t/,2018,22.3
+        Salt /t/,2017,12.1
+        Salt /t/,2016,8.9
+        Salt /t/,2015,184.7
+        Salt /t/,2014,1848.6
+        Salt /t/,2013,2173.5
+        Salt /t/,2012,2457.5
+        Salt /t/,2011,2182.2
+        Salt /t/,2010,1861.7
+        Salt /t/,2009,1376.0
+        Salt /t/,2008,1109.2
+        Salt /t/,2007,1109.4
+        Salt /t/,2006,1154.4
+        Salt /t/,2005,1896.2
+        Salt /t/,2004,1550.4
+        Salt /t/,2003,1970.9
+        Salt /t/,2002,1268.3
+        Salt /t/,2001,1800.6
+        Salt /t/,2000,111.7
+        Salt /t/,1999,51.9
+        Salt /t/,1998,201.6
+        Salt /t/,1997,240.4
+        Salt /t/,1996,429.3
+        Salt /t/,1995,497.3
+        Salt /t/,1994,200.3
+        Salt /t/,1993,602.9
+        Salt /t/,1992,979.0
+        Salt /t/,1991,2603.0
+        Salt /t/,1990,3811.9
+        Salt /t/,1989,4818.8
+        Fodder /t/,2025,64590.2
+        Fodder /t/,2024,52473.7
+        Fodder /t/,2023,78359.0
+        Fodder /t/,2022,68513.7
+        Fodder /t/,2021,78622.0
+        Fodder /t/,2020,87970.4
+        Fodder /t/,2019,75993.2
+        Fodder /t/,2018,96496.1
+        Fodder /t/,2017,95964.0
+        Fodder /t/,2016,58983.4
+        Fodder /t/,2015,67094.7
+        Fodder /t/,2014,67807.9
+        Fodder /t/,2013,82359.1
+        Fodder /t/,2012,38193.8
+        Fodder /t/,2011,34145.5
+        Fodder /t/,2010,65768.8
+        Fodder /t/,2009,39293.4
+        Fodder /t/,2008,26266.3
+        Fodder /t/,2007,22301.5
+        Fodder /t/,2006,24985.3
+        Fodder /t/,2005,16429.3
+        Fodder /t/,2004,17971.0
+        Fodder /t/,2003,16923.0
+        Fodder /t/,2002,13009.8
+        Fodder /t/,2001,9567.4
+        Fodder /t/,2000,10952.0
+        Fodder /t/,1999,13900.0
+        Fodder /t/,1998,15100.0
+        Fodder /t/,1997,14900.0
+        Fodder /t/,1996,19100.0
+        Fodder /t/,1995,47000.0
+        Fodder /t/,1994,33700.0
+        Fodder /t/,1993,77000.0
+        Fodder /t/,1992,82700.0
+        Fodder /t/,1991,102100.0
+        Fodder /t/,1990,119100.0
+        Fodder /t/,1989,212200.0
+    Small intestine /thous.roll/,2025,396.6
+    Small intestine /thous.roll/,2024,527.3
+    Small intestine /thous.roll/,2023,434.1
+    Small intestine /thous.roll/,2022,616.1
+    Small intestine /thous.roll/,2021,571.0
+    Small intestine /thous.roll/,2020,577.6
+    Small intestine /thous.roll/,2019,704.0
+    Small intestine /thous.roll/,2018,600.9
+    Small intestine /thous.roll/,2017,779.9
+    Small intestine /thous.roll/,2016,878.2
+    Small intestine /thous.roll/,2015,625.6
+    Small intestine /thous.roll/,2014,407.3
+    Small intestine /thous.roll/,2013,696.1
+    Small intestine /thous.roll/,2012,941.9
+    Small intestine /thous.roll/,2011,1250.8
+    Small intestine /thous.roll/,2010,1288.5
+    Small intestine /thous.roll/,2009,1057.1
+    Small intestine /thous.roll/,2008,641.1
+    Small intestine /thous.roll/,2007,644.3
+    Small intestine /thous.roll/,2006,700.4
+    Small intestine /thous.roll/,2005,612.3
+    Small intestine /thous.roll/,2004,385.4
+    Small intestine /thous.roll/,2003,437.8
+    Small intestine /thous.roll/,2002,456.9
+    Small intestine /thous.roll/,2001,382.6
+    Small intestine /thous.roll/,2000,669.4
+    Small intestine /thous.roll/,1999,458.6
+    Small intestine /thous.roll/,1998,427.8
+    Small intestine /thous.roll/,1997,150.2
+    Small intestine /thous.roll/,1996,195.2
+    Small intestine /thous.roll/,1995,312.4
+    Small intestine /thous.roll/,1994,353.4
+    Small intestine /thous.roll/,1993,937.8
+    Small intestine /thous.roll/,1992,1804.1
+    Small intestine /thous.roll/,1991,2969.6
+    Small intestine /thous.roll/,1990,3051.9
+    Small intestine /thous.roll/,1989,3140.5
+        Spirit /thous.l/,2025,9754.5
+        Spirit /thous.l/,2024,10575.1
+        Spirit /thous.l/,2023,11039.6
+        Spirit /thous.l/,2022,11865.3
+        Spirit /thous.l/,2021,10947.0
+        Spirit /thous.l/,2020,10063.7
+        Spirit /thous.l/,2019,10143.1
+        Spirit /thous.l/,2018,10581.4
+        Spirit /thous.l/,2017,8854.5
+        Spirit /thous.l/,2016,8647.7
+        Spirit /thous.l/,2015,8668.6
+        Spirit /thous.l/,2014,9126.0
+        Spirit /thous.l/,2013,9950.4
+        Spirit /thous.l/,2012,10761.3
+        Spirit /thous.l/,2011,10030.6
+        Spirit /thous.l/,2010,8440.1
+        Spirit /thous.l/,2009,7592.4
+        Spirit /thous.l/,2008,8080.9
+        Spirit /thous.l/,2007,5721.5
+        Spirit /thous.l/,2006,4032.9
+        Spirit /thous.l/,2005,3094.4
+        Spirit /thous.l/,2004,2296.5
+        Spirit /thous.l/,2003,2077.6
+        Spirit /thous.l/,2002,4902.3
+        Spirit /thous.l/,2001,3964.6
+        Spirit /thous.l/,2000,3796.3
+        Spirit /thous.l/,1999,3156.8
+        Spirit /thous.l/,1998,2818.4
+        Spirit /thous.l/,1997,2654.0
+        Spirit /thous.l/,1996,2060.6
+        Spirit /thous.l/,1995,2120.5
+        Spirit /thous.l/,1994,1855.1
+        Spirit /thous.l/,1993,2219.5
+        Spirit /thous.l/,1992,3207.2
+        Spirit /thous.l/,1991,3209.7
+        Spirit /thous.l/,1990,3473.6
+        Spirit /thous.l/,1989,3423.5
+"        Alcohol, wine /thous.l/",2025,23738.0
+"        Alcohol, wine /thous.l/",2024,25640.6
+"        Alcohol, wine /thous.l/",2023,27652.1
+"        Alcohol, wine /thous.l/",2022,29747.6
+"        Alcohol, wine /thous.l/",2021,27398.1
+"        Alcohol, wine /thous.l/",2020,24585.7
+"        Alcohol, wine /thous.l/",2019,27155.5
+"        Alcohol, wine /thous.l/",2018,28912.8
+"        Alcohol, wine /thous.l/",2017,24749.9
+"        Alcohol, wine /thous.l/",2016,23887.6
+"        Alcohol, wine /thous.l/",2015,21206.9
+"        Alcohol, wine /thous.l/",2014,24258.1
+"        Alcohol, wine /thous.l/",2013,24841.1
+"        Alcohol, wine /thous.l/",2012,26881.7
+"        Alcohol, wine /thous.l/",2011,25593.4
+"        Alcohol, wine /thous.l/",2010,20391.7
+"        Alcohol, wine /thous.l/",2009,17409.6
+"        Alcohol, wine /thous.l/",2008,15493.9
+"        Alcohol, wine /thous.l/",2007,12585.8
+"        Alcohol, wine /thous.l/",2006,10719.6
+"        Alcohol, wine /thous.l/",2005,7956.4
+"        Alcohol, wine /thous.l/",2004,9161.0
+"        Alcohol, wine /thous.l/",2003,8873.1
+"        Alcohol, wine /thous.l/",2002,9436.2
+"        Alcohol, wine /thous.l/",2001,8626.5
+"        Alcohol, wine /thous.l/",2000,6595.7
+"        Alcohol, wine /thous.l/",1999,5510.9
+"        Alcohol, wine /thous.l/",1998,4989.2
+"        Alcohol, wine /thous.l/",1997,4399.4
+"        Alcohol, wine /thous.l/",1996,3588.2
+"        Alcohol, wine /thous.l/",1995,3663.2
+"        Alcohol, wine /thous.l/",1994,3626.0
+"        Alcohol, wine /thous.l/",1993,5250.8
+"        Alcohol, wine /thous.l/",1992,6769.6
+"        Alcohol, wine /thous.l/",1991,6769.2
+"        Alcohol, wine /thous.l/",1990,6438.4
+"        Alcohol, wine /thous.l/",1989,4914.8
+        Beer /thous.l/,2025,95895.0
+        Beer /thous.l/,2024,100866.5
+        Beer /thous.l/,2023,90777.1
+        Beer /thous.l/,2022,95987.6
+        Beer /thous.l/,2021,101758.8
+        Beer /thous.l/,2020,92802.2
+        Beer /thous.l/,2019,91975.1
+        Beer /thous.l/,2018,91246.0
+        Beer /thous.l/,2017,82415.2
+        Beer /thous.l/,2016,75732.3
+        Beer /thous.l/,2015,74857.2
+        Beer /thous.l/,2014,67740.7
+        Beer /thous.l/,2013,63775.3
+        Beer /thous.l/,2012,65124.6
+        Beer /thous.l/,2011,57133.6
+        Beer /thous.l/,2010,44878.5
+        Beer /thous.l/,2009,32445.1
+        Beer /thous.l/,2008,19891.2
+        Beer /thous.l/,2007,18377.7
+        Beer /thous.l/,2006,7393.0
+        Beer /thous.l/,2005,7996.9
+        Beer /thous.l/,2004,7980.7
+        Beer /thous.l/,2003,3027.6
+        Beer /thous.l/,2002,3375.3
+        Beer /thous.l/,2001,4267.8
+        Beer /thous.l/,2000,3247.2
+        Beer /thous.l/,1999,1852.7
+        Beer /thous.l/,1998,3646.2
+        Beer /thous.l/,1997,4525.9
+        Beer /thous.l/,1996,1692.3
+        Beer /thous.l/,1995,1303.4
+        Beer /thous.l/,1994,
+        Beer /thous.l/,1993,
+        Beer /thous.l/,1992,
+        Beer /thous.l/,1991,
+        Beer /thous.l/,1990,
+        Beer /thous.l/,1989,
+"        Pure water, soft drinks, juice /thous.l/",2025,463157.9
+"        Pure water, soft drinks, juice /thous.l/",2024,477175.9
+"        Pure water, soft drinks, juice /thous.l/",2023,439291.6
+"        Pure water, soft drinks, juice /thous.l/",2022,399924.9
+"        Pure water, soft drinks, juice /thous.l/",2021,348184.1
+"        Pure water, soft drinks, juice /thous.l/",2020,342196.6
+"        Pure water, soft drinks, juice /thous.l/",2019,337368.2
+"        Pure water, soft drinks, juice /thous.l/",2018,304269.2
+"        Pure water, soft drinks, juice /thous.l/",2017,275758.2
+"        Pure water, soft drinks, juice /thous.l/",2016,243754.3
+"        Pure water, soft drinks, juice /thous.l/",2015,241116.8
+"        Pure water, soft drinks, juice /thous.l/",2014,222899.5
+"        Pure water, soft drinks, juice /thous.l/",2013,201639.3
+"        Pure water, soft drinks, juice /thous.l/",2012,174426.7
+"        Pure water, soft drinks, juice /thous.l/",2011,162034.9
+"        Pure water, soft drinks, juice /thous.l/",2010,135155.3
+"        Pure water, soft drinks, juice /thous.l/",2009,86428.6
+"        Pure water, soft drinks, juice /thous.l/",2008,85804.1
+"        Pure water, soft drinks, juice /thous.l/",2007,67863.7
+"        Pure water, soft drinks, juice /thous.l/",2006,38813.2
+"        Pure water, soft drinks, juice /thous.l/",2005,42260.6
+"        Pure water, soft drinks, juice /thous.l/",2004,34032.7
+"        Pure water, soft drinks, juice /thous.l/",2003,24561.1
+"        Pure water, soft drinks, juice /thous.l/",2002,12907.3
+"        Pure water, soft drinks, juice /thous.l/",2001,11082.7
+"        Pure water, soft drinks, juice /thous.l/",2000,8644.7
+"        Pure water, soft drinks, juice /thous.l/",1999,6860.6
+"        Pure water, soft drinks, juice /thous.l/",1998,7751.8
+"        Pure water, soft drinks, juice /thous.l/",1997,
+"        Pure water, soft drinks, juice /thous.l/",1996,
+"        Pure water, soft drinks, juice /thous.l/",1995,
+"        Pure water, soft drinks, juice /thous.l/",1994,
+"        Pure water, soft drinks, juice /thous.l/",1993,
+"        Pure water, soft drinks, juice /thous.l/",1992,
+"        Pure water, soft drinks, juice /thous.l/",1991,
+"        Pure water, soft drinks, juice /thous.l/",1990,
+"        Pure water, soft drinks, juice /thous.l/",1989,
+        Flour /t/,2025,170920.9
+        Flour /t/,2024,144489.3
+        Flour /t/,2023,191345.8
+        Flour /t/,2022,205532.1
+        Flour /t/,2021,217891.2
+        Flour /t/,2020,235114.1
+        Flour /t/,2019,211607.4
+        Flour /t/,2018,211053.2
+        Flour /t/,2017,208524.1
+        Flour /t/,2016,209678.5
+        Flour /t/,2015,206473.4
+        Flour /t/,2014,228214.4
+        Flour /t/,2013,246512.2
+        Flour /t/,2012,114898.8
+        Flour /t/,2011,105251.9
+        Flour /t/,2010,143488.7
+        Flour /t/,2009,104999.3
+        Flour /t/,2008,62014.3
+        Flour /t/,2007,70796.0
+        Flour /t/,2006,61655.1
+        Flour /t/,2005,55622.6
+        Flour /t/,2004,55768.5
+        Flour /t/,2003,54017.3
+        Flour /t/,2002,49600.0
+        Flour /t/,2001,37700.0
+        Flour /t/,2000,40200.0
+        Flour /t/,1999,67300.0
+        Flour /t/,1998,65800.0
+        Flour /t/,1997,63600.0
+        Flour /t/,1996,92100.0
+        Flour /t/,1995,158700.0
+        Flour /t/,1994,127000.0
+        Flour /t/,1993,175500.0
+        Flour /t/,1992,181900.0
+        Flour /t/,1991,174400.0
+        Flour /t/,1990,189800.0
+        Flour /t/,1989,199700.0
+        Macaroni noodles /t/,2025,4335.1
+        Macaroni noodles /t/,2024,6614.2
+        Macaroni noodles /t/,2023,7845.7
+        Macaroni noodles /t/,2022,7287.4
+        Macaroni noodles /t/,2021,3530.0
+        Macaroni noodles /t/,2020,4615.8
+        Macaroni noodles /t/,2019,8842.7
+        Macaroni noodles /t/,2018,7226.7
+        Macaroni noodles /t/,2017,6998.5
+        Macaroni noodles /t/,2016,4050.5
+        Macaroni noodles /t/,2015,2027.5
+        Macaroni noodles /t/,2014,2730.8
+        Macaroni noodles /t/,2013,1512.2
+        Macaroni noodles /t/,2012,3191.7
+        Macaroni noodles /t/,2011,2231.8
+        Macaroni noodles /t/,2010,2055.7
+        Macaroni noodles /t/,2009,4476.7
+        Macaroni noodles /t/,2008,2287.6
+        Macaroni noodles /t/,2007,1361.4
+        Macaroni noodles /t/,2006,1006.4
+        Macaroni noodles /t/,2005,886.1
+        Macaroni noodles /t/,2004,1338.5
+        Macaroni noodles /t/,2003,840.4
+        Macaroni noodles /t/,2002,910.2
+        Macaroni noodles /t/,2001,520.8
+        Macaroni noodles /t/,2000,865.9
+        Macaroni noodles /t/,1999,1110.8
+        Macaroni noodles /t/,1998,1741.8
+        Macaroni noodles /t/,1997,4106.0
+        Macaroni noodles /t/,1996,1994.0
+        Macaroni noodles /t/,1995,2245.3
+        Macaroni noodles /t/,1994,
+        Macaroni noodles /t/,1993,
+        Macaroni noodles /t/,1992,
+        Macaroni noodles /t/,1991,
+        Macaroni noodles /t/,1990,
+        Macaroni noodles /t/,1989,
+        Bread /t/,2025,32763.4
+        Bread /t/,2024,34238.4
+        Bread /t/,2023,40446.6
+        Bread /t/,2022,39496.9
+        Bread /t/,2021,35166.5
+        Bread /t/,2020,30991.9
+        Bread /t/,2019,27798.7
+        Bread /t/,2018,27436.2
+        Bread /t/,2017,23831.3
+        Bread /t/,2016,22282.9
+        Bread /t/,2015,23977.3
+        Bread /t/,2014,25801.5
+        Bread /t/,2013,21689.7
+        Bread /t/,2012,22498.4
+        Bread /t/,2011,21184.0
+        Bread /t/,2010,19388.0
+        Bread /t/,2009,21396.5
+        Bread /t/,2008,23424.0
+        Bread /t/,2007,17890.1
+        Bread /t/,2006,20385.4
+        Bread /t/,2005,22552.3
+        Bread /t/,2004,23439.5
+        Bread /t/,2003,22100.5
+        Bread /t/,2002,21730.6
+        Bread /t/,2001,23294.4
+        Bread /t/,2000,20217.2
+        Bread /t/,1999,14700.0
+        Bread /t/,1998,19300.0
+        Bread /t/,1997,31500.0
+        Bread /t/,1996,30000.0
+        Bread /t/,1995,36800.0
+        Bread /t/,1994,33900.0
+        Bread /t/,1993,46000.0
+        Bread /t/,1992,60900.0
+        Bread /t/,1991,60600.0
+        Bread /t/,1990,63300.0
+        Bread /t/,1989,66700.0
+        Bakery products /t/,2025,29715.9
+        Bakery products /t/,2024,27723.7
+        Bakery products /t/,2023,29647.5
+        Bakery products /t/,2022,30561.5
+        Bakery products /t/,2021,35099.4
+        Bakery products /t/,2020,25339.9
+        Bakery products /t/,2019,21215.5
+        Bakery products /t/,2018,18952.9
+        Bakery products /t/,2017,17231.3
+        Bakery products /t/,2016,15993.9
+        Bakery products /t/,2015,16344.3
+        Bakery products /t/,2014,16738.5
+        Bakery products /t/,2013,16594.4
+        Bakery products /t/,2012,12097.6
+        Bakery products /t/,2011,11419.4
+        Bakery products /t/,2010,11610.2
+        Bakery products /t/,2009,11821.4
+        Bakery products /t/,2008,12207.1
+        Bakery products /t/,2007,11802.6
+        Bakery products /t/,2006,10161.0
+        Bakery products /t/,2005,8208.1
+        Bakery products /t/,2004,7015.9
+        Bakery products /t/,2003,6436.4
+        Bakery products /t/,2002,5905.4
+        Bakery products /t/,2001,5710.0
+        Bakery products /t/,2000,5463.5
+        Bakery products /t/,1999,8000.0
+        Bakery products /t/,1998,10300.0
+        Bakery products /t/,1997,12500.0
+        Bakery products /t/,1996,11300.0
+        Bakery products /t/,1995,5800.0
+        Bakery products /t/,1994,4000.0
+        Bakery products /t/,1993,4600.0
+        Bakery products /t/,1992,9000.0
+        Bakery products /t/,1991,24800.0
+        Bakery products /t/,1990,32300.0
+        Bakery products /t/,1989,35800.0
+        Biscuit /t/,2025,503.0
+        Biscuit /t/,2024,539.2
+        Biscuit /t/,2023,758.7
+        Biscuit /t/,2022,739.8
+        Biscuit /t/,2021,926.5
+        Biscuit /t/,2020,883.1
+        Biscuit /t/,2019,1465.6
+        Biscuit /t/,2018,317.9
+        Biscuit /t/,2017,355.5
+        Biscuit /t/,2016,491.3
+        Biscuit /t/,2015,478.8
+        Biscuit /t/,2014,470.3
+        Biscuit /t/,2013,487.4
+        Biscuit /t/,2012,646.9
+        Biscuit /t/,2011,410.4
+        Biscuit /t/,2010,347.6
+        Biscuit /t/,2009,244.7
+        Biscuit /t/,2008,431.6
+        Biscuit /t/,2007,366.8
+        Biscuit /t/,2006,436.7
+        Biscuit /t/,2005,477.0
+        Biscuit /t/,2004,695.3
+        Biscuit /t/,2003,502.3
+        Biscuit /t/,2002,918.1
+        Biscuit /t/,2001,1226.4
+        Biscuit /t/,2000,1608.5
+        Biscuit /t/,1999,2200.0
+        Biscuit /t/,1998,3300.0
+        Biscuit /t/,1997,4200.0
+        Biscuit /t/,1996,3900.0
+        Biscuit /t/,1995,3000.0
+        Biscuit /t/,1994,4400.0
+        Biscuit /t/,1993,4800.0
+        Biscuit /t/,1992,5200.0
+        Biscuit /t/,1991,5500.0
+        Biscuit /t/,1990,5900.0
+        Biscuit /t/,1989,6300.0
+    Sweets / t/,2025,1042.3
+    Sweets / t/,2024,845.9
+    Sweets / t/,2023,71.8
+    Sweets / t/,2022,60.2
+    Sweets / t/,2021,36.8
+    Sweets / t/,2020,34.4
+    Sweets / t/,2019,45.5
+    Sweets / t/,2018,54.3
+    Sweets / t/,2017,51.2
+    Sweets / t/,2016,34.4
+    Sweets / t/,2015,40.7
+    Sweets / t/,2014,56.4
+    Sweets / t/,2013,44.6
+    Sweets / t/,2012,92.7
+    Sweets / t/,2011,79.4
+    Sweets / t/,2010,85.9
+    Sweets / t/,2009,97.3
+    Sweets / t/,2008,90.4
+    Sweets / t/,2007,101.1
+    Sweets / t/,2006,100.0
+    Sweets / t/,2005,100.0
+    Sweets / t/,2004,100.0
+    Sweets / t/,2003,100.0
+    Sweets / t/,2002,200.0
+    Sweets / t/,2001,300.0
+    Sweets / t/,2000,500.0
+    Sweets / t/,1999,800.0
+    Sweets / t/,1998,1600.0
+    Sweets / t/,1997,1700.0
+    Sweets / t/,1996,1800.0
+    Sweets / t/,1995,2000.0
+    Sweets / t/,1994,2400.0
+    Sweets / t/,1993,2600.0
+    Sweets / t/,1992,2800.0
+    Sweets / t/,1991,3100.0
+    Sweets / t/,1990,3300.0
+    Sweets / t/,1989,3600.0
+        Cigarettes /thous.blocks/,2025,1906.1
+        Cigarettes /thous.blocks/,2024,2403.2
+        Cigarettes /thous.blocks/,2023,3206.3
+        Cigarettes /thous.blocks/,2022,2643.8
+        Cigarettes /thous.blocks/,2021,3926.4
+        Cigarettes /thous.blocks/,2020,2007.5
+        Cigarettes /thous.blocks/,2019,3944.4
+        Cigarettes /thous.blocks/,2018,4721.5
+        Cigarettes /thous.blocks/,2017,5397.4
+        Cigarettes /thous.blocks/,2016,4959.2
+        Cigarettes /thous.blocks/,2015,5086.3
+        Cigarettes /thous.blocks/,2014,6432.4
+        Cigarettes /thous.blocks/,2013,6299.8
+        Cigarettes /thous.blocks/,2012,7024.0
+        Cigarettes /thous.blocks/,2011,8515.0
+        Cigarettes /thous.blocks/,2010,6866.0
+        Cigarettes /thous.blocks/,2009,6673.5
+        Cigarettes /thous.blocks/,2008,7815.0
+        Cigarettes /thous.blocks/,2007,7068.7
+        Cigarettes /thous.blocks/,2006,5085.8
+        Cigarettes /thous.blocks/,2005,3847.0
+        Cigarettes /thous.blocks/,2004,
+        Cigarettes /thous.blocks/,2003,820.9
+        Cigarettes /thous.blocks/,2002,164.5
+        Cigarettes /thous.blocks/,2001,
+        Cigarettes /thous.blocks/,2000,
+        Cigarettes /thous.blocks/,1999,
+        Cigarettes /thous.blocks/,1998,
+        Cigarettes /thous.blocks/,1997,
+        Cigarettes /thous.blocks/,1996,
+        Cigarettes /thous.blocks/,1995,
+        Cigarettes /thous.blocks/,1994,
+        Cigarettes /thous.blocks/,1993,
+        Cigarettes /thous.blocks/,1992,
+        Cigarettes /thous.blocks/,1991,
+        Cigarettes /thous.blocks/,1990,
+        Cigarettes /thous.blocks/,1989,
+        Book /mln.pr.p/,2025,114.2
+        Book /mln.pr.p/,2024,151.6
+        Book /mln.pr.p/,2023,152.2
+        Book /mln.pr.p/,2022,194.7
+        Book /mln.pr.p/,2021,125.0
+        Book /mln.pr.p/,2020,136.9
+        Book /mln.pr.p/,2019,168.3
+        Book /mln.pr.p/,2018,106.5
+        Book /mln.pr.p/,2017,38.9
+        Book /mln.pr.p/,2016,53.0
+        Book /mln.pr.p/,2015,77.0
+        Book /mln.pr.p/,2014,62.5
+        Book /mln.pr.p/,2013,55.5
+        Book /mln.pr.p/,2012,60.8
+        Book /mln.pr.p/,2011,47.5
+        Book /mln.pr.p/,2010,55.5
+        Book /mln.pr.p/,2009,49.7
+        Book /mln.pr.p/,2008,42.1
+        Book /mln.pr.p/,2007,27.7
+        Book /mln.pr.p/,2006,23.6
+        Book /mln.pr.p/,2005,24.3
+        Book /mln.pr.p/,2004,34.8
+        Book /mln.pr.p/,2003,31.8
+        Book /mln.pr.p/,2002,24.6
+        Book /mln.pr.p/,2001,18.2
+        Book /mln.pr.p/,2000,18.9
+        Book /mln.pr.p/,1999,10.6
+        Book /mln.pr.p/,1998,12.4
+        Book /mln.pr.p/,1997,10.5
+        Book /mln.pr.p/,1996,17.8
+        Book /mln.pr.p/,1995,18.9
+        Book /mln.pr.p/,1994,22.2
+        Book /mln.pr.p/,1993,22.2
+        Book /mln.pr.p/,1992,22.5
+        Book /mln.pr.p/,1991,19.3
+        Book /mln.pr.p/,1990,19.9
+        Book /mln.pr.p/,1989,19.4
+        Newspaper /mln.pr.p/,2025,15.3
+        Newspaper /mln.pr.p/,2024,18.1
+        Newspaper /mln.pr.p/,2023,11.9
+        Newspaper /mln.pr.p/,2022,13.9
+        Newspaper /mln.pr.p/,2021,19.6
+        Newspaper /mln.pr.p/,2020,36.8
+        Newspaper /mln.pr.p/,2019,17.5
+        Newspaper /mln.pr.p/,2018,22.3
+        Newspaper /mln.pr.p/,2017,26.2
+        Newspaper /mln.pr.p/,2016,35.4
+        Newspaper /mln.pr.p/,2015,36.0
+        Newspaper /mln.pr.p/,2014,39.5
+        Newspaper /mln.pr.p/,2013,55.9
+        Newspaper /mln.pr.p/,2012,69.2
+        Newspaper /mln.pr.p/,2011,40.8
+        Newspaper /mln.pr.p/,2010,42.2
+        Newspaper /mln.pr.p/,2009,37.5
+        Newspaper /mln.pr.p/,2008,64.8
+        Newspaper /mln.pr.p/,2007,45.5
+        Newspaper /mln.pr.p/,2006,51.2
+        Newspaper /mln.pr.p/,2005,68.6
+        Newspaper /mln.pr.p/,2004,68.7
+        Newspaper /mln.pr.p/,2003,71.9
+        Newspaper /mln.pr.p/,2002,52.9
+        Newspaper /mln.pr.p/,2001,61.9
+        Newspaper /mln.pr.p/,2000,93.9
+        Newspaper /mln.pr.p/,1999,57.5
+        Newspaper /mln.pr.p/,1998,58.6
+        Newspaper /mln.pr.p/,1997,18.0
+        Newspaper /mln.pr.p/,1996,10.0
+        Newspaper /mln.pr.p/,1995,32.0
+        Newspaper /mln.pr.p/,1994,17.9
+        Newspaper /mln.pr.p/,1993,17.5
+        Newspaper /mln.pr.p/,1992,31.6
+        Newspaper /mln.pr.p/,1991,149.5
+        Newspaper /mln.pr.p/,1990,284.8
+        Newspaper /mln.pr.p/,1989,347.2
+        Form /mln.pr.p/,2025,37.0
+        Form /mln.pr.p/,2024,27.9
+        Form /mln.pr.p/,2023,27.0
+        Form /mln.pr.p/,2022,29.4
+        Form /mln.pr.p/,2021,32.2
+        Form /mln.pr.p/,2020,40.0
+        Form /mln.pr.p/,2019,17.8
+        Form /mln.pr.p/,2018,12.7
+        Form /mln.pr.p/,2017,10.1
+        Form /mln.pr.p/,2016,12.0
+        Form /mln.pr.p/,2015,12.4
+        Form /mln.pr.p/,2014,11.6
+        Form /mln.pr.p/,2013,14.9
+        Form /mln.pr.p/,2012,14.7
+        Form /mln.pr.p/,2011,8.7
+        Form /mln.pr.p/,2010,6.5
+        Form /mln.pr.p/,2009,5.7
+        Form /mln.pr.p/,2008,6.7
+        Form /mln.pr.p/,2007,7.9
+        Form /mln.pr.p/,2006,11.2
+        Form /mln.pr.p/,2005,7.3
+        Form /mln.pr.p/,2004,6.7
+        Form /mln.pr.p/,2003,5.0
+        Form /mln.pr.p/,2002,5.3
+        Form /mln.pr.p/,2001,10.0
+        Form /mln.pr.p/,2000,5.8
+        Form /mln.pr.p/,1999,4.1
+        Form /mln.pr.p/,1998,8.1
+        Form /mln.pr.p/,1997,10.0
+        Form /mln.pr.p/,1996,8.0
+        Form /mln.pr.p/,1995,0.0
+        Form /mln.pr.p/,1994,0.0
+        Form /mln.pr.p/,1993,0.0
+        Form /mln.pr.p/,1992,0.0
+        Form /mln.pr.p/,1991,5.8
+        Form /mln.pr.p/,1990,8.1
+        Form /mln.pr.p/,1989,10.0
+        Injection /thous.amp/,2025,5731.6
+        Injection /thous.amp/,2024,5138.6
+        Injection /thous.amp/,2023,2379.8
+        Injection /thous.amp/,2022,1618.4
+        Injection /thous.amp/,2021,810.6
+        Injection /thous.amp/,2020,1105.3
+        Injection /thous.amp/,2019,751.0
+        Injection /thous.amp/,2018,1054.8
+        Injection /thous.amp/,2017,354.7
+        Injection /thous.amp/,2016,
+        Injection /thous.amp/,2015,
+        Injection /thous.amp/,2014,
+        Injection /thous.amp/,2013,
+        Injection /thous.amp/,2012,
+        Injection /thous.amp/,2011,125.4
+        Injection /thous.amp/,2010,3250.5
+        Injection /thous.amp/,2009,4370.1
+        Injection /thous.amp/,2008,7867.9
+        Injection /thous.amp/,2007,11596.5
+        Injection /thous.amp/,2006,2807.3
+        Injection /thous.amp/,2005,2325.5
+        Injection /thous.amp/,2004,1671.2
+        Injection /thous.amp/,2003,1725.6
+        Injection /thous.amp/,2002,1194.3
+        Injection /thous.amp/,2001,2723.1
+        Injection /thous.amp/,2000,3106.7
+        Injection /thous.amp/,1999,3332.6
+        Injection /thous.amp/,1998,3317.1
+        Injection /thous.amp/,1997,
+        Injection /thous.amp/,1996,
+        Injection /thous.amp/,1995,
+        Injection /thous.amp/,1994,
+        Injection /thous.amp/,1993,
+        Injection /thous.amp/,1992,
+        Injection /thous.amp/,1991,
+        Injection /thous.amp/,1990,
+        Injection /thous.amp/,1989,
+        Medical tablets /thous.packs/,2025,16339.2
+        Medical tablets /thous.packs/,2024,18835.9
+        Medical tablets /thous.packs/,2023,16509.9
+        Medical tablets /thous.packs/,2022,16500.4
+        Medical tablets /thous.packs/,2021,18570.4
+        Medical tablets /thous.packs/,2020,14012.8
+        Medical tablets /thous.packs/,2019,9362.0
+        Medical tablets /thous.packs/,2018,12247.4
+        Medical tablets /thous.packs/,2017,8823.0
+        Medical tablets /thous.packs/,2016,5609.7
+        Medical tablets /thous.packs/,2015,6811.6
+        Medical tablets /thous.packs/,2014,12568.1
+        Medical tablets /thous.packs/,2013,14318.2
+        Medical tablets /thous.packs/,2012,13314.9
+        Medical tablets /thous.packs/,2011,15408.8
+        Medical tablets /thous.packs/,2010,9844.0
+        Medical tablets /thous.packs/,2009,11205.0
+        Medical tablets /thous.packs/,2008,8374.8
+        Medical tablets /thous.packs/,2007,7913.2
+        Medical tablets /thous.packs/,2006,5026.7
+        Medical tablets /thous.packs/,2005,4374.3
+        Medical tablets /thous.packs/,2004,4483.2
+        Medical tablets /thous.packs/,2003,3503.6
+        Medical tablets /thous.packs/,2002,8611.0
+        Medical tablets /thous.packs/,2001,8892.4
+        Medical tablets /thous.packs/,2000,4917.0
+        Medical tablets /thous.packs/,1999,
+        Medical tablets /thous.packs/,1998,
+        Medical tablets /thous.packs/,1997,
+        Medical tablets /thous.packs/,1996,
+        Medical tablets /thous.packs/,1995,
+        Medical tablets /thous.packs/,1994,
+        Medical tablets /thous.packs/,1993,
+        Medical tablets /thous.packs/,1992,
+        Medical tablets /thous.packs/,1991,
+        Medical tablets /thous.packs/,1990,
+        Medical tablets /thous.packs/,1989,
+        Liquid medicine /t/,2025,5187.0
+        Liquid medicine /t/,2024,5094.8
+        Liquid medicine /t/,2023,3552.1
+        Liquid medicine /t/,2022,2708.2
+        Liquid medicine /t/,2021,3094.0
+        Liquid medicine /t/,2020,3190.4
+        Liquid medicine /t/,2019,2622.2
+        Liquid medicine /t/,2018,4008.4
+        Liquid medicine /t/,2017,3694.5
+        Liquid medicine /t/,2016,2645.4
+        Liquid medicine /t/,2015,2935.8
+        Liquid medicine /t/,2014,3159.1
+        Liquid medicine /t/,2013,3699.8
+        Liquid medicine /t/,2012,2579.2
+        Liquid medicine /t/,2011,2426.0
+        Liquid medicine /t/,2010,2001.9
+        Liquid medicine /t/,2009,1311.1
+        Liquid medicine /t/,2008,850.9
+        Liquid medicine /t/,2007,285.1
+        Liquid medicine /t/,2006,1193.6
+        Liquid medicine /t/,2005,81.4
+        Liquid medicine /t/,2004,56.0
+        Liquid medicine /t/,2003,79.2
+        Liquid medicine /t/,2002,191.6
+        Liquid medicine /t/,2001,253.2
+        Liquid medicine /t/,2000,67.1
+        Liquid medicine /t/,1999,
+        Liquid medicine /t/,1998,
+        Liquid medicine /t/,1997,
+        Liquid medicine /t/,1996,
+        Liquid medicine /t/,1995,
+        Liquid medicine /t/,1994,
+        Liquid medicine /t/,1993,
+        Liquid medicine /t/,1992,
+        Liquid medicine /t/,1991,
+        Liquid medicine /t/,1990,
+        Liquid medicine /t/,1989,
+        Mongolian medicine /thous.tog/,2025,1999232.5
+        Mongolian medicine /thous.tog/,2024,2226148.6
+        Mongolian medicine /thous.tog/,2023,2350933.3
+        Mongolian medicine /thous.tog/,2022,3069018.7
+        Mongolian medicine /thous.tog/,2021,2112537.9
+        Mongolian medicine /thous.tog/,2020,742508.9
+        Mongolian medicine /thous.tog/,2019,570277.8
+        Mongolian medicine /thous.tog/,2018,571551.0
+        Mongolian medicine /thous.tog/,2017,711707.0
+        Mongolian medicine /thous.tog/,2016,244050.3
+        Mongolian medicine /thous.tog/,2015,155553.6
+        Mongolian medicine /thous.tog/,2014,127253.7
+        Mongolian medicine /thous.tog/,2013,73554.0
+        Mongolian medicine /thous.tog/,2012,57971.9
+        Mongolian medicine /thous.tog/,2011,45704.9
+        Mongolian medicine /thous.tog/,2010,29139.9
+        Mongolian medicine /thous.tog/,2009,23466.3
+        Mongolian medicine /thous.tog/,2008,10046.2
+        Mongolian medicine /thous.tog/,2007,55630.2
+        Mongolian medicine /thous.tog/,2006,53747.8
+        Mongolian medicine /thous.tog/,2005,91383.2
+        Mongolian medicine /thous.tog/,2004,40286.1
+        Mongolian medicine /thous.tog/,2003,38652.5
+        Mongolian medicine /thous.tog/,2002,73986.8
+        Mongolian medicine /thous.tog/,2001,98004.1
+        Mongolian medicine /thous.tog/,2000,50197.8
+        Mongolian medicine /thous.tog/,1999,
+        Mongolian medicine /thous.tog/,1998,
+        Mongolian medicine /thous.tog/,1997,
+        Mongolian medicine /thous.tog/,1996,
+        Mongolian medicine /thous.tog/,1995,
+        Mongolian medicine /thous.tog/,1994,
+        Mongolian medicine /thous.tog/,1993,
+        Mongolian medicine /thous.tog/,1992,
+        Mongolian medicine /thous.tog/,1991,
+        Mongolian medicine /thous.tog/,1990,
+        Mongolian medicine /thous.tog/,1989,
+        Disposable injection syringe /mln.pcs/,2025,26.7
+        Disposable injection syringe /mln.pcs/,2024,12.5
+        Disposable injection syringe /mln.pcs/,2023,8.7
+        Disposable injection syringe /mln.pcs/,2022,11.1
+        Disposable injection syringe /mln.pcs/,2021,11.8
+        Disposable injection syringe /mln.pcs/,2020,7.0
+        Disposable injection syringe /mln.pcs/,2019,3.1
+        Disposable injection syringe /mln.pcs/,2018,14.4
+        Disposable injection syringe /mln.pcs/,2017,16.7
+        Disposable injection syringe /mln.pcs/,2016,13.0
+        Disposable injection syringe /mln.pcs/,2015,12.3
+        Disposable injection syringe /mln.pcs/,2014,5.8
+        Disposable injection syringe /mln.pcs/,2013,0.0
+        Disposable injection syringe /mln.pcs/,2012,0.0
+        Disposable injection syringe /mln.pcs/,2011,0.8
+        Disposable injection syringe /mln.pcs/,2010,4.0
+        Disposable injection syringe /mln.pcs/,2009,10.3
+        Disposable injection syringe /mln.pcs/,2008,10.9
+        Disposable injection syringe /mln.pcs/,2007,12.6
+        Disposable injection syringe /mln.pcs/,2006,21.9
+        Disposable injection syringe /mln.pcs/,2005,20.9
+        Disposable injection syringe /mln.pcs/,2004,24.4
+        Disposable injection syringe /mln.pcs/,2003,25.3
+        Disposable injection syringe /mln.pcs/,2002,22.8
+        Disposable injection syringe /mln.pcs/,2001,17.7
+        Disposable injection syringe /mln.pcs/,2000,16.3
+        Disposable injection syringe /mln.pcs/,1999,
+        Disposable injection syringe /mln.pcs/,1998,
+        Disposable injection syringe /mln.pcs/,1997,
+        Disposable injection syringe /mln.pcs/,1996,
+        Disposable injection syringe /mln.pcs/,1995,
+        Disposable injection syringe /mln.pcs/,1994,
+        Disposable injection syringe /mln.pcs/,1993,
+        Disposable injection syringe /mln.pcs/,1992,
+        Disposable injection syringe /mln.pcs/,1991,
+        Disposable injection syringe /mln.pcs/,1990,
+        Disposable injection syringe /mln.pcs/,1989,
+    Disposable injection needle /mln.pcs/,2025,0.0
+    Disposable injection needle /mln.pcs/,2024,0.0
+    Disposable injection needle /mln.pcs/,2023,0.0
+    Disposable injection needle /mln.pcs/,2022,0.0
+    Disposable injection needle /mln.pcs/,2021,0.0
+    Disposable injection needle /mln.pcs/,2020,0.0
+    Disposable injection needle /mln.pcs/,2019,
+    Disposable injection needle /mln.pcs/,2018,
+    Disposable injection needle /mln.pcs/,2017,
+    Disposable injection needle /mln.pcs/,2016,
+    Disposable injection needle /mln.pcs/,2015,0.0
+    Disposable injection needle /mln.pcs/,2014,0.0
+    Disposable injection needle /mln.pcs/,2013,0.0
+    Disposable injection needle /mln.pcs/,2012,0.0
+    Disposable injection needle /mln.pcs/,2011,0.0
+    Disposable injection needle /mln.pcs/,2010,0.8
+    Disposable injection needle /mln.pcs/,2009,0.0
+    Disposable injection needle /mln.pcs/,2008,0.0
+    Disposable injection needle /mln.pcs/,2007,2.0
+    Disposable injection needle /mln.pcs/,2006,2.0
+    Disposable injection needle /mln.pcs/,2005,5.0
+    Disposable injection needle /mln.pcs/,2004,1.6
+    Disposable injection needle /mln.pcs/,2003,
+    Disposable injection needle /mln.pcs/,2002,
+    Disposable injection needle /mln.pcs/,2001,3.0
+    Disposable injection needle /mln.pcs/,2000,3.9
+    Disposable injection needle /mln.pcs/,1999,
+    Disposable injection needle /mln.pcs/,1998,
+    Disposable injection needle /mln.pcs/,1997,
+    Disposable injection needle /mln.pcs/,1996,
+    Disposable injection needle /mln.pcs/,1995,
+    Disposable injection needle /mln.pcs/,1994,
+    Disposable injection needle /mln.pcs/,1993,
+    Disposable injection needle /mln.pcs/,1992,
+    Disposable injection needle /mln.pcs/,1991,
+    Disposable injection needle /mln.pcs/,1990,
+    Disposable injection needle /mln.pcs/,1989,
+        Jewellery /thous.pieces/,2025,14.0
+        Jewellery /thous.pieces/,2024,23.6
+        Jewellery /thous.pieces/,2023,14.1
+        Jewellery /thous.pieces/,2022,1.6
+        Jewellery /thous.pieces/,2021,0.4
+        Jewellery /thous.pieces/,2020,2.0
+        Jewellery /thous.pieces/,2019,1.0
+        Jewellery /thous.pieces/,2018,1.5
+        Jewellery /thous.pieces/,2017,4.2
+        Jewellery /thous.pieces/,2016,2.2
+        Jewellery /thous.pieces/,2015,1.3
+        Jewellery /thous.pieces/,2014,0.6
+        Jewellery /thous.pieces/,2013,0.5
+        Jewellery /thous.pieces/,2012,0.5
+        Jewellery /thous.pieces/,2011,0.6
+        Jewellery /thous.pieces/,2010,0.7
+        Jewellery /thous.pieces/,2009,0.8
+        Jewellery /thous.pieces/,2008,0.9
+        Jewellery /thous.pieces/,2007,1.4
+        Jewellery /thous.pieces/,2006,1.4
+        Jewellery /thous.pieces/,2005,0.7
+        Jewellery /thous.pieces/,2004,0.1
+        Jewellery /thous.pieces/,2003,1.4
+        Jewellery /thous.pieces/,2002,18.7
+        Jewellery /thous.pieces/,2001,8.4
+        Jewellery /thous.pieces/,2000,12.9
+        Jewellery /thous.pieces/,1999,
+        Jewellery /thous.pieces/,1998,
+        Jewellery /thous.pieces/,1997,
+        Jewellery /thous.pieces/,1996,
+        Jewellery /thous.pieces/,1995,
+        Jewellery /thous.pieces/,1994,
+        Jewellery /thous.pieces/,1993,
+        Jewellery /thous.pieces/,1992,
+        Jewellery /thous.pieces/,1991,
+        Jewellery /thous.pieces/,1990,
+        Jewellery /thous.pieces/,1989,
+        Candle /thous.pcs/,2025,0.0
+        Candle /thous.pcs/,2024,0.0
+        Candle /thous.pcs/,2023,0.0
+        Candle /thous.pcs/,2022,0.0
+        Candle /thous.pcs/,2021,0.1
+        Candle /thous.pcs/,2020,0.3
+        Candle /thous.pcs/,2019,
+        Candle /thous.pcs/,2018,
+        Candle /thous.pcs/,2017,
+        Candle /thous.pcs/,2016,
+        Candle /thous.pcs/,2015,
+        Candle /thous.pcs/,2014,81.0
+        Candle /thous.pcs/,2013,0.0
+        Candle /thous.pcs/,2012,229.1
+        Candle /thous.pcs/,2011,322.0
+        Candle /thous.pcs/,2010,1422.5
+        Candle /thous.pcs/,2009,4743.4
+        Candle /thous.pcs/,2008,2119.5
+        Candle /thous.pcs/,2007,3647.7
+        Candle /thous.pcs/,2006,3470.2
+        Candle /thous.pcs/,2005,5346.4
+        Candle /thous.pcs/,2004,5147.6
+        Candle /thous.pcs/,2003,3793.1
+        Candle /thous.pcs/,2002,5087.7
+        Candle /thous.pcs/,2001,4183.7
+        Candle /thous.pcs/,2000,54.5
+        Candle /thous.pcs/,1999,69.2
+        Candle /thous.pcs/,1998,182.8
+        Candle /thous.pcs/,1997,33.7
+        Candle /thous.pcs/,1996,119.2
+        Candle /thous.pcs/,1995,2553.3
+        Candle /thous.pcs/,1994,6864.7
+        Candle /thous.pcs/,1993,53.4
+        Candle /thous.pcs/,1992,
+        Candle /thous.pcs/,1991,
+        Candle /thous.pcs/,1990,
+        Candle /thous.pcs/,1989,

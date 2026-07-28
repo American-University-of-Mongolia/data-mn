@@ -1,31 +1,40 @@
 ---
-title: "Mongolia Monthly Coal Production, Sales, and Export (2021–2025)"
-publishDate: 2025-12-31
-excerpt: "Monthly coal production, domestic sales, and export volumes in Mongolia from 2021 to 2025, measured in thousand tonnes (kt). Data sourced from MRPAM monthly statistical reports."
-category: "Mining"
-tags: ["mongolia", "coal", "mining", "production", "export", "energy", "mrpam"]
-keywords: ["mongolia coal production", "coal export", "coal sales", "monthly coal", "MRPAM statistics"]
-author: "Data.mn"
+title: Mongolia Monthly Coal Production, Sales and Exports, Thousand Tonnes (2021–2026)
+publishDate: 2026-04-06
+author: Data.mn
 dataVersion: 1
-dataDate: 2025-12-31
+dataDate: 2026-06-30
+excerpt: Monthly coal production, sales and export volumes for Mongolia from January 2021 through June 2026, measured in thousand tonnes.
+category: Mining
+tags:
+- mongolia
+- coal
+- mining
+- exports
+keywords:
+- mongolia coal production
+- monthly coal exports
+- coal sales thousand tonnes
 dataFiles:
-  - path: "/datasets/mrpam-coal-production-en.csv"
-    format: "csv"
-    size: "1 KB"
-    description: "Download as CSV"
-  - path: "/datasets/mrpam-coal-production.xlsx"
-    format: "xlsx"
-    size: "6 KB"
-    description: "Open in Excel"
+- path: /datasets/mrpam-coal-production-all-en.csv
+  format: csv
+  size: 2 KB
+  description: Download as CSV (all data)
+- path: /datasets/mrpam-coal-production.xlsx
+  format: xlsx
+  size: 7 KB
+  description: Open in Excel
 source:
-  name: "Mineral Resources and Petroleum Authority of Mongolia"
-  url: "https://mrpam.gov.mn"
-  tableId: "Table 3.16/3.17"
+  name: Mineral Resources and Petroleum Authority
+  url: https://mrpam.gov.mn
+  tableId: 3.16/3.17
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
+Monthly coal production, sales and export volumes for Mongolia from January 2021 through June 2026, measured in thousand tonnes.
+
 <VegaChart
   spec="/charts/mrpam-coal-production-en.json"
-  title="Monthly Coal Production, Sales, and Export (2025)"
+  title="Monthly Coal Production, Sales and Exports"
 />

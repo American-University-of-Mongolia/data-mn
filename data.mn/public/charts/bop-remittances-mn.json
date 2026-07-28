@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын хувийн гуйвуулга (2009-2025). Гадаадад буй Монгол иргэдийн сарын хувийн гуйвуулга.",
+  "description": "Монгол Улсын хувийн гуйвуулга (2009-2026). Гадаадад буй Монгол иргэдийн сарын хувийн гуйвуулга.",
   "data": {
     "url": "/datasets/bop-remittances-mn.csv",
     "format": {

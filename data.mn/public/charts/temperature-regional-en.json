@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Monthly average air temperature across 5 regions of Mongolia (2020-2025). Full data (2005-2025) available in CSV.",
+  "description": "Monthly average air temperature across 5 regions of Mongolia (2020-2026). Full data (2005-2026) available in CSV.",
   "data": {
     "url": "/datasets/temperature-regional-en.csv",
     "format": {"type": "csv"}

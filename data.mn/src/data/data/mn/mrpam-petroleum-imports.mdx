@@ -1,31 +1,42 @@
 ---
-title: "Монгол Улсын нефтийн бүтээгдэхүүний импорт төрлөөр (2021–2025)"
-publishDate: 2025-12-31
-excerpt: "2021–2025 оны Монгол Улсын нефтийн бүтээгдэхүүний (бензин, дизель, нисэх онгоцны шатахуун гэх мэт) сарын импортын хэмжээ (мян.тн). Өгөгдлийг АМГТГ-ын сарын статистикийн тайлангаас авав."
-category: "Эрчим хүч"
-tags: ["монгол", "нефтийн импорт", "бензин", "дизель", "нисэх онгоцны шатахуун", "эрчим хүч", "худалдаа", "амгтг"]
-keywords: ["нефтийн бүтээгдэхүүний импорт", "шатахууны импорт", "нефтийн импорт", "эрчим хүчний импорт", "АМГТГ"]
-author: "Data.mn"
+title: Монгол Улсын нефтийн бүтээгдэхүүний импорт, тонн (2021–2026)
+publishDate: 2026-04-06
+author: Data.mn
 dataVersion: 1
-dataDate: 2025-12-31
+dataDate: 2026-06-30
+excerpt: Монгол Улсын нефтийн бүтээгдэхүүний импортын сарын хэмжээг түлшний төрлөөр 2021 оны 1 сараас 2026 оны 6 сар хүртэл тонноор харуулав.
+category: Эрчим хүч
+tags:
+- монгол
+- нефть
+- импорт
+- шатахуун
+- эрчим хүч
+- худалдаа
+keywords:
+- монгол нефтийн импорт
+- шатахууны сарын импорт
+- бензин дизелийн импорт
 dataFiles:
-  - path: "/datasets/mrpam-petroleum-imports-mn.csv"
-    format: "csv"
-    size: "4 KB"
-    description: "CSV татах"
-  - path: "/datasets/mrpam-petroleum-imports.xlsx"
-    format: "xlsx"
-    size: "9 KB"
-    description: "Excel-ээр нээх"
+- path: /datasets/mrpam-petroleum-imports-all-mn.csv
+  format: csv
+  size: 23 KB
+  description: CSV татах (бүх өгөгдөл)
+- path: /datasets/mrpam-petroleum-imports.xlsx
+  format: xlsx
+  size: 15 KB
+  description: Excel татах
 source:
-  name: "Ашигт малтмал, газрын тосны газар"
-  url: "https://mrpam.gov.mn"
-  tableId: "Хүснэгт 4.3"
+  name: Ашигт малтмал, газрын тосны газар
+  url: https://mrpam.gov.mn
+  tableId: Table 4.3
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
+Монгол Улсын нефтийн бүтээгдэхүүний импортын сарын хэмжээг түлшний төрлөөр 2021 оны 1 сараас 2026 оны 6 сар хүртэл тонноор харуулав.
+
 <VegaChart
   spec="/charts/mrpam-petroleum-imports-mn.json"
-  title="Нефтийн бүтээгдэхүүний импорт төрлөөр (2025)"
+  title="Нефтийн бүтээгдэхүүний сарын импорт төрлөөр"
 />

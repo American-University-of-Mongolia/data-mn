@@ -1,0 +1,11 @@
+{
+  "dataset_id": "bop-fdi-net",
+  "version": 2,
+  "fetched_at": "2026-07-27T11:38:37.659741+00:00",
+  "source_updated_at": "2026-07-08T15:25:08",
+  "files": [
+    "bop-fdi-net-en.csv",
+    "bop-fdi-net-mn.csv",
+    "bop-fdi-net.xlsx"
+  ]
+}

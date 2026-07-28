@@ -453,7 +453,8 @@ python -m registry info population-total
 
 ## Python Environment
 
-All Python scripts require the `datamn` conda environment.
+Use the `datamn` conda environment on contributor machines where Conda is
+available.
 
 ### Setup (first time)
 
@@ -473,6 +474,44 @@ pip install -r requirements.txt
 conda activate datamn
 ```
 
+### Campfire Worktree Environment
+
+The Campfire coding container differs from the contributor setup:
+
+- `conda`, `python`, and `pip3` may be unavailable; use `/usr/bin/python3`
+  (currently Python 3.11) for standard-library-only commands.
+- `python3 -m venv` cannot bootstrap because `ensurepip` is unavailable.
+- `uv` is installed at `/usr/local/bin/uv`. Create disposable environments
+  under `/tmp` and set a writable cache explicitly:
+
+  ```bash
+  UV_CACHE_DIR=/tmp/datamn-uv-cache uv venv /tmp/datamn-venv
+  UV_CACHE_DIR=/tmp/datamn-uv-cache uv pip install \
+    --python /tmp/datamn-venv/bin/python -r requirements.txt
+  ```
+
+- The default home directory is read-only for package caches. When installing
+  Node dependencies or running builds, redirect both npm and native build
+  caches:
+
+  ```bash
+  cd data.mn
+  HOME=/tmp/datamn-node-home \
+  XDG_CACHE_HOME=/tmp/datamn-node-cache \
+  npm_config_cache=/tmp/datamn-npm-cache \
+  npm ci --no-audit --no-fund
+
+  HOME=/tmp/datamn-node-home \
+  XDG_CACHE_HOME=/tmp/datamn-node-cache \
+  npm_config_cache=/tmp/datamn-npm-cache \
+  npm run build
+  ```
+
+- Chart image export can emit a harmless `Fontconfig error` because the
+  container has no default fontconfig file. Do not commit regenerated
+  thumbnails from this environment unless their text rendering has been
+  visually verified.
+
 ### Dependencies
 
 | Package | Purpose |
@@ -480,6 +519,7 @@ conda activate datamn
 | `requests` | HTTP client for API calls |
 | `pandas` | Data manipulation and CSV handling |
 | `openpyxl` | Excel file support (.xlsx) |
+| `PyYAML` | MDX frontmatter validation |
 | `pdfplumber` | PDF table extraction |
 
 ---

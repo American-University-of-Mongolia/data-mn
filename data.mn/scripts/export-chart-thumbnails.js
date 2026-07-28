@@ -28,6 +28,26 @@ const OUTPUT_DIR = path.resolve(__dirname, '../public/thumbnails');
 const WIDTH = 800;
 const HEIGHT = 500; // 16:10 aspect ratio (800 * 0.625 = 500)
 const WEBP_QUALITY = 85;
+const DECIMAL_NUMBER_FORMAT = ',.6~f';
+
+function normalizeNumberFormats(value) {
+  if (Array.isArray(value)) {
+    value.forEach(normalizeNumberFormats);
+  } else if (value && typeof value === 'object') {
+    for (const [key, child] of Object.entries(value)) {
+      if (
+        key === 'format' &&
+        typeof child === 'string' &&
+        (child === ',' || (!child.includes('%') && /e$/i.test(child)))
+      ) {
+        value[key] = DECIMAL_NUMBER_FORMAT;
+      } else {
+        normalizeNumberFormats(child);
+      }
+    }
+  }
+  return value;
+}
 
 // Vega 'vox' theme configuration - must match what browser uses
 // Source: https://github.com/vega/vega-themes/blob/master/src/theme-vox.ts
@@ -85,6 +105,7 @@ const voxTheme = {
 async function exportChart(specPath, outputPath) {
   const specContent = fs.readFileSync(specPath, 'utf-8');
   const spec = JSON.parse(specContent);
+  normalizeNumberFormats(spec);
 
   // Merge spec config with vox theme, then our overrides
   // This matches how vega-embed applies themes in the browser
@@ -103,7 +124,7 @@ async function exportChart(specPath, outputPath) {
       ...existingConfig,
       // Match the browser renderer: quantitative labels must remain ordinary
       // decimal numbers rather than Vega's automatic scientific notation.
-      numberFormat: ',',
+      numberFormat: DECIMAL_NUMBER_FORMAT,
       // Merge nested objects properly
       axis: {
         ...voxTheme.axis,

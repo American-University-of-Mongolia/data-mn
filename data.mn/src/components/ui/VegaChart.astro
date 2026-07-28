@@ -45,6 +45,30 @@ const isInlineSpec = typeof spec === 'object';
     var chartViews = {};
     var resizeTimeout = null;
     var vegaLoaded = false;
+    var decimalNumberFormat = ",.6~f";
+
+    // Vega treats a bare "," as a general-number format and can render
+    // thousands as 1e+4. Normalize legacy and explicitly exponential formats
+    // before embedding so axes and tooltips always use ordinary decimals.
+    function normalizeNumberFormats(value) {
+      if (Array.isArray(value)) {
+        value.forEach(normalizeNumberFormats);
+      } else if (value && typeof value === 'object') {
+        Object.keys(value).forEach(function(key) {
+          var child = value[key];
+          if (
+            key === 'format' &&
+            typeof child === 'string' &&
+            (child === ',' || (child.indexOf('%') === -1 && /e$/i.test(child)))
+          ) {
+            value[key] = decimalNumberFormat;
+          } else {
+            normalizeNumberFormats(child);
+          }
+        });
+      }
+      return value;
+    }
 
     // Load Vega libraries dynamically (only once)
     function loadVegaLibraries() {
@@ -145,6 +169,8 @@ const isInlineSpec = typeof spec === 'object';
             chartSpec = await response.json();
           }
 
+          normalizeNumberFormats(chartSpec);
+
           // Asymmetric padding: more on left/bottom for axes, minimal on right/top
           // Use category10 color scheme (D3 default) - brighter than tableau10
           var existingConfig = chartSpec.config || {};
@@ -158,7 +184,7 @@ const isInlineSpec = typeof spec === 'object';
             config: Object.assign({}, existingConfig, {
               // Never let Vega's default general formatter switch large or
               // small quantitative values to scientific notation.
-              numberFormat: ",",
+              numberFormat: decimalNumberFormat,
               legend: Object.assign({}, existingConfig.legend || {}, {
                 columns: legendColumns,
                 labelLimit: legendLabelLimit

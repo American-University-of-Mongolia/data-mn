@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia Current Account Balance (2009-2025). Monthly data showing surpluses (positive) and deficits (negative) in million USD.",
+  "description": "Mongolia Current Account Balance (2009-2026). Monthly data showing surpluses (positive) and deficits (negative) in million USD.",
   "data": {
     "url": "/datasets/bop-current-account-en.csv",
     "format": {

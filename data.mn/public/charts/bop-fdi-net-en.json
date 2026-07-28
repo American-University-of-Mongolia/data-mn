@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia Foreign Direct Investment, Net (2009-2025). Monthly net FDI flows in million USD.",
+  "description": "Mongolia Foreign Direct Investment, Net (2009-2026). Monthly net FDI flows in million USD.",
   "data": {
     "url": "/datasets/bop-fdi-net-en.csv",
     "format": {

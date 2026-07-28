@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Ulaanbaatar monthly average air temperature (2005-2025)",
+  "description": "Ulaanbaatar monthly average air temperature (2005-2026)",
   "data": {
     "url": "/datasets/temperature-ulaanbaatar-en.csv",
     "format": {"type": "csv"}

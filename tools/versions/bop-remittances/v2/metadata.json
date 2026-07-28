@@ -1,0 +1,11 @@
+{
+  "dataset_id": "bop-remittances",
+  "version": 2,
+  "fetched_at": "2026-07-27T11:38:37.660374+00:00",
+  "source_updated_at": "2026-07-08T15:25:08",
+  "files": [
+    "bop-remittances-en.csv",
+    "bop-remittances-mn.csv",
+    "bop-remittances.xlsx"
+  ]
+}

@@ -40,7 +40,11 @@ conda run -n datamn python3 extract_tables.py --dataset mrpam-petroleum-producti
 
 Search for pages containing: `газрын тос`, `4.1`, `4.2`, `баррель`
 
-## Notes
+## History and Null Handling
 
-- Production figures are typically daily averages or monthly totals — verify units from table header
-- Export volumes may be expressed in both barrels and cubic meters in different years
+- Version 1 covers January 2021 through June 2026.
+- Completed years use the corresponding December report so later MRPAM
+  revisions supersede provisional monthly values.
+- The source reports monthly totals in barrels.
+- December 2021 and January–May 2022 have production values but show `-` for
+  exports. Keep those export cells empty; do not interpret them as zero.

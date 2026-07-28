@@ -1,31 +1,41 @@
 ---
-title: "Mongolia State Budget Revenue from the Mining Sector (2022–2025)"
-publishDate: 2025-12-31
-excerpt: "Monthly state budget revenue contributions from Mongolia's mining sector by revenue type from 2022 to 2025, measured in million MNT, showing plan vs actual performance. Data sourced from MRPAM monthly statistical reports."
-category: "Mining"
-tags: ["mongolia", "budget revenue", "mining", "state budget", "fiscal", "taxes", "mrpam"]
-keywords: ["mongolia mining revenue", "state budget mining", "mining tax revenue", "fiscal revenue", "MRPAM budget"]
-author: "Data.mn"
+title: Mongolia State Budget Revenue Collected by MRPAM, Million MNT (2021–2026)
+publishDate: 2026-04-06
+author: Data.mn
 dataVersion: 1
-dataDate: 2025-12-31
+dataDate: 2026-06-30
+excerpt: Monthly cumulative state budget revenue plan and actual collections administered by MRPAM from January 2021 through June 2026, measured in million MNT.
+category: Mining & Resources
+tags:
+- mongolia
+- mining
+- budget
+- revenue
+- mrpam
+keywords:
+- mongolia mining budget revenue
+- MRPAM state revenue
+- monthly budget performance
 dataFiles:
-  - path: "/datasets/mrpam-budget-revenue-en.csv"
-    format: "csv"
-    size: "4 KB"
-    description: "Download as CSV"
-  - path: "/datasets/mrpam-budget-revenue.xlsx"
-    format: "xlsx"
-    size: "10 KB"
-    description: "Open in Excel"
+- path: /datasets/mrpam-budget-revenue-all-en.csv
+  format: csv
+  size: 20 KB
+  description: Download as CSV (all data)
+- path: /datasets/mrpam-budget-revenue.xlsx
+  format: xlsx
+  size: 32 KB
+  description: Open in Excel
 source:
-  name: "Mineral Resources and Petroleum Authority of Mongolia"
-  url: "https://mrpam.gov.mn"
-  tableId: "Table 5.1"
+  name: Mineral Resources and Petroleum Authority
+  url: https://mrpam.gov.mn
+  tableId: Tables 5.1 / 6.1
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
+Monthly cumulative state budget revenue plan and actual collections administered by MRPAM from January 2021 through June 2026, measured in million MNT.
+
 <VegaChart
   spec="/charts/mrpam-budget-revenue-en.json"
-  title="State Budget Revenue from Mining Sector (2025)"
+  title="MRPAM State Budget Revenue: Annual Plan vs Actual, Million MNT (2021–2026)"
 />

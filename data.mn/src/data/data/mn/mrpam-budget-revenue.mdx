@@ -1,31 +1,41 @@
 ---
-title: "Монгол Улсын уул уурхайн салбараас улсын төсөвт төвлөрүүлэх орлого (2022–2025)"
-publishDate: 2025-12-31
-excerpt: "2022–2025 оны уул уурхайн салбараас улсын төсөвт орлогын төрлөөр сарын хуримтлал (сая.төг). Өгөгдлийг АМГТГ-ын сарын статистикийн тайлангаас авав."
-category: "Уул уурхай"
-tags: ["монгол", "төсвийн орлого", "уул уурхай", "улсын төсөв", "татвар", "санхүү", "амгтг"]
-keywords: ["уул уурхайн орлого", "улсын төсөв", "уул уурхайн татвар", "төсвийн орлого", "АМГТГ"]
-author: "Data.mn"
+title: АМГТГ-ын улсын төсөвт төвлөрүүлсэн орлого, сая төгрөг (2021–2026)
+publishDate: 2026-04-06
+author: Data.mn
 dataVersion: 1
-dataDate: 2025-12-31
+dataDate: 2026-06-30
+excerpt: АМГТГ-ын улсын төсөвт төвлөрүүлэх орлогын жилийн төлөвлөгөө болон өссөн дүнгийн гүйцэтгэлийг 2021 оны 1 сараас 2026 оны 6 сар хүртэл сая төгрөгөөр харуулав.
+category: Уул уурхай
+tags:
+- монгол
+- уул уурхай
+- төсөв
+- орлого
+- амгтг
+keywords:
+- монголын уул уурхайн төсвийн орлого
+- АМГТГ улсын төсөв
+- сарын орлогын гүйцэтгэл
 dataFiles:
-  - path: "/datasets/mrpam-budget-revenue-mn.csv"
-    format: "csv"
-    size: "6 KB"
-    description: "CSV татах"
-  - path: "/datasets/mrpam-budget-revenue.xlsx"
-    format: "xlsx"
-    size: "10 KB"
-    description: "Excel-ээр нээх"
+- path: /datasets/mrpam-budget-revenue-all-mn.csv
+  format: csv
+  size: 33 KB
+  description: CSV татах (бүх өгөгдөл)
+- path: /datasets/mrpam-budget-revenue.xlsx
+  format: xlsx
+  size: 32 KB
+  description: Excel татах
 source:
-  name: "Ашигт малтмал, газрын тосны газар"
-  url: "https://mrpam.gov.mn"
-  tableId: "Хүснэгт 5.1"
+  name: Ашигт малтмал, газрын тосны газар
+  url: https://mrpam.gov.mn
+  tableId: Tables 5.1 / 6.1
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
+АМГТГ-ын улсын төсөвт төвлөрүүлэх орлогын жилийн төлөвлөгөө болон өссөн дүнгийн гүйцэтгэлийг 2021 оны 1 сараас 2026 оны 6 сар хүртэл сая төгрөгөөр харуулав.
+
 <VegaChart
   spec="/charts/mrpam-budget-revenue-mn.json"
-  title="Уул уурхайн салбараас улсын төсөвт төвлөрүүлэх орлого (2025)"
+  title="АМГТГ-ын улсын төсвийн орлого: төлөвлөгөө ба гүйцэтгэл, сая төгрөг (2021–2026)"
 />

@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia Reserve Asset Changes (2009-2025). Monthly changes in central bank reserve assets.",
+  "description": "Mongolia Reserve Asset Changes (2009-2026). Monthly changes in central bank reserve assets.",
   "data": {
     "url": "/datasets/bop-reserve-assets-en.csv",
     "format": {

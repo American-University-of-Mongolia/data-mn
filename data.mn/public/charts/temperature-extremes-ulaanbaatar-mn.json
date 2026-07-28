@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Улаанбаатар хотын температурын хэт утга: хамгийн бага, дундаж, хамгийн их (2020-2025). Бүх өгөгдөл (2005-2025) CSV файлд байна.",
+  "description": "Улаанбаатар хотын температурын хэт утга: хамгийн бага, дундаж, хамгийн их (2020-2026). Бүх өгөгдөл (2005-2026) CSV файлд байна.",
   "data": {
     "url": "/datasets/temperature-extremes-ulaanbaatar-mn.csv",
     "format": {"type": "csv"}

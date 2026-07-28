@@ -1,0 +1,10 @@
+{
+  "dataset_id": "nso-bop-monthly",
+  "version": 2,
+  "fetched_at": "2026-07-27T11:35:01.080782+00:00",
+  "source_updated_at": "2026-07-08T15:25:08",
+  "source_files": [
+    "nso-bop-monthly-en.csv",
+    "nso-bop-monthly-mn.csv"
+  ]
+}

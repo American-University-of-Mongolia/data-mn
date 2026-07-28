@@ -10,7 +10,7 @@ Monthly mining permit counts and licensed area by province from MRPAM.
 | **Source** | `mrpam` |
 | **Source Tables** | 1.1 |
 | **Update Frequency** | Monthly |
-| **Units** | Count (тоо), Hectares (га) |
+| **Units** | Count (тоо), Thousand hectares (мян.га) |
 
 ## Description
 
@@ -18,17 +18,16 @@ Number of active exploration and extraction licenses, and total licensed area, b
 
 ## CSV Schema
 
-### English (`mrpam-mining-permits-en.csv`)
+### English (`mrpam-mining-permits-all-en.csv`)
 ```
-year,month,province,exploration_count,exploration_area_ha,extraction_count,extraction_area_ha
-2025,1,Ulaanbaatar,45,12500.0,120,45000.0
-2025,1,Khentii,30,9800.0,85,38000.0
+year,month,province,total_count,total_area_kha,extraction_count,extraction_area_kha,exploration_count,exploration_area_kha
+2026,6,Ulaanbaatar,170,14.1,166,13.9,4,0.2
 ```
 
-### Mongolian (`mrpam-mining-permits-mn.csv`)
+### Mongolian (`mrpam-mining-permits-all-mn.csv`)
 ```
-он,сар,аймаг,хайгуулын_тоо,хайгуулын_талбай_га,ашиглалтын_тоо,ашиглалтын_талбай_га
-2025,1,Улаанбаатар,45,12500.0,120,45000.0
+он,сар,аймаг,нийт_тоо,нийт_талбай_мян_га,ашиглалтын_тоо,ашиглалтын_талбай_мян_га,хайгуулын_тоо,хайгуулын_талбай_мян_га
+2026,6,Улаанбаатар,170,14.1,166,13.9,4,0.2
 ```
 
 ## Extraction
@@ -72,3 +71,5 @@ Search for pages containing: `тусгай зөвшөөрөл`, `1.1`, `хайг
 
 - Table 1.1 is typically on the first 2-3 pages of the report
 - Total rows (Нийт дүн) should be excluded from per-province data
+- Licensed area values are already expressed in thousand hectares; do not
+  multiply them by 1,000.

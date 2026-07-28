@@ -106,11 +106,11 @@ conda run -n datamn python3 tools/scripts/translate_csv.py \
 
 | Dataset ID | Source Table | Description |
 |-----------|-------------|-------------|
-| `mrpam-coal-production` | 3.16, 3.17 | Monthly coal production, sales, export (thousand tons) |
+| `mrpam-coal-production` | 3.17 | Monthly coal production, sales, export (thousand tons) |
 | `mrpam-petroleum-production` | 4.1, 4.2 | Monthly petroleum production and export (barrels) |
 | `mrpam-mining-permits` | 1.1 | Mining permit counts and area by province |
 | `mrpam-commodity-prices` | 3.8 | World market mineral prices (gold, copper, coal, etc.) |
-| `mrpam-fuel-prices` | 4.6, 4.7 | Retail fuel prices by province and monthly trend |
+| `mrpam-fuel-prices` | 4.6 | Retail fuel prices by province |
 | `mrpam-petroleum-imports` | 4.3 | Petroleum product imports by type |
 | `mrpam-budget-revenue` | 5.1 | State budget revenue from mining sector |
 
@@ -126,7 +126,7 @@ Each monthly PDF (~30 pages) has 5 sections. Find tables by Mongolian heading te
 
 ### Section 3: Mining (Уул уурхай)
 - Table 3.8 — World commodity prices (gold, silver, copper, coal, etc.)
-- Table 3.16/3.17 — Coal production/sale/export by month
+- Table 3.17 — Coal production/sales/export by month
 
 ### Section 4: Petroleum (Газрын тос)
 - Table 4.1/4.2 — Petroleum production and export (barrels)
@@ -146,13 +146,13 @@ All output CSVs must follow the bilingual contract:
 ### Coal Production (`mrpam-coal-production`)
 **EN** (`mrpam-coal-production-en.csv`):
 ```
-year,month,production_kt,export_kt,domestic_kt
-2025,1,4250.5,3100.2,350.1
+year,month,production_kt,sales_kt,export_kt
+2026,6,13036.0,11221.5,10367.4
 ```
 **MN** (`mrpam-coal-production-mn.csv`):
 ```
-он,сар,олборлолт_мян_тн,экспорт_мян_тн,дотоод_мян_тн
-2025,1,4250.5,3100.2,350.1
+он,сар,олборлолт_мян_тн,борлуулалт_мян_тн,экспорт_мян_тн
+2026,6,13036.0,11221.5,10367.4
 ```
 
 ### Petroleum Production (`mrpam-petroleum-production`)
@@ -160,12 +160,32 @@ year,month,production_kt,export_kt,domestic_kt
 **MN**: `он,сар,олборлолт_баррель,экспорт_баррель`
 
 ### Mining Permits (`mrpam-mining-permits`)
-**EN**: `year,month,province,exploration_count,exploration_area_ha,extraction_count,extraction_area_ha`
-**MN**: `он,сар,аймаг,хайгуулын_тоо,хайгуулын_талбай_га,ашиглалтын_тоо,ашиглалтын_талбай_га`
+The PDF reports licensed area in **thousand hectares**, not hectares.
+
+**EN**: `year,month,province,total_count,total_area_kha,extraction_count,extraction_area_kha,exploration_count,exploration_area_kha`
+**MN**: `он,сар,аймаг,нийт_тоо,нийт_талбай_мян_га,ашиглалтын_тоо,ашиглалтын_талбай_мян_га,хайгуулын_тоо,хайгуулын_талбай_мян_га`
 
 ### Commodity Prices (`mrpam-commodity-prices`)
 **EN**: `year,month,commodity,price,unit,source`
 **MN**: `он,сар,бараа,үнэ,нэгж,эх_үүсвэр`
+
+### Fuel Prices (`mrpam-fuel-prices`)
+**EN**: `year,month,province,ai92_price,ai92_euro5_price,ai95_price,diesel_price,diesel_euro5_price`
+**MN**: `он,сар,аймаг,аи92_үнэ,аи92_евро5_үнэ,аи95_үнэ,дизель_үнэ,дизель_евро5_үнэ`
+
+### Petroleum Imports (`mrpam-petroleum-imports`)
+**EN**: `year,month,product,volume_t`
+**MN**: `он,сар,бүтээгдэхүүн,хэмжээ_тн`
+
+The nine 2026 product positions are Total, AI-92, AI-92 Euro-5, AI-95,
+diesel, diesel Euro-5, jet fuel TS-1, LPG, and Other. Empty/`-` cells must
+remain empty; never collapse them before assigning product labels.
+
+### Budget Revenue (`mrpam-budget-revenue`)
+Table 5.1 reports **million MNT** (`сая төгрөг`), not billion MNT.
+
+**EN**: `year,month,revenue_type,plan_mln_mnt,actual_mln_mnt,pct_of_plan`
+**MN**: `он,сар,орлогын_төрөл,төлөвлөгөө_сая_төг,гүйцэтгэл_сая_төг,хувь`
 
 ### Rules
 - `date` columns: ISO format `YYYY-MM-DD` or separate `year`/`month` columns
@@ -173,6 +193,9 @@ year,month,production_kt,export_kt,domestic_kt
 - EN CSV: English headers + English categorical values
 - MN CSV: Mongolian headers + Mongolian categorical values
 - Numeric values MUST be identical in both CSVs
+- English CSV categorical values (province, commodity, product, unit, and
+  revenue type) MUST be translated; Mongolian CSV categories retain the source
+  wording
 
 ---
 

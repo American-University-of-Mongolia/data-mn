@@ -1,0 +1,11 @@
+{
+  "dataset_id": "gdp-real",
+  "version": 2,
+  "fetched_at": "2026-07-27T11:38:37.657033+00:00",
+  "source_updated_at": "2026-04-20T16:32:03",
+  "files": [
+    "gdp-real-en.csv",
+    "gdp-real-mn.csv",
+    "gdp-real.xlsx"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia Services Trade Balance (2009-2025). Monthly balance including transport, tourism, and other services in million USD.",
+  "description": "Mongolia Services Trade Balance (2009-2026). Monthly balance including transport, tourism, and other services in million USD.",
   "data": {
     "url": "/datasets/bop-services-balance-en.csv",
     "format": {

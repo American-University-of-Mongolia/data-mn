@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia Personal Remittances (2009-2025). Monthly personal transfers from Mongolians abroad.",
+  "description": "Mongolia Personal Remittances (2009-2026). Monthly personal transfers from Mongolians abroad.",
   "data": {
     "url": "/datasets/bop-remittances-en.csv",
     "format": {

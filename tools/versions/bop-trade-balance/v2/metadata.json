@@ -1,0 +1,11 @@
+{
+  "dataset_id": "bop-trade-balance",
+  "version": 2,
+  "fetched_at": "2026-07-27T11:38:37.659084+00:00",
+  "source_updated_at": "2026-07-08T15:25:08",
+  "files": [
+    "bop-trade-balance-en.csv",
+    "bop-trade-balance-mn.csv",
+    "bop-trade-balance.xlsx"
+  ]
+}

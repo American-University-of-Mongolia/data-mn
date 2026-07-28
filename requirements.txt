@@ -12,6 +12,7 @@
 requests>=2.31.0          # HTTP client for API calls
 pandas>=2.1.0             # Data manipulation and CSV handling
 openpyxl>=3.1.0           # Excel file support (pandas uses this for .xlsx)
+PyYAML>=6.0               # MDX frontmatter validation
 
 # PDF extraction (for MRPAM and other PDF sources)
 pdfplumber>=0.10.0        # PDF table extraction

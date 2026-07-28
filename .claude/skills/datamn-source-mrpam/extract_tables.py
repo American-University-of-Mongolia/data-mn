@@ -20,6 +20,7 @@ import argparse
 import re
 import sys
 from pathlib import Path
+from urllib.parse import unquote
 
 import pandas as pd
 import pdfplumber
@@ -43,13 +44,82 @@ _PROV_PREFIXES = (
     "Төв", "Увс", "Улаанбаатар", "Улсын", "УЛСЫН", "Ховд", "Хөвс", "Хэнтий",
 )
 
-# Known revenue types for budget revenue table (5.1)
-_BUDGET_REV_TYPES = [
-    "Ашигт малтмалын нөөц ашигласны төлбөр",
-    "Газрын тосны нөөц ашигласны төлбөр",
-    "Аж ахуйн нэгжийн орлогын татвар",
-    "Нийт",
-]
+_PROVINCE_MN_EN = {
+    "Архангай": "Arkhangai", "Баян-Өлгий": "Bayan-Ulgii",
+    "Баянхонгор": "Bayankhongor", "Булган": "Bulgan",
+    "Говь-Алтай": "Govi-Altai", "Говьсүмбэр": "Govisumber",
+    "Дархан-Уул": "Darkhan-Uul", "Дорноговь": "Dornogovi",
+    "Дорнод": "Dornod", "Дундговь": "Dundgovi", "Завхан": "Zavkhan",
+    "Орхон": "Orkhon", "Өвөрхангай": "Uvurkhangai",
+    "Өмнөговь": "Umnugovi", "Сүхбаатар": "Sukhbaatar",
+    "Сэлэнгэ": "Selenge", "Төв": "Tuv", "Увс": "Uvs",
+    "Улаанбаатар": "Ulaanbaatar", "Улсын дундаж": "National average",
+    "Ховд": "Khovd", "Хөвсгөл": "Khuvsgul", "Хэнтий": "Khentii",
+}
+
+_PROVINCE_EN_MN = {name_en: name_mn for name_mn, name_en in _PROVINCE_MN_EN.items()}
+_PROVINCE_EN_MN.update({
+    "Darkhan Uul": "Дархан-Уул",
+    "Zavhan": "Завхан",
+})
+
+_COMMODITY_MN_EN = {
+    "Алт": "Gold", "Мөнгө": "Silver", "Зэс": "Copper", "Цайр": "Zinc",
+    "Хар тугалга": "Lead", "Цагаан тугалга": "Tin",
+    "Молибдени": "Molybdenum", "Манган, 36%": "Manganese, 36%",
+    "Гянтболд, 99%": "Tungsten, 99%", "Гянтболд, 65%": "Tungsten, 65%",
+    "Төмөр, 56% хүдэр": "Iron ore, 56%",
+    "Төмөр, 60% баяжмал": "Iron concentrate, 60%",
+    "Жонш, баяжмал ФФ-97": "Fluorspar concentrate FF-97",
+    "Жонш, хүдэр ФК-85": "Fluorspar ore FK-85", "Уран": "Uranium",
+}
+
+_COMMODITY_ALIASES_MN = {
+    **{name: name for name in _COMMODITY_MN_EN},
+    **{name_en: name_mn for name_mn, name_en in _COMMODITY_MN_EN.items()},
+    # The August 2023 report is available only in English and uses these
+    # source-specific labels.
+    "Blue lead": "Хар тугалга",
+    "Manganese 36%": "Манган, 36%",
+    "Iron ore 56%": "Төмөр, 56% хүдэр",
+    "Iron ore 60% concentrate": "Төмөр, 60% баяжмал",
+    "Fluorite concentrate AG-97": "Жонш, баяжмал ФФ-97",
+    "Fluorite ore MG-85": "Жонш, хүдэр ФК-85",
+}
+
+_UNIT_ALIASES_MN = {
+    "ам.долл/унци": "ам.долл/унци",
+    "$/ounce": "ам.долл/унци",
+    "USD/troy oz": "ам.долл/унци",
+    "ам.долл/тн": "ам.долл/тн",
+    "$/tons": "ам.долл/тн",
+    "USD/tonne": "ам.долл/тн",
+    "ам.долл/кг": "ам.долл/кг",
+    "$/kg": "ам.долл/кг",
+    "USD/kg": "ам.долл/кг",
+}
+
+_PRODUCT_MN_EN = {
+    "Нийт": "Total",
+    "Автобензин А-80": "Gasoline A-80",
+    "Автобензин АИ-92": "Gasoline AI-92",
+    "АИ-92 /Евро-5/": "Gasoline AI-92 Euro-5",
+    "Автобензин АИ-95": "Gasoline AI-95",
+    "Автобензин АИ-98": "Gasoline AI-98",
+    "Дизелийн түлш": "Diesel fuel", "Дизель /Евро-5/": "Diesel Euro-5",
+    "Онгоцны түлш ТС-1": "Jet fuel TS-1",
+    "Шингэрүүлсэн шатдаг хий": "Liquefied petroleum gas", "Бусад": "Other",
+}
+
+_REVENUE_MN_EN = {
+    "БҮГД": "Total",
+    "Ашигт малтмалын тусгай зөвшөөрлийн төлбөр": "Mineral licence fees",
+    "Улсын төсвийн хөрөнгөөр хайгуул хийсэн ордын нөхөн төлбөр":
+        "Reimbursement for state-funded exploration",
+    "Газрын тосны экспорт": "Petroleum exports",
+    "Бусад орлого": "Other revenue",
+    "Сонгон шалгаруулалт": "Tender revenue",
+}
 
 # ─── Cleaning Helpers ─────────────────────────────────────────────────────────
 
@@ -172,6 +242,39 @@ def _find_roman_line(text: str, year: int, month: int) -> str | None:
     return None
 
 
+def _normalize_province(value: str) -> str:
+    """Return the canonical Mongolian province label used by data.mn."""
+    value = re.sub(r"\s+\d[\d,.\s%]*$", "", clean_cell(value) or "")
+    # The 2026 PDFs inconsistently substitute Latin A for Cyrillic А.
+    value = value.replace("Говь-Aлтай", "Говь-Алтай")
+    return value
+
+
+def _row_words(page, prefix: str) -> list[dict] | None:
+    """Return words on the same visual row as *prefix*.
+
+    Coordinate extraction retains empty PDF table cells, unlike extract_text,
+    and also captures values wrapped a few pixels below their logical row.
+    """
+    words = page.extract_words()
+    for word in words:
+        if word["text"] == prefix:
+            top = word["top"]
+            return [w for w in words if abs(w["top"] - top) <= 7]
+    return None
+
+
+def _value_in_x_band(words: list[dict], left: float, right: float) -> float | None:
+    candidates = [w for w in words if left <= w["x0"] < right]
+    if not candidates:
+        return None
+    # Wrapped values can share a band with a percentage. Prefer a plain number.
+    for word in sorted(candidates, key=lambda w: abs(w["x0"] - (left + right) / 2)):
+        if "%" not in word["text"]:
+            return to_float(word["text"])
+    return None
+
+
 # ─── Dataset Extractors ───────────────────────────────────────────────────────
 
 
@@ -196,7 +299,10 @@ def extract_coal_production(pdf, year: int, month: int) -> pd.DataFrame | None:
         # Strip the 'year.ROMAN' prefix before parsing numbers
         rest = line[len(target):].strip()
         nums = extract_price_nums(rest)
-        if len(nums) >= 3:
+        # Other pages containing "нүүрс" can have the same year/month prefix
+        # followed by additional commodity-price or stripping-volume values.
+        # Table 3.16/3.17's monthly coal row has exactly three measures.
+        if len(nums) == 3:
             return pd.DataFrame([{
                 "year": year, "month": month,
                 "production_kt": nums[0],
@@ -214,7 +320,15 @@ def extract_petroleum_production(pdf, year: int, month: int) -> pd.DataFrame | N
 
     Returns DataFrame: year, month, production_barrels, export_barrels
     """
-    pages = find_pages_with_keyword(pdf, ["газрын тосны олборлолт", "баррель"])
+    pages = find_pages_with_keyword(
+        pdf,
+        [
+            "газрын тосны олборлолт",
+            "баррель",
+            "petroleum production and export",
+            "barrel",
+        ],
+    )
     roman = INT_TO_ROMAN[month]
     target = f"{year}.{roman}"
 
@@ -225,11 +339,14 @@ def extract_petroleum_production(pdf, year: int, month: int) -> pd.DataFrame | N
             continue
         rest = line[len(target):].strip()
         nums = extract_price_nums(rest)
-        if len(nums) >= 2:
+        if nums:
             return pd.DataFrame([{
                 "year": year, "month": month,
                 "production_barrels": nums[0],
-                "export_barrels": nums[1],
+                # Early-2022 reports use "-" while petroleum exports were
+                # suspended. Preserve that source null instead of dropping the
+                # otherwise valid production observation.
+                "export_barrels": nums[1] if len(nums) >= 2 else None,
             }])
     return None
 
@@ -238,8 +355,7 @@ def extract_mining_permits(pdf, year: int, month: int) -> pd.DataFrame | None:
     """
     Extract mining permits by province (Table 1.1).
 
-    Province names are in a left-side text column (x<150) separate from the
-    bordered table. We align them to table rows by matching y-coordinates.
+    The source reports area in thousand hectares (мян.га), not hectares.
 
     Returns DataFrame: year, month, province, total_count, total_area_kha,
                        extraction_count, extraction_area_kha,
@@ -247,60 +363,54 @@ def extract_mining_permits(pdf, year: int, month: int) -> pd.DataFrame | None:
     """
     pages = find_pages_with_keyword(pdf, ["тусгай зөвшөөрөл", "1.1", "хайгуулын"])
     if not pages:
+        # The August 2023 report is only available in English.
+        pages = find_pages_with_keyword(
+            pdf, ["valid licenses", "1.1", "exploration"]
+        )
+    if not pages:
         return None
 
     for pg_idx in pages:
-        page = pdf.pages[pg_idx]
-
-        # --- Step 1: extract province names from left text column ---
-        words = page.extract_words()
-        province_words: dict[float, str] = {}
-        for w in words:
-            if w["x0"] < 150 and w["top"] > 200:
-                y = round(w["top"])
-                existing = province_words.get(y, "")
-                province_words[y] = (existing + " " + w["text"]).strip()
-
-        known_prefixes = (
-            "Архангай", "Баян", "Булган", "Говь", "Дархан", "Дорно",
-            "Дунд", "Завхан", "Орхон", "Өвөр", "Өмнө", "Сүх", "Сэлэн",
-            "Төв", "Увс", "Улаанбаатар", "Ховд", "Хөвс", "Хэнтий",
-        )
-        province_ys = sorted(
-            [(y, name) for y, name in province_words.items()
-             if any(name.startswith(p) for p in known_prefixes)],
-            key=lambda x: x[0],
-        )
-
-        # --- Step 2: extract table rows ---
-        raw = extract_largest_table(page)
-        if not raw:
-            continue
-
-        data_rows = []
-        for row in raw:
-            nums = [to_float(c) for c in row if to_float(c) is not None]
-            if len(nums) >= 4:
-                data_rows.append(nums)
-
-        if not data_rows or not province_ys:
-            continue
-
-        if len(data_rows) > len(province_ys):
-            data_rows = data_rows[len(data_rows) - len(province_ys):]
-
+        text = pdf.pages[pg_idx].extract_text() or ""
         rows_out = []
-        for (_, province), nums in zip(province_ys, data_rows):
+        for line in text.splitlines():
+            stripped = line.strip()
+            is_mongolian = any(stripped.startswith(p) for p in _PROV_PREFIXES)
+            english_name = next(
+                (
+                    name
+                    for name in sorted(_PROVINCE_EN_MN, key=len, reverse=True)
+                    if stripped.startswith(f"{name} ")
+                ),
+                None,
+            )
+            if not is_mongolian and english_name is None:
+                continue
+            province_match = re.match(r"^(.+?)\s+(?=\d)", stripped)
+            if not province_match:
+                continue
+            province = (
+                _PROVINCE_EN_MN[english_name]
+                if english_name is not None
+                else _normalize_province(province_match.group(1))
+            )
+            if province not in _PROVINCE_MN_EN or province == "Улсын дундаж":
+                continue
+            nums = extract_price_nums(stripped[province_match.end():])
+            # Percentages are skipped, leaving count/area for total, mining,
+            # and exploration in source order.
+            if len(nums) < 6:
+                continue
             rows_out.append({
                 "year": year,
                 "month": month,
                 "province": province,
-                "total_count": int(nums[0]) if len(nums) > 0 else None,
-                "total_area_kha": nums[1] if len(nums) > 1 else None,
-                "extraction_count": int(nums[3]) if len(nums) > 3 else None,
-                "extraction_area_kha": nums[4] if len(nums) > 4 else None,
-                "exploration_count": int(nums[6]) if len(nums) > 6 else None,
-                "exploration_area_kha": nums[7] if len(nums) > 7 else None,
+                "total_count": int(nums[0]),
+                "total_area_kha": nums[1],
+                "extraction_count": int(nums[2]),
+                "extraction_area_kha": nums[3],
+                "exploration_count": int(nums[4]),
+                "exploration_area_kha": nums[5],
             })
 
         if rows_out:
@@ -335,21 +445,34 @@ def extract_commodity_prices(pdf, year: int, month: int) -> pd.DataFrame | None:
             if not unit_match:
                 continue
 
-            nums = extract_price_nums(stripped)
-            if len(nums) < 2:
+            # The final cell before the percentage columns is the current
+            # report-month price. Keep missing values as missing instead of
+            # accidentally falling back to the preceding month's price.
+            price_tokens = []
+            for token in stripped[unit_match.end():].split():
+                if "%" in token:
+                    break
+                price_tokens.append(token)
+            if not price_tokens:
+                continue
+            current_price = to_float(price_tokens[-1])
+            if current_price is None:
                 continue
 
             # Commodity name = text before the unit token
-            commodity = stripped[: unit_match.start()].strip()
-            if not commodity:
+            commodity = _COMMODITY_ALIASES_MN.get(
+                stripped[: unit_match.start()].strip()
+            )
+            unit = _UNIT_ALIASES_MN.get(unit_match.group(0))
+            if not commodity or not unit:
                 continue
 
             rows_out.append({
                 "year": year,
                 "month": month,
                 "commodity": commodity,
-                "price": nums[-1],  # last number = most recent (current month) price
-                "unit": unit_match.group(0),
+                "price": current_price,
+                "unit": unit,
             })
 
         if rows_out:
@@ -362,79 +485,39 @@ def extract_fuel_prices(pdf, year: int, month: int) -> pd.DataFrame | None:
     """
     Extract retail fuel prices by province (Table 4.6).
 
-    Text rows: '{province}  prev_A80  curr_A80  prev_AI92  curr_AI92  prev_AI95  curr_AI95  prev_diesel  curr_diesel'
-    Current prices sit at odd indices [1, 3, 5, 7] of the 8 non-% numbers.
+    Table 4.6 has five product groups with prior price, current price, and
+    change. Coordinate bands preserve missing values represented by '-'.
 
-    Some reports split 'УЛСЫН ДУНДАЖ' (national average) across two lines:
-    province name on one line, numbers on the next. Handled via lookahead.
-
-    Returns DataFrame: year, month, province, a80_price, ai92_price, ai95_price, diesel_price
+    Returns current prices for AI-92, AI-92 Euro-5, AI-95, diesel, and diesel
+    Euro-5 in MNT/litre.
     """
-    pages = find_pages_with_keyword(pdf, ["шатахуун", "4.6", "бензин", "дизель"])
+    pages = find_pages_with_keyword(
+        pdf, ["4.6. ГАЗРЫН ТОСНЫ БҮТЭЭГДЭХҮҮНИЙ ЖИЖИГЛЭН"]
+    )
     if not pages:
         return None
 
     for pg_idx in pages:
-        text = pdf.pages[pg_idx].extract_text() or ""
+        page = pdf.pages[pg_idx]
+        text = page.extract_text() or ""
+        if "4.6." not in text:
+            continue
         rows_out = []
-        lines = text.splitlines()
-
-        i = 0
-        while i < len(lines):
-            line = lines[i].strip()
-
-            starts_prov = any(line.startswith(p) for p in _PROV_PREFIXES)
-            if not starts_prov:
-                i += 1
+        for province in _PROVINCE_MN_EN:
+            if province == "Улсын дундаж":
                 continue
-
-            nums = extract_price_nums(line)
-
-            # Handle split lines: province name only, numbers on next line
-            if len(nums) < 6 and (i + 1) < len(lines):
-                next_nums = extract_price_nums(lines[i + 1].strip())
-                if len(next_nums) >= 6:
-                    # Province name is current line (stripped of any trailing text)
-                    province = re.sub(r"\s+[\d,.].*", "", line).strip() or line
-                    nums = next_nums
-                    i += 2
-                else:
-                    i += 1
-                    continue
-            elif len(nums) >= 6:
-                # Province name + numbers on same line
-                m = re.match(r"^([^\d]+)", line)
-                province = m.group(1).strip() if m else line
-                i += 1
-            else:
-                i += 1
+            lookup = "Говь-Aлтай" if province == "Говь-Алтай" else province
+            words = _row_words(page, lookup)
+            if not words:
                 continue
-
-            # Normalize national average label; skip region subtotals
-            if province.upper().startswith("УЛСЫН"):
-                province = "Улсын дундаж"
-            if "бүс" in province.lower():
-                continue  # skip region subtotals (Баруун бүс, Хангайн бүс, etc.)
-
-            if len(nums) >= 8:
-                rows_out.append({
-                    "year": year, "month": month,
-                    "province": province,
-                    "a80_price": nums[1],
-                    "ai92_price": nums[3],
-                    "ai95_price": nums[5],
-                    "diesel_price": nums[7],
-                })
-            elif len(nums) >= 6:
-                # Some reports may lack A80 column
-                rows_out.append({
-                    "year": year, "month": month,
-                    "province": province,
-                    "a80_price": None,
-                    "ai92_price": nums[1],
-                    "ai95_price": nums[3],
-                    "diesel_price": nums[5],
-                })
+            rows_out.append({
+                "year": year, "month": month, "province": province,
+                "ai92_price": _value_in_x_band(words, 130, 165),
+                "ai92_euro5_price": _value_in_x_band(words, 220, 255),
+                "ai95_price": _value_in_x_band(words, 310, 340),
+                "diesel_price": _value_in_x_band(words, 400, 430),
+                "diesel_euro5_price": _value_in_x_band(words, 495, 530),
+            })
 
         # The province table always has 20+ rows (21 aimags + UB + national avg).
         # Fewer rows means we matched a wrong page — keep searching.
@@ -449,39 +532,85 @@ def extract_petroleum_imports(pdf, year: int, month: int) -> pd.DataFrame | None
     Extract petroleum product imports (Table 4.3).
 
     Rows use '{year}.{ROMAN}' prefix (same as coal/petroleum production tables).
-    2024+ columns: БҮГД, А-80, АИ-92, АИ-95, Дизель, Онгоцны (ТС-1), LPG, Бусад
+    The source schema changed twice:
+      * through 2024: total, A-80, AI-92, AI-95, AI-98, diesel, jet, LPG, other
+      * 2025 through 2026-01: the same schema without AI-98
+      * from 2026-02: total, AI-92, AI-92 Euro-5, AI-95, diesel,
+        diesel Euro-5, jet, LPG, other
+
+    Values are read from fixed x-coordinate bands so a blank or dash remains a
+    null in its product position instead of shifting every later product.
 
     Returns DataFrame: year, month, product, volume_t
     """
     roman = INT_TO_ROMAN[month]
     target = f"{year}.{roman}"
 
-    # Product names by position (Mongolian) — 2024+ format (8 cols including total)
-    # Note: unit is tonnes (тонн), NOT thousand tonnes
-    products_8 = [
-        "Нийт", "А-80 бензин", "АИ-92 бензин", "АИ-95 бензин",
-        "Дизелийн түлш", "Онгоцны түлш ТС-1", "Шингэрүүлсэн шатдаг хий", "Бусад",
-    ]
-
-    pages = find_pages_with_keyword(pdf, ["газрын тосны бүтээгдэхүүний импорт"])
+    pages = find_pages_with_keyword(
+        pdf,
+        ["газрын тосны бүтээгдэхүүний импорт", "petroleum products importing"],
+    )
     if not pages:
         return None
 
     for pg_idx in pages:
         text = pdf.pages[pg_idx].extract_text() or ""
-        line = _find_roman_line(text, year, month)
-        if not line:
-            continue
+        page = pdf.pages[pg_idx]
+        if "Евро-5" in text:
+            products = [
+                "Нийт", "Автобензин АИ-92", "АИ-92 /Евро-5/",
+                "Автобензин АИ-95", "Дизелийн түлш", "Дизель /Евро-5/",
+                "Онгоцны түлш ТС-1", "Шингэрүүлсэн шатдаг хий", "Бусад",
+            ]
+            bands = [
+                (65, 125), (125, 185), (185, 240), (240, 300), (300, 360),
+                (360, 420), (420, 480), (480, 525), (525, 580),
+            ]
+        elif not any("98" in line for line in text.splitlines()[:8]):
+            products = [
+                "Нийт", "Автобензин А-80", "Автобензин АИ-92",
+                "Автобензин АИ-95", "Дизелийн түлш",
+                "Онгоцны түлш ТС-1", "Шингэрүүлсэн шатдаг хий", "Бусад",
+            ]
+            bands = [
+                (75, 135), (135, 195), (195, 250), (250, 310),
+                (310, 375), (375, 425), (425, 475), (475, 530),
+            ]
+        else:
+            products = [
+                "Нийт", "Автобензин А-80", "Автобензин АИ-92",
+                "Автобензин АИ-95", "Автобензин АИ-98",
+                "Дизелийн түлш", "Онгоцны түлш ТС-1",
+                "Шингэрүүлсэн шатдаг хий", "Бусад",
+            ]
+            bands = [
+                (75, 135), (135, 195), (195, 250), (250, 310), (310, 360),
+                (360, 415), (415, 465), (465, 510), (510, 565),
+            ]
 
-        rest = line[len(target):].strip()
-        nums = extract_price_nums(rest)
-        if len(nums) < 2:
-            continue
-
-        products = products_8[:len(nums)]
+        # Most reports include an explicit dash for missing values, so the text
+        # row is the clearest and most portable representation. The 2026-06
+        # report omits its empty AI-95 cell entirely; in that case fall back to
+        # coordinates to preserve the empty position.
+        row_line = next(
+            (
+                line.strip()
+                for line in text.splitlines()
+                if re.match(rf"^{re.escape(target)}\s+", line.strip())
+            ),
+            None,
+        )
+        tokens = row_line.split()[1:] if row_line else []
+        if len(tokens) == len(products):
+            volumes = [to_float(token) for token in tokens]
+        else:
+            words = _row_words(page, target)
+            if not words:
+                continue
+            volumes = [_value_in_x_band(words, left, right) for left, right in bands]
         rows = [
             {"year": year, "month": month, "product": prod, "volume_t": vol}
-            for prod, vol in zip(products, nums)
+            for prod, vol in zip(products, volumes)
         ]
         return pd.DataFrame(rows)
 
@@ -622,10 +751,11 @@ MN_COLUMNS = {
     },
     "mrpam-fuel-prices": {
         "year": "он", "month": "сар", "province": "аймаг",
-        "a80_price": "а80_үнэ",
         "ai92_price": "аи92_үнэ",
+        "ai92_euro5_price": "аи92_евро5_үнэ",
         "ai95_price": "аи95_үнэ",
         "diesel_price": "дизель_үнэ",
+        "diesel_euro5_price": "дизель_евро5_үнэ",
     },
     "mrpam-petroleum-imports": {
         "year": "он", "month": "сар",
@@ -640,6 +770,20 @@ MN_COLUMNS = {
     },
 }
 
+CATEGORY_TRANSLATIONS = {
+    "mrpam-mining-permits": {"province": _PROVINCE_MN_EN},
+    "mrpam-commodity-prices": {
+        "commodity": _COMMODITY_MN_EN,
+        "unit": {
+            "ам.долл/унци": "USD/troy oz", "ам.долл/тн": "USD/tonne",
+            "ам.долл/кг": "USD/kg",
+        },
+    },
+    "mrpam-fuel-prices": {"province": _PROVINCE_MN_EN},
+    "mrpam-petroleum-imports": {"product": _PRODUCT_MN_EN},
+    "mrpam-budget-revenue": {"revenue_type": _REVENUE_MN_EN},
+}
+
 
 # ─── Core Logic ───────────────────────────────────────────────────────────────
 
@@ -652,12 +796,12 @@ def parse_year_month_from_filename(filename: str) -> tuple[int, int] | None:
       2021-01-mon.pdf
       2022-01.pdf
     """
-    m = re.search(r"(\d{4})\.(\d{1,2})[.\-]", filename)
+    filename = unquote(filename)
+    m = re.search(r"(?<!\d)(\d{4})[.\-_ ](\d{1,2})(?!\d)", filename)
     if m:
-        return int(m.group(1)), int(m.group(2))
-    m = re.search(r"(\d{4})-(\d{1,2})", filename)
-    if m:
-        return int(m.group(1)), int(m.group(2))
+        year, month = int(m.group(1)), int(m.group(2))
+        if 1 <= month <= 12:
+            return year, month
     return None
 
 
@@ -682,19 +826,36 @@ def extract_dataset_from_pdf(pdf_path: Path, dataset_id: str) -> pd.DataFrame | 
 
 
 def collect_pdfs_for_year(year: int, cache_dir: Path | None = None) -> list[Path]:
-    """Return all cached PDFs for a given year, sorted by filename."""
+    """Return one cached PDF per report month, sorted chronologically."""
     year_dir = (cache_dir or CACHE_DIR) / str(year)
     if not year_dir.exists():
         return []
-    return sorted(year_dir.glob("*.pdf"))
+    by_month: dict[int, Path] = {}
+    for path in sorted(year_dir.glob("*.pdf")):
+        parsed = parse_year_month_from_filename(path.name)
+        if parsed and parsed[0] == year:
+            # Prefer decoded local names when both legacy URL-encoded and
+            # normalized cache entries exist.
+            current = by_month.get(parsed[1])
+            if current is None or ("%" in current.name and "%" not in path.name):
+                by_month[parsed[1]] = path
+    return [by_month[month] for month in sorted(by_month)]
 
 
 def save_bilingual(df_en: pd.DataFrame, dataset_id: str, output_dir: Path):
-    """Save EN and MN CSVs from an English-column DataFrame."""
+    """Save bilingual CSVs, translating categorical values for English."""
     output_dir.mkdir(parents=True, exist_ok=True)
 
     col_map = MN_COLUMNS.get(dataset_id, {})
-    df_mn = df_en.rename(columns=col_map)
+    # Extractors retain source-language categories. Preserve them in MN before
+    # translating the English copy; numeric cells therefore remain identical.
+    df_mn = df_en.rename(columns=col_map).copy()
+    df_en = df_en.copy()
+    for column, translations in CATEGORY_TRANSLATIONS.get(dataset_id, {}).items():
+        if column in df_en:
+            df_en[column] = df_en[column].map(
+                lambda value: translations.get(value, value)
+            )
 
     en_path = output_dir / f"{dataset_id}-en.csv"
     mn_path = output_dir / f"{dataset_id}-mn.csv"

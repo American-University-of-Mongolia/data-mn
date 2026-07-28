@@ -2,46 +2,26 @@
   {
     "en": "Economy",
     "mn": "Эдийн засаг",
-    "count": 15
-  },
-  {
-    "en": "Finance",
-    "mn": "Санхүү",
-    "count": 14
-  },
-  {
-    "en": "Demographics",
-    "mn": "Хүн ам зүй",
-    "count": 13
-  },
-  {
-    "en": "Labor Market",
-    "mn": "Хөдөлмөрийн зах зээл",
-    "count": 12
-  },
-  {
-    "en": "Agriculture",
-    "mn": "Хөдөө аж ахуй",
-    "count": 8
-  },
-  {
-    "en": "Health",
-    "mn": "Эрүүл мэнд",
-    "count": 8
-  },
-  {
-    "en": "Prices & Inflation",
-    "mn": "Үнэ ба инфляци",
-    "count": 8
+    "count": 9
   },
   {
     "en": "Trade",
     "mn": "Худалдаа",
-    "count": 7
+    "count": 8
   },
   {
-    "en": "Household & Income",
-    "mn": "Өрх ба орлого",
+    "en": "Agriculture",
+    "mn": "Хөдөө аж ахуй",
+    "count": 4
+  },
+  {
+    "en": "Demographics",
+    "mn": "Хүн ам зүй",
+    "count": 4
+  },
+  {
+    "en": "Finance",
+    "mn": "Санхүү",
     "count": 4
   },
   {
@@ -55,19 +35,24 @@
     "count": 3
   },
   {
-    "en": "Industry",
-    "mn": "Аж үйлдвэр",
+    "en": "Health",
+    "mn": "Эрүүл мэнд",
     "count": 3
   },
   {
-    "en": "Infrastructure",
-    "mn": "Дэд бүтэц",
+    "en": "Mining",
+    "mn": "Уул уурхай",
     "count": 3
   },
   {
-    "en": "Employment",
-    "mn": "Хөдөлмөр эрхлэлт",
-    "count": 1
+    "en": "Energy",
+    "mn": "Эрчим хүч",
+    "count": 2
+  },
+  {
+    "en": "Mining & Resources",
+    "mn": "Уул уурхай",
+    "count": 2
   },
   {
     "en": "Environment",
@@ -75,8 +60,18 @@
     "count": 1
   },
   {
-    "en": "Public Safety",
-    "mn": "Нийтийн аюулгүй байдал",
+    "en": "Industry",
+    "mn": "Аж үйлдвэр",
+    "count": 1
+  },
+  {
+    "en": "Infrastructure",
+    "mn": "Дэд бүтэц",
+    "count": 1
+  },
+  {
+    "en": "Prices & Inflation",
+    "mn": "Үнэ ба инфляци",
     "count": 1
   }
 ]

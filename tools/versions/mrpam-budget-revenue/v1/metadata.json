@@ -1,0 +1,20 @@
+{
+  "dataset_id": "mrpam-budget-revenue",
+  "version": 1,
+  "created_at": "2026-07-27T14:00:00Z",
+  "data_as_of": "2026-06-30",
+  "coverage_time_start": "2021-01",
+  "coverage_time_end": "2026-06",
+  "coverage_frequency": "monthly",
+  "row_count": 420,
+  "chart_row_count": 66,
+  "data_hash_sha256": "27d30ffe757c732ab31731cc90f8b332efd4a0c42f780034b8e8d5e0fc877699",
+  "source": {
+    "id": "mrpam",
+    "tables": "5.1 / 6.1",
+    "unit": "million MNT",
+    "reports_checked": 66,
+    "manifest": "/tmp/mrpam-report-manifest-2021-2026.json"
+  },
+  "notes": "The chart uses the Total/BҮГД rows. Full downloads preserve all revenue categories and source-null cells."
+}

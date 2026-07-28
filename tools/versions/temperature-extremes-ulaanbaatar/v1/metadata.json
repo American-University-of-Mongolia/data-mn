@@ -1,0 +1,11 @@
+{
+  "dataset_id": "temperature-extremes-ulaanbaatar",
+  "version": 1,
+  "fetched_at": "2026-07-27T11:38:37.662114+00:00",
+  "source_updated_at": "2026-07-22T16:12:00",
+  "files": [
+    "temperature-extremes-ulaanbaatar-en.csv",
+    "temperature-extremes-ulaanbaatar-mn.csv",
+    "temperature-extremes-ulaanbaatar.xlsx"
+  ]
+}

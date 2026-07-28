@@ -11,8 +11,8 @@
 
 - **Table ID**: `DT_NSO_0400_022V1.px`
 - **Sector**: `Labour, business`
-- **Subsector**: `Wages`
-- **API Path**: `/en/NSO/Labour, business/Wages/DT_NSO_0400_022V1.px`
+- **Subsector**: `Wages/MONTHLY AVERAGE NOMINAL WAGES, by division of economic activities`
+- **API Path**: `/en/NSO/Labour, business/Wages/MONTHLY AVERAGE NOMINAL WAGES, by division of economic activities/DT_NSO_0400_022V1.px`
 
 ## Title
 
@@ -61,7 +61,7 @@ Monthly average nominal wage in thousands of MNT (MNT 1000s)
 
 1. Query the table listing endpoint:
    ```
-   GET https://data.1212.mn/api/v1/en/NSO/Labour, business/Wages/
+   GET https://data.1212.mn/api/v1/en/NSO/Labour, business/Wages/MONTHLY AVERAGE NOMINAL WAGES, by division of economic activities/
    ```
 
 2. Find `DT_NSO_0400_022V1.px` in the response
@@ -86,7 +86,7 @@ import requests
 
 BASE_URL = "https://data.1212.mn/api/v1"
 sector = "Labour, business"
-subsector = "Wages"
+subsector = "Wages/MONTHLY AVERAGE NOMINAL WAGES, by division of economic activities"
 table_id = "DT_NSO_0400_022V1.px"
 
 # Fetch in both English and Mongolian

@@ -1,0 +1,11 @@
+{
+  "dataset_id": "gdp-sector-trends",
+  "version": 2,
+  "fetched_at": "2026-07-27T11:38:37.658435+00:00",
+  "source_updated_at": "2026-04-20T16:32:03",
+  "files": [
+    "gdp-sector-trends-en.csv",
+    "gdp-sector-trends-mn.csv",
+    "gdp-sector-trends.xlsx"
+  ]
+}

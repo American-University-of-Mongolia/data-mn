@@ -180,6 +180,7 @@ class VegaValidator:
         self._validate_mark()
         self._validate_encoding()
         self._validate_config()
+        self._validate_number_formats()
         self._validate_best_practices()
         self._validate_brand_compliance()
 
@@ -190,6 +191,27 @@ class VegaValidator:
             self._validate_against_data()
 
         return self.result
+
+    def _validate_number_formats(self):
+        """Reject explicit formats that bypass the site's decimal default."""
+        def walk(value, path='spec'):
+            if isinstance(value, dict):
+                for key, child in value.items():
+                    child_path = f"{path}.{key}"
+                    if key == 'format' and isinstance(child, str):
+                        # D3/Vega exponential format types end in e/E. Time
+                        # formats (for example %Y) and SI formats (.2s) are OK.
+                        if child.lower().endswith('e') and '%' not in child:
+                            self.result.add_error(
+                                f"{child_path} uses scientific notation ({child!r}); "
+                                "use ',' or a fixed-point format instead"
+                            )
+                    walk(child, child_path)
+            elif isinstance(value, list):
+                for index, child in enumerate(value):
+                    walk(child, f"{path}[{index}]")
+
+        walk(self.spec)
 
     def _validate_schema(self):
         """Check $schema is present and valid"""

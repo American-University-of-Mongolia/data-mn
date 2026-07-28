@@ -101,6 +101,9 @@ async function exportChart(specPath, outputPath) {
       ...voxTheme,
       // Apply spec's own config on top
       ...existingConfig,
+      // Match the browser renderer: quantitative labels must remain ordinary
+      // decimal numbers rather than Vega's automatic scientific notation.
+      numberFormat: ',',
       // Merge nested objects properly
       axis: {
         ...voxTheme.axis,

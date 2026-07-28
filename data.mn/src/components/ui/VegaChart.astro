@@ -156,6 +156,9 @@ const isInlineSpec = typeof spec === 'object';
             padding: {"left": 5, "right": 5, "top": 5, "bottom": 0},
             autosize: {"type": "fit", "contains": "padding"},
             config: Object.assign({}, existingConfig, {
+              // Never let Vega's default general formatter switch large or
+              // small quantitative values to scientific notation.
+              numberFormat: ",",
               legend: Object.assign({}, existingConfig.legend || {}, {
                 columns: legendColumns,
                 labelLimit: legendLabelLimit

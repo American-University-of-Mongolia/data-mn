@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia National Unemployment Rate (2009-2024)",
+  "description": "Mongolia National Unemployment Rate (2009-2025)",
   "data": {
     "url": "/datasets/unemployment-rate-national-en.csv",
     "format": {

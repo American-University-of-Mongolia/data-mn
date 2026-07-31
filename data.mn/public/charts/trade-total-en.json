@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia Total Foreign Trade (1924-2024)",
+  "description": "Mongolia Total Foreign Trade (1924-2025)",
   "data": {
     "url": "/datasets/trade-total-en.csv",
     "format": {

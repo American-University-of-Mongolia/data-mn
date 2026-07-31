@@ -1,0 +1,12 @@
+{
+  "dataset_id": "population-total-mongolia",
+  "version": 1,
+  "fetched_at": "2026-07-31T04:59:23.634248+00:00",
+  "data_as_of": "2025",
+  "source_updated_at": "2026-04-10T11:59:13",
+  "files": [
+    "population-total-mongolia-en.csv",
+    "population-total-mongolia-mn.csv",
+    "population-total-mongolia.xlsx"
+  ]
+}

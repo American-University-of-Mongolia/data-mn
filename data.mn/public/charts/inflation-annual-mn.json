@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын жилийн инфляцийн түвшин 1991-2024, оны эцсийн байдлаар.",
+  "description": "Монгол Улсын жилийн инфляцийн түвшин 1991-2025, оны эцсийн байдлаар.",
   "data": {
     "url": "/datasets/inflation-annual-mn.csv",
     "format": {

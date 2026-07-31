@@ -12,7 +12,7 @@
   {
     "en": "Agriculture",
     "mn": "Хөдөө аж ахуй",
-    "count": 4
+    "count": 5
   },
   {
     "en": "Demographics",
@@ -40,6 +40,11 @@
     "count": 3
   },
   {
+    "en": "Labor Market",
+    "mn": "Хөдөлмөрийн зах зээл",
+    "count": 3
+  },
+  {
     "en": "Mining",
     "mn": "Уул уурхай",
     "count": 3
@@ -57,6 +62,11 @@
   {
     "en": "Environment",
     "mn": "Байгаль орчин",
+    "count": 1
+  },
+  {
+    "en": "Household & Income",
+    "mn": "Өрх ба орлого",
     "count": 1
   },
   {

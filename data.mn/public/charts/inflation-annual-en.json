@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia's annual inflation rate from 1991 to 2024, measured at the end of each year.",
+  "description": "Mongolia's annual inflation rate from 1991 to 2025, measured at the end of each year.",
   "data": {
     "url": "/datasets/inflation-annual-en.csv",
     "format": {

@@ -1,0 +1,13 @@
+{
+  "dataset_id": "livestock-total",
+  "version": 2,
+  "data_as_of": "2025",
+  "source_updated_at": "2026-07-21T17:37:54",
+  "files": [
+    "livestock-total-en.csv",
+    "livestock-total-mn.csv",
+    "livestock-total.xlsx",
+    "livestock-total-en.xlsx",
+    "livestock-total-mn.xlsx"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "dataset_id": "unemployment-rate-national",
+  "version": 2,
+  "data_as_of": "2025",
+  "source_updated_at": "2026-06-03T16:22:42",
+  "files": [
+    "unemployment-rate-national-en.csv",
+    "unemployment-rate-national-mn.csv",
+    "unemployment-rate-national-en.xlsx",
+    "unemployment-rate-national-mn.xlsx"
+  ]
+}

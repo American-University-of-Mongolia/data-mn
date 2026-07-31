@@ -1,0 +1,16 @@
+[Unit]
+Description=data.mn headless Codex dataset freshness audit
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ritz
+WorkingDirectory=/home/ritz/projects/data
+ExecStart=/usr/bin/python3 tools/scripts/run_scheduled_dataset_audit.py
+StandardOutput=journal
+StandardError=journal
+TimeoutStartSec=15000
+
+[Install]
+WantedBy=multi-user.target

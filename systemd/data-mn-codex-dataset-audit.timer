@@ -1,0 +1,12 @@
+[Unit]
+Description=Run the data.mn Codex dataset audit every 14 days
+
+[Timer]
+OnActiveSec=30min
+OnUnitActiveSec=14d
+Persistent=true
+RandomizedDelaySec=30min
+Unit=data-mn-codex-dataset-audit.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,14 @@
+{
+  "dataset_id": "household-income-total",
+  "version": 2,
+  "fetched_at": "2026-07-31T04:49:49.561576+00:00",
+  "data_as_of": "2025",
+  "source_updated_at": "2026-05-29T12:44:23",
+  "files": [
+    "household-income-total-en.csv",
+    "household-income-total-mn.csv",
+    "household-income-total-en.xlsx",
+    "household-income-total-mn.xlsx",
+    "household-income-total.xlsx"
+  ]
+}

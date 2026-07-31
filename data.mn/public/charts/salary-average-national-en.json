@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia average monthly salary trend (2001-2024)",
+  "description": "Mongolia average monthly salary trend (2001-2025)",
   "data": {
     "url": "/datasets/salary-average-national-en.csv",
     "format": {

@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Total population of Mongolia from 1956 to 2024. Shows long-term demographic trends from socialist era to present.",
+  "description": "Total population of Mongolia from 1956 to 2025. Shows long-term demographic trends from socialist era to present.",
   "data": {
     "url": "/datasets/population-total-mongolia-en.csv",
     "format": {

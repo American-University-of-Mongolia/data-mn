@@ -1,0 +1,12 @@
+{
+  "dataset_id": "labor-participation-national",
+  "version": 2,
+  "fetched_at": "2026-07-31T04:49:48.940956+00:00",
+  "data_as_of": "2025",
+  "source_updated_at": "2026-05-29T14:41:06",
+  "files": [
+    "labor-participation-national-en.csv",
+    "labor-participation-national-mn.csv",
+    "labor-participation-national.xlsx"
+  ]
+}

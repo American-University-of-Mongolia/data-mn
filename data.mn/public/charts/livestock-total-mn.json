@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын нийт малын тоо 1970-2024",
+  "description": "Монгол Улсын нийт малын тоо 1970-2025",
   "data": {
     "url": "/datasets/livestock-total-mn.csv",
     "format": {

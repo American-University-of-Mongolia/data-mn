@@ -1,0 +1,12 @@
+{
+  "dataset_id": "inflation-annual",
+  "version": 2,
+  "fetched_at": "2026-07-31T04:59:23.800009+00:00",
+  "data_as_of": "2025",
+  "source_updated_at": "2026-01-08T14:49:04",
+  "files": [
+    "inflation-annual-en.csv",
+    "inflation-annual-mn.csv",
+    "inflation-annual.xlsx"
+  ]
+}

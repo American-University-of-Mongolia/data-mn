@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Total livestock count in Mongolia from 1970 to 2024",
+  "description": "Total livestock count in Mongolia from 1970 to 2025",
   "data": {
     "url": "/datasets/livestock-total-en.csv",
     "format": {

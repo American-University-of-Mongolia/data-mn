@@ -1,0 +1,12 @@
+{
+  "dataset_id": "salary-average-national",
+  "version": 2,
+  "fetched_at": "2026-07-31T04:49:49.336628+00:00",
+  "data_as_of": "2025",
+  "source_updated_at": "2026-05-04T16:27:24",
+  "files": [
+    "salary-average-national-en.csv",
+    "salary-average-national-mn.csv",
+    "salary-average-national.xlsx"
+  ]
+}

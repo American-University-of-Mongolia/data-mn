@@ -1,5 +1,5 @@
 [Unit]
-Description=Run the data.mn Codex dataset audit every 14 days
+Description=Update data.mn datasets transactionally every 14 days
 
 [Timer]
 OnActiveSec=30min

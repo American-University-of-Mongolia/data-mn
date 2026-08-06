@@ -4,6 +4,8 @@ service: datamn
 # Name of the container image.
 image: robertritz/datamn
 
+retain_containers: 1
+
 # Deploy to these servers.
 servers:
   - 78.46.40.253

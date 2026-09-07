@@ -21,6 +21,19 @@ import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin, lazyImagesRehype
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+// Unprefixed demo/template routes that are noindexed (see LandingLayout,
+// index-original, src/data/post/*). '/landing' also covers '/landing/*'
+// but not '/tag/landing-pages' (matched only on exact or slash boundary).
+const DEMO_PATHS = [
+  '/landing',
+  '/index-original',
+  '/astrowind-template-in-depth',
+  '/get-started-website-with-astro-tailwind-css',
+  '/how-to-customize-astrowind-to-your-brand',
+  '/markdown-elements-demo-post',
+  '/useful-resources-to-create-websites',
+];
+
 const hasExternalScripts = false;
 const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroIntegration)[] = []) =>
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
@@ -49,7 +62,13 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
-    sitemap(),
+    sitemap({
+      // Astrowind demo/template pages are noindexed — don't submit them either.
+      filter: (page) => {
+        const { pathname } = new URL(page);
+        return !DEMO_PATHS.some((p) => pathname === p || pathname.startsWith(`${p}/`));
+      },
+    }),
     mdx(),
     icon({
       include: {

@@ -9,6 +9,8 @@ tags:
   - theme
 metadata:
   canonical: https://astrowind.vercel.app/how-to-customize-astrowind-to-your-brand
+  robots:
+    index: false
 ---
 
 ## Congue justo vulputate nascetur convallis varius orci fringilla nulla pharetr

@@ -21,11 +21,20 @@ const pathWithoutLang = pathParts[0] === 'en' || pathParts[0] === 'mn'
 // Get base URL
 const baseUrl = SITE?.site || currentUrl.origin;
 
+// Only emit hreflang on bilingual routes (/en/... and /mn/...).
+// Unprefixed pages (landing demos, template posts, etc.) have no translations,
+// so advertising /en + /mn alternates would point Google at URLs that 404.
+const isLangPage = pathParts[0] === 'en' || pathParts[0] === 'mn';
+
 // Generate alternate URLs
 const enUrl = `${baseUrl}/en${pathWithoutLang}`;
 const mnUrl = `${baseUrl}/mn${pathWithoutLang}`;
 ---
 
-<link rel="alternate" hreflang="en" href={enUrl} />
-<link rel="alternate" hreflang="mn" href={mnUrl} />
-<link rel="alternate" hreflang="x-default" href={mnUrl} />
+{isLangPage && (
+  <>
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="mn" href={mnUrl} />
+    <link rel="alternate" hreflang="x-default" href={mnUrl} />
+  </>
+)}

@@ -6,16 +6,16 @@ category: "Prices & Inflation"
 tags: ["mongolia", "prices", "beef", "meat", "weekly", "regional", "economy"]
 keywords: ["beef prices mongolia", "meat prices", "food prices mongolia", "regional prices", "weekly prices"]
 author: "Data.mn"
-dataVersion: 1
-dataDate: 2025-12-09
+dataVersion: 2
+dataDate: 2026-09-08
 dataFiles:
   - path: "/datasets/weekly-beef-prices-aimags-all-en.csv"
     format: "csv"
-    size: "54 KB"
+    size: "75 KB"
     description: "Download as CSV (all regions)"
   - path: "/datasets/weekly-beef-prices-aimags.xlsx"
     format: "xlsx"
-    size: "13 KB"
+    size: "16 KB"
     description: "Open in Excel"
 source:
   name: "National Statistics Office of Mongolia"
@@ -26,7 +26,13 @@ source:
 import VegaChart from '~/components/ui/VegaChart.astro';
 
 <VegaChart
+  spec="/charts/weekly-beef-prices-aimags-trend-en.json"
+  title="Weekly Beef Prices by Region in Mongolia (2024-2025)"
+  caption="Weekly prices in four selected aimags (Darkhan-Uul, Khovd, Orkhon, Umnugovi) since January 2024. Full history for all regions is available in the downloads."
+/>
+
+<VegaChart
   spec="/charts/weekly-beef-prices-aimags-en.json"
-  title="Beef Prices by Aimag — Latest Week"
+  title="Beef Prices by Aimag — Week of August 31, 2026"
   caption="Prices by aimag in the latest available week. Ulaanbaatar is not covered by the NSO weekly price survey."
 />

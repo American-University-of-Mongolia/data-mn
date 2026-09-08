@@ -6,16 +6,16 @@ category: "Үнэ ба инфляци"
 tags: ["монгол", "үнэ", "гурил", "хүнс", "долоо хоног", "бүс нутаг", "эдийн засаг"]
 keywords: ["гурилын үнэ", "хүнсний үнэ монгол", "гурил монгол"]
 author: "Data.mn"
-dataVersion: 1
-dataDate: 2025-12-09
+dataVersion: 2
+dataDate: 2026-09-08
 dataFiles:
   - path: "/datasets/weekly-flour-prices-aimags-all-mn.csv"
     format: "csv"
-    size: "66 KB"
+    size: "94 KB"
     description: "CSV татах (бүх бүс нутаг)"
   - path: "/datasets/weekly-flour-prices-aimags.xlsx"
     format: "xlsx"
-    size: "12 KB"
+    size: "15 KB"
     description: "Excel-ээр нээх"
 source:
   name: "Үндэсний Статистикийн Хороо"
@@ -26,7 +26,13 @@ source:
 import VegaChart from '~/components/ui/VegaChart.astro';
 
 <VegaChart
+  spec="/charts/weekly-flour-prices-aimags-trend-mn.json"
+  title="Гурилын долоо хоногийн үнэ, бүсээр (2024-2025)"
+  caption="2024 оны 1-р сараас хойш дөрвөн сонгосон аймгийн (Дархан-Уул, Ховд, Орхон, Өмнөговь) долоо хоногийн үнэ. Бүх бүсийн бүрэн түүхэн мэдээлэл татах файлуудад байгаа."
+/>
+
+<VegaChart
   spec="/charts/weekly-flour-prices-aimags-mn.json"
-  title="Аймгуудаарх гурилын үнэ — сүүлийн долоо хоног"
+  title="Аймгуудаарх гурилын үнэ — 2026 оны 8-р сарын 31"
   caption="Сүүлийн долоо хоногийн аймгуудын үнэ. Улаанбаатар ҮСХ-ны долоо хоногийн үнийн судалгаанд хамрагддаггүй."
 />

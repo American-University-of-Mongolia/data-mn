@@ -95,10 +95,18 @@ Weekly dates from 2024-01-02 to present (97+ time periods)
 
 ## Chart Specification
 
-The embedded chart is the CHOROPLETH MAP (see `datamn-chart-vega` skill,
-section 6). It MUST be regenerated on every update.
+The page embeds TWO charts: the historical time series first, then the
+choropleth map (see `datamn-chart-vega` skill, section 6). Both MUST be
+regenerated on every update.
 
-### Embedded: Choropleth map (latest week)
+### Embedded 1: Time series (4 selected aimags)
+Multi-line chart (Darkhan-Uul, Khovd, Orkhon, Umnugovi) from January 2024
+to present, drawn from the 4-aimag chart-subset CSVs.
+
+- **Files**: `weekly-gasoline-prices-aimags-trend-en.json` / `-trend-mn.json`
+- **MDX**: first embed, with the trend caption from the MDX files
+
+### Embedded 2: Choropleth map (latest week)
 Geoshape map of all 21 aimags, colored by latest-week price.
 Exempt from the max-6-categories rule (maps show all regions by design).
 
@@ -109,15 +117,9 @@ Exempt from the max-6-categories rule (maps show all regions by design).
   (EN: `properties.name` ↔ `name`; MN: `properties.name_mn` ↔ `бүс`)
 - **Color**: price/үнэ (quantitative, `oranges` scheme)
 - **Tooltip**: aimag name + price (,.0f)
-- **MDX**: single embed with the caption from the MDX files
-  (do NOT hardcode the latest date in the caption — it must stay correct
-  between updates)
-
-### Hidden: Time series (NOT embedded)
-The 4-aimag multi-line chart (`-trend-en.json` / `-trend-mn.json`) is
-intentionally NOT embedded in the MDX. Keep its spec files and the 4-aimag
-chart-subset CSVs in place (referenced by nothing, retained for now) —
-but do NOT re-add the embed on update.
+- **MDX**: second embed. The map TITLE carries the snapshot date
+  (EN: "Week of {Month D, YYYY}"; MN: "{YYYY} оны {M}-р сарын {D}").
+  Bump the date on every update — it must always match the `-latest` CSVs.
 
 ## Update Instructions
 

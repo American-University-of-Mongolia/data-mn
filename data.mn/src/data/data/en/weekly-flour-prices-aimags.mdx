@@ -6,16 +6,16 @@ category: "Prices & Inflation"
 tags: ["mongolia", "prices", "flour", "food", "weekly", "regional", "economy"]
 keywords: ["flour prices mongolia", "food prices", "grain prices mongolia", "regional prices", "weekly prices"]
 author: "Data.mn"
-dataVersion: 1
-dataDate: 2025-12-09
+dataVersion: 2
+dataDate: 2026-09-08
 dataFiles:
   - path: "/datasets/weekly-flour-prices-aimags-all-en.csv"
     format: "csv"
-    size: "53 KB"
+    size: "73 KB"
     description: "Download as CSV (all regions)"
   - path: "/datasets/weekly-flour-prices-aimags.xlsx"
     format: "xlsx"
-    size: "12 KB"
+    size: "15 KB"
     description: "Open in Excel"
 source:
   name: "National Statistics Office of Mongolia"
@@ -26,7 +26,13 @@ source:
 import VegaChart from '~/components/ui/VegaChart.astro';
 
 <VegaChart
+  spec="/charts/weekly-flour-prices-aimags-trend-en.json"
+  title="Weekly Flour Prices by Region in Mongolia (2024-2025)"
+  caption="Weekly prices in four selected aimags (Darkhan-Uul, Khovd, Orkhon, Umnugovi) since January 2024. Full history for all regions is available in the downloads."
+/>
+
+<VegaChart
   spec="/charts/weekly-flour-prices-aimags-en.json"
-  title="Flour Prices by Aimag — Latest Week"
+  title="Flour Prices by Aimag — Week of August 31, 2026"
   caption="Prices by aimag in the latest available week. Ulaanbaatar is not covered by the NSO weekly price survey."
 />

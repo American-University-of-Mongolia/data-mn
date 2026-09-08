@@ -6,16 +6,16 @@ category: "Prices & Inflation"
 tags: ["mongolia", "prices", "milk", "dairy", "food", "weekly", "regional", "economy"]
 keywords: ["milk prices mongolia", "dairy prices", "food prices mongolia", "regional prices", "weekly prices"]
 author: "Data.mn"
-dataVersion: 1
-dataDate: 2025-12-09
+dataVersion: 2
+dataDate: 2026-09-08
 dataFiles:
   - path: "/datasets/weekly-milk-prices-aimags-all-en.csv"
     format: "csv"
-    size: "52 KB"
+    size: "72 KB"
     description: "Download as CSV (all regions)"
   - path: "/datasets/weekly-milk-prices-aimags.xlsx"
     format: "xlsx"
-    size: "12 KB"
+    size: "15 KB"
     description: "Open in Excel"
 source:
   name: "National Statistics Office of Mongolia"
@@ -26,7 +26,13 @@ source:
 import VegaChart from '~/components/ui/VegaChart.astro';
 
 <VegaChart
+  spec="/charts/weekly-milk-prices-aimags-trend-en.json"
+  title="Weekly Fresh Milk Prices by Region in Mongolia (2024-2025)"
+  caption="Weekly prices in four selected aimags (Darkhan-Uul, Khovd, Orkhon, Umnugovi) since January 2024. Full history for all regions is available in the downloads."
+/>
+
+<VegaChart
   spec="/charts/weekly-milk-prices-aimags-en.json"
-  title="Fresh Milk Prices by Aimag — Latest Week"
+  title="Fresh Milk Prices by Aimag — Week of August 31, 2026"
   caption="Prices by aimag in the latest available week. Ulaanbaatar is not covered by the NSO weekly price survey."
 />

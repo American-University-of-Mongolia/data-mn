@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын нийт төрөлтийн түвшин 1980-2024, эмэгтэй хүн тутамд 6.4-өөс 2.5 хүүхэд төрүүлэхээр буурсан",
+  "description": "Монгол Улсын нийт төрөлтийн түвшин 1980-2025, эмэгтэй хүн тутамд 6.4-өөс 2.4 хүүхэд төрүүлэхээр буурсан",
   "data": {
     "url": "/datasets/fertility-rate-total-mn.csv",
     "format": {"type": "csv"}

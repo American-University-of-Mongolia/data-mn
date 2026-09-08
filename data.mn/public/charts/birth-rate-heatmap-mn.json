@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "1980-2025 оны Монгол Улсын насны бүлгээрх төрөлтийн түвшний халуун газрын зураг",
+  "data": {
+    "url": "/datasets/birth-rate-heatmap-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "rect"
+  },
+  "encoding": {
+    "x": {
+      "field": "Он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 5,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Насны_бүлэг",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "15-19",
+        "20-24",
+        "25-29",
+        "30-34",
+        "35-39",
+        "40-44",
+        "45-49"
+      ]
+    },
+    "color": {
+      "field": "Утга",
+      "type": "quantitative",
+      "title": "1,000 эмэгтэй хүн тутамд",
+      "scale": {
+        "scheme": "reds"
+      },
+      "legend": {
+        "orient": "top"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Он",
+        "title": "Он",
+        "format": "d"
+      },
+      {
+        "field": "Насны_бүлэг",
+        "title": "Насны бүлэг"
+      },
+      {
+        "field": "Утга",
+        "title": "Төрөлтийн түвшин",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

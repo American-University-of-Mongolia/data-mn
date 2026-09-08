@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын мах үйлдвэрлэл бүсээр 2010-2024",
+  "description": "Монгол Улсын мах үйлдвэрлэл бүсээр 2010-2025",
   "data": {
     "url": "/datasets/meat-production-by-region-mn.csv",
     "format": {

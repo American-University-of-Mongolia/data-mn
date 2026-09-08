@@ -1,0 +1,20 @@
+{
+  "dataset_id": "electricity-balance",
+  "version": 2,
+  "fetched_at": "2026-09-08T03:53:44.251489+00:00",
+  "source_updated_at": "2026-06-15T16:49:01",
+  "data_as_of": "2025",
+  "files": {
+    "raw": [
+      "nso-raw-electricity-balance-en.csv",
+      "nso-raw-electricity-balance-mn.csv"
+    ],
+    "published": [
+      "electricity-balance-en.csv",
+      "electricity-balance-mn.csv",
+      "electricity-balance-all-en.csv",
+      "electricity-balance-all-mn.csv",
+      "electricity-balance.xlsx"
+    ]
+  }
+}

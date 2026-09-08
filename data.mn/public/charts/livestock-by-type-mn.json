@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын мал төрлөөр 1970-2024",
+  "description": "Монгол Улсын мал төрлөөр 1970-2025",
   "data": {
     "url": "/datasets/livestock-by-type-mn.csv",
     "format": {

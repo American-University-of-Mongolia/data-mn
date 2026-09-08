@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын насны бүлгээрх төрөлтийн түвшин 1980-2024, залуу наснаас илүү өндөр нас руу шилжих хандлага",
+  "description": "Монгол Улсын насны бүлгээрх төрөлтийн түвшин 1980-2025, залуу наснаас илүү өндөр нас руу шилжих хандлага",
   "data": {
     "url": "/datasets/birth-rate-by-age-mn.csv",
     "format": {"type": "csv"}

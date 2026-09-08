@@ -1,0 +1,42 @@
+---
+title: Total Imported Vehicles in Mongolia, Count (2007-2025)
+publishDate: 2026-09-08
+author: Data.mn
+dataVersion: 1
+dataDate: 2025-01-01
+excerpt: Total motor vehicles imported into Mongolia each year from 2007 to 2025, peaking at 154,294 vehicles in 2024.
+category: Economy
+tags:
+- vehicles
+- imports
+- trade
+- transport
+- motor-vehicles
+- mongolia
+keywords:
+- mongolia vehicle imports
+- total imported vehicles
+- mongolia motor vehicle imports
+dataFiles:
+- path: /datasets/imported-vehicles-total-all-en.csv
+  format: csv
+  size: 222 B
+  description: Download as CSV (all data)
+- path: /datasets/imported-vehicles-total.xlsx
+  format: xlsx
+  size: 6 KB
+  description: Open in Excel
+source:
+  name: National Statistics Office of Mongolia
+  url: https://data.1212.mn
+  tableId: DT_NSO_1200_013V5.px
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Total motor vehicles imported into Mongolia each year from 2007 to 2025, peaking at 154,294 vehicles in 2024.
+
+<VegaChart
+  spec="/charts/imported-vehicles-total-en.json"
+  title="Total Imported Vehicles in Mongolia, Count (2007-2025)"
+/>

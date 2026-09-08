@@ -9,10 +9,12 @@
 
 ## Source Reference
 
-- **Table ID**: `DT_NSO_0400_022V1.px`
+- **Table ID (name-keyed)**: `MONTHLY AVERAGE NOMINAL WAGES, by division of economic activities`
+- **Annual sub-table**: `DT_NSO_0400_022V1.px` (by SEX, SECTOR, TIME ANNUAL; sibling V2 = quarterly, V3 = monthly)
 - **Sector**: `Labour, business`
-- **Subsector**: `Wages/MONTHLY AVERAGE NOMINAL WAGES, by division of economic activities`
+- **Subsector**: `Wages`
 - **API Path**: `/en/NSO/Labour, business/Wages/MONTHLY AVERAGE NOMINAL WAGES, by division of economic activities/DT_NSO_0400_022V1.px`
+- **Note (2026-09-08 table switch)**: the NSO catalog moved wage tables to name-string group ids; the flat `DT_NSO_0400_022V1.px` reference no longer resolves directly (HTTP 400). Always fetch via the name-keyed group path above. Replacement coverage: 2001-2025, 22 sectors incl. National average, plus SEX split (TOTAL/FEMALE/MALE) — no coverage loss vs the old reference.
 
 ## Title
 
@@ -76,8 +78,12 @@ Use the `datamn-source-nso` skill:
 
 ```bash
 cd .claude/skills/datamn-source-nso
-python3 fetch_data.py --table DT_NSO_0400_022V1.px --output ../../data/tools/versions/salary-average-national
+python3 fetch_data.py --table "MONTHLY AVERAGE NOMINAL WAGES, by division of economic activities" --output ../../data/tools/versions/salary-average-national
 ```
+
+NOTE: `fetch_data.py` resolves sector/subsector from the metadata DB by table id; for
+name-keyed wage tables prefer direct API calls against the group path (see below),
+selecting the annual sub-table `DT_NSO_0400_022V1.px`.
 
 Or use direct API calls:
 
@@ -86,12 +92,13 @@ import requests
 
 BASE_URL = "https://data.1212.mn/api/v1"
 sector = "Labour, business"
-subsector = "Wages/MONTHLY AVERAGE NOMINAL WAGES, by division of economic activities"
-table_id = "DT_NSO_0400_022V1.px"
+subsector = "Wages"
+group = "MONTHLY AVERAGE NOMINAL WAGES, by division of economic activities"
+table_id = "DT_NSO_0400_022V1.px"  # annual sub-table (V2 = quarterly, V3 = monthly)
 
 # Fetch in both English and Mongolian
 for lang in ['en', 'mn']:
-    url = f"{BASE_URL}/{lang}/NSO/{sector}/{subsector}/{table_id}"
+    url = f"{BASE_URL}/{lang}/NSO/{sector}/{subsector}/{group}/{table_id}"
 
     # Get metadata
     metadata = requests.get(url).json()
@@ -120,7 +127,7 @@ for lang in ['en', 'mn']:
 
 - All salary values should be positive
 - Values are in thousands of MNT (MNT 1000s)
-- Year values should be valid years (2001-2024)
+- Year values should be valid years (2001-2025)
 - National average should be between lowest and highest sector salaries
 - Mining sector typically has highest average salary
 - Hospitality sector typically has lowest average salary

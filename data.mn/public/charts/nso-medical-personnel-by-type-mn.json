@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсад эрүүл мэндийн ажилтны тоо төрлөөр (2015–2024)",
+  "description": "Монгол Улсад эрүүл мэндийн ажилтны тоо төрлөөр (2015–2025)",
   "data": {
     "url": "/datasets/nso-medical-personnel-by-type-mn.csv",
     "format": {"type": "csv"}

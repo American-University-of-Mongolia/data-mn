@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Medical personnel in Mongolia by type (2015–2024)",
+  "description": "Medical personnel in Mongolia by type (2015–2025)",
   "data": {
     "url": "/datasets/nso-medical-personnel-by-type-en.csv",
     "format": {"type": "csv"}

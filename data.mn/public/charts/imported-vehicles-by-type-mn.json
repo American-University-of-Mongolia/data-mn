@@ -3,11 +3,13 @@
   "description": "Монгол Улсад импортолсон тээврийн хэрэгслийн жилийн задаргаа: суудлын автомашин, ачааны машин, автобус (2007–2025).",
   "data": {
     "url": "/datasets/imported-vehicles-by-type-mn.csv",
-    "format": {"type": "csv"}
+    "format": {
+      "type": "csv"
+    }
   },
   "encoding": {
     "x": {
-      "field": "year",
+      "field": "он",
       "type": "quantitative",
       "title": "Он",
       "axis": {
@@ -17,7 +19,7 @@
       }
     },
     "y": {
-      "field": "count",
+      "field": "тоо",
       "type": "quantitative",
       "title": "Импортын тээврийн хэрэгсэл",
       "stack": "zero",
@@ -28,23 +30,37 @@
       }
     },
     "color": {
-      "field": "vehicle_type",
+      "field": "төрөл",
       "type": "nominal",
       "title": "Төрөл",
       "scale": {
-        "domain": ["Суудлын автомашин", "Ачааны тээврийн хэрэгсэл", "Автобус, том тээврийн хэрэгсэл"],
-        "range": ["#4c78a8", "#f58518", "#72b7b2"]
+        "domain": [
+          "Суудлын автомашин",
+          "Ачааны тээврийн хэрэгсэл",
+          "Автобус, том тээврийн хэрэгсэл"
+        ],
+        "range": [
+          "#4c78a8",
+          "#f58518",
+          "#72b7b2"
+        ]
       },
-      "legend": {"orient": "top"}
+      "legend": {
+        "orient": "top"
+      }
     },
     "order": {
-      "field": "vehicle_type",
+      "field": "төрөл",
       "type": "nominal"
     }
   },
   "layer": [
     {
-      "mark": {"type": "area", "interpolate": "monotone", "opacity": 0.85}
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "opacity": 0.85
+      }
     },
     {
       "params": [
@@ -58,22 +74,46 @@
           }
         }
       ],
-      "mark": {"type": "point", "filled": true, "size": 60},
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 60
+      },
       "encoding": {
         "opacity": {
-          "condition": {"param": "hover", "empty": false, "value": 1},
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
           "value": 0
         },
         "tooltip": [
-          {"field": "year", "type": "quantitative", "title": "Он", "format": "d"},
-          {"field": "vehicle_type", "type": "nominal", "title": "Төрөл"},
-          {"field": "count", "type": "quantitative", "title": "Тээврийн хэрэгсэл", "format": ","}
+          {
+            "field": "он",
+            "type": "quantitative",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "төрөл",
+            "type": "nominal",
+            "title": "Төрөл"
+          },
+          {
+            "field": "тоо",
+            "type": "quantitative",
+            "title": "Тээврийн хэрэгсэл",
+            "format": ","
+          }
         ]
       }
     }
   ],
   "config": {
-    "view": {"stroke": "transparent"},
+    "view": {
+      "stroke": "transparent"
+    },
     "axis": {
       "labelFontSize": 14,
       "titleFontSize": 16,
@@ -81,6 +121,9 @@
       "labelColor": "#64748b",
       "titleColor": "#334155"
     },
-    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
   }
 }

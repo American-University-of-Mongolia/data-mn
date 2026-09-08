@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Heating energy balance in Mongolia (1995-2024)",
+  "description": "Heating energy balance in Mongolia (1995-2025)",
   "data": {
     "url": "/datasets/heating-energy-en.csv",
     "format": {

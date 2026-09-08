@@ -1,0 +1,17 @@
+{
+  "dataset_id": "livestock-total",
+  "version": 3,
+  "data_as_of": "2025",
+  "source_table": "DT_NSO_1001_109V1.px",
+  "source_updated_at": "2026-07-21T17:37:54",
+  "dimensions": {
+    "type_of_livestock": 6,
+    "region": 29,
+    "year": 56
+  },
+  "note": "Source API returns 30 region labels; Ulaanbaatar appears twice (aimag listing + region listing) with identical values. The aimag-listed duplicate was dropped losslessly (its non-null cells are a strict subset of the kept series).",
+  "files": [
+    "livestock-total-en.csv",
+    "livestock-total-mn.csv"
+  ]
+}

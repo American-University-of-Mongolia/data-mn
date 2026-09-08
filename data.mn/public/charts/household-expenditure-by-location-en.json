@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia household monthly average expenditure by location (National, Urban, Rural) from 1997 to 2024",
+  "description": "Mongolia household monthly average expenditure by location (National, Urban, Rural) from 1997 to 2025",
   "data": {
     "url": "/datasets/household-expenditure-by-location-en.csv",
     "format": {"type": "csv"}

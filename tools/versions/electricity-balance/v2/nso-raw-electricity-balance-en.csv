@@ -1,0 +1,519 @@
+Indicators,Year,value
+Resources- Total,2025,12342.57
+Resources- Total,2024,11445.87
+Resources- Total,2023,10914.3
+Resources- Total,2022,10142.32
+Resources- Total,2021,9648.4
+Resources- Total,2020,8754.6
+Resources- Total,2019,8623.1
+Resources- Total,2018,8201.0
+Resources- Total,2017,7601.7
+Resources- Total,2016,7113.4
+Resources- Total,2015,6930.0
+Resources- Total,2014,6725.0
+Resources- Total,2013,6215.03
+Resources- Total,2012,5181.59
+Resources- Total,2011,4811.89
+Resources- Total,2010,4575.72
+Resources- Total,2009,4195.39
+Resources- Total,2008,4198.2
+Resources- Total,2007,3896.1
+Resources- Total,2006,3712.5
+Resources- Total,2005,3586.4
+Resources- Total,2004,3474.3
+Resources- Total,2003,3308.98
+Resources- Total,2002,3279.0
+Resources- Total,2001,3213.0
+Resources- Total,2000,3127.0
+Resources- Total,1999,3045.0
+Resources- Total,1998,3042.0
+Resources- Total,1997,3096.0
+Resources- Total,1996,2997.0
+Resources- Total,1995,3009.0
+Resources- Total,1994,2930.0
+Resources- Total,1993,2779.0
+Resources- Total,1992,3031.0
+Resources- Total,1991,3313.0
+Resources- Total,1990,3576.0
+Resources- Total,1989,3726.0
+ Gross generation,2025,9576.93
+ Gross generation,2024,8692.84
+ Gross generation,2023,8487.42
+ Gross generation,2022,8034.95
+ Gross generation,2021,7825.32
+ Gross generation,2020,7069.7
+ Gross generation,2019,6900.4
+ Gross generation,2018,6535.3
+ Gross generation,2017,6027.3
+ Gross generation,2016,5667.1
+ Gross generation,2015,5513.2
+ Gross generation,2014,5375.8
+ Gross generation,2013,5019.54
+ Gross generation,2012,4815.57
+ Gross generation,2011,4536.38
+ Gross generation,2010,4312.82
+ Gross generation,2009,4038.84
+ Gross generation,2008,4000.57
+ Gross generation,2007,3700.7
+ Gross generation,2006,3544.2
+ Gross generation,2005,3418.9
+ Gross generation,2004,3303.4
+ Gross generation,2003,3137.7
+ Gross generation,2002,3111.7
+ Gross generation,2001,3017.0
+ Gross generation,2000,2946.0
+ Gross generation,1999,2842.0
+ Gross generation,1998,2675.0
+ Gross generation,1997,2720.0
+ Gross generation,1996,2614.0
+ Gross generation,1995,2628.0
+ Gross generation,1994,2715.0
+ Gross generation,1993,2582.0
+ Gross generation,1992,2929.0
+ Gross generation,1991,3229.0
+ Gross generation,1990,3348.0
+ Gross generation,1989,3568.0
+ Imports,2025,2765.64
+ Imports,2024,2753.03
+ Imports,2023,2426.88
+ Imports,2022,2107.37
+ Imports,2021,1823.08
+ Imports,2020,1684.9
+ Imports,2019,1722.7
+ Imports,2018,1665.7
+ Imports,2017,1574.3
+ Imports,2016,1446.3
+ Imports,2015,1416.8
+ Imports,2014,1349.2
+ Imports,2013,1195.49
+ Imports,2012,366.02
+ Imports,2011,275.51
+ Imports,2010,262.9
+ Imports,2009,156.55
+ Imports,2008,197.6
+ Imports,2007,195.4
+ Imports,2006,168.3
+ Imports,2005,167.5
+ Imports,2004,170.8
+ Imports,2003,171.28
+ Imports,2002,167.3
+ Imports,2001,196.0
+ Imports,2000,181.0
+ Imports,1999,203.0
+ Imports,1998,367.0
+ Imports,1997,376.0
+ Imports,1996,383.0
+ Imports,1995,381.0
+ Imports,1994,215.0
+ Imports,1993,197.0
+ Imports,1992,101.9
+ Imports,1991,84.0
+ Imports,1990,228.0
+ Imports,1989,158.0
+ Distribution -Total,2025,12342.57
+ Distribution -Total,2024,11445.87
+ Distribution -Total,2023,10914.3
+ Distribution -Total,2022,10142.32
+ Distribution -Total,2021,9648.4
+ Distribution -Total,2020,8754.6
+ Distribution -Total,2019,8623.1
+ Distribution -Total,2018,8201.0
+ Distribution -Total,2017,7601.7
+ Distribution -Total,2016,7113.4
+ Distribution -Total,2015,6930.0
+ Distribution -Total,2014,6725.0
+ Distribution -Total,2013,6215.03
+ Distribution -Total,2012,5181.59
+ Distribution -Total,2011,4811.89
+ Distribution -Total,2010,4575.72
+ Distribution -Total,2009,4195.39
+ Distribution -Total,2008,4198.2
+ Distribution -Total,2007,3896.1
+ Distribution -Total,2006,3712.5
+ Distribution -Total,2005,3586.4
+ Distribution -Total,2004,3474.3
+ Distribution -Total,2003,3308.98
+ Distribution -Total,2002,3279.0
+ Distribution -Total,2001,3213.0
+ Distribution -Total,2000,3127.0
+ Distribution -Total,1999,3045.0
+ Distribution -Total,1998,3042.0
+ Distribution -Total,1997,3096.0
+ Distribution -Total,1996,2997.0
+ Distribution -Total,1995,3009.0
+ Distribution -Total,1994,2930.0
+ Distribution -Total,1993,2779.0
+ Distribution -Total,1992,3031.1
+ Distribution -Total,1991,3313.0
+ Distribution -Total,1990,3576.0
+ Distribution -Total,1989,3726.0
+ Consumption,2025,10222.02
+ Consumption,2024,9131.93
+ Consumption,2023,8639.26
+ Consumption,2022,8095.36
+ Consumption,2021,7718.87
+ Consumption,2020,6816.8
+ Consumption,2019,6846.4
+ Consumption,2018,6449.7
+ Consumption,2017,5948.7
+ Consumption,2016,5445.7
+ Consumption,2015,5283.5
+ Consumption,2014,5158.4
+ Consumption,2013,4732.07
+ Consumption,2012,3772.64
+ Consumption,2011,3452.96
+ Consumption,2010,3375.86
+ Consumption,2009,3034.09
+ Consumption,2008,3093.3
+ Consumption,2007,2829.1
+ Consumption,2006,2619.7
+ Consumption,2005,2534.0
+ Consumption,2004,2357.0
+ Consumption,2003,2194.65
+ Consumption,2002,2031.7
+ Consumption,2001,1948.0
+ Consumption,2000,1910.0
+ Consumption,1999,1867.0
+ Consumption,1998,1929.0
+ Consumption,1997,1939.0
+ Consumption,1996,1936.0
+ Consumption,1995,1909.0
+ Consumption,1994,1861.0
+ Consumption,1993,2006.0
+ Consumption,1992,2175.0
+ Consumption,1991,2400.0
+ Consumption,1990,2719.0
+ Consumption,1989,2880.0
+ Industry and construction,2025,6344.21
+ Industry and construction,2024,5667.65
+ Industry and construction,2023,5361.88
+ Industry and construction,2022,5024.31
+ Industry and construction,2021,4790.64
+ Industry and construction,2020,4230.8
+ Industry and construction,2019,4249.2
+ Industry and construction,2018,4003.0
+ Industry and construction,2017,3692.0
+ Industry and construction,2016,3356.3
+ Industry and construction,2015,3261.4
+ Industry and construction,2014,3171.6
+ Industry and construction,2013,2930.67
+ Industry and construction,2012,2338.86
+ Industry and construction,2011,2140.81
+ Industry and construction,2010,2093.85
+ Industry and construction,2009,1883.08
+ Industry and construction,2008,1918.15
+ Industry and construction,2007,1745.6
+ Industry and construction,2006,1627.0
+ Industry and construction,2005,1569.1
+ Industry and construction,2004,1458.8
+ Industry and construction,2003,1213.1
+ Industry and construction,2002,1000.4
+ Industry and construction,2001,1204.0
+ Industry and construction,2000,1182.0
+ Industry and construction,1999,959.0
+ Industry and construction,1998,1210.0
+ Industry and construction,1997,1264.0
+ Industry and construction,1996,1226.0
+ Industry and construction,1995,1105.0
+ Industry and construction,1994,1189.0
+ Industry and construction,1993,1177.0
+ Industry and construction,1992,1413.4
+ Industry and construction,1991,1498.0
+ Industry and construction,1990,1803.0
+ Industry and construction,1989,1911.0
+ Transport and communication,2025,425.24
+ Transport and communication,2024,379.89
+ Transport and communication,2023,359.39
+ Transport and communication,2022,336.77
+ Transport and communication,2021,321.1
+ Transport and communication,2020,283.6
+ Transport and communication,2019,284.8
+ Transport and communication,2018,268.3
+ Transport and communication,2017,247.5
+ Transport and communication,2016,222.9
+ Transport and communication,2015,216.5
+ Transport and communication,2014,211.4
+ Transport and communication,2013,196.9
+ Transport and communication,2012,156.84
+ Transport and communication,2011,143.65
+ Transport and communication,2010,140.41
+ Transport and communication,2009,126.22
+ Transport and communication,2008,128.73
+ Transport and communication,2007,117.3
+ Transport and communication,2006,109.4
+ Transport and communication,2005,105.8
+ Transport and communication,2004,98.5
+ Transport and communication,2003,29.5
+ Transport and communication,2002,81.2
+ Transport and communication,2001,87.0
+ Transport and communication,2000,79.0
+ Transport and communication,1999,67.0
+ Transport and communication,1998,63.0
+ Transport and communication,1997,78.0
+ Transport and communication,1996,62.0
+ Transport and communication,1995,69.0
+ Transport and communication,1994,59.0
+ Transport and communication,1993,88.0
+ Transport and communication,1992,101.2
+ Transport and communication,1991,110.0
+ Transport and communication,1990,175.0
+ Transport and communication,1989,185.0
+" Agriculture, forestry and fishing, hunting",2025,107.98
+" Agriculture, forestry and fishing, hunting",2024,96.47
+" Agriculture, forestry and fishing, hunting",2023,91.26
+" Agriculture, forestry and fishing, hunting",2022,85.52
+" Agriculture, forestry and fishing, hunting",2021,81.54
+" Agriculture, forestry and fishing, hunting",2020,72.0
+" Agriculture, forestry and fishing, hunting",2019,72.3
+" Agriculture, forestry and fishing, hunting",2018,68.1
+" Agriculture, forestry and fishing, hunting",2017,62.8
+" Agriculture, forestry and fishing, hunting",2016,56.6
+" Agriculture, forestry and fishing, hunting",2015,54.8
+" Agriculture, forestry and fishing, hunting",2014,63.7
+" Agriculture, forestry and fishing, hunting",2013,49.87
+" Agriculture, forestry and fishing, hunting",2012,39.81
+" Agriculture, forestry and fishing, hunting",2011,36.44
+" Agriculture, forestry and fishing, hunting",2010,35.64
+" Agriculture, forestry and fishing, hunting",2009,32.05
+" Agriculture, forestry and fishing, hunting",2008,32.65
+" Agriculture, forestry and fishing, hunting",2007,26.1
+" Agriculture, forestry and fishing, hunting",2006,24.3
+" Agriculture, forestry and fishing, hunting",2005,27.5
+" Agriculture, forestry and fishing, hunting",2004,25.6
+" Agriculture, forestry and fishing, hunting",2003,7.85
+" Agriculture, forestry and fishing, hunting",2002,25.8
+" Agriculture, forestry and fishing, hunting",2001,17.0
+" Agriculture, forestry and fishing, hunting",2000,21.0
+" Agriculture, forestry and fishing, hunting",1999,27.0
+" Agriculture, forestry and fishing, hunting",1998,11.0
+" Agriculture, forestry and fishing, hunting",1997,33.0
+" Agriculture, forestry and fishing, hunting",1996,60.0
+" Agriculture, forestry and fishing, hunting",1995,59.0
+" Agriculture, forestry and fishing, hunting",1994,49.0
+" Agriculture, forestry and fishing, hunting",1993,24.0
+" Agriculture, forestry and fishing, hunting",1992,44.0
+" Agriculture, forestry and fishing, hunting",1991,75.0
+" Agriculture, forestry and fishing, hunting",1990,116.0
+" Agriculture, forestry and fishing, hunting",1989,123.0
+ Household and communal housing,2025,2451.36
+ Household and communal housing,2024,2189.94
+ Household and communal housing,2023,2071.79
+ Household and communal housing,2022,1941.36
+ Household and communal housing,2021,1851.07
+ Household and communal housing,2020,1634.7
+ Household and communal housing,2019,1641.9
+ Household and communal housing,2018,1546.7
+ Household and communal housing,2017,1426.6
+ Household and communal housing,2016,1321.3
+ Household and communal housing,2015,1277.5
+ Household and communal housing,2014,1251.4
+ Household and communal housing,2013,1139.22
+ Household and communal housing,2012,906.72
+ Household and communal housing,2011,829.48
+ Household and communal housing,2010,809.75
+ Household and communal housing,2009,727.61
+ Household and communal housing,2008,742.33
+ Household and communal housing,2007,694.6
+ Household and communal housing,2006,629.2
+ Household and communal housing,2005,609.3
+ Household and communal housing,2004,567.6
+ Household and communal housing,2003,616.3
+ Household and communal housing,2002,727.2
+ Household and communal housing,2001,476.0
+ Household and communal housing,2000,463.0
+ Household and communal housing,1999,444.0
+ Household and communal housing,1998,426.0
+ Household and communal housing,1997,414.0
+ Household and communal housing,1996,380.0
+ Household and communal housing,1995,518.0
+ Household and communal housing,1994,430.0
+ Household and communal housing,1993,310.0
+ Household and communal housing,1992,308.0
+ Household and communal housing,1991,362.0
+ Household and communal housing,1990,349.0
+ Household and communal housing,1989,370.0
+ Other,2025,893.24
+ Other,2024,797.98
+ Other,2023,754.93
+ Other,2022,707.4
+ Other,2021,674.5
+ Other,2020,595.7
+ Other,2019,598.3
+ Other,2018,563.6
+ Other,2017,519.8
+ Other,2016,488.6
+ Other,2015,473.3
+ Other,2014,460.4
+ Other,2013,415.4
+ Other,2012,330.42
+ Other,2011,302.58
+ Other,2010,296.22
+ Other,2009,265.13
+ Other,2008,271.47
+ Other,2007,245.5
+ Other,2006,229.9
+ Other,2005,222.3
+ Other,2004,206.5
+ Other,2003,327.9
+ Other,2002,197.1
+ Other,2001,164.0
+ Other,2000,165.0
+ Other,1999,370.0
+ Other,1998,219.0
+ Other,1997,150.0
+ Other,1996,208.0
+ Other,1995,158.0
+ Other,1994,134.0
+ Other,1993,407.0
+ Other,1992,308.4
+ Other,1991,355.0
+ Other,1990,276.0
+ Other,1989,291.0
+ Losses in transmission and distribution,2025,1090.66
+ Losses in transmission and distribution,2024,1163.61
+ Losses in transmission and distribution,2023,1178.63
+ Losses in transmission and distribution,2022,1091.25
+ Losses in transmission and distribution,2021,1018.5
+ Losses in transmission and distribution,2020,962.6
+ Losses in transmission and distribution,2019,891.6
+ Losses in transmission and distribution,2018,875.3
+ Losses in transmission and distribution,2017,810.9
+ Losses in transmission and distribution,2016,883.0
+ Losses in transmission and distribution,2015,817.5
+ Losses in transmission and distribution,2014,760.8
+ Losses in transmission and distribution,2013,739.5
+ Losses in transmission and distribution,2012,675.39
+ Losses in transmission and distribution,2011,644.31
+ Losses in transmission and distribution,2010,505.41
+ Losses in transmission and distribution,2009,493.87
+ Losses in transmission and distribution,2008,435.89
+ Losses in transmission and distribution,2007,442.4
+ Losses in transmission and distribution,2006,442.3
+ Losses in transmission and distribution,2005,419.7
+ Losses in transmission and distribution,2004,480.4
+ Losses in transmission and distribution,2003,489.2
+ Losses in transmission and distribution,2002,582.8
+ Losses in transmission and distribution,2001,603.0
+ Losses in transmission and distribution,2000,576.0
+ Losses in transmission and distribution,1999,509.0
+ Losses in transmission and distribution,1998,465.0
+ Losses in transmission and distribution,1997,507.0
+ Losses in transmission and distribution,1996,482.0
+ Losses in transmission and distribution,1995,502.0
+ Losses in transmission and distribution,1994,472.0
+ Losses in transmission and distribution,1993,291.0
+ Losses in transmission and distribution,1992,284.6
+ Losses in transmission and distribution,1991,340.0
+ Losses in transmission and distribution,1990,323.0
+ Losses in transmission and distribution,1989,280.0
+ Station internal use,2025,1019.3
+ Station internal use,2024,1138.31
+ Station internal use,2023,1059.42
+ Station internal use,2022,930.37
+ Station internal use,2021,887.1
+ Station internal use,2020,933.7
+ Station internal use,2019,860.9
+ Station internal use,2018,849.3
+ Station internal use,2017,816.4
+ Station internal use,2016,748.7
+ Station internal use,2015,778.2
+ Station internal use,2014,772.4
+ Station internal use,2013,725.26
+ Station internal use,2012,712.4
+ Station internal use,2011,690.85
+ Station internal use,2010,672.22
+ Station internal use,2009,649.37
+ Station internal use,2008,653.17
+ Station internal use,2007,614.5
+ Station internal use,2006,629.6
+ Station internal use,2005,620.8
+ Station internal use,2004,628.8
+ Station internal use,2003,618.4
+ Station internal use,2002,649.0
+ Station internal use,2001,644.0
+ Station internal use,2000,616.0
+ Station internal use,1999,610.0
+ Station internal use,1998,588.0
+ Station internal use,1997,608.0
+ Station internal use,1996,579.0
+ Station internal use,1995,598.0
+ Station internal use,1994,597.0
+ Station internal use,1993,482.0
+ Station internal use,1992,571.5
+ Station internal use,1991,573.0
+ Station internal use,1990,534.0
+ Station internal use,1989,566.0
+ Export,2025,10.57
+ Export,2024,12.02
+ Export,2023,37.0
+ Export,2022,25.34
+ Export,2021,23.9
+ Export,2020,41.5
+ Export,2019,24.1
+ Export,2018,26.7
+ Export,2017,25.7
+ Export,2016,36.0
+ Export,2015,50.8
+ Export,2014,33.4
+ Export,2013,18.21
+ Export,2012,21.16
+ Export,2011,23.77
+ Export,2010,22.18
+ Export,2009,18.06
+ Export,2008,15.9
+ Export,2007,10.1
+ Export,2006,20.8
+ Export,2005,11.9
+ Export,2004,8.2
+ Export,2003,6.73
+ Export,2002,15.5
+ Export,2001,18.0
+ Export,2000,25.0
+ Export,1999,59.0
+ Export,1998,60.0
+ Export,1997,42.0
+ Export,1996,0.0
+ Export,1995,0.0
+ Export,1994,0.0
+ Export,1993,0.0
+ Export,1992,0.0
+ Export,1991,0.0
+ Export,1990,0.0
+ Export,1989,0.0
+" Electricity produced per capita, kW.h",2025,2786.42
+" Electricity produced per capita, kW.h",2024,2542.37
+" Electricity produced per capita, kW.h",2023,2509.06
+" Electricity produced per capita, kW.h",2022,2405.34
+" Electricity produced per capita, kW.h",2021,2383.75
+" Electricity produced per capita, kW.h",2020,2192.1
+" Electricity produced per capita, kW.h",2019,2162.0
+" Electricity produced per capita, kW.h",2018,2068.8
+" Electricity produced per capita, kW.h",2017,1945.8
+" Electricity produced per capita, kW.h",2016,1872.2
+" Electricity produced per capita, kW.h",2015,1860.0
+" Electricity produced per capita, kW.h",2014,1866.2
+" Electricity produced per capita, kW.h",2013,1797.91
+" Electricity produced per capita, kW.h",2012,1762.29
+" Electricity produced per capita, kW.h",2011,1693.2
+" Electricity produced per capita, kW.h",2010,1574.81
+" Electricity produced per capita, kW.h",2009,1500.81
+" Electricity produced per capita, kW.h",2008,1504.43
+" Electricity produced per capita, kW.h",2007,1415.4
+" Electricity produced per capita, kW.h",2006,1374.44
+" Electricity produced per capita, kW.h",2005,1341.9
+" Electricity produced per capita, kW.h",2004,1311.6
+" Electricity produced per capita, kW.h",2003,1260.27
+" Electricity produced per capita, kW.h",2002,1265.43
+" Electricity produced per capita, kW.h",2001,1235.0
+" Electricity produced per capita, kW.h",2000,1307.0
+" Electricity produced per capita, kW.h",1999,1253.0
+" Electricity produced per capita, kW.h",1998,1257.0
+" Electricity produced per capita, kW.h",1997,1297.0
+" Electricity produced per capita, kW.h",1996,1273.53
+" Electricity produced per capita, kW.h",1995,1298.38
+" Electricity produced per capita, kW.h",1994,1285.09
+" Electricity produced per capita, kW.h",1993,1235.11
+" Electricity produced per capita, kW.h",1992,1368.4
+" Electricity produced per capita, kW.h",1991,1514.72
+" Electricity produced per capita, kW.h",1990,1663.8
+" Electricity produced per capita, kW.h",1989,1778.01

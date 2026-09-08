@@ -1,0 +1,12 @@
+{
+  "dataset_id": "nso-industrial-output-monthly",
+  "version": 1,
+  "fetched_at": "2026-09-08T03:30:49.595662+00:00",
+  "source_updated_at": "2026-08-28T09:22:11",
+  "source_table": "DT_NSO_1100_001V2.px",
+  "source_files": [
+    "nso-1100-001v2-en.csv",
+    "nso-1100-001v2-mn.csv"
+  ],
+  "notes": "Raw NSO fetch; Electricity duplicate collapsed in derived files (37x107)."
+}

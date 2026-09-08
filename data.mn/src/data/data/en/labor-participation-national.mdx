@@ -1,31 +1,42 @@
 ---
-title: "Mongolia Labour Force Participation Rate, % (1992-2025)"
+title: Mongolia Labour Force Participation Rate, % (2009-2025)
 publishDate: 2025-12-06
-excerpt: "Mongolia's labour force participation rate from 1992 to 2025, showing the percentage of the working-age population that is economically active."
-category: "Labor Market"
-tags: ["mongolia", "labour", "participation", "employment", "economy"]
-keywords: ["labour force", "participation rate", "employment", "working age"]
-author: "Data.mn"
-dataVersion: 2
+author: Data.mn
+dataVersion: 3
 dataDate: 2025-12-31
+excerpt: Mongolia's labour force participation rate from 2009 to 2025, showing the percentage of the working-age population that is economically active.
+category: Labor Market
+tags:
+- mongolia
+- labour
+- participation
+- employment
+- economy
+keywords:
+- labour force
+- participation rate
+- employment
+- working age
 dataFiles:
-  - path: "/datasets/labor-participation-national-en.csv"
-    format: "csv"
-    size: "380 B"
-    description: "Download as CSV"
-  - path: "/datasets/labor-participation-national.xlsx"
-    format: "xlsx"
-    size: "5 KB"
-    description: "Open in Excel"
+- path: /datasets/labor-participation-national-all-en.csv
+  format: csv
+  size: 181 B
+  description: Download as CSV (all data)
+- path: /datasets/labor-participation-national.xlsx
+  format: xlsx
+  size: 5 KB
+  description: Open in Excel
 source:
-  name: "National Statistics Office of Mongolia"
-  url: "https://data.1212.mn"
-  tableId: "DT_NSO_0400_018V1_1.px"
+  name: National Statistics Office of Mongolia
+  url: https://data.1212.mn
+  tableId: DT_NSO_0400_018V1_10.px
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
+Mongolia's labour force participation rate from 2009 to 2025, showing the percentage of the working-age population that is economically active.
+
 <VegaChart
   spec="/charts/labor-participation-national-en.json"
-  title="Mongolia Labour Force Participation Rate, % (1992-2025)"
+  title="Mongolia Labour Force Participation Rate, % (2009-2025)"
 />

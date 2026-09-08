@@ -1,0 +1,14 @@
+{
+  "dataset_id": "registered-vehicles-national",
+  "version": 1,
+  "fetched_at": "2026-09-08T03:50:34.988195+00:00",
+  "source_updated_at": "2026-05-21T10:28:13",
+  "source_table": "DT_NSO_1200_013V3.px",
+  "data_range": "1940-1957, 2012-2025",
+  "chart_rows_en": 32,
+  "source_files": [
+    "nso-1200-013v3-en.csv",
+    "nso-1200-013v3-mn.csv"
+  ],
+  "changes": "Added 2025 (1,418,891 vehicles); source Age/Type labels unchanged for V3 filter"
+}

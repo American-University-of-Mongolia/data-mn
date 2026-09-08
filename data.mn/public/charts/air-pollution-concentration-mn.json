@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Улаанбаатар хотын РМ2.5 болон РМ10 тоосонцорын сарын дундаж концентраци (2002-2026, мг/м³), хотын хяналтын станцуудын дундаж.",
+  "description": "Улаанбаатар хотын хүхэрлэг хийн (SO₂) сарын дундаж концентраци (2002-2026, мг/м³), хотын 17 хяналтын станцын дундаж.",
   "data": {
     "url": "/datasets/air-pollution-concentration-mn.csv",
     "format": { "type": "csv" }
@@ -23,8 +23,8 @@
       "type": "nominal",
       "title": "Бохирдуулагч",
       "scale": {
-        "domain": ["Тоосонцор РМ2.5", "Тоосонцор РМ10"],
-        "range": ["#ef4444", "#f97316"]
+        "domain": ["Хүхэрлэг хий SO₂"],
+        "range": ["#4c78a8"]
       },
       "legend": { "orient": "top" }
     }

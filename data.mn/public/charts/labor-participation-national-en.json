@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia Labour Force Participation Rate (1992-2025)",
+  "description": "Mongolia Labour Force Participation Rate (2009-2025)",
   "data": {
     "url": "/datasets/labor-participation-national-en.csv",
     "format": {

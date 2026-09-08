@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын ажилгүйдлийн түвшин 2009-2024",
+  "description": "Монгол Улсын ажилгүйдлийн түвшин 2009-2025",
   "data": {
     "url": "/datasets/unemployment-rate-total-mn.csv",
     "format": {

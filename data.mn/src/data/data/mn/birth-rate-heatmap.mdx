@@ -1,0 +1,42 @@
+---
+title: Монгол Улсын төрөлтийн түвшний халуун газрын зураг, 1,000 эмэгтэй хүн тутамд (1980-2025)
+publishDate: 2026-09-08
+author: Data.mn
+dataVersion: 1
+dataDate: 2026-09-08
+excerpt: 1980-2025 оны Монгол Улсын бүх үржихүйн насны бүлгийн төрөлтийн шилжилтийг харуулсан халуун газрын зураг.
+category: Хүн ам зүй
+tags:
+- монгол
+- төрөлт
+- үржил-шим
+- нас
+- хүн-ам-зүй
+- үсх
+keywords:
+- төрөлтийн түвшний зураг
+- насны бүлгээр үржил шим
+- Монголын хүн ам зүй
+dataFiles:
+- path: /datasets/birth-rate-heatmap-all-mn.csv
+  format: csv
+  size: 4 KB
+  description: CSV татах (бүх өгөгдөл)
+- path: /datasets/birth-rate-heatmap.xlsx
+  format: xlsx
+  size: 7 KB
+  description: Excel татах
+source:
+  name: Үндэсний Статистикийн Хороо
+  url: https://data.1212.mn
+  tableId: DT_NSO_0300_029V1.px
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+1980-2025 оны Монгол Улсын бүх үржихүйн насны бүлгийн төрөлтийн шилжилтийг харуулсан халуун газрын зураг.
+
+<VegaChart
+  spec="/charts/birth-rate-heatmap-mn.json"
+  title="Монгол Улсын төрөлтийн түвшний халуун газрын зураг, 1,000 эмэгтэй хүн тутамд (1980-2025)"
+/>

@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Number of registered vehicles in Mongolia from 1940 to 2024",
+  "description": "Number of registered vehicles in Mongolia from 1940 to 2025",
   "data": {
     "url": "/datasets/registered-vehicles-national-en.csv",
     "format": {

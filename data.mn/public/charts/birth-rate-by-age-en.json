@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia's age-specific birth rates from 1980 to 2024, showing the shift in peak fertility from younger to older age groups",
+  "description": "Mongolia's age-specific birth rates from 1980 to 2025, showing the shift in peak fertility from younger to older age groups",
   "data": {
     "url": "/datasets/birth-rate-by-age-en.csv",
     "format": {"type": "csv"}

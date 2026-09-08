@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Number of recorded crimes in Mongolia from 1989 to 2024",
+  "description": "Number of recorded crimes in Mongolia from 1989 to 2025",
   "data": {
     "url": "/datasets/recorded-crimes-national-en.csv",
     "format": {

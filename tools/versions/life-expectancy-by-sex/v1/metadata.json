@@ -1,0 +1,19 @@
+{
+  "dataset_id": "life-expectancy-by-sex",
+  "version": 1,
+  "data_as_of": "2025",
+  "fetched_at": "2026-09-08T04:19:19.279472+00:00",
+  "source_updated_at": "2026-05-29T21:24:46",
+  "parent_id": "nso-life-expectancy",
+  "parent_version": 2,
+  "split_filter": {
+    "Sex": [
+      "Male",
+      "Female"
+    ]
+  },
+  "files": [
+    "data-en.csv",
+    "data-mn.csv"
+  ]
+}

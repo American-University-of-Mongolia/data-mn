@@ -1,0 +1,20 @@
+{
+  "dataset_id": "heating-energy",
+  "version": 2,
+  "fetched_at": "2026-09-08T03:53:44.251489+00:00",
+  "source_updated_at": "2026-07-30T15:04:18",
+  "data_as_of": "2025",
+  "files": {
+    "raw": [
+      "nso-raw-heating-energy-en.csv",
+      "nso-raw-heating-energy-mn.csv"
+    ],
+    "published": [
+      "heating-energy-en.csv",
+      "heating-energy-mn.csv",
+      "heating-energy-all-en.csv",
+      "heating-energy-all-mn.csv",
+      "heating-energy.xlsx"
+    ]
+  }
+}

@@ -1,31 +1,44 @@
 ---
-title: "Mongolia Labour Force Participation Rate by Sex, % (1992-2024)"
+title: Mongolia Labour Force Participation Rate by Sex, % (2009-2025)
 publishDate: 2025-12-06
-excerpt: "Mongolia's labour force participation rate from 1992 to 2024, broken down by male and female workers."
-category: "Labor Market"
-tags: ["mongolia", "labour", "participation", "employment", "sex", "gender"]
-keywords: ["labour force", "participation rate", "by sex", "gender", "employment"]
-author: "Data.mn"
-dataVersion: 1
-dataDate: 2025-12-06
+author: Data.mn
+dataVersion: 2
+dataDate: 2025-12-31
+excerpt: Mongolia's labour force participation rate from 2009 to 2025, broken down by male and female workers.
+category: Labor Market
+tags:
+- mongolia
+- labour
+- participation
+- employment
+- sex
+- gender
+keywords:
+- labour force
+- participation rate
+- by sex
+- gender
+- employment
 dataFiles:
-  - path: "/datasets/labor-participation-by-sex-en.csv"
-    format: "csv"
-    size: "1 KB"
-    description: "Download as CSV"
-  - path: "/datasets/labor-participation-by-sex.xlsx"
-    format: "xlsx"
-    size: "5 KB"
-    description: "Open in Excel"
+- path: /datasets/labor-participation-by-sex-all-en.csv
+  format: csv
+  size: 559 B
+  description: Download as CSV (all data)
+- path: /datasets/labor-participation-by-sex.xlsx
+  format: xlsx
+  size: 5 KB
+  description: Open in Excel
 source:
-  name: "National Statistics Office of Mongolia"
-  url: "https://data.1212.mn"
-  tableId: "DT_NSO_0400_018V1_1.px"
+  name: National Statistics Office of Mongolia
+  url: https://data.1212.mn
+  tableId: DT_NSO_0400_018V1_10.px
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
+Mongolia's labour force participation rate from 2009 to 2025, broken down by male and female workers.
+
 <VegaChart
   spec="/charts/labor-participation-by-sex-en.json"
-  title="Mongolia Labour Force Participation Rate by Sex, % (1992-2024)"
+  title="Mongolia Labour Force Participation Rate by Sex, % (2009-2025)"
 />

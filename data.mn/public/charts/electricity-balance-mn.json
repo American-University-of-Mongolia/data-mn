@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын цахилгаан эрчим хүчний баланс: үйлдвэрлэл, импорт, хэрэглээ (1989-2024)",
+  "description": "Монгол Улсын цахилгаан эрчим хүчний баланс: үйлдвэрлэл, импорт, хэрэглээ (1989-2025)",
   "data": {
     "url": "/datasets/electricity-balance-mn.csv",
     "format": {

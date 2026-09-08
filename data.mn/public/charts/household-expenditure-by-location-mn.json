@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын өрхийн сарын дундаж зарлага байршлаар (Улсын дүн, Хот, Хөдөө) 1997-2024 он",
+  "description": "Монгол Улсын өрхийн сарын дундаж зарлага байршлаар (Улсын дүн, Хот, Хөдөө) 1997-2025 он",
   "data": {
     "url": "/datasets/household-expenditure-by-location-mn.csv",
     "format": {"type": "csv"}

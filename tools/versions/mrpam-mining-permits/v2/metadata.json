@@ -1,0 +1,17 @@
+{
+  "dataset_id": "mrpam-mining-permits",
+  "version": 2,
+  "created_at": "2026-09-08T03:35:57Z",
+  "data_as_of": "2026-07-31",
+  "coverage_time_start": "2021-01",
+  "coverage_time_end": "2026-07",
+  "coverage_frequency": "monthly",
+  "row_count": 1474,
+  "column_count": 9,
+  "data_hash_sha256": "78642b66e6db52c03d1abd0d56678a561f9778db6595b8612c873d33b7019af8",
+  "source": {
+    "id": "mrpam",
+    "report": "2026.07 opendata (6).pdf",
+    "report_url": "https://mrpam.gov.mn/public/pages/732/2026.07%20opendata%20%286%29.pdf"
+  }
+}

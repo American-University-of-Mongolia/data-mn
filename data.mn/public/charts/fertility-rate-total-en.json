@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia's Total Fertility Rate from 1980 to 2024, showing decline from 6.4 to 2.5 children per woman",
+  "description": "Mongolia's Total Fertility Rate from 1980 to 2025, showing decline from 6.4 to 2.4 children per woman",
   "data": {
     "url": "/datasets/fertility-rate-total-en.csv",
     "format": {"type": "csv"}

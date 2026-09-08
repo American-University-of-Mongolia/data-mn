@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia's total meat production from 2010 to 2024",
+  "description": "Mongolia's total meat production from 2010 to 2025",
   "data": {
     "url": "/datasets/meat-production-total-en.csv",
     "format": {"type": "csv"}

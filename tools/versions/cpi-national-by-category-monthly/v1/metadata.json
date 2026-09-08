@@ -1,0 +1,13 @@
+{
+  "dataset_id": "cpi-national-by-category-monthly",
+  "version": 1,
+  "source_table": "DT_NSO_0600_001V3.px",
+  "source_updated_at": "2026-08-11T11:53:22",
+  "reference_year": "2020=100",
+  "data_range": "2010-01 to 2026-07",
+  "chart_rows_en": 2467,
+  "raw_files": [
+    "nso-0600-001v3-en.csv",
+    "nso-0600-001v3-mn.csv"
+  ]
+}

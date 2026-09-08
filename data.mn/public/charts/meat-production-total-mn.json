@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын нийт мах үйлдвэрлэл 2010-2024 он",
+  "description": "Монгол Улсын нийт мах үйлдвэрлэл 2010-2025 он",
   "data": {
     "url": "/datasets/meat-production-total-mn.csv",
     "format": {"type": "csv"}

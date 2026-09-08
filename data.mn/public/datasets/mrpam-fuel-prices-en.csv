@@ -63,6 +63,7 @@ year,month,province,fuel_grade,price_mnt_per_liter
 2026,4,National Average,AI-92,2798.2
 2026,5,National Average,AI-92,2795.9
 2026,6,National Average,AI-92,2795.9
+2026,7,National Average,AI-92,3076.1
 2021,2,National Average,AI-92 Euro-5,1556.5
 2021,5,National Average,AI-92 Euro-5,1557.1
 2021,6,National Average,AI-92 Euro-5,1558.6
@@ -120,6 +121,7 @@ year,month,province,fuel_grade,price_mnt_per_liter
 2026,4,National Average,AI-92 Euro-5,3203.8
 2026,5,National Average,AI-92 Euro-5,3209.4
 2026,6,National Average,AI-92 Euro-5,3203.8
+2026,7,National Average,AI-92 Euro-5,3508.7
 2023,11,National Average,AI-95,4052.4
 2023,12,National Average,AI-95,3868.4
 2024,1,National Average,AI-95,4058.6
@@ -152,6 +154,7 @@ year,month,province,fuel_grade,price_mnt_per_liter
 2026,4,National Average,AI-95,4040.9
 2026,5,National Average,AI-95,4040.9
 2026,6,National Average,AI-95,4063.6
+2026,7,National Average,AI-95,4094.1
 2021,1,National Average,Diesel,2083.6
 2021,3,National Average,Diesel,2183.6
 2021,4,National Average,Diesel,2183.6
@@ -170,6 +173,7 @@ year,month,province,fuel_grade,price_mnt_per_liter
 2026,4,National Average,Diesel,4513.6
 2026,5,National Average,Diesel,4602.3
 2026,6,National Average,Diesel,4619.5
+2026,7,National Average,Diesel,4492.3
 2021,1,National Average,Diesel Euro-5,1976.5
 2021,3,National Average,Diesel Euro-5,2113.3
 2021,4,National Average,Diesel Euro-5,2125.2
@@ -189,3 +193,4 @@ year,month,province,fuel_grade,price_mnt_per_liter
 2026,4,National Average,Diesel Euro-5,4852.6
 2026,5,National Average,Diesel Euro-5,5078.9
 2026,6,National Average,Diesel Euro-5,5139.5
+2026,7,National Average,Diesel Euro-5,5131.5

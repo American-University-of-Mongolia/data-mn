@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia Crude Birth Rate (births per 1,000 population) from 1980 to 2024",
+  "description": "Mongolia Crude Birth Rate (births per 1,000 population) from 1980 to 2025",
   "data": {
     "url": "/datasets/birth-rate-crude-en.csv",
     "format": {"type": "csv"}

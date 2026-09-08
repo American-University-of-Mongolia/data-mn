@@ -1,0 +1,337 @@
+Classification,Year,value
+Total,2025,1284.2
+Total,2024,1256.4
+Total,2023,1230.8
+Total,2022,1196.2
+Total,2021,1096.1
+Total,2020,1116.7
+Total,2019,1091.4
+Total,2018,1050.5
+Total,2017,1021.9
+Total,2016,994.0
+Total,2015,966.9
+Total,2014,934.5
+Total,2013,908.4
+Total,2012,898.7
+Total,2011,891.5
+Total,2010,886.3
+    Total number of children in early childhood education,2025,258.8
+    Total number of children in early childhood education,2024,264.8
+    Total number of children in early childhood education,2023,274.2
+    Total number of children in early childhood education,2022,266.0
+    Total number of children in early childhood education,2021,191.0
+    Total number of children in early childhood education,2020,247.0
+    Total number of children in early childhood education,2019,263.3
+    Total number of children in early childhood education,2018,261.3
+    Total number of children in early childhood education,2017,256.7
+    Total number of children in early childhood education,2016,243.4
+    Total number of children in early childhood education,2015,225.4
+    Total number of children in early childhood education,2014,206.6
+    Total number of children in early childhood education,2013,193.7
+    Total number of children in early childhood education,2012,181.0
+    Total number of children in early childhood education,2011,164.3
+    Total number of children in early childhood education,2010,157.2
+    Total number of pupils studying in general educational schools,2025,819.9
+    Total number of pupils studying in general educational schools,2024,797.9
+    Total number of pupils studying in general educational schools,2023,771.7
+    Total number of pupils studying in general educational schools,2022,746.4
+    Total number of pupils studying in general educational schools,2021,712.4
+    Total number of pupils studying in general educational schools,2020,680.8
+    Total number of pupils studying in general educational schools,2019,640.4
+    Total number of pupils studying in general educational schools,2018,593.2
+    Total number of pupils studying in general educational schools,2017,572.8
+    Total number of pupils studying in general educational schools,2016,552.0
+    Total number of pupils studying in general educational schools,2015,535.1
+    Total number of pupils studying in general educational schools,2014,505.8
+    Total number of pupils studying in general educational schools,2013,497.0
+    Total number of pupils studying in general educational schools,2012,496.1
+    Total number of pupils studying in general educational schools,2011,505.4
+    Total number of pupils studying in general educational schools,2010,512.2
+        Of which: Female,2025,407.1
+        Of which: Female,2024,396.7
+        Of which: Female,2023,383.6
+        Of which: Female,2022,371.5
+        Of which: Female,2021,355.2
+        Of which: Female,2020,339.7
+        Of which: Female,2019,319.9
+        Of which: Female,2018,295.6
+        Of which: Female,2017,286.0
+        Of which: Female,2016,277.0
+        Of which: Female,2015,269.4
+        Of which: Female,2014,253.5
+        Of which: Female,2013,249.0
+        Of which: Female,2012,249.0
+        Of which: Female,2011,253.5
+        Of which: Female,2010,257.3
+        Primary,2025,378.4
+        Primary,2024,379.6
+        Primary,2023,381.5
+        Primary,2022,382.0
+        Primary,2021,371.5
+        Primary,2020,356.9
+        Primary,2019,342.6
+        Primary,2018,327.1
+        Primary,2017,309.4
+        Primary,2016,288.3
+        Primary,2015,271.7
+        Primary,2014,251.2
+        Primary,2013,239.3
+        Primary,2012,245.4
+        Primary,2011,256.6
+        Primary,2010,265.6
+        Secondary,2025,290.6
+        Secondary,2024,273.9
+        Secondary,2023,262.2
+        Secondary,2022,251.3
+        Secondary,2021,238.4
+        Secondary,2020,222.1
+        Secondary,2019,200.8
+        Secondary,2018,184.0
+        Secondary,2017,176.2
+        Secondary,2016,167.4
+        Secondary,2015,147.0
+        Secondary,2014,158.6
+        Secondary,2013,164.6
+        Secondary,2012,155.3
+        Secondary,2011,169.2
+        Secondary,2010,172.9
+        High,2025,150.9
+        High,2024,144.3
+        High,2023,128.0
+        High,2022,113.1
+        High,2021,102.5
+        High,2020,101.8
+        High,2019,97.0
+        High,2018,82.1
+        High,2017,87.2
+        High,2016,96.3
+        High,2015,116.4
+        High,2014,96.0
+        High,2013,93.1
+        High,2012,95.4
+        High,2011,79.6
+        High,2010,73.7
+    Technical and vocational educational institutions,2025,41.6
+    Technical and vocational educational institutions,2024,40.9
+    Technical and vocational educational institutions,2023,38.3
+    Technical and vocational educational institutions,2022,38.0
+    Technical and vocational educational institutions,2021,42.6
+    Technical and vocational educational institutions,2020,40.2
+    Technical and vocational educational institutions,2019,37.8
+    Technical and vocational educational institutions,2018,37.0
+    Technical and vocational educational institutions,2017,35.8
+    Technical and vocational educational institutions,2016,40.1
+    Technical and vocational educational institutions,2015,42.7
+    Technical and vocational educational institutions,2014,42.8
+    Technical and vocational educational institutions,2013,42.8
+    Technical and vocational educational institutions,2012,45.3
+    Technical and vocational educational institutions,2011,48.1
+    Technical and vocational educational institutions,2010,46.1
+        State,2025,29.5
+        State,2024,29.2
+        State,2023,26.8
+        State,2022,27.4
+        State,2021,30.2
+        State,2020,28.7
+        State,2019,27.7
+        State,2018,26.4
+        State,2017,25.7
+        State,2016,29.1
+        State,2015,31.6
+        State,2014,32.9
+        State,2013,33.5
+        State,2012,35.3
+        State,2011,37.2
+        State,2010,34.7
+        Private,2025,12.1
+        Private,2024,11.7
+        Private,2023,11.5
+        Private,2022,10.6
+        Private,2021,12.4
+        Private,2020,11.5
+        Private,2019,10.1
+        Private,2018,10.6
+        Private,2017,10.1
+        Private,2016,11.0
+        Private,2015,11.1
+        Private,2014,9.9
+        Private,2013,9.3
+        Private,2012,10.0
+        Private,2011,10.9
+        Private,2010,11.4
+    Total number of students studying in Higher educational institutions,2025,161.9
+    Total number of students studying in Higher educational institutions,2024,150.3
+    Total number of students studying in Higher educational institutions,2023,145.3
+    Total number of students studying in Higher educational institutions,2022,145.3
+    Total number of students studying in Higher educational institutions,2021,149.0
+    Total number of students studying in Higher educational institutions,2020,147.3
+    Total number of students studying in Higher educational institutions,2019,148.4
+    Total number of students studying in Higher educational institutions,2018,157.6
+    Total number of students studying in Higher educational institutions,2017,155.2
+    Total number of students studying in Higher educational institutions,2016,157.1
+    Total number of students studying in Higher educational institutions,2015,162.6
+    Total number of students studying in Higher educational institutions,2014,178.3
+    Total number of students studying in Higher educational institutions,2013,174.1
+    Total number of students studying in Higher educational institutions,2012,175.5
+    Total number of students studying in Higher educational institutions,2011,172.8
+    Total number of students studying in Higher educational institutions,2010,170.1
+        State:,2025,90.5
+        State:,2024,81.6
+        State:,2023,80.1
+        State:,2022,79.7
+        State:,2021,79.1
+        State:,2020,76.8
+        State:,2019,82.9
+        State:,2018,88.0
+        State:,2017,89.5
+        State:,2016,91.8
+        State:,2015,95.0
+        State:,2014,103.7
+        State:,2013,101.9
+        State:,2012,105.7
+        State:,2011,104.1
+        State:,2010,104.4
+            Institutes and colleges,2025,1.5
+            Institutes and colleges,2024,1.7
+            Institutes and colleges,2023,2.1
+            Institutes and colleges,2022,2.8
+            Institutes and colleges,2021,2.4
+            Institutes and colleges,2020,2.3
+            Institutes and colleges,2019,2.8
+            Institutes and colleges,2018,1.6
+            Institutes and colleges,2017,1.6
+            Institutes and colleges,2016,9.4
+            Institutes and colleges,2015,10.1
+            Institutes and colleges,2014,12.6
+            Institutes and colleges,2013,13.7
+            Institutes and colleges,2012,15.1
+            Institutes and colleges,2011,15.3
+            Institutes and colleges,2010,6.0
+            Universities,2025,89.0
+            Universities,2024,79.9
+            Universities,2023,78.0
+            Universities,2022,76.9
+            Universities,2021,76.7
+            Universities,2020,74.5
+            Universities,2019,80.1
+            Universities,2018,86.4
+            Universities,2017,87.9
+            Universities,2016,82.4
+            Universities,2015,84.9
+            Universities,2014,91.1
+            Universities,2013,88.2
+            Universities,2012,90.6
+            Universities,2011,88.8
+            Universities,2010,98.4
+        Private:,2025,62.0
+        Private:,2024,60.1
+        Private:,2023,57.3
+        Private:,2022,58.8
+        Private:,2021,62.5
+        Private:,2020,63.6
+        Private:,2019,65.5
+        Private:,2018,69.6
+        Private:,2017,65.7
+        Private:,2016,65.3
+        Private:,2015,67.6
+        Private:,2014,74.6
+        Private:,2013,72.2
+        Private:,2012,69.8
+        Private:,2011,68.7
+        Private:,2010,65.7
+            Institutes and colleges,2025,6.4
+            Institutes and colleges,2024,0.9
+            Institutes and colleges,2023,0.7
+            Institutes and colleges,2022,0.5
+            Institutes and colleges,2021,12.7
+            Institutes and colleges,2020,12.8
+            Institutes and colleges,2019,18.1
+            Institutes and colleges,2018,18.6
+            Institutes and colleges,2017,16.9
+            Institutes and colleges,2016,43.2
+            Institutes and colleges,2015,37.6
+            Institutes and colleges,2014,46.3
+            Institutes and colleges,2013,45.0
+            Institutes and colleges,2012,43.6
+            Institutes and colleges,2011,51.6
+            Institutes and colleges,2010,49.6
+            Universities,2025,55.6
+            Universities,2024,59.2
+            Universities,2023,56.6
+            Universities,2022,58.3
+            Universities,2021,49.8
+            Universities,2020,50.8
+            Universities,2019,47.4
+            Universities,2018,51.0
+            Universities,2017,48.8
+            Universities,2016,22.1
+            Universities,2015,30.0
+            Universities,2014,28.3
+            Universities,2013,27.2
+            Universities,2012,26.2
+            Universities,2011,17.1
+            Universities,2010,16.1
+        Public/ religious:,2025,9.4
+        Public/ religious:,2024,8.6
+        Public/ religious:,2023,8.0
+        Public/ religious:,2022,6.7
+        Public/ religious:,2021,7.4
+        Public/ religious:,2020,6.9
+        Public/ religious:,2019,
+        Public/ religious:,2018,
+        Public/ religious:,2017,
+        Public/ religious:,2016,
+        Public/ religious:,2015,0.0
+        Public/ religious:,2014,0.0
+        Public/ religious:,2013,
+        Public/ religious:,2012,
+        Public/ religious:,2011,
+        Public/ religious:,2010,
+            Institutes and colleges,2025,0.0
+            Institutes and colleges,2024,0.0
+            Institutes and colleges,2023,0.0
+            Institutes and colleges,2022,0.0
+            Institutes and colleges,2021,0.4
+            Institutes and colleges,2020,0.4
+            Institutes and colleges,2019,
+            Institutes and colleges,2018,
+            Institutes and colleges,2017,
+            Institutes and colleges,2016,
+            Institutes and colleges,2015,0.0
+            Institutes and colleges,2014,0.0
+            Institutes and colleges,2013,
+            Institutes and colleges,2012,
+            Institutes and colleges,2011,
+            Institutes and colleges,2010,
+            Universities,2025,9.4
+            Universities,2024,8.6
+            Universities,2023,8.0
+            Universities,2022,6.7
+            Universities,2021,7.0
+            Universities,2020,6.5
+            Universities,2019,
+            Universities,2018,
+            Universities,2017,
+            Universities,2016,
+            Universities,2015,0.0
+            Universities,2014,0.0
+            Universities,2013,
+            Universities,2012,
+            Universities,2011,
+            Universities,2010,
+    Students studying abroad¹,2025,2.0
+    Students studying abroad¹,2024,2.5
+    Students studying abroad¹,2023,1.3
+    Students studying abroad¹,2022,0.5
+    Students studying abroad¹,2021,1.1
+    Students studying abroad¹,2020,1.4
+    Students studying abroad¹,2019,1.5
+    Students studying abroad¹,2018,1.4
+    Students studying abroad¹,2017,1.4
+    Students studying abroad¹,2016,1.4
+    Students studying abroad¹,2015,1.1
+    Students studying abroad¹,2014,1.0
+    Students studying abroad¹,2013,0.8
+    Students studying abroad¹,2012,0.8
+    Students studying abroad¹,2011,0.9
+    Students studying abroad¹,2010,0.7

@@ -1,31 +1,42 @@
 ---
-title: "Монгол Улсын хөдөлмөрийн оролцооны түвшин, % (1992-2025)"
+title: Монгол Улсын хөдөлмөрийн оролцооны түвшин, % (2009-2025)
 publishDate: 2025-12-06
-excerpt: "Монгол Улсын хөдөлмөрийн оролцооны түвшин 1992-2025 онд, ажиллах насны хүн амын эдийн засгийн идэвхтэй хувийг харуулна."
-category: "Хөдөлмөрийн зах зээл"
-tags: ["монгол", "хөдөлмөр", "оролцоо", "хөдөлмөр эрхлэлт", "эдийн засаг"]
-keywords: ["labour force", "participation rate", "employment", "working age"]
-author: "Data.mn"
-dataVersion: 2
+author: Data.mn
+dataVersion: 3
 dataDate: 2025-12-31
+excerpt: Монгол Улсын хөдөлмөрийн оролцооны түвшин 2009-2025 онд, ажиллах насны хүн амын эдийн засгийн идэвхтэй хувийг харуулна.
+category: Хөдөлмөрийн зах зээл
+tags:
+- монгол
+- хөдөлмөр
+- оролцоо
+- хөдөлмөр эрхлэлт
+- эдийн засаг
+keywords:
+- labour force
+- participation rate
+- employment
+- working age
 dataFiles:
-  - path: "/datasets/labor-participation-national-mn.csv"
-    format: "csv"
-    size: "383 B"
-    description: "CSV татах"
-  - path: "/datasets/labor-participation-national.xlsx"
-    format: "xlsx"
-    size: "5 KB"
-    description: "Excel татах"
+- path: /datasets/labor-participation-national-all-mn.csv
+  format: csv
+  size: 184 B
+  description: CSV татах (бүх өгөгдөл)
+- path: /datasets/labor-participation-national.xlsx
+  format: xlsx
+  size: 5 KB
+  description: Excel татах
 source:
-  name: "Үндэсний Статистикийн Хороо"
-  url: "https://data.1212.mn"
-  tableId: "DT_NSO_0400_018V1_1.px"
+  name: Үндэсний Статистикийн Хороо
+  url: https://data.1212.mn
+  tableId: DT_NSO_0400_018V1_10.px
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
+Монгол Улсын хөдөлмөрийн оролцооны түвшин 2009-2025 онд, ажиллах насны хүн амын эдийн засгийн идэвхтэй хувийг харуулна.
+
 <VegaChart
   spec="/charts/labor-participation-national-mn.json"
-  title="Монгол Улсын хөдөлмөрийн оролцооны түвшин, % (1992-2025)"
+  title="Монгол Улсын хөдөлмөрийн оролцооны түвшин, % (2009-2025)"
 />

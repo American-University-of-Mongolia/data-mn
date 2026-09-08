@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Heatmap of Mongolia age-specific birth rates from 1980 to 2025, showing fertility transition patterns across age and time",
+  "data": {
+    "url": "/datasets/birth-rate-heatmap-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "rect"
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 5,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "age_group",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "15-19",
+        "20-24",
+        "25-29",
+        "30-34",
+        "35-39",
+        "40-44",
+        "45-49"
+      ]
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Births per 1,000 Women",
+      "scale": {
+        "scheme": "reds"
+      },
+      "legend": {
+        "orient": "top"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "title": "Year",
+        "format": "d"
+      },
+      {
+        "field": "age_group",
+        "title": "Age Group"
+      },
+      {
+        "field": "value",
+        "title": "Birth Rate",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

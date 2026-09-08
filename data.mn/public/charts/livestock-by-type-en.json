@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia livestock by type from 1970 to 2024",
+  "description": "Mongolia livestock by type from 1970 to 2025",
   "data": {
     "url": "/datasets/livestock-by-type-en.csv",
     "format": {

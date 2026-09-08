@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia electricity balance: generation, imports, and consumption (1989-2024)",
+  "description": "Mongolia electricity balance: generation, imports, and consumption (1989-2025)",
   "data": {
     "url": "/datasets/electricity-balance-en.csv",
     "format": {

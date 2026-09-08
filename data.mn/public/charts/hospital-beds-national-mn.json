@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын эмнэлгийн орны нийт тоо 1989-2024 он",
+  "description": "Монгол Улсын эмнэлгийн орны нийт тоо 1989-2025 он",
   "data": {
     "url": "/datasets/hospital-beds-national-mn.csv",
     "format": {

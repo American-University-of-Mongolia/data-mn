@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Monthly live births in Mongolia from January 2016 to March 2026.",
+  "description": "Monthly live births in Mongolia from January 2016 to July 2026.",
   "data": {
     "url": "/datasets/nso-live-births-monthly-en.csv",
     "format": {"type": "csv"}

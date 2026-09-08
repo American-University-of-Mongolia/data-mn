@@ -1,0 +1,17 @@
+{
+  "dataset_id": "mrpam-budget-revenue",
+  "version": 2,
+  "created_at": "2026-09-08T03:35:57Z",
+  "data_as_of": "2026-07-31",
+  "coverage_time_start": "2021-01",
+  "coverage_time_end": "2026-07",
+  "coverage_frequency": "monthly",
+  "row_count": 426,
+  "column_count": 6,
+  "data_hash_sha256": "c592bbff850c1eac171b902d6163feeebeab7379a00e42345ca68c2fb83439ac",
+  "source": {
+    "id": "mrpam",
+    "report": "2026.07 opendata (6).pdf",
+    "report_url": "https://mrpam.gov.mn/public/pages/732/2026.07%20opendata%20%286%29.pdf"
+  }
+}

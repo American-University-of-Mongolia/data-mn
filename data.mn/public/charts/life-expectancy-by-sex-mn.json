@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Төрөхөд дундаж наслалт хүйсээр, Монгол Улс (1992-2024)",
+  "description": "Төрөхөд дундаж наслалт хүйсээр, Монгол Улс (1992-2025)",
   "data": {
     "url": "/datasets/life-expectancy-by-sex-mn.csv",
     "format": {
@@ -30,8 +30,14 @@
       "field": "хүйс",
       "type": "nominal",
       "scale": {
-        "domain": ["Эрэгтэй", "Эмэгтэй"],
-        "range": ["#3b82f6", "#ec4899"]
+        "domain": [
+          "Эрэгтэй",
+          "Эмэгтэй"
+        ],
+        "range": [
+          "#4c78a8",
+          "#e45756"
+        ]
       },
       "legend": {
         "title": "Хүйс",

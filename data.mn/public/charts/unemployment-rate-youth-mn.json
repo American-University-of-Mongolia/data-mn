@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Залуучуудын (15-24 насны) ажилгүйдлийн түвшин 2009-2024",
+  "description": "Залуучуудын (15-24 насны) ажилгүйдлийн түвшин 2009-2025",
   "data": {
     "url": "/datasets/unemployment-rate-youth-mn.csv",
     "format": {

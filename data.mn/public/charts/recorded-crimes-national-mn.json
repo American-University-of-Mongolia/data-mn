@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын бүртгэгдсэн гэмт хэргийн тоо, 1989-2024",
+  "description": "Монгол Улсын бүртгэгдсэн гэмт хэргийн тоо, 1989-2025",
   "data": {
     "url": "/datasets/recorded-crimes-national-mn.csv",
     "format": {

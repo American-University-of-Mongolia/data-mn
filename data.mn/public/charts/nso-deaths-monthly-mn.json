@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын 2016 оны 1-р сараас 2026 оны 3-р сар хүртэлх сар бүрийн нас баралтын тоо.",
+  "description": "Монгол Улсын 2016 оны 1-р сараас 2026 оны 7-р сар хүртэлх сар бүрийн нас баралтын тоо.",
   "data": {
     "url": "/datasets/nso-deaths-monthly-mn.csv",
     "format": {"type": "csv"}

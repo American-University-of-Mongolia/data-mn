@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын төрөлтийн түвшин (1,000 хүн амд ногдох төрөлт) 1980-2024 он",
+  "description": "Монгол Улсын төрөлтийн түвшин (1,000 хүн амд ногдох төрөлт) 1980-2025 он",
   "data": {
     "url": "/datasets/birth-rate-crude-mn.csv",
     "format": {"type": "csv"}

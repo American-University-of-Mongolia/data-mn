@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia national average monthly household total expenditure (MNT) from 1997 to 2024",
+  "description": "Mongolia national average monthly household total expenditure (MNT) from 1997 to 2025",
   "data": {
     "url": "/datasets/household-expenditure-total-en.csv",
     "format": {"type": "csv"}

@@ -1,4 +1,5 @@
 category,year,value
+Western region,2025,9.5
 Western region,2024,7.3
 Western region,2023,5.7
 Western region,2022,9.2
@@ -15,6 +16,7 @@ Western region,2012,9.8
 Western region,2011,10.8
 Western region,2010,10.1
 Western region,2009,7.5
+Khangai region,2025,5.3
 Khangai region,2024,6.1
 Khangai region,2023,5.7
 Khangai region,2022,6.5
@@ -31,6 +33,7 @@ Khangai region,2012,8.3
 Khangai region,2011,8.3
 Khangai region,2010,11.9
 Khangai region,2009,12.0
+Central region,2025,5.2
 Central region,2024,5.7
 Central region,2023,6.2
 Central region,2022,6.3
@@ -47,6 +50,7 @@ Central region,2012,7.7
 Central region,2011,6.8
 Central region,2010,9.3
 Central region,2009,11.2
+Eastern region,2025,6.3
 Eastern region,2024,4.3
 Eastern region,2023,3.8
 Eastern region,2022,4.6

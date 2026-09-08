@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Total number of hospital beds in Mongolia from 1989 to 2024",
+  "description": "Total number of hospital beds in Mongolia from 1989 to 2025",
   "data": {
     "url": "/datasets/hospital-beds-national-en.csv",
     "format": {

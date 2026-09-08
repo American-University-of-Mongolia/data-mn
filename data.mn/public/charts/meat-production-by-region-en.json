@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Meat production in Mongolia by region from 2010 to 2024",
+  "description": "Meat production in Mongolia by region from 2010 to 2025",
   "data": {
     "url": "/datasets/meat-production-by-region-en.csv",
     "format": {

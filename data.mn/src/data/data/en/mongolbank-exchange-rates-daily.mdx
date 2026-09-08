@@ -6,16 +6,16 @@ category: "Finance"
 tags: ["exchange rates", "currency", "MNT", "finance", "Bank of Mongolia", "USD", "EUR", "CNY"]
 keywords: ["mongolia exchange rates", "mongolian tugrik usd", "mongolbank currency rates daily", "MNT per dollar", "mongolia forex history"]
 author: "Data.mn"
-dataVersion: 1
-dataDate: 2026-02-26
+dataVersion: 2
+dataDate: 2026-09-07
 dataFiles:
   - path: "/datasets/mongolbank-exchange-rates-daily-en.csv"
     format: "csv"
-    size: "442 KB"
+    size: "480 KB"
     description: "Download as CSV"
   - path: "/datasets/mongolbank-exchange-rates-daily.xlsx"
     format: "xlsx"
-    size: "539 KB"
+    size: "6 KB"
     description: "Open in Excel"
 source:
   name: "Bank of Mongolia"
@@ -25,7 +25,7 @@ source:
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
-As of 2026-02-26, 1 USD = 3,566 MNT; 1 EUR = 4,214 MNT; 1 CNY = 522 MNT. Official daily closing exchange rates from the Bank of Mongolia. The chart shows each currency's rate indexed to 100 at the start of the series to enable comparison across currencies with very different absolute values.
+As of 2026-09-07, 1 USD = 3,595 MNT; 1 EUR = 4,179 MNT; 1 CNY = 536 MNT. Official daily closing exchange rates from the Bank of Mongolia. The chart shows each currency's rate indexed to 100 at the start of the series to enable comparison across currencies with very different absolute values.
 
 <VegaChart
   spec="/charts/mongolbank-exchange-rates-daily-en.json"

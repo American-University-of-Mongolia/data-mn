@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Unemployment rate by location (Urban vs Rural) in Mongolia from 2009 to 2024",
+  "description": "Unemployment rate by location (Urban vs Rural) in Mongolia from 2009 to 2025",
   "data": {
     "url": "/datasets/unemployment-rate-by-location-en.csv",
     "format": {

@@ -8,7 +8,7 @@
 
 ## Description
 
-Monthly live birth counts for Mongolia (national total) from January 2016 to March 2026, sourced from the National Statistics Office of Mongolia (1212.mn).
+Monthly live birth counts for Mongolia (national total) from January 2016 to July 2026, sourced from the National Statistics Office of Mongolia (1212.mn).
 
 ## Source Data
 
@@ -27,7 +27,7 @@ Monthly live birth counts for Mongolia (national total) from January 2016 to Mar
 
 ## Coverage
 
-- **Time range**: 2016-01 to 2026-03 (123 months)
+- **Time range**: 2016-01 to 2026-07 (127 months)
 - **Geography**: National total
 - **Frequency**: Monthly
 

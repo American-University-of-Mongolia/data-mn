@@ -26,7 +26,7 @@ year,country,count
 2009,China,9
 2009,Federal Republic of Germany,292
 2009,Japan,9047
-2009,Other,153
+2009,Other,154
 2009,Republic of Korea,1701
 2009,Russian Federation,101
 2009,Thailand,15
@@ -37,7 +37,7 @@ year,country,count
 2010,China,89
 2010,Federal Republic of Germany,537
 2010,Japan,22233
-2010,Other,122
+2010,Other,126
 2010,Republic of Korea,2656
 2010,Russian Federation,212
 2010,Thailand,34
@@ -48,7 +48,7 @@ year,country,count
 2011,China,128
 2011,Federal Republic of Germany,1458
 2011,Japan,44011
-2011,Other,154
+2011,Other,158
 2011,Republic of Korea,10371
 2011,Russian Federation,209
 2011,Thailand,64
@@ -59,7 +59,7 @@ year,country,count
 2012,China,44
 2012,Federal Republic of Germany,1096
 2012,Japan,34942
-2012,Other,137
+2012,Other,140
 2012,Republic of Korea,9069
 2012,Russian Federation,155
 2012,Thailand,50
@@ -81,7 +81,7 @@ year,country,count
 2014,China,19
 2014,Federal Republic of Germany,423
 2014,Japan,37783
-2014,Other,65
+2014,Other,66
 2014,Republic of Korea,2458
 2014,Russian Federation,31
 2014,Thailand,18
@@ -92,7 +92,7 @@ year,country,count
 2015,China,4
 2015,Federal Republic of Germany,248
 2015,Japan,33825
-2015,Other,38
+2015,Other,39
 2015,Republic of Korea,2568
 2015,Russian Federation,84
 2015,Thailand,4
@@ -103,7 +103,7 @@ year,country,count
 2016,China,26
 2016,Federal Republic of Germany,260
 2016,Japan,33038
-2016,Other,74
+2016,Other,77
 2016,Republic of Korea,3959
 2016,Russian Federation,65
 2016,Thailand,19
@@ -125,7 +125,7 @@ year,country,count
 2018,China,127
 2018,Federal Republic of Germany,722
 2018,Japan,59918
-2018,Other,119
+2018,Other,123
 2018,Republic of Korea,2096
 2018,Russian Federation,228
 2018,Thailand,20
@@ -136,7 +136,7 @@ year,country,count
 2019,China,54
 2019,Federal Republic of Germany,845
 2019,Japan,65372
-2019,Other,191
+2019,Other,196
 2019,Republic of Korea,1295
 2019,Russian Federation,539
 2019,Thailand,93
@@ -147,7 +147,7 @@ year,country,count
 2020,China,128
 2020,Federal Republic of Germany,719
 2020,Japan,49779
-2020,Other,207
+2020,Other,218
 2020,Republic of Korea,840
 2020,Russian Federation,226
 2020,Thailand,69
@@ -169,7 +169,7 @@ year,country,count
 2022,China,1550
 2022,Federal Republic of Germany,924
 2022,Japan,60160
-2022,Other,175
+2022,Other,299
 2022,Republic of Korea,1094
 2022,Russian Federation,100
 2022,Thailand,72
@@ -180,7 +180,7 @@ year,country,count
 2023,China,2050
 2023,Federal Republic of Germany,936
 2023,Japan,67843
-2023,Other,224
+2023,Other,298
 2023,Republic of Korea,1267
 2023,Russian Federation,4
 2023,Thailand,32
@@ -191,20 +191,20 @@ year,country,count
 2024,China,3546
 2024,Federal Republic of Germany,1180
 2024,Japan,114780
-2024,Other,444
+2024,Other,510
 2024,Republic of Korea,1365
 2024,Russian Federation,55
 2024,Thailand,52
 2024,United Kingdom,208
 2024,United States of America,1150
 2025,Austria,161
-2025,Canada,139
-2025,China,3893
-2025,Federal Republic of Germany,913
-2025,Japan,82614
-2025,Other,201
-2025,Republic of Korea,839
-2025,Russian Federation,14
+2025,Canada,140
+2025,China,3924
+2025,Federal Republic of Germany,919
+2025,Japan,82811
+2025,Other,302
+2025,Republic of Korea,848
+2025,Russian Federation,19
 2025,Thailand,51
-2025,United Kingdom,154
-2025,United States of America,1072
+2025,United Kingdom,155
+2025,United States of America,1076

@@ -113,9 +113,10 @@ Exempt from the max-6-categories rule (maps show all regions by design).
   (EN: `properties.name` ↔ `name`; MN: `properties.name_mn` ↔ `бүс`)
 - **Color**: price/үнэ (quantitative, `oranges` scheme)
 - **Tooltip**: aimag name + price (,.0f)
-- **MDX**: second embed. The map TITLE carries the snapshot date
-  (EN: "Week of {Month D, YYYY}"; MN: "{YYYY} оны {M}-р сарын {D}").
-  Bump the date on every update — it must always match the `-latest` CSVs.
+- **MDX**: second embed. The map TITLE and caption both carry the snapshot
+  date (title EN: "Week of {Month D, YYYY}"; caption EN: "(week of
+  {Month D, YYYY})"; title/caption MN: "{YYYY} оны {M}-р сарын {D}").
+  Bump both dates on every update — they must always match the `-latest` CSVs.
 
 ## Update Instructions
 

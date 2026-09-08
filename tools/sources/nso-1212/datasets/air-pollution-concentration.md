@@ -3,11 +3,12 @@
 **Dataset ID**: `air-pollution-concentration`
 **Source**: National Statistics Office of Mongolia (1212.mn)
 **Tables**:
-- `DT_NSO_2400_015V4.px` — PARTICULATE MATTER PM10, by location, by month
-- `DT_NSO_2400_015V5.px` — PARTICULATE MATTER PM2.5, by location, by month
+- `DT_NSO_2400_015V3.px` — SULPHUR DIOXIDE, by location, by month (live 2026-09-04; TABLE SWITCH 2026-09-08)
+- ~~`DT_NSO_2400_015V4.px` — PARTICULATE MATTER PM10~~ — DEAD: ID now returns REPORT OF UNIFIED LAND TERRITORY
+- ~~`DT_NSO_2400_015V5.px` — PARTICULATE MATTER PM2.5~~ — DEAD: absent from live catalog
 **Sector**: Economy, environment
 **Subsector**: Environment → CONCENTRATION OF AIR POLLUTION, by location, by month
-**Last Updated**: 2026-03-10
+**Last Updated**: 2026-09-04
 **Frequency**: Monthly
 
 ## Variables
@@ -26,13 +27,13 @@ Range: 2002-01 to 2026-02
 
 ## Scope (air-pollution-concentration)
 
-- **2 pollutants**: PM2.5 and PM10 (most health-critical for Ulaanbaatar)
+- **1 pollutant**: SO₂ (PM2.5/PM10 discontinued with V4/V5; V3 is SO₂-only — coverage loss recorded 2026-09-08)
 - **Geography**: Ulaanbaatar only (17 stations averaged per month)
 - **Columns EN**: `month`, `pollutant`, `value_mg_m3`
 - **Columns MN**: `сар`, `бохирдуулагч`, `утга_мг_м3`
-- **Format**: Long form (580 rows = 290 months × 2 pollutants)
+- **Format**: Long form (296 rows = 296 months × 1 pollutant)
 - **Unit**: mg/m³
-- **Date range**: 2002-01 to 2026-02
+- **Date range**: 2002-01 to 2026-08
 
 ## Notes
 

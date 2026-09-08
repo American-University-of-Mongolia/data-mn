@@ -1,0 +1,11 @@
+{
+  "dataset_id": "industrial-output-by-subdivision-monthly",
+  "version": 1,
+  "fetched_at": "2026-09-08T03:30:49.595662+00:00",
+  "source_updated_at": "2026-08-28T09:22:11",
+  "files": [
+    "industrial-output-by-subdivision-monthly-en.csv",
+    "industrial-output-by-subdivision-monthly-mn.csv",
+    "industrial-output-by-subdivision-monthly.xlsx"
+  ]
+}

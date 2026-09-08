@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Youth unemployment rate (ages 15-24) in Mongolia from 2009 to 2024",
+  "description": "Youth unemployment rate (ages 15-24) in Mongolia from 2009 to 2025",
   "data": {
     "url": "/datasets/unemployment-rate-youth-en.csv",
     "format": {

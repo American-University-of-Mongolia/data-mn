@@ -1,4 +1,5 @@
 category,year,value
+Urban,2025,6.0
 Urban,2024,6.8
 Urban,2023,6.3
 Urban,2022,7.7
@@ -15,6 +16,7 @@ Urban,2012,9.7
 Urban,2011,8.3
 Urban,2010,11.6
 Urban,2009,15.0
+Rural,2025,4.3
 Rural,2024,2.2
 Rural,2023,3.7
 Rural,2022,4.0
@@ -31,6 +33,7 @@ Rural,2012,6.5
 Rural,2011,7.0
 Rural,2010,7.8
 Rural,2009,7.3
+Ulaanbaatar,2025,4.3
 Ulaanbaatar,2024,5.8
 Ulaanbaatar,2023,5.0
 Ulaanbaatar,2022,5.8

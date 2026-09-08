@@ -1,0 +1,42 @@
+---
+title: Mongolia Birth Rates Heatmap by Age and Year, Births per 1,000 Women (1980-2025)
+publishDate: 2026-09-08
+author: Data.mn
+dataVersion: 1
+dataDate: 2026-09-08
+excerpt: Heatmap showing Mongolia's fertility transition from 1980 to 2025 across all reproductive age groups.
+category: Demographics
+tags:
+- mongolia
+- birth-rate
+- fertility
+- demographics
+- reproductive-health
+- nso
+keywords:
+- mongolia birth rate heatmap
+- age-specific fertility
+- fertility transition
+dataFiles:
+- path: /datasets/birth-rate-heatmap-all-en.csv
+  format: csv
+  size: 4 KB
+  description: Download as CSV (all data)
+- path: /datasets/birth-rate-heatmap.xlsx
+  format: xlsx
+  size: 7 KB
+  description: Open in Excel
+source:
+  name: National Statistics Office of Mongolia
+  url: https://data.1212.mn
+  tableId: DT_NSO_0300_029V1.px
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Heatmap showing Mongolia's fertility transition from 1980 to 2025 across all reproductive age groups.
+
+<VegaChart
+  spec="/charts/birth-rate-heatmap-en.json"
+  title="Mongolia Birth Rates Heatmap by Age and Year, Births per 1,000 Women (1980-2025)"
+/>

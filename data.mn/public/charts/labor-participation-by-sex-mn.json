@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын хөдөлмөрийн оролцооны түвшин хүйсээр (1992-2024)",
+  "description": "Монгол Улсын хөдөлмөрийн оролцооны түвшин хүйсээр (2009-2025)",
   "data": {
     "url": "/datasets/labor-participation-by-sex-mn.csv",
     "format": {

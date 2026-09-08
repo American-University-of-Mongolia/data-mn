@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "date": "2026-09-08",
+  "source_tables": [
+    "DT_NSO_2400_015V3.px (SO2)"
+  ],
+  "source_updated": "2026-09-04",
+  "rows": 296,
+  "pollutants": [
+    "SO2"
+  ],
+  "locations": "17 Ulaanbaatar monitoring stations (averaged)",
+  "month_range": "2002-01 to 2026-08",
+  "first_month_with_data": "2002-01",
+  "peak_so2_mg_m3": 0.2158,
+  "peak_month": "2021-01",
+  "notes": "TABLE SWITCH from dead DT_NSO_2400_015V4.px (PM10, now land-territory table) + missing DT_NSO_2400_015V5.px (PM2.5). Coverage loss: PM10/PM2.5 discontinued. Monthly averages across same 17 UB stations, Average indicator. Values in mg/m3."
+}

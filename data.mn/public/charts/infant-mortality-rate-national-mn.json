@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын нялхсын эндэгдлийн түвшин 1000 амьд төрөлтөнд 2016-2025",
+  "description": "Монгол Улсын нялхсын эндэгдлийн түвшин 1000 амьд төрөлтөнд 2016-2026",
   "data": {
     "url": "/datasets/infant-mortality-rate-national-mn.csv",
     "format": {
@@ -35,7 +35,7 @@
       "mark": {
         "type": "area",
         "line": {
-          "color": "#3b82f6",
+          "color": "#4c78a8",
           "strokeWidth": 2.5
         },
         "color": {
@@ -47,11 +47,11 @@
           "stops": [
             {
               "offset": 0,
-              "color": "rgba(59, 130, 246, 0.01)"
+              "color": "rgba(76, 120, 168, 0.01)"
             },
             {
               "offset": 1,
-              "color": "rgba(59, 130, 246, 0.3)"
+              "color": "rgba(76, 120, 168, 0.3)"
             }
           ]
         },
@@ -73,7 +73,7 @@
       "mark": {
         "type": "point",
         "filled": true,
-        "color": "#3b82f6",
+        "color": "#4c78a8",
         "size": 100
       },
       "encoding": {

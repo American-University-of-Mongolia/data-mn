@@ -1,100 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Weekly beef prices across four aimags in Mongolia (Darkhan-Uul, Orkhon, Umnugovi, and Khovd) from January 2024 to present.",
-  "data": {
-    "url": "/datasets/weekly-beef-prices-aimags-en.csv",
-    "format": {
-      "type": "csv"
-    }
-  },
-  "encoding": {
-    "x": {
-      "field": "date",
-      "type": "temporal",
-      "title": "Date",
-      "axis": {
-        "format": "%b %Y",
-        "tickCount": 12,
-        "grid": false
-      }
-    },
-    "y": {
-      "field": "price",
-      "type": "quantitative",
-      "title": "Price (MNT/kg)",
-      "axis": {
-        "format": ",.0f"
-      }
-    },
-    "color": {
-      "field": "region",
-      "type": "nominal",
-      "legend": {
-        "title": "Region",
-        "orient": "top"
-      }
-    }
-  },
-  "layer": [
-    {
-      "mark": {
-        "type": "line",
-        "strokeWidth": 2.5,
-        "interpolate": "monotone"
-      }
-    },
-    {
-      "params": [
-        {
-          "name": "hover",
-          "select": {
-            "type": "point",
-            "nearest": true,
-            "on": "pointerover",
-            "clear": "pointerout"
-          }
-        }
-      ],
-      "mark": {
-        "type": "point",
-        "filled": true,
-        "size": 100
-      },
-      "encoding": {
-        "opacity": {
-          "condition": {
-            "param": "hover",
-            "empty": false,
-            "value": 1
-          },
-          "value": 0
-        },
-        "tooltip": [
-          {
-            "field": "region",
-            "title": "Region"
-          },
-          {
-            "field": "date",
-            "title": "Date",
-            "type": "temporal",
-            "format": "%Y-%m-%d"
-          },
-          {
-            "field": "price",
-            "title": "Price (MNT/kg)",
-            "format": ",.0f"
-          }
-        ]
-      }
-    }
-  ],
   "config": {
     "axis": {
-      "labelFontSize": 14,
-      "titleFontSize": 16,
       "labelColor": "#64748b",
-      "titleColor": "#334155"
+      "labelFontSize": 14,
+      "titleColor": "#334155",
+      "titleFontSize": 16
     },
     "legend": {
       "labelFontSize": 13,
@@ -103,5 +14,62 @@
     "view": {
       "stroke": "transparent"
     }
-  }
+  },
+  "data": {
+    "format": {
+      "property": "features",
+      "type": "json"
+    },
+    "url": "/maps/mongolia-aimags.json"
+  },
+  "description": "Weekly beef prices by aimag in Mongolia, latest week snapshot. Prices joined from the latest-week CSV by aimag name. Boundaries: geoBoundaries (ODbL) / OpenStreetMap contributors. Ulaanbaatar has no data (not covered by the NSO weekly price survey).",
+  "encoding": {
+    "color": {
+      "field": "price",
+      "legend": {
+        "orient": "top",
+        "title": "Price (MNT/kg)"
+      },
+      "scale": {
+        "scheme": "oranges"
+      },
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "properties.name",
+        "title": "Aimag"
+      },
+      {
+        "field": "price",
+        "format": ",.0f",
+        "title": "Price (MNT/kg)"
+      }
+    ]
+  },
+  "mark": {
+    "stroke": "white",
+    "strokeWidth": 1,
+    "type": "geoshape"
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "from": {
+        "data": {
+          "format": {
+            "type": "csv"
+          },
+          "url": "/datasets/weekly-beef-prices-aimags-latest-en.csv"
+        },
+        "fields": [
+          "price"
+        ],
+        "key": "name"
+      },
+      "lookup": "properties.name"
+    }
+  ]
 }

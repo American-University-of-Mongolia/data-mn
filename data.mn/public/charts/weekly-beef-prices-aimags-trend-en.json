@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Weekly beef prices across four aimags in Mongolia (Darkhan-Uul, Orkhon, Umnugovi, and Khovd) from January 2024 to present.",
+  "data": {
+    "url": "/datasets/weekly-beef-prices-aimags-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Date",
+      "axis": {
+        "format": "%b %Y",
+        "tickCount": 12,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "price",
+      "type": "quantitative",
+      "title": "Price (MNT/kg)",
+      "axis": {
+        "format": ",.0f"
+      }
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "legend": {
+        "title": "Region",
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "region",
+            "title": "Region"
+          },
+          {
+            "field": "date",
+            "title": "Date",
+            "type": "temporal",
+            "format": "%Y-%m-%d"
+          },
+          {
+            "field": "price",
+            "title": "Price (MNT/kg)",
+            "format": ",.0f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

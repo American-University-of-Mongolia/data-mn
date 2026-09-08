@@ -32,6 +32,8 @@ Weekly price monitoring data for fresh, unpasteurized milk (per liter) across al
 
 **Note**: This dataset does NOT include Ulaanbaatar prices. For capital city milk prices, refer to the related Ulaanbaatar dataset when available.
 
+**Chart Strategy**: The embedded chart is a choropleth map showing all 21 aimags for the latest week. The 4-aimag time-series chart (Darkhan-Uul, Khovd, Orkhon, Umnugovi) is retained but NOT embedded. Full download files contain all 21 aimags plus 4 regional aggregates (Central, Eastern, Western, Khangai).
+
 ## Split Filter
 
 ```json
@@ -91,7 +93,7 @@ Weekly dates from 2024-01-02 to present (97+ time periods)
 
 | Dimension | Value |
 |-----------|-------|
-| **Geographic** | 21 aimags + 4 regional aggregates |
+| **Geographic** | 21 aimags, latest week (map) / 21 aimags + 4 regions (download) |
 | **Granularity** | aimag |
 | **Time Start** | 2024-01 |
 | **Frequency** | weekly |
@@ -100,20 +102,29 @@ Weekly dates from 2024-01-02 to present (97+ time periods)
 
 ## Chart Specification
 
-- **Chart Type**: Multi-line chart
-- **Chart Config**:
-  - X-axis: date (weekly, temporal)
-  - Y-axis: price (MNT/l, quantitative)
-  - Color: region (nominal)
-    - **For chart visualization**: Show only 4 regional aggregates (Central, Eastern, Western, Khangai)
-    - **For downloads**: Include all 21 aimags + 4 regional aggregates
-  - Color scale:
-    - Central region: `#4c78a8` (primary blue)
-    - Eastern region: `#f58518` (secondary orange)
-    - Western region: `#e45756` (tertiary red)
-    - Khangai region: `#72b7b2` (quaternary teal)
-  - Interpolation: monotone (smooth line)
-  - Tooltip: Date, region name, price with "MNT/l" suffix
+The embedded chart is the CHOROPLETH MAP (see `datamn-chart-vega` skill,
+section 6). It MUST be regenerated on every update.
+
+### Embedded: Choropleth map (latest week)
+Geoshape map of all 21 aimags, colored by latest-week price.
+Exempt from the max-6-categories rule (maps show all regions by design).
+
+- **Files**: `weekly-milk-prices-aimags-en.json` / `-mn.json`
+  (slug-named on purpose — listing thumbnails derive from the slug)
+- **Boundaries**: `/maps/mongolia-aimags.json` (static file, do NOT regenerate)
+- **Data**: `-latest-en.csv` / `-latest-mn.csv` via `lookup` join
+  (EN: `properties.name` ↔ `name`; MN: `properties.name_mn` ↔ `бүс`)
+- **Color**: price/үнэ (quantitative, `oranges` scheme)
+- **Tooltip**: aimag name + price (,.0f)
+- **MDX**: single embed with the caption from the MDX files
+  (do NOT hardcode the latest date in the caption — it must stay correct
+  between updates)
+
+### Hidden: Time series (NOT embedded)
+The 4-aimag multi-line chart (`-trend-en.json` / `-trend-mn.json`) is
+intentionally NOT embedded in the MDX. Keep its spec files and the 4-aimag
+chart-subset CSVs in place (referenced by nothing, retained for now) —
+but do NOT re-add the embed on update.
 
 ## Key Findings Template
 
@@ -146,6 +157,25 @@ python -m registry info weekly-milk-prices-aimags  # Check current version
 # Parent update will trigger automatic regeneration of this split
 ```
 
+### Transformation (latest-week snapshot for the choropleth map)
+
+```python
+# Latest-week snapshot for the choropleth map (max date only)
+latest_date = df["date"].max()
+latest_df = df[df["date"] == latest_date][["region", "price"]].copy()
+latest_df = latest_df.rename(columns={"region": "name"})
+latest_df.sort_values("name").to_csv(
+    "data/data.mn/public/datasets/weekly-milk-prices-aimags-latest-en.csv", index=False)
+
+# Mongolian latest-week snapshot, derived from the translated MN data
+# (key column values must match map `name_mn`)
+latest_date_mn = df_mn["огноо"].max()
+latest_df_mn = df_mn[df_mn["огноо"] == latest_date_mn][["бүс", "үнэ"]].copy()
+latest_df_mn.sort_values("бүс").to_csv(
+    "data/data.mn/public/datasets/weekly-milk-prices-aimags-latest-mn.csv",
+    index=False, lineterminator="\r\n")
+```
+
 ### Validation
 
 - All prices should be positive numbers (MNT/l)
@@ -155,6 +185,10 @@ python -m registry info weekly-milk-prices-aimags  # Check current version
   - Unrealistic price spikes or drops (>50% change week-over-week without explanation)
   - Zero or negative values (data entry errors)
   - Consistent missing data for specific regions (may indicate structural issue)
+- Latest-week snapshot must have exactly 21 rows (all aimags, max date only)
+- Every `name`/`бүс` in the latest-week snapshots must match a
+  `name`/`name_mn` property in `data.mn/public/maps/mongolia-aimags.json`
+- Both chart specs must pass `validate_vega.py` (time series AND map)
 
 ## Related Datasets
 

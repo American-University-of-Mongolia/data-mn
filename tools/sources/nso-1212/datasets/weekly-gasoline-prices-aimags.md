@@ -138,9 +138,10 @@ This is a split dataset. Updates are handled automatically when the parent datas
 
 ```python
 # Latest-week snapshot for the choropleth map (max date only).
-# NOTE: the EN source file contains duplicate rows for some aimags at
-# recent weeks (a stale frozen value plus the updated value); keep the
-# LAST row per region, which matches the MN file.
+# NOTE (observed Dec 2025): the EN source file contained duplicate rows
+# for some aimags (a stale frozen value plus the updated value); keep the
+# LAST row per region, which matches the MN file. Kept as a defensive
+# dedup even when the source is clean.
 latest_date = df["date"].max()
 latest_df = df[df["date"] == latest_date].drop_duplicates(
     subset="region", keep="last")[["region", "price"]].copy()

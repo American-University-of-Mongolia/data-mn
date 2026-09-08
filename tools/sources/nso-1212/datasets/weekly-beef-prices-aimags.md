@@ -203,7 +203,8 @@ latest_df_mn.sort_values("бүс").to_csv(
 - Dates should be valid Mondays (weekly period starts)
 - Missing values are acceptable (some regions may have gaps)
 - Latest-week snapshot must have exactly 21 rows (all aimags, max date only)
-  — currently 20: Umnugovi has no source data since 2025-04-07
+  (note: the Dec-2025 snapshot had only 20 — Umnugovi had no source data
+  from 2025-04 to 2025-12; the gap has since closed, but watch for its return)
 - Every `name`/`бүс` in the latest-week snapshots must match a
   `name`/`name_mn` property in `data.mn/public/maps/mongolia-aimags.json`
 - Both chart specs must pass `validate_vega.py` (time series AND map)

@@ -1,0 +1,11 @@
+{
+  "dataset_id": "bop-current-account",
+  "version": 3,
+  "fetched_at": "2026-09-08T03:22:47.159856+00:00",
+  "source_updated_at": "2026-08-09T12:41:38",
+  "files": [
+    "bop-current-account-en.csv",
+    "bop-current-account-mn.csv",
+    "bop-current-account.xlsx"
+  ]
+}

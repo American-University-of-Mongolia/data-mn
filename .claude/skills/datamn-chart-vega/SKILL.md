@@ -163,6 +163,8 @@ This creates a beautiful vertical fade from nearly transparent at the bottom to 
 
 **RULE: Maximum 6 categories.** If data has more than 6 categories, aggregate into "Other" or split into multiple charts.
 
+**EXCEPTION: Choropleth maps show ALL regions by design** (e.g., all 21 aimags). When a dataset covers every aimag, add a choropleth map as a second chart alongside the time series instead of reducing to a subset. See section 6 below.
+
 ### Legend Position (CRITICAL)
 
 **ALWAYS place legends at the top** so charts use full width. Legends on the right steal horizontal space.
@@ -834,6 +836,76 @@ Use for: Part-to-whole over time
   }
 }
 ```
+
+### 6. Choropleth Map (Aimag-Level Data)
+
+Use for: Showing a single-week/month snapshot across all 21 aimags. ALWAYS pair with a time-series chart (the map shows WHERE, the time series shows the TREND).
+
+**Boundary file** (static, shared by all maps — never regenerate):
+`data.mn/public/maps/mongolia-aimags.json`. Feature properties are `name` (English, matches `-en.csv` region values) and `name_mn` (Mongolian, matches `-mn.csv` бүс values). See `data.mn/public/maps/README.md` for provenance.
+
+**Latest-week snapshot convention:** Vega-Lite `lookup` cannot filter time series, so the update transformation MUST export a snapshot CSV with max-date rows only:
+- `{dataset-id}-latest-en.csv` with columns `name,value-column`
+- `{dataset-id}-latest-mn.csv` with columns `бүс,value-column-mn`
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Description + boundary credit: geoBoundaries (ODbL) / OpenStreetMap contributors",
+  "data": {
+    "url": "/maps/mongolia-aimags.json",
+    "format": {"type": "json", "property": "features"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "/datasets/{dataset-id}-latest-en.csv",
+          "format": {"type": "csv"}
+        },
+        "key": "name",
+        "fields": ["value"]
+      }
+    }
+  ],
+  "projection": {"type": "mercator"},
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {"scheme": "oranges"},
+      "legend": {"orient": "top", "title": "Value"}
+    },
+    "tooltip": [
+      {"field": "properties.name", "title": "Aimag"},
+      {"field": "value", "title": "Value", "format": ",.0f"}
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {"stroke": "transparent"}
+  }
+}
+```
+
+**MN version differences:** `lookup` on `properties.name_mn`, `key` on `бүс`, value field in Mongolian, translated legend/tooltip titles, `-latest-mn.csv` data URL.
+
+**MDX caption:** describe as "latest available week" and note any coverage gaps (e.g., Ulaanbaatar not surveyed). NEVER hardcode the snapshot date in the caption — it must stay correct between updates.
 
 ## File Location
 

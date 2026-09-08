@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "labelColor": "#64748b",
+      "labelFontSize": 14,
+      "titleColor": "#334155",
+      "titleFontSize": 16
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "format": {
+      "property": "features",
+      "type": "json"
+    },
+    "url": "/maps/mongolia-aimags.json"
+  },
+  "description": "Монгол Улсын аймгуудаарх дизелийн түлшний долоо хоногийн үнэ, сүүлийн долоо хоногийн төлөв. Үнийг аймгийн нэрээр сүүлийн долоо хоногийн CSV-ээс нэгтгэсэн. Хил хязгаар: geoBoundaries (ODbL) / OpenStreetMap. Улаанбаатарын мэдээлэл байхгүй (ҮСХ-ны долоо хоногийн үнийн судалгаанд хамрагдаагүй).",
+  "encoding": {
+    "color": {
+      "field": "үнэ",
+      "legend": {
+        "orient": "top",
+        "title": "Үнэ (₮/литр)"
+      },
+      "scale": {
+        "scheme": "oranges"
+      },
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "properties.name_mn",
+        "title": "Аймаг"
+      },
+      {
+        "field": "үнэ",
+        "format": ",.0f",
+        "title": "Үнэ (₮/литр)"
+      }
+    ]
+  },
+  "mark": {
+    "stroke": "white",
+    "strokeWidth": 1,
+    "type": "geoshape"
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "from": {
+        "data": {
+          "format": {
+            "type": "csv"
+          },
+          "url": "/datasets/weekly-diesel-prices-aimags-latest-mn.csv"
+        },
+        "fields": [
+          "үнэ"
+        ],
+        "key": "бүс"
+      },
+      "lookup": "properties.name_mn"
+    }
+  ]
+}

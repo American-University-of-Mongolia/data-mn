@@ -47,7 +47,7 @@
 
 Weekly diesel fuel prices across Mongolia's regions, extracted from the parent `nso-weekly-prices-aimags` dataset. This split focuses only on diesel fuel (l), showing regional price variations across representative aimags. Data is collected weekly since January 2024.
 
-**Chart Subset Strategy**: The chart visualization displays 4 representative aimags (Darkhan-Uul, Khovd, Orkhon, Umnugovi) for readability. Full download files contain all 21 aimags plus 4 regional aggregates (Central, Eastern, Western, Khangai).
+**Chart Subset Strategy**: The time-series chart displays 4 representative aimags (Darkhan-Uul, Khovd, Orkhon, Umnugovi) for readability. A second chart — a choropleth map — shows all 21 aimags for the latest week. Full download files contain all 21 aimags plus 4 regional aggregates (Central, Eastern, Western, Khangai).
 
 ## Variables
 
@@ -133,6 +133,13 @@ chart_df = df[df["region"].isin(chart_aimags)].copy()
 chart_df.to_csv("data/data.mn/public/datasets/weekly-diesel-prices-aimags-en.csv", index=False)
 df.to_csv("data/data.mn/public/datasets/weekly-diesel-prices-aimags-all-en.csv", index=False)
 
+# Latest-week snapshot for the choropleth map (all 21 aimags, max date only)
+latest_date = df["date"].max()
+latest_df = df[df["date"] == latest_date][["region", "price"]].copy()
+latest_df = latest_df.rename(columns={"region": "name"})
+latest_df.sort_values("name").to_csv(
+    "data/data.mn/public/datasets/weekly-diesel-prices-aimags-latest-en.csv", index=False)
+
 # Mongolian versions with translated column names
 chart_df_mn = chart_df.rename(columns={
     "region": "бүс",
@@ -147,6 +154,14 @@ df_mn = df.rename(columns={
     "price": "үнэ"
 })
 df_mn.to_csv("data/data.mn/public/datasets/weekly-diesel-prices-aimags-all-mn.csv", index=False)
+
+# Mongolian latest-week snapshot, derived from the translated MN data
+# (key column values must match map `name_mn`)
+latest_date_mn = df_mn["огноо"].max()
+latest_df_mn = df_mn[df_mn["огноо"] == latest_date_mn][["бүс", "үнэ"]].copy()
+latest_df_mn.sort_values("бүс").to_csv(
+    "data/data.mn/public/datasets/weekly-diesel-prices-aimags-latest-mn.csv",
+    index=False, lineterminator="\r\n")
 ```
 
 ### XLSX Export (Wide Format)
@@ -183,26 +198,43 @@ with pd.ExcelWriter(xlsx_path, engine='openpyxl') as writer:
 - Time values should be valid weekly dates (Mondays)
 - Chart subset should have exactly 4 regions
 - Full download should have 21+ regions
+- Latest-week snapshot must have exactly 21 rows (all aimags, max date only)
+- Every `name`/`бүс` in the latest-week snapshots must match a
+  `name`/`name_mn` property in `data.mn/public/maps/mongolia-aimags.json`
+- Both chart specs must pass `validate_vega.py` (time series AND map)
 
 ## Chart Configuration
 
-### Chart Type
+This dataset has TWO charts (see `datamn-chart-vega` skill for templates).
+Both MUST be regenerated on every update.
+
+### Chart 1: Time series (existing)
 Multi-line time series with layered hover interaction
 
-### Chart Fields
+- **Files**: `weekly-diesel-prices-aimags-en.json` / `-mn.json`
 - **X-axis**: date (temporal, format: %b %Y)
 - **Y-axis**: price (quantitative, format: ,.0f, title: "Price (MNT/liter)")
 - **Color**: region (nominal, 4 categories for chart)
 - **Tooltip**: region, date (%Y-%m-%d), price (,.0f)
-
-### Chart Features
 - Line: strokeWidth 2.5, monotone interpolation
 - Point layer: nearest hover selection, size 100
 - Config: Brand typography (14px labels, 16px titles)
 - Legend: Top orientation, no title
+- Uses default Vega-Lite palette (4 colors for 4 regions)
 
-### Color Palette
-Uses default Vega-Lite palette (4 colors for 4 regions)
+### Chart 2: Choropleth map (latest week)
+Geoshape map of all 21 aimags, colored by latest-week price.
+Exempt from the max-6-categories rule (maps show all regions by design).
+
+- **Files**: `weekly-diesel-prices-aimags-map-en.json` / `-map-mn.json`
+- **Boundaries**: `/maps/mongolia-aimags.json` (static file, do NOT regenerate)
+- **Data**: `-latest-en.csv` / `-latest-mn.csv` via `lookup` join
+  (EN: `properties.name` ↔ `name`; MN: `properties.name_mn` ↔ `бүс`)
+- **Color**: price/үнэ (quantitative, `oranges` scheme)
+- **Tooltip**: aimag name + price (,.0f)
+- **MDX**: embed after the time series with the caption from the MDX files
+  (do NOT hardcode the latest date in the caption — it must stay correct
+  between updates)
 
 ## Content Generation
 

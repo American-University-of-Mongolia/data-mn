@@ -252,8 +252,8 @@ class VegaValidator:
 
         if 'url' in data:
             url = data['url']
-            if not url.startswith('/datasets/'):
-                self.result.add_warning(f"Data URL '{url}' should start with '/datasets/' for consistency")
+            if not url.startswith(('/datasets/', '/maps/')):
+                self.result.add_warning(f"Data URL '{url}' should start with '/datasets/' (or '/maps/' for boundary files)")
 
             if 'format' not in data:
                 self.result.add_warning("Missing 'format' in data - add: \"format\": {\"type\": \"csv\"}")
@@ -287,9 +287,10 @@ class VegaValidator:
         if mark_type not in self.VALID_MARK_TYPES:
             self.result.add_error(f"{prefix}Invalid mark type: '{mark_type}'. Valid types: {self.VALID_MARK_TYPES}")
 
-        # Check for tooltip
+        # Check for tooltip (mark-level or encoding-level both count)
         if isinstance(mark, dict):
-            if not mark.get('tooltip'):
+            has_encoding_tooltip = 'tooltip' in self.spec.get('encoding', {})
+            if not mark.get('tooltip') and not has_encoding_tooltip:
                 self.result.add_suggestion(f"{prefix}Consider adding \"tooltip\": true for interactivity")
 
     def _validate_encoding(self):

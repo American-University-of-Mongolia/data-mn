@@ -19,8 +19,7 @@ registry:
 # Configure builder setup.
 builder:
   arch: amd64
-  local: false
-  remote: ssh://ritz@ritz-cmd
+  local: true
 
 # Proxy configuration for SSL and routing.
 proxy:

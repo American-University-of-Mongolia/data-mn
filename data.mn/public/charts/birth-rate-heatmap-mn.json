@@ -15,6 +15,9 @@
       "field": "Он",
       "type": "quantitative",
       "title": "Он",
+      "scale": {
+        "zero": false
+      },
       "axis": {
         "format": "d",
         "tickMinStep": 5,

@@ -181,6 +181,7 @@ class VegaValidator:
         self._validate_encoding()
         self._validate_config()
         self._validate_number_formats()
+        self._validate_year_formats()
         self._validate_best_practices()
         self._validate_brand_compliance()
 
@@ -207,6 +208,33 @@ class VegaValidator:
                                 "use ',' or a fixed-point format instead"
                             )
                     walk(child, child_path)
+            elif isinstance(value, list):
+                for index, child in enumerate(value):
+                    walk(child, f"{path}[{index}]")
+
+        walk(self.spec)
+
+    def _validate_year_formats(self):
+        """Integer years must use format 'd', else tooltips render '2,024'."""
+        def walk(value, path='spec'):
+            if isinstance(value, dict):
+                if 'tooltip' in value and isinstance(value['tooltip'], list):
+                    for index, entry in enumerate(value['tooltip']):
+                        if not isinstance(entry, dict):
+                            continue
+                        if entry.get('field') not in ('year', 'Year', 'он', 'Он'):
+                            continue
+                        if entry.get('type', 'quantitative') != 'quantitative':
+                            continue
+                        if 'timeUnit' in entry:
+                            continue
+                        if entry.get('format') != 'd':
+                            self.result.add_error(
+                                f"{path}.tooltip[{index}] year field without "
+                                "format 'd' renders comma years ('2,024')"
+                            )
+                for key, child in value.items():
+                    walk(child, f"{path}.{key}")
             elif isinstance(value, list):
                 for index, child in enumerate(value):
                     walk(child, f"{path}[{index}]")

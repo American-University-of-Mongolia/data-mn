@@ -15,6 +15,9 @@
       "field": "year",
       "type": "quantitative",
       "title": "Year",
+      "scale": {
+        "zero": false
+      },
       "axis": {
         "format": "d",
         "tickMinStep": 5,

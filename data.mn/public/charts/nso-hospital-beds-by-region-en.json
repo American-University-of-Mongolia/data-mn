@@ -45,7 +45,7 @@
       "encoding": {
         "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
         "tooltip": [
-          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
           {"field": "region", "type": "nominal", "title": "Region"},
           {"field": "beds", "type": "quantitative", "title": "Hospital Beds", "format": ","}
         ]

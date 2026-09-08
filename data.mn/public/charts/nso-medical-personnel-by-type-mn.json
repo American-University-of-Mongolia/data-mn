@@ -50,7 +50,7 @@
       "encoding": {
         "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
         "tooltip": [
-          {"field": "он", "type": "quantitative", "title": "Он"},
+          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
           {"field": "төрөл", "type": "nominal", "title": "Төрөл"},
           {"field": "ажилтан", "type": "quantitative", "title": "Ажилтан", "format": ","}
         ]

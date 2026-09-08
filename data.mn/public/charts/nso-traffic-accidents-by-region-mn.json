@@ -50,7 +50,7 @@
       "encoding": {
         "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
         "tooltip": [
-          {"field": "он", "type": "quantitative", "title": "Он"},
+          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
           {"field": "бүс", "type": "nominal", "title": "Бүс нутаг"},
           {"field": "осол", "type": "quantitative", "title": "Осол", "format": ","}
         ]

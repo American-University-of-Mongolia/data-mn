@@ -54,7 +54,7 @@
       "encoding": {
         "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
         "tooltip": [
-          {"field": "он", "type": "quantitative", "title": "Он"},
+          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
           {"field": "бүс_нутаг", "type": "nominal", "title": "Бүс нутаг"},
           {"field": "жуулчид", "type": "quantitative", "title": "Жуулчид", "format": ","}
         ]

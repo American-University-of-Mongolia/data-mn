@@ -25,7 +25,7 @@
 
 | Dimension | Value |
 |-----------|-------|
-| **Geographic** | 4 representative aimags (chart) / 21 aimags + 4 regions (download) |
+| **Geographic** | 21 aimags, latest week (map) / 21 aimags + 4 regions (download) |
 | **Granularity** | aimag |
 | **Time Start** | 2024-01 |
 | **Frequency** | weekly |
@@ -47,7 +47,7 @@
 
 Weekly diesel fuel prices across Mongolia's regions, extracted from the parent `nso-weekly-prices-aimags` dataset. This split focuses only on diesel fuel (l), showing regional price variations across representative aimags. Data is collected weekly since January 2024.
 
-**Chart Subset Strategy**: The time-series chart displays 4 representative aimags (Darkhan-Uul, Khovd, Orkhon, Umnugovi) for readability. A second chart — a choropleth map — shows all 21 aimags for the latest week. Full download files contain all 21 aimags plus 4 regional aggregates (Central, Eastern, Western, Khangai).
+**Chart Strategy**: The embedded chart is a choropleth map showing all 21 aimags for the latest week. The 4-aimag time-series chart (Darkhan-Uul, Khovd, Orkhon, Umnugovi) is retained but NOT embedded. Full download files contain all 21 aimags plus 4 regional aggregates (Central, Eastern, Western, Khangai).
 
 ## Variables
 
@@ -205,36 +205,29 @@ with pd.ExcelWriter(xlsx_path, engine='openpyxl') as writer:
 
 ## Chart Configuration
 
-This dataset has TWO charts (see `datamn-chart-vega` skill for templates).
-Both MUST be regenerated on every update.
+The embedded chart is the CHOROPLETH MAP (see `datamn-chart-vega` skill,
+section 6). It MUST be regenerated on every update.
 
-### Chart 1: Time series (existing)
-Multi-line time series with layered hover interaction
-
-- **Files**: `weekly-diesel-prices-aimags-en.json` / `-mn.json`
-- **X-axis**: date (temporal, format: %b %Y)
-- **Y-axis**: price (quantitative, format: ,.0f, title: "Price (MNT/liter)")
-- **Color**: region (nominal, 4 categories for chart)
-- **Tooltip**: region, date (%Y-%m-%d), price (,.0f)
-- Line: strokeWidth 2.5, monotone interpolation
-- Point layer: nearest hover selection, size 100
-- Config: Brand typography (14px labels, 16px titles)
-- Legend: Top orientation, no title
-- Uses default Vega-Lite palette (4 colors for 4 regions)
-
-### Chart 2: Choropleth map (latest week)
+### Embedded: Choropleth map (latest week)
 Geoshape map of all 21 aimags, colored by latest-week price.
 Exempt from the max-6-categories rule (maps show all regions by design).
 
-- **Files**: `weekly-diesel-prices-aimags-map-en.json` / `-map-mn.json`
+- **Files**: `weekly-diesel-prices-aimags-en.json` / `-mn.json`
+  (slug-named on purpose — listing thumbnails derive from the slug)
 - **Boundaries**: `/maps/mongolia-aimags.json` (static file, do NOT regenerate)
 - **Data**: `-latest-en.csv` / `-latest-mn.csv` via `lookup` join
   (EN: `properties.name` ↔ `name`; MN: `properties.name_mn` ↔ `бүс`)
 - **Color**: price/үнэ (quantitative, `oranges` scheme)
 - **Tooltip**: aimag name + price (,.0f)
-- **MDX**: embed after the time series with the caption from the MDX files
+- **MDX**: single embed with the caption from the MDX files
   (do NOT hardcode the latest date in the caption — it must stay correct
   between updates)
+
+### Hidden: Time series (NOT embedded)
+The 4-aimag multi-line chart (`-trend-en.json` / `-trend-mn.json`) is
+intentionally NOT embedded in the MDX. Keep its spec files and the 4-aimag
+chart-subset CSVs in place (referenced by nothing, retained for now) —
+but do NOT re-add the embed on update.
 
 ## Content Generation
 

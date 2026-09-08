@@ -839,7 +839,7 @@ Use for: Part-to-whole over time
 
 ### 6. Choropleth Map (Aimag-Level Data)
 
-Use for: Showing a single-week/month snapshot across all 21 aimags. ALWAYS pair with a time-series chart (the map shows WHERE, the time series shows the TREND).
+Use for: Showing a single-week/month snapshot across all 21 aimags. For aimag-level datasets the map IS the embedded chart (slug-named `{dataset-id}-{lang}.json` so listing thumbnails derive from it); rename any reduced-subset time series to `{dataset-id}-trend-{lang}.json` and leave it unembedded.
 
 **Boundary file** (static, shared by all maps — never regenerate):
 `data.mn/public/maps/mongolia-aimags.json`. Feature properties are `name` (English, matches `-en.csv` region values) and `name_mn` (Mongolian, matches `-mn.csv` бүс values). See `data.mn/public/maps/README.md` for provenance.

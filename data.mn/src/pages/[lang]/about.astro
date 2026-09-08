@@ -8,7 +8,6 @@ import { useTranslations, type Language } from '~/i18n';
 // Import partner logos from src/assets for proper Astro image optimization
 import aumLogo from '~/assets/images/partners/aum-logo-grey.png';
 import kraftLogo from '~/assets/images/partners/kraft-logo-grey.png';
-import cariqLogo from '~/assets/images/partners/cariq-logo-grey.png';
 import cymbolLogo from '~/assets/images/partners/cymbol-logo-grey.png';
 
 export const getStaticPaths = () => {
@@ -167,7 +166,6 @@ const c = content[currentLang];
 const partnerLogos = [
   { src: aumLogo, alt: 'American University of Mongolia', href: 'https://aum.edu.mn' },
   { src: kraftLogo, alt: 'Kraft Tavilgiin Beldets', href: 'https://kraft.mn' },
-  { src: cariqLogo, alt: 'CarIQ', href: 'https://cariq.mn' },
   { src: cymbolLogo, alt: 'Cymbol Diamonds', tall: true, href: 'https://cymboljewelry.com' },
 ];
 ---

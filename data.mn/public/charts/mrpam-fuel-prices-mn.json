@@ -7,15 +7,9 @@
       "type": "csv"
     }
   },
-  "transform": [
-    {
-      "calculate": "datetime(datum.он, datum.сар - 1, 1)",
-      "as": "date"
-    }
-  ],
   "encoding": {
     "x": {
-      "field": "date",
+      "field": "сар",
       "type": "temporal",
       "title": "Сар",
       "axis": {
@@ -25,7 +19,7 @@
       }
     },
     "y": {
-      "field": "үнэ_төгрөг_литр",
+      "field": "утга",
       "type": "quantitative",
       "title": "Төгрөг/литр",
       "axis": {
@@ -33,7 +27,7 @@
       }
     },
     "color": {
-      "field": "шатахууны_төрөл",
+      "field": "үзүүлэлт",
       "type": "nominal",
       "title": "Шатахууны төрөл",
       "legend": {
@@ -55,7 +49,7 @@
           "select": {
             "type": "point",
             "fields": [
-              "date"
+              "сар"
             ],
             "nearest": true,
             "on": "pointerover",
@@ -79,18 +73,18 @@
         },
         "tooltip": [
           {
-            "field": "date",
+            "field": "сар",
             "type": "temporal",
             "title": "Сар",
             "format": "%Y-%m"
           },
           {
-            "field": "шатахууны_төрөл",
+            "field": "үзүүлэлт",
             "type": "nominal",
             "title": "Шатахууны төрөл"
           },
           {
-            "field": "үнэ_төгрөг_литр",
+            "field": "утга",
             "type": "quantitative",
             "title": "Төгрөг/литр",
             "format": ",.1f"

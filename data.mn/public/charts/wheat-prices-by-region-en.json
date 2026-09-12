@@ -17,6 +17,8 @@
     }
   ],
   "transform": [
+    {"calculate": "split(datum.product_region, ' — ')[0]", "as": "product"},
+    {"calculate": "split(datum.product_region, ' — ')[1]", "as": "region"},
     {"filter": "datum.region == regionSelect"}
   ],
   "encoding": {

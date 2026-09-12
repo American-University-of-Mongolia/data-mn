@@ -5,12 +5,9 @@
     "url": "/datasets/mrpam-commodity-prices-mn.csv",
     "format": {"type": "csv"}
   },
-  "transform": [
-    {"calculate": "datetime(datum['он'], datum['сар'] - 1, 1)", "as": "огноо"}
-  ],
   "encoding": {
     "x": {
-      "field": "огноо",
+      "field": "сар",
       "type": "temporal",
       "title": "Огноо",
       "axis": {"format": "%Y-%m", "grid": false, "labelAngle": -30}
@@ -26,7 +23,7 @@
       "type": "nominal",
       "title": "Ашигт малтмал",
       "scale": {
-        "domain": ["Зэс", "Цайр", "Хар тугалга", "Цагаан тугалга", "Молибдени"],
+        "domain": ["Зэс (ам.долл/тн)", "Цайр (ам.долл/тн)", "Хар тугалга (ам.долл/тн)", "Цагаан тугалга (ам.долл/тн)", "Молибдени (ам.долл/тн)"],
         "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2", "#54a24b"]
       },
       "legend": {"orient": "top", "title": null}
@@ -53,7 +50,7 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "огноо", "type": "temporal", "title": "Огноо", "format": "%Y-%m"},
+          {"field": "сар", "type": "temporal", "title": "Огноо", "format": "%Y-%m"},
           {"field": "бараа", "type": "nominal", "title": "Ашигт малтмал"},
           {"field": "үнэ", "type": "quantitative", "title": "Үнэ (ам.доллар/тонн)", "format": ",.1f"}
         ]

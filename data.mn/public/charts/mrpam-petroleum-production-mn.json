@@ -1,30 +1,25 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын газрын тосны сарын олборлолт, экспортын хэмжээ, 2021 оны 1 сараас 2026 оны 6 сар хүртэл, баррелиар. Экспортын хоосон утга нь эх тайланд мэдээлээгүй үеийг илэрхийлнэ.",
+  "description": "Монгол Улсын газрын тосны сарын олборлолт, экспортын хэмжээ, 2021 оны 1 сараас 2026 оны 7 сар хүртэл, баррелиар. Экспортын хоосон утга нь эх тайланд мэдээлээгүй үеийг илэрхийлнэ.",
   "data": {
     "url": "/datasets/mrpam-petroleum-production-mn.csv",
     "format": {"type": "csv"}
   },
-  "transform": [
-    {"calculate": "datetime(datum['он'], datum['сар'] - 1, 1)", "as": "огноо"},
-    {"fold": ["олборлолт_баррель", "экспорт_баррель"], "as": ["үзүүлэлт", "баррель"]},
-    {"calculate": "datum['үзүүлэлт'] === 'олборлолт_баррель' ? 'Олборлолт' : 'Экспорт'", "as": "цуваа"}
-  ],
   "encoding": {
     "x": {
-      "field": "огноо",
+      "field": "сар",
       "type": "temporal",
       "title": "Сар",
-      "axis": {"format": "%Y-%m", "grid": false, "labelOverlap": "greedy"}
+      "axis": {"format": "%Y", "grid": false}
     },
     "y": {
-      "field": "баррель",
+      "field": "утга",
       "type": "quantitative",
       "title": "Баррель",
       "axis": {"format": ",.0f"}
     },
     "color": {
-      "field": "цуваа",
+      "field": "үзүүлэлт",
       "type": "nominal",
       "title": null,
       "scale": {
@@ -44,7 +39,6 @@
           "name": "hover",
           "select": {
             "type": "point",
-            "fields": ["огноо"],
             "nearest": true,
             "on": "pointerover",
             "clear": "pointerout"
@@ -58,9 +52,9 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "огноо", "type": "temporal", "title": "Сар", "format": "%Y-%m"},
-          {"field": "цуваа", "type": "nominal", "title": "Үзүүлэлт"},
-          {"field": "баррель", "type": "quantitative", "title": "Баррель", "format": ",.0f"}
+          {"field": "сар", "type": "temporal", "title": "Сар", "format": "%Y-%m"},
+          {"field": "үзүүлэлт", "type": "nominal", "title": "Үзүүлэлт"},
+          {"field": "утга", "type": "quantitative", "title": "Баррель", "format": ",.0f"}
         ]
       }
     }

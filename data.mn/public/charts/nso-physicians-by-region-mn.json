@@ -197,7 +197,12 @@
   "usermeta": {
     "explorer": {
       "categoryField": "аймаг",
-      "yearField": "он"
+      "yearField": "он",
+      "labels": {
+        "search": "Аймаг, хот хайх…",
+        "noMatches": "Тохирох аймаг, хот олдсонгүй.",
+        "empty": "График харахын тулд дор хаяж нэг аймаг, хот сонгоно уу."
+      }
     }
   }
 }

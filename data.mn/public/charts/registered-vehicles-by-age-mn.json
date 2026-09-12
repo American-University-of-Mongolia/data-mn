@@ -7,7 +7,7 @@
   "mark": "bar",
   "encoding": {
     "x": {
-      "field": "year",
+      "field": "он",
       "type": "quantitative",
       "title": "Он",
       "axis": {
@@ -16,7 +16,7 @@
       }
     },
     "y": {
-      "field": "count",
+      "field": "тоо",
       "type": "quantitative",
       "title": "Тээврийн хэрэгслийн тоо",
       "stack": "zero",
@@ -25,7 +25,7 @@
       }
     },
     "color": {
-      "field": "age_group",
+      "field": "насны_бүлэг",
       "type": "nominal",
       "title": "Насжилт",
       "sort": ["10 ба түүнээс дээш", "7-9", "4-6", "0-3"],
@@ -36,9 +36,9 @@
       "legend": {"orient": "top"}
     },
     "tooltip": [
-      {"field": "year", "type": "quantitative", "title": "Он", "format": "d"},
-      {"field": "age_group", "type": "nominal", "title": "Насжилт"},
-      {"field": "count", "type": "quantitative", "title": "Тоо", "format": ","}
+      {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
+      {"field": "насны_бүлэг", "type": "nominal", "title": "Насжилт"},
+      {"field": "тоо", "type": "quantitative", "title": "Тоо", "format": ","}
     ]
   },
   "config": {

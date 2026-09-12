@@ -7,19 +7,19 @@
   },
   "encoding": {
     "x": {
-      "field": "date",
+      "field": "огноо",
       "type": "temporal",
       "title": "Огноо",
       "axis": {"grid": false, "format": "%Y-%m"}
     },
     "y": {
-      "field": "price",
+      "field": "үнэ",
       "type": "quantitative",
       "title": "Үнэ (₮)",
       "axis": {"format": ",.0f"}
     },
     "color": {
-      "field": "product",
+      "field": "бүтээгдэхүүн",
       "type": "nominal",
       "legend": {"orient": "top", "title": "Бүтээгдэхүүн"}
     }
@@ -42,9 +42,9 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "product", "title": "Бүтээгдэхүүн"},
-          {"field": "date", "type": "temporal", "title": "Огноо", "format": "%Y-%m"},
-          {"field": "price", "title": "Үнэ (₮)", "format": ",.0f"}
+          {"field": "бүтээгдэхүүн", "title": "Бүтээгдэхүүн"},
+          {"field": "огноо", "type": "temporal", "title": "Огноо", "format": "%Y-%m"},
+          {"field": "үнэ", "title": "Үнэ (₮)", "format": ",.0f"}
         ]
       }
     }

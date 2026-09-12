@@ -7,7 +7,7 @@
   },
   "transform": [
     {
-      "filter": "datum.year == 2025"
+      "filter": "datum['он'] == 2025"
     }
   ],
   "mark": {
@@ -17,20 +17,20 @@
   },
   "encoding": {
     "x": {
-      "field": "count",
+      "field": "тоо",
       "type": "quantitative",
       "title": "Бүртгэлтэй тээврийн хэрэгсэл",
       "axis": {"format": ",.0f", "grid": true, "gridOpacity": 0.3}
     },
     "y": {
-      "field": "province",
+      "field": "аймаг",
       "type": "nominal",
       "title": null,
       "sort": "-x"
     },
     "tooltip": [
-      {"field": "province", "type": "nominal", "title": "Аймаг / нийслэл"},
-      {"field": "count", "type": "quantitative", "title": "Бүртгэлтэй тээврийн хэрэгсэл", "format": ",.0f"}
+      {"field": "аймаг", "type": "nominal", "title": "Аймаг / нийслэл"},
+      {"field": "тоо", "type": "quantitative", "title": "Бүртгэлтэй тээврийн хэрэгсэл", "format": ",.0f"}
     ]
   },
   "autosize": {"type": "fit", "contains": "padding"},

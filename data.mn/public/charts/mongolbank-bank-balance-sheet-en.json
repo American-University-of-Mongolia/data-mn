@@ -5,16 +5,6 @@
     "url": "/datasets/mongolbank-bank-balance-sheet-en.csv",
     "format": { "type": "csv" }
   },
-  "transform": [
-    {
-      "fold": ["total_assets_billion_mnt", "total_liabilities_billion_mnt", "capital_billion_mnt"],
-      "as": ["series", "value"]
-    },
-    {
-      "calculate": "datum.series === 'total_assets_billion_mnt' ? 'Total Assets' : datum.series === 'total_liabilities_billion_mnt' ? 'Total Liabilities' : 'Capital'",
-      "as": "series_label"
-    }
-  ],
   "encoding": {
     "x": {
       "field": "date",
@@ -30,7 +20,7 @@
       "axis": { "format": ",.0f", "grid": true, "gridOpacity": 0.3 }
     },
     "color": {
-      "field": "series_label",
+      "field": "metric",
       "type": "nominal",
       "title": "Balance Sheet Item",
       "scale": {
@@ -59,7 +49,7 @@
         },
         "tooltip": [
           { "field": "date", "type": "temporal", "title": "Date", "format": "%Y-%m" },
-          { "field": "series_label", "type": "nominal", "title": "Item" },
+          { "field": "metric", "type": "nominal", "title": "Item" },
           { "field": "value", "type": "quantitative", "title": "MNT billion", "format": ",.1f" }
         ]
       }

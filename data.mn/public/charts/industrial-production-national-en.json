@@ -9,7 +9,7 @@
     {
       "filter": {
         "field": "commodity",
-        "oneOf": ["Coal", "Copper (with concentrate)", "Crude oil", "Electricity", "Gold", "Iron ore", "Molybdenum concentrate (47%)"]
+        "oneOf": ["Coal (thousand tonnes)", "Copper concentrate (35%) (thousand tonnes)", "Crude oil (thousand barrels)", "Electricity (million kWh)", "Gold (kg)", "Iron ore (thousand tonnes)", "Molybdenum concentrate (47%) (tonnes)"]
       }
     }
   ],
@@ -31,7 +31,7 @@
       "type": "nominal",
       "title": "Commodity",
       "scale": {
-        "domain": ["Coal", "Copper (with concentrate)", "Crude oil", "Electricity", "Gold", "Iron ore", "Molybdenum concentrate (47%)"],
+        "domain": ["Coal (thousand tonnes)", "Copper concentrate (35%) (thousand tonnes)", "Crude oil (thousand barrels)", "Electricity (million kWh)", "Gold (kg)", "Iron ore (thousand tonnes)", "Molybdenum concentrate (47%) (tonnes)"],
         "range": ["#475569", "#f59e0b", "#eab308", "#3b82f6", "#10b981", "#6366f1", "#ec4899"]
       },
       "legend": { "orient": "top" }
@@ -63,8 +63,7 @@
         "tooltip": [
           { "field": "year", "type": "quantitative", "title": "Year", "format": "d" },
           { "field": "commodity", "type": "nominal", "title": "Commodity" },
-          { "field": "value", "type": "quantitative", "title": "Value", "format": ",.1f" },
-          { "field": "unit", "type": "nominal", "title": "Unit" }
+          { "field": "value", "type": "quantitative", "title": "Value", "format": ",.1f" }
         ]
       }
     }

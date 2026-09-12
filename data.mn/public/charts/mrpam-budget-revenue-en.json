@@ -5,26 +5,21 @@
     "url": "/datasets/mrpam-budget-revenue-en.csv",
     "format": {"type": "csv"}
   },
-  "transform": [
-    {"calculate": "datetime(datum.year, datum.month - 1, 1)", "as": "date"},
-    {"fold": ["plan_mln_mnt", "actual_mln_mnt"], "as": ["metric", "million_mnt"]},
-    {"calculate": "datum.metric === 'plan_mln_mnt' ? 'Annual plan' : 'Actual to date'", "as": "series"}
-  ],
   "encoding": {
     "x": {
-      "field": "date",
+      "field": "month",
       "type": "temporal",
       "title": "Report month",
       "axis": {"format": "%b %Y", "grid": false, "labelOverlap": "greedy"}
     },
     "y": {
-      "field": "million_mnt",
+      "field": "value",
       "type": "quantitative",
       "title": "Million MNT",
       "axis": {"format": ",.0f"}
     },
     "color": {
-      "field": "series",
+      "field": "metric",
       "type": "nominal",
       "title": null,
       "scale": {
@@ -41,7 +36,7 @@
         "name": "hover",
         "select": {
           "type": "point",
-          "fields": ["date"],
+          "fields": ["month"],
           "nearest": true,
           "on": "pointerover",
           "clear": "pointerout"
@@ -54,9 +49,9 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "date", "type": "temporal", "title": "Report month", "format": "%B %Y"},
-          {"field": "series", "type": "nominal", "title": "Series"},
-          {"field": "million_mnt", "type": "quantitative", "title": "Million MNT", "format": ",.1f"}
+          {"field": "month", "type": "temporal", "title": "Report month", "format": "%B %Y"},
+          {"field": "metric", "type": "nominal", "title": "Series"},
+          {"field": "value", "type": "quantitative", "title": "Million MNT", "format": ",.1f"}
         ]
       }
     }

@@ -65,7 +65,6 @@
         "tooltip": [
           {"field": "date", "type": "temporal", "title": "Month", "format": "%Y-%m"},
           {"field": "currency_code", "type": "nominal", "title": "Currency"},
-          {"field": "currency_name", "type": "nominal", "title": "Name"},
           {"field": "rate_mnt", "type": "quantitative", "title": "Avg Rate (MNT)", "format": ",.2f"},
           {"field": "indexed_rate", "type": "quantitative", "title": "Index", "format": ".1f"}
         ]

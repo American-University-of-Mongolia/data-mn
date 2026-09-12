@@ -2,79 +2,119 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Монгол Улсын хайгуулын болон ашиглалтын тусгай зөвшөөрлийн сарын тоо.",
   "data": {
-    "url": "/datasets/mrpam-mining-permits-mn.csv",
-    "format": {"type": "csv"}
+    "format": {
+      "type": "csv"
+    },
+    "url": "/datasets/mrpam-mining-permits-mn.csv"
   },
-  "transform": [
-    {"calculate": "datetime(datum['он'], datum['сар'] - 1, 1)", "as": "огноо"},
-    {"fold": ["хайгуулын_тоо", "ашиглалтын_тоо"], "as": ["үзүүлэлт", "тоо"]},
-    {
-      "calculate": "datum['үзүүлэлт'] === 'хайгуулын_тоо' ? 'Хайгуулын' : 'Ашиглалтын'",
-      "as": "зөвшөөрлийн_төрөл"
-    }
-  ],
   "encoding": {
+    "color": {
+      "field": "үзүүлэлт",
+      "legend": {
+        "orient": "top"
+      },
+      "scale": {
+        "domain": [
+          "Хайгуулын",
+          "Ашиглалтын"
+        ],
+        "range": [
+          "#4c78a8",
+          "#f58518"
+        ]
+      },
+      "title": null,
+      "type": "nominal"
+    },
     "x": {
-      "field": "огноо",
-      "type": "temporal",
+      "axis": {
+        "format": "%Y",
+        "grid": false
+      },
+      "field": "сар",
       "title": "Сар",
-      "axis": {"format": "%Y-%m", "labelAngle": -45, "grid": false}
+      "type": "temporal"
     },
     "y": {
-      "field": "тоо",
-      "type": "quantitative",
-      "title": "Тусгай зөвшөөрлийн тоо",
-      "scale": {"zero": true},
-      "axis": {"format": ",.0f"}
-    },
-    "color": {
-      "field": "зөвшөөрлийн_төрөл",
-      "type": "nominal",
-      "title": null,
-      "scale": {
-        "domain": ["Хайгуулын", "Ашиглалтын"],
-        "range": ["#4c78a8", "#f58518"]
+      "axis": {
+        "format": ",.0f"
       },
-      "legend": {"orient": "top"}
+      "field": "утга",
+      "scale": {
+        "zero": true
+      },
+      "title": "Тусгай зөвшөөрлийн тоо",
+      "type": "quantitative"
     }
   },
   "layer": [
-    {"mark": {"type": "line", "strokeWidth": 2.5}},
     {
+      "mark": {
+        "strokeWidth": 2.5,
+        "type": "line"
+      }
+    },
+    {
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "empty": false,
+            "param": "hover",
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "сар",
+            "format": "%Y-%m",
+            "title": "Сар",
+            "type": "temporal"
+          },
+          {
+            "field": "үзүүлэлт",
+            "title": "Зөвшөөрлийн төрөл",
+            "type": "nominal"
+          },
+          {
+            "field": "утга",
+            "format": ",.0f",
+            "title": "Тоо",
+            "type": "quantitative"
+          }
+        ]
+      },
+      "mark": {
+        "filled": true,
+        "size": 80,
+        "type": "point"
+      },
       "params": [
         {
           "name": "hover",
           "select": {
-            "type": "point",
-            "fields": ["огноо"],
+            "clear": "pointerout",
             "nearest": true,
             "on": "pointerover",
-            "clear": "pointerout"
+            "type": "point"
           }
         }
-      ],
-      "mark": {"type": "point", "filled": true, "size": 80},
-      "encoding": {
-        "opacity": {
-          "condition": {"param": "hover", "empty": false, "value": 1},
-          "value": 0
-        },
-        "tooltip": [
-          {"field": "огноо", "type": "temporal", "title": "Сар", "format": "%Y-%m"},
-          {"field": "зөвшөөрлийн_төрөл", "type": "nominal", "title": "Зөвшөөрлийн төрөл"},
-          {"field": "тоо", "type": "quantitative", "title": "Тоо", "format": ",.0f"}
-        ]
-      }
+      ]
     }
   ],
   "config": {
     "axis": {
-      "labelFontSize": 14,
-      "titleFontSize": 16,
       "labelColor": "#64748b",
-      "titleColor": "#334155"
+      "labelFontSize": 14,
+      "titleColor": "#334155",
+      "titleFontSize": 16
     },
-    "view": {"stroke": "transparent"},
-    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
   }
 }

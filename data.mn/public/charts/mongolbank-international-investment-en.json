@@ -5,16 +5,6 @@
     "url": "/datasets/mongolbank-international-investment-en.csv",
     "format": { "type": "csv" }
   },
-  "transform": [
-    {
-      "fold": ["total_assets_million_usd", "total_liabilities_million_usd", "net_iip_million_usd"],
-      "as": ["series", "value"]
-    },
-    {
-      "calculate": "datum.series === 'total_assets_million_usd' ? 'Total Assets' : datum.series === 'total_liabilities_million_usd' ? 'Total Liabilities' : 'Net IIP'",
-      "as": "series_label"
-    }
-  ],
   "encoding": {
     "x": {
       "field": "date",
@@ -29,7 +19,7 @@
       "axis": { "format": ",.0f", "grid": true, "gridOpacity": 0.3 }
     },
     "color": {
-      "field": "series_label",
+      "field": "metric",
       "type": "nominal",
       "title": "Position",
       "scale": {
@@ -58,7 +48,7 @@
         },
         "tooltip": [
           { "field": "date", "type": "temporal", "title": "Quarter", "format": "%Y Q%q" },
-          { "field": "series_label", "type": "nominal", "title": "Item" },
+          { "field": "metric", "type": "nominal", "title": "Item" },
           { "field": "value", "type": "quantitative", "title": "USD million", "format": ",.1f" }
         ]
       }

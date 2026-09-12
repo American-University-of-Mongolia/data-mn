@@ -9,6 +9,31 @@
   },
   "params": [
     {
+      "name": "selectedCategories",
+      "value": [
+        "Agriculture, forestry, fishing and hunting",
+        "Mining and quarrying",
+        "Manufacturing",
+        "Electricity, gas, steam, air conditioning supply",
+        "Water supply; sewerage, waste management and remediation activities",
+        "Construction",
+        "Wholesale and retail trade; repair of motor vehicles and motorcycles",
+        "Transportation and storage",
+        "Accommodation and food service activities",
+        "Information and communication",
+        "Financial and insurance activities",
+        "Real estate activities",
+        "Professional, scientific and technical activities",
+        "Administrative and support service activities",
+        "Public administration and defence; compulsory social insurance",
+        "Education services",
+        "Human health and social work activities",
+        "Arts, entertainment and recreation",
+        "Other service activities",
+        "Taxes less subsidies on products"
+      ]
+    },
+    {
       "name": "hover",
       "select": {
         "type": "point",
@@ -20,7 +45,8 @@
   ],
   "mark": {
     "type": "bar",
-    "cursor": "pointer"
+    "cursor": "pointer",
+    "maxBandSize": 48
   },
   "encoding": {
     "y": {
@@ -51,7 +77,59 @@
         "title": "GDP (Million MNT)",
         "format": ",.0f"
       }
-    ]
+    ],
+    "color": {
+      "field": "sector",
+      "type": "nominal",
+      "title": "Sector",
+      "scale": {
+        "domain": [
+          "Agriculture, forestry, fishing and hunting",
+          "Mining and quarrying",
+          "Manufacturing",
+          "Electricity, gas, steam, air conditioning supply",
+          "Water supply; sewerage, waste management and remediation activities",
+          "Construction",
+          "Wholesale and retail trade; repair of motor vehicles and motorcycles",
+          "Transportation and storage",
+          "Accommodation and food service activities",
+          "Information and communication",
+          "Financial and insurance activities",
+          "Real estate activities",
+          "Professional, scientific and technical activities",
+          "Administrative and support service activities",
+          "Public administration and defence; compulsory social insurance",
+          "Education services",
+          "Human health and social work activities",
+          "Arts, entertainment and recreation",
+          "Other service activities",
+          "Taxes less subsidies on products"
+        ],
+        "range": [
+          "#4E79A7",
+          "#A0CBE8",
+          "#F28E2B",
+          "#FFBE7D",
+          "#F57F17",
+          "#59A14F",
+          "#8CD17D",
+          "#B6992D",
+          "#F1CE63",
+          "#499894",
+          "#86BCB6",
+          "#E15759",
+          "#6A1B9A",
+          "#2E7D32",
+          "#00838F",
+          "#FF9D9A",
+          "#79706E",
+          "#1565C0",
+          "#BAB0AC",
+          "#D37295"
+        ]
+      },
+      "legend": null
+    }
   },
   "config": {
     "axis": {
@@ -66,6 +144,21 @@
     "legend": {
       "labelFontSize": 13,
       "titleFontSize": 14
+    }
+  },
+  "transform": [
+    {
+      "filter": "indexof(selectedCategories, datum[\"sector\"]) >= 0"
+    }
+  ],
+  "usermeta": {
+    "explorer": {
+      "categoryField": "sector",
+      "labels": {
+        "search": "Search sectors…",
+        "noMatches": "No matching sectors.",
+        "empty": "Choose at least one sector to display the chart."
+      }
     }
   }
 }

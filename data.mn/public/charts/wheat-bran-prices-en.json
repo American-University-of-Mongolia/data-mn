@@ -11,12 +11,14 @@
       "value": "Tuv",
       "bind": {
         "input": "select",
-        "options": ["Arkhangai", "Bayan-Ulgii", "Bayankhongor", "Bulgan", "Darkhan-Uul", "Dornod", "Dornogovi", "Dundgovi", "Govi-Altai", "Govisumber", "Khentii", "Khovd", "Khuvsgul", "Orkhon", "Selenge", "Sukhbaatar", "Tuv", "Ulaanbaatar city", "Umnugovi", "Uvs", "Uvurkhangai", "Zavkhan"],
+        "options": ["Arkhangai", "Bayan-Ulgii", "Bayankhongor", "Bulgan", "Darkhan-Uul", "Dornod", "Dornogovi", "Dundgovi", "Govi-Altai", "Govisumber", "Khentii", "Khovd", "Khuvsgul", "Orkhon", "Selenge", "Sukhbaatar", "Tuv", "Ulaanbaatar", "Umnugovi", "Uvs", "Uvurkhangai", "Zavkhan"],
         "name": "Region: "
       }
     }
   ],
   "transform": [
+    {"calculate": "split(datum.product_region, ' — ')[0]", "as": "product"},
+    {"calculate": "split(datum.product_region, ' — ')[1]", "as": "region"},
     {"filter": "datum.region == regionSelect"}
   ],
   "encoding": {

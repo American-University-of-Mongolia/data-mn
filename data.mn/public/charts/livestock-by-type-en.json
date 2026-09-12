@@ -29,16 +29,16 @@
       }
     },
     "color": {
-      "field": "type_of_livestock",
+      "field": "category",
       "type": "nominal",
       "title": "Livestock Type",
       "scale": {
         "domain": [
-          "Horse",
-          "Cattle",
-          "Camel",
-          "Sheep",
-          "Goat"
+          "Horse — Total",
+          "Cattle — Total",
+          "Camel — Total",
+          "Sheep — Total",
+          "Goat — Total"
         ]
       },
       "legend": {
@@ -89,7 +89,7 @@
             "format": "%Y"
           },
           {
-            "field": "type_of_livestock",
+            "field": "category",
             "type": "nominal",
             "title": "Type"
           },

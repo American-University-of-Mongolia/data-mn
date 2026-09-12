@@ -7,19 +7,6 @@
       "type": "csv"
     }
   },
-  "transform": [
-    {
-      "fold": [
-        "exports",
-        "imports",
-        "net"
-      ],
-      "as": [
-        "category",
-        "value"
-      ]
-    }
-  ],
   "encoding": {
     "x": {
       "field": "month",
@@ -40,18 +27,17 @@
       }
     },
     "color": {
-      "field": "category",
+      "field": "metric",
       "type": "nominal",
       "scale": {
         "domain": [
-          "exports",
-          "imports",
-          "net"
+          "Exports",
+          "Imports",
+          "Net Balance"
         ]
       },
       "legend": {
         "title": "Category",
-        "labelExpr": "datum.label === 'exports' ? 'Exports' : datum.label === 'imports' ? 'Imports' : 'Net Balance'",
         "orient": "top"
       }
     }
@@ -98,7 +84,7 @@
             "format": "%B %Y"
           },
           {
-            "field": "category",
+            "field": "metric",
             "type": "nominal",
             "title": "Type"
           },

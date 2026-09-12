@@ -197,7 +197,12 @@
   "usermeta": {
     "explorer": {
       "categoryField": "region",
-      "yearField": "year"
+      "yearField": "year",
+      "labels": {
+        "search": "Search regions…",
+        "noMatches": "No matching regions.",
+        "empty": "Choose at least one region to display the chart."
+      }
     }
   }
 }

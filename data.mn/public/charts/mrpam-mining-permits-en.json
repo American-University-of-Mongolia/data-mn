@@ -2,79 +2,119 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "National monthly exploration and extraction permit counts in Mongolia.",
   "data": {
-    "url": "/datasets/mrpam-mining-permits-en.csv",
-    "format": {"type": "csv"}
+    "format": {
+      "type": "csv"
+    },
+    "url": "/datasets/mrpam-mining-permits-en.csv"
   },
-  "transform": [
-    {"calculate": "datetime(datum.year, datum.month - 1, 1)", "as": "date"},
-    {"fold": ["exploration_count", "extraction_count"], "as": ["metric", "count"]},
-    {
-      "calculate": "datum.metric === 'exploration_count' ? 'Exploration' : 'Extraction'",
-      "as": "permit_type"
-    }
-  ],
   "encoding": {
+    "color": {
+      "field": "metric",
+      "legend": {
+        "orient": "top"
+      },
+      "scale": {
+        "domain": [
+          "Exploration",
+          "Extraction"
+        ],
+        "range": [
+          "#4c78a8",
+          "#f58518"
+        ]
+      },
+      "title": null,
+      "type": "nominal"
+    },
     "x": {
-      "field": "date",
-      "type": "temporal",
+      "axis": {
+        "format": "%Y",
+        "grid": false
+      },
+      "field": "month",
       "title": "Month",
-      "axis": {"format": "%Y-%m", "labelAngle": -45, "grid": false}
+      "type": "temporal"
     },
     "y": {
-      "field": "count",
-      "type": "quantitative",
-      "title": "Permit count",
-      "scale": {"zero": true},
-      "axis": {"format": ",.0f"}
-    },
-    "color": {
-      "field": "permit_type",
-      "type": "nominal",
-      "title": null,
-      "scale": {
-        "domain": ["Exploration", "Extraction"],
-        "range": ["#4c78a8", "#f58518"]
+      "axis": {
+        "format": ",.0f"
       },
-      "legend": {"orient": "top"}
+      "field": "value",
+      "scale": {
+        "zero": true
+      },
+      "title": "Permit count",
+      "type": "quantitative"
     }
   },
   "layer": [
-    {"mark": {"type": "line", "strokeWidth": 2.5}},
     {
+      "mark": {
+        "strokeWidth": 2.5,
+        "type": "line"
+      }
+    },
+    {
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "empty": false,
+            "param": "hover",
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "month",
+            "format": "%B %Y",
+            "title": "Month",
+            "type": "temporal"
+          },
+          {
+            "field": "metric",
+            "title": "Permit type",
+            "type": "nominal"
+          },
+          {
+            "field": "value",
+            "format": ",.0f",
+            "title": "Count",
+            "type": "quantitative"
+          }
+        ]
+      },
+      "mark": {
+        "filled": true,
+        "size": 80,
+        "type": "point"
+      },
       "params": [
         {
           "name": "hover",
           "select": {
-            "type": "point",
-            "fields": ["date"],
+            "clear": "pointerout",
             "nearest": true,
             "on": "pointerover",
-            "clear": "pointerout"
+            "type": "point"
           }
         }
-      ],
-      "mark": {"type": "point", "filled": true, "size": 80},
-      "encoding": {
-        "opacity": {
-          "condition": {"param": "hover", "empty": false, "value": 1},
-          "value": 0
-        },
-        "tooltip": [
-          {"field": "date", "type": "temporal", "title": "Month", "format": "%Y-%m"},
-          {"field": "permit_type", "type": "nominal", "title": "Permit type"},
-          {"field": "count", "type": "quantitative", "title": "Count", "format": ",.0f"}
-        ]
-      }
+      ]
     }
   ],
   "config": {
     "axis": {
-      "labelFontSize": 14,
-      "titleFontSize": 16,
       "labelColor": "#64748b",
-      "titleColor": "#334155"
+      "labelFontSize": 14,
+      "titleColor": "#334155",
+      "titleFontSize": 16
     },
-    "view": {"stroke": "transparent"},
-    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
   }
 }

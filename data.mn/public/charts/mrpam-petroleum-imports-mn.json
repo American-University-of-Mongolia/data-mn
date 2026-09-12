@@ -7,15 +7,9 @@
       "type": "csv"
     }
   },
-  "transform": [
-    {
-      "calculate": "datetime(datum['он'] - 0, datum['сар'] - 1)",
-      "as": "date"
-    }
-  ],
   "encoding": {
     "x": {
-      "field": "date",
+      "field": "сар",
       "type": "temporal",
       "title": "Огноо",
       "axis": {
@@ -78,7 +72,7 @@
         },
         "tooltip": [
           {
-            "field": "date",
+            "field": "сар",
             "type": "temporal",
             "title": "Огноо",
             "format": "%B %Y"

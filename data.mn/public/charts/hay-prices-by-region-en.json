@@ -11,13 +11,13 @@
       "value": "Tuv",
       "bind": {
         "input": "select",
-        "options": ["Arkhangai", "Bayan-Ulgii", "Bayankhongor", "Bulgan", "Darkhan-Uul", "Dornod", "Dornogovi", "Dundgovi", "Govi-Altai", "Govisumber", "Khentii", "Khovd", "Khuvsgul", "Orkhon", "Selenge", "Sukhbaatar", "Tuv", "Ulaanbaatar city", "Umnugovi", "Uvs", "Uvurkhangai", "Zavkhan"],
+        "options": ["Arkhangai", "Bayan-Ulgii", "Bayankhongor", "Bulgan", "Darkhan-Uul", "Dornod", "Dornogovi", "Dundgovi", "Govi-Altai", "Govisumber", "Khentii", "Khovd", "Khuvsgul", "Orkhon", "Selenge", "Sukhbaatar", "Tuv", "Ulaanbaatar", "Umnugovi", "Uvs", "Uvurkhangai", "Zavkhan"],
         "name": "Region: "
       }
     }
   ],
   "transform": [
-    {"filter": "datum.region == regionSelect"}
+    {"filter": "split(datum.category, ' — ')[1] == regionSelect"}
   ],
   "encoding": {
     "x": {
@@ -33,7 +33,7 @@
       "axis": {"format": ",.0f"}
     },
     "color": {
-      "field": "product",
+      "field": "category",
       "type": "nominal",
       "legend": {"orient": "top", "title": "Product"}
     }
@@ -56,8 +56,7 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "region", "title": "Region"},
-          {"field": "product", "title": "Product"},
+          {"field": "category", "title": "Category"},
           {"field": "date", "type": "temporal", "title": "Date", "format": "%Y-%m"},
           {"field": "price", "title": "Price (MNT)", "format": ",.0f"}
         ]

@@ -5,12 +5,9 @@
     "url": "/datasets/mrpam-commodity-prices-en.csv",
     "format": {"type": "csv"}
   },
-  "transform": [
-    {"calculate": "datetime(datum.year, datum.month - 1, 1)", "as": "date"}
-  ],
   "encoding": {
     "x": {
-      "field": "date",
+      "field": "month",
       "type": "temporal",
       "title": "Date",
       "axis": {"format": "%b %Y", "grid": false, "labelAngle": -30}
@@ -26,7 +23,7 @@
       "type": "nominal",
       "title": "Commodity",
       "scale": {
-        "domain": ["Copper", "Zinc", "Lead", "Tin", "Molybdenum"],
+        "domain": ["Copper (USD/tonne)", "Zinc (USD/tonne)", "Lead (USD/tonne)", "Tin (USD/tonne)", "Molybdenum (USD/tonne)"],
         "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2", "#54a24b"]
       },
       "legend": {"orient": "top", "title": null}
@@ -53,7 +50,7 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "date", "type": "temporal", "title": "Date", "format": "%B %Y"},
+          {"field": "month", "type": "temporal", "title": "Date", "format": "%B %Y"},
           {"field": "commodity", "type": "nominal", "title": "Commodity"},
           {"field": "price", "type": "quantitative", "title": "Price (USD/tonne)", "format": ",.1f"}
         ]

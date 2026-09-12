@@ -65,7 +65,6 @@
         "tooltip": [
           {"field": "огноо", "type": "temporal", "title": "Огноо", "format": "%Y-%m-%d"},
           {"field": "валютын_код", "type": "nominal", "title": "Валют"},
-          {"field": "валютын_нэр", "type": "nominal", "title": "Нэр"},
           {"field": "ханш_төгрөг", "type": "quantitative", "title": "Ханш (₮)", "format": ",.2f"},
           {"field": "indexed_rate", "type": "quantitative", "title": "Индекс", "format": ".1f"}
         ]

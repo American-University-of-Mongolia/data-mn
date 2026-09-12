@@ -7,13 +7,13 @@
   },
   "encoding": {
     "x": {
-      "field": "month",
+      "field": "сар",
       "type": "temporal",
       "title": "Сар",
       "axis": {"grid": false}
     },
     "y": {
-      "field": "births",
+      "field": "төрөлт",
       "type": "quantitative",
       "title": "Амьд төрөлт",
       "axis": {"format": ",.0f"}
@@ -41,8 +41,8 @@
       "encoding": {
         "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
         "tooltip": [
-          {"field": "month", "title": "Сар", "type": "temporal", "format": "%Y-%m"},
-          {"field": "births", "title": "Амьд төрөлт", "type": "quantitative", "format": ",.0f"}
+          {"field": "сар", "title": "Сар", "type": "temporal", "format": "%Y-%m"},
+          {"field": "төрөлт", "title": "Амьд төрөлт", "type": "quantitative", "format": ",.0f"}
         ]
       }
     }

@@ -5,26 +5,21 @@
     "url": "/datasets/mrpam-budget-revenue-mn.csv",
     "format": {"type": "csv"}
   },
-  "transform": [
-    {"calculate": "datetime(datum.он, datum.сар - 1, 1)", "as": "огноо"},
-    {"fold": ["төлөвлөгөө_сая_төг", "гүйцэтгэл_сая_төг"], "as": ["үзүүлэлт", "сая_төгрөг"]},
-    {"calculate": "datum.үзүүлэлт === 'төлөвлөгөө_сая_төг' ? 'Жилийн төлөвлөгөө' : 'Өссөн дүнгийн гүйцэтгэл'", "as": "цуваа"}
-  ],
   "encoding": {
     "x": {
-      "field": "огноо",
+      "field": "сар",
       "type": "temporal",
       "title": "Тайлант сар",
       "axis": {"format": "%Y-%m", "grid": false, "labelOverlap": "greedy"}
     },
     "y": {
-      "field": "сая_төгрөг",
+      "field": "утга",
       "type": "quantitative",
       "title": "Сая төгрөг",
       "axis": {"format": ",.0f"}
     },
     "color": {
-      "field": "цуваа",
+      "field": "үзүүлэлт",
       "type": "nominal",
       "title": null,
       "scale": {
@@ -41,7 +36,7 @@
         "name": "hover",
         "select": {
           "type": "point",
-          "fields": ["огноо"],
+          "fields": ["сар"],
           "nearest": true,
           "on": "pointerover",
           "clear": "pointerout"
@@ -54,9 +49,9 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "огноо", "type": "temporal", "title": "Тайлант сар", "format": "%Y-%m"},
-          {"field": "цуваа", "type": "nominal", "title": "Үзүүлэлт"},
-          {"field": "сая_төгрөг", "type": "quantitative", "title": "Сая төгрөг", "format": ",.1f"}
+          {"field": "сар", "type": "temporal", "title": "Тайлант сар", "format": "%Y-%m"},
+          {"field": "үзүүлэлт", "type": "nominal", "title": "Үзүүлэлт"},
+          {"field": "утга", "type": "quantitative", "title": "Сая төгрөг", "format": ",.1f"}
         ]
       }
     }

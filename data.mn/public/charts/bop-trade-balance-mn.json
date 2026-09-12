@@ -7,19 +7,6 @@
       "type": "csv"
     }
   },
-  "transform": [
-    {
-      "fold": [
-        "экспорт",
-        "импорт",
-        "цэвэр"
-      ],
-      "as": [
-        "category",
-        "value"
-      ]
-    }
-  ],
   "encoding": {
     "x": {
       "field": "сар",
@@ -32,7 +19,7 @@
       }
     },
     "y": {
-      "field": "value",
+      "field": "утга",
       "type": "quantitative",
       "title": "Сая ам.доллар",
       "axis": {
@@ -40,18 +27,17 @@
       }
     },
     "color": {
-      "field": "category",
+      "field": "үзүүлэлт",
       "type": "nominal",
       "scale": {
         "domain": [
-          "экспорт",
-          "импорт",
-          "цэвэр"
+          "Экспорт",
+          "Импорт",
+          "Цэвэр тэнцэл"
         ]
       },
       "legend": {
         "title": "Ангилал",
-        "labelExpr": "datum.label === 'экспорт' ? 'Экспорт' : datum.label === 'импорт' ? 'Импорт' : 'Цэвэр тэнцэл'",
         "orient": "top"
       }
     }
@@ -98,12 +84,12 @@
             "format": "%Y-%m"
           },
           {
-            "field": "category",
+            "field": "үзүүлэлт",
             "type": "nominal",
             "title": "Төрөл"
           },
           {
-            "field": "value",
+            "field": "утга",
             "type": "quantitative",
             "title": "Сая ам.доллар",
             "format": ",.1f"

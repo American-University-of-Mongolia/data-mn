@@ -5,20 +5,9 @@
     "url": "/datasets/mrpam-coal-production-en.csv",
     "format": {"type": "csv"}
   },
-  "transform": [
-    {"calculate": "datetime(datum.year, datum.month - 1, 1)", "as": "date"},
-    {
-      "fold": ["production_kt", "sales_kt", "export_kt"],
-      "as": ["metric", "value"]
-    },
-    {
-      "calculate": "datum.metric === 'production_kt' ? 'Production' : datum.metric === 'sales_kt' ? 'Sales' : 'Exports'",
-      "as": "measure"
-    }
-  ],
   "encoding": {
     "x": {
-      "field": "date",
+      "field": "month",
       "type": "temporal",
       "title": "Month",
       "axis": {"format": "%Y-%m", "labelAngle": -45, "grid": false}
@@ -30,7 +19,7 @@
       "axis": {"format": ",.0f"}
     },
     "color": {
-      "field": "measure",
+      "field": "metric",
       "type": "nominal",
       "title": null,
       "scale": {
@@ -48,7 +37,7 @@
           "name": "hover",
           "select": {
             "type": "point",
-            "fields": ["date"],
+            "fields": ["month"],
             "nearest": true,
             "on": "pointerover",
             "clear": "pointerout"
@@ -62,9 +51,9 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "date", "type": "temporal", "title": "Month", "format": "%Y-%m"},
+          {"field": "month", "type": "temporal", "title": "Month", "format": "%Y-%m"},
           {
-            "field": "measure",
+            "field": "metric",
             "type": "nominal",
             "title": "Measure"
           },

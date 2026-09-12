@@ -17,17 +17,19 @@
     }
   ],
   "transform": [
+    {"calculate": "split(datum[\"бүтээгдэхүүн_бүс\"], ' — ')[0]", "as": "product"},
+    {"calculate": "split(datum[\"бүтээгдэхүүн_бүс\"], ' — ')[1]", "as": "region"},
     {"filter": "datum.region == regionSelect"}
   ],
   "encoding": {
     "x": {
-      "field": "date",
+      "field": "огноо",
       "type": "temporal",
       "title": "Огноо",
       "axis": {"grid": false, "format": "%Y-%m"}
     },
     "y": {
-      "field": "price",
+      "field": "үнэ",
       "type": "quantitative",
       "title": "Үнэ (₮/кг)",
       "axis": {"format": ",.0f"}
@@ -58,8 +60,8 @@
         "tooltip": [
           {"field": "region", "title": "Аймаг"},
           {"field": "product", "title": "Бүтээгдэхүүн"},
-          {"field": "date", "type": "temporal", "title": "Огноо", "format": "%Y-%m"},
-          {"field": "price", "title": "Үнэ (₮)", "format": ",.0f"}
+          {"field": "огноо", "type": "temporal", "title": "Огноо", "format": "%Y-%m"},
+          {"field": "үнэ", "title": "Үнэ (₮)", "format": ",.0f"}
         ]
       }
     }

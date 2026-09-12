@@ -9,7 +9,7 @@
   },
   "encoding": {
     "x": {
-      "field": "date",
+      "field": "огноо",
       "type": "temporal",
       "title": "Огноо",
       "axis": {
@@ -18,7 +18,7 @@
       }
     },
     "y": {
-      "field": "price",
+      "field": "үнэ",
       "type": "quantitative",
       "title": "Үнэ (төг/л)",
       "axis": {
@@ -26,7 +26,7 @@
       }
     },
     "color": {
-      "field": "product",
+      "field": "бүтээгдэхүүн",
       "type": "nominal",
       "legend": {
         "orient": "top",
@@ -70,17 +70,17 @@
         },
         "tooltip": [
           {
-            "field": "product",
+            "field": "бүтээгдэхүүн",
             "title": "Шатахууны төрөл"
           },
           {
-            "field": "date",
+            "field": "огноо",
             "type": "temporal",
             "title": "Огноо",
             "format": "%Y-%m-%d"
           },
           {
-            "field": "price",
+            "field": "үнэ",
             "title": "Үнэ",
             "format": ",.0f"
           }

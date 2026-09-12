@@ -7,15 +7,9 @@
       "type": "csv"
     }
   },
-  "transform": [
-    {
-      "calculate": "datetime(datum['year'] - 0, datum['month'] - 1)",
-      "as": "date"
-    }
-  ],
   "encoding": {
     "x": {
-      "field": "date",
+      "field": "month",
       "type": "temporal",
       "title": "Date",
       "axis": {
@@ -78,7 +72,7 @@
         },
         "tooltip": [
           {
-            "field": "date",
+            "field": "month",
             "type": "temporal",
             "title": "Date",
             "format": "%B %Y"

@@ -5,20 +5,9 @@
     "url": "/datasets/mrpam-coal-production-mn.csv",
     "format": {"type": "csv"}
   },
-  "transform": [
-    {"calculate": "datetime(datum['он'], datum['сар'] - 1, 1)", "as": "огноо"},
-    {
-      "fold": ["олборлолт_мян_тн", "борлуулалт_мян_тн", "экспорт_мян_тн"],
-      "as": ["үзүүлэлт", "утга"]
-    },
-    {
-      "calculate": "datum['үзүүлэлт'] === 'олборлолт_мян_тн' ? 'Олборлолт' : datum['үзүүлэлт'] === 'борлуулалт_мян_тн' ? 'Борлуулалт' : 'Экспорт'",
-      "as": "хэмжүүр"
-    }
-  ],
   "encoding": {
     "x": {
-      "field": "огноо",
+      "field": "сар",
       "type": "temporal",
       "title": "Сар",
       "axis": {"format": "%Y-%m", "labelAngle": -45, "grid": false}
@@ -30,7 +19,7 @@
       "axis": {"format": ",.0f"}
     },
     "color": {
-      "field": "хэмжүүр",
+      "field": "үзүүлэлт",
       "type": "nominal",
       "title": null,
       "scale": {
@@ -48,7 +37,7 @@
           "name": "hover",
           "select": {
             "type": "point",
-            "fields": ["огноо"],
+            "fields": ["сар"],
             "nearest": true,
             "on": "pointerover",
             "clear": "pointerout"
@@ -62,8 +51,8 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "огноо", "type": "temporal", "title": "Сар", "format": "%Y-%m"},
-          {"field": "хэмжүүр", "type": "nominal", "title": "Үзүүлэлт"},
+          {"field": "сар", "type": "temporal", "title": "Сар", "format": "%Y-%m"},
+          {"field": "үзүүлэлт", "type": "nominal", "title": "Үзүүлэлт"},
           {"field": "утга", "type": "quantitative", "title": "Мянган тонн", "format": ",.1f"}
         ]
       }

@@ -6,16 +6,17 @@ category: "Economy"
 tags: ["mongolia", "gdp", "economy", "sectors"]
 keywords: ["mongolia gdp by sector", "economic sectors", "gdp breakdown", "mining gdp"]
 author: "Data.mn"
+chartLayout: wide
 dataVersion: 2
 dataDate: 2025-12-31
 dataFiles:
   - path: "/datasets/gdp-by-sector-en.csv"
     format: "csv"
-    size: "2 KB"
+    size: "1 KB"
     description: "Download as CSV"
   - path: "/datasets/gdp-by-sector.xlsx"
     format: "xlsx"
-    size: "6 KB"
+    size: "7 KB"
     description: "Open in Excel"
 source:
   name: "National Statistics Office of Mongolia"
@@ -26,6 +27,7 @@ source:
 import VegaChart from '~/components/ui/VegaChart.astro';
 
 <VegaChart
+  interactive
   spec="/charts/gdp-by-sector-en.json"
   title="Mongolia GDP by Economic Sector (2025)"
 />

@@ -12,17 +12,13 @@ keywords:
 chart: "/charts/exports-by-country-en.json"
 chartThumbnail: "/thumbnails/exports-by-country-en.webp"
 dataFiles:
-  - path: "/datasets/exports-by-country-en.csv"
-    format: "CSV"
-    size: "1.9 KB"
-    description: "Chart data (top 6 trading partners)"
   - path: "/datasets/exports-by-country-all-en.csv"
-    format: "CSV"
+    format: "csv"
     size: "48 KB"
-    description: "Complete data (all countries)"
+    description: "Download as CSV"
   - path: "/datasets/exports-by-country.xlsx"
-    format: "XLSX"
-    size: "19 KB"
+    format: "xlsx"
+    size: "35 KB"
     description: "Excel format (wide layout)"
 source:
   name: "National Statistics Office of Mongolia"
@@ -32,8 +28,5 @@ publishDate: 2024-12-16
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
-import DataDownload from '~/components/ui/DataDownload.astro';
 
 <VegaChart spec={frontmatter.chart} thumbnail={frontmatter.chartThumbnail} />
-
-<DataDownload files={frontmatter.dataFiles} />

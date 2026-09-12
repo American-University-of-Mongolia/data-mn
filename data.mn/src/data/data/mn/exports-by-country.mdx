@@ -12,17 +12,13 @@ keywords:
 chart: "/charts/exports-by-country-mn.json"
 chartThumbnail: "/thumbnails/exports-by-country-mn.webp"
 dataFiles:
-  - path: "/datasets/exports-by-country-mn.csv"
-    format: "CSV"
-    size: "1.3 KB"
-    description: "График өгөгдөл (6 гол түнш)"
   - path: "/datasets/exports-by-country-all-mn.csv"
-    format: "CSV"
+    format: "csv"
     size: "62 KB"
-    description: "Бүрэн өгөгдөл (бүх улс орон)"
+    description: "CSV татах"
   - path: "/datasets/exports-by-country.xlsx"
-    format: "XLSX"
-    size: "19 KB"
+    format: "xlsx"
+    size: "35 KB"
     description: "Excel формат (өргөн хэлбэр)"
 source:
   name: "Монгол Улсын Үндэсний Статистикийн Хороо"
@@ -32,8 +28,5 @@ publishDate: 2024-12-16
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
-import DataDownload from '~/components/ui/DataDownload.astro';
 
 <VegaChart spec={frontmatter.chart} thumbnail={frontmatter.chartThumbnail} />
-
-<DataDownload files={frontmatter.dataFiles} />

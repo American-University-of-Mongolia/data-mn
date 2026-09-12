@@ -6,16 +6,17 @@ category: "Эдийн засаг"
 tags: ["монгол", "днб", "эдийн засаг", "салбар"]
 keywords: ["монгол днб салбараар", "эдийн засгийн салбар", "днб хуваарилалт"]
 author: "Data.mn"
+chartLayout: wide
 dataVersion: 2
 dataDate: 2025-12-31
 dataFiles:
   - path: "/datasets/gdp-by-sector-mn.csv"
     format: "csv"
-    size: "2 KB"
+    size: "1 KB"
     description: "CSV татах"
   - path: "/datasets/gdp-by-sector.xlsx"
     format: "xlsx"
-    size: "6 KB"
+    size: "7 KB"
     description: "Excel-ээр нээх"
 source:
   name: "Үндэсний Статистикийн Хороо"
@@ -26,6 +27,7 @@ source:
 import VegaChart from '~/components/ui/VegaChart.astro';
 
 <VegaChart
+  interactive
   spec="/charts/gdp-by-sector-mn.json"
   title="Монгол Улсын ДНБ эдийн засгийн салбараар (2025)"
 />

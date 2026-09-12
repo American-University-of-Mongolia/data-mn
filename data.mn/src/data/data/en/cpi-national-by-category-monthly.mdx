@@ -11,11 +11,11 @@ dataDate: 2026-07-31
 dataFiles:
   - path: "/datasets/cpi-national-by-category-monthly-en.csv"
     format: "csv"
-    size: "92 KB"
+    size: "91 KB"
     description: "Download as CSV"
-  - path: "/datasets/cpi-national-by-category-monthly-en.xlsx"
+  - path: "/datasets/cpi-national-by-category-monthly.xlsx"
     format: "xlsx"
-    size: "45 KB"
+    size: "33 KB"
     description: "Open in Excel"
 source:
   name: "National Statistics Office of Mongolia"
@@ -29,14 +29,3 @@ import VegaChart from '~/components/ui/VegaChart.astro';
   spec="/charts/cpi-national-by-category-monthly-en.json"
   title="Mongolia National CPI by Category, Monthly (2010–2026)"
 />
-
-Mongolia's Consumer Price Index broken down across 13 spending categories (base year 2020=100), covering January 2010 through July 2026. Key story angles:
-
-- **Food inflation** (food and non-alcoholic beverages) has repeatedly outpaced headline CPI, driven by import dependence and seasonal supply shocks.
-- **Housing, water, electricity and fuels** reflects energy policy changes and urbanization pressures in Ulaanbaatar.
-- **Transport** tracks fuel price volatility and mirrors global oil cycles.
-- **Communication** is the only category showing a sustained long-run decline, reflecting competition and falling device costs.
-
-For the headline CPI trend, see [Mongolia National Consumer Price Index, Monthly](/en/data/cpi-national-monthly).
-
-For Ulaanbaatar-specific monthly inflation, see [Monthly Inflation in Ulaanbaatar](/en/data/cpi-monthly-ulaanbaatar).

@@ -512,9 +512,9 @@ class VegaValidator:
                 pass  # Legend explicitly disabled, that's fine
             elif isinstance(legend, dict):
                 orient = legend.get('orient', 'right')  # Vega default is 'right'
-                if orient != 'top':
+                if orient not in ('top', 'bottom'):
                     self.result.add_error(
-                        f"Legend orient should be 'top' for full-width charts, found: '{orient}'. "
+                        f"Legend orient should be 'top' or 'bottom' for full-width charts, found: '{orient}'. "
                         f"Add \"legend\": {{\"orient\": \"top\"}} to color encoding."
                     )
             else:

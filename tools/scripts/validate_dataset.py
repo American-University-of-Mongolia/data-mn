@@ -41,6 +41,26 @@ try:
 except ImportError:
     HAS_OPENPYXL = False
 
+# Download-standards logic lives in rebuild_downloads.py (single source of
+# truth); the validator reuses it instead of duplicating heuristics.
+try:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from rebuild_downloads import (
+        TIME_NAMES,
+        EN_SHEET,
+        MN_SHEET,
+        EXEMPT_WIDE,
+        EXEMPT_WIDE_REASONS,
+        detect_roles,
+        drop_constant_dims,
+        check_structural_language,
+        value_total,
+        fuzzy_value_total,
+    )
+    HAS_REBUILD = True
+except Exception:
+    HAS_REBUILD = False
+
 
 # ============================================
 # Category Configuration
@@ -343,10 +363,12 @@ def validate_mdx(file_path: str, base_dir: Optional[str] = None) -> ValidationRe
                 f"Remove all prose sections."
             )
 
-    # Check for content after VegaChart (should be empty or whitespace only)
-    vegachart_match = re.search(r'<VegaChart[^>]*/>', body)
-    if vegachart_match:
-        content_after_chart = body[vegachart_match.end():].strip()
+    # Check for content after the LAST VegaChart. Multi-chart pages are
+    # allowed (e.g. weekly aimag trend + map); only trailing prose or
+    # components after the final chart are violations.
+    vegachart_matches = list(re.finditer(r'<VegaChart[^>]*/>', body))
+    if vegachart_matches:
+        content_after_chart = body[vegachart_matches[-1].end():].strip()
         if content_after_chart:
             # Allow closing tags but nothing else
             if not re.match(r'^(\s|<\/\w+>)*$', content_after_chart):
@@ -457,9 +479,17 @@ def validate_csv(file_path: str) -> ValidationResult:
     # ============================================
     is_mongolian_csv = '-mn.csv' in file_path or '/mn/' in file_path
     if is_mongolian_csv:
-        # MN CSV should have Mongolian column headers
+        # MN CSV structural headers must be Mongolian. The value column is
+        # exempt (unit codes such as MNT/USD are conventionally Latin) —
+        # Standard 2 follows the header-language rule (structural headers).
+        time_names = TIME_NAMES if HAS_REBUILD else frozenset()
+        value_cols = {c for c in df.columns
+                      if pd.api.types.is_numeric_dtype(df[c])
+                      and str(c).strip().lower() not in time_names}
         english_headers_found = []
         for col in df.columns:
+            if col in value_cols and len(value_cols) == 1:
+                continue
             col_lower = col.lower().strip()
             if col_lower in ENGLISH_CSV_HEADERS:
                 expected_mn = MONGOLIAN_CSV_HEADERS.get(col_lower, '[unknown]')
@@ -718,6 +748,202 @@ def validate_chart_csv_consistency(chart_path: str, csv_path: str) -> Validation
     return result
 
 
+def validate_downloads(dataset_id: str, base_dir: str) -> list[ValidationResult]:
+    """Enforce the download standards (Standard 1 + 2) for one dataset.
+
+    - Download Files: each page lists exactly one CSV + one XLSX; the CSV is
+      the canonical download file (-all- when present, else plain); the XLSX
+      is {id}.xlsx. Also checks EN<->MN download-CSV alignment.
+    - Download CSV (en/mn): long form with structural headers in the page
+      language (Standard 2 header-language rule).
+    - Download XLSX: bilingual sheets, wide form unless the dataset is on the
+      documented exempt list, content-equivalent to the CSVs.
+    """
+    import math
+
+    results = []
+    files_result = ValidationResult(
+        f"Download files check for {dataset_id}", "Download Files")
+    results.append(files_result)
+
+    if not HAS_REBUILD:
+        files_result.add_warning(
+            "Skipping download-standards checks (rebuild_downloads unavailable)")
+        return results
+    if not HAS_PANDAS or not HAS_OPENPYXL:
+        files_result.add_warning(
+            "pandas/openpyxl not installed - skipping download content checks")
+        return results
+
+    datasets_dir = os.path.join(base_dir, 'public', 'datasets')
+
+    def download_csv_name(lang):
+        all_name = f"{dataset_id}-all-{lang}.csv"
+        if os.path.exists(os.path.join(datasets_dir, all_name)):
+            return all_name
+        return f"{dataset_id}-{lang}.csv"
+
+    # --- dataFiles shape (both pages) ---
+    for lang in ('en', 'mn'):
+        mdx_path = os.path.join(
+            base_dir, 'src', 'data', 'data', lang, f'{dataset_id}.mdx')
+        if not os.path.exists(mdx_path):
+            files_result.add_error(f"Missing {lang.upper()} MDX page")
+            continue
+        try:
+            with open(mdx_path, 'r', encoding='utf-8') as f:
+                frontmatter, _ = parse_mdx_frontmatter(f.read())
+        except ValidationError as e:
+            files_result.add_error(f"{lang.upper()} MDX: {e}")
+            continue
+        files = (frontmatter or {}).get('dataFiles') or []
+        formats = sorted(str(f.get('format', '')).lower()
+                         for f in files if isinstance(f, dict))
+        if formats != ['csv', 'xlsx']:
+            files_result.add_error(
+                f"{lang.upper()} page must list exactly one CSV + one XLSX "
+                f"(Standard 1), found formats: {formats}")
+            continue
+        names = {str(f.get('format', '')).lower(): os.path.basename(str(f.get('path', '')))
+                 for f in files if isinstance(f, dict)}
+        expected_csv = download_csv_name(lang)
+        if names.get('csv') != expected_csv:
+            files_result.add_error(
+                f"{lang.upper()} download CSV must be {expected_csv}, "
+                f"found: {names.get('csv')}")
+        if names.get('xlsx') != f"{dataset_id}.xlsx":
+            files_result.add_error(
+                f"{lang.upper()} download XLSX must be {dataset_id}.xlsx, "
+                f"found: {names.get('xlsx')}")
+
+    # --- Download CSVs: long form + header language ---
+    dfs, roles = {}, {}
+    for lang in ('en', 'mn'):
+        csv_name = download_csv_name(lang)
+        csv_path = os.path.join(datasets_dir, csv_name)
+        csv_result = ValidationResult(csv_path, "Download CSV")
+        results.append(csv_result)
+        if not os.path.exists(csv_path):
+            csv_result.add_error(f"Download CSV does not exist: {csv_name}")
+            continue
+        try:
+            df = pd.read_csv(csv_path, encoding='utf-8-sig')
+        except Exception as e:
+            csv_result.add_error(f"Could not parse CSV: {e}")
+            continue
+        df.columns = [str(c).replace('\ufeff', '') for c in df.columns]
+        df, _ = drop_constant_dims(df)
+        time, cat, value, problem = detect_roles(df)
+        if problem:
+            csv_result.add_error(f"Not long-form download data: {problem}")
+            continue
+        if time is None and dataset_id not in EXEMPT_WIDE:
+            csv_result.add_error(
+                "No time dimension and not on the documented exempt list")
+            continue
+        struct = ([c for c in df.columns if c != value] if time is None
+                  else [c for c in (time, cat) if c is not None])
+        lang_problem = check_structural_language(struct, lang)
+        if lang_problem:
+            csv_result.add_error(lang_problem)
+            continue
+        dfs[lang], roles[lang] = df, (time, cat, value)
+        csv_result.add_info(
+            f"Long form OK: time={time}, category={cat}, value={value}")
+
+    # --- EN<->MN CSV alignment ---
+    if 'en' in dfs and 'mn' in dfs:
+        if len(dfs['en']) != len(dfs['mn']):
+            files_result.add_error(
+                f"EN/MN download-CSV row counts differ: "
+                f"{len(dfs['en'])} vs {len(dfs['mn'])}")
+        if not math.isclose(value_total(dfs['en'], roles['en'][0]),
+                            value_total(dfs['mn'], roles['mn'][0]),
+                            rel_tol=1e-9, abs_tol=1e-9):
+            files_result.add_error("EN/MN download-CSV numeric totals differ")
+        if roles['en'][0] is not None:
+            years_en = dfs['en'][roles['en'][0]].astype(str).tolist()
+            years_mn = dfs['mn'][roles['mn'][0]].astype(str).tolist()
+            if years_en != years_mn:
+                files_result.add_error("EN/MN download-CSV time vectors differ")
+
+    # --- Download XLSX: bilingual + wide + equivalent ---
+    xlsx_name = f"{dataset_id}.xlsx"
+    xlsx_path = os.path.join(datasets_dir, xlsx_name)
+    xlsx_result = ValidationResult(xlsx_path, "Download XLSX")
+    results.append(xlsx_result)
+    if not os.path.exists(xlsx_path):
+        xlsx_result.add_error(f"Download XLSX does not exist: {xlsx_name}")
+        return results
+    try:
+        wb = openpyxl.load_workbook(xlsx_path, read_only=True)
+        sheet_names = wb.sheetnames
+        wb.close()
+    except Exception as e:
+        xlsx_result.add_error(f"Could not open Excel file: {e}")
+        return results
+    if sheet_names != [EN_SHEET, MN_SHEET]:
+        xlsx_result.add_error(
+            f"XLSX must have bilingual sheets [{EN_SHEET}, {MN_SHEET}] "
+            f"(Standard 2), found: {sheet_names}")
+        return results
+    if 'en' not in dfs or 'mn' not in dfs:
+        return results  # CSV errors already recorded; nothing to compare
+    try:
+        sheets = {lang: pd.read_excel(xlsx_path, sheet_name=name)
+                  for lang, name in (('en', EN_SHEET), ('mn', MN_SHEET))}
+    except Exception as e:
+        xlsx_result.add_error(f"Could not read XLSX sheets: {e}")
+        return results
+    if sheets['en'].shape != sheets['mn'].shape:
+        xlsx_result.add_error(
+            f"EN/MN sheet shapes differ: {sheets['en'].shape} vs "
+            f"{sheets['mn'].shape}")
+        return results
+    time_en, cat_en, _ = roles['en']
+    needs_wide = time_en is not None and cat_en is not None \
+        and dataset_id not in EXEMPT_WIDE
+    if dataset_id in EXEMPT_WIDE:
+        xlsx_result.add_info(
+            f"Exempt from wide form: {EXEMPT_WIDE_REASONS[dataset_id]}")
+    if needs_wide:
+        # Wide = time first column + one column per CSV category value.
+        # Single-category pivots (time + 1 column) are vacuously wide.
+        sheet_cols = [str(c) for c in sheets['en'].columns]
+        csv_cats = set(dfs['en'][cat_en].dropna().astype(str))
+        if (len(sheet_cols) < 2
+                or sheet_cols[0].strip().lower() not in TIME_NAMES
+                or set(sheet_cols[1:]) != csv_cats):
+            xlsx_result.add_error(
+                "XLSX is not wide form (Standard 1): expected time rows x "
+                f"category columns, found columns: "
+                f"{list(sheets['en'].columns)[:4]}")
+            return results
+    else:
+        for lang in ('en', 'mn'):
+            if sheets[lang].shape != dfs[lang].shape:
+                xlsx_result.add_error(
+                    f"{lang.upper()} sheet shape {sheets[lang].shape} does not "
+                    f"match its long CSV {dfs[lang].shape}")
+                return results
+    for lang in ('en', 'mn'):
+        sheet_time = roles[lang][0]
+        if sheet_time not in sheets[lang].columns:
+            sheet_time = None
+        if not math.isclose(
+                value_total(sheets[lang], sheet_time),
+                value_total(dfs[lang], roles[lang][0]),
+                rel_tol=1e-6, abs_tol=1e-6):
+            xlsx_result.add_error(
+                f"{lang.upper()} sheet content differs from its CSV "
+                f"(numeric totals mismatch)")
+            return results
+    xlsx_result.add_info(
+        f"Bilingual wide XLSX OK: {sheets['en'].shape[0]} rows x "
+        f"{sheets['en'].shape[1]} cols per sheet")
+    return results
+
+
 def validate_all(dataset_id: str, base_dir: str) -> list[ValidationResult]:
     """Validate all files for a dataset."""
     results = []
@@ -852,6 +1078,11 @@ def validate_all(dataset_id: str, base_dir: str) -> list[ValidationResult]:
 
         if matching_csv:
             results.append(validate_chart_csv_consistency(chart_path, matching_csv))
+
+    # ============================================
+    # NEW: Download standards (Standard 1 + 2)
+    # ============================================
+    results.extend(validate_downloads(dataset_id, base_dir))
 
     return results
 

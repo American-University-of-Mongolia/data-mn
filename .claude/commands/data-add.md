@@ -56,7 +56,7 @@ Interactively add a new dataset to track in the registry.
   python3 tools/scripts/validate_dataset.py --all {dataset_id} --base-dir data.mn
   ```
 
-- [ ] **All datasets must show "Valid: 11, Invalid: 0"**
+- [ ] **All datasets must show "Valid: 15, Invalid: 0"** (11 file checks + 4 download-standards checks)
   - If any show Invalid > 0, FIX THE ISSUES before proceeding
 
 - [ ] **Run `validate_vega.py` on all new charts**

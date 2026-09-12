@@ -2,52 +2,179 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Physicians in Mongolia by region (1989–2025)",
   "data": {
-    "url": "/datasets/nso-physicians-by-region-en.csv",
-    "format": {"type": "csv"}
+    "url": "/datasets/nso-physicians-by-region-all-en.csv",
+    "format": {
+      "type": "csv"
+    }
   },
+  "params": [
+    {
+      "name": "selectedCategories",
+      "value": [
+        "Ulaanbaatar",
+        "Orkhon",
+        "Darkhan-Uul",
+        "Khuvsgul",
+        "Uvurkhangai",
+        "Selenge"
+      ]
+    },
+    {
+      "name": "yearStart",
+      "value": 1989
+    },
+    {
+      "name": "yearEnd",
+      "value": 2025
+    }
+  ],
   "transform": [
-    {"calculate": "datetime(datum.year, 0, 1)", "as": "date"}
+    {
+      "calculate": "datetime(datum.year, 0, 1)",
+      "as": "date"
+    },
+    {
+      "filter": "datum.year >= yearStart && datum.year <= yearEnd"
+    },
+    {
+      "filter": "indexof(selectedCategories, datum[\"region\"]) >= 0"
+    }
   ],
   "encoding": {
     "x": {
       "field": "date",
       "type": "temporal",
       "title": "Year",
-      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+      "axis": {
+        "format": "%Y",
+        "grid": false,
+        "labelAngle": -30,
+        "tickMinStep": 31536000000
+      }
     },
     "y": {
       "field": "physicians",
       "type": "quantitative",
       "title": "Physicians",
-      "axis": {"format": ","}
+      "axis": {
+        "format": ",.0f"
+      }
     },
     "color": {
       "field": "region",
       "type": "nominal",
       "title": "Region",
       "scale": {
-        "domain": ["Ulaanbaatar", "Orkhon", "Darkhan-Uul", "Khuvsgul", "Uvurkhangai", "Selenge"],
-        "range": ["#1565C0", "#2E7D32", "#F57F17", "#6A1B9A", "#BF360C", "#00838F"]
+        "domain": [
+          "Arkhangai",
+          "Bayan-Ulgii",
+          "Bayankhongor",
+          "Bulgan",
+          "Darkhan-Uul",
+          "Dornod",
+          "Dornogovi",
+          "Dundgovi",
+          "Govi-Altai",
+          "Govisumber",
+          "Khentii",
+          "Khovd",
+          "Khuvsgul",
+          "Orkhon",
+          "Selenge",
+          "Sukhbaatar",
+          "Tuv",
+          "Ulaanbaatar",
+          "Umnugovi",
+          "Uvs",
+          "Uvurkhangai",
+          "Zavkhan"
+        ],
+        "range": [
+          "#4E79A7",
+          "#A0CBE8",
+          "#F28E2B",
+          "#FFBE7D",
+          "#F57F17",
+          "#59A14F",
+          "#8CD17D",
+          "#B6992D",
+          "#F1CE63",
+          "#499894",
+          "#86BCB6",
+          "#E15759",
+          "#6A1B9A",
+          "#2E7D32",
+          "#00838F",
+          "#FF9D9A",
+          "#79706E",
+          "#1565C0",
+          "#BAB0AC",
+          "#D37295",
+          "#BF360C",
+          "#FABFD2"
+        ]
       },
-      "legend": {"orient": "top"}
+      "legend": {
+        "orient": "top",
+        "values": {
+          "expr": "selectedCategories"
+        },
+        "symbolType": "stroke"
+      }
     }
   },
   "layer": [
-    {"mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}},
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
     {
       "params": [
         {
           "name": "hover",
-          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+          "select": {
+            "type": "point",
+            "on": "pointerover",
+            "nearest": true,
+            "clear": "pointerout"
+          }
         }
       ],
-      "mark": {"type": "point", "filled": true, "size": 60},
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 60
+      },
       "encoding": {
-        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
         "tooltip": [
-          {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
-          {"field": "region", "type": "nominal", "title": "Region"},
-          {"field": "physicians", "type": "quantitative", "title": "Physicians", "format": ","}
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "region",
+            "type": "nominal",
+            "title": "Region"
+          },
+          {
+            "field": "physicians",
+            "type": "quantitative",
+            "title": "Physicians",
+            "format": ",.0f"
+          }
         ]
       }
     }
@@ -63,6 +190,14 @@
       "labelFontSize": 13,
       "titleFontSize": 14
     },
-    "view": {"stroke": "transparent"}
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "usermeta": {
+    "explorer": {
+      "categoryField": "region",
+      "yearField": "year"
+    }
   }
 }

@@ -2,52 +2,179 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Монгол Улсад эмч нарын тоо аймгаар (1989–2025)",
   "data": {
-    "url": "/datasets/nso-physicians-by-region-mn.csv",
-    "format": {"type": "csv"}
+    "url": "/datasets/nso-physicians-by-region-all-mn.csv",
+    "format": {
+      "type": "csv"
+    }
   },
+  "params": [
+    {
+      "name": "selectedCategories",
+      "value": [
+        "Улаанбаатар",
+        "Орхон",
+        "Дархан-Уул",
+        "Хөвсгөл",
+        "Өвөрхангай",
+        "Сэлэнгэ"
+      ]
+    },
+    {
+      "name": "yearStart",
+      "value": 1989
+    },
+    {
+      "name": "yearEnd",
+      "value": 2025
+    }
+  ],
   "transform": [
-    {"calculate": "datetime(datum.он, 0, 1)", "as": "огноо"}
+    {
+      "calculate": "datetime(datum.он, 0, 1)",
+      "as": "огноо"
+    },
+    {
+      "filter": "datum.он >= yearStart && datum.он <= yearEnd"
+    },
+    {
+      "filter": "indexof(selectedCategories, datum[\"аймаг\"]) >= 0"
+    }
   ],
   "encoding": {
     "x": {
       "field": "огноо",
       "type": "temporal",
       "title": "Он",
-      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+      "axis": {
+        "format": "%Y",
+        "grid": false,
+        "labelAngle": -30,
+        "tickMinStep": 31536000000
+      }
     },
     "y": {
       "field": "эмч",
       "type": "quantitative",
       "title": "Эмч",
-      "axis": {"format": ","}
+      "axis": {
+        "format": ",.0f"
+      }
     },
     "color": {
       "field": "аймаг",
       "type": "nominal",
       "title": "Аймаг",
       "scale": {
-        "domain": ["Улаанбаатар", "Орхон", "Дархан-Уул", "Хөвсгөл", "Өвөрхангай", "Сэлэнгэ"],
-        "range": ["#1565C0", "#2E7D32", "#F57F17", "#6A1B9A", "#BF360C", "#00838F"]
+        "domain": [
+          "Архангай",
+          "Баян-Өлгий",
+          "Баянхонгор",
+          "Булган",
+          "Говь-Алтай",
+          "Говьсүмбэр",
+          "Дархан-Уул",
+          "Дорноговь",
+          "Дорнод",
+          "Дундговь",
+          "Завхан",
+          "Орхон",
+          "Сэлэнгэ",
+          "Сүхбаатар",
+          "Төв",
+          "Увс",
+          "Улаанбаатар",
+          "Ховд",
+          "Хэнтий",
+          "Хөвсгөл",
+          "Өвөрхангай",
+          "Өмнөговь"
+        ],
+        "range": [
+          "#4E79A7",
+          "#A0CBE8",
+          "#F28E2B",
+          "#FFBE7D",
+          "#59A14F",
+          "#8CD17D",
+          "#F57F17",
+          "#B6992D",
+          "#F1CE63",
+          "#499894",
+          "#86BCB6",
+          "#2E7D32",
+          "#00838F",
+          "#E15759",
+          "#FF9D9A",
+          "#79706E",
+          "#1565C0",
+          "#BAB0AC",
+          "#D37295",
+          "#6A1B9A",
+          "#BF360C",
+          "#FABFD2"
+        ]
       },
-      "legend": {"orient": "top"}
+      "legend": {
+        "orient": "top",
+        "values": {
+          "expr": "selectedCategories"
+        },
+        "symbolType": "stroke"
+      }
     }
   },
   "layer": [
-    {"mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "monotone"}},
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
     {
       "params": [
         {
           "name": "hover",
-          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+          "select": {
+            "type": "point",
+            "on": "pointerover",
+            "nearest": true,
+            "clear": "pointerout"
+          }
         }
       ],
-      "mark": {"type": "point", "filled": true, "size": 60},
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 60
+      },
       "encoding": {
-        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
         "tooltip": [
-          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
-          {"field": "аймаг", "type": "nominal", "title": "Аймаг"},
-          {"field": "эмч", "type": "quantitative", "title": "Эмч", "format": ","}
+          {
+            "field": "он",
+            "type": "quantitative",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "аймаг",
+            "type": "nominal",
+            "title": "Аймаг"
+          },
+          {
+            "field": "эмч",
+            "type": "quantitative",
+            "title": "Эмч",
+            "format": ",.0f"
+          }
         ]
       }
     }
@@ -63,6 +190,14 @@
       "labelFontSize": 13,
       "titleFontSize": 14
     },
-    "view": {"stroke": "transparent"}
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "usermeta": {
+    "explorer": {
+      "categoryField": "аймаг",
+      "yearField": "он"
+    }
   }
 }

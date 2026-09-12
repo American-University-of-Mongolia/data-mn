@@ -1,4 +1,5 @@
 ---
+import ChartControls from './ChartControls.astro';
 /**
  * VegaChart Component
  *
@@ -14,15 +15,17 @@ export interface Props {
   title?: string;
   caption?: string;
   aspectRatio?: number; // height/width ratio, default 0.5 (2:1)
+  interactive?: boolean;
 }
 
-const { spec, title, caption, aspectRatio = 0.5 } = Astro.props;
+const { spec, title, caption, aspectRatio = 0.5, interactive = false } = Astro.props;
 const chartId = `chart-${Math.random().toString(36).substring(2, 11)}`;
 const isInlineSpec = typeof spec === 'object';
 ---
 
 <div class="vega-chart-container my-4 not-prose">
   {title && <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">{title}</h3>}
+  <ChartControls enabled={interactive}>
 
   <div
     id={chartId}
@@ -30,7 +33,9 @@ const isInlineSpec = typeof spec === 'object';
     data-spec={isInlineSpec ? JSON.stringify(spec) : spec}
     data-is-inline={isInlineSpec}
     data-aspect-ratio={aspectRatio}
+    data-interactive={interactive}
   ></div>
+  </ChartControls>
 
   {caption && <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 italic">{caption}</p>}
 </div>
@@ -106,6 +111,140 @@ const isInlineSpec = typeof spec === 'object';
       });
     }
 
+    // The spec declares fields and default parameter values; controls retain
+    // their state on the element when the chart is rebuilt after a resize.
+    async function prepareExplorer(el, spec) {
+      const config = spec.usermeta && spec.usermeta.explorer;
+      if (el.dataset.interactive !== 'true' || !config) return null;
+      const controls = el.closest('.chart-controls');
+      const rows = window.vega.read(await window.vega.loader().load(spec.data.url), {type: 'csv', parse: 'auto'});
+      spec.data = {values: rows};
+      const years = Array.from(new Set(rows.map(function(row) { return +row[config.yearField]; }))).sort(function(a, b) { return a - b; });
+      const categories = Array.from(new Set(rows.map(function(row) { return row[config.categoryField]; }))).sort();
+      const defaults = {};
+      spec.params.forEach(function(param) { defaults[param.name] = param.value; });
+      const state = el._explorerState || {
+        selectedCategories: defaults.selectedCategories.slice(),
+        yearStart: defaults.yearStart,
+        yearEnd: defaults.yearEnd,
+        pending: Promise.resolve()
+      };
+      el._explorerState = state;
+      spec.params.forEach(function(param) { param.value = state[param.name]; });
+      const start = controls.querySelector('[data-year-start]');
+      const end = controls.querySelector('[data-year-end]');
+      const options = controls.querySelector('.category-options');
+      const picker = controls.querySelector('details');
+      controls.querySelector('[data-category-title]').textContent = spec.encoding.color.title;
+      options.replaceChildren();
+      categories.forEach(function(category) {
+        const label = document.createElement('label');
+        const input = document.createElement('input');
+        input.type = 'checkbox';
+        input.value = category;
+        const swatch = document.createElement('span');
+        swatch.className = 'color-swatch';
+        const scale = spec.encoding.color.scale;
+        swatch.style.backgroundColor = scale.range[scale.domain.indexOf(category)];
+        label.append(input, swatch, document.createTextNode(category));
+        options.append(label);
+      });
+      [start, end].forEach(function(select) {
+        select.replaceChildren();
+        years.forEach(function(year) { select.add(new Option(String(year), String(year))); });
+      });
+      function decorateLegend() {
+        el.querySelectorAll('.role-legend-label text').forEach(function(label, index) {
+          const category = state.selectedCategories[index];
+          label.setAttribute('tabindex', '0');
+          label.setAttribute('role', 'button');
+          label.setAttribute('aria-pressed', 'true');
+          label.setAttribute('aria-label', category);
+          label.style.cursor = 'pointer';
+          label.style.pointerEvents = 'all';
+          label.onclick = function() { hideCategory(category); };
+          const symbol = label.parentElement.parentElement.querySelector('.role-legend-symbol path');
+          if (symbol) {
+            symbol.style.pointerEvents = 'all';
+            symbol.style.cursor = 'pointer';
+            symbol.onclick = label.onclick;
+          }
+          label.onkeydown = function(event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault();
+              hideCategory(category);
+            }
+          };
+        });
+      }
+      function syncControls() {
+        start.value = String(state.yearStart);
+        end.value = String(state.yearEnd);
+        Array.from(start.options).forEach(function(option) { option.disabled = +option.value > state.yearEnd; });
+        Array.from(end.options).forEach(function(option) { option.disabled = +option.value < state.yearStart; });
+        options.querySelectorAll('input').forEach(function(input) { input.checked = state.selectedCategories.includes(input.value); });
+        controls.querySelector('[data-selection-count]').textContent = state.selectedCategories.length + ' / ' + categories.length;
+        controls.querySelector('.chart-empty').hidden = state.selectedCategories.length !== 0;
+      }
+      function update() {
+        syncControls();
+        state.pending = state.pending.then(async function() {
+          const view = chartViews[el.id];
+          if (!view) return;
+          await view.signal('selectedCategories', state.selectedCategories.slice())
+            .signal('yearStart', state.yearStart).signal('yearEnd', state.yearEnd).resize().runAsync();
+          decorateLegend();
+        }).catch(function(error) { console.error('Error updating chart filters:', error); });
+      }
+      function hideCategory(category) {
+        state.selectedCategories = state.selectedCategories.filter(function(value) { return value !== category; });
+        update();
+      }
+      controls.onchange = function(event) {
+        if (event.target === start) state.yearStart = +start.value;
+        else if (event.target === end) state.yearEnd = +end.value;
+        else if (event.target.type === 'checkbox') {
+          state.selectedCategories = categories.filter(function(category) {
+            return category === event.target.value ? event.target.checked : state.selectedCategories.includes(category);
+          });
+        }
+        update();
+      };
+      controls.onclick = function(event) {
+        const button = event.target.closest('button');
+        if (!button) return;
+        if (button.hasAttribute('data-select-all')) state.selectedCategories = categories.slice();
+        if (button.hasAttribute('data-clear')) state.selectedCategories = [];
+        if (button.hasAttribute('data-reset')) {
+          state.selectedCategories = defaults.selectedCategories.slice();
+          state.yearStart = defaults.yearStart;
+          state.yearEnd = defaults.yearEnd;
+        }
+        update();
+      };
+      const search = controls.querySelector('[data-category-search]');
+      function filterOptions() {
+        const query = search.value.toLocaleLowerCase().trim();
+        let matches = 0;
+        options.querySelectorAll('label').forEach(function(label) {
+          label.hidden = !label.textContent.toLocaleLowerCase().includes(query);
+          if (!label.hidden) matches++;
+        });
+        controls.querySelector('[data-no-matches]').hidden = matches !== 0;
+      }
+      search.oninput = filterOptions;
+      filterOptions();
+      controls.onkeydown = function(event) {
+        if (event.key === 'Escape' && picker.open) {
+          picker.open = false;
+          picker.querySelector('summary').focus();
+        }
+      };
+      syncControls();
+      controls.querySelectorAll('[data-controls-section]').forEach(function(section) { section.hidden = false; });
+      return decorateLegend;
+    }
+
     // Debounced resize handler
     function handleResize() {
       if (resizeTimeout) clearTimeout(resizeTimeout);
@@ -140,7 +279,7 @@ const isInlineSpec = typeof spec === 'object';
         var chartId = el.id;
 
         // Skip if already rendered
-        if (el.getAttribute('data-rendered') === 'true') return;
+        if (el.getAttribute('data-rendered') === 'true' || el.dataset.rendering === 'true') return;
 
         var isInline = el.dataset.isInline === 'true';
         var specData = el.dataset.spec;
@@ -156,6 +295,7 @@ const isInlineSpec = typeof spec === 'object';
         var minimumHeight = containerWidth < 480 ? 400 : 250;
         var calculatedHeight = Math.min(Math.max(containerWidth * aspectRatio, minimumHeight), 500);
 
+        el.dataset.rendering = 'true';
         try {
           var chartSpec;
 
@@ -169,7 +309,15 @@ const isInlineSpec = typeof spec === 'object';
             chartSpec = await response.json();
           }
 
+          const attachExplorer = await prepareExplorer(el, chartSpec);
           normalizeNumberFormats(chartSpec);
+          if (attachExplorer && document.documentElement.classList.contains('dark')) {
+            chartSpec.background = '#1e293b';
+            chartSpec.config = chartSpec.config || {};
+            chartSpec.config.axis = Object.assign({}, chartSpec.config.axis || {}, {
+              labelColor: '#cbd5e1', titleColor: '#e2e8f0', gridColor: '#475569'
+            });
+          }
 
           // Asymmetric padding: more on left/bottom for axes, minimal on right/top
           // Use category10 color scheme (D3 default) - brighter than tableau10
@@ -195,6 +343,35 @@ const isInlineSpec = typeof spec === 'object';
             })
           });
 
+          if (attachExplorer) {
+            // Fit the available width while allowing axes and the legend to
+            // add height. Recompute layout whenever the selection changes.
+            chartSpec.autosize = {type: 'fit-x', contains: 'padding', resize: true};
+            chartSpec.height = containerWidth < 480 ? 320 : Math.min(Math.max(containerWidth * 0.5, 380), 520);
+            if (window.innerWidth >= 1024) {
+              await document.fonts.ready;
+              const chartTop = el.getBoundingClientRect().top + window.scrollY;
+              const availableHeight = Math.floor(window.innerHeight - chartTop - 20);
+              if (availableHeight >= 300) {
+                // Reserve space for the entire chart, including legend and
+                // axes, in the first desktop viewport. Controls follow below.
+                chartSpec.autosize = {type: 'fit', contains: 'padding', resize: true};
+                chartSpec.height = Math.min(600, availableHeight);
+              }
+            }
+            const columns = containerWidth < 280 ? 1 : Math.max(2, Math.floor((containerWidth - 60) / 140));
+            chartSpec.encoding.color.legend = Object.assign({}, chartSpec.encoding.color.legend, {
+              orient: 'top', columns: columns, labelLimit: Math.max(90, (containerWidth - 80) / columns - 30),
+              rowPadding: 10, columnPadding: 18, labelFontSize: 14, offset: 20
+            });
+            chartSpec.encoding.x.axis = Object.assign({}, chartSpec.encoding.x.axis, {
+              tickCount: Math.max(3, Math.floor(containerWidth / 90))
+            });
+            if (containerWidth < 480) {
+              chartSpec.config.axis = Object.assign({}, chartSpec.config.axis, {labelFontSize: 12, titleFontSize: 14});
+            }
+          }
+
           var options = {
             actions: {
               export: { png: true, svg: true },
@@ -203,18 +380,32 @@ const isInlineSpec = typeof spec === 'object';
             },
             theme: document.documentElement.classList.contains('dark') ? 'dark' : 'vox',
             renderer: 'svg',
+            // 2x resolution for PNG exports (default scaleFactor 1 looks blurry)
+            scaleFactor: 2,
           };
 
           var result = await window.vegaEmbed('#' + chartId, chartSpec, options);
           chartViews[chartId] = result.view;
+          if (attachExplorer) attachExplorer(result.view);
           el.setAttribute('data-rendered', 'true');
 
         } catch (error) {
           console.error('Error rendering Vega chart:', error);
           el.innerHTML = '<div class="text-red-600 p-4">Error loading chart: ' + error.message + '</div>';
+        } finally {
+          delete el.dataset.rendering;
         }
       });
     }
+
+    // One delegated handler also covers charts reached through Astro navigation.
+    function dismissOutsidePicker(event) {
+      document.querySelectorAll('.vega-chart-container .category-picker[open]').forEach(function(picker) {
+        if (!picker.contains(event.target)) picker.open = false;
+      });
+    }
+    document.addEventListener('pointerdown', dismissOutsidePicker);
+    document.addEventListener('focusin', dismissOutsidePicker);
 
     // Set up resize listener (only once)
     if (!window._vegaResizeListenerAdded) {
@@ -243,13 +434,6 @@ const isInlineSpec = typeof spec === 'object';
   .vega-chart-container :global(.vega-embed) {
     padding: 0 !important;
     width: 100% !important;
-  }
-
-  .vega-chart-container :global(.vega-actions) {
-    left: 8px;
-    bottom: 8px;
-    right: auto;
-    top: auto;
   }
 
   .vega-chart-container :global(svg) {

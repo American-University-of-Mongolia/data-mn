@@ -71,6 +71,8 @@ const dataCollection = defineCollection({
   schema: baseSchema.extend({
     category: z.string().optional(),
 
+    chartLayout: z.enum(['wide']).optional(),
+
     // Data versioning fields
     dataVersion: z.number().optional(),
     dataDate: z.date().optional(),

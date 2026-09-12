@@ -1,57 +1,57 @@
-type_of_livestock,region,year,value
-Total,Total,1970,22574.72
-Total,Total,1971,22692.57
-Total,Total,1972,23108.06
-Total,Total,1973,23538.01
-Total,Total,1974,24313.47
-Total,Total,1975,24351.58
-Total,Total,1976,23683.96
-Total,Total,1977,22942.12
-Total,Total,1978,24025.67
-Total,Total,1979,24201.2
-Total,Total,1980,23771.48
-Total,Total,1981,24263.07
-Total,Total,1982,24764.65
-Total,Total,1983,23570.32
-Total,Total,1984,22591.93
-Total,Total,1985,22485.49
-Total,Total,1986,22590.51
-Total,Total,1987,22741.1
-Total,Total,1988,23122.25
-Total,Total,1989,24674.93
-Total,Total,1990,25856.9
-Total,Total,1991,25527.91
-Total,Total,1992,25694.09
-Total,Total,1993,24688.34
-Total,Total,1994,26778.42
-Total,Total,1995,28572.34
-Total,Total,1996,29300.14
-Total,Total,1997,31292.32
-Total,Total,1998,32897.54
-Total,Total,1999,33568.9
-Total,Total,2000,30227.5
-Total,Total,2001,26075.35
-Total,Total,2002,23897.58
-Total,Total,2003,25427.71
-Total,Total,2004,28027.96
-Total,Total,2005,30398.84
-Total,Total,2006,34802.95
-Total,Total,2007,40263.86
-Total,Total,2008,43288.53
-Total,Total,2009,43981.02
-Total,Total,2010,32729.52
-Total,Total,2011,36335.8
-Total,Total,2012,40920.92
-Total,Total,2013,45144.32
-Total,Total,2014,51982.58
-Total,Total,2015,55979.78
-Total,Total,2016,61549.24
-Total,Total,2017,66218.96
-Total,Total,2018,66460.18
-Total,Total,2019,70969.32
-Total,Total,2020,67068.49
-Total,Total,2021,67343.76
-Total,Total,2022,71121.45
-Total,Total,2023,64681.88
-Total,Total,2024,57649.66
-Total,Total,2025,58104.21
+category,year,value
+Total — Total,1970,22574.72
+Total — Total,1971,22692.57
+Total — Total,1972,23108.06
+Total — Total,1973,23538.01
+Total — Total,1974,24313.47
+Total — Total,1975,24351.58
+Total — Total,1976,23683.96
+Total — Total,1977,22942.12
+Total — Total,1978,24025.67
+Total — Total,1979,24201.2
+Total — Total,1980,23771.48
+Total — Total,1981,24263.07
+Total — Total,1982,24764.65
+Total — Total,1983,23570.32
+Total — Total,1984,22591.93
+Total — Total,1985,22485.49
+Total — Total,1986,22590.51
+Total — Total,1987,22741.1
+Total — Total,1988,23122.25
+Total — Total,1989,24674.93
+Total — Total,1990,25856.9
+Total — Total,1991,25527.91
+Total — Total,1992,25694.09
+Total — Total,1993,24688.34
+Total — Total,1994,26778.42
+Total — Total,1995,28572.34
+Total — Total,1996,29300.14
+Total — Total,1997,31292.32
+Total — Total,1998,32897.54
+Total — Total,1999,33568.9
+Total — Total,2000,30227.5
+Total — Total,2001,26075.35
+Total — Total,2002,23897.58
+Total — Total,2003,25427.71
+Total — Total,2004,28027.96
+Total — Total,2005,30398.84
+Total — Total,2006,34802.95
+Total — Total,2007,40263.86
+Total — Total,2008,43288.53
+Total — Total,2009,43981.02
+Total — Total,2010,32729.52
+Total — Total,2011,36335.8
+Total — Total,2012,40920.92
+Total — Total,2013,45144.32
+Total — Total,2014,51982.58
+Total — Total,2015,55979.78
+Total — Total,2016,61549.24
+Total — Total,2017,66218.96
+Total — Total,2018,66460.18
+Total — Total,2019,70969.32
+Total — Total,2020,67068.49
+Total — Total,2021,67343.76
+Total — Total,2022,71121.45
+Total — Total,2023,64681.88
+Total — Total,2024,57649.66
+Total — Total,2025,58104.21

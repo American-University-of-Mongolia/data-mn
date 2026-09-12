@@ -1,992 +1,992 @@
-year,month,commodity,price,unit
-2021,1,Copper,7970.5,USD/tonne
-2021,1,Fluorspar concentrate FF-97,355.0,USD/tonne
-2021,1,Fluorspar ore FK-85,300.0,USD/tonne
-2021,1,Gold,1868.3,USD/troy oz
-2021,1,"Iron concentrate, 60%",158.7,USD/tonne
-2021,1,"Iron ore, 56%",138.9,USD/tonne
-2021,1,Lead,2014.9,USD/tonne
-2021,1,"Manganese, 36%",195.9,USD/tonne
-2021,1,Molybdenum,22421.0,USD/tonne
-2021,1,Silver,25.9,USD/troy oz
-2021,1,Tin,21955.5,USD/tonne
-2021,1,"Tungsten, 65%",13663.0,USD/tonne
-2021,1,"Tungsten, 99%",34727.0,USD/tonne
-2021,1,Uranium,65.3,USD/kg
-2021,1,Zinc,2707.7,USD/tonne
-2021,2,Copper,9172.5,USD/tonne
-2021,2,Fluorspar concentrate FF-97,355.0,USD/tonne
-2021,2,Fluorspar ore FK-85,300.0,USD/tonne
-2021,2,Gold,1811.1,USD/troy oz
-2021,2,"Iron concentrate, 60%",155.5,USD/tonne
-2021,2,"Iron ore, 56%",131.6,USD/tonne
-2021,2,Lead,2075.0,USD/tonne
-2021,2,"Manganese, 36%",195.1,USD/tonne
-2021,2,Molybdenum,26257.0,USD/tonne
-2021,2,Silver,27.4,USD/troy oz
-2021,2,Tin,24505.0,USD/tonne
-2021,2,"Tungsten, 65%",14165.5,USD/tonne
-2021,2,"Tungsten, 99%",33000.0,USD/tonne
-2021,2,Uranium,61.7,USD/kg
-2021,2,Zinc,2788.5,USD/tonne
-2021,3,Copper,8768.0,USD/tonne
-2021,3,Fluorspar concentrate FF-97,325.0,USD/tonne
-2021,3,Fluorspar ore FK-85,300.0,USD/tonne
-2021,3,Gold,1719.9,USD/troy oz
-2021,3,"Iron concentrate, 60%",153.8,USD/tonne
-2021,3,"Iron ore, 56%",132.9,USD/tonne
-2021,3,Lead,1960.8,USD/tonne
-2021,3,"Manganese, 36%",192.4,USD/tonne
-2021,3,Molybdenum,25949.3,USD/tonne
-2021,3,Silver,25.6,USD/troy oz
-2021,3,Tin,27396.3,USD/tonne
-2021,3,"Tungsten, 65%",14612.2,USD/tonne
-2021,3,"Tungsten, 99%",34980.0,USD/tonne
-2021,3,Uranium,68.2,USD/kg
-2021,3,Zinc,2791.7,USD/tonne
-2021,4,Copper,9335.6,USD/tonne
-2021,4,Fluorspar concentrate FF-97,325.0,USD/tonne
-2021,4,Fluorspar ore FK-85,300.0,USD/tonne
-2021,4,Gold,1760.0,USD/troy oz
-2021,4,"Iron concentrate, 60%",163.4,USD/tonne
-2021,4,"Iron ore, 56%",142.2,USD/tonne
-2021,4,Lead,2006.3,USD/tonne
-2021,4,"Manganese, 36%",184.6,USD/tonne
-2021,4,Molybdenum,24515.4,USD/tonne
-2021,4,Silver,25.6,USD/troy oz
-2021,4,Tin,28508.1,USD/tonne
-2021,4,"Tungsten, 65%",14752.3,USD/tonne
-2021,4,"Tungsten, 99%",33000.0,USD/tonne
-2021,4,Uranium,63.7,USD/kg
-2021,4,Zinc,2827.4,USD/tonne
-2021,5,Copper,10184.0,USD/tonne
-2021,5,Fluorspar concentrate FF-97,325.0,USD/tonne
-2021,5,Fluorspar ore FK-85,300.0,USD/tonne
-2021,5,Gold,1850.4,USD/troy oz
-2021,5,"Iron concentrate, 60%",192.2,USD/tonne
-2021,5,"Iron ore, 56%",166.3,USD/tonne
-2021,5,Lead,2185.9,USD/tonne
-2021,5,"Manganese, 36%",189.7,USD/tonne
-2021,5,Molybdenum,29150.1,USD/tonne
-2021,5,Silver,27.5,USD/troy oz
-2021,5,Tin,32524.3,USD/tonne
-2021,5,"Tungsten, 65%",15122.4,USD/tonne
-2021,5,"Tungsten, 99%",36000.0,USD/tonne
-2021,5,Uranium,69.2,USD/kg
-2021,5,Zinc,2970.3,USD/tonne
-2021,6,Copper,9612.4,USD/tonne
-2021,6,Fluorspar concentrate FF-97,300.0,USD/tonne
-2021,6,Fluorspar ore FK-85,300.0,USD/tonne
-2021,6,Gold,1835.3,USD/troy oz
-2021,6,"Iron concentrate, 60%",195.1,USD/tonne
-2021,6,"Iron ore, 56%",169.2,USD/tonne
-2021,6,Lead,2189.0,USD/tonne
-2021,6,"Manganese, 36%",193.2,USD/tonne
-2021,6,Molybdenum,39897.6,USD/tonne
-2021,6,Silver,27.0,USD/troy oz
-2021,6,Tin,32677.6,USD/tonne
-2021,6,"Tungsten, 65%",15210.6,USD/tonne
-2021,6,Zinc,2950.1,USD/tonne
-2021,7,Copper,9433.6,USD/tonne
-2021,7,Fluorspar concentrate FF-97,300.0,USD/tonne
-2021,7,Fluorspar ore FK-85,300.0,USD/tonne
-2021,7,Gold,1806.5,USD/troy oz
-2021,7,"Iron concentrate, 60%",195.4,USD/tonne
-2021,7,"Iron ore, 56%",162.7,USD/tonne
-2021,7,Lead,2337.0,USD/tonne
-2021,7,"Manganese, 36%",190.9,USD/tonne
-2021,7,Molybdenum,40599.1,USD/tonne
-2021,7,Silver,25.8,USD/troy oz
-2021,7,Tin,34183.0,USD/tonne
-2021,7,"Tungsten, 65%",16261.8,USD/tonne
-2021,7,"Tungsten, 99%",38090.0,USD/tonne
-2021,7,Uranium,71.4,USD/kg
-2021,7,Zinc,2943.0,USD/tonne
-2021,8,Copper,9357.2,USD/tonne
-2021,8,Fluorspar concentrate FF-97,300.0,USD/tonne
-2021,8,Fluorspar ore FK-85,300.0,USD/tonne
-2021,8,Gold,1782.5,USD/troy oz
-2021,8,"Iron concentrate, 60%",141.3,USD/tonne
-2021,8,"Iron ore, 56%",108.8,USD/tonne
-2021,8,Lead,2337.0,USD/tonne
-2021,8,"Manganese, 36%",189.0,USD/tonne
-2021,8,Molybdenum,40599.1,USD/tonne
-2021,8,Silver,24.0,USD/troy oz
-2021,8,Tin,34183.0,USD/tonne
-2021,8,"Tungsten, 65%",17329.4,USD/tonne
-2021,8,Uranium,75.5,USD/kg
-2021,8,Zinc,2988.9,USD/tonne
-2021,9,Copper,9324.1,USD/tonne
-2021,9,Fluorspar concentrate FF-97,320.0,USD/tonne
-2021,9,Fluorspar ore FK-85,275.0,USD/tonne
-2021,9,Gold,1779.1,USD/troy oz
-2021,9,"Iron concentrate, 60%",102.4,USD/tonne
-2021,9,"Iron ore, 56%",77.9,USD/tonne
-2021,9,Lead,2259.3,USD/tonne
-2021,9,"Manganese, 36%",192.7,USD/tonne
-2021,9,Molybdenum,43188.5,USD/tonne
-2021,9,Silver,23.3,USD/troy oz
-2021,9,Tin,35048.2,USD/tonne
-2021,9,"Tungsten, 65%",17005.2,USD/tonne
-2021,9,Uranium,93.9,USD/kg
-2021,9,Zinc,3042.0,USD/tonne
-2021,10,Copper,9778.5,USD/tonne
-2021,10,Fluorspar concentrate FF-97,320.0,USD/tonne
-2021,10,Fluorspar ore FK-85,290.0,USD/tonne
-2021,10,Gold,1775.7,USD/troy oz
-2021,10,"Iron concentrate, 60%",101.8,USD/tonne
-2021,10,"Iron ore, 56%",74.3,USD/tonne
-2021,10,Lead,2339.5,USD/tonne
-2021,10,"Manganese, 36%",203.6,USD/tonne
-2021,10,Molybdenum,42028.5,USD/tonne
-2021,10,Silver,23.3,USD/troy oz
-2021,10,Tin,37962.4,USD/tonne
-2021,10,"Tungsten, 65%",17334.3,USD/tonne
-2021,10,"Tungsten, 99%",41330.0,USD/tonne
-2021,10,Uranium,99.6,USD/kg
-2021,10,Zinc,3370.1,USD/tonne
-2021,11,Copper,9764.6,USD/tonne
-2021,11,Fluorspar concentrate FF-97,320.0,USD/tonne
-2021,11,Fluorspar ore FK-85,275.0,USD/tonne
-2021,11,Gold,1820.3,USD/troy oz
-2021,11,"Iron concentrate, 60%",82.7,USD/tonne
-2021,11,"Iron ore, 56%",57.2,USD/tonne
-2021,11,Lead,2347.0,USD/tonne
-2021,11,"Manganese, 36%",201.0,USD/tonne
-2021,11,Molybdenum,41826.7,USD/tonne
-2021,11,Silver,24.2,USD/troy oz
-2021,11,Tin,39307.2,USD/tonne
-2021,11,"Tungsten, 65%",16951.2,USD/tonne
-2021,11,"Tungsten, 99%",41840.0,USD/tonne
-2021,11,Uranium,100.9,USD/kg
-2021,11,Zinc,3316.7,USD/tonne
-2021,12,Copper,9550.3,USD/tonne
-2021,12,Fluorspar concentrate FF-97,320.0,USD/tonne
-2021,12,Fluorspar ore FK-85,275.0,USD/tonne
-2021,12,Gold,1787.6,USD/troy oz
-2021,12,Lead,2304.8,USD/tonne
-2021,12,"Manganese, 36%",189.6,USD/tonne
-2021,12,Molybdenum,41182.3,USD/tonne
-2021,12,Silver,22.5,USD/troy oz
-2021,12,Tin,39573.8,USD/tonne
-2021,12,"Tungsten, 65%",17030.2,USD/tonne
-2021,12,"Tungsten, 99%",41630.0,USD/tonne
-2021,12,Uranium,92.7,USD/kg
-2021,12,Zinc,3407.9,USD/tonne
-2022,1,Copper,9774.5,USD/tonne
-2022,1,Fluorspar concentrate FF-97,335.0,USD/tonne
-2022,1,Fluorspar ore FK-85,290.0,USD/tonne
-2022,1,Gold,1817.8,USD/troy oz
-2022,1,"Iron concentrate, 60%",119.3,USD/tonne
-2022,1,"Iron ore, 56%",97.6,USD/tonne
-2022,1,Lead,2342.0,USD/tonne
-2022,1,"Manganese, 36%",189.8,USD/tonne
-2022,1,Molybdenum,41910.9,USD/tonne
-2022,1,Silver,23.2,USD/troy oz
-2022,1,Tin,41789.6,USD/tonne
-2022,1,"Tungsten, 65%",17928.2,USD/tonne
-2022,1,"Tungsten, 99%",43680.0,USD/tonne
-2022,1,Uranium,95.0,USD/kg
-2022,1,Zinc,3609.3,USD/tonne
-2022,2,Copper,9774.5,USD/tonne
-2022,2,Fluorspar concentrate FF-97,335.0,USD/tonne
-2022,2,Fluorspar ore FK-85,290.0,USD/tonne
-2022,2,Gold,1817.8,USD/troy oz
-2022,2,"Iron concentrate, 60%",119.3,USD/tonne
-2022,2,"Iron ore, 56%",97.6,USD/tonne
-2022,2,Lead,2342.0,USD/tonne
-2022,2,"Manganese, 36%",189.8,USD/tonne
-2022,2,Molybdenum,41910.9,USD/tonne
-2022,2,Silver,23.2,USD/troy oz
-2022,2,Tin,41789.6,USD/tonne
-2022,2,"Tungsten, 65%",17928.2,USD/tonne
-2022,2,"Tungsten, 99%",43680.0,USD/tonne
-2022,2,Uranium,95.0,USD/kg
-2022,2,Zinc,3609.3,USD/tonne
-2022,3,Copper,9940.0,USD/tonne
-2022,3,Fluorspar concentrate FF-97,370.0,USD/tonne
-2022,3,Fluorspar ore FK-85,342.5,USD/tonne
-2022,3,Gold,1857.0,USD/troy oz
-2022,3,"Iron concentrate, 60%",128.7,USD/tonne
-2022,3,"Iron ore, 56%",109.7,USD/tonne
-2022,3,Lead,2299.2,USD/tonne
-2022,3,"Manganese, 36%",191.1,USD/tonne
-2022,3,Molybdenum,41786.4,USD/tonne
-2022,3,Silver,23.5,USD/troy oz
-2022,3,Tin,44104.1,USD/tonne
-2022,3,"Tungsten, 65%",18542.2,USD/tonne
-2022,3,"Tungsten, 99%",46160.0,USD/tonne
-2022,3,Uranium,107.5,USD/kg
-2022,3,Zinc,3643.7,USD/tonne
-2022,4,Copper,10237.6,USD/tonne
-2022,4,Gold,1947.6,USD/troy oz
-2022,4,"Iron concentrate, 60%",137.0,USD/tonne
-2022,4,"Iron ore, 56%",111.4,USD/tonne
-2022,4,Lead,2359.5,USD/tonne
-2022,4,"Manganese, 36%",201.7,USD/tonne
-2022,4,Molybdenum,42328.7,USD/tonne
-2022,4,Silver,25.2,USD/troy oz
-2022,4,Tin,44248.9,USD/tonne
-2022,4,"Tungsten, 65%",18497.1,USD/tonne
-2022,4,"Tungsten, 99%",47170.0,USD/tonne
-2022,4,Uranium,128.3,USD/kg
-2022,4,Zinc,3974.3,USD/tonne
-2022,5,Copper,10182.3,USD/tonne
-2022,5,Fluorspar concentrate FF-97,370.0,USD/tonne
-2022,5,Fluorspar ore FK-85,342.5,USD/tonne
-2022,5,Gold,1936.3,USD/troy oz
-2022,5,"Iron concentrate, 60%",136.4,USD/tonne
-2022,5,"Iron ore, 56%",93.0,USD/tonne
-2022,5,Lead,2396.1,USD/tonne
-2022,5,"Manganese, 36%",203.5,USD/tonne
-2022,5,Molybdenum,42430.8,USD/tonne
-2022,5,Silver,24.6,USD/troy oz
-2022,5,Tin,43099.7,USD/tonne
-2022,5,"Tungsten, 65%",18494.9,USD/tonne
-2022,5,"Tungsten, 99%",47500.0,USD/tonne
-2022,5,Uranium,116.8,USD/kg
-2022,5,Zinc,4370.4,USD/tonne
-2022,6,Copper,9362.1,USD/tonne
-2022,6,Fluorspar concentrate FF-97,370.0,USD/tonne
-2022,6,Fluorspar ore FK-85,342.5,USD/tonne
-2022,6,Gold,1849.9,USD/troy oz
-2022,6,"Iron concentrate, 60%",115.1,USD/tonne
-2022,6,"Iron ore, 56%",77.5,USD/tonne
-2022,6,Lead,2144.5,USD/tonne
-2022,6,"Manganese, 36%",201.2,USD/tonne
-2022,6,Molybdenum,41371.3,USD/tonne
-2022,6,Silver,21.9,USD/troy oz
-2022,6,Tin,35913.3,USD/tonne
-2022,6,"Tungsten, 65%",16731.6,USD/tonne
-2022,6,"Tungsten, 99%",45610.0,USD/tonne
-2022,6,Uranium,105.3,USD/kg
-2022,6,Zinc,3758.8,USD/tonne
-2022,7,Copper,9032.0,USD/tonne
-2022,7,Fluorspar concentrate FF-97,370.0,USD/tonne
-2022,7,Fluorspar ore FK-85,370.0,USD/tonne
-2022,7,Gold,1789.2,USD/troy oz
-2022,7,"Iron concentrate, 60%",114.2,USD/tonne
-2022,7,"Iron ore, 56%",85.5,USD/tonne
-2022,7,Lead,2066.7,USD/tonne
-2022,7,"Manganese, 36%",211.1,USD/tonne
-2022,7,Molybdenum,38286.5,USD/tonne
-2022,7,Silver,21.5,USD/troy oz
-2022,7,Tin,31749.9,USD/tonne
-2022,7,"Tungsten, 65%",16036.9,USD/tonne
-2022,7,"Tungsten, 99%",42880.0,USD/tonne
-2022,7,Uranium,109.7,USD/kg
-2022,7,Zinc,3643.3,USD/tonne
-2022,8,Copper,7529.8,USD/tonne
-2022,8,Fluorspar concentrate FF-97,355.0,USD/tonne
-2022,8,Fluorspar ore FK-85,355.0,USD/tonne
-2022,8,Gold,1737.6,USD/troy oz
-2022,8,"Iron concentrate, 60%",95.8,USD/tonne
-2022,8,"Iron ore, 56%",76.5,USD/tonne
-2022,8,Lead,1976.3,USD/tonne
-2022,8,"Manganese, 36%",210.5,USD/tonne
-2022,8,Molybdenum,31239.5,USD/tonne
-2022,8,Silver,19.1,USD/troy oz
-2022,8,Tin,25173.1,USD/tonne
-2022,8,"Tungsten, 65%",16298.7,USD/tonne
-2022,8,"Tungsten, 99%",42450.0,USD/tonne
-2022,8,Zinc,3097.2,USD/tonne
-2022,9,Copper,7960.3,USD/tonne
-2022,9,Fluorspar concentrate FF-97,362.4,USD/tonne
-2022,9,Fluorspar ore FK-85,355.0,USD/tonne
-2022,9,Gold,1765.7,USD/troy oz
-2022,9,"Iron concentrate, 60%",96.0,USD/tonne
-2022,9,"Iron ore, 56%",74.7,USD/tonne
-2022,9,Lead,2077.9,USD/tonne
-2022,9,"Manganese, 36%",192.7,USD/tonne
-2022,9,Molybdenum,32529.2,USD/tonne
-2022,9,Silver,19.8,USD/troy oz
-2022,9,Tin,24494.6,USD/tonne
-2022,9,"Tungsten, 65%",17154.7,USD/tonne
-2022,9,"Tungsten, 99%",41960.0,USD/tonne
-2022,9,Zinc,3572.9,USD/tonne
-2022,10,Copper,7734.7,USD/tonne
-2022,10,Fluorspar concentrate FF-97,362.4,USD/tonne
-2022,10,Fluorspar ore FK-85,355.0,USD/tonne
-2022,10,Gold,1648.2,USD/troy oz
-2022,10,"Iron concentrate, 60%",88.8,USD/tonne
-2022,10,"Iron ore, 56%",69.5,USD/tonne
-2022,10,Lead,1874.5,USD/tonne
-2022,10,"Manganese, 36%",172.1,USD/tonne
-2022,10,Molybdenum,37699.1,USD/tonne
-2022,10,Silver,18.9,USD/troy oz
-2022,10,Tin,21258.0,USD/tonne
-2022,10,"Tungsten, 65%",16542.0,USD/tonne
-2022,10,"Tungsten, 99%",41880.0,USD/tonne
-2022,10,Zinc,3136.4,USD/tonne
-2022,11,Copper,7621.2,USD/tonne
-2022,11,Fluorspar concentrate FF-97,362.4,USD/tonne
-2022,11,Fluorspar ore FK-85,355.0,USD/tonne
-2022,11,Gold,1746.1,USD/troy oz
-2022,11,"Iron concentrate, 60%",83.7,USD/tonne
-2022,11,"Iron ore, 56%",69.4,USD/tonne
-2022,11,Lead,1989.2,USD/tonne
-2022,11,"Manganese, 36%",172.3,USD/tonne
-2022,11,Molybdenum,41667.4,USD/tonne
-2022,11,Silver,18.3,USD/troy oz
-2022,11,Tin,19406.2,USD/tonne
-2022,11,"Tungsten, 65%",15155.3,USD/tonne
-2022,11,"Tungsten, 99%",39470.0,USD/tonne
-2022,11,Zinc,2959.8,USD/tonne
-2022,12,Copper,8057.2,USD/tonne
-2022,12,Fluorspar concentrate FF-97,362.4,USD/tonne
-2022,12,Fluorspar ore FK-85,355.0,USD/tonne
-2022,12,Gold,1803.7,USD/troy oz
-2022,12,"Iron concentrate, 60%",83.1,USD/tonne
-2022,12,"Iron ore, 56%",69.1,USD/tonne
-2022,12,Lead,2099.8,USD/tonne
-2022,12,"Manganese, 36%",170.8,USD/tonne
-2022,12,Molybdenum,42527.2,USD/tonne
-2022,12,Silver,19.9,USD/troy oz
-2022,12,Tin,21136.4,USD/tonne
-2022,12,"Tungsten, 65%",15084.8,USD/tonne
-2022,12,"Tungsten, 99%",39000.0,USD/tonne
-2022,12,Zinc,2923.5,USD/tonne
-2023,1,Copper,8367.2,USD/tonne
-2023,1,Fluorspar concentrate FF-97,364.0,USD/tonne
-2023,1,Fluorspar ore FK-85,355.5,USD/tonne
-2023,1,Gold,1705.7,USD/troy oz
-2023,1,"Iron concentrate, 60%",100.6,USD/tonne
-2023,1,"Iron ore, 56%",79.7,USD/tonne
-2023,1,Lead,2212.5,USD/tonne
-2023,1,"Manganese, 36%",177.8,USD/tonne
-2023,1,Molybdenum,54784.9,USD/tonne
-2023,1,Silver,20.9,USD/troy oz
-2023,1,Tin,24099.0,USD/tonne
-2023,1,"Tungsten, 65%",16137.0,USD/tonne
-2023,1,"Tungsten, 99%",39360.0,USD/tonne
-2023,1,Zinc,3128.2,USD/tonne
-2023,2,Copper,8999.3,USD/tonne
-2023,2,Fluorspar concentrate FF-97,415.0,USD/tonne
-2023,2,Fluorspar ore FK-85,355.0,USD/tonne
-2023,2,Gold,1898.2,USD/troy oz
-2023,2,"Iron concentrate, 60%",114.7,USD/tonne
-2023,2,"Iron ore, 56%",90.8,USD/tonne
-2023,2,Lead,2208.2,USD/tonne
-2023,2,"Manganese, 36%",186.4,USD/tonne
-2023,2,Molybdenum,69578.0,USD/tonne
-2023,2,Silver,23.8,USD/troy oz
-2023,2,Tin,28080.7,USD/tonne
-2023,2,"Tungsten, 65%",17183.9,USD/tonne
-2023,2,"Tungsten, 99%",40000.0,USD/tonne
-2023,2,Uranium,111.6,USD/kg
-2023,2,Zinc,3289.4,USD/tonne
-2023,3,Copper,8834.7,USD/tonne
-2023,3,Fluorspar concentrate FF-97,415.0,USD/tonne
-2023,3,Fluorspar ore FK-85,355.0,USD/tonne
-2023,3,Gold,1912.7,USD/troy oz
-2023,3,"Iron concentrate, 60%",114.6,USD/tonne
-2023,3,"Iron ore, 56%",96.4,USD/tonne
-2023,3,Lead,2114.1,USD/tonne
-2023,3,"Manganese, 36%",189.8,USD/tonne
-2023,3,Molybdenum,68574.2,USD/tonne
-2023,3,Silver,21.9,USD/troy oz
-2023,3,Tin,23997.4,USD/tonne
-2023,3,"Tungsten, 65%",17002.3,USD/tonne
-2023,3,"Tungsten, 99%",41640.0,USD/tonne
-2023,3,Uranium,111.3,USD/kg
-2023,3,Zinc,2955.6,USD/tonne
-2023,4,Copper,8813.4,USD/tonne
-2023,4,Fluorspar concentrate FF-97,415.0,USD/tonne
-2023,4,Fluorspar ore FK-85,355.0,USD/tonne
-2023,4,Gold,2000.4,USD/troy oz
-2023,4,"Iron concentrate, 60%",104.7,USD/tonne
-2023,4,"Iron ore, 56%",87.8,USD/tonne
-2023,4,Lead,2148.3,USD/tonne
-2023,4,"Manganese, 36%",175.9,USD/tonne
-2023,4,Molybdenum,45608.7,USD/tonne
-2023,4,Silver,25.0,USD/troy oz
-2023,4,Tin,25865.6,USD/tonne
-2023,4,"Tungsten, 65%",16976.2,USD/tonne
-2023,4,"Tungsten, 99%",41075.0,USD/tonne
-2023,4,Uranium,116.7,USD/kg
-2023,4,Zinc,2772.1,USD/tonne
-2023,5,Copper,8233.6,USD/tonne
-2023,5,Fluorspar concentrate FF-97,415.0,USD/tonne
-2023,5,Fluorspar ore FK-85,355.0,USD/tonne
-2023,5,Gold,1988.7,USD/troy oz
-2023,5,"Iron concentrate, 60%",92.0,USD/tonne
-2023,5,"Iron ore, 56%",76.8,USD/tonne
-2023,5,Lead,2086.8,USD/tonne
-2023,5,"Manganese, 36%",164.2,USD/tonne
-2023,5,Molybdenum,46718.1,USD/tonne
-2023,5,Silver,24.2,USD/troy oz
-2023,5,Tin,25586.1,USD/tonne
-2023,5,"Tungsten, 65%",17237.0,USD/tonne
-2023,5,"Tungsten, 99%",41661.9,USD/tonne
-2023,5,Uranium,0.0,USD/kg
-2023,5,Zinc,2477.1,USD/tonne
-2023,6,Copper,8385.6,USD/tonne
-2023,6,Fluorspar concentrate FF-97,415.0,USD/tonne
-2023,6,Fluorspar ore FK-85,355.0,USD/tonne
-2023,6,Gold,1942.9,USD/troy oz
-2023,6,"Iron concentrate, 60%",100.6,USD/tonne
-2023,6,"Iron ore, 56%",81.6,USD/tonne
-2023,6,Lead,2117.6,USD/tonne
-2023,6,"Manganese, 36%",157.5,USD/tonne
-2023,6,Molybdenum,49138.0,USD/tonne
-2023,6,Silver,23.4,USD/troy oz
-2023,6,Tin,27243.3,USD/tonne
-2023,6,"Tungsten, 65%",16859.7,USD/tonne
-2023,6,"Tungsten, 99%",41776.2,USD/tonne
-2023,6,Uranium,123.7,USD/kg
-2023,6,Zinc,2367.6,USD/tonne
-2023,7,Copper,8444.6,USD/tonne
-2023,7,Fluorspar concentrate FF-97,415.0,USD/tonne
-2023,7,Fluorspar ore FK-85,355.0,USD/tonne
-2023,7,Gold,1948.9,USD/troy oz
-2023,7,"Iron concentrate, 60%",101.3,USD/tonne
-2023,7,"Iron ore, 56%",83.7,USD/tonne
-2023,7,Lead,2106.1,USD/tonne
-2023,7,"Manganese, 36%",153.2,USD/tonne
-2023,7,Molybdenum,49503.2,USD/tonne
-2023,7,Silver,24.0,USD/troy oz
-2023,7,Tin,28727.9,USD/tonne
-2023,7,"Tungsten, 65%",16487.7,USD/tonne
-2023,7,"Tungsten, 99%",40061.9,USD/tonne
-2023,7,Uranium,124.3,USD/kg
-2023,7,Zinc,2396.0,USD/tonne
-2023,8,Copper,8351.2,USD/tonne
-2023,8,Fluorspar concentrate FF-97,415.0,USD/tonne
-2023,8,Fluorspar ore FK-85,365.0,USD/tonne
-2023,8,Gold,1920.1,USD/troy oz
-2023,8,"Iron concentrate, 60%",97.4,USD/tonne
-2023,8,"Iron ore, 56%",79.7,USD/tonne
-2023,8,Lead,2151.1,USD/tonne
-2023,8,"Manganese, 36%",151.2,USD/tonne
-2023,8,Molybdenum,54574.4,USD/tonne
-2023,8,Silver,23.4,USD/troy oz
-2023,8,Tin,25974.7,USD/tonne
-2023,8,"Tungsten, 65%",16557.9,USD/tonne
-2023,8,"Tungsten, 99%",38800.0,USD/tonne
-2023,8,Uranium,123.7,USD/kg
-2023,8,Zinc,2400.5,USD/tonne
-2023,9,Copper,8270.2,USD/tonne
-2023,9,Fluorspar concentrate FF-97,415.0,USD/tonne
-2023,9,Fluorspar ore FK-85,365.0,USD/tonne
-2023,9,Gold,1917.0,USD/troy oz
-2023,9,"Iron concentrate, 60%",97.4,USD/tonne
-2023,9,"Iron ore, 56%",79.7,USD/tonne
-2023,9,Lead,2151.1,USD/tonne
-2023,9,"Manganese, 36%",151.2,USD/tonne
-2023,9,Molybdenum,54574.4,USD/tonne
-2023,9,Silver,23.2,USD/troy oz
-2023,9,Tin,25974.7,USD/tonne
-2023,9,"Tungsten, 65%",16557.9,USD/tonne
-2023,9,"Tungsten, 99%",38800.0,USD/tonne
-2023,9,Uranium,157.8,USD/kg
-2023,9,Zinc,2487.8,USD/tonne
-2023,10,Copper,7939.2,USD/tonne
-2023,10,Fluorspar concentrate FF-97,415.0,USD/tonne
-2023,10,Fluorspar ore FK-85,365.0,USD/tonne
-2023,10,Gold,1913.0,USD/troy oz
-2023,10,"Iron concentrate, 60%",105.0,USD/tonne
-2023,10,"Iron ore, 56%",91.5,USD/tonne
-2023,10,Lead,2135.8,USD/tonne
-2023,10,"Manganese, 36%",152.0,USD/tonne
-2023,10,Molybdenum,45232.8,USD/tonne
-2023,10,Silver,22.3,USD/troy oz
-2023,10,Tin,24597.1,USD/tonne
-2023,10,"Tungsten, 65%",16366.9,USD/tonne
-2023,10,"Tungsten, 99%",38500.0,USD/tonne
-2023,10,Uranium,164.0,USD/kg
-2023,10,Zinc,2448.8,USD/tonne
-2023,11,Copper,8173.5,USD/tonne
-2023,11,Fluorspar concentrate FF-97,415.0,USD/tonne
-2023,11,Fluorspar ore FK-85,365.0,USD/tonne
-2023,11,Gold,1985.3,USD/troy oz
-2023,11,"Iron concentrate, 60%",117.7,USD/tonne
-2023,11,"Iron ore, 56%",103.7,USD/tonne
-2023,11,Lead,2184.6,USD/tonne
-2023,11,"Manganese, 36%",152.6,USD/tonne
-2023,11,Molybdenum,38310.3,USD/tonne
-2023,11,Silver,23.4,USD/troy oz
-2023,11,Tin,24203.6,USD/tonne
-2023,11,"Tungsten, 65%",16491.1,USD/tonne
-2023,11,"Tungsten, 99%",38481.8,USD/tonne
-2023,11,Uranium,179.1,USD/kg
-2023,11,Zinc,2543.3,USD/tonne
-2023,12,Copper,8393.6,USD/tonne
-2023,12,Fluorspar concentrate FF-97,415.0,USD/tonne
-2023,12,Fluorspar ore FK-85,365.0,USD/tonne
-2023,12,Gold,2029.3,USD/troy oz
-2023,12,"Iron concentrate, 60%",119.4,USD/tonne
-2023,12,"Iron ore, 56%",104.4,USD/tonne
-2023,12,Lead,2035.8,USD/tonne
-2023,12,"Manganese, 36%",152.1,USD/tonne
-2023,12,Molybdenum,40337.6,USD/tonne
-2023,12,Silver,24.0,USD/troy oz
-2023,12,Tin,24592.0,USD/tonne
-2023,12,"Tungsten, 65%",16974.9,USD/tonne
-2023,12,"Tungsten, 99%",39014.3,USD/tonne
-2023,12,Uranium,200.6,USD/kg
-2023,12,Zinc,2501.3,USD/tonne
-2024,1,Copper,8343.5,USD/tonne
-2024,1,Fluorspar concentrate FF-97,415.0,USD/tonne
-2024,1,Fluorspar ore FK-85,365.0,USD/tonne
-2024,1,Gold,2034.0,USD/troy oz
-2024,1,"Iron concentrate, 60%",121.6,USD/tonne
-2024,1,"Iron ore, 56%",106.6,USD/tonne
-2024,1,Lead,2086.9,USD/tonne
-2024,1,"Manganese, 36%",156.4,USD/tonne
-2024,1,Molybdenum,43744.7,USD/tonne
-2024,1,Silver,23.0,USD/troy oz
-2024,1,Tin,25186.6,USD/tonne
-2024,1,"Tungsten, 65%",16992.9,USD/tonne
-2024,1,"Tungsten, 99%",39354.6,USD/tonne
-2024,1,Uranium,221.0,USD/kg
-2024,1,Zinc,2520.9,USD/tonne
-2024,2,Copper,8310.1,USD/tonne
-2024,2,Fluorspar concentrate FF-97,415.0,USD/tonne
-2024,2,Fluorspar ore FK-85,365.0,USD/tonne
-2024,2,Gold,2023.2,USD/troy oz
-2024,2,"Iron concentrate, 60%",113.8,USD/tonne
-2024,2,"Iron ore, 56%",99.5,USD/tonne
-2024,2,Lead,2083.6,USD/tonne
-2024,2,"Manganese, 36%",160.8,USD/tonne
-2024,2,Molybdenum,43781.7,USD/tonne
-2024,2,Silver,22.7,USD/troy oz
-2024,2,Tin,26140.5,USD/tonne
-2024,2,"Tungsten, 65%",17154.6,USD/tonne
-2024,2,"Tungsten, 99%",39633.3,USD/tonne
-2024,2,Uranium,209.4,USD/kg
-2024,2,Zinc,2363.9,USD/tonne
-2024,3,Copper,8675.1,USD/tonne
-2024,3,Fluorspar concentrate FF-97,415.0,USD/tonne
-2024,3,Fluorspar ore FK-85,365.0,USD/tonne
-2024,3,Gold,2158.0,USD/troy oz
-2024,3,"Iron concentrate, 60%",94.8,USD/tonne
-2024,3,"Iron ore, 56%",79.9,USD/tonne
-2024,3,Lead,2056.4,USD/tonne
-2024,3,"Manganese, 36%",162.4,USD/tonne
-2024,3,Molybdenum,44234.6,USD/tonne
-2024,3,Silver,24.5,USD/troy oz
-2024,3,Tin,27430.9,USD/tonne
-2024,3,"Tungsten, 65%",17476.4,USD/tonne
-2024,3,"Tungsten, 99%",39919.1,USD/tonne
-2024,3,Uranium,193.5,USD/kg
-2024,3,Zinc,2461.9,USD/tonne
-2024,4,Copper,9481.5,USD/tonne
-2024,4,Fluorspar concentrate FF-97,495.0,USD/tonne
-2024,4,Fluorspar ore FK-85,365.0,USD/tonne
-2024,4,Gold,2335.5,USD/troy oz
-2024,4,"Iron concentrate, 60%",96.7,USD/tonne
-2024,4,"Iron ore, 56%",75.7,USD/tonne
-2024,4,Lead,2129.2,USD/tonne
-2024,4,"Manganese, 36%",171.7,USD/tonne
-2024,4,Molybdenum,43920.2,USD/tonne
-2024,4,Silver,27.6,USD/troy oz
-2024,4,Tin,31829.0,USD/tonne
-2024,4,"Tungsten, 65%",18379.1,USD/tonne
-2024,4,"Tungsten, 99%",40972.7,USD/tonne
-2024,4,Uranium,196.2,USD/kg
-2024,4,Zinc,2730.1,USD/tonne
-2024,5,Copper,10128.4,USD/tonne
-2024,5,Fluorspar concentrate FF-97,470.0,USD/tonne
-2024,5,Fluorspar ore FK-85,370.0,USD/tonne
-2024,5,Gold,2352.1,USD/troy oz
-2024,5,"Iron concentrate, 60%",104.4,USD/tonne
-2024,5,"Iron ore, 56%",82.9,USD/tonne
-2024,5,Lead,2220.6,USD/tonne
-2024,5,"Manganese, 36%",253.0,USD/tonne
-2024,5,Molybdenum,48150.0,USD/tonne
-2024,5,Silver,29.4,USD/troy oz
-2024,5,Tin,33139.8,USD/tonne
-2024,5,"Tungsten, 65%",20975.1,USD/tonne
-2024,5,"Tungsten, 99%",46761.9,USD/tonne
-2024,5,Uranium,199.3,USD/kg
-2024,5,Zinc,2955.1,USD/tonne
-2024,6,Copper,9640.7,USD/tonne
-2024,6,Fluorspar concentrate FF-97,470.0,USD/tonne
-2024,6,Fluorspar ore FK-85,370.0,USD/tonne
-2024,6,Gold,2326.3,USD/troy oz
-2024,6,"Iron concentrate, 60%",93.7,USD/tonne
-2024,6,"Iron ore, 56%",74.1,USD/tonne
-2024,6,Lead,2147.2,USD/tonne
-2024,6,"Manganese, 36%",263.9,USD/tonne
-2024,6,Molybdenum,51330.2,USD/tonne
-2024,6,Silver,29.6,USD/troy oz
-2024,6,Tin,32216.4,USD/tonne
-2024,6,"Tungsten, 65%",20407.5,USD/tonne
-2024,6,"Tungsten, 99%",48184.2,USD/tonne
-2024,6,Uranium,185.7,USD/kg
-2024,6,Zinc,2812.4,USD/tonne
-2024,7,Copper,9393.2,USD/tonne
-2024,7,Fluorspar concentrate FF-97,472.5,USD/tonne
-2024,7,Fluorspar ore FK-85,372.5,USD/tonne
-2024,7,Gold,2395.3,USD/troy oz
-2024,7,"Iron concentrate, 60%",92.9,USD/tonne
-2024,7,"Iron ore, 56%",73.6,USD/tonne
-2024,7,Lead,2113.8,USD/tonne
-2024,7,"Manganese, 36%",214.0,USD/tonne
-2024,7,Molybdenum,50047.7,USD/tonne
-2024,7,Silver,29.7,USD/troy oz
-2024,7,Tin,31987.4,USD/tonne
-2024,7,"Tungsten, 65%",18266.4,USD/tonne
-2024,7,"Tungsten, 99%",46160.9,USD/tonne
-2024,7,Uranium,185.7,USD/kg
-2024,7,Zinc,2784.7,USD/tonne
-2024,8,Copper,8963.2,USD/tonne
-2024,8,Fluorspar concentrate FF-97,472.5,USD/tonne
-2024,8,Fluorspar ore FK-85,372.5,USD/tonne
-2024,8,Gold,2468.0,USD/troy oz
-2024,8,"Iron concentrate, 60%",86.0,USD/tonne
-2024,8,"Iron ore, 56%",68.8,USD/tonne
-2024,8,Lead,2001.8,USD/tonne
-2024,8,"Manganese, 36%",174.9,USD/tonne
-2024,8,Molybdenum,46563.7,USD/tonne
-2024,8,Silver,28.5,USD/troy oz
-2024,8,Tin,31499.8,USD/tonne
-2024,8,"Tungsten, 65%",18905.9,USD/tonne
-2024,8,"Tungsten, 99%",45331.8,USD/tonne
-2024,8,Uranium,173.1,USD/kg
-2024,8,Zinc,2709.2,USD/tonne
-2024,9,Copper,9253.9,USD/tonne
-2024,9,Fluorspar concentrate FF-97,472.5,USD/tonne
-2024,9,Fluorspar ore FK-85,372.5,USD/tonne
-2024,9,Gold,2567.1,USD/troy oz
-2024,9,"Iron concentrate, 60%",79.9,USD/tonne
-2024,9,"Iron ore, 56%",64.4,USD/tonne
-2024,9,Lead,2006.7,USD/tonne
-2024,9,"Manganese, 36%",164.0,USD/tonne
-2024,9,Molybdenum,47532.7,USD/tonne
-2024,9,Silver,30.0,USD/troy oz
-2024,9,Tin,31625.1,USD/tonne
-2024,9,"Tungsten, 65%",19518.5,USD/tonne
-2024,9,"Tungsten, 99%",46473.7,USD/tonne
-2024,9,Uranium,180.8,USD/kg
-2024,9,Zinc,2840.3,USD/tonne
-2024,10,Copper,9538.8,USD/tonne
-2024,10,Fluorspar concentrate FF-97,472.5,USD/tonne
-2024,10,Fluorspar ore FK-85,372.5,USD/tonne
-2024,10,Gold,2690.1,USD/troy oz
-2024,10,"Iron concentrate, 60%",90.9,USD/tonne
-2024,10,"Iron ore, 56%",74.6,USD/tonne
-2024,10,Lead,2035.2,USD/tonne
-2024,10,"Manganese, 36%",156.5,USD/tonne
-2024,10,Molybdenum,48252.4,USD/tonne
-2024,10,Silver,32.4,USD/troy oz
-2024,10,Tin,32201.6,USD/tonne
-2024,10,"Tungsten, 65%",19821.9,USD/tonne
-2024,10,"Tungsten, 99%",46973.7,USD/tonne
-2024,10,Uranium,177.5,USD/kg
-2024,10,Zinc,3102.5,USD/tonne
-2024,11,Copper,9074.3,USD/tonne
-2024,11,Fluorspar concentrate FF-97,472.5,USD/tonne
-2024,11,Fluorspar ore FK-85,372.5,USD/tonne
-2024,11,Gold,2650.7,USD/troy oz
-2024,11,"Iron concentrate, 60%",89.4,USD/tonne
-2024,11,"Iron ore, 56%",73.9,USD/tonne
-2024,11,Lead,1987.8,USD/tonne
-2024,11,"Manganese, 36%",158.8,USD/tonne
-2024,11,Molybdenum,48185.6,USD/tonne
-2024,11,Silver,31.1,USD/troy oz
-2024,11,Tin,29753.0,USD/tonne
-2024,11,"Tungsten, 65%",19766.9,USD/tonne
-2024,11,"Tungsten, 99%",47171.4,USD/tonne
-2024,11,Uranium,170.0,USD/kg
-2024,11,Zinc,2998.6,USD/tonne
-2024,12,Copper,8919.2,USD/tonne
-2024,12,Fluorspar concentrate FF-97,472.5,USD/tonne
-2024,12,Fluorspar ore FK-85,372.5,USD/tonne
-2024,12,Gold,2644.1,USD/troy oz
-2024,12,"Iron concentrate, 60%",93.2,USD/tonne
-2024,12,"Iron ore, 56%",76.7,USD/tonne
-2024,12,Lead,1993.5,USD/tonne
-2024,12,"Manganese, 36%",163.0,USD/tonne
-2024,12,Molybdenum,47260.4,USD/tonne
-2024,12,Silver,30.5,USD/troy oz
-2024,12,Tin,28861.3,USD/tonne
-2024,12,"Tungsten, 65%",19534.6,USD/tonne
-2024,12,"Tungsten, 99%",47000.0,USD/tonne
-2024,12,Uranium,160.1,USD/kg
-2024,12,Zinc,3042.5,USD/tonne
-2025,1,Copper,8977.2,USD/tonne
-2025,1,Fluorspar concentrate FF-97,472.5,USD/tonne
-2025,1,Fluorspar ore FK-85,372.5,USD/tonne
-2025,1,Gold,2709.7,USD/troy oz
-2025,1,"Iron concentrate, 60%",91.3,USD/tonne
-2025,1,"Iron ore, 56%",75.6,USD/tonne
-2025,1,Lead,1921.2,USD/tonne
-2025,1,"Manganese, 36%",170.2,USD/tonne
-2025,1,Molybdenum,45966.3,USD/tonne
-2025,1,Silver,30.4,USD/troy oz
-2025,1,Tin,29603.9,USD/tonne
-2025,1,"Tungsten, 65%",19702.3,USD/tonne
-2025,1,"Tungsten, 99%",47035.2,USD/tonne
-2025,1,Uranium,152.7,USD/kg
-2025,1,Zinc,2824.8,USD/tonne
-2025,2,Copper,9328.7,USD/tonne
-2025,2,Fluorspar concentrate FF-97,472.5,USD/tonne
-2025,2,Fluorspar ore FK-85,372.5,USD/tonne
-2025,2,Gold,2894.7,USD/troy oz
-2025,2,"Iron concentrate, 60%",96.3,USD/tonne
-2025,2,"Iron ore, 56%",79.6,USD/tonne
-2025,2,Lead,1954.7,USD/tonne
-2025,2,"Manganese, 36%",192.3,USD/tonne
-2025,2,Molybdenum,45517.7,USD/tonne
-2025,2,Silver,32.2,USD/troy oz
-2025,2,Tin,31860.5,USD/tonne
-2025,2,"Tungsten, 65%",19766.3,USD/tonne
-2025,2,"Tungsten, 99%",47200.0,USD/tonne
-2025,2,Uranium,143.4,USD/kg
-2025,2,Zinc,2799.2,USD/tonne
-2025,3,Copper,9730.6,USD/tonne
-2025,3,Fluorspar concentrate FF-97,472.5,USD/tonne
-2025,3,Fluorspar ore FK-85,372.5,USD/tonne
-2025,3,Gold,2983.3,USD/troy oz
-2025,3,"Iron concentrate, 60%",89.2,USD/tonne
-2025,3,"Iron ore, 56%",71.8,USD/tonne
-2025,3,Lead,2033.1,USD/tonne
-2025,3,"Manganese, 36%",187.8,USD/tonne
-2025,3,Molybdenum,44654.1,USD/tonne
-2025,3,Silver,33.2,USD/troy oz
-2025,3,Tin,34012.5,USD/tonne
-2025,3,"Tungsten, 65%",19357.7,USD/tonne
-2025,3,"Tungsten, 99%",47200.0,USD/tonne
-2025,3,Uranium,141.6,USD/kg
-2025,3,Zinc,2887.4,USD/tonne
-2025,4,Copper,9191.5,USD/tonne
-2025,4,Fluorspar concentrate FF-97,470.0,USD/tonne
-2025,4,Fluorspar ore FK-85,372.5,USD/tonne
-2025,4,Gold,3207.5,USD/troy oz
-2025,4,"Iron concentrate, 60%",88.9,USD/tonne
-2025,4,"Iron ore, 56%",70.0,USD/tonne
-2025,4,Lead,1908.5,USD/tonne
-2025,4,"Manganese, 36%",169.2,USD/tonne
-2025,4,Molybdenum,43891.8,USD/tonne
-2025,4,Silver,32.3,USD/troy oz
-2025,4,Tin,32670.9,USD/tonne
-2025,4,"Tungsten, 65%",19888.6,USD/tonne
-2025,4,"Tungsten, 99%",47750.0,USD/tonne
-2025,4,Uranium,149.3,USD/kg
-2025,4,Zinc,2624.8,USD/tonne
-2025,5,Copper,9529.1,USD/tonne
-2025,5,Fluorspar concentrate FF-97,490.0,USD/tonne
-2025,5,Fluorspar ore FK-85,410.0,USD/tonne
-2025,5,Gold,3278.0,USD/troy oz
-2025,5,"Iron concentrate, 60%",88.4,USD/tonne
-2025,5,"Iron ore, 56%",70.1,USD/tonne
-2025,5,Lead,1957.6,USD/tonne
-2025,5,"Manganese, 36%",164.5,USD/tonne
-2025,5,Molybdenum,44329.4,USD/tonne
-2025,5,Silver,32.7,USD/troy oz
-2025,5,Tin,32126.0,USD/tonne
-2025,5,"Tungsten, 65%",22445.2,USD/tonne
-2025,5,"Tungsten, 99%",51347.4,USD/tonne
-2025,5,Uranium,157.7,USD/kg
-2025,5,Zinc,2645.7,USD/tonne
-2025,6,Copper,9833.0,USD/tonne
-2025,6,Fluorspar concentrate FF-97,490.0,USD/tonne
-2025,6,Fluorspar ore FK-85,410.0,USD/tonne
-2025,6,Gold,3352.0,USD/troy oz
-2025,6,"Iron concentrate, 60%",82.9,USD/tonne
-2025,6,"Iron ore, 56%",66.1,USD/tonne
-2025,6,Lead,1972.3,USD/tonne
-2025,6,"Manganese, 36%",164.3,USD/tonne
-2025,6,Molybdenum,48125.8,USD/tonne
-2025,6,Silver,35.9,USD/troy oz
-2025,6,Tin,32462.4,USD/tonne
-2025,6,"Tungsten, 65%",24024.7,USD/tonne
-2025,6,"Tungsten, 99%",55275.0,USD/tonne
-2025,6,Uranium,173.5,USD/kg
-2025,6,Zinc,2650.4,USD/tonne
-2025,7,Copper,9777.7,USD/tonne
-2025,7,Fluorspar concentrate FF-97,560.0,USD/tonne
-2025,7,Fluorspar ore FK-85,410.0,USD/tonne
-2025,7,Gold,3338.3,USD/troy oz
-2025,7,"Iron concentrate, 60%",88.6,USD/tonne
-2025,7,"Iron ore, 56%",71.7,USD/tonne
-2025,7,Lead,1994.3,USD/tonne
-2025,7,"Manganese, 36%",168.0,USD/tonne
-2025,7,Molybdenum,50225.1,USD/tonne
-2025,7,Silver,37.7,USD/troy oz
-2025,7,Tin,33676.6,USD/tonne
-2025,7,"Tungsten, 65%",25266.0,USD/tonne
-2025,7,"Tungsten, 99%",58391.3,USD/tonne
-2025,7,Uranium,156.7,USD/kg
-2025,7,Zinc,2758.4,USD/tonne
-2025,8,Copper,9645.5,USD/tonne
-2025,8,Fluorspar concentrate FF-97,520.0,USD/tonne
-2025,8,Fluorspar ore FK-85,410.0,USD/tonne
-2025,8,Gold,3363.0,USD/troy oz
-2025,8,"Iron concentrate, 60%",89.9,USD/tonne
-2025,8,"Iron ore, 56%",72.3,USD/tonne
-2025,8,Lead,1944.6,USD/tonne
-2025,8,"Manganese, 36%",175.6,USD/tonne
-2025,8,Molybdenum,53940.4,USD/tonne
-2025,8,Silver,37.9,USD/troy oz
-2025,8,Tin,33854.6,USD/tonne
-2025,8,"Tungsten, 65%",29515.2,USD/tonne
-2025,8,"Tungsten, 99%",68738.1,USD/tonne
-2025,8,Uranium,165.6,USD/kg
-2025,8,Zinc,2783.9,USD/tonne
-2025,9,Copper,9952.09,USD/tonne
-2025,9,Fluorspar concentrate FF-97,520.0,USD/tonne
-2025,9,Fluorspar ore FK-85,410.0,USD/tonne
-2025,9,Gold,3665.2,USD/troy oz
-2025,9,"Iron concentrate, 60%",93.12,USD/tonne
-2025,9,"Iron ore, 56%",75.19,USD/tonne
-2025,9,Lead,1953.95,USD/tonne
-2025,9,"Manganese, 36%",174.78,USD/tonne
-2025,9,Molybdenum,56161.69,USD/tonne
-2025,9,Silver,42.54,USD/troy oz
-2025,9,Tin,34517.27,USD/tonne
-2025,9,"Tungsten, 65%",38935.15,USD/tonne
-2025,9,"Tungsten, 99%",90750.0,USD/tonne
-2025,9,Uranium,82.17,USD/kg
-2025,9,Zinc,2929.48,USD/tonne
-2025,10,Copper,10695.6,USD/tonne
-2025,10,Fluorspar concentrate FF-97,520.0,USD/tonne
-2025,10,Fluorspar ore FK-85,410.0,USD/tonne
-2025,10,Gold,4053.3,USD/troy oz
-2025,10,"Iron concentrate, 60%",93.6,USD/tonne
-2025,10,"Iron ore, 56%",75.7,USD/tonne
-2025,10,Lead,1967.7,USD/tonne
-2025,10,"Manganese, 36%",174.0,USD/tonne
-2025,10,Molybdenum,54827.9,USD/tonne
-2025,10,Silver,49.4,USD/troy oz
-2025,10,Tin,36033.6,USD/tonne
-2025,10,"Tungsten, 65%",38865.0,USD/tonne
-2025,10,"Tungsten, 99%",92527.8,USD/tonne
-2025,10,Uranium,176.4,USD/kg
-2025,10,Zinc,3148.5,USD/tonne
-2025,11,Copper,10800.0,USD/tonne
-2025,11,Fluorspar concentrate FF-97,520.0,USD/tonne
-2025,11,Fluorspar ore FK-85,420.0,USD/tonne
-2025,11,Gold,4083.0,USD/troy oz
-2025,11,"Iron concentrate, 60%",92.9,USD/tonne
-2025,11,"Iron ore, 56%",75.0,USD/tonne
-2025,11,Lead,2001.2,USD/tonne
-2025,11,"Manganese, 36%",173.3,USD/tonne
-2025,11,Molybdenum,49878.4,USD/tonne
-2025,11,Silver,50.7,USD/troy oz
-2025,11,Tin,37003.6,USD/tonne
-2025,11,"Tungsten, 65%",45304.8,USD/tonne
-2025,11,"Tungsten, 99%",105575.0,USD/tonne
-2025,11,Uranium,167.1,USD/kg
-2025,11,Zinc,3186.7,USD/tonne
-2025,12,Copper,11802.8,USD/tonne
-2025,12,Fluorspar concentrate FF-97,520.0,USD/tonne
-2025,12,Fluorspar ore FK-85,420.0,USD/tonne
-2025,12,Gold,4300.0,USD/troy oz
-2025,12,"Iron concentrate, 60%",94.3,USD/tonne
-2025,12,"Iron ore, 56%",73.8,USD/tonne
-2025,12,Lead,1941.8,USD/tonne
-2025,12,"Manganese, 36%",176.3,USD/tonne
-2025,12,Molybdenum,47192.5,USD/tonne
-2025,12,Silver,64.3,USD/troy oz
-2025,12,Tin,41334.4,USD/tonne
-2025,12,"Tungsten, 65%",57063.3,USD/tonne
-2025,12,"Tungsten, 99%",132804.4,USD/tonne
-2025,12,Uranium,179.8,USD/kg
-2025,12,Zinc,3159.2,USD/tonne
-2026,1,Copper,13088.1,USD/tonne
-2026,1,Fluorspar concentrate FF-97,520.0,USD/tonne
-2026,1,Fluorspar ore FK-85,420.0,USD/tonne
-2026,1,Gold,4717.6,USD/troy oz
-2026,1,"Iron concentrate, 60%",96.7,USD/tonne
-2026,1,"Iron ore, 56%",76.3,USD/tonne
-2026,1,Lead,1997.5,USD/tonne
-2026,1,"Manganese, 36%",179.0,USD/tonne
-2026,1,Molybdenum,51270.0,USD/tonne
-2026,1,Silver,90.1,USD/troy oz
-2026,1,Tin,49884.1,USD/tonne
-2026,1,"Tungsten, 65%",73474.3,USD/tonne
-2026,1,"Tungsten, 99%",183833.3,USD/tonne
-2026,1,Uranium,207.9,USD/kg
-2026,1,Zinc,3219.8,USD/tonne
-2026,2,Copper,12967.2,USD/tonne
-2026,2,Fluorspar concentrate FF-97,520.0,USD/tonne
-2026,2,Fluorspar ore FK-85,420.0,USD/tonne
-2026,2,Gold,5028.6,USD/troy oz
-2026,2,"Iron concentrate, 60%",90.4,USD/tonne
-2026,2,"Iron ore, 56%",71.5,USD/tonne
-2026,2,Lead,1915.6,USD/tonne
-2026,2,"Manganese, 36%",185.7,USD/tonne
-2026,2,Molybdenum,58218.5,USD/tonne
-2026,2,Silver,81.9,USD/troy oz
-2026,2,Tin,48649.0,USD/tonne
-2026,2,"Tungsten, 65%",101906.1,USD/tonne
-2026,2,"Tungsten, 99%",248892.9,USD/tonne
-2026,2,Uranium,191.7,USD/kg
-2026,2,Zinc,3320.1,USD/tonne
-2026,3,Copper,12498.35,USD/tonne
-2026,3,Fluorspar concentrate FF-97,520.0,USD/tonne
-2026,3,Fluorspar ore FK-85,420.0,USD/tonne
-2026,3,Gold,4868.73,USD/troy oz
-2026,3,"Iron concentrate, 60%",94.0,USD/tonne
-2026,3,"Iron ore, 56%",73.51,USD/tonne
-2026,3,Lead,1879.3,USD/tonne
-2026,3,"Manganese, 36%",203.57,USD/tonne
-2026,3,Molybdenum,59257.18,USD/tonne
-2026,3,Silver,78.29,USD/troy oz
-2026,3,Tin,47494.32,USD/tonne
-2026,3,"Tungsten, 65%",139968.32,USD/tonne
-2026,3,"Tungsten, 99%",343954.55,USD/tonne
-2026,3,Uranium,185.74,USD/kg
-2026,3,Zinc,3187.34,USD/tonne
-2026,4,Copper,12890.73,USD/tonne
-2026,4,Fluorspar concentrate FF-97,520.0,USD/tonne
-2026,4,Fluorspar ore FK-85,425.0,USD/tonne
-2026,4,Gold,4724.95,USD/troy oz
-2026,4,"Iron concentrate, 60%",94.16,USD/tonne
-2026,4,"Iron ore, 56%",70.22,USD/tonne
-2026,4,Lead,1922.18,USD/tonne
-2026,4,"Manganese, 36%",223.32,USD/tonne
-2026,4,Molybdenum,60017.47,USD/tonne
-2026,4,Silver,75.88,USD/troy oz
-2026,4,Tin,48924.38,USD/tonne
-2026,4,"Tungsten, 65%",128963.55,USD/tonne
-2026,4,"Tungsten, 99%",364350.0,USD/tonne
-2026,4,Uranium,190.37,USD/kg
-2026,4,Zinc,3360.36,USD/tonne
-2026,5,Copper,13506.29,USD/tonne
-2026,5,Fluorspar concentrate FF-97,520.0,USD/tonne
-2026,5,Fluorspar ore FK-85,425.0,USD/tonne
-2026,5,Gold,4590.66,USD/troy oz
-2026,5,"Iron concentrate, 60%",93.12,USD/tonne
-2026,5,"Iron ore, 56%",67.91,USD/tonne
-2026,5,Lead,1990.47,USD/tonne
-2026,5,"Manganese, 36%",206.06,USD/tonne
-2026,5,Molybdenum,65694.2,USD/tonne
-2026,5,Silver,77.76,USD/troy oz
-2026,5,Tin,53670.92,USD/tonne
-2026,5,"Tungsten, 65%",75989.56,USD/tonne
-2026,5,"Tungsten, 99%",274473.68,USD/tonne
-2026,5,Uranium,185.58,USD/kg
-2026,5,Zinc,3487.55,USD/tonne
-2026,6,Copper,13573.81,USD/tonne
-2026,6,Fluorspar concentrate FF-97,520.0,USD/tonne
-2026,6,Fluorspar ore FK-85,425.0,USD/tonne
-2026,6,Gold,4219.03,USD/troy oz
-2026,6,"Iron concentrate, 60%",87.63,USD/tonne
-2026,6,"Iron ore, 56%",62.02,USD/tonne
-2026,6,Lead,1950.59,USD/tonne
-2026,6,"Manganese, 36%",198.99,USD/tonne
-2026,6,Molybdenum,68391.32,USD/tonne
-2026,6,Silver,65.77,USD/troy oz
-2026,6,Tin,53331.7,USD/tonne
-2026,6,"Tungsten, 65%",70928.66,USD/tonne
-2026,6,"Tungsten, 99%",218047.62,USD/tonne
-2026,6,Uranium,187.39,USD/kg
-2026,6,Zinc,3539.93,USD/tonne
-2026,7,Copper,13524.52,USD/tonne
-2026,7,Fluorspar concentrate FF-97,520.0,USD/tonne
-2026,7,Fluorspar ore FK-85,425.0,USD/tonne
-2026,7,Gold,4077.8,USD/troy oz
-2026,7,"Iron concentrate, 60%",86.21,USD/tonne
-2026,7,"Iron ore, 56%",59.67,USD/tonne
-2026,7,Lead,1843.55,USD/tonne
-2026,7,"Manganese, 36%",193.9,USD/tonne
-2026,7,Molybdenum,70211.4,USD/tonne
-2026,7,Silver,58.8,USD/troy oz
-2026,7,Tin,53088.8,USD/tonne
-2026,7,"Tungsten, 65%",62943.87,USD/tonne
-2026,7,"Tungsten, 99%",205652.17,USD/tonne
-2026,7,Uranium,190.43,USD/kg
-2026,7,Zinc,3595.53,USD/tonne
+month,commodity,price
+2021-01,Copper (USD/tonne),7970.5
+2021-01,Fluorspar concentrate FF-97 (USD/tonne),355.0
+2021-01,Fluorspar ore FK-85 (USD/tonne),300.0
+2021-01,Gold (USD/troy oz),1868.3
+2021-01,"Iron concentrate, 60% (USD/tonne)",158.7
+2021-01,"Iron ore, 56% (USD/tonne)",138.9
+2021-01,Lead (USD/tonne),2014.9
+2021-01,"Manganese, 36% (USD/tonne)",195.9
+2021-01,Molybdenum (USD/tonne),22421.0
+2021-01,Silver (USD/troy oz),25.9
+2021-01,Tin (USD/tonne),21955.5
+2021-01,"Tungsten, 65% (USD/tonne)",13663.0
+2021-01,"Tungsten, 99% (USD/tonne)",34727.0
+2021-01,Uranium (USD/kg),65.3
+2021-01,Zinc (USD/tonne),2707.7
+2021-02,Copper (USD/tonne),9172.5
+2021-02,Fluorspar concentrate FF-97 (USD/tonne),355.0
+2021-02,Fluorspar ore FK-85 (USD/tonne),300.0
+2021-02,Gold (USD/troy oz),1811.1
+2021-02,"Iron concentrate, 60% (USD/tonne)",155.5
+2021-02,"Iron ore, 56% (USD/tonne)",131.6
+2021-02,Lead (USD/tonne),2075.0
+2021-02,"Manganese, 36% (USD/tonne)",195.1
+2021-02,Molybdenum (USD/tonne),26257.0
+2021-02,Silver (USD/troy oz),27.4
+2021-02,Tin (USD/tonne),24505.0
+2021-02,"Tungsten, 65% (USD/tonne)",14165.5
+2021-02,"Tungsten, 99% (USD/tonne)",33000.0
+2021-02,Uranium (USD/kg),61.7
+2021-02,Zinc (USD/tonne),2788.5
+2021-03,Copper (USD/tonne),8768.0
+2021-03,Fluorspar concentrate FF-97 (USD/tonne),325.0
+2021-03,Fluorspar ore FK-85 (USD/tonne),300.0
+2021-03,Gold (USD/troy oz),1719.9
+2021-03,"Iron concentrate, 60% (USD/tonne)",153.8
+2021-03,"Iron ore, 56% (USD/tonne)",132.9
+2021-03,Lead (USD/tonne),1960.8
+2021-03,"Manganese, 36% (USD/tonne)",192.4
+2021-03,Molybdenum (USD/tonne),25949.3
+2021-03,Silver (USD/troy oz),25.6
+2021-03,Tin (USD/tonne),27396.3
+2021-03,"Tungsten, 65% (USD/tonne)",14612.2
+2021-03,"Tungsten, 99% (USD/tonne)",34980.0
+2021-03,Uranium (USD/kg),68.2
+2021-03,Zinc (USD/tonne),2791.7
+2021-04,Copper (USD/tonne),9335.6
+2021-04,Fluorspar concentrate FF-97 (USD/tonne),325.0
+2021-04,Fluorspar ore FK-85 (USD/tonne),300.0
+2021-04,Gold (USD/troy oz),1760.0
+2021-04,"Iron concentrate, 60% (USD/tonne)",163.4
+2021-04,"Iron ore, 56% (USD/tonne)",142.2
+2021-04,Lead (USD/tonne),2006.3
+2021-04,"Manganese, 36% (USD/tonne)",184.6
+2021-04,Molybdenum (USD/tonne),24515.4
+2021-04,Silver (USD/troy oz),25.6
+2021-04,Tin (USD/tonne),28508.1
+2021-04,"Tungsten, 65% (USD/tonne)",14752.3
+2021-04,"Tungsten, 99% (USD/tonne)",33000.0
+2021-04,Uranium (USD/kg),63.7
+2021-04,Zinc (USD/tonne),2827.4
+2021-05,Copper (USD/tonne),10184.0
+2021-05,Fluorspar concentrate FF-97 (USD/tonne),325.0
+2021-05,Fluorspar ore FK-85 (USD/tonne),300.0
+2021-05,Gold (USD/troy oz),1850.4
+2021-05,"Iron concentrate, 60% (USD/tonne)",192.2
+2021-05,"Iron ore, 56% (USD/tonne)",166.3
+2021-05,Lead (USD/tonne),2185.9
+2021-05,"Manganese, 36% (USD/tonne)",189.7
+2021-05,Molybdenum (USD/tonne),29150.1
+2021-05,Silver (USD/troy oz),27.5
+2021-05,Tin (USD/tonne),32524.3
+2021-05,"Tungsten, 65% (USD/tonne)",15122.4
+2021-05,"Tungsten, 99% (USD/tonne)",36000.0
+2021-05,Uranium (USD/kg),69.2
+2021-05,Zinc (USD/tonne),2970.3
+2021-06,Copper (USD/tonne),9612.4
+2021-06,Fluorspar concentrate FF-97 (USD/tonne),300.0
+2021-06,Fluorspar ore FK-85 (USD/tonne),300.0
+2021-06,Gold (USD/troy oz),1835.3
+2021-06,"Iron concentrate, 60% (USD/tonne)",195.1
+2021-06,"Iron ore, 56% (USD/tonne)",169.2
+2021-06,Lead (USD/tonne),2189.0
+2021-06,"Manganese, 36% (USD/tonne)",193.2
+2021-06,Molybdenum (USD/tonne),39897.6
+2021-06,Silver (USD/troy oz),27.0
+2021-06,Tin (USD/tonne),32677.6
+2021-06,"Tungsten, 65% (USD/tonne)",15210.6
+2021-06,Zinc (USD/tonne),2950.1
+2021-07,Copper (USD/tonne),9433.6
+2021-07,Fluorspar concentrate FF-97 (USD/tonne),300.0
+2021-07,Fluorspar ore FK-85 (USD/tonne),300.0
+2021-07,Gold (USD/troy oz),1806.5
+2021-07,"Iron concentrate, 60% (USD/tonne)",195.4
+2021-07,"Iron ore, 56% (USD/tonne)",162.7
+2021-07,Lead (USD/tonne),2337.0
+2021-07,"Manganese, 36% (USD/tonne)",190.9
+2021-07,Molybdenum (USD/tonne),40599.1
+2021-07,Silver (USD/troy oz),25.8
+2021-07,Tin (USD/tonne),34183.0
+2021-07,"Tungsten, 65% (USD/tonne)",16261.8
+2021-07,"Tungsten, 99% (USD/tonne)",38090.0
+2021-07,Uranium (USD/kg),71.4
+2021-07,Zinc (USD/tonne),2943.0
+2021-08,Copper (USD/tonne),9357.2
+2021-08,Fluorspar concentrate FF-97 (USD/tonne),300.0
+2021-08,Fluorspar ore FK-85 (USD/tonne),300.0
+2021-08,Gold (USD/troy oz),1782.5
+2021-08,"Iron concentrate, 60% (USD/tonne)",141.3
+2021-08,"Iron ore, 56% (USD/tonne)",108.8
+2021-08,Lead (USD/tonne),2337.0
+2021-08,"Manganese, 36% (USD/tonne)",189.0
+2021-08,Molybdenum (USD/tonne),40599.1
+2021-08,Silver (USD/troy oz),24.0
+2021-08,Tin (USD/tonne),34183.0
+2021-08,"Tungsten, 65% (USD/tonne)",17329.4
+2021-08,Uranium (USD/kg),75.5
+2021-08,Zinc (USD/tonne),2988.9
+2021-09,Copper (USD/tonne),9324.1
+2021-09,Fluorspar concentrate FF-97 (USD/tonne),320.0
+2021-09,Fluorspar ore FK-85 (USD/tonne),275.0
+2021-09,Gold (USD/troy oz),1779.1
+2021-09,"Iron concentrate, 60% (USD/tonne)",102.4
+2021-09,"Iron ore, 56% (USD/tonne)",77.9
+2021-09,Lead (USD/tonne),2259.3
+2021-09,"Manganese, 36% (USD/tonne)",192.7
+2021-09,Molybdenum (USD/tonne),43188.5
+2021-09,Silver (USD/troy oz),23.3
+2021-09,Tin (USD/tonne),35048.2
+2021-09,"Tungsten, 65% (USD/tonne)",17005.2
+2021-09,Uranium (USD/kg),93.9
+2021-09,Zinc (USD/tonne),3042.0
+2021-10,Copper (USD/tonne),9778.5
+2021-10,Fluorspar concentrate FF-97 (USD/tonne),320.0
+2021-10,Fluorspar ore FK-85 (USD/tonne),290.0
+2021-10,Gold (USD/troy oz),1775.7
+2021-10,"Iron concentrate, 60% (USD/tonne)",101.8
+2021-10,"Iron ore, 56% (USD/tonne)",74.3
+2021-10,Lead (USD/tonne),2339.5
+2021-10,"Manganese, 36% (USD/tonne)",203.6
+2021-10,Molybdenum (USD/tonne),42028.5
+2021-10,Silver (USD/troy oz),23.3
+2021-10,Tin (USD/tonne),37962.4
+2021-10,"Tungsten, 65% (USD/tonne)",17334.3
+2021-10,"Tungsten, 99% (USD/tonne)",41330.0
+2021-10,Uranium (USD/kg),99.6
+2021-10,Zinc (USD/tonne),3370.1
+2021-11,Copper (USD/tonne),9764.6
+2021-11,Fluorspar concentrate FF-97 (USD/tonne),320.0
+2021-11,Fluorspar ore FK-85 (USD/tonne),275.0
+2021-11,Gold (USD/troy oz),1820.3
+2021-11,"Iron concentrate, 60% (USD/tonne)",82.7
+2021-11,"Iron ore, 56% (USD/tonne)",57.2
+2021-11,Lead (USD/tonne),2347.0
+2021-11,"Manganese, 36% (USD/tonne)",201.0
+2021-11,Molybdenum (USD/tonne),41826.7
+2021-11,Silver (USD/troy oz),24.2
+2021-11,Tin (USD/tonne),39307.2
+2021-11,"Tungsten, 65% (USD/tonne)",16951.2
+2021-11,"Tungsten, 99% (USD/tonne)",41840.0
+2021-11,Uranium (USD/kg),100.9
+2021-11,Zinc (USD/tonne),3316.7
+2021-12,Copper (USD/tonne),9550.3
+2021-12,Fluorspar concentrate FF-97 (USD/tonne),320.0
+2021-12,Fluorspar ore FK-85 (USD/tonne),275.0
+2021-12,Gold (USD/troy oz),1787.6
+2021-12,Lead (USD/tonne),2304.8
+2021-12,"Manganese, 36% (USD/tonne)",189.6
+2021-12,Molybdenum (USD/tonne),41182.3
+2021-12,Silver (USD/troy oz),22.5
+2021-12,Tin (USD/tonne),39573.8
+2021-12,"Tungsten, 65% (USD/tonne)",17030.2
+2021-12,"Tungsten, 99% (USD/tonne)",41630.0
+2021-12,Uranium (USD/kg),92.7
+2021-12,Zinc (USD/tonne),3407.9
+2022-01,Copper (USD/tonne),9774.5
+2022-01,Fluorspar concentrate FF-97 (USD/tonne),335.0
+2022-01,Fluorspar ore FK-85 (USD/tonne),290.0
+2022-01,Gold (USD/troy oz),1817.8
+2022-01,"Iron concentrate, 60% (USD/tonne)",119.3
+2022-01,"Iron ore, 56% (USD/tonne)",97.6
+2022-01,Lead (USD/tonne),2342.0
+2022-01,"Manganese, 36% (USD/tonne)",189.8
+2022-01,Molybdenum (USD/tonne),41910.9
+2022-01,Silver (USD/troy oz),23.2
+2022-01,Tin (USD/tonne),41789.6
+2022-01,"Tungsten, 65% (USD/tonne)",17928.2
+2022-01,"Tungsten, 99% (USD/tonne)",43680.0
+2022-01,Uranium (USD/kg),95.0
+2022-01,Zinc (USD/tonne),3609.3
+2022-02,Copper (USD/tonne),9774.5
+2022-02,Fluorspar concentrate FF-97 (USD/tonne),335.0
+2022-02,Fluorspar ore FK-85 (USD/tonne),290.0
+2022-02,Gold (USD/troy oz),1817.8
+2022-02,"Iron concentrate, 60% (USD/tonne)",119.3
+2022-02,"Iron ore, 56% (USD/tonne)",97.6
+2022-02,Lead (USD/tonne),2342.0
+2022-02,"Manganese, 36% (USD/tonne)",189.8
+2022-02,Molybdenum (USD/tonne),41910.9
+2022-02,Silver (USD/troy oz),23.2
+2022-02,Tin (USD/tonne),41789.6
+2022-02,"Tungsten, 65% (USD/tonne)",17928.2
+2022-02,"Tungsten, 99% (USD/tonne)",43680.0
+2022-02,Uranium (USD/kg),95.0
+2022-02,Zinc (USD/tonne),3609.3
+2022-03,Copper (USD/tonne),9940.0
+2022-03,Fluorspar concentrate FF-97 (USD/tonne),370.0
+2022-03,Fluorspar ore FK-85 (USD/tonne),342.5
+2022-03,Gold (USD/troy oz),1857.0
+2022-03,"Iron concentrate, 60% (USD/tonne)",128.7
+2022-03,"Iron ore, 56% (USD/tonne)",109.7
+2022-03,Lead (USD/tonne),2299.2
+2022-03,"Manganese, 36% (USD/tonne)",191.1
+2022-03,Molybdenum (USD/tonne),41786.4
+2022-03,Silver (USD/troy oz),23.5
+2022-03,Tin (USD/tonne),44104.1
+2022-03,"Tungsten, 65% (USD/tonne)",18542.2
+2022-03,"Tungsten, 99% (USD/tonne)",46160.0
+2022-03,Uranium (USD/kg),107.5
+2022-03,Zinc (USD/tonne),3643.7
+2022-04,Copper (USD/tonne),10237.6
+2022-04,Gold (USD/troy oz),1947.6
+2022-04,"Iron concentrate, 60% (USD/tonne)",137.0
+2022-04,"Iron ore, 56% (USD/tonne)",111.4
+2022-04,Lead (USD/tonne),2359.5
+2022-04,"Manganese, 36% (USD/tonne)",201.7
+2022-04,Molybdenum (USD/tonne),42328.7
+2022-04,Silver (USD/troy oz),25.2
+2022-04,Tin (USD/tonne),44248.9
+2022-04,"Tungsten, 65% (USD/tonne)",18497.1
+2022-04,"Tungsten, 99% (USD/tonne)",47170.0
+2022-04,Uranium (USD/kg),128.3
+2022-04,Zinc (USD/tonne),3974.3
+2022-05,Copper (USD/tonne),10182.3
+2022-05,Fluorspar concentrate FF-97 (USD/tonne),370.0
+2022-05,Fluorspar ore FK-85 (USD/tonne),342.5
+2022-05,Gold (USD/troy oz),1936.3
+2022-05,"Iron concentrate, 60% (USD/tonne)",136.4
+2022-05,"Iron ore, 56% (USD/tonne)",93.0
+2022-05,Lead (USD/tonne),2396.1
+2022-05,"Manganese, 36% (USD/tonne)",203.5
+2022-05,Molybdenum (USD/tonne),42430.8
+2022-05,Silver (USD/troy oz),24.6
+2022-05,Tin (USD/tonne),43099.7
+2022-05,"Tungsten, 65% (USD/tonne)",18494.9
+2022-05,"Tungsten, 99% (USD/tonne)",47500.0
+2022-05,Uranium (USD/kg),116.8
+2022-05,Zinc (USD/tonne),4370.4
+2022-06,Copper (USD/tonne),9362.1
+2022-06,Fluorspar concentrate FF-97 (USD/tonne),370.0
+2022-06,Fluorspar ore FK-85 (USD/tonne),342.5
+2022-06,Gold (USD/troy oz),1849.9
+2022-06,"Iron concentrate, 60% (USD/tonne)",115.1
+2022-06,"Iron ore, 56% (USD/tonne)",77.5
+2022-06,Lead (USD/tonne),2144.5
+2022-06,"Manganese, 36% (USD/tonne)",201.2
+2022-06,Molybdenum (USD/tonne),41371.3
+2022-06,Silver (USD/troy oz),21.9
+2022-06,Tin (USD/tonne),35913.3
+2022-06,"Tungsten, 65% (USD/tonne)",16731.6
+2022-06,"Tungsten, 99% (USD/tonne)",45610.0
+2022-06,Uranium (USD/kg),105.3
+2022-06,Zinc (USD/tonne),3758.8
+2022-07,Copper (USD/tonne),9032.0
+2022-07,Fluorspar concentrate FF-97 (USD/tonne),370.0
+2022-07,Fluorspar ore FK-85 (USD/tonne),370.0
+2022-07,Gold (USD/troy oz),1789.2
+2022-07,"Iron concentrate, 60% (USD/tonne)",114.2
+2022-07,"Iron ore, 56% (USD/tonne)",85.5
+2022-07,Lead (USD/tonne),2066.7
+2022-07,"Manganese, 36% (USD/tonne)",211.1
+2022-07,Molybdenum (USD/tonne),38286.5
+2022-07,Silver (USD/troy oz),21.5
+2022-07,Tin (USD/tonne),31749.9
+2022-07,"Tungsten, 65% (USD/tonne)",16036.9
+2022-07,"Tungsten, 99% (USD/tonne)",42880.0
+2022-07,Uranium (USD/kg),109.7
+2022-07,Zinc (USD/tonne),3643.3
+2022-08,Copper (USD/tonne),7529.8
+2022-08,Fluorspar concentrate FF-97 (USD/tonne),355.0
+2022-08,Fluorspar ore FK-85 (USD/tonne),355.0
+2022-08,Gold (USD/troy oz),1737.6
+2022-08,"Iron concentrate, 60% (USD/tonne)",95.8
+2022-08,"Iron ore, 56% (USD/tonne)",76.5
+2022-08,Lead (USD/tonne),1976.3
+2022-08,"Manganese, 36% (USD/tonne)",210.5
+2022-08,Molybdenum (USD/tonne),31239.5
+2022-08,Silver (USD/troy oz),19.1
+2022-08,Tin (USD/tonne),25173.1
+2022-08,"Tungsten, 65% (USD/tonne)",16298.7
+2022-08,"Tungsten, 99% (USD/tonne)",42450.0
+2022-08,Zinc (USD/tonne),3097.2
+2022-09,Copper (USD/tonne),7960.3
+2022-09,Fluorspar concentrate FF-97 (USD/tonne),362.4
+2022-09,Fluorspar ore FK-85 (USD/tonne),355.0
+2022-09,Gold (USD/troy oz),1765.7
+2022-09,"Iron concentrate, 60% (USD/tonne)",96.0
+2022-09,"Iron ore, 56% (USD/tonne)",74.7
+2022-09,Lead (USD/tonne),2077.9
+2022-09,"Manganese, 36% (USD/tonne)",192.7
+2022-09,Molybdenum (USD/tonne),32529.2
+2022-09,Silver (USD/troy oz),19.8
+2022-09,Tin (USD/tonne),24494.6
+2022-09,"Tungsten, 65% (USD/tonne)",17154.7
+2022-09,"Tungsten, 99% (USD/tonne)",41960.0
+2022-09,Zinc (USD/tonne),3572.9
+2022-10,Copper (USD/tonne),7734.7
+2022-10,Fluorspar concentrate FF-97 (USD/tonne),362.4
+2022-10,Fluorspar ore FK-85 (USD/tonne),355.0
+2022-10,Gold (USD/troy oz),1648.2
+2022-10,"Iron concentrate, 60% (USD/tonne)",88.8
+2022-10,"Iron ore, 56% (USD/tonne)",69.5
+2022-10,Lead (USD/tonne),1874.5
+2022-10,"Manganese, 36% (USD/tonne)",172.1
+2022-10,Molybdenum (USD/tonne),37699.1
+2022-10,Silver (USD/troy oz),18.9
+2022-10,Tin (USD/tonne),21258.0
+2022-10,"Tungsten, 65% (USD/tonne)",16542.0
+2022-10,"Tungsten, 99% (USD/tonne)",41880.0
+2022-10,Zinc (USD/tonne),3136.4
+2022-11,Copper (USD/tonne),7621.2
+2022-11,Fluorspar concentrate FF-97 (USD/tonne),362.4
+2022-11,Fluorspar ore FK-85 (USD/tonne),355.0
+2022-11,Gold (USD/troy oz),1746.1
+2022-11,"Iron concentrate, 60% (USD/tonne)",83.7
+2022-11,"Iron ore, 56% (USD/tonne)",69.4
+2022-11,Lead (USD/tonne),1989.2
+2022-11,"Manganese, 36% (USD/tonne)",172.3
+2022-11,Molybdenum (USD/tonne),41667.4
+2022-11,Silver (USD/troy oz),18.3
+2022-11,Tin (USD/tonne),19406.2
+2022-11,"Tungsten, 65% (USD/tonne)",15155.3
+2022-11,"Tungsten, 99% (USD/tonne)",39470.0
+2022-11,Zinc (USD/tonne),2959.8
+2022-12,Copper (USD/tonne),8057.2
+2022-12,Fluorspar concentrate FF-97 (USD/tonne),362.4
+2022-12,Fluorspar ore FK-85 (USD/tonne),355.0
+2022-12,Gold (USD/troy oz),1803.7
+2022-12,"Iron concentrate, 60% (USD/tonne)",83.1
+2022-12,"Iron ore, 56% (USD/tonne)",69.1
+2022-12,Lead (USD/tonne),2099.8
+2022-12,"Manganese, 36% (USD/tonne)",170.8
+2022-12,Molybdenum (USD/tonne),42527.2
+2022-12,Silver (USD/troy oz),19.9
+2022-12,Tin (USD/tonne),21136.4
+2022-12,"Tungsten, 65% (USD/tonne)",15084.8
+2022-12,"Tungsten, 99% (USD/tonne)",39000.0
+2022-12,Zinc (USD/tonne),2923.5
+2023-01,Copper (USD/tonne),8367.2
+2023-01,Fluorspar concentrate FF-97 (USD/tonne),364.0
+2023-01,Fluorspar ore FK-85 (USD/tonne),355.5
+2023-01,Gold (USD/troy oz),1705.7
+2023-01,"Iron concentrate, 60% (USD/tonne)",100.6
+2023-01,"Iron ore, 56% (USD/tonne)",79.7
+2023-01,Lead (USD/tonne),2212.5
+2023-01,"Manganese, 36% (USD/tonne)",177.8
+2023-01,Molybdenum (USD/tonne),54784.9
+2023-01,Silver (USD/troy oz),20.9
+2023-01,Tin (USD/tonne),24099.0
+2023-01,"Tungsten, 65% (USD/tonne)",16137.0
+2023-01,"Tungsten, 99% (USD/tonne)",39360.0
+2023-01,Zinc (USD/tonne),3128.2
+2023-02,Copper (USD/tonne),8999.3
+2023-02,Fluorspar concentrate FF-97 (USD/tonne),415.0
+2023-02,Fluorspar ore FK-85 (USD/tonne),355.0
+2023-02,Gold (USD/troy oz),1898.2
+2023-02,"Iron concentrate, 60% (USD/tonne)",114.7
+2023-02,"Iron ore, 56% (USD/tonne)",90.8
+2023-02,Lead (USD/tonne),2208.2
+2023-02,"Manganese, 36% (USD/tonne)",186.4
+2023-02,Molybdenum (USD/tonne),69578.0
+2023-02,Silver (USD/troy oz),23.8
+2023-02,Tin (USD/tonne),28080.7
+2023-02,"Tungsten, 65% (USD/tonne)",17183.9
+2023-02,"Tungsten, 99% (USD/tonne)",40000.0
+2023-02,Uranium (USD/kg),111.6
+2023-02,Zinc (USD/tonne),3289.4
+2023-03,Copper (USD/tonne),8834.7
+2023-03,Fluorspar concentrate FF-97 (USD/tonne),415.0
+2023-03,Fluorspar ore FK-85 (USD/tonne),355.0
+2023-03,Gold (USD/troy oz),1912.7
+2023-03,"Iron concentrate, 60% (USD/tonne)",114.6
+2023-03,"Iron ore, 56% (USD/tonne)",96.4
+2023-03,Lead (USD/tonne),2114.1
+2023-03,"Manganese, 36% (USD/tonne)",189.8
+2023-03,Molybdenum (USD/tonne),68574.2
+2023-03,Silver (USD/troy oz),21.9
+2023-03,Tin (USD/tonne),23997.4
+2023-03,"Tungsten, 65% (USD/tonne)",17002.3
+2023-03,"Tungsten, 99% (USD/tonne)",41640.0
+2023-03,Uranium (USD/kg),111.3
+2023-03,Zinc (USD/tonne),2955.6
+2023-04,Copper (USD/tonne),8813.4
+2023-04,Fluorspar concentrate FF-97 (USD/tonne),415.0
+2023-04,Fluorspar ore FK-85 (USD/tonne),355.0
+2023-04,Gold (USD/troy oz),2000.4
+2023-04,"Iron concentrate, 60% (USD/tonne)",104.7
+2023-04,"Iron ore, 56% (USD/tonne)",87.8
+2023-04,Lead (USD/tonne),2148.3
+2023-04,"Manganese, 36% (USD/tonne)",175.9
+2023-04,Molybdenum (USD/tonne),45608.7
+2023-04,Silver (USD/troy oz),25.0
+2023-04,Tin (USD/tonne),25865.6
+2023-04,"Tungsten, 65% (USD/tonne)",16976.2
+2023-04,"Tungsten, 99% (USD/tonne)",41075.0
+2023-04,Uranium (USD/kg),116.7
+2023-04,Zinc (USD/tonne),2772.1
+2023-05,Copper (USD/tonne),8233.6
+2023-05,Fluorspar concentrate FF-97 (USD/tonne),415.0
+2023-05,Fluorspar ore FK-85 (USD/tonne),355.0
+2023-05,Gold (USD/troy oz),1988.7
+2023-05,"Iron concentrate, 60% (USD/tonne)",92.0
+2023-05,"Iron ore, 56% (USD/tonne)",76.8
+2023-05,Lead (USD/tonne),2086.8
+2023-05,"Manganese, 36% (USD/tonne)",164.2
+2023-05,Molybdenum (USD/tonne),46718.1
+2023-05,Silver (USD/troy oz),24.2
+2023-05,Tin (USD/tonne),25586.1
+2023-05,"Tungsten, 65% (USD/tonne)",17237.0
+2023-05,"Tungsten, 99% (USD/tonne)",41661.9
+2023-05,Uranium (USD/kg),0.0
+2023-05,Zinc (USD/tonne),2477.1
+2023-06,Copper (USD/tonne),8385.6
+2023-06,Fluorspar concentrate FF-97 (USD/tonne),415.0
+2023-06,Fluorspar ore FK-85 (USD/tonne),355.0
+2023-06,Gold (USD/troy oz),1942.9
+2023-06,"Iron concentrate, 60% (USD/tonne)",100.6
+2023-06,"Iron ore, 56% (USD/tonne)",81.6
+2023-06,Lead (USD/tonne),2117.6
+2023-06,"Manganese, 36% (USD/tonne)",157.5
+2023-06,Molybdenum (USD/tonne),49138.0
+2023-06,Silver (USD/troy oz),23.4
+2023-06,Tin (USD/tonne),27243.3
+2023-06,"Tungsten, 65% (USD/tonne)",16859.7
+2023-06,"Tungsten, 99% (USD/tonne)",41776.2
+2023-06,Uranium (USD/kg),123.7
+2023-06,Zinc (USD/tonne),2367.6
+2023-07,Copper (USD/tonne),8444.6
+2023-07,Fluorspar concentrate FF-97 (USD/tonne),415.0
+2023-07,Fluorspar ore FK-85 (USD/tonne),355.0
+2023-07,Gold (USD/troy oz),1948.9
+2023-07,"Iron concentrate, 60% (USD/tonne)",101.3
+2023-07,"Iron ore, 56% (USD/tonne)",83.7
+2023-07,Lead (USD/tonne),2106.1
+2023-07,"Manganese, 36% (USD/tonne)",153.2
+2023-07,Molybdenum (USD/tonne),49503.2
+2023-07,Silver (USD/troy oz),24.0
+2023-07,Tin (USD/tonne),28727.9
+2023-07,"Tungsten, 65% (USD/tonne)",16487.7
+2023-07,"Tungsten, 99% (USD/tonne)",40061.9
+2023-07,Uranium (USD/kg),124.3
+2023-07,Zinc (USD/tonne),2396.0
+2023-08,Copper (USD/tonne),8351.2
+2023-08,Fluorspar concentrate FF-97 (USD/tonne),415.0
+2023-08,Fluorspar ore FK-85 (USD/tonne),365.0
+2023-08,Gold (USD/troy oz),1920.1
+2023-08,"Iron concentrate, 60% (USD/tonne)",97.4
+2023-08,"Iron ore, 56% (USD/tonne)",79.7
+2023-08,Lead (USD/tonne),2151.1
+2023-08,"Manganese, 36% (USD/tonne)",151.2
+2023-08,Molybdenum (USD/tonne),54574.4
+2023-08,Silver (USD/troy oz),23.4
+2023-08,Tin (USD/tonne),25974.7
+2023-08,"Tungsten, 65% (USD/tonne)",16557.9
+2023-08,"Tungsten, 99% (USD/tonne)",38800.0
+2023-08,Uranium (USD/kg),123.7
+2023-08,Zinc (USD/tonne),2400.5
+2023-09,Copper (USD/tonne),8270.2
+2023-09,Fluorspar concentrate FF-97 (USD/tonne),415.0
+2023-09,Fluorspar ore FK-85 (USD/tonne),365.0
+2023-09,Gold (USD/troy oz),1917.0
+2023-09,"Iron concentrate, 60% (USD/tonne)",97.4
+2023-09,"Iron ore, 56% (USD/tonne)",79.7
+2023-09,Lead (USD/tonne),2151.1
+2023-09,"Manganese, 36% (USD/tonne)",151.2
+2023-09,Molybdenum (USD/tonne),54574.4
+2023-09,Silver (USD/troy oz),23.2
+2023-09,Tin (USD/tonne),25974.7
+2023-09,"Tungsten, 65% (USD/tonne)",16557.9
+2023-09,"Tungsten, 99% (USD/tonne)",38800.0
+2023-09,Uranium (USD/kg),157.8
+2023-09,Zinc (USD/tonne),2487.8
+2023-10,Copper (USD/tonne),7939.2
+2023-10,Fluorspar concentrate FF-97 (USD/tonne),415.0
+2023-10,Fluorspar ore FK-85 (USD/tonne),365.0
+2023-10,Gold (USD/troy oz),1913.0
+2023-10,"Iron concentrate, 60% (USD/tonne)",105.0
+2023-10,"Iron ore, 56% (USD/tonne)",91.5
+2023-10,Lead (USD/tonne),2135.8
+2023-10,"Manganese, 36% (USD/tonne)",152.0
+2023-10,Molybdenum (USD/tonne),45232.8
+2023-10,Silver (USD/troy oz),22.3
+2023-10,Tin (USD/tonne),24597.1
+2023-10,"Tungsten, 65% (USD/tonne)",16366.9
+2023-10,"Tungsten, 99% (USD/tonne)",38500.0
+2023-10,Uranium (USD/kg),164.0
+2023-10,Zinc (USD/tonne),2448.8
+2023-11,Copper (USD/tonne),8173.5
+2023-11,Fluorspar concentrate FF-97 (USD/tonne),415.0
+2023-11,Fluorspar ore FK-85 (USD/tonne),365.0
+2023-11,Gold (USD/troy oz),1985.3
+2023-11,"Iron concentrate, 60% (USD/tonne)",117.7
+2023-11,"Iron ore, 56% (USD/tonne)",103.7
+2023-11,Lead (USD/tonne),2184.6
+2023-11,"Manganese, 36% (USD/tonne)",152.6
+2023-11,Molybdenum (USD/tonne),38310.3
+2023-11,Silver (USD/troy oz),23.4
+2023-11,Tin (USD/tonne),24203.6
+2023-11,"Tungsten, 65% (USD/tonne)",16491.1
+2023-11,"Tungsten, 99% (USD/tonne)",38481.8
+2023-11,Uranium (USD/kg),179.1
+2023-11,Zinc (USD/tonne),2543.3
+2023-12,Copper (USD/tonne),8393.6
+2023-12,Fluorspar concentrate FF-97 (USD/tonne),415.0
+2023-12,Fluorspar ore FK-85 (USD/tonne),365.0
+2023-12,Gold (USD/troy oz),2029.3
+2023-12,"Iron concentrate, 60% (USD/tonne)",119.4
+2023-12,"Iron ore, 56% (USD/tonne)",104.4
+2023-12,Lead (USD/tonne),2035.8
+2023-12,"Manganese, 36% (USD/tonne)",152.1
+2023-12,Molybdenum (USD/tonne),40337.6
+2023-12,Silver (USD/troy oz),24.0
+2023-12,Tin (USD/tonne),24592.0
+2023-12,"Tungsten, 65% (USD/tonne)",16974.9
+2023-12,"Tungsten, 99% (USD/tonne)",39014.3
+2023-12,Uranium (USD/kg),200.6
+2023-12,Zinc (USD/tonne),2501.3
+2024-01,Copper (USD/tonne),8343.5
+2024-01,Fluorspar concentrate FF-97 (USD/tonne),415.0
+2024-01,Fluorspar ore FK-85 (USD/tonne),365.0
+2024-01,Gold (USD/troy oz),2034.0
+2024-01,"Iron concentrate, 60% (USD/tonne)",121.6
+2024-01,"Iron ore, 56% (USD/tonne)",106.6
+2024-01,Lead (USD/tonne),2086.9
+2024-01,"Manganese, 36% (USD/tonne)",156.4
+2024-01,Molybdenum (USD/tonne),43744.7
+2024-01,Silver (USD/troy oz),23.0
+2024-01,Tin (USD/tonne),25186.6
+2024-01,"Tungsten, 65% (USD/tonne)",16992.9
+2024-01,"Tungsten, 99% (USD/tonne)",39354.6
+2024-01,Uranium (USD/kg),221.0
+2024-01,Zinc (USD/tonne),2520.9
+2024-02,Copper (USD/tonne),8310.1
+2024-02,Fluorspar concentrate FF-97 (USD/tonne),415.0
+2024-02,Fluorspar ore FK-85 (USD/tonne),365.0
+2024-02,Gold (USD/troy oz),2023.2
+2024-02,"Iron concentrate, 60% (USD/tonne)",113.8
+2024-02,"Iron ore, 56% (USD/tonne)",99.5
+2024-02,Lead (USD/tonne),2083.6
+2024-02,"Manganese, 36% (USD/tonne)",160.8
+2024-02,Molybdenum (USD/tonne),43781.7
+2024-02,Silver (USD/troy oz),22.7
+2024-02,Tin (USD/tonne),26140.5
+2024-02,"Tungsten, 65% (USD/tonne)",17154.6
+2024-02,"Tungsten, 99% (USD/tonne)",39633.3
+2024-02,Uranium (USD/kg),209.4
+2024-02,Zinc (USD/tonne),2363.9
+2024-03,Copper (USD/tonne),8675.1
+2024-03,Fluorspar concentrate FF-97 (USD/tonne),415.0
+2024-03,Fluorspar ore FK-85 (USD/tonne),365.0
+2024-03,Gold (USD/troy oz),2158.0
+2024-03,"Iron concentrate, 60% (USD/tonne)",94.8
+2024-03,"Iron ore, 56% (USD/tonne)",79.9
+2024-03,Lead (USD/tonne),2056.4
+2024-03,"Manganese, 36% (USD/tonne)",162.4
+2024-03,Molybdenum (USD/tonne),44234.6
+2024-03,Silver (USD/troy oz),24.5
+2024-03,Tin (USD/tonne),27430.9
+2024-03,"Tungsten, 65% (USD/tonne)",17476.4
+2024-03,"Tungsten, 99% (USD/tonne)",39919.1
+2024-03,Uranium (USD/kg),193.5
+2024-03,Zinc (USD/tonne),2461.9
+2024-04,Copper (USD/tonne),9481.5
+2024-04,Fluorspar concentrate FF-97 (USD/tonne),495.0
+2024-04,Fluorspar ore FK-85 (USD/tonne),365.0
+2024-04,Gold (USD/troy oz),2335.5
+2024-04,"Iron concentrate, 60% (USD/tonne)",96.7
+2024-04,"Iron ore, 56% (USD/tonne)",75.7
+2024-04,Lead (USD/tonne),2129.2
+2024-04,"Manganese, 36% (USD/tonne)",171.7
+2024-04,Molybdenum (USD/tonne),43920.2
+2024-04,Silver (USD/troy oz),27.6
+2024-04,Tin (USD/tonne),31829.0
+2024-04,"Tungsten, 65% (USD/tonne)",18379.1
+2024-04,"Tungsten, 99% (USD/tonne)",40972.7
+2024-04,Uranium (USD/kg),196.2
+2024-04,Zinc (USD/tonne),2730.1
+2024-05,Copper (USD/tonne),10128.4
+2024-05,Fluorspar concentrate FF-97 (USD/tonne),470.0
+2024-05,Fluorspar ore FK-85 (USD/tonne),370.0
+2024-05,Gold (USD/troy oz),2352.1
+2024-05,"Iron concentrate, 60% (USD/tonne)",104.4
+2024-05,"Iron ore, 56% (USD/tonne)",82.9
+2024-05,Lead (USD/tonne),2220.6
+2024-05,"Manganese, 36% (USD/tonne)",253.0
+2024-05,Molybdenum (USD/tonne),48150.0
+2024-05,Silver (USD/troy oz),29.4
+2024-05,Tin (USD/tonne),33139.8
+2024-05,"Tungsten, 65% (USD/tonne)",20975.1
+2024-05,"Tungsten, 99% (USD/tonne)",46761.9
+2024-05,Uranium (USD/kg),199.3
+2024-05,Zinc (USD/tonne),2955.1
+2024-06,Copper (USD/tonne),9640.7
+2024-06,Fluorspar concentrate FF-97 (USD/tonne),470.0
+2024-06,Fluorspar ore FK-85 (USD/tonne),370.0
+2024-06,Gold (USD/troy oz),2326.3
+2024-06,"Iron concentrate, 60% (USD/tonne)",93.7
+2024-06,"Iron ore, 56% (USD/tonne)",74.1
+2024-06,Lead (USD/tonne),2147.2
+2024-06,"Manganese, 36% (USD/tonne)",263.9
+2024-06,Molybdenum (USD/tonne),51330.2
+2024-06,Silver (USD/troy oz),29.6
+2024-06,Tin (USD/tonne),32216.4
+2024-06,"Tungsten, 65% (USD/tonne)",20407.5
+2024-06,"Tungsten, 99% (USD/tonne)",48184.2
+2024-06,Uranium (USD/kg),185.7
+2024-06,Zinc (USD/tonne),2812.4
+2024-07,Copper (USD/tonne),9393.2
+2024-07,Fluorspar concentrate FF-97 (USD/tonne),472.5
+2024-07,Fluorspar ore FK-85 (USD/tonne),372.5
+2024-07,Gold (USD/troy oz),2395.3
+2024-07,"Iron concentrate, 60% (USD/tonne)",92.9
+2024-07,"Iron ore, 56% (USD/tonne)",73.6
+2024-07,Lead (USD/tonne),2113.8
+2024-07,"Manganese, 36% (USD/tonne)",214.0
+2024-07,Molybdenum (USD/tonne),50047.7
+2024-07,Silver (USD/troy oz),29.7
+2024-07,Tin (USD/tonne),31987.4
+2024-07,"Tungsten, 65% (USD/tonne)",18266.4
+2024-07,"Tungsten, 99% (USD/tonne)",46160.9
+2024-07,Uranium (USD/kg),185.7
+2024-07,Zinc (USD/tonne),2784.7
+2024-08,Copper (USD/tonne),8963.2
+2024-08,Fluorspar concentrate FF-97 (USD/tonne),472.5
+2024-08,Fluorspar ore FK-85 (USD/tonne),372.5
+2024-08,Gold (USD/troy oz),2468.0
+2024-08,"Iron concentrate, 60% (USD/tonne)",86.0
+2024-08,"Iron ore, 56% (USD/tonne)",68.8
+2024-08,Lead (USD/tonne),2001.8
+2024-08,"Manganese, 36% (USD/tonne)",174.9
+2024-08,Molybdenum (USD/tonne),46563.7
+2024-08,Silver (USD/troy oz),28.5
+2024-08,Tin (USD/tonne),31499.8
+2024-08,"Tungsten, 65% (USD/tonne)",18905.9
+2024-08,"Tungsten, 99% (USD/tonne)",45331.8
+2024-08,Uranium (USD/kg),173.1
+2024-08,Zinc (USD/tonne),2709.2
+2024-09,Copper (USD/tonne),9253.9
+2024-09,Fluorspar concentrate FF-97 (USD/tonne),472.5
+2024-09,Fluorspar ore FK-85 (USD/tonne),372.5
+2024-09,Gold (USD/troy oz),2567.1
+2024-09,"Iron concentrate, 60% (USD/tonne)",79.9
+2024-09,"Iron ore, 56% (USD/tonne)",64.4
+2024-09,Lead (USD/tonne),2006.7
+2024-09,"Manganese, 36% (USD/tonne)",164.0
+2024-09,Molybdenum (USD/tonne),47532.7
+2024-09,Silver (USD/troy oz),30.0
+2024-09,Tin (USD/tonne),31625.1
+2024-09,"Tungsten, 65% (USD/tonne)",19518.5
+2024-09,"Tungsten, 99% (USD/tonne)",46473.7
+2024-09,Uranium (USD/kg),180.8
+2024-09,Zinc (USD/tonne),2840.3
+2024-10,Copper (USD/tonne),9538.8
+2024-10,Fluorspar concentrate FF-97 (USD/tonne),472.5
+2024-10,Fluorspar ore FK-85 (USD/tonne),372.5
+2024-10,Gold (USD/troy oz),2690.1
+2024-10,"Iron concentrate, 60% (USD/tonne)",90.9
+2024-10,"Iron ore, 56% (USD/tonne)",74.6
+2024-10,Lead (USD/tonne),2035.2
+2024-10,"Manganese, 36% (USD/tonne)",156.5
+2024-10,Molybdenum (USD/tonne),48252.4
+2024-10,Silver (USD/troy oz),32.4
+2024-10,Tin (USD/tonne),32201.6
+2024-10,"Tungsten, 65% (USD/tonne)",19821.9
+2024-10,"Tungsten, 99% (USD/tonne)",46973.7
+2024-10,Uranium (USD/kg),177.5
+2024-10,Zinc (USD/tonne),3102.5
+2024-11,Copper (USD/tonne),9074.3
+2024-11,Fluorspar concentrate FF-97 (USD/tonne),472.5
+2024-11,Fluorspar ore FK-85 (USD/tonne),372.5
+2024-11,Gold (USD/troy oz),2650.7
+2024-11,"Iron concentrate, 60% (USD/tonne)",89.4
+2024-11,"Iron ore, 56% (USD/tonne)",73.9
+2024-11,Lead (USD/tonne),1987.8
+2024-11,"Manganese, 36% (USD/tonne)",158.8
+2024-11,Molybdenum (USD/tonne),48185.6
+2024-11,Silver (USD/troy oz),31.1
+2024-11,Tin (USD/tonne),29753.0
+2024-11,"Tungsten, 65% (USD/tonne)",19766.9
+2024-11,"Tungsten, 99% (USD/tonne)",47171.4
+2024-11,Uranium (USD/kg),170.0
+2024-11,Zinc (USD/tonne),2998.6
+2024-12,Copper (USD/tonne),8919.2
+2024-12,Fluorspar concentrate FF-97 (USD/tonne),472.5
+2024-12,Fluorspar ore FK-85 (USD/tonne),372.5
+2024-12,Gold (USD/troy oz),2644.1
+2024-12,"Iron concentrate, 60% (USD/tonne)",93.2
+2024-12,"Iron ore, 56% (USD/tonne)",76.7
+2024-12,Lead (USD/tonne),1993.5
+2024-12,"Manganese, 36% (USD/tonne)",163.0
+2024-12,Molybdenum (USD/tonne),47260.4
+2024-12,Silver (USD/troy oz),30.5
+2024-12,Tin (USD/tonne),28861.3
+2024-12,"Tungsten, 65% (USD/tonne)",19534.6
+2024-12,"Tungsten, 99% (USD/tonne)",47000.0
+2024-12,Uranium (USD/kg),160.1
+2024-12,Zinc (USD/tonne),3042.5
+2025-01,Copper (USD/tonne),8977.2
+2025-01,Fluorspar concentrate FF-97 (USD/tonne),472.5
+2025-01,Fluorspar ore FK-85 (USD/tonne),372.5
+2025-01,Gold (USD/troy oz),2709.7
+2025-01,"Iron concentrate, 60% (USD/tonne)",91.3
+2025-01,"Iron ore, 56% (USD/tonne)",75.6
+2025-01,Lead (USD/tonne),1921.2
+2025-01,"Manganese, 36% (USD/tonne)",170.2
+2025-01,Molybdenum (USD/tonne),45966.3
+2025-01,Silver (USD/troy oz),30.4
+2025-01,Tin (USD/tonne),29603.9
+2025-01,"Tungsten, 65% (USD/tonne)",19702.3
+2025-01,"Tungsten, 99% (USD/tonne)",47035.2
+2025-01,Uranium (USD/kg),152.7
+2025-01,Zinc (USD/tonne),2824.8
+2025-02,Copper (USD/tonne),9328.7
+2025-02,Fluorspar concentrate FF-97 (USD/tonne),472.5
+2025-02,Fluorspar ore FK-85 (USD/tonne),372.5
+2025-02,Gold (USD/troy oz),2894.7
+2025-02,"Iron concentrate, 60% (USD/tonne)",96.3
+2025-02,"Iron ore, 56% (USD/tonne)",79.6
+2025-02,Lead (USD/tonne),1954.7
+2025-02,"Manganese, 36% (USD/tonne)",192.3
+2025-02,Molybdenum (USD/tonne),45517.7
+2025-02,Silver (USD/troy oz),32.2
+2025-02,Tin (USD/tonne),31860.5
+2025-02,"Tungsten, 65% (USD/tonne)",19766.3
+2025-02,"Tungsten, 99% (USD/tonne)",47200.0
+2025-02,Uranium (USD/kg),143.4
+2025-02,Zinc (USD/tonne),2799.2
+2025-03,Copper (USD/tonne),9730.6
+2025-03,Fluorspar concentrate FF-97 (USD/tonne),472.5
+2025-03,Fluorspar ore FK-85 (USD/tonne),372.5
+2025-03,Gold (USD/troy oz),2983.3
+2025-03,"Iron concentrate, 60% (USD/tonne)",89.2
+2025-03,"Iron ore, 56% (USD/tonne)",71.8
+2025-03,Lead (USD/tonne),2033.1
+2025-03,"Manganese, 36% (USD/tonne)",187.8
+2025-03,Molybdenum (USD/tonne),44654.1
+2025-03,Silver (USD/troy oz),33.2
+2025-03,Tin (USD/tonne),34012.5
+2025-03,"Tungsten, 65% (USD/tonne)",19357.7
+2025-03,"Tungsten, 99% (USD/tonne)",47200.0
+2025-03,Uranium (USD/kg),141.6
+2025-03,Zinc (USD/tonne),2887.4
+2025-04,Copper (USD/tonne),9191.5
+2025-04,Fluorspar concentrate FF-97 (USD/tonne),470.0
+2025-04,Fluorspar ore FK-85 (USD/tonne),372.5
+2025-04,Gold (USD/troy oz),3207.5
+2025-04,"Iron concentrate, 60% (USD/tonne)",88.9
+2025-04,"Iron ore, 56% (USD/tonne)",70.0
+2025-04,Lead (USD/tonne),1908.5
+2025-04,"Manganese, 36% (USD/tonne)",169.2
+2025-04,Molybdenum (USD/tonne),43891.8
+2025-04,Silver (USD/troy oz),32.3
+2025-04,Tin (USD/tonne),32670.9
+2025-04,"Tungsten, 65% (USD/tonne)",19888.6
+2025-04,"Tungsten, 99% (USD/tonne)",47750.0
+2025-04,Uranium (USD/kg),149.3
+2025-04,Zinc (USD/tonne),2624.8
+2025-05,Copper (USD/tonne),9529.1
+2025-05,Fluorspar concentrate FF-97 (USD/tonne),490.0
+2025-05,Fluorspar ore FK-85 (USD/tonne),410.0
+2025-05,Gold (USD/troy oz),3278.0
+2025-05,"Iron concentrate, 60% (USD/tonne)",88.4
+2025-05,"Iron ore, 56% (USD/tonne)",70.1
+2025-05,Lead (USD/tonne),1957.6
+2025-05,"Manganese, 36% (USD/tonne)",164.5
+2025-05,Molybdenum (USD/tonne),44329.4
+2025-05,Silver (USD/troy oz),32.7
+2025-05,Tin (USD/tonne),32126.0
+2025-05,"Tungsten, 65% (USD/tonne)",22445.2
+2025-05,"Tungsten, 99% (USD/tonne)",51347.4
+2025-05,Uranium (USD/kg),157.7
+2025-05,Zinc (USD/tonne),2645.7
+2025-06,Copper (USD/tonne),9833.0
+2025-06,Fluorspar concentrate FF-97 (USD/tonne),490.0
+2025-06,Fluorspar ore FK-85 (USD/tonne),410.0
+2025-06,Gold (USD/troy oz),3352.0
+2025-06,"Iron concentrate, 60% (USD/tonne)",82.9
+2025-06,"Iron ore, 56% (USD/tonne)",66.1
+2025-06,Lead (USD/tonne),1972.3
+2025-06,"Manganese, 36% (USD/tonne)",164.3
+2025-06,Molybdenum (USD/tonne),48125.8
+2025-06,Silver (USD/troy oz),35.9
+2025-06,Tin (USD/tonne),32462.4
+2025-06,"Tungsten, 65% (USD/tonne)",24024.7
+2025-06,"Tungsten, 99% (USD/tonne)",55275.0
+2025-06,Uranium (USD/kg),173.5
+2025-06,Zinc (USD/tonne),2650.4
+2025-07,Copper (USD/tonne),9777.7
+2025-07,Fluorspar concentrate FF-97 (USD/tonne),560.0
+2025-07,Fluorspar ore FK-85 (USD/tonne),410.0
+2025-07,Gold (USD/troy oz),3338.3
+2025-07,"Iron concentrate, 60% (USD/tonne)",88.6
+2025-07,"Iron ore, 56% (USD/tonne)",71.7
+2025-07,Lead (USD/tonne),1994.3
+2025-07,"Manganese, 36% (USD/tonne)",168.0
+2025-07,Molybdenum (USD/tonne),50225.1
+2025-07,Silver (USD/troy oz),37.7
+2025-07,Tin (USD/tonne),33676.6
+2025-07,"Tungsten, 65% (USD/tonne)",25266.0
+2025-07,"Tungsten, 99% (USD/tonne)",58391.3
+2025-07,Uranium (USD/kg),156.7
+2025-07,Zinc (USD/tonne),2758.4
+2025-08,Copper (USD/tonne),9645.5
+2025-08,Fluorspar concentrate FF-97 (USD/tonne),520.0
+2025-08,Fluorspar ore FK-85 (USD/tonne),410.0
+2025-08,Gold (USD/troy oz),3363.0
+2025-08,"Iron concentrate, 60% (USD/tonne)",89.9
+2025-08,"Iron ore, 56% (USD/tonne)",72.3
+2025-08,Lead (USD/tonne),1944.6
+2025-08,"Manganese, 36% (USD/tonne)",175.6
+2025-08,Molybdenum (USD/tonne),53940.4
+2025-08,Silver (USD/troy oz),37.9
+2025-08,Tin (USD/tonne),33854.6
+2025-08,"Tungsten, 65% (USD/tonne)",29515.2
+2025-08,"Tungsten, 99% (USD/tonne)",68738.1
+2025-08,Uranium (USD/kg),165.6
+2025-08,Zinc (USD/tonne),2783.9
+2025-09,Copper (USD/tonne),9952.09
+2025-09,Fluorspar concentrate FF-97 (USD/tonne),520.0
+2025-09,Fluorspar ore FK-85 (USD/tonne),410.0
+2025-09,Gold (USD/troy oz),3665.2
+2025-09,"Iron concentrate, 60% (USD/tonne)",93.12
+2025-09,"Iron ore, 56% (USD/tonne)",75.19
+2025-09,Lead (USD/tonne),1953.95
+2025-09,"Manganese, 36% (USD/tonne)",174.78
+2025-09,Molybdenum (USD/tonne),56161.69
+2025-09,Silver (USD/troy oz),42.54
+2025-09,Tin (USD/tonne),34517.27
+2025-09,"Tungsten, 65% (USD/tonne)",38935.15
+2025-09,"Tungsten, 99% (USD/tonne)",90750.0
+2025-09,Uranium (USD/kg),82.17
+2025-09,Zinc (USD/tonne),2929.48
+2025-10,Copper (USD/tonne),10695.6
+2025-10,Fluorspar concentrate FF-97 (USD/tonne),520.0
+2025-10,Fluorspar ore FK-85 (USD/tonne),410.0
+2025-10,Gold (USD/troy oz),4053.3
+2025-10,"Iron concentrate, 60% (USD/tonne)",93.6
+2025-10,"Iron ore, 56% (USD/tonne)",75.7
+2025-10,Lead (USD/tonne),1967.7
+2025-10,"Manganese, 36% (USD/tonne)",174.0
+2025-10,Molybdenum (USD/tonne),54827.9
+2025-10,Silver (USD/troy oz),49.4
+2025-10,Tin (USD/tonne),36033.6
+2025-10,"Tungsten, 65% (USD/tonne)",38865.0
+2025-10,"Tungsten, 99% (USD/tonne)",92527.8
+2025-10,Uranium (USD/kg),176.4
+2025-10,Zinc (USD/tonne),3148.5
+2025-11,Copper (USD/tonne),10800.0
+2025-11,Fluorspar concentrate FF-97 (USD/tonne),520.0
+2025-11,Fluorspar ore FK-85 (USD/tonne),420.0
+2025-11,Gold (USD/troy oz),4083.0
+2025-11,"Iron concentrate, 60% (USD/tonne)",92.9
+2025-11,"Iron ore, 56% (USD/tonne)",75.0
+2025-11,Lead (USD/tonne),2001.2
+2025-11,"Manganese, 36% (USD/tonne)",173.3
+2025-11,Molybdenum (USD/tonne),49878.4
+2025-11,Silver (USD/troy oz),50.7
+2025-11,Tin (USD/tonne),37003.6
+2025-11,"Tungsten, 65% (USD/tonne)",45304.8
+2025-11,"Tungsten, 99% (USD/tonne)",105575.0
+2025-11,Uranium (USD/kg),167.1
+2025-11,Zinc (USD/tonne),3186.7
+2025-12,Copper (USD/tonne),11802.8
+2025-12,Fluorspar concentrate FF-97 (USD/tonne),520.0
+2025-12,Fluorspar ore FK-85 (USD/tonne),420.0
+2025-12,Gold (USD/troy oz),4300.0
+2025-12,"Iron concentrate, 60% (USD/tonne)",94.3
+2025-12,"Iron ore, 56% (USD/tonne)",73.8
+2025-12,Lead (USD/tonne),1941.8
+2025-12,"Manganese, 36% (USD/tonne)",176.3
+2025-12,Molybdenum (USD/tonne),47192.5
+2025-12,Silver (USD/troy oz),64.3
+2025-12,Tin (USD/tonne),41334.4
+2025-12,"Tungsten, 65% (USD/tonne)",57063.3
+2025-12,"Tungsten, 99% (USD/tonne)",132804.4
+2025-12,Uranium (USD/kg),179.8
+2025-12,Zinc (USD/tonne),3159.2
+2026-01,Copper (USD/tonne),13088.1
+2026-01,Fluorspar concentrate FF-97 (USD/tonne),520.0
+2026-01,Fluorspar ore FK-85 (USD/tonne),420.0
+2026-01,Gold (USD/troy oz),4717.6
+2026-01,"Iron concentrate, 60% (USD/tonne)",96.7
+2026-01,"Iron ore, 56% (USD/tonne)",76.3
+2026-01,Lead (USD/tonne),1997.5
+2026-01,"Manganese, 36% (USD/tonne)",179.0
+2026-01,Molybdenum (USD/tonne),51270.0
+2026-01,Silver (USD/troy oz),90.1
+2026-01,Tin (USD/tonne),49884.1
+2026-01,"Tungsten, 65% (USD/tonne)",73474.3
+2026-01,"Tungsten, 99% (USD/tonne)",183833.3
+2026-01,Uranium (USD/kg),207.9
+2026-01,Zinc (USD/tonne),3219.8
+2026-02,Copper (USD/tonne),12967.2
+2026-02,Fluorspar concentrate FF-97 (USD/tonne),520.0
+2026-02,Fluorspar ore FK-85 (USD/tonne),420.0
+2026-02,Gold (USD/troy oz),5028.6
+2026-02,"Iron concentrate, 60% (USD/tonne)",90.4
+2026-02,"Iron ore, 56% (USD/tonne)",71.5
+2026-02,Lead (USD/tonne),1915.6
+2026-02,"Manganese, 36% (USD/tonne)",185.7
+2026-02,Molybdenum (USD/tonne),58218.5
+2026-02,Silver (USD/troy oz),81.9
+2026-02,Tin (USD/tonne),48649.0
+2026-02,"Tungsten, 65% (USD/tonne)",101906.1
+2026-02,"Tungsten, 99% (USD/tonne)",248892.9
+2026-02,Uranium (USD/kg),191.7
+2026-02,Zinc (USD/tonne),3320.1
+2026-03,Copper (USD/tonne),12498.35
+2026-03,Fluorspar concentrate FF-97 (USD/tonne),520.0
+2026-03,Fluorspar ore FK-85 (USD/tonne),420.0
+2026-03,Gold (USD/troy oz),4868.73
+2026-03,"Iron concentrate, 60% (USD/tonne)",94.0
+2026-03,"Iron ore, 56% (USD/tonne)",73.51
+2026-03,Lead (USD/tonne),1879.3
+2026-03,"Manganese, 36% (USD/tonne)",203.57
+2026-03,Molybdenum (USD/tonne),59257.18
+2026-03,Silver (USD/troy oz),78.29
+2026-03,Tin (USD/tonne),47494.32
+2026-03,"Tungsten, 65% (USD/tonne)",139968.32
+2026-03,"Tungsten, 99% (USD/tonne)",343954.55
+2026-03,Uranium (USD/kg),185.74
+2026-03,Zinc (USD/tonne),3187.34
+2026-04,Copper (USD/tonne),12890.73
+2026-04,Fluorspar concentrate FF-97 (USD/tonne),520.0
+2026-04,Fluorspar ore FK-85 (USD/tonne),425.0
+2026-04,Gold (USD/troy oz),4724.95
+2026-04,"Iron concentrate, 60% (USD/tonne)",94.16
+2026-04,"Iron ore, 56% (USD/tonne)",70.22
+2026-04,Lead (USD/tonne),1922.18
+2026-04,"Manganese, 36% (USD/tonne)",223.32
+2026-04,Molybdenum (USD/tonne),60017.47
+2026-04,Silver (USD/troy oz),75.88
+2026-04,Tin (USD/tonne),48924.38
+2026-04,"Tungsten, 65% (USD/tonne)",128963.55
+2026-04,"Tungsten, 99% (USD/tonne)",364350.0
+2026-04,Uranium (USD/kg),190.37
+2026-04,Zinc (USD/tonne),3360.36
+2026-05,Copper (USD/tonne),13506.29
+2026-05,Fluorspar concentrate FF-97 (USD/tonne),520.0
+2026-05,Fluorspar ore FK-85 (USD/tonne),425.0
+2026-05,Gold (USD/troy oz),4590.66
+2026-05,"Iron concentrate, 60% (USD/tonne)",93.12
+2026-05,"Iron ore, 56% (USD/tonne)",67.91
+2026-05,Lead (USD/tonne),1990.47
+2026-05,"Manganese, 36% (USD/tonne)",206.06
+2026-05,Molybdenum (USD/tonne),65694.2
+2026-05,Silver (USD/troy oz),77.76
+2026-05,Tin (USD/tonne),53670.92
+2026-05,"Tungsten, 65% (USD/tonne)",75989.56
+2026-05,"Tungsten, 99% (USD/tonne)",274473.68
+2026-05,Uranium (USD/kg),185.58
+2026-05,Zinc (USD/tonne),3487.55
+2026-06,Copper (USD/tonne),13573.81
+2026-06,Fluorspar concentrate FF-97 (USD/tonne),520.0
+2026-06,Fluorspar ore FK-85 (USD/tonne),425.0
+2026-06,Gold (USD/troy oz),4219.03
+2026-06,"Iron concentrate, 60% (USD/tonne)",87.63
+2026-06,"Iron ore, 56% (USD/tonne)",62.02
+2026-06,Lead (USD/tonne),1950.59
+2026-06,"Manganese, 36% (USD/tonne)",198.99
+2026-06,Molybdenum (USD/tonne),68391.32
+2026-06,Silver (USD/troy oz),65.77
+2026-06,Tin (USD/tonne),53331.7
+2026-06,"Tungsten, 65% (USD/tonne)",70928.66
+2026-06,"Tungsten, 99% (USD/tonne)",218047.62
+2026-06,Uranium (USD/kg),187.39
+2026-06,Zinc (USD/tonne),3539.93
+2026-07,Copper (USD/tonne),13524.52
+2026-07,Fluorspar concentrate FF-97 (USD/tonne),520.0
+2026-07,Fluorspar ore FK-85 (USD/tonne),425.0
+2026-07,Gold (USD/troy oz),4077.8
+2026-07,"Iron concentrate, 60% (USD/tonne)",86.21
+2026-07,"Iron ore, 56% (USD/tonne)",59.67
+2026-07,Lead (USD/tonne),1843.55
+2026-07,"Manganese, 36% (USD/tonne)",193.9
+2026-07,Molybdenum (USD/tonne),70211.4
+2026-07,Silver (USD/troy oz),58.8
+2026-07,Tin (USD/tonne),53088.8
+2026-07,"Tungsten, 65% (USD/tonne)",62943.87
+2026-07,"Tungsten, 99% (USD/tonne)",205652.17
+2026-07,Uranium (USD/kg),190.43
+2026-07,Zinc (USD/tonne),3595.53

@@ -1,196 +1,196 @@
-year,month,province,fuel_grade,price_mnt_per_liter
-2021,1,National Average,AI-92,1446.0
-2021,2,National Average,AI-92,1488.5
-2021,3,National Average,AI-92,1488.5
-2021,4,National Average,AI-92,1519.5
-2021,5,National Average,AI-92,1533.0
-2021,6,National Average,AI-92,1533.0
-2021,7,National Average,AI-92,1830.5
-2021,8,National Average,AI-92,1867.0
-2021,9,National Average,AI-92,2132.0
-2021,10,National Average,AI-92,2178.5
-2021,11,National Average,AI-92,2178.5
-2021,12,National Average,AI-92,2401.0
-2022,1,National Average,AI-92,2401.0
-2022,2,National Average,AI-92,2449.5
-2022,3,National Average,AI-92,2546.2
-2022,4,National Average,AI-92,2541.4
-2022,5,National Average,AI-92,2541.4
-2022,6,National Average,AI-92,3001.4
-2022,7,National Average,AI-92,3001.4
-2022,8,National Average,AI-92,3002.7
-2022,9,National Average,AI-92,2548.2
-2022,10,National Average,AI-92,2556.4
-2022,11,National Average,AI-92,2556.4
-2022,12,National Average,AI-92,2395.0
-2023,1,National Average,AI-92,2556.4
-2023,2,National Average,AI-92,2556.4
-2023,3,National Average,AI-92,2556.4
-2023,4,National Average,AI-92,2556.4
-2023,5,National Average,AI-92,2556.4
-2023,6,National Average,AI-92,2556.4
-2023,7,National Average,AI-92,2556.4
-2023,9,National Average,AI-92,2558.2
-2023,10,National Average,AI-92,2558.2
-2023,12,National Average,AI-92,2558.2
-2024,1,National Average,AI-92,2558.2
-2024,2,National Average,AI-92,2558.2
-2024,3,National Average,AI-92,2558.2
-2024,4,National Average,AI-92,2565.2
-2024,5,National Average,AI-92,2558.2
-2024,6,National Average,AI-92,2558.2
-2024,7,National Average,AI-92,2558.2
-2024,8,National Average,AI-92,2558.2
-2024,9,National Average,AI-92,2558.2
-2024,10,National Average,AI-92,2558.2
-2024,11,National Average,AI-92,2558.2
-2024,12,National Average,AI-92,2558.2
-2025,1,National Average,AI-92,2558.2
-2025,2,National Average,AI-92,2558.2
-2025,3,National Average,AI-92,2558.2
-2025,4,National Average,AI-92,2558.2
-2025,5,National Average,AI-92,2558.2
-2025,6,National Average,AI-92,2558.2
-2025,7,National Average,AI-92,2558.2
-2025,8,National Average,AI-92,2558.2
-2025,9,National Average,AI-92,2558.2
-2025,10,National Average,AI-92,2799.5
-2025,11,National Average,AI-92,2810.5
-2025,12,National Average,AI-92,2838.6
-2026,1,National Average,AI-92,2847.7
-2026,2,National Average,AI-92,2843.2
-2026,3,National Average,AI-92,2834.1
-2026,4,National Average,AI-92,2798.2
-2026,5,National Average,AI-92,2795.9
-2026,6,National Average,AI-92,2795.9
-2026,7,National Average,AI-92,3076.1
-2021,2,National Average,AI-92 Euro-5,1556.5
-2021,5,National Average,AI-92 Euro-5,1557.1
-2021,6,National Average,AI-92 Euro-5,1558.6
-2021,7,National Average,AI-92 Euro-5,1558.6
-2021,10,National Average,AI-92 Euro-5,2178.1
-2021,12,National Average,AI-92 Euro-5,2331.9
-2022,1,National Average,AI-92 Euro-5,2430.5
-2022,2,National Average,AI-92 Euro-5,2449.8
-2022,3,National Average,AI-92 Euro-5,2496.2
-2022,4,National Average,AI-92 Euro-5,2490.5
-2022,5,National Average,AI-92 Euro-5,2586.6
-2022,6,National Average,AI-92 Euro-5,2586.6
-2022,9,National Average,AI-92 Euro-5,2583.4
-2022,10,National Average,AI-92 Euro-5,2577.5
-2022,11,National Average,AI-92 Euro-5,2575.5
-2022,12,National Average,AI-92 Euro-5,2434.3
-2023,1,National Average,AI-92 Euro-5,2443.0
-2023,2,National Average,AI-92 Euro-5,2443.0
-2023,3,National Average,AI-92 Euro-5,2443.0
-2023,4,National Average,AI-92 Euro-5,2586.6
-2023,5,National Average,AI-92 Euro-5,2586.6
-2023,6,National Average,AI-92 Euro-5,2584.3
-2023,7,National Average,AI-92 Euro-5,2584.3
-2023,9,National Average,AI-92 Euro-5,2577.5
-2023,10,National Average,AI-92 Euro-5,2575.5
-2023,11,National Average,AI-92 Euro-5,2580.0
-2023,12,National Average,AI-92 Euro-5,2575.5
-2024,1,National Average,AI-92 Euro-5,2581.4
-2024,2,National Average,AI-92 Euro-5,2581.4
-2024,3,National Average,AI-92 Euro-5,2575.5
-2024,4,National Average,AI-92 Euro-5,2575.5
-2024,5,National Average,AI-92 Euro-5,2575.5
-2024,6,National Average,AI-92 Euro-5,2576.8
-2024,7,National Average,AI-92 Euro-5,2576.8
-2024,8,National Average,AI-92 Euro-5,2584.5
-2024,9,National Average,AI-92 Euro-5,2580.5
-2024,10,National Average,AI-92 Euro-5,2580.0
-2024,11,National Average,AI-92 Euro-5,2580.0
-2024,12,National Average,AI-92 Euro-5,2581.4
-2025,1,National Average,AI-92 Euro-5,2581.4
-2025,2,National Average,AI-92 Euro-5,2581.4
-2025,3,National Average,AI-92 Euro-5,2581.4
-2025,4,National Average,AI-92 Euro-5,2587.0
-2025,5,National Average,AI-92 Euro-5,2587.0
-2025,6,National Average,AI-92 Euro-5,2587.0
-2025,7,National Average,AI-92 Euro-5,2587.0
-2025,8,National Average,AI-92 Euro-5,2581.4
-2025,9,National Average,AI-92 Euro-5,2581.4
-2025,10,National Average,AI-92 Euro-5,2359.0
-2025,11,National Average,AI-92 Euro-5,3113.1
-2025,12,National Average,AI-92 Euro-5,3113.1
-2026,1,National Average,AI-92 Euro-5,3214.4
-2026,2,National Average,AI-92 Euro-5,3203.8
-2026,3,National Average,AI-92 Euro-5,3204.4
-2026,4,National Average,AI-92 Euro-5,3203.8
-2026,5,National Average,AI-92 Euro-5,3209.4
-2026,6,National Average,AI-92 Euro-5,3203.8
-2026,7,National Average,AI-92 Euro-5,3508.7
-2023,11,National Average,AI-95,4052.4
-2023,12,National Average,AI-95,3868.4
-2024,1,National Average,AI-95,4058.6
-2024,2,National Average,AI-95,4058.6
-2024,3,National Average,AI-95,3851.0
-2024,4,National Average,AI-95,3829.5
-2024,5,National Average,AI-95,3381.4
-2024,6,National Average,AI-95,3856.7
-2024,7,National Average,AI-95,3856.7
-2024,8,National Average,AI-95,3852.9
-2024,9,National Average,AI-95,3854.3
-2024,10,National Average,AI-95,3855.2
-2024,11,National Average,AI-95,4058.6
-2024,12,National Average,AI-95,4058.6
-2025,1,National Average,AI-95,4069.5
-2025,2,National Average,AI-95,4069.5
-2025,3,National Average,AI-95,4069.5
-2025,4,National Average,AI-95,4068.9
-2025,5,National Average,AI-95,4068.9
-2025,6,National Average,AI-95,4068.9
-2025,7,National Average,AI-95,4068.9
-2025,8,National Average,AI-95,4069.5
-2025,9,National Average,AI-95,4069.5
-2025,10,National Average,AI-95,3758.2
-2025,11,National Average,AI-95,3758.6
-2025,12,National Average,AI-95,3769.2
-2026,1,National Average,AI-95,3769.2
-2026,2,National Average,AI-95,3758.2
-2026,3,National Average,AI-95,3945.5
-2026,4,National Average,AI-95,4040.9
-2026,5,National Average,AI-95,4040.9
-2026,6,National Average,AI-95,4063.6
-2026,7,National Average,AI-95,4094.1
-2021,1,National Average,Diesel,2083.6
-2021,3,National Average,Diesel,2183.6
-2021,4,National Average,Diesel,2183.6
-2021,8,National Average,Diesel,2533.6
-2021,9,National Average,Diesel,2621.3
-2021,11,National Average,Diesel,2779.3
-2022,7,National Average,Diesel,4338.2
-2022,8,National Average,Diesel,4028.4
-2022,12,National Average,Diesel,4050.0
-2025,10,National Average,Diesel,3136.4
-2025,11,National Average,Diesel,3437.3
-2025,12,National Average,Diesel,3688.9
-2026,1,National Average,Diesel,3688.9
-2026,2,National Average,Diesel,3440.9
-2026,3,National Average,Diesel,3815.9
-2026,4,National Average,Diesel,4513.6
-2026,5,National Average,Diesel,4602.3
-2026,6,National Average,Diesel,4619.5
-2026,7,National Average,Diesel,4492.3
-2021,1,National Average,Diesel Euro-5,1976.5
-2021,3,National Average,Diesel Euro-5,2113.3
-2021,4,National Average,Diesel Euro-5,2125.2
-2021,7,National Average,Diesel Euro-5,104.3
-2021,8,National Average,Diesel Euro-5,2035.7
-2021,9,National Average,Diesel Euro-5,2452.4
-2021,11,National Average,Diesel Euro-5,2548.6
-2022,7,National Average,Diesel Euro-5,3742.0
-2022,8,National Average,Diesel Euro-5,4046.9
-2022,12,National Average,Diesel Euro-5,2883.2
-2023,11,National Average,Diesel Euro-5,3969.5
-2025,10,National Average,Diesel Euro-5,3630.0
-2025,11,National Average,Diesel Euro-5,3993.0
-2025,12,National Average,Diesel Euro-5,4191.2
-2026,1,National Average,Diesel Euro-5,4191.2
-2026,3,National Average,Diesel Euro-5,4173.5
-2026,4,National Average,Diesel Euro-5,4852.6
-2026,5,National Average,Diesel Euro-5,5078.9
-2026,6,National Average,Diesel Euro-5,5139.5
-2026,7,National Average,Diesel Euro-5,5131.5
+month,metric,value
+2021-01,AI-92,1446.0
+2021-01,Diesel,2083.6
+2021-01,Diesel Euro-5,1976.5
+2021-02,AI-92,1488.5
+2021-02,AI-92 Euro-5,1556.5
+2021-03,AI-92,1488.5
+2021-03,Diesel,2183.6
+2021-03,Diesel Euro-5,2113.3
+2021-04,AI-92,1519.5
+2021-04,Diesel,2183.6
+2021-04,Diesel Euro-5,2125.2
+2021-05,AI-92,1533.0
+2021-05,AI-92 Euro-5,1557.1
+2021-06,AI-92,1533.0
+2021-06,AI-92 Euro-5,1558.6
+2021-07,AI-92,1830.5
+2021-07,AI-92 Euro-5,1558.6
+2021-07,Diesel Euro-5,104.3
+2021-08,AI-92,1867.0
+2021-08,Diesel,2533.6
+2021-08,Diesel Euro-5,2035.7
+2021-09,AI-92,2132.0
+2021-09,Diesel,2621.3
+2021-09,Diesel Euro-5,2452.4
+2021-10,AI-92,2178.5
+2021-10,AI-92 Euro-5,2178.1
+2021-11,AI-92,2178.5
+2021-11,Diesel,2779.3
+2021-11,Diesel Euro-5,2548.6
+2021-12,AI-92,2401.0
+2021-12,AI-92 Euro-5,2331.9
+2022-01,AI-92,2401.0
+2022-01,AI-92 Euro-5,2430.5
+2022-02,AI-92,2449.5
+2022-02,AI-92 Euro-5,2449.8
+2022-03,AI-92,2546.2
+2022-03,AI-92 Euro-5,2496.2
+2022-04,AI-92,2541.4
+2022-04,AI-92 Euro-5,2490.5
+2022-05,AI-92,2541.4
+2022-05,AI-92 Euro-5,2586.6
+2022-06,AI-92,3001.4
+2022-06,AI-92 Euro-5,2586.6
+2022-07,AI-92,3001.4
+2022-07,Diesel,4338.2
+2022-07,Diesel Euro-5,3742.0
+2022-08,AI-92,3002.7
+2022-08,Diesel,4028.4
+2022-08,Diesel Euro-5,4046.9
+2022-09,AI-92,2548.2
+2022-09,AI-92 Euro-5,2583.4
+2022-10,AI-92,2556.4
+2022-10,AI-92 Euro-5,2577.5
+2022-11,AI-92,2556.4
+2022-11,AI-92 Euro-5,2575.5
+2022-12,AI-92,2395.0
+2022-12,AI-92 Euro-5,2434.3
+2022-12,Diesel,4050.0
+2022-12,Diesel Euro-5,2883.2
+2023-01,AI-92,2556.4
+2023-01,AI-92 Euro-5,2443.0
+2023-02,AI-92,2556.4
+2023-02,AI-92 Euro-5,2443.0
+2023-03,AI-92,2556.4
+2023-03,AI-92 Euro-5,2443.0
+2023-04,AI-92,2556.4
+2023-04,AI-92 Euro-5,2586.6
+2023-05,AI-92,2556.4
+2023-05,AI-92 Euro-5,2586.6
+2023-06,AI-92,2556.4
+2023-06,AI-92 Euro-5,2584.3
+2023-07,AI-92,2556.4
+2023-07,AI-92 Euro-5,2584.3
+2023-09,AI-92,2558.2
+2023-09,AI-92 Euro-5,2577.5
+2023-10,AI-92,2558.2
+2023-10,AI-92 Euro-5,2575.5
+2023-11,AI-92 Euro-5,2580.0
+2023-11,AI-95,4052.4
+2023-11,Diesel Euro-5,3969.5
+2023-12,AI-92,2558.2
+2023-12,AI-92 Euro-5,2575.5
+2023-12,AI-95,3868.4
+2024-01,AI-92,2558.2
+2024-01,AI-92 Euro-5,2581.4
+2024-01,AI-95,4058.6
+2024-02,AI-92,2558.2
+2024-02,AI-92 Euro-5,2581.4
+2024-02,AI-95,4058.6
+2024-03,AI-92,2558.2
+2024-03,AI-92 Euro-5,2575.5
+2024-03,AI-95,3851.0
+2024-04,AI-92,2565.2
+2024-04,AI-92 Euro-5,2575.5
+2024-04,AI-95,3829.5
+2024-05,AI-92,2558.2
+2024-05,AI-92 Euro-5,2575.5
+2024-05,AI-95,3381.4
+2024-06,AI-92,2558.2
+2024-06,AI-92 Euro-5,2576.8
+2024-06,AI-95,3856.7
+2024-07,AI-92,2558.2
+2024-07,AI-92 Euro-5,2576.8
+2024-07,AI-95,3856.7
+2024-08,AI-92,2558.2
+2024-08,AI-92 Euro-5,2584.5
+2024-08,AI-95,3852.9
+2024-09,AI-92,2558.2
+2024-09,AI-92 Euro-5,2580.5
+2024-09,AI-95,3854.3
+2024-10,AI-92,2558.2
+2024-10,AI-92 Euro-5,2580.0
+2024-10,AI-95,3855.2
+2024-11,AI-92,2558.2
+2024-11,AI-92 Euro-5,2580.0
+2024-11,AI-95,4058.6
+2024-12,AI-92,2558.2
+2024-12,AI-92 Euro-5,2581.4
+2024-12,AI-95,4058.6
+2025-01,AI-92,2558.2
+2025-01,AI-92 Euro-5,2581.4
+2025-01,AI-95,4069.5
+2025-02,AI-92,2558.2
+2025-02,AI-92 Euro-5,2581.4
+2025-02,AI-95,4069.5
+2025-03,AI-92,2558.2
+2025-03,AI-92 Euro-5,2581.4
+2025-03,AI-95,4069.5
+2025-04,AI-92,2558.2
+2025-04,AI-92 Euro-5,2587.0
+2025-04,AI-95,4068.9
+2025-05,AI-92,2558.2
+2025-05,AI-92 Euro-5,2587.0
+2025-05,AI-95,4068.9
+2025-06,AI-92,2558.2
+2025-06,AI-92 Euro-5,2587.0
+2025-06,AI-95,4068.9
+2025-07,AI-92,2558.2
+2025-07,AI-92 Euro-5,2587.0
+2025-07,AI-95,4068.9
+2025-08,AI-92,2558.2
+2025-08,AI-92 Euro-5,2581.4
+2025-08,AI-95,4069.5
+2025-09,AI-92,2558.2
+2025-09,AI-92 Euro-5,2581.4
+2025-09,AI-95,4069.5
+2025-10,AI-92,2799.5
+2025-10,AI-92 Euro-5,2359.0
+2025-10,AI-95,3758.2
+2025-10,Diesel,3136.4
+2025-10,Diesel Euro-5,3630.0
+2025-11,AI-92,2810.5
+2025-11,AI-92 Euro-5,3113.1
+2025-11,AI-95,3758.6
+2025-11,Diesel,3437.3
+2025-11,Diesel Euro-5,3993.0
+2025-12,AI-92,2838.6
+2025-12,AI-92 Euro-5,3113.1
+2025-12,AI-95,3769.2
+2025-12,Diesel,3688.9
+2025-12,Diesel Euro-5,4191.2
+2026-01,AI-92,2847.7
+2026-01,AI-92 Euro-5,3214.4
+2026-01,AI-95,3769.2
+2026-01,Diesel,3688.9
+2026-01,Diesel Euro-5,4191.2
+2026-02,AI-92,2843.2
+2026-02,AI-92 Euro-5,3203.8
+2026-02,AI-95,3758.2
+2026-02,Diesel,3440.9
+2026-03,AI-92,2834.1
+2026-03,AI-92 Euro-5,3204.4
+2026-03,AI-95,3945.5
+2026-03,Diesel,3815.9
+2026-03,Diesel Euro-5,4173.5
+2026-04,AI-92,2798.2
+2026-04,AI-92 Euro-5,3203.8
+2026-04,AI-95,4040.9
+2026-04,Diesel,4513.6
+2026-04,Diesel Euro-5,4852.6
+2026-05,AI-92,2795.9
+2026-05,AI-92 Euro-5,3209.4
+2026-05,AI-95,4040.9
+2026-05,Diesel,4602.3
+2026-05,Diesel Euro-5,5078.9
+2026-06,AI-92,2795.9
+2026-06,AI-92 Euro-5,3203.8
+2026-06,AI-95,4063.6
+2026-06,Diesel,4619.5
+2026-06,Diesel Euro-5,5139.5
+2026-07,AI-92,3076.1
+2026-07,AI-92 Euro-5,3508.7
+2026-07,AI-95,4094.1
+2026-07,Diesel,4492.3
+2026-07,Diesel Euro-5,5131.5

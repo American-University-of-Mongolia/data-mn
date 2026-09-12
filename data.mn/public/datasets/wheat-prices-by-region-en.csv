@@ -1,995 +1,995 @@
-product,region,date,price
-Wheat,Arkhangai,2018-12,550000.0
-Wheat,Bulgan,2018-12,527000.0
-Wheat seed,Bulgan,2018-12,667000.0
-Wheat,Dornod,2018-12,550000.0
-Wheat seed,Dornod,2018-12,500000.0
-Wheat,Orkhon,2018-12,560000.0
-Wheat seed,Orkhon,2018-12,760000.0
-Wheat,Selenge,2018-12,530000.0
-Wheat seed,Selenge,2018-12,560000.0
-Wheat,Tuv,2018-12,562000.0
-Wheat seed,Tuv,2018-12,602500.0
-Wheat,Uvs,2018-12,500000.0
-Wheat,Uvurkhangai,2018-12,600000.0
-Wheat seed,Uvurkhangai,2018-12,400000.0
-Wheat seed,Zavkhan,2018-12,760000.0
-Wheat,Arkhangai,2019-01,500000.0
-Wheat,Bulgan,2019-01,530000.0
-Wheat seed,Bulgan,2019-01,650000.0
-Wheat,Dornod,2019-01,600000.0
-Wheat seed,Dornod,2019-01,550000.0
-Wheat,Orkhon,2019-01,560000.0
-Wheat seed,Orkhon,2019-01,760000.0
-Wheat,Selenge,2019-01,500000.0
-Wheat,Tuv,2019-01,570000.0
-Wheat seed,Tuv,2019-01,543000.0
-Wheat,Uvs,2019-01,600000.0
-Wheat seed,Uvs,2019-01,700000.0
-Wheat,Uvurkhangai,2019-01,450000.0
-Wheat,Arkhangai,2019-02,500000.0
-Wheat,Bulgan,2019-02,500000.0
-Wheat,Orkhon,2019-02,560000.0
-Wheat seed,Orkhon,2019-02,760000.0
-Wheat,Selenge,2019-02,500000.0
-Wheat,Tuv,2019-02,600000.0
-Wheat seed,Tuv,2019-02,625000.0
-Wheat,Uvs,2019-02,500000.0
-Wheat seed,Uvs,2019-02,600000.0
-Wheat,Zavkhan,2019-02,600000.0
-Wheat,Bulgan,2019-03,450000.0
-Wheat,Orkhon,2019-03,560000.0
-Wheat seed,Orkhon,2019-03,760000.0
-Wheat,Selenge,2019-03,500000.0
-Wheat,Tuv,2019-03,582000.0
-Wheat seed,Tuv,2019-03,604000.0
-Wheat,Uvs,2019-03,500000.0
-Wheat seed,Uvs,2019-03,600000.0
-Wheat,Zavkhan,2019-03,600000.0
-Wheat seed,Zavkhan,2019-03,500000.0
-Wheat,Bulgan,2019-04,515000.0
-Wheat seed,Bulgan,2019-04,650000.0
-Wheat,Orkhon,2019-04,560000.0
-Wheat seed,Orkhon,2019-04,820000.0
-Wheat,Selenge,2019-04,500000.0
-Wheat,Tuv,2019-04,567000.0
-Wheat seed,Tuv,2019-04,655000.0
-Wheat seed,Uvs,2019-04,650000.0
-Wheat,Bulgan,2019-05,530000.0
-Wheat seed,Bulgan,2019-05,675000.0
-Wheat,Orkhon,2019-05,560000.0
-Wheat seed,Orkhon,2019-05,800000.0
-Wheat,Selenge,2019-05,533000.0
-Wheat seed,Selenge,2019-05,800000.0
-Wheat,Tuv,2019-05,577500.0
-Wheat seed,Tuv,2019-05,776000.0
-Wheat seed,Uvs,2019-05,800000.0
-Wheat,Bulgan,2019-06,540000.0
-Wheat seed,Bulgan,2019-06,650000.0
-Wheat,Orkhon,2019-06,560000.0
-Wheat seed,Orkhon,2019-06,830000.0
-Wheat,Selenge,2019-06,500000.0
-Wheat,Tuv,2019-06,583000.0
-Wheat seed,Tuv,2019-06,765000.0
-Wheat seed,Uvurkhangai,2019-06,800000.0
-Wheat,Bulgan,2019-07,530000.0
-Wheat seed,Bulgan,2019-07,650000.0
-Wheat,Orkhon,2019-07,560000.0
-Wheat seed,Orkhon,2019-07,830000.0
-Wheat,Selenge,2019-07,500000.0
-Wheat,Tuv,2019-07,550000.0
-Wheat seed,Tuv,2019-07,750000.0
-Wheat,Bulgan,2019-08,530000.0
-Wheat seed,Bulgan,2019-08,650000.0
-Wheat,Orkhon,2019-08,560000.0
-Wheat seed,Orkhon,2019-08,830000.0
-Wheat,Selenge,2019-08,500000.0
-Wheat,Tuv,2019-08,530000.0
-Wheat,Arkhangai,2019-09,450000.0
-Wheat seed,Arkhangai,2019-09,730000.0
-Wheat,Orkhon,2019-09,560000.0
-Wheat seed,Orkhon,2019-09,830000.0
-Wheat,Selenge,2019-09,540000.0
-Wheat seed,Selenge,2019-09,600000.0
-Wheat,Tuv,2019-09,560000.0
-Wheat seed,Tuv,2019-09,687000.0
-Wheat,Uvs,2019-09,500000.0
-Wheat,Arkhangai,2019-10,450000.0
-Wheat seed,Arkhangai,2019-10,730000.0
-Wheat,Orkhon,2019-10,560000.0
-Wheat seed,Orkhon,2019-10,830000.0
-Wheat,Selenge,2019-10,545000.0
-Wheat seed,Selenge,2019-10,650000.0
-Wheat,Tuv,2019-10,565000.0
-Wheat seed,Tuv,2019-10,632500.0
-Wheat,Uvs,2019-10,360000.0
-Wheat seed,Uvs,2019-10,750000.0
-Wheat,Arkhangai,2019-11,450000.0
-Wheat seed,Arkhangai,2019-11,730000.0
-Wheat,Bulgan,2019-11,566667.0
-Wheat seed,Bulgan,2019-11,625000.0
-Wheat,Orkhon,2019-11,560000.0
-Wheat seed,Orkhon,2019-11,830000.0
-Wheat,Selenge,2019-11,543333.0
-Wheat seed,Selenge,2019-11,700000.0
-Wheat,Tuv,2019-11,640000.0
-Wheat seed,Tuv,2019-11,516250.0
-Wheat,Uvs,2019-11,655000.0
-Wheat seed,Uvs,2019-11,800000.0
-Wheat seed,Zavkhan,2019-11,450000.0
-Wheat,Arkhangai,2019-12,450000.0
-Wheat seed,Arkhangai,2019-12,730000.0
-Wheat,Bulgan,2019-12,625000.0
-Wheat seed,Bulgan,2019-12,650000.0
-Wheat,Orkhon,2019-12,560000.0
-Wheat seed,Orkhon,2019-12,830000.0
-Wheat,Selenge,2019-12,584000.0
-Wheat seed,Selenge,2019-12,650000.0
-Wheat,Tuv,2019-12,580000.0
-Wheat seed,Tuv,2019-12,588333.0
-Wheat,Uvs,2019-12,575000.0
-Wheat seed,Uvs,2019-12,600000.0
-Wheat,Zavkhan,2019-12,600000.0
-Wheat seed,Zavkhan,2019-12,550000.0
-Wheat,Arkhangai,2020-01,450000.0
-Wheat seed,Arkhangai,2020-01,780000.0
-Wheat,Bulgan,2020-01,625000.0
-Wheat seed,Bulgan,2020-01,700000.0
-Wheat,Dornod,2020-01,600000.0
-Wheat seed,Dornod,2020-01,500000.0
-Wheat seed,Govi-Altai,2020-01,1200000.0
-Wheat,Orkhon,2020-01,600000.0
-Wheat seed,Orkhon,2020-01,820000.0
-Wheat,Selenge,2020-01,560000.0
-Wheat seed,Selenge,2020-01,560000.0
-Wheat,Tuv,2020-01,570000.0
-Wheat seed,Tuv,2020-01,676667.0
-Wheat,Uvs,2020-01,500000.0
-Wheat,Zavkhan,2020-01,600000.0
-Wheat,Arkhangai,2020-02,450000.0
-Wheat seed,Arkhangai,2020-02,780000.0
-Wheat,Bulgan,2020-02,650000.0
-Wheat seed,Bulgan,2020-02,850000.0
-Wheat,Dornod,2020-02,600000.0
-Wheat seed,Dornod,2020-02,500000.0
-Wheat,Orkhon,2020-02,600000.0
-Wheat seed,Orkhon,2020-02,800000.0
-Wheat,Selenge,2020-02,550000.0
-Wheat,Tuv,2020-02,566667.0
-Wheat seed,Tuv,2020-02,666667.0
-Wheat,Uvs,2020-02,500000.0
-Wheat,Zavkhan,2020-02,600000.0
-Wheat,Arkhangai,2020-03,450000.0
-Wheat seed,Arkhangai,2020-03,780000.0
-Wheat,Bulgan,2020-03,650000.0
-Wheat seed,Bulgan,2020-03,850000.0
-Wheat,Dornod,2020-03,600000.0
-Wheat seed,Dornod,2020-03,500000.0
-Wheat,Orkhon,2020-03,700000.0
-Wheat seed,Orkhon,2020-03,850000.0
-Wheat,Selenge,2020-03,550000.0
-Wheat,Tuv,2020-03,566667.0
-Wheat seed,Tuv,2020-03,670000.0
-Wheat,Uvs,2020-03,500000.0
-Wheat,Zavkhan,2020-03,600000.0
-Wheat,Arkhangai,2020-04,450000.0
-Wheat seed,Arkhangai,2020-04,850000.0
-Wheat,Bulgan,2020-04,650000.0
-Wheat seed,Bulgan,2020-04,900000.0
-Wheat,Dornod,2020-04,600000.0
-Wheat seed,Dornod,2020-04,950000.0
-Wheat,Khentii,2020-04,550000.0
-Wheat seed,Khentii,2020-04,550000.0
-Wheat,Orkhon,2020-04,700000.0
-Wheat seed,Orkhon,2020-04,750000.0
-Wheat,Selenge,2020-04,550000.0
-Wheat,Tuv,2020-04,525000.0
-Wheat seed,Tuv,2020-04,782000.0
-Wheat seed,Uvs,2020-04,625000.0
-Wheat,Uvurkhangai,2020-04,800000.0
-Wheat,Zavkhan,2020-04,600000.0
-Wheat,Arkhangai,2020-05,450000.0
-Wheat seed,Arkhangai,2020-05,900000.0
-Wheat,Bulgan,2020-05,650000.0
-Wheat seed,Bulgan,2020-05,912500.0
-Wheat,Dornod,2020-05,600000.0
-Wheat seed,Dornod,2020-05,950000.0
-Wheat,Khentii,2020-05,550000.0
-Wheat seed,Khentii,2020-05,550000.0
-Wheat,Orkhon,2020-05,690000.0
-Wheat seed,Orkhon,2020-05,750000.0
-Wheat,Selenge,2020-05,600000.0
-Wheat seed,Selenge,2020-05,842500.0
-Wheat,Tuv,2020-05,690000.0
-Wheat seed,Tuv,2020-05,816000.0
-Wheat,Uvs,2020-05,800000.0
-Wheat seed,Uvs,2020-05,675000.0
-Wheat,Zavkhan,2020-05,600000.0
-Wheat,Bulgan,2020-06,650000.0
-Wheat seed,Bulgan,2020-06,875000.0
-Wheat,Dornod,2020-06,600000.0
-Wheat seed,Dornod,2020-06,950000.0
-Wheat,Khentii,2020-06,550000.0
-Wheat seed,Khentii,2020-06,550000.0
-Wheat,Orkhon,2020-06,600000.0
-Wheat seed,Orkhon,2020-06,800000.0
-Wheat,Selenge,2020-06,550000.0
-Wheat,Tuv,2020-06,780000.0
-Wheat seed,Tuv,2020-06,926667.0
-Wheat,Dornod,2020-07,600000.0
-Wheat seed,Dornod,2020-07,950000.0
-Wheat,Khentii,2020-07,550000.0
-Wheat seed,Khentii,2020-07,550000.0
-Wheat,Orkhon,2020-07,600000.0
-Wheat seed,Orkhon,2020-07,800000.0
-Wheat,Selenge,2020-07,550000.0
-Wheat,Tuv,2020-07,780000.0
-Wheat seed,Tuv,2020-07,965000.0
-Wheat,Bulgan,2020-08,600000.0
-Wheat seed,Bulgan,2020-08,850000.0
-Wheat,Dornod,2020-08,600000.0
-Wheat seed,Dornod,2020-08,950000.0
-Wheat,Khentii,2020-08,550000.0
-Wheat seed,Khentii,2020-08,550000.0
-Wheat,Orkhon,2020-08,600000.0
-Wheat seed,Orkhon,2020-08,800000.0
-Wheat,Selenge,2020-08,550000.0
-Wheat,Tuv,2020-08,640000.0
-Wheat seed,Tuv,2020-08,890000.0
-Wheat,Bulgan,2020-09,525000.0
-Wheat seed,Bulgan,2020-09,700000.0
-Wheat,Dornod,2020-09,600000.0
-Wheat seed,Dornod,2020-09,950000.0
-Wheat,Orkhon,2020-09,600000.0
-Wheat seed,Orkhon,2020-09,800000.0
-Wheat,Selenge,2020-09,550000.0
-Wheat,Tuv,2020-09,643333.0
-Wheat seed,Tuv,2020-09,890000.0
-Wheat,Arkhangai,2020-10,700000.0
-Wheat,Bulgan,2020-10,556667.0
-Wheat seed,Bulgan,2020-10,773333.0
-Wheat,Dornod,2020-10,600000.0
-Wheat seed,Dornod,2020-10,950000.0
-Wheat,Orkhon,2020-10,600000.0
-Wheat seed,Orkhon,2020-10,800000.0
-Wheat,Selenge,2020-10,565000.0
-Wheat seed,Selenge,2020-10,683333.0
-Wheat,Tuv,2020-10,606000.0
-Wheat seed,Tuv,2020-10,807500.0
-Wheat,Zavkhan,2020-10,500000.0
-Wheat seed,Zavkhan,2020-10,675000.0
-Wheat,Arkhangai,2020-11,850000.0
-Wheat,Bulgan,2020-11,653333.0
-Wheat seed,Bulgan,2020-11,823333.0
-Wheat,Dornod,2020-11,5833.0
-Wheat,Orkhon,2020-11,700000.0
-Wheat seed,Orkhon,2020-11,800000.0
-Wheat,Selenge,2020-11,575000.0
-Wheat,Sukhbaatar,2020-11,7000.0
-Wheat,Tuv,2020-11,734000.0
-Wheat seed,Tuv,2020-11,912000.0
-Wheat seed,Uvs,2020-11,600000.0
-Wheat,Zavkhan,2020-11,500000.0
-Wheat seed,Zavkhan,2020-11,675000.0
-Wheat,Arkhangai,2020-12,900000.0
-Wheat,Bayankhongor,2020-12,900000.0
-Wheat,Bulgan,2020-12,670000.0
-Wheat seed,Bulgan,2020-12,775000.0
-Wheat,Dornod,2020-12,600000.0
-Wheat seed,Dornod,2020-12,900000.0
-Wheat,Orkhon,2020-12,660000.0
-Wheat seed,Orkhon,2020-12,830000.0
-Wheat,Selenge,2020-12,650000.0
-Wheat,Tuv,2020-12,786667.0
-Wheat seed,Tuv,2020-12,920000.0
-Wheat,Uvs,2020-12,700000.0
-Wheat seed,Uvs,2020-12,800000.0
-Wheat seed,Zavkhan,2020-12,650000.0
-Wheat,Bulgan,2021-01,680000.0
-Wheat seed,Bulgan,2021-01,850000.0
-Wheat,Dornod,2021-01,600000.0
-Wheat seed,Dornod,2021-01,900000.0
-Wheat seed,Khentii,2021-01,660000.0
-Wheat,Orkhon,2021-01,660000.0
-Wheat seed,Orkhon,2021-01,830000.0
-Wheat,Tuv,2021-01,677500.0
-Wheat seed,Tuv,2021-01,957500.0
-Wheat,Uvurkhangai,2021-01,900000.0
-Wheat seed,Uvurkhangai,2021-01,950000.0
-Wheat,Zavkhan,2021-01,600000.0
-Wheat seed,Zavkhan,2021-01,700000.0
-Wheat,Bulgan,2021-02,680000.0
-Wheat seed,Bulgan,2021-02,850000.0
-Wheat,Dornod,2021-02,600000.0
-Wheat seed,Dornod,2021-02,900000.0
-Wheat seed,Khentii,2021-02,660000.0
-Wheat,Orkhon,2021-02,660000.0
-Wheat seed,Orkhon,2021-02,830000.0
-Wheat,Tuv,2021-02,677500.0
-Wheat seed,Tuv,2021-02,830000.0
-Wheat seed,Uvs,2021-02,700000.0
-Wheat,Uvurkhangai,2021-02,850000.0
-Wheat seed,Uvurkhangai,2021-02,850000.0
-Wheat seed,Zavkhan,2021-02,650000.0
-Wheat,Bulgan,2021-03,680000.0
-Wheat seed,Bulgan,2021-03,850000.0
-Wheat,Dornod,2021-03,600000.0
-Wheat seed,Dornod,2021-03,900000.0
-Wheat seed,Khentii,2021-03,660000.0
-Wheat,Orkhon,2021-03,660000.0
-Wheat seed,Orkhon,2021-03,830000.0
-Wheat seed,Selenge,2021-03,700000.0
-Wheat,Tuv,2021-03,665000.0
-Wheat seed,Tuv,2021-03,850000.0
-Wheat seed,Zavkhan,2021-03,600000.0
-Wheat,Bulgan,2021-04,815000.0
-Wheat seed,Bulgan,2021-04,887500.0
-Wheat,Dornod,2021-04,600000.0
-Wheat seed,Dornod,2021-04,900000.0
-Wheat,Orkhon,2021-04,660000.0
-Wheat seed,Orkhon,2021-04,830000.0
-Wheat,Selenge,2021-04,850000.0
-Wheat seed,Selenge,2021-04,1000000.0
-Wheat,Tuv,2021-04,726667.0
-Wheat seed,Tuv,2021-04,970000.0
-Wheat seed,Ulaanbaatar,2021-04,900000.0
-Wheat seed,Uvs,2021-04,900000.0
-Wheat seed,Uvurkhangai,2021-04,925000.0
-Wheat seed,Arkhangai,2021-05,900000.0
-Wheat,Dornod,2021-05,600000.0
-Wheat seed,Dornod,2021-05,900000.0
-Wheat,Orkhon,2021-05,660000.0
-Wheat seed,Orkhon,2021-05,830000.0
-Wheat,Selenge,2021-05,600000.0
-Wheat seed,Selenge,2021-05,725000.0
-Wheat,Tuv,2021-05,793333.0
-Wheat seed,Tuv,2021-05,935625.0
-Wheat seed,Uvs,2021-05,1000000.0
-Wheat seed,Uvurkhangai,2021-05,925000.0
-Wheat,Bulgan,2021-06,680000.0
-Wheat seed,Bulgan,2021-06,900000.0
-Wheat,Dornod,2021-06,600000.0
-Wheat seed,Dornod,2021-06,900000.0
-Wheat,Orkhon,2021-06,660000.0
-Wheat seed,Orkhon,2021-06,820000.0
-Wheat seed,Selenge,2021-06,800000.0
-Wheat,Tuv,2021-06,860000.0
-Wheat seed,Tuv,2021-06,1107142.0
-Wheat seed,Uvurkhangai,2021-06,1200000.0
-Wheat,Bulgan,2021-07,680000.0
-Wheat seed,Bulgan,2021-07,900000.0
-Wheat,Dornod,2021-07,600000.0
-Wheat seed,Dornod,2021-07,900000.0
-Wheat,Orkhon,2021-07,660000.0
-Wheat seed,Orkhon,2021-07,830000.0
-Wheat,Tuv,2021-07,793333.0
-Wheat seed,Tuv,2021-07,1100000.0
-Wheat,Bulgan,2021-08,680000.0
-Wheat seed,Bulgan,2021-08,900000.0
-Wheat,Dornod,2021-08,600000.0
-Wheat seed,Dornod,2021-08,900000.0
-Wheat,Orkhon,2021-08,680000.0
-Wheat seed,Orkhon,2021-08,850000.0
-Wheat,Selenge,2021-08,600000.0
-Wheat seed,Selenge,2021-08,700000.0
-Wheat,Tuv,2021-08,870000.0
-Wheat seed,Tuv,2021-08,1120000.0
-Wheat,Arkhangai,2021-09,700000.0
-Wheat,Bulgan,2021-09,680000.0
-Wheat seed,Bulgan,2021-09,900000.0
-Wheat,Dornod,2021-09,600000.0
-Wheat seed,Dornod,2021-09,900000.0
-Wheat,Orkhon,2021-09,680000.0
-Wheat seed,Orkhon,2021-09,850000.0
-Wheat,Selenge,2021-09,675000.0
-Wheat seed,Selenge,2021-09,683000.0
-Wheat,Tuv,2021-09,843000.0
-Wheat seed,Tuv,2021-09,1233000.0
-Wheat,Arkhangai,2021-10,700000.0
-Wheat seed,Arkhangai,2021-10,700000.0
-Wheat,Bulgan,2021-10,690000.0
-Wheat seed,Bulgan,2021-10,850000.0
-Wheat,Dornod,2021-10,600000.0
-Wheat seed,Dornod,2021-10,900000.0
-Wheat,Orkhon,2021-10,680000.0
-Wheat seed,Orkhon,2021-10,850000.0
-Wheat,Selenge,2021-10,670000.0
-Wheat seed,Selenge,2021-10,700000.0
-Wheat,Tuv,2021-10,718000.0
-Wheat seed,Tuv,2021-10,875000.0
-Wheat,Uvs,2021-10,700000.0
-Wheat seed,Uvs,2021-10,800000.0
-Wheat seed,Zavkhan,2021-10,600000.0
-Wheat,Arkhangai,2021-11,650000.0
-Wheat,Bulgan,2021-11,500000.0
-Wheat seed,Bulgan,2021-11,700000.0
-Wheat,Orkhon,2021-11,680000.0
-Wheat seed,Orkhon,2021-11,850000.0
-Wheat,Selenge,2021-11,657500.0
-Wheat seed,Selenge,2021-11,750000.0
-Wheat,Tuv,2021-11,696000.0
-Wheat seed,Tuv,2021-11,792000.0
-Wheat,Uvs,2021-11,700000.0
-Wheat seed,Uvs,2021-11,1000000.0
-Wheat seed,Zavkhan,2021-11,700000.0
-Wheat,Arkhangai,2021-12,650000.0
-Wheat,Bulgan,2021-12,663333.0
-Wheat seed,Bulgan,2021-12,962500.0
-Wheat,Dornod,2021-12,600000.0
-Wheat seed,Dornod,2021-12,900000.0
-Wheat,Orkhon,2021-12,680000.0
-Wheat seed,Orkhon,2021-12,850000.0
-Wheat,Selenge,2021-12,566667.0
-Wheat seed,Selenge,2021-12,800000.0
-Wheat,Tuv,2021-12,675000.0
-Wheat seed,Tuv,2021-12,837500.0
-Wheat,Uvs,2021-12,700000.0
-Wheat seed,Uvs,2021-12,1000000.0
-Wheat,Uvurkhangai,2021-12,650000.0
-Wheat seed,Uvurkhangai,2021-12,850000.0
-Wheat seed,Zavkhan,2021-12,500000.0
-Wheat,Arkhangai,2022-01,750000.0
-Wheat,Bulgan,2022-01,663000.0
-Wheat seed,Bulgan,2022-01,962500.0
-Wheat,Dornod,2022-01,600000.0
-Wheat seed,Dornod,2022-01,900000.0
-Wheat seed,Khentii,2022-01,700000.0
-Wheat,Khuvsgul,2022-01,500000.0
-Wheat seed,Khuvsgul,2022-01,500000.0
-Wheat,Orkhon,2022-01,700000.0
-Wheat seed,Orkhon,2022-01,860000.0
-Wheat,Selenge,2022-01,620000.0
-Wheat seed,Selenge,2022-01,1200000.0
-Wheat,Tuv,2022-01,675000.0
-Wheat seed,Tuv,2022-01,950000.0
-Wheat,Uvs,2022-01,675000.0
-Wheat seed,Uvs,2022-01,1000000.0
-Wheat,Uvurkhangai,2022-01,630000.0
-Wheat seed,Uvurkhangai,2022-01,650000.0
-Wheat seed,Zavkhan,2022-01,500000.0
-Wheat,Arkhangai,2022-02,700000.0
-Wheat,Bulgan,2022-02,745000.0
-Wheat seed,Bulgan,2022-02,1050000.0
-Wheat,Dornod,2022-02,600000.0
-Wheat seed,Dornod,2022-02,900000.0
-Wheat,Khuvsgul,2022-02,500000.0
-Wheat seed,Khuvsgul,2022-02,500000.0
-Wheat,Orkhon,2022-02,700000.0
-Wheat seed,Orkhon,2022-02,860000.0
-Wheat,Selenge,2022-02,537500.0
-Wheat,Tuv,2022-02,537500.0
-Wheat seed,Tuv,2022-02,775000.0
-Wheat,Uvs,2022-02,700000.0
-Wheat seed,Uvs,2022-02,1000000.0
-Wheat,Uvurkhangai,2022-02,650000.0
-Wheat seed,Zavkhan,2022-02,650000.0
-Wheat,Arkhangai,2022-03,700000.0
-Wheat,Bulgan,2022-03,745000.0
-Wheat seed,Bulgan,2022-03,1050000.0
-Wheat,Darkhan-Uul,2022-03,550000.0
-Wheat seed,Darkhan-Uul,2022-03,650000.0
-Wheat,Dornod,2022-03,650000.0
-Wheat seed,Dornod,2022-03,900000.0
-Wheat,Orkhon,2022-03,700000.0
-Wheat seed,Orkhon,2022-03,800000.0
-Wheat,Selenge,2022-03,500000.0
-Wheat,Tuv,2022-03,550000.0
-Wheat seed,Tuv,2022-03,791667.0
-Wheat,Uvs,2022-03,700000.0
-Wheat seed,Uvs,2022-03,1000000.0
-Wheat,Uvurkhangai,2022-03,650000.0
-Wheat seed,Zavkhan,2022-03,600000.0
-Wheat,Arkhangai,2022-04,700000.0
-Wheat,Bulgan,2022-04,745000.0
-Wheat seed,Bulgan,2022-04,1050000.0
-Wheat,Darkhan-Uul,2022-04,550000.0
-Wheat seed,Darkhan-Uul,2022-04,650000.0
-Wheat,Dornod,2022-04,650000.0
-Wheat seed,Dornod,2022-04,900000.0
-Wheat,Orkhon,2022-04,700000.0
-Wheat seed,Orkhon,2022-04,900000.0
-Wheat,Selenge,2022-04,725000.0
-Wheat seed,Selenge,2022-04,983333.0
-Wheat,Tuv,2022-04,700000.0
-Wheat seed,Tuv,2022-04,1008333.0
-Wheat seed,Uvs,2022-04,950000.0
-Wheat seed,Uvurkhangai,2022-04,650000.0
-Wheat seed,Zavkhan,2022-04,700000.0
-Wheat,Bulgan,2022-05,745000.0
-Wheat seed,Bulgan,2022-05,1050000.0
-Wheat,Darkhan-Uul,2022-05,550000.0
-Wheat seed,Darkhan-Uul,2022-05,650000.0
-Wheat,Dornod,2022-05,650000.0
-Wheat seed,Dornod,2022-05,900000.0
-Wheat,Orkhon,2022-05,700000.0
-Wheat seed,Orkhon,2022-05,900000.0
-Wheat,Selenge,2022-05,800000.0
-Wheat seed,Selenge,2022-05,1125000.0
-Wheat,Tuv,2022-05,900000.0
-Wheat seed,Tuv,2022-05,1000000.0
-Wheat,Uvurkhangai,2022-05,650000.0
-Wheat seed,Uvurkhangai,2022-05,650000.0
-Wheat seed,Zavkhan,2022-05,500000.0
-Wheat,Bulgan,2022-06,745000.0
-Wheat seed,Bulgan,2022-06,1050000.0
-Wheat,Dornod,2022-06,650000.0
-Wheat seed,Dornod,2022-06,900000.0
-Wheat,Orkhon,2022-06,660000.0
-Wheat seed,Orkhon,2022-06,820000.0
-Wheat,Selenge,2022-06,725000.0
-Wheat seed,Selenge,2022-06,1036667.0
-Wheat,Tuv,2022-06,650000.0
-Wheat seed,Tuv,2022-06,1020000.0
-Wheat seed,Zavkhan,2022-06,700000.0
-Wheat,Bulgan,2022-07,690000.0
-Wheat seed,Bulgan,2022-07,1200000.0
-Wheat,Dornod,2022-07,650000.0
-Wheat seed,Dornod,2022-07,900000.0
-Wheat,Selenge,2022-07,560000.0
-Wheat,Tuv,2022-07,716667.0
-Wheat seed,Tuv,2022-07,1016667.0
-Wheat,Bulgan,2022-08,690000.0
-Wheat seed,Bulgan,2022-08,1200000.0
-Wheat,Dornod,2022-08,650000.0
-Wheat seed,Dornod,2022-08,900000.0
-Wheat,Selenge,2022-08,950000.0
-Wheat,Tuv,2022-08,762500.0
-Wheat seed,Tuv,2022-08,1200000.0
-Wheat seed,Uvs,2022-08,1800000.0
-Wheat seed,Zavkhan,2022-08,600000.0
-Wheat,Bulgan,2022-09,690000.0
-Wheat seed,Bulgan,2022-09,1200000.0
-Wheat,Darkhan-Uul,2022-09,880000.0
-Wheat seed,Darkhan-Uul,2022-09,550000.0
-Wheat,Dornod,2022-09,700000.0
-Wheat seed,Dornod,2022-09,1050000.0
-Wheat,Selenge,2022-09,983333.0
-Wheat seed,Selenge,2022-09,1100000.0
-Wheat,Tuv,2022-09,830000.0
-Wheat seed,Tuv,2022-09,1200000.0
-Wheat,Uvs,2022-09,1000000.0
-Wheat seed,Uvs,2022-09,1600000.0
-Wheat,Uvurkhangai,2022-09,850000.0
-Wheat seed,Uvurkhangai,2022-09,870000.0
-Wheat seed,Zavkhan,2022-09,1000000.0
-Wheat,Bulgan,2022-10,690000.0
-Wheat seed,Bulgan,2022-10,900000.0
-Wheat,Darkhan-Uul,2022-10,880000.0
-Wheat seed,Darkhan-Uul,2022-10,990000.0
-Wheat,Dornod,2022-10,800000.0
-Wheat seed,Dornod,2022-10,1050000.0
-Wheat,Orkhon,2022-10,1020000.0
-Wheat,Selenge,2022-10,751429.0
-Wheat seed,Selenge,2022-10,970000.0
-Wheat,Tuv,2022-10,850000.0
-Wheat seed,Tuv,2022-10,1050000.0
-Wheat,Uvs,2022-10,1000000.0
-Wheat seed,Uvs,2022-10,1000000.0
-Wheat,Uvurkhangai,2022-10,900000.0
-Wheat seed,Uvurkhangai,2022-10,950000.0
-Wheat seed,Zavkhan,2022-10,1200000.0
-Wheat,Arkhangai,2022-11,800000.0
-Wheat,Bulgan,2022-11,690000.0
-Wheat seed,Bulgan,2022-11,1200000.0
-Wheat,Darkhan-Uul,2022-11,880000.0
-Wheat seed,Darkhan-Uul,2022-11,990000.0
-Wheat,Dornod,2022-11,850000.0
-Wheat seed,Dornod,2022-11,1050000.0
-Wheat,Orkhon,2022-11,1280000.0
-Wheat seed,Orkhon,2022-11,1200000.0
-Wheat,Selenge,2022-11,620000.0
-Wheat seed,Selenge,2022-11,950000.0
-Wheat,Tuv,2022-11,813000.0
-Wheat seed,Tuv,2022-11,1070000.0
-Wheat,Uvs,2022-11,1000000.0
-Wheat seed,Uvs,2022-11,1500000.0
-Wheat,Uvurkhangai,2022-11,970000.0
-Wheat seed,Uvurkhangai,2022-11,1100000.0
-Wheat seed,Zavkhan,2022-11,1000000.0
-Wheat,Arkhangai,2022-12,700000.0
-Wheat,Bulgan,2022-12,690000.0
-Wheat seed,Bulgan,2022-12,1200000.0
-Wheat,Darkhan-Uul,2022-12,880000.0
-Wheat seed,Darkhan-Uul,2022-12,990000.0
-Wheat,Dornod,2022-12,850000.0
-Wheat seed,Dornod,2022-12,1100000.0
-Wheat,Orkhon,2022-12,1280000.0
-Wheat seed,Orkhon,2022-12,1200000.0
-Wheat,Selenge,2022-12,600000.0
-Wheat seed,Selenge,2022-12,925000.0
-Wheat,Tuv,2022-12,817000.0
-Wheat seed,Tuv,2022-12,1000000.0
-Wheat,Uvs,2022-12,1000000.0
-Wheat seed,Zavkhan,2022-12,1100000.0
-Wheat,Bulgan,2023-01,690000.0
-Wheat seed,Bulgan,2023-01,1200000.0
-Wheat,Dornod,2023-01,850000.0
-Wheat seed,Dornod,2023-01,1100000.0
-Wheat,Orkhon,2023-01,1280000.0
-Wheat seed,Orkhon,2023-01,1200000.0
-Wheat,Selenge,2023-01,600000.0
-Wheat seed,Selenge,2023-01,875000.0
-Wheat,Tuv,2023-01,838000.0
-Wheat seed,Tuv,2023-01,1050000.0
-Wheat,Uvs,2023-01,1000000.0
-Wheat seed,Zavkhan,2023-01,1200000.0
-Wheat seed,Bulgan,2023-02,1300000.0
-Wheat,Dornod,2023-02,850000.0
-Wheat seed,Dornod,2023-02,1100000.0
-Wheat,Orkhon,2023-02,1200000.0
-Wheat seed,Orkhon,2023-02,1200000.0
-Wheat,Selenge,2023-02,625000.0
-Wheat seed,Selenge,2023-02,866667.0
-Wheat,Tuv,2023-02,881667.0
-Wheat seed,Tuv,2023-02,1116667.0
-Wheat,Uvurkhangai,2023-02,750000.0
-Wheat seed,Uvurkhangai,2023-02,975000.0
-Wheat,Zavkhan,2023-02,1200000.0
-Wheat seed,Zavkhan,2023-02,1200000.0
-Wheat,Bulgan,2023-03,850000.0
-Wheat seed,Bulgan,2023-03,1147500.0
-Wheat,Dornod,2023-03,850000.0
-Wheat seed,Dornod,2023-03,1100000.0
-Wheat,Orkhon,2023-03,1200000.0
-Wheat seed,Orkhon,2023-03,1200000.0
-Wheat,Selenge,2023-03,583333.0
-Wheat seed,Selenge,2023-03,866667.0
-Wheat,Tuv,2023-03,908000.0
-Wheat seed,Tuv,2023-03,1200000.0
-Wheat,Uvs,2023-03,1000000.0
-Wheat,Uvurkhangai,2023-03,900000.0
-Wheat seed,Uvurkhangai,2023-03,1200000.0
-Wheat seed,Zavkhan,2023-03,1200000.0
-Wheat,Bulgan,2023-04,850000.0
-Wheat seed,Bulgan,2023-04,1147500.0
-Wheat,Dornod,2023-04,850000.0
-Wheat seed,Dornod,2023-04,1100000.0
-Wheat,Orkhon,2023-04,1200000.0
-Wheat seed,Orkhon,2023-04,1200000.0
-Wheat,Selenge,2023-04,725000.0
-Wheat seed,Selenge,2023-04,875000.0
-Wheat,Tuv,2023-04,798000.0
-Wheat seed,Tuv,2023-04,1250000.0
-Wheat,Uvurkhangai,2023-04,900000.0
-Wheat seed,Uvurkhangai,2023-04,995000.0
-Wheat seed,Zavkhan,2023-04,1200000.0
-Wheat,Bulgan,2023-05,850000.0
-Wheat seed,Bulgan,2023-05,995000.0
-Wheat,Dornod,2023-05,850000.0
-Wheat seed,Dornod,2023-05,1100000.0
-Wheat,Orkhon,2023-05,1100000.0
-Wheat seed,Orkhon,2023-05,1200000.0
-Wheat,Selenge,2023-05,600000.0
-Wheat seed,Selenge,2023-05,916667.0
-Wheat,Tuv,2023-05,898000.0
-Wheat seed,Tuv,2023-05,1337500.0
-Wheat seed,Uvs,2023-05,1250000.0
-Wheat seed,Uvurkhangai,2023-05,1200000.0
-Wheat,Dornod,2023-06,850000.0
-Wheat seed,Dornod,2023-06,1100000.0
-Wheat,Orkhon,2023-06,1100000.0
-Wheat seed,Orkhon,2023-06,1200000.0
-Wheat,Selenge,2023-06,600000.0
-Wheat seed,Selenge,2023-06,875000.0
-Wheat,Tuv,2023-06,1002667.0
-Wheat seed,Tuv,2023-06,1225000.0
-Wheat seed,Uvs,2023-06,2000000.0
-Wheat seed,Uvurkhangai,2023-06,1200000.0
-Wheat,Dornod,2023-07,850000.0
-Wheat seed,Dornod,2023-07,1100000.0
-Wheat,Orkhon,2023-07,1100000.0
-Wheat seed,Orkhon,2023-07,1200000.0
-Wheat seed,Selenge,2023-07,950000.0
-Wheat,Tuv,2023-07,1033333.0
-Wheat seed,Tuv,2023-07,1250000.0
-Wheat,Dornod,2023-08,850000.0
-Wheat seed,Dornod,2023-08,1100000.0
-Wheat,Orkhon,2023-08,1100000.0
-Wheat seed,Orkhon,2023-08,1200000.0
-Wheat,Tuv,2023-08,1200000.0
-Wheat seed,Tuv,2023-08,1500000.0
-Wheat seed,Uvs,2023-08,2000000.0
-Wheat,Bulgan,2023-09,925000.0
-Wheat seed,Bulgan,2023-09,995000.0
-Wheat,Dornod,2023-09,850000.0
-Wheat seed,Dornod,2023-09,1100000.0
-Wheat,Orkhon,2023-09,1000000.0
-Wheat seed,Orkhon,2023-09,1200000.0
-Wheat,Selenge,2023-09,1050000.0
-Wheat seed,Selenge,2023-09,925000.0
-Wheat,Tuv,2023-09,1033333.0
-Wheat seed,Tuv,2023-09,1200000.0
-Wheat,Uvs,2023-09,1200000.0
-Wheat seed,Uvs,2023-09,2200000.0
-Wheat seed,Zavkhan,2023-09,1000000.0
-Wheat,Bulgan,2023-10,885000.0
-Wheat seed,Bulgan,2023-10,995000.0
-Wheat,Darkhan-Uul,2023-10,900000.0
-Wheat seed,Darkhan-Uul,2023-10,800000.0
-Wheat,Dornod,2023-10,850000.0
-Wheat seed,Dornod,2023-10,1100000.0
-Wheat,Orkhon,2023-10,1000000.0
-Wheat seed,Orkhon,2023-10,1000000.0
-Wheat,Selenge,2023-10,750000.0
-Wheat seed,Selenge,2023-10,1020000.0
-Wheat,Tuv,2023-10,910000.0
-Wheat seed,Tuv,2023-10,1266667.0
-Wheat,Uvs,2023-10,1200000.0
-Wheat seed,Uvs,2023-10,1800000.0
-Wheat,Uvurkhangai,2023-10,900000.0
-Wheat seed,Uvurkhangai,2023-10,1200000.0
-Wheat,Zavkhan,2023-10,1200000.0
-Wheat seed,Zavkhan,2023-10,1000000.0
-Wheat seed,Arkhangai,2023-11,1000000.0
-Wheat,Bulgan,2023-11,935000.0
-Wheat seed,Bulgan,2023-11,995000.0
-Wheat,Dornod,2023-11,850000.0
-Wheat seed,Dornod,2023-11,1100000.0
-Wheat,Orkhon,2023-11,1100000.0
-Wheat seed,Orkhon,2023-11,1100000.0
-Wheat,Selenge,2023-11,980000.0
-Wheat seed,Selenge,2023-11,1112500.0
-Wheat,Tuv,2023-11,910000.0
-Wheat seed,Tuv,2023-11,1300000.0
-Wheat seed,Uvs,2023-11,1500000.0
-Wheat,Uvurkhangai,2023-11,900000.0
-Wheat seed,Uvurkhangai,2023-11,1200000.0
-Wheat,Zavkhan,2023-11,1000000.0
-Wheat,Bulgan,2023-12,920000.0
-Wheat,Dornod,2023-12,850000.0
-Wheat seed,Dornod,2023-12,1100000.0
-Wheat,Orkhon,2023-12,1100000.0
-Wheat seed,Orkhon,2023-12,1400000.0
-Wheat seed,Selenge,2023-12,1300000.0
-Wheat,Tuv,2023-12,866667.0
-Wheat seed,Tuv,2023-12,1350000.0
-Wheat,Uvs,2023-12,1150000.0
-Wheat seed,Uvs,2023-12,1500000.0
-Wheat,Uvurkhangai,2023-12,1000000.0
-Wheat seed,Uvurkhangai,2023-12,1100000.0
-Wheat,Zavkhan,2023-12,1500000.0
-Wheat seed,Zavkhan,2023-12,1200000.0
-Wheat,Arkhangai,2024-01,1000000.0
-Wheat,Bulgan,2024-01,950000.0
-Wheat seed,Bulgan,2024-01,1200000.0
-Wheat,Dornod,2024-01,850000.0
-Wheat seed,Dornod,2024-01,1100000.0
-Wheat,Orkhon,2024-01,1100000.0
-Wheat seed,Orkhon,2024-01,1400000.0
-Wheat,Selenge,2024-01,800000.0
-Wheat seed,Selenge,2024-01,1500000.0
-Wheat,Tuv,2024-01,1030000.0
-Wheat seed,Tuv,2024-01,1066667.0
-Wheat,Uvs,2024-01,1300000.0
-Wheat seed,Uvs,2024-01,1700000.0
-Wheat,Uvurkhangai,2024-01,1000000.0
-Wheat seed,Uvurkhangai,2024-01,1100000.0
-Wheat seed,Zavkhan,2024-01,1200000.0
-Wheat,Arkhangai,2024-02,1200000.0
-Wheat,Bulgan,2024-02,950000.0
-Wheat seed,Bulgan,2024-02,995000.0
-Wheat,Dornod,2024-02,850000.0
-Wheat seed,Dornod,2024-02,1100000.0
-Wheat,Orkhon,2024-02,1000000.0
-Wheat seed,Orkhon,2024-02,1300000.0
-Wheat,Selenge,2024-02,750000.0
-Wheat seed,Selenge,2024-02,1400000.0
-Wheat,Tuv,2024-02,972500.0
-Wheat seed,Tuv,2024-02,937500.0
-Wheat,Uvs,2024-02,1300000.0
-Wheat seed,Uvs,2024-02,1800000.0
-Wheat,Zavkhan,2024-02,1500000.0
-Wheat seed,Zavkhan,2024-02,1500000.0
-Wheat,Arkhangai,2024-03,1200000.0
-Wheat,Orkhon,2024-03,1025000.0
-Wheat seed,Orkhon,2024-03,1325000.0
-Wheat seed,Selenge,2024-03,1000000.0
-Wheat,Tuv,2024-03,1022500.0
-Wheat seed,Tuv,2024-03,1100000.0
-Wheat,Uvs,2024-03,1300000.0
-Wheat seed,Uvs,2024-03,1800000.0
-Wheat,Zavkhan,2024-03,1500000.0
-Wheat seed,Zavkhan,2024-03,1500000.0
-Wheat seed,Arkhangai,2024-04,1300000.0
-Wheat,Dornod,2024-04,850000.0
-Wheat seed,Dornod,2024-04,1100000.0
-Wheat seed,Orkhon,2024-04,1400000.0
-Wheat seed,Selenge,2024-04,950000.0
-Wheat,Tuv,2024-04,1100000.0
-Wheat seed,Tuv,2024-04,1225000.0
-Wheat seed,Uvs,2024-04,1550000.0
-Wheat seed,Zavkhan,2024-04,1500000.0
-Wheat seed,Arkhangai,2024-05,1300000.0
-Wheat,Dornod,2024-05,850000.0
-Wheat seed,Dornod,2024-05,1100000.0
-Wheat seed,Orkhon,2024-05,1100000.0
-Wheat seed,Selenge,2024-05,950000.0
-Wheat,Tuv,2024-05,1166667.0
-Wheat seed,Tuv,2024-05,1175000.0
-Wheat,Uvs,2024-05,1200000.0
-Wheat seed,Uvs,2024-05,1500000.0
-Wheat seed,Uvurkhangai,2024-05,1250000.0
-Wheat seed,Arkhangai,2024-06,1300000.0
-Wheat,Dornod,2024-06,850000.0
-Wheat seed,Dornod,2024-06,1100000.0
-Wheat seed,Orkhon,2024-06,1100000.0
-Wheat seed,Selenge,2024-06,950000.0
-Wheat,Tuv,2024-06,1047000.0
-Wheat seed,Tuv,2024-06,1175000.0
-Wheat seed,Uvs,2024-06,1700000.0
-Wheat seed,Uvurkhangai,2024-06,1200000.0
-Wheat seed,Arkhangai,2024-07,1300000.0
-Wheat,Dornod,2024-07,850000.0
-Wheat seed,Dornod,2024-07,1100000.0
-Wheat seed,Orkhon,2024-07,1150000.0
-Wheat seed,Selenge,2024-07,950000.0
-Wheat,Tuv,2024-07,920000.0
-Wheat seed,Tuv,2024-07,1100000.0
-Wheat seed,Uvs,2024-07,1500000.0
-Wheat seed,Uvurkhangai,2024-07,1100000.0
-Wheat seed,Zavkhan,2024-07,1200000.0
-Wheat,Dornod,2024-08,880000.0
-Wheat seed,Dornod,2024-08,1000000.0
-Wheat seed,Orkhon,2024-08,1200000.0
-Wheat seed,Selenge,2024-08,950000.0
-Wheat,Tuv,2024-08,1046660.0
-Wheat seed,Tuv,2024-08,1100000.0
-Wheat,Uvs,2024-08,1200000.0
-Wheat seed,Uvs,2024-08,1800000.0
-Wheat,Uvurkhangai,2024-08,1200000.0
-Wheat seed,Zavkhan,2024-08,1200000.0
-Wheat,Arkhangai,2024-09,1000000.0
-Wheat,Dornod,2024-09,880000.0
-Wheat seed,Dornod,2024-09,1000000.0
-Wheat,Orkhon,2024-09,1000000.0
-Wheat seed,Orkhon,2024-09,1350000.0
-Wheat,Selenge,2024-09,900000.0
-Wheat seed,Selenge,2024-09,966667.0
-Wheat,Tuv,2024-09,933333.0
-Wheat seed,Tuv,2024-09,1125000.0
-Wheat,Uvs,2024-09,1100000.0
-Wheat seed,Uvs,2024-09,1500000.0
-Wheat,Uvurkhangai,2024-09,1200000.0
-Wheat seed,Zavkhan,2024-09,1000000.0
-Wheat,Arkhangai,2024-10,1000000.0
-Wheat seed,Dornod,2024-10,1000000.0
-Wheat,Orkhon,2024-10,1000000.0
-Wheat seed,Orkhon,2024-10,1350000.0
-Wheat,Selenge,2024-10,900000.0
-Wheat,Sukhbaatar,2024-10,880000.0
-Wheat,Tuv,2024-10,922500.0
-Wheat seed,Tuv,2024-10,962500.0
-Wheat,Uvs,2024-10,1100000.0
-Wheat seed,Uvs,2024-10,1500000.0
-Wheat seed,Zavkhan,2024-10,1000000.0
-Wheat,Arkhangai,2024-11,1000000.0
-Wheat,Dornod,2024-11,880000.0
-Wheat seed,Dornod,2024-11,1000000.0
-Wheat,Orkhon,2024-11,1000000.0
-Wheat seed,Orkhon,2024-11,1350000.0
-Wheat,Selenge,2024-11,937500.0
-Wheat seed,Selenge,2024-11,950000.0
-Wheat,Tuv,2024-11,937500.0
-Wheat seed,Tuv,2024-11,1050000.0
-Wheat,Uvs,2024-11,1000000.0
-Wheat seed,Uvs,2024-11,1500000.0
-Wheat,Uvurkhangai,2024-11,1100000.0
-Wheat seed,Uvurkhangai,2024-11,1450000.0
-Wheat seed,Zavkhan,2024-11,1000000.0
-Wheat,Dornod,2024-12,880000.0
-Wheat seed,Dornod,2024-12,1000000.0
-Wheat,Orkhon,2024-12,1000000.0
-Wheat seed,Orkhon,2024-12,1350000.0
-Wheat,Selenge,2024-12,816667.0
-Wheat seed,Selenge,2024-12,950000.0
-Wheat,Tuv,2024-12,825000.0
-Wheat seed,Tuv,2024-12,1000000.0
-Wheat seed,Uvurkhangai,2024-12,1300000.0
-Wheat seed,Zavkhan,2024-12,1000000.0
-Wheat,Dornod,2025-01,880000.0
-Wheat seed,Dornod,2025-01,1000000.0
-Wheat,Orkhon,2025-01,950000.0
-Wheat seed,Orkhon,2025-01,1300000.0
-Wheat,Selenge,2025-01,966667.0
-Wheat,Tuv,2025-01,966667.0
-Wheat seed,Tuv,2025-01,1050000.0
-Wheat,Uvs,2025-01,1000000.0
-Wheat seed,Uvs,2025-01,1700000.0
-Wheat seed,Uvurkhangai,2025-01,1200000.0
-Wheat seed,Zavkhan,2025-01,1200000.0
-Wheat,Dornod,2025-02,880000.0
-Wheat seed,Dornod,2025-02,1000000.0
-Wheat,Orkhon,2025-02,1000000.0
-Wheat seed,Orkhon,2025-02,1350000.0
-Wheat,Selenge,2025-02,1000000.0
-Wheat,Tuv,2025-02,966667.0
-Wheat seed,Tuv,2025-02,1050000.0
-Wheat seed,Uvs,2025-02,1800000.0
-Wheat seed,Uvurkhangai,2025-02,1200000.0
-Wheat,Dornod,2025-03,880000.0
-Wheat seed,Dornod,2025-03,1000000.0
-Wheat,Orkhon,2025-03,1100000.0
-Wheat seed,Orkhon,2025-03,1500000.0
-Wheat,Selenge,2025-03,1100000.0
-Wheat,Tuv,2025-03,900000.0
-Wheat seed,Tuv,2025-03,1250000.0
-Wheat seed,Uvs,2025-03,1600000.0
-Wheat seed,Uvurkhangai,2025-03,1200000.0
-Wheat seed,Bayan-Ulgii,2025-04,1100000.0
-Wheat,Bulgan,2025-04,1000000.0
-Wheat,Dornod,2025-04,1000000.0
-Wheat seed,Dornod,2025-04,1000000.0
-Wheat,Dundgovi,2025-04,1130000.0
-Wheat seed,Dundgovi,2025-04,1050000.0
-Wheat seed,Govi-Altai,2025-04,1500000.0
-Wheat,Khuvsgul,2025-04,1320000.0
-Wheat seed,Khuvsgul,2025-04,1200000.0
-Wheat,Orkhon,2025-04,1400000.0
-Wheat,Umnugovi,2025-04,1150000.0
-Wheat seed,Umnugovi,2025-04,1500000.0
-Wheat,Uvs,2025-04,1200000.0
-Wheat,Arkhangai,2025-05,1200000.0
-Wheat,Dornod,2025-05,880000.0
-Wheat seed,Dornod,2025-05,1000000.0
-Wheat seed,Orkhon,2025-05,1450000.0
-Wheat seed,Selenge,2025-05,1200000.0
-Wheat,Tuv,2025-05,1033333.0
-Wheat seed,Tuv,2025-05,1212500.0
-Wheat seed,Uvs,2025-05,1600000.0
-Wheat,Dornod,2025-06,880000.0
-Wheat seed,Dornod,2025-06,1000000.0
-Wheat,Dundgovi,2025-06,1100000.0
-Wheat seed,Khuvsgul,2025-06,1450000.0
-Wheat,Umnugovi,2025-06,600000.0
-Wheat seed,Umnugovi,2025-06,1250000.0
-Wheat seed,Uvs,2025-06,1800000.0
-Wheat,Dornod,2025-07,880000.0
-Wheat seed,Dornod,2025-07,1000000.0
-Wheat,Dundgovi,2025-07,1100000.0
-Wheat,Umnugovi,2025-07,1033333.0
-Wheat seed,Umnugovi,2025-07,1250000.0
-Wheat seed,Uvs,2025-07,1800000.0
-Wheat,Dornod,2025-08,880000.0
-Wheat seed,Dornod,2025-08,1000000.0
-Wheat,Dundgovi,2025-08,1100000.0
-Wheat seed,Dundgovi,2025-08,1100000.0
-Wheat,Orkhon,2025-08,1300000.0
-Wheat,Umnugovi,2025-08,1050000.0
-Wheat seed,Umnugovi,2025-08,1250000.0
-Wheat,Uvs,2025-08,1200000.0
-Wheat seed,Uvs,2025-08,2000000.0
-Wheat,Dornod,2025-09,1000000.0
-Wheat seed,Dornod,2025-09,1000000.0
-Wheat,Dundgovi,2025-09,1100000.0
-Wheat seed,Dundgovi,2025-09,1100000.0
-Wheat,Khuvsgul,2025-09,1320000.0
-Wheat,Orkhon,2025-09,1350000.0
-Wheat,Umnugovi,2025-09,1050000.0
-Wheat seed,Umnugovi,2025-09,1233333.0
-Wheat,Uvs,2025-09,1200000.0
-Wheat seed,Uvs,2025-09,1500000.0
-Wheat seed,Zavkhan,2025-09,1100000.0
-Wheat,Bulgan,2025-11,1100000.0
-Wheat seed,Dornod,2025-11,1000000.0
-Wheat,Orkhon,2025-11,1400000.0
-Wheat seed,Orkhon,2025-11,1300000.0
-Wheat,Selenge,2025-11,1130000.0
-Wheat seed,Selenge,2025-11,1066667.0
-Wheat,Tuv,2025-11,1150000.0
-Wheat seed,Tuv,2025-11,1500000.0
-Wheat,Uvs,2025-11,1200000.0
-Wheat seed,Uvs,2025-11,2000000.0
-Wheat,Uvurkhangai,2025-11,1400000.0
-Wheat seed,Zavkhan,2025-11,1100000.0
-Wheat,Bulgan,2025-12,1200000.0
-Wheat,Dornod,2025-12,880000.0
-Wheat seed,Dornod,2025-12,1000000.0
-Wheat,Orkhon,2025-12,1400000.0
-Wheat seed,Orkhon,2025-12,1300000.0
-Wheat,Selenge,2025-12,1100000.0
-Wheat seed,Selenge,2025-12,1150000.0
-Wheat,Tuv,2025-12,1150000.0
-Wheat seed,Tuv,2025-12,1500000.0
-Wheat,Uvs,2025-12,1200000.0
-Wheat,Uvurkhangai,2025-12,1400000.0
-Wheat seed,Zavkhan,2025-12,1200000.0
+date,product_region,price
+2018-12,Wheat seed — Bulgan,667000.0
+2018-12,Wheat seed — Dornod,500000.0
+2018-12,Wheat seed — Orkhon,760000.0
+2018-12,Wheat seed — Selenge,560000.0
+2018-12,Wheat seed — Tuv,602500.0
+2018-12,Wheat seed — Uvurkhangai,400000.0
+2018-12,Wheat seed — Zavkhan,760000.0
+2018-12,Wheat — Arkhangai,550000.0
+2018-12,Wheat — Bulgan,527000.0
+2018-12,Wheat — Dornod,550000.0
+2018-12,Wheat — Orkhon,560000.0
+2018-12,Wheat — Selenge,530000.0
+2018-12,Wheat — Tuv,562000.0
+2018-12,Wheat — Uvs,500000.0
+2018-12,Wheat — Uvurkhangai,600000.0
+2019-01,Wheat seed — Bulgan,650000.0
+2019-01,Wheat seed — Dornod,550000.0
+2019-01,Wheat seed — Orkhon,760000.0
+2019-01,Wheat seed — Tuv,543000.0
+2019-01,Wheat seed — Uvs,700000.0
+2019-01,Wheat — Arkhangai,500000.0
+2019-01,Wheat — Bulgan,530000.0
+2019-01,Wheat — Dornod,600000.0
+2019-01,Wheat — Orkhon,560000.0
+2019-01,Wheat — Selenge,500000.0
+2019-01,Wheat — Tuv,570000.0
+2019-01,Wheat — Uvs,600000.0
+2019-01,Wheat — Uvurkhangai,450000.0
+2019-02,Wheat seed — Orkhon,760000.0
+2019-02,Wheat seed — Tuv,625000.0
+2019-02,Wheat seed — Uvs,600000.0
+2019-02,Wheat — Arkhangai,500000.0
+2019-02,Wheat — Bulgan,500000.0
+2019-02,Wheat — Orkhon,560000.0
+2019-02,Wheat — Selenge,500000.0
+2019-02,Wheat — Tuv,600000.0
+2019-02,Wheat — Uvs,500000.0
+2019-02,Wheat — Zavkhan,600000.0
+2019-03,Wheat seed — Orkhon,760000.0
+2019-03,Wheat seed — Tuv,604000.0
+2019-03,Wheat seed — Uvs,600000.0
+2019-03,Wheat seed — Zavkhan,500000.0
+2019-03,Wheat — Bulgan,450000.0
+2019-03,Wheat — Orkhon,560000.0
+2019-03,Wheat — Selenge,500000.0
+2019-03,Wheat — Tuv,582000.0
+2019-03,Wheat — Uvs,500000.0
+2019-03,Wheat — Zavkhan,600000.0
+2019-04,Wheat seed — Bulgan,650000.0
+2019-04,Wheat seed — Orkhon,820000.0
+2019-04,Wheat seed — Tuv,655000.0
+2019-04,Wheat seed — Uvs,650000.0
+2019-04,Wheat — Bulgan,515000.0
+2019-04,Wheat — Orkhon,560000.0
+2019-04,Wheat — Selenge,500000.0
+2019-04,Wheat — Tuv,567000.0
+2019-05,Wheat seed — Bulgan,675000.0
+2019-05,Wheat seed — Orkhon,800000.0
+2019-05,Wheat seed — Selenge,800000.0
+2019-05,Wheat seed — Tuv,776000.0
+2019-05,Wheat seed — Uvs,800000.0
+2019-05,Wheat — Bulgan,530000.0
+2019-05,Wheat — Orkhon,560000.0
+2019-05,Wheat — Selenge,533000.0
+2019-05,Wheat — Tuv,577500.0
+2019-06,Wheat seed — Bulgan,650000.0
+2019-06,Wheat seed — Orkhon,830000.0
+2019-06,Wheat seed — Tuv,765000.0
+2019-06,Wheat seed — Uvurkhangai,800000.0
+2019-06,Wheat — Bulgan,540000.0
+2019-06,Wheat — Orkhon,560000.0
+2019-06,Wheat — Selenge,500000.0
+2019-06,Wheat — Tuv,583000.0
+2019-07,Wheat seed — Bulgan,650000.0
+2019-07,Wheat seed — Orkhon,830000.0
+2019-07,Wheat seed — Tuv,750000.0
+2019-07,Wheat — Bulgan,530000.0
+2019-07,Wheat — Orkhon,560000.0
+2019-07,Wheat — Selenge,500000.0
+2019-07,Wheat — Tuv,550000.0
+2019-08,Wheat seed — Bulgan,650000.0
+2019-08,Wheat seed — Orkhon,830000.0
+2019-08,Wheat — Bulgan,530000.0
+2019-08,Wheat — Orkhon,560000.0
+2019-08,Wheat — Selenge,500000.0
+2019-08,Wheat — Tuv,530000.0
+2019-09,Wheat seed — Arkhangai,730000.0
+2019-09,Wheat seed — Orkhon,830000.0
+2019-09,Wheat seed — Selenge,600000.0
+2019-09,Wheat seed — Tuv,687000.0
+2019-09,Wheat — Arkhangai,450000.0
+2019-09,Wheat — Orkhon,560000.0
+2019-09,Wheat — Selenge,540000.0
+2019-09,Wheat — Tuv,560000.0
+2019-09,Wheat — Uvs,500000.0
+2019-10,Wheat seed — Arkhangai,730000.0
+2019-10,Wheat seed — Orkhon,830000.0
+2019-10,Wheat seed — Selenge,650000.0
+2019-10,Wheat seed — Tuv,632500.0
+2019-10,Wheat seed — Uvs,750000.0
+2019-10,Wheat — Arkhangai,450000.0
+2019-10,Wheat — Orkhon,560000.0
+2019-10,Wheat — Selenge,545000.0
+2019-10,Wheat — Tuv,565000.0
+2019-10,Wheat — Uvs,360000.0
+2019-11,Wheat seed — Arkhangai,730000.0
+2019-11,Wheat seed — Bulgan,625000.0
+2019-11,Wheat seed — Orkhon,830000.0
+2019-11,Wheat seed — Selenge,700000.0
+2019-11,Wheat seed — Tuv,516250.0
+2019-11,Wheat seed — Uvs,800000.0
+2019-11,Wheat seed — Zavkhan,450000.0
+2019-11,Wheat — Arkhangai,450000.0
+2019-11,Wheat — Bulgan,566667.0
+2019-11,Wheat — Orkhon,560000.0
+2019-11,Wheat — Selenge,543333.0
+2019-11,Wheat — Tuv,640000.0
+2019-11,Wheat — Uvs,655000.0
+2019-12,Wheat seed — Arkhangai,730000.0
+2019-12,Wheat seed — Bulgan,650000.0
+2019-12,Wheat seed — Orkhon,830000.0
+2019-12,Wheat seed — Selenge,650000.0
+2019-12,Wheat seed — Tuv,588333.0
+2019-12,Wheat seed — Uvs,600000.0
+2019-12,Wheat seed — Zavkhan,550000.0
+2019-12,Wheat — Arkhangai,450000.0
+2019-12,Wheat — Bulgan,625000.0
+2019-12,Wheat — Orkhon,560000.0
+2019-12,Wheat — Selenge,584000.0
+2019-12,Wheat — Tuv,580000.0
+2019-12,Wheat — Uvs,575000.0
+2019-12,Wheat — Zavkhan,600000.0
+2020-01,Wheat seed — Arkhangai,780000.0
+2020-01,Wheat seed — Bulgan,700000.0
+2020-01,Wheat seed — Dornod,500000.0
+2020-01,Wheat seed — Govi-Altai,1200000.0
+2020-01,Wheat seed — Orkhon,820000.0
+2020-01,Wheat seed — Selenge,560000.0
+2020-01,Wheat seed — Tuv,676667.0
+2020-01,Wheat — Arkhangai,450000.0
+2020-01,Wheat — Bulgan,625000.0
+2020-01,Wheat — Dornod,600000.0
+2020-01,Wheat — Orkhon,600000.0
+2020-01,Wheat — Selenge,560000.0
+2020-01,Wheat — Tuv,570000.0
+2020-01,Wheat — Uvs,500000.0
+2020-01,Wheat — Zavkhan,600000.0
+2020-02,Wheat seed — Arkhangai,780000.0
+2020-02,Wheat seed — Bulgan,850000.0
+2020-02,Wheat seed — Dornod,500000.0
+2020-02,Wheat seed — Orkhon,800000.0
+2020-02,Wheat seed — Tuv,666667.0
+2020-02,Wheat — Arkhangai,450000.0
+2020-02,Wheat — Bulgan,650000.0
+2020-02,Wheat — Dornod,600000.0
+2020-02,Wheat — Orkhon,600000.0
+2020-02,Wheat — Selenge,550000.0
+2020-02,Wheat — Tuv,566667.0
+2020-02,Wheat — Uvs,500000.0
+2020-02,Wheat — Zavkhan,600000.0
+2020-03,Wheat seed — Arkhangai,780000.0
+2020-03,Wheat seed — Bulgan,850000.0
+2020-03,Wheat seed — Dornod,500000.0
+2020-03,Wheat seed — Orkhon,850000.0
+2020-03,Wheat seed — Tuv,670000.0
+2020-03,Wheat — Arkhangai,450000.0
+2020-03,Wheat — Bulgan,650000.0
+2020-03,Wheat — Dornod,600000.0
+2020-03,Wheat — Orkhon,700000.0
+2020-03,Wheat — Selenge,550000.0
+2020-03,Wheat — Tuv,566667.0
+2020-03,Wheat — Uvs,500000.0
+2020-03,Wheat — Zavkhan,600000.0
+2020-04,Wheat seed — Arkhangai,850000.0
+2020-04,Wheat seed — Bulgan,900000.0
+2020-04,Wheat seed — Dornod,950000.0
+2020-04,Wheat seed — Khentii,550000.0
+2020-04,Wheat seed — Orkhon,750000.0
+2020-04,Wheat seed — Tuv,782000.0
+2020-04,Wheat seed — Uvs,625000.0
+2020-04,Wheat — Arkhangai,450000.0
+2020-04,Wheat — Bulgan,650000.0
+2020-04,Wheat — Dornod,600000.0
+2020-04,Wheat — Khentii,550000.0
+2020-04,Wheat — Orkhon,700000.0
+2020-04,Wheat — Selenge,550000.0
+2020-04,Wheat — Tuv,525000.0
+2020-04,Wheat — Uvurkhangai,800000.0
+2020-04,Wheat — Zavkhan,600000.0
+2020-05,Wheat seed — Arkhangai,900000.0
+2020-05,Wheat seed — Bulgan,912500.0
+2020-05,Wheat seed — Dornod,950000.0
+2020-05,Wheat seed — Khentii,550000.0
+2020-05,Wheat seed — Orkhon,750000.0
+2020-05,Wheat seed — Selenge,842500.0
+2020-05,Wheat seed — Tuv,816000.0
+2020-05,Wheat seed — Uvs,675000.0
+2020-05,Wheat — Arkhangai,450000.0
+2020-05,Wheat — Bulgan,650000.0
+2020-05,Wheat — Dornod,600000.0
+2020-05,Wheat — Khentii,550000.0
+2020-05,Wheat — Orkhon,690000.0
+2020-05,Wheat — Selenge,600000.0
+2020-05,Wheat — Tuv,690000.0
+2020-05,Wheat — Uvs,800000.0
+2020-05,Wheat — Zavkhan,600000.0
+2020-06,Wheat seed — Bulgan,875000.0
+2020-06,Wheat seed — Dornod,950000.0
+2020-06,Wheat seed — Khentii,550000.0
+2020-06,Wheat seed — Orkhon,800000.0
+2020-06,Wheat seed — Tuv,926667.0
+2020-06,Wheat — Bulgan,650000.0
+2020-06,Wheat — Dornod,600000.0
+2020-06,Wheat — Khentii,550000.0
+2020-06,Wheat — Orkhon,600000.0
+2020-06,Wheat — Selenge,550000.0
+2020-06,Wheat — Tuv,780000.0
+2020-07,Wheat seed — Dornod,950000.0
+2020-07,Wheat seed — Khentii,550000.0
+2020-07,Wheat seed — Orkhon,800000.0
+2020-07,Wheat seed — Tuv,965000.0
+2020-07,Wheat — Dornod,600000.0
+2020-07,Wheat — Khentii,550000.0
+2020-07,Wheat — Orkhon,600000.0
+2020-07,Wheat — Selenge,550000.0
+2020-07,Wheat — Tuv,780000.0
+2020-08,Wheat seed — Bulgan,850000.0
+2020-08,Wheat seed — Dornod,950000.0
+2020-08,Wheat seed — Khentii,550000.0
+2020-08,Wheat seed — Orkhon,800000.0
+2020-08,Wheat seed — Tuv,890000.0
+2020-08,Wheat — Bulgan,600000.0
+2020-08,Wheat — Dornod,600000.0
+2020-08,Wheat — Khentii,550000.0
+2020-08,Wheat — Orkhon,600000.0
+2020-08,Wheat — Selenge,550000.0
+2020-08,Wheat — Tuv,640000.0
+2020-09,Wheat seed — Bulgan,700000.0
+2020-09,Wheat seed — Dornod,950000.0
+2020-09,Wheat seed — Orkhon,800000.0
+2020-09,Wheat seed — Tuv,890000.0
+2020-09,Wheat — Bulgan,525000.0
+2020-09,Wheat — Dornod,600000.0
+2020-09,Wheat — Orkhon,600000.0
+2020-09,Wheat — Selenge,550000.0
+2020-09,Wheat — Tuv,643333.0
+2020-10,Wheat seed — Bulgan,773333.0
+2020-10,Wheat seed — Dornod,950000.0
+2020-10,Wheat seed — Orkhon,800000.0
+2020-10,Wheat seed — Selenge,683333.0
+2020-10,Wheat seed — Tuv,807500.0
+2020-10,Wheat seed — Zavkhan,675000.0
+2020-10,Wheat — Arkhangai,700000.0
+2020-10,Wheat — Bulgan,556667.0
+2020-10,Wheat — Dornod,600000.0
+2020-10,Wheat — Orkhon,600000.0
+2020-10,Wheat — Selenge,565000.0
+2020-10,Wheat — Tuv,606000.0
+2020-10,Wheat — Zavkhan,500000.0
+2020-11,Wheat seed — Bulgan,823333.0
+2020-11,Wheat seed — Orkhon,800000.0
+2020-11,Wheat seed — Tuv,912000.0
+2020-11,Wheat seed — Uvs,600000.0
+2020-11,Wheat seed — Zavkhan,675000.0
+2020-11,Wheat — Arkhangai,850000.0
+2020-11,Wheat — Bulgan,653333.0
+2020-11,Wheat — Dornod,5833.0
+2020-11,Wheat — Orkhon,700000.0
+2020-11,Wheat — Selenge,575000.0
+2020-11,Wheat — Sukhbaatar,7000.0
+2020-11,Wheat — Tuv,734000.0
+2020-11,Wheat — Zavkhan,500000.0
+2020-12,Wheat seed — Bulgan,775000.0
+2020-12,Wheat seed — Dornod,900000.0
+2020-12,Wheat seed — Orkhon,830000.0
+2020-12,Wheat seed — Tuv,920000.0
+2020-12,Wheat seed — Uvs,800000.0
+2020-12,Wheat seed — Zavkhan,650000.0
+2020-12,Wheat — Arkhangai,900000.0
+2020-12,Wheat — Bayankhongor,900000.0
+2020-12,Wheat — Bulgan,670000.0
+2020-12,Wheat — Dornod,600000.0
+2020-12,Wheat — Orkhon,660000.0
+2020-12,Wheat — Selenge,650000.0
+2020-12,Wheat — Tuv,786667.0
+2020-12,Wheat — Uvs,700000.0
+2021-01,Wheat seed — Bulgan,850000.0
+2021-01,Wheat seed — Dornod,900000.0
+2021-01,Wheat seed — Khentii,660000.0
+2021-01,Wheat seed — Orkhon,830000.0
+2021-01,Wheat seed — Tuv,957500.0
+2021-01,Wheat seed — Uvurkhangai,950000.0
+2021-01,Wheat seed — Zavkhan,700000.0
+2021-01,Wheat — Bulgan,680000.0
+2021-01,Wheat — Dornod,600000.0
+2021-01,Wheat — Orkhon,660000.0
+2021-01,Wheat — Tuv,677500.0
+2021-01,Wheat — Uvurkhangai,900000.0
+2021-01,Wheat — Zavkhan,600000.0
+2021-02,Wheat seed — Bulgan,850000.0
+2021-02,Wheat seed — Dornod,900000.0
+2021-02,Wheat seed — Khentii,660000.0
+2021-02,Wheat seed — Orkhon,830000.0
+2021-02,Wheat seed — Tuv,830000.0
+2021-02,Wheat seed — Uvs,700000.0
+2021-02,Wheat seed — Uvurkhangai,850000.0
+2021-02,Wheat seed — Zavkhan,650000.0
+2021-02,Wheat — Bulgan,680000.0
+2021-02,Wheat — Dornod,600000.0
+2021-02,Wheat — Orkhon,660000.0
+2021-02,Wheat — Tuv,677500.0
+2021-02,Wheat — Uvurkhangai,850000.0
+2021-03,Wheat seed — Bulgan,850000.0
+2021-03,Wheat seed — Dornod,900000.0
+2021-03,Wheat seed — Khentii,660000.0
+2021-03,Wheat seed — Orkhon,830000.0
+2021-03,Wheat seed — Selenge,700000.0
+2021-03,Wheat seed — Tuv,850000.0
+2021-03,Wheat seed — Zavkhan,600000.0
+2021-03,Wheat — Bulgan,680000.0
+2021-03,Wheat — Dornod,600000.0
+2021-03,Wheat — Orkhon,660000.0
+2021-03,Wheat — Tuv,665000.0
+2021-04,Wheat seed — Bulgan,887500.0
+2021-04,Wheat seed — Dornod,900000.0
+2021-04,Wheat seed — Orkhon,830000.0
+2021-04,Wheat seed — Selenge,1000000.0
+2021-04,Wheat seed — Tuv,970000.0
+2021-04,Wheat seed — Ulaanbaatar,900000.0
+2021-04,Wheat seed — Uvs,900000.0
+2021-04,Wheat seed — Uvurkhangai,925000.0
+2021-04,Wheat — Bulgan,815000.0
+2021-04,Wheat — Dornod,600000.0
+2021-04,Wheat — Orkhon,660000.0
+2021-04,Wheat — Selenge,850000.0
+2021-04,Wheat — Tuv,726667.0
+2021-05,Wheat seed — Arkhangai,900000.0
+2021-05,Wheat seed — Dornod,900000.0
+2021-05,Wheat seed — Orkhon,830000.0
+2021-05,Wheat seed — Selenge,725000.0
+2021-05,Wheat seed — Tuv,935625.0
+2021-05,Wheat seed — Uvs,1000000.0
+2021-05,Wheat seed — Uvurkhangai,925000.0
+2021-05,Wheat — Dornod,600000.0
+2021-05,Wheat — Orkhon,660000.0
+2021-05,Wheat — Selenge,600000.0
+2021-05,Wheat — Tuv,793333.0
+2021-06,Wheat seed — Bulgan,900000.0
+2021-06,Wheat seed — Dornod,900000.0
+2021-06,Wheat seed — Orkhon,820000.0
+2021-06,Wheat seed — Selenge,800000.0
+2021-06,Wheat seed — Tuv,1107142.0
+2021-06,Wheat seed — Uvurkhangai,1200000.0
+2021-06,Wheat — Bulgan,680000.0
+2021-06,Wheat — Dornod,600000.0
+2021-06,Wheat — Orkhon,660000.0
+2021-06,Wheat — Tuv,860000.0
+2021-07,Wheat seed — Bulgan,900000.0
+2021-07,Wheat seed — Dornod,900000.0
+2021-07,Wheat seed — Orkhon,830000.0
+2021-07,Wheat seed — Tuv,1100000.0
+2021-07,Wheat — Bulgan,680000.0
+2021-07,Wheat — Dornod,600000.0
+2021-07,Wheat — Orkhon,660000.0
+2021-07,Wheat — Tuv,793333.0
+2021-08,Wheat seed — Bulgan,900000.0
+2021-08,Wheat seed — Dornod,900000.0
+2021-08,Wheat seed — Orkhon,850000.0
+2021-08,Wheat seed — Selenge,700000.0
+2021-08,Wheat seed — Tuv,1120000.0
+2021-08,Wheat — Bulgan,680000.0
+2021-08,Wheat — Dornod,600000.0
+2021-08,Wheat — Orkhon,680000.0
+2021-08,Wheat — Selenge,600000.0
+2021-08,Wheat — Tuv,870000.0
+2021-09,Wheat seed — Bulgan,900000.0
+2021-09,Wheat seed — Dornod,900000.0
+2021-09,Wheat seed — Orkhon,850000.0
+2021-09,Wheat seed — Selenge,683000.0
+2021-09,Wheat seed — Tuv,1233000.0
+2021-09,Wheat — Arkhangai,700000.0
+2021-09,Wheat — Bulgan,680000.0
+2021-09,Wheat — Dornod,600000.0
+2021-09,Wheat — Orkhon,680000.0
+2021-09,Wheat — Selenge,675000.0
+2021-09,Wheat — Tuv,843000.0
+2021-10,Wheat seed — Arkhangai,700000.0
+2021-10,Wheat seed — Bulgan,850000.0
+2021-10,Wheat seed — Dornod,900000.0
+2021-10,Wheat seed — Orkhon,850000.0
+2021-10,Wheat seed — Selenge,700000.0
+2021-10,Wheat seed — Tuv,875000.0
+2021-10,Wheat seed — Uvs,800000.0
+2021-10,Wheat seed — Zavkhan,600000.0
+2021-10,Wheat — Arkhangai,700000.0
+2021-10,Wheat — Bulgan,690000.0
+2021-10,Wheat — Dornod,600000.0
+2021-10,Wheat — Orkhon,680000.0
+2021-10,Wheat — Selenge,670000.0
+2021-10,Wheat — Tuv,718000.0
+2021-10,Wheat — Uvs,700000.0
+2021-11,Wheat seed — Bulgan,700000.0
+2021-11,Wheat seed — Orkhon,850000.0
+2021-11,Wheat seed — Selenge,750000.0
+2021-11,Wheat seed — Tuv,792000.0
+2021-11,Wheat seed — Uvs,1000000.0
+2021-11,Wheat seed — Zavkhan,700000.0
+2021-11,Wheat — Arkhangai,650000.0
+2021-11,Wheat — Bulgan,500000.0
+2021-11,Wheat — Orkhon,680000.0
+2021-11,Wheat — Selenge,657500.0
+2021-11,Wheat — Tuv,696000.0
+2021-11,Wheat — Uvs,700000.0
+2021-12,Wheat seed — Bulgan,962500.0
+2021-12,Wheat seed — Dornod,900000.0
+2021-12,Wheat seed — Orkhon,850000.0
+2021-12,Wheat seed — Selenge,800000.0
+2021-12,Wheat seed — Tuv,837500.0
+2021-12,Wheat seed — Uvs,1000000.0
+2021-12,Wheat seed — Uvurkhangai,850000.0
+2021-12,Wheat seed — Zavkhan,500000.0
+2021-12,Wheat — Arkhangai,650000.0
+2021-12,Wheat — Bulgan,663333.0
+2021-12,Wheat — Dornod,600000.0
+2021-12,Wheat — Orkhon,680000.0
+2021-12,Wheat — Selenge,566667.0
+2021-12,Wheat — Tuv,675000.0
+2021-12,Wheat — Uvs,700000.0
+2021-12,Wheat — Uvurkhangai,650000.0
+2022-01,Wheat seed — Bulgan,962500.0
+2022-01,Wheat seed — Dornod,900000.0
+2022-01,Wheat seed — Khentii,700000.0
+2022-01,Wheat seed — Khuvsgul,500000.0
+2022-01,Wheat seed — Orkhon,860000.0
+2022-01,Wheat seed — Selenge,1200000.0
+2022-01,Wheat seed — Tuv,950000.0
+2022-01,Wheat seed — Uvs,1000000.0
+2022-01,Wheat seed — Uvurkhangai,650000.0
+2022-01,Wheat seed — Zavkhan,500000.0
+2022-01,Wheat — Arkhangai,750000.0
+2022-01,Wheat — Bulgan,663000.0
+2022-01,Wheat — Dornod,600000.0
+2022-01,Wheat — Khuvsgul,500000.0
+2022-01,Wheat — Orkhon,700000.0
+2022-01,Wheat — Selenge,620000.0
+2022-01,Wheat — Tuv,675000.0
+2022-01,Wheat — Uvs,675000.0
+2022-01,Wheat — Uvurkhangai,630000.0
+2022-02,Wheat seed — Bulgan,1050000.0
+2022-02,Wheat seed — Dornod,900000.0
+2022-02,Wheat seed — Khuvsgul,500000.0
+2022-02,Wheat seed — Orkhon,860000.0
+2022-02,Wheat seed — Tuv,775000.0
+2022-02,Wheat seed — Uvs,1000000.0
+2022-02,Wheat seed — Zavkhan,650000.0
+2022-02,Wheat — Arkhangai,700000.0
+2022-02,Wheat — Bulgan,745000.0
+2022-02,Wheat — Dornod,600000.0
+2022-02,Wheat — Khuvsgul,500000.0
+2022-02,Wheat — Orkhon,700000.0
+2022-02,Wheat — Selenge,537500.0
+2022-02,Wheat — Tuv,537500.0
+2022-02,Wheat — Uvs,700000.0
+2022-02,Wheat — Uvurkhangai,650000.0
+2022-03,Wheat seed — Bulgan,1050000.0
+2022-03,Wheat seed — Darkhan-Uul,650000.0
+2022-03,Wheat seed — Dornod,900000.0
+2022-03,Wheat seed — Orkhon,800000.0
+2022-03,Wheat seed — Tuv,791667.0
+2022-03,Wheat seed — Uvs,1000000.0
+2022-03,Wheat seed — Zavkhan,600000.0
+2022-03,Wheat — Arkhangai,700000.0
+2022-03,Wheat — Bulgan,745000.0
+2022-03,Wheat — Darkhan-Uul,550000.0
+2022-03,Wheat — Dornod,650000.0
+2022-03,Wheat — Orkhon,700000.0
+2022-03,Wheat — Selenge,500000.0
+2022-03,Wheat — Tuv,550000.0
+2022-03,Wheat — Uvs,700000.0
+2022-03,Wheat — Uvurkhangai,650000.0
+2022-04,Wheat seed — Bulgan,1050000.0
+2022-04,Wheat seed — Darkhan-Uul,650000.0
+2022-04,Wheat seed — Dornod,900000.0
+2022-04,Wheat seed — Orkhon,900000.0
+2022-04,Wheat seed — Selenge,983333.0
+2022-04,Wheat seed — Tuv,1008333.0
+2022-04,Wheat seed — Uvs,950000.0
+2022-04,Wheat seed — Uvurkhangai,650000.0
+2022-04,Wheat seed — Zavkhan,700000.0
+2022-04,Wheat — Arkhangai,700000.0
+2022-04,Wheat — Bulgan,745000.0
+2022-04,Wheat — Darkhan-Uul,550000.0
+2022-04,Wheat — Dornod,650000.0
+2022-04,Wheat — Orkhon,700000.0
+2022-04,Wheat — Selenge,725000.0
+2022-04,Wheat — Tuv,700000.0
+2022-05,Wheat seed — Bulgan,1050000.0
+2022-05,Wheat seed — Darkhan-Uul,650000.0
+2022-05,Wheat seed — Dornod,900000.0
+2022-05,Wheat seed — Orkhon,900000.0
+2022-05,Wheat seed — Selenge,1125000.0
+2022-05,Wheat seed — Tuv,1000000.0
+2022-05,Wheat seed — Uvurkhangai,650000.0
+2022-05,Wheat seed — Zavkhan,500000.0
+2022-05,Wheat — Bulgan,745000.0
+2022-05,Wheat — Darkhan-Uul,550000.0
+2022-05,Wheat — Dornod,650000.0
+2022-05,Wheat — Orkhon,700000.0
+2022-05,Wheat — Selenge,800000.0
+2022-05,Wheat — Tuv,900000.0
+2022-05,Wheat — Uvurkhangai,650000.0
+2022-06,Wheat seed — Bulgan,1050000.0
+2022-06,Wheat seed — Dornod,900000.0
+2022-06,Wheat seed — Orkhon,820000.0
+2022-06,Wheat seed — Selenge,1036667.0
+2022-06,Wheat seed — Tuv,1020000.0
+2022-06,Wheat seed — Zavkhan,700000.0
+2022-06,Wheat — Bulgan,745000.0
+2022-06,Wheat — Dornod,650000.0
+2022-06,Wheat — Orkhon,660000.0
+2022-06,Wheat — Selenge,725000.0
+2022-06,Wheat — Tuv,650000.0
+2022-07,Wheat seed — Bulgan,1200000.0
+2022-07,Wheat seed — Dornod,900000.0
+2022-07,Wheat seed — Tuv,1016667.0
+2022-07,Wheat — Bulgan,690000.0
+2022-07,Wheat — Dornod,650000.0
+2022-07,Wheat — Selenge,560000.0
+2022-07,Wheat — Tuv,716667.0
+2022-08,Wheat seed — Bulgan,1200000.0
+2022-08,Wheat seed — Dornod,900000.0
+2022-08,Wheat seed — Tuv,1200000.0
+2022-08,Wheat seed — Uvs,1800000.0
+2022-08,Wheat seed — Zavkhan,600000.0
+2022-08,Wheat — Bulgan,690000.0
+2022-08,Wheat — Dornod,650000.0
+2022-08,Wheat — Selenge,950000.0
+2022-08,Wheat — Tuv,762500.0
+2022-09,Wheat seed — Bulgan,1200000.0
+2022-09,Wheat seed — Darkhan-Uul,550000.0
+2022-09,Wheat seed — Dornod,1050000.0
+2022-09,Wheat seed — Selenge,1100000.0
+2022-09,Wheat seed — Tuv,1200000.0
+2022-09,Wheat seed — Uvs,1600000.0
+2022-09,Wheat seed — Uvurkhangai,870000.0
+2022-09,Wheat seed — Zavkhan,1000000.0
+2022-09,Wheat — Bulgan,690000.0
+2022-09,Wheat — Darkhan-Uul,880000.0
+2022-09,Wheat — Dornod,700000.0
+2022-09,Wheat — Selenge,983333.0
+2022-09,Wheat — Tuv,830000.0
+2022-09,Wheat — Uvs,1000000.0
+2022-09,Wheat — Uvurkhangai,850000.0
+2022-10,Wheat seed — Bulgan,900000.0
+2022-10,Wheat seed — Darkhan-Uul,990000.0
+2022-10,Wheat seed — Dornod,1050000.0
+2022-10,Wheat seed — Selenge,970000.0
+2022-10,Wheat seed — Tuv,1050000.0
+2022-10,Wheat seed — Uvs,1000000.0
+2022-10,Wheat seed — Uvurkhangai,950000.0
+2022-10,Wheat seed — Zavkhan,1200000.0
+2022-10,Wheat — Bulgan,690000.0
+2022-10,Wheat — Darkhan-Uul,880000.0
+2022-10,Wheat — Dornod,800000.0
+2022-10,Wheat — Orkhon,1020000.0
+2022-10,Wheat — Selenge,751429.0
+2022-10,Wheat — Tuv,850000.0
+2022-10,Wheat — Uvs,1000000.0
+2022-10,Wheat — Uvurkhangai,900000.0
+2022-11,Wheat seed — Bulgan,1200000.0
+2022-11,Wheat seed — Darkhan-Uul,990000.0
+2022-11,Wheat seed — Dornod,1050000.0
+2022-11,Wheat seed — Orkhon,1200000.0
+2022-11,Wheat seed — Selenge,950000.0
+2022-11,Wheat seed — Tuv,1070000.0
+2022-11,Wheat seed — Uvs,1500000.0
+2022-11,Wheat seed — Uvurkhangai,1100000.0
+2022-11,Wheat seed — Zavkhan,1000000.0
+2022-11,Wheat — Arkhangai,800000.0
+2022-11,Wheat — Bulgan,690000.0
+2022-11,Wheat — Darkhan-Uul,880000.0
+2022-11,Wheat — Dornod,850000.0
+2022-11,Wheat — Orkhon,1280000.0
+2022-11,Wheat — Selenge,620000.0
+2022-11,Wheat — Tuv,813000.0
+2022-11,Wheat — Uvs,1000000.0
+2022-11,Wheat — Uvurkhangai,970000.0
+2022-12,Wheat seed — Bulgan,1200000.0
+2022-12,Wheat seed — Darkhan-Uul,990000.0
+2022-12,Wheat seed — Dornod,1100000.0
+2022-12,Wheat seed — Orkhon,1200000.0
+2022-12,Wheat seed — Selenge,925000.0
+2022-12,Wheat seed — Tuv,1000000.0
+2022-12,Wheat seed — Zavkhan,1100000.0
+2022-12,Wheat — Arkhangai,700000.0
+2022-12,Wheat — Bulgan,690000.0
+2022-12,Wheat — Darkhan-Uul,880000.0
+2022-12,Wheat — Dornod,850000.0
+2022-12,Wheat — Orkhon,1280000.0
+2022-12,Wheat — Selenge,600000.0
+2022-12,Wheat — Tuv,817000.0
+2022-12,Wheat — Uvs,1000000.0
+2023-01,Wheat seed — Bulgan,1200000.0
+2023-01,Wheat seed — Dornod,1100000.0
+2023-01,Wheat seed — Orkhon,1200000.0
+2023-01,Wheat seed — Selenge,875000.0
+2023-01,Wheat seed — Tuv,1050000.0
+2023-01,Wheat seed — Zavkhan,1200000.0
+2023-01,Wheat — Bulgan,690000.0
+2023-01,Wheat — Dornod,850000.0
+2023-01,Wheat — Orkhon,1280000.0
+2023-01,Wheat — Selenge,600000.0
+2023-01,Wheat — Tuv,838000.0
+2023-01,Wheat — Uvs,1000000.0
+2023-02,Wheat seed — Bulgan,1300000.0
+2023-02,Wheat seed — Dornod,1100000.0
+2023-02,Wheat seed — Orkhon,1200000.0
+2023-02,Wheat seed — Selenge,866667.0
+2023-02,Wheat seed — Tuv,1116667.0
+2023-02,Wheat seed — Uvurkhangai,975000.0
+2023-02,Wheat seed — Zavkhan,1200000.0
+2023-02,Wheat — Dornod,850000.0
+2023-02,Wheat — Orkhon,1200000.0
+2023-02,Wheat — Selenge,625000.0
+2023-02,Wheat — Tuv,881667.0
+2023-02,Wheat — Uvurkhangai,750000.0
+2023-02,Wheat — Zavkhan,1200000.0
+2023-03,Wheat seed — Bulgan,1147500.0
+2023-03,Wheat seed — Dornod,1100000.0
+2023-03,Wheat seed — Orkhon,1200000.0
+2023-03,Wheat seed — Selenge,866667.0
+2023-03,Wheat seed — Tuv,1200000.0
+2023-03,Wheat seed — Uvurkhangai,1200000.0
+2023-03,Wheat seed — Zavkhan,1200000.0
+2023-03,Wheat — Bulgan,850000.0
+2023-03,Wheat — Dornod,850000.0
+2023-03,Wheat — Orkhon,1200000.0
+2023-03,Wheat — Selenge,583333.0
+2023-03,Wheat — Tuv,908000.0
+2023-03,Wheat — Uvs,1000000.0
+2023-03,Wheat — Uvurkhangai,900000.0
+2023-04,Wheat seed — Bulgan,1147500.0
+2023-04,Wheat seed — Dornod,1100000.0
+2023-04,Wheat seed — Orkhon,1200000.0
+2023-04,Wheat seed — Selenge,875000.0
+2023-04,Wheat seed — Tuv,1250000.0
+2023-04,Wheat seed — Uvurkhangai,995000.0
+2023-04,Wheat seed — Zavkhan,1200000.0
+2023-04,Wheat — Bulgan,850000.0
+2023-04,Wheat — Dornod,850000.0
+2023-04,Wheat — Orkhon,1200000.0
+2023-04,Wheat — Selenge,725000.0
+2023-04,Wheat — Tuv,798000.0
+2023-04,Wheat — Uvurkhangai,900000.0
+2023-05,Wheat seed — Bulgan,995000.0
+2023-05,Wheat seed — Dornod,1100000.0
+2023-05,Wheat seed — Orkhon,1200000.0
+2023-05,Wheat seed — Selenge,916667.0
+2023-05,Wheat seed — Tuv,1337500.0
+2023-05,Wheat seed — Uvs,1250000.0
+2023-05,Wheat seed — Uvurkhangai,1200000.0
+2023-05,Wheat — Bulgan,850000.0
+2023-05,Wheat — Dornod,850000.0
+2023-05,Wheat — Orkhon,1100000.0
+2023-05,Wheat — Selenge,600000.0
+2023-05,Wheat — Tuv,898000.0
+2023-06,Wheat seed — Dornod,1100000.0
+2023-06,Wheat seed — Orkhon,1200000.0
+2023-06,Wheat seed — Selenge,875000.0
+2023-06,Wheat seed — Tuv,1225000.0
+2023-06,Wheat seed — Uvs,2000000.0
+2023-06,Wheat seed — Uvurkhangai,1200000.0
+2023-06,Wheat — Dornod,850000.0
+2023-06,Wheat — Orkhon,1100000.0
+2023-06,Wheat — Selenge,600000.0
+2023-06,Wheat — Tuv,1002667.0
+2023-07,Wheat seed — Dornod,1100000.0
+2023-07,Wheat seed — Orkhon,1200000.0
+2023-07,Wheat seed — Selenge,950000.0
+2023-07,Wheat seed — Tuv,1250000.0
+2023-07,Wheat — Dornod,850000.0
+2023-07,Wheat — Orkhon,1100000.0
+2023-07,Wheat — Tuv,1033333.0
+2023-08,Wheat seed — Dornod,1100000.0
+2023-08,Wheat seed — Orkhon,1200000.0
+2023-08,Wheat seed — Tuv,1500000.0
+2023-08,Wheat seed — Uvs,2000000.0
+2023-08,Wheat — Dornod,850000.0
+2023-08,Wheat — Orkhon,1100000.0
+2023-08,Wheat — Tuv,1200000.0
+2023-09,Wheat seed — Bulgan,995000.0
+2023-09,Wheat seed — Dornod,1100000.0
+2023-09,Wheat seed — Orkhon,1200000.0
+2023-09,Wheat seed — Selenge,925000.0
+2023-09,Wheat seed — Tuv,1200000.0
+2023-09,Wheat seed — Uvs,2200000.0
+2023-09,Wheat seed — Zavkhan,1000000.0
+2023-09,Wheat — Bulgan,925000.0
+2023-09,Wheat — Dornod,850000.0
+2023-09,Wheat — Orkhon,1000000.0
+2023-09,Wheat — Selenge,1050000.0
+2023-09,Wheat — Tuv,1033333.0
+2023-09,Wheat — Uvs,1200000.0
+2023-10,Wheat seed — Bulgan,995000.0
+2023-10,Wheat seed — Darkhan-Uul,800000.0
+2023-10,Wheat seed — Dornod,1100000.0
+2023-10,Wheat seed — Orkhon,1000000.0
+2023-10,Wheat seed — Selenge,1020000.0
+2023-10,Wheat seed — Tuv,1266667.0
+2023-10,Wheat seed — Uvs,1800000.0
+2023-10,Wheat seed — Uvurkhangai,1200000.0
+2023-10,Wheat seed — Zavkhan,1000000.0
+2023-10,Wheat — Bulgan,885000.0
+2023-10,Wheat — Darkhan-Uul,900000.0
+2023-10,Wheat — Dornod,850000.0
+2023-10,Wheat — Orkhon,1000000.0
+2023-10,Wheat — Selenge,750000.0
+2023-10,Wheat — Tuv,910000.0
+2023-10,Wheat — Uvs,1200000.0
+2023-10,Wheat — Uvurkhangai,900000.0
+2023-10,Wheat — Zavkhan,1200000.0
+2023-11,Wheat seed — Arkhangai,1000000.0
+2023-11,Wheat seed — Bulgan,995000.0
+2023-11,Wheat seed — Dornod,1100000.0
+2023-11,Wheat seed — Orkhon,1100000.0
+2023-11,Wheat seed — Selenge,1112500.0
+2023-11,Wheat seed — Tuv,1300000.0
+2023-11,Wheat seed — Uvs,1500000.0
+2023-11,Wheat seed — Uvurkhangai,1200000.0
+2023-11,Wheat — Bulgan,935000.0
+2023-11,Wheat — Dornod,850000.0
+2023-11,Wheat — Orkhon,1100000.0
+2023-11,Wheat — Selenge,980000.0
+2023-11,Wheat — Tuv,910000.0
+2023-11,Wheat — Uvurkhangai,900000.0
+2023-11,Wheat — Zavkhan,1000000.0
+2023-12,Wheat seed — Dornod,1100000.0
+2023-12,Wheat seed — Orkhon,1400000.0
+2023-12,Wheat seed — Selenge,1300000.0
+2023-12,Wheat seed — Tuv,1350000.0
+2023-12,Wheat seed — Uvs,1500000.0
+2023-12,Wheat seed — Uvurkhangai,1100000.0
+2023-12,Wheat seed — Zavkhan,1200000.0
+2023-12,Wheat — Bulgan,920000.0
+2023-12,Wheat — Dornod,850000.0
+2023-12,Wheat — Orkhon,1100000.0
+2023-12,Wheat — Tuv,866667.0
+2023-12,Wheat — Uvs,1150000.0
+2023-12,Wheat — Uvurkhangai,1000000.0
+2023-12,Wheat — Zavkhan,1500000.0
+2024-01,Wheat seed — Bulgan,1200000.0
+2024-01,Wheat seed — Dornod,1100000.0
+2024-01,Wheat seed — Orkhon,1400000.0
+2024-01,Wheat seed — Selenge,1500000.0
+2024-01,Wheat seed — Tuv,1066667.0
+2024-01,Wheat seed — Uvs,1700000.0
+2024-01,Wheat seed — Uvurkhangai,1100000.0
+2024-01,Wheat seed — Zavkhan,1200000.0
+2024-01,Wheat — Arkhangai,1000000.0
+2024-01,Wheat — Bulgan,950000.0
+2024-01,Wheat — Dornod,850000.0
+2024-01,Wheat — Orkhon,1100000.0
+2024-01,Wheat — Selenge,800000.0
+2024-01,Wheat — Tuv,1030000.0
+2024-01,Wheat — Uvs,1300000.0
+2024-01,Wheat — Uvurkhangai,1000000.0
+2024-02,Wheat seed — Bulgan,995000.0
+2024-02,Wheat seed — Dornod,1100000.0
+2024-02,Wheat seed — Orkhon,1300000.0
+2024-02,Wheat seed — Selenge,1400000.0
+2024-02,Wheat seed — Tuv,937500.0
+2024-02,Wheat seed — Uvs,1800000.0
+2024-02,Wheat seed — Zavkhan,1500000.0
+2024-02,Wheat — Arkhangai,1200000.0
+2024-02,Wheat — Bulgan,950000.0
+2024-02,Wheat — Dornod,850000.0
+2024-02,Wheat — Orkhon,1000000.0
+2024-02,Wheat — Selenge,750000.0
+2024-02,Wheat — Tuv,972500.0
+2024-02,Wheat — Uvs,1300000.0
+2024-02,Wheat — Zavkhan,1500000.0
+2024-03,Wheat seed — Orkhon,1325000.0
+2024-03,Wheat seed — Selenge,1000000.0
+2024-03,Wheat seed — Tuv,1100000.0
+2024-03,Wheat seed — Uvs,1800000.0
+2024-03,Wheat seed — Zavkhan,1500000.0
+2024-03,Wheat — Arkhangai,1200000.0
+2024-03,Wheat — Orkhon,1025000.0
+2024-03,Wheat — Tuv,1022500.0
+2024-03,Wheat — Uvs,1300000.0
+2024-03,Wheat — Zavkhan,1500000.0
+2024-04,Wheat seed — Arkhangai,1300000.0
+2024-04,Wheat seed — Dornod,1100000.0
+2024-04,Wheat seed — Orkhon,1400000.0
+2024-04,Wheat seed — Selenge,950000.0
+2024-04,Wheat seed — Tuv,1225000.0
+2024-04,Wheat seed — Uvs,1550000.0
+2024-04,Wheat seed — Zavkhan,1500000.0
+2024-04,Wheat — Dornod,850000.0
+2024-04,Wheat — Tuv,1100000.0
+2024-05,Wheat seed — Arkhangai,1300000.0
+2024-05,Wheat seed — Dornod,1100000.0
+2024-05,Wheat seed — Orkhon,1100000.0
+2024-05,Wheat seed — Selenge,950000.0
+2024-05,Wheat seed — Tuv,1175000.0
+2024-05,Wheat seed — Uvs,1500000.0
+2024-05,Wheat seed — Uvurkhangai,1250000.0
+2024-05,Wheat — Dornod,850000.0
+2024-05,Wheat — Tuv,1166667.0
+2024-05,Wheat — Uvs,1200000.0
+2024-06,Wheat seed — Arkhangai,1300000.0
+2024-06,Wheat seed — Dornod,1100000.0
+2024-06,Wheat seed — Orkhon,1100000.0
+2024-06,Wheat seed — Selenge,950000.0
+2024-06,Wheat seed — Tuv,1175000.0
+2024-06,Wheat seed — Uvs,1700000.0
+2024-06,Wheat seed — Uvurkhangai,1200000.0
+2024-06,Wheat — Dornod,850000.0
+2024-06,Wheat — Tuv,1047000.0
+2024-07,Wheat seed — Arkhangai,1300000.0
+2024-07,Wheat seed — Dornod,1100000.0
+2024-07,Wheat seed — Orkhon,1150000.0
+2024-07,Wheat seed — Selenge,950000.0
+2024-07,Wheat seed — Tuv,1100000.0
+2024-07,Wheat seed — Uvs,1500000.0
+2024-07,Wheat seed — Uvurkhangai,1100000.0
+2024-07,Wheat seed — Zavkhan,1200000.0
+2024-07,Wheat — Dornod,850000.0
+2024-07,Wheat — Tuv,920000.0
+2024-08,Wheat seed — Dornod,1000000.0
+2024-08,Wheat seed — Orkhon,1200000.0
+2024-08,Wheat seed — Selenge,950000.0
+2024-08,Wheat seed — Tuv,1100000.0
+2024-08,Wheat seed — Uvs,1800000.0
+2024-08,Wheat seed — Zavkhan,1200000.0
+2024-08,Wheat — Dornod,880000.0
+2024-08,Wheat — Tuv,1046660.0
+2024-08,Wheat — Uvs,1200000.0
+2024-08,Wheat — Uvurkhangai,1200000.0
+2024-09,Wheat seed — Dornod,1000000.0
+2024-09,Wheat seed — Orkhon,1350000.0
+2024-09,Wheat seed — Selenge,966667.0
+2024-09,Wheat seed — Tuv,1125000.0
+2024-09,Wheat seed — Uvs,1500000.0
+2024-09,Wheat seed — Zavkhan,1000000.0
+2024-09,Wheat — Arkhangai,1000000.0
+2024-09,Wheat — Dornod,880000.0
+2024-09,Wheat — Orkhon,1000000.0
+2024-09,Wheat — Selenge,900000.0
+2024-09,Wheat — Tuv,933333.0
+2024-09,Wheat — Uvs,1100000.0
+2024-09,Wheat — Uvurkhangai,1200000.0
+2024-10,Wheat seed — Dornod,1000000.0
+2024-10,Wheat seed — Orkhon,1350000.0
+2024-10,Wheat seed — Tuv,962500.0
+2024-10,Wheat seed — Uvs,1500000.0
+2024-10,Wheat seed — Zavkhan,1000000.0
+2024-10,Wheat — Arkhangai,1000000.0
+2024-10,Wheat — Orkhon,1000000.0
+2024-10,Wheat — Selenge,900000.0
+2024-10,Wheat — Sukhbaatar,880000.0
+2024-10,Wheat — Tuv,922500.0
+2024-10,Wheat — Uvs,1100000.0
+2024-11,Wheat seed — Dornod,1000000.0
+2024-11,Wheat seed — Orkhon,1350000.0
+2024-11,Wheat seed — Selenge,950000.0
+2024-11,Wheat seed — Tuv,1050000.0
+2024-11,Wheat seed — Uvs,1500000.0
+2024-11,Wheat seed — Uvurkhangai,1450000.0
+2024-11,Wheat seed — Zavkhan,1000000.0
+2024-11,Wheat — Arkhangai,1000000.0
+2024-11,Wheat — Dornod,880000.0
+2024-11,Wheat — Orkhon,1000000.0
+2024-11,Wheat — Selenge,937500.0
+2024-11,Wheat — Tuv,937500.0
+2024-11,Wheat — Uvs,1000000.0
+2024-11,Wheat — Uvurkhangai,1100000.0
+2024-12,Wheat seed — Dornod,1000000.0
+2024-12,Wheat seed — Orkhon,1350000.0
+2024-12,Wheat seed — Selenge,950000.0
+2024-12,Wheat seed — Tuv,1000000.0
+2024-12,Wheat seed — Uvurkhangai,1300000.0
+2024-12,Wheat seed — Zavkhan,1000000.0
+2024-12,Wheat — Dornod,880000.0
+2024-12,Wheat — Orkhon,1000000.0
+2024-12,Wheat — Selenge,816667.0
+2024-12,Wheat — Tuv,825000.0
+2025-01,Wheat seed — Dornod,1000000.0
+2025-01,Wheat seed — Orkhon,1300000.0
+2025-01,Wheat seed — Tuv,1050000.0
+2025-01,Wheat seed — Uvs,1700000.0
+2025-01,Wheat seed — Uvurkhangai,1200000.0
+2025-01,Wheat seed — Zavkhan,1200000.0
+2025-01,Wheat — Dornod,880000.0
+2025-01,Wheat — Orkhon,950000.0
+2025-01,Wheat — Selenge,966667.0
+2025-01,Wheat — Tuv,966667.0
+2025-01,Wheat — Uvs,1000000.0
+2025-02,Wheat seed — Dornod,1000000.0
+2025-02,Wheat seed — Orkhon,1350000.0
+2025-02,Wheat seed — Tuv,1050000.0
+2025-02,Wheat seed — Uvs,1800000.0
+2025-02,Wheat seed — Uvurkhangai,1200000.0
+2025-02,Wheat — Dornod,880000.0
+2025-02,Wheat — Orkhon,1000000.0
+2025-02,Wheat — Selenge,1000000.0
+2025-02,Wheat — Tuv,966667.0
+2025-03,Wheat seed — Dornod,1000000.0
+2025-03,Wheat seed — Orkhon,1500000.0
+2025-03,Wheat seed — Tuv,1250000.0
+2025-03,Wheat seed — Uvs,1600000.0
+2025-03,Wheat seed — Uvurkhangai,1200000.0
+2025-03,Wheat — Dornod,880000.0
+2025-03,Wheat — Orkhon,1100000.0
+2025-03,Wheat — Selenge,1100000.0
+2025-03,Wheat — Tuv,900000.0
+2025-04,Wheat seed — Bayan-Ulgii,1100000.0
+2025-04,Wheat seed — Dornod,1000000.0
+2025-04,Wheat seed — Dundgovi,1050000.0
+2025-04,Wheat seed — Govi-Altai,1500000.0
+2025-04,Wheat seed — Khuvsgul,1200000.0
+2025-04,Wheat seed — Umnugovi,1500000.0
+2025-04,Wheat — Bulgan,1000000.0
+2025-04,Wheat — Dornod,1000000.0
+2025-04,Wheat — Dundgovi,1130000.0
+2025-04,Wheat — Khuvsgul,1320000.0
+2025-04,Wheat — Orkhon,1400000.0
+2025-04,Wheat — Umnugovi,1150000.0
+2025-04,Wheat — Uvs,1200000.0
+2025-05,Wheat seed — Dornod,1000000.0
+2025-05,Wheat seed — Orkhon,1450000.0
+2025-05,Wheat seed — Selenge,1200000.0
+2025-05,Wheat seed — Tuv,1212500.0
+2025-05,Wheat seed — Uvs,1600000.0
+2025-05,Wheat — Arkhangai,1200000.0
+2025-05,Wheat — Dornod,880000.0
+2025-05,Wheat — Tuv,1033333.0
+2025-06,Wheat seed — Dornod,1000000.0
+2025-06,Wheat seed — Khuvsgul,1450000.0
+2025-06,Wheat seed — Umnugovi,1250000.0
+2025-06,Wheat seed — Uvs,1800000.0
+2025-06,Wheat — Dornod,880000.0
+2025-06,Wheat — Dundgovi,1100000.0
+2025-06,Wheat — Umnugovi,600000.0
+2025-07,Wheat seed — Dornod,1000000.0
+2025-07,Wheat seed — Umnugovi,1250000.0
+2025-07,Wheat seed — Uvs,1800000.0
+2025-07,Wheat — Dornod,880000.0
+2025-07,Wheat — Dundgovi,1100000.0
+2025-07,Wheat — Umnugovi,1033333.0
+2025-08,Wheat seed — Dornod,1000000.0
+2025-08,Wheat seed — Dundgovi,1100000.0
+2025-08,Wheat seed — Umnugovi,1250000.0
+2025-08,Wheat seed — Uvs,2000000.0
+2025-08,Wheat — Dornod,880000.0
+2025-08,Wheat — Dundgovi,1100000.0
+2025-08,Wheat — Orkhon,1300000.0
+2025-08,Wheat — Umnugovi,1050000.0
+2025-08,Wheat — Uvs,1200000.0
+2025-09,Wheat seed — Dornod,1000000.0
+2025-09,Wheat seed — Dundgovi,1100000.0
+2025-09,Wheat seed — Umnugovi,1233333.0
+2025-09,Wheat seed — Uvs,1500000.0
+2025-09,Wheat seed — Zavkhan,1100000.0
+2025-09,Wheat — Dornod,1000000.0
+2025-09,Wheat — Dundgovi,1100000.0
+2025-09,Wheat — Khuvsgul,1320000.0
+2025-09,Wheat — Orkhon,1350000.0
+2025-09,Wheat — Umnugovi,1050000.0
+2025-09,Wheat — Uvs,1200000.0
+2025-11,Wheat seed — Dornod,1000000.0
+2025-11,Wheat seed — Orkhon,1300000.0
+2025-11,Wheat seed — Selenge,1066667.0
+2025-11,Wheat seed — Tuv,1500000.0
+2025-11,Wheat seed — Uvs,2000000.0
+2025-11,Wheat seed — Zavkhan,1100000.0
+2025-11,Wheat — Bulgan,1100000.0
+2025-11,Wheat — Orkhon,1400000.0
+2025-11,Wheat — Selenge,1130000.0
+2025-11,Wheat — Tuv,1150000.0
+2025-11,Wheat — Uvs,1200000.0
+2025-11,Wheat — Uvurkhangai,1400000.0
+2025-12,Wheat seed — Dornod,1000000.0
+2025-12,Wheat seed — Orkhon,1300000.0
+2025-12,Wheat seed — Selenge,1150000.0
+2025-12,Wheat seed — Tuv,1500000.0
+2025-12,Wheat seed — Zavkhan,1200000.0
+2025-12,Wheat — Bulgan,1200000.0
+2025-12,Wheat — Dornod,880000.0
+2025-12,Wheat — Orkhon,1400000.0
+2025-12,Wheat — Selenge,1100000.0
+2025-12,Wheat — Tuv,1150000.0
+2025-12,Wheat — Uvs,1200000.0
+2025-12,Wheat — Uvurkhangai,1400000.0

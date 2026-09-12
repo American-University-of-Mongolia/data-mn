@@ -819,26 +819,26 @@ Switzerland,2008,2082.0
 Switzerland,2007,1768.5
 Switzerland,2006,6367.7
 Switzerland,2005,4182.6
-Other,2024,22.31
-Other,2023,22.4
-Other,2022,
-Other,2021,
-Other,2020,
-Other,2019,51.7
-Other,2018,38.4
-Other,2017,19.9
-Other,2016,
-Other,2015,
-Other,2014,
-Other,2013,
-Other,2012,
-Other,2011,
-Other,2010,
-Other,2009,2.8
-Other,2008,
-Other,2007,
-Other,2006,1.1
-Other,2005,14.2
+Other Europe,2024,22.31
+Other Europe,2023,22.4
+Other Europe,2022,
+Other Europe,2021,
+Other Europe,2020,
+Other Europe,2019,51.7
+Other Europe,2018,38.4
+Other Europe,2017,19.9
+Other Europe,2016,
+Other Europe,2015,
+Other Europe,2014,
+Other Europe,2013,
+Other Europe,2012,
+Other Europe,2011,
+Other Europe,2010,
+Other Europe,2009,2.8
+Other Europe,2008,
+Other Europe,2007,
+Other Europe,2006,1.1
+Other Europe,2005,14.2
 Asia,2024,14615403.38
 Asia,2023,14187622.4
 Asia,2022,11247671.1
@@ -859,26 +859,26 @@ Asia,2008,1706752.5
 Asia,2007,1480603.4
 Asia,2006,1086352.1
 Asia,2005,602922.2
-NorthЕastern Asia,2024,14485796.43
-NorthЕastern Asia,2023,14081747.4
-NorthЕastern Asia,2022,11204299.9
-NorthЕastern Asia,2021,7879608.4
-NorthЕastern Asia,2020,5524799.1
-NorthЕastern Asia,2019,6836234.2
-NorthЕastern Asia,2018,6591540.5
-NorthЕastern Asia,2017,5335843.6
-NorthЕastern Asia,2016,3925838.5
-NorthЕastern Asia,2015,3997699.5
-NorthЕastern Asia,2014,5111354.5
-NorthЕastern Asia,2013,3730623.5
-NorthЕastern Asia,2012,4077715.9
-NorthЕastern Asia,2011,4488710.2
-NorthЕastern Asia,2010,2499662.6
-NorthЕastern Asia,2009,1414023.0
-NorthЕastern Asia,2008,1693461.6
-NorthЕastern Asia,2007,1468021.2
-NorthЕastern Asia,2006,1078094.0
-NorthЕastern Asia,2005,584307.6
+NorthEastern Asia,2024,14485796.43
+NorthEastern Asia,2023,14081747.4
+NorthEastern Asia,2022,11204299.9
+NorthEastern Asia,2021,7879608.4
+NorthEastern Asia,2020,5524799.1
+NorthEastern Asia,2019,6836234.2
+NorthEastern Asia,2018,6591540.5
+NorthEastern Asia,2017,5335843.6
+NorthEastern Asia,2016,3925838.5
+NorthEastern Asia,2015,3997699.5
+NorthEastern Asia,2014,5111354.5
+NorthEastern Asia,2013,3730623.5
+NorthEastern Asia,2012,4077715.9
+NorthEastern Asia,2011,4488710.2
+NorthEastern Asia,2010,2499662.6
+NorthEastern Asia,2009,1414023.0
+NorthEastern Asia,2008,1693461.6
+NorthEastern Asia,2007,1468021.2
+NorthEastern Asia,2006,1078094.0
+NorthEastern Asia,2005,584307.6
 DPR Korea,2024,0.0
 DPR Korea,2023,128.2
 DPR Korea,2022,0.0
@@ -979,26 +979,26 @@ Japan,2008,27589.0
 Japan,2007,15088.5
 Japan,2006,7113.2
 Japan,2005,5797.9
-SouthЕastern Asia,2024,13867.46
-SouthЕastern Asia,2023,16902.0
-SouthЕastern Asia,2022,12942.5
-SouthЕastern Asia,2021,256443.2
-SouthЕastern Asia,2020,160808.9
-SouthЕastern Asia,2019,172699.9
-SouthЕastern Asia,2018,45389.4
-SouthЕastern Asia,2017,34014.6
-SouthЕastern Asia,2016,28703.9
-SouthЕastern Asia,2015,34524.8
-SouthЕastern Asia,2014,20199.4
-SouthЕastern Asia,2013,13004.3
-SouthЕastern Asia,2012,6995.3
-SouthЕastern Asia,2011,7174.7
-SouthЕastern Asia,2010,26790.0
-SouthЕastern Asia,2009,1915.9
-SouthЕastern Asia,2008,2528.9
-SouthЕastern Asia,2007,1236.7
-SouthЕastern Asia,2006,2406.8
-SouthЕastern Asia,2005,707.7
+SouthEastern Asia,2024,13867.46
+SouthEastern Asia,2023,16902.0
+SouthEastern Asia,2022,12942.5
+SouthEastern Asia,2021,256443.2
+SouthEastern Asia,2020,160808.9
+SouthEastern Asia,2019,172699.9
+SouthEastern Asia,2018,45389.4
+SouthEastern Asia,2017,34014.6
+SouthEastern Asia,2016,28703.9
+SouthEastern Asia,2015,34524.8
+SouthEastern Asia,2014,20199.4
+SouthEastern Asia,2013,13004.3
+SouthEastern Asia,2012,6995.3
+SouthEastern Asia,2011,7174.7
+SouthEastern Asia,2010,26790.0
+SouthEastern Asia,2009,1915.9
+SouthEastern Asia,2008,2528.9
+SouthEastern Asia,2007,1236.7
+SouthEastern Asia,2006,2406.8
+SouthEastern Asia,2005,707.7
 Vietnam,2024,836.85
 Vietnam,2023,5590.4
 Vietnam,2022,581.3
@@ -1659,26 +1659,26 @@ India,2008,943.0
 India,2007,2211.3
 India,2006,1535.8
 India,2005,55.7
-Other,2024,13755.19
-Other,2023,4231.5
-Other,2022,0.0
-Other,2021,0.2
-Other,2020,0.0
-Other,2019,1038.0
-Other,2018,126.7
-Other,2017,104.1
-Other,2016,0.2
-Other,2015,0.0
-Other,2014,0.0
-Other,2013,0.0
-Other,2012,0.0
-Other,2011,0.0
-Other,2010,50.0
-Other,2009,0.1
-Other,2008,0.0
-Other,2007,0.0
-Other,2006,0.0
-Other,2005,0.0
+Other Asia,2024,13755.19
+Other Asia,2023,4231.5
+Other Asia,2022,0.0
+Other Asia,2021,0.2
+Other Asia,2020,0.0
+Other Asia,2019,1038.0
+Other Asia,2018,126.7
+Other Asia,2017,104.1
+Other Asia,2016,0.2
+Other Asia,2015,0.0
+Other Asia,2014,0.0
+Other Asia,2013,0.0
+Other Asia,2012,0.0
+Other Asia,2011,0.0
+Other Asia,2010,50.0
+Other Asia,2009,0.1
+Other Asia,2008,0.0
+Other Asia,2007,0.0
+Other Asia,2006,0.0
+Other Asia,2005,0.0
 Africa,2024,35879.7
 Africa,2023,19470.0
 Africa,2022,2736.8
@@ -1979,26 +1979,26 @@ Ethiopia,2008,
 Ethiopia,2007,
 Ethiopia,2006,
 Ethiopia,2005,
-Other,2024,34049.07
-Other,2023,0.0
-Other,2022,225.0
-Other,2021,0.0
-Other,2020,1140.4
-Other,2019,1212.8
-Other,2018,0.4
-Other,2017,10.0
-Other,2016,0.0
-Other,2015,
-Other,2014,2.1
-Other,2013,1.2
-Other,2012,
-Other,2011,
-Other,2010,
-Other,2009,85.0
-Other,2008,596.2
-Other,2007,
-Other,2006,3.1
-Other,2005,
+Other Africa,2024,34049.07
+Other Africa,2023,0.0
+Other Africa,2022,225.0
+Other Africa,2021,0.0
+Other Africa,2020,1140.4
+Other Africa,2019,1212.8
+Other Africa,2018,0.4
+Other Africa,2017,10.0
+Other Africa,2016,0.0
+Other Africa,2015,
+Other Africa,2014,2.1
+Other Africa,2013,1.2
+Other Africa,2012,
+Other Africa,2011,
+Other Africa,2010,
+Other Africa,2009,85.0
+Other Africa,2008,596.2
+Other Africa,2007,
+Other Africa,2006,3.1
+Other Africa,2005,
 America,2024,167361.18
 America,2023,50616.5
 America,2022,11326.0
@@ -2339,46 +2339,46 @@ Ecuador,2008,
 Ecuador,2007,
 Ecuador,2006,
 Ecuador,2005,
-Пуэрто-Рико,2024,0.05
-Пуэрто-Рико,2023,
-Пуэрто-Рико,2022,
-Пуэрто-Рико,2021,
-Пуэрто-Рико,2020,
-Пуэрто-Рико,2019,
-Пуэрто-Рико,2018,
-Пуэрто-Рико,2017,
-Пуэрто-Рико,2016,
-Пуэрто-Рико,2015,
-Пуэрто-Рико,2014,
-Пуэрто-Рико,2013,
-Пуэрто-Рико,2012,
-Пуэрто-Рико,2011,
-Пуэрто-Рико,2010,
-Пуэрто-Рико,2009,
-Пуэрто-Рико,2008,
-Пуэрто-Рико,2007,
-Пуэрто-Рико,2006,
-Пуэрто-Рико,2005,
-Australia,2024,13462.23
-Australia,2023,3840.2
-Australia,2022,1037.6
-Australia,2021,710.1
-Australia,2020,1481.0
-Australia,2019,39664.8
-Australia,2018,1298.4
-Australia,2017,3482.1
-Australia,2016,1263.9
-Australia,2015,3087.3
-Australia,2014,1167.5
-Australia,2013,8291.7
-Australia,2012,638.8
-Australia,2011,450.8
-Australia,2010,339.4
-Australia,2009,846.7
-Australia,2008,787.2
-Australia,2007,1241.0
-Australia,2006,412.2
-Australia,2005,14280.8
+Puerto Rico,2024,0.05
+Puerto Rico,2023,
+Puerto Rico,2022,
+Puerto Rico,2021,
+Puerto Rico,2020,
+Puerto Rico,2019,
+Puerto Rico,2018,
+Puerto Rico,2017,
+Puerto Rico,2016,
+Puerto Rico,2015,
+Puerto Rico,2014,
+Puerto Rico,2013,
+Puerto Rico,2012,
+Puerto Rico,2011,
+Puerto Rico,2010,
+Puerto Rico,2009,
+Puerto Rico,2008,
+Puerto Rico,2007,
+Puerto Rico,2006,
+Puerto Rico,2005,
+Oceania,2024,13462.23
+Oceania,2023,3840.2
+Oceania,2022,1037.6
+Oceania,2021,710.1
+Oceania,2020,1481.0
+Oceania,2019,39664.8
+Oceania,2018,1298.4
+Oceania,2017,3482.1
+Oceania,2016,1263.9
+Oceania,2015,3087.3
+Oceania,2014,1167.5
+Oceania,2013,8291.7
+Oceania,2012,638.8
+Oceania,2011,450.8
+Oceania,2010,339.4
+Oceania,2009,846.7
+Oceania,2008,787.2
+Oceania,2007,1241.0
+Oceania,2006,412.2
+Oceania,2005,14280.8
 Australia,2024,13422.25
 Australia,2023,3603.5
 Australia,2022,1023.3

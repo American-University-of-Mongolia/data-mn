@@ -1,0 +1,11 @@
+{
+  "dataset_id": "weekly-grocery-prices-ulaanbaatar",
+  "version": 1,
+  "snapshot_at": "2026-09-12",
+  "note": "Backfilled snapshot during 2026-09 standards rollout",
+  "files": [
+    "weekly-grocery-prices-ulaanbaatar-en.csv",
+    "weekly-grocery-prices-ulaanbaatar-mn.csv",
+    "weekly-grocery-prices-ulaanbaatar.xlsx"
+  ]
+}

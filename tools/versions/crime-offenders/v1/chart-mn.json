@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын гэмт хэргийн төрлөөр гэмт этгээдийн тоо (2010-2024)",
+  "data": {
+    "url": "/datasets/crime-offenders-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": {"field": "гэмт_хэргийн_төрөл", "oneOf": ["Өмчлөх эрхийн эсрэг гэмт хэрэг", "Хүний эрүүл мэндийн халдашгүй байдлын эсрэг гэмт хэрэг", "Хөдөлгөөний аюулгүй байдал, тээврийн хэрэгслийн ашиглалтын журмын эсрэг гэмт хэрэг", "Хүрээлэн байгаа орчны эсрэг гэмт хэрэг"]}}
+  ],
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "axis": {"format": "d", "tickMinStep": 1, "grid": false}
+    },
+    "y": {
+      "field": "гэмт_этгээд",
+      "type": "quantitative",
+      "title": "Гэмт этгээдийн тоо",
+      "axis": {"format": ",d"}
+    },
+    "color": {
+      "field": "гэмт_хэргийн_төрөл",
+      "type": "nominal",
+      "title": "Гэмт хэргийн төрөл",
+      "scale": {
+        "domain": ["Өмчлөх эрхийн эсрэг гэмт хэрэг", "Хүний эрүүл мэндийн халдашгүй байдлын эсрэг гэмт хэрэг", "Хөдөлгөөний аюулгүй байдал, тээврийн хэрэгслийн ашиглалтын журмын эсрэг гэмт хэрэг", "Хүрээлэн байгаа орчны эсрэг гэмт хэрэг"],
+        "range": ["#e41a1c", "#377eb8", "#4daf4a", "#984ea3"]
+      },
+      "legend": {"orient": "top"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [{"name": "hover", "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}}],
+      "mark": {"type": "point", "filled": true, "size": 100},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "он", "type": "quantitative", "title": "Он", "format": "d"},
+          {"field": "гэмт_хэргийн_төрөл", "type": "nominal", "title": "Төрөл"},
+          {"field": "гэмт_этгээд", "type": "quantitative", "title": "Гэмт этгээд", "format": ",d"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14, "labelLimit": 250}
+  }
+}

@@ -28,15 +28,15 @@ Years: 1989–2025
 ## Scope (industrial-production-national)
 
 - **7 key industrial commodities** selected from 74 in the source table
-- **Columns EN**: `year`, `commodity`, `unit`, `value`
-- **Columns MN**: `он`, `бараа_бүтээгдэхүүн`, `хэмжих_нэгж`, `утга`
+- **Columns EN**: `year`, `commodity`, `value` (commodity folds its unit, e.g. `Coal (thousand tonnes)`)
+- **Columns MN**: `он`, `бараа_бүтээгдэхүүн`, `утга` (e.g. `Нүүрс (мян.тонн)`)
 - **Format**: Long form (233 rows after dropping NaN)
 - **Units**: Vary per commodity (see table above)
 - **Date range**: 1989–2025
 
 ## Notes
 
-- Units differ per commodity — a `unit` column is included in the CSV for clarity
+- Units differ per commodity, but each commodity maps to exactly one unit, so the unit is folded into the commodity label for a 3-column long form
 - Crude oil: 9 missing values (years with no production)
 - Gold: 2 missing values (early years)
 - Iron ore: 15 missing values (early years before large-scale mining)

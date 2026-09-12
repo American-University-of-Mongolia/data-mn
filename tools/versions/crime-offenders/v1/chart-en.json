@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Crime Offenders in Mongolia by Type of Crime (2010-2024)",
+  "data": {
+    "url": "/datasets/crime-offenders-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": {"field": "crime_type", "oneOf": ["Crimes against ownership right", "Crimes against human heath immunity", "Crimes against traffic safety and regulation of vehicle use", "Crimes against environment"]}}
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {"format": "d", "tickMinStep": 1, "grid": false}
+    },
+    "y": {
+      "field": "offenders",
+      "type": "quantitative",
+      "title": "Number of Offenders",
+      "axis": {"format": ",d"}
+    },
+    "color": {
+      "field": "crime_type",
+      "type": "nominal",
+      "title": "Crime Type",
+      "scale": {
+        "domain": ["Crimes against ownership right", "Crimes against human heath immunity", "Crimes against traffic safety and regulation of vehicle use", "Crimes against environment"],
+        "range": ["#e41a1c", "#377eb8", "#4daf4a", "#984ea3"]
+      },
+      "legend": {"orient": "top"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [{"name": "hover", "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}}],
+      "mark": {"type": "point", "filled": true, "size": 100},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
+          {"field": "crime_type", "type": "nominal", "title": "Crime Type"},
+          {"field": "offenders", "type": "quantitative", "title": "Offenders", "format": ",d"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14, "labelLimit": 200}
+  }
+}

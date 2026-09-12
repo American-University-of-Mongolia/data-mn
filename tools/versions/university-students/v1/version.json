@@ -1,0 +1,13 @@
+{
+  "dataset_id": "university-students",
+  "version": 1,
+  "snapshot_at": "2026-09-12",
+  "note": "Backfilled snapshot of published files during the 2026-09 download-standards rollout.",
+  "files": [
+    "university-students-en.csv",
+    "university-students-mn.csv",
+    "university-students-all-en.csv",
+    "university-students-all-mn.csv",
+    "university-students.xlsx"
+  ]
+}

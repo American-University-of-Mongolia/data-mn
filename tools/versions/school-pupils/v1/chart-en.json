@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Total Number of Pupils in General Educational Schools in Mongolia (2010-2025)",
+  "data": {
+    "url": "/datasets/school-pupils-en.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": {"field": "indicator", "oneOf": ["Primary", "Secondary", "High"]}}
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {"format": "d", "tickMinStep": 1, "grid": false}
+    },
+    "y": {
+      "field": "pupils",
+      "type": "quantitative",
+      "title": "Number of Pupils",
+      "axis": {"format": ",d"}
+    },
+    "color": {
+      "field": "indicator",
+      "type": "nominal",
+      "title": "Education Level",
+      "scale": {
+        "domain": ["Primary", "Secondary", "High"],
+        "range": ["#1f77b4", "#ff7f0e", "#2ca02c"]
+      },
+      "legend": {"orient": "top"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      }
+    },
+    {
+      "params": [{"name": "hover", "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}}],
+      "mark": {"type": "point", "filled": true, "size": 100},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
+          {"field": "indicator", "type": "nominal", "title": "Level"},
+          {"field": "pupils", "type": "quantitative", "title": "Pupils", "format": ",d"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "view": {"stroke": "transparent"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14}
+  }
+}

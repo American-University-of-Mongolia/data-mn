@@ -31,8 +31,8 @@ Range: 1940 to 1992 (not all years present for all indicators)
 
 - **12 indicators**: All indicators from the source table
 - **Geography**: National (Mongolia)
-- **Columns EN**: `year`, `indicator`, `unit`, `value`
-- **Columns MN**: `он`, `үзүүлэлт`, `хэмжих_нэгж`, `утга`
+- **Columns EN**: `year`, `indicator`, `value` (indicator folds its unit, e.g. `Televisions (thousands)`)
+- **Columns MN**: `он`, `үзүүлэлт`, `утга` (e.g. `Телевизор (мянган ш)`)
 - **Format**: Long form (264 rows — nulls dropped)
 - **Units**: count, thousand km, or thousands (per indicator)
 - **Date range**: 1940 to 1992

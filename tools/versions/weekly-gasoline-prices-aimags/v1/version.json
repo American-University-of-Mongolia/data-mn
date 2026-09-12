@@ -1,0 +1,15 @@
+{
+  "dataset_id": "weekly-gasoline-prices-aimags",
+  "version": 1,
+  "snapshot_at": "2026-09-12",
+  "note": "Backfilled snapshot during 2026-09 standards rollout",
+  "files": [
+    "weekly-gasoline-prices-aimags-all-en.csv",
+    "weekly-gasoline-prices-aimags-all-mn.csv",
+    "weekly-gasoline-prices-aimags-en.csv",
+    "weekly-gasoline-prices-aimags-latest-en.csv",
+    "weekly-gasoline-prices-aimags-latest-mn.csv",
+    "weekly-gasoline-prices-aimags-mn.csv",
+    "weekly-gasoline-prices-aimags.xlsx"
+  ]
+}

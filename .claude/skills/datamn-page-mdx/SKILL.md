@@ -120,9 +120,10 @@ import VegaChart from '~/components/ui/VegaChart.astro';
 ```
 
 **IMPORTANT NOTES:**
-1. **Chart CSV vs Download CSV**: The chart references `{DATASET_ID}-{lang}.csv` (subset for readability), but the dataFiles reference `{DATASET_ID}-all-{lang}.csv` (complete data for download).
+1. **Chart CSV vs Download CSV**: The chart references `{DATASET_ID}-{lang}.csv` (subset for readability), but the dataFiles reference `{DATASET_ID}-all-{lang}.csv` (complete data for download). When no chart subset exists, both point at `{DATASET_ID}-{lang}.csv`.
 2. **Language-specific chart specs**: The English MDX uses `{DATASET_ID}-en.json` and the Mongolian MDX uses `{DATASET_ID}-mn.json`. This ensures axis labels and tooltips are in the correct language.
-3. **Excel file**: One Excel file per dataset (wide format with all data), shared between languages.
+3. **Excel file**: One bilingual Excel file per dataset (wide format, `English` + `Монгол` sheets), shared between languages. Built by `python tools/scripts/rebuild_downloads.py --dataset {id} --apply` — never hand-rolled.
+4. **Download standards**: every dataset must satisfy Standard 1 + 2 (`docs/principles/download-standards.md`): exactly 2 dataFiles, page prose fully in the page language.
 
 ### When Dataset Has Many Categories (Regions, Products, etc.)
 
@@ -372,6 +373,7 @@ After generating pages, verify:
 3. **Imports present**: VegaChart and DataDownload imported
 4. **Chart exists**: Referenced chart spec file exists
 5. **Data files exist**: CSV and XLSX files exist
+6. **Standards green**: `python tools/scripts/validate_dataset.py --all {id} --base-dir data.mn` shows `Valid: 15, Invalid: 0`
 
 ## Example Usage
 

@@ -43,6 +43,15 @@ This serves two distinct user groups:
 | **XLSX** | ALL data | Wide/pivot form | Excel users, casual data exploration |
 | **Chart** | SUBSET | Visual | Immediate insight, must be readable (4-6 categories max) |
 
+> **Download standards**: all exports must satisfy Standard 1 + 2
+> (`docs/principles/download-standards.md`): long CSV, ONE bilingual wide
+> XLSX (`English` + `Монгол` sheets), exactly 2 files in MDX `dataFiles`.
+> Never hand-roll the workbook — build it with the canonical script:
+> `python tools/scripts/rebuild_downloads.py --dataset {id} --apply`
+> (asserts long form, pivots, checks EN↔MN equivalence).
+> Verify with `python tools/scripts/validate_dataset.py --all {id} --base-dir data.mn`
+> (`Valid: 15, Invalid: 0`).
+
 ### Long vs Wide Format
 
 **Long/Tidy Format (CSV)** - One observation per row:
@@ -210,14 +219,15 @@ def clean_for_export(df, split_id):
 ```python
 def export_dataset(df, dataset_id, lang, time_col='date', category_col=None, value_col='price'):
     """
-    Export dataset to CSV (long form) and XLSX (wide form).
+    Export dataset to CSV (long form). The XLSX is built separately by
+    rebuild_downloads.py after both languages' CSVs exist.
 
     Args:
         df: DataFrame with all data (not chart subset)
         dataset_id: e.g., "weekly-beef-prices"
         lang: "en" or "mn"
         time_col: Column containing time values (date, year, etc.)
-        category_col: Column to pivot for XLSX (e.g., "region"). None for simple time series.
+        category_col: Unused here; the rebuild script pivots on it.
         value_col: Column containing numeric values
     """
     output_dir = "data/data.mn/public/datasets"
@@ -226,50 +236,14 @@ def export_dataset(df, dataset_id, lang, time_col='date', category_col=None, val
     csv_path = f"{output_dir}/{dataset_id}-{lang}.csv"
     df.to_csv(csv_path, index=False)
 
-    # XLSX: Wide/pivot form - pivot if category_col exists
-    xlsx_path = f"{output_dir}/{dataset_id}.xlsx"  # Note: no lang suffix for Excel
+    # XLSX: do NOT write it here. This function runs once per language, but
+    # there is only ONE bilingual workbook per dataset. After exporting both
+    # languages' CSVs, build it with the canonical script:
+    #   python tools/scripts/rebuild_downloads.py --dataset {dataset_id} --apply
 
-    if category_col and category_col in df.columns:
-        # Pivot: rows=time, columns=categories, values=value
-        wide_df = df.pivot_table(
-            index=time_col,
-            columns=category_col,
-            values=value_col,
-            aggfunc='first'  # Should be unique anyway
-        ).reset_index()
-
-        # Flatten column names if multi-level
-        if hasattr(wide_df.columns, 'levels'):
-            wide_df.columns = [str(c) if c else time_col for c in wide_df.columns]
-    else:
-        # No pivot needed - simple time series
-        wide_df = df.copy()
-
-    # Export XLSX with formatting
-    with pd.ExcelWriter(xlsx_path, engine='openpyxl') as writer:
-        wide_df.to_excel(writer, index=False, sheet_name='Data')
-
-        # Auto-adjust column widths
-        worksheet = writer.sheets['Data']
-        for idx, col in enumerate(wide_df.columns):
-            max_length = max(
-                wide_df[col].astype(str).map(len).max(),
-                len(str(col))
-            ) + 2
-            # Handle column index > 26 (Excel column letters)
-            col_letter = get_column_letter(idx + 1)
-            worksheet.column_dimensions[col_letter].width = min(max_length, 30)
-
-    return csv_path, xlsx_path
+    return csv_path
 
 
-def get_column_letter(col_idx):
-    """Convert 1-based column index to Excel column letter(s)."""
-    result = ""
-    while col_idx > 0:
-        col_idx, remainder = divmod(col_idx - 1, 26)
-        result = chr(65 + remainder) + result
-    return result
 ```
 
 ### 5. Export Chart Data (Subset Only)
@@ -328,20 +302,13 @@ def export_all_files(df, dataset_id, lang, time_col, category_col, value_col, ch
     full_csv = f"{output_dir}/{dataset_id}-all-{lang}.csv"
     df.to_csv(full_csv, index=False)
 
-    # 3. XLSX (all data, wide form) - for Excel download
-    xlsx_path = f"{output_dir}/{dataset_id}.xlsx"
-    if category_col:
-        wide_df = df.pivot_table(
-            index=time_col, columns=category_col, values=value_col, aggfunc='first'
-        ).reset_index()
-    else:
-        wide_df = df
+    # 3. XLSX is NOT written here. After exporting BOTH languages' CSVs,
+    # build the single bilingual workbook once via the canonical script:
+    #   python tools/scripts/rebuild_downloads.py --dataset {dataset_id} --apply
+    # (writes {id}.xlsx with English + Монгол wide sheets, fixes MDX dataFiles,
+    # asserts equivalence). Never write per-language -en/-mn.xlsx files.
 
-    with pd.ExcelWriter(xlsx_path, engine='openpyxl') as writer:
-        wide_df.to_excel(writer, index=False, sheet_name='Data')
-        auto_adjust_columns(writer.sheets['Data'], wide_df)
-
-    return {"chart_csv": chart_csv, "full_csv": full_csv, "xlsx": xlsx_path}
+    return {"chart_csv": chart_csv, "full_csv": full_csv}
 ```
 
 ## Complete Example: Regional Price Data
@@ -394,7 +361,9 @@ for lang, df in [("en", beef_en), ("mn", beef_mn)]:
     print(f"Exported ({lang}):")
     print(f"  Chart CSV (4 regions): {files['chart_csv']}")
     print(f"  Full CSV (25 regions): {files['full_csv']}")
-    print(f"  XLSX (wide format):    {files['xlsx']}")
+# After both languages: build the bilingual workbook once:
+#   python tools/scripts/rebuild_downloads.py --dataset weekly-beef-prices --apply
+#   -> weekly-beef-prices.xlsx (100 rows x 26 cols, English + Монгол sheets)
 ```
 
 ### Output:
@@ -402,12 +371,12 @@ for lang, df in [("en", beef_en), ("mn", beef_mn)]:
 Exported (en):
   Chart CSV (4 regions): weekly-beef-prices-en.csv       # 400 rows (4 regions × 100 weeks)
   Full CSV (25 regions): weekly-beef-prices-all-en.csv   # 2500 rows (25 regions × 100 weeks)
-  XLSX (wide format):    weekly-beef-prices.xlsx          # 100 rows × 26 columns
 
 Exported (mn):
   Chart CSV (4 regions): weekly-beef-prices-mn.csv
   Full CSV (25 regions): weekly-beef-prices-all-mn.csv
-  XLSX (wide format):    (same file, just one Excel per dataset)
+
+Then: weekly-beef-prices.xlsx  # one bilingual workbook, 100 rows x 26 cols
 ```
 
 ## Bilingual Category Reference
@@ -467,7 +436,7 @@ def validate_split(df, split_config):
 |---------|--------|------|---------|
 | Chart CSV | Long form, subset | `{id}-{lang}.csv` | Vega-Lite chart data source |
 | Download CSV | Long form, ALL data | `{id}-all-{lang}.csv` | Technical users, PowerBI, Tableau |
-| Download XLSX | Wide form, ALL data | `{id}.xlsx` | Excel users (one file for both languages) |
+| Download XLSX | Wide form, ALL data | `{id}.xlsx` | Excel users (one bilingual file: `English` + `Монгол` sheets) |
 
 **Directory**: `data/data.mn/public/datasets/`
 
@@ -477,10 +446,14 @@ In the MDX frontmatter, reference the download files (not chart files):
 
 ```yaml
 dataFiles:
-  - label: "CSV (All Regions)"
-    url: "/datasets/weekly-beef-prices-all-en.csv"
-  - label: "Excel"
-    url: "/datasets/weekly-beef-prices.xlsx"
+  - path: "/datasets/weekly-beef-prices-all-en.csv"
+    format: "csv"
+    size: "{CSV_SIZE}"
+    description: "Download as CSV (all data)"
+  - path: "/datasets/weekly-beef-prices.xlsx"
+    format: "xlsx"
+    size: "{XLSX_SIZE}"
+    description: "Open in Excel"
 ```
 
 The chart component references its own CSV via the chart JSON spec, not through dataFiles.

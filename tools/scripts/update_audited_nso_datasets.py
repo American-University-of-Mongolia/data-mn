@@ -14,11 +14,14 @@ import json
 import re
 import shutil
 import sqlite3
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 import pandas as pd
-from openpyxl.utils import get_column_letter
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from rebuild_downloads import process_dataset
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -70,17 +73,17 @@ def clean_strings(frame: pd.DataFrame) -> pd.DataFrame:
 def write_csv_pair(dataset_id: str, en: pd.DataFrame, mn: pd.DataFrame) -> None:
     en.to_csv(PUBLIC / f"{dataset_id}-en.csv", index=False)
     mn.to_csv(PUBLIC / f"{dataset_id}-mn.csv", index=False)
-    write_xlsx(PUBLIC / f"{dataset_id}.xlsx", en)
 
 
-def write_xlsx(path: Path, frame: pd.DataFrame) -> None:
-    with pd.ExcelWriter(path, engine="openpyxl") as writer:
-        frame.to_excel(writer, index=False, sheet_name="Data")
-        sheet = writer.sheets["Data"]
-        for index, column in enumerate(frame.columns, start=1):
-            values = frame[column].fillna("").astype(str)
-            length = max(len(str(column)), int(values.str.len().max())) + 2
-            sheet.column_dimensions[get_column_letter(index)].width = min(length, 40)
+def rebuild_downloads_for(dataset_ids: list[str]) -> None:
+    """Rebuild each dataset's single bilingual wide XLSX (Standard 1+2)."""
+    for dataset_id in dataset_ids:
+        report = process_dataset(dataset_id, apply=True)
+        if report["queue"] != "auto":
+            raise ValueError(
+                f"{dataset_id}: rebuild_downloads routed to manual queue: "
+                f"{report['reasons']}"
+            )
 
 
 def aligned_language_frames(en_path: Path, mn_path: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -168,10 +171,16 @@ def regenerate_bop(raw_root: Path) -> None:
     trade = exports.merge(imports, on="month", suffixes=("_exports", "_imports")).dropna()
     trade.columns = ["month", "exports", "imports"]
     trade["net"] = trade.exports - trade.imports
-    trade = trade.sort_values("month")
-    trade_mn = trade.copy()
-    trade_mn.columns = ["сар", "экспорт", "импорт", "цэвэр"]
-    write_csv_pair("bop-trade-balance", trade, trade_mn)
+    trade = trade.melt(id_vars="month", value_vars=["exports", "imports", "net"],
+                       var_name="metric", value_name="value")
+    trade["metric"] = trade.metric.map(
+        {"exports": "Exports", "imports": "Imports", "net": "Net Balance"})
+    trade_en = trade.sort_values(["month", "metric"]).reset_index(drop=True)
+    trade_mn = trade_en.copy()
+    trade_mn["metric"] = trade_mn.metric.map(
+        {"Exports": "Экспорт", "Imports": "Импорт", "Net Balance": "Цэвэр тэнцэл"})
+    trade_mn.columns = ["сар", "үзүүлэлт", "утга"]
+    write_csv_pair("bop-trade-balance", trade_en, trade_mn)
 
     snapshot("nso-bop-monthly", 2, en_path=raw_root / "bop/nso-0100-001v10-en.csv",
              mn_path=raw_root / "bop/nso-0100-001v10-mn.csv")
@@ -264,14 +273,14 @@ def regenerate_industrial(raw_root: Path) -> None:
     rows_mn = []
     for index in en.index[mask]:
         name_en, name_mn, unit_en, unit_mn = selected[en.at[index, "commodity"]]
-        rows_en.append((int(en.at[index, "year"]), name_en, unit_en, en.at[index, "value"]))
-        rows_mn.append((int(mn.at[index, "year"]), name_mn, unit_mn, mn.at[index, "value"]))
-    out_en = pd.DataFrame(rows_en, columns=["year", "commodity", "unit", "value"]).sort_values(
-        ["year", "commodity"]
-    )
+        rows_en.append((int(en.at[index, "year"]), f"{name_en} ({unit_en})", en.at[index, "value"]))
+        rows_mn.append((int(mn.at[index, "year"]), f"{name_mn} ({unit_mn})", mn.at[index, "value"]))
+    order = pd.DataFrame(rows_en, columns=["year", "commodity", "value"])
+    rank = order.sort_values(["year", "commodity"]).index
+    out_en = order.loc[rank].reset_index(drop=True)
     out_mn = pd.DataFrame(
-        rows_mn, columns=["он", "бараа_бүтээгдэхүүн", "хэмжих_нэгж", "утга"]
-    ).sort_values(["он", "бараа_бүтээгдэхүүн"])
+        rows_mn, columns=["он", "бараа_бүтээгдэхүүн", "утга"]
+    ).loc[rank].reset_index(drop=True)
     write_csv_pair("industrial-production-national", out_en, out_mn)
     snapshot("industrial-production-national", 2,
              en_path=raw_root / "industrial/nso-1100-013v1-en.csv",
@@ -334,20 +343,6 @@ def refresh_mdx_and_charts(dataset_ids: list[str], latest: str, version: int) ->
                 chart_text = chart.read_text()
                 chart_text = re.sub(r"(?<=-)2024(?=\b)|(?<=-)2025(?=\b)", latest_year, chart_text)
                 chart.write_text(chart_text)
-
-
-def create_missing_english_xlsx() -> None:
-    dataset_ids = [
-        "meat-production-historical-by-type",
-        "infant-mortality-rate-national",
-        "meat-production-historical-total",
-        "hospital-beds-national",
-        "meat-production-by-region",
-    ]
-    for dataset_id in dataset_ids:
-        source = PUBLIC / f"{dataset_id}-en.csv"
-        destination = PUBLIC / f"{dataset_id}-en.xlsx"
-        write_xlsx(destination, pd.read_csv(source))
 
 
 def sha256(path: Path) -> str:
@@ -511,10 +506,15 @@ def main() -> None:
     refresh_mdx_and_charts(BOP_SPLITS, "2026-05-31", 2)
     refresh_mdx_and_charts(TEMPERATURE_SPLITS, "2026-06-30", 1)
     refresh_mdx_and_charts(["industrial-production-national"], "2025-12-31", 2)
+    rebuild_downloads_for([
+        *GDP_SPLITS,
+        *BOP_SPLITS,
+        *TEMPERATURE_SPLITS,
+        "industrial-production-national",
+    ])
     snapshot_published(GDP_SPLITS, 2, SOURCE_UPDATED["nso-gdp-by-economic-activity"])
     snapshot_published(BOP_SPLITS, 2, SOURCE_UPDATED["nso-bop-monthly"])
     snapshot_published(TEMPERATURE_SPLITS, 1, SOURCE_UPDATED["nso-temperature-by-station"])
-    create_missing_english_xlsx()
     update_registry()
 
 

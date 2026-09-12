@@ -10,14 +10,15 @@ import json
 import re
 import shutil
 import sqlite3
+import sys
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
-from openpyxl import Workbook
-from openpyxl.utils import get_column_letter
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from rebuild_downloads import process_dataset
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -39,7 +40,6 @@ class Indicator:
     headers_mn: tuple[str, ...]
     fixed_values_en: tuple[str, ...] = ()
     fixed_values_mn: tuple[str, ...] = ()
-    xlsx_names: tuple[str, str] | None = None
 
 
 INDICATORS = (
@@ -80,10 +80,6 @@ INDICATORS = (
         ("Ангилал", "Он", "утга"),
         ("Total",),
         ("Бүгд",),
-        (
-            "unemployment-rate-national-en.xlsx",
-            "unemployment-rate-national-mn.xlsx",
-        ),
     ),
     Indicator(
         "labor-participation-national",
@@ -104,10 +100,10 @@ INDICATORS = (
         "2026-07-21T17:37:54",
         1970,
         2,
-        ("type_of_livestock", "region", "year", "value"),
-        ("малын_төрөл", "бүс", "он", "утга"),
-        ("Total", "Total"),
-        ("Бүгд", "Улсын дүн"),
+        ("category", "year", "value"),
+        ("ангилал", "он", "утга"),
+        ("Total — Total",),
+        ("Бүгд — Улсын дүн",),
     ),
     Indicator(
         "salary-average-national",
@@ -133,10 +129,6 @@ INDICATORS = (
         2,
         ("year", "value"),
         ("он", "утга"),
-        xlsx_names=(
-            "household-income-total-en.xlsx",
-            "household-income-total-mn.xlsx",
-        ),
     ),
 )
 
@@ -203,40 +195,21 @@ def write_csv(path: Path, headers: tuple[str, ...], rows: list[tuple[object, ...
         writer.writerows(rows)
 
 
-def write_xlsx(path: Path, headers: tuple[str, ...], rows: list[tuple[object, ...]]) -> None:
-    workbook = Workbook()
-    sheet = workbook.active
-    sheet.title = "Data"
-    sheet.append(headers)
-    for row in rows:
-        sheet.append(row)
-    for index, column in enumerate(sheet.columns, start=1):
-        width = max(len(str(cell.value or "")) for cell in column) + 2
-        sheet.column_dimensions[get_column_letter(index)].width = min(width, 40)
-    workbook.save(path)
-
-
-def write_bilingual_xlsx(
-    path: Path,
-    headers_en: tuple[str, ...],
-    rows_en: list[tuple[object, ...]],
-    headers_mn: tuple[str, ...],
-    rows_mn: list[tuple[object, ...]],
-) -> None:
-    workbook = Workbook()
-    workbook.remove(workbook.active)
-    for title, headers, rows in (
-        ("English", headers_en, rows_en),
-        ("Mongolian", headers_mn, rows_mn),
+def rebuild_xlsx(dataset_id: str) -> Path:
+    """Rebuild the single bilingual wide XLSX via the canonical rebuilder."""
+    report = process_dataset(dataset_id, apply=True)
+    if report["queue"] != "auto":
+        raise ValueError(
+            f"{dataset_id}: rebuild_downloads routed to manual queue: "
+            f"{report['reasons']}"
+        )
+    for stale in (
+        PUBLIC / f"{dataset_id}-en.xlsx",
+        PUBLIC / f"{dataset_id}-mn.xlsx",
     ):
-        sheet = workbook.create_sheet(title)
-        sheet.append(headers)
-        for row in rows:
-            sheet.append(row)
-        for index, column in enumerate(sheet.columns, start=1):
-            width = max(len(str(cell.value or "")) for cell in column) + 2
-            sheet.column_dimensions[get_column_letter(index)].width = min(width, 40)
-    workbook.save(path)
+        if stale.exists():
+            stale.unlink()
+    return PUBLIC / f"{dataset_id}.xlsx"
 
 
 def human_size(path: Path) -> str:
@@ -259,9 +232,9 @@ def refresh_content(indicator: Indicator, version: int) -> None:
         )
         csv_path = PUBLIC / f"{indicator.dataset_id}-{language}.csv"
         text = re.sub(
-            rf'(?<=path: "/datasets/{re.escape(indicator.dataset_id)}-{language}\.csv"\n'
+            rf'(path: "/datasets/{re.escape(indicator.dataset_id)}(-all)?-{language}\.csv"\n'
             rf'    format: "csv"\n    size: ")[^"]+',
-            human_size(csv_path),
+            rf"\g<1>{human_size(csv_path)}",
             text,
         )
         xlsx_pattern = re.compile(
@@ -404,31 +377,13 @@ def main() -> None:
         csv_mn = PUBLIC / f"{indicator.dataset_id}-mn.csv"
         write_csv(csv_en, indicator.headers_en, rows_en)
         write_csv(csv_mn, indicator.headers_mn, rows_mn)
-        if indicator.xlsx_names:
-            xlsx_files = [PUBLIC / name for name in indicator.xlsx_names]
-            write_xlsx(xlsx_files[0], indicator.headers_en, rows_en)
-            write_xlsx(xlsx_files[1], indicator.headers_mn, rows_mn)
-            generic_xlsx = PUBLIC / f"{indicator.dataset_id}.xlsx"
-            if generic_xlsx.exists():
-                write_bilingual_xlsx(
-                    generic_xlsx,
-                    indicator.headers_en,
-                    rows_en,
-                    indicator.headers_mn,
-                    rows_mn,
-                )
-                xlsx_files.append(generic_xlsx)
-        else:
-            xlsx_files = [PUBLIC / f"{indicator.dataset_id}.xlsx"]
-            write_xlsx(xlsx_files[0], indicator.headers_en, rows_en)
-            for language, headers, rows in (
-                ("en", indicator.headers_en, rows_en),
-                ("mn", indicator.headers_mn, rows_mn),
-            ):
-                language_xlsx = PUBLIC / f"{indicator.dataset_id}-{language}.xlsx"
-                if language_xlsx.exists():
-                    write_xlsx(language_xlsx, headers, rows)
-                    xlsx_files.append(language_xlsx)
+        # The download CSV is the -all- file when present (Standard 1);
+        # keep it in sync so the XLSX rebuilds from fresh data.
+        for language, csv_path in (("en", csv_en), ("mn", csv_mn)):
+            all_path = PUBLIC / f"{indicator.dataset_id}-all-{language}.csv"
+            if all_path.exists():
+                shutil.copy2(csv_path, all_path)
+        xlsx_files = [rebuild_xlsx(indicator.dataset_id)]
 
         version = int(versions[indicator.dataset_id] or 0) + 1
         refresh_content(indicator, version)

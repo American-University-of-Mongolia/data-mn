@@ -20,5 +20,6 @@ dependencies:
   - pandas>=2.1
   - openpyxl>=3.1
   - beautifulsoup4>=4.12
+  - shapely>=2.0
   - pip:
     - pdfplumber>=0.10.0

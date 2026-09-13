@@ -1,0 +1,22 @@
+# Fetched data and caches - never commit these
+*.geojson
+*.csv
+*.meta.json
+*.attrs.jsonl
+output/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

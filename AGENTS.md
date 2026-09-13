@@ -47,7 +47,7 @@ data/
 └── environment.yml         # Conda environment config
 ```
 
-**Note on Skills**: The `datamn-*` skills are defined in `.claude/skills/` within this repository. They are automatically available when working in this directory.
+**Note on Skills**: The `datamn-*` skills are defined in `.claude/skills/` within this repository. They load automatically in Claude Code. Other harnesses (Codex, Muse) do not auto-load them — same repo, same scripts, but invoke the underlying commands directly (registry CLI, `query_api.py`/`fetch_data.py`, validators) using `AGENTS.md`, `tools/sources/*/source.md`, and `tools/sources/*/datasets/*.md` as the manual.
 
 ---
 
@@ -73,7 +73,7 @@ Interactively add a new dataset to track.
 ```
 
 Workflow:
-1. Select source type (nso-1212, mrpam, mongolbank, or new)
+1. Select source type (nso-1212, mrpam, mongolbank, ebarilga, or new)
 2. Search/browse available data
 3. Analyze data structure and recommend splits
 4. Create dataset definition and fetch initial data
@@ -157,6 +157,25 @@ python3 fetch_data.py  # Edit DATASETS list first
 
 **Reference Data**: The full catalog of 1,135 NSO tables is in the "NSO Catalog" sheet of `tools/data-registry.xlsx`.
 
+### `datamn-source-ebarilga`
+Query Ulaanbaatar's eBarilga geoportal (80 WFS layers, no auth).
+
+**Location**: `.claude/skills/datamn-source-ebarilga/`
+
+**Usage**:
+```bash
+cd .claude/skills/datamn-source-ebarilga
+python3 query_api.py --list              # browse the 80-layer catalog
+python3 query_api.py bus route           # search (EN/MN/code)
+python3 query_api.py --layer data_edu_school   # describe + live count
+python3 fetch_data.py --layer data_edu_school --output ./output
+python3 fetch_data.py --layer plan_building --output ./output --with-attributes
+```
+
+**Rules**: keyset pagination only (`startIndex` is ignored); 1 req/s on the
+attribute API; never hand-roll WFS requests. All 75 pulled layers are
+registered as parent datasets (`registry list --source ebarilga`).
+
 ### `datamn-registry`
 Query and manage the dataset registry database.
 
@@ -231,6 +250,7 @@ Read-only agent for searching and checking sources:
 | National Statistics Office | `nso-1212` | REST API | `tools/sources/nso-1212/source.md` |
 | Mining & Petroleum Authority | `mrpam` | PDF Reports | `tools/sources/mrpam/source.md` |
 | Bank of Mongolia | `mongolbank` | Mixed | `tools/sources/mongolbank/source.md` |
+| eBarilga Geoportal (UB) | `ebarilga` | WFS geo API | `tools/sources/ebarilga/source.md` |
 
 To add a new source, use the `datamn-source-template` skill.
 
@@ -331,6 +351,7 @@ The data.mn platform is fully bilingual:
 | **NSO 1212.mn** | Provides bilingual data via API - fetch both languages |
 | **MRPAM PDFs** | Mongolian only - translate to create English CSV |
 | **MongolBank** | Mixed - some bilingual, some single-language |
+| **eBarilga WFS** | Mongolian only - translate to create English CSV |
 | **International** | English only - translate to create Mongolian CSV |
 
 #### Translation Workflow
@@ -521,6 +542,7 @@ The Campfire coding container differs from the contributor setup:
 | `openpyxl` | Excel file support (.xlsx) |
 | `PyYAML` | MDX frontmatter validation |
 | `pdfplumber` | PDF table extraction |
+| `shapely` | Spatial joins for ebarilga derivations |
 
 ---
 

@@ -38,6 +38,14 @@ How-to guides for common tasks.
 
 *Coming soon* — See the main `AGENTS.md` for workflow documentation in the meantime.
 
+### Onboarding
+Intern and contributor onboarding materials.
+
+| Document | Description |
+|----------|-------------|
+| [Intern onboarding deck](data-mn-intern-onboarding.pptx) | 24-slide intro: how data.mn works, with live repo examples |
+| [Deck builder](build_intern_onboarding_deck.py) | Regenerates the deck from live registry data (`.venv/bin/python docs/build_intern_onboarding_deck.py`) |
+
 ---
 
 ## Document Types

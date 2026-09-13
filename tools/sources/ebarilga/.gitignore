@@ -1,0 +1,16 @@
+# Large raw pulls stay on this server (authoritative); see source.md.
+# Small files (CSVs, metas, small geojsons, derived/) ARE committed.
+# No Git LFS needed: biggest committed file is ~21 MB.
+raw/*.attrs.jsonl
+raw/ebarilga-built_building.geojson
+raw/ebarilga-ddp_heating_line.geojson
+raw/ebarilga-ddp_het_buschlel.geojson
+raw/ebarilga-ddp_road.geojson
+raw/ebarilga-ddt_aoz_tuluvlult_2030.geojson
+raw/ebarilga-ddt_road_2030.geojson
+raw/ebarilga-map_road.geojson
+raw/ebarilga-plan_building.geojson
+raw/ebarilga-plan_dedbutets.geojson
+raw/ebarilga-plan_landscaping.geojson
+raw/ebarilga-plan_road.geojson
+raw/ebarilga-planning_area.geojson

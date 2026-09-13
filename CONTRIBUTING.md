@@ -20,7 +20,7 @@ Before you start, install these tools:
 | **Node.js 20+** | Website builds | `node --version` |
 | **Conda/Miniconda** | Python environment | `conda --version` |
 | **GitHub CLI (gh)** | Git operations from terminal | `gh --version` |
-| **Claude Code** | AI-assisted development | `claude --version` |
+| **An AI coding assistant** | Claude Code, Codex, or Muse | `claude --version` (or equivalent) |
 
 ### Installing Git
 
@@ -74,7 +74,7 @@ conda --version
 
 ### Installing GitHub CLI (gh)
 
-The `gh` CLI makes Git operations much easier and enables Claude Code to help you with GitHub tasks.
+The `gh` CLI makes Git operations much easier and enables your AI assistant to help you with GitHub tasks.
 
 **macOS:**
 ```bash
@@ -119,15 +119,15 @@ Verify it worked:
 gh auth status
 ```
 
-### Installing Claude Code
+### Installing an AI Coding Assistant
 
-Claude Code is an AI assistant that understands this codebase and can help you with tasks.
+Pick one — all three work with this repo. They read `AGENTS.md` for project instructions.
 
-```bash
-npm install -g @anthropic-ai/claude-code
-```
+- **Claude Code**: `npm install -g @anthropic-ai/claude-code` (needs an Anthropic API key — ask the project lead)
+- **Codex**: follow the setup your lead sends you (needs OpenAI access)
+- **Muse**: follow the setup your lead sends you
 
-You'll need an Anthropic API key. Ask the project lead for access or sign up at [anthropic.com](https://www.anthropic.com).
+> Note: the `/data-*` slash commands and auto-loading skills below are Claude Code features. In Codex/Muse you run the same underlying commands yourself (registry CLI, fetch scripts, validators) — the docs tell you exactly which ones.
 
 ---
 
@@ -139,8 +139,8 @@ A "fork" is your personal copy of the repository where you can make changes free
 
 ```bash
 # This creates a fork under your GitHub account and clones it locally
-gh repo fork data-dot-mn/data-mn --clone
-cd data
+gh repo fork American-University-of-Mongolia/data-mn --clone
+cd data-mn
 ```
 
 This command does three things:
@@ -231,22 +231,23 @@ git checkout -b feature/my-new-dataset
 ```
 
 Branch naming conventions:
-- `feature/dataset-name` - Adding a new dataset
-- `feature/description` - Adding a new feature
+- `add/dataset-name` - Adding a new dataset (e.g. `add/poverty-rate`)
+- `feat/skill-name` - Adding a source skill (e.g. `feat/skill-mongolbank-source`)
 - `fix/issue-description` - Fixing a bug
 - `docs/what-changed` - Documentation updates
 
 ### Step 3: Make Your Changes
 
-Now you can edit files, add datasets, etc. Use Claude Code to help:
+Now you can edit files, add datasets, etc. Use your AI assistant to help:
 
 ```bash
-# Start Claude Code
-claude
+# Start your assistant
+claude   # or: codex / muse
 
-# Inside Claude Code, use commands like:
+# In Claude Code, use commands like:
 /data-add      # Add a new dataset
 /data-status   # Check current status
+# In Codex/Muse, ask in plain words (see "Using Your AI Assistant")
 ```
 
 ### Step 4: Check Your Changes
@@ -310,12 +311,19 @@ Example:
 ```markdown
 ## Summary
 - Add unemployment rate dataset from NSO 1212.mn
-- Create bilingual CSVs (en/mn)
+- Create bilingual CSVs (en/mn) + wide-form XLSX
 - Add area chart visualization
 
+## Coverage note
+National annual rate 2015-2025 from NSO table DT_NSO_0XXX; differs
+from existing labor datasets by covering all ages (not 15+ only).
+Source: https://data.1212.mn/...
+
 ## Test Plan
-- [x] Ran `npm run build` successfully
-- [x] Validated charts with `validate_vega.py --all`
+- [x] `run_all_checks.py` passes for the dataset
+- [x] `validate_dataset.py --all` shows Valid: 15, Invalid: 0
+- [x] Both chart JSONs validate with `validate_vega.py`
+- [x] `npm run build && npm run check` succeed
 - [x] Checked both EN and MN pages render correctly
 ```
 
@@ -336,18 +344,20 @@ Example:
 
 ---
 
-## Using Claude Code
+## Using Your AI Assistant
 
-Claude Code is your AI pair programmer. It understands this project's structure and can help with most tasks.
+Your AI assistant is your pair programmer. It understands this project's structure and can help with most tasks.
 
-### Starting Claude Code
+### Starting Up
 
 ```bash
-cd ~/path/to/data    # Navigate to the project root
-claude               # Start Claude Code
+cd ~/path/to/data-mn    # Navigate to the project root
+claude                  # Claude Code (or: codex / muse)
 ```
 
-### Key Commands
+### Key Commands (Claude Code)
+
+These slash commands only exist in Claude Code. In Codex/Muse, ask your agent to perform the same steps using the registry CLI and docs.
 
 | Command | What It Does |
 |---------|--------------|
@@ -370,9 +380,11 @@ You: Unemployment statistics
 Claude: [Searches NSO 1212.mn, finds relevant tables, helps you create the dataset]
 ```
 
+In Codex/Muse the same session works in plain words: *"Add the unemployment rate by age group from NSO. Follow AGENTS.md and the datamn-source-nso skill docs."*
+
 ### How Skills Work
 
-This project has custom "skills" that give Claude Code specialized knowledge:
+This project has custom "skills" that give AI assistants specialized knowledge:
 
 | Skill | What It Knows |
 |-------|---------------|
@@ -381,13 +393,13 @@ This project has custom "skills" that give Claude Code specialized knowledge:
 | `datamn-chart-vega` | How to create Vega-Lite charts |
 | `datamn-page-mdx` | How to generate bilingual MDX pages |
 
-These are automatically loaded when you run Claude Code from this directory.
+These are automatically loaded when you run Claude Code from this directory. In Codex/Muse they don't auto-load — but they're just Markdown files, so point your agent at them (e.g. *"follow .claude/skills/datamn-source-nso/SKILL.md"*).
 
 ### Tips
 
 - **Be specific** - "Add the unemployment rate by age group from NSO" works better than "add some data"
-- **Ask questions** - If you're unsure about something, ask Claude Code to explain
-- **Review changes** - Always review what Claude Code creates before committing
+- **Ask questions** - If you're unsure about something, ask your assistant to explain
+- **Review changes** - Always review what your assistant creates before committing (`git diff` is your friend)
 
 ---
 
@@ -404,18 +416,28 @@ These are automatically loaded when you run Claude Code from this directory.
 
 ### Before Submitting a PR
 
-Run these checks:
+Run the full validation gate for your dataset ID — **all green or no PR**:
 
 ```bash
-# Validate all charts
-cd data.mn && python3 ../tools/scripts/validate_vega.py --all
+# Full AI + rule checks for one dataset
+python tools/tests/run_all_checks.py <dataset-id>
 
-# Validate MDX data file references
-python3 ../tools/scripts/validate_mdx_datafiles.py
+# All 15 file checks must pass (11 file + 4 download standards)
+python3 tools/scripts/validate_dataset.py --all <dataset-id> --base-dir data.mn
 
-# Build the site (must succeed)
-npm run build
+# Both chart specs must validate
+python3 tools/scripts/validate_vega.py data.mn/public/charts/<dataset-id>-en.json
+python3 tools/scripts/validate_vega.py data.mn/public/charts/<dataset-id>-mn.json
+
+# MDX data file references
+python3 tools/scripts/validate_mdx_datafiles.py
+
+# Site must build and typecheck
+cd data.mn && npm run build && npm run check
 ```
+
+Hard fails (do not open the PR): EN/MN numeric mismatch, XLSX not in
+wide form, missing EN/MN files, build breaks.
 
 ### URL Stability (Important!)
 
@@ -460,8 +482,8 @@ data/
 
 1. **Check existing datasets** - Look at `data.mn/src/data/data/en/` for examples
 2. **Read the docs** - `docs/` folder has detailed documentation
-3. **Ask Claude Code** - It has context about this specific project
-4. **Check skill files** - `.claude/skills/` explains how each component works
+3. **Ask your AI assistant** - It has context about this specific project
+4. **Check skill files** - `.claude/skills/` explains how each component works (all harnesses can read these as Markdown)
 
 ---
 

@@ -173,4 +173,4 @@ The system is built on:
 - **Conda** - Reproducible Python environment (`datamn`)
 - **Direct API calls** - No external package dependencies for data fetching
 
-See `CLAUDE.md` files for implementation details.
+See `AGENTS.md` files for implementation details.

@@ -48,7 +48,7 @@ npm run build
 
 ## Development
 
-This project uses Claude Code with custom skills for data management. See `CLAUDE.md` for details on available commands:
+This project uses Claude Code with custom skills for data management. See `AGENTS.md` for details on available commands:
 
 - `/data-status` - View registry status
 - `/data-add` - Add new datasets

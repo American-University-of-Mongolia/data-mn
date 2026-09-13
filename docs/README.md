@@ -36,7 +36,7 @@ Lessons learned from incidents and debugging sessions.
 ### Guides
 How-to guides for common tasks.
 
-*Coming soon* — See the main `CLAUDE.md` for workflow documentation in the meantime.
+*Coming soon* — See the main `AGENTS.md` for workflow documentation in the meantime.
 
 ---
 

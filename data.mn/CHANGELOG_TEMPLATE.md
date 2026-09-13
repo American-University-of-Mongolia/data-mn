@@ -168,6 +168,6 @@ source: National Statistics Office
 ## Questions?
 
 If you have questions about creating changelog entries, refer to:
-- The Data.mn CLAUDE.md file
+- The Data.mn AGENTS.md file
 - The `/data-add` and `/data-update` slash command documentation
 - Existing changelog entries in `src/data/changelog/en/` and `mn/` for examples

@@ -1,6 +1,6 @@
-# CLAUDE.md - Data.mn Project Guide
+# AGENTS.md - Data.mn Project Guide
 
-This file provides guidance to Claude Code when working with the Data.mn codebase.
+This file provides guidance to coding agents when working with the Data.mn codebase.
 
 ## Project Overview
 

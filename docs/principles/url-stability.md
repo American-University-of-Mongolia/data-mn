@@ -232,7 +232,7 @@ Use this to:
 ## Related Documents
 
 - `DATA_SYSTEM_PLAN.md` — Overall system architecture
-- `CLAUDE.md` — Developer instructions
+- `AGENTS.md` — Developer instructions
 - `tools/registry/schema.sql` — Database schema
 
 ---

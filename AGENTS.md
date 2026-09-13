@@ -1,4 +1,4 @@
-# CLAUDE.md - Data Directory
+# AGENTS.md - Data Directory
 
 This directory contains the data.mn project and data management tools.
 
@@ -17,7 +17,7 @@ data/
 │       ├── data-batch.md       # Batch dataset creation
 │       ├── data-update.md      # Update all datasets (orchestrator)
 │       └── data-update-worker.md  # Worker instructions for /data-update
-├── data.mn/                # Astro website (see data.mn/CLAUDE.md)
+├── data.mn/                # Astro website (see data.mn/AGENTS.md)
 ├── docs/                   # Project documentation
 │   ├── README.md               # Documentation index
 │   ├── vision.md               # Mission, principles, roadmap
@@ -42,7 +42,7 @@ data/
 │   ├── versions/           # Dataset version history
 │   ├── data-registry.xlsx  # Master registry (open in Excel to browse)
 │   └── TRANSLATION_GUIDE.md        # Single-language source translation guide
-├── CLAUDE.md               # This file
+├── AGENTS.md                # This file (CLAUDE.md symlinks here)
 ├── requirements.txt        # Python dependencies
 └── environment.yml         # Conda environment config
 ```
@@ -544,13 +544,13 @@ Mongolia Social Protection Data Brief - a comprehensive analysis of social prote
 Car price prediction model using Unegui.mn scraped data.
 
 **Contents**:
-- `CLAUDE.md` - Project-specific instructions
+- `AGENTS.md` - Project-specific instructions
 - `PLAN.md` - Implementation plan
 - `src/` - Model training code
 - `data/` - Training datasets (CSV)
 - `models/` - Saved model artifacts
 
-**Note**: Each project may have its own CLAUDE.md with specific instructions.
+**Note**: Each project may have its own AGENTS.md with specific instructions.
 
 ---
 
@@ -582,7 +582,7 @@ Car price prediction model using Unegui.mn scraped data.
 - Run commands from the `data/` directory
 - Registry database: `tools/registry/data.db`
 - See `docs/vision.md` for mission, principles, and roadmap
-- See `data.mn/CLAUDE.md` for website-specific instructions
+- See `data.mn/AGENTS.md` for website-specific instructions
 - See `docs/principles/url-stability.md` for URL stability rules (**CRITICAL**)
 - Use Playwright MCP tools for web navigation when needed
 

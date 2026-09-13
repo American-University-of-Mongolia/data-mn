@@ -507,4 +507,4 @@ If translation fails or is incomplete:
 - [ ] Tested update detection
 - [ ] Registered source in registry
 - [ ] Created at least one dataset definition
-- [ ] Updated CLAUDE.md with new skill reference
+- [ ] Updated AGENTS.md with new skill reference

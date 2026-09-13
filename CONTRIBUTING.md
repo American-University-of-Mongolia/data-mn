@@ -450,7 +450,7 @@ data/
 │   ├── scripts/          # Validation scripts
 │   └── sources/          # Data source definitions
 ├── docs/                 # Documentation
-├── CLAUDE.md             # AI assistant instructions
+├── AGENTS.md              # AI assistant instructions
 └── CONTRIBUTING.md       # This file
 ```
 

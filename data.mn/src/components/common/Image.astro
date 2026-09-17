@@ -41,12 +41,32 @@ const _image = await findImage(props.src);
 
 let image: ImageType | undefined = undefined;
 
+// Local public/ images can't be measured by astro:assets at build time
+// (inferSize needs a fetchable URL), so they render as a native img tag.
+const isLocalPublicImage =
+  typeof _image === 'string' && _image.startsWith('/') && !_image.startsWith('//');
+
 if (
   typeof _image === 'string' &&
   (_image.startsWith('http://') || _image.startsWith('https://')) &&
   isUnpicCompatible(_image)
 ) {
   image = await getImagesOptimized(_image, props, unpicOptimizer);
+} else if (isLocalPublicImage) {
+  image = {
+    src: _image as string,
+    attributes: {
+      alt: props.alt as string,
+      width: props.width ?? undefined,
+      height: props.height ?? undefined,
+      sizes: props.sizes ?? undefined,
+      loading: props.loading ?? undefined,
+      decoding: props.decoding ?? undefined,
+      fetchpriority: props.fetchpriority ?? undefined,
+      class: props.class,
+      style: props.style,
+    },
+  };
 } else if (_image) {
   image = await getImagesOptimized(_image, props, astroAssetsOptimizer);
 }

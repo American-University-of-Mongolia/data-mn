@@ -594,6 +594,7 @@ class Registry:
 
         now = datetime.now().isoformat()
         self.update_dataset(dataset_id,
+                           status='deprecated',
                            deprecated_at=now,
                            deprecation_reason=reason,
                            successor_id=successor_id)

@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS datasets (
 
     -- Current state
     current_version INTEGER DEFAULT 0,
-    status TEXT DEFAULT 'pending',          -- 'pending', 'active', 'outdated', 'error', 'disabled'
+    status TEXT DEFAULT 'pending',          -- 'pending', 'active', 'outdated', 'error', 'disabled', 'deprecated'
 
     -- Files
     data_file TEXT,                         -- Relative path to current CSV

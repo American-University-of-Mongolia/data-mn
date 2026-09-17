@@ -24,6 +24,15 @@ source:
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
+import DeprecationNotice from '~/components/ui/DeprecationNotice.astro';
+
+<DeprecationNotice
+  lang="en"
+  deprecatedAt="2026-09-08"
+  reason="The National Statistics Office retired the source table (DT_NSO_2100_005V1). Its replacement no longer includes beds per 1,000 population."
+  successorSlug="hospital-beds-national"
+  successorTitle="Mongolia Hospital Beds, Count (1989-2025)"
+/>
 
 Mongolia had **9 hospital beds per 1,000 population** in 2024, down from a peak of 12 in 1989.
 

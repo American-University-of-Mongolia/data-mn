@@ -2,7 +2,7 @@
  * Generate llms.txt
  *
  * Creates an index file at /llms.txt for AI agents to discover
- * available datasets and understand how to access them.
+ * available datasets and insights and understand how to access them.
  *
  * Usage: node scripts/generate-llms-txt.js
  * Runs after: astro build and generate-ai-markdown.js
@@ -18,6 +18,7 @@ const __dirname = path.dirname(__filename);
 
 // Configuration
 const MDX_BASE = path.resolve(__dirname, '../src/data/data/en'); // Use English as index
+const INSIGHTS_BASE = path.resolve(__dirname, '../src/data/insights/en'); // Use English as index
 const DIST_DIR = path.resolve(__dirname, '../dist');
 const SITE_URL = 'https://data.mn';
 
@@ -49,6 +50,39 @@ function groupByCategory(datasets) {
 }
 
 /**
+ * Collect posts (datasets or insights) from an MDX directory
+ */
+function collectPosts(baseDir) {
+  const posts = [];
+
+  if (!fs.existsSync(baseDir)) {
+    return posts;
+  }
+
+  const mdxFiles = fs.readdirSync(baseDir).filter((f) => f.endsWith('.mdx'));
+
+  for (const file of mdxFiles) {
+    const mdxPath = path.join(baseDir, file);
+    const mdxContent = fs.readFileSync(mdxPath, 'utf-8');
+    const { data: frontmatter } = matter(mdxContent);
+
+    // Skip drafts
+    if (frontmatter.draft === true) continue;
+
+    const slug = file.replace(/\.mdx?$/, '');
+
+    posts.push({
+      slug,
+      title: frontmatter.title || slug,
+      excerpt: frontmatter.excerpt || '',
+      category: frontmatter.category || 'Other',
+    });
+  }
+
+  return posts;
+}
+
+/**
  * Main function
  */
 async function main() {
@@ -60,35 +94,15 @@ async function main() {
     process.exit(1);
   }
 
-  // Read all MDX files to get dataset info
-  const datasets = [];
+  // Read all MDX files to get dataset and insights info
+  const datasets = collectPosts(MDX_BASE);
+  const insights = collectPosts(INSIGHTS_BASE);
 
-  if (fs.existsSync(MDX_BASE)) {
-    const mdxFiles = fs.readdirSync(MDX_BASE).filter((f) => f.endsWith('.mdx'));
-
-    for (const file of mdxFiles) {
-      const mdxPath = path.join(MDX_BASE, file);
-      const mdxContent = fs.readFileSync(mdxPath, 'utf-8');
-      const { data: frontmatter } = matter(mdxContent);
-
-      // Skip drafts
-      if (frontmatter.draft === true) continue;
-
-      const slug = file.replace(/\.mdx?$/, '');
-
-      datasets.push({
-        slug,
-        title: frontmatter.title || slug,
-        excerpt: frontmatter.excerpt || '',
-        category: frontmatter.category || 'Other',
-      });
-    }
-  }
-
-  console.log(`Found ${datasets.length} datasets`);
+  console.log(`Found ${datasets.length} datasets, ${insights.length} insights`);
 
   // Group by category
   const categories = groupByCategory(datasets);
+  const insightCategories = groupByCategory(insights);
 
   // Generate llms.txt content
   let content = `# Data.mn - Mongolia's Open Data Platform
@@ -108,10 +122,11 @@ curl -H "Accept: text/markdown" ${SITE_URL}/en/data/gdp-sector-trends
 
 ### Option 2: Direct .md URL
 
-Append \`.md\` to any data page URL:
+Append \`.md\` to any data or insights page URL:
 
 \`\`\`
 ${SITE_URL}/en/data/gdp-sector-trends.md
+${SITE_URL}/en/insights/gdp-growth-recovery.md
 \`\`\`
 
 ### Option 3: Download Raw Data
@@ -124,8 +139,8 @@ CSV and Excel files are available at:
 ## Languages
 
 All content is available in both English and Mongolian:
-- English: \`${SITE_URL}/en/data/{slug}\`
-- Mongolian: \`${SITE_URL}/mn/data/{slug}\`
+- English: \`${SITE_URL}/en/data/{slug}\`, \`${SITE_URL}/en/insights/{slug}\`
+- Mongolian: \`${SITE_URL}/mn/data/{slug}\`, \`${SITE_URL}/mn/insights/{slug}\`
 
 ## Available Datasets
 
@@ -145,6 +160,25 @@ All content is available in both English and Mongolian:
     }
 
     content += '\n';
+  }
+
+  // Add categorized insights list
+  if (insights.length > 0) {
+    content += `## Available Insights\n\n`;
+
+    for (const category of insightCategories) {
+      content += `### ${category.name}\n\n`;
+
+      for (const post of category.datasets) {
+        let excerpt = post.excerpt;
+        if (excerpt.length > 100) {
+          excerpt = excerpt.substring(0, 100).trim() + '...';
+        }
+        content += `- [${post.title}](${SITE_URL}/en/insights/${post.slug}): ${excerpt}\n`;
+      }
+
+      content += '\n';
+    }
   }
 
   // Footer
@@ -169,6 +203,7 @@ Last updated: ${new Date().toISOString().split('T')[0]}
 
   console.log(`\n✨ Generated ${outputPath}`);
   console.log(`   ${datasets.length} datasets indexed across ${categories.length} categories`);
+  console.log(`   ${insights.length} insights indexed across ${insightCategories.length} categories`);
 }
 
 // Run

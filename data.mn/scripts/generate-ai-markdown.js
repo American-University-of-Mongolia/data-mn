@@ -1,8 +1,10 @@
 /**
  * Generate AI-Friendly Markdown Pages
  *
- * Creates markdown versions of data pages for AI agents.
- * Reads Excel files and converts them to markdown tables.
+ * Creates markdown versions of data and insights pages for AI agents.
+ * Data pages: reads Excel files and converts them to markdown tables.
+ * Insights pages: converts post prose to markdown, expanding embedded
+ * charts to data tables.
  *
  * Usage: node scripts/generate-ai-markdown.js
  * Runs after: astro build (writes to dist/)
@@ -19,7 +21,9 @@ const __dirname = path.dirname(__filename);
 
 // Configuration
 const LANGUAGES = ['en', 'mn'];
-const MDX_BASE = path.resolve(__dirname, '../src/data/data');
+const CONTENT_TYPES = ['data', 'insights'];
+const SRC_DATA_BASE = path.resolve(__dirname, '../src/data');
+const PUBLIC_DIR = path.resolve(__dirname, '../public');
 const DATASETS_DIR = path.resolve(__dirname, '../public/datasets');
 const DIST_DIR = path.resolve(__dirname, '../dist');
 const MAX_ROWS = 100;
@@ -37,9 +41,13 @@ const LABELS = {
     overview: 'Overview',
     category: 'Category',
     lastUpdated: 'Last Updated',
+    published: 'Published',
+    updated: 'Updated',
+    author: 'Author',
     source: 'Source',
     tags: 'Tags',
     data: 'Data',
+    chart: 'Chart',
     truncatedNote: (shown, total) => `*Showing first ${shown} of ${total} rows. Full dataset available for download.*`,
     downloads: 'Downloads',
     downloadCSV: 'Download as CSV',
@@ -53,9 +61,13 @@ const LABELS = {
     overview: 'Товч мэдээлэл',
     category: 'Ангилал',
     lastUpdated: 'Шинэчилсэн огноо',
+    published: 'Нийтэлсэн',
+    updated: 'Шинэчилсэн',
+    author: 'Зохиогч',
     source: 'Эх сурвалж',
     tags: 'Түлхүүр үг',
     data: 'Өгөгдөл',
+    chart: 'График',
     truncatedNote: (shown, total) => `*Нийт ${total} мөрөөс эхний ${shown}-г харуулж байна. Бүрэн өгөгдлийг татаж авах боломжтой.*`,
     downloads: 'Татах',
     downloadCSV: 'CSV татах',
@@ -125,6 +137,157 @@ function toMarkdownTable(data, maxRows = MAX_ROWS) {
   }
 
   return { table, shown: rows.length, total: totalRows };
+}
+
+/**
+ * Format a frontmatter date (handles gray-matter Date objects)
+ */
+function dateStr(value) {
+  if (!value) return null;
+  return value instanceof Date ? value.toISOString().split('T')[0] : String(value);
+}
+
+/**
+ * Read the data table behind a VegaChart spec.
+ * Returns { rows, csvUrl } or null when the chart has no tabular data.
+ */
+function readChartTable(specPath) {
+  const specFile = path.join(PUBLIC_DIR, specPath.replace(/^\//, ''));
+  if (!fs.existsSync(specFile)) {
+    console.warn(`  ⚠ Chart spec not found: ${specPath}`);
+    return null;
+  }
+
+  let spec;
+  try {
+    spec = JSON.parse(fs.readFileSync(specFile, 'utf-8'));
+  } catch (err) {
+    console.warn(`  ⚠ Chart spec parse error ${specPath}: ${err.message}`);
+    return null;
+  }
+
+  const data = spec.data || {};
+
+  // Inline values
+  if (Array.isArray(data.values) && data.values.length > 0) {
+    const headers = Object.keys(data.values[0]);
+    const rows = [headers, ...data.values.map((row) => headers.map((h) => row[h]))];
+    return { rows, csvUrl: null };
+  }
+
+  // External CSV only — other formats (e.g. geo JSON lookups) are linked, not embedded
+  if (typeof data.url === 'string' && data.url.endsWith('.csv')) {
+    const csvFile = path.join(PUBLIC_DIR, data.url.replace(/^\//, ''));
+    if (!fs.existsSync(csvFile)) {
+      console.warn(`  ⚠ Chart CSV not found: ${data.url}`);
+      return { rows: null, csvUrl: data.url };
+    }
+    try {
+      const workbook = XLSX.readFile(csvFile);
+      const sheet = workbook.Sheets[workbook.SheetNames[0]];
+      return { rows: sheetToArray(sheet), csvUrl: data.url };
+    } catch (err) {
+      console.warn(`  ⚠ Chart CSV read error ${data.url}: ${err.message}`);
+      return { rows: null, csvUrl: data.url };
+    }
+  }
+
+  return { rows: null, csvUrl: typeof data.url === 'string' ? data.url : null };
+}
+
+/**
+ * Convert a <VegaChart> embed to markdown with its data table
+ */
+function vegaChartToMarkdown(attrs, lang) {
+  const t = LABELS[lang];
+  const spec = /spec="([^"]+)"/.exec(attrs)?.[1] || '';
+  const title = /title="([^"]*)"/.exec(attrs)?.[1] || '';
+  const caption = /caption="([^"]*)"/.exec(attrs)?.[1] || '';
+
+  let md = '';
+  if (title) md += `### ${title}\n\n`;
+
+  const links = [];
+  if (spec) links.push(`[${t.chart} JSON](${SITE_URL}${spec})`);
+  const chartData = spec ? readChartTable(spec) : null;
+  if (chartData?.csvUrl) links.push(`[${t.data} CSV](${SITE_URL}${chartData.csvUrl})`);
+  if (links.length > 0) md += `*${links.join(' · ')}*\n\n`;
+
+  if (chartData?.rows && chartData.rows.length > 1) {
+    const { table, shown, total } = toMarkdownTable(chartData.rows, MAX_ROWS);
+    md += table;
+    if (shown < total) md += `\n${t.truncatedNote(shown, total)}\n`;
+    md += '\n';
+  }
+
+  if (caption) md += `*${caption}*\n\n`;
+
+  return md.trimEnd();
+}
+
+/**
+ * Convert MDX insight body to plain markdown: strips imports and components,
+ * expands charts to data tables, absolutizes links and images.
+ */
+function insightBodyToMarkdown(body, lang) {
+  let md = body.replace(/^import\s+.*$/gm, '');
+  md = md.replace(/<VegaChart([\s\S]*?)\/>/g, (match, attrs) => vegaChartToMarkdown(attrs, lang));
+  md = md.replace(/<DataDownload[\s\S]*?\/>/g, '');
+  md = md.replace(/(\[[^\]]*\]\()(\/[^)\s]+)(\))/g, `$1${SITE_URL}$2$3`);
+  return md.replace(/\n{3,}/g, '\n\n').trim();
+}
+
+/**
+ * Generate markdown content for an insights page
+ */
+function generateInsightMarkdown(frontmatter, bodyMd, lang, slug) {
+  const t = LABELS[lang];
+
+  let md = `# ${frontmatter.title}\n\n`;
+  md += `> ${frontmatter.excerpt}\n\n`;
+
+  // Overview section
+  md += `## ${t.overview}\n\n`;
+
+  if (frontmatter.category) {
+    md += `- **${t.category}:** ${frontmatter.category}\n`;
+  }
+
+  const published = dateStr(frontmatter.publishDate);
+  if (published) {
+    md += `- **${t.published}:** ${published}\n`;
+  }
+
+  const updated = dateStr(frontmatter.updateDate);
+  if (updated) {
+    md += `- **${t.updated}:** ${updated}\n`;
+  }
+
+  if (frontmatter.author) {
+    md += `- **${t.author}:** ${frontmatter.author}\n`;
+  }
+
+  if (frontmatter.tags && frontmatter.tags.length > 0) {
+    md += `- **${t.tags}:** ${frontmatter.tags.join(', ')}\n`;
+  }
+
+  md += '\n';
+
+  // Post body
+  md += `${bodyMd}\n\n`;
+
+  // Related pages (cross-language links)
+  md += `## ${t.relatedPages}\n\n`;
+  md += `- [${t.englishVersion}](${SITE_URL}/en/insights/${slug})\n`;
+  md += `- [${t.mongolianVersion}](${SITE_URL}/mn/insights/${slug})\n`;
+  md += '\n';
+
+  // Footer
+  md += `---\n`;
+  md += `*${t.footer}*  \n`;
+  md += `*URL: ${SITE_URL}/${lang}/insights/${slug}*\n`;
+
+  return md;
 }
 
 /**
@@ -219,40 +382,47 @@ function findExcelFile(slug) {
 /**
  * Process a single MDX file
  */
-function processFile(lang, mdxPath) {
+function processFile(lang, mdxPath, contentType) {
   const filename = path.basename(mdxPath);
   const slug = filename.replace(/\.mdx?$/, '');
 
   // Read and parse MDX frontmatter
   const mdxContent = fs.readFileSync(mdxPath, 'utf-8');
-  const { data: frontmatter } = matter(mdxContent);
+  const { data: frontmatter, content: body } = matter(mdxContent);
 
   // Skip drafts
   if (frontmatter.draft === true) {
     return { skipped: true, reason: 'draft' };
   }
 
-  // Find Excel file
-  const excelPath = findExcelFile(slug);
-  let excelData = null;
+  let markdown;
 
-  if (excelPath) {
-    try {
-      const workbook = XLSX.readFile(excelPath);
-      const sheet = findSheet(workbook, lang);
-      excelData = sheetToArray(sheet);
-    } catch (err) {
-      console.warn(`  ⚠ Excel read error for ${slug}: ${err.message}`);
-    }
+  if (contentType === 'insights') {
+    const bodyMd = insightBodyToMarkdown(body, lang);
+    markdown = generateInsightMarkdown(frontmatter, bodyMd, lang, slug);
   } else {
-    console.warn(`  ⚠ No Excel file found for ${slug}`);
+    // Find Excel file
+    const excelPath = findExcelFile(slug);
+    let excelData = null;
+
+    if (excelPath) {
+      try {
+        const workbook = XLSX.readFile(excelPath);
+        const sheet = findSheet(workbook, lang);
+        excelData = sheetToArray(sheet);
+      } catch (err) {
+        console.warn(`  ⚠ Excel read error for ${slug}: ${err.message}`);
+      }
+    } else {
+      console.warn(`  ⚠ No Excel file found for ${slug}`);
+    }
+
+    // Generate markdown
+    markdown = generateMarkdown(frontmatter, excelData, lang, slug);
   }
 
-  // Generate markdown
-  const markdown = generateMarkdown(frontmatter, excelData, lang, slug);
-
   // Output path - matches Astro's output structure
-  const outputDir = path.join(DIST_DIR, lang, 'data', slug);
+  const outputDir = path.join(DIST_DIR, lang, contentType, slug);
   const outputPath = path.join(outputDir, 'index.md');
 
   // Ensure directory exists
@@ -282,32 +452,34 @@ async function main() {
   let skipCount = 0;
   let errorCount = 0;
 
-  for (const lang of LANGUAGES) {
-    const langDir = path.join(MDX_BASE, lang);
+  for (const contentType of CONTENT_TYPES) {
+    for (const lang of LANGUAGES) {
+      const langDir = path.join(SRC_DATA_BASE, contentType, lang);
 
-    if (!fs.existsSync(langDir)) {
-      console.warn(`⚠ Language directory not found: ${langDir}`);
-      continue;
-    }
+      if (!fs.existsSync(langDir)) {
+        console.warn(`⚠ Language directory not found: ${langDir}`);
+        continue;
+      }
 
-    const mdxFiles = fs.readdirSync(langDir).filter((f) => f.endsWith('.mdx'));
-    console.log(`Processing ${mdxFiles.length} ${lang.toUpperCase()} pages...`);
+      const mdxFiles = fs.readdirSync(langDir).filter((f) => f.endsWith('.mdx'));
+      console.log(`Processing ${mdxFiles.length} ${contentType}/${lang.toUpperCase()} pages...`);
 
-    for (const file of mdxFiles) {
-      const mdxPath = path.join(langDir, file);
+      for (const file of mdxFiles) {
+        const mdxPath = path.join(langDir, file);
 
-      try {
-        const result = processFile(lang, mdxPath);
+        try {
+          const result = processFile(lang, mdxPath, contentType);
 
-        if (result.skipped) {
-          skipCount++;
-        } else if (result.success) {
-          console.log(`  ✓ ${lang}/${result.slug}`);
-          successCount++;
+          if (result.skipped) {
+            skipCount++;
+          } else if (result.success) {
+            console.log(`  ✓ ${contentType}/${lang}/${result.slug}`);
+            successCount++;
+          }
+        } catch (error) {
+          console.error(`  ✗ ${file}: ${error.message}`);
+          errorCount++;
         }
-      } catch (error) {
-        console.error(`  ✗ ${file}: ${error.message}`);
-        errorCount++;
       }
     }
   }

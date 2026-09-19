@@ -24,6 +24,15 @@ source:
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
+import DeprecationNotice from '~/components/ui/DeprecationNotice.astro';
+
+<DeprecationNotice
+  lang="mn"
+  deprecatedAt="2026-09-08"
+  reason="Энэ хуудас хуучирсан. Хүйсээр задалсан ажилгүйдлийн түвшинг орлох хуудаснаас үзнэ үү."
+  successorSlug="unemployment-rate-by-sex"
+  successorTitle="Ажилгүйдлийн түвшин хүйсээр, хувь (2009-2025)"
+/>
 
 <VegaChart
   spec="/charts/unemployment-by-sex-mn.json"

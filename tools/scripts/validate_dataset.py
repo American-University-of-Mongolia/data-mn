@@ -1094,7 +1094,10 @@ def main():
     parser.add_argument('--xlsx', help='Path to XLSX file to validate')
     parser.add_argument('--chart', help='Path to chart JSON file to validate')
     parser.add_argument('--all', metavar='DATASET_ID', help='Validate all files for a dataset')
-    parser.add_argument('--base-dir', default='data/data.mn', help='Base directory for data.mn project')
+    default_base = str(Path(__file__).resolve().parent.parent.parent / 'data.mn')
+    parser.add_argument('--base-dir', default=default_base,
+                        help='Base directory for data.mn project'
+                             ' (default: repo data.mn dir)')
 
     args = parser.parse_args()
 

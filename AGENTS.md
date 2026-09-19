@@ -331,6 +331,32 @@ Run this after adding redirects and before building the site.
 
 See `docs/principles/url-stability.md` for the full URL stability system.
 
+### `tools/scripts/validate_deprecation.py`
+Check deprecation consistency between the registry and MDX pages (stuck
+statuses, missing notices, date/successor mismatches).
+
+```bash
+.venv/bin/python tools/scripts/validate_deprecation.py --all
+.venv/bin/python tools/scripts/validate_deprecation.py <dataset-id>
+```
+
+### `tools/scripts/diff_registry_db.py`
+Human-readable row diff of two registry database files (the committed
+`data.db` is binary, so PRs touching it are otherwise unreviewable).
+
+```bash
+.venv/bin/python tools/scripts/diff_registry_db.py base.db head.db
+```
+
+### `tools/scripts/review_pr.py`
+Review a pull request end-to-end: checks out the PR in a temp worktree,
+validates affected datasets plus global checks, prints a merge verdict.
+See "Reviewing Pull Requests" under Development Workflow.
+
+```bash
+.venv/bin/python tools/scripts/review_pr.py <PR-number> --fast
+```
+
 ---
 
 ## Key Concepts
@@ -456,6 +482,43 @@ python -m registry list --status active
 # Get detailed info
 python -m registry info population-total
 ```
+
+### Reviewing Pull Requests
+
+Review any PR with the review script (uses the repo `.venv`, touches only a
+temp worktree — never your checkout):
+
+```bash
+.venv/bin/python tools/scripts/review_pr.py <PR-number> --fast  # quick pass
+.venv/bin/python tools/scripts/review_pr.py <PR-number>         # full review
+```
+
+What it does:
+
+1. Checks out the PR head into a temporary worktree (removed afterwards)
+2. Detects affected datasets from changed `data.mn/src/data/data/*/*.mdx` paths
+3. Per dataset: `run_all_checks.py` + `validate_dataset.py --all`
+4. Global: `validate_mdx_datafiles.py`, `validate_vega.py --all`
+   (skipped with `--fast`), and `validate_deprecation.py` scoped to datasets
+   the PR touched (via MDX or registry-row changes)
+5. If `tools/registry/data.db` changed: prints a human-readable row diff
+   (`tools/scripts/diff_registry_db.py`) since the DB is binary
+6. Prints a PASS/FAIL report with a READY TO MERGE / NEEDS FIXES verdict
+   (exit 0 = all executed checks passed)
+
+Flags: `--fast` skips charts/build/lint; `--build` and `--lint` opt into
+`npm run build` / `npm run check` in the worktree (slow).
+
+If all checks pass, confirm with Robert, then merge and deploy:
+
+```bash
+gh pr merge <PR-number> --squash --delete-branch
+git pull                                  # pick up the merge before deploying
+cd data.mn && kamal deploy                # see the `deploy` skill
+```
+
+If any check fails, post the report as a PR comment (`gh pr comment`) and do
+not merge. The `datamn-pr-review` skill wraps this whole workflow for agents.
 
 ---
 

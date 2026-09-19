@@ -1,109 +1,92 @@
+---
+name: datamn-pr-review
+description: Review a data.mn pull request. Use when asked to review, validate, or merge a PR. Checks only datasets added/modified in the PR, plus global checks, and prints a merge-ready report.
+dependencies:
+  - python3
+  - sqlite3
+  - gh
+---
+
 # datamn-pr-review
 
-Validate and optionally merge/deploy PRs for data.mn. Checks only datasets added/modified in the PR.
+Review and optionally merge/deploy PRs for data.mn.
 
 ## Usage
 
 ```
-/datamn-pr-review <pr_number>
+Review PR #<N>
 ```
 
-## Workflow
-
-### 1. Checkout PR
+Run the review script (from the repo root, with the repo `.venv`):
 
 ```bash
 cd /home/ritz/projects/data
-gh pr checkout <pr_number>
+.venv/bin/python tools/scripts/review_pr.py <N> --fast
 ```
 
-### 2. Detect Affected Datasets
+Flags:
 
-Get list of files in the PR:
-```bash
-gh pr view <pr_number> --json files --jq '.files[].path'
-```
+- `--fast` — skip slow steps (all-charts validation, build, lint). Good first pass.
+- (no flags) — full validation including all charts. Run before merging.
+- `--build` — also run `npm run build` in the PR worktree (slow, minutes).
+- `--lint` — also run `npm run check` (astro + eslint + prettier).
 
-Extract dataset IDs from paths matching:
-- `data.mn/src/data/data/en/<dataset-id>.mdx`
-- `data.mn/src/data/data/mn/<dataset-id>.mdx`
+## What the script does
 
-The dataset ID is the filename without `.mdx` extension.
+1. Loads the PR head and changed-file list via the GitHub API.
+2. Checks out the PR into a **temporary worktree** — the current working
+   tree is never touched, and the worktree is removed afterwards.
+3. Detects affected dataset IDs from changed
+   `data.mn/src/data/data/{en,mn}/<id>.mdx` paths.
+4. For each dataset runs, against the worktree copy:
+   - `tools/tests/run_all_checks.py <id>` (file existence, frontmatter,
+     CSV, charts, bilingual consistency, content quality)
+   - `tools/scripts/validate_dataset.py --all <id>` (downloads, MDX body,
+     chart-CSV consistency, registry sync)
+5. Runs global checks: `validate_mdx_datafiles.py` and
+   `validate_vega.py --all` (skipped with `--fast`), plus
+   `validate_deprecation.py` scoped to datasets the PR touched
+   (via MDX or registry-row changes) so unrelated issues don't block.
+6. If `tools/registry/data.db` changed, prints a human-readable row diff
+   of base vs PR (the DB is binary, otherwise unreviewable).
+7. Prints a PASS/FAIL report with a READY TO MERGE / NEEDS FIXES verdict.
 
-### 3. Run Validations
+Exit code 0 means every executed check passed.
 
-For each detected dataset ID, run:
-```bash
-conda run -n datamn python tools/tests/run_all_checks.py <dataset-id>
-```
-
-Then run global checks:
-```bash
-# Chart validation
-cd /home/ritz/projects/data/data.mn && python3 ../tools/scripts/validate_vega.py --all
-
-# MDX validation
-cd /home/ritz/projects/data && python3 tools/scripts/validate_mdx_datafiles.py
-
-# Build
-cd /home/ritz/projects/data/data.mn && npm run build
-
-# Lint
-cd /home/ritz/projects/data/data.mn && npm run check
-```
-
-### 4. Generate Report
-
-Display results in this format:
-
-```
-╔═══════════════════════════════════════════════════════════════╗
-║                PR #<N> VALIDATION REPORT                      ║
-╠═══════════════════════════════════════════════════════════════╣
-║ DATASETS (<count>):                                           ║
-║   • <dataset-id>:  ✓ 85/85 passed  OR  ✗ X/85 failed         ║
-║   • ...                                                       ║
-╠═══════════════════════════════════════════════════════════════╣
-║ CHARTS:      ✓ All valid       OR  ✗ N errors                ║
-║ MDX FILES:   ✓ All valid       OR  ✗ N errors                ║
-║ BUILD:       ✓ Succeeded       OR  ✗ Failed                  ║
-║ LINT:        ✓ Passed          OR  ✗ Failed                  ║
-╠═══════════════════════════════════════════════════════════════╣
-║ RESULT:      ✓ READY TO MERGE  OR  ✗ NEEDS FIXES             ║
-╚═══════════════════════════════════════════════════════════════╝
-```
-
-### 5. Decision Point
+## After the report
 
 **If ALL checks pass:**
-- Ask user: "All checks passed. Merge PR #<N> and deploy to data.mn?"
-- If user approves:
+
+- Ask the user: "All checks passed. Merge PR #\<N\> and deploy to data.mn?"
+- If the user approves:
   ```bash
-  gh pr merge <pr_number> --squash --delete-branch
-  cd /home/ritz/projects/data/data.mn && kamal deploy
+  gh pr merge <N> --squash --delete-branch
   ```
-- Confirm deployment complete
+- Then deploy following the `deploy` skill
+  (`data.mn/config/deploy.yml` uses the local-builder Kamal flow).
+- Confirm deployment complete.
 
 **If ANY check fails:**
-- Post a GitHub comment to the PR with the validation report:
-  ```bash
-  gh pr comment <pr_number> --body "<report>"
-  ```
-- Return to main branch:
-  ```bash
-  cd /home/ritz/projects/data && git checkout main
-  ```
-- Tell user: "Posted feedback to PR #<N>. Returned to main branch."
 
-## Error Handling
+- Post the report as a PR comment:
+  ```bash
+  gh pr comment <N> --body "<report>"
+  ```
+- Tell the user: "Posted feedback to PR #\<N\>."
+- Do NOT merge. (No branch cleanup needed — the script uses temp worktrees.)
 
-- If PR doesn't exist: "PR #<N> not found"
-- If no datasets detected: Still run build/lint checks (may be code-only PR)
-- If checkout fails: Report the git error
+## Error handling
+
+- If the PR doesn't exist: "PR #\<N\> not found".
+- If no datasets detected: still run the global checks (may be a code-only PR).
+- If fetch fails: report the git error.
 
 ## Notes
 
-- This runs on omarchy (hostname: ritz), so kamal deploy runs locally
-- Dataset validation uses the `datamn` conda environment
-- The `run_all_checks.py` script runs 85 validation checks per dataset
-- Only datasets modified in the PR are validated (not all datasets in repo)
+- This runs on omarchy (hostname: ritz), so deploys run locally.
+- Python checks run with the repo `.venv` (`/home/ritz/projects/data/.venv`),
+  which must include `pytest`, `pandas`, and `pyyaml`.
+- Only datasets modified in the PR are validated per-dataset; global
+  checks (MDX files, deprecation, charts) always cover the whole worktree.
+- `npm run build` also regenerates chart thumbnails; a Fontconfig warning
+  in containers without fonts is harmless (see root AGENTS.md).

@@ -24,6 +24,15 @@ source:
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
+import DeprecationNotice from '~/components/ui/DeprecationNotice.astro';
+
+<DeprecationNotice
+  lang="en"
+  deprecatedAt="2026-09-08"
+  reason="The National Statistics Office retired the source table (DT_NSO_2100_005V1). Its replacement no longer breaks beds down by department type."
+  successorSlug="hospital-beds-national"
+  successorTitle="Mongolia Hospital Beds, Count (1989-2025)"
+/>
 
 In 2024, Mongolia had **30,117 hospital beds** across all departments. Internal medicine accounted for the largest share with **7,564 beds**, followed by Pediatrics (4,134) and Surgery and traumatology (3,441).
 

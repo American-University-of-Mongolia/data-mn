@@ -34,6 +34,7 @@ Get all datasets that are candidates for updates:
 - `auto_update=1` (enabled for automatic updates)
 - Either standalone (`parent_id IS NULL AND is_parent=0`) OR parent (`is_parent=1`)
 - **Skip splits** (`parent_id IS NOT NULL`) - these are updated by their parent
+- **Skip deprecated datasets** (`status = 'deprecated'`) - their source is retired; see `docs/principles/url-stability.md`
 
 ### 1.2 Check Each Dataset for Updates
 

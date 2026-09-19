@@ -56,7 +56,7 @@ cd data/tools && python -m registry list [--source SOURCE_ID] [--status STATUS]
 
 Options:
 - `--source nso-1212` - Filter by source
-- `--status active` - Filter by status (pending, active, outdated, error, disabled)
+- `--status active` - Filter by status (pending, active, outdated, error, disabled, deprecated)
 
 Shows:
 - Dataset ID and name
@@ -292,7 +292,7 @@ To add new sources or datasets:
 | `source_id` | Parent source |
 | `category_en` | English category (Demographics, Economy, etc.) |
 | `category_mn` | Mongolian category (Хүн ам зүй, Эдийн засаг, etc.) |
-| `status` | pending, active, outdated, error, disabled |
+| `status` | pending, active, outdated, error, disabled, deprecated |
 | `is_parent` | 1 if this is a parent dataset |
 | `parent_id` | ID of parent dataset (for splits) |
 | `split_filter` | JSON filter criteria (for splits) |

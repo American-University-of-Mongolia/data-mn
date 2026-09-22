@@ -1,0 +1,10 @@
+{
+ "layer": "data_clinic_pharmacy",
+ "host": "ebarilga",
+ "features": 1016,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:09:25.027051+00:00"
+}

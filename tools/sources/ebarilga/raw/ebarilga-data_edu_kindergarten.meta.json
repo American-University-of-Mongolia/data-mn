@@ -1,0 +1,10 @@
+{
+ "layer": "data_edu_kindergarten",
+ "host": "ebarilga",
+ "features": 296,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:09:17.653647+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "layer": "map_office_khoroo",
+ "host": "ebarilga",
+ "features": 167,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:08:59.644042+00:00"
+}

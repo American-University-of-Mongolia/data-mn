@@ -1,0 +1,9 @@
+{
+ "layer": "ddp_heating_line",
+ "host": "ebarilga",
+ "fetched_at": "2026-09-13T03:19:51.500332+00:00",
+ "features": 3170,
+ "with_attributes": false,
+ "complete": true,
+ "srs": "EPSG:4326"
+}

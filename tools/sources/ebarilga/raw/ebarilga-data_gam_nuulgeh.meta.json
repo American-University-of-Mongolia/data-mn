@@ -1,0 +1,10 @@
+{
+ "layer": "data_gam_nuulgeh",
+ "host": "ebarilga",
+ "features": 32,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:19:44.372938+00:00"
+}

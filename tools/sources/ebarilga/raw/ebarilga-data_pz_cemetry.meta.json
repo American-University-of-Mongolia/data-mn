@@ -1,0 +1,10 @@
+{
+ "layer": "data_pz_cemetry",
+ "host": "ebarilga",
+ "features": 13,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:16:09.667360+00:00"
+}

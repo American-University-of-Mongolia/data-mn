@@ -1,0 +1,10 @@
+{
+ "layer": "technological_park_zoning",
+ "host": "ebarilga",
+ "features": 275,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:15:49.400750+00:00"
+}

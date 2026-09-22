@@ -1,0 +1,10 @@
+{
+ "layer": "khoroo_border",
+ "host": "ebarilga",
+ "features": 204,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:08:55.916442+00:00"
+}

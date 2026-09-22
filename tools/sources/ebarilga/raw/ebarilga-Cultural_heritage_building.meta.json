@@ -1,0 +1,10 @@
+{
+ "layer": "Cultural_heritage_building",
+ "host": "ebarilga",
+ "features": 39,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:14:03.299843+00:00"
+}

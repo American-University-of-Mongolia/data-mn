@@ -1,0 +1,10 @@
+{
+ "layer": "technological_park_planning_road",
+ "host": "ebarilga",
+ "features": 10,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:15:51.538736+00:00"
+}

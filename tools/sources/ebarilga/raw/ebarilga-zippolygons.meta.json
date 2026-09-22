@@ -1,0 +1,10 @@
+{
+ "layer": "zippolygons",
+ "host": "ebarilga",
+ "features": 513,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:08:57.897640+00:00"
+}

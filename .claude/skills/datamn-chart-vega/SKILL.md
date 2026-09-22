@@ -907,9 +907,40 @@ Use for: Showing a single-week/month snapshot across all 21 aimags. For aimag-le
 
 **UB admin maps join on code, not name** (`/maps/ulaanbaatar-{districts,khoroos,zip-zones}.json`): khoroo names repeat across districts, so `lookup` on numeric `properties.code` with `key` on the CSV `code` column. See `datamn-transform-boundary`.
 
-**Choropleths render in Leaflet, not Vega.** Map pages use `<MapChart spec="...">` (same props as VegaChart) plus `chartLayout: wide` frontmatter. The component reads the Vega spec file as config (geojson URL, values CSV, join key, color field/type/scheme, tooltips) and renders pan/zoom (wheel, drag, mobile pinch), a legend, and tooltips. Vega specs stay canonical: validation, thumbnails, and chart-CSV checks all run against them unchanged. Do NOT add `params` zoom to map specs — Vega-Lite `bind: scales` is a proven no-op for `geoshape` (no x/y scales to bind; projection keeps auto-fit). Maps include a Reset control (refits initial bounds) and plain-text Leaflet attribution (the default prefix carries a flag emoji — see `MapChart.astro`).
+**Choropleths render in Leaflet, not Vega.** Map pages embed `<MapChart>`, never `<VegaChart>` — see §7 for usage, honored/ignored spec fields, and the swap-survival rule.
 
 **MDX caption:** describe as "latest available week" and note any coverage gaps (e.g., Ulaanbaatar not surveyed). NEVER hardcode the snapshot date in the caption — it must stay correct between updates.
+
+### 7. Map Page (MapChart Component Usage)
+
+Use for: every choropleth (§6). Pages embed `<MapChart>` (same props as VegaChart) plus `chartLayout: wide` frontmatter:
+
+```mdx
+---
+chartLayout: wide
+---
+import MapChart from '~/components/ui/MapChart.astro';
+
+<MapChart
+  spec="/charts/{dataset-id}-en.json"
+  title="Map Title"
+  caption="Caption (no hardcoded dates)."
+/>
+```
+
+(MN pages use the `-mn.json` spec.) MapChart reads the Vega spec file as config and renders Leaflet: wheel/drag/pinch zoom, legend, tooltips, a Reset control (refits initial bounds), and plain-text attribution (the default Leaflet prefix carries a flag emoji — see `MapChart.astro`). Spec fields it honors:
+
+- `data.url` — GeoJSON shapes (`/maps/*.json`)
+- `transform[0]` — `lookup` (feature key, e.g. `properties.code`), `from.data.url` (values CSV), `from.key` (CSV join column)
+- `mark.stroke` / `mark.strokeWidth`
+- `encoding.color` — `field`, `type` (`quantitative` → oranges ramp, `nominal` → category10), `legend.title`
+- `encoding.tooltip[]` — `field` (`properties.*` reads the feature, anything else the joined row), `title`, `format`
+
+Ignored: `params` (never add zoom params — Vega-Lite `bind: scales` is a proven no-op for `geoshape`), `projection`, `width`/`height`, `config`. The Vega spec stays canonical: validation, thumbnails, and chart-CSV checks all run against it unchanged.
+
+**UB admin maps join on code** (names repeat across districts): full example in `public/charts/ebarilga-khoroos-en.json`. Live references: `/en/data/ebarilga-districts`, `/en/data/ebarilga-khoroos`, `/en/data/ebarilga-zip-zones`, `/en/data/ebarilga-schools`, `/en/data/ebarilga-schools-by-khoroo` (same slugs under `/mn/`).
+
+**Swap-survival rule:** Leaflet's CSS must load from the static `<link>` in the component HTML — never runtime-inject stylesheet links (Astro swaps drop them while `window.L` persists, leaving maps without UI). Guarded by `tools/scripts/validate_mapchart.py`.
 
 ## File Location
 

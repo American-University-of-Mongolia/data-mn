@@ -1,0 +1,109 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Six aimags/capital with the highest value in the selected year. All 22 regions are in the downloads.",
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "/datasets/livestock-losses-by-aimag-en.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "value": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum['year'] == selectedYear"
+    },
+    {
+      "filter": "isValid(datum['value'])"
+    },
+    {
+      "window": [
+        {
+          "op": "row_number",
+          "as": "rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "value",
+          "order": "descending"
+        },
+        {
+          "field": "region",
+          "order": "ascending"
+        }
+      ]
+    },
+    {
+      "filter": "datum.rank <= 6"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 3
+  },
+  "encoding": {
+    "y": {
+      "field": "region",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null,
+      "axis": {
+        "labelLimit": 150
+      }
+    },
+    "x": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Losses (thousand head)",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "format": ",.1f"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "region",
+        "type": "nominal",
+        "title": "Aimag / capital"
+      },
+      {
+        "field": "year",
+        "type": "quantitative",
+        "title": "Year",
+        "format": "d"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Losses (thousand head)",
+        "format": ",.3f"
+      }
+    ]
+  }
+}

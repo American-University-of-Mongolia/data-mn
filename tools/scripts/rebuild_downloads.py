@@ -4,8 +4,8 @@
 Per dataset this script:
   1. Resolves the canonical long CSV per language (`-all-` if present, else plain)
      and asserts it is LONG form (fails closed -> manual queue otherwise).
-  2. Pivots EN + MN long data to wide form and writes ONE bilingual XLSX
-     (sheets "English" first, "Монгол" second; freeze top row, auto-width).
+  2. Pivots EN + MN long data to wide form. By default, writes one bilingual
+     XLSX. Pages with excelLanguage: page get matching single-language files.
   3. Rewrites MDX `dataFiles` to exactly 2 entries (CSV + XLSX).
   4. Asserts content equivalence (pivot totals match CSV totals, EN<->MN aligned).
 
@@ -292,11 +292,18 @@ def compare_xlsx_content(current, csv_total_en):
     return None
 
 
-def write_bilingual_xlsx(path, en_sheet, mn_sheet):
+def excel_download_mode(metadata):
+    """Page-language exports are explicit and must agree across both pages."""
+    modes = {page.get("excelLanguage", "bilingual") for page in metadata.values()}
+    if len(modes) != 1 or not modes <= {"bilingual", "page"}:
+        raise ValueError("EN/MN excelLanguage must agree: omit it or set both to page")
+    return modes.pop()
+
+
+def write_xlsx(path, sheets, styled=False):
     with pd.ExcelWriter(path, engine="openpyxl") as writer:
-        en_sheet.to_excel(writer, index=False, sheet_name=EN_SHEET)
-        mn_sheet.to_excel(writer, index=False, sheet_name=MN_SHEET)
-        for sheet_name, sheet_df in ((EN_SHEET, en_sheet), (MN_SHEET, mn_sheet)):
+        for sheet_name, sheet_df in sheets:
+            sheet_df.to_excel(writer, index=False, sheet_name=sheet_name)
             ws = writer.sheets[sheet_name]
             ws.freeze_panes = "A2"
             for idx, col in enumerate(sheet_df.columns):
@@ -308,6 +315,32 @@ def write_bilingual_xlsx(path, en_sheet, mn_sheet):
                             len(str(col))) + 2
                 ws.column_dimensions[get_column_letter(idx + 1)].width = min(
                     width, 30)
+            if styled:
+                from openpyxl.styles import Alignment, Font, PatternFill
+                from openpyxl.worksheet.table import Table, TableStyleInfo
+
+                ws.freeze_panes = "B2"
+                ws.sheet_view.showGridLines = False
+                number_format = "0.00" if "loss-rate" in path.stem else "#,##0.000"
+                for row in ws:
+                    ws.row_dimensions[row[0].row].height = 30 if row[0].row == 1 else 23
+                    for cell in row:
+                        header = cell.row == 1
+                        cell.font = Font(name="Arial", size=11, bold=header,
+                                         color="FFFFFF" if header else "1F2937")
+                        cell.alignment = Alignment(horizontal="center" if header else "right",
+                                                   vertical="center", wrap_text=header)
+                        cell.fill = PatternFill("solid", fgColor=("253A58" if header else
+                                                "F0F4F8" if cell.row % 2 else "FFFFFF"))
+                        if not header:
+                            cell.number_format = "0" if cell.column == 1 else number_format
+                table = Table(displayName="Data", ref=ws.dimensions)
+                table.tableStyleInfo = TableStyleInfo(name="TableStyleMedium2", showRowStripes=True)
+                ws.add_table(table)
+
+
+def write_bilingual_xlsx(path, en_sheet, mn_sheet):
+    write_xlsx(path, [(EN_SHEET, en_sheet), (MN_SHEET, mn_sheet)])
 
 
 def kb_size(path):
@@ -324,39 +357,23 @@ def rewrite_mdx_datafiles(mdx_path, csv_name, xlsx_name, lang,
     frontmatter, body = m.group(1), m.group(2)
     meta = yaml.safe_load(frontmatter) or {}
     old_files = meta.get("dataFiles") or []
-    xlsx_desc = next((f.get("description") for f in old_files
-                      if str(f.get("format", "")).lower() in ("xlsx", "xls")
-                      and f.get("description")), None)
-    if xlsx_desc is None:
-        xlsx_desc = "Open in Excel" if lang == "en" else "Excel-д нээх"
     geo_name = BOUNDARY_SHAPES.get(dataset_id) if dataset_id else None
-    if geo_name:
-        geo_desc = ("Download boundary shapes (GeoJSON)" if lang == "en"
-                    else "Хил хязгаарын дүрс татах (GeoJSON)")
-        new_block = (
-            "dataFiles:\n"
-            f"  - path: \"/maps/{geo_name}\"\n"
-            "    format: \"geojson\"\n"
-            f"    size: \"{kb_size(MAPS / geo_name)} KB\"\n"
-            f"    description: \"{geo_desc}\"\n"
-            f"  - path: \"/datasets/{xlsx_name}\"\n"
-            "    format: \"xlsx\"\n"
-            f"    size: \"{kb_size(DATASETS / xlsx_name)} KB\"\n"
-            f"    description: \"{xlsx_desc}\"\n"
-        )
-    else:
-        csv_desc = "Download as CSV" if lang == "en" else "CSV татах"
-        new_block = (
-            "dataFiles:\n"
-            f"  - path: \"/datasets/{csv_name}\"\n"
-            "    format: \"csv\"\n"
-            f"    size: \"{kb_size(DATASETS / csv_name)} KB\"\n"
-            f"    description: \"{csv_desc}\"\n"
-            f"  - path: \"/datasets/{xlsx_name}\"\n"
-            "    format: \"xlsx\"\n"
-            f"    size: \"{kb_size(DATASETS / xlsx_name)} KB\"\n"
-            f"    description: \"{xlsx_desc}\"\n"
-        )
+    downloads = [("geojson", geo_name, MAPS, "/maps")] if geo_name else [("csv", csv_name, DATASETS, "/datasets")]
+    downloads.append(("xlsx", xlsx_name, DATASETS, "/datasets"))
+    descriptions = {
+        "csv": "Download as CSV" if lang == "en" else "CSV татах",
+        "xlsx": "Open in Excel" if lang == "en" else "Excel-д нээх",
+        "geojson": "Download boundary shapes (GeoJSON)" if lang == "en" else "Хил хязгаарын дүрс татах (GeoJSON)",
+    }
+    new_files = []
+    for fmt, filename, folder, prefix in downloads:
+        old = next((f for f in old_files if str(f.get("format", "")).lower() == fmt), {})
+        entry = {"path": f"{prefix}/{filename}", "format": fmt,
+                 "size": f"{kb_size(folder / filename)} KB"}
+        entry.update({key: old[key] for key in ("label", "description") if old.get(key)})
+        entry.setdefault("description", descriptions[fmt])
+        new_files.append(entry)
+    new_block = yaml.safe_dump({"dataFiles": new_files}, allow_unicode=True, sort_keys=False, width=1000)
     lines = frontmatter.split("\n")
     try:
         start = next(i for i, line in enumerate(lines)
@@ -417,6 +434,15 @@ def process_dataset(dataset_id, apply=False):
     for lang, path in mdx.items():
         if not path.exists():
             manual(f"missing {lang.upper()} MDX page")
+    if report["queue"] == "manual":
+        return report
+    try:
+        metadata = {lang: yaml.safe_load(path.read_text().split("---", 2)[1]) or {}
+                    for lang, path in mdx.items()}
+        mode = excel_download_mode(metadata)
+    except (ValueError, IndexError, yaml.YAMLError) as e:
+        manual(str(e))
+        return report
     csv_name = {lang: canonical_csv(dataset_id, lang) for lang in ("en", "mn")}
     dfs, roles = {}, {}
     for lang in ("en", "mn"):
@@ -486,6 +512,25 @@ def process_dataset(dataset_id, apply=False):
         if years_en != years_mn:
             manual("EN/MN time vectors differ")
             return report
+
+    if mode == "page":
+        names = {lang: f"{dataset_id}-{lang}.xlsx" for lang in ("en", "mn")}
+        for lang, filename in names.items():
+            target = DATASETS / filename
+            if target.exists():
+                mismatch = compare_xlsx_content(read_current_xlsx(target),
+                                                value_total(dfs[lang], roles[lang][0]))
+                if mismatch:
+                    manual(f"{filename}: {mismatch}")
+                    return report
+            report["actions"].append(f"rebuild {filename} (one {lang.upper()} sheet)")
+            report["actions"].append(f"rewrite {lang}/{mdx[lang].name} dataFiles -> {csv_name[lang]} + {filename}")
+        if apply:
+            for lang, filename in names.items():
+                name = EN_SHEET if lang == "en" else MN_SHEET
+                write_xlsx(DATASETS / filename, [(name, sheets[lang])], styled=True)
+                rewrite_mdx_datafiles(mdx[lang], csv_name[lang], filename, lang)
+        return report
 
     xlsx_name = f"{dataset_id}.xlsx"
     xlsx_path = DATASETS / xlsx_name
@@ -580,4 +625,3 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
-

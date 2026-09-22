@@ -78,9 +78,11 @@ const dataCollection = defineCollection({
     dataDate: z.date().optional(),
 
     // Data files for download
+    excelLanguage: z.enum(['page']).optional(),
     dataFiles: z.array(z.object({
       path: z.string(),
       format: z.string(), // csv, xlsx, json, etc.
+      label: z.string().optional(),
       size: z.string().optional(),
       description: z.string().optional(),
     })).optional(),

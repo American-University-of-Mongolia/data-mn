@@ -16,15 +16,16 @@ export interface Props {
   caption?: string;
   aspectRatio?: number; // height/width ratio, default 0.5 (2:1)
   interactive?: boolean;
+  yearGroup?: string; // Share selectedYear with charts in the same group.
 }
 
-const { spec, title, caption, aspectRatio = 0.5, interactive = false } = Astro.props;
+const { spec, title, caption, aspectRatio = 0.5, interactive = false, yearGroup } = Astro.props;
 const chartId = `chart-${Math.random().toString(36).substring(2, 11)}`;
 const isInlineSpec = typeof spec === 'object';
 ---
 
 <div class="vega-chart-container my-4 not-prose">
-  {title && <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">{title}</h3>}
+  {title && <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">{title}{yearGroup && <span data-selected-year class="ml-2 tabular-nums text-gray-500 dark:text-gray-400" />}</h3>}
   <ChartControls enabled={interactive}>
 
   <div
@@ -34,6 +35,7 @@ const isInlineSpec = typeof spec === 'object';
     data-is-inline={isInlineSpec}
     data-aspect-ratio={aspectRatio}
     data-interactive={interactive}
+    data-year-group={yearGroup}
   ></div>
   </ChartControls>
 
@@ -48,6 +50,7 @@ const isInlineSpec = typeof spec === 'object';
 
     // Store chart views for resize handling
     var chartViews = {};
+    let linkedYears = {};
     var resizeTimeout = null;
     var vegaLoaded = false;
     var decimalNumberFormat = ",.6~f";
@@ -263,6 +266,57 @@ const isInlineSpec = typeof spec === 'object';
       return decorateLegend;
     }
 
+    // Opt-in year linking. State survives responsive re-embedding, and a
+    // chart finishing its initial load later receives the current selection.
+    function prepareLinkedYear(el, spec) {
+      const group = el.dataset.yearGroup;
+      if (!group) return null;
+      const param = (spec.params || []).find(function (item) {
+        return item.name === 'selectedYear';
+      });
+      if (!param) return null;
+      let state = linkedYears[group];
+      if (!state) state = linkedYears[group] = { value: param.value, pending: Promise.resolve() };
+      param.value = state.value;
+
+      function sync() {
+        state.pending = state.pending
+          .then(async function () {
+            for (const id of Object.keys(chartViews)) {
+              const peer = document.getElementById(id);
+              const peerView = chartViews[id];
+              if (!peer || peer.dataset.yearGroup !== group || !peerView) continue;
+              if (id !== state.controllerId && peerView.signal('selectedYear') !== state.value) {
+                await peerView.signal('selectedYear', state.value).runAsync();
+              }
+              const label = peer.closest('.vega-chart-container').querySelector('[data-selected-year]');
+              if (label) label.textContent = String(peerView.signal('selectedYear'));
+            }
+          })
+          .catch(function (error) {
+            console.error('Error updating linked chart year:', error);
+          });
+        return state.pending;
+      }
+
+      return async function (view) {
+        // The bound slider owns the year. Never write back to that view while
+        // its input is changing; a queued older update could erase a new one.
+        if (param.bind) {
+          state.controllerId = el.id;
+          if (view.signal('selectedYear') !== state.value) {
+            await view.signal('selectedYear', state.value).runAsync();
+          }
+          view.addSignalListener('selectedYear', function (name, value) {
+            if (state.value === value) return;
+            state.value = value;
+            sync();
+          });
+        }
+        return sync();
+      };
+    }
+
     // Debounced resize handler
     function handleResize() {
       if (resizeTimeout) clearTimeout(resizeTimeout);
@@ -328,6 +382,7 @@ const isInlineSpec = typeof spec === 'object';
           }
 
           const attachExplorer = await prepareExplorer(el, chartSpec);
+          const attachLinkedYear = prepareLinkedYear(el, chartSpec);
           normalizeNumberFormats(chartSpec);
           if (attachExplorer && document.documentElement.classList.contains('dark')) {
             chartSpec.background = '#1e293b';
@@ -419,6 +474,7 @@ const isInlineSpec = typeof spec === 'object';
 
           var result = await window.vegaEmbed('#' + chartId, chartSpec, options);
           chartViews[chartId] = result.view;
+          if (attachLinkedYear) await attachLinkedYear(result.view);
           if (attachExplorer) attachExplorer(result.view);
           el.setAttribute('data-rendered', 'true');
 
@@ -455,7 +511,9 @@ const isInlineSpec = typeof spec === 'object';
 
     // Re-run on Astro page transitions
     document.addEventListener('astro:page-load', function() {
+      Object.keys(chartViews).forEach(function (id) { chartViews[id].finalize(); });
       chartViews = {};
+      linkedYears = {};
       initVegaCharts();
     });
 
@@ -471,5 +529,15 @@ const isInlineSpec = typeof spec === 'object';
 
   .vega-chart-container :global(svg) {
     max-width: 100%;
+  }
+  .vega-chart-container :global(.vega-chart[data-year-group] .vega-bindings) {
+    margin-top: 1rem;
+  }
+
+  .vega-chart-container :global(.vega-chart[data-year-group] .vega-bind input[type='range']) {
+    width: min(65vw, 24rem);
+    margin: 0 0.75rem;
+    vertical-align: middle;
+    accent-color: #2563eb;
   }
 </style>

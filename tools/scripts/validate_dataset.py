@@ -61,6 +61,7 @@ try:
         check_structural_language,
         value_total,
         fuzzy_value_total,
+        excel_download_mode,
     )
     HAS_REBUILD = True
 except Exception:
@@ -691,7 +692,9 @@ def validate_chart_csv_consistency(chart_path: str, csv_path: str) -> Validation
     color_enc = encoding.get('color', {})
     if isinstance(color_enc, dict):
         scale = color_enc.get('scale', {})
-        if 'domain' in scale:
+        # Continuous scale endpoints need not be observed CSV values.
+        if (color_enc.get('type') not in ('quantitative', 'temporal')
+                and isinstance(scale, dict) and isinstance(scale.get('domain'), list)):
             color_domain = scale['domain']
             color_field = color_enc.get('field')
 
@@ -701,7 +704,9 @@ def validate_chart_csv_consistency(chart_path: str, csv_path: str) -> Validation
         layer_color = layer_enc.get('color', {})
         if isinstance(layer_color, dict):
             layer_scale = layer_color.get('scale', {})
-            if 'domain' in layer_scale and color_domain is None:
+            if (layer_color.get('type') not in ('quantitative', 'temporal')
+                    and isinstance(layer_scale, dict) and isinstance(layer_scale.get('domain'), list)
+                    and color_domain is None):
                 color_domain = layer_scale['domain']
                 color_field = layer_color.get('field')
 
@@ -749,7 +754,7 @@ def validate_chart_csv_consistency(chart_path: str, csv_path: str) -> Validation
         else:
             result.add_warning(f"Color field '{color_field}' not found in CSV columns: {list(df.columns)}")
     else:
-        result.add_info("No color domain defined in chart (categorical comparison skipped)")
+        result.add_info("No categorical color domain defined (category comparison skipped)")
 
     return result
 
@@ -759,10 +764,12 @@ def validate_downloads(dataset_id: str, base_dir: str) -> list[ValidationResult]
 
     - Download Files: each page lists exactly one CSV + one XLSX; the CSV is
       the canonical download file (-all- when present, else plain); the XLSX
-      is {id}.xlsx. Also checks EN<->MN download-CSV alignment.
+      is {id}.xlsx by default or {id}-{lang}.xlsx for excelLanguage: page.
+      Also checks EN<->MN download-CSV alignment.
     - Download CSV (en/mn): long form with structural headers in the page
       language (Standard 2 header-language rule).
-    - Download XLSX: bilingual sheets, wide form unless the dataset is on the
+    - Download XLSX: correct sheets for the configured language mode; wide
+      form unless the dataset is on the
       documented exempt list, content-equivalent to the CSVs.
     """
     import math
@@ -790,6 +797,7 @@ def validate_downloads(dataset_id: str, base_dir: str) -> list[ValidationResult]
         return f"{dataset_id}-{lang}.csv"
 
     # --- dataFiles shape (both pages) ---
+    page_metadata = {}
     for lang in ('en', 'mn'):
         mdx_path = os.path.join(
             base_dir, 'src', 'data', 'data', lang, f'{dataset_id}.mdx')
@@ -802,6 +810,7 @@ def validate_downloads(dataset_id: str, base_dir: str) -> list[ValidationResult]
         except ValidationError as e:
             files_result.add_error(f"{lang.upper()} MDX: {e}")
             continue
+        page_metadata[lang] = frontmatter or {}
         files = (frontmatter or {}).get('dataFiles') or []
         formats = sorted(str(f.get('format', '')).lower()
                          for f in files if isinstance(f, dict))
@@ -838,10 +847,18 @@ def validate_downloads(dataset_id: str, base_dir: str) -> list[ValidationResult]
             files_result.add_error(
                 f"{lang.upper()} download CSV must be {expected_csv}, "
                 f"found: {names.get('csv')}")
-        if names.get('xlsx') != f"{dataset_id}.xlsx":
+        expected_xlsx = (f"{dataset_id}-{lang}.xlsx" if
+                         page_metadata[lang].get('excelLanguage') == 'page' else f"{dataset_id}.xlsx")
+        if names.get('xlsx') != expected_xlsx:
             files_result.add_error(
-                f"{lang.upper()} download XLSX must be {dataset_id}.xlsx, "
+                f"{lang.upper()} download XLSX must be {expected_xlsx}, "
                 f"found: {names.get('xlsx')}")
+
+    try:
+        mode = excel_download_mode(page_metadata)
+    except ValueError as e:
+        files_result.add_error(str(e))
+        return results
 
     # --- Download CSVs: long form + header language ---
     dfs, roles = {}, {}
@@ -893,30 +910,30 @@ def validate_downloads(dataset_id: str, base_dir: str) -> list[ValidationResult]
             if years_en != years_mn:
                 files_result.add_error("EN/MN download-CSV time vectors differ")
 
-    # --- Download XLSX: bilingual + wide + equivalent ---
+    # --- Download XLSX: configured language layout + wide + equivalent ---
     xlsx_name = f"{dataset_id}.xlsx"
     xlsx_path = os.path.join(datasets_dir, xlsx_name)
     xlsx_result = ValidationResult(xlsx_path, "Download XLSX")
     results.append(xlsx_result)
-    if not os.path.exists(xlsx_path):
-        xlsx_result.add_error(f"Download XLSX does not exist: {xlsx_name}")
-        return results
-    try:
-        wb = openpyxl.load_workbook(xlsx_path, read_only=True)
-        sheet_names = wb.sheetnames
-        wb.close()
-    except Exception as e:
-        xlsx_result.add_error(f"Could not open Excel file: {e}")
-        return results
-    if sheet_names != [EN_SHEET, MN_SHEET]:
-        xlsx_result.add_error(
-            f"XLSX must have bilingual sheets [{EN_SHEET}, {MN_SHEET}] "
-            f"(Standard 2), found: {sheet_names}")
-        return results
+    paths = {lang: os.path.join(datasets_dir, f"{dataset_id}-{lang}.xlsx")
+             if mode == 'page' else xlsx_path for lang in ('en', 'mn')}
+    for lang, name in (('en', EN_SHEET), ('mn', MN_SHEET)):
+        expected_sheets = [name] if mode == 'page' else [EN_SHEET, MN_SHEET]
+        try:
+            wb = openpyxl.load_workbook(paths[lang], read_only=True)
+            sheet_names = wb.sheetnames
+            wb.close()
+        except Exception as e:
+            xlsx_result.add_error(f"Could not open {os.path.basename(paths[lang])}: {e}")
+            return results
+        if sheet_names != expected_sheets:
+            xlsx_result.add_error(
+                f"{lang.upper()} XLSX must have sheets {expected_sheets}, found: {sheet_names}")
+            return results
     if 'en' not in dfs or 'mn' not in dfs:
         return results  # CSV errors already recorded; nothing to compare
     try:
-        sheets = {lang: pd.read_excel(xlsx_path, sheet_name=name)
+        sheets = {lang: pd.read_excel(paths[lang], sheet_name=name)
                   for lang, name in (('en', EN_SHEET), ('mn', MN_SHEET))}
     except Exception as e:
         xlsx_result.add_error(f"Could not read XLSX sheets: {e}")
@@ -967,8 +984,18 @@ def validate_downloads(dataset_id: str, base_dir: str) -> list[ValidationResult]
                 f"{lang.upper()} sheet content differs from its CSV "
                 f"(numeric totals mismatch)")
             return results
+        if mode == 'page' and needs_wide:
+            time, category, value = roles[lang]
+            expected = dfs[lang].pivot(index=time, columns=category, values=value).reset_index()
+            expected.columns.name = None
+            try:
+                pd.testing.assert_frame_equal(sheets[lang], expected, check_dtype=False,
+                                              check_names=False, rtol=1e-9, atol=1e-9)
+            except AssertionError:
+                xlsx_result.add_error(f"{lang.upper()} XLSX cells or category labels differ from its CSV pivot")
+                return results
     xlsx_result.add_info(
-        f"Bilingual wide XLSX OK: {sheets['en'].shape[0]} rows x "
+        f"{'Page-language' if mode == 'page' else 'Bilingual'} wide XLSX OK: {sheets['en'].shape[0]} rows x "
         f"{sheets['en'].shape[1]} cols per sheet")
     return results
 

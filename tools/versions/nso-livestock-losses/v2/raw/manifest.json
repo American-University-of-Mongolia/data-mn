@@ -1,0 +1,39 @@
+{
+  "retrieved_at": "2026-09-21T10:07:00.221246+00:00",
+  "loss_year_start": 1971,
+  "loss_year_end": 2025,
+  "tables": {
+    "losses": {
+      "id": "DT_NSO_1001_029V1.px",
+      "updated": "2026-08-26T15:47:59",
+      "languages": {
+        "en": {
+          "api_url": "https://data.1212.mn/api/v1/en/NSO/Industry,%20service/Livestock/DT_NSO_1001_029V1.px",
+          "sha256": "2bb3b33e0fb447e477acb4c3decbb2898cacd48983964291c2b1175ae8a9866e",
+          "rows": 7590
+        },
+        "mn": {
+          "api_url": "https://data.1212.mn/api/v1/mn/NSO/Industry,%20service/Livestock/DT_NSO_1001_029V1.px",
+          "sha256": "f3cdaeb1a3403c809791262eba1b16cb7247c6c116399a1feb369d4b46bf1034",
+          "rows": 7590
+        }
+      }
+    },
+    "herds": {
+      "id": "DT_NSO_1001_021V1.px",
+      "updated": "2026-08-21T16:58:29",
+      "languages": {
+        "en": {
+          "api_url": "https://data.1212.mn/api/v1/en/NSO/Industry,%20service/Livestock/DT_NSO_1001_021V1.px",
+          "sha256": "c0dc60d99d0fc05a1092494ef5d84e81c9b1ee57ba27f04fa2d868c35dcacdec",
+          "rows": 7590
+        },
+        "mn": {
+          "api_url": "https://data.1212.mn/api/v1/mn/NSO/Industry,%20service/Livestock/DT_NSO_1001_021V1.px",
+          "sha256": "5bbaec190bf63a69c55d1f0b470ccca6c0b29ac0a58c20e9515e646981c91baa",
+          "rows": 7590
+        }
+      }
+    }
+  }
+}

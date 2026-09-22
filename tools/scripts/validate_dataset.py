@@ -322,13 +322,14 @@ def validate_mdx(file_path: str, base_dir: Optional[str] = None) -> ValidationRe
                 if not isinstance(tag, str):
                     result.add_error(f"Each tag must be a string, got {type(tag).__name__}")
 
-    # Check body has VegaChart
-    if 'VegaChart' not in body:
-        result.add_warning("Body does not contain VegaChart component")
+    # Check body has a chart component (VegaChart, or MapChart for Leaflet maps)
+    if 'VegaChart' not in body and 'MapChart' not in body:
+        result.add_warning("Body does not contain VegaChart/MapChart component")
 
     # Check import statement
-    if "import VegaChart from '~/components/ui/VegaChart.astro'" not in body:
-        result.add_warning("Missing VegaChart import statement")
+    if ("import VegaChart from '~/components/ui/VegaChart.astro'" not in body
+            and "import MapChart from '~/components/ui/MapChart.astro'" not in body):
+        result.add_warning("Missing VegaChart/MapChart import statement")
 
     # ============================================
     # Check for forbidden sections in MDX body

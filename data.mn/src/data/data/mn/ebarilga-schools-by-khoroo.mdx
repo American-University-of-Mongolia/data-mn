@@ -1,0 +1,35 @@
+---
+title: 'Улаанбаатар Хотын Хороо Бүрийн Ерөнхий Боловсролын Сургууль'
+publishDate: 2026-09-22
+excerpt: 'Улаанбаатар хотын хороо бүрийн ерөнхий боловсролын сургууль, 204 хороонд 323 сургууль (2026 оны 9-р сар).'
+category: 'Боловсрол'
+tags: ['монгол', 'улаанбаатар', 'сургууль', 'боловсрол', 'хороо', 'ebarilga']
+keywords: ['улаанбаатар сургууль хороогоор', 'сургуулийн зураг улаанбаатар', 'монгол сургууль']
+chartLayout: wide
+author: 'Data.mn'
+dataVersion: 1
+dataDate: 2026-09-13
+dataFiles:
+  - path: '/datasets/ebarilga-schools-by-khoroo-mn.csv'
+    format: 'csv'
+    size: '9 KB'
+    description: 'CSV татах'
+  - path: '/datasets/ebarilga-schools-by-khoroo.xlsx'
+    format: 'xlsx'
+    size: '15 KB'
+    description: 'Excel татах'
+source:
+  name: 'eBarilga Геопортал (Хот байгуулалт, хотын стандартын газар)'
+  url: 'https://ebarilga.ub.gov.mn/map'
+  tableId: 'data_edu_school'
+---
+
+import MapChart from '~/components/ui/MapChart.astro';
+
+Улаанбаатар хотын хороо бүрийн ерөнхий боловсролын сургууль, 204 хороонд 323 сургууль (2026 оны 9-р сар).
+
+<MapChart
+  spec="/charts/ebarilga-schools-by-khoroo-mn.json"
+  title="Улаанбаатар Хотын Хороо Бүрийн Ерөнхий Боловсролын Сургууль"
+  caption="Хороо бүрийн сургууль (2026 оны 9-р сар). Бүх 323 сургууль хороодын хил дотор; 63 хороонд сургууль байхгүй."
+/>

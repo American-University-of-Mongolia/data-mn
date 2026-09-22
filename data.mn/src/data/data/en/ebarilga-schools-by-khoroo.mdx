@@ -1,0 +1,35 @@
+---
+title: 'Secondary Schools by Khoroo in Ulaanbaatar'
+publishDate: 2026-09-22
+excerpt: 'Secondary schools per khoroo in Ulaanbaatar, covering all 323 schools across 204 khoroos (September 2026).'
+category: 'Education'
+tags: ['mongolia', 'ulaanbaatar', 'schools', 'education', 'khoroo', 'ebarilga']
+keywords: ['ulaanbaatar schools by khoroo', 'school map ulaanbaatar', 'mongolia schools']
+chartLayout: wide
+author: 'Data.mn'
+dataVersion: 1
+dataDate: 2026-09-13
+dataFiles:
+  - path: '/datasets/ebarilga-schools-by-khoroo-en.csv'
+    format: 'csv'
+    size: '6 KB'
+    description: 'Download as CSV'
+  - path: '/datasets/ebarilga-schools-by-khoroo.xlsx'
+    format: 'xlsx'
+    size: '15 KB'
+    description: 'Open in Excel'
+source:
+  name: 'eBarilga Geoportal (UB Urban Development Agency)'
+  url: 'https://ebarilga.ub.gov.mn/map'
+  tableId: 'data_edu_school'
+---
+
+import MapChart from '~/components/ui/MapChart.astro';
+
+Secondary schools per khoroo in Ulaanbaatar, covering all 323 schools across 204 khoroos (September 2026).
+
+<MapChart
+  spec="/charts/ebarilga-schools-by-khoroo-en.json"
+  title="Secondary Schools by Khoroo in Ulaanbaatar"
+  caption="Schools per khoroo (September 2026). All 323 schools fall inside khoroo boundaries; 63 khoroos have no school."
+/>

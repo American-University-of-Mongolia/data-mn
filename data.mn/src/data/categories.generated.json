@@ -45,6 +45,11 @@
     "count": 7
   },
   {
+    "en": "Education",
+    "mn": "Боловсрол",
+    "count": 5
+  },
+  {
     "en": "Household & Income",
     "mn": "Өрх ба орлого",
     "count": 4
@@ -53,11 +58,6 @@
     "en": "Tourism",
     "mn": "Аялал жуулчлал",
     "count": 4
-  },
-  {
-    "en": "Education",
-    "mn": "Боловсрол",
-    "count": 3
   },
   {
     "en": "Industry",

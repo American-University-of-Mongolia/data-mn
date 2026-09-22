@@ -1,33 +1,34 @@
 ---
 title: 'Ulaanbaatar ZIP Zones: Boundaries and Districts'
 publishDate: 2026-09-22
-excerpt: 'The 513 ZIP address zones of Ulaanbaatar with centroid districts, areas, and centroids (September 2026); boundary shapes available at /maps/ulaanbaatar-zip-zones.json.'
+excerpt: 'The 513 ZIP address zones of Ulaanbaatar with centroid districts, areas, and centroids (September 2026).'
 category: 'Infrastructure'
 tags: ['mongolia', 'ulaanbaatar', 'zip', 'zones', 'boundaries', 'map']
 keywords: ['ulaanbaatar zip code map', 'ub address zones', 'zip zone boundaries']
+chartLayout: wide
 author: 'Data.mn'
 dataVersion: 1
 dataDate: 2026-09-13
 dataFiles:
-  - path: "/maps/ulaanbaatar-zip-zones.json"
-    format: "geojson"
-    size: "511 KB"
-    description: "Download boundary shapes (GeoJSON)"
-  - path: "/datasets/ebarilga-zip-zones.xlsx"
-    format: "xlsx"
-    size: "55 KB"
-    description: "Open in Excel"
+  - path: '/maps/ulaanbaatar-zip-zones.json'
+    format: 'geojson'
+    size: '511 KB'
+    description: 'Download boundary shapes (GeoJSON)'
+  - path: '/datasets/ebarilga-zip-zones.xlsx'
+    format: 'xlsx'
+    size: '55 KB'
+    description: 'Open in Excel'
 source:
   name: 'eBarilga Geoportal (UB Urban Development Agency)'
   url: 'https://ebarilga.ub.gov.mn/map'
   tableId: 'zippolygons'
 ---
 
-import VegaChart from '~/components/ui/VegaChart.astro';
+import MapChart from '~/components/ui/MapChart.astro';
 
-The 513 ZIP address zones of Ulaanbaatar with centroid districts, areas, and centroids (September 2026); boundary shapes available at /maps/ulaanbaatar-zip-zones.json.
+The 513 ZIP address zones of Ulaanbaatar with centroid districts, areas, and centroids (September 2026).
 
-<VegaChart
+<MapChart
   spec="/charts/ebarilga-zip-zones-en.json"
   title="Ulaanbaatar ZIP Address Zones"
   caption="513 ZIP zones as a reference map. Zone 12001 lies outside all districts; district shown is the centroid district."

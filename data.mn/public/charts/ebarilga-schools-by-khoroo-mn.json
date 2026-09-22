@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "labelColor": "#64748b",
+      "labelFontSize": 14,
+      "titleColor": "#334155",
+      "titleFontSize": 16
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "format": {
+      "property": "features",
+      "type": "json"
+    },
+    "url": "/maps/ulaanbaatar-khoroos.json"
+  },
+  "description": "Улаанбаатар хотын хороо бүрийн ерөнхий боловсролын сургууль (323 сургууль, 2026 оны 9-р сар). Бүх сургууль хороодын хил дотор байна. Хил хязгаар: eBarilga геопортал (Хот байгуулалт, хотын стандартын газар).",
+  "encoding": {
+    "color": {
+      "field": "сургуулийн_тоо",
+      "legend": {
+        "orient": "top",
+        "title": "Сургуулийн тоо"
+      },
+      "scale": {
+        "scheme": "oranges"
+      },
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "хороо",
+        "title": "Хороо"
+      },
+      {
+        "field": "дүүрэг",
+        "title": "Дүүрэг"
+      },
+      {
+        "field": "сургуулийн_тоо",
+        "format": ",.0f",
+        "title": "Сургуулийн тоо"
+      }
+    ]
+  },
+  "mark": {
+    "stroke": "white",
+    "strokeWidth": 0.5,
+    "type": "geoshape"
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "from": {
+        "data": {
+          "format": {
+            "type": "csv"
+          },
+          "url": "/datasets/ebarilga-schools-by-khoroo-mn.csv"
+        },
+        "fields": [
+          "хороо",
+          "дүүрэг",
+          "сургуулийн_тоо"
+        ],
+        "key": "код"
+      },
+      "lookup": "properties.code"
+    }
+  ]
+}

@@ -40,7 +40,7 @@ code,zone,district_code,district,area_km2,lon,lat
 12311,Bor uzuur,19,Bagakhangai,2.081,107.486455,47.364515
 12312,Nuur,19,Bagakhangai,0.633,107.497667,47.353156
 12313,Tsaidam,19,Bagakhangai,0.08,107.486718,47.358586
-12314,Zamchin-BKhD,19,Bagakhangai,0.288,107.487179,47.356135
+12314,Zamchin-BKD,19,Bagakhangai,0.288,107.487179,47.356135
 12320,Aerodromyn kheseg,19,Bagakhangai,8.967,107.454711,47.367343
 12330,Undur tolgoi,19,Bagakhangai,4.952,107.447323,47.345867
 12340,Uildveriin kheseg,19,Bagakhangai,6.345,107.472149,47.328206
@@ -509,6 +509,6 @@ code,zone,district_code,district,area_km2,lon,lat
 18501,Suurishilgui bus,18,Songinokhairkhan,36.967,106.588235,48.214867
 18510,Zamtyn bulag,18,Songinokhairkhan,19.866,106.485164,48.082789
 18520,Tusgaltyn am,18,Songinokhairkhan,12.202,106.444529,48.205966
-18530,Khundlungiin am-SKhD,18,Songinokhairkhan,41.551,106.455202,48.162074
+18530,Khundlungiin am-SKD,18,Songinokhairkhan,41.551,106.455202,48.162074
 18540,Burdiin am,18,Songinokhairkhan,17.185,106.461036,48.24355
 18550,Suurishilgui bus,18,Songinokhairkhan,27.655,106.410795,48.239367

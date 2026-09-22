@@ -20,6 +20,7 @@ import csv
 import json
 import math
 import os
+import re
 
 from shapely.geometry import mapping, shape
 from shapely.ops import orient
@@ -45,13 +46,30 @@ for _c in list(TRANSLIT):
 
 # English-origin names: translate instead of transliterating.
 TRANSLIT_EXCEPTIONS = {
-    # e.g. 'Шинэ хот': 'New Town',
+    'Галакси сургууль': 'Galaxy surguuli',
+    'Логарифм сургууль': 'Logarithm surguuli',
+    'Сейнт Поул бага сургууль': 'Saint Paul baga surguuli',
+    'Сингапур скүүл оф монголиа сургууль':
+        'Singapore School of Mongolia surguuli',
+    'И-Эс-Эм сургууль - Эрэл сургууль': 'ISM surguuli - Erel surguuli',
+    # Also normalizes the source typo сургуууль -> сургууль.
+    'Улаанбаатар-Эмпати сургуууль': 'Ulaanbaatar-Empathy surguuli',
+    # German-origin names (same principle as English ones).
+    'Дойче шуле сургууль': 'Deutsche Schule surguuli',
+    'Гёте сургууль': 'Goethe surguuli',
 }
+
+# Runs of 2+ uppercase Cyrillic are acronyms: first letters only, all caps
+# (ЦС -> TS, ШУТИС -> SHUTIS). Titlecase words are unaffected.
+_CAPS_RUN = re.compile(r'[А-ЯЁӨҮ]{2,}')
 
 
 def transliterate(name):
     if name in TRANSLIT_EXCEPTIONS:
         return TRANSLIT_EXCEPTIONS[name]
+    name = _CAPS_RUN.sub(
+        lambda m: ''.join(TRANSLIT[ch][0].upper() for ch in m.group(0)),
+        name)
     return ''.join(TRANSLIT.get(ch, ch) for ch in name)
 
 

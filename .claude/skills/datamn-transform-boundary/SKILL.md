@@ -69,6 +69,12 @@ ASCII, no diacritics (Sukhbaatar, Khuvsgul, Umnugovi, Tuv). Capitals mirror
 | т t | у u | ү u | ф f | х kh | ц ts | ч ch | ш sh | щ shch | ъ — |
 | ы y | ь i | э e | ю yu | я ya | | | | | |
 
+Runs of 2+ uppercase Cyrillic are acronyms: first letters only, all caps
+(ЦС → TS, ШУТИС → SUTIS). Titlecase words are unaffected. Transliterate
+faithfully (source typos preserved); only `TRANSLIT_EXCEPTIONS` entries
+(English/German-origin names: Galaxy, Saint Paul, Deutsche Schule, ...)
+are translated or normalized instead.
+
 ## Choropleth Wiring
 
 Same `geoshape` + `lookup` pattern as `datamn-chart-vega` §6, except the

@@ -75,12 +75,16 @@ REFERENCE_TABLES = {
     "ebarilga-districts",
     "ebarilga-khoroos",
     "ebarilga-zip-zones",
+    "ebarilga-schools-by-khoroo",
+    "ebarilga-schools",
 }
 
 REFERENCE_TABLES_REASONS = {
     "ebarilga-districts": "boundary reference table: codes, names, khoroo counts, areas",
     "ebarilga-khoroos": "boundary reference table: codes, names, parent districts, areas",
     "ebarilga-zip-zones": "boundary reference table: codes, names, parent districts, areas",
+    "ebarilga-schools-by-khoroo": "count table with parent districts: codes, names, counts",
+    "ebarilga-schools": "directory: names, addresses, parents, coordinates",
 }
 
 # Boundary datasets substitute the CSV download with the GeoJSON shapes

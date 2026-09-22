@@ -1,33 +1,34 @@
 ---
 title: 'Улаанбаатар Хотын Зип Бүсүүд: Хил Хязгаар ба Дүүрэг'
 publishDate: 2026-09-22
-excerpt: 'Улаанбаатар хотын 513 зип хаягийн бүс, төв-цэгийн дүүрэг, талбай, төв цэгийн хамт (2026 оны 9-р сар); хил хязгаарын дүрс /maps/ulaanbaatar-zip-zones.json хаягт байна.'
+excerpt: 'Улаанбаатар хотын 513 зип хаягийн бүс, төв-цэгийн дүүрэг, талбай, төв цэгийн хамт (2026 оны 9-р сар).'
 category: 'Дэд бүтэц'
 tags: ['монгол', 'улаанбаатар', 'зип', 'бүс', 'хил', 'зураг']
 keywords: ['улаанбаатар зип код зураг', 'хаягийн бүсүүд', 'зип бүсийн хил хязгаар']
+chartLayout: wide
 author: 'Data.mn'
 dataVersion: 1
 dataDate: 2026-09-13
 dataFiles:
-  - path: "/maps/ulaanbaatar-zip-zones.json"
-    format: "geojson"
-    size: "511 KB"
-    description: "Хил хязгаарын дүрс татах (GeoJSON)"
-  - path: "/datasets/ebarilga-zip-zones.xlsx"
-    format: "xlsx"
-    size: "55 KB"
-    description: "Excel татах"
+  - path: '/maps/ulaanbaatar-zip-zones.json'
+    format: 'geojson'
+    size: '511 KB'
+    description: 'Хил хязгаарын дүрс татах (GeoJSON)'
+  - path: '/datasets/ebarilga-zip-zones.xlsx'
+    format: 'xlsx'
+    size: '55 KB'
+    description: 'Excel татах'
 source:
   name: 'eBarilga Геопортал (Хот байгуулалт, хотын стандартын газар)'
   url: 'https://ebarilga.ub.gov.mn/map'
   tableId: 'zippolygons'
 ---
 
-import VegaChart from '~/components/ui/VegaChart.astro';
+import MapChart from '~/components/ui/MapChart.astro';
 
-Улаанбаатар хотын 513 зип хаягийн бүс, төв-цэгийн дүүрэг, талбай, төв цэгийн хамт (2026 оны 9-р сар); хил хязгаарын дүрс /maps/ulaanbaatar-zip-zones.json хаягт байна.
+Улаанбаатар хотын 513 зип хаягийн бүс, төв-цэгийн дүүрэг, талбай, төв цэгийн хамт (2026 оны 9-р сар).
 
-<VegaChart
+<MapChart
   spec="/charts/ebarilga-zip-zones-mn.json"
   title="Улаанбаатар Хотын Зип Хаягийн Бүсүүд"
   caption="513 зип бүсийн жишиг зураг. 12001-р бүс бүх дүүргээс гадна оршдог; харуулсан дүүрэг нь төв-цэгийн дүүрэг."

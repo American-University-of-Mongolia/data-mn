@@ -109,16 +109,23 @@ const labels = {
                   const isGeojson = format === 'geojson';
                   const iconName = isExcel ? 'tabler:table' : isGeojson ? 'tabler:map' : 'tabler:file-text';
                   const shortLabel = isExcel ? 'Excel' : isGeojson ? 'GeoJSON' : 'Text/CSV';
-                  const label = wideChart && file.description ? file.description : shortLabel;
+                  const label = file.label ?? (wideChart && file.description ? file.description : shortLabel);
                   return (
-                    <a
-                      href={file.path}
-                      download
-                      class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 rounded hover:border-primary hover:text-primary transition-colors"
-                    >
-                      <Icon name={iconName} class="w-4 h-4" />
-                      {label}
-                    </a>
+                    <div>
+                      <a
+                        href={file.path}
+                        download
+                        class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 rounded hover:border-primary hover:text-primary transition-colors"
+                      >
+                        <Icon name={iconName} class="w-4 h-4" />
+                        {label}
+                      </a>
+                      {file.label && file.description && (
+                        <p class="mt-1 text-xs leading-relaxed text-gray-500 dark:text-gray-400">
+                          {file.description}
+                        </p>
+                      )}
+                    </div>
                   );
                 })}
               </div>

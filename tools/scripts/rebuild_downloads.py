@@ -4,8 +4,8 @@
 Per dataset this script:
   1. Resolves the canonical long CSV per language (`-all-` if present, else plain)
      and asserts it is LONG form (fails closed -> manual queue otherwise).
-  2. Pivots EN + MN long data to wide form. By default, writes one bilingual
-     XLSX. Pages with excelLanguage: page get matching single-language files.
+  2. Pivots EN + MN long data to wide form and writes ONE bilingual XLSX
+     (sheets "English" first, "Монгол" second; freeze top row, auto-width).
   3. Rewrites MDX `dataFiles` to exactly 2 entries (CSV + XLSX).
   4. Asserts content equivalence (pivot totals match CSV totals, EN<->MN aligned).
 
@@ -32,6 +32,7 @@ from openpyxl.utils import get_column_letter
 ROOT = Path(__file__).resolve().parents[2]
 DATASETS = ROOT / "data.mn" / "public" / "datasets"
 CHARTS = ROOT / "data.mn" / "public" / "charts"
+MAPS = ROOT / "data.mn" / "public" / "maps"
 MDX_EN = ROOT / "data.mn" / "src" / "data" / "data" / "en"
 MDX_MN = ROOT / "data.mn" / "src" / "data" / "data" / "mn"
 
@@ -64,6 +65,38 @@ EXEMPT_WIDE_REASONS = {
     "salary-by-sector-2024": "single-year snapshot, no time dimension to pivot",
 }
 
+# Reference tables (boundary lists, codebooks): timeless by definition and
+# multi-attribute by nature (codes, names, parents, areas, coordinates), so
+# the single-value-column long-form rule cannot apply. Sheets stay long;
+# structural = text columns only (numeric headers such as lon/lat are
+# conventionally Latin in both languages). Adding a new id requires a
+# reason string here; the validator shares the same list.
+REFERENCE_TABLES = {
+    "ebarilga-districts",
+    "ebarilga-khoroos",
+    "ebarilga-zip-zones",
+    "ebarilga-schools-by-khoroo",
+    "ebarilga-schools",
+}
+
+REFERENCE_TABLES_REASONS = {
+    "ebarilga-districts": "boundary reference table: codes, names, khoroo counts, areas",
+    "ebarilga-khoroos": "boundary reference table: codes, names, parent districts, areas",
+    "ebarilga-zip-zones": "boundary reference table: codes, names, parent districts, areas",
+    "ebarilga-schools-by-khoroo": "count table with parent districts: codes, names, counts",
+    "ebarilga-schools": "directory: names, addresses, parents, coordinates",
+}
+
+# Boundary datasets substitute the CSV download with the GeoJSON shapes
+# (the CSVs are still built — charts and the XLSX derive from them — but
+# the shapes are the useful technical download). Maps dataset id -> the
+# /maps/ file published as its download. The validator shares this list.
+BOUNDARY_SHAPES = {
+    "ebarilga-districts": "ulaanbaatar-districts.json",
+    "ebarilga-khoroos": "ulaanbaatar-khoroos.json",
+    "ebarilga-zip-zones": "ulaanbaatar-zip-zones.json",
+}
+
 CYRILLIC = re.compile(r"[\u0400-\u04FF]")
 
 
@@ -83,13 +116,28 @@ def drop_constant_dims(df):
     return df, []
 
 
-def detect_roles(df):
+def detect_roles(df, dataset_id=None):
     """Return (time_col, category_col, value_col, problem).
 
     problem is None when the frame is usable long form (or single series /
-    cross-sectional); otherwise a human-readable reason for manual review.
+    cross-sectional / reference table); otherwise a human-readable reason
+    for manual review.
     """
     cols = list(df.columns)
+    if dataset_id in REFERENCE_TABLES:
+        named_time = [c for c in cols if str(c).strip().lower() in TIME_NAMES]
+        if named_time:
+            return None, None, None, (
+                f"reference table must not have a time column: {named_time}")
+        objects = [c for c in cols
+                   if not pd.api.types.is_numeric_dtype(df[c])]
+        numerics = [c for c in cols
+                    if pd.api.types.is_numeric_dtype(df[c])]
+        if not objects:
+            return None, None, None, "reference table has no text columns"
+        if not numerics:
+            return None, None, None, "no numeric value column"
+        return None, None, numerics[0], None
     named_time = [c for c in cols if str(c).strip().lower() in TIME_NAMES]
     if len(named_time) > 1:
         return None, None, None, f"multiple time dimensions: {named_time}"
@@ -149,6 +197,28 @@ def pivot_long(df, time, cat, value):
     wide = wide.reset_index()
     wide.columns.name = None
     return wide
+
+
+def allows_timeless(dataset_id):
+    """True when a timeless frame is a known kind (exempt or reference)."""
+    return dataset_id in EXEMPT_WIDE or dataset_id in REFERENCE_TABLES
+
+
+def structural_cols(df, roles, dataset_id):
+    """Columns whose headers must be in the page language.
+
+    Single home for the per-kind rule (imported by the validator, so a
+    new kind changes this file only): time-series frames check the time
+    (+ category) headers; cross-sectional frames check every non-value
+    column; reference tables check text columns only.
+    """
+    time, cat, value = roles
+    if time is None and dataset_id in REFERENCE_TABLES:
+        return [c for c in df.columns
+                if not pd.api.types.is_numeric_dtype(df[c])]
+    if time is None:
+        return [c for c in df.columns if c != value]
+    return [c for c in (time, cat) if c is not None]
 
 
 def check_structural_language(struct_cols, lang):
@@ -222,18 +292,11 @@ def compare_xlsx_content(current, csv_total_en):
     return None
 
 
-def excel_download_mode(metadata):
-    """Page-language exports are explicit and must agree across both pages."""
-    modes = {page.get("excelLanguage", "bilingual") for page in metadata.values()}
-    if len(modes) != 1 or not modes <= {"bilingual", "page"}:
-        raise ValueError("EN/MN excelLanguage must agree: omit it or set both to page")
-    return modes.pop()
-
-
-def write_xlsx(path, sheets, styled=False):
+def write_bilingual_xlsx(path, en_sheet, mn_sheet):
     with pd.ExcelWriter(path, engine="openpyxl") as writer:
-        for sheet_name, sheet_df in sheets:
-            sheet_df.to_excel(writer, index=False, sheet_name=sheet_name)
+        en_sheet.to_excel(writer, index=False, sheet_name=EN_SHEET)
+        mn_sheet.to_excel(writer, index=False, sheet_name=MN_SHEET)
+        for sheet_name, sheet_df in ((EN_SHEET, en_sheet), (MN_SHEET, mn_sheet)):
             ws = writer.sheets[sheet_name]
             ws.freeze_panes = "A2"
             for idx, col in enumerate(sheet_df.columns):
@@ -245,39 +308,14 @@ def write_xlsx(path, sheets, styled=False):
                             len(str(col))) + 2
                 ws.column_dimensions[get_column_letter(idx + 1)].width = min(
                     width, 30)
-            if styled:
-                from openpyxl.styles import Alignment, Font, PatternFill
-                from openpyxl.worksheet.table import Table, TableStyleInfo
-
-                ws.freeze_panes = "B2"
-                ws.sheet_view.showGridLines = False
-                number_format = "0.00" if "loss-rate" in path.stem else "#,##0.000"
-                for row in ws:
-                    ws.row_dimensions[row[0].row].height = 30 if row[0].row == 1 else 23
-                    for cell in row:
-                        header = cell.row == 1
-                        cell.font = Font(name="Arial", size=11, bold=header,
-                                         color="FFFFFF" if header else "1F2937")
-                        cell.alignment = Alignment(horizontal="center" if header else "right",
-                                                   vertical="center", wrap_text=header)
-                        cell.fill = PatternFill("solid", fgColor=("253A58" if header else
-                                                "F0F4F8" if cell.row % 2 else "FFFFFF"))
-                        if not header:
-                            cell.number_format = "0" if cell.column == 1 else number_format
-                table = Table(displayName="Data", ref=ws.dimensions)
-                table.tableStyleInfo = TableStyleInfo(name="TableStyleMedium2", showRowStripes=True)
-                ws.add_table(table)
-
-
-def write_bilingual_xlsx(path, en_sheet, mn_sheet):
-    write_xlsx(path, [(EN_SHEET, en_sheet), (MN_SHEET, mn_sheet)])
 
 
 def kb_size(path):
     return max(1, path.stat().st_size // 1024)
 
 
-def rewrite_mdx_datafiles(mdx_path, csv_name, xlsx_name, lang):
+def rewrite_mdx_datafiles(mdx_path, csv_name, xlsx_name, lang,
+                          dataset_id=None):
     """Replace ONLY the dataFiles block; returns True if the text changed."""
     text = mdx_path.read_text()
     m = re.match(r"^---\n(.*?)\n---\n(.*)$", text, re.DOTALL)
@@ -286,16 +324,39 @@ def rewrite_mdx_datafiles(mdx_path, csv_name, xlsx_name, lang):
     frontmatter, body = m.group(1), m.group(2)
     meta = yaml.safe_load(frontmatter) or {}
     old_files = meta.get("dataFiles") or []
-    new_files = []
-    for fmt, filename in (("csv", csv_name), ("xlsx", xlsx_name)):
-        old = next((f for f in old_files if str(f.get("format", "")).lower() == fmt), {})
-        entry = {"path": f"/datasets/{filename}", "format": fmt,
-                 "size": f"{kb_size(DATASETS / filename)} KB"}
-        entry.update({key: old[key] for key in ("label", "description") if old.get(key)})
-        entry.setdefault("description", ("Download as CSV" if fmt == "csv" else "Open in Excel")
-                         if lang == "en" else ("CSV татах" if fmt == "csv" else "Excel-д нээх"))
-        new_files.append(entry)
-    new_block = yaml.safe_dump({"dataFiles": new_files}, allow_unicode=True, sort_keys=False, width=1000)
+    xlsx_desc = next((f.get("description") for f in old_files
+                      if str(f.get("format", "")).lower() in ("xlsx", "xls")
+                      and f.get("description")), None)
+    if xlsx_desc is None:
+        xlsx_desc = "Open in Excel" if lang == "en" else "Excel-д нээх"
+    geo_name = BOUNDARY_SHAPES.get(dataset_id) if dataset_id else None
+    if geo_name:
+        geo_desc = ("Download boundary shapes (GeoJSON)" if lang == "en"
+                    else "Хил хязгаарын дүрс татах (GeoJSON)")
+        new_block = (
+            "dataFiles:\n"
+            f"  - path: \"/maps/{geo_name}\"\n"
+            "    format: \"geojson\"\n"
+            f"    size: \"{kb_size(MAPS / geo_name)} KB\"\n"
+            f"    description: \"{geo_desc}\"\n"
+            f"  - path: \"/datasets/{xlsx_name}\"\n"
+            "    format: \"xlsx\"\n"
+            f"    size: \"{kb_size(DATASETS / xlsx_name)} KB\"\n"
+            f"    description: \"{xlsx_desc}\"\n"
+        )
+    else:
+        csv_desc = "Download as CSV" if lang == "en" else "CSV татах"
+        new_block = (
+            "dataFiles:\n"
+            f"  - path: \"/datasets/{csv_name}\"\n"
+            "    format: \"csv\"\n"
+            f"    size: \"{kb_size(DATASETS / csv_name)} KB\"\n"
+            f"    description: \"{csv_desc}\"\n"
+            f"  - path: \"/datasets/{xlsx_name}\"\n"
+            "    format: \"xlsx\"\n"
+            f"    size: \"{kb_size(DATASETS / xlsx_name)} KB\"\n"
+            f"    description: \"{xlsx_desc}\"\n"
+        )
     lines = frontmatter.split("\n")
     try:
         start = next(i for i, line in enumerate(lines)
@@ -356,15 +417,6 @@ def process_dataset(dataset_id, apply=False):
     for lang, path in mdx.items():
         if not path.exists():
             manual(f"missing {lang.upper()} MDX page")
-    if report["queue"] == "manual":
-        return report
-    try:
-        metadata = {lang: yaml.safe_load(path.read_text().split("---", 2)[1]) or {}
-                    for lang, path in mdx.items()}
-        mode = excel_download_mode(metadata)
-    except (ValueError, IndexError, yaml.YAMLError) as e:
-        manual(str(e))
-        return report
     csv_name = {lang: canonical_csv(dataset_id, lang) for lang in ("en", "mn")}
     dfs, roles = {}, {}
     for lang in ("en", "mn"):
@@ -384,19 +436,16 @@ def process_dataset(dataset_id, apply=False):
                 f"{csv_name[lang]}: ignoring constant column(s) {const_cols} "
                 f"for the XLSX pivot (CSV file itself unchanged)")
             dfs[lang] = df
-        time, cat, value, problem = detect_roles(df)
+        time, cat, value, problem = detect_roles(df, dataset_id)
         roles[lang] = (time, cat, value)
         if problem:
             manual(f"{csv_name[lang]}: {problem}")
             continue
-        if time is None and dataset_id not in EXEMPT_WIDE:
+        if time is None and not allows_timeless(dataset_id):
             manual(f"{csv_name[lang]}: no time dimension "
                    f"(exempt-worthy? not on the exempt list)")
             continue
-        if time is None:
-            struct = [c for c in df.columns if c != value]
-        else:
-            struct = [c for c in (time, cat) if c is not None]
+        struct = structural_cols(df, (time, cat, value), dataset_id)
         lang_problem = check_structural_language(struct, lang)
         if lang_problem:
             manual(f"{csv_name[lang]}: {lang_problem}")
@@ -437,25 +486,6 @@ def process_dataset(dataset_id, apply=False):
         if years_en != years_mn:
             manual("EN/MN time vectors differ")
             return report
-
-    if mode == "page":
-        names = {lang: f"{dataset_id}-{lang}.xlsx" for lang in ("en", "mn")}
-        for lang, filename in names.items():
-            target = DATASETS / filename
-            if target.exists():
-                mismatch = compare_xlsx_content(read_current_xlsx(target),
-                                                value_total(dfs[lang], roles[lang][0]))
-                if mismatch:
-                    manual(f"{filename}: {mismatch}")
-                    return report
-            report["actions"].append(f"rebuild {filename} (one {lang.upper()} sheet)")
-            report["actions"].append(f"rewrite {lang}/{mdx[lang].name} dataFiles -> {csv_name[lang]} + {filename}")
-        if apply:
-            for lang, filename in names.items():
-                name = EN_SHEET if lang == "en" else MN_SHEET
-                write_xlsx(DATASETS / filename, [(name, sheets[lang])], styled=True)
-                rewrite_mdx_datafiles(mdx[lang], csv_name[lang], filename, lang)
-        return report
 
     xlsx_name = f"{dataset_id}.xlsx"
     xlsx_path = DATASETS / xlsx_name
@@ -504,13 +534,14 @@ def process_dataset(dataset_id, apply=False):
         f"rebuild {xlsx_name} ({EN_SHEET} + {MN_SHEET} sheets, "
         f"{sheets['en'].shape[0]} rows x {sheets['en'].shape[1]} cols)")
     for lang in ("en", "mn"):
+        first = BOUNDARY_SHAPES.get(dataset_id, csv_name[lang])
         report["actions"].append(
-            f"rewrite {mdx[lang].name} dataFiles -> "
-            f"{csv_name[lang]} + {xlsx_name}")
+            f"rewrite {mdx[lang].name} dataFiles -> {first} + {xlsx_name}")
     if apply:
         write_bilingual_xlsx(xlsx_path, sheets["en"], sheets["mn"])
         for lang in ("en", "mn"):
-            rewrite_mdx_datafiles(mdx[lang], csv_name[lang], xlsx_name, lang)
+            rewrite_mdx_datafiles(mdx[lang], csv_name[lang], xlsx_name, lang,
+                                  dataset_id)
     return report
 
 
@@ -549,3 +580,4 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+

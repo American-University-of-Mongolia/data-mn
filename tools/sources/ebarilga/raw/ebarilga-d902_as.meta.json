@@ -1,0 +1,10 @@
+{
+ "layer": "d902_as",
+ "host": "ebarilga",
+ "features": 829,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:16:15.049019+00:00"
+}

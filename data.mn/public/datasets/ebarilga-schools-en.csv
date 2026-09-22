@@ -1,0 +1,324 @@
+id,school,address,district_code,district,khoroo_code,khoroo,lon,lat
+5145,Khos-uyanga surguuli,"ND 1-r khoroo, 9b gudamj 478 toot",11,Nalaikh,1101,1-r khoroo,107.255287,47.781305
+5117,Golomt TS,"ND 2-r khoroo, Davaajavyn gudamj",11,Nalaikh,1102,2-r khoroo,107.253473,47.774446
+5114,109-r baga surguuli,"ND 3-r khoroo, Denj-1",11,Nalaikh,1103,3-r khoroo,107.267013,47.765252
+5119,Chandmani TS /103-r surguuli/,"ND 5-r khoroo, Gorodok tosgony surguuli",11,Nalaikh,1105,5-r khoroo,107.395825,47.784932
+5185,Erdmiin orgil TS Tereljiin baga surguuli,"ND 6-r khoroo, Terelj zochid buudlyn baruun zugt",11,Nalaikh,1106,6-r khoroo,107.457963,47.989019
+5115,Chandmana-Erdene surguuli,"ND 7-r khoroo,T.Damdiny gudamj",11,Nalaikh,1107,7-r khoroo,107.249032,47.771988
+5116,Erdmiin orgil TS,"ND 2-r khoroo, Jargalt Damdiny gudamj",11,Nalaikh,1108,8-r khoroo,107.248451,47.768681
+5118,119-r surguuli,ND 2-r khoroo,11,Nalaikh,1108,8-r khoroo,107.24457,47.767472
+5146,Nalaikh duurgiin TT jishig dund surguuli,"ND 2-r khoroo,",11,Nalaikh,1108,8-r khoroo,107.24395,47.770666
+5181,Alban bus - Nasan turshiin bolovsrolyn tuv,"ND 2-r khoroo, Damdiny gudamj Erdmiin orgil tsogtsolbor surguuli",11,Nalaikh,1108,8-r khoroo,107.246598,47.768233
+5084,Gun galuutai TS /1-r bair/,"BND 1-r khoroo,",12,Baganuur,1201,1-r khoroo,108.367532,47.783628
+5303,Gun galuutai TS /2-r bair/,"BND 1-r khoroo, D.Natsagdorjiin gudamj S95/1",12,Baganuur,1201,1-r khoroo,108.366883,47.783845
+5073,Bolovsrol TS /2-r bair/,"BND 3-r khoroo,",12,Baganuur,1203,3-r khoroo,108.374884,47.782786
+5083,Oyuuny erin TS /1-r bair/,"BND 3-r khoroo, Bolovsrol tsogtsolboryn 3-r bairny urd",12,Baganuur,1203,3-r khoroo,108.375302,47.781386
+5305,Sod surguuli,"BND 3-r khoroo, D.Natsagdorjiin gudamj 54",12,Baganuur,1203,3-r khoroo,108.374384,47.783851
+5174,Nasan turshiin bolovsrolyn tuv,BND 4-r khoroo,12,Baganuur,1204,4-r khoroo,108.378944,47.791801
+5304,Oyuuny erin TS /2-r bair/,"BND 5-r khoroo, Kherlengiin gudamj",12,Baganuur,1205,5-r khoroo,108.392635,47.796713
+5053,48-r surguuli,"BZD 1-r khoroo, RTNK-iin zuun tald",13,Bayanzurkh,1301,1-r khoroo,106.936265,47.925498
+5088,Bilguun nomch surguuli,"BZD 1-r khoroo, Sansaryn tuneli deer",13,Bayanzurkh,1301,1-r khoroo,106.940242,47.92431
+5089,Krillitsa surguuli,"BZD 1-r khoroo, Orosyn shinjlekh ukhaan soyolyn tuv, 3 davkhart",13,Bayanzurkh,1301,1-r khoroo,106.93523,47.926278
+5128,ISM surguuli - Erel surguuli,"BZD 1-r khoroo, 12-r khor-l, RTNK-n khoino, top mebeliin baruun tald",13,Bayanzurkh,1301,1-r khoroo,106.934191,47.928214
+5278,48-r surguuli,"BZD 1-r khoroo,Tokiogiin gudamj S48",13,Bayanzurkh,1301,1-r khoroo,106.936613,47.925682
+5054,33-r surguuli,"BZD 3-r khoroo, sansaryn tunel deer",13,Bayanzurkh,1303,3-r khoroo,106.940167,47.922347
+5232,Erkhem bayan erdem surguuli,BZD 1-r khoroo SEZIS-iin S bair 2 davkhart,13,Bayanzurkh,1303,3-r khoroo,106.930873,47.919146
+5277,33-r surguuli,"BZD 3-r khoroo, Ikh toiruu S33/2",13,Bayanzurkh,1303,3-r khoroo,106.940018,47.92197
+5289,Shildeg surguuli,"BZD 3-r khoroo, Tsend gunii gudamj 31",13,Bayanzurkh,1303,3-r khoroo,106.939372,47.921921
+4990,Russkii litsei surguuli,"BZD 4-r khoroo, Khiliin tsergiin angiin urd",13,Bayanzurkh,1304,4-r khoroo,106.949563,47.920236
+5006,97-r surguuli,BZD 4-r khoroo 15-r khoroolol Selenge zochid buudyn khajuud,13,Bayanzurkh,1304,4-r khoroo,106.947018,47.923506
+5031,Shavi tsogtsolbor surguuli /69-r surguuli/,BZD 5-r khoroo,13,Bayanzurkh,1305,5-r khoroo,106.961587,47.920481
+5004,21-r surguuli,"BZD 6-r khoroo,Selbe golyn zuun tald",13,Bayanzurkh,1306,6-r khoroo,106.931872,47.914998
+5288,Arvis surguuli,"BZD 6-r khoroo, Sangiin khoroony gudamj 50",13,Bayanzurkh,1306,6-r khoroo,106.934838,47.915063
+5035,92-r surguuli,BZD 8-r khoroo Erdenetolgoid,13,Bayanzurkh,1308,8-r khoroo,106.996667,47.919111
+5071,Amgalan TsC,"BZD 8-r khoroo, Botanikiin etsest",13,Bayanzurkh,1308,8-r khoroo,107.00191,47.913574
+5074,Ulaanbaatar-Empathy surguuli,"BZD 8-r khoroo, Usny gud, 15-r bair, Botanikiin etssiin buudal",13,Bayanzurkh,1308,8-r khoroo,107.001889,47.914733
+5283,92-r surguuli,"BZD 8-r khoroo, Khilchnii gudamj S92",13,Bayanzurkh,1308,8-r khoroo,106.996308,47.920179
+5284,Amgalan TS,"BZD 8-r khoroo, Tsagdaagiin akademiin urgun chuluu S27/1",13,Bayanzurkh,1308,8-r khoroo,107.002643,47.913707
+5287,KSIS-iin khariyaa akhlakh surguuli,"BZD 8-r khoroo, Khilchnii gudamj KSIS bair",13,Bayanzurkh,1308,8-r khoroo,106.995622,47.914423
+5281,79-r surguuli /1-r bair/,"BZD 17-r khoroo, Sharkhadny gudamj S79",13,Bayanzurkh,1309,9-r khoroo,107.004938,47.932546
+5136,88-r surguuli,"BZD 11-r khoroo, “Khonkhor” tosgon 64-r bairny urd",13,Bayanzurkh,1311,11-r khoroo,107.163066,47.810617
+5144,110-r surguuli,"KUD 11-r khoroo, Khuukhdiin khorikh 411-r angi",13,Bayanzurkh,1311,11-r khoroo,107.166939,47.815728
+5066,55-r surguuli,BZD 13-r khoroo BZDuurgiin urd,13,Bayanzurkh,1313,13-r khoroo,106.966093,47.915331
+5233,Itgel surguuli,"BZD 13-r khoroo, ""Em Ai Yu"" deed surguuliin khashaand",13,Bayanzurkh,1313,13-r khoroo,106.974906,47.913869
+5306,14-r surguuli,"BZD 13-r khoroo, Enkhtaivany urgun chuluu S14",13,Bayanzurkh,1313,13-r khoroo,106.970177,47.915365
+5307,14-r surguuli,"BZD 13-r khoroo, Enkhtaivany urgun chuluu S14",13,Bayanzurkh,1313,13-r khoroo,106.969407,47.915099
+5234,G.V.Plekhanovyn neremjit surguuli,BZD 14-r khoroo,13,Bayanzurkh,1314,14-r khoroo,106.948346,47.916928
+5230,Oyuunlag surguuli,BZD 15-r khoroo,13,Bayanzurkh,1315,15-r khoroo,106.938277,47.91656
+5231,Oyuuny onis surguuli,"BZD 15-r khoroo, 6/3-r bair, Oyuun ukhaany muzei",13,Bayanzurkh,1315,15-r khoroo,106.941752,47.917446
+5237,Nomch nakhia surguuli,BZD 15-r khoroo 13-r khoroolol 7B bair,13,Bayanzurkh,1315,15-r khoroo,106.941179,47.917015
+5032,44-r surguuli,"BZD 16-r khoroo, Ulaankhuarand",13,Bayanzurkh,1316,16-r khoroo,106.980779,47.920674
+5033,53-r surguuli,BZD 16-r khoroo Ulaankhuaran,13,Bayanzurkh,1316,16-r khoroo,106.980553,47.919209
+5279,44-r surguuli,"BZD 16-r khoroo, Ulaankhuaran gudamj S44/2",13,Bayanzurkh,1316,16-r khoroo,106.980388,47.920988
+5005,84-r surguuli,BZD 18-r khoroo 13-r khoroolold,13,Bayanzurkh,1318,18-r khoroo,106.939381,47.915962
+5285,84-r surguuli,"BZD 18-r khoroo, Sangiin khoroony gudamj S84",13,Bayanzurkh,1318,18-r khoroo,106.938888,47.916271
+5291,Goethe surguuli,"BZD 18-r khoroo, Namyanjugiin gudamj 40",13,Bayanzurkh,1318,18-r khoroo,106.943471,47.913512
+5163,136-r baga surguuli,"BZD 19-r khoroo, Tsaizyn 53-r gudamj",13,Bayanzurkh,1319,19-r khoroo,106.982441,47.943876
+5135,85-r surguuli,"BZD 20-r khoroo, Gachuurtyn zam, zamyn urd 84-r bairny urd",13,Bayanzurkh,1320,20-r khoroo,107.156159,47.926745
+5227,127-r surguuli,BZD 21-r khoroo,13,Bayanzurkh,1321,21-r khoroo,106.945408,47.952302
+5064,87-r surguuli,BZD 23-r khoroo Uliastain shine etsest.,13,Bayanzurkh,1323,23-r khoroo,107.036422,47.918467
+5286,87-r surguuli,"BZD 23-r khoroo, Gachuurtyn zam S87",13,Bayanzurkh,1323,23-r khoroo,107.036041,47.918071
+5065,111-r surguuli,"BZD 18-r khoroo, Shine mongol surguuliin khajuud",13,Bayanzurkh,1325,25-r khoroo,106.939588,47.910897
+5090,Ulaanbaatar surguuli,"BZD 25 khoroo, (Narantuul zakhyn baruun tald)",13,Bayanzurkh,1325,25-r khoroo,106.941924,47.910524
+5091,Shine Mongol surguuli,"BZD 25 khoroo, Manlaibaatar damdinsurengiin gudamj-43",13,Bayanzurkh,1325,25-r khoroo,106.93881,47.910989
+5155,Ulaanbaatar baga surguuli,"BZD 25-r khoroo, narantuul zakhyn baruun tald",13,Bayanzurkh,1325,25-r khoroo,106.942455,47.910445
+5235,Shine Mongol tekhnologiin kollej,"BZD 25-r khoroo, 13-r khoroolol, Shine Mongol tekhnologiin deed surguuli",13,Bayanzurkh,1325,25-r khoroo,106.938607,47.911383
+5238,Goethe surguuli,"BZD 25-r khoroo, 16-r bair",13,Bayanzurkh,1325,25-r khoroo,106.942999,47.909409
+5228,133-r surguuli,"BZD 26-r khoroo, Dunjingarav khudaldaany tuviin zuun urd",13,Bayanzurkh,1326,26-r khoroo,106.950863,47.904529
+5229,Mongol temuulel,"BZD 26-r khoroo, Dunjingarav khudaldaany tuviin zuun urd",13,Bayanzurkh,1326,26-r khoroo,106.950651,47.90439
+5236,Global OU surguuli,"BZD 26-r khoroo, Niislel khuree urgun chuluu, 204 bair",13,Bayanzurkh,1326,26-r khoroo,106.944333,47.904157
+5292,Singapore School of Mongolia surguuli,"BZD 26-r khoroo, Niislel khuree urgun chuluu",13,Bayanzurkh,1326,26-r khoroo,106.943083,47.903365
+5293,Olonlog akademi surguuli,"BZD 26-r khoroo, Niislel khuree urgun chuluu 363",13,Bayanzurkh,1326,26-r khoroo,106.937823,47.902156
+5162,132-r baga surguuli,BZD 27-r khoroo,13,Bayanzurkh,1327,27-r khoroo,106.941248,47.94672
+5138,120-r surguuli,"BZD 28-r khoroo, Khujirbuland tuv zamyn khoino, tsergiin angiin urd",13,Bayanzurkh,1328,28-r khoroo,107.070489,47.919213
+5142,Nan-shen khuvguud dund surguuli,"BZD 28-r khoroo, Khujirbuland 120-r surguuliin khajuud 1 davkhar 14-792/1",13,Bayanzurkh,1328,28-r khoroo,107.077542,47.917555
+5140,102-r akhlakh surguuli,"BZD 27-r khoroo, Dari-ekhiin gudamj",13,Bayanzurkh,1329,29-r khoroo,106.930787,47.938439
+5141,Ikh zasag dund surguuli,"BZD 4-r khoroo, Ikh zasag ikh surguultin khashaan dotor",13,Bayanzurkh,1330,30-r khoroo,106.952545,47.924613
+5164,137-r baga surguuli,BZD 22-r khoroo,13,Bayanzurkh,1332,32-r khoroo,106.969677,47.94217
+5290,137-r baga surguuli,"BZD 22-r khoroo, Baruun Altan-Ulgiin gudamj S137",13,Bayanzurkh,1332,32-r khoroo,106.969986,47.942006
+5036,79-r surguuli /3-r bair/,BZD 17-r khoroo Sharkhadny etssiin buudal,13,Bayanzurkh,1334,34-r khoroo,107.008328,47.93388
+5282,79-r surguuli /2-r bair/,"BZD 9-r khoroo, Sharkhadny gudamj S79",13,Bayanzurkh,1334,34-r khoroo,107.008143,47.934276
+5034,Bayanzurkh TS,BZD 8-r khoroo Tsergiin 310 dugaar angiin derged,13,Bayanzurkh,1338,38-r khoroo,106.98606,47.915835
+5280,Bayanzurkh TS,"BZD 8-r khoroo, Tsagdaagiin akademiin urgun chuluu S68/2",13,Bayanzurkh,1338,38-r khoroo,106.986449,47.915603
+5072,Khishig surguuli,"BZD 8-r khoroo, 22-r baazyn zuun tald, NIK STS-yn chankh khoino",13,Bayanzurkh,1339,39-r khoroo,106.983247,47.913698
+5157,Temuujin urlug dund surguuli,"BZD 16-r khoroo, BKDS-iin derged",13,Bayanzurkh,1340,40-r khoroo,106.989272,47.921775
+5007,Shavi tsogtsolbor surguuli /30-r surguuli/,"BZD 5-r khoroo, Otgontenger ikh surguuliin khoid tald",13,Bayanzurkh,1341,41-r khoroo,106.956634,47.918759
+5156,Tugsdelgerekh surguuli,"BZD 25-r khoroo, 47-r bair",13,Bayanzurkh,1343,43-r khoroo,106.937645,47.911146
+4993,1-r surguuli,"SBD 1-r khoroo, Suuliin gudamj",14,Sukhbaatar,1401,1-r khoroo,106.911856,47.915409
+5120,Shine ue surguuli,"SBD 1-r khoroo, YNESKO-iin gudamj,",14,Sukhbaatar,1401,1-r khoroo,106.926275,47.912708
+5149,Iskra dund surguuli,"SBD 1-r khoroo, 1-r turukhiin urd",14,Sukhbaatar,1401,1-r khoroo,106.928004,47.915996
+5150,Bolor dund surguuli,"SBD 1-r khoroo,1-r turukhiin urd",14,Sukhbaatar,1401,1-r khoroo,106.92741,47.916067
+5246,ASUUIS khariyaa EBsurguuli,"SBD 1-r khoroo, Elchingiin gudamj",14,Sukhbaatar,1401,1-r khoroo,106.92293,47.915537
+5310,1-r surguuli,"SBD 1-r khoroo, Suuliin gudamj S1",14,Sukhbaatar,1401,1-r khoroo,106.911288,47.915243
+5048,31-r surguuli,"SBD 2-r khoroo, usny gudamj",14,Sukhbaatar,1402,2-r khoroo,106.908652,47.909853
+5075,UB Elit surguuli,"SBD 2-r khoroo, Suuliin gudamj,",14,Sukhbaatar,1402,2-r khoroo,106.910568,47.912741
+5123,Sant buren dund surguuli,"SBD 2-r khoroo, Usny gudamj 23, Uuriin bairand",14,Sukhbaatar,1402,2-r khoroo,106.907961,47.909009
+5134,Usvuriin zokhion buteegchdiin surguuli,"SBD 2-r khoroo, Youuliin gudamj, 1-r surguuliin zamyn baruun urd",14,Sukhbaatar,1402,2-r khoroo,106.910639,47.91411
+5187,Elbeg baga surguuli,"SBD 2-r khoroo, Usny gudamj 12/2",14,Sukhbaatar,1402,2-r khoroo,106.908992,47.910824
+5188,Bichil ertunts,"SBD 2-r khoroo, Teeverchdiin gudamj, Urbanek KKK bair 300",14,Sukhbaatar,1402,2-r khoroo,106.907991,47.908671
+5257,Usvuriin zokhion buteegchdiin surguuli,"SBD 2-r khoroo, Suuliin gudamj 8",14,Sukhbaatar,1402,2-r khoroo,106.910402,47.913717
+5297,Erdmiin uurkhai,"SBD 2-r khoroo, Usny gudamj 29",14,Sukhbaatar,1402,2-r khoroo,106.910283,47.911208
+5016,Mongol-Orosyn khamtarsan surguuli /3-r surguuli/,"SBD 3-r khoroo Dalai eej zakhyn urd,",14,Sukhbaatar,1403,3-r khoroo,106.903833,47.911207
+5258,Mongol-Orosyn khamtarsan surguuli,"SBD 3-r khoroo, Usny gudamj 38",14,Sukhbaatar,1403,3-r khoroo,106.903235,47.910884
+5021,45-r surguuli,SBD 4-r khoroo Namnansurengiin gud,14,Sukhbaatar,1404,4-r khoroo,106.903172,47.913599
+5259,45-r surguuli,"SBD 4-r khoroo, Namnansurengiin gudamj S45",14,Sukhbaatar,1404,4-r khoroo,106.902897,47.914059
+5029,6-r surguuli,SBD 5-r khoroo undsen khuuliin gudamj,14,Sukhbaatar,1405,5-r khoroo,106.89804,47.910454
+5061,11-r surguuli,"SBD 5-r khoroo, Partizany gudamj.",14,Sukhbaatar,1405,5-r khoroo,106.898311,47.915006
+5093,Kings kids surguuli,"SBD 6-r khoroo, Ikh toiruu-49, Tulga KKK",14,Sukhbaatar,1406,6-r khoroo,106.919137,47.928723
+5127,Es erdem buren dund surguuli,"SBD 6-r khoroo,Khuukhdiin urlan buteekh tuviin zamyn esreg tald ""TUSEE"" deed surguulyn 5 -r davkhart",14,Sukhbaatar,1406,6-r khoroo,106.917123,47.925671
+5190,UBTDS-iin khariyaa EBS-iin akhlakh surguuli,SBD 6-r khoroo Ikh toiruu-49,14,Sukhbaatar,1406,6-r khoroo,106.918662,47.928685
+5245,Kunz baga surguuli,"SBD 6-r khoroo, Baga toiruu",14,Sukhbaatar,1406,6-r khoroo,106.920936,47.923922
+4989,2-r surguuli,SBD 7-r khoroo 11-r khoroolol Khuuchin gemteliin emnelegiin ard,14,Sukhbaatar,1407,7-r khoroo,106.924536,47.926482
+5092,Mongol ulsyn konservatori,"SBD 7-r khoroo, Zaluuchuudyn urgun chuluu",14,Sukhbaatar,1407,7-r khoroo,106.926437,47.92364
+5094,Erdem tugs dund surguuli,"SBD 8-r khoroo, 11-r khoroolold",14,Sukhbaatar,1407,7-r khoroo,106.92729,47.927226
+5097,"MUIS-iin “Baigali-Ekh"" litsei","SBD 7-r khoroo, 11-r khoroolol, Erkhuugiin gudamj, Ardchillyn ordny ar tald.",14,Sukhbaatar,1407,7-r khoroo,106.929002,47.925571
+5186,Deutsche Schule surguuli,SBD 7-r khoroo 17/1-r bair,14,Sukhbaatar,1407,7-r khoroo,106.924504,47.9279
+5256,2-r surguuli,"SBD 7-r khoroo, J.Batmunkhiin gudamj S2, 11-r khoroolol",14,Sukhbaatar,1407,7-r khoroo,106.924801,47.927053
+5063,25-r surguuli,SBD 8-r khoroo,14,Sukhbaatar,1408,8-r khoroo,106.929575,47.92097
+5096,Khobbi surguuli,"SBD 8-r khoroo, Zaluuchuudyn gudamj 25",14,Sukhbaatar,1408,8-r khoroo,106.928005,47.920954
+5121,Khuleg akhlakh surguuli,"SBD 8-r khoroo, Beejingiin gudamj-29",14,Sukhbaatar,1408,8-r khoroo,106.928786,47.920789
+5122,Ui Tsai surguuli,"SBD 8-r khoroo,Enkhtaivany urgun chuluu",14,Sukhbaatar,1408,8-r khoroo,106.928588,47.920046
+5125,Logarithm surguuli,"SBD 8-r khoroo,Oyuutny gudamj, Logarifm surguuliin bair",14,Sukhbaatar,1408,8-r khoroo,106.92707,47.922193
+5148,Khugjliin guur dund surguuli,"SBD 8-r khoroo, MUIS-yn Sankhuugiin surguuliin khoino",14,Sukhbaatar,1408,8-r khoroo,106.920713,47.925967
+5158,"Bieiin tamir, sportyn dund surguuli","SBD 8-r khoroo, Sport ordog dotor",14,Sukhbaatar,1408,8-r khoroo,106.923957,47.920664
+5184,MUBIS-iin khariyaa EBSurguuli,"SBD 8-r khoroo, Baga toiruu -14, Ulaanbaatar-48",14,Sukhbaatar,1408,8-r khoroo,106.924525,47.919194
+5243,Khaan erdem surguuli,"SBD 8 -r khoroo, J.Batmunkhiin gudamj",14,Sukhbaatar,1408,8-r khoroo,106.922478,47.926676
+5244,SUTIS khariyaa SUTASurguuli,"SBD 8-r khoroo, Baga toiruu",14,Sukhbaatar,1408,8-r khoroo,106.922064,47.925119
+5002,4-r surguuli,SBD 9-r khoroo Altain gudamj,14,Sukhbaatar,1409,9-r khoroo,106.91321,47.929921
+5124,Galaxy surguuli,"SBD 9-r khoroo, Altain-28, 4-r surguuliin khoino.",14,Sukhbaatar,1409,9-r khoroo,106.913307,47.930345
+4991,3-r surguuli,"SBD 9-r khoroo,100 ailyn baruun tal Udriin soningiin bairny khoino",14,Sukhbaatar,1410,10-r khoroo,106.919367,47.929756
+5062,16-r surguuli,"SBD 10-r khoroo, Tsagdaagiin gudamj",14,Sukhbaatar,1410,10-r khoroo,106.920268,47.93236
+5095,Oyuuny tulga surguuli,"SBD 10-r khoroo, 20/2 Oyuuny Tulga surguuli",14,Sukhbaatar,1410,10-r khoroo,106.920164,47.930315
+5126,Ertunts surguuli,"SBD 10-r khoroo, 19 bair",14,Sukhbaatar,1410,10-r khoroo,106.921399,47.931496
+5189,Putonkhua surguuli,SBD 10-r khoroo Mon-Asia 7a bair,14,Sukhbaatar,1410,10-r khoroo,106.91825,47.930311
+5191,Nomyn gyalbaa surguuli,SBD 10 r khoroo  48-2,14,Sukhbaatar,1410,10-r khoroo,106.92385,47.929891
+5049,29-r surguuli /Tusgai surguuli/,"SBD 11-r khoroo, EMN-iin khoino",14,Sukhbaatar,1411,11-r khoroo,106.929197,47.932696
+5100,Mongol Khyatad nairamdal surguuli,"SBD 11-r khoroo, Tsagdaagiin gudamj 55 toot, 100 ail,SUIS 2-r bairyn khajuud",14,Sukhbaatar,1411,11-r khoroo,106.924211,47.933485
+5159,116-r surguuli,"SBD 11-r khoroo, 29-r surguuliin khashaand",14,Sukhbaatar,1411,11-r khoroo,106.929339,47.931991
+5160,Shine zuuny udirdagch surguuli,"SBD 11-r khoroo, Global udirdagch ikh surguuliin 5-n davkhar",14,Sukhbaatar,1411,11-r khoroo,106.918583,47.932466
+5166,131-r surguuli,"SBD 11 khoroo, Khangai khotkhon",14,Sukhbaatar,1411,11-r khoroo,106.920911,47.934945
+5000,35-r surguuli,"SBD 14-r khoroo 6, 7-r buudlyn khoorond",14,Sukhbaatar,1414,14-r khoroo,106.918726,47.965394
+5183,Ajilchin zaluuchuudyn eeljiin surguuli,"SBD 14-r khoroo, 35-r surguuliin khashaand",14,Sukhbaatar,1414,14-r khoroo,106.918466,47.965871
+5260,35-r surguuli,"SBD 14-r khoroo, Sanzain zam S35/3",14,Sukhbaatar,1414,14-r khoroo,106.918319,47.964934
+5050,Erdmiin khutuch TS /58-r surguuli/,SBD 15-r khoroo Dari ekhiin shine etsest.,14,Sukhbaatar,1415,15-r khoroo,106.934325,47.978123
+5261,Erdmiin khutuch TS /58-r surguuli/,"SBD 15-r khoroo, Dambadarjaagiin gudamj S58",14,Sukhbaatar,1415,15-r khoroo,106.934449,47.977794
+5242,Erdmiin khutuch TS /58 surguuli/,"SBD 17-r khoroo, Dambadarjaagiin gudamj",14,Sukhbaatar,1417,17-r khoroo,106.938692,47.989303
+5139,71-r surguuli,"SBD 18-r khoroo, Belkhiin etsest",14,Sukhbaatar,1418,18-r khoroo,106.970584,47.997593
+4992,23-r surguuli,"CD 1-r khoroo, Khudaldaachny gudamj 12-2-r bair",15,Chingeltei,1501,1-r khoroo,106.90917,47.919131
+5272,23-r surguuli,"CD 1-r khoroo, Noyon Khutagt Danzanravjaagiin gudamj S23",15,Chingeltei,1501,1-r khoroo,106.909176,47.918939
+5070,Betub shashny surguuli,"CD 2-r khoroo, Bumbuguriin  khoino",15,Chingeltei,1502,2-r khoroo,106.900539,47.920469
+5014,24-r surguuli,CD 3-khoroo Ikh delguuriin baruun khoino,15,Chingeltei,1503,3-r khoroo,106.901793,47.917841
+5178,Olonlog surguuli,CD 3-r khoroo juulchny gudamj - 53,15,Chingeltei,1503,3-r khoroo,106.902596,47.917925
+4994,5-r surguuli,"CD 4-r khoroo Baga toiruu, Ankaragiin gudamjind",15,Chingeltei,1504,4-r khoroo,106.911163,47.925122
+5069,Chinkhur surguuli,"CD 4-r khoroo, J.Sanbuugiin gudamj Shonkhor tuv",15,Chingeltei,1504,4-r khoroo,106.909143,47.921605
+5153,Badmaarag akhlakh surguuli,"CD 4-r khoroo, L.Laagany gudamj 18/3",15,Chingeltei,1504,4-r khoroo,106.908421,47.92391
+5176,Toolol surguuli,CD 4-r khoroo J.Sambuugiin gudamj Ulaanbaatar erdem surguuliin bair,15,Chingeltei,1504,4-r khoroo,106.907788,47.92414
+5170,112-r surguuli,"CD 5 khoroo, Geser sumiin khashaand",15,Chingeltei,1505,5-r khoroo,106.900538,47.922299
+5177,Tusgal surguuli,CD 5-r khoroo 6-r khoroolol Ikh toiruu 59,15,Chingeltei,1505,5-r khoroo,106.904732,47.925034
+5179,Oyuut surguuli,CD 5-r khoroo 6-r khoroolol KNKDS-iin bair,15,Chingeltei,1505,5-r khoroo,106.903506,47.923744
+5180,Olonlog egze surguuli,"CD 5-r khoroo tumurchnii gudamj, 7/1 bair",15,Chingeltei,1505,5-r khoroo,106.903614,47.920761
+4995,50-r surguuli,CD 6-r khoroo,15,Chingeltei,1506,6-r khoroo,106.906451,47.926392
+5143,Atlanta surguuli,"CD 6-r khoroo,SUIS-iin baruun khoish 50 metrt Moninjbar KK-ny ard tald",15,Chingeltei,1506,6-r khoroo,106.912471,47.926751
+5060,39-r surguuli,CD 10-r khoroo Denjiin-1000.,15,Chingeltei,1510,10-r khoroo,106.907052,47.935829
+5275,39-r surguuli,"CD 10-r khoroo, E.Galdanboshgotyn gudamj S39",15,Chingeltei,1510,10-r khoroo,106.906838,47.936109
+5003,57-r surguuli,CD 11-r khoroo 32-yn toirgoos denjiin 1000-ruu salsan zamyn urd,15,Chingeltei,1511,11-r khoroo,106.910142,47.941458
+5175,61-r surguuli,CD 12-r khoroo bulgiin 1,15,Chingeltei,1512,12-r khoroo,106.903933,47.944794
+5276,61-r surguuli,"CD 12-r khoroo, Denjiin myanga gudamj S61",15,Chingeltei,1512,12-r khoroo,106.904386,47.94502
+5001,49-r surguuli,"CD 13-r khoroo, khailaastyn gudamj",15,Chingeltei,1513,13-r khoroo,106.903399,47.956903
+5051,17-r surguuli,CD 13-r khoroo,15,Chingeltei,1513,13-r khoroo,106.912414,47.948133
+5273,17-r surguuli,"CD 13-r khoroo, Chingeltei urgun chuluu S17",15,Chingeltei,1513,13-r khoroo,106.911835,47.948582
+4999,72-r surguuli,CD 15-r khoroo Khailaastyn khuuchin etses,15,Chingeltei,1515,15-r khoroo,106.898467,47.960567
+5274,72-r surguuli,"CD 15-r khoroo, Khailaastyn gudamj S72",15,Chingeltei,1515,15-r khoroo,106.898763,47.960155
+5052,37-r surguuli,CD 17-r khoroo,15,Chingeltei,1517,17-r khoroo,106.902905,47.971191
+5298,37-r surguuli,"CD 17-r khoroo, Chingeltein gudamj S37/1",15,Chingeltei,1517,17-r khoroo,106.903184,47.970664
+5171,138-r baga surguuli,CD 12-r khoroo,15,Chingeltei,1521,21-r khoroo,106.886994,47.951209
+5239,139-r baga surguuli,"CD 16-r khoroo, Sogootyn 65-r gudamj",15,Chingeltei,1522,22-r khoroo,106.885132,47.966336
+5240,140-r baga surguli,"CD 17-r khoroo, Zurkh uul 4-r gudamj",15,Chingeltei,1523,23-r khoroo,106.879656,47.991043
+5077,117-r surguuli,"CD 19-r khoroo, Salkhit",15,Chingeltei,1524,24-r khoroo,106.926641,47.994928
+5044,51-r surguuli,"BGD 2-r khoroo, Enkhtaivny urgun chuluu, Tumur zam",16,Bayangol,1602,2-r khoroo,106.878849,47.916237
+5212,Erdmiin khishig surguuli,"BGD 2-r khoroo, Undesnii tekhnikiin surguuli, 78/1-r bair, 5 davkhart",16,Bayangol,1602,2-r khoroo,106.879148,47.916888
+5217,Erdmiin ach surguuli,"BGD 2-r khoroo, Teevriin deed surguuliin zuun tald Sod onis tuv",16,Bayangol,1602,2-r khoroo,106.885331,47.916299
+5015,73-r surguuli,"BGD 3-r khoroo,Rokmon byulding zamyn urd",16,Bayangol,1603,3-r khoroo,106.893628,47.911886
+5208,Gegeerel surguuli,"BGD 3-r khoroo, Zamchdyn gudamj, 65 dugaar bairny khoid tald",16,Bayangol,1603,3-r khoroo,106.890876,47.910872
+5210,Mongol od surguuli,"BGD 3-r khoroo, Undsen khuuliin gudamj,",16,Bayangol,1603,3-r khoroo,106.893833,47.910352
+5012,20-r akhlakh surguuli,BGD 4-r khoroo Tumur zam 12-r bairny khoino,16,Bayangol,1604,4-r khoroo,106.881394,47.913366
+5161,Shine erin laboratori surguuli,"BGD 4-r khoroo, Tumur zamyn emnelegiin zuun tald",16,Bayangol,1604,4-r khoroo,106.882219,47.91364
+5224,Erkhet erdem surguuli,"BGD 1-r khoroolol, Erkhet erdem surguuliin bair",16,Bayangol,1604,4-r khoroo,106.883057,47.911843
+5209,Mongol koosen tekhnologiin akhlakh surguuli,BGD 5-r khoroo,16,Bayangol,1605,5-r khoroo,106.861258,47.914403
+5013,Erdmiin urguu TS 56-r surguuli,"BGD 6 khoroo, 10-r khoroolol",16,Bayangol,1606,6-r khoroo,106.866131,47.916313
+5214,Tugs bilig surguuli,BGD 6-r khoroo UB palase urd 45A bair,16,Bayangol,1606,6-r khoroo,106.874222,47.915411
+5241,Erdmiin urguu TS 43-r surguuli,"BGD 6-r khoroo, ETUC",16,Bayangol,1606,6-r khoroo,106.866511,47.91696
+5008,Erdiin Undraa TS 78-r surguuli,BGD 7-r khoroo,16,Bayangol,1607,7-r khoroo,106.864566,47.919232
+5046,93-r surguuli,BGD 7-r khoroo 4-r khoroolol,16,Bayangol,1607,7-r khoroo,106.865756,47.919723
+5219,Saint Paul baga surguuli,"BGD 7-r khoroo, Govi sauny urd",16,Bayangol,1607,7-r khoroo,106.862756,47.921309
+5248,93-r surguuli,"BGD 7-r khoroo,Ard Ayuushiin urgun chuluu 93/3",16,Bayangol,1607,7-r khoroo,106.8637,47.920265
+5010,Erdmiin Undraa TS 77-r surguuli,BGD 8-r khoroo,16,Bayangol,1608,8-r khoroo,106.871887,47.919179
+5085,Nomch surguuli,"BGD 8-r khoroo,Ard Ayuushiin urgun chuluu 28/2",16,Bayangol,1608,8-r khoroo,106.871175,47.922309
+5079,113-r surguuli,"BGD 10 khoroo, Zuun naran",16,Bayangol,1610,10-r khoroo,106.866436,47.925707
+5019,28-r surguuli,"BGD 11-r khoroo, Ekh nyalkhasyn baruun tald.",16,Bayangol,1611,11-r khoroo,106.88416,47.927046
+5099,Setgemj TS 46-r surguuli,"BGD 11-r khoroo,MUTV-iin khoino",16,Bayangol,1611,11-r khoroo,106.888362,47.930151
+5216,Tsatsrag-Erdem surguuli,"BGD 11-r khoroo, Ard ayuushiin gudamj, MUIS-yn baruun tald",16,Bayangol,1611,11-r khoroo,106.890623,47.925629
+5220,Khuree tulga surguuli,BGD 11-r khoroo,16,Bayangol,1611,11-r khoroo,106.884895,47.926424
+5250,28-r surguuli,"BGD 11-r khoroo,Khasbaataryn gudamj S28/3",16,Bayangol,1611,11-r khoroo,106.883575,47.926743
+5251,28-r surguuli,"BGD 11-r khoroo,Khasbaataryn gudamj S28/2",16,Bayangol,1611,11-r khoroo,106.884834,47.926926
+5252,Setgemj TS /46-r surguuli/,"BGD 11-r khoroo,Khuvisgalyn zam S46/2",16,Bayangol,1611,11-r khoroo,106.887904,47.929898
+5020,13-r surguuli,"BGD 13-r khoroo, Khoroololyn etsest, Khasbaataryn gudamj",16,Bayangol,1613,13-r khoroo,106.868967,47.924107
+5080,Gurvan tamir surguuli,"BGD 13-r khoroo, Urguu kino teatryn khoid tald",16,Bayangol,1613,13-r khoroo,106.875344,47.924133
+5249,13-r surguuli,"BGD 13-r khoroo,Khasbaataryn gudamj S13/2",16,Bayangol,1613,13-r khoroo,106.868327,47.924484
+5067,40-r surguuli,"BGD 15-r khoroo,  Enebishiin urgun chuluu",16,Bayangol,1615,15-r khoroo,106.884579,47.925422
+5076,Oyuuny Undraa TS 22-r surguuli,"BGD 17-r khoroo, S.Amarsanaagiin gudamj",16,Bayangol,1617,17-r khoroo,106.88907,47.920486
+5082,Oyuuny nakhia surguuli,"BGD 18-r khoroo, Seruuleg deed surguuliin bairand",16,Bayangol,1617,17-r khoroo,106.888498,47.922512
+5011,Oyuuny Undraa TS 96-r surguuli,"BGD 18-r khoroolol, 41-r bairny khoino",16,Bayangol,1618,18-r khoroo,106.885763,47.920737
+5078,70-r tusgai dund surguuli,"BGD 18-r khoroo, Modny 2iin zamd Tundemun sauny khoino.",16,Bayangol,1618,18-r khoroo,106.882314,47.919324
+5086,Russkaya gimnaziya surguuli,"BGD 18-r khoroo, 4-r khoroo,Modny 2t zamyn khoino.",16,Bayangol,1618,18-r khoroo,106.885424,47.918592
+5207,Nasan turshiin bolovsrolyn tuv,"BGD 18-r khoroo, 88 dugaar tsetserlegiin khashaand",16,Bayangol,1618,18-r khoroo,106.884034,47.921168
+5018,47-r surguuli,"BGD 19-r khoroo, Paradoks tuviin urd",16,Bayangol,1619,19-r khoroo,106.878238,47.921376
+5037,19-r surguuli,"BGD 20-r khoroo, 34-r tsetserlegiin zuun tald",16,Bayangol,1620,20-r khoroo,106.79322,47.907375
+5254,19-r surguuli,"BGD 20-r khoroo,Tovchoony zam S19",16,Bayangol,1620,20-r khoroo,106.792775,47.90767
+5223,Erdem Altai surguuli,"BGD 1-r khoroo, Altai khotkhon",16,Bayangol,1624,24-r khoroo,106.891196,47.902887
+5213,Senlize surguuli,"BGD 4-r khoroo, Narny zam 16/4",16,Bayangol,1625,25-r khoroo,106.872024,47.912221
+5222,Soyombo baga surguuli,"BGD 3-r khoroo, Dund gol gudamj 30A bair",16,Bayangol,1626,26-r khoroo,106.900011,47.90378
+5226,Naran neg surguuli,BGD 3-r khoroo,16,Bayangol,1626,26-r khoroo,106.898668,47.90678
+5247,141-r surguuli,"BGD 3-r khoroo, Narny khoroolol",16,Bayangol,1626,26-r khoroo,106.900494,47.907271
+5045,38-r surguuli,"BGD 4-r khoroo,Narny zamd, Teeverchdiin gudamj",16,Bayangol,1627,27-r khoroo,106.879131,47.910121
+5211,Nomt naran surguuli,"BGD 4-r khoroo, 88-r bair",16,Bayangol,1627,27-r khoroo,106.874252,47.913864
+5255,Nomuun dalai surguuli,"BGD 5-r khoroo,Enkhtaivany urgun chuluu",16,Bayangol,1628,28-r khoroo,106.866442,47.913155
+5154,Jargalan dund surguuli,"BGD 20-r khoroo, Sapporiin urd",16,Bayangol,1629,29-r khoroo,106.852294,47.912193
+5087,Raduga buren dund surguuli,"BGD 6-r khoroo, 3-r emnelgiin khoino",16,Bayangol,1630,30-r khoroo,106.857968,47.918024
+5009,Erdmiin Undraa TS 54-r surguuli,BGD 8-r khoroo,16,Bayangol,1632,32-r khoroo,106.869121,47.918926
+5206,93-r surguuli,BGD 8-r khoroo,16,Bayangol,1632,32-r khoroo,106.869252,47.919927
+5017,Mongeni TS,BGD 18-r khoroo Eruul mendiin 7-r tuviin baruun tald.,16,Bayangol,1633,33-r khoroo,106.885638,47.917348
+5081,Lider surguuli,BGD 17-r khoroo,16,Bayangol,1633,33-r khoroo,106.890191,47.916715
+5137,Shine ekhlel OU-yn laboratori surguuli,"BGD 18-r khoroo, Mongeni surguuliin khajuud",16,Bayangol,1633,33-r khoroo,106.88522,47.917666
+5218,Ekhlel surguuli surguuli,"BGD 17-r khoroo, 7/4",16,Bayangol,1633,33-r khoroo,106.889739,47.916817
+5225,Yos erdem surguuli,"BGD 17-r khoroo, Modny 2-oos uruudaad, 3 erdene deed surguuliin urd, 5 davkhar bair",16,Bayangol,1633,33-r khoroo,106.88912,47.916502
+5253,Norovlin surguuli,"BGD 17-r khoroo,S.Amarsanaagiin gudamj",16,Bayangol,1633,33-r khoroo,106.889815,47.917709
+5215,Khusliin urguu surguuli,"BGD 12-r khoroo, Urguu gudamj 23-r bair",16,Bayangol,1634,34-r khoroo,106.877239,47.927671
+5057,52-r surguuli,"KUD 1-r khoroo 19-r khoroolol,",17,Khan-Uul,1701,1-r khoroo,106.905757,47.901967
+5309,52-r surguuli,"KUD 1-r khoroo 19-r khoroolol,",17,Khan-Uul,1701,1-r khoroo,106.906583,47.901796
+5056,15-r surguuli,KUD 3-r khoroo,17,Khan-Uul,1702,2-r khoroo,106.898578,47.900908
+5030,18-r surguuli,KUD 3-r khoroo,17,Khan-Uul,1703,3-r khoroo,106.89459,47.900179
+5201,Tekhnologiin deed surguuliin khariyaa akhlakh surguuli,"KUD 3-r khoroo, uildverchnii gudamj 26",17,Khan-Uul,1703,3-r khoroo,106.890187,47.901379
+5202,Shine unuudur surguuli,"KUD 3-r khoroo, Bambuush KKK-iin bairand",17,Khan-Uul,1703,3-r khoroo,106.886227,47.900824
+5047,34-r surguuli,"KUD 4-r khoroo Yaarmag, artsatyn gudamj",17,Khan-Uul,1704,4-r khoroo,106.832249,47.873161
+5040,41-r surguuli,"KUD 5-rkhoroo naadamchdyn gudamj S41, Yaarmagiin avtobusny 3-r buudal",17,Khan-Uul,1705,5-r khoroo,106.818165,47.869696
+5038,60-r surguuli,KUD 7-r khoroo,17,Khan-Uul,1707,7-r khoroo,106.803836,47.865723
+5296,60-r surguuli,KUD 7-r khoroo,17,Khan-Uul,1707,7-r khoroo,106.804137,47.865061
+5110,118-r surguuli,"KUD 8-r khoroo, naadamchdyn zam",17,Khan-Uul,1708,8-r khoroo,106.795754,47.861834
+5113,114-r surguuli,"KUD 9-r khoroo, Nisekhiin etses",17,Khan-Uul,1709,9-r khoroo,106.763233,47.86608
+5173,135-r baga surguuli,"KUD 10 khoroo, Moringiin davaa",17,Khan-Uul,1710,10-r khoroo,106.720962,47.84445
+5194,Amerik surguuli,KUD 11-r khoroo 42,17,Khan-Uul,1711,11-r khoroo,106.919799,47.881093
+5221,Absolyut elit akhlakh surguuli,"KUD 11-r khoroo, Tenger rashaan gudamj 79G",17,Khan-Uul,1711,11-r khoroo,106.913294,47.877935
+5109,10-r surguuli,"KUD 12-r khoroo,Bio kombinat",17,Khan-Uul,1712,12-r khoroo,106.678204,47.84519
+5068,26-r surguuli,"KUD 13-rkhoroo 1-r kheseg, tuul tosgon.",17,Khan-Uul,1713,13-r khoroo,106.558583,47.754195
+5111,59-r surguuli,"KUD 14-r khoroo, Ulziit",17,Khan-Uul,1714,14-r khoroo,106.707645,47.788779
+5311,59-r surguuli,"KUD 14-r khoroo,",17,Khan-Uul,1714,14-r khoroo,106.684752,47.779745
+5172,130-r baga surguuli,"KUD 15 khoroo, Mongolyn Undsenii khudaldaa aj uildveriin tankhimyn urd",17,Khan-Uul,1715,15-r khoroo,106.92347,47.9024
+5198,Orchlon surguuli,"KUD 15-r khoroo, Rapid khoroollyn zuun tald",17,Khan-Uul,1715,15-r khoroo,106.926211,47.901401
+4997,Buyant-Ukhaa TS /7-r surguuli/,KUD 16-r khoroo,17,Khan-Uul,1716,16-r khoroo,106.76358,47.859746
+5294,Buyant-Ukhaa tsogtsolbor surguuli,"KUD 16-r khoroo, Baruun Sonsgolongiin gudamj S7/1",17,Khan-Uul,1716,16-r khoroo,106.76365,47.859193
+5195,Mongol bilig oyuun surguuli,"KUD 11-r khoroo, Marshal taund, 301",17,Khan-Uul,1717,17-r khoroo,106.935888,47.892146
+5107,Olon ulsyn dund surguuli,"KUD 15-r khoroo, Makhatma gandigyn gudamj",17,Khan-Uul,1718,18-r khoroo,106.930402,47.898326
+5196,Orgil surguuli,"KUD 15-r khoroo, Udirdlagyn akademiin urd tald 38-r bair",17,Khan-Uul,1718,18-r khoroo,106.913641,47.896512
+5112,115-r surguuli,"KUD 15-r khoroo, Tuul gol gudamj",17,Khan-Uul,1719,19-r khoroo,106.900589,47.892321
+5205,Shine Zuunbileg surguuli,"KUD 15-r khoroo, Tuul gol gudamj",17,Khan-Uul,1719,19-r khoroo,106.90385,47.891152
+5300,Etugen surguuli,"KUD 15-r khoroo, Tuul gol gudamj 72",17,Khan-Uul,1719,19-r khoroo,106.897521,47.890604
+5098,Avarga surguuli,KUD 3-r khoroo 65/1-r bair,17,Khan-Uul,1720,20-r khoroo,106.891566,47.895994
+5197,Orkhon khasu surguuli,"KUD 3-r khoroo, Uildver /17042, Sharavyn gudamj 10-1-2",17,Khan-Uul,1720,20-r khoroo,106.895353,47.897524
+5200,Arvist Khangai surguuli,"KUD 3-r khoroo, Chingisiin urgun chuluu 49/3 Khangai deed surguuliin urd",17,Khan-Uul,1720,20-r khoroo,106.890969,47.89741
+5203,Onom surguuli,"KUD 3-r khoroo, Khuns tekhnologi kollejiin bair",17,Khan-Uul,1720,20-r khoroo,106.891126,47.897036
+5299,Mongol biznesiin surguuli,"KUD 3-r khoroo, Chingisiin urgun chuluu 39/2",17,Khan-Uul,1720,20-r khoroo,106.893275,47.898454
+5055,32-r surguuli,"KUD 11-r khoroo, zaisan gudamj",17,Khan-Uul,1722,22-r khoroo,106.910234,47.883842
+5302,Yazguur baga surguuli,"KUD 11-r khoroo, Ar Zaisangiin gudamj 76",17,Khan-Uul,1722,22-r khoroo,106.909841,47.879082
+5039,63-r surguuli,"KUD 4-r khoroo, artsatyn 18-2",17,Khan-Uul,1723,23-r khoroo,106.829555,47.866647
+5108,Ulaanbaatar dakhi Angli surguuli,"KUD 4-r khoroo, Viva Siti khoroollyn zamyn urd",17,Khan-Uul,1723,23-r khoroo,106.848199,47.874686
+5301,Altan bosgo surguuli,"KUD 4-r khoroo, Nukhtiin zam 13/5",17,Khan-Uul,1723,23-r khoroo,106.83024,47.854206
+5199,Sakura surguuli,"KUD 11-r khoroo, Ikh mongol ulsyn gudamj Time square 505 B",17,Khan-Uul,1724,24-r khoroo,106.853892,47.879652
+5204,Solongo es ef,"KUD 4-r khoroo Yaarmag naadamchdyn zam Khunnu Mollyn baruun khoino, Doktor avto servis",17,Khan-Uul,1724,24-r khoroo,106.84878,47.879152
+5295,Shine mongol Kharumafuji surguuli,"KUD 4-r khoroo, Naadamchdyn zam 480A",17,Khan-Uul,1724,24-r khoroo,106.850353,47.875728
+5104,107-r surguuli,SKD 1-r khoroo,18,Songinokhairkhan,1801,1-r khoroo,106.764719,47.920306
+5041,42-r surguuli,"SKD 2-r khoroo 1-r khoroolol, Tsergiin khotkhny khoino.",18,Songinokhairkhan,1802,2-r khoroo,106.775548,47.915366
+4996,65-r surguuli,SKD 3-r khoroo Baganarangiin 44-r gudamj,18,Songinokhairkhan,1803,3-r khoroo,106.795235,47.921473
+5265,65-r surguuli,"SKD 3-r khoroo, Tolgoityn gudamj S65",18,Songinokhairkhan,1803,3-r khoroo,106.795006,47.921249
+5028,9-r surguuli,"SKD 6-r khoroo,Khanyn materialyn etses",18,Songinokhairkhan,1806,6-r khoroo,106.821185,47.931874
+5262,9-r surguuli,"SKD 6-r khoroo, Bayankhoshuuny gudamj Khanyn materialyn etses S9/1",18,Songinokhairkhan,1806,6-r khoroo,106.821305,47.932509
+5058,67-r surguuli,SKD 8-r khoroo Narangiin 1-r gudamj,18,Songinokhairkhan,1808,8-r khoroo,106.827018,47.953228
+5266,67-r surguuli,"SKD 8-r khoroo, Bayankhoshuuny gudamj S67/1",18,Songinokhairkhan,1808,8-r khoroo,106.826845,47.952995
+5059,76-r surguuli,SKD 9-r khoroo Bayankhoshuuny shine etses,18,Songinokhairkhan,1809,9-r khoroo,106.838886,47.957011
+5152,Chandmani surguuli,"SKD 9-r khoroo,Bayankhoshuuny etses",18,Songinokhairkhan,1809,9-r khoroo,106.837542,47.960024
+5267,76-r surguuli,"SKD 9-r khoroo, Bayankhoshuuny gudamj S76/1",18,Songinokhairkhan,1809,9-r khoroo,106.838779,47.956727
+4998,105-r surguuli,"SKD 11-r khoroo Khutul, Bayankhoshuu",18,Songinokhairkhan,1811,11-r khoroo,106.848509,47.954092
+5168,129-r surguuli,"SKD 11-r khoroo, Ovootyn 6 dugaar kheseg",18,Songinokhairkhan,1811,11-r khoroo,106.857336,47.94548
+5269,105-r surguuli,"SKD 11-r khoroo, Khuvisgalyn zam S105/1",18,Songinokhairkhan,1811,11-r khoroo,106.848312,47.954519
+5023,Ireedui TS 1-r baga surguuli /80-r surguuli/,SKD 13-r khoroo,18,Songinokhairkhan,1812,12-r khoroo,106.850135,47.915145
+5024,Ireedui TS 1-r dund surguuli /36-r surguuli/,"SKD 13-r khoroo,",18,Songinokhairkhan,1813,13-r khoroo,106.849996,47.916061
+5022,Ireedui TS 2-r dund surguuli /82-r surguuli/,SKD 16-r khoroo,18,Songinokhairkhan,1814,14-r khoroo,106.836011,47.914261
+5105,Romashka surguuli,"SKD 16-r khoroo, 26/2",18,Songinokhairkhan,1814,14-r khoroo,106.835688,47.914722
+5042,Ireedui TS 2-r akhlakh /81-r surguuli/,SKD 14-r khoroo,18,Songinokhairkhan,1815,15-r khoroo,106.84218,47.915045
+5043,Ireedui TS 1-r akhlakh /86-r surguuli/,"SKD 15-r khoroo, 1-r khoroolol,Tsambagaravyn urd",18,Songinokhairkhan,1816,16-r khoroo,106.841837,47.916198
+5101,Ireedui TS 2-r baga surguuli /86-r surguuli/,"SKD 15-r khoroo,",18,Songinokhairkhan,1816,16-r khoroo,106.839676,47.914755
+5270,Ireedui TS 2-r baga surguuli /86-r surguuli/,"SKD 15-r khoroo, Barilgachny gudamj S86",18,Songinokhairkhan,1816,16-r khoroo,106.839345,47.914275
+5025,Ireedui TS 3-r baga surguuli /83-r surguuli/,SKD 17-r khoroo,18,Songinokhairkhan,1817,17-r khoroo,106.834621,47.915161
+5106,Nomuun surguuli,"SKD 17-r khoroo, Unur khoroolol",18,Songinokhairkhan,1817,17-r khoroo,106.831231,47.913539
+5132,Tolit surguuli,"SKD 17-r khoroo, 52 dugaar bair",18,Songinokhairkhan,1817,17-r khoroo,106.832735,47.914559
+5026,12-r surguuli,SKD 18-r khoroo Tavan shar,18,Songinokhairkhan,1818,18-r khoroo,106.813072,47.912703
+5263,12-r surguuli,"SKD 18-r khoroo, Uildverchnii evleliin gudamj S12",18,Songinokhairkhan,1818,18-r khoroo,106.813719,47.91318
+5027,62-r surguuli,"SKD 19-r khoroo 21-r khoroolold,",18,Songinokhairkhan,1819,19-r khoroo,106.814959,47.919506
+5133,Onon buren dund surguuli,"SKD 21-r khoroo, 21 khudaldaany tuviin khoid tald",18,Songinokhairkhan,1819,19-r khoroo,106.812723,47.92114
+5192,Gerelt-Ireedui,SKD 19-r khoroo 86 dugaar bair,18,Songinokhairkhan,1819,19-r khoroo,106.814783,47.917885
+5264,62-r surguuli,"SKD 19-r khoroo, Uildverchnii evleliin gudamj S62",18,Songinokhairkhan,1819,19-r khoroo,106.814422,47.919193
+5271,Global ikh oyuun baga surguuli,"SKD 19-r khoroo, Uildverchnii evleliin gudamj 105",18,Songinokhairkhan,1819,19-r khoroo,106.815576,47.919609
+5131,74-r surguuli,"SKD 21-r khoroo, Jargalant tosgon,",18,Songinokhairkhan,1821,21-r khoroo,106.646783,48.12213
+5151,121-r surguuli,"SKD 21-r khoroo, 3,61-iin garanmyn zuun tald",18,Songinokhairkhan,1821,21-r khoroo,106.555243,47.997555
+5102,104-r surguuli,"SKD 25 khoroo, Zuun salaa",18,Songinokhairkhan,1825,25-r khoroo,106.831082,47.967392
+5268,104-r surguuli,"SKD 25-r khoroo, Zuun salaa S104/1",18,Songinokhairkhan,1825,25-r khoroo,106.83136,47.967104
+5130,122-r surguuli,"SKD 22-r khoroo, takhiltyn zam",18,Songinokhairkhan,1833,33-r khoroo,106.696189,47.919807
+5103,106-r surguuli,"SKD 1-r khoroo, Orbit",18,Songinokhairkhan,1834,34-r khoroo,106.751257,47.919891
+5129,123-r surguuli,"SKD 1-r khoroo, Buman-ulzii khoroollyn zuun tald",18,Songinokhairkhan,1834,34-r khoroo,106.739158,47.927857
+5165,Nomyn yos baga surguuli,"SKD 1-r khoroo, Buman-Ulzii khoroollyn zuun tald",18,Songinokhairkhan,1834,34-r khoroo,106.742456,47.927733
+5193,Altan bosgo akademi,"SKD 1-r khoroo, OU Nairamdal zuslangiin bairand",18,Songinokhairkhan,1834,34-r khoroo,106.728856,48.017268
+5167,124-r surguuli,"SKD 24 khoroo, Baruun salaa",18,Songinokhairkhan,1841,41-r khoroo,106.809294,47.960553
+5169,134-r surguuli,"SKD 24 khoroo,  Baruun salaa zeeliin 18-26 toot",18,Songinokhairkhan,1841,41-r khoroo,106.809125,47.967627
+5182,Khangai TS /1-r bair/,BKD 1-r khoroo,19,Bagakhangai,1901,1-r khoroo,107.429601,47.351288
+5147,Khangai TS /2-r bair/,"BKD 1-r khoroo,",19,Bagakhangai,1902,2-r khoroo,107.490748,47.352263
+5308,Khangai TS /2-r bair/,"BKD 1-r khoroo,",19,Bagakhangai,1902,2-r khoroo,107.491033,47.352052

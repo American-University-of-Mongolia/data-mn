@@ -1,0 +1,10 @@
+{
+ "layer": "data_solidwaste",
+ "host": "ebarilga",
+ "features": 4,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:10:50.715661+00:00"
+}

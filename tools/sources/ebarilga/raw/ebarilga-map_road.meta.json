@@ -1,0 +1,10 @@
+{
+ "layer": "map_road",
+ "host": "ebarilga",
+ "features": 5362,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:09:09.116231+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "layer": "data_pub_camp_resorts",
+ "host": "ebarilga",
+ "features": 114,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:27:50.796411+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "layer": "data_gov_org",
+ "host": "ebarilga",
+ "features": 256,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:12:23.015126+00:00"
+}

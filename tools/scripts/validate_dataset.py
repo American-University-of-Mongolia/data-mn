@@ -51,8 +51,13 @@ try:
         MN_SHEET,
         EXEMPT_WIDE,
         EXEMPT_WIDE_REASONS,
+        REFERENCE_TABLES,
+        REFERENCE_TABLES_REASONS,
+        BOUNDARY_SHAPES,
         detect_roles,
         drop_constant_dims,
+        allows_timeless,
+        structural_cols,
         check_structural_language,
         value_total,
         fuzzy_value_total,
@@ -318,13 +323,14 @@ def validate_mdx(file_path: str, base_dir: Optional[str] = None) -> ValidationRe
                 if not isinstance(tag, str):
                     result.add_error(f"Each tag must be a string, got {type(tag).__name__}")
 
-    # Check body has VegaChart
-    if 'VegaChart' not in body:
-        result.add_warning("Body does not contain VegaChart component")
+    # Check body has a chart component (VegaChart, or MapChart for Leaflet maps)
+    if 'VegaChart' not in body and 'MapChart' not in body:
+        result.add_warning("Body does not contain VegaChart/MapChart component")
 
     # Check import statement
-    if "import VegaChart from '~/components/ui/VegaChart.astro'" not in body:
-        result.add_warning("Missing VegaChart import statement")
+    if ("import VegaChart from '~/components/ui/VegaChart.astro'" not in body
+            and "import MapChart from '~/components/ui/MapChart.astro'" not in body):
+        result.add_warning("Missing VegaChart/MapChart import statement")
 
     # ============================================
     # Check for forbidden sections in MDX body
@@ -808,13 +814,34 @@ def validate_downloads(dataset_id: str, base_dir: str) -> list[ValidationResult]
         files = (frontmatter or {}).get('dataFiles') or []
         formats = sorted(str(f.get('format', '')).lower()
                          for f in files if isinstance(f, dict))
+        names = {str(f.get('format', '')).lower(): os.path.basename(str(f.get('path', '')))
+                 for f in files if isinstance(f, dict)}
+        if dataset_id in BOUNDARY_SHAPES:
+            if formats != ['geojson', 'xlsx']:
+                files_result.add_error(
+                    f"{lang.upper()} page must list exactly one GeoJSON + one XLSX "
+                    f"(Standard 1 boundary downloads), found formats: {formats}")
+                continue
+            if names.get('geojson') != BOUNDARY_SHAPES[dataset_id]:
+                files_result.add_error(
+                    f"{lang.upper()} GeoJSON must be "
+                    f"{BOUNDARY_SHAPES[dataset_id]}, "
+                    f"found: {names.get('geojson')}")
+            geo_path = os.path.join(base_dir, 'public', 'maps',
+                                    BOUNDARY_SHAPES[dataset_id])
+            if not os.path.exists(geo_path):
+                files_result.add_error(
+                    f"Boundary shapes file does not exist: {geo_path}")
+            if names.get('xlsx') != f"{dataset_id}.xlsx":
+                files_result.add_error(
+                    f"{lang.upper()} download XLSX must be {dataset_id}.xlsx, "
+                    f"found: {names.get('xlsx')}")
+            continue
         if formats != ['csv', 'xlsx']:
             files_result.add_error(
                 f"{lang.upper()} page must list exactly one CSV + one XLSX "
                 f"(Standard 1), found formats: {formats}")
             continue
-        names = {str(f.get('format', '')).lower(): os.path.basename(str(f.get('path', '')))
-                 for f in files if isinstance(f, dict)}
         expected_csv = download_csv_name(lang)
         if names.get('csv') != expected_csv:
             files_result.add_error(
@@ -850,16 +877,15 @@ def validate_downloads(dataset_id: str, base_dir: str) -> list[ValidationResult]
             continue
         df.columns = [str(c).replace('\ufeff', '') for c in df.columns]
         df, _ = drop_constant_dims(df)
-        time, cat, value, problem = detect_roles(df)
+        time, cat, value, problem = detect_roles(df, dataset_id)
         if problem:
             csv_result.add_error(f"Not long-form download data: {problem}")
             continue
-        if time is None and dataset_id not in EXEMPT_WIDE:
+        if time is None and not allows_timeless(dataset_id):
             csv_result.add_error(
                 "No time dimension and not on the documented exempt list")
             continue
-        struct = ([c for c in df.columns if c != value] if time is None
-                  else [c for c in (time, cat) if c is not None])
+        struct = structural_cols(df, (time, cat, value), dataset_id)
         lang_problem = check_structural_language(struct, lang)
         if lang_problem:
             csv_result.add_error(lang_problem)
@@ -923,6 +949,9 @@ def validate_downloads(dataset_id: str, base_dir: str) -> list[ValidationResult]
     if dataset_id in EXEMPT_WIDE:
         xlsx_result.add_info(
             f"Exempt from wide form: {EXEMPT_WIDE_REASONS[dataset_id]}")
+    if dataset_id in REFERENCE_TABLES:
+        xlsx_result.add_info(
+            f"Reference table: {REFERENCE_TABLES_REASONS[dataset_id]}")
     if needs_wide:
         # Wide = time first column + one column per CSV category value.
         # Single-category pivots (time + 1 column) are vacuously wide.
@@ -982,7 +1011,7 @@ def validate_all(dataset_id: str, base_dir: str) -> list[ValidationResult]:
 
     # Try to find definition file for common sources
     sources_dir = os.path.join(base_dir, '..', 'tools', 'sources')
-    possible_sources = ['nso-1212', 'mrpam', 'mongolbank']
+    possible_sources = ['nso-1212', 'mrpam', 'mongolbank', 'ebarilga']
     definition_found = False
 
     for source in possible_sources:

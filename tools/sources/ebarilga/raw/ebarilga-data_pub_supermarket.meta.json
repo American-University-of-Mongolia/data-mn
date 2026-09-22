@@ -1,0 +1,10 @@
+{
+ "layer": "data_pub_supermarket",
+ "host": "ebarilga",
+ "features": 1581,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:12:19.751443+00:00"
+}

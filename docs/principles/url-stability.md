@@ -113,6 +113,7 @@ python -m registry deprecate <dataset_id> --reason "..." [--successor <id>]
 ```
 
 Rules:
+- Sets `status` to `'deprecated'` (so it no longer counts as active/outdated/error)
 - Sets `deprecated_at` timestamp
 - Sets `deprecation_reason`
 - Optionally links to `successor_id`

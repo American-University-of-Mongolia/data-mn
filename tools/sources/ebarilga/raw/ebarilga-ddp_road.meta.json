@@ -1,0 +1,10 @@
+{
+ "layer": "ddp_road",
+ "host": "ebarilga",
+ "features": 2362,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:52:21.316020+00:00"
+}

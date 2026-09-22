@@ -1,0 +1,10 @@
+{
+ "layer": "pz_air_strip",
+ "host": "ebarilga",
+ "features": 3,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:16:04.867564+00:00"
+}

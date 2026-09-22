@@ -1,0 +1,9 @@
+{
+ "layer": "pz_city_line",
+ "host": "transco",
+ "fetched_at": "2026-09-13T03:19:52.115156+00:00",
+ "features": 49,
+ "with_attributes": false,
+ "complete": true,
+ "srs": "EPSG:4326"
+}

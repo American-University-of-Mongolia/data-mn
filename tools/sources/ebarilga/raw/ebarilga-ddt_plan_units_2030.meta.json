@@ -1,0 +1,10 @@
+{
+ "layer": "ddt_plan_units_2030",
+ "host": "ebarilga",
+ "features": 49,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:14:10.175569+00:00"
+}

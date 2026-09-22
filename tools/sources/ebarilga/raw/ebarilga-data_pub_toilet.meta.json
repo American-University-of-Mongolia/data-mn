@@ -1,0 +1,10 @@
+{
+ "layer": "data_pub_toilet",
+ "host": "ebarilga",
+ "features": 9,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:13:58.388050+00:00"
+}

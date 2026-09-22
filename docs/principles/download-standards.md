@@ -33,6 +33,11 @@ Rules:
    are translated (EN sheet English headers, MN sheet Mongolian headers),
    but cell values stay as-is — Latin unit codes (MNT, USD) and proper names
    are conventionally Latin and must not be transliterated.
+7. **Boundary downloads**: boundary datasets list the GeoJSON shapes file
+   instead of the CSV (`{maps-file}.json` + `{id}.xlsx` — still exactly 2
+   files). The CSVs are still built (chart data and XLSX source) but not
+   listed. Listed ids live in `BOUNDARY_SHAPES` in `rebuild_downloads.py`;
+   the validator shares the list.
 
 ### Optional page-language Excel downloads
 
@@ -65,6 +70,13 @@ Datasets without this setting retain the default bilingual workbook.
    Current exemptions: `gdp-by-sector`, `health-facilities-by-aimag`,
    `health-facilities-by-type`, `hospital-beds-by-type`,
    `population-pyramid-mongolia`, `salary-by-sector-2024`.
+5. **Reference-table exemption**: boundary lists and codebooks are timeless
+   and multi-attribute (codes, names, parents, areas, coordinates), so the
+   single-value-column rule cannot apply. Listed ids live in
+   `REFERENCE_TABLES` in `rebuild_downloads.py` with a reason each;
+   structural = text columns only (numeric headers such as `lon`/`lat`
+   are conventionally Latin in both languages). Sheets stay long and must
+   match their CSV shape exactly. The validator shares the same list.
 
 ## Related
 

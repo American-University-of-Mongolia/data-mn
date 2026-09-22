@@ -1,0 +1,10 @@
+{
+ "layer": "planning_landscaping",
+ "host": "ebarilga",
+ "features": 169,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:10:49.120851+00:00"
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "labelColor": "#64748b",
+      "labelFontSize": 14,
+      "titleColor": "#334155",
+      "titleFontSize": 16
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "format": {
+      "property": "features",
+      "type": "json"
+    },
+    "url": "/maps/ulaanbaatar-zip-zones.json"
+  },
+  "description": "Улаанбаатар хотын 513 зип хаягийн бүсийн жишиг зураг (2026 оны 9-р сар). 12001-р бүс (Хэрлэн голын хөвөө-1) бүх дүүргээс гадна оршдог. Хил хязгаар: eBarilga геопортал (Хот байгуулалт, хотын стандартын газар).",
+  "encoding": {
+    "color": {
+      "value": "#1f77b4"
+    },
+    "tooltip": [
+      {
+        "field": "properties.name_mn",
+        "title": "Бүс"
+      },
+      {
+        "field": "properties.code",
+        "format": "d",
+        "title": "Код"
+      },
+      {
+        "field": "properties.district_mn",
+        "title": "Дүүрэг (төв цэг)"
+      },
+      {
+        "field": "properties.area_km2",
+        "format": ",.1f",
+        "title": "Талбай (км²)"
+      }
+    ]
+  },
+  "mark": {
+    "stroke": "white",
+    "strokeWidth": 0.5,
+    "type": "geoshape"
+  },
+  "projection": {
+    "type": "mercator"
+  }
+}

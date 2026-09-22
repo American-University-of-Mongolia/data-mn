@@ -1,0 +1,35 @@
+---
+title: 'Ulaanbaatar Khoroos: Boundaries and Parent Districts'
+publishDate: 2026-09-22
+excerpt: 'The 204 khoroos of Ulaanbaatar with parent districts, areas, and centroids (September 2026).'
+category: 'Infrastructure'
+tags: ['mongolia', 'ulaanbaatar', 'khoroo', 'districts', 'boundaries', 'map']
+keywords: ['ulaanbaatar khoroo map', 'khoroo district lookup', 'ub khoroo boundaries']
+chartLayout: wide
+author: 'Data.mn'
+dataVersion: 1
+dataDate: 2026-09-13
+dataFiles:
+  - path: '/maps/ulaanbaatar-khoroos.json'
+    format: 'geojson'
+    size: '641 KB'
+    description: 'Download boundary shapes (GeoJSON)'
+  - path: '/datasets/ebarilga-khoroos.xlsx'
+    format: 'xlsx'
+    size: '23 KB'
+    description: 'Open in Excel'
+source:
+  name: 'eBarilga Geoportal (UB Urban Development Agency)'
+  url: 'https://ebarilga.ub.gov.mn/map'
+  tableId: 'khoroo_border'
+---
+
+import MapChart from '~/components/ui/MapChart.astro';
+
+The 204 khoroos of Ulaanbaatar with parent districts, areas, and centroids (September 2026).
+
+<MapChart
+  spec="/charts/ebarilga-khoroos-en.json"
+  title="Ulaanbaatar Khoroos by Parent District"
+  caption="204 khoroos colored by parent district, assigned by centroid. Khoroo names repeat across districts; codes are unique."
+/>

@@ -1,0 +1,10 @@
+{
+ "layer": "pz_solid_waste",
+ "host": "ebarilga",
+ "features": 3,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:16:08.071200+00:00"
+}

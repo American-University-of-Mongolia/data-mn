@@ -1,0 +1,10 @@
+{
+ "layer": "data_pub_restaurant",
+ "host": "ebarilga",
+ "features": 75,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:25:43.273819+00:00"
+}

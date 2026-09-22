@@ -1,0 +1,10 @@
+{
+ "layer": "ddp_dahin_tolovlolt_block",
+ "host": "ebarilga",
+ "features": 89,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:16:16.701587+00:00"
+}

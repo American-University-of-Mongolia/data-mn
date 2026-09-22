@@ -53,6 +53,14 @@ built into bilingual MDX + CSV deliverables (see `datamn-page-mdx`).
   tools/sources/ebarilga/raw/` (footprints take ~1h; the fetcher adapts
   page sizes automatically, see skill docs).
 
+## Boundary shapes
+
+`build_shapes.py` turns the raw admin boundaries into publishable
+`/maps/ulaanbaatar-{districts,khoroos,zip-zones}.json` shapes plus the
+`ebarilga-districts`, `ebarilga-khoroos`, and `ebarilga-zip-zones`
+reference-table datasets (codes, transliterated names, parent districts,
+areas). See the `datamn-transform-boundary` skill for the recipe.
+
 ## Derived products
 
 `derive.py` joins every layer against district/khoroo/ZIP boundaries

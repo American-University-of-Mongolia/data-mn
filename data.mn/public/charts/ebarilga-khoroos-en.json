@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "labelColor": "#64748b",
+      "labelFontSize": 14,
+      "titleColor": "#334155",
+      "titleFontSize": 16
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "format": {
+      "property": "features",
+      "type": "json"
+    },
+    "url": "/maps/ulaanbaatar-khoroos.json"
+  },
+  "description": "Ulaanbaatar's 204 khoroos colored by parent district, assigned by centroid (September 2026). Khoroo names repeat across districts; codes are unique. Boundaries: eBarilga geoportal (UB Urban Development Agency).",
+  "encoding": {
+    "color": {
+      "field": "district",
+      "legend": {
+        "orient": "top",
+        "title": "District"
+      },
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "khoroo",
+        "title": "Khoroo"
+      },
+      {
+        "field": "district",
+        "title": "District"
+      },
+      {
+        "field": "area_km2",
+        "format": ",.1f",
+        "title": "Area (km²)"
+      }
+    ]
+  },
+  "mark": {
+    "stroke": "white",
+    "strokeWidth": 0.5,
+    "type": "geoshape"
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "from": {
+        "data": {
+          "format": {
+            "type": "csv"
+          },
+          "url": "/datasets/ebarilga-khoroos-en.csv"
+        },
+        "fields": ["khoroo", "district", "area_km2"],
+        "key": "code"
+      },
+      "lookup": "properties.code"
+    }
+  ]
+}

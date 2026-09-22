@@ -1,0 +1,10 @@
+{
+ "layer": "technological_planning_border",
+ "host": "ebarilga",
+ "features": 13,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:15:53.566561+00:00"
+}

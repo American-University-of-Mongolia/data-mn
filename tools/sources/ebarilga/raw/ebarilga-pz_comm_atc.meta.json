@@ -1,0 +1,10 @@
+{
+ "layer": "pz_comm_atc",
+ "host": "ebarilga",
+ "features": 11,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:16:01.617354+00:00"
+}

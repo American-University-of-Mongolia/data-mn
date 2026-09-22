@@ -1,0 +1,10 @@
+{
+ "layer": "data_pub_atm",
+ "host": "ebarilga",
+ "features": 328,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:13:50.377894+00:00"
+}

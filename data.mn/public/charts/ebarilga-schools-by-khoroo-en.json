@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "labelColor": "#64748b",
+      "labelFontSize": 14,
+      "titleColor": "#334155",
+      "titleFontSize": 16
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "format": {
+      "property": "features",
+      "type": "json"
+    },
+    "url": "/maps/ulaanbaatar-khoroos.json"
+  },
+  "description": "Secondary schools per khoroo in Ulaanbaatar (323 schools, September 2026). All schools fall inside khoroo boundaries. Boundaries: eBarilga geoportal (UB Urban Development Agency).",
+  "encoding": {
+    "color": {
+      "field": "schools",
+      "legend": {
+        "orient": "top",
+        "title": "Schools"
+      },
+      "scale": {
+        "scheme": "oranges"
+      },
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "khoroo",
+        "title": "Khoroo"
+      },
+      {
+        "field": "district",
+        "title": "District"
+      },
+      {
+        "field": "schools",
+        "format": ",.0f",
+        "title": "Schools"
+      }
+    ]
+  },
+  "mark": {
+    "stroke": "white",
+    "strokeWidth": 0.5,
+    "type": "geoshape"
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "from": {
+        "data": {
+          "format": {
+            "type": "csv"
+          },
+          "url": "/datasets/ebarilga-schools-by-khoroo-en.csv"
+        },
+        "fields": [
+          "khoroo",
+          "district",
+          "schools"
+        ],
+        "key": "code"
+      },
+      "lookup": "properties.code"
+    }
+  ]
+}

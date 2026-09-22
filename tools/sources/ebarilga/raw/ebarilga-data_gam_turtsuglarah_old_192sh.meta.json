@@ -1,0 +1,10 @@
+{
+ "layer": "data_gam_turtsuglarah_old_192sh",
+ "host": "ebarilga",
+ "features": 190,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:19:42.809419+00:00"
+}

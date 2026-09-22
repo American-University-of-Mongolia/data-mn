@@ -1,0 +1,10 @@
+{
+ "layer": "ddp_het_buschlel",
+ "host": "ebarilga",
+ "features": 5306,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:50:25.648649+00:00"
+}

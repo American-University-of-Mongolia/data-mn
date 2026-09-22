@@ -24,6 +24,15 @@ source:
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
+import DeprecationNotice from '~/components/ui/DeprecationNotice.astro';
+
+<DeprecationNotice
+  lang="en"
+  deprecatedAt="2026-09-08"
+  reason="This dataset was replaced. The by-sex breakdown is now maintained in Unemployment Rate by Sex, from the same NSO source table."
+  successorSlug="unemployment-rate-by-sex"
+  successorTitle="Mongolia Unemployment Rate by Sex, % (2009-2025)"
+/>
 
 <VegaChart
   spec="/charts/unemployment-by-sex-en.json"

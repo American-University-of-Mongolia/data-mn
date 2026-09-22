@@ -1,0 +1,10 @@
+{
+ "layer": "special_economic_zoning",
+ "host": "ebarilga",
+ "features": 475,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:15:59.303048+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "layer": "city_border",
+ "host": "ebarilga",
+ "features": 1,
+ "with_attributes": true,
+ "complete": true,
+ "srs": "EPSG:4326",
+ "attrs_backfilled": true,
+ "fetched_at": "2026-09-13T03:08:53.852110+00:00"
+}

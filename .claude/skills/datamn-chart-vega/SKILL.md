@@ -905,6 +905,8 @@ Use for: Showing a single-week/month snapshot across all 21 aimags. For aimag-le
 
 **MN version differences:** `lookup` on `properties.name_mn`, `key` on `бүс`, value field in Mongolian, translated legend/tooltip titles, `-latest-mn.csv` data URL.
 
+**UB admin maps join on code, not name** (`/maps/ulaanbaatar-{districts,khoroos,zip-zones}.json`): khoroo names repeat across districts, so `lookup` on numeric `properties.code` with `key` on the CSV `code` column. See `datamn-transform-boundary`.
+
 **MDX caption:** describe as "latest available week" and note any coverage gaps (e.g., Ulaanbaatar not surveyed). NEVER hardcode the snapshot date in the caption — it must stay correct between updates.
 
 ## File Location

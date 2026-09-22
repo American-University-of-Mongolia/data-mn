@@ -64,6 +64,24 @@ EXEMPT_WIDE_REASONS = {
     "salary-by-sector-2024": "single-year snapshot, no time dimension to pivot",
 }
 
+# Reference tables (boundary lists, codebooks): timeless by definition and
+# multi-attribute by nature (codes, names, parents, areas, coordinates), so
+# the single-value-column long-form rule cannot apply. Sheets stay long;
+# structural = text columns only (numeric headers such as lon/lat are
+# conventionally Latin in both languages). Adding a new id requires a
+# reason string here; the validator shares the same list.
+REFERENCE_TABLES = {
+    "ebarilga-districts",
+    "ebarilga-khoroos",
+    "ebarilga-zip-zones",
+}
+
+REFERENCE_TABLES_REASONS = {
+    "ebarilga-districts": "boundary reference table: codes, names, khoroo counts, areas",
+    "ebarilga-khoroos": "boundary reference table: codes, names, parent districts, areas",
+    "ebarilga-zip-zones": "boundary reference table: codes, names, parent districts, areas",
+}
+
 CYRILLIC = re.compile(r"[\u0400-\u04FF]")
 
 
@@ -83,13 +101,28 @@ def drop_constant_dims(df):
     return df, []
 
 
-def detect_roles(df):
+def detect_roles(df, dataset_id=None):
     """Return (time_col, category_col, value_col, problem).
 
     problem is None when the frame is usable long form (or single series /
-    cross-sectional); otherwise a human-readable reason for manual review.
+    cross-sectional / reference table); otherwise a human-readable reason
+    for manual review.
     """
     cols = list(df.columns)
+    if dataset_id in REFERENCE_TABLES:
+        named_time = [c for c in cols if str(c).strip().lower() in TIME_NAMES]
+        if named_time:
+            return None, None, None, (
+                f"reference table must not have a time column: {named_time}")
+        objects = [c for c in cols
+                   if not pd.api.types.is_numeric_dtype(df[c])]
+        numerics = [c for c in cols
+                    if pd.api.types.is_numeric_dtype(df[c])]
+        if not objects:
+            return None, None, None, "reference table has no text columns"
+        if not numerics:
+            return None, None, None, "no numeric value column"
+        return None, None, numerics[0], None
     named_time = [c for c in cols if str(c).strip().lower() in TIME_NAMES]
     if len(named_time) > 1:
         return None, None, None, f"multiple time dimensions: {named_time}"
@@ -149,6 +182,28 @@ def pivot_long(df, time, cat, value):
     wide = wide.reset_index()
     wide.columns.name = None
     return wide
+
+
+def allows_timeless(dataset_id):
+    """True when a timeless frame is a known kind (exempt or reference)."""
+    return dataset_id in EXEMPT_WIDE or dataset_id in REFERENCE_TABLES
+
+
+def structural_cols(df, roles, dataset_id):
+    """Columns whose headers must be in the page language.
+
+    Single home for the per-kind rule (imported by the validator, so a
+    new kind changes this file only): time-series frames check the time
+    (+ category) headers; cross-sectional frames check every non-value
+    column; reference tables check text columns only.
+    """
+    time, cat, value = roles
+    if time is None and dataset_id in REFERENCE_TABLES:
+        return [c for c in df.columns
+                if not pd.api.types.is_numeric_dtype(df[c])]
+    if time is None:
+        return [c for c in df.columns if c != value]
+    return [c for c in (time, cat) if c is not None]
 
 
 def check_structural_language(struct_cols, lang):
@@ -349,19 +404,16 @@ def process_dataset(dataset_id, apply=False):
                 f"{csv_name[lang]}: ignoring constant column(s) {const_cols} "
                 f"for the XLSX pivot (CSV file itself unchanged)")
             dfs[lang] = df
-        time, cat, value, problem = detect_roles(df)
+        time, cat, value, problem = detect_roles(df, dataset_id)
         roles[lang] = (time, cat, value)
         if problem:
             manual(f"{csv_name[lang]}: {problem}")
             continue
-        if time is None and dataset_id not in EXEMPT_WIDE:
+        if time is None and not allows_timeless(dataset_id):
             manual(f"{csv_name[lang]}: no time dimension "
                    f"(exempt-worthy? not on the exempt list)")
             continue
-        if time is None:
-            struct = [c for c in df.columns if c != value]
-        else:
-            struct = [c for c in (time, cat) if c is not None]
+        struct = structural_cols(df, (time, cat, value), dataset_id)
         lang_problem = check_structural_language(struct, lang)
         if lang_problem:
             manual(f"{csv_name[lang]}: {lang_problem}")

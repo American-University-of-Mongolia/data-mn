@@ -51,8 +51,12 @@ try:
         MN_SHEET,
         EXEMPT_WIDE,
         EXEMPT_WIDE_REASONS,
+        REFERENCE_TABLES,
+        REFERENCE_TABLES_REASONS,
         detect_roles,
         drop_constant_dims,
+        allows_timeless,
+        structural_cols,
         check_structural_language,
         value_total,
         fuzzy_value_total,
@@ -833,16 +837,15 @@ def validate_downloads(dataset_id: str, base_dir: str) -> list[ValidationResult]
             continue
         df.columns = [str(c).replace('\ufeff', '') for c in df.columns]
         df, _ = drop_constant_dims(df)
-        time, cat, value, problem = detect_roles(df)
+        time, cat, value, problem = detect_roles(df, dataset_id)
         if problem:
             csv_result.add_error(f"Not long-form download data: {problem}")
             continue
-        if time is None and dataset_id not in EXEMPT_WIDE:
+        if time is None and not allows_timeless(dataset_id):
             csv_result.add_error(
                 "No time dimension and not on the documented exempt list")
             continue
-        struct = ([c for c in df.columns if c != value] if time is None
-                  else [c for c in (time, cat) if c is not None])
+        struct = structural_cols(df, (time, cat, value), dataset_id)
         lang_problem = check_structural_language(struct, lang)
         if lang_problem:
             csv_result.add_error(lang_problem)
@@ -906,6 +909,9 @@ def validate_downloads(dataset_id: str, base_dir: str) -> list[ValidationResult]
     if dataset_id in EXEMPT_WIDE:
         xlsx_result.add_info(
             f"Exempt from wide form: {EXEMPT_WIDE_REASONS[dataset_id]}")
+    if dataset_id in REFERENCE_TABLES:
+        xlsx_result.add_info(
+            f"Reference table: {REFERENCE_TABLES_REASONS[dataset_id]}")
     if needs_wide:
         # Wide = time first column + one column per CSV category value.
         # Single-category pivots (time + 1 column) are vacuously wide.
@@ -955,7 +961,7 @@ def validate_all(dataset_id: str, base_dir: str) -> list[ValidationResult]:
 
     # Try to find definition file for common sources
     sources_dir = os.path.join(base_dir, '..', 'tools', 'sources')
-    possible_sources = ['nso-1212', 'mrpam', 'mongolbank']
+    possible_sources = ['nso-1212', 'mrpam', 'mongolbank', 'ebarilga']
     definition_found = False
 
     for source in possible_sources:

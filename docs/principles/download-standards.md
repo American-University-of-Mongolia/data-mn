@@ -51,6 +51,13 @@ Rules:
    Current exemptions: `gdp-by-sector`, `health-facilities-by-aimag`,
    `health-facilities-by-type`, `hospital-beds-by-type`,
    `population-pyramid-mongolia`, `salary-by-sector-2024`.
+5. **Reference-table exemption**: boundary lists and codebooks are timeless
+   and multi-attribute (codes, names, parents, areas, coordinates), so the
+   single-value-column rule cannot apply. Listed ids live in
+   `REFERENCE_TABLES` in `rebuild_downloads.py` with a reason each;
+   structural = text columns only (numeric headers such as `lon`/`lat`
+   are conventionally Latin in both languages). Sheets stay long and must
+   match their CSV shape exactly. The validator shares the same list.
 
 ## Related
 

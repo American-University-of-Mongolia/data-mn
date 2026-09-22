@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "labelColor": "#64748b",
+      "labelFontSize": 14,
+      "titleColor": "#334155",
+      "titleFontSize": 16
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "format": {
+      "property": "features",
+      "type": "json"
+    },
+    "url": "/maps/ulaanbaatar-zip-zones.json"
+  },
+  "description": "Reference map of Ulaanbaatar's 513 ZIP address zones (September 2026). Zone 12001 (Kherlen golyn khuvuu-1) lies outside all districts. Boundaries: eBarilga geoportal (UB Urban Development Agency).",
+  "encoding": {
+    "color": {
+      "value": "#1f77b4"
+    },
+    "tooltip": [
+      {
+        "field": "properties.name",
+        "title": "Zone"
+      },
+      {
+        "field": "properties.code",
+        "format": "d",
+        "title": "Code"
+      },
+      {
+        "field": "properties.district",
+        "title": "District (centroid)"
+      },
+      {
+        "field": "properties.area_km2",
+        "format": ",.1f",
+        "title": "Area (km²)"
+      }
+    ]
+  },
+  "mark": {
+    "stroke": "white",
+    "strokeWidth": 0.5,
+    "type": "geoshape"
+  },
+  "projection": {
+    "type": "mercator"
+  }
+}

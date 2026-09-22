@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "labelColor": "#64748b",
+      "labelFontSize": 14,
+      "titleColor": "#334155",
+      "titleFontSize": 16
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "format": {
+      "property": "features",
+      "type": "json"
+    },
+    "url": "/maps/ulaanbaatar-districts.json"
+  },
+  "description": "Khoroos per district in Ulaanbaatar: 204 khoroos across 9 districts, assigned by centroid (September 2026). Boundaries: eBarilga geoportal (UB Urban Development Agency).",
+  "encoding": {
+    "color": {
+      "field": "khoroos",
+      "legend": {
+        "orient": "top",
+        "title": "Khoroos"
+      },
+      "scale": {
+        "scheme": "oranges"
+      },
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "district",
+        "title": "District"
+      },
+      {
+        "field": "khoroos",
+        "format": ",.0f",
+        "title": "Khoroos"
+      },
+      {
+        "field": "area_km2",
+        "format": ",.1f",
+        "title": "Area (km²)"
+      }
+    ]
+  },
+  "mark": {
+    "stroke": "white",
+    "strokeWidth": 1,
+    "type": "geoshape"
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "from": {
+        "data": {
+          "format": {
+            "type": "csv"
+          },
+          "url": "/datasets/ebarilga-districts-en.csv"
+        },
+        "fields": ["district", "khoroos", "area_km2"],
+        "key": "code"
+      },
+      "lookup": "properties.code"
+    }
+  ]
+}

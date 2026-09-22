@@ -1,0 +1,34 @@
+---
+title: 'Ulaanbaatar Districts: Boundaries and Khoroo Counts'
+publishDate: 2026-09-22
+excerpt: 'The 9 districts of Ulaanbaatar with khoroo counts, areas, and centroids (September 2026); boundary shapes available at /maps/ulaanbaatar-districts.json.'
+category: 'Infrastructure'
+tags: ['mongolia', 'ulaanbaatar', 'districts', 'boundaries', 'map', 'ebarilga']
+keywords: ['ulaanbaatar districts map', 'ub district boundaries', 'khoroos per district']
+author: 'Data.mn'
+dataVersion: 1
+dataDate: 2026-09-13
+dataFiles:
+  - path: '/datasets/ebarilga-districts-en.csv'
+    format: 'csv'
+    size: '1 KB'
+    description: 'Download as CSV'
+  - path: '/datasets/ebarilga-districts.xlsx'
+    format: 'xlsx'
+    size: '6 KB'
+    description: 'Open in Excel'
+source:
+  name: 'eBarilga Geoportal (UB Urban Development Agency)'
+  url: 'https://ebarilga.ub.gov.mn/map'
+  tableId: 'district_border'
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+The 9 districts of Ulaanbaatar with khoroo counts, areas, and centroids (September 2026); boundary shapes available at /maps/ulaanbaatar-districts.json.
+
+<VegaChart
+  spec="/charts/ebarilga-districts-en.json"
+  title="Khoroos per District in Ulaanbaatar"
+  caption="204 khoroos across 9 districts, assigned by centroid. Full reference table available in the downloads."
+/>

@@ -53,6 +53,7 @@ try:
         EXEMPT_WIDE_REASONS,
         REFERENCE_TABLES,
         REFERENCE_TABLES_REASONS,
+        BOUNDARY_SHAPES,
         detect_roles,
         drop_constant_dims,
         allows_timeless,
@@ -803,13 +804,34 @@ def validate_downloads(dataset_id: str, base_dir: str) -> list[ValidationResult]
         files = (frontmatter or {}).get('dataFiles') or []
         formats = sorted(str(f.get('format', '')).lower()
                          for f in files if isinstance(f, dict))
+        names = {str(f.get('format', '')).lower(): os.path.basename(str(f.get('path', '')))
+                 for f in files if isinstance(f, dict)}
+        if dataset_id in BOUNDARY_SHAPES:
+            if formats != ['geojson', 'xlsx']:
+                files_result.add_error(
+                    f"{lang.upper()} page must list exactly one GeoJSON + one XLSX "
+                    f"(Standard 1 boundary downloads), found formats: {formats}")
+                continue
+            if names.get('geojson') != BOUNDARY_SHAPES[dataset_id]:
+                files_result.add_error(
+                    f"{lang.upper()} GeoJSON must be "
+                    f"{BOUNDARY_SHAPES[dataset_id]}, "
+                    f"found: {names.get('geojson')}")
+            geo_path = os.path.join(base_dir, 'public', 'maps',
+                                    BOUNDARY_SHAPES[dataset_id])
+            if not os.path.exists(geo_path):
+                files_result.add_error(
+                    f"Boundary shapes file does not exist: {geo_path}")
+            if names.get('xlsx') != f"{dataset_id}.xlsx":
+                files_result.add_error(
+                    f"{lang.upper()} download XLSX must be {dataset_id}.xlsx, "
+                    f"found: {names.get('xlsx')}")
+            continue
         if formats != ['csv', 'xlsx']:
             files_result.add_error(
                 f"{lang.upper()} page must list exactly one CSV + one XLSX "
                 f"(Standard 1), found formats: {formats}")
             continue
-        names = {str(f.get('format', '')).lower(): os.path.basename(str(f.get('path', '')))
-                 for f in files if isinstance(f, dict)}
         expected_csv = download_csv_name(lang)
         if names.get('csv') != expected_csv:
             files_result.add_error(

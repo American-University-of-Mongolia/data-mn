@@ -33,6 +33,11 @@ Rules:
    are translated (EN sheet English headers, MN sheet Mongolian headers),
    but cell values stay as-is — Latin unit codes (MNT, USD) and proper names
    are conventionally Latin and must not be transliterated.
+7. **Boundary downloads**: boundary datasets list the GeoJSON shapes file
+   instead of the CSV (`{maps-file}.json` + `{id}.xlsx` — still exactly 2
+   files). The CSVs are still built (chart data and XLSX source) but not
+   listed. Listed ids live in `BOUNDARY_SHAPES` in `rebuild_downloads.py`;
+   the validator shares the list.
 
 ## Standard 2: Long CSV, wide XLSX
 

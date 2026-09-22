@@ -32,6 +32,7 @@ from openpyxl.utils import get_column_letter
 ROOT = Path(__file__).resolve().parents[2]
 DATASETS = ROOT / "data.mn" / "public" / "datasets"
 CHARTS = ROOT / "data.mn" / "public" / "charts"
+MAPS = ROOT / "data.mn" / "public" / "maps"
 MDX_EN = ROOT / "data.mn" / "src" / "data" / "data" / "en"
 MDX_MN = ROOT / "data.mn" / "src" / "data" / "data" / "mn"
 
@@ -80,6 +81,16 @@ REFERENCE_TABLES_REASONS = {
     "ebarilga-districts": "boundary reference table: codes, names, khoroo counts, areas",
     "ebarilga-khoroos": "boundary reference table: codes, names, parent districts, areas",
     "ebarilga-zip-zones": "boundary reference table: codes, names, parent districts, areas",
+}
+
+# Boundary datasets substitute the CSV download with the GeoJSON shapes
+# (the CSVs are still built — charts and the XLSX derive from them — but
+# the shapes are the useful technical download). Maps dataset id -> the
+# /maps/ file published as its download. The validator shares this list.
+BOUNDARY_SHAPES = {
+    "ebarilga-districts": "ulaanbaatar-districts.json",
+    "ebarilga-khoroos": "ulaanbaatar-khoroos.json",
+    "ebarilga-zip-zones": "ulaanbaatar-zip-zones.json",
 }
 
 CYRILLIC = re.compile(r"[\u0400-\u04FF]")
@@ -299,7 +310,8 @@ def kb_size(path):
     return max(1, path.stat().st_size // 1024)
 
 
-def rewrite_mdx_datafiles(mdx_path, csv_name, xlsx_name, lang):
+def rewrite_mdx_datafiles(mdx_path, csv_name, xlsx_name, lang,
+                          dataset_id=None):
     """Replace ONLY the dataFiles block; returns True if the text changed."""
     text = mdx_path.read_text()
     m = re.match(r"^---\n(.*?)\n---\n(.*)$", text, re.DOTALL)
@@ -313,18 +325,34 @@ def rewrite_mdx_datafiles(mdx_path, csv_name, xlsx_name, lang):
                       and f.get("description")), None)
     if xlsx_desc is None:
         xlsx_desc = "Open in Excel" if lang == "en" else "Excel-д нээх"
-    csv_desc = "Download as CSV" if lang == "en" else "CSV татах"
-    new_block = (
-        "dataFiles:\n"
-        f"  - path: \"/datasets/{csv_name}\"\n"
-        "    format: \"csv\"\n"
-        f"    size: \"{kb_size(DATASETS / csv_name)} KB\"\n"
-        f"    description: \"{csv_desc}\"\n"
-        f"  - path: \"/datasets/{xlsx_name}\"\n"
-        "    format: \"xlsx\"\n"
-        f"    size: \"{kb_size(DATASETS / xlsx_name)} KB\"\n"
-        f"    description: \"{xlsx_desc}\"\n"
-    )
+    geo_name = BOUNDARY_SHAPES.get(dataset_id) if dataset_id else None
+    if geo_name:
+        geo_desc = ("Download boundary shapes (GeoJSON)" if lang == "en"
+                    else "Хил хязгаарын дүрс татах (GeoJSON)")
+        new_block = (
+            "dataFiles:\n"
+            f"  - path: \"/maps/{geo_name}\"\n"
+            "    format: \"geojson\"\n"
+            f"    size: \"{kb_size(MAPS / geo_name)} KB\"\n"
+            f"    description: \"{geo_desc}\"\n"
+            f"  - path: \"/datasets/{xlsx_name}\"\n"
+            "    format: \"xlsx\"\n"
+            f"    size: \"{kb_size(DATASETS / xlsx_name)} KB\"\n"
+            f"    description: \"{xlsx_desc}\"\n"
+        )
+    else:
+        csv_desc = "Download as CSV" if lang == "en" else "CSV татах"
+        new_block = (
+            "dataFiles:\n"
+            f"  - path: \"/datasets/{csv_name}\"\n"
+            "    format: \"csv\"\n"
+            f"    size: \"{kb_size(DATASETS / csv_name)} KB\"\n"
+            f"    description: \"{csv_desc}\"\n"
+            f"  - path: \"/datasets/{xlsx_name}\"\n"
+            "    format: \"xlsx\"\n"
+            f"    size: \"{kb_size(DATASETS / xlsx_name)} KB\"\n"
+            f"    description: \"{xlsx_desc}\"\n"
+        )
     lines = frontmatter.split("\n")
     try:
         start = next(i for i, line in enumerate(lines)
@@ -502,13 +530,14 @@ def process_dataset(dataset_id, apply=False):
         f"rebuild {xlsx_name} ({EN_SHEET} + {MN_SHEET} sheets, "
         f"{sheets['en'].shape[0]} rows x {sheets['en'].shape[1]} cols)")
     for lang in ("en", "mn"):
+        first = BOUNDARY_SHAPES.get(dataset_id, csv_name[lang])
         report["actions"].append(
-            f"rewrite {mdx[lang].name} dataFiles -> "
-            f"{csv_name[lang]} + {xlsx_name}")
+            f"rewrite {mdx[lang].name} dataFiles -> {first} + {xlsx_name}")
     if apply:
         write_bilingual_xlsx(xlsx_path, sheets["en"], sheets["mn"])
         for lang in ("en", "mn"):
-            rewrite_mdx_datafiles(mdx[lang], csv_name[lang], xlsx_name, lang)
+            rewrite_mdx_datafiles(mdx[lang], csv_name[lang], xlsx_name, lang,
+                                  dataset_id)
     return report
 
 

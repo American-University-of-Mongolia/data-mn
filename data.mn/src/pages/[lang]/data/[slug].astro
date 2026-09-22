@@ -99,15 +99,17 @@ const labels = {
                 {labels.download}
               </h3>
               <div class="flex flex-wrap gap-2">
-                {/* Sort files: Excel first, then CSV */}
+                {/* Sort files: GeoJSON first, then Excel, then CSV */}
                 {[...dataFiles].sort((a, b) => {
-                  const order = { xlsx: 0, xls: 1, csv: 2 };
+                  const order = { geojson: 0, xlsx: 1, xls: 2, csv: 3 };
                   return (order[a.format.toLowerCase()] ?? 99) - (order[b.format.toLowerCase()] ?? 99);
                 }).map((file) => {
                   const format = file.format.toLowerCase();
                   const isExcel = format === 'xlsx' || format === 'xls';
-                  const iconName = isExcel ? 'tabler:table' : 'tabler:file-text';
-                  const label = wideChart && file.description ? file.description : isExcel ? 'Excel' : 'Text/CSV';
+                  const isGeojson = format === 'geojson';
+                  const iconName = isExcel ? 'tabler:table' : isGeojson ? 'tabler:map' : 'tabler:file-text';
+                  const shortLabel = isExcel ? 'Excel' : isGeojson ? 'GeoJSON' : 'Text/CSV';
+                  const label = wideChart && file.description ? file.description : shortLabel;
                   return (
                     <a
                       href={file.path}

@@ -19,6 +19,12 @@ boundary datasets built by `tools/sources/ebarilga/build_shapes.py`.
 |---------|----------|---------|
 | Boundary shapes | `data.mn/public/maps/ulaanbaatar-*.json` | Chart geometries + shape downloads |
 | Reference tables | `data.mn/public/datasets/{id}-{en,mn}.csv` + `{id}.xlsx` | Join keys, names, parents, areas |
+
+**Boundary downloads are GeoJSON + XLSX** (Standard 1 clause 7): the
+`dataFiles` list the `/maps/*.json` shapes instead of the CSV. CSVs are
+still built — charts look up against them and the XLSX derives from
+them — but for boundary datasets the shapes are the useful technical
+download. Listed ids live in `BOUNDARY_SHAPES` in `rebuild_downloads.py`.
 | Dataset pages | `data.mn/src/data/data/{en,mn}/{id}.mdx` | One page per admin level |
 
 **Join on code, never on name.** Khoroo names repeat across districts and

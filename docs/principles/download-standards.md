@@ -19,9 +19,9 @@ Each dataset has exactly these downloads:
 
 Rules:
 
-1. **Exactly 2 files** in MDX `dataFiles` (one CSV + one XLSX). No per-language
-   `-en.xlsx` / `-mn.xlsx` pairs — the workbook is bilingual.
-2. **XLSX sheets**: `English` first, `Монгол` second. Freeze top row,
+1. **Exactly 2 files** in MDX `dataFiles` (one CSV + one XLSX). By default the
+   workbook is bilingual. Explicit page-language exports are described below.
+2. **Default XLSX sheets**: `English` first, `Монгол` second. Freeze top row,
    auto-size columns.
 3. **EN and MN content equivalent**: same rows/values, only labels differ.
 4. **MN page fully Mongolian**: excerpt, title, tags, `description` strings
@@ -33,6 +33,20 @@ Rules:
    are translated (EN sheet English headers, MN sheet Mongolian headers),
    but cell values stay as-is — Latin unit codes (MNT, USD) and proper names
    are conventionally Latin and must not be transliterated.
+
+### Optional page-language Excel downloads
+
+Set `excelLanguage: page` on both EN and MN pages to offer `{id}-en.xlsx`
+with only the `English` sheet and `{id}-mn.xlsx` with only the `Монгол` sheet.
+Each page still lists exactly two downloads: its CSV and its Excel file.
+Both workbooks contain equivalent data and the full available history.
+The builder and validator require the two pages to agree on this setting and
+check matching filenames and sheet languages. Existing bilingual URLs may
+remain available for earlier links, but are not offered by these pages.
+
+The three livestock-loss datasets use this mode at the contributor's request,
+so changing the page language also changes the Excel download language.
+Datasets without this setting retain the default bilingual workbook.
 
 ## Standard 2: Long CSV, wide XLSX
 

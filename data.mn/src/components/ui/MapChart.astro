@@ -24,6 +24,9 @@ export interface Props {
 const { spec, title, caption, aspectRatio = 0.5 } = Astro.props;
 const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
 ---
+<!-- Static Leaflet CSS: part of the swapped page body, so it survives
+     Astro ClientRouter navigation (runtime-injected head links don't). -->
+<link data-leaflet-css rel="stylesheet" href="/vendor/leaflet/leaflet.css" />
 
 <div class="leaflet-map-container my-4 not-prose">
   {title && <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">{title}</h3>}
@@ -57,16 +60,18 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
 
     function loadLeaflet() {
       return new Promise(function(resolve, reject) {
-        if (window.L) {
-          resolve();
-          return;
-        }
+        // CSS first: re-ensure the stylesheet even when window.L already
+        // exists — Astro swaps drop runtime-injected head elements.
         if (!document.querySelector('link[data-leaflet-css]')) {
           var link = document.createElement('link');
           link.rel = 'stylesheet';
           link.setAttribute('data-leaflet-css', 'true');
-          link.href = 'https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css';
+          link.href = '/vendor/leaflet/leaflet.css';
           document.head.appendChild(link);
+        }
+        if (window.L) {
+          resolve();
+          return;
         }
         if (window._leafletLoading) {
           window._leafletLoading.then(resolve, reject);
@@ -74,7 +79,7 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
         }
         window._leafletLoading = new Promise(function(res2, rej2) {
           var script = document.createElement('script');
-          script.src = 'https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js';
+          script.src = '/vendor/leaflet/leaflet.js';
           script.onload = function() { res2(); };
           script.onerror = function() { rej2(new Error('Failed to load Leaflet')); };
           document.head.appendChild(script);

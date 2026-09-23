@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Одоогийн Улсын Их Хурлын 126 гишүүний 2024-10-17-ноос 2026-09-22 хүртэлх нэгдсэн хуралдааны биеэр оролцсон ирц ба албан ёсны цагтаа ирэлтийн хувь. Нэгдсэн оноо тооцоогүй.",
+  "description": "Одоогийн Улсын Их Хурлын 126 гишүүний 2024-10-17-ноос 2026-09-22 хүртэлх нэгдсэн хуралдааны биеэр оролцсон ирц ба албан ёсны цагтаа ирэлтийн хувь. Ижил утгатай цэгүүдийг гишүүн бүрийг харагдуулахын тулд бага зэрэг зөрүүлсэн бөгөөд тайлбарт бодит утгыг харуулна. Нэгдсэн оноо тооцоогүй.",
   "data": {
     "url": "/datasets/mp-parliament-attendance-mn.csv",
     "format": {"type": "csv"}
@@ -23,12 +23,28 @@
       "bind": "legend"
     }
   ],
+  "transform": [
+    {
+      "window": [
+        {"op": "row_number", "as": "collision_index"},
+        {"op": "count", "as": "collision_count"}
+      ],
+      "groupby": ["биеэр_оролцсон_хувь", "албан_ёсны_цагтаа_ирэлтийн_хувь"],
+      "sort": [{"field": "гишүүн", "order": "ascending"}],
+      "frame": [null, null]
+    },
+    {
+      "calculate": "toNumber(datum.биеэр_оролцсон_хувь) + (datum.collision_index - (datum.collision_count + 1) / 2) * 1400 / width",
+      "as": "дүрслэх_биеэр_оролцсон_хувь"
+    }
+  ],
   "mark": {"type": "point", "filled": true, "size": 105, "cursor": "pointer"},
   "encoding": {
     "x": {
-      "field": "биеэр_оролцсон_хувь",
+      "field": "дүрслэх_биеэр_оролцсон_хувь",
       "type": "quantitative",
       "title": "Биеэр оролцсон хувь (%)",
+      "scale": {"domain": [0, 100]},
       "axis": {"format": ".0f", "grid": false}
     },
     "y": {

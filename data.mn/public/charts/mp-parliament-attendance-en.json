@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Physical attendance versus official on-time rate for all 126 current Members of Parliament across plenary sittings from 2024-10-17 through 2026-09-22. No composite score is calculated.",
+  "description": "Physical attendance versus official on-time rate for all 126 current Members of Parliament across plenary sittings from 2024-10-17 through 2026-09-22. Points with identical values are separated slightly so every MP remains visible; tooltips retain the exact values. No composite score is calculated.",
   "data": {
     "url": "/datasets/mp-parliament-attendance-en.csv",
     "format": {"type": "csv"}
@@ -23,12 +23,28 @@
       "bind": "legend"
     }
   ],
+  "transform": [
+    {
+      "window": [
+        {"op": "row_number", "as": "collision_index"},
+        {"op": "count", "as": "collision_count"}
+      ],
+      "groupby": ["physical_attendance_rate", "official_on_time_rate"],
+      "sort": [{"field": "member", "order": "ascending"}],
+      "frame": [null, null]
+    },
+    {
+      "calculate": "toNumber(datum.physical_attendance_rate) + (datum.collision_index - (datum.collision_count + 1) / 2) * 1400 / width",
+      "as": "plotted_physical_attendance_rate"
+    }
+  ],
   "mark": {"type": "point", "filled": true, "size": 105, "cursor": "pointer"},
   "encoding": {
     "x": {
-      "field": "physical_attendance_rate",
+      "field": "plotted_physical_attendance_rate",
       "type": "quantitative",
       "title": "Physical attendance rate (%)",
+      "scale": {"domain": [0, 100]},
       "axis": {"format": ".0f", "grid": false}
     },
     "y": {

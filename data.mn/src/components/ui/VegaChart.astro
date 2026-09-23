@@ -51,6 +51,7 @@ const isInlineSpec = typeof spec === 'object';
     var resizeTimeout = null;
     var vegaLoaded = false;
     var decimalNumberFormat = ",.6~f";
+    var legendLayoutTools = import('/scripts/chart-legend-layout.js');
 
     // Vega treats a bare "," as a general-number format and can render
     // thousands as 1e+4. Normalize legacy and explicitly exponential formats
@@ -73,6 +74,23 @@ const isInlineSpec = typeof spec === 'object';
         });
       }
       return value;
+    }
+
+    async function loadCategoricalLegendLabels(spec, tools) {
+      var labels = tools.categoricalLegendLabels(spec);
+      if (labels.length || !spec.data || !spec.data.url) return labels;
+
+      try {
+        var text = await window.vega.loader().load(spec.data.url);
+        var rows = window.vega.read(text, {
+          type: (spec.data.format && spec.data.format.type) || 'csv',
+          parse: 'auto'
+        });
+        return tools.categoricalLegendLabels(spec, rows);
+      } catch (error) {
+        console.warn('Could not inspect chart legend labels:', error);
+        return labels;
+      }
     }
 
     // Load Vega libraries dynamically (only once)
@@ -292,6 +310,7 @@ const isInlineSpec = typeof spec === 'object';
         console.error('Failed to load Vega libraries:', error);
         return;
       }
+      var legendTools = await legendLayoutTools;
 
       charts.forEach(async function(el) {
         var chartId = el.id;
@@ -329,6 +348,13 @@ const isInlineSpec = typeof spec === 'object';
 
           const attachExplorer = await prepareExplorer(el, chartSpec);
           normalizeNumberFormats(chartSpec);
+          const legendLabels = await loadCategoricalLegendLabels(chartSpec, legendTools);
+          const legendLayout = legendTools.applyCategoricalLegendLayout(
+            chartSpec,
+            legendLabels,
+            containerWidth,
+            attachExplorer ? 14 : 13
+          );
           if (attachExplorer && document.documentElement.classList.contains('dark')) {
             chartSpec.background = '#1e293b';
             chartSpec.config = chartSpec.config || {};
@@ -340,8 +366,6 @@ const isInlineSpec = typeof spec === 'object';
           // Asymmetric padding: more on left/bottom for axes, minimal on right/top
           // Use category10 color scheme (D3 default) - brighter than tableau10
           var existingConfig = chartSpec.config || {};
-          var legendColumns = containerWidth < 480 ? 2 : containerWidth < 700 ? 3 : 4;
-          var legendLabelLimit = containerWidth < 480 ? 100 : containerWidth < 700 ? 140 : 240;
           chartSpec = Object.assign({}, chartSpec, {
             width: containerWidth,
             height: calculatedHeight,
@@ -352,8 +376,8 @@ const isInlineSpec = typeof spec === 'object';
               // small quantitative values to scientific notation.
               numberFormat: decimalNumberFormat,
               legend: Object.assign({}, existingConfig.legend || {}, {
-                columns: legendColumns,
-                labelLimit: legendLabelLimit
+                columns: legendLayout.columns,
+                labelLimit: legendLayout.labelLimit
               }),
               range: Object.assign({}, existingConfig.range || {}, {
                 category: {scheme: "category10"}
@@ -382,9 +406,8 @@ const isInlineSpec = typeof spec === 'object';
             }
             const colorLegend = chartSpec.encoding.color.legend;
             if (colorLegend !== null && colorLegend !== false) {
-              const columns = containerWidth < 280 ? 1 : Math.max(2, Math.floor((containerWidth - 60) / 140));
               chartSpec.encoding.color.legend = Object.assign({}, colorLegend, {
-                orient: 'top', columns: columns, labelLimit: Math.max(90, (containerWidth - 80) / columns - 30),
+                orient: 'top', columns: legendLayout.columns, labelLimit: legendLayout.labelLimit,
                 rowPadding: 10, columnPadding: 18, labelFontSize: 14, offset: 20
               });
             }

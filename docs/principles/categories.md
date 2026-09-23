@@ -22,6 +22,7 @@ Categories provide high-level organization for datasets, helping users navigate 
 | `education` | Education | Боловсрол | Schools, enrollment, literacy |
 | `health` | Health | Эрүүл мэнд | Healthcare, disease, mortality |
 | `infrastructure` | Infrastructure | Дэд бүтэц | Housing, transport, energy, telecoms |
+| `government-politics` | Government & Politics | Засаглал ба улс төр | Parliament, elections, public institutions, representation, accountability |
 
 ## Design Principles
 
@@ -152,5 +153,6 @@ This reports:
 
 ## History
 
+- **2026-09-23**: Added Government & Politics for parliamentary and public-institution data.
 - **2025-12-16**: Reorganized from 15 categories to 12. Split "Economy" into focused categories. Fixed alias usage in labor-participation-* pages.
 - **2025-12-15**: Initial category system with 15 categories.

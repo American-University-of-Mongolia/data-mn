@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Одоогийн Монгол Улсын Их Хурлын 2024-10-17-ноос 2026-09-22 хүртэлх 146 нэгдсэн хуралдааны ирцийн төлөв тус бүрийн тоо. Шугамууд 14 хоногоос урт завсарлагаар тасарч, хуралдаангүй хугацаанд өгөгдөл байсан мэт холбогдохгүй.",
+  "data": {
+    "url": "/datasets/parliament-session-attendance-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [
+    {
+      "name": "selectedCategories",
+      "value": ["Цагтаа ирсэн", "Хоцорсон", "Зөвшөөрөгдсөн чөлөө", "Албан томилолт", "Тайлбаргүй тасалсан"]
+    },
+    {"name": "yearStart", "value": 2024},
+    {"name": "yearEnd", "value": 2026}
+  ],
+  "transform": [
+    {"filter": "datum.он >= yearStart && datum.он <= yearEnd"},
+    {"filter": "indexof(selectedCategories, datum[\"төлөв\"]) >= 0"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "огноо",
+      "type": "temporal",
+      "title": "Хуралдааны огноо",
+      "axis": {"format": "%Y-%m", "grid": false}
+    },
+    "y": {
+      "field": "тоо",
+      "type": "quantitative",
+      "title": "Улсын Их Хурлын гишүүн",
+      "axis": {"format": ",.0f"}
+    },
+    "color": {
+      "field": "төлөв",
+      "type": "nominal",
+      "title": "Ирцийн төлөв",
+      "sort": ["Цагтаа ирсэн", "Хоцорсон", "Зөвшөөрөгдсөн чөлөө", "Албан томилолт", "Тайлбаргүй тасалсан"],
+      "scale": {
+        "domain": ["Цагтаа ирсэн", "Хоцорсон", "Зөвшөөрөгдсөн чөлөө", "Албан томилолт", "Тайлбаргүй тасалсан"],
+        "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2", "#54a24b"]
+      },
+      "legend": {"orient": "top", "values": {"expr": "selectedCategories"}, "symbolType": "stroke"}
+    },
+    "detail": {"field": "үе", "type": "nominal"}
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "linear"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 85},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "огноо", "title": "Огноо", "type": "temporal", "format": "%Y-%m-%d"},
+          {"field": "төлөв", "title": "Төлөв", "type": "nominal"},
+          {"field": "тоо", "title": "Гишүүний тоо", "type": "quantitative", "format": ",.0f"},
+          {"field": "товлосон_цаг", "title": "Товлосон цаг", "type": "nominal"},
+          {"field": "эхэлсэн_цаг", "title": "Бодит эхлэл", "type": "nominal"},
+          {"field": "эхлэлтийн_хоцролт_минут", "title": "Эхлэлтийн хоцролт (минут)", "type": "quantitative", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14},
+    "view": {"stroke": "transparent"}
+  },
+  "usermeta": {
+    "explorer": {
+      "categoryField": "төлөв",
+      "yearField": "он",
+      "labels": {
+        "search": "Ирцийн төлөв хайх…",
+        "noMatches": "Тохирох ирцийн төлөв олдсонгүй.",
+        "empty": "График харахын тулд дор хаяж нэг ирцийн төлөв сонгоно уу."
+      }
+    }
+  }
+}

@@ -14,8 +14,19 @@ Checklist reference: tools/config/data-page-checklist.md
 import pytest
 import re
 import json
+import sys
 from pathlib import Path
 from conftest import parse_frontmatter, get_mdx_body, DATA_MN_DIR
+
+SCRIPTS_DIR = Path(__file__).resolve().parents[1] / 'scripts'
+sys.path.insert(0, str(SCRIPTS_DIR))
+
+from rebuild_downloads import (  # noqa: E402
+    EXEMPT_WIDE,
+    EXEMPT_WIDE_REASONS,
+    REFERENCE_TABLES,
+    REFERENCE_TABLES_REASONS,
+)
 
 # ============================================================================
 # HELPER FUNCTIONS
@@ -251,12 +262,17 @@ def check_4_14_numeric_values_match(csv_en: Path, csv_mn: Path) -> tuple[bool, s
 # SECTION 5: XLSX AI Checks
 # ----------------------------------------------------------------------------
 
-def check_5_5_wide_form(xlsx_path: Path) -> tuple[bool, str]:
+def check_5_5_wide_form(xlsx_path: Path, dataset_id: str | None = None) -> tuple[bool, str]:
     """
     Check 5.5: XLSX data is in wide/short form (years as columns).
 
     XLSX should be formatted for easy Excel viewing (opposite of CSV requirement).
     """
+    if dataset_id in EXEMPT_WIDE:
+        return True, f"Exempt from wide form: {EXEMPT_WIDE_REASONS[dataset_id]}"
+    if dataset_id in REFERENCE_TABLES:
+        return True, f"Reference table: {REFERENCE_TABLES_REASONS[dataset_id]}"
+
     try:
         import pandas as pd
         df = pd.read_excel(xlsx_path)
@@ -660,7 +676,7 @@ def validate_dataset_ai_checks(dataset_id: str) -> dict:
         results['4.14'] = check_4_14_numeric_values_match(csv_en, csv_mn)
 
     if xlsx.exists():
-        results['5.5'] = check_5_5_wide_form(xlsx)
+        results['5.5'] = check_5_5_wide_form(xlsx, dataset_id)
 
     results['8.2'] = check_8_2_category_match(fm_en, fm_mn)
     results['8.3'] = check_8_3_dataversion_match(fm_en, fm_mn)

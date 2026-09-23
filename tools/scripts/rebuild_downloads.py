@@ -46,7 +46,9 @@ TIME_NAMES_EN = {
 TIME_NAMES_MN = {"он", "жил", "сар", "улирал", "өдөр", "огноо", "долоо хоног", "цаг"}
 TIME_NAMES = TIME_NAMES_EN | TIME_NAMES_MN
 
-# Timeless datasets exempt from the wide-XLSX rule (still get bilingual sheets).
+# Datasets exempt from the wide-XLSX rule (still get bilingual sheets).
+# Most are timeless snapshots; a small number are multi-attribute analytical
+# tables whose metadata columns are intentionally retained in long form.
 EXEMPT_WIDE = {
     "gdp-by-sector",
     "health-facilities-by-aimag",
@@ -54,6 +56,8 @@ EXEMPT_WIDE = {
     "hospital-beds-by-type",
     "population-pyramid-mongolia",
     "salary-by-sector-2024",
+    "mp-parliament-attendance",
+    "parliament-session-attendance",
 }
 
 EXEMPT_WIDE_REASONS = {
@@ -63,6 +67,8 @@ EXEMPT_WIDE_REASONS = {
     "hospital-beds-by-type": "cross-sectional count by bed type, no time dimension",
     "population-pyramid-mongolia": "single-year age/sex pyramid, no time dimension",
     "salary-by-sector-2024": "single-year snapshot, no time dimension to pivot",
+    "mp-parliament-attendance": "cross-sectional MP metrics with party, mandate, and committee metadata",
+    "parliament-session-attendance": "event-level sitting metrics with schedule, status, and source metadata",
 }
 
 # Reference tables (boundary lists, codebooks): timeless by definition and
@@ -179,6 +185,11 @@ def detect_roles(df, dataset_id=None):
     value = numeric[0]
     rest = [c for c in cols if c != time and c != value]
     if time is None:
+        if (dataset_id in EXEMPT_WIDE and len(numeric) == 1 and rest):
+            # Documented multi-attribute cross-sectional tables keep their
+            # metadata columns in the long CSV/XLSX rather than discarding
+            # them merely to satisfy a two-dimension pivot heuristic.
+            return None, None, numeric[0], None
         if len(numeric) == 1 and 1 <= len(rest) <= 2:
             # Cross-sectional (exempt ids only; caller enforces): sheets stay
             # long, so multiple object dimensions are fine.
@@ -188,6 +199,10 @@ def detect_roles(df, dataset_id=None):
         return time, None, value, None  # single series
     if len(rest) == 1:
         return time, rest[0], value, None
+    if dataset_id in EXEMPT_WIDE:
+        # Documented event tables can have several descriptive columns around
+        # one metric/value pair. Their XLSX stays long so those fields survive.
+        return time, None, value, None
     return None, None, None, f"multiple category columns: {rest}"
 
 
@@ -580,4 +595,3 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
-

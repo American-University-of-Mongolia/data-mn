@@ -1,0 +1,35 @@
+---
+title: 'Attendance and Punctuality by Member of Parliament'
+publishDate: 2026-09-23
+excerpt: 'Physical attendance, unexplained absence, approved leave, official assignments, and punctuality for 126 current MPs across 146 plenary sittings from October 2024 to September 2026.'
+category: 'Government & Politics'
+tags: ['mongolia', 'parliament', 'attendance', 'punctuality', 'members of parliament']
+keywords: ['mongolia parliament attendance', 'MP punctuality Mongolia', 'State Great Khural attendance']
+chartLayout: wide
+author: 'Data.mn'
+dataVersion: 1
+dataDate: 2026-09-22
+dataFiles:
+  - path: "/datasets/mp-parliament-attendance-all-en.csv"
+    format: "csv"
+    size: "310 KB"
+    description: "Download as CSV"
+  - path: "/datasets/mp-parliament-attendance.xlsx"
+    format: "xlsx"
+    size: "191 KB"
+    description: "Open in Excel"
+source:
+  name: 'State Great Khural of Mongolia'
+  url: 'https://att.parliament.mn/members'
+  tableId: 'Current Parliament plenary attendance dashboard'
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Physical attendance, unexplained absence, approved leave, official assignments, and punctuality for 126 current MPs across 146 plenary sittings from October 2024 to September 2026.
+
+<VegaChart
+  spec="/charts/mp-parliament-attendance-en.json"
+  title="Physical Attendance and Official On-Time Rate by MP"
+  caption="Click a party in the legend to hide or show its MPs. Physical attendance includes MPs recorded as on time or late. Official on-time rate is calculated only among physical appearances; scheduled-start punctuality is available in the downloads where Parliament published a scheduled time. No composite score is used."
+/>

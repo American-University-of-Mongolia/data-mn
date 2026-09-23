@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Одоогийн Улсын Их Хурлын 126 гишүүний 2024-10-17-ноос 2026-09-22 хүртэлх нэгдсэн хуралдааны биеэр оролцсон ирц ба албан ёсны цагтаа ирэлтийн хувь. Нэгдсэн оноо тооцоогүй.",
+  "data": {
+    "url": "/datasets/mp-parliament-attendance-mn.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [
+    {
+      "name": "hover",
+      "select": {"type": "point", "on": "pointerover", "clear": "pointerout"}
+    },
+    {
+      "name": "party_filter",
+      "value": [
+        {"нам": "Монгол Ардын Нам"},
+        {"нам": "Ардчилсан Нам"},
+        {"нам": "ХҮН Нам"},
+        {"нам": "Үндэсний эвсэл"},
+        {"нам": "Иргэний Зориг Ногоон Нам"}
+      ],
+      "select": {"type": "point", "fields": ["нам"], "toggle": true},
+      "bind": "legend"
+    }
+  ],
+  "mark": {"type": "point", "filled": true, "size": 105, "cursor": "pointer"},
+  "encoding": {
+    "x": {
+      "field": "биеэр_оролцсон_хувь",
+      "type": "quantitative",
+      "title": "Биеэр оролцсон хувь (%)",
+      "axis": {"format": ".0f", "grid": false}
+    },
+    "y": {
+      "field": "албан_ёсны_цагтаа_ирэлтийн_хувь",
+      "type": "quantitative",
+      "title": "Албан ёсоор цагтаа ирсэн хувь (%)",
+      "axis": {"format": ".0f"}
+    },
+    "color": {
+      "field": "нам",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Монгол Ардын Нам", "Ардчилсан Нам", "ХҮН Нам", "Үндэсний эвсэл", "Иргэний Зориг Ногоон Нам"],
+        "range": ["#e85d5d", "#4c78a8", "#7a6bb7", "#f2b134", "#4f9d69"]
+      },
+      "legend": {"orient": "top", "title": "Нам"}
+    },
+    "opacity": {
+      "condition": {"param": "party_filter", "value": 0.9},
+      "value": 0
+    },
+    "size": {
+      "condition": {"param": "hover", "empty": false, "value": 180},
+      "value": 105
+    },
+    "tooltip": [
+      {"field": "гишүүн", "title": "Гишүүн"},
+      {"field": "нам", "title": "Нам"},
+      {"field": "биеэр_оролцсон_хувь", "title": "Биеэр оролцсон (%)", "format": ".1f"},
+      {"field": "албан_ёсны_цагтаа_ирэлтийн_хувь", "title": "Албан ёсоор цагтаа (%)", "format": ".1f"},
+      {"field": "товлосон_цагтаа_ирэлтийн_хувь", "title": "Товлосон цагтаа (%)", "format": ".1f"},
+      {"field": "тайлбаргүй_таслалтын_хувь", "title": "Тайлбаргүй таслалт (%)", "format": ".1f"},
+      {"field": "хоцролтын_медиан_минут", "title": "Хоцролтын медиан минут", "format": ".1f"}
+    ]
+  },
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14},
+    "view": {"stroke": "transparent"}
+  }
+}

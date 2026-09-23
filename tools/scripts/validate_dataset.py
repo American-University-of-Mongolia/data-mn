@@ -982,9 +982,13 @@ def validate_all(dataset_id: str, base_dir: str) -> list[ValidationResult]:
     # ============================================
     definition_result = ValidationResult(f"Definition check for {dataset_id}", "Definition File")
 
-    # Try to find definition file for common sources
+    # Discover source directories instead of hard-coding the original sources;
+    # new first-class sources must pass validation without validator edits.
     sources_dir = os.path.join(base_dir, '..', 'tools', 'sources')
-    possible_sources = ['nso-1212', 'mrpam', 'mongolbank', 'ebarilga']
+    possible_sources = sorted(
+        entry for entry in os.listdir(sources_dir)
+        if os.path.isdir(os.path.join(sources_dir, entry, 'datasets'))
+    ) if os.path.isdir(sources_dir) else []
     definition_found = False
 
     for source in possible_sources:

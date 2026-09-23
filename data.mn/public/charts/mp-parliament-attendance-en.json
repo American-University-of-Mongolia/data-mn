@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Physical attendance versus official on-time rate for all 126 current Members of Parliament across plenary sittings from 2024-10-17 through 2026-09-22. No composite score is calculated.",
+  "data": {
+    "url": "/datasets/mp-parliament-attendance-en.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [
+    {
+      "name": "hover",
+      "select": {"type": "point", "on": "pointerover", "clear": "pointerout"}
+    },
+    {
+      "name": "party_filter",
+      "value": [
+        {"party": "Mongolian People’s Party"},
+        {"party": "Democratic Party"},
+        {"party": "HUN Party"},
+        {"party": "National Coalition"},
+        {"party": "Civil Will–Green Party"}
+      ],
+      "select": {"type": "point", "fields": ["party"], "toggle": true},
+      "bind": "legend"
+    }
+  ],
+  "mark": {"type": "point", "filled": true, "size": 105, "cursor": "pointer"},
+  "encoding": {
+    "x": {
+      "field": "physical_attendance_rate",
+      "type": "quantitative",
+      "title": "Physical attendance rate (%)",
+      "axis": {"format": ".0f", "grid": false}
+    },
+    "y": {
+      "field": "official_on_time_rate",
+      "type": "quantitative",
+      "title": "Official on-time rate (%)",
+      "axis": {"format": ".0f"}
+    },
+    "color": {
+      "field": "party",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Mongolian People’s Party", "Democratic Party", "HUN Party", "National Coalition", "Civil Will–Green Party"],
+        "range": ["#e85d5d", "#4c78a8", "#7a6bb7", "#f2b134", "#4f9d69"]
+      },
+      "legend": {"orient": "top", "title": "Party"}
+    },
+    "opacity": {
+      "condition": {"param": "party_filter", "value": 0.9},
+      "value": 0
+    },
+    "size": {
+      "condition": {"param": "hover", "empty": false, "value": 180},
+      "value": 105
+    },
+    "tooltip": [
+      {"field": "member", "title": "MP"},
+      {"field": "party", "title": "Party"},
+      {"field": "physical_attendance_rate", "title": "Physical attendance (%)", "format": ".1f"},
+      {"field": "official_on_time_rate", "title": "Official on-time (%)", "format": ".1f"},
+      {"field": "scheduled_on_time_rate", "title": "By scheduled start (%)", "format": ".1f"},
+      {"field": "unexplained_absence_rate", "title": "Unexplained absence (%)", "format": ".1f"},
+      {"field": "median_late_minutes", "title": "Median late minutes", "format": ".1f"}
+    ]
+  },
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14},
+    "view": {"stroke": "transparent"}
+  }
+}

@@ -92,6 +92,12 @@ Affected splits: `temperature-regional`, `temperature-ulaanbaatar`,
 **Resolution**: re-fetch the parent and regenerate all 4 splits once NSO
 republishes 2026-01. Until then the values stand as the source publishes them.
 
+**Still present after the 2026-09-18 republication.** The v3 refresh (parent
+through 2026-08) re-checked this: 2026-01 is still byte-identical to 2025-3, and
+a full pairwise scan of all 260 months finds that pair as the only exact
+duplicate in the table. So NSO republishing the table does not by itself clear
+the defect — re-verify after each refresh rather than assuming it is fixed.
+
 ### Inconsistent month codes
 
 The source mixes zero-padded and unpadded month labels: January-May 2025 appear

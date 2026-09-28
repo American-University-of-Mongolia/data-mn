@@ -332,7 +332,7 @@ def kb_size(path):
 def rewrite_mdx_datafiles(mdx_path, csv_name, xlsx_name, lang,
                           dataset_id=None):
     """Replace ONLY the dataFiles block; returns True if the text changed."""
-    text = mdx_path.read_text()
+    text = mdx_path.read_text(encoding="utf-8")
     m = re.match(r"^---\n(.*?)\n---\n(.*)$", text, re.DOTALL)
     if not m:
         raise ValueError(f"{mdx_path}: frontmatter not found")
@@ -394,7 +394,7 @@ def rewrite_mdx_datafiles(mdx_path, csv_name, xlsx_name, lang,
                                 + lines[end:])
     new_text = f"---\n{new_frontmatter}\n---\n{body}"
     if new_text != text:
-        mdx_path.write_text(new_text)
+        mdx_path.write_text(new_text, encoding="utf-8")
         return True
     return False
 
@@ -403,8 +403,8 @@ def spec_uses_file(dataset_id, filename):
     """True if any chart spec for the dataset references the file."""
     for spec in CHARTS.glob(f"{dataset_id}-*.json"):
         try:
-            text = spec.read_text()
-        except OSError:
+            text = spec.read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
             continue
         if filename in text:
             return True
@@ -585,7 +585,7 @@ def main():
     }
     out = json.dumps(summary, indent=2, ensure_ascii=False)
     if args.report:
-        Path(args.report).write_text(out)
+        Path(args.report).write_text(out, encoding="utf-8")
     else:
         print(out)
     if args.apply and summary["manual"]:

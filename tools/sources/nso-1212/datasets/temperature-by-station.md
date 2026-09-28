@@ -52,6 +52,58 @@ Weather stations across Mongolia:
 ### Month (Сар)
 Monthly data from January 2005 to present (YYYY-MM format)
 
+## Known Source Issues
+
+### 2026-01 is a duplicate of 2025-3 (open, verified 2026-09-28)
+
+The source table publishes **January 2026 as a verbatim copy of March 2025**. This
+affects all 4 indicators across all 29 stations. Our published data mirrors the
+source faithfully — this is not a transformation error, and re-fetching does not
+fix it.
+
+Example (Ulaanbaatar, `[avg, anomaly, max, min]`):
+
+```
+month code  7 -> "2026-01" -> [-4.1, 2.6, 16.9, -17.1]
+month code 17 -> "2025-3"  -> [-4.1, 2.6, 16.9, -17.1]
+```
+
+Evidence:
+
+- **Exact match**: all 29 stations x 4 indicators identical, `max|diff| = 0.0`.
+- **Isolated API query**: querying month code `7` alone returns March 2025's
+  values, so this is not a dimension-alignment bug in `fetch_data.py`.
+- **Climatology**: 2026-01 sits **+15.8 °C** above the 2005-2025 January mean
+  across 29 stations. Every other month in the series is within ±3.4 °C.
+- **Internal inconsistency**: the implied 1981-2010 January baseline
+  (`average - anomaly`) is stable to ±0.55 °C per station for 2005-2025, but
+  shifts **+14.3 °C** for 2026-01.
+- **Not a partial month**: all 29 stations are populated, and a partial January
+  cannot read 15 °C above normal.
+
+**The anomaly indicator is corrupt too.** `temperature-anomaly` reports +2.6 °C
+for 2026-01, which is March 2025's anomaly. It looks plausible only because
+anomalies are small numbers in any month — do not treat it as a cross-check that
+confirms the other indicators.
+
+Affected splits: `temperature-regional`, `temperature-ulaanbaatar`,
+`temperature-extremes-ulaanbaatar`, `temperature-anomaly`.
+
+**Resolution**: re-fetch the parent and regenerate all 4 splits once NSO
+republishes 2026-01. Until then the values stand as the source publishes them.
+
+**Still present after the 2026-09-18 republication.** The v3 refresh (parent
+through 2026-08) re-checked this: 2026-01 is still byte-identical to 2025-3, and
+a full pairwise scan of all 260 months finds that pair as the only exact
+duplicate in the table. So NSO republishing the table does not by itself clear
+the defect — re-verify after each refresh rather than assuming it is fixed.
+
+### Inconsistent month codes
+
+The source mixes zero-padded and unpadded month labels: January-May 2025 appear
+as `2025-1` … `2025-5`, while every other month uses `YYYY-MM`. The transforms
+normalize these to `YYYY-MM`, so `2025-3` is published as `2025-03`.
+
 ## Update Instructions
 
 ### Check for Updates
@@ -81,6 +133,16 @@ python3 fetch_data.py --table DT_NSO_2400_022V2.px --lang both --output ./output
 - Temperature values should be within reasonable range (-50°C to +45°C)
 - All months should have complete station coverage
 - Anomaly values should be small (typically -5 to +5°C range)
+- **No month should duplicate another month.** Compare each new month's
+  station vector against every existing month; an exact match means the source
+  republished stale data (see Known Source Issues).
+- **Each month should be within ~±5°C of its own calendar-month climatology.**
+  A range check alone does not catch this: -4.1°C is a valid temperature, just
+  not a valid *January* temperature.
+- **`average - anomaly` should be constant per station and calendar month**
+  (±1°C). This implied 1981-2010 baseline is the most sensitive cross-check
+  available, because it fails even when each indicator looks individually
+  plausible.
 
 ## Splits
 

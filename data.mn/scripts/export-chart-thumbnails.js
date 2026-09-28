@@ -18,6 +18,10 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { createCanvas } from 'canvas';
+import {
+  applyCategoricalLegendLayout,
+  categoricalLegendLabels,
+} from '../public/scripts/chart-legend-layout.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -29,6 +33,7 @@ const WIDTH = 800;
 const HEIGHT = 500; // 16:10 aspect ratio (800 * 0.625 = 500)
 const WEBP_QUALITY = 85;
 const DECIMAL_NUMBER_FORMAT = ',.6~f';
+const VALIDATE_LEGENDS_ONLY = process.argv.includes('--validate-legends');
 
 function normalizeNumberFormats(value) {
   if (Array.isArray(value)) {
@@ -100,12 +105,50 @@ const voxTheme = {
 };
 
 /**
+ * Return any rendered legend labels Vega shortened with an ellipsis.
+ */
+function truncatedLegendLabels(svg) {
+  const labels = [];
+  const legendLabelPattern = /<g\b[^>]*class="[^"]*role-legend-label[^"]*"[^>]*>[\s\S]*?<\/g>/g;
+  const textPattern = /<text\b[^>]*>([\s\S]*?)<\/text>/;
+  for (const group of svg.matchAll(legendLabelPattern)) {
+    const text = group[0].match(textPattern)?.[1] || '';
+    if (text.includes('…') || text.includes('&#8230;')) labels.push(text);
+  }
+  return labels;
+}
+
+/**
  * Export a single Vega-Lite chart to WebP
  */
 async function exportChart(specPath, outputPath) {
   const specContent = fs.readFileSync(specPath, 'utf-8');
   const spec = JSON.parse(specContent);
   normalizeNumberFormats(spec);
+
+  // Create Vega loader early so data-driven legend labels can inform layout.
+  // Query parameters are cache busters and are not part of local filenames.
+  const baseLoader = vega.loader({
+    baseURL: path.resolve(__dirname, '../public'),
+  });
+  const loader = {
+    ...baseLoader,
+    load: (uri, options) => baseLoader.load(uri.split('?')[0], options),
+    sanitize: baseLoader.sanitize.bind(baseLoader),
+    http: baseLoader.http.bind(baseLoader),
+    file: baseLoader.file.bind(baseLoader),
+  };
+
+  let legendLabels = categoricalLegendLabels(spec);
+  if (!legendLabels.length && spec.data?.url) {
+    const text = await loader.load(spec.data.url);
+    const rows = vega.read(text, {
+      type: spec.data.format?.type || 'csv',
+      parse: 'auto',
+    });
+    legendLabels = categoricalLegendLabels(spec, rows);
+  }
+  const legendLayout = applyCategoricalLegendLayout(spec, legendLabels, WIDTH - 120);
 
   // Merge spec config with vox theme, then our overrides
   // This matches how vega-embed applies themes in the browser
@@ -133,6 +176,8 @@ async function exportChart(specPath, outputPath) {
       legend: {
         ...voxTheme.legend,
         ...(existingConfig.legend || {}),
+        columns: legendLayout.columns,
+        labelLimit: legendLayout.labelLimit,
       },
       range: {
         ...voxTheme.range,
@@ -174,24 +219,6 @@ async function exportChart(specPath, outputPath) {
   // Compile Vega-Lite to Vega
   const vegaSpec = vegaLite.compile(chartSpec).spec;
 
-  // Create Vega view with loader for resolving /datasets/*.csv
-  // Custom loader that strips query parameters (e.g., ?v=2 cache busters)
-  const baseLoader = vega.loader({
-    baseURL: path.resolve(__dirname, '../public'),
-  });
-
-  const loader = {
-    ...baseLoader,
-    load: (uri, options) => {
-      // Strip query parameters from URLs for local file loading
-      const cleanUri = uri.split('?')[0];
-      return baseLoader.load(cleanUri, options);
-    },
-    sanitize: baseLoader.sanitize.bind(baseLoader),
-    http: baseLoader.http.bind(baseLoader),
-    file: baseLoader.file.bind(baseLoader),
-  };
-
   // Create Vega view for server-side rendering
   // Use 'none' renderer, then toCanvas() will use node-canvas
   const view = new vega.View(vega.parse(vegaSpec), {
@@ -203,6 +230,17 @@ async function exportChart(specPath, outputPath) {
 
   // Run the dataflow and render
   await view.runAsync();
+
+  const svg = await view.toSVG();
+  const truncatedLabels = truncatedLegendLabels(svg);
+  if (truncatedLabels.length) {
+    throw new Error(`truncated legend label(s): ${truncatedLabels.join(', ')}`);
+  }
+
+  if (VALIDATE_LEGENDS_ONLY) {
+    view.finalize();
+    return;
+  }
 
   // Get canvas buffer directly - Vega's toCanvas() returns a node-canvas instance
   const canvas = await view.toCanvas();
@@ -224,7 +262,7 @@ async function exportChart(specPath, outputPath) {
  * Main function - export all charts
  */
 async function main() {
-  console.log('🎨 Exporting chart thumbnails...\n');
+  console.log(VALIDATE_LEGENDS_ONLY ? '🔎 Validating chart legends...\n' : '🎨 Exporting chart thumbnails...\n');
 
   // Ensure output directory exists
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
@@ -255,7 +293,7 @@ async function main() {
 
     try {
       await exportChart(inputPath, outputPath);
-      console.log(`  ✓ ${file} → ${outputFile}`);
+      console.log(VALIDATE_LEGENDS_ONLY ? `  ✓ ${file}` : `  ✓ ${file} → ${outputFile}`);
       successCount++;
     } catch (error) {
       console.error(`  ✗ ${file}: ${error.message}`);
@@ -263,7 +301,9 @@ async function main() {
     }
   }
 
-  console.log(`\n✨ Done! ${successCount} exported, ${errorCount} failed`);
+  const action = VALIDATE_LEGENDS_ONLY ? 'validated' : 'exported';
+  console.log(`\n✨ Done! ${successCount} ${action}, ${errorCount} failed`);
+  if (errorCount) process.exitCode = 1;
 }
 
 // Run

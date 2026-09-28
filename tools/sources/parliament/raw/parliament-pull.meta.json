@@ -1,0 +1,32 @@
+{
+  "fetched_at": "2026-09-23T02:38:30.087777+00:00",
+  "source": {
+    "dashboard": "https://att.parliament.mn",
+    "sessions": "https://att.parliament.mn/sessions",
+    "publication_archive": "https://www.parliament.mn/nc/635/"
+  },
+  "coverage": {
+    "first_sitting": "2024-10-17",
+    "last_sitting": "2026-09-22"
+  },
+  "counts": {
+    "members": 126,
+    "sessions": 146,
+    "attendance_records": 18396,
+    "archive_posts": 409
+  },
+  "status_counts": {
+    "present": 10653,
+    "mission_foreign": 1099,
+    "late": 3948,
+    "absent_unexplained": 894,
+    "mission_local": 324,
+    "excused_general": 711,
+    "excused_medical": 767
+  },
+  "session_details_complete": true,
+  "archive_complete": true,
+  "attachments_complete": true,
+  "archive_reported_total": 409,
+  "attachment_links": 49
+}

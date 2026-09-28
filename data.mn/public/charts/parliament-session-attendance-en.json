@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Attendance-status counts across 146 plenary sittings of the current Mongolian Parliament from 2024-10-17 through 2026-09-22. Separate lines show each status and break across recesses longer than 14 days rather than implying data between sittings.",
+  "data": {
+    "url": "/datasets/parliament-session-attendance-en.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [
+    {
+      "name": "selectedCategories",
+      "value": ["On time", "Late", "Approved leave", "Official mission", "Unexplained absence"]
+    },
+    {"name": "yearStart", "value": 2024},
+    {"name": "yearEnd", "value": 2026}
+  ],
+  "transform": [
+    {"filter": "datum.year >= yearStart && datum.year <= yearEnd"},
+    {"filter": "indexof(selectedCategories, datum[\"status\"]) >= 0"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Sitting date",
+      "axis": {"format": "%Y-%m", "grid": false}
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Members of Parliament",
+      "axis": {"format": ",.0f"}
+    },
+    "color": {
+      "field": "status",
+      "type": "nominal",
+      "title": "Attendance status",
+      "sort": ["On time", "Late", "Approved leave", "Official mission", "Unexplained absence"],
+      "scale": {
+        "domain": ["On time", "Late", "Approved leave", "Official mission", "Unexplained absence"],
+        "range": ["#4c78a8", "#f58518", "#e45756", "#72b7b2", "#54a24b"]
+      },
+      "legend": {"orient": "top", "values": {"expr": "selectedCategories"}, "symbolType": "stroke"}
+    },
+    "detail": {"field": "period", "type": "nominal"}
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "linear"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "point", "filled": true, "size": 85},
+      "encoding": {
+        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "date", "title": "Date", "type": "temporal", "format": "%Y-%m-%d"},
+          {"field": "status", "title": "Status", "type": "nominal"},
+          {"field": "count", "title": "MPs", "type": "quantitative", "format": ",.0f"},
+          {"field": "scheduled_start", "title": "Scheduled start", "type": "nominal"},
+          {"field": "actual_start", "title": "Actual start", "type": "nominal"},
+          {"field": "start_delay_minutes", "title": "Start delay (minutes)", "type": "quantitative", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 14, "titleFontSize": 16, "labelColor": "#64748b", "titleColor": "#334155"},
+    "legend": {"labelFontSize": 13, "titleFontSize": 14},
+    "view": {"stroke": "transparent"}
+  },
+  "usermeta": {
+    "explorer": {
+      "categoryField": "status",
+      "yearField": "year",
+      "labels": {
+        "search": "Search attendance statuses…",
+        "noMatches": "No matching attendance status.",
+        "empty": "Choose at least one attendance status to display the chart."
+      }
+    }
+  }
+}

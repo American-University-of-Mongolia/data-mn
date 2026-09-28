@@ -1,0 +1,731 @@
+date,year,period,status,count,scheduled_start,actual_start,start_delay_minutes
+2024-10-17,2024,period-1,On time,69,,10:00,
+2024-10-17,2024,period-1,Late,31,,10:00,
+2024-10-17,2024,period-1,Approved leave,6,,10:00,
+2024-10-17,2024,period-1,Official mission,14,,10:00,
+2024-10-17,2024,period-1,Unexplained absence,6,,10:00,
+2024-10-18,2024,period-1,On time,78,,10:00,
+2024-10-18,2024,period-1,Late,20,,10:00,
+2024-10-18,2024,period-1,Approved leave,6,,10:00,
+2024-10-18,2024,period-1,Official mission,15,,10:00,
+2024-10-18,2024,period-1,Unexplained absence,7,,10:00,
+2024-10-25,2024,period-1,On time,72,,10:00,
+2024-10-25,2024,period-1,Late,35,,10:00,
+2024-10-25,2024,period-1,Approved leave,9,,10:00,
+2024-10-25,2024,period-1,Official mission,10,,10:00,
+2024-10-25,2024,period-1,Unexplained absence,0,,10:00,
+2024-10-31,2024,period-1,On time,73,,10:00,
+2024-10-31,2024,period-1,Late,29,,10:00,
+2024-10-31,2024,period-1,Approved leave,6,,10:00,
+2024-10-31,2024,period-1,Official mission,14,,10:00,
+2024-10-31,2024,period-1,Unexplained absence,4,,10:00,
+2024-11-01,2024,period-1,On time,70,10:00,,
+2024-11-01,2024,period-1,Late,30,10:00,,
+2024-11-01,2024,period-1,Approved leave,8,10:00,,
+2024-11-01,2024,period-1,Official mission,14,10:00,,
+2024-11-01,2024,period-1,Unexplained absence,4,10:00,,
+2024-11-08,2024,period-1,On time,72,10:00,,
+2024-11-08,2024,period-1,Late,35,10:00,,
+2024-11-08,2024,period-1,Approved leave,10,10:00,,
+2024-11-08,2024,period-1,Official mission,3,10:00,,
+2024-11-08,2024,period-1,Unexplained absence,6,10:00,,
+2024-11-14,2024,period-1,On time,79,,10:00,
+2024-11-14,2024,period-1,Late,32,,10:00,
+2024-11-14,2024,period-1,Approved leave,4,,10:00,
+2024-11-14,2024,period-1,Official mission,7,,10:00,
+2024-11-14,2024,period-1,Unexplained absence,4,,10:00,
+2024-11-15,2024,period-1,On time,71,,10:00,
+2024-11-15,2024,period-1,Late,34,,10:00,
+2024-11-15,2024,period-1,Approved leave,5,,10:00,
+2024-11-15,2024,period-1,Official mission,8,,10:00,
+2024-11-15,2024,period-1,Unexplained absence,8,,10:00,
+2024-11-21,2024,period-1,On time,69,10:00,10:02,2
+2024-11-21,2024,period-1,Late,25,10:00,10:02,2
+2024-11-21,2024,period-1,Approved leave,6,10:00,10:02,2
+2024-11-21,2024,period-1,Official mission,22,10:00,10:02,2
+2024-11-21,2024,period-1,Unexplained absence,4,10:00,10:02,2
+2024-11-22,2024,period-1,On time,70,15:00,15:06,6
+2024-11-22,2024,period-1,Late,20,15:00,15:06,6
+2024-11-22,2024,period-1,Approved leave,7,15:00,15:06,6
+2024-11-22,2024,period-1,Official mission,19,15:00,15:06,6
+2024-11-22,2024,period-1,Unexplained absence,10,15:00,15:06,6
+2024-11-28,2024,period-1,On time,49,10:00,,
+2024-11-28,2024,period-1,Late,36,10:00,,
+2024-11-28,2024,period-1,Approved leave,3,10:00,,
+2024-11-28,2024,period-1,Official mission,36,10:00,,
+2024-11-28,2024,period-1,Unexplained absence,2,10:00,,
+2024-11-29,2024,period-1,On time,68,10:00,10:06,6
+2024-11-29,2024,period-1,Late,19,10:00,10:06,6
+2024-11-29,2024,period-1,Approved leave,4,10:00,10:06,6
+2024-11-29,2024,period-1,Official mission,31,10:00,10:06,6
+2024-11-29,2024,period-1,Unexplained absence,4,10:00,10:06,6
+2024-12-02,2024,period-1,On time,66,14:00,14:17,17
+2024-12-02,2024,period-1,Late,5,14:00,14:17,17
+2024-12-02,2024,period-1,Approved leave,5,14:00,14:17,17
+2024-12-02,2024,period-1,Official mission,21,14:00,14:17,17
+2024-12-02,2024,period-1,Unexplained absence,29,14:00,14:17,17
+2024-12-03,2024,period-1,On time,75,,10:00,
+2024-12-03,2024,period-1,Late,30,,10:00,
+2024-12-03,2024,period-1,Approved leave,6,,10:00,
+2024-12-03,2024,period-1,Official mission,14,,10:00,
+2024-12-03,2024,period-1,Unexplained absence,1,,10:00,
+2024-12-04,2024,period-1,On time,68,11:00,,
+2024-12-04,2024,period-1,Late,28,11:00,,
+2024-12-04,2024,period-1,Approved leave,7,11:00,,
+2024-12-04,2024,period-1,Official mission,12,11:00,,
+2024-12-04,2024,period-1,Unexplained absence,11,11:00,,
+2024-12-05,2024,period-1,On time,86,10:00,,
+2024-12-05,2024,period-1,Late,20,10:00,,
+2024-12-05,2024,period-1,Approved leave,7,10:00,,
+2024-12-05,2024,period-1,Official mission,9,10:00,,
+2024-12-05,2024,period-1,Unexplained absence,4,10:00,,
+2024-12-06,2024,period-1,On time,62,10:00,,
+2024-12-06,2024,period-1,Late,40,10:00,,
+2024-12-06,2024,period-1,Approved leave,9,10:00,,
+2024-12-06,2024,period-1,Official mission,10,10:00,,
+2024-12-06,2024,period-1,Unexplained absence,5,10:00,,
+2024-12-11,2024,period-1,On time,82,15:00,15:05,5
+2024-12-11,2024,period-1,Late,33,15:00,15:05,5
+2024-12-11,2024,period-1,Approved leave,6,15:00,15:05,5
+2024-12-11,2024,period-1,Official mission,2,15:00,15:05,5
+2024-12-11,2024,period-1,Unexplained absence,3,15:00,15:05,5
+2024-12-12,2024,period-1,On time,85,10:00,10:28,28
+2024-12-12,2024,period-1,Late,25,10:00,10:28,28
+2024-12-12,2024,period-1,Approved leave,7,10:00,10:28,28
+2024-12-12,2024,period-1,Official mission,2,10:00,10:28,28
+2024-12-12,2024,period-1,Unexplained absence,7,10:00,10:28,28
+2024-12-13,2024,period-1,On time,52,10:00,,
+2024-12-13,2024,period-1,Late,51,10:00,,
+2024-12-13,2024,period-1,Approved leave,11,10:00,,
+2024-12-13,2024,period-1,Official mission,2,10:00,,
+2024-12-13,2024,period-1,Unexplained absence,10,10:00,,
+2024-12-20,2024,period-1,On time,69,10:00,10:03,3
+2024-12-20,2024,period-1,Late,30,10:00,10:03,3
+2024-12-20,2024,period-1,Approved leave,8,10:00,10:03,3
+2024-12-20,2024,period-1,Official mission,10,10:00,10:03,3
+2024-12-20,2024,period-1,Unexplained absence,9,10:00,10:03,3
+2024-12-26,2024,period-1,On time,71,10:00,10:05,5
+2024-12-26,2024,period-1,Late,34,10:00,10:05,5
+2024-12-26,2024,period-1,Approved leave,8,10:00,10:05,5
+2024-12-26,2024,period-1,Official mission,6,10:00,10:05,5
+2024-12-26,2024,period-1,Unexplained absence,7,10:00,10:05,5
+2024-12-27,2024,period-1,On time,73,10:00,10:03,3
+2024-12-27,2024,period-1,Late,34,10:00,10:03,3
+2024-12-27,2024,period-1,Approved leave,11,10:00,10:03,3
+2024-12-27,2024,period-1,Official mission,4,10:00,10:03,3
+2024-12-27,2024,period-1,Unexplained absence,4,10:00,10:03,3
+2025-01-09,2025,period-1,On time,75,10:00,10:02,2
+2025-01-09,2025,period-1,Late,19,10:00,10:02,2
+2025-01-09,2025,period-1,Approved leave,21,10:00,10:02,2
+2025-01-09,2025,period-1,Official mission,8,10:00,10:02,2
+2025-01-09,2025,period-1,Unexplained absence,3,10:00,10:02,2
+2025-01-10,2025,period-1,On time,74,14:00,16:29,149
+2025-01-10,2025,period-1,Late,23,14:00,16:29,149
+2025-01-10,2025,period-1,Approved leave,21,14:00,16:29,149
+2025-01-10,2025,period-1,Official mission,6,14:00,16:29,149
+2025-01-10,2025,period-1,Unexplained absence,2,14:00,16:29,149
+2025-01-16,2025,period-1,On time,65,10:00,10:04,4
+2025-01-16,2025,period-1,Late,28,10:00,10:04,4
+2025-01-16,2025,period-1,Approved leave,16,10:00,10:04,4
+2025-01-16,2025,period-1,Official mission,15,10:00,10:04,4
+2025-01-16,2025,period-1,Unexplained absence,2,10:00,10:04,4
+2025-01-17,2025,period-1,On time,53,,10:00,
+2025-01-17,2025,period-1,Late,38,,10:00,
+2025-01-17,2025,period-1,Approved leave,18,,10:00,
+2025-01-17,2025,period-1,Official mission,16,,10:00,
+2025-01-17,2025,period-1,Unexplained absence,1,,10:00,
+2025-01-23,2025,period-1,On time,88,10:00,10:09,9
+2025-01-23,2025,period-1,Late,12,10:00,10:09,9
+2025-01-23,2025,period-1,Approved leave,19,10:00,10:09,9
+2025-01-23,2025,period-1,Official mission,5,10:00,10:09,9
+2025-01-23,2025,period-1,Unexplained absence,2,10:00,10:09,9
+2025-01-24,2025,period-1,On time,50,,10:00,
+2025-01-24,2025,period-1,Late,50,,10:00,
+2025-01-24,2025,period-1,Approved leave,19,,10:00,
+2025-01-24,2025,period-1,Official mission,6,,10:00,
+2025-01-24,2025,period-1,Unexplained absence,1,,10:00,
+2025-03-17,2025,period-2,On time,83,,10:00,
+2025-03-17,2025,period-2,Late,32,,10:00,
+2025-03-17,2025,period-2,Approved leave,3,,10:00,
+2025-03-17,2025,period-2,Official mission,7,,10:00,
+2025-03-17,2025,period-2,Unexplained absence,1,,10:00,
+2025-03-27,2025,period-2,On time,86,,10:00,
+2025-03-27,2025,period-2,Late,24,,10:00,
+2025-03-27,2025,period-2,Approved leave,3,,10:00,
+2025-03-27,2025,period-2,Official mission,11,,10:00,
+2025-03-27,2025,period-2,Unexplained absence,2,,10:00,
+2025-03-28,2025,period-2,On time,73,,10:00,
+2025-03-28,2025,period-2,Late,31,,10:00,
+2025-03-28,2025,period-2,Approved leave,5,,10:00,
+2025-03-28,2025,period-2,Official mission,15,,10:00,
+2025-03-28,2025,period-2,Unexplained absence,2,,10:00,
+2025-03-31,2025,period-2,On time,78,,10:00,
+2025-03-31,2025,period-2,Late,31,,10:00,
+2025-03-31,2025,period-2,Approved leave,7,,10:00,
+2025-03-31,2025,period-2,Official mission,7,,10:00,
+2025-03-31,2025,period-2,Unexplained absence,3,,10:00,
+2025-04-03,2025,period-2,On time,81,,10:00,
+2025-04-03,2025,period-2,Late,32,,10:00,
+2025-04-03,2025,period-2,Approved leave,4,,10:00,
+2025-04-03,2025,period-2,Official mission,8,,10:00,
+2025-04-03,2025,period-2,Unexplained absence,1,,10:00,
+2025-04-04,2025,period-2,On time,78,,10:00,
+2025-04-04,2025,period-2,Late,31,,10:00,
+2025-04-04,2025,period-2,Approved leave,7,,10:00,
+2025-04-04,2025,period-2,Official mission,9,,10:00,
+2025-04-04,2025,period-2,Unexplained absence,1,,10:00,
+2025-04-10,2025,period-2,On time,69,,10:00,
+2025-04-10,2025,period-2,Late,30,,10:00,
+2025-04-10,2025,period-2,Approved leave,11,,10:00,
+2025-04-10,2025,period-2,Official mission,14,,10:00,
+2025-04-10,2025,period-2,Unexplained absence,2,,10:00,
+2025-04-11,2025,period-2,On time,66,,10:00,
+2025-04-11,2025,period-2,Late,23,,10:00,
+2025-04-11,2025,period-2,Approved leave,15,,10:00,
+2025-04-11,2025,period-2,Official mission,13,,10:00,
+2025-04-11,2025,period-2,Unexplained absence,9,,10:00,
+2025-04-17,2025,period-2,On time,83,,10:00,
+2025-04-17,2025,period-2,Late,26,,10:00,
+2025-04-17,2025,period-2,Approved leave,11,,10:00,
+2025-04-17,2025,period-2,Official mission,5,,10:00,
+2025-04-17,2025,period-2,Unexplained absence,1,,10:00,
+2025-04-18,2025,period-2,On time,81,,10:00,
+2025-04-18,2025,period-2,Late,25,,10:00,
+2025-04-18,2025,period-2,Approved leave,14,,10:00,
+2025-04-18,2025,period-2,Official mission,5,,10:00,
+2025-04-18,2025,period-2,Unexplained absence,1,,10:00,
+2025-04-24,2025,period-2,On time,83,,10:00,
+2025-04-24,2025,period-2,Late,24,,10:00,
+2025-04-24,2025,period-2,Approved leave,8,,10:00,
+2025-04-24,2025,period-2,Official mission,11,,10:00,
+2025-04-24,2025,period-2,Unexplained absence,0,,10:00,
+2025-04-25,2025,period-2,On time,93,10:00,10:03,3
+2025-04-25,2025,period-2,Late,14,10:00,10:03,3
+2025-04-25,2025,period-2,Approved leave,9,10:00,10:03,3
+2025-04-25,2025,period-2,Official mission,7,10:00,10:03,3
+2025-04-25,2025,period-2,Unexplained absence,3,10:00,10:03,3
+2025-05-01,2025,period-2,On time,77,,10:00,
+2025-05-01,2025,period-2,Late,23,,10:00,
+2025-05-01,2025,period-2,Approved leave,10,,10:00,
+2025-05-01,2025,period-2,Official mission,10,,10:00,
+2025-05-01,2025,period-2,Unexplained absence,6,,10:00,
+2025-05-02,2025,period-2,On time,77,,10:00,
+2025-05-02,2025,period-2,Late,18,,10:00,
+2025-05-02,2025,period-2,Approved leave,10,,10:00,
+2025-05-02,2025,period-2,Official mission,9,,10:00,
+2025-05-02,2025,period-2,Unexplained absence,12,,10:00,
+2025-05-08,2025,period-2,On time,69,,10:00,
+2025-05-08,2025,period-2,Late,27,,10:00,
+2025-05-08,2025,period-2,Approved leave,6,,10:00,
+2025-05-08,2025,period-2,Official mission,19,,10:00,
+2025-05-08,2025,period-2,Unexplained absence,5,,10:00,
+2025-05-09,2025,period-2,On time,77,10:00,10:01,1
+2025-05-09,2025,period-2,Late,20,10:00,10:01,1
+2025-05-09,2025,period-2,Approved leave,5,10:00,10:01,1
+2025-05-09,2025,period-2,Official mission,20,10:00,10:01,1
+2025-05-09,2025,period-2,Unexplained absence,4,10:00,10:01,1
+2025-05-15,2025,period-2,On time,68,10:00,10:05,5
+2025-05-15,2025,period-2,Late,18,10:00,10:05,5
+2025-05-15,2025,period-2,Approved leave,2,10:00,10:05,5
+2025-05-15,2025,period-2,Official mission,35,10:00,10:05,5
+2025-05-15,2025,period-2,Unexplained absence,3,10:00,10:05,5
+2025-05-16,2025,period-2,On time,66,,10:00,
+2025-05-16,2025,period-2,Late,26,,10:00,
+2025-05-16,2025,period-2,Approved leave,6,,10:00,
+2025-05-16,2025,period-2,Official mission,28,,10:00,
+2025-05-16,2025,period-2,Unexplained absence,0,,10:00,
+2025-05-22,2025,period-2,On time,68,10:00,10:25,25
+2025-05-22,2025,period-2,Late,24,10:00,10:25,25
+2025-05-22,2025,period-2,Approved leave,9,10:00,10:25,25
+2025-05-22,2025,period-2,Official mission,11,10:00,10:25,25
+2025-05-22,2025,period-2,Unexplained absence,14,10:00,10:25,25
+2025-05-23,2025,period-2,On time,65,,14:00,
+2025-05-23,2025,period-2,Late,32,,14:00,
+2025-05-23,2025,period-2,Approved leave,8,,14:00,
+2025-05-23,2025,period-2,Official mission,11,,14:00,
+2025-05-23,2025,period-2,Unexplained absence,10,,14:00,
+2025-05-26,2025,period-2,On time,100,11:00,11:20,20
+2025-05-26,2025,period-2,Late,13,11:00,11:20,20
+2025-05-26,2025,period-2,Approved leave,5,11:00,11:20,20
+2025-05-26,2025,period-2,Official mission,5,11:00,11:20,20
+2025-05-26,2025,period-2,Unexplained absence,3,11:00,11:20,20
+2025-05-29,2025,period-2,On time,71,,10:00,
+2025-05-29,2025,period-2,Late,37,,10:00,
+2025-05-29,2025,period-2,Approved leave,8,,10:00,
+2025-05-29,2025,period-2,Official mission,4,,10:00,
+2025-05-29,2025,period-2,Unexplained absence,6,,10:00,
+2025-05-30,2025,period-2,On time,69,10:00,10:01,1
+2025-05-30,2025,period-2,Late,35,10:00,10:01,1
+2025-05-30,2025,period-2,Approved leave,11,10:00,10:01,1
+2025-05-30,2025,period-2,Official mission,5,10:00,10:01,1
+2025-05-30,2025,period-2,Unexplained absence,6,10:00,10:01,1
+2025-06-02,2025,period-2,On time,105,14:00,17:44,224
+2025-06-02,2025,period-2,Late,15,14:00,17:44,224
+2025-06-02,2025,period-2,Approved leave,3,14:00,17:44,224
+2025-06-02,2025,period-2,Official mission,2,14:00,17:44,224
+2025-06-02,2025,period-2,Unexplained absence,1,14:00,17:44,224
+2025-06-05,2025,period-2,On time,70,,10:00,
+2025-06-05,2025,period-2,Late,25,,10:00,
+2025-06-05,2025,period-2,Approved leave,4,,10:00,
+2025-06-05,2025,period-2,Official mission,3,,10:00,
+2025-06-05,2025,period-2,Unexplained absence,24,,10:00,
+2025-06-12,2025,period-2,On time,67,10:00,10:04,4
+2025-06-12,2025,period-2,Late,52,10:00,10:04,4
+2025-06-12,2025,period-2,Approved leave,3,10:00,10:04,4
+2025-06-12,2025,period-2,Official mission,3,10:00,10:04,4
+2025-06-12,2025,period-2,Unexplained absence,1,10:00,10:04,4
+2025-06-13,2025,period-2,On time,67,10:00,10:11,11
+2025-06-13,2025,period-2,Late,41,10:00,10:11,11
+2025-06-13,2025,period-2,Approved leave,9,10:00,10:11,11
+2025-06-13,2025,period-2,Official mission,3,10:00,10:11,11
+2025-06-13,2025,period-2,Unexplained absence,6,10:00,10:11,11
+2025-06-17,2025,period-2,On time,65,17:00,17:06,6
+2025-06-17,2025,period-2,Late,36,17:00,17:06,6
+2025-06-17,2025,period-2,Approved leave,4,17:00,17:06,6
+2025-06-17,2025,period-2,Official mission,5,17:00,17:06,6
+2025-06-17,2025,period-2,Unexplained absence,16,17:00,17:06,6
+2025-06-19,2025,period-2,On time,70,,10:00,
+2025-06-19,2025,period-2,Late,36,,10:00,
+2025-06-19,2025,period-2,Approved leave,8,,10:00,
+2025-06-19,2025,period-2,Official mission,9,,10:00,
+2025-06-19,2025,period-2,Unexplained absence,3,,10:00,
+2025-06-20,2025,period-2,On time,65,10:00,10:10,10
+2025-06-20,2025,period-2,Late,33,10:00,10:10,10
+2025-06-20,2025,period-2,Approved leave,12,10:00,10:10,10
+2025-06-20,2025,period-2,Official mission,14,10:00,10:10,10
+2025-06-20,2025,period-2,Unexplained absence,2,10:00,10:10,10
+2025-06-23,2025,period-2,On time,51,14:00,14:02,2
+2025-06-23,2025,period-2,Late,55,14:00,14:02,2
+2025-06-23,2025,period-2,Approved leave,6,14:00,14:02,2
+2025-06-23,2025,period-2,Official mission,11,14:00,14:02,2
+2025-06-23,2025,period-2,Unexplained absence,3,14:00,14:02,2
+2025-06-24,2025,period-2,On time,81,14:00,15:01,61
+2025-06-24,2025,period-2,Late,5,14:00,15:01,61
+2025-06-24,2025,period-2,Approved leave,11,14:00,15:01,61
+2025-06-24,2025,period-2,Official mission,10,14:00,15:01,61
+2025-06-24,2025,period-2,Unexplained absence,19,14:00,15:01,61
+2025-06-25,2025,period-2,On time,84,14:00,14:17,17
+2025-06-25,2025,period-2,Late,19,14:00,14:17,17
+2025-06-25,2025,period-2,Approved leave,10,14:00,14:17,17
+2025-06-25,2025,period-2,Official mission,6,14:00,14:17,17
+2025-06-25,2025,period-2,Unexplained absence,7,14:00,14:17,17
+2025-06-26,2025,period-2,On time,73,10:00,10:05,5
+2025-06-26,2025,period-2,Late,18,10:00,10:05,5
+2025-06-26,2025,period-2,Approved leave,7,10:00,10:05,5
+2025-06-26,2025,period-2,Official mission,14,10:00,10:05,5
+2025-06-26,2025,period-2,Unexplained absence,14,10:00,10:05,5
+2025-06-27,2025,period-2,On time,65,10:00,10:03,3
+2025-06-27,2025,period-2,Late,35,10:00,10:03,3
+2025-06-27,2025,period-2,Approved leave,8,10:00,10:03,3
+2025-06-27,2025,period-2,Official mission,15,10:00,10:03,3
+2025-06-27,2025,period-2,Unexplained absence,3,10:00,10:03,3
+2025-07-02,2025,period-2,On time,73,14:00,14:07,7
+2025-07-02,2025,period-2,Late,36,14:00,14:07,7
+2025-07-02,2025,period-2,Approved leave,10,14:00,14:07,7
+2025-07-02,2025,period-2,Official mission,4,14:00,14:07,7
+2025-07-02,2025,period-2,Unexplained absence,3,14:00,14:07,7
+2025-07-03,2025,period-2,On time,83,14:00,14:05,5
+2025-07-03,2025,period-2,Late,29,14:00,14:05,5
+2025-07-03,2025,period-2,Approved leave,8,14:00,14:05,5
+2025-07-03,2025,period-2,Official mission,5,14:00,14:05,5
+2025-07-03,2025,period-2,Unexplained absence,1,14:00,14:05,5
+2025-07-04,2025,period-2,On time,73,10:00,10:10,10
+2025-07-04,2025,period-2,Late,40,10:00,10:10,10
+2025-07-04,2025,period-2,Approved leave,6,10:00,10:10,10
+2025-07-04,2025,period-2,Official mission,3,10:00,10:10,10
+2025-07-04,2025,period-2,Unexplained absence,4,10:00,10:10,10
+2025-07-08,2025,period-2,On time,59,,10:00,
+2025-07-08,2025,period-2,Late,50,,10:00,
+2025-07-08,2025,period-2,Approved leave,9,,10:00,
+2025-07-08,2025,period-2,Official mission,8,,10:00,
+2025-07-08,2025,period-2,Unexplained absence,0,,10:00,
+2025-07-09,2025,period-2,On time,70,10:00,08:07,-113
+2025-07-09,2025,period-2,Late,37,10:00,08:07,-113
+2025-07-09,2025,period-2,Approved leave,10,10:00,08:07,-113
+2025-07-09,2025,period-2,Official mission,6,10:00,08:07,-113
+2025-07-09,2025,period-2,Unexplained absence,3,10:00,08:07,-113
+2025-09-15,2025,period-3,On time,112,10:00,10:02,2
+2025-09-15,2025,period-3,Late,6,10:00,10:02,2
+2025-09-15,2025,period-3,Approved leave,6,10:00,10:02,2
+2025-09-15,2025,period-3,Official mission,0,10:00,10:02,2
+2025-09-15,2025,period-3,Unexplained absence,2,10:00,10:02,2
+2025-09-17,2025,period-3,On time,87,,10:00,
+2025-09-17,2025,period-3,Late,27,,10:00,
+2025-09-17,2025,period-3,Approved leave,7,,10:00,
+2025-09-17,2025,period-3,Official mission,4,,10:00,
+2025-09-17,2025,period-3,Unexplained absence,1,,10:00,
+2025-09-18,2025,period-3,On time,81,,10:00,
+2025-09-18,2025,period-3,Late,31,,10:00,
+2025-09-18,2025,period-3,Approved leave,5,,10:00,
+2025-09-18,2025,period-3,Official mission,7,,10:00,
+2025-09-18,2025,period-3,Unexplained absence,2,,10:00,
+2025-09-19,2025,period-3,On time,66,,10:00,
+2025-09-19,2025,period-3,Late,41,,10:00,
+2025-09-19,2025,period-3,Approved leave,7,,10:00,
+2025-09-19,2025,period-3,Official mission,11,,10:00,
+2025-09-19,2025,period-3,Unexplained absence,1,,10:00,
+2025-09-23,2025,period-3,On time,71,14:00,14:02,2
+2025-09-23,2025,period-3,Late,32,14:00,14:02,2
+2025-09-23,2025,period-3,Approved leave,6,14:00,14:02,2
+2025-09-23,2025,period-3,Official mission,13,14:00,14:02,2
+2025-09-23,2025,period-3,Unexplained absence,4,14:00,14:02,2
+2025-09-24,2025,period-3,On time,70,10:00,10:02,2
+2025-09-24,2025,period-3,Late,38,10:00,10:02,2
+2025-09-24,2025,period-3,Approved leave,5,10:00,10:02,2
+2025-09-24,2025,period-3,Official mission,9,10:00,10:02,2
+2025-09-24,2025,period-3,Unexplained absence,4,10:00,10:02,2
+2025-09-26,2025,period-3,On time,79,10:00,10:02,2
+2025-09-26,2025,period-3,Late,24,10:00,10:02,2
+2025-09-26,2025,period-3,Approved leave,7,10:00,10:02,2
+2025-09-26,2025,period-3,Official mission,13,10:00,10:02,2
+2025-09-26,2025,period-3,Unexplained absence,3,10:00,10:02,2
+2025-10-02,2025,period-3,On time,74,,10:00,
+2025-10-02,2025,period-3,Late,24,,10:00,
+2025-10-02,2025,period-3,Approved leave,6,,10:00,
+2025-10-02,2025,period-3,Official mission,13,,10:00,
+2025-10-02,2025,period-3,Unexplained absence,9,,10:00,
+2025-10-09,2025,period-3,On time,80,10:00,10:03,3
+2025-10-09,2025,period-3,Late,28,10:00,10:03,3
+2025-10-09,2025,period-3,Approved leave,7,10:00,10:03,3
+2025-10-09,2025,period-3,Official mission,1,10:00,10:03,3
+2025-10-09,2025,period-3,Unexplained absence,10,10:00,10:03,3
+2025-10-16,2025,period-3,On time,21,10:00,,
+2025-10-16,2025,period-3,Late,94,10:00,,
+2025-10-16,2025,period-3,Approved leave,1,10:00,,
+2025-10-16,2025,period-3,Official mission,3,10:00,,
+2025-10-16,2025,period-3,Unexplained absence,7,10:00,,
+2025-10-24,2025,period-3,On time,91,10:00,10:32,32
+2025-10-24,2025,period-3,Late,11,10:00,10:32,32
+2025-10-24,2025,period-3,Approved leave,10,10:00,10:32,32
+2025-10-24,2025,period-3,Official mission,4,10:00,10:32,32
+2025-10-24,2025,period-3,Unexplained absence,10,10:00,10:32,32
+2025-10-30,2025,period-3,On time,69,10:00,10:04,4
+2025-10-30,2025,period-3,Late,12,10:00,10:04,4
+2025-10-30,2025,period-3,Approved leave,13,10:00,10:04,4
+2025-10-30,2025,period-3,Official mission,5,10:00,10:04,4
+2025-10-30,2025,period-3,Unexplained absence,27,10:00,10:04,4
+2025-10-31,2025,period-3,On time,67,,14:00,
+2025-10-31,2025,period-3,Late,34,,14:00,
+2025-10-31,2025,period-3,Approved leave,16,,14:00,
+2025-10-31,2025,period-3,Official mission,2,,14:00,
+2025-10-31,2025,period-3,Unexplained absence,7,,14:00,
+2025-11-05,2025,period-3,On time,77,14:00,14:03,3
+2025-11-05,2025,period-3,Late,24,14:00,14:03,3
+2025-11-05,2025,period-3,Approved leave,9,14:00,14:03,3
+2025-11-05,2025,period-3,Official mission,8,14:00,14:03,3
+2025-11-05,2025,period-3,Unexplained absence,8,14:00,14:03,3
+2025-11-06,2025,period-3,On time,72,10:00,10:04,4
+2025-11-06,2025,period-3,Late,33,10:00,10:04,4
+2025-11-06,2025,period-3,Approved leave,11,10:00,10:04,4
+2025-11-06,2025,period-3,Official mission,8,10:00,10:04,4
+2025-11-06,2025,period-3,Unexplained absence,2,10:00,10:04,4
+2025-11-07,2025,period-3,On time,66,10:00,10:33,33
+2025-11-07,2025,period-3,Late,34,10:00,10:33,33
+2025-11-07,2025,period-3,Approved leave,15,10:00,10:33,33
+2025-11-07,2025,period-3,Official mission,8,10:00,10:33,33
+2025-11-07,2025,period-3,Unexplained absence,3,10:00,10:33,33
+2025-11-10,2025,period-3,On time,81,16:00,16:19,19
+2025-11-10,2025,period-3,Late,18,16:00,16:19,19
+2025-11-10,2025,period-3,Approved leave,15,16:00,16:19,19
+2025-11-10,2025,period-3,Official mission,4,16:00,16:19,19
+2025-11-10,2025,period-3,Unexplained absence,8,16:00,16:19,19
+2025-11-11,2025,period-3,On time,68,14:00,14:08,8
+2025-11-11,2025,period-3,Late,25,14:00,14:08,8
+2025-11-11,2025,period-3,Approved leave,17,14:00,14:08,8
+2025-11-11,2025,period-3,Official mission,5,14:00,14:08,8
+2025-11-11,2025,period-3,Unexplained absence,11,14:00,14:08,8
+2025-11-12,2025,period-3,On time,74,14:00,14:06,6
+2025-11-12,2025,period-3,Late,27,14:00,14:06,6
+2025-11-12,2025,period-3,Approved leave,15,14:00,14:06,6
+2025-11-12,2025,period-3,Official mission,4,14:00,14:06,6
+2025-11-12,2025,period-3,Unexplained absence,6,14:00,14:06,6
+2025-11-13,2025,period-3,On time,69,10:00,10:10,10
+2025-11-13,2025,period-3,Late,28,10:00,10:10,10
+2025-11-13,2025,period-3,Approved leave,17,10:00,10:10,10
+2025-11-13,2025,period-3,Official mission,4,10:00,10:10,10
+2025-11-13,2025,period-3,Unexplained absence,8,10:00,10:10,10
+2025-11-14,2025,period-3,On time,64,10:00,10:10,10
+2025-11-14,2025,period-3,Late,27,10:00,10:10,10
+2025-11-14,2025,period-3,Approved leave,16,10:00,10:10,10
+2025-11-14,2025,period-3,Official mission,5,10:00,10:10,10
+2025-11-14,2025,period-3,Unexplained absence,14,10:00,10:10,10
+2025-11-20,2025,period-3,On time,84,10:00,10:32,32
+2025-11-20,2025,period-3,Late,13,10:00,10:32,32
+2025-11-20,2025,period-3,Approved leave,12,10:00,10:32,32
+2025-11-20,2025,period-3,Official mission,9,10:00,10:32,32
+2025-11-20,2025,period-3,Unexplained absence,8,10:00,10:32,32
+2025-11-25,2025,period-3,On time,65,15:00,15:51,51
+2025-11-25,2025,period-3,Late,16,15:00,15:51,51
+2025-11-25,2025,period-3,Approved leave,15,15:00,15:51,51
+2025-11-25,2025,period-3,Official mission,17,15:00,15:51,51
+2025-11-25,2025,period-3,Unexplained absence,13,15:00,15:51,51
+2025-11-27,2025,period-3,On time,69,10:00,10:12,12
+2025-11-27,2025,period-3,Late,21,10:00,10:12,12
+2025-11-27,2025,period-3,Approved leave,11,10:00,10:12,12
+2025-11-27,2025,period-3,Official mission,21,10:00,10:12,12
+2025-11-27,2025,period-3,Unexplained absence,4,10:00,10:12,12
+2025-11-28,2025,period-3,On time,75,10:00,10:34,34
+2025-11-28,2025,period-3,Late,13,10:00,10:34,34
+2025-11-28,2025,period-3,Approved leave,10,10:00,10:34,34
+2025-11-28,2025,period-3,Official mission,25,10:00,10:34,34
+2025-11-28,2025,period-3,Unexplained absence,3,10:00,10:34,34
+2025-12-04,2025,period-3,On time,65,10:00,10:40,40
+2025-12-04,2025,period-3,Late,13,10:00,10:40,40
+2025-12-04,2025,period-3,Approved leave,12,10:00,10:40,40
+2025-12-04,2025,period-3,Official mission,32,10:00,10:40,40
+2025-12-04,2025,period-3,Unexplained absence,4,10:00,10:40,40
+2025-12-05,2025,period-3,On time,64,10:00,10:29,29
+2025-12-05,2025,period-3,Late,8,10:00,10:29,29
+2025-12-05,2025,period-3,Approved leave,16,10:00,10:29,29
+2025-12-05,2025,period-3,Official mission,29,10:00,10:29,29
+2025-12-05,2025,period-3,Unexplained absence,9,10:00,10:29,29
+2025-12-11,2025,period-3,On time,65,10:00,10:20,20
+2025-12-11,2025,period-3,Late,34,10:00,10:20,20
+2025-12-11,2025,period-3,Approved leave,15,10:00,10:20,20
+2025-12-11,2025,period-3,Official mission,10,10:00,10:20,20
+2025-12-11,2025,period-3,Unexplained absence,2,10:00,10:20,20
+2025-12-12,2025,period-3,On time,70,10:00,10:06,6
+2025-12-12,2025,period-3,Late,27,10:00,10:06,6
+2025-12-12,2025,period-3,Approved leave,18,10:00,10:06,6
+2025-12-12,2025,period-3,Official mission,6,10:00,10:06,6
+2025-12-12,2025,period-3,Unexplained absence,5,10:00,10:06,6
+2025-12-18,2025,period-3,On time,71,10:00,10:03,3
+2025-12-18,2025,period-3,Late,34,10:00,10:03,3
+2025-12-18,2025,period-3,Approved leave,10,10:00,10:03,3
+2025-12-18,2025,period-3,Official mission,8,10:00,10:03,3
+2025-12-18,2025,period-3,Unexplained absence,3,10:00,10:03,3
+2025-12-19,2025,period-3,On time,64,10:00,10:20,20
+2025-12-19,2025,period-3,Late,30,10:00,10:20,20
+2025-12-19,2025,period-3,Approved leave,14,10:00,10:20,20
+2025-12-19,2025,period-3,Official mission,8,10:00,10:20,20
+2025-12-19,2025,period-3,Unexplained absence,10,10:00,10:20,20
+2025-12-23,2025,period-3,On time,69,14:00,14:27,27
+2025-12-23,2025,period-3,Late,10,14:00,14:27,27
+2025-12-23,2025,period-3,Approved leave,10,14:00,14:27,27
+2025-12-23,2025,period-3,Official mission,4,14:00,14:27,27
+2025-12-23,2025,period-3,Unexplained absence,33,14:00,14:27,27
+2025-12-25,2025,period-3,On time,73,10:00,10:11,11
+2025-12-25,2025,period-3,Late,22,10:00,10:11,11
+2025-12-25,2025,period-3,Approved leave,22,10:00,10:11,11
+2025-12-25,2025,period-3,Official mission,7,10:00,10:11,11
+2025-12-25,2025,period-3,Unexplained absence,2,10:00,10:11,11
+2025-12-26,2025,period-3,On time,76,10:00,10:25,25
+2025-12-26,2025,period-3,Late,16,10:00,10:25,25
+2025-12-26,2025,period-3,Approved leave,24,10:00,10:25,25
+2025-12-26,2025,period-3,Official mission,7,10:00,10:25,25
+2025-12-26,2025,period-3,Unexplained absence,3,10:00,10:25,25
+2025-12-30,2025,period-3,On time,76,14:00,14:49,49
+2025-12-30,2025,period-3,Late,5,14:00,14:49,49
+2025-12-30,2025,period-3,Approved leave,29,14:00,14:49,49
+2025-12-30,2025,period-3,Official mission,7,14:00,14:49,49
+2025-12-30,2025,period-3,Unexplained absence,9,14:00,14:49,49
+2025-12-31,2025,period-3,On time,64,10:00,10:34,34
+2025-12-31,2025,period-3,Late,10,10:00,10:34,34
+2025-12-31,2025,period-3,Approved leave,29,10:00,10:34,34
+2025-12-31,2025,period-3,Official mission,8,10:00,10:34,34
+2025-12-31,2025,period-3,Unexplained absence,15,10:00,10:34,34
+2026-03-16,2026,period-4,On time,101,10:00,10:03,3
+2026-03-16,2026,period-4,Late,19,10:00,10:03,3
+2026-03-16,2026,period-4,Approved leave,4,10:00,10:03,3
+2026-03-16,2026,period-4,Official mission,2,10:00,10:03,3
+2026-03-16,2026,period-4,Unexplained absence,0,10:00,10:03,3
+2026-03-27,2026,period-4,On time,68,18:00,20:28,148
+2026-03-27,2026,period-4,Late,5,18:00,20:28,148
+2026-03-27,2026,period-4,Approved leave,11,18:00,20:28,148
+2026-03-27,2026,period-4,Official mission,10,18:00,20:28,148
+2026-03-27,2026,period-4,Unexplained absence,32,18:00,20:28,148
+2026-03-30,2026,period-4,On time,88,10:00,10:11,11
+2026-03-30,2026,period-4,Late,25,10:00,10:11,11
+2026-03-30,2026,period-4,Approved leave,6,10:00,10:11,11
+2026-03-30,2026,period-4,Official mission,6,10:00,10:11,11
+2026-03-30,2026,period-4,Unexplained absence,1,10:00,10:11,11
+2026-03-31,2026,period-4,On time,73,14:00,14:02,2
+2026-03-31,2026,period-4,Late,37,14:00,14:02,2
+2026-03-31,2026,period-4,Approved leave,11,14:00,14:02,2
+2026-03-31,2026,period-4,Official mission,2,14:00,14:02,2
+2026-03-31,2026,period-4,Unexplained absence,3,14:00,14:02,2
+2026-04-02,2026,period-4,On time,83,10:00,10:32,32
+2026-04-02,2026,period-4,Late,32,10:00,10:32,32
+2026-04-02,2026,period-4,Approved leave,8,10:00,10:32,32
+2026-04-02,2026,period-4,Official mission,1,10:00,10:32,32
+2026-04-02,2026,period-4,Unexplained absence,2,10:00,10:32,32
+2026-04-03,2026,period-4,On time,90,10:00,10:24,24
+2026-04-03,2026,period-4,Late,27,10:00,10:24,24
+2026-04-03,2026,period-4,Approved leave,7,10:00,10:24,24
+2026-04-03,2026,period-4,Official mission,0,10:00,10:24,24
+2026-04-03,2026,period-4,Unexplained absence,2,10:00,10:24,24
+2026-04-09,2026,period-4,On time,69,10:00,10:02,2
+2026-04-09,2026,period-4,Late,43,10:00,10:02,2
+2026-04-09,2026,period-4,Approved leave,11,10:00,10:02,2
+2026-04-09,2026,period-4,Official mission,0,10:00,10:02,2
+2026-04-09,2026,period-4,Unexplained absence,3,10:00,10:02,2
+2026-04-10,2026,period-4,On time,74,10:00,10:01,1
+2026-04-10,2026,period-4,Late,41,10:00,10:01,1
+2026-04-10,2026,period-4,Approved leave,9,10:00,10:01,1
+2026-04-10,2026,period-4,Official mission,0,10:00,10:01,1
+2026-04-10,2026,period-4,Unexplained absence,2,10:00,10:01,1
+2026-04-16,2026,period-4,On time,85,10:00,10:01,1
+2026-04-16,2026,period-4,Late,22,10:00,10:01,1
+2026-04-16,2026,period-4,Approved leave,5,10:00,10:01,1
+2026-04-16,2026,period-4,Official mission,11,10:00,10:01,1
+2026-04-16,2026,period-4,Unexplained absence,3,10:00,10:01,1
+2026-04-17,2026,period-4,On time,78,,10:00,
+2026-04-17,2026,period-4,Late,18,,10:00,
+2026-04-17,2026,period-4,Approved leave,11,,10:00,
+2026-04-17,2026,period-4,Official mission,12,,10:00,
+2026-04-17,2026,period-4,Unexplained absence,7,,10:00,
+2026-04-23,2026,period-4,On time,65,,10:00,
+2026-04-23,2026,period-4,Late,29,,10:00,
+2026-04-23,2026,period-4,Approved leave,13,,10:00,
+2026-04-23,2026,period-4,Official mission,18,,10:00,
+2026-04-23,2026,period-4,Unexplained absence,1,,10:00,
+2026-04-24,2026,period-4,On time,75,,10:00,
+2026-04-24,2026,period-4,Late,31,,10:00,
+2026-04-24,2026,period-4,Approved leave,10,,10:00,
+2026-04-24,2026,period-4,Official mission,6,,10:00,
+2026-04-24,2026,period-4,Unexplained absence,4,,10:00,
+2026-04-30,2026,period-4,On time,76,,10:00,
+2026-04-30,2026,period-4,Late,33,,10:00,
+2026-04-30,2026,period-4,Approved leave,6,,10:00,
+2026-04-30,2026,period-4,Official mission,7,,10:00,
+2026-04-30,2026,period-4,Unexplained absence,4,,10:00,
+2026-05-01,2026,period-4,On time,73,,10:00,
+2026-05-01,2026,period-4,Late,35,,10:00,
+2026-05-01,2026,period-4,Approved leave,8,,10:00,
+2026-05-01,2026,period-4,Official mission,9,,10:00,
+2026-05-01,2026,period-4,Unexplained absence,1,,10:00,
+2026-05-07,2026,period-4,On time,70,,10:00,
+2026-05-07,2026,period-4,Late,32,,10:00,
+2026-05-07,2026,period-4,Approved leave,8,,10:00,
+2026-05-07,2026,period-4,Official mission,15,,10:00,
+2026-05-07,2026,period-4,Unexplained absence,1,,10:00,
+2026-05-08,2026,period-4,On time,79,,10:00,
+2026-05-08,2026,period-4,Late,23,,10:00,
+2026-05-08,2026,period-4,Approved leave,9,,10:00,
+2026-05-08,2026,period-4,Official mission,14,,10:00,
+2026-05-08,2026,period-4,Unexplained absence,1,,10:00,
+2026-05-14,2026,period-4,On time,74,,10:00,
+2026-05-14,2026,period-4,Late,27,,10:00,
+2026-05-14,2026,period-4,Approved leave,13,,10:00,
+2026-05-14,2026,period-4,Official mission,9,,10:00,
+2026-05-14,2026,period-4,Unexplained absence,3,,10:00,
+2026-05-15,2026,period-4,On time,66,10:00,10:03,3
+2026-05-15,2026,period-4,Late,27,10:00,10:03,3
+2026-05-15,2026,period-4,Approved leave,18,10:00,10:03,3
+2026-05-15,2026,period-4,Official mission,10,10:00,10:03,3
+2026-05-15,2026,period-4,Unexplained absence,5,10:00,10:03,3
+2026-05-21,2026,period-4,On time,66,,10:00,
+2026-05-21,2026,period-4,Late,38,,10:00,
+2026-05-21,2026,period-4,Approved leave,10,,10:00,
+2026-05-21,2026,period-4,Official mission,11,,10:00,
+2026-05-21,2026,period-4,Unexplained absence,1,,10:00,
+2026-05-22,2026,period-4,On time,71,,10:00,
+2026-05-22,2026,period-4,Late,30,,10:00,
+2026-05-22,2026,period-4,Approved leave,11,,10:00,
+2026-05-22,2026,period-4,Official mission,12,,10:00,
+2026-05-22,2026,period-4,Unexplained absence,2,,10:00,
+2026-05-28,2026,period-4,On time,71,,10:00,
+2026-05-28,2026,period-4,Late,39,,10:00,
+2026-05-28,2026,period-4,Approved leave,8,,10:00,
+2026-05-28,2026,period-4,Official mission,7,,10:00,
+2026-05-28,2026,period-4,Unexplained absence,1,,10:00,
+2026-05-29,2026,period-4,On time,66,,10:00,
+2026-05-29,2026,period-4,Late,40,,10:00,
+2026-05-29,2026,period-4,Approved leave,6,,10:00,
+2026-05-29,2026,period-4,Official mission,13,,10:00,
+2026-05-29,2026,period-4,Unexplained absence,1,,10:00,
+2026-06-02,2026,period-4,On time,69,14:00,14:07,7
+2026-06-02,2026,period-4,Late,22,14:00,14:07,7
+2026-06-02,2026,period-4,Approved leave,8,14:00,14:07,7
+2026-06-02,2026,period-4,Official mission,27,14:00,14:07,7
+2026-06-02,2026,period-4,Unexplained absence,0,14:00,14:07,7
+2026-06-04,2026,period-4,On time,67,,10:00,
+2026-06-04,2026,period-4,Late,30,,10:00,
+2026-06-04,2026,period-4,Approved leave,8,,10:00,
+2026-06-04,2026,period-4,Official mission,19,,10:00,
+2026-06-04,2026,period-4,Unexplained absence,2,,10:00,
+2026-06-05,2026,period-4,On time,67,10:00,10:06,6
+2026-06-05,2026,period-4,Late,27,10:00,10:06,6
+2026-06-05,2026,period-4,Approved leave,10,10:00,10:06,6
+2026-06-05,2026,period-4,Official mission,20,10:00,10:06,6
+2026-06-05,2026,period-4,Unexplained absence,2,10:00,10:06,6
+2026-06-11,2026,period-4,On time,72,,10:00,
+2026-06-11,2026,period-4,Late,37,,10:00,
+2026-06-11,2026,period-4,Approved leave,13,,10:00,
+2026-06-11,2026,period-4,Official mission,4,,10:00,
+2026-06-11,2026,period-4,Unexplained absence,0,,10:00,
+2026-06-12,2026,period-4,On time,68,10:00,10:01,1
+2026-06-12,2026,period-4,Late,32,10:00,10:01,1
+2026-06-12,2026,period-4,Approved leave,15,10:00,10:01,1
+2026-06-12,2026,period-4,Official mission,10,10:00,10:01,1
+2026-06-12,2026,period-4,Unexplained absence,1,10:00,10:01,1
+2026-06-18,2026,period-4,On time,66,10:00,10:02,2
+2026-06-18,2026,period-4,Late,27,10:00,10:02,2
+2026-06-18,2026,period-4,Approved leave,22,10:00,10:02,2
+2026-06-18,2026,period-4,Official mission,8,10:00,10:02,2
+2026-06-18,2026,period-4,Unexplained absence,3,10:00,10:02,2
+2026-06-19,2026,period-4,On time,64,10:00,10:03,3
+2026-06-19,2026,period-4,Late,33,10:00,10:03,3
+2026-06-19,2026,period-4,Approved leave,21,10:00,10:03,3
+2026-06-19,2026,period-4,Official mission,4,10:00,10:03,3
+2026-06-19,2026,period-4,Unexplained absence,4,10:00,10:03,3
+2026-06-25,2026,period-4,On time,69,,10:00,
+2026-06-25,2026,period-4,Late,31,,10:00,
+2026-06-25,2026,period-4,Approved leave,14,,10:00,
+2026-06-25,2026,period-4,Official mission,10,,10:00,
+2026-06-25,2026,period-4,Unexplained absence,2,,10:00,
+2026-06-26,2026,period-4,On time,75,10:00,10:10,10
+2026-06-26,2026,period-4,Late,26,10:00,10:10,10
+2026-06-26,2026,period-4,Approved leave,13,10:00,10:10,10
+2026-06-26,2026,period-4,Official mission,7,10:00,10:10,10
+2026-06-26,2026,period-4,Unexplained absence,5,10:00,10:10,10
+2026-06-30,2026,period-4,On time,86,14:00,14:01,1
+2026-06-30,2026,period-4,Late,23,14:00,14:01,1
+2026-06-30,2026,period-4,Approved leave,9,14:00,14:01,1
+2026-06-30,2026,period-4,Official mission,1,14:00,14:01,1
+2026-06-30,2026,period-4,Unexplained absence,7,14:00,14:01,1
+2026-07-01,2026,period-4,On time,100,14:00,14:21,21
+2026-07-01,2026,period-4,Late,10,14:00,14:21,21
+2026-07-01,2026,period-4,Approved leave,14,14:00,14:21,21
+2026-07-01,2026,period-4,Official mission,1,14:00,14:21,21
+2026-07-01,2026,period-4,Unexplained absence,1,14:00,14:21,21
+2026-07-02,2026,period-4,On time,71,,10:00,
+2026-07-02,2026,period-4,Late,35,,10:00,
+2026-07-02,2026,period-4,Approved leave,17,,10:00,
+2026-07-02,2026,period-4,Official mission,2,,10:00,
+2026-07-02,2026,period-4,Unexplained absence,1,,10:00,
+2026-07-03,2026,period-4,On time,74,10:00,10:02,2
+2026-07-03,2026,period-4,Late,31,10:00,10:02,2
+2026-07-03,2026,period-4,Approved leave,17,10:00,10:02,2
+2026-07-03,2026,period-4,Official mission,3,10:00,10:02,2
+2026-07-03,2026,period-4,Unexplained absence,1,10:00,10:02,2
+2026-09-07,2026,period-5,On time,81,10:00,10:01,1
+2026-09-07,2026,period-5,Late,6,10:00,10:01,1
+2026-09-07,2026,period-5,Approved leave,11,10:00,10:01,1
+2026-09-07,2026,period-5,Official mission,28,10:00,10:01,1
+2026-09-07,2026,period-5,Unexplained absence,0,10:00,10:01,1
+2026-09-14,2026,period-5,On time,57,16:00,,
+2026-09-14,2026,period-5,Late,11,16:00,,
+2026-09-14,2026,period-5,Approved leave,11,16:00,,
+2026-09-14,2026,period-5,Official mission,9,16:00,,
+2026-09-14,2026,period-5,Unexplained absence,38,16:00,,
+2026-09-15,2026,period-5,On time,111,14:00,,
+2026-09-15,2026,period-5,Late,0,14:00,,
+2026-09-15,2026,period-5,Approved leave,6,14:00,,
+2026-09-15,2026,period-5,Official mission,5,14:00,,
+2026-09-15,2026,period-5,Unexplained absence,4,14:00,,
+2026-09-17,2026,period-5,On time,52,14:00,,
+2026-09-17,2026,period-5,Late,0,14:00,,
+2026-09-17,2026,period-5,Approved leave,15,14:00,,
+2026-09-17,2026,period-5,Official mission,12,14:00,,
+2026-09-17,2026,period-5,Unexplained absence,47,14:00,,
+2026-09-21,2026,period-5,On time,63,14:00,,
+2026-09-21,2026,period-5,Late,0,14:00,,
+2026-09-21,2026,period-5,Approved leave,8,14:00,,
+2026-09-21,2026,period-5,Official mission,8,14:00,,
+2026-09-21,2026,period-5,Unexplained absence,47,14:00,,
+2026-09-22,2026,period-5,On time,75,14:00,14:01,1
+2026-09-22,2026,period-5,Late,20,14:00,14:01,1
+2026-09-22,2026,period-5,Approved leave,7,14:00,14:01,1
+2026-09-22,2026,period-5,Official mission,10,14:00,14:01,1
+2026-09-22,2026,period-5,Unexplained absence,14,14:00,14:01,1

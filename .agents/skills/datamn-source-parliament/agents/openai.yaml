@@ -1,0 +1,4 @@
+interface:
+  display_name: "Data.mn Parliament Source"
+  short_description: "Fetch and maintain Parliament attendance data"
+  default_prompt: "Use $datamn-source-parliament to refresh and validate Parliament attendance data."

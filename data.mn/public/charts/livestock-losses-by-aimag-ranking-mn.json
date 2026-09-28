@@ -1,0 +1,109 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Сонгосон онд хамгийн өндөр үзүүлэлттэй зургаан аймаг, нийслэл. Бүх 22 нутаг дэвсгэрийн мэдээллийг татаж авна.",
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "/datasets/livestock-losses-by-aimag-mn.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "он": "number",
+        "утга": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum['он'] == selectedYear"
+    },
+    {
+      "filter": "isValid(datum['утга'])"
+    },
+    {
+      "window": [
+        {
+          "op": "row_number",
+          "as": "rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "утга",
+          "order": "descending"
+        },
+        {
+          "field": "бүс",
+          "order": "ascending"
+        }
+      ]
+    },
+    {
+      "filter": "datum.rank <= 6"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 3
+  },
+  "encoding": {
+    "y": {
+      "field": "бүс",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null,
+      "axis": {
+        "labelLimit": 150
+      }
+    },
+    "x": {
+      "field": "утга",
+      "type": "quantitative",
+      "title": "Хорогдол (мянган толгой)",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "format": ",.1f"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "бүс",
+        "type": "nominal",
+        "title": "Аймаг, нийслэл"
+      },
+      {
+        "field": "он",
+        "type": "quantitative",
+        "title": "Он",
+        "format": "d"
+      },
+      {
+        "field": "утга",
+        "type": "quantitative",
+        "title": "Хорогдол (мянган толгой)",
+        "format": ",.3f"
+      }
+    ]
+  }
+}

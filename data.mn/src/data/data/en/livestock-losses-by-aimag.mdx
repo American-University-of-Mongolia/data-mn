@@ -1,0 +1,54 @@
+---
+title: Mongolia Livestock Losses by Aimag, Thousand Head (1971–2025)
+publishDate: 2026-09-20
+excerpt: Annual losses of adult livestock across Mongolia’s 21 aimags and Ulaanbaatar, in thousand head, from 1971 to 2025; includes natural disasters, disease and other causes.
+category: Agriculture
+tags:
+  - mongolia
+  - livestock
+  - agriculture
+  - livestock losses
+keywords:
+  - Mongolia livestock losses
+  - livestock mortality by aimag
+  - adult animal losses
+author: Data.mn
+dataVersion: 2
+dataDate: 2025-12-31
+excelLanguage: page
+dataFiles:
+  - path: /datasets/livestock-losses-by-aimag-en.csv
+    format: csv
+    size: 23 KB
+    label: CSV (English)
+    description: All data, one observation per row. For Excel, import as UTF-8 with a comma delimiter.
+  - path: /datasets/livestock-losses-by-aimag-en.xlsx
+    format: xlsx
+    size: 13 KB
+    label: Excel (English)
+    description: Formatted tables for 1971–2025, in English.
+source:
+  name: National Statistics Office of Mongolia
+  url: https://data.1212.mn/pxweb/en/NSO/NSO__Industry,%20service__Livestock/DT_NSO_1001_029V1.px/
+  tableId: DT_NSO_1001_029V1.px
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Annual losses of adult livestock across Mongolia’s 21 aimags and Ulaanbaatar, in thousand head, from 1971 to 2025; includes natural disasters, disease and other causes.
+
+<VegaChart
+  spec="/charts/livestock-losses-by-aimag-en.json"
+  title="Losses across Mongolia"
+  caption="Adult livestock losses include natural disasters, disease and other causes, and exclude young animals born during the reporting year. Historical coverage follows NSO region labels; administrative boundaries changed over time. Blank values mean unavailable, not zero. Move the year slider to update both charts. Grey means unavailable. The same colour scale is used for every year; the map uses present-day boundaries."
+  aspectRatio={0.625}
+  yearGroup="livestock-losses-by-aimag"
+/>
+
+<VegaChart
+  spec="/charts/livestock-losses-by-aimag-ranking-en.json"
+  title="Highest losses by year"
+  caption="Use the year slider under the map to compare the top six regions. Downloads contain all 22. Orkhon losses start in 1976 and Govisumber in 1991; rates also require an available previous-year herd. Unavailable values are omitted from rankings."
+  aspectRatio={0.6}
+  yearGroup="livestock-losses-by-aimag"
+/>

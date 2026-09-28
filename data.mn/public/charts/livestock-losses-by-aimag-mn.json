@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын 21 аймаг, Улаанбаатар хотын 1971–2025 оны том малын зүй бус хорогдол, мянган толгойгоор; байгалийн аюулт үзэгдэл, өвчин болон бусад шалтгааныг хамарна. Boundaries: geoBoundaries (ODbL) / OpenStreetMap contributors.",
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "/datasets/livestock-losses-by-aimag-mn.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "он": "number",
+        "утга": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "range",
+        "min": 1971,
+        "max": 2025,
+        "step": 1,
+        "name": "Он: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum['он'] == selectedYear"
+    },
+    {
+      "lookup": "бүс",
+      "from": {
+        "data": {
+          "url": "/maps/mongolia-aimags.json",
+          "format": {
+            "type": "json",
+            "property": "features"
+          }
+        },
+        "key": "properties.name_mn"
+      },
+      "as": "boundary"
+    },
+    {
+      "calculate": "isValid(datum['утга']) ? format(datum['утга'], ',.3f') : 'Мэдээлэлгүй'",
+      "as": "display_value"
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 1,
+    "invalid": null
+  },
+  "encoding": {
+    "shape": {
+      "field": "boundary",
+      "type": "geojson"
+    },
+    "color": {
+      "field": "утга",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "oranges",
+        "domain": [0, 1824.993]
+      },
+      "condition": {
+        "test": "!isValid(datum['утга'])",
+        "value": "#cbd5e1"
+      },
+      "legend": {
+        "orient": "top",
+        "title": "Хорогдол (мянган толгой)",
+        "format": ",.1f",
+        "titleLimit": 350,
+        "gradientLength": 250
+      }
+    },
+    "tooltip": [
+      {
+        "field": "бүс",
+        "type": "nominal",
+        "title": "Аймаг, нийслэл"
+      },
+      {
+        "field": "он",
+        "type": "quantitative",
+        "title": "Он",
+        "format": "d"
+      },
+      {
+        "field": "display_value",
+        "type": "nominal",
+        "title": "Хорогдол (мянган толгой)"
+      }
+    ]
+  }
+}

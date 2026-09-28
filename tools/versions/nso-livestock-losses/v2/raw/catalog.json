@@ -1,0 +1,116 @@
+[
+  {
+    "id": "DT_NSO_1001_001V1.px",
+    "type": "t",
+    "text": "GROSS LIVESTOCK OUTPUT by TOTAL and TIME (Annual)",
+    "updated": "2026-08-06T10:04:08"
+  },
+  {
+    "id": "DT_NSO_1001_006V2.px",
+    "type": "t",
+    "text": "SURVIVALS OF YOUNG ANIMALS, by type of livestock, bag, khoroo, and by year by Type of livestock, Region and Year by Type of livestock, Region and Year",
+    "updated": "2026-08-21T10:45:24"
+  },
+  {
+    "id": "DT_NSO_1001_007V1.px",
+    "type": "t",
+    "text": "AVERAGE SURVIVAL RATE PER 100 FEMALE BREEDING STOCK, aimags and the Capital, and by year by Region and Year",
+    "updated": "2026-04-09T11:55:56"
+  },
+  {
+    "id": "DT_NSO_1001_008V1.px",
+    "type": "t",
+    "text": "NUMBER OF SURVIVAL, by type of livestock, aimags and the Capital, and by quarter by Type of livestock, Region and Quarter",
+    "updated": "2026-07-22T16:35:27"
+  },
+  {
+    "id": "DT_NSO_1001_011V1.px",
+    "type": "t",
+    "text": "LOSSES OF ADULT ANIMALS, by type of livestock, aimags and the Capital, and by quarter by Type of livestock, Region and Quarter",
+    "updated": "2026-07-22T16:54:16"
+  },
+  {
+    "id": "DT_NSO_1001_013V3.px",
+    "type": "t",
+    "text": "NUMBER OF LIVESTOCK DIED FROM DISAESES, by type of livestock, bag, khoroo, and by year by Type of livestock, Region and Year by Type of livestock, Region and Year",
+    "updated": "2026-08-28T08:53:36"
+  },
+  {
+    "id": "DT_NSO_1001_015V3.px",
+    "type": "t",
+    "text": "NUMBER OF MISCARRAGE FEMALE ANIMALS, by type of livestock, bag, khoroo, and by year by Type of livestock, Region and Year by Type of livestock, Region and Year",
+    "updated": "2026-08-26T10:56:47"
+  },
+  {
+    "id": "DT_NSO_1001_016V3.px",
+    "type": "t",
+    "text": "NUMBER OF BARREN FEMALE ANIMALS, by type of livestock, bag, khoroo, and by year by Type of livestock, Region and Year by Type of livestock, Region and Year",
+    "updated": "2026-08-25T16:54:35"
+  },
+  {
+    "id": "DT_NSO_1001_017V1.px",
+    "type": "t",
+    "text": "NUMBER OF PIGS, aimags and the Capital, and by year by Type, Region and Year",
+    "updated": "2026-08-24T17:38:38"
+  },
+  {
+    "id": "DT_NSO_1001_018V1.px",
+    "type": "t",
+    "text": "NUMBER OF POULTRY, aimags and the Capital, and by year by Region and Year",
+    "updated": "2026-01-26T09:27:26"
+  },
+  {
+    "id": "DT_NSO_1001_019V1.px",
+    "type": "t",
+    "text": "MAIN AGRICULTURAL PRODUCTION PER CAPITA, by year by PRODUCT and TIME (Annual)",
+    "updated": "2026-08-06T10:31:48"
+  },
+  {
+    "id": "DT_NSO_1001_021V1.px",
+    "type": "t",
+    "text": "NUMBER OF LIVESTOCK, by type of livestock, bag, khoroo, and by year by Type of livestock, Region and Year by Type of livestock, Region and Year",
+    "updated": "2026-08-21T16:58:29"
+  },
+  {
+    "id": "DT_NSO_1001_024V1.px",
+    "type": "t",
+    "text": "NUMBER OF BREEDING STOCK, by type of livestock, bag, khoroo, and by year by Type of livestock, Region and Year by Type of livestock, Region and Year",
+    "updated": "2026-09-01T10:24:07"
+  },
+  {
+    "id": "DT_NSO_1001_029V1.px",
+    "type": "t",
+    "text": "LOSSES OF ADULT ANIMALS, by type of livestock, bag, khoroo, and by year by Type of livestock, Region and Year by Type of livestock, Region and Year",
+    "updated": "2026-08-26T15:47:59"
+  },
+  {
+    "id": "DT_NSO_1001_030V1.px",
+    "type": "t",
+    "text": "NUMBER OF DOMESTIC ANIMALS, by type, bag, khoroo, and by year by Type, Region and Year by Type, Region and Year",
+    "updated": "2026-08-31T10:16:25"
+  },
+  {
+    "id": "DT_NSO_1001_031V1.px",
+    "type": "t",
+    "text": "NUMBER OF FRESHBRED, CROSSBRED, THOROUGHBRED AND IMPROVED BRED LIVESTOCK, by type of livestock, aimags and the Capital, and by year by Indicator, Type of livestock, Region and Year",
+    "updated": "2026-04-21T10:02:26"
+  },
+  {
+    "id": "DT_NSO_1001_040V2.px",
+    "type": "t",
+    "text": "AVERAGE MARKET PRICE OF LIVESTOCK PRODUCTS, by month, aimags and the Capital by Indicator, Region and Month",
+    "updated": "2026-09-09T15:38:27"
+  },
+  {
+    "id": "DT_NSO_1001_041V1.px",
+    "type": "t",
+    "text": "PRODUCTION OF AGRICULTURE, by type, region, aimags and the Capital by STATISTICAL INDICATOR, AIMAG and TIME (Annual)",
+    "updated": "2026-08-06T10:38:29"
+  },
+  {
+    "id": "DT_NSO_1001_052V2.px",
+    "type": "t",
+    "text": "NUMBER OF YAK, bag, khoroo, and by year by Region and Year by Region and Year",
+    "updated": "2026-08-21T11:56:19"
+  }
+]

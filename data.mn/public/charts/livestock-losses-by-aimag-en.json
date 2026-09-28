@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Annual losses of adult livestock across Mongolia’s 21 aimags and Ulaanbaatar, in thousand head, from 1971 to 2025; includes natural disasters, disease and other causes. Boundaries: geoBoundaries (ODbL) / OpenStreetMap contributors.",
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "/datasets/livestock-losses-by-aimag-en.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "value": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "range",
+        "min": 1971,
+        "max": 2025,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum['year'] == selectedYear"
+    },
+    {
+      "lookup": "region",
+      "from": {
+        "data": {
+          "url": "/maps/mongolia-aimags.json",
+          "format": {
+            "type": "json",
+            "property": "features"
+          }
+        },
+        "key": "properties.name"
+      },
+      "as": "boundary"
+    },
+    {
+      "calculate": "isValid(datum['value']) ? format(datum['value'], ',.3f') : 'Unavailable'",
+      "as": "display_value"
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 1,
+    "invalid": null
+  },
+  "encoding": {
+    "shape": {
+      "field": "boundary",
+      "type": "geojson"
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "oranges",
+        "domain": [0, 1824.993]
+      },
+      "condition": {
+        "test": "!isValid(datum['value'])",
+        "value": "#cbd5e1"
+      },
+      "legend": {
+        "orient": "top",
+        "title": "Losses (thousand head)",
+        "format": ",.1f",
+        "titleLimit": 350,
+        "gradientLength": 250
+      }
+    },
+    "tooltip": [
+      {
+        "field": "region",
+        "type": "nominal",
+        "title": "Aimag / capital"
+      },
+      {
+        "field": "year",
+        "type": "quantitative",
+        "title": "Year",
+        "format": "d"
+      },
+      {
+        "field": "display_value",
+        "type": "nominal",
+        "title": "Losses (thousand head)"
+      }
+    ]
+  }
+}

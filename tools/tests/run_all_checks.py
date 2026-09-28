@@ -46,6 +46,33 @@ class CheckResult:
     severity: str = "required"  # "critical", "required", "warning"
 
 
+def check_csv_language(spec: dict, lang: str) -> tuple[bool, str]:
+    """Check CSV sources, including lookup/layer data, independently of map geometry."""
+    csv_urls = []
+
+    def visit(node):
+        if isinstance(node, dict):
+            data = node.get('data')
+            if isinstance(data, dict) and isinstance(data.get('url'), str):
+                url = data['url'].split('?', 1)[0].split('#', 1)[0]
+                if url.endswith('.csv') or data.get('format', {}).get('type') == 'csv':
+                    csv_urls.append(url)
+            for value in node.values():
+                visit(value)
+        elif isinstance(node, list):
+            for value in node:
+                visit(value)
+
+    visit(spec)
+    if not csv_urls:
+        return False, "Chart has no CSV data source"
+    expected_suffix = f'-{lang.lower()}.csv'
+    mismatches = [url for url in csv_urls if not url.endswith(expected_suffix)]
+    if mismatches:
+        return False, f"CSV URLs must end with '{expected_suffix}': {mismatches}"
+    return True, f"{len(csv_urls)} CSV source(s) match {lang}"
+
+
 def run_scripted_checks(dataset_id: str, base_dir: Path) -> list[CheckResult]:
     """Run the scripted validation checks from validate_dataset.py"""
     results = []
@@ -233,15 +260,13 @@ def run_scripted_checks(dataset_id: str, base_dir: Path) -> list[CheckResult]:
             ))
 
             # 6.7-6.8: Data URL language match
-            data_url = spec.get('data', {}).get('url', '') if isinstance(spec.get('data'), dict) else ''
-            expected_suffix = f"-{lang.lower()}.csv"
-            url_matches = expected_suffix in data_url
+            url_matches, url_reason = check_csv_language(spec, lang)
             results.append(CheckResult(
                 check_id=f"6.7-{lang}",
                 section="Chart Specs",
                 description=f"Data URL lang match ({lang})",
                 passed=url_matches,
-                reason="OK" if url_matches else f"URL '{data_url}' should contain '{expected_suffix}'",
+                reason=url_reason,
                 severity="critical"
             ))
 
@@ -301,7 +326,10 @@ def run_scripted_checks(dataset_id: str, base_dir: Path) -> list[CheckResult]:
                         color = obj['color']
                         if isinstance(color, dict):
                             scale = color.get('scale', {})
-                            if 'domain' in scale:
+                            # Continuous domains are numeric/date bounds, not
+                            # category names that must occur verbatim in CSV.
+                            if (color.get('type') not in ('quantitative', 'temporal')
+                                    and isinstance(scale, dict) and isinstance(scale.get('domain'), list)):
                                 color_domain = scale['domain']
                                 color_field = color.get('field')
                     for v in obj.values():

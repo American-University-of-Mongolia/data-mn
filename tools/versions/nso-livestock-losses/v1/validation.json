@@ -1,0 +1,104 @@
+{
+  "observations": 2208,
+  "bilingual_exact_match": true,
+  "missing_losses": 18,
+  "missing_starting_herds": 0,
+  "national_reconciliation": [
+    {
+      "year": 2010,
+      "national_thousand": 10319.9,
+      "regional_sum_thousand": 10319.7,
+      "difference_thousand": -0.2
+    },
+    {
+      "year": 2011,
+      "national_thousand": 651.3,
+      "regional_sum_thousand": 651.3,
+      "difference_thousand": 0.0
+    },
+    {
+      "year": 2012,
+      "national_thousand": 428.9,
+      "regional_sum_thousand": 429.0,
+      "difference_thousand": 0.1
+    },
+    {
+      "year": 2013,
+      "national_thousand": 792.6,
+      "regional_sum_thousand": 792.4,
+      "difference_thousand": -0.2
+    },
+    {
+      "year": 2014,
+      "national_thousand": 401.37,
+      "regional_sum_thousand": 401.37,
+      "difference_thousand": 0.0
+    },
+    {
+      "year": 2015,
+      "national_thousand": 625.603,
+      "regional_sum_thousand": 625.603,
+      "difference_thousand": 0.0
+    },
+    {
+      "year": 2016,
+      "national_thousand": 1452.148,
+      "regional_sum_thousand": 1452.148,
+      "difference_thousand": 0.0
+    },
+    {
+      "year": 2017,
+      "national_thousand": 888.014,
+      "regional_sum_thousand": 888.014,
+      "difference_thousand": 0.0
+    },
+    {
+      "year": 2018,
+      "national_thousand": 2635.392,
+      "regional_sum_thousand": 2635.392,
+      "difference_thousand": 0.0
+    },
+    {
+      "year": 2019,
+      "national_thousand": 1117.576,
+      "regional_sum_thousand": 1117.576,
+      "difference_thousand": 0.0
+    },
+    {
+      "year": 2020,
+      "national_thousand": 2064.074,
+      "regional_sum_thousand": 2064.074,
+      "difference_thousand": 0.0
+    },
+    {
+      "year": 2021,
+      "national_thousand": 3012.328,
+      "regional_sum_thousand": 3012.328,
+      "difference_thousand": 0.0
+    },
+    {
+      "year": 2022,
+      "national_thousand": 667.534,
+      "regional_sum_thousand": 667.534,
+      "difference_thousand": 0.0
+    },
+    {
+      "year": 2023,
+      "national_thousand": 4921.492,
+      "regional_sum_thousand": 4921.492,
+      "difference_thousand": 0.0
+    },
+    {
+      "year": 2024,
+      "national_thousand": 9364.083,
+      "regional_sum_thousand": 9364.083,
+      "difference_thousand": 0.0
+    },
+    {
+      "year": 2025,
+      "national_thousand": 358.942,
+      "regional_sum_thousand": 358.942,
+      "difference_thousand": 0.0
+    }
+  ]
+}

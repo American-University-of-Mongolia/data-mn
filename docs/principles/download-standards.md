@@ -69,6 +69,7 @@ Datasets without this setting retain the default bilingual workbook.
    requires a reason string there. The validator shares the same list.
    Current exemptions: `gdp-by-sector`, `health-facilities-by-aimag`,
    `health-facilities-by-type`, `hospital-beds-by-type`,
+   `mp-parliament-attendance`, `parliament-session-attendance`,
    `population-pyramid-mongolia`, `salary-by-sector-2024`.
 5. **Reference-table exemption**: boundary lists and codebooks are timeless
    and multi-attribute (codes, names, parents, areas, coordinates), so the

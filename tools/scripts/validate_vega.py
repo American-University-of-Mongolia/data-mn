@@ -165,7 +165,7 @@ class VegaValidator:
     def _load_data(self):
         """Load CSV data for validation"""
         try:
-            with open(self.data_path, 'r') as f:
+            with open(self.data_path, 'r', encoding='utf-8') as f:
                 reader = csv.DictReader(f)
                 self.data = list(reader)
             self.result.add_info(f"Loaded {len(self.data)} rows from {self.data_path.name}")
@@ -1020,7 +1020,7 @@ class VegaValidator:
 def validate_chart(spec_path: Path, data_path: Optional[Path] = None) -> ValidationResult:
     """Validate a single chart specification"""
     try:
-        with open(spec_path, 'r') as f:
+        with open(spec_path, 'r', encoding='utf-8') as f:
             spec = json.load(f)
     except json.JSONDecodeError as e:
         result = ValidationResult()

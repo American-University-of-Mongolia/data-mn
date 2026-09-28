@@ -669,7 +669,7 @@ def validate_chart_csv_consistency(chart_path: str, csv_path: str) -> Validation
 
     # Load chart spec
     try:
-        with open(chart_path, 'r') as f:
+        with open(chart_path, 'r', encoding='utf-8') as f:
             spec = json.load(f)
     except Exception as e:
         result.add_error(f"Could not load chart: {e}")

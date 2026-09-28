@@ -1,0 +1,90 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Layout from '~/layouts/PageLayout.astro';
+import GridCards from '~/components/blog/GridCards.astro';
+import Headline from '~/components/blog/Headline.astro';
+import type { Language } from '~/i18n';
+import { cleanSlug } from '~/utils/permalinks';
+
+export const prerender = true;
+
+export const getStaticPaths = (async () => {
+  const insights = await getCollection('insights', ({ data }) => {
+    return data.draft !== true && Boolean(data.author);
+  });
+
+  const seen = new Set<string>();
+  const paths: { params: { lang: string; author: string }; props: { author: string } }[] = [];
+  for (const insight of insights) {
+    const [lang] = insight.id.split('/');
+    const author = insight.data.author as string;
+    const key = `${lang}/${cleanSlug(author)}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    paths.push({ params: { lang, author: cleanSlug(author) }, props: { author } });
+  }
+  return paths;
+}) satisfies GetStaticPaths;
+
+const { author } = Astro.props;
+const { lang } = Astro.params;
+const currentLang = (lang as Language) || 'en';
+
+// Get this author's insights for the current language
+const allInsights = await getCollection(
+  'insights',
+  ({ id, data }) => id.startsWith(`${currentLang}/`) && data.draft !== true && data.author === author
+);
+
+// Sort by publish date, most recent first
+const sortedInsights = allInsights.sort((a, b) => {
+  const dateA = a.data.publishDate ? new Date(a.data.publishDate).valueOf() : 0;
+  const dateB = b.data.publishDate ? new Date(b.data.publishDate).valueOf() : 0;
+  return dateB - dateA;
+});
+
+// Transform to format expected by GridCards component
+const posts = sortedInsights.map((item) => {
+  // Extract slug from ID by removing language prefix and extension
+  const slug = item.id.replace(/^(en|mn)\//, '').replace(/\.mdx?$/, '');
+
+  return {
+    id: item.id,
+    slug: slug,
+    permalink: `/${currentLang}/insights/${slug}`,
+    publishDate: item.data.publishDate || new Date(),
+    updateDate: item.data.updateDate,
+    title: item.data.title,
+    excerpt: item.data.excerpt,
+    image: item.data.image,
+    category: item.data.category ? { slug: item.data.category, title: item.data.category } : undefined,
+    tags: item.data.tags?.map((tag) => ({ slug: tag, title: tag })) || [],
+    author: item.data.author,
+    draft: item.data.draft || false,
+    metadata: item.data.metadata || {},
+  };
+});
+
+const headline = currentLang === 'en' ? `Insights by ${author}` : `${author}-ийн нийтлэлүүд`;
+const subtitle =
+  currentLang === 'en'
+    ? `Expert analysis and commentary by ${author}.`
+    : `${author}-ийн мэргэжлийн шинжилгээ, нийтлэлүүд.`;
+
+const metadata = {
+  title: headline,
+  description: subtitle,
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-5xl">
+    <Headline subtitle={subtitle}>{headline}</Headline>
+    <GridCards posts={posts} showCategory={true} showTags={true} contentType="insights" />
+  </section>
+</Layout>

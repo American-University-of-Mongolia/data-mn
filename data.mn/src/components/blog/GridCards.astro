@@ -8,6 +8,7 @@
 
 import { Icon } from 'astro-icon/components';
 import Image from '~/components/common/Image.astro';
+import { cleanSlug } from '~/utils/permalinks';
 import type { Post } from '~/types';
 
 export interface Props {
@@ -20,9 +21,10 @@ export interface Props {
 const { posts, showCategory = true, showTags = false, contentType = 'data' } = Astro.props;
 
 // For data cards: hide date and author
-// For insights/reports: show date, hide author (which is usually "data.mn")
+// For insights: show date and author byline (linked to the author archive)
+// For reports: show date, hide author
 const showDate = contentType !== 'data';
-const showAuthor = false; // Remove "data.mn" label from all card types
+const showAuthor = contentType === 'insights';
 
 /**
  * Get thumbnail URL for data pages using naming convention
@@ -158,7 +160,14 @@ function isThumbnailUrl(url: string | null): boolean {
                     })}
                   </time>
                 )}
-                {showAuthor && post.author && <span class="text-gray-600 dark:text-gray-400">{post.author}</span>}
+                {showAuthor && post.author && (
+                  <a
+                    href={`/${post.permalink.split('/')[1]}/insights/author/${cleanSlug(post.author)}`}
+                    class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary hover:underline transition-colors"
+                  >
+                    {post.author}
+                  </a>
+                )}
               </div>
             )}
           </div>

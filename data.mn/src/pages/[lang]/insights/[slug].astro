@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
 import Layout from '~/layouts/PageLayout.astro';
 import { useTranslations, formatDate, type Language } from '~/i18n';
+import { cleanSlug } from '~/utils/permalinks';
 
 export const prerender = true;
 
@@ -76,7 +77,17 @@ const byLabel = currentLang === 'en' ? 'By' : 'Зохиогч';
             {updatedLabel}: {formatDate(updateDate, currentLang)}
           </time>
         )}
-        {author && <span>{byLabel} {author}</span>}
+        {author && (
+          <span>
+            {byLabel}{' '}
+            <a
+              href={`/${currentLang}/insights/author/${cleanSlug(author)}`}
+              class="text-primary hover:underline"
+            >
+              {author}
+            </a>
+          </span>
+        )}
       </div>
 
       {tags && tags.length > 0 && (

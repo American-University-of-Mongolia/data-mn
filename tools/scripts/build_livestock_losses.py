@@ -282,8 +282,6 @@ def build():
             output = [[r["year"], r[f'{config["category"]}_{lang}'], r[config["measure"]]] for r in selected]
             # Preserve source-code order so bilingual numeric rows align exactly.
             write_csv(PUBLIC / f"datasets/{dataset_id}-{lang}.csv", headers, output)
-            if config["category"] == "region":
-                write_csv(PUBLIC / f"datasets/{dataset_id}-latest-{lang}.csv", headers, [r for r in output if r[0] == END])
             write_charts(dataset_id, config, lang, END, list(dict.fromkeys(r[1] for r in output)), max(r[2] for r in output if r[2] is not None))
             write_page(dataset_id, config, lang)
             categories = sorted({r[1] for r in output})

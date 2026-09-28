@@ -66,11 +66,11 @@ const posts = sortedInsights.map((item) => {
   };
 });
 
-const headline = currentLang === 'en' ? `Insights by ${author}` : `${author}-ийн нийтлэлүүд`;
+const headline = currentLang === 'en' ? `Insights by ${author}` : `Зохиогч: ${author}`;
 const subtitle =
   currentLang === 'en'
     ? `Expert analysis and commentary by ${author}.`
-    : `${author}-ийн мэргэжлийн шинжилгээ, нийтлэлүүд.`;
+    : 'Мэргэжлийн шинжилгээ, чиг хандлага, өгөгдлийн тайлбар';
 
 const metadata = {
   title: headline,

@@ -229,10 +229,8 @@ def write_page(dataset_id, config, lang):
           "keywords": ["Mongolia livestock losses", "livestock mortality by aimag", "adult animal losses"] if lang == "en" else ["малын зүй бус хорогдол", "малын хорогдол аймгаар", "том малын хорогдол"],
           "author": "Data.mn", "dataVersion": VERSION_NUMBER, "dataDate": date(END, 12, 31), "excelLanguage": "page",
           "dataFiles": [{"path": f"/datasets/{csv_path.name}", "format": "csv", "size": size(csv_path),
-                         "label": "CSV (English)" if lang == "en" else "CSV (Монгол)",
                          "description": "All data, one observation per row. For Excel, import as UTF-8 with a comma delimiter." if lang == "en" else "Бүх өгөгдөл, нэг мөрөнд нэг ажиглалт. Excel-д оруулахдаа UTF-8 кодчилол, таслал тусгаарлагчийг сонгоно уу."},
                         {"path": f"/datasets/{xlsx_path.name}", "format": "xlsx", "size": size(xlsx_path),
-                         "label": "Excel (English)" if lang == "en" else "Excel (Монгол)",
                          "description": f"Formatted tables for {START}–{END}, in English." if lang == "en" else f"{START}–{END} оны бүх өгөгдөл, монгол хэлээр."}],
           "source": {"name": "National Statistics Office of Mongolia" if lang == "en" else "Үндэсний Статистикийн Хороо",
                      "url": NSO_PAGE.format(lang=lang, table=table),
@@ -241,17 +239,15 @@ def write_page(dataset_id, config, lang):
     caption = ("Adult livestock losses include natural disasters, disease and other causes, and exclude young animals born during the reporting year."
                if lang == "en" else "Том малын зүй бус хорогдолд байгалийн аюулт үзэгдэл, өвчин болон бусад шалтгаан орно. Тайлант онд төрсөн төл малын хорогдлыг оруулаагүй.")
     if config["measure"] == "loss_rate_percent":
-        caption = ("Rate = annual adult animal losses ÷ previous year-end livestock × 100. Calculated by Data.mn; all causes combined."
-                   if lang == "en" else "Хувь = жилийн том малын зүй бус хорогдол ÷ өмнөх оны эцсийн малын тоо × 100. Data.mn-ээс тооцсон, бүх шалтгааныг хамарсан үзүүлэлт.")
+        caption = ("Rate = annual adult animal losses ÷ previous year-end livestock × 100. Calculated by Data.mn. Grey means data unavailable."
+                   if lang == "en" else "Хувь = жилийн том малын зүй бус хорогдол ÷ өмнөх оны эцсийн малын тоо × 100. Data.mn-ээс тооцсон. Саарал өнгө нь мэдээлэлгүйг илэрхийлнэ.")
+    elif config["category"] == "region":
+        caption = ("Adult livestock losses by region, thousand head. Grey means data unavailable."
+                   if lang == "en" else "Том малын зүй бус хорогдол аймгаар, мянган толгой. Саарал өнгө нь мэдээлэлгүйг илэрхийлнэ.")
     title = ("Losses across Mongolia" if lang == "en" else "Монгол Улсын малын зүй бус хорогдол") if is_region else config[f"title_{lang}"]
     if config["measure"] == "loss_rate_percent":
         title = "Share of the starting herd lost" if lang == "en" else "Оны эхний малд эзлэх хорогдлын хувь"
-    if is_region:
-        caption += (" Historical coverage follows NSO region labels; administrative boundaries changed over time. Blank values mean unavailable, not zero."
-                    if lang == "en" else " Түүхэн хамрах хүрээ нь ҮСХ-ны нутаг дэвсгэрийн нэршлийг дагана. Засаг захиргааны хил хязгаар хугацааны явцад өөрчлөгдсөн. Хоосон утга нь тэг бус, мэдээлэл байхгүйг илэрхийлнэ.")
-        caption += (" Move the year slider to update both charts. Grey means unavailable. The same colour scale is used for every year; the map uses present-day boundaries."
-                    if lang == "en" else " Он сонгох гулсагчийг хөдөлгөхөд хоёр график зэрэг шинэчлэгдэнэ. Саарал өнгө нь мэдээлэлгүйг илэрхийлнэ. Бүх онд ижил өнгөний хуваарь, газрын зурагт өнөөгийн хил хязгаарыг ашигласан.")
-    else:
+    if not is_region:
         caption += (" In some historical years, the sum of animal types differs from the separately reported national total; source values are preserved."
                     if lang == "en" else " Зарим өмнөх онд малын төрлүүдийн нийлбэр нь тусад нь мэдээлсэн улсын нийт дүнгээс зөрдөг. Эх сурвалжийн утгуудыг хэвээр хадгалсан.")
     body = f"import VegaChart from '~/components/ui/VegaChart.astro';\n\n{config[f'excerpt_{lang}']}\n\n"
@@ -261,9 +257,7 @@ def write_page(dataset_id, config, lang):
         title = "Highest losses by year" if lang == "en" else "Оноор хамгийн их хорогдолтой нутаг дэвсгэр"
         if config["measure"] == "loss_rate_percent":
             title = "Highest loss rates by year" if lang == "en" else "Оноор хамгийн өндөр хорогдлын хувьтай нутаг дэвсгэр"
-        caption = "Use the year slider under the map to compare the top six regions. Downloads contain all 22." if lang == "en" else "Газрын зургийн доорх он сонгох гулсагчаар хамгийн өндөр үзүүлэлттэй зургаан нутаг дэвсгэрийг харьцуулна. Татах файлд бүх 22 нутаг дэвсгэр орсон."
-        caption += (" Orkhon losses start in 1976 and Govisumber in 1991; rates also require an available previous-year herd. Unavailable values are omitted from rankings."
-                    if lang == "en" else " Орхоны хорогдлын мэдээлэл 1976, Говьсүмбэрийнх 1991 оноос эхэлнэ. Хувийг тооцоход өмнөх оны малын тоо шаардлагатай. Мэдээлэлгүй утгыг эрэмбэд оруулахгүй.")
+        caption = "Top six regions in the selected year." if lang == "en" else "Сонгосон онд хамгийн өндөр үзүүлэлттэй зургаан нутаг дэвсгэр."
         body += f'\n<VegaChart spec="/charts/{dataset_id}-ranking-{lang}.json" title="{title}" caption="{caption}" aspectRatio={{0.6}}{group} />\n'
     (ROOT / f"data.mn/src/data/data/{lang}/{dataset_id}.mdx").write_text("---\n" + yaml.safe_dump(fm, allow_unicode=True, sort_keys=False, width=1000) + "---\n\n" + body)
 

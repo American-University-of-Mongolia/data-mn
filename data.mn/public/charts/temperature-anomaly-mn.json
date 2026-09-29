@@ -3,11 +3,19 @@
   "description": "Улаанбаатарын температурын хазайлт 1981-2010 оны суурь утгаас",
   "data": {
     "url": "/datasets/temperature-anomaly-mn.csv",
-    "format": {"type": "csv"}
+    "format": {
+      "type": "csv"
+    }
   },
   "transform": [
-    {"calculate": "toDate(datum['сар'] + '-01')", "as": "огноо"},
-    {"calculate": "datum['хазайлт'] >= 0 ? 'Дулаан' : 'Хүйтэн'", "as": "чиглэл"}
+    {
+      "calculate": "toDate(datum['сар'] + '-01')",
+      "as": "огноо"
+    },
+    {
+      "calculate": "datum['хазайлт'] >= 0 ? 'Дулаан' : 'Хүйтэн'",
+      "as": "чиглэл"
+    }
   ],
   "encoding": {
     "x": {
@@ -18,7 +26,8 @@
         "format": "%Y",
         "labelAngle": 0,
         "grid": false
-      }
+      },
+      "timeUnit": "yearmonth"
     },
     "y": {
       "field": "хазайлт",
@@ -33,18 +42,31 @@
     "color": {
       "field": "чиглэл",
       "type": "nominal",
-      "legend": {"orient": "top", "title": null},
+      "legend": {
+        "orient": "top",
+        "title": null
+      },
       "scale": {
-        "domain": ["Дулаан", "Хүйтэн"],
-        "range": ["#ef4444", "#3b82f6"]
+        "domain": [
+          "Дулаан",
+          "Хүйтэн"
+        ],
+        "range": [
+          "#ef4444",
+          "#3b82f6"
+        ]
       }
     }
   },
   "mark": {
-    "type": "bar"
+    "type": "bar",
+    "binSpacing": 0,
+    "timeUnitBandSize": 1
   },
   "config": {
-    "view": {"stroke": "transparent"},
+    "view": {
+      "stroke": "transparent"
+    },
     "axis": {
       "labelFontSize": 14,
       "titleFontSize": 16,

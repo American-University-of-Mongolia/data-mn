@@ -3,50 +3,153 @@
   "description": "Hospital beds in Mongolia by bed type (2015–2025)",
   "data": {
     "url": "/datasets/nso-hospital-beds-by-type-en.csv",
-    "format": {"type": "csv"}
+    "format": {
+      "type": "csv"
+    }
   },
   "transform": [
-    {"calculate": "datetime(datum.year, 0, 1)", "as": "date"}
+    {
+      "calculate": "datetime(datum.year, 0, 1)",
+      "as": "date"
+    },
+    {
+      "filter": "indexof(selectedCategories, datum[\"type\"]) >= 0"
+    }
   ],
   "encoding": {
     "x": {
       "field": "date",
       "type": "temporal",
       "title": "Year",
-      "axis": {"format": "%Y", "grid": false, "labelAngle": -30}
+      "axis": {
+        "format": "%Y",
+        "grid": false,
+        "labelAngle": -30
+      }
     },
     "y": {
       "field": "beds",
       "type": "quantitative",
       "title": "Hospital Beds",
       "stack": "zero",
-      "axis": {"format": ","}
+      "axis": {
+        "format": ","
+      }
     },
     "color": {
       "field": "type",
       "type": "nominal",
       "title": "Bed Type",
-      "scale": {"scheme": "tableau20"},
-      "legend": {"orient": "top"}
+      "scale": {
+        "domain": [
+          "Internal medicine",
+          "Pediatrics",
+          "Traditional medicine",
+          "Surgery",
+          "Neurology",
+          "Anaesthesiology",
+          "Dentist & stamatology",
+          "Dermatology",
+          "Gyneacology",
+          "Infections",
+          "Nephrology",
+          "Obstetrics",
+          "Oncology",
+          "Ophtalmology",
+          "Other",
+          "Otorhinolaryngology",
+          "Palliative care",
+          "Psychiatry & narcology",
+          "Traumatology",
+          "Tuberculosis",
+          "Urology"
+        ],
+        "range": [
+          "#4E79A7",
+          "#F28E2B",
+          "#E15759",
+          "#59A14F",
+          "#B07AA1",
+          "#76B7B2",
+          "#EDC948",
+          "#FF9DA7",
+          "#9C755F",
+          "#BAB0AC",
+          "#A0CBE8",
+          "#FFBE7D",
+          "#FF9D9A",
+          "#8CD17D",
+          "#D4A6C8",
+          "#86BCB6",
+          "#F1CE63",
+          "#FABFD2",
+          "#D7B5A6",
+          "#79706E"
+        ]
+      },
+      "legend": {
+        "orient": "top",
+        "values": {
+          "expr": "selectedCategories"
+        }
+      }
     },
-    "order": {"field": "type", "sort": "ascending"}
+    "order": {
+      "field": "type",
+      "sort": "ascending"
+    }
   },
   "layer": [
-    {"mark": {"type": "area", "interpolate": "monotone"}},
+    {
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone"
+      }
+    },
     {
       "params": [
         {
           "name": "hover",
-          "select": {"type": "point", "on": "pointerover", "nearest": true, "clear": "pointerout"}
+          "select": {
+            "type": "point",
+            "on": "pointerover",
+            "nearest": true,
+            "clear": "pointerout"
+          }
         }
       ],
-      "mark": {"type": "point", "filled": true, "size": 60},
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 60
+      },
       "encoding": {
-        "opacity": {"condition": {"param": "hover", "empty": false, "value": 1}, "value": 0},
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
         "tooltip": [
-          {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
-          {"field": "type", "type": "nominal", "title": "Bed Type"},
-          {"field": "beds", "type": "quantitative", "title": "Beds", "format": ","}
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "type",
+            "type": "nominal",
+            "title": "Bed Type"
+          },
+          {
+            "field": "beds",
+            "type": "quantitative",
+            "title": "Beds",
+            "format": ","
+          }
         ]
       }
     }
@@ -63,6 +166,30 @@
       "titleFontSize": 14,
       "labelLimit": 300
     },
-    "view": {"stroke": "transparent"}
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "params": [
+    {
+      "name": "selectedCategories",
+      "value": [
+        "Internal medicine",
+        "Pediatrics",
+        "Traditional medicine",
+        "Surgery",
+        "Neurology"
+      ]
+    }
+  ],
+  "usermeta": {
+    "explorer": {
+      "categoryField": "type",
+      "labels": {
+        "search": "Search…",
+        "noMatches": "No matches.",
+        "empty": "Select at least one item to show the chart."
+      }
+    }
   }
 }

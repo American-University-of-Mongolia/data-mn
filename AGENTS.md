@@ -272,6 +272,20 @@ python3 tools/scripts/validate_vega.py chart.json --data data.csv
 cd data.mn && python3 ../tools/scripts/validate_vega.py --all
 ```
 
+### `tools/scripts/screenshot_charts.py`
+Screenshot charts as rendered on the site (desktop + phone width) for visual
+QA. Catches what spec-only checks can't: crowded legends, squeezed plots,
+clipped labels. Needs `npm run dev` running in `data.mn`.
+
+```bash
+python3 tools/scripts/screenshot_charts.py registered-vehicles-by-age salary-by-sector-2024
+# -> /tmp/datamn-chart-shots/{slug}-mn-{desk,mob}.png
+```
+
+`validate_vega.py` also reports layout risks (thin bars, crowded legends,
+mixed-frequency bars, scrambled area order, wrong unit suffixes) as errors;
+see "Layout Risks" in the `datamn-chart-vega` skill.
+
 ### `tools/scripts/validate_mdx_datafiles.py`
 Validate MDX frontmatter `dataFiles` paths point to existing files.
 

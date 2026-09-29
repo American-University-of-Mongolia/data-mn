@@ -2,18 +2,28 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
     "url": "/datasets/registered-vehicles-by-age-en.csv",
-    "format": {"type": "csv"}
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "date:'%Y'"
+      }
+    }
   },
-  "mark": "bar",
+  "mark": {
+    "type": "bar",
+    "maxBandSize": 48
+  },
   "encoding": {
     "x": {
       "field": "year",
-      "type": "quantitative",
+      "type": "temporal",
       "title": "Year",
       "axis": {
-        "format": "d",
-        "tickMinStep": 1
-      }
+        "format": "%Y",
+        "labelAngle": 0,
+        "grid": false
+      },
+      "timeUnit": "year"
     },
     "y": {
       "field": "count",
@@ -28,17 +38,49 @@
       "field": "age_group",
       "type": "nominal",
       "title": "Vehicle Age",
-      "sort": ["10 or more", "7-9", "4-6", "0-3"],
+      "sort": [
+        "10 or more",
+        "7-9",
+        "4-6",
+        "0-3"
+      ],
       "scale": {
-        "domain": ["10 or more", "7-9", "4-6", "0-3"],
-        "range": ["#1e3a5f", "#4c78a8", "#72acd4", "#b8d4ea"]
+        "domain": [
+          "10 or more",
+          "7-9",
+          "4-6",
+          "0-3"
+        ],
+        "range": [
+          "#1e3a5f",
+          "#4c78a8",
+          "#72acd4",
+          "#b8d4ea"
+        ]
       },
-      "legend": {"orient": "top"}
+      "legend": {
+        "orient": "top"
+      }
     },
     "tooltip": [
-      {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
-      {"field": "age_group", "type": "nominal", "title": "Vehicle Age"},
-      {"field": "count", "type": "quantitative", "title": "Count", "format": ","}
+      {
+        "field": "year",
+        "type": "temporal",
+        "title": "Year",
+        "format": "%Y",
+        "timeUnit": "year"
+      },
+      {
+        "field": "age_group",
+        "type": "nominal",
+        "title": "Vehicle Age"
+      },
+      {
+        "field": "count",
+        "type": "quantitative",
+        "title": "Count",
+        "format": ","
+      }
     ]
   },
   "config": {

@@ -191,7 +191,155 @@ class VegaValidator:
         if self.data:
             self._validate_against_data()
 
+        self._validate_layout_risks()
+
         return self.result
+
+    # ------------------------------------------------------------------
+    # Layout risks: specs that are valid Vega-Lite but render badly. Each
+    # check below comes from a chart that shipped broken (see
+    # "Layout Risks" in .claude/skills/datamn-chart-vega/SKILL.md).
+    # ------------------------------------------------------------------
+
+    # Legend rows allowed at a 640px-wide chart (~320px tall) before the
+    # legend crowds out the plot. Mirrors public/scripts/chart-legend-layout.js.
+    MAX_LEGEND_ROWS = 7
+    PERIOD_CLASSES = [(1, 'daily'), (7, 'weekly'), (30, 'monthly'), (91, 'quarterly'), (365, 'annual')]
+
+    @staticmethod
+    def _mark_type(mark) -> str:
+        return mark if isinstance(mark, str) else (mark or {}).get('type', '')
+
+    def _views(self):
+        """(mark, merged encoding) for the top-level view and every layer."""
+        top = self.spec.get('encoding', {})
+        if 'layer' in self.spec:
+            for layer in self.spec['layer']:
+                yield layer.get('mark'), {**top, **layer.get('encoding', {})}
+        else:
+            yield self.spec.get('mark'), top
+
+    def _has_time_aggregation(self) -> bool:
+        if any('timeUnit' in t for t in self.spec.get('transform', [])):
+            return True
+        return any('timeUnit' in (enc.get('x') or {}) for _, enc in self._views())
+
+    def _distinct(self, field: str) -> List[str]:
+        return sorted({row[field] for row in self.data or [] if row.get(field) not in (None, '')})
+
+    def _validate_layout_risks(self):
+        explorer = 'explorer' in self.spec.get('usermeta', {})
+        for mark, enc in self._views():
+            mark_type = self._mark_type(mark)
+            x, y = enc.get('x') or {}, enc.get('y') or {}
+            continuous = ('quantitative', 'temporal')
+
+            # 1. Bars on a continuous axis get a fixed ~5px width.
+            if mark_type == 'bar' and x.get('type') in continuous and y.get('type') in continuous \
+                    and not (x.get('timeUnit') or x.get('bin') or y.get('timeUnit') or y.get('bin')
+                             or 'x2' in enc or 'y2' in enc):
+                self.result.add_error(
+                    "LAYOUT: bar mark on a continuous x-axis renders as thin slivers. For years use "
+                    "\"type\": \"temporal\", \"timeUnit\": \"year\" (parse the field with "
+                    "format.parse {\"<field>\": \"date:'%Y'\"}); for dates add a timeUnit "
+                    "(yearmonth, yearquarter, ...)."
+                )
+
+            # 2. `order` on line/area sorts each path by that field, not by x.
+            order = enc.get('order')
+            # Ordering by the series (color) field is only stack order: fine.
+            if mark_type in ('line', 'area', 'trail') and isinstance(order, dict) \
+                    and order.get('field') not in (None, x.get('field'), (enc.get('color') or {}).get('field')):
+                self.result.add_error(
+                    f"LAYOUT: 'order' by '{order.get('field')}' on a {mark_type} mark reorders the "
+                    f"points of each series, scrambling the path. Remove it (use color.sort for "
+                    f"stack order)."
+                )
+
+            # 3. Too many long series names: the legend fills the chart height.
+            color = enc.get('color') or {}
+            if not explorer and mark_type in ('line', 'area', 'point', 'circle', 'trail', 'bar') \
+                    and color.get('type') == 'nominal' and color.get('field') and color.get('legend', {}) is not None \
+                    and self.data and color['field'] in self.data[0]:
+                labels = self._distinct(color['field'])
+                filtered = any(color['field'] in str(t.get('filter', ''))
+                               for t in self.spec.get('transform', []))
+                rows = self._legend_rows(labels)
+                if rows > self.MAX_LEGEND_ROWS and not filtered:
+                    self.result.add_error(
+                        f"LAYOUT: {len(labels)} '{color['field']}' series need ~{rows} legend rows at "
+                        f"desktop width, leaving little room for the plot. Use the explorer pattern "
+                        f"(selectedCategories param + usermeta.explorer + <VegaChart interactive>) with "
+                        f"a few series shown by default."
+                    )
+
+            # 4. A fixed labelLimit on long category names fights the
+            #    component's responsive wrapping and squeezes the plot on phones.
+            if y.get('type') in ('nominal', 'ordinal') and (y.get('axis') or {}).get('labelLimit', 0) > 200 \
+                    and self.data and y.get('field') in self.data[0] \
+                    and max(map(len, self._distinct(y['field'])), default=0) > 30:
+                self.result.add_warning(
+                    "LAYOUT: long y-axis category labels with a fixed labelLimit > 200. Remove "
+                    "labelLimit; VegaChart wraps category labels to fit the screen width."
+                )
+
+        # 5. Mixed time frequency (e.g. quarterly then monthly) in bars. Bars
+        #    show per-period amounts, so a quarterly total next to a monthly
+        #    one misleads; lines of levels (rates, prices) are unaffected.
+        if self.data and not self._has_time_aggregation():
+            for mark, enc in self._views():
+                x = enc.get('x') or {}
+                if self._mark_type(mark) == 'bar' and x.get('type') == 'temporal' and x.get('field') in (self.data[0] if self.data else {}):
+                    mixed = self._mixed_frequency(x['field'])
+                    if mixed:
+                        self.result.add_error(
+                            f"DATA: '{x['field']}' mixes {mixed} observations. Values at different "
+                            f"frequencies are not comparable (a quarterly total looks 3x a monthly "
+                            f"one). Aggregate to the coarser frequency with a timeUnit transform."
+                        )
+                    break
+
+        # 6. Unit suffix that does not match the divisor (e.g. /1000 + 'M').
+        for expr in re.findall(r'"labelExpr":\s*"([^"]*)"', json.dumps(self.spec, ensure_ascii=False)):
+            for divisor, suffix in re.findall(r"/\s*(1000+)\s*,\s*'[^']*'\)\s*\+\s*'\s*([^']*)'", expr):
+                thousand = divisor == '1000'
+                if (thousand and suffix.strip() in ('M', 'М', 'сая')) or \
+                        (not thousand and suffix.strip() in ('K', 'k', 'мян')):
+                    self.result.add_error(
+                        f"LABELS: labelExpr divides by {divisor} but appends '{suffix}'. "
+                        f"Thousands are 'K' / 'мян', millions 'M' / 'сая'."
+                    )
+
+        # Layered specs repeat a problem once per layer; report it once.
+        self.result.errors = list(dict.fromkeys(self.result.errors))
+
+    @staticmethod
+    def _legend_rows(labels: List[str], container_width: int = 640, font_size: int = 13) -> int:
+        def width(label):
+            return sum(font_size * (0.34 if c.isspace() else 0.32 if c in "ilI1|.,:;'`"
+                                    else 0.9 if c in 'MW@#%&' else 0.66) for c in label)
+        widest = max([80] + [width(l) for l in labels])
+        columns = int((max(120, container_width - 80) + 18) // (widest + 42 + 18))
+        columns = max(1, min(4, len(labels) or 4, columns))
+        return -(-len(labels) // columns)
+
+    def _mixed_frequency(self, field: str) -> Optional[str]:
+        dates = []
+        for value in self._distinct(field):
+            v = value.strip()
+            v = v + '-01-01' if len(v) == 4 else v + '-01' if len(v) == 7 else v[:10]
+            try:
+                dates.append(datetime.fromisoformat(v))
+            except ValueError:
+                return None
+        dates.sort()
+        counts: Dict[str, int] = {}
+        for a, b in zip(dates, dates[1:]):
+            days = (b - a).days
+            name = min(self.PERIOD_CLASSES, key=lambda pc: abs(pc[0] - days) / pc[0])[1]
+            counts[name] = counts.get(name, 0) + 1
+        common = [name for name, n in counts.items() if n >= 4]
+        return ' and '.join(common) if len(common) > 1 else None
 
     def _validate_number_formats(self):
         """Reject explicit formats that bypass the site's decimal default."""

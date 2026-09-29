@@ -9,14 +9,23 @@ Create consistent, branded Vega-Lite chart specifications for data.mn.
 
 ## CRITICAL: Visual QA Required
 
-**ALWAYS export and review charts visually before finalizing:**
+**ALWAYS review charts visually, as rendered on the site, at desktop AND phone width:**
 
 ```bash
-# Export chart to PNG for visual review (run from data.mn directory)
+# With `npm run dev` running in data.mn (default http://localhost:4321):
+python3 tools/scripts/screenshot_charts.py {dataset-slug} --lang mn
+# -> /tmp/datamn-chart-shots/{slug}-mn-desk.png and {slug}-mn-mob.png
+```
+
+`vl2png` renders the bare spec at a fixed size and cannot show the site's
+responsive height, legend layout, label wrapping or explorer controls; most
+shipped chart bugs were only visible in the real page. Use it only as a fallback:
+
+```bash
 cd data/data.mn && npx vl2png public/charts/{chart-name}.json -b public/ -s 2 /tmp/{chart-name}.png
 ```
 
-Then use the Read tool to view `/tmp/{chart-name}.png` and check:
+Then use the Read tool to view BOTH screenshots and check:
 
 ### Visual QA Checklist
 - [ ] **Line/area visibility**: Lines are thick enough to see clearly (strokeWidth >= 2)
@@ -25,6 +34,43 @@ Then use the Read tool to view `/tmp/{chart-name}.png` and check:
 - [ ] **Label readability**: All text is legible, not overlapping
 - [ ] **Proportions**: Chart fills the space well, not too sparse or cramped
 - [ ] **Professional appearance**: Would this look good on Statista?
+
+---
+
+## CRITICAL: Layout Risks (enforced by validate_vega.py)
+
+These specs are valid Vega-Lite but rendered broken on data.mn. The validator
+now reports each as an error (LAYOUT / DATA / LABELS prefix).
+
+| Problem | Symptom | Fix |
+|---|---|---|
+| Bar on continuous x without `timeUnit`/`bin` | Thin slivers | `temporal` + `timeUnit` (see "Using 'ordinal' for Time Data") |
+| `order` on line/area by a field that varies within a series (e.g. the value) | Areas vanish / scrambled paths | Remove `order`; set stack order with `color.sort` |
+| Many series with long names (legend > 7 rows at 640px) | Legend fills the chart; plot is a sliver | Explorer pattern, below |
+| Bars over a date series whose frequency changes (quarterly → monthly) | Overlapping bars; quarterly totals look 3x monthly | Aggregate to the coarser period: `timeUnit` + `aggregate` transform, note it in a `caption` |
+| `labelExpr` suffix that doesn't match the divisor (`/1000` + `'M'`) | Axis says 160M for 160,000 | Thousands: `K` / `мян`; millions: `M` / `сая` |
+| Fixed `labelLimit` > 200 on long category labels | Plot squeezed on phones | Omit it: VegaChart wraps category labels and sizes rows for horizontal bars |
+
+### Explorer pattern (many categories)
+
+Show a few series by default and let readers pick the rest. Requires an
+explicit color `scale.domain` + `range`, and `interactive` on the MDX
+`<VegaChart>`:
+
+```json
+"params": [{"name": "selectedCategories", "value": ["Food", "Transport", "Health"]}],
+"transform": [{"filter": "indexof(selectedCategories, datum[\"category\"]) >= 0"}],
+"usermeta": {"explorer": {"categoryField": "category",
+  "labels": {"search": "Search…", "noMatches": "No matches.", "empty": "Select at least one item."}}},
+"encoding": {"color": {"field": "category", "type": "nominal",
+  "scale": {"domain": ["Food", "Transport", "Health", "..."], "range": ["#4E79A7", "#F28E2B", "#E15759", "..."]},
+  "legend": {"orient": "top", "values": {"expr": "selectedCategories"}}}}
+```
+
+Optional year range controls: add `yearField` to `usermeta.explorer` plus
+`yearStart`/`yearEnd` params and a filter on them (see
+`parliament-session-attendance-en.json`). Examples:
+`cpi-national-by-category-monthly`, `nso-hospital-beds-by-type`, `gdp-by-sector`.
 
 ---
 
@@ -380,6 +426,21 @@ Without this, Vega-Lite may fail to parse the CSV in certain environments (brows
 // CORRECT - shows true time spacing
 "x": {"field": "year", "type": "quantitative"}
 ```
+
+**Bar charts over time are the exception to "use quantitative":** bars on a
+quantitative/temporal axis without a `timeUnit` get a fixed ~5px width
+(thin slivers). Parse the year as a date and give it a time unit; bars then
+fill their year and gaps stay visible:
+
+```json
+"data": {"url": "/datasets/x-en.csv", "format": {"type": "csv", "parse": {"year": "date:'%Y'"}}},
+"mark": {"type": "bar", "maxBandSize": 48},
+"encoding": {
+  "x": {"field": "year", "type": "temporal", "timeUnit": "year", "axis": {"format": "%Y", "labelAngle": 0}}
+}
+```
+
+For dated bars use `"timeUnit": "yearmonth"` or `"yearquarter"`.
 
 ### 2. Not Starting at Zero for Absolute Values (MISLEADING)
 

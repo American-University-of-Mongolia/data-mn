@@ -3,46 +3,53 @@
   "description": "Mongolia newly issued bank loans monthly flow",
   "data": {
     "url": "/datasets/mongolbank-new-issued-loans-en.csv",
-    "format": { "type": "csv" }
+    "format": {
+      "type": "csv"
+    }
   },
   "encoding": {
     "x": {
-      "field": "date",
+      "field": "quarter",
       "type": "temporal",
-      "title": "Date",
-      "axis": { "grid": false, "labelAngle": -45 }
+      "timeUnit": "yearquarter",
+      "title": "Quarter",
+      "axis": {
+        "grid": false,
+        "format": "%Y",
+        "tickCount": "year",
+        "labelAngle": -45
+      }
     },
     "y": {
-      "field": "new_loans_issued_billion_mnt",
+      "field": "value",
       "type": "quantitative",
-      "title": "Newly Issued Loans (MNT billion)",
-      "scale": { "zero": true },
-      "axis": { "format": ",.0f", "grid": true, "gridOpacity": 0.3 }
-    }
-  },
-  "layer": [
-    {
-      "mark": { "type": "bar", "color": "#6366f1", "opacity": 0.8 }
-    },
-    {
-      "params": [
-        {
-          "name": "hover",
-          "select": { "type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout" }
-        }
-      ],
-      "mark": { "type": "point", "filled": true, "color": "#6366f1", "size": 0 },
-      "encoding": {
-        "opacity": { "value": 0 },
-        "tooltip": [
-          { "field": "date", "type": "temporal", "title": "Date", "format": "%Y-%m" },
-          { "field": "new_loans_issued_billion_mnt", "type": "quantitative", "title": "New Loans (MNT billion)", "format": ",.1f" }
-        ]
+      "title": "New loans per quarter (MNT bn)",
+      "axis": {
+        "format": ",.0f",
+        "grid": true,
+        "gridOpacity": 0.3
       }
-    }
-  ],
+    },
+    "tooltip": [
+      {
+        "field": "quarter",
+        "type": "temporal",
+        "timeUnit": "yearquarter",
+        "title": "Quarter",
+        "format": "%Y Q%q"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "New loans (MNT bn)",
+        "format": ",.1f"
+      }
+    ]
+  },
   "config": {
-    "view": { "stroke": "transparent" },
+    "view": {
+      "stroke": "transparent"
+    },
     "axis": {
       "labelFontSize": 14,
       "titleFontSize": 16,
@@ -50,6 +57,47 @@
       "labelColor": "#64748b",
       "titleColor": "#334155"
     },
-    "legend": { "labelFontSize": 13, "titleFontSize": 14 }
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  },
+  "transform": [
+    {
+      "timeUnit": "yearquarter",
+      "field": "date",
+      "as": "quarter"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "count",
+          "as": "rows_in_quarter"
+        }
+      ],
+      "groupby": [
+        "quarter"
+      ]
+    },
+    {
+      "filter": "datum.rows_in_quarter == 3 || toDate(datum['date']) < datetime(2016, 3, 2)"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "new_loans_issued_billion_mnt",
+          "as": "value"
+        }
+      ],
+      "groupby": [
+        "quarter"
+      ]
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "#6366f1",
+    "opacity": 0.85
   }
 }

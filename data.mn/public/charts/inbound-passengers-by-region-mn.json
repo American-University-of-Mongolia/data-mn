@@ -3,20 +3,28 @@
   "description": "Монгол Улсад ирсэн зорчигчид газарзүйн бүсээр (2006-2025)",
   "data": {
     "url": "/datasets/inbound-passengers-by-region-mn.csv",
-    "format": {"type": "csv"}
+    "format": {
+      "type": "csv"
+    }
   },
   "encoding": {
     "x": {
       "field": "он",
       "type": "quantitative",
       "title": "Он",
-      "axis": {"format": "d", "tickMinStep": 2, "grid": false}
+      "axis": {
+        "format": "d",
+        "tickMinStep": 2,
+        "grid": false
+      }
     },
     "y": {
       "field": "зорчигч",
       "type": "quantitative",
       "title": "Зорчигчид",
-      "axis": {"format": ",.0f"}
+      "axis": {
+        "format": ",.0f"
+      }
     },
     "color": {
       "field": "бүс",
@@ -42,12 +50,20 @@
           "#b279a2"
         ]
       },
-      "legend": {"orient": "top", "columns": 4, "symbolSize": 100}
-    },
-    "order": {
-      "field": "зорчигч",
-      "type": "quantitative",
-      "sort": "descending"
+      "legend": {
+        "orient": "top",
+        "columns": 4,
+        "symbolSize": 100
+      },
+      "sort": [
+        "Зүүн Ази болон Номхон далайн орнууд",
+        "Европ",
+        "Америк",
+        "Ойрхи Дорнод",
+        "Өмнөд Ази",
+        "Африк",
+        "Харьяалалгүй"
+      ]
     }
   },
   "layer": [
@@ -84,9 +100,20 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "он", "title": "Он", "format": "d"},
-          {"field": "бүс", "title": "Бүс"},
-          {"field": "зорчигч", "title": "Зорчигчид", "format": ",.0f"}
+          {
+            "field": "он",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "бүс",
+            "title": "Бүс"
+          },
+          {
+            "field": "зорчигч",
+            "title": "Зорчигчид",
+            "format": ",.0f"
+          }
         ]
       }
     }

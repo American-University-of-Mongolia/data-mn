@@ -3,46 +3,53 @@
   "description": "Монгол Улсын банкнаас шинээр олгосон зээлийн сар бүрийн урсгал",
   "data": {
     "url": "/datasets/mongolbank-new-issued-loans-mn.csv",
-    "format": { "type": "csv" }
+    "format": {
+      "type": "csv"
+    }
   },
   "encoding": {
     "x": {
-      "field": "огноо",
+      "field": "quarter",
       "type": "temporal",
-      "title": "Огноо",
-      "axis": { "grid": false, "labelAngle": -45 }
+      "timeUnit": "yearquarter",
+      "title": "Улирал",
+      "axis": {
+        "grid": false,
+        "format": "%Y",
+        "tickCount": "year",
+        "labelAngle": -45
+      }
     },
     "y": {
-      "field": "шинэ_зээлийн_олголт_тэрбум_төгрөг",
+      "field": "value",
       "type": "quantitative",
-      "title": "Шинэ зээлийн олголт (тэрбум төгрөг)",
-      "scale": { "zero": true },
-      "axis": { "format": ",.0f", "grid": true, "gridOpacity": 0.3 }
-    }
-  },
-  "layer": [
-    {
-      "mark": { "type": "bar", "color": "#6366f1", "opacity": 0.8 }
-    },
-    {
-      "params": [
-        {
-          "name": "hover",
-          "select": { "type": "point", "nearest": true, "on": "pointerover", "clear": "pointerout" }
-        }
-      ],
-      "mark": { "type": "point", "filled": true, "color": "#6366f1", "size": 0 },
-      "encoding": {
-        "opacity": { "value": 0 },
-        "tooltip": [
-          { "field": "огноо", "type": "temporal", "title": "Огноо", "format": "%Y-%m" },
-          { "field": "шинэ_зээлийн_олголт_тэрбум_төгрөг", "type": "quantitative", "title": "Шинэ зээл (тэрбум төгрөг)", "format": ",.1f" }
-        ]
+      "title": "Улирлын шинэ зээл (тэрбум ₮)",
+      "axis": {
+        "format": ",.0f",
+        "grid": true,
+        "gridOpacity": 0.3
       }
-    }
-  ],
+    },
+    "tooltip": [
+      {
+        "field": "quarter",
+        "type": "temporal",
+        "timeUnit": "yearquarter",
+        "title": "Улирал",
+        "format": "%Y Q%q"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Шинэ зээл (тэрбум төгрөг)",
+        "format": ",.1f"
+      }
+    ]
+  },
   "config": {
-    "view": { "stroke": "transparent" },
+    "view": {
+      "stroke": "transparent"
+    },
     "axis": {
       "labelFontSize": 14,
       "titleFontSize": 16,
@@ -50,6 +57,47 @@
       "labelColor": "#64748b",
       "titleColor": "#334155"
     },
-    "legend": { "labelFontSize": 13, "titleFontSize": 14 }
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  },
+  "transform": [
+    {
+      "timeUnit": "yearquarter",
+      "field": "огноо",
+      "as": "quarter"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "count",
+          "as": "rows_in_quarter"
+        }
+      ],
+      "groupby": [
+        "quarter"
+      ]
+    },
+    {
+      "filter": "datum.rows_in_quarter == 3 || toDate(datum['огноо']) < datetime(2016, 3, 2)"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "шинэ_зээлийн_олголт_тэрбум_төгрөг",
+          "as": "value"
+        }
+      ],
+      "groupby": [
+        "quarter"
+      ]
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "#6366f1",
+    "opacity": 0.85
   }
 }

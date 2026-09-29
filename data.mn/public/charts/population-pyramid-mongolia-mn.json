@@ -57,7 +57,7 @@
       "title": "Хүн ам",
       "axis": {
         "format": ".2s",
-        "labelExpr": "abs(datum.value) >= 1000000 ? format(abs(datum.value) / 1000000, '.1f') + 'М' : format(abs(datum.value) / 1000, '.0f') + 'М'",
+        "labelExpr": "abs(datum.value) >= 1000000 ? format(abs(datum.value) / 1000000, '.1f') + ' сая' : format(abs(datum.value) / 1000, '.0f') + ' мян'",
         "grid": false
       }
     },

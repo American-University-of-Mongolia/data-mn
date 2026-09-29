@@ -3,7 +3,9 @@
   "description": "Mongolia national CPI by category (2020=100), monthly 2010-2026",
   "data": {
     "url": "/datasets/cpi-national-by-category-monthly-en.csv",
-    "format": { "type": "csv" }
+    "format": {
+      "type": "csv"
+    }
   },
   "encoding": {
     "x": {
@@ -21,19 +23,64 @@
       "field": "cpi_index",
       "type": "quantitative",
       "title": "CPI Index (2020=100)",
-      "scale": { "zero": false },
-      "axis": { "format": ".0f" }
+      "scale": {
+        "zero": false
+      },
+      "axis": {
+        "format": ".0f"
+      }
     },
     "color": {
       "field": "category",
       "type": "nominal",
       "title": "Category",
-      "legend": { "orient": "top" }
+      "legend": {
+        "orient": "top",
+        "values": {
+          "expr": "selectedCategories"
+        },
+        "symbolType": "stroke"
+      },
+      "scale": {
+        "domain": [
+          "Food and non-alcoholic beverages",
+          "Housing, water, electricity and fuels",
+          "Transport",
+          "Clothing, footwear and cloth",
+          "Health",
+          "Alcoholic beverages, tobacco",
+          "Communication",
+          "Education",
+          "Furnishings, household equipment",
+          "Insurance and financial services",
+          "Miscellaneous goods and services",
+          "Recreation and culture",
+          "Restaurants and hotels"
+        ],
+        "range": [
+          "#4E79A7",
+          "#F28E2B",
+          "#E15759",
+          "#59A14F",
+          "#B07AA1",
+          "#76B7B2",
+          "#EDC948",
+          "#FF9DA7",
+          "#9C755F",
+          "#6A1B9A",
+          "#1565C0",
+          "#2E7D32",
+          "#79706E"
+        ]
+      }
     }
   },
   "layer": [
     {
-      "mark": { "type": "line", "strokeWidth": 1.5 }
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2
+      }
     },
     {
       "params": [
@@ -44,32 +91,89 @@
             "nearest": true,
             "on": "pointerover",
             "clear": "pointerout",
-            "fields": ["date"]
+            "fields": [
+              "date"
+            ]
           }
         }
       ],
-      "mark": { "type": "point", "filled": true, "size": 50 },
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 50
+      },
       "encoding": {
         "opacity": {
-          "condition": { "param": "hover", "empty": false, "value": 1 },
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
           "value": 0
         },
         "tooltip": [
-          { "field": "date", "type": "temporal", "title": "Month", "format": "%b %Y" },
-          { "field": "category", "type": "nominal", "title": "Category" },
-          { "field": "cpi_index", "type": "quantitative", "title": "CPI Index (2020=100)", "format": ".1f" }
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Month",
+            "format": "%b %Y"
+          },
+          {
+            "field": "category",
+            "type": "nominal",
+            "title": "Category"
+          },
+          {
+            "field": "cpi_index",
+            "type": "quantitative",
+            "title": "CPI Index (2020=100)",
+            "format": ".1f"
+          }
         ]
       }
     }
   ],
   "config": {
-    "view": { "strokeWidth": 0, "stroke": "transparent" },
+    "view": {
+      "strokeWidth": 0,
+      "stroke": "transparent"
+    },
     "axis": {
       "labelFontSize": 14,
       "titleFontSize": 16,
       "labelColor": "#64748b",
       "titleColor": "#334155"
     },
-    "legend": { "labelFontSize": 13, "titleFontSize": 14 }
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  },
+  "params": [
+    {
+      "name": "selectedCategories",
+      "value": [
+        "Food and non-alcoholic beverages",
+        "Housing, water, electricity and fuels",
+        "Transport",
+        "Clothing, footwear and cloth",
+        "Health"
+      ]
+    }
+  ],
+  "transform": [
+    {
+      "filter": "indexof(selectedCategories, datum[\"category\"]) >= 0"
+    }
+  ],
+  "usermeta": {
+    "explorer": {
+      "categoryField": "category",
+      "labels": {
+        "search": "Search categories…",
+        "noMatches": "No matching categories.",
+        "empty": "Select at least one category to show the chart."
+      }
+    }
   }
 }

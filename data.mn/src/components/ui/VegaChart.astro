@@ -79,6 +79,43 @@ const isInlineSpec = typeof spec === 'object';
       return value;
     }
 
+    function hasBarMark(spec) {
+      var mark = spec.mark && (spec.mark.type || spec.mark);
+      if (mark === 'bar') return true;
+      return (spec.layer || []).some(hasBarMark);
+    }
+
+    // A single-view bar chart whose y axis lists categories (e.g. sectors).
+    function isCategoryBarChart(spec) {
+      var y = spec.encoding && spec.encoding.y;
+      return !!y && (y.type === 'nominal' || y.type === 'ordinal') &&
+        !spec.facet && !spec.encoding.row && !spec.concat && !spec.hconcat && !spec.vconcat &&
+        hasBarMark(spec);
+    }
+
+    // Vega expression splitting a label at the last space before `n`
+    // characters; the second line is ellipsized by labelLimit if still long.
+    function wrapLabelExpr(n) {
+      var cut = "lastindexof(substring(datum.label, 0, " + n + "), ' ')";
+      return "length(datum.label) <= " + n + " || " + cut + " < 1 ? datum.label : " +
+        "[substring(datum.label, 0, " + cut + "), substring(datum.label, " + cut + " + 1)]";
+    }
+
+    async function loadFieldValues(spec, field) {
+      try {
+        var rows = spec.data && spec.data.values;
+        if (!rows && spec.data && spec.data.url) {
+          rows = window.vega.read(await window.vega.loader().load(spec.data.url), {
+            type: (spec.data.format && spec.data.format.type) || 'csv'
+          });
+        }
+        return Array.from(new Set((rows || []).map(function(row) { return String(row[field]); })));
+      } catch (error) {
+        console.warn('Could not inspect chart labels:', error);
+        return [];
+      }
+    }
+
     async function loadCategoricalLegendLabels(spec, tools) {
       var labels = tools.categoricalLegendLabels(spec);
       if (labels.length || !spec.data || !spec.data.url) return labels;
@@ -439,6 +476,24 @@ const isInlineSpec = typeof spec === 'object';
               })
             })
           });
+
+          if (!attachExplorer && isCategoryBarChart(chartSpec)) {
+            // Horizontal bars with long category names: give each row a fixed
+            // height instead of squeezing every row into the default chart
+            // height, and wrap names onto two lines within a width that leaves
+            // the plot at least ~55% of the container, even on phones.
+            var labelWidth = Math.round(Math.min(300, Math.max(120, containerWidth * 0.4)));
+            var wrapChars = Math.max(14, Math.floor(labelWidth / 7.5));
+            var yAxis = chartSpec.encoding.y.axis || {};
+            var yLabels = await loadFieldValues(chartSpec, chartSpec.encoding.y.field);
+            var wraps = yLabels.some(function(label) { return label.length > wrapChars; });
+            chartSpec.encoding.y.axis = Object.assign(wraps ? {
+              labelExpr: wrapLabelExpr(wrapChars),
+              labelLineHeight: 15,
+            } : {}, yAxis, {labelLimit: Math.min(yAxis.labelLimit || labelWidth, labelWidth)});
+            chartSpec.height = {step: wraps ? 34 : 24};
+            chartSpec.autosize = {type: 'fit-x', contains: 'padding'};
+          }
 
           if (attachExplorer) {
             // Fit the available width while allowing axes and the legend to

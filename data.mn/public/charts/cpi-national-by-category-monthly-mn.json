@@ -3,7 +3,9 @@
   "description": "Монголын үндэсний ХҮИ ангиллаар (2020=100), сараар 2010-2026",
   "data": {
     "url": "/datasets/cpi-national-by-category-monthly-mn.csv",
-    "format": { "type": "csv" }
+    "format": {
+      "type": "csv"
+    }
   },
   "encoding": {
     "x": {
@@ -21,19 +23,64 @@
       "field": "хэрэглээний_үнийн_индекс",
       "type": "quantitative",
       "title": "ХҮИ (2020=100)",
-      "scale": { "zero": false },
-      "axis": { "format": ".0f" }
+      "scale": {
+        "zero": false
+      },
+      "axis": {
+        "format": ".0f"
+      }
     },
     "color": {
       "field": "ангилал",
       "type": "nominal",
       "title": "Ангилал",
-      "legend": { "orient": "top" }
+      "legend": {
+        "orient": "top",
+        "values": {
+          "expr": "selectedCategories"
+        },
+        "symbolType": "stroke"
+      },
+      "scale": {
+        "domain": [
+          "Хүнсний бараа, ундаа, ус",
+          "Орон сууц, ус, цахилгаан, түлш",
+          "Тээвэр",
+          "Хувцас, бөс бараа, гутал",
+          "Эм тариа, эмнэлгийн үйлчилгээ",
+          "Согтууруулах ундаа, тамхи",
+          "Холбооны хэрэгсэл, шуудангийн үйлчилгээ",
+          "Боловсролын үйлчилгээ",
+          "Гэр ахуйн тавилга, гэр ахуйн бараа",
+          "Даатгал, санхүүгийн үйлчилгээ",
+          "Бусад бараа, үйлчилгээ",
+          "Амралт, чөлөөт цаг, соёлын бараа, үйлчилгээ",
+          "Зочид буудал, зоогийн газар, дотуур байр"
+        ],
+        "range": [
+          "#4E79A7",
+          "#F28E2B",
+          "#E15759",
+          "#59A14F",
+          "#B07AA1",
+          "#76B7B2",
+          "#EDC948",
+          "#FF9DA7",
+          "#9C755F",
+          "#6A1B9A",
+          "#1565C0",
+          "#2E7D32",
+          "#79706E"
+        ]
+      }
     }
   },
   "layer": [
     {
-      "mark": { "type": "line", "strokeWidth": 1.5 }
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2
+      }
     },
     {
       "params": [
@@ -44,32 +91,89 @@
             "nearest": true,
             "on": "pointerover",
             "clear": "pointerout",
-            "fields": ["огноо"]
+            "fields": [
+              "огноо"
+            ]
           }
         }
       ],
-      "mark": { "type": "point", "filled": true, "size": 50 },
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 50
+      },
       "encoding": {
         "opacity": {
-          "condition": { "param": "hover", "empty": false, "value": 1 },
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
           "value": 0
         },
         "tooltip": [
-          { "field": "огноо", "type": "temporal", "title": "Сар", "format": "%Y-%m" },
-          { "field": "ангилал", "type": "nominal", "title": "Ангилал" },
-          { "field": "хэрэглээний_үнийн_индекс", "type": "quantitative", "title": "ХҮИ (2020=100)", "format": ".1f" }
+          {
+            "field": "огноо",
+            "type": "temporal",
+            "title": "Сар",
+            "format": "%Y-%m"
+          },
+          {
+            "field": "ангилал",
+            "type": "nominal",
+            "title": "Ангилал"
+          },
+          {
+            "field": "хэрэглээний_үнийн_индекс",
+            "type": "quantitative",
+            "title": "ХҮИ (2020=100)",
+            "format": ".1f"
+          }
         ]
       }
     }
   ],
   "config": {
-    "view": { "strokeWidth": 0, "stroke": "transparent" },
+    "view": {
+      "strokeWidth": 0,
+      "stroke": "transparent"
+    },
     "axis": {
       "labelFontSize": 14,
       "titleFontSize": 16,
       "labelColor": "#64748b",
       "titleColor": "#334155"
     },
-    "legend": { "labelFontSize": 13, "titleFontSize": 14 }
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  },
+  "params": [
+    {
+      "name": "selectedCategories",
+      "value": [
+        "Хүнсний бараа, ундаа, ус",
+        "Орон сууц, ус, цахилгаан, түлш",
+        "Тээвэр",
+        "Хувцас, бөс бараа, гутал",
+        "Эм тариа, эмнэлгийн үйлчилгээ"
+      ]
+    }
+  ],
+  "transform": [
+    {
+      "filter": "indexof(selectedCategories, datum[\"ангилал\"]) >= 0"
+    }
+  ],
+  "usermeta": {
+    "explorer": {
+      "categoryField": "ангилал",
+      "labels": {
+        "search": "Ангилал хайх…",
+        "noMatches": "Тохирох ангилал олдсонгүй.",
+        "empty": "График харахын тулд дор хаяж нэг ангилал сонгоно уу."
+      }
+    }
   }
 }

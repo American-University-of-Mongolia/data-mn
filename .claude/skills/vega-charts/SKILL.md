@@ -188,6 +188,13 @@ Apply this config to all charts:
 "x": {"field": "date", "type": "temporal"}
 ```
 
+**Exception - bar charts:** bars on a quantitative/temporal axis without a
+`timeUnit` render as ~5px slivers. Use `"type": "temporal", "timeUnit": "year"`
+with `format.parse {"year": "date:'%Y'"}`. See "Layout Risks" in the
+`datamn-chart-vega` skill (the maintained version of this skill), which also
+covers crowded legends, mixed-frequency bars and render-based visual QA
+(`tools/scripts/screenshot_charts.py`).
+
 #### 2. Not Starting at Zero for Absolute Values (MISLEADING)
 
 Bar charts and area charts showing counts/totals MUST start at zero.

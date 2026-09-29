@@ -8,7 +8,8 @@
     }
   },
   "mark": {
-    "type": "bar"
+    "type": "bar",
+    "maxBandSize": 28
   },
   "encoding": {
     "y": {
@@ -16,9 +17,7 @@
       "type": "nominal",
       "title": null,
       "sort": "-x",
-      "axis": {
-        "labelLimit": 300
-      }
+      "axis": {}
     },
     "x": {
       "field": "Цалин (МНТ 1000)",

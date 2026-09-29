@@ -3,20 +3,28 @@
   "description": "Монгол Улсын их, дээд сургуулийн төгсөгчид мэргэжлийн чиглэлээр 2019-2024 он",
   "data": {
     "url": "/datasets/university-graduates-by-field-mn.csv",
-    "format": {"type": "csv"}
+    "format": {
+      "type": "csv"
+    }
   },
   "encoding": {
     "x": {
       "field": "он",
       "type": "quantitative",
       "title": "Он",
-      "axis": {"format": "d", "tickMinStep": 1, "grid": false}
+      "axis": {
+        "format": "d",
+        "tickMinStep": 1,
+        "grid": false
+      }
     },
     "y": {
       "field": "төгсөгч",
       "type": "quantitative",
       "title": "Төгсөгчдийн тоо",
-      "axis": {"format": ",.0f"},
+      "axis": {
+        "format": ",.0f"
+      },
       "stack": "zero"
     },
     "color": {
@@ -26,8 +34,8 @@
       "scale": {
         "domain": [
           "Бизнес, удирдахуй, хууль, эрх зүй",
-          "Боловсрол",
           "Эрүүл мэнд, нийгмийн хамгаалал",
+          "Боловсрол",
           "Инженер, үйлдвэрлэл, барилга угсралт",
           "Урлаг, хүмүүнлэг",
           "Нийгмийн шинжлэх ухаан, мэдээлэл, сэтгүүл зүй",
@@ -37,19 +45,24 @@
           "Хөдөө аж ахуй, ой, загасны аж ахуй, мал эмнэлэг"
         ],
         "range": [
-          "#4c78a8",
-          "#f58518",
-          "#e45756",
-          "#72b7b2",
-          "#54a24b",
-          "#eeca3b",
-          "#b279a2",
-          "#ff9da6",
-          "#9d755d",
-          "#bab0ac"
+          "#4E79A7",
+          "#F28E2B",
+          "#E15759",
+          "#59A14F",
+          "#B07AA1",
+          "#76B7B2",
+          "#EDC948",
+          "#FF9DA7",
+          "#9C755F",
+          "#BAB0AC"
         ]
       },
-      "legend": {"orient": "top", "title": null, "columns": 2}
+      "legend": {
+        "orient": "top",
+        "values": {
+          "expr": "selectedCategories"
+        }
+      }
     }
   },
   "layer": [
@@ -86,9 +99,20 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "чиглэл", "title": "Мэргэжлийн чиглэл"},
-          {"field": "он", "title": "Он", "format": "d"},
-          {"field": "төгсөгч", "title": "Төгсөгч", "format": ",.0f"}
+          {
+            "field": "чиглэл",
+            "title": "Мэргэжлийн чиглэл"
+          },
+          {
+            "field": "он",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "төгсөгч",
+            "title": "Төгсөгч",
+            "format": ",.0f"
+          }
         ]
       }
     }
@@ -106,6 +130,33 @@
     "legend": {
       "labelFontSize": 13,
       "titleFontSize": 14
+    }
+  },
+  "params": [
+    {
+      "name": "selectedCategories",
+      "value": [
+        "Бизнес, удирдахуй, хууль, эрх зүй",
+        "Эрүүл мэнд, нийгмийн хамгаалал",
+        "Боловсрол",
+        "Инженер, үйлдвэрлэл, барилга угсралт",
+        "Урлаг, хүмүүнлэг"
+      ]
+    }
+  ],
+  "transform": [
+    {
+      "filter": "indexof(selectedCategories, datum[\"чиглэл\"]) >= 0"
+    }
+  ],
+  "usermeta": {
+    "explorer": {
+      "categoryField": "чиглэл",
+      "labels": {
+        "search": "Хайх…",
+        "noMatches": "Тохирох зүйл олдсонгүй.",
+        "empty": "График харахын тулд дор хаяж нэгийг сонгоно уу."
+      }
     }
   }
 }

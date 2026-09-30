@@ -76,3 +76,6 @@ projects/
 # History backup (created during monorepo setup)
 # -----------------------------------------------------------------------------
 data.mn-history.bundle
+
+# scratch data pulls (not for the repo)
+tools/temp/

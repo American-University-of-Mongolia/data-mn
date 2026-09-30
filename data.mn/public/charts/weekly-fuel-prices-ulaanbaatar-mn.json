@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Weekly fuel prices in Ulaanbaatar from 2021-2025, showing petrol (A-80, A-92) and diesel.",
+  "description": "Weekly fuel prices in Ulaanbaatar from 2021-2026, showing petrol (A-80, A-92) and diesel.",
   "data": {
     "url": "/datasets/weekly-fuel-prices-ulaanbaatar-mn.csv",
     "format": {

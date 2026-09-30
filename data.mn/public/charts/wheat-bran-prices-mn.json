@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Хивэгний үнэ аймгаар, Монгол улс (2018-2025)",
+  "description": "Хивэгний үнэ аймгаар, Монгол улс (2020-2025)",
   "data": {
     "url": "/datasets/wheat-bran-prices-mn.csv",
     "format": {"type": "csv"}

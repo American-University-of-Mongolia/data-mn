@@ -62,7 +62,7 @@ PERIODS = [
     # 2026 оны II улирал (roman numerals)
     (re.compile(rf"(?<!\d){YEAR}\s+оны\s+(I{{1,3}}|IV)\s+улирал"),
      lambda m: (int(m.group(1)), "q", {"I": 1, "II": 2, "III": 3, "IV": 4}[m.group(2)])),
-    (re.compile(rf"(?<![\d.,-]){YEAR}(?![\d-]|'?s\b|\s+оны\s+\d{1,2}(?:-р| дүгээр| дугаар)?\s+(?:улирал|сар))"), lambda m: (int(m.group(1)), "y", None)),
+    (re.compile(rf"(?<![\d.,-]){YEAR}(?![\d=-]|'?s\b|\s+оны\s+\d{1,2}(?:-р| дүгээр| дугаар)?\s+(?:улирал|сар))"), lambda m: (int(m.group(1)), "y", None)),
 ]
 # Only series still being published can go stale; archive series (1940-1992)
 # end where they end.

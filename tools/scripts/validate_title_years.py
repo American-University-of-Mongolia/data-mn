@@ -7,7 +7,7 @@ Page titles, excerpts and chart titles carry the span of the data, e.g.
 "Q1 2000 to Q4 2025" or "2016 оны 1-р сараас 2026 оны 7-р сар". When a
 dataset is refreshed with newer data these go stale ("2021-2025" on a page
 with 2026 data). This compares every span in the MDX title, excerpt,
-VegaChart titles and the linked chart JSON titles against the first and
+VegaChart titles and the linked chart JSON titles/descriptions against the first and
 last period in the page's CSV. Month and quarter end points are compared
 at month/quarter precision when the data has them.
 
@@ -143,7 +143,9 @@ def chart_files(page_text: str):
 
 
 def chart_title_texts(spec):
-    """Title and subtitle strings of a Vega-Lite spec."""
+    """Title, subtitle and description strings of a Vega-Lite spec."""
+    if isinstance(spec, dict) and isinstance(spec.get("description"), str):
+        yield spec["description"]
     title = spec.get("title") if isinstance(spec, dict) else None
     if isinstance(title, str):
         yield title
@@ -215,7 +217,7 @@ def check_page(page: Path, fix: bool):
         for chart, reps in chart_replacements.items():
             if reps:
                 raw = chart.read_text()
-                raw = re.sub(r'("(?:title|text|subtitle)"\s*:\s*)"((?:[^"\\]|\\.)*)"',
+                raw = re.sub(r'("(?:title|text|subtitle|description)"\s*:\s*)"((?:[^"\\]|\\.)*)"',
                              lambda m: m.group(1) + '"' + sub_line(m.group(2), reps) + '"', raw)
                 chart.write_text(raw)
     return findings

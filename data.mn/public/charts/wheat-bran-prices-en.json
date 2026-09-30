@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Wheat bran (animal feed) prices by region in Mongolia (2018-2025)",
+  "description": "Wheat bran (animal feed) prices by region in Mongolia (2020-2025)",
   "data": {
     "url": "/datasets/wheat-bran-prices-en.csv",
     "format": {"type": "csv"}

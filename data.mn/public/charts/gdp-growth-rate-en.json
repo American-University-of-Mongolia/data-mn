@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia's annual GDP growth rate from 1991 to 2024, showing economic expansion and contraction.",
+  "description": "Mongolia's annual GDP growth rate from 1991 to 2025, showing economic expansion and contraction.",
   "data": {
     "url": "/datasets/gdp-growth-rate-en.csv",
     "format": {

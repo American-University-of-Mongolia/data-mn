@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Monthly petroleum product imports into Mongolia from January 2021 through June 2026. Source-missing values appear as line gaps.",
+  "description": "Monthly petroleum product imports into Mongolia from January 2021 through July 2026. Source-missing values appear as line gaps.",
   "data": {
     "url": "/datasets/mrpam-petroleum-imports-en.csv",
     "format": {

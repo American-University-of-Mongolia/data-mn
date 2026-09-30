@@ -433,6 +433,9 @@ def regenerate_industrial(raw_root: Path) -> None:
         ),
     }
     mask = en.commodity.isin(selected) & en.value.notna()
+    # NSO stopped reporting copper concentrate (35%) after 2019 and publishes
+    # 0.0 for later years; "not reported" must not chart as zero output.
+    mask &= ~(en.commodity.str.startswith("Copper concentrate") & en.value.eq(0) & en.year.astype(int).ge(2020))
     rows_en = []
     rows_mn = []
     for index in en.index[mask]:

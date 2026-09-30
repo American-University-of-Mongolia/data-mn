@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол улсын гол аж үйлдвэрийн бүтээгдэхүүний үйлдвэрлэл (1989–2024).",
+  "description": "Монгол улсын гол аж үйлдвэрийн бүтээгдэхүүний үйлдвэрлэл (1989–2025).",
   "data": {
     "url": "/datasets/industrial-production-national-mn.csv",
     "format": { "type": "csv" }

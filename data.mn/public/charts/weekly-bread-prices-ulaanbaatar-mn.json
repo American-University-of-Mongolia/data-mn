@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Weekly bread and grain prices in Ulaanbaatar from 2021-2025, showing flour, bread, and rice.",
+  "description": "Weekly bread and grain prices in Ulaanbaatar from 2021-2026, showing flour, bread, and rice.",
   "data": {
     "url": "/datasets/weekly-bread-prices-ulaanbaatar-mn.csv",
     "format": {

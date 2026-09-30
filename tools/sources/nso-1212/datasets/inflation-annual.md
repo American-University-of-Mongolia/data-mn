@@ -16,8 +16,8 @@
 
 ## Title
 
-- **EN**: Mongolia Annual Inflation Rate (1991-2024)
-- **MN**: Монгол Улсын жилийн инфляцийн түвшин (1991-2024)
+- **EN**: Mongolia Annual Inflation Rate (1991-2025)
+- **MN**: Монгол Улсын жилийн инфляцийн түвшин (1991-2025)
 
 ## Description
 

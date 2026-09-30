@@ -16,8 +16,8 @@
 
 ## Title
 
-- **EN**: Mongolia National Unemployment Rate (2009-2024)
-- **MN**: Монгол Улсын ажилгүйдлийн түвшин (2009-2024)
+- **EN**: Mongolia National Unemployment Rate (2009-2025)
+- **MN**: Монгол Улсын ажилгүйдлийн түвшин (2009-2025)
 
 ## Description
 

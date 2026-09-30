@@ -21,8 +21,8 @@
 
 ## Title
 
-- **EN**: Mongolia GDP by Major Sectors Over Time (1990-2024)
-- **MN**: Монгол Улсын ДНБ үндсэн салбаруудаар (1990-2024)
+- **EN**: Mongolia GDP by Major Sectors Over Time (1990-2025)
+- **MN**: Монгол Улсын ДНБ үндсэн салбаруудаар (1990-2025)
 
 ## Description
 

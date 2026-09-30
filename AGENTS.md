@@ -415,6 +415,9 @@ For single-language sources:
    python3 tools/scripts/translate_csv.py dataset-mn.csv --from mn --to en -o dataset-en.csv
    ```
 4. **Validate** both CSVs have matching structure and identical numeric data
+   and are **row-aligned** (row i of MN translates row i of EN; sort by the EN
+   label, never each file by its own language). For long-format CSVs run
+   `python3 tools/scripts/align_bilingual_rows.py <dataset-id>`
 5. **Save both** to `public/datasets/`
 
 **Complete guide**: `tools/TRANSLATION_GUIDE.md`

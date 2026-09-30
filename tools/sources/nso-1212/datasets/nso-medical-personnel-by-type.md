@@ -14,8 +14,8 @@
 
 ## Title
 
-- **EN**: Medical Personnel in Mongolia by Type (2015–2024)
-- **MN**: Монгол Улсад эрүүл мэндийн ажилтны тоо төрлөөр (2015–2024)
+- **EN**: Medical Personnel in Mongolia by Type (2015–2025)
+- **MN**: Монгол Улсад эрүүл мэндийн ажилтны тоо төрлөөр (2015–2025)
 
 ## Variables
 

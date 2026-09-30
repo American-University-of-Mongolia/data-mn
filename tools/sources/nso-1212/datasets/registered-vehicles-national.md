@@ -15,8 +15,8 @@
 
 ## Title
 
-- **EN**: Mongolia Registered Vehicles, National Total (1940-2024)
-- **MN**: Монгол Улсын бүртгэлтэй тээврийн хэрэгслийн тоо (1940-2024)
+- **EN**: Mongolia Registered Vehicles, National Total (1940-2025)
+- **MN**: Монгол Улсын бүртгэлтэй тээврийн хэрэгслийн тоо (1940-2025)
 
 ## Description
 

@@ -18,8 +18,8 @@
 
 ## Title
 
-- **EN**: Weekly Mutton Prices by Region in Mongolia (2024-2025)
-- **MN**: Хонины махны долоо хоногийн үнэ, бүсээр (2024-2025)
+- **EN**: Weekly Mutton Prices by Region in Mongolia (2024-2026)
+- **MN**: Хонины махны долоо хоногийн үнэ, бүсээр (2024-2026)
 
 ## Description
 
@@ -192,3 +192,14 @@ latest_df_mn.sort_values("бүс").to_csv(
 - Seasonal patterns expected (higher supply in autumn after slaughter season)
 - Regional aggregates smooth out local variations
 - Chart shows 4 regions for readability; full 25-region data in downloads
+
+## Row Alignment
+
+The EN and MN CSVs must be row-aligned: row i of the MN file translates row i
+of the EN file. Sort by the **EN** label, then date ascending, and put the MN
+file in the same order. Do not sort each file by its own language's labels.
+After writing the CSVs, run:
+
+```bash
+python3 tools/scripts/align_bilingual_rows.py weekly-mutton-prices-aimags weekly-mutton-prices-aimags-all weekly-mutton-prices-aimags-latest
+```

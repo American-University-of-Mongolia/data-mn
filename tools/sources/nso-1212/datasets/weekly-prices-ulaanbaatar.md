@@ -256,3 +256,14 @@ MN: монгол, үнэ, долоо хоног, улаанбаатар, ний�
 - More products (31 vs 11) than aimag data
 - A-80 petrol data available but may have gaps as it's being phased out
 - **Parent dataset**: This dataset (`nso-weekly-prices-ulaanbaatar`) stores the raw data; only the splits are published to data.mn
+
+## Row Alignment
+
+The EN and MN CSVs must be row-aligned: row i of the MN file translates row i
+of the EN file. Sort by the **EN** label, then date ascending, and put the MN
+file in the same order. Do not sort each file by its own language's labels.
+After writing the CSVs, run:
+
+```bash
+python3 tools/scripts/align_bilingual_rows.py <split-id> [<split-id>-all <split-id>-latest]
+```

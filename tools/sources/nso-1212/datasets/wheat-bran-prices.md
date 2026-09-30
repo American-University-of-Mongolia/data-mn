@@ -1,4 +1,4 @@
-# Dataset: Wheat Bran Prices by Region in Mongolia (2018-2025)
+# Dataset: Wheat Bran Prices by Region in Mongolia (2020-2025)
 
 ## Identification
 
@@ -17,8 +17,8 @@
 
 ## Title
 
-- **EN**: Wheat Bran Prices by Region in Mongolia (2018-2025)
-- **MN**: Хивэгний үнэ аймгаар, Монгол улс (2018-2025)
+- **EN**: Wheat Bran Prices by Region in Mongolia (2020-2025)
+- **MN**: Хивэгний үнэ аймгаар, Монгол улс (2020-2025)
 
 ## Description
 

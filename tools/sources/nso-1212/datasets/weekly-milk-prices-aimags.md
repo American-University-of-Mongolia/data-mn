@@ -23,8 +23,8 @@
 
 ## Title
 
-- **EN**: Weekly Fresh Milk Prices by Region in Mongolia (2024-2025)
-- **MN**: Сүүний долоо хоногийн үнэ, бүсээр (2024-2025)
+- **EN**: Weekly Fresh Milk Prices by Region in Mongolia (2024-2026)
+- **MN**: Сүүний долоо хоногийн үнэ, бүсээр (2024-2026)
 
 ## Description
 
@@ -219,3 +219,14 @@ latest_df_mn.sort_values("бүс").to_csv(
 - **Data Source**: Derived from parent dataset `nso-weekly-prices-main-products`
 - **Parent dataset**: The parent stores the raw data; only the splits are published to data.mn
 - **Chart subset strategy**: Visualizations show 4 regional aggregates for clarity; full aimag-level data available in downloads
+
+## Row Alignment
+
+The EN and MN CSVs must be row-aligned: row i of the MN file translates row i
+of the EN file. Sort by the **EN** label, then date ascending, and put the MN
+file in the same order. Do not sort each file by its own language's labels.
+After writing the CSVs, run:
+
+```bash
+python3 tools/scripts/align_bilingual_rows.py weekly-milk-prices-aimags weekly-milk-prices-aimags-all weekly-milk-prices-aimags-latest
+```

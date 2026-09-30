@@ -17,8 +17,8 @@
 
 ## Title
 
-- **EN**: Mongolia GDP at Current Prices, Million MNT (1990-2024)
-- **MN**: Монгол Улсын ДНБ өнөөгийн үнээр, сая төгрөг (1990-2024)
+- **EN**: Mongolia GDP at Current Prices, Million MNT (1990-2025)
+- **MN**: Монгол Улсын ДНБ өнөөгийн үнээр, сая төгрөг (1990-2025)
 
 ## Description
 

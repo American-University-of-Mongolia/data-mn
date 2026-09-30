@@ -1,30 +1,45 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Monthly CPI changes by category group in Ulaanbaatar (2020-2025). Categories grouped into 5 major spending areas.",
+  "description": "Monthly CPI changes by category group in Ulaanbaatar (2020-2026). Categories grouped into 5 major spending areas.",
   "data": {
-    "url": "/datasets/cpi-by-category-ulaanbaatar-en.csv?v=2",
-    "format": {"type": "csv"}
+    "url": "/datasets/cpi-by-category-ulaanbaatar-en.csv?v=3",
+    "format": {
+      "type": "csv"
+    }
   },
   "encoding": {
     "x": {
       "field": "month",
       "type": "temporal",
       "title": "Month",
-      "axis": {"grid": false, "format": "%Y"}
+      "axis": {
+        "grid": false,
+        "format": "%Y"
+      }
     },
     "y": {
       "field": "value",
       "type": "quantitative",
       "title": "Monthly Change (%)",
-      "axis": {"format": ".1f"}
+      "axis": {
+        "format": ".1f"
+      }
     },
     "color": {
       "field": "category",
       "type": "nominal",
       "title": "Category",
-      "legend": {"orient": "top"},
+      "legend": {
+        "orient": "top"
+      },
       "scale": {
-        "domain": ["Food & Dining", "Housing & Utilities", "Transport", "Services", "Other Goods"]
+        "domain": [
+          "Food & Dining",
+          "Housing & Utilities",
+          "Transport",
+          "Services",
+          "Other Goods"
+        ]
       }
     }
   },
@@ -55,14 +70,99 @@
       },
       "encoding": {
         "opacity": {
-          "condition": {"param": "hover", "empty": false, "value": 1},
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
           "value": 0
         },
         "tooltip": [
-          {"field": "category", "title": "Category"},
-          {"field": "month", "title": "Month", "type": "temporal", "format": "%b %Y"},
-          {"field": "value", "title": "Change (%)", "format": ".1f"}
+          {
+            "field": "category",
+            "title": "Category"
+          },
+          {
+            "field": "month",
+            "title": "Month",
+            "type": "temporal",
+            "format": "%b %Y"
+          },
+          {
+            "field": "value",
+            "title": "Change (%)",
+            "format": ".1f"
+          }
         ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "month": "2025-02",
+            "label": "Basis change: 2020=100 → 2023=100"
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          5,
+          4
+        ],
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal"
+        },
+        "y": {
+          "value": 0
+        },
+        "y2": {
+          "value": "height"
+        },
+        "color": {
+          "value": "#64748b"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "month": "2025-02",
+            "label": "Basis change: 2020=100 → 2023=100"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -6,
+        "dy": -4,
+        "baseline": "bottom",
+        "fontSize": 12
+      },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal"
+        },
+        "y": {
+          "value": "height"
+        },
+        "color": {
+          "value": "#64748b"
+        },
+        "text": {
+          "value": [
+            "Basis change",
+            "2020=100 → 2023=100"
+          ]
+        }
       }
     }
   ],
@@ -77,6 +177,8 @@
       "labelFontSize": 13,
       "titleFontSize": 14
     },
-    "view": {"stroke": "transparent"}
+    "view": {
+      "stroke": "transparent"
+    }
   }
 }

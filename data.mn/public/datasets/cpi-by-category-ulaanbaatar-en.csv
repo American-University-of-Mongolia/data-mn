@@ -1,124 +1,160 @@
 month,category,value
-2020-02,Food & Dining,2.3000000000000003
-2020-03,Food & Dining,1.6666666666666667
-2020-04,Food & Dining,0.6333333333333333
-2020-05,Food & Dining,0.7000000000000001
-2020-06,Food & Dining,0.6999999999999998
-2020-07,Food & Dining,0.7999999999999999
-2020-08,Food & Dining,-1.5333333333333332
-2020-09,Food & Dining,-0.8000000000000002
+2020-02,Food & Dining,2.3
+2020-03,Food & Dining,1.667
+2020-04,Food & Dining,0.633
+2020-05,Food & Dining,0.7
+2020-06,Food & Dining,0.7
+2020-07,Food & Dining,0.8
+2020-08,Food & Dining,-1.533
+2020-09,Food & Dining,-0.8
 2020-10,Food & Dining,0.5
-2020-11,Food & Dining,0.7333333333333334
-2020-12,Food & Dining,0.3333333333333333
-2021-01,Food & Dining,0.6666666666666666
-2021-02,Food & Dining,2.066666666666667
-2021-03,Food & Dining,1.5333333333333332
+2020-11,Food & Dining,0.733
+2020-12,Food & Dining,0.333
+2021-01,Food & Dining,0.667
+2021-02,Food & Dining,2.067
+2021-03,Food & Dining,1.533
 2021-04,Food & Dining,1.6
-2021-05,Food & Dining,1.0666666666666669
+2021-05,Food & Dining,1.067
 2021-06,Food & Dining,1.3
 2021-07,Food & Dining,0.3
-2021-08,Food & Dining,-0.3333333333333332
+2021-08,Food & Dining,-0.333
 2021-09,Food & Dining,-0.1
-2021-10,Food & Dining,1.6666666666666667
-2021-11,Food & Dining,1.3333333333333333
-2021-12,Food & Dining,2.9333333333333336
-2022-01,Food & Dining,1.9333333333333336
-2022-02,Food & Dining,0.4666666666666667
-2022-03,Food & Dining,0.4333333333333333
-2022-04,Food & Dining,1.3666666666666665
-2022-05,Food & Dining,2.2333333333333334
-2022-06,Food & Dining,2.233333333333333
-2022-07,Food & Dining,0.3333333333333333
-2022-08,Food & Dining,-0.8333333333333334
+2021-10,Food & Dining,1.667
+2021-11,Food & Dining,1.333
+2021-12,Food & Dining,2.933
+2022-01,Food & Dining,1.933
+2022-02,Food & Dining,0.467
+2022-03,Food & Dining,0.433
+2022-04,Food & Dining,1.367
+2022-05,Food & Dining,2.233
+2022-06,Food & Dining,2.233
+2022-07,Food & Dining,0.333
+2022-08,Food & Dining,-0.833
 2022-09,Food & Dining,-0.2
-2022-10,Food & Dining,1.0333333333333334
-2022-11,Food & Dining,1.0333333333333334
-2022-12,Food & Dining,0.8666666666666666
-2023-01,Food & Dining,1.6666666666666667
-2023-02,Food & Dining,1.4333333333333331
+2022-10,Food & Dining,1.033
+2022-11,Food & Dining,1.033
+2022-12,Food & Dining,0.867
+2023-01,Food & Dining,1.667
+2023-02,Food & Dining,1.433
 2023-03,Food & Dining,2.7
-2023-04,Food & Dining,2.533333333333333
-2023-05,Food & Dining,1.1666666666666667
-2023-06,Food & Dining,0.9666666666666668
-2023-07,Food & Dining,-0.0333333333333333
-2023-08,Food & Dining,-0.5333333333333332
-2023-09,Food & Dining,0.0666666666666666
-2023-10,Food & Dining,0.3333333333333333
+2023-04,Food & Dining,2.533
+2023-05,Food & Dining,1.167
+2023-06,Food & Dining,0.967
+2023-07,Food & Dining,-0.033
+2023-08,Food & Dining,-0.533
+2023-09,Food & Dining,0.067
+2023-10,Food & Dining,0.333
 2023-11,Food & Dining,0.5
-2023-12,Food & Dining,0.2333333333333333
-2024-01,Food & Dining,0.8000000000000002
-2024-02,Food & Dining,0.7666666666666666
+2023-12,Food & Dining,0.233
+2024-01,Food & Dining,0.8
+2024-02,Food & Dining,0.767
 2024-03,Food & Dining,0.6
-2024-04,Food & Dining,0.6666666666666666
+2024-04,Food & Dining,0.667
 2024-05,Food & Dining,1.6
-2024-06,Food & Dining,0.5333333333333333
-2024-07,Food & Dining,-0.1999999999999999
-2024-08,Food & Dining,-0.7666666666666666
+2024-06,Food & Dining,0.533
+2024-07,Food & Dining,-0.2
+2024-08,Food & Dining,-0.767
 2024-09,Food & Dining,0.9
-2024-10,Food & Dining,0.3666666666666667
-2024-11,Food & Dining,0.3333333333333333
-2024-12,Food & Dining,1.2333333333333334
+2024-10,Food & Dining,0.367
+2024-11,Food & Dining,0.333
+2024-12,Food & Dining,1.233
 2025-01,Food & Dining,2.6
-2020-02,Housing & Utilities,0.2666666666666666
-2020-03,Housing & Utilities,0.0333333333333333
-2020-04,Housing & Utilities,-0.1333333333333333
+2025-02,Food & Dining,1.267
+2025-03,Food & Dining,0.633
+2025-04,Food & Dining,1.4
+2025-05,Food & Dining,0.433
+2025-06,Food & Dining,0.367
+2025-07,Food & Dining,0.467
+2025-08,Food & Dining,1.0
+2025-09,Food & Dining,0.033
+2025-10,Food & Dining,0.567
+2025-11,Food & Dining,0.267
+2025-12,Food & Dining,1.433
+2026-01,Food & Dining,2.1
+2026-02,Food & Dining,1.9
+2026-03,Food & Dining,1.067
+2026-04,Food & Dining,3.667
+2026-05,Food & Dining,1.567
+2026-06,Food & Dining,2.567
+2026-07,Food & Dining,0.6
+2020-02,Housing & Utilities,0.267
+2020-03,Housing & Utilities,0.033
+2020-04,Housing & Utilities,-0.133
 2020-05,Housing & Utilities,0.3
-2020-06,Housing & Utilities,0.0666666666666666
-2020-07,Housing & Utilities,0.0666666666666666
-2020-08,Housing & Utilities,0.1333333333333333
-2020-09,Housing & Utilities,0.3666666666666667
-2020-10,Housing & Utilities,0.2333333333333333
-2020-11,Housing & Utilities,0.3333333333333333
-2020-12,Housing & Utilities,-4.933333333333334
-2021-01,Housing & Utilities,0.3999999999999999
-2021-02,Housing & Utilities,0.3333333333333333
-2021-03,Housing & Utilities,0.1666666666666666
+2020-06,Housing & Utilities,0.067
+2020-07,Housing & Utilities,0.067
+2020-08,Housing & Utilities,0.133
+2020-09,Housing & Utilities,0.367
+2020-10,Housing & Utilities,0.233
+2020-11,Housing & Utilities,0.333
+2020-12,Housing & Utilities,-4.933
+2021-01,Housing & Utilities,0.4
+2021-02,Housing & Utilities,0.333
+2021-03,Housing & Utilities,0.167
 2021-04,Housing & Utilities,5.8
-2021-05,Housing & Utilities,0.0666666666666666
-2021-06,Housing & Utilities,0.1333333333333333
-2021-07,Housing & Utilities,0.0333333333333333
+2021-05,Housing & Utilities,0.067
+2021-06,Housing & Utilities,0.133
+2021-07,Housing & Utilities,0.033
 2021-08,Housing & Utilities,0.6
-2021-09,Housing & Utilities,0.8333333333333334
-2021-10,Housing & Utilities,-2.2000000000000006
-2021-11,Housing & Utilities,0.4666666666666666
-2021-12,Housing & Utilities,1.7333333333333332
+2021-09,Housing & Utilities,0.833
+2021-10,Housing & Utilities,-2.2
+2021-11,Housing & Utilities,0.467
+2021-12,Housing & Utilities,1.733
 2022-01,Housing & Utilities,1.6
-2022-02,Housing & Utilities,0.7666666666666666
-2022-03,Housing & Utilities,0.4333333333333333
-2022-04,Housing & Utilities,4.433333333333334
-2022-05,Housing & Utilities,0.2666666666666666
-2022-06,Housing & Utilities,0.7666666666666666
-2022-07,Housing & Utilities,0.7333333333333334
-2022-08,Housing & Utilities,0.6000000000000001
+2022-02,Housing & Utilities,0.767
+2022-03,Housing & Utilities,0.433
+2022-04,Housing & Utilities,4.433
+2022-05,Housing & Utilities,0.267
+2022-06,Housing & Utilities,0.767
+2022-07,Housing & Utilities,0.733
+2022-08,Housing & Utilities,0.6
 2022-09,Housing & Utilities,0.6
-2022-10,Housing & Utilities,0.7000000000000001
-2022-11,Housing & Utilities,0.7666666666666666
-2022-12,Housing & Utilities,0.4000000000000001
-2023-01,Housing & Utilities,0.6666666666666666
-2023-02,Housing & Utilities,0.4666666666666666
-2023-03,Housing & Utilities,0.7666666666666667
-2023-04,Housing & Utilities,0.2333333333333333
+2022-10,Housing & Utilities,0.7
+2022-11,Housing & Utilities,0.767
+2022-12,Housing & Utilities,0.4
+2023-01,Housing & Utilities,0.667
+2023-02,Housing & Utilities,0.467
+2023-03,Housing & Utilities,0.767
+2023-04,Housing & Utilities,0.233
 2023-05,Housing & Utilities,0.2
-2023-06,Housing & Utilities,0.3333333333333333
-2023-07,Housing & Utilities,0.0333333333333333
-2023-08,Housing & Utilities,0.0333333333333333
-2023-09,Housing & Utilities,-0.2333333333333333
-2023-10,Housing & Utilities,0.3333333333333333
-2023-11,Housing & Utilities,1.1333333333333333
-2023-12,Housing & Utilities,0.1333333333333333
+2023-06,Housing & Utilities,0.333
+2023-07,Housing & Utilities,0.033
+2023-08,Housing & Utilities,0.033
+2023-09,Housing & Utilities,-0.233
+2023-10,Housing & Utilities,0.333
+2023-11,Housing & Utilities,1.133
+2023-12,Housing & Utilities,0.133
 2024-01,Housing & Utilities,0.6
-2024-02,Housing & Utilities,0.1666666666666666
+2024-02,Housing & Utilities,0.167
 2024-03,Housing & Utilities,1.3
-2024-04,Housing & Utilities,0.3333333333333333
-2024-05,Housing & Utilities,0.2333333333333333
-2024-06,Housing & Utilities,0.2666666666666666
-2024-07,Housing & Utilities,0.7333333333333334
-2024-08,Housing & Utilities,0.8333333333333334
-2024-09,Housing & Utilities,0.3666666666666667
-2024-10,Housing & Utilities,1.1333333333333335
-2024-11,Housing & Utilities,4.6000000000000005
-2024-12,Housing & Utilities,0.8000000000000002
-2025-01,Housing & Utilities,1.1666666666666667
+2024-04,Housing & Utilities,0.333
+2024-05,Housing & Utilities,0.233
+2024-06,Housing & Utilities,0.267
+2024-07,Housing & Utilities,0.733
+2024-08,Housing & Utilities,0.833
+2024-09,Housing & Utilities,0.367
+2024-10,Housing & Utilities,1.133
+2024-11,Housing & Utilities,4.6
+2024-12,Housing & Utilities,0.8
+2025-01,Housing & Utilities,1.167
+2025-02,Housing & Utilities,1.0
+2025-03,Housing & Utilities,0.033
+2025-04,Housing & Utilities,0.3
+2025-05,Housing & Utilities,0.1
+2025-06,Housing & Utilities,0.1
+2025-07,Housing & Utilities,0.6
+2025-08,Housing & Utilities,0.533
+2025-09,Housing & Utilities,1.3
+2025-10,Housing & Utilities,0.467
+2025-11,Housing & Utilities,-0.1
+2025-12,Housing & Utilities,0.1
+2026-01,Housing & Utilities,-0.067
+2026-02,Housing & Utilities,0.533
+2026-03,Housing & Utilities,0.133
+2026-04,Housing & Utilities,0.867
+2026-05,Housing & Utilities,0.133
+2026-06,Housing & Utilities,1.7
+2026-07,Housing & Utilities,0.567
 2020-02,Other Goods,0.0
 2020-03,Other Goods,0.1
 2020-04,Other Goods,-0.55
@@ -179,6 +215,24 @@ month,category,value
 2024-11,Other Goods,0.25
 2024-12,Other Goods,0.8
 2025-01,Other Goods,1.15
+2025-02,Other Goods,0.45
+2025-03,Other Goods,0.1
+2025-04,Other Goods,0.35
+2025-05,Other Goods,0.7
+2025-06,Other Goods,0.5
+2025-07,Other Goods,0.05
+2025-08,Other Goods,1.0
+2025-09,Other Goods,0.65
+2025-10,Other Goods,0.95
+2025-11,Other Goods,2.05
+2025-12,Other Goods,0.9
+2026-01,Other Goods,0.15
+2026-02,Other Goods,0.4
+2026-03,Other Goods,0.25
+2026-04,Other Goods,0.75
+2026-05,Other Goods,0.5
+2026-06,Other Goods,0.2
+2026-07,Other Goods,0.2
 2020-02,Services,0.125
 2020-03,Services,0.075
 2020-04,Services,0.0
@@ -211,14 +265,14 @@ month,category,value
 2022-07,Services,0.075
 2022-08,Services,3.025
 2022-09,Services,0.625
-2022-10,Services,0.3249999999999999
+2022-10,Services,0.325
 2022-11,Services,0.375
-2022-12,Services,0.0499999999999999
-2023-01,Services,0.8999999999999999
+2022-12,Services,0.05
+2023-01,Services,0.9
 2023-02,Services,0.175
 2023-03,Services,0.25
 2023-04,Services,0.2
-2023-05,Services,0.2249999999999999
+2023-05,Services,0.225
 2023-06,Services,0.15
 2023-07,Services,0.6
 2023-08,Services,5.875
@@ -236,9 +290,27 @@ month,category,value
 2024-08,Services,5.775
 2024-09,Services,0.125
 2024-10,Services,0.225
-2024-11,Services,0.2249999999999999
+2024-11,Services,0.225
 2024-12,Services,0.025
 2025-01,Services,3.85
+2025-02,Services,0.175
+2025-03,Services,0.1
+2025-04,Services,0.6
+2025-05,Services,0.225
+2025-06,Services,0.275
+2025-07,Services,0.1
+2025-08,Services,4.3
+2025-09,Services,0.175
+2025-10,Services,0.1
+2025-11,Services,0.65
+2025-12,Services,0.175
+2026-01,Services,0.45
+2026-02,Services,0.225
+2026-03,Services,0.05
+2026-04,Services,6.225
+2026-05,Services,0.125
+2026-06,Services,0.125
+2026-07,Services,0.45
 2020-02,Transport,1.4
 2020-03,Transport,1.7
 2020-04,Transport,-2.5
@@ -299,3 +371,21 @@ month,category,value
 2024-11,Transport,0.9
 2024-12,Transport,1.9
 2025-01,Transport,0.1
+2025-02,Transport,4.8
+2025-03,Transport,0.1
+2025-04,Transport,-1.4
+2025-05,Transport,-1.4
+2025-06,Transport,-0.5
+2025-07,Transport,-1.8
+2025-08,Transport,1.8
+2025-09,Transport,-0.6
+2025-10,Transport,0.8
+2025-11,Transport,0.4
+2025-12,Transport,-1.7
+2026-01,Transport,-0.2
+2026-02,Transport,-1.9
+2026-03,Transport,4.0
+2026-04,Transport,4.0
+2026-05,Transport,-1.5
+2026-06,Transport,0.1
+2026-07,Transport,1.7

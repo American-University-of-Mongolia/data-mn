@@ -44,7 +44,7 @@ UNITS = {
     "мянга": 1e3, "мянган": 1e3, "сая": 1e6, "тэрбум": 1e9, "их наяд": 1e12,
 }
 NUMBER = re.compile(
-    r"(?<![\w.,/-])(-?\d{1,3}(?:,\d{3})+(?:\.\d+)?|-?\d+(?:\.\d+)?)"
+    r"(?<![\w.,/=-])(-?\d{1,3}(?:,\d{3})+(?:\.\d+)?|-?\d+(?:\.\d+)?)(?![\d=])"
     r"(\s*(?:%|-fold|x\b|times\b)|\s+(?:" + "|".join(sorted(UNITS, key=len, reverse=True)) + r")\b)?",
     re.I,
 )
@@ -196,7 +196,10 @@ def check_sentence(sentence, data, has_month, last):
             periods.append((m.start(), m.end(), parse(m)))
     if not periods:
         return
-    numbers = [m for m in NUMBER.finditer(masked) if not any(a <= m.start() < b for a, b in taken)]
+    # Differences in percentage points ("0.5 pp") aren't values for a period.
+    diff = re.compile(r"\s*(?:pp\b|п\.п|percentage point|хувийн пункт)", re.I)
+    numbers = [m for m in NUMBER.finditer(masked)
+               if not any(a <= m.start() < b for a, b in taken) and not diff.match(masked, m.end())]
     claims = []
     for i, m in enumerate(numbers):
         # English puts the period after the number ("X in 2024"), Mongolian

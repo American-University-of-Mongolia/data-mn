@@ -1,30 +1,45 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Улаанбаатар хотын ХҮИ ангиллаар (2020-2025). 5 үндсэн бүлэгт хуваасан.",
+  "description": "Улаанбаатар хотын ХҮИ ангиллаар (2020-2026). 5 үндсэн бүлэгт хуваасан.",
   "data": {
-    "url": "/datasets/cpi-by-category-ulaanbaatar-mn.csv?v=2",
-    "format": {"type": "csv"}
+    "url": "/datasets/cpi-by-category-ulaanbaatar-mn.csv?v=3",
+    "format": {
+      "type": "csv"
+    }
   },
   "encoding": {
     "x": {
       "field": "сар",
       "type": "temporal",
       "title": "Сар",
-      "axis": {"grid": false, "format": "%Y"}
+      "axis": {
+        "grid": false,
+        "format": "%Y"
+      }
     },
     "y": {
       "field": "утга",
       "type": "quantitative",
       "title": "Сарын өөрчлөлт (%)",
-      "axis": {"format": ".1f"}
+      "axis": {
+        "format": ".1f"
+      }
     },
     "color": {
       "field": "ангилал",
       "type": "nominal",
       "title": "Ангилал",
-      "legend": {"orient": "top"},
+      "legend": {
+        "orient": "top"
+      },
       "scale": {
-        "domain": ["Хүнс, хоол", "Орон сууц, хэрэгсэл", "Тээвэр", "Үйлчилгээ", "Бусад бараа"]
+        "domain": [
+          "Хүнс, хоол",
+          "Орон сууц, хэрэгсэл",
+          "Тээвэр",
+          "Үйлчилгээ",
+          "Бусад бараа"
+        ]
       }
     }
   },
@@ -55,14 +70,99 @@
       },
       "encoding": {
         "opacity": {
-          "condition": {"param": "hover", "empty": false, "value": 1},
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
           "value": 0
         },
         "tooltip": [
-          {"field": "ангилал", "title": "Ангилал"},
-          {"field": "сар", "title": "Сар", "type": "temporal", "format": "%Y-%m"},
-          {"field": "утга", "title": "Өөрчлөлт (%)", "format": ".1f"}
+          {
+            "field": "ангилал",
+            "title": "Ангилал"
+          },
+          {
+            "field": "сар",
+            "title": "Сар",
+            "type": "temporal",
+            "format": "%Y-%m"
+          },
+          {
+            "field": "утга",
+            "title": "Өөрчлөлт (%)",
+            "format": ".1f"
+          }
         ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "month": "2025-02",
+            "label": "Суурь өөрчлөгдсөн: 2020=100 → 2023=100"
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          5,
+          4
+        ],
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal"
+        },
+        "y": {
+          "value": 0
+        },
+        "y2": {
+          "value": "height"
+        },
+        "color": {
+          "value": "#64748b"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "month": "2025-02",
+            "label": "Суурь өөрчлөгдсөн: 2020=100 → 2023=100"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -6,
+        "dy": -4,
+        "baseline": "bottom",
+        "fontSize": 12
+      },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal"
+        },
+        "y": {
+          "value": "height"
+        },
+        "color": {
+          "value": "#64748b"
+        },
+        "text": {
+          "value": [
+            "Суурь өөрчлөгдсөн",
+            "2020=100 → 2023=100"
+          ]
+        }
       }
     }
   ],
@@ -77,6 +177,8 @@
       "labelFontSize": 13,
       "titleFontSize": 14
     },
-    "view": {"stroke": "transparent"}
+    "view": {
+      "stroke": "transparent"
+    }
   }
 }

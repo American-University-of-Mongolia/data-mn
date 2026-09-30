@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "How major economic sectors have grown over time in Mongolia from 1990 to 2024.",
+  "description": "How major economic sectors have grown over time in Mongolia from 1990 to 2025.",
   "data": {
     "url": "/datasets/gdp-sector-trends-en.csv",
     "format": {

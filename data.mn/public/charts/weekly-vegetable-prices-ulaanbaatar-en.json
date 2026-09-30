@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Weekly vegetable and fruit prices in Ulaanbaatar from 2021-2025.",
+  "description": "Weekly vegetable and fruit prices in Ulaanbaatar from 2021-2026.",
   "data": {
     "url": "/datasets/weekly-vegetable-prices-ulaanbaatar-en.csv",
     "format": {

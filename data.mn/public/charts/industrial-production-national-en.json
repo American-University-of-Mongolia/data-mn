@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Production of major industrial commodities in Mongolia (1989–2024).",
+  "description": "Production of major industrial commodities in Mongolia (1989–2025).",
   "data": {
     "url": "/datasets/industrial-production-national-en.csv",
     "format": { "type": "csv" }

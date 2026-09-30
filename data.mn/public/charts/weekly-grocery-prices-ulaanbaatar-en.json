@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Weekly grocery prices in Ulaanbaatar from 2021-2025, showing vegetable oil, sugar, tea, and eggs.",
+  "description": "Weekly grocery prices in Ulaanbaatar from 2021-2026, showing vegetable oil, sugar, tea, and eggs.",
   "data": {
     "url": "/datasets/weekly-grocery-prices-ulaanbaatar-en.csv",
     "format": {

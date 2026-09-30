@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Weekly meat prices in Ulaanbaatar from 2021-2025, showing mutton, beef, horse meat, and goat meat.",
+  "description": "Weekly meat prices in Ulaanbaatar from 2021-2026, showing mutton, beef, horse meat, and goat meat.",
   "data": {
     "url": "/datasets/weekly-meat-prices-ulaanbaatar-mn.csv",
     "format": {

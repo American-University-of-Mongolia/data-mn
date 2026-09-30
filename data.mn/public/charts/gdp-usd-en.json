@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia's GDP in US dollars from 1990 to 2024 for international comparison.",
+  "description": "Mongolia's GDP in US dollars from 1990 to 2025 for international comparison.",
   "data": {
     "url": "/datasets/gdp-usd-en.csv",
     "format": {

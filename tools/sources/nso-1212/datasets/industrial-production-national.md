@@ -37,6 +37,7 @@ Years: 1989–2025
 ## Notes
 
 - Units differ per commodity, but each commodity maps to exactly one unit, so the unit is folded into the commodity label for a 3-column long form
+- Copper concentrate (35%): NSO publishes 0.0 for 2020+ (line item discontinued; the separate "Copper, with concentrate" series is on a different basis), so those rows are dropped, not charted as zero
 - Crude oil: 9 missing values (years with no production)
 - Gold: 2 missing values (early years)
 - Iron ore: 15 missing values (early years before large-scale mining)

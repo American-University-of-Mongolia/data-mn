@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Weekly dairy prices in Ulaanbaatar from 2021-2025, showing milk, yoghurt, and butter cream.",
+  "description": "Weekly dairy prices in Ulaanbaatar from 2021-2026, showing milk, yoghurt, and butter cream.",
   "data": {
     "url": "/datasets/weekly-dairy-prices-ulaanbaatar-en.csv",
     "format": {

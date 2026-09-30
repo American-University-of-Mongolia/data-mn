@@ -16,8 +16,8 @@
 
 ## Title
 
-- **EN**: Mongolia Labour Force Participation Rate, % (1992-2024)
-- **MN**: Монгол Улсын ажиллах хүчний эдийн засгийн идэвхжил, % (1992-2024)
+- **EN**: Mongolia Labour Force Participation Rate, % (2009-2025)
+- **MN**: Монгол Улсын ажиллах хүчний эдийн засгийн идэвхжил, % (2009-2025)
 
 ## Description
 

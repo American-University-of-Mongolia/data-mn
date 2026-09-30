@@ -185,7 +185,10 @@ Task tool:
     1. Read definitions
     2. Fetch latest data
     3. Process splits (if parent)
-    4. Generate charts and MDX
+    4. Generate charts and MDX. Update every year range in the title,
+       excerpt and <VegaChart title> to the new data span (e.g. a page
+       titled "(2021-2025)" whose data now reaches 2026 becomes "(2021-2026)"),
+       in BOTH the EN and MN pages
     5. Update registry
     6. Report WORKER_RESULT
 ```
@@ -256,10 +259,24 @@ Continue until all batches are complete.
 **CRITICAL**: After all workers complete, validate all generated charts:
 
 ```bash
-cd /Users/ritz/Insync/robert@aum.edu.mn/Google\ Drive/data/data.mn && python3 ../tools/scripts/validate_vega.py --all
+cd data.mn && python3 ../tools/scripts/validate_vega.py --all
 ```
 
 **Do NOT proceed if the validator reports errors.** Fix all errors before finishing.
+
+### 3.1b Check Title Year Ranges
+
+Refreshed data usually extends the year range, and titles like "(2021-2025)"
+go stale. Rewrite ranges that clearly span the series, then review the rest:
+
+```bash
+python3 tools/scripts/validate_title_years.py --fix
+python3 tools/scripts/validate_title_years.py   # must report 0 stale
+```
+
+`REVIEW` lines are ranges the data doesn't span (baselines like 1981-2010,
+chart sub-periods, or a wrong start year). Check each and fix the wrong ones
+by hand.
 
 ### 3.2 Display Final Summary
 

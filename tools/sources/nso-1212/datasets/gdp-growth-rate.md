@@ -25,8 +25,8 @@ Inherited from parent dataset:
 
 ## Title
 
-- **EN**: Mongolia GDP Growth Rate (1991-2024)
-- **MN**: Монгол Улсын ДНБ-ий өсөлтийн хувь (1991-2024)
+- **EN**: Mongolia GDP Growth Rate (1991-2025)
+- **MN**: Монгол Улсын ДНБ-ий өсөлтийн хувь (1991-2025)
 
 ## Description
 

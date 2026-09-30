@@ -18,8 +18,8 @@
 
 ## Title
 
-- **EN**: Mongolia Average Monthly Salary (2001-2024)
-- **MN**: Монгол Улсын сарын дундаж цалин (2001-2024)
+- **EN**: Mongolia Average Monthly Salary (2001-2025)
+- **MN**: Монгол Улсын сарын дундаж цалин (2001-2025)
 
 ## Description
 

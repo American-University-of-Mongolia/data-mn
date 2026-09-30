@@ -17,8 +17,8 @@
 
 ## Title
 
-- **EN**: Mongolia GDP in US Dollars (1990-2024)
-- **MN**: Монгол Улсын ДНБ ам.доллараар (1990-2024)
+- **EN**: Mongolia GDP in US Dollars (1990-2025)
+- **MN**: Монгол Улсын ДНБ ам.доллараар (1990-2025)
 
 ## Description
 

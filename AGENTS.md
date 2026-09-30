@@ -286,6 +286,16 @@ python3 tools/scripts/screenshot_charts.py registered-vehicles-by-age salary-by-
 mixed-frequency bars, scrambled area order, wrong unit suffixes) as errors;
 see "Layout Risks" in the `datamn-chart-vega` skill.
 
+### `tools/scripts/validate_title_years.py`
+Check that "YYYY-YYYY" ranges in page titles, excerpts and chart titles match
+the years in the data (catches "2021-2025" titles on pages refreshed with 2026
+data). Also run by `review_pr.py`.
+
+```bash
+python3 tools/scripts/validate_title_years.py          # report (exit 1 if stale)
+python3 tools/scripts/validate_title_years.py --fix    # rewrite stale ranges
+```
+
 ### `tools/scripts/validate_mdx_datafiles.py`
 Validate MDX frontmatter `dataFiles` paths point to existing files.
 
@@ -405,6 +415,9 @@ For single-language sources:
    python3 tools/scripts/translate_csv.py dataset-mn.csv --from mn --to en -o dataset-en.csv
    ```
 4. **Validate** both CSVs have matching structure and identical numeric data
+   and are **row-aligned** (row i of MN translates row i of EN; sort by the EN
+   label, never each file by its own language). For long-format CSVs run
+   `python3 tools/scripts/align_bilingual_rows.py <dataset-id>`
 5. **Save both** to `public/datasets/`
 
 **Complete guide**: `tools/TRANSLATION_GUIDE.md`

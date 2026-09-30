@@ -17,8 +17,8 @@
 
 ## Title
 
-- **EN**: Mongolia Foreign Direct Investment, Net, Million USD (2009-2025)
-- **MN**: Монгол Улсын шууд хөрөнгө оруулалт, цэвэр (2009-2025)
+- **EN**: Mongolia Foreign Direct Investment, Net, Million USD (2009-2026)
+- **MN**: Монгол Улсын шууд хөрөнгө оруулалт, цэвэр (2009-2026)
 
 ## Description
 

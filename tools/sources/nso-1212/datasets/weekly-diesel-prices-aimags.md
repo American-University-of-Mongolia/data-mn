@@ -18,8 +18,8 @@
 
 ## Title
 
-- **EN**: Weekly Diesel Prices by Region in Mongolia (2024-2025)
-- **MN**: Дизелийн түлшний долоо хоногийн үнэ, бүсээр (2024-2025)
+- **EN**: Weekly Diesel Prices by Region in Mongolia (2024-2026)
+- **MN**: Дизелийн түлшний долоо хоногийн үнэ, бүсээр (2024-2026)
 
 ## Coverage
 
@@ -275,3 +275,14 @@ Auto-extract from latest week:
 - Diesel is critical for transportation and agriculture in Mongolia
 - Winter months may show supply constraints in remote regions
 - **CRITICAL**: Product name in source has two spaces: "Diesel fuel,  l"
+
+## Row Alignment
+
+The EN and MN CSVs must be row-aligned: row i of the MN file translates row i
+of the EN file. Sort by the **EN** label, then date ascending, and put the MN
+file in the same order. Do not sort each file by its own language's labels.
+After writing the CSVs, run:
+
+```bash
+python3 tools/scripts/align_bilingual_rows.py weekly-diesel-prices-aimags weekly-diesel-prices-aimags-all weekly-diesel-prices-aimags-latest
+```

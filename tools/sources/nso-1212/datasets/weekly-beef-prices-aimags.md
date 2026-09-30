@@ -18,8 +18,8 @@
 
 ## Title
 
-- **EN**: Weekly Beef Prices by Region in Mongolia (2024-2025)
-- **MN**: Үхрийн махны долоо хоногийн үнэ, бүсээр (2024-2025)
+- **EN**: Weekly Beef Prices by Region in Mongolia (2024-2026)
+- **MN**: Үхрийн махны долоо хоногийн үнэ, бүсээр (2024-2026)
 
 ## Coverage
 
@@ -254,3 +254,14 @@ Auto-extract for MDX excerpt:
 - **Ulaanbaatar data is in a separate NSO table** - not included here
 - Parent dataset: `nso-weekly-prices-aimags` stores the raw multi-product data
 - This split is published to data.mn as a standalone dataset with its own URL
+
+## Row Alignment
+
+The EN and MN CSVs must be row-aligned: row i of the MN file translates row i
+of the EN file. Sort by the **EN** label, then date ascending, and put the MN
+file in the same order. Do not sort each file by its own language's labels.
+After writing the CSVs, run:
+
+```bash
+python3 tools/scripts/align_bilingual_rows.py weekly-beef-prices-aimags weekly-beef-prices-aimags-all weekly-beef-prices-aimags-latest
+```

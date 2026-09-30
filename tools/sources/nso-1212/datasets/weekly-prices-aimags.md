@@ -250,3 +250,14 @@ For each split, auto-extract:
 - A-80 petrol data has significant gaps (discontinued in many regions)
 - Hay prices are seasonal and may have more missing values
 - **Parent dataset**: This dataset (`nso-weekly-prices-main-products`) stores the raw data; only the splits are published to data.mn
+
+## Row Alignment
+
+The EN and MN CSVs must be row-aligned: row i of the MN file translates row i
+of the EN file. Sort by the **EN** label, then date ascending, and put the MN
+file in the same order. Do not sort each file by its own language's labels.
+After writing the CSVs, run:
+
+```bash
+python3 tools/scripts/align_bilingual_rows.py <split-id> [<split-id>-all <split-id>-latest]
+```

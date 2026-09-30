@@ -15,8 +15,8 @@
 
 ## Title
 
-- **EN**: Mongolia Electricity Balance: Generation, Imports, and Consumption (1989-2024)
-- **MN**: Монгол Улсын цахилгаан эрчим хүчний баланс: үйлдвэрлэл, импорт, хэрэглээ (1989-2024)
+- **EN**: Mongolia Electricity Balance: Generation, Imports, and Consumption (1989-2025)
+- **MN**: Монгол Улсын цахилгаан эрчим хүчний баланс: үйлдвэрлэл, импорт, хэрэглээ (1989-2025)
 
 ## Description
 

@@ -223,6 +223,14 @@ def main() -> int:
         report.add("MDX dataFiles", code == 0,
                    "" if code == 0 else tail(out))
 
+        # Title/excerpt year ranges must match the data ("2021-2025" on a
+        # page whose data now reaches 2026). Fix with --fix.
+        code, out = run(
+            [python, str(wt_scripts / "validate_title_years.py")],
+            cwd=worktree)
+        report.add("Title year ranges", code == 0,
+                   "" if code == 0 else tail(out))
+
         # Registry DB diff (informational, never fails the review).
         db_changed_ids: list[str] = []
         if db_touched:

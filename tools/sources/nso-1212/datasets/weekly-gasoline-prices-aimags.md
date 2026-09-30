@@ -22,8 +22,8 @@
 
 ## Title
 
-- **EN**: Weekly Gasoline (A-92) Prices by Region in Mongolia (2024-2025)
-- **MN**: Аи-92 автобензиний долоо хоногийн үнэ, бүсээр (2024-2025)
+- **EN**: Weekly Gasoline (A-92) Prices by Region in Mongolia (2024-2026)
+- **MN**: Аи-92 автобензиний долоо хоногийн үнэ, бүсээр (2024-2026)
 
 ## Coverage
 
@@ -215,3 +215,14 @@ Auto-extract from latest data:
 - Regional aggregates smooth out local variations and show broader geographic patterns
 - **Full individual aimag data** available in download files for detailed analysis
 - **This is a split dataset**: Parent data stored in `nso-weekly-prices-aimags`
+
+## Row Alignment
+
+The EN and MN CSVs must be row-aligned: row i of the MN file translates row i
+of the EN file. Sort by the **EN** label, then date ascending, and put the MN
+file in the same order. Do not sort each file by its own language's labels.
+After writing the CSVs, run:
+
+```bash
+python3 tools/scripts/align_bilingual_rows.py weekly-gasoline-prices-aimags weekly-gasoline-prices-aimags-all weekly-gasoline-prices-aimags-latest
+```

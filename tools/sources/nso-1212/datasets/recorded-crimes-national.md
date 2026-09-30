@@ -16,8 +16,8 @@
 
 ## Title
 
-- **EN**: Mongolia Recorded Crimes, National Total (1989-2024)
-- **MN**: Монгол Улсын бүртгэгдсэн гэмт хэргийн тоо (1989-2024)
+- **EN**: Mongolia Recorded Crimes, National Total (1989-2025)
+- **MN**: Монгол Улсын бүртгэгдсэн гэмт хэргийн тоо (1989-2025)
 
 ## Description
 

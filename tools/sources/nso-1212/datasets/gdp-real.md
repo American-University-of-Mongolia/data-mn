@@ -20,8 +20,8 @@
 
 ## Title
 
-- **EN**: Mongolia Real GDP at 2015 Prices (2015-2024)
-- **MN**: Монгол Улсын бодит ДНБ 2015 оны үнээр (2015-2024)
+- **EN**: Mongolia Real GDP at 2015 Prices (2015-2025)
+- **MN**: Монгол Улсын бодит ДНБ 2015 оны үнээр (2015-2025)
 
 ## Description
 

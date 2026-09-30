@@ -17,8 +17,8 @@
 
 ## Title
 
-- **EN**: Mongolia Trade Balance - Goods (2009-2025)
-- **MN**: Монгол Улсын барааны худалдааны тэнцэл (2009-2025)
+- **EN**: Mongolia Trade Balance - Goods (2009-2026)
+- **MN**: Монгол Улсын барааны худалдааны тэнцэл (2009-2026)
 
 ## Description
 

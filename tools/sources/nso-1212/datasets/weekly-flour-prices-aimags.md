@@ -18,8 +18,8 @@
 
 ## Title
 
-- **EN**: Weekly Flour Prices by Region in Mongolia (2024-2025)
-- **MN**: Гурилын долоо хоногийн үнэ, бүсээр (2024-2025)
+- **EN**: Weekly Flour Prices by Region in Mongolia (2024-2026)
+- **MN**: Гурилын долоо хоногийн үнэ, бүсээр (2024-2026)
 
 ## Coverage
 
@@ -269,3 +269,14 @@ Exempt from the max-6-categories rule (maps show all regions by design).
 - Filter: "Flour, grade 1, prepacked, kg"
 - Chart: 4 regional aggregates
 - Downloads: All 25 regions
+
+## Row Alignment
+
+The EN and MN CSVs must be row-aligned: row i of the MN file translates row i
+of the EN file. Sort by the **EN** label, then date ascending, and put the MN
+file in the same order. Do not sort each file by its own language's labels.
+After writing the CSVs, run:
+
+```bash
+python3 tools/scripts/align_bilingual_rows.py weekly-flour-prices-aimags weekly-flour-prices-aimags-all weekly-flour-prices-aimags-latest
+```

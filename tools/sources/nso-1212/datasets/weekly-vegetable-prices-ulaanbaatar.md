@@ -1,4 +1,4 @@
-# Dataset: Weekly Vegetable Prices in Ulaanbaatar (2021-2025)
+# Dataset: Weekly Vegetable Prices in Ulaanbaatar (2021-2026)
 
 ## Identification
 
@@ -18,8 +18,8 @@
 
 ## Title
 
-- **EN**: Weekly Vegetable Prices in Ulaanbaatar (2021-2025)
-- **MN**: Улаанбаатар дахь хүнсний ногооны долоо хоногийн үнэ (2021-2025)
+- **EN**: Weekly Vegetable Prices in Ulaanbaatar (2021-2026)
+- **MN**: Улаанбаатар дахь хүнсний ногооны долоо хоногийн үнэ (2021-2026)
 
 ## Description
 
@@ -61,7 +61,19 @@ python3 fetch_data.py --table DT_NSO_0600_001V4.px --output ./output
 Filter the parent table to the 6 vegetable/fruit products above, rename
 raw columns to `product, date, price` (EN) /
 `бүтээгдэхүүн, огноо, үнэ` (MN), strip whitespace from product names,
-and sort by product, date ascending.
+and sort by the EN product, date ascending
+(MN rows in the same order; see Row Alignment).
+
+## Row Alignment
+
+The EN and MN CSVs must be row-aligned: row i of the MN file translates row i
+of the EN file. Sort by the **EN** label, then date ascending, and put the MN
+file in the same order. Do not sort each file by its own language's labels.
+After writing the CSVs, run:
+
+```bash
+python3 tools/scripts/align_bilingual_rows.py weekly-vegetable-prices-ulaanbaatar
+```
 
 ## Files
 

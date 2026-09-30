@@ -8,7 +8,9 @@ by its own category labels breaks that ("Bread" sorts before "Flour", but
 "Гурил" sorts before "Талх"), and run_all_checks.py then fails its EN/MN
 numeric comparisons.
 
-This sorts the EN file by (category, date) and reorders the MN file to match.
+Files whose rows already correspond are left as they are, in whatever order.
+Otherwise this sorts the EN file by (category, date) and reorders the MN file
+to match.
 EN and MN categories are paired by their full value series (every date and
 value must match), so no translation table is needed. The pairing must be
 one-to-one; ambiguous or unmatched categories abort without writing.
@@ -98,6 +100,13 @@ def align(dataset_id: str, write: bool, pairs_from: str = None) -> bool:
         return align_snapshot(dataset_id, pairs_from or dataset_id.replace("-latest", "-all"), write)
     (ec, ed, ev), (mc, md, mv) = roles(en), roles(mn)
     pairing = category_pairing(dataset_id)
+    corresponds = ((mn[mc].values == en[ec].map(pairing).values).all()
+                   and (mn[md].astype(str).values == en[ed].astype(str).values).all()
+                   and (mn[mv].values == en[ev].values).all())
+    if corresponds:
+        # Already row-aligned in some order (e.g. by date, then label): keep it.
+        print(f"{'aligned':10} {dataset_id} ({len(pairing)} categories)")
+        return True
 
     en_sorted = en.sort_values([ec, ed], kind="stable").reset_index(drop=True)
     keys = pd.DataFrame({mc: en_sorted[ec].map(pairing), md: en_sorted[ed].astype(str)})
@@ -105,8 +114,8 @@ def align(dataset_id: str, write: bool, pairs_from: str = None) -> bool:
     mn_sorted = keys.merge(mn_indexed, on=[mc, md], how="left", validate="one_to_one")[list(mn.columns)]
     assert (mn_sorted[mv].values == en_sorted[ev].values).all()
 
-    aligned = en.equals(en_sorted) and mn.assign(**{md: mn[md].astype(str)}).equals(mn_sorted)
-    if write and not aligned:
+    aligned = False
+    if write:
         en_sorted.to_csv(en_path, index=False)
         mn_sorted.to_csv(mn_path, index=False)
     status = "aligned" if aligned else ("REORDERED" if write else "MISALIGNED")

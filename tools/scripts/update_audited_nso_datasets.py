@@ -190,40 +190,165 @@ def normalize_month(series: pd.Series) -> pd.Series:
     return pd.to_datetime(series, format="%Y-%m").dt.strftime("%Y-%m")
 
 
-def repair_anomalies(average: pd.Series, anomaly: pd.Series, tolerance: float = 3.0) -> pd.Series:
-    """Recompute anomalies that contradict the station's own temperatures.
+AVERAGE = "Average air temperature"
+ANOMALY = "Comparison with multi-year (1981-2010)"
 
-    Both series are indexed by YYYY-MM. The anomaly is the monthly mean minus
-    a 1981-2010 normal, so ``average - anomaly`` should be nearly constant for
-    each calendar month (NSO shifts it by a few tenths when it revises the
-    normal). NSO's table has months where the anomaly cell holds another
-    figure: 2008-11 and 2017-08 hold that month's minimum temperature (-20.0
-    for Ulaanbaatar while its mean was -7.1), 2016-03 holds the normal.
 
-    Where ``average - anomaly`` is more than ``tolerance`` C from that
-    calendar month's median normal, one of the two values is wrong:
-    - the mean is typical for the calendar month (|z| < 2.5): the anomaly is
-      wrong; replace it with ``average - median normal``;
-    - otherwise the mean itself is suspect (e.g. 2026-01 at -4.1 C); keep
-      NSO's anomaly and warn so the temperature datasets get checked.
+def _zscore(series: pd.Series) -> pd.Series:
+    """z-score of each YYYY-MM value against the same calendar month."""
+    month = series.index.str[5:7]
+    grouped = series.groupby(month)
+    return (series - grouped.transform("median")) / grouped.transform("std")
+
+
+def _local_normal(implied: pd.Series, window: int = 3) -> pd.Series:
+    """Baseline normal for each month: the median of ``mean - anomaly`` for
+    the same calendar month within +/- ``window`` years, excluding the month
+    itself. NSO revises its normal over time (Ulaanbaatar's July normal is
+    16.9 C in 2005-2010 and 19.0 C from 2021), so nearby years are used."""
+    years = implied.index.str[:4].astype(int)
+    months = implied.index.str[5:7]
+    out = pd.Series(index=implied.index, dtype=float)
+    for key in implied.index:
+        y, m = int(key[:4]), key[5:7]
+        near = implied[(months == m) & (abs(years - y) <= window) & (implied.index != key)]
+        out[key] = near.median()
+    return out
+
+
+def clean_temperature_table(en: pd.DataFrame, mn: pd.DataFrame, tolerance: float = 3.0):
+    """Remove and correct known corruption in NSO table DT_NSO_2400_022V2.
+
+    ``en``/``mn`` are row-aligned long frames (indicator, station, month,
+    value) with EN indicator/station labels in ``en``. Returns cleaned copies.
+
+    1. Copied months: a month whose values for every station and indicator
+       duplicate another month's is dropped (2026-01 is an exact copy of
+       2025-03 for all 29 stations). Of the pair, the month whose mean
+       temperatures are atypical for its calendar month is the copy.
+    2. For each station, the anomaly should equal mean minus the baseline
+       normal. Where they disagree by more than ``tolerance`` C, a value is
+       only recomputed when the evidence says which one is wrong:
+       - anomaly = mean - normal, if the mean is typical for the month and
+         the anomaly cell is clearly misplaced: it equals that month's
+         minimum or maximum, equals the normal, or is exactly 0.0 (a
+         missing value). 2008-11, 2016-03 and 2017-08 for Ulaanbaatar hold
+         the minimum temperature or the normal;
+       - mean = normal + anomaly, if the anomaly is typical and the station's
+         mean is an outlier against the other stations that month, and the
+         month is not itself flagged at several stations (2009-07
+         Ulaanbaatar 25.1 C while its neighbours read 17-20 C; 2016-12
+         Baruun-Urt +15.8 C is a sign error: mean = -(normal + anomaly), fixed
+         by flipping the sign). A month flagged at several stations at once
+         (e.g. 2022-12 in the west) is ambiguous and left alone;
+       - otherwise the values are left unchanged with a warning (e.g. months
+         where many stations shift by 3-5 C together, which looks like NSO
+         applying a different baseline that month).
+    3. Maximum/minimum cells that cannot be right are dropped (they cannot be
+       reconstructed): a maximum below the month's mean, a minimum above it,
+       or a value equal to the month's anomaly that is atypical for the
+       calendar month. 2023-06 holds the anomaly in the maximum column at
+       every station; Ulaanbaatar's 2023-07 minimum (-1.1 C) is its anomaly.
     """
-    avg = average.reindex(anomaly.index)
-    calendar_month = pd.Series(anomaly.index.str[5:7], index=anomaly.index)
-    normal = (avg - anomaly).groupby(calendar_month).transform("median")
-    by_month = average.groupby(average.index.str[5:7])
-    avg_z = (avg - calendar_month.map(by_month.median())) / calendar_month.map(by_month.std())
-    inconsistent = ((avg - anomaly) - normal).abs() > tolerance
-    fix = inconsistent & (avg_z.abs() < 2.5)
-    repaired = anomaly.copy()
-    repaired[fix] = (avg - normal)[fix].round(1)
-    for month in anomaly.index[inconsistent]:
-        if fix[month]:
-            print(f"  temperature-anomaly {month}: NSO anomaly {anomaly[month]} contradicts mean "
-                  f"{avg[month]} (normal {normal[month]:.1f}); using {repaired[month]}")
-        else:
-            print(f"  WARNING temperature {month}: NSO mean {avg[month]} is atypical for the month "
-                  f"and inconsistent with anomaly {anomaly[month]}; check the source")
-    return repaired
+    en, mn = en.copy(), mn.copy()
+    key = en.station + "|" + en.indicator
+    wide = en.assign(key=key).pivot_table(index="month", columns="key", values="value")
+    avg_cols = [c for c in wide.columns if c.endswith("|" + AVERAGE)]
+    drop = set()
+    months = list(wide.index)
+    for i, a in enumerate(months):
+        for b in months[i + 1:]:
+            both = wide.loc[a].notna() & wide.loc[b].notna()
+            if both.sum() >= 20 and (wide.loc[a][both] == wide.loc[b][both]).mean() > 0.9:
+                z = wide[avg_cols].apply(_zscore).abs()
+                copy = a if z.loc[a].mean() > z.loc[b].mean() else b
+                drop.add(copy)
+                print(f"  temperature {copy}: all stations duplicate {b if copy == a else a}; dropping {copy}")
+    keep = ~en.month.isin(drop)
+    en, mn = en[keep], mn[keep]
+
+    # Mean temperature z-scores per station, and each month's median across
+    # stations, to tell a station-specific outlier from region-wide weather.
+    mean_wide = en[en.indicator.eq(AVERAGE)].pivot_table(index="month", columns="station", values="value")
+    mean_z = mean_wide.apply(_zscore)
+    month_z = mean_z.median(axis=1)
+    extremes = {ind: en[en.indicator.eq(ind)].pivot_table(index="month", columns="station", values="value")
+                for ind in ("Maximum temperature", "Minimum temperature")}
+
+    # Months where mean and anomaly disagree at several stations at once are
+    # ambiguous (region-wide weather or a baseline change), so means in those
+    # months are never rewritten.
+    flagged = {}
+    for station in en.station.unique():
+        s = en[en.station.eq(station)]
+        avg = s[s.indicator.eq(AVERAGE)].set_index("month").value.dropna()
+        anom = s[s.indicator.eq(ANOMALY)].set_index("month").value.dropna()
+        common = avg.index.intersection(anom.index)
+        if len(common) >= 24:
+            gap = ((avg[common] - anom[common]) - _local_normal(avg[common] - anom[common])).abs()
+            for month in gap[gap > tolerance].index:
+                flagged[month] = flagged.get(month, 0) + 1
+
+    for station in en.station.unique():
+        rows = en.station.eq(station)
+        avg_rows = en.index[rows & en.indicator.eq(AVERAGE) & en.value.notna()]
+        anom_rows = en.index[rows & en.indicator.eq(ANOMALY) & en.value.notna()]
+        avg = pd.Series(en.loc[avg_rows, "value"].values, index=en.loc[avg_rows, "month"].values)
+        anom = pd.Series(en.loc[anom_rows, "value"].values, index=en.loc[anom_rows, "month"].values)
+        common = avg.index.intersection(anom.index)
+        if len(common) < 24:
+            continue
+        avg, anom = avg[common].sort_index(), anom[common].sort_index()
+        normal = _local_normal(avg - anom)
+        bad = ((avg - anom) - normal).abs() > tolerance
+        avg_z, anom_z = _zscore(avg).abs(), _zscore(anom).abs()
+        for month in bad[bad].index:
+            gap = abs((avg[month] - anom[month]) - normal[month])
+            misplaced = (
+                any(abs(anom[month] - extremes[ind].at[month, station]) < 0.05
+                    for ind in extremes if station in extremes[ind] and month in extremes[ind].index)
+                or abs(anom[month] - normal[month]) < 0.15
+                or anom[month] == 0.0
+            )
+            station_outlier = (station in mean_z and month in mean_z.index
+                               and abs(mean_z.at[month, station] - month_z[month]) > 2.5
+                               and flagged.get(month, 0) < 3)
+            sign_flip = abs(avg[month] + normal[month] + anom[month]) < 1.0
+            if sign_flip and anom_z[month] < 2.5:
+                fixed, which, rows_fix = round(-avg[month], 1), "mean (sign)", avg_rows
+            elif avg_z[month] < 2.5 and misplaced:
+                fixed, which, rows_fix = round(avg[month] - normal[month], 1), "anomaly", anom_rows
+            elif anom_z[month] < 2.5 and station_outlier:
+                fixed, which, rows_fix = round(normal[month] + anom[month], 1), "mean", avg_rows
+            else:
+                print(f"  WARNING temperature {station} {month}: mean {avg[month]} and anomaly "
+                      f"{anom[month]} disagree by {gap:.1f} C; cause unclear, left unchanged")
+                continue
+            idx = [r for r in rows_fix if en.at[r, "month"] == month]
+            old = en.loc[idx, "value"].iloc[0]
+            en.loc[idx, "value"] = fixed
+            mn.loc[idx, "value"] = fixed
+            print(f"  temperature {station} {month}: {which} {old} -> {fixed} "
+                  f"(normal {normal[month]:.1f})")
+    # 3. Impossible or misplaced extremes (after the mean corrections above).
+    means = en[en.indicator.eq(AVERAGE)].set_index(["station", "month"]).value
+    anoms = en[en.indicator.eq(ANOMALY)].set_index(["station", "month"]).value
+    drop_rows = []
+    for ind, too_far in (("Maximum temperature", lambda v, m: v < m), ("Minimum temperature", lambda v, m: v > m)):
+        ext = en[en.indicator.eq(ind) & en.value.notna()]
+        for station, part in ext.groupby("station"):
+            series = pd.Series(part.value.values, index=part.month.values)
+            z = _zscore(series).abs()
+            for idx, month, value in zip(part.index, part.month, part.value):
+                mean, anom = means.get((station, month)), anoms.get((station, month))
+                impossible = mean is not None and pd.notna(mean) and too_far(value, mean)
+                is_anomaly = anom is not None and pd.notna(anom) and abs(value - anom) < 0.05 and z[month] > 2.5
+                if impossible or is_anomaly:
+                    drop_rows.append(idx)
+                    print(f"  temperature {station} {month}: dropping {ind.split()[0].lower()} {value} "
+                          f"({'contradicts mean ' + str(mean) if impossible else 'equals the anomaly'})")
+    en, mn = en.drop(drop_rows), mn.drop(drop_rows)
+    return en, mn
 
 
 def regenerate_temperature(raw_root: Path) -> None:
@@ -235,6 +360,7 @@ def regenerate_temperature(raw_root: Path) -> None:
     mn.columns = ["indicator", "station", "month", "value"]
     en["month"] = normalize_month(en.month)
     mn["month"] = normalize_month(mn.month)
+    en, mn = clean_temperature_table(en, mn)
 
     average = en.indicator.eq("Average air temperature")
     ub = en.station.eq("Ulaanbaatar")
@@ -250,9 +376,10 @@ def regenerate_temperature(raw_root: Path) -> None:
     out_en = en.loc[mask, ["month", "station", "value"]].rename(
         columns={"value": "temperature"}
     ).sort_values(["month", "station"])
-    out_mn = mn.loc[mask, ["month", "station", "value"]].rename(
+    # Same row order as EN (sorting by MN station names would misalign rows).
+    out_mn = mn.loc[out_en.index, ["month", "station", "value"]].rename(
         columns={"month": "сар", "station": "станц", "value": "температур"}
-    ).sort_values(["сар", "станц"])
+    )
     write_csv_pair("temperature-regional", out_en, out_mn)
 
     labels_en = {
@@ -274,9 +401,9 @@ def regenerate_temperature(raw_root: Path) -> None:
     anomaly = en.indicator.eq("Comparison with multi-year (1981-2010)")
     mask = anomaly & ub & en.value.notna()
     out_en = en.loc[mask, ["month", "value"]].rename(columns={"value": "anomaly"}).sort_values("month")
-    ub_average = en.loc[average & ub & en.value.notna()].set_index("month").value
-    out_en["anomaly"] = repair_anomalies(ub_average, out_en.set_index("month").anomaly).values
-    out_mn = out_en.rename(columns={"month": "сар", "anomaly": "хазайлт"})
+    out_mn = mn.loc[mask, ["month", "value"]].rename(
+        columns={"month": "сар", "value": "хазайлт"}
+    ).sort_values("сар")
     write_csv_pair("temperature-anomaly", out_en, out_mn)
 
     snapshot("nso-temperature-by-station", 1,

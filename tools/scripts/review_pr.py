@@ -231,6 +231,14 @@ def main() -> int:
         report.add("Title year ranges", code == 0,
                    "" if code == 0 else tail(out))
 
+        # Numbers quoted in excerpts/prose must match the data and not lag
+        # behind it ("154,294 vehicles in 2024" when the data reaches 2025).
+        code, out = run(
+            [python, str(wt_scripts / "validate_claims.py")],
+            cwd=worktree)
+        report.add("Data claims in text", code == 0,
+                   "" if code == 0 else tail(out))
+
         # Registry DB diff (informational, never fails the review).
         db_changed_ids: list[str] = []
         if db_touched:

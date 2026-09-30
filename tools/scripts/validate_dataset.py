@@ -1158,6 +1158,21 @@ def validate_all(dataset_id: str, base_dir: str) -> list[ValidationResult]:
             results.append(years_result)
 
     # ============================================
+    # Numeric claims in excerpt/prose match the data
+    # ("154,294 vehicles in 2024" on a page whose data now reaches 2025)
+    # ============================================
+    from validate_claims import check_page as check_claims
+    for key in ['mdx_en', 'mdx_mn']:
+        if os.path.exists(files_to_check[key]):
+            claims_result = ValidationResult(files_to_check[key], "Data Claims")
+            for kind, label, sentence, detail in check_claims(Path(files_to_check[key])):
+                claims_result.add_error(
+                    f"{kind} in {label}: {detail}. \"{sentence[:120]}\" "
+                    f"Rewrite the sentence from the new CSV (see /data-update step 3.1c)."
+                )
+            results.append(claims_result)
+
+    # ============================================
     # NEW: Download standards (Standard 1 + 2)
     # ============================================
     results.extend(validate_downloads(dataset_id, base_dir))

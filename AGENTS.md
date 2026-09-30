@@ -300,6 +300,19 @@ python3 tools/scripts/validate_title_years.py          # report (exit 1 if stale
 python3 tools/scripts/validate_title_years.py --fix    # rewrite stale ranges
 ```
 
+### `tools/scripts/validate_claims.py`
+Check numbers quoted with a period in excerpts and page prose ("154,294
+vehicles in 2024") against the page's CSV. `STALE` = the newest period quoted
+is older than the data (unless worded as a peak/low); `MISMATCH` = the number
+isn't in the CSV for that period (unit scaling and hedges like "over"/"орчим"
+handled; percentages and small counts skipped). Enforced by
+`validate_dataset.py --all` and `review_pr.py`. No `--fix`: rewrite the
+sentence from the CSV.
+
+```bash
+python3 tools/scripts/validate_claims.py        # report (exit 1 on problems)
+```
+
 ### `tools/scripts/validate_mdx_datafiles.py`
 Validate MDX frontmatter `dataFiles` paths point to existing files.
 

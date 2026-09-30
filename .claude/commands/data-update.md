@@ -188,7 +188,11 @@ Task tool:
     4. Generate charts and MDX. Update every year range in the title,
        excerpt and <VegaChart title> to the new data span (e.g. a page
        titled "(2021-2025)" whose data now reaches 2026 becomes "(2021-2026)"),
-       in BOTH the EN and MN pages
+       in BOTH the EN and MN pages. Then rewrite every sentence in the
+       excerpt and page prose that quotes a value for a period ("reaching
+       19.1 trillion MNT in July 2026", "154,294 vehicles in 2024") from the
+       NEW CSV, in BOTH languages: latest-value claims move to the new latest
+       period; "peaked at X" claims must be re-derived from the data
     5. Update registry
     6. Report WORKER_RESULT
 ```
@@ -280,6 +284,25 @@ python3 tools/scripts/validate_title_years.py   # must report 0 stale
 `REVIEW` lines are ranges the data doesn't span (baselines like 1981-2010,
 chart sub-periods, or a wrong start year). Check each and fix the wrong ones
 by hand.
+
+### 3.1c Check Numeric Claims
+
+Excerpts and prose quote values ("stood at -45,715 million USD in Q2 2026").
+After a refresh they lag the data or no longer match revised numbers:
+
+```bash
+python3 tools/scripts/validate_claims.py   # must report 0 problems
+```
+
+- `STALE`: the sentence's newest period is older than the data. Rewrite it
+  with the latest value, or reword as historical ("peaked at ... in 2024").
+- `MISMATCH`: the quoted number isn't in the CSV for that period. Look the
+  value up in the CSV and correct it; never edit the number to make the
+  check pass without confirming it.
+
+`validate_dataset.py --all` fails on either. Numbers are compared with unit
+scaling ("12.4 trillion" vs 12,415 billion) and hedges ("over", "about",
+"орчим", "гаруй") widen the tolerance; percentages and small counts aren't checked.
 
 ### 3.2 Display Final Summary
 

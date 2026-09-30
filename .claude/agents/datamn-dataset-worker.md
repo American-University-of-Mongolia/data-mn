@@ -750,6 +750,15 @@ WORKER_RESULT:
 }
 ```
 
+## Excerpt and Prose Numbers
+
+**Numbers come from the CSV, never from memory.** Any value
+you quote with a period ("reaching 19.1 trillion MNT in July 2026") must be
+read from the final CSV, in BOTH languages, and must name the data's LATEST
+period. Phrase peaks/lows historically ("peaked at X in 2024"). On a refresh
+rewrite these sentences too, not only the year range. `validate_dataset.py
+--all` and `tools/scripts/validate_claims.py` fail on stale or unmatched numbers.
+
 ## Error Handling
 
 If you encounter an error:

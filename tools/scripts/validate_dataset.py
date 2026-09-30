@@ -1140,6 +1140,24 @@ def validate_all(dataset_id: str, base_dir: str) -> list[ValidationResult]:
             results.append(validate_chart_csv_consistency(chart_path, matching_csv))
 
     # ============================================
+    # Title/excerpt/chart-title spans match the data
+    # ("2021-2025" on a page whose data now reaches 2026)
+    # ============================================
+    from validate_title_years import check_page
+    for key in ['mdx_en', 'mdx_mn']:
+        if os.path.exists(files_to_check[key]):
+            years_result = ValidationResult(files_to_check[key], "Title Years")
+            for label, old, new in check_page(Path(files_to_check[key]), fix=False):
+                if new:
+                    years_result.add_error(
+                        f"Stale {label} span '{old}' (data reaches '{new}'). "
+                        f"Fix: python3 tools/scripts/validate_title_years.py --fix"
+                    )
+                else:
+                    years_result.add_warning(f"{label} span '{old}' does not match the data span; check by hand")
+            results.append(years_result)
+
+    # ============================================
     # NEW: Download standards (Standard 1 + 2)
     # ============================================
     results.extend(validate_downloads(dataset_id, base_dir))

@@ -267,7 +267,10 @@ cd data.mn && python3 ../tools/scripts/validate_vega.py --all
 ### 3.1b Check Title Year Ranges
 
 Refreshed data usually extends the year range, and titles like "(2021-2025)"
-go stale. Rewrite ranges that clearly span the series, then review the rest:
+or excerpts like "January 2016 to February 2026" go stale. Rewrite spans that
+clearly cover the series, then review the rest. `--fix` only moves the span:
+also update any latest-value sentence beside it ("stood at X in Q3 2025") from
+the new CSV. `validate_dataset.py --all` fails on stale spans.
 
 ```bash
 python3 tools/scripts/validate_title_years.py --fix

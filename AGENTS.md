@@ -287,9 +287,13 @@ mixed-frequency bars, scrambled area order, wrong unit suffixes) as errors;
 see "Layout Risks" in the `datamn-chart-vega` skill.
 
 ### `tools/scripts/validate_title_years.py`
-Check that "YYYY-YYYY" ranges in page titles, excerpts and chart titles match
-the years in the data (catches "2021-2025" titles on pages refreshed with 2026
-data). Also run by `review_pr.py`.
+Check that data spans in page titles, excerpts and chart titles (MDX and chart
+JSON) match the data: "2021-2025", "2021-25", "from 2009 to 2025",
+"January 2016 to July 2026", "Q1 2000 to Q4 2025", "2016 оны 1-р сараас 2026
+оны 7-р сар". Month/quarter end points are compared at that precision. Catches
+"2021-2025" titles on pages refreshed with 2026 data. Enforced by
+`validate_dataset.py --all` (stale span = error) and `review_pr.py`. `--fix`
+only moves the span; update any "latest value" sentence next to it by hand.
 
 ```bash
 python3 tools/scripts/validate_title_years.py          # report (exit 1 if stale)

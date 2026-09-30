@@ -22,6 +22,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from rebuild_downloads import process_dataset
+from validate_title_years import check_page
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -487,25 +488,15 @@ def snapshot_published(dataset_ids: list[str], version: int, source_updated_at: 
 
 
 def refresh_mdx_and_charts(dataset_ids: list[str], latest: str, version: int) -> None:
-    latest_year = latest[:4]
     for dataset_id in dataset_ids:
         for language in ("en", "mn"):
             path = CONTENT / language / f"{dataset_id}.mdx"
             text = path.read_text()
             text = re.sub(r"^dataVersion: \d+$", f"dataVersion: {version}", text, flags=re.MULTILINE)
             text = re.sub(r"^dataDate: .+$", f"dataDate: {latest}", text, flags=re.MULTILINE)
-            lines = []
-            for line in text.splitlines():
-                if line.startswith(("title:", "excerpt:", "  title=")):
-                    line = re.sub(r"\b(?:2024|2025)\b", latest_year, line)
-                lines.append(line)
-            text = "\n".join(lines) + ("\n" if text.endswith("\n") else "")
             path.write_text(text)
-            chart = CHARTS / f"{dataset_id}-{language}.json"
-            if chart.exists():
-                chart_text = chart.read_text()
-                chart_text = re.sub(r"(?<=-)2024(?=\b)|(?<=-)2025(?=\b)", latest_year, chart_text)
-                chart.write_text(chart_text)
+            # Move title/excerpt/chart-title spans to the new data span.
+            check_page(path, fix=True)
 
 
 def sha256(path: Path) -> str:

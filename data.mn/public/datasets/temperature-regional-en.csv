@@ -273,7 +273,7 @@ month,station,temperature
 2009-07,Dalanzadgad,23.6
 2009-07,Darkhan,20.6
 2009-07,Khovd,19.9
-2009-07,Ulaanbaatar,25.1
+2009-07,Ulaanbaatar,19.3
 2009-08,Choibalsan,19.5
 2009-08,Dalanzadgad,21.8
 2009-08,Darkhan,17.9
@@ -1258,11 +1258,6 @@ month,station,temperature
 2025-12,Darkhan,-20.4
 2025-12,Khovd,-14.2
 2025-12,Ulaanbaatar,-18.5
-2026-01,Choibalsan,-2.8
-2026-01,Dalanzadgad,-0.3
-2026-01,Darkhan,-1.8
-2026-01,Khovd,-6.9
-2026-01,Ulaanbaatar,-4.1
 2026-02,Choibalsan,-14.7
 2026-02,Dalanzadgad,-8.1
 2026-02,Darkhan,-16.7

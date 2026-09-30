@@ -286,6 +286,16 @@ python3 tools/scripts/screenshot_charts.py registered-vehicles-by-age salary-by-
 mixed-frequency bars, scrambled area order, wrong unit suffixes) as errors;
 see "Layout Risks" in the `datamn-chart-vega` skill.
 
+### `tools/scripts/validate_title_years.py`
+Check that "YYYY-YYYY" ranges in page titles, excerpts and chart titles match
+the years in the data (catches "2021-2025" titles on pages refreshed with 2026
+data). Also run by `review_pr.py`.
+
+```bash
+python3 tools/scripts/validate_title_years.py          # report (exit 1 if stale)
+python3 tools/scripts/validate_title_years.py --fix    # rewrite stale ranges
+```
+
 ### `tools/scripts/validate_mdx_datafiles.py`
 Validate MDX frontmatter `dataFiles` paths point to existing files.
 

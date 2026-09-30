@@ -190,6 +190,42 @@ def normalize_month(series: pd.Series) -> pd.Series:
     return pd.to_datetime(series, format="%Y-%m").dt.strftime("%Y-%m")
 
 
+def repair_anomalies(average: pd.Series, anomaly: pd.Series, tolerance: float = 3.0) -> pd.Series:
+    """Recompute anomalies that contradict the station's own temperatures.
+
+    Both series are indexed by YYYY-MM. The anomaly is the monthly mean minus
+    a 1981-2010 normal, so ``average - anomaly`` should be nearly constant for
+    each calendar month (NSO shifts it by a few tenths when it revises the
+    normal). NSO's table has months where the anomaly cell holds another
+    figure: 2008-11 and 2017-08 hold that month's minimum temperature (-20.0
+    for Ulaanbaatar while its mean was -7.1), 2016-03 holds the normal.
+
+    Where ``average - anomaly`` is more than ``tolerance`` C from that
+    calendar month's median normal, one of the two values is wrong:
+    - the mean is typical for the calendar month (|z| < 2.5): the anomaly is
+      wrong; replace it with ``average - median normal``;
+    - otherwise the mean itself is suspect (e.g. 2026-01 at -4.1 C); keep
+      NSO's anomaly and warn so the temperature datasets get checked.
+    """
+    avg = average.reindex(anomaly.index)
+    calendar_month = pd.Series(anomaly.index.str[5:7], index=anomaly.index)
+    normal = (avg - anomaly).groupby(calendar_month).transform("median")
+    by_month = average.groupby(average.index.str[5:7])
+    avg_z = (avg - calendar_month.map(by_month.median())) / calendar_month.map(by_month.std())
+    inconsistent = ((avg - anomaly) - normal).abs() > tolerance
+    fix = inconsistent & (avg_z.abs() < 2.5)
+    repaired = anomaly.copy()
+    repaired[fix] = (avg - normal)[fix].round(1)
+    for month in anomaly.index[inconsistent]:
+        if fix[month]:
+            print(f"  temperature-anomaly {month}: NSO anomaly {anomaly[month]} contradicts mean "
+                  f"{avg[month]} (normal {normal[month]:.1f}); using {repaired[month]}")
+        else:
+            print(f"  WARNING temperature {month}: NSO mean {avg[month]} is atypical for the month "
+                  f"and inconsistent with anomaly {anomaly[month]}; check the source")
+    return repaired
+
+
 def regenerate_temperature(raw_root: Path) -> None:
     en, mn = aligned_language_frames(
         raw_root / "temperature/nso-2400-022v2-en.csv",
@@ -238,9 +274,9 @@ def regenerate_temperature(raw_root: Path) -> None:
     anomaly = en.indicator.eq("Comparison with multi-year (1981-2010)")
     mask = anomaly & ub & en.value.notna()
     out_en = en.loc[mask, ["month", "value"]].rename(columns={"value": "anomaly"}).sort_values("month")
-    out_mn = mn.loc[mask, ["month", "value"]].rename(
-        columns={"month": "сар", "value": "хазайлт"}
-    ).sort_values("сар")
+    ub_average = en.loc[average & ub & en.value.notna()].set_index("month").value
+    out_en["anomaly"] = repair_anomalies(ub_average, out_en.set_index("month").anomaly).values
+    out_mn = out_en.rename(columns={"month": "сар", "anomaly": "хазайлт"})
     write_csv_pair("temperature-anomaly", out_en, out_mn)
 
     snapshot("nso-temperature-by-station", 1,

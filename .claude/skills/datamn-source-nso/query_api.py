@@ -200,11 +200,12 @@ class MetadataStore:
             print(f"Removing outdated database: {self.db_path}")
             self.db_path.unlink()
 
-        self.db_path.parent.mkdir(parents=True, exist_ok=True)
         self._create_fresh_schema()
 
     def _create_fresh_schema(self):
         """Create database with fresh schema"""
+        # metadata/ holds only the gitignored tables.db, so a fresh clone lacks it
+        self.db_path.parent.mkdir(parents=True, exist_ok=True)
         conn = sqlite3.connect(self.db_path)
 
         # Create schema version table

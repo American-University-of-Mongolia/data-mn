@@ -148,6 +148,35 @@ This command does three things:
 2. Clones that fork to your computer
 3. Sets up the connection to the original repo (called "upstream")
 
+> **Windows users:** `CLAUDE.md` and `data.mn/CLAUDE.md` are symlinks to the
+> `AGENTS.md` next to them. By default, Git for Windows checks symlinks out as
+> small text files containing just the word `AGENTS.md`, so Claude Code silently
+> loads no project instructions. Check with:
+>
+> ```bash
+> cat CLAUDE.md   # should print the full guide, not just "AGENTS.md"
+> ```
+>
+> To fix it, turn on **Developer Mode** (Settings → System → For developers),
+> then re-check out the two files as real symlinks:
+>
+> ```bash
+> git config core.symlinks true
+> git checkout -- CLAUDE.md data.mn/CLAUDE.md
+> ```
+>
+> If you can't enable Developer Mode, copy each `AGENTS.md` over its
+> `CLAUDE.md` and tell Git to ignore the local change so it is never committed:
+>
+> ```bash
+> cp AGENTS.md CLAUDE.md
+> cp data.mn/AGENTS.md data.mn/CLAUDE.md
+> git update-index --skip-worktree CLAUDE.md data.mn/CLAUDE.md
+> ```
+>
+> With the copy approach, repeat the two `cp` commands after pulling changes to
+> `AGENTS.md`.
+
 ### Step 2: Set Up the Environment
 
 ```bash

@@ -410,6 +410,16 @@ const uiTranslations = {
       };
     }
 
+    // Escape text before interpolating it into innerHTML (the query comes from ?q=)
+    function escapeHtml(value) {
+      return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
     function formatDate(dateString) {
       if (!dateString) return '';
       const date = new Date(dateString);
@@ -456,7 +466,7 @@ const uiTranslations = {
           <p class="text-gray-600 dark:text-gray-400">
             <span class="font-semibold text-gray-900 dark:text-gray-100">${results.length}</span>
             ${uiTranslations.results}:
-            <span class="font-semibold text-gray-900 dark:text-gray-100">"${displayQuery}"</span>
+            <span class="font-semibold text-gray-900 dark:text-gray-100">"${escapeHtml(displayQuery)}"</span>
           </p>
         </div>
         <div class="space-y-6">
@@ -468,23 +478,23 @@ const uiTranslations = {
                 <span class="inline-block px-2 py-1 text-xs font-semibold rounded ${typeColors[result.type]}">
                   ${typeLabels[result.type]}
                 </span>
-                ${result.category ? `<span class="ml-2 text-sm text-gray-500 dark:text-gray-400">${result.category}</span>` : ''}
+                ${result.category ? `<span class="ml-2 text-sm text-gray-500 dark:text-gray-400">${escapeHtml(result.category)}</span>` : ''}
               </div>
               <h2 class="text-2xl font-bold mb-2">
-                <a href="${result.url}" class="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-primary">
-                  ${result.title}
+                <a href="${escapeHtml(result.url)}" class="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-primary">
+                  ${escapeHtml(result.title)}
                 </a>
               </h2>
-              ${result.excerpt ? `<p class="text-gray-600 dark:text-gray-400 mb-3">${result.excerpt}</p>` : ''}
+              ${result.excerpt ? `<p class="text-gray-600 dark:text-gray-400 mb-3">${escapeHtml(result.excerpt)}</p>` : ''}
               <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
-                ${result.publishDate ? `<time datetime="${result.publishDate}">${formatDate(result.publishDate)}</time>` : ''}
+                ${result.publishDate ? `<time datetime="${escapeHtml(result.publishDate)}">${formatDate(result.publishDate)}</time>` : ''}
                 ${
                   result.tags.length > 0
                     ? `
                   <div class="flex flex-wrap gap-2">
                     ${result.tags
                       .slice(0, 3)
-                      .map((tag) => `<span class="px-2 py-1 text-xs bg-gray-100 dark:bg-slate-700 rounded">${tag}</span>`)
+                      .map((tag) => `<span class="px-2 py-1 text-xs bg-gray-100 dark:bg-slate-700 rounded">${escapeHtml(tag)}</span>`)
                       .join('')}
                   </div>
                 `

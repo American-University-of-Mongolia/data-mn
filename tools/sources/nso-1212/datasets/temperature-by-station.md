@@ -215,7 +215,8 @@ NSO table `DT_NSO_2400_022V2` contains corrupted cells. The transform
 runs before any split is written and prints every change:
 
 - **Copied months are dropped.** 2026-01 repeats 2025-03 for every station
-  and indicator; it is omitted until NSO corrects it.
+  and indicator; it is omitted until NSO corrects it. Still present in the
+  2026-09-18 republication (checked 2026-10-05).
 - **Misplaced anomalies are recomputed** as mean minus the normal (NSO's
   normal for that calendar month in nearby years). This happens only when the
   anomaly cell holds the month's min/max, the normal, or 0.0. Examples:

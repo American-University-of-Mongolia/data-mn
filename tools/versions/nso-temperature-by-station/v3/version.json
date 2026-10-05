@@ -1,0 +1,10 @@
+{
+  "dataset_id": "nso-temperature-by-station",
+  "version": 3,
+  "fetched_at": "2026-10-05T05:02:31.462759+00:00",
+  "source_updated_at": "2026-09-18T15:04:18",
+  "source_files": [
+    "nso-temperature-by-station-en.csv",
+    "nso-temperature-by-station-mn.csv"
+  ]
+}

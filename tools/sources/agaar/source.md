@@ -44,7 +44,19 @@ monthly.
 `fetch_data.py --update` runs as a scheduled task (monthly is enough). Each run
 merges into the existing CSVs and never overwrites archived values (see
 "The archive is merged, never overwritten" in the skill). Months still
-awaiting validation are re-checked for up to 12 months.
+awaiting validation are re-checked for up to 12 months. A month still
+unvalidated after that (2025-10 was the first) is left as real-time data; the
+site is not expected to validate it later.
+
+### Raw values are kept as served (decided 2026-10-06)
+
+The archive stores exactly what the site returns, including readings that
+can't be real. As of 2026-10-06 that is ~5,500 negative hourly values (SO₂
+2,613, O₃ 1,289, NO₂ 899, CO 375, PM2.5 369; down to −469) plus ~130 negative
+daily means, CO above 50 mg/m³ (54 hours), and CO stuck at one value at some
+stations (e.g. 12604, 12303). **Do not clean the raw files.** Filter when
+building a dataset, and say on the page what was dropped: at minimum
+negatives and flat-lined runs, plus an upper bound per pollutant chosen then.
 
 ### Size policy
 

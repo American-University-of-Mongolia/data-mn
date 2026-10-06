@@ -104,6 +104,13 @@ class ArchiveMergeTest(unittest.TestCase):
         [row] = merge(old + [fetch.parse_hourly("12401", withheld)])
         self.assertEqual(row["pm25"], "")
 
+    def test_csv_uses_lf_line_endings(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "month.csv"
+            fetch.write_csv(str(path), HOURLY["cols"],
+                            merge([fetch.parse_hourly("12401", site_hourly("N", pm25=23))]))
+            self.assertNotIn(b"\r", path.read_bytes())
+
 
 class CompletenessTest(unittest.TestCase):
     today = date(2026, 10, 6)

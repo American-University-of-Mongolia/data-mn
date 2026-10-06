@@ -215,7 +215,9 @@ def read_csv(path):
 def write_csv(path, cols, rows):
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
+        # LF like the committed archive; csv's default CRLF would make every
+        # re-fetched file look fully rewritten in git.
+        w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore", lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
     os.replace(tmp, path)

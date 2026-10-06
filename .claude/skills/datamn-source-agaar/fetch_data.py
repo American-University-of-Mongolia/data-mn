@@ -46,8 +46,13 @@ FIRST_MONTH = (2025, 2)  # earliest data the site served on 2026-10-03 (one stat
 
 POLLUTANTS = [ITEMS[c]["key"] for c in ITEMS]  # pm10 pm25 o3 no2 co so2
 HOURLY_COLS = (["station_code", "datetime", "date", "hour", "validated"] + POLLUTANTS
-               + ["pm10_24h", "pm25_24h", "aqi", "aqi_pollutant", "aqi_grade", "pm25_withheld"])
-DAILY_COLS = ["station_code", "date", "validated"] + POLLUTANTS + ["pm25_withheld"]
+               + ["pm10_24h", "pm25_24h", "concentrations_source",
+                  "aqi", "aqi_pollutant", "aqi_grade", "pm25_withheld"])
+DAILY_COLS = (["station_code", "date", "validated"] + POLLUTANTS
+              + ["concentrations_source", "pm25_withheld"])
+# A past month with no validated rows yet keeps being re-fetched until it is
+# this many months old, in case NAMEM validates late.
+VALIDATION_WAIT_MONTHS = 12
 STATION_COLS = ["station_code", "name_mn", "address_mn", "aimag_code", "aimag_mn",
                 "aimag_en", "lat", "lon", "mang_code", "listed"]
 
@@ -98,28 +103,91 @@ def parse_daily(code, r):
     return row
 
 
+def empty(v):
+    return v in ("", None)
+
+
 def has_values(row, cols):
-    return any(row.get(c) not in ("", None) for c in cols)
+    return any(not empty(row.get(c)) for c in cols)
 
 
-def collapse(rows, key_cols, value_cols):
-    """One row per key; validated beats real-time; empty rows dropped."""
-    best = {}
+def as_int(v):
+    return 0 if empty(v) else int(float(v))
+
+
+def conc_source(row, conc_cols):
+    """Where a row's concentrations came from: validated / realtime / mixed / "".
+
+    Rows parsed from the site get it from their own LASTDATA flag. Archive
+    rows written before this column existed are inferred the same way, which
+    is exact: back then a row's values always came from one site row.
+    """
+    if not has_values(row, conc_cols):
+        return ""
+    if not empty(row.get("concentrations_source")):
+        return row["concentrations_source"]
+    return "validated" if as_int(row.get("validated")) else "realtime"
+
+
+def merge_rows(older, newer, conc_cols):
+    """Merge two rows for the same key, field by field.
+
+    `validated`, AQI and pm25_withheld come from the validated row (the newer
+    one on a tie). Each concentration takes the first non-empty value from:
+    a validated source, the newer row, the older row. So an AQI-only
+    validated row never erases concentrations already in the archive, which
+    the site stops serving once it validates a month.
+    """
+    auth, other = ((newer, older) if as_int(newer.get("validated")) >= as_int(older.get("validated"))
+                   else (older, newer))
+    out = dict(auth)
+    for k, v in other.items():  # fill status fields the authoritative row lacks
+        if k not in conc_cols and k != "concentrations_source" and empty(out.get(k)):
+            out[k] = v
+    ranked = sorted([(newer, conc_source(newer, conc_cols)), (older, conc_source(older, conc_cols))],
+                    key=lambda rs: rs[1] != "validated")  # stable: validated, then newer, then older
+    used = set()
+    for c in conc_cols:
+        out[c] = ""
+        for row, src in ranked:
+            if not empty(row.get(c)):
+                out[c] = row[c]
+                used.add(src)
+                break
+    if as_int(out.get("pm25_withheld")):  # the site withholds PM2.5 for this row
+        for c in ("pm25", "pm25_24h"):
+            if c in out:
+                out[c] = ""
+    out["concentrations_source"] = ""
+    if has_values(out, conc_cols):
+        out["concentrations_source"] = used.pop() if len(used) == 1 else "mixed"
+    return out
+
+
+def merge_all(rows, key_cols, conc_cols, keep_cols):
+    """Fold rows into one per key, in order (later rows count as newer).
+
+    Rows with nothing in keep_cols (offline hours) are dropped.
+    """
+    out = {}
     for r in rows:
-        if r is None or not has_values(r, value_cols):
+        if r is None or not has_values(r, keep_cols):
             continue
-        k = tuple(r[c] for c in key_cols)
-        if k not in best or r["validated"] > best[k]["validated"]:
-            best[k] = r
-    return [best[k] for k in sorted(best)]
+        r = dict(r)
+        r["concentrations_source"] = conc_source(r, conc_cols)
+        k = tuple(str(r[c]) for c in key_cols)
+        out[k] = merge_rows(out[k], r, conc_cols) if k in out else r
+    return [out[k] for k in sorted(out)]
 
 
 FREQS = {
     "hourly": {"div": "1", "cols": HOURLY_COLS, "parse": parse_hourly,
                "key": ["station_code", "datetime"],
+               "conc": POLLUTANTS + ["pm10_24h", "pm25_24h"],
                "values": POLLUTANTS + ["aqi"]},
     "daily": {"div": "2", "cols": DAILY_COLS, "parse": parse_daily,
-              "key": ["station_code", "date"], "values": POLLUTANTS},
+              "key": ["station_code", "date"],
+              "conc": POLLUTANTS, "values": POLLUTANTS},
 }
 
 
@@ -184,11 +252,13 @@ def fetch_split(client, code, div, y, m, d0, d1, bad_days):
             + fetch_split(client, code, div, y, m, mid + 1, d1, bad_days))
 
 
-def fetch_month(client, freq, y, m, codes, out_dir, old_rows):
+def fetch_month(client, freq, y, m, codes):
+    """Fetch one month for each station. Returns only what the site sent now;
+    the caller merges it into the archive (a failed station keeps its old rows)."""
     spec = FREQS[freq]
     last = calendar.monthrange(y, m)[1]
     f, t = f"{y}{m:02d}0100", f"{y}{m:02d}{last:02d}23"
-    rows, failed, empty, per_station = [], [], [], {}
+    rows, failed, no_data, per_station = [], [], [], {}
     for i, code in enumerate(codes, 1):
         bad_days = []
         try:
@@ -202,13 +272,13 @@ def fetch_month(client, freq, y, m, codes, out_dir, old_rows):
         except FetchError as e:
             log(f"  {freq} {y}-{m:02d} {code}: FAILED ({e}); keeping previous rows")
             failed.append(code)
-            rows.extend(r for r in old_rows if r["station_code"] == code)
             continue
-        parsed = collapse([spec["parse"](code, r) for r in raw], spec["key"], spec["values"])
+        parsed = merge_all([spec["parse"](code, r) for r in raw],
+                           spec["key"], spec["conc"], spec["values"])
         # The site can return neighbouring days at the edges; keep this month only.
         parsed = [r for r in parsed if r["date"].startswith(f"{y}-{m:02d}")]
         if not parsed:
-            empty.append(code)
+            no_data.append(code)
         per_station[code] = {"rows": len(parsed),
                              "validated": sum(r["validated"] for r in parsed)}
         if bad_days:
@@ -216,8 +286,20 @@ def fetch_month(client, freq, y, m, codes, out_dir, old_rows):
         rows.extend(parsed)
         if i % 10 == 0:
             log(f"  {freq} {y}-{m:02d}: {i}/{len(codes)} stations, {len(rows)} rows")
-    rows.sort(key=lambda r: tuple(str(r[c]) for c in spec["key"]))
-    return rows, failed, empty, per_station
+    return rows, failed, no_data, per_station
+
+
+def months_between(a, b):
+    return (b[0] - a[0]) * 12 + (b[1] - a[1])
+
+
+def is_complete(failed, partial, validated_rows, month, today):
+    """A month is done when it is over, fully fetched, and either validated or
+    too old to expect validation. Until then it is re-fetched on every run;
+    merging means re-fetching never loses archived values."""
+    now = (today.year, today.month)
+    return (not failed and not partial and month < now
+            and (validated_rows > 0 or months_between(month, now) >= VALIDATION_WAIT_MONTHS))
 
 
 def main(argv=None):
@@ -228,7 +310,8 @@ def main(argv=None):
     ap.add_argument("--freq", default="both", choices=["both", "hourly", "daily"])
     ap.add_argument("--stations", help="comma-separated station codes (default: whole catalog)")
     ap.add_argument("--update", action="store_true",
-                    help="only re-fetch the last --refresh-months months (routine archive run)")
+                    help="routine archive run: the last --refresh-months months plus any "
+                         "month not yet validated (up to 12 months back)")
     ap.add_argument("--refresh-months", type=int, default=3,
                     help="months always re-fetched to pick up validation (default 3)")
     ap.add_argument("--force", action="store_true", help="re-fetch months already complete")
@@ -243,8 +326,6 @@ def main(argv=None):
     end = ym(args.to) if args.to else (today.year, today.month)
     months = list(month_range(ym(args.from_) if args.from_ else FIRST_MONTH, end))
     recent = set(months[-args.refresh_months:]) if args.refresh_months > 0 else set()
-    if args.update:
-        months = [mo for mo in months if mo in recent]
     freqs = ["hourly", "daily"] if args.freq == "both" else [args.freq]
 
     os.makedirs(args.output, exist_ok=True)
@@ -253,6 +334,17 @@ def main(argv=None):
     if os.path.exists(manifest_path):
         with open(manifest_path, encoding="utf-8") as fh:
             manifest = json.load(fh)
+
+    def settled(freq, month):
+        entry = manifest.get(freq, {}).get(f"{month[0]}-{month[1]:02d}")
+        # Re-check from the stored counts, so manifests written by older
+        # versions (complete without validation) are picked up again.
+        return bool(entry) and is_complete(entry.get("stations_failed"), False,
+                                           entry.get("validated_rows", 0), month, today)
+
+    if args.update:  # recent months + anything still waiting for validation
+        months = [mo for mo in months
+                  if mo in recent or not all(settled(fq, mo) for fq in freqs)]
     write_stations(os.path.join(args.output, "agaar-stations.csv"), catalog)
 
     client = AgaarClient(delay=args.delay)
@@ -264,37 +356,38 @@ def main(argv=None):
                 label = f"{y}-{m:02d}"
                 entry = manifest.get(freq, {}).get(label)
                 partial = args.stations is not None
-                if (entry and entry.get("complete") and (y, m) not in recent
+                if (settled(freq, (y, m)) and (y, m) not in recent
                         and not args.force and not partial):
                     log(f"{freq} {label}: complete, skipping (use --force to re-fetch)")
                     continue
+                spec = FREQS[freq]
                 path = os.path.join(args.output, freq, f"agaar-{freq}-{label}.csv")
                 old = read_csv(path)
                 log(f"{freq} {label}: fetching {len(codes)} stations")
-                rows, failed, empty, per_station = fetch_month(
-                    client, freq, y, m, codes, args.output, old)
-                if partial:  # keep other stations' rows untouched
-                    rows = [r for r in old if r["station_code"] not in set(codes)] + rows
-                    rows.sort(key=lambda r: tuple(str(r[c]) for c in FREQS[freq]["key"]))
-                write_csv(path, FREQS[freq]["cols"], rows)
+                new, failed, no_data, per_station = fetch_month(client, freq, y, m, codes)
+                # Archive first, fresh fetch second: the merge keeps every key and
+                # never replaces a stored concentration with a blank.
+                rows = merge_all(old + new, spec["key"], spec["conc"], spec["values"])
+                write_csv(path, spec["cols"], rows)
                 prev_stations = (entry or {}).get("stations", {}) if partial else {}
+                validated_rows = sum(as_int(r["validated"]) for r in rows)
                 manifest.setdefault(freq, {})[label] = {
                     "rows": len(rows),
-                    "validated_rows": sum(int(r["validated"]) for r in rows),
-                    # validated hourly rows often carry AQI only (see SKILL.md)
-                    "rows_with_concentrations": sum(has_values(r, POLLUTANTS) for r in rows),
-                    "stations_with_data": len(prev_stations | {c: v for c, v in per_station.items() if v["rows"]}),
-                    "stations_empty": empty,
+                    "validated_rows": validated_rows,
+                    # validated hourly rows carry AQI only; archived values survive (see SKILL.md)
+                    "rows_with_concentrations": sum(has_values(r, spec["conc"]) for r in rows),
+                    "stations_with_data": len({r["station_code"] for r in rows}),
+                    "stations_empty": no_data,
                     "stations_failed": failed,
                     "stations": prev_stations | per_station,
-                    "complete": not failed and not partial and (y, m) < (today.year, today.month),
+                    "complete": is_complete(failed, partial, validated_rows, (y, m), today),
                     "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                 }
                 with open(manifest_path, "w", encoding="utf-8") as fh:
                     json.dump(manifest, fh, ensure_ascii=False, indent=1, sort_keys=True)
                 log(f"{freq} {label}: {len(rows)} rows "
-                    f"({manifest[freq][label]['validated_rows']} validated), "
-                    f"{len(empty)} empty, {len(failed)} failed -> {path}")
+                    f"({validated_rows} validated), "
+                    f"{len(no_data)} with no data, {len(failed)} failed -> {path}")
                 if failed:
                     exit_code = 1
     except KeyboardInterrupt:

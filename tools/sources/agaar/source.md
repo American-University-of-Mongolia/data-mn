@@ -41,8 +41,10 @@ validated, the site also drops that month's hourly concentrations (AQI stays).
 **This folder is the only long-term copy of those.** Run `--update` at least
 monthly.
 
-The archive job still needs a home (cron on the deploy server, a scheduled
-agent, ...). Until then it is a manual monthly task.
+`fetch_data.py --update` runs as a scheduled task (monthly is enough). Each run
+merges into the existing CSVs and never overwrites archived values (see
+"The archive is merged, never overwritten" in the skill). Months still
+awaiting validation are re-checked for up to 12 months.
 
 ### Size policy
 

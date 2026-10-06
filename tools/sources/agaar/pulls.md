@@ -31,6 +31,18 @@ Everything the site served, 2025-02 → 2026-10-03, all 46 catalog stations.
 - The first run hit a local network outage during daily 2025-03. It was
   re-run on 2026-10-06; the finished months were unaffected.
 
+## 2026-10-06: merge fix and first `--update`
+
+- From the PR review: `--update` used to overwrite each month's CSV, so
+  NAMEM validating a month would have erased its archived hourly
+  concentrations. The fetcher now merges field by field and records
+  `concentrations_source`. Existing files were rewritten to add that column,
+  with no values changed.
+- A month now counts as complete only once it is validated (or 12 months old).
+  `--update` re-fetched 2025-11, 2025-12 and 2026-08 to 2026-10. There were
+  0 failures, and no file has fewer rows with concentrations than before. No
+  newly validated rows appeared yet.
+
 ## Next runs
 
 `fetch_data.py --update`, at least monthly (see source.md). Add a dated line

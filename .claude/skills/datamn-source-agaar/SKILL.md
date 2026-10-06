@@ -80,7 +80,7 @@ reporting at refresh time, so treat it as a hint, not the station's full spec.
 # Full backfill (everything the site serves, from 2025-02) -> ~1,800 requests, ~1.5 h
 python3 fetch_data.py --output ../../../tools/sources/agaar/raw
 
-# Routine archive run: re-fetch the last 3 months (catches late validation)
+# Routine archive run (scheduled): last 3 months + months still awaiting validation
 python3 fetch_data.py --output ../../../tools/sources/agaar/raw --update
 
 # Testing / one-offs
@@ -90,8 +90,26 @@ python3 fetch_data.py --output /tmp/agaar --from 2026-01 --to 2026-01 \
 
 Options: `--freq hourly|daily|both`, `--from/--to YYYY-MM`, `--stations`,
 `--refresh-months N` (default 3), `--force`, `--delay` (default 1.0 s).
-Completed past months are skipped on re-runs; the last N months are always
-re-fetched. Interrupting is safe: every finished month is already on disk.
+Interrupting is safe: every finished month is already on disk.
+
+### The archive is merged, never overwritten
+
+Re-fetching a month **merges** the site's answer into the existing CSV,
+field by field per `(station_code, datetime|date)`:
+
+- `validated`, AQI fields and `pm25_withheld` come from the validated row,
+  or from the newest row if neither is validated.
+- Each concentration takes the first non-empty value from: a validated
+  source, the new fetch, the archived row. So a validated AQI-only hour never
+  erases the real-time concentrations already archived.
+- Rows the site no longer returns are kept.
+- `concentrations_source` records where the values came from: `realtime`,
+  `validated`, `mixed` (some of each) or empty (no values).
+
+A past month counts as complete (`complete: true` in the manifest) only once
+it has validated rows, or is 12 months old. `--update` re-fetches the last
+`--refresh-months` months plus every month not yet complete, so late
+validation still reaches the archive. Tests: `python3 -m unittest discover -s tests`.
 
 ### How the endpoint behaves (read before changing the fetcher)
 
@@ -103,14 +121,14 @@ re-fetched. Interrupting is safe: every finished month is already on disk.
   a year-long query returns mostly real-time rows. The site's 60-day limit
   is enforced only in the browser, so this is a data-quality rule, not a cap.
 - **Daily** returns a real-time row and, once checked, a validated row for the
-  same day; the fetcher keeps the validated one (`validated=1`).
+  same day; validated values win (`validated=1`, `concentrations_source=validated`).
 - **Hourly validated rows carry AQI only, with no concentrations.** Once a
   month has been validated, its hourly pollutant values come back null (the
   site's own table and its Excel export show the same blanks). For those
-  months the concentrations exist only as validated **daily** means. Hourly
-  concentrations for a month exist only until it is validated, which is
-  another reason to archive often. `agaar-pulls.json` records
-  `rows_with_concentrations` per month so this is visible.
+  months the site has the concentrations only as validated **daily** means.
+  The archive keeps the real-time hourly values it fetched before validation
+  (see the merge rules above), so fetch at least monthly. `agaar-pulls.json`
+  records `rows_with_concentrations` per month.
 - Hours are **hour-ending 01–24**, local time (UTC+8). `hour=24` is the hour
   ending at midnight. The fetcher adds `datetime` = start of the hour window.
 - `PM25_YN=N` means the site withholds PM2.5 for that row. The fetcher blanks
@@ -138,11 +156,11 @@ tools/sources/agaar/raw/
 
 ```csv
 # hourly
-station_code,datetime,date,hour,validated,pm10,pm25,o3,no2,co,so2,pm10_24h,pm25_24h,aqi,aqi_pollutant,aqi_grade,pm25_withheld
-12401,2025-12-15 20:00,2025-12-15,21,0,76,72,,83.8,,54.2,107,82,117,pm25,3,0
+station_code,datetime,date,hour,validated,pm10,pm25,o3,no2,co,so2,pm10_24h,pm25_24h,concentrations_source,aqi,aqi_pollutant,aqi_grade,pm25_withheld
+12401,2025-12-15 20:00,2025-12-15,21,0,76,72,,83.8,,54.2,107,82,realtime,117,pm25,3,0
 # daily
-station_code,date,validated,pm10,pm25,o3,no2,co,so2,pm25_withheld
-10101,2026-01-01,1,,133.8,,19.4,,18.6,0
+station_code,date,validated,pm10,pm25,o3,no2,co,so2,concentrations_source,pm25_withheld
+10101,2026-01-01,1,,133.8,,19.4,,18.6,validated,0
 ```
 
 AQI grades: 1 цэвэр (clean), 2 хэвийн (normal), 3 бага бохирдолтой (lightly

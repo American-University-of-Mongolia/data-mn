@@ -58,6 +58,8 @@ EXEMPT_WIDE = {
     "salary-by-sector-2024",
     "mp-parliament-attendance",
     "parliament-session-attendance",
+    "pm25-winter-by-aimag-centre",
+    "pm25-winter-by-station-ulaanbaatar",
 }
 
 EXEMPT_WIDE_REASONS = {
@@ -68,6 +70,8 @@ EXEMPT_WIDE_REASONS = {
     "population-pyramid-mongolia": "single-year age/sex pyramid, no time dimension",
     "salary-by-sector-2024": "single-year snapshot, no time dimension to pivot",
     "mp-parliament-attendance": "cross-sectional MP metrics with party, mandate, and committee metadata",
+    "pm25-winter-by-aimag-centre": "single-season cross-section by aimag centre, no time dimension",
+    "pm25-winter-by-station-ulaanbaatar": "single-season cross-section by monitoring station, no time dimension",
     "parliament-session-attendance": "event-level sitting metrics with schedule, status, and source metadata",
 }
 
@@ -176,6 +180,11 @@ def detect_roles(df, dataset_id=None):
                if c != time and pd.api.types.is_numeric_dtype(df[c])]
     if len(numeric) == 0:
         return None, None, None, "no numeric value column"
+    if len(numeric) > 1 and time is None and dataset_id in EXEMPT_WIDE:
+        # Documented cross-sectional tables may carry several numeric
+        # columns (code, measure, count); the measure is the float column.
+        floats = [c for c in numeric if pd.api.types.is_float_dtype(df[c])]
+        return None, None, (floats[0] if floats else numeric[-1]), None
     if len(numeric) > 1:
         if time is not None and df[time].nunique() == len(df):
             return None, None, None, (

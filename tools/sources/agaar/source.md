@@ -77,3 +77,11 @@ https://agaar.gov.mn/web/detailViewDown?pMENU_SN=125. MinIO also holds
 - Hours are hour-ending (01–24) local time, UTC+8.
 - `validated=1` rows are final; `0` are real-time and may be revised.
 - PM2.5 is blanked where the site withholds it (`pm25_withheld=1`).
+
+## Datasets
+
+`build_daily_means.py` turns the raw daily archive into the cleaned parent
+`agaar-daily-station-means` (`derived/`) and four PM2.5 page tables; see
+`datasets/agaar-daily-station-means.md` for the cleaning rules and splits, and
+`register.py` for the registry rows. Refresh: run the build, then `register.py`,
+then regenerate each page (title spans, excerpts, dropped counts).

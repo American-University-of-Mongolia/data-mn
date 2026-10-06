@@ -1,0 +1,29 @@
+{
+ "built_at": "2026-10-06T09:32:03+00:00",
+ "first_date": "2025-06-01",
+ "last_date": "2026-10-06",
+ "station_days": 16115,
+ "station_days_kept": 15952,
+ "dropped": {
+  "negative": 2,
+  "above_pm10": 90,
+  "spike": 42,
+  "flat": 29
+ },
+ "rules": {
+  "above_pm10_ratio": 1.1,
+  "above_pm10_min": 50,
+  "spike_ratio": 5,
+  "spike_min": 150,
+  "flat_days": 5
+ },
+ "stations": 44,
+ "dropped_total": 163,
+ "page_tables": {
+  "pm25-monthly-ulaanbaatar-aimags": 24,
+  "pm25-unhealthy-days-ulaanbaatar": 12,
+  "pm25-winter-by-aimag-centre": 22,
+  "pm25-winter-by-station-ulaanbaatar": 17
+ },
+ "last_full_month": "2026-09"
+}

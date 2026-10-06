@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Улаанбаатарын станц тус бүрийн өвлийн (2025 оны 12-р сараас 2026 оны 2-р сар) дундаж PM2.5, мкг/м³",
+  "data": {
+    "url": "/datasets/pm25-winter-by-station-ulaanbaatar-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "pm25_мкг_м3",
+      "type": "quantitative",
+      "title": "PM2.5, мкг/м³",
+      "axis": {
+        "format": "d"
+      }
+    },
+    "y": {
+      "field": "станц",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x",
+      "axis": {
+        "labelLimit": 200
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#4c78a8",
+        "cornerRadiusEnd": 4
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "станц",
+            "title": "Станц"
+          },
+          {
+            "field": "pm25_мкг_м3",
+            "title": "PM2.5, мкг/м³",
+            "format": ".1f"
+          },
+          {
+            "field": "хүчинтэй_өдөр",
+            "title": "Хүчинтэй өдөр"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 50,
+            "label": "Монгол стандарт (50)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          6,
+          4
+        ],
+        "color": "#e45756",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "value": 0
+        },
+        "y2": {
+          "value": "height"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 50,
+            "label": "Монгол стандарт (50)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "dx": 4,
+        "dy": -4,
+        "fontSize": 13,
+        "color": "#e45756"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        },
+        "y": {
+          "value": "height"
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

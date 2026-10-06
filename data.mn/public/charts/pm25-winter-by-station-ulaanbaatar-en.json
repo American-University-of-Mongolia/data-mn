@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Winter (Dec 2025 to Feb 2026) mean PM2.5 by Ulaanbaatar monitoring station, µg/m³",
+  "data": {
+    "url": "/datasets/pm25-winter-by-station-ulaanbaatar-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "pm25_ug_m3",
+      "type": "quantitative",
+      "title": "PM2.5, µg/m³",
+      "axis": {
+        "format": "d"
+      }
+    },
+    "y": {
+      "field": "station",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x",
+      "axis": {
+        "labelLimit": 200
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#4c78a8",
+        "cornerRadiusEnd": 4
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "station",
+            "title": "Station"
+          },
+          {
+            "field": "pm25_ug_m3",
+            "title": "PM2.5, µg/m³",
+            "format": ".1f"
+          },
+          {
+            "field": "valid_days",
+            "title": "Valid days"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 50,
+            "label": "Mongolian limit (50)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          6,
+          4
+        ],
+        "color": "#e45756",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "value": 0
+        },
+        "y2": {
+          "value": "height"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 50,
+            "label": "Mongolian limit (50)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "dx": 4,
+        "dy": -4,
+        "fontSize": 13,
+        "color": "#e45756"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        },
+        "y": {
+          "value": "height"
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

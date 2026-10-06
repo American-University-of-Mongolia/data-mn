@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Аймгийн төвүүдийн өвлийн (2025 оны 12-р сар - 2026 оны 2-р сар) дундаж PM2.5, мкг/м³",
+  "data": {
+    "url": "/datasets/pm25-winter-by-aimag-centre-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 4
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "datum.aimag === 'Улаанбаатар'",
+            "value": "#e45756"
+          },
+          "value": "#4c78a8"
+        },
+        "tooltip": [
+          {
+            "field": "aimag",
+            "title": "Аймгийн төв"
+          },
+          {
+            "field": "pm25",
+            "title": "Дундаж PM2.5, мкг/м³",
+            "format": ".1f"
+          },
+          {
+            "field": "stations",
+            "title": "Станц"
+          },
+          {
+            "field": "station_days",
+            "title": "Станц-өдөр",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "limit": 50,
+            "label": "Монгол стандарт (50)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#334155",
+        "strokeDash": [
+          6,
+          4
+        ],
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "limit",
+          "type": "quantitative"
+        },
+        "tooltip": null,
+        "y": null
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "limit": 50,
+            "label": "Монгол стандарт (50)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 4,
+        "dy": -6,
+        "baseline": "bottom",
+        "fontSize": 13,
+        "color": "#334155",
+        "y": 0
+      },
+      "encoding": {
+        "x": {
+          "field": "limit",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "tooltip": null,
+        "y": null
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "pm25",
+      "type": "quantitative",
+      "title": "Дундаж PM2.5, мкг/м³",
+      "axis": {
+        "format": ".0f"
+      }
+    },
+    "y": {
+      "field": "aimag",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "pm25",
+        "order": "descending"
+      },
+      "axis": {
+        "labelLimit": 200
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Number of days per month when the average PM2.5 of Ulaanbaatar monitoring stations exceeded 50 µg/m³, October 2025 to September 2026.",
+  "data": {
+    "url": "/datasets/pm25-unhealthy-days-ulaanbaatar-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "on": "pointerover",
+        "clear": "pointerout",
+        "fields": [
+          "month"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "#4c78a8",
+    "cornerRadiusEnd": 3,
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "temporal",
+      "timeUnit": "yearmonth",
+      "title": "Month",
+      "axis": {
+        "grid": false,
+        "format": "%b %Y",
+        "labelAngle": -45
+      }
+    },
+    "y": {
+      "field": "days_above_limit",
+      "type": "quantitative",
+      "title": "Days above 50 µg/m³",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 5
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "hover",
+        "value": 1
+      },
+      "value": 0.8
+    },
+    "tooltip": [
+      {
+        "field": "month",
+        "type": "temporal",
+        "timeUnit": "yearmonth",
+        "title": "Month",
+        "format": "%B %Y"
+      },
+      {
+        "field": "days_above_limit",
+        "type": "quantitative",
+        "title": "Days above 50 µg/m³",
+        "format": "d"
+      },
+      {
+        "field": "days_with_data",
+        "type": "quantitative",
+        "title": "Days with data",
+        "format": "d"
+      },
+      {
+        "field": "max_city_mean_ug_m3",
+        "type": "quantitative",
+        "title": "Highest city-wide daily mean (µg/m³)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

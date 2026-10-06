@@ -43,6 +43,14 @@ Everything the site served, 2025-02 → 2026-10-03, all 46 catalog stations.
   0 failures, and no file has fewer rows with concentrations than before. No
   newly validated rows appeared yet.
 
+## 2026-10-06: first scheduled run
+
+- Re-fetched 2025-11, 2025-12 and 2026-08 to 2026-10 (hourly + daily), 0 failed. Only 2026-10 grew:
+  hourly +24 rows (+24 with concentrations); everything else was unchanged in row count. No newly validated months.
+  0 rows and 0 values lost. 2025-10 passed the 12-month cutoff unvalidated. The fetcher writes CRLF but the committed
+  CSVs use LF, so the files were normalized to LF. Real-time quirks: 11201 NO2 down to -90.9 µg/m³ (2026-09),
+  CO > 50 mg/m³ at 11403 (2026-08-31) and 10301 (2026-09-28/29), and 11404/11405 silent since 2026-09-17.
+
 ## Next runs
 
 `fetch_data.py --update`, at least monthly (see source.md). Add a dated line

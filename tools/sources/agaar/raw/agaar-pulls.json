@@ -2078,7 +2078,7 @@
   },
   "2025-11": {
    "complete": false,
-   "fetched_at": "2026-10-06T07:38:06+00:00",
+   "fetched_at": "2026-10-06T08:08:41+00:00",
    "rows": 1180,
    "rows_with_concentrations": 1180,
    "stations": {
@@ -2289,7 +2289,7 @@
   },
   "2025-12": {
    "complete": false,
-   "fetched_at": "2026-10-06T07:39:03+00:00",
+   "fetched_at": "2026-10-06T08:09:38+00:00",
    "rows": 1241,
    "rows_with_concentrations": 1241,
    "stations": {
@@ -3924,7 +3924,7 @@
   },
   "2026-08": {
    "complete": false,
-   "fetched_at": "2026-10-06T07:40:11+00:00",
+   "fetched_at": "2026-10-06T08:10:46+00:00",
    "rows": 1275,
    "rows_with_concentrations": 1275,
    "stations": {
@@ -4131,7 +4131,7 @@
   },
   "2026-09": {
    "complete": false,
-   "fetched_at": "2026-10-06T07:41:23+00:00",
+   "fetched_at": "2026-10-06T08:11:58+00:00",
    "rows": 1285,
    "rows_with_concentrations": 1285,
    "stations": {
@@ -4338,7 +4338,7 @@
   },
   "2026-10": {
    "complete": false,
-   "fetched_at": "2026-10-06T07:42:09+00:00",
+   "fetched_at": "2026-10-06T08:12:44+00:00",
    "rows": 257,
    "rows_with_concentrations": 257,
    "stations": {
@@ -6606,7 +6606,7 @@
   },
   "2025-11": {
    "complete": false,
-   "fetched_at": "2026-10-06T07:33:52+00:00",
+   "fetched_at": "2026-10-06T08:04:27+00:00",
    "rows": 28180,
    "rows_with_concentrations": 28037,
    "stations": {
@@ -6809,7 +6809,7 @@
   },
   "2025-12": {
    "complete": false,
-   "fetched_at": "2026-10-06T07:34:38+00:00",
+   "fetched_at": "2026-10-06T08:05:13+00:00",
    "rows": 29555,
    "rows_with_concentrations": 29478,
    "stations": {
@@ -8419,7 +8419,7 @@
   },
   "2026-08": {
    "complete": false,
-   "fetched_at": "2026-10-06T07:35:24+00:00",
+   "fetched_at": "2026-10-06T08:05:59+00:00",
    "rows": 29944,
    "rows_with_concentrations": 29944,
    "stations": {
@@ -8620,7 +8620,7 @@
   },
   "2026-09": {
    "complete": false,
-   "fetched_at": "2026-10-06T07:36:11+00:00",
+   "fetched_at": "2026-10-06T08:06:45+00:00",
    "rows": 30396,
    "rows_with_concentrations": 30396,
    "stations": {
@@ -8818,36 +8818,36 @@
   },
   "2026-10": {
    "complete": false,
-   "fetched_at": "2026-10-06T07:36:56+00:00",
-   "rows": 5792,
-   "rows_with_concentrations": 5792,
+   "fetched_at": "2026-10-06T08:07:31+00:00",
+   "rows": 5816,
+   "rows_with_concentrations": 5816,
    "stations": {
     "10101": {
-     "rows": 135,
+     "rows": 136,
      "validated": 0
     },
     "10201": {
-     "rows": 135,
+     "rows": 136,
      "validated": 0
     },
     "10301": {
-     "rows": 134,
+     "rows": 135,
      "validated": 0
     },
     "10401": {
-     "rows": 135,
+     "rows": 136,
      "validated": 0
     },
     "10501": {
-     "rows": 135,
+     "rows": 136,
      "validated": 0
     },
     "10602": {
-     "rows": 130,
+     "rows": 131,
      "validated": 0
     },
     "10701": {
-     "rows": 135,
+     "rows": 136,
      "validated": 0
     },
     "10702": {
@@ -8855,31 +8855,31 @@
      "validated": 0
     },
     "10801": {
-     "rows": 135,
+     "rows": 136,
      "validated": 0
     },
     "10901": {
-     "rows": 131,
-     "validated": 0
-    },
-    "11001": {
-     "rows": 135,
-     "validated": 0
-    },
-    "11101": {
-     "rows": 135,
-     "validated": 0
-    },
-    "11201": {
-     "rows": 135,
-     "validated": 0
-    },
-    "11301": {
      "rows": 132,
      "validated": 0
     },
+    "11001": {
+     "rows": 136,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 136,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 136,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 133,
+     "validated": 0
+    },
     "11403": {
-     "rows": 135,
+     "rows": 136,
      "validated": 0
     },
     "11404": {
@@ -8891,31 +8891,31 @@
      "validated": 0
     },
     "11501": {
-     "rows": 135,
+     "rows": 136,
      "validated": 0
     },
     "11601": {
-     "rows": 127,
+     "rows": 128,
      "validated": 0
     },
     "11701": {
-     "rows": 135,
+     "rows": 136,
      "validated": 0
     },
     "11801": {
-     "rows": 135,
+     "rows": 136,
      "validated": 0
     },
     "11902": {
-     "rows": 134,
+     "rows": 135,
      "validated": 0
     },
     "12001": {
-     "rows": 135,
+     "rows": 136,
      "validated": 0
     },
     "12101": {
-     "rows": 135,
+     "rows": 136,
      "validated": 0
     },
     "12301": {
@@ -8935,7 +8935,7 @@
      "validated": 0
     },
     "12306": {
-     "rows": 135,
+     "rows": 136,
      "validated": 0
     },
     "12401": {
@@ -8951,7 +8951,7 @@
      "validated": 0
     },
     "12404": {
-     "rows": 135,
+     "rows": 136,
      "validated": 0
     },
     "12501": {
@@ -8999,7 +8999,7 @@
      "validated": 0
     },
     "12803": {
-     "rows": 135,
+     "rows": 136,
      "validated": 0
     },
     "12901": {

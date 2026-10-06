@@ -1,0 +1,10 @@
+[Unit]
+Description=Monthly data.mn agaar archive run
+
+[Timer]
+OnCalendar=*-*-02 10:00
+Persistent=true
+RandomizedDelaySec=15min
+
+[Install]
+WantedBy=timers.target

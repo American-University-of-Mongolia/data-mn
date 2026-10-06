@@ -191,7 +191,7 @@ python3 fetch_data.py --output ../../../tools/sources/agaar/raw --update   # arc
 ```
 
 **Rules**: the site drops hourly concentrations once a month is validated, so
-run `--update` at least monthly; `tools/sources/agaar/raw/` is the only
+run `--update` at least monthly (scheduled via `tools/scheduled/agaar-archive/`); `tools/sources/agaar/raw/` is the only
 long-term copy. History starts 2025 (UB stations 2025-09). Query one
 calendar month per request (validated rows depend on it). Never hand-roll
 requests: the history endpoint needs a session key + cookie.

@@ -83,7 +83,7 @@ Exit code 0 means every executed check passed.
 
 ## Notes
 
-- This runs on omarchy (hostname: ritz), so deploys run locally.
+- This runs on the ritz server (hostname: ritz), so deploys run locally.
 - Python checks run with the repo `.venv` (`/home/ritz/projects/data/.venv`),
   which must include `pytest`, `pandas`, and `pyyaml`.
 - Only datasets modified in the PR are validated per-dataset; global

@@ -80,7 +80,7 @@ reporting at refresh time, so treat it as a hint, not the station's full spec.
 # Full backfill (everything the site serves, from 2025-02) -> ~1,800 requests, ~1.5 h
 python3 fetch_data.py --output ../../../tools/sources/agaar/raw
 
-# Routine archive run (scheduled): last 3 months + months still awaiting validation
+# Routine archive run (scheduled monthly, see tools/scheduled/agaar-archive/): last 3 months + months still awaiting validation
 python3 fetch_data.py --output ../../../tools/sources/agaar/raw --update
 
 # Testing / one-offs

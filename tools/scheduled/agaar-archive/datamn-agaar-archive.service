@@ -1,0 +1,9 @@
+[Unit]
+Description=data.mn agaar.gov.mn archive run (Claude Code)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/projects/data/tools/scheduled/agaar-archive/run.sh
+TimeoutStartSec=3h

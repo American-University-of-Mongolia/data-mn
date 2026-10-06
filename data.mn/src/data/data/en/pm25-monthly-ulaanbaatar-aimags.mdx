@@ -4,7 +4,7 @@ publishDate: 2026-10-06
 author: Data.mn
 dataVersion: 1
 dataDate: 2026-10-06
-excerpt: Monthly mean PM2.5 in µg/m³ at Ulaanbaatar and aimag-centre monitoring stations, October 2025 to September 2026. Ulaanbaatar peaked at 70.4 in December 2025 and aimag centres at 50.8 in January 2026; summer months were about 9 to 15 in both.
+excerpt: Monthly mean PM2.5 in µg/m³ at Ulaanbaatar and aimag-centre monitoring stations, October 2025 to September 2026. Ulaanbaatar peaked at 70.4 in December 2025 and aimag centres at 50.8 in January 2026; summer months were about 9 to 15 in both. Implausible readings (163 of 16,115 station-days) were removed before averaging.
 category: Environment
 tags:
 - mongolia
@@ -35,13 +35,7 @@ source:
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
-Monthly mean PM2.5 in µg/m³ at Ulaanbaatar and aimag-centre monitoring stations, October 2025 to September 2026. Ulaanbaatar peaked at 70.4 in December 2025 and aimag centres at 50.8 in January 2026; summer months were about 9 to 15 in both.
-
-The dashed lines mark Mongolia's 24-hour PM2.5 limit of 50 µg/m³ (MNS 4585:2016) and the WHO 2021 24-hour guideline of 15 µg/m³. These are limits for daily values; the chart shows monthly means of daily readings.
-
-## How this was cleaned
-
-Each point is the mean of daily PM2.5 values from the monitoring stations of [agaar.gov.mn](https://agaar.gov.mn) (National Agency for Meteorology and Environmental Monitoring), grouped into Ulaanbaatar stations and aimag-centre stations. A station-day was dropped if PM2.5 was negative, above 1.1 times the same-day PM10 and over 50, over five times the day's median across all stations and over 150, or identical on five or more consecutive days at one station. This removed 163 of 16,115 station-days (data to 6 October 2026). Only complete months are shown. Related: [Air Pollution Concentration in Ulaanbaatar](/en/data/air-pollution-concentration) (NSO sulphur dioxide, 2002 to 2026).
+Monthly mean PM2.5 in µg/m³ at Ulaanbaatar and aimag-centre monitoring stations, October 2025 to September 2026. Ulaanbaatar peaked at 70.4 in December 2025 and aimag centres at 50.8 in January 2026; summer months were about 9 to 15 in both. Implausible readings (163 of 16,115 station-days) were removed before averaging.
 
 <VegaChart
   spec="/charts/pm25-monthly-ulaanbaatar-aimags-en.json"

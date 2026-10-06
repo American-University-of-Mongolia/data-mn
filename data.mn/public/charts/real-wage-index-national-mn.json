@@ -1,0 +1,369 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын бодит цалингийн индекс (1992–2025). Индекс: 2023 = 100. Тасархай шугам нь 2014 оны эх үүсвэрийн болон 2025 оны аргачлалын өөрчлөлтийг тэмдэглэнэ. 2014 оны өмнөх ба дараах утгуудын харьцуулагдах байдлыг баталгаажуулаагүй. ҮСХ 2025 оныг (улбар шар цэг) өмнөх онуудтай харьцуулах боломжгүй гэж тодорхой тайлбарласан.",
+  "data": {
+    "url": "/datasets/real-wage-index-national-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Он",
+      "type": "quantitative",
+      "title": "Он",
+      "scale": {
+        "domain": [1992, 2026],
+        "nice": false
+      },
+      "axis": {
+        "format": "d",
+        "tickCount": 6,
+        "grid": false,
+        "labelAngle": 0,
+        "labelOverlap": "greedy",
+        "labelSeparation": 8
+      }
+    },
+    "y": {
+      "field": "Бодит цалингийн индекс (2023=100)",
+      "type": "quantitative",
+      "title": "Индекс (2023=100)",
+      "scale": {
+        "zero": true,
+        "domainMax": 140
+      },
+      "axis": {
+        "format": ".0f",
+        "gridOpacity": 0.25
+      }
+    }
+  },
+  "layer": [
+    {
+      "transform": [
+        {
+          "filter": "datum['Он'] < 2014"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "color": "#1f77b4",
+        "interpolate": "linear"
+      },
+      "encoding": {
+        "x": {
+          "field": "Он",
+          "type": "quantitative",
+          "title": "Он",
+          "scale": {
+            "domain": [1992, 2026],
+            "nice": false
+          },
+          "axis": {
+            "format": "d",
+            "tickCount": 6,
+            "grid": false,
+            "labelAngle": 0,
+            "labelOverlap": "greedy",
+            "labelSeparation": 8
+          }
+        },
+        "y": {
+          "field": "Бодит цалингийн индекс (2023=100)",
+          "type": "quantitative",
+          "title": "Индекс (2023=100)",
+          "scale": {
+            "zero": true,
+            "domainMax": 140
+          },
+          "axis": {
+            "format": ".0f",
+            "gridOpacity": 0.25
+          }
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Он'] >= 2014 && datum['Он'] < 2025"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "color": "#1f77b4",
+        "interpolate": "linear"
+      },
+      "encoding": {
+        "x": {
+          "field": "Он",
+          "type": "quantitative",
+          "title": "Он",
+          "scale": {
+            "domain": [1992, 2026],
+            "nice": false
+          },
+          "axis": {
+            "format": "d",
+            "tickCount": 6,
+            "grid": false,
+            "labelAngle": 0,
+            "labelOverlap": "greedy",
+            "labelSeparation": 8
+          }
+        },
+        "y": {
+          "field": "Бодит цалингийн индекс (2023=100)",
+          "type": "quantitative",
+          "title": "Индекс (2023=100)",
+          "scale": {
+            "zero": true,
+            "domainMax": 140
+          },
+          "axis": {
+            "format": ".0f",
+            "gridOpacity": 0.25
+          }
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Он'] >= 2013 && datum['Он'] <= 2014"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "color": "#1f77b4",
+        "interpolate": "linear",
+        "strokeDash": [5, 4]
+      },
+      "encoding": {
+        "x": {
+          "field": "Он",
+          "type": "quantitative",
+          "title": "Он",
+          "scale": {
+            "domain": [1992, 2026],
+            "nice": false
+          },
+          "axis": {
+            "format": "d",
+            "tickCount": 6,
+            "grid": false,
+            "labelAngle": 0,
+            "labelOverlap": "greedy",
+            "labelSeparation": 8
+          }
+        },
+        "y": {
+          "field": "Бодит цалингийн индекс (2023=100)",
+          "type": "quantitative",
+          "title": "Индекс (2023=100)",
+          "scale": {
+            "zero": true,
+            "domainMax": 140
+          },
+          "axis": {
+            "format": ".0f",
+            "gridOpacity": 0.25
+          }
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Он'] >= 2024 && datum['Он'] <= 2025"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "color": "#d97706",
+        "interpolate": "linear",
+        "strokeDash": [5, 4]
+      },
+      "encoding": {
+        "x": {
+          "field": "Он",
+          "type": "quantitative",
+          "title": "Он",
+          "scale": {
+            "domain": [1992, 2026],
+            "nice": false
+          },
+          "axis": {
+            "format": "d",
+            "tickCount": 6,
+            "grid": false,
+            "labelAngle": 0,
+            "labelOverlap": "greedy",
+            "labelSeparation": 8
+          }
+        },
+        "y": {
+          "field": "Бодит цалингийн индекс (2023=100)",
+          "type": "quantitative",
+          "title": "Индекс (2023=100)",
+          "scale": {
+            "zero": true,
+            "domainMax": 140
+          },
+          "axis": {
+            "format": ".0f",
+            "gridOpacity": 0.25
+          }
+        }
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 70,
+        "color": "#1f77b4"
+      },
+      "encoding": {
+        "x": {
+          "field": "Он",
+          "type": "quantitative",
+          "title": "Он",
+          "scale": {
+            "domain": [1992, 2026],
+            "nice": false
+          },
+          "axis": {
+            "format": "d",
+            "tickCount": 6,
+            "grid": false,
+            "labelAngle": 0,
+            "labelOverlap": "greedy",
+            "labelSeparation": 8
+          }
+        },
+        "y": {
+          "field": "Бодит цалингийн индекс (2023=100)",
+          "type": "quantitative",
+          "title": "Индекс (2023=100)",
+          "scale": {
+            "zero": true,
+            "domainMax": 140
+          },
+          "axis": {
+            "format": ".0f",
+            "gridOpacity": 0.25
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Он",
+            "title": "Он",
+            "type": "quantitative",
+            "format": "d"
+          },
+          {
+            "field": "Бодит цалингийн индекс (2023=100)",
+            "title": "Бодит цалингийн индекс (2023=100)",
+            "type": "quantitative",
+            "format": ".1f"
+          }
+        ],
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Он'] == 2025"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 110,
+        "color": "#d97706"
+      },
+      "encoding": {
+        "x": {
+          "field": "Он",
+          "type": "quantitative",
+          "title": "Он",
+          "scale": {
+            "domain": [1992, 2026],
+            "nice": false
+          },
+          "axis": {
+            "format": "d",
+            "tickCount": 6,
+            "grid": false,
+            "labelAngle": 0,
+            "labelOverlap": "greedy",
+            "labelSeparation": 8
+          }
+        },
+        "y": {
+          "field": "Бодит цалингийн индекс (2023=100)",
+          "type": "quantitative",
+          "title": "Индекс (2023=100)",
+          "scale": {
+            "zero": true,
+            "domainMax": 140
+          },
+          "axis": {
+            "format": ".0f",
+            "gridOpacity": 0.25
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Он",
+            "title": "Он",
+            "type": "quantitative",
+            "format": "d"
+          },
+          {
+            "field": "Бодит цалингийн индекс (2023=100)",
+            "title": "Бодит цалингийн индекс (2023=100)",
+            "type": "quantitative",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    }
+  }
+}

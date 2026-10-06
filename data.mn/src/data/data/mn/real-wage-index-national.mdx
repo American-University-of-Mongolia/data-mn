@@ -1,0 +1,40 @@
+---
+title: Монгол Улсын бодит цалингийн индекс (1992–2025)
+publishDate: 2026-09-30
+excerpt: Хэрэглээний үнийн өөрчлөлтөөр засварласан дундаж цалингийн индекс нь худалдан
+  авах чадварын өөрчлөлтийг харуулна. Эх үүсвэр болон аргачлалын өөрчлөлтийг тэмдэглэв;
+  ажилтан бүрийн орлогыг хэмжихгүй.
+category: Хөдөлмөрийн зах зээл
+tags: &id001
+  - монгол
+  - бодит цалин
+  - худалдан авах чадвар
+  - инфляц
+  - хөдөлмөр
+keywords: *id001
+author: Data.mn
+dataVersion: 1
+dataDate: 2025-12-31
+excelLanguage: page
+dataFiles:
+  - path: /datasets/real-wage-index-national-mn.csv
+    format: csv
+    size: 1 KB
+    description: CSV татах
+  - path: /datasets/real-wage-index-national-mn.xlsx
+    format: xlsx
+    size: 6 KB
+    description: Excel татах
+source:
+  name: Үндэсний Статистикийн Хороо
+  url: https://data.1212.mn/pxweb/mn/NSO/NSO__Labour%2C%20business__Wages__REAL%20WAGE%20INDEX%20%282023%3D100%29%2C%20by%20divisions%20of%20economic%20activities/DT_NSO_0400_036V4.px/
+  tableId: DT_NSO_0400_036V4.px
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/real-wage-index-national-mn.json"
+  title="Монгол Улсын бодит цалингийн индекс (1992–2025)"
+  caption="Индекс: 2023 = 100. Тасархай шугам нь 2014 оны эх үүсвэрийн болон 2025 оны аргачлалын өөрчлөлтийг тэмдэглэнэ. 2014 оны өмнөх ба дараах утгуудын харьцуулагдах байдлыг баталгаажуулаагүй. ҮСХ 2025 оныг (улбар шар цэг) өмнөх онуудтай харьцуулах боломжгүй гэж тодорхой тайлбарласан."
+/>

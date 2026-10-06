@@ -1,0 +1,15 @@
+{
+  "retrieved_at": "2026-09-30T02:05:34.799971+00:00",
+  "table": "DT_NSO_0400_036V4.px",
+  "source_path": "Labour, business/Wages/REAL WAGE INDEX (2023=100), by divisions of economic activities/DT_NSO_0400_036V4.px",
+  "files": {
+    "metadata-en.json": "7945388646bc74756585b57577d2cf6d7ea147ad0ac16a3f1dbfa8d8bb4c17c0",
+    "metadata-mn.json": "47f785b31a09f6f316142b96d04b30fedeffd3ba8a83a109f6d685f118f7cdbf",
+    "query-en.json": "82828ce0698fc48d0f51c3b2af3194f386e8ec18ea3e32ddc06e68e6ae2bfd24",
+    "query-mn.json": "82828ce0698fc48d0f51c3b2af3194f386e8ec18ea3e32ddc06e68e6ae2bfd24",
+    "response-en.json": "e4ab748745d66b83914d011de2b3e2e6af60d6df1e6ca740ebadce7861010fd6",
+    "response-mn.json": "fcb9c4a3055891d8fc88ce79fdca56674a4b11c4a54167f4014334d6143c977c",
+    "source-page-en.html": "32739fcf17c91233d2544eefa55e921faa791039dcece1a014da0958f67e579f",
+    "source-page-mn.html": "34997c40486f0e78c8464688ce88ad9f36afcbb34b16593dd6bf968449561bd9"
+  }
+}

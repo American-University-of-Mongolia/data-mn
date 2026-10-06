@@ -1,0 +1,9020 @@
+{
+ "daily": {
+  "2025-02": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:55:44+00:00",
+   "rows": 10,
+   "rows_with_concentrations": 10,
+   "stations": {
+    "10101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 10,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 0,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10101",
+    "10201",
+    "10301",
+    "10401",
+    "10602",
+    "10701",
+    "10702",
+    "10801",
+    "10901",
+    "11001",
+    "11101",
+    "11201",
+    "11301",
+    "11403",
+    "11404",
+    "11405",
+    "11501",
+    "11601",
+    "11701",
+    "11801",
+    "11902",
+    "12001",
+    "12101",
+    "12301",
+    "12303",
+    "12304",
+    "12305",
+    "12306",
+    "12401",
+    "12402",
+    "12403",
+    "12404",
+    "12501",
+    "12503",
+    "12504",
+    "12601",
+    "12602",
+    "12603",
+    "12604",
+    "12605",
+    "12701",
+    "12801",
+    "12802",
+    "12803",
+    "12901"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 1,
+   "validated_rows": 0
+  },
+  "2025-03": {
+   "complete": true,
+   "fetched_at": "2026-10-06T06:40:58+00:00",
+   "rows": 17,
+   "rows_with_concentrations": 17,
+   "stations": {
+    "10101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 17,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 0,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10101",
+    "10201",
+    "10301",
+    "10401",
+    "10602",
+    "10701",
+    "10702",
+    "10801",
+    "10901",
+    "11001",
+    "11101",
+    "11201",
+    "11301",
+    "11403",
+    "11404",
+    "11405",
+    "11501",
+    "11601",
+    "11701",
+    "11801",
+    "11902",
+    "12001",
+    "12101",
+    "12301",
+    "12303",
+    "12304",
+    "12305",
+    "12306",
+    "12401",
+    "12402",
+    "12403",
+    "12404",
+    "12501",
+    "12503",
+    "12504",
+    "12601",
+    "12602",
+    "12603",
+    "12604",
+    "12605",
+    "12701",
+    "12801",
+    "12802",
+    "12803",
+    "12901"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 1,
+   "validated_rows": 0
+  },
+  "2025-04": {
+   "complete": true,
+   "fetched_at": "2026-10-06T06:41:44+00:00",
+   "rows": 0,
+   "rows_with_concentrations": 0,
+   "stations": {
+    "10101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 0,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10101",
+    "10201",
+    "10301",
+    "10401",
+    "10501",
+    "10602",
+    "10701",
+    "10702",
+    "10801",
+    "10901",
+    "11001",
+    "11101",
+    "11201",
+    "11301",
+    "11403",
+    "11404",
+    "11405",
+    "11501",
+    "11601",
+    "11701",
+    "11801",
+    "11902",
+    "12001",
+    "12101",
+    "12301",
+    "12303",
+    "12304",
+    "12305",
+    "12306",
+    "12401",
+    "12402",
+    "12403",
+    "12404",
+    "12501",
+    "12503",
+    "12504",
+    "12601",
+    "12602",
+    "12603",
+    "12604",
+    "12605",
+    "12701",
+    "12801",
+    "12802",
+    "12803",
+    "12901"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 0,
+   "validated_rows": 0
+  },
+  "2025-05": {
+   "complete": true,
+   "fetched_at": "2026-10-06T06:42:30+00:00",
+   "rows": 26,
+   "rows_with_concentrations": 26,
+   "stations": {
+    "10101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 11,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 15,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 0,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10101",
+    "10301",
+    "10501",
+    "10602",
+    "10701",
+    "10702",
+    "10801",
+    "10901",
+    "11001",
+    "11101",
+    "11201",
+    "11301",
+    "11403",
+    "11404",
+    "11405",
+    "11501",
+    "11601",
+    "11701",
+    "11801",
+    "11902",
+    "12001",
+    "12101",
+    "12301",
+    "12303",
+    "12304",
+    "12305",
+    "12306",
+    "12401",
+    "12402",
+    "12403",
+    "12404",
+    "12501",
+    "12503",
+    "12504",
+    "12601",
+    "12602",
+    "12603",
+    "12604",
+    "12605",
+    "12701",
+    "12801",
+    "12802",
+    "12803",
+    "12901"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 2,
+   "validated_rows": 0
+  },
+  "2025-06": {
+   "complete": true,
+   "fetched_at": "2026-10-06T06:43:16+00:00",
+   "rows": 219,
+   "rows_with_concentrations": 219,
+   "stations": {
+    "10101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 11,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 9,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 19,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 0,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10101",
+    "10602",
+    "10701",
+    "10702",
+    "10801",
+    "10901",
+    "11301",
+    "11404",
+    "11405",
+    "11501",
+    "11701",
+    "11801",
+    "11902",
+    "12001",
+    "12101",
+    "12301",
+    "12303",
+    "12304",
+    "12305",
+    "12306",
+    "12401",
+    "12402",
+    "12403",
+    "12404",
+    "12501",
+    "12503",
+    "12504",
+    "12601",
+    "12602",
+    "12603",
+    "12604",
+    "12605",
+    "12701",
+    "12801",
+    "12802",
+    "12803",
+    "12901"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 9,
+   "validated_rows": 0
+  },
+  "2025-07": {
+   "complete": true,
+   "fetched_at": "2026-10-06T06:44:02+00:00",
+   "rows": 403,
+   "rows_with_concentrations": 403,
+   "stations": {
+    "10101": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 0,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10602",
+    "10702",
+    "10801",
+    "10901",
+    "11404",
+    "11405",
+    "11701",
+    "11801",
+    "11902",
+    "12001",
+    "12101",
+    "12301",
+    "12303",
+    "12304",
+    "12305",
+    "12306",
+    "12401",
+    "12402",
+    "12403",
+    "12404",
+    "12501",
+    "12503",
+    "12504",
+    "12601",
+    "12602",
+    "12603",
+    "12604",
+    "12605",
+    "12701",
+    "12801",
+    "12802",
+    "12803",
+    "12901"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 13,
+   "validated_rows": 0
+  },
+  "2025-08": {
+   "complete": true,
+   "fetched_at": "2026-10-06T06:44:59+00:00",
+   "rows": 433,
+   "rows_with_concentrations": 433,
+   "stations": {
+    "10101": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 29,
+     "unavailable_days": [
+      "2025-08-30",
+      "2025-08-31"
+     ],
+     "validated": 0
+    },
+    "10401": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 21,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 15,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 12,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 9,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 0,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "10801",
+    "10901",
+    "11404",
+    "11405",
+    "11902",
+    "12001",
+    "12301",
+    "12303",
+    "12304",
+    "12305",
+    "12306",
+    "12401",
+    "12402",
+    "12403",
+    "12404",
+    "12501",
+    "12503",
+    "12504",
+    "12601",
+    "12602",
+    "12603",
+    "12604",
+    "12605",
+    "12701",
+    "12801",
+    "12802",
+    "12803",
+    "12901"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 17,
+   "validated_rows": 0
+  },
+  "2025-09": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:29:26+00:00",
+   "rows": 741,
+   "rows_with_concentrations": 741,
+   "stations": {
+    "10101": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 28,
+     "unavailable_days": [
+      "2025-09-01",
+      "2025-09-02"
+     ],
+     "validated": 0
+    },
+    "10401": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 9,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 16,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 5,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 5,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 25,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 8,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 8,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 8,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 8,
+     "validated": 8
+    },
+    "12402": {
+     "rows": 8,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 8,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 8,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 8,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 8,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 8,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 7,
+     "unavailable_days": [
+      "2025-09-28"
+     ],
+     "validated": 0
+    },
+    "12603": {
+     "rows": 8,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 8,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 8,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 8,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 8,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 8,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 8,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12305",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 41,
+   "validated_rows": 8
+  },
+  "2025-10": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:30:23+00:00",
+   "rows": 1240,
+   "rows_with_concentrations": 1240,
+   "stations": {
+    "10101": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 27,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 15,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 27,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 29,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 30,
+     "unavailable_days": [
+      "2025-10-18"
+     ],
+     "validated": 0
+    },
+    "12601": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 31,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12305",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 41,
+   "validated_rows": 0
+  },
+  "2025-11": {
+   "complete": false,
+   "fetched_at": "2026-10-06T07:38:06+00:00",
+   "rows": 1180,
+   "rows_with_concentrations": 1180,
+   "stations": {
+    "10101": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 21,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 29,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 26,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 28,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 29,
+     "unavailable_days": [
+      "2025-11-27"
+     ],
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 27,
+     "unavailable_days": [
+      "2025-11-05",
+      "2025-11-06",
+      "2025-11-07"
+     ],
+     "validated": 0
+    },
+    "12603": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 30,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12305",
+    "12306",
+    "12402",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 40,
+   "validated_rows": 0
+  },
+  "2025-12": {
+   "complete": false,
+   "fetched_at": "2026-10-06T07:39:03+00:00",
+   "rows": 1241,
+   "rows_with_concentrations": 1241,
+   "stations": {
+    "10101": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 29,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 30,
+     "unavailable_days": [
+      "2025-12-20"
+     ],
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 4,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 31,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12305",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 41,
+   "validated_rows": 0
+  },
+  "2026-01": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:34:10+00:00",
+   "rows": 1293,
+   "rows_with_concentrations": 1293,
+   "stations": {
+    "10101": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10201": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10301": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10401": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10501": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10602": {
+     "rows": 30,
+     "unavailable_days": [
+      "2026-01-03"
+     ],
+     "validated": 30
+    },
+    "10701": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10901": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11101": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11201": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11301": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11403": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11404": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11601": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 31,
+     "validated": 30
+    },
+    "11801": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11902": {
+     "rows": 31,
+     "validated": 31
+    },
+    "12001": {
+     "rows": 31,
+     "validated": 31
+    },
+    "12101": {
+     "rows": 31,
+     "validated": 31
+    },
+    "12301": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 29,
+     "unavailable_days": [
+      "2026-01-20",
+      "2026-01-31"
+     ],
+     "validated": 0
+    },
+    "12305": {
+     "rows": 29,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 27,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 31,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 42,
+   "validated_rows": 587
+  },
+  "2026-02": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:19:34+00:00",
+   "rows": 1176,
+   "rows_with_concentrations": 1176,
+   "stations": {
+    "10101": {
+     "rows": 28,
+     "validated": 28
+    },
+    "10201": {
+     "rows": 28,
+     "validated": 28
+    },
+    "10301": {
+     "rows": 28,
+     "validated": 28
+    },
+    "10401": {
+     "rows": 28,
+     "validated": 28
+    },
+    "10501": {
+     "rows": 28,
+     "validated": 28
+    },
+    "10602": {
+     "rows": 28,
+     "validated": 28
+    },
+    "10701": {
+     "rows": 28,
+     "validated": 24
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 28,
+     "validated": 28
+    },
+    "10901": {
+     "rows": 28,
+     "validated": 28
+    },
+    "11001": {
+     "rows": 28,
+     "validated": 28
+    },
+    "11101": {
+     "rows": 28,
+     "validated": 28
+    },
+    "11201": {
+     "rows": 28,
+     "validated": 28
+    },
+    "11301": {
+     "rows": 28,
+     "validated": 28
+    },
+    "11403": {
+     "rows": 28,
+     "validated": 28
+    },
+    "11404": {
+     "rows": 28,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 28,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 28,
+     "validated": 28
+    },
+    "11601": {
+     "rows": 28,
+     "validated": 28
+    },
+    "11701": {
+     "rows": 28,
+     "validated": 28
+    },
+    "11801": {
+     "rows": 28,
+     "validated": 28
+    },
+    "11902": {
+     "rows": 28,
+     "validated": 28
+    },
+    "12001": {
+     "rows": 28,
+     "validated": 28
+    },
+    "12101": {
+     "rows": 28,
+     "validated": 28
+    },
+    "12301": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 28,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 42,
+   "validated_rows": 584
+  },
+  "2026-03": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:35:22+00:00",
+   "rows": 1298,
+   "rows_with_concentrations": 1298,
+   "stations": {
+    "10101": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10201": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10301": {
+     "rows": 30,
+     "unavailable_days": [
+      "2026-03-14"
+     ],
+     "validated": 30
+    },
+    "10401": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10501": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10602": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10701": {
+     "rows": 29,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10901": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11001": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11101": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11201": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11301": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11403": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11404": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11601": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11701": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11801": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11902": {
+     "rows": 31,
+     "validated": 31
+    },
+    "12001": {
+     "rows": 31,
+     "validated": 31
+    },
+    "12101": {
+     "rows": 31,
+     "validated": 31
+    },
+    "12301": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 31,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 42,
+   "validated_rows": 618
+  },
+  "2026-04": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:36:23+00:00",
+   "rows": 1224,
+   "rows_with_concentrations": 1224,
+   "stations": {
+    "10101": {
+     "rows": 30,
+     "validated": 30
+    },
+    "10201": {
+     "rows": 30,
+     "validated": 30
+    },
+    "10301": {
+     "rows": 30,
+     "validated": 30
+    },
+    "10401": {
+     "rows": 30,
+     "validated": 30
+    },
+    "10501": {
+     "rows": 30,
+     "validated": 30
+    },
+    "10602": {
+     "rows": 28,
+     "unavailable_days": [
+      "2026-04-04",
+      "2026-04-05"
+     ],
+     "validated": 28
+    },
+    "10701": {
+     "rows": 30,
+     "validated": 30
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 30,
+     "validated": 30
+    },
+    "10901": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11001": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11101": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11201": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11301": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11403": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11601": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11701": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11801": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11902": {
+     "rows": 30,
+     "validated": 30
+    },
+    "12001": {
+     "rows": 30,
+     "validated": 30
+    },
+    "12101": {
+     "rows": 30,
+     "validated": 30
+    },
+    "12301": {
+     "rows": 27,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 29,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 30,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "11404",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 41,
+   "validated_rows": 628
+  },
+  "2026-05": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:22:01+00:00",
+   "rows": 1279,
+   "rows_with_concentrations": 1279,
+   "stations": {
+    "10101": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10201": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10301": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10401": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10501": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10602": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10701": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10901": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11001": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11101": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11201": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11301": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11403": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11404": {
+     "rows": 16,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11601": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11701": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11801": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11902": {
+     "rows": 31,
+     "validated": 31
+    },
+    "12001": {
+     "rows": 31,
+     "validated": 31
+    },
+    "12101": {
+     "rows": 31,
+     "validated": 31
+    },
+    "12301": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 26,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 29,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 31,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 42,
+   "validated_rows": 650
+  },
+  "2026-06": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:37:20+00:00",
+   "rows": 1222,
+   "rows_with_concentrations": 1222,
+   "stations": {
+    "10101": {
+     "rows": 30,
+     "validated": 30
+    },
+    "10201": {
+     "rows": 30,
+     "validated": 30
+    },
+    "10301": {
+     "rows": 29,
+     "validated": 29
+    },
+    "10401": {
+     "rows": 30,
+     "validated": 30
+    },
+    "10501": {
+     "rows": 30,
+     "validated": 30
+    },
+    "10602": {
+     "rows": 28,
+     "validated": 28
+    },
+    "10701": {
+     "rows": 28,
+     "validated": 28
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 30,
+     "validated": 30
+    },
+    "10901": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11001": {
+     "rows": 29,
+     "validated": 29
+    },
+    "11101": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11201": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11301": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11403": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11404": {
+     "rows": 13,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11601": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11701": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11801": {
+     "rows": 30,
+     "validated": 30
+    },
+    "11902": {
+     "rows": 30,
+     "validated": 30
+    },
+    "12001": {
+     "rows": 30,
+     "validated": 30
+    },
+    "12101": {
+     "rows": 29,
+     "validated": 29
+    },
+    "12301": {
+     "rows": 29,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 27,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 29,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 26,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 27,
+     "unavailable_days": [
+      "2026-06-28",
+      "2026-06-30"
+     ],
+     "validated": 0
+    },
+    "12603": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 30,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 42,
+   "validated_rows": 623
+  },
+  "2026-07": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:38:19+00:00",
+   "rows": 1284,
+   "rows_with_concentrations": 1284,
+   "stations": {
+    "10101": {
+     "rows": 28,
+     "validated": 28
+    },
+    "10201": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10301": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10401": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10501": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10602": {
+     "rows": 31,
+     "validated": 31
+    },
+    "10701": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11001": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11101": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11201": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11301": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11403": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11404": {
+     "rows": 29,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11601": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11701": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11801": {
+     "rows": 31,
+     "validated": 31
+    },
+    "11902": {
+     "rows": 31,
+     "validated": 31
+    },
+    "12001": {
+     "rows": 31,
+     "validated": 31
+    },
+    "12101": {
+     "rows": 31,
+     "validated": 31
+    },
+    "12301": {
+     "rows": 27,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 29,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 29,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 29,
+     "unavailable_days": [
+      "2026-07-22",
+      "2026-07-23"
+     ],
+     "validated": 0
+    },
+    "12604": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 31,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 42,
+   "validated_rows": 586
+  },
+  "2026-08": {
+   "complete": false,
+   "fetched_at": "2026-10-06T07:40:11+00:00",
+   "rows": 1275,
+   "rows_with_concentrations": 1275,
+   "stations": {
+    "10101": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 31,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 30,
+     "unavailable_days": [
+      "2026-08-15"
+     ],
+     "validated": 0
+    },
+    "11601": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 31,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 19,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 28,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 27,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 30,
+     "unavailable_days": [
+      "2026-08-19"
+     ],
+     "validated": 0
+    },
+    "12801": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 31,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 31,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 42,
+   "validated_rows": 0
+  },
+  "2026-09": {
+   "complete": false,
+   "fetched_at": "2026-10-06T07:41:23+00:00",
+   "rows": 1285,
+   "rows_with_concentrations": 1285,
+   "stations": {
+    "10101": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 26,
+     "unavailable_days": [
+      "2026-09-18",
+      "2026-09-19",
+      "2026-09-20",
+      "2026-09-21"
+     ],
+     "validated": 0
+    },
+    "10701": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 30,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 17,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 17,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 30,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 25,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 26,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 25,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 26,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 29,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 29,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 25,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 27,
+     "unavailable_days": [
+      "2026-09-16"
+     ],
+     "validated": 0
+    },
+    "12604": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 30,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 23,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 30,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 45,
+   "validated_rows": 0
+  },
+  "2026-10": {
+   "complete": false,
+   "fetched_at": "2026-10-06T07:42:09+00:00",
+   "rows": 257,
+   "rows_with_concentrations": 257,
+   "stations": {
+    "10101": {
+     "rows": 6,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 6,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 6,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 6,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 6,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 6,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 6,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 6,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 6,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 6,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 6,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 6,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 6,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 6,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 6,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 6,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 6,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 6,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 5,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 6,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 6,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "11404",
+    "11405"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 43,
+   "validated_rows": 0
+  }
+ },
+ "hourly": {
+  "2025-02": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:50:20+00:00",
+   "rows": 0,
+   "rows_with_concentrations": 0,
+   "stations": {
+    "10101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 0,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10101",
+    "10201",
+    "10301",
+    "10401",
+    "10501",
+    "10602",
+    "10701",
+    "10702",
+    "10801",
+    "10901",
+    "11001",
+    "11101",
+    "11201",
+    "11301",
+    "11403",
+    "11404",
+    "11405",
+    "11501",
+    "11601",
+    "11701",
+    "11801",
+    "11902",
+    "12001",
+    "12101",
+    "12301",
+    "12303",
+    "12304",
+    "12305",
+    "12306",
+    "12401",
+    "12402",
+    "12403",
+    "12404",
+    "12501",
+    "12503",
+    "12504",
+    "12601",
+    "12602",
+    "12603",
+    "12604",
+    "12605",
+    "12701",
+    "12801",
+    "12802",
+    "12803",
+    "12901"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 0,
+   "validated_rows": 0
+  },
+  "2025-03": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:51:06+00:00",
+   "rows": 0,
+   "rows_with_concentrations": 0,
+   "stations": {
+    "10101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 0,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10101",
+    "10201",
+    "10301",
+    "10401",
+    "10501",
+    "10602",
+    "10701",
+    "10702",
+    "10801",
+    "10901",
+    "11001",
+    "11101",
+    "11201",
+    "11301",
+    "11403",
+    "11404",
+    "11405",
+    "11501",
+    "11601",
+    "11701",
+    "11801",
+    "11902",
+    "12001",
+    "12101",
+    "12301",
+    "12303",
+    "12304",
+    "12305",
+    "12306",
+    "12401",
+    "12402",
+    "12403",
+    "12404",
+    "12501",
+    "12503",
+    "12504",
+    "12601",
+    "12602",
+    "12603",
+    "12604",
+    "12605",
+    "12701",
+    "12801",
+    "12802",
+    "12803",
+    "12901"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 0,
+   "validated_rows": 0
+  },
+  "2025-04": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:51:52+00:00",
+   "rows": 0,
+   "rows_with_concentrations": 0,
+   "stations": {
+    "10101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 0,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10101",
+    "10201",
+    "10301",
+    "10401",
+    "10501",
+    "10602",
+    "10701",
+    "10702",
+    "10801",
+    "10901",
+    "11001",
+    "11101",
+    "11201",
+    "11301",
+    "11403",
+    "11404",
+    "11405",
+    "11501",
+    "11601",
+    "11701",
+    "11801",
+    "11902",
+    "12001",
+    "12101",
+    "12301",
+    "12303",
+    "12304",
+    "12305",
+    "12306",
+    "12401",
+    "12402",
+    "12403",
+    "12404",
+    "12501",
+    "12503",
+    "12504",
+    "12601",
+    "12602",
+    "12603",
+    "12604",
+    "12605",
+    "12701",
+    "12801",
+    "12802",
+    "12803",
+    "12901"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 0,
+   "validated_rows": 0
+  },
+  "2025-05": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:52:38+00:00",
+   "rows": 0,
+   "rows_with_concentrations": 0,
+   "stations": {
+    "10101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 0,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10101",
+    "10201",
+    "10301",
+    "10401",
+    "10501",
+    "10602",
+    "10701",
+    "10702",
+    "10801",
+    "10901",
+    "11001",
+    "11101",
+    "11201",
+    "11301",
+    "11403",
+    "11404",
+    "11405",
+    "11501",
+    "11601",
+    "11701",
+    "11801",
+    "11902",
+    "12001",
+    "12101",
+    "12301",
+    "12303",
+    "12304",
+    "12305",
+    "12306",
+    "12401",
+    "12402",
+    "12403",
+    "12404",
+    "12501",
+    "12503",
+    "12504",
+    "12601",
+    "12602",
+    "12603",
+    "12604",
+    "12605",
+    "12701",
+    "12801",
+    "12802",
+    "12803",
+    "12901"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 0,
+   "validated_rows": 0
+  },
+  "2025-06": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:53:26+00:00",
+   "rows": 5219,
+   "rows_with_concentrations": 5186,
+   "stations": {
+    "10101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 720,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 263,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 720,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 190,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 720,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 720,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 446,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 720,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 720,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 0,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10101",
+    "10602",
+    "10701",
+    "10702",
+    "10801",
+    "10901",
+    "11301",
+    "11404",
+    "11405",
+    "11501",
+    "11701",
+    "11801",
+    "11902",
+    "12001",
+    "12101",
+    "12301",
+    "12303",
+    "12304",
+    "12305",
+    "12306",
+    "12401",
+    "12402",
+    "12403",
+    "12404",
+    "12501",
+    "12503",
+    "12504",
+    "12601",
+    "12602",
+    "12603",
+    "12604",
+    "12605",
+    "12701",
+    "12801",
+    "12802",
+    "12803",
+    "12901"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 9,
+   "validated_rows": 0
+  },
+  "2025-07": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:54:12+00:00",
+   "rows": 9636,
+   "rows_with_concentrations": 9548,
+   "stations": {
+    "10101": {
+     "rows": 743,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 740,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 744,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 744,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 744,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 741,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 717,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 743,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 0,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10602",
+    "10702",
+    "10801",
+    "10901",
+    "11404",
+    "11405",
+    "11701",
+    "11801",
+    "11902",
+    "12001",
+    "12101",
+    "12301",
+    "12303",
+    "12304",
+    "12305",
+    "12306",
+    "12401",
+    "12402",
+    "12403",
+    "12404",
+    "12501",
+    "12503",
+    "12504",
+    "12601",
+    "12602",
+    "12603",
+    "12604",
+    "12605",
+    "12701",
+    "12801",
+    "12802",
+    "12803",
+    "12901"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 13,
+   "validated_rows": 0
+  },
+  "2025-08": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:54:59+00:00",
+   "rows": 10000,
+   "rows_with_concentrations": 9857,
+   "stations": {
+    "10101": {
+     "rows": 735,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 712,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 740,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 734,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 738,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 378,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 247,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 712,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 732,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 731,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 722,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 743,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 743,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 253,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 204,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 132,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 0,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "10801",
+    "10901",
+    "11404",
+    "11405",
+    "11902",
+    "12001",
+    "12301",
+    "12303",
+    "12304",
+    "12305",
+    "12306",
+    "12401",
+    "12402",
+    "12403",
+    "12404",
+    "12501",
+    "12503",
+    "12504",
+    "12601",
+    "12602",
+    "12603",
+    "12604",
+    "12605",
+    "12701",
+    "12801",
+    "12802",
+    "12803",
+    "12901"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 17,
+   "validated_rows": 0
+  },
+  "2025-09": {
+   "complete": true,
+   "fetched_at": "2026-10-03T06:58:23+00:00",
+   "rows": 13231,
+   "rows_with_concentrations": 259,
+   "stations": {
+    "10101": {
+     "rows": 493,
+     "validated": 493
+    },
+    "10201": {
+     "rows": 667,
+     "validated": 667
+    },
+    "10301": {
+     "rows": 598,
+     "validated": 598
+    },
+    "10401": {
+     "rows": 521,
+     "validated": 521
+    },
+    "10501": {
+     "rows": 524,
+     "validated": 524
+    },
+    "10602": {
+     "rows": 659,
+     "validated": 659
+    },
+    "10701": {
+     "rows": 627,
+     "validated": 627
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 127,
+     "validated": 127
+    },
+    "10901": {
+     "rows": 305,
+     "validated": 305
+    },
+    "11001": {
+     "rows": 571,
+     "validated": 310
+    },
+    "11101": {
+     "rows": 390,
+     "validated": 390
+    },
+    "11201": {
+     "rows": 135,
+     "validated": 135
+    },
+    "11301": {
+     "rows": 546,
+     "validated": 546
+    },
+    "11403": {
+     "rows": 385,
+     "validated": 385
+    },
+    "11404": {
+     "rows": 110,
+     "validated": 110
+    },
+    "11405": {
+     "rows": 110,
+     "validated": 110
+    },
+    "11501": {
+     "rows": 388,
+     "validated": 388
+    },
+    "11601": {
+     "rows": 534,
+     "validated": 534
+    },
+    "11701": {
+     "rows": 394,
+     "validated": 394
+    },
+    "11801": {
+     "rows": 534,
+     "validated": 534
+    },
+    "11902": {
+     "rows": 331,
+     "validated": 331
+    },
+    "12001": {
+     "rows": 351,
+     "validated": 351
+    },
+    "12101": {
+     "rows": 483,
+     "validated": 483
+    },
+    "12301": {
+     "rows": 192,
+     "validated": 192
+    },
+    "12303": {
+     "rows": 186,
+     "validated": 186
+    },
+    "12304": {
+     "rows": 192,
+     "validated": 192
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 192,
+     "validated": 192
+    },
+    "12402": {
+     "rows": 192,
+     "validated": 192
+    },
+    "12403": {
+     "rows": 192,
+     "validated": 192
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 192,
+     "validated": 192
+    },
+    "12503": {
+     "rows": 191,
+     "validated": 191
+    },
+    "12504": {
+     "rows": 192,
+     "validated": 192
+    },
+    "12601": {
+     "rows": 192,
+     "validated": 192
+    },
+    "12602": {
+     "rows": 192,
+     "validated": 192
+    },
+    "12603": {
+     "rows": 191,
+     "validated": 191
+    },
+    "12604": {
+     "rows": 192,
+     "validated": 192
+    },
+    "12605": {
+     "rows": 192,
+     "validated": 192
+    },
+    "12701": {
+     "rows": 192,
+     "validated": 192
+    },
+    "12801": {
+     "rows": 192,
+     "validated": 192
+    },
+    "12802": {
+     "rows": 192,
+     "validated": 192
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 192,
+     "validated": 192
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12305",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 41,
+   "validated_rows": 12970
+  },
+  "2025-10": {
+   "complete": true,
+   "fetched_at": "2026-10-03T06:59:10+00:00",
+   "rows": 29256,
+   "rows_with_concentrations": 29106,
+   "stations": {
+    "10101": {
+     "rows": 744,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 744,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 738,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 742,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 736,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 707,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 735,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 578,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 591,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 738,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 736,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 740,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 722,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 742,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 360,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 721,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 742,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 742,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 739,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 743,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 573,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 743,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 728,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 686,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 648,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 740,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 738,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 739,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 740,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 738,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 741,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 740,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 743,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 718,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 737,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12305",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 41,
+   "validated_rows": 0
+  },
+  "2025-11": {
+   "complete": false,
+   "fetched_at": "2026-10-06T07:33:52+00:00",
+   "rows": 28180,
+   "rows_with_concentrations": 28037,
+   "stations": {
+    "10101": {
+     "rows": 720,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 717,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 719,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 718,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 720,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 475,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 720,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 658,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 552,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 720,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 717,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 720,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 668,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 720,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 718,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 715,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 720,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 717,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 717,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 712,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 718,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 719,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 712,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 711,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 715,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 718,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 719,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 702,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 718,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 705,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 720,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12305",
+    "12306",
+    "12402",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 40,
+   "validated_rows": 0
+  },
+  "2025-12": {
+   "complete": false,
+   "fetched_at": "2026-10-06T07:34:38+00:00",
+   "rows": 29555,
+   "rows_with_concentrations": 29478,
+   "stations": {
+    "10101": {
+     "rows": 741,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 714,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 742,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 743,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 743,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 616,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 744,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 743,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 742,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 743,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 736,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 742,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 738,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 743,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 742,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 719,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 81,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 708,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 741,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 743,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 711,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 744,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12305",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 41,
+   "validated_rows": 0
+  },
+  "2026-01": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:01:35+00:00",
+   "rows": 30693,
+   "rows_with_concentrations": 16629,
+   "stations": {
+    "10101": {
+     "rows": 740,
+     "validated": 740
+    },
+    "10201": {
+     "rows": 741,
+     "validated": 741
+    },
+    "10301": {
+     "rows": 736,
+     "validated": 736
+    },
+    "10401": {
+     "rows": 743,
+     "validated": 743
+    },
+    "10501": {
+     "rows": 742,
+     "validated": 742
+    },
+    "10602": {
+     "rows": 744,
+     "validated": 744
+    },
+    "10701": {
+     "rows": 739,
+     "validated": 739
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 744,
+     "validated": 744
+    },
+    "10901": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 739,
+     "validated": 739
+    },
+    "11101": {
+     "rows": 741,
+     "validated": 741
+    },
+    "11201": {
+     "rows": 744,
+     "validated": 744
+    },
+    "11301": {
+     "rows": 739,
+     "validated": 739
+    },
+    "11403": {
+     "rows": 744,
+     "validated": 744
+    },
+    "11404": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 742,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 728,
+     "validated": 728
+    },
+    "11601": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 726,
+     "validated": 726
+    },
+    "11801": {
+     "rows": 734,
+     "validated": 734
+    },
+    "11902": {
+     "rows": 739,
+     "validated": 739
+    },
+    "12001": {
+     "rows": 744,
+     "validated": 744
+    },
+    "12101": {
+     "rows": 744,
+     "validated": 744
+    },
+    "12301": {
+     "rows": 740,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 721,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 728,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 661,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 719,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 727,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 715,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 736,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 726,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 710,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 734,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 636,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 716,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 721,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 727,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 742,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 732,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 733,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 42,
+   "validated_rows": 14051
+  },
+  "2026-02": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:02:21+00:00",
+   "rows": 28167,
+   "rows_with_concentrations": 14211,
+   "stations": {
+    "10101": {
+     "rows": 672,
+     "validated": 672
+    },
+    "10201": {
+     "rows": 672,
+     "validated": 672
+    },
+    "10301": {
+     "rows": 672,
+     "validated": 672
+    },
+    "10401": {
+     "rows": 672,
+     "validated": 672
+    },
+    "10501": {
+     "rows": 664,
+     "validated": 664
+    },
+    "10602": {
+     "rows": 665,
+     "validated": 665
+    },
+    "10701": {
+     "rows": 658,
+     "validated": 552
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 672,
+     "validated": 672
+    },
+    "10901": {
+     "rows": 672,
+     "validated": 672
+    },
+    "11001": {
+     "rows": 668,
+     "validated": 668
+    },
+    "11101": {
+     "rows": 668,
+     "validated": 668
+    },
+    "11201": {
+     "rows": 670,
+     "validated": 670
+    },
+    "11301": {
+     "rows": 672,
+     "validated": 672
+    },
+    "11403": {
+     "rows": 671,
+     "validated": 671
+    },
+    "11404": {
+     "rows": 672,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 672,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 672,
+     "validated": 672
+    },
+    "11601": {
+     "rows": 672,
+     "validated": 672
+    },
+    "11701": {
+     "rows": 668,
+     "validated": 668
+    },
+    "11801": {
+     "rows": 670,
+     "validated": 670
+    },
+    "11902": {
+     "rows": 672,
+     "validated": 672
+    },
+    "12001": {
+     "rows": 672,
+     "validated": 672
+    },
+    "12101": {
+     "rows": 668,
+     "validated": 668
+    },
+    "12301": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 671,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 670,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 671,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 669,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 672,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 42,
+   "validated_rows": 13956
+  },
+  "2026-03": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:03:07+00:00",
+   "rows": 30948,
+   "rows_with_concentrations": 16198,
+   "stations": {
+    "10101": {
+     "rows": 738,
+     "validated": 738
+    },
+    "10201": {
+     "rows": 744,
+     "validated": 744
+    },
+    "10301": {
+     "rows": 725,
+     "validated": 725
+    },
+    "10401": {
+     "rows": 743,
+     "validated": 743
+    },
+    "10501": {
+     "rows": 735,
+     "validated": 735
+    },
+    "10602": {
+     "rows": 741,
+     "validated": 741
+    },
+    "10701": {
+     "rows": 670,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 735,
+     "validated": 735
+    },
+    "10901": {
+     "rows": 743,
+     "validated": 743
+    },
+    "11001": {
+     "rows": 742,
+     "validated": 742
+    },
+    "11101": {
+     "rows": 711,
+     "validated": 711
+    },
+    "11201": {
+     "rows": 740,
+     "validated": 740
+    },
+    "11301": {
+     "rows": 735,
+     "validated": 735
+    },
+    "11403": {
+     "rows": 744,
+     "validated": 744
+    },
+    "11404": {
+     "rows": 726,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 744,
+     "validated": 744
+    },
+    "11601": {
+     "rows": 738,
+     "validated": 738
+    },
+    "11701": {
+     "rows": 734,
+     "validated": 734
+    },
+    "11801": {
+     "rows": 728,
+     "validated": 728
+    },
+    "11902": {
+     "rows": 742,
+     "validated": 742
+    },
+    "12001": {
+     "rows": 744,
+     "validated": 744
+    },
+    "12101": {
+     "rows": 744,
+     "validated": 744
+    },
+    "12301": {
+     "rows": 743,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 737,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 710,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 738,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 739,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 740,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 743,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 738,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 737,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 739,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 742,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 42,
+   "validated_rows": 14750
+  },
+  "2026-04": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:03:55+00:00",
+   "rows": 28993,
+   "rows_with_concentrations": 14077,
+   "stations": {
+    "10101": {
+     "rows": 706,
+     "validated": 706
+    },
+    "10201": {
+     "rows": 720,
+     "validated": 720
+    },
+    "10301": {
+     "rows": 717,
+     "validated": 717
+    },
+    "10401": {
+     "rows": 717,
+     "validated": 717
+    },
+    "10501": {
+     "rows": 707,
+     "validated": 707
+    },
+    "10602": {
+     "rows": 714,
+     "validated": 714
+    },
+    "10701": {
+     "rows": 698,
+     "validated": 698
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 711,
+     "validated": 711
+    },
+    "10901": {
+     "rows": 717,
+     "validated": 717
+    },
+    "11001": {
+     "rows": 717,
+     "validated": 717
+    },
+    "11101": {
+     "rows": 705,
+     "validated": 705
+    },
+    "11201": {
+     "rows": 719,
+     "validated": 719
+    },
+    "11301": {
+     "rows": 707,
+     "validated": 707
+    },
+    "11403": {
+     "rows": 711,
+     "validated": 711
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 714,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 719,
+     "validated": 719
+    },
+    "11601": {
+     "rows": 702,
+     "validated": 702
+    },
+    "11701": {
+     "rows": 715,
+     "validated": 715
+    },
+    "11801": {
+     "rows": 698,
+     "validated": 698
+    },
+    "11902": {
+     "rows": 699,
+     "validated": 699
+    },
+    "12001": {
+     "rows": 709,
+     "validated": 709
+    },
+    "12101": {
+     "rows": 708,
+     "validated": 708
+    },
+    "12301": {
+     "rows": 620,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 712,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 713,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 638,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 688,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 719,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 712,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 707,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 716,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 719,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 719,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 708,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "11404",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 41,
+   "validated_rows": 14916
+  },
+  "2026-05": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:04:41+00:00",
+   "rows": 30173,
+   "rows_with_concentrations": 14901,
+   "stations": {
+    "10101": {
+     "rows": 701,
+     "validated": 701
+    },
+    "10201": {
+     "rows": 734,
+     "validated": 734
+    },
+    "10301": {
+     "rows": 694,
+     "validated": 694
+    },
+    "10401": {
+     "rows": 744,
+     "validated": 744
+    },
+    "10501": {
+     "rows": 725,
+     "validated": 725
+    },
+    "10602": {
+     "rows": 718,
+     "validated": 718
+    },
+    "10701": {
+     "rows": 725,
+     "validated": 725
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 736,
+     "validated": 736
+    },
+    "10901": {
+     "rows": 742,
+     "validated": 742
+    },
+    "11001": {
+     "rows": 743,
+     "validated": 743
+    },
+    "11101": {
+     "rows": 720,
+     "validated": 720
+    },
+    "11201": {
+     "rows": 697,
+     "validated": 697
+    },
+    "11301": {
+     "rows": 730,
+     "validated": 730
+    },
+    "11403": {
+     "rows": 744,
+     "validated": 744
+    },
+    "11404": {
+     "rows": 341,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 740,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 741,
+     "validated": 741
+    },
+    "11601": {
+     "rows": 723,
+     "validated": 723
+    },
+    "11701": {
+     "rows": 731,
+     "validated": 731
+    },
+    "11801": {
+     "rows": 738,
+     "validated": 738
+    },
+    "11902": {
+     "rows": 712,
+     "validated": 712
+    },
+    "12001": {
+     "rows": 744,
+     "validated": 744
+    },
+    "12101": {
+     "rows": 730,
+     "validated": 730
+    },
+    "12301": {
+     "rows": 736,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 734,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 736,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 719,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 705,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 742,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 743,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 610,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 673,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 735,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 742,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 738,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 743,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 42,
+   "validated_rows": 15272
+  },
+  "2026-06": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:05:27+00:00",
+   "rows": 28533,
+   "rows_with_concentrations": 14200,
+   "stations": {
+    "10101": {
+     "rows": 690,
+     "validated": 690
+    },
+    "10201": {
+     "rows": 709,
+     "validated": 709
+    },
+    "10301": {
+     "rows": 653,
+     "validated": 653
+    },
+    "10401": {
+     "rows": 701,
+     "validated": 701
+    },
+    "10501": {
+     "rows": 690,
+     "validated": 690
+    },
+    "10602": {
+     "rows": 624,
+     "validated": 624
+    },
+    "10701": {
+     "rows": 629,
+     "validated": 629
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 717,
+     "validated": 717
+    },
+    "10901": {
+     "rows": 719,
+     "validated": 719
+    },
+    "11001": {
+     "rows": 671,
+     "validated": 671
+    },
+    "11101": {
+     "rows": 665,
+     "validated": 665
+    },
+    "11201": {
+     "rows": 670,
+     "validated": 670
+    },
+    "11301": {
+     "rows": 700,
+     "validated": 700
+    },
+    "11403": {
+     "rows": 710,
+     "validated": 710
+    },
+    "11404": {
+     "rows": 276,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 717,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 703,
+     "validated": 703
+    },
+    "11601": {
+     "rows": 705,
+     "validated": 705
+    },
+    "11701": {
+     "rows": 699,
+     "validated": 699
+    },
+    "11801": {
+     "rows": 689,
+     "validated": 689
+    },
+    "11902": {
+     "rows": 686,
+     "validated": 686
+    },
+    "12001": {
+     "rows": 700,
+     "validated": 700
+    },
+    "12101": {
+     "rows": 603,
+     "validated": 603
+    },
+    "12301": {
+     "rows": 661,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 612,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 670,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 657,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 713,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 716,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 606,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 719,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 673,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 715,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 709,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 719,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 717,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 42,
+   "validated_rows": 14333
+  },
+  "2026-07": {
+   "complete": true,
+   "fetched_at": "2026-10-03T07:09:19+00:00",
+   "rows": 30146,
+   "rows_with_concentrations": 16386,
+   "stations": {
+    "10101": {
+     "rows": 634,
+     "validated": 634
+    },
+    "10201": {
+     "rows": 730,
+     "validated": 730
+    },
+    "10301": {
+     "rows": 700,
+     "validated": 700
+    },
+    "10401": {
+     "rows": 730,
+     "validated": 730
+    },
+    "10501": {
+     "rows": 736,
+     "validated": 736
+    },
+    "10602": {
+     "rows": 737,
+     "validated": 737
+    },
+    "10701": {
+     "rows": 685,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 696,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 722,
+     "validated": 722
+    },
+    "11001": {
+     "rows": 739,
+     "validated": 739
+    },
+    "11101": {
+     "rows": 683,
+     "validated": 683
+    },
+    "11201": {
+     "rows": 744,
+     "validated": 744
+    },
+    "11301": {
+     "rows": 719,
+     "validated": 719
+    },
+    "11403": {
+     "rows": 743,
+     "validated": 743
+    },
+    "11404": {
+     "rows": 642,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 737,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 709,
+     "validated": 709
+    },
+    "11601": {
+     "rows": 730,
+     "validated": 730
+    },
+    "11701": {
+     "rows": 739,
+     "validated": 739
+    },
+    "11801": {
+     "rows": 744,
+     "validated": 744
+    },
+    "11902": {
+     "rows": 743,
+     "validated": 743
+    },
+    "12001": {
+     "rows": 744,
+     "validated": 744
+    },
+    "12101": {
+     "rows": 734,
+     "validated": 734
+    },
+    "12301": {
+     "rows": 643,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 677,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 673,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 631,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 722,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 707,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 739,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 739,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 699,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 743,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 742,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 741,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 706,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 42,
+   "validated_rows": 13760
+  },
+  "2026-08": {
+   "complete": false,
+   "fetched_at": "2026-10-06T07:35:24+00:00",
+   "rows": 29944,
+   "rows_with_concentrations": 29944,
+   "stations": {
+    "10101": {
+     "rows": 724,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 707,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 722,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 739,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 739,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 713,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 678,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 728,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 734,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 742,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 680,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 708,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 736,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 740,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 717,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 730,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 740,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 744,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 719,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 638,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 422,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 672,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 592,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 727,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 646,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 739,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 743,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 740,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 695,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 731,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 743,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 742,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 713,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 740,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 744,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 0,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 737,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "12306",
+    "12404",
+    "12803"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 42,
+   "validated_rows": 0
+  },
+  "2026-09": {
+   "complete": false,
+   "fetched_at": "2026-10-06T07:36:11+00:00",
+   "rows": 30396,
+   "rows_with_concentrations": 30396,
+   "stations": {
+    "10101": {
+     "rows": 710,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 718,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 705,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 720,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 720,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 710,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 707,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 715,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 719,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 719,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 702,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 720,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 703,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 714,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 391,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 388,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 705,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 695,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 660,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 720,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 697,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 716,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 719,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 554,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 566,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 568,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 563,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 669,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 703,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 690,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 598,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 704,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 716,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 719,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 644,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 720,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 552,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 717,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 45,
+   "validated_rows": 0
+  },
+  "2026-10": {
+   "complete": false,
+   "fetched_at": "2026-10-06T07:36:56+00:00",
+   "rows": 5792,
+   "rows_with_concentrations": 5792,
+   "stations": {
+    "10101": {
+     "rows": 135,
+     "validated": 0
+    },
+    "10201": {
+     "rows": 135,
+     "validated": 0
+    },
+    "10301": {
+     "rows": 134,
+     "validated": 0
+    },
+    "10401": {
+     "rows": 135,
+     "validated": 0
+    },
+    "10501": {
+     "rows": 135,
+     "validated": 0
+    },
+    "10602": {
+     "rows": 130,
+     "validated": 0
+    },
+    "10701": {
+     "rows": 135,
+     "validated": 0
+    },
+    "10702": {
+     "rows": 0,
+     "validated": 0
+    },
+    "10801": {
+     "rows": 135,
+     "validated": 0
+    },
+    "10901": {
+     "rows": 131,
+     "validated": 0
+    },
+    "11001": {
+     "rows": 135,
+     "validated": 0
+    },
+    "11101": {
+     "rows": 135,
+     "validated": 0
+    },
+    "11201": {
+     "rows": 135,
+     "validated": 0
+    },
+    "11301": {
+     "rows": 132,
+     "validated": 0
+    },
+    "11403": {
+     "rows": 135,
+     "validated": 0
+    },
+    "11404": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11405": {
+     "rows": 0,
+     "validated": 0
+    },
+    "11501": {
+     "rows": 135,
+     "validated": 0
+    },
+    "11601": {
+     "rows": 127,
+     "validated": 0
+    },
+    "11701": {
+     "rows": 135,
+     "validated": 0
+    },
+    "11801": {
+     "rows": 135,
+     "validated": 0
+    },
+    "11902": {
+     "rows": 134,
+     "validated": 0
+    },
+    "12001": {
+     "rows": 135,
+     "validated": 0
+    },
+    "12101": {
+     "rows": 135,
+     "validated": 0
+    },
+    "12301": {
+     "rows": 138,
+     "validated": 0
+    },
+    "12303": {
+     "rows": 138,
+     "validated": 0
+    },
+    "12304": {
+     "rows": 138,
+     "validated": 0
+    },
+    "12305": {
+     "rows": 121,
+     "validated": 0
+    },
+    "12306": {
+     "rows": 135,
+     "validated": 0
+    },
+    "12401": {
+     "rows": 138,
+     "validated": 0
+    },
+    "12402": {
+     "rows": 138,
+     "validated": 0
+    },
+    "12403": {
+     "rows": 137,
+     "validated": 0
+    },
+    "12404": {
+     "rows": 135,
+     "validated": 0
+    },
+    "12501": {
+     "rows": 138,
+     "validated": 0
+    },
+    "12503": {
+     "rows": 138,
+     "validated": 0
+    },
+    "12504": {
+     "rows": 137,
+     "validated": 0
+    },
+    "12601": {
+     "rows": 138,
+     "validated": 0
+    },
+    "12602": {
+     "rows": 138,
+     "validated": 0
+    },
+    "12603": {
+     "rows": 138,
+     "validated": 0
+    },
+    "12604": {
+     "rows": 138,
+     "validated": 0
+    },
+    "12605": {
+     "rows": 109,
+     "validated": 0
+    },
+    "12701": {
+     "rows": 138,
+     "validated": 0
+    },
+    "12801": {
+     "rows": 138,
+     "validated": 0
+    },
+    "12802": {
+     "rows": 138,
+     "validated": 0
+    },
+    "12803": {
+     "rows": 135,
+     "validated": 0
+    },
+    "12901": {
+     "rows": 138,
+     "validated": 0
+    }
+   },
+   "stations_empty": [
+    "10702",
+    "11404",
+    "11405"
+   ],
+   "stations_failed": [],
+   "stations_with_data": 43,
+   "validated_rows": 0
+  }
+ }
+}

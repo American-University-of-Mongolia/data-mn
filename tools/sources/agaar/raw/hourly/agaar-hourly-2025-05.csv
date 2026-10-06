@@ -1,0 +1,1 @@
+station_code,datetime,date,hour,validated,pm10,pm25,o3,no2,co,so2,pm10_24h,pm25_24h,concentrations_source,aqi,aqi_pollutant,aqi_grade,pm25_withheld

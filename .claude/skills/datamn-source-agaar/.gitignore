@@ -1,0 +1,7 @@
+# Fetched data and caches - never commit these (archive lives in tools/sources/agaar/raw)
+*.csv
+output/
+
+# Python
+__pycache__/
+*.py[cod]

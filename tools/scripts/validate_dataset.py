@@ -370,6 +370,17 @@ def validate_mdx(file_path: str, base_dir: Optional[str] = None) -> ValidationRe
                 f"Remove all prose sections."
             )
 
+    # Any heading, not just the names above: the data page template hides
+    # body paragraphs and h3 but shows other headings, so a heading ends up
+    # alone inside the chart card with its text hidden. Text readers must
+    # see goes in the excerpt.
+    for heading in re.findall(r'^(?:#|##|####|#####|######)\s+(.+)$', body, re.MULTILINE):
+        result.add_error(
+            f"MDX body has a heading: '{heading.strip()}'. The page template "
+            f"hides body text, so the heading shows alone in the chart card. "
+            f"Put what readers need in the excerpt."
+        )
+
     # Check for content after the LAST VegaChart. Multi-chart pages are
     # allowed (e.g. weekly aimag trend + map); only trailing prose or
     # components after the final chart are violations.

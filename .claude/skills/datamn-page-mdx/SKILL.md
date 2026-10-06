@@ -38,6 +38,12 @@ The page layout already handles:
 3. One excerpt sentence (that repeats/expands the frontmatter excerpt)
 4. The VegaChart component
 
+The data page template hides body paragraphs, so readers see only the
+frontmatter excerpt (under the title), the chart and the sidebar. A caveat
+readers must see, such as what was filtered out, goes in the excerpt as one
+short clause. Headings are rejected by `validate_dataset.py`: they would show
+alone in the chart card with their text hidden.
+
 **ABSOLUTELY DO NOT ADD:**
 - "Overview" sections
 - "Key Findings" sections

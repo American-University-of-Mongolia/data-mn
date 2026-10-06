@@ -92,7 +92,10 @@ All splits are aggregations of the cleaned parent. Each split's
 
 ## Content Generation
 
-Minimal pages: frontmatter, one factual excerpt with the key number, the chart,
-and a short "How this was cleaned" note (rules + dropped count, link to
-agaar.gov.mn). Related: `air-pollution-concentration` (NSO SO₂, 2002–2026),
-whose page notes NSO stopped publishing PM2.5/PM10; these pages fill that gap.
+Minimal pages like every data page: frontmatter, the excerpt, the chart. The
+page template hides body text, so the cleaning disclosure is the excerpt's last
+clause: "Implausible readings (163 of 16,115 station-days) were removed before
+averaging." Update the counts from `agaar-daily-station-means.meta.json` on
+each refresh. The full rules live in this file and in source.md.
+Related: `air-pollution-concentration` (NSO SO₂, 2002–2026), whose page notes
+NSO stopped publishing PM2.5/PM10; these pages fill that gap.

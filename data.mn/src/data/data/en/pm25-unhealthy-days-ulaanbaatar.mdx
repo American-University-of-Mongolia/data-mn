@@ -4,7 +4,7 @@ publishDate: 2026-10-06
 author: Data.mn
 dataVersion: 1
 dataDate: 2026-10-06
-excerpt: Ulaanbaatar's PM2.5 daily average exceeded Mongolia's 50 µg/m³ limit on 77 days between October 2025 and September 2026, all between November 2025 and February 2026; December 2025 had 27 of 31 days above the limit, and the worst city-wide day averaged 112.1 µg/m³ in February 2026.
+excerpt: Ulaanbaatar's city-wide PM2.5 daily average (all reporting stations) was above Mongolia's 50 µg/m³ limit on 77 days between October 2025 and September 2026, all from November to February. December 2025 had 27 of 31 days above the limit, and the highest daily average was 112.1 µg/m³ in February 2026. Implausible readings (163 of 16,115 station-days) were removed before averaging.
 category: Environment
 tags:
 - mongolia
@@ -35,13 +35,7 @@ source:
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
-Ulaanbaatar's PM2.5 daily average exceeded Mongolia's 50 µg/m³ limit on 77 days between October 2025 and September 2026, all between November 2025 and February 2026; December 2025 had 27 of 31 days above the limit, and the worst city-wide day averaged 112.1 µg/m³ in February 2026.
-
-A day counts as above the limit when the average of all reporting Ulaanbaatar monitoring stations (at least 8 stations) is above 50 µg/m³, the 24-hour PM2.5 limit in Mongolian standard MNS 4585:2016. The chart shows complete months from October 2025; the tooltip lists the days with data and the highest city-wide daily mean in each month.
-
-**How this was cleaned.** Station-day values were dropped when negative, when PM2.5 was more than 1.1 times same-day PM10 and above 50, when PM2.5 was above 5 times that day's median across all stations and above 150, or when a station repeated the same value on 5 or more consecutive days. This removed 163 of 16,115 station-days (data to 2026-10-06). Source: [agaar.gov.mn](https://agaar.gov.mn), National Agency for Meteorology and Environmental Monitoring (NAMEM).
-
-Related: [Air Pollution Concentration in Ulaanbaatar](/en/data/air-pollution-concentration), sulphur dioxide from the National Statistics Office.
+Ulaanbaatar's city-wide PM2.5 daily average (all reporting stations) was above Mongolia's 50 µg/m³ limit on 77 days between October 2025 and September 2026, all from November to February. December 2025 had 27 of 31 days above the limit, and the highest daily average was 112.1 µg/m³ in February 2026. Implausible readings (163 of 16,115 station-days) were removed before averaging.
 
 <VegaChart
   spec="/charts/pm25-unhealthy-days-ulaanbaatar-en.json"

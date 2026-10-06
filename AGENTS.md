@@ -176,6 +176,26 @@ python3 fetch_data.py --layer plan_building --output ./output --with-attributes
 attribute API; never hand-roll WFS requests. All 75 pulled layers are
 registered as parent datasets (`registry list --source ebarilga`).
 
+### `datamn-source-agaar`
+Download air quality data (PM2.5, PM10, SO₂, NO₂, CO, O₃, AQI) from
+agaar.gov.mn: 46 stations in UB and the aimag centres, hourly and daily.
+
+**Location**: `.claude/skills/datamn-source-agaar/`
+
+**Usage**:
+```bash
+cd .claude/skills/datamn-source-agaar
+python3 query_api.py --list              # station catalog
+python3 query_api.py --station 12401     # details + live last 24 hours
+python3 fetch_data.py --output ../../../tools/sources/agaar/raw --update   # archive run
+```
+
+**Rules**: the site drops hourly concentrations once a month is validated, so
+run `--update` at least monthly; `tools/sources/agaar/raw/` is the only
+long-term copy. History starts 2025 (UB stations 2025-09). Query one
+calendar month per request (validated rows depend on it). Never hand-roll
+requests: the history endpoint needs a session key + cookie.
+
 ### `datamn-registry`
 Query and manage the dataset registry database.
 
@@ -251,6 +271,7 @@ Read-only agent for searching and checking sources:
 | Mining & Petroleum Authority | `mrpam` | PDF Reports | `tools/sources/mrpam/source.md` |
 | Bank of Mongolia | `mongolbank` | Mixed | `tools/sources/mongolbank/source.md` |
 | eBarilga Geoportal (UB) | `ebarilga` | WFS geo API | `tools/sources/ebarilga/source.md` |
+| Air Quality Portal (NAMEM) | `agaar` | JSON API (undocumented) | `tools/sources/agaar/source.md` |
 
 To add a new source, use the `datamn-source-template` skill.
 
@@ -419,6 +440,7 @@ The data.mn platform is fully bilingual:
 | **MRPAM PDFs** | Mongolian only - translate to create English CSV |
 | **MongolBank** | Mixed - some bilingual, some single-language |
 | **eBarilga WFS** | Mongolian only - translate to create English CSV |
+| **agaar.gov.mn** | Values language-neutral; translate station names only |
 | **International** | English only - translate to create Mongolian CSV |
 
 #### Translation Workflow

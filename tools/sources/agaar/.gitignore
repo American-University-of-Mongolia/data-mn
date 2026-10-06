@@ -1,0 +1,3 @@
+# Run logs stay local; the CSVs, stations and agaar-pulls.json are committed.
+raw/*.log
+raw/**/*.tmp

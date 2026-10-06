@@ -1,0 +1,947 @@
+{
+ "refreshed_at": "2026-10-06T06:47:47+00:00",
+ "aimags": {
+  "11": {
+   "mn": "Улаанбаатар",
+   "en": "Ulaanbaatar"
+  },
+  "33": {
+   "mn": "Архангай",
+   "en": "Arkhangai"
+  },
+  "37": {
+   "mn": "Дархан-Уул",
+   "en": "Darkhan-Uul"
+  },
+  "56": {
+   "mn": "Хэнтий",
+   "en": "Khentii"
+  },
+  "38": {
+   "mn": "Хөвсгөл",
+   "en": "Khuvsgul"
+  },
+  "35": {
+   "mn": "Орхон",
+   "en": "Orkhon"
+  },
+  "45": {
+   "mn": "Увс",
+   "en": "Uvs"
+  },
+  "46": {
+   "mn": "Завхан",
+   "en": "Zavkhan"
+  },
+  "44": {
+   "mn": "Баянхонгор",
+   "en": "Bayankhongor"
+  },
+  "42": {
+   "mn": "Баян-Өлгий",
+   "en": "Bayan-Ulgii"
+  },
+  "34": {
+   "mn": "Булган",
+   "en": "Bulgan"
+  },
+  "54": {
+   "mn": "Говьсүмбэр",
+   "en": "Govisumber"
+  },
+  "58": {
+   "mn": "Дорнод",
+   "en": "Dornod"
+  },
+  "52": {
+   "mn": "Дорноговь",
+   "en": "Dornogovi"
+  },
+  "59": {
+   "mn": "Дундговь",
+   "en": "Dundgovi"
+  },
+  "48": {
+   "mn": "Говь-Алтай",
+   "en": "Govi-Altai"
+  },
+  "43": {
+   "mn": "Ховд",
+   "en": "Khovd"
+  },
+  "53": {
+   "mn": "Өмнөговь",
+   "en": "Umnugovi"
+  },
+  "36": {
+   "mn": "Сэлэнгэ",
+   "en": "Selenge"
+  },
+  "51": {
+   "mn": "Сүхбаатар",
+   "en": "Sukhbaatar"
+  },
+  "27": {
+   "mn": "Төв",
+   "en": "Tuv"
+  },
+  "32": {
+   "mn": "Өвөрхангай",
+   "en": "Uvurkhangai"
+  }
+ },
+ "items": {
+  "10007": {
+   "key": "pm10",
+   "name": "PM10",
+   "unit": "µg/m³"
+  },
+  "10008": {
+   "key": "pm25",
+   "name": "PM2.5",
+   "unit": "µg/m³"
+  },
+  "10003": {
+   "key": "o3",
+   "name": "O3",
+   "unit": "µg/m³"
+  },
+  "10006": {
+   "key": "no2",
+   "name": "NO2",
+   "unit": "µg/m³"
+  },
+  "10002": {
+   "key": "co",
+   "name": "CO",
+   "unit": "mg/m³"
+  },
+  "10001": {
+   "key": "so2",
+   "name": "SO2",
+   "unit": "µg/m³"
+  }
+ },
+ "stations": [
+  {
+   "code": "10101",
+   "name_mn": "Баян-Өлгий-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "no2",
+    "so2"
+   ],
+   "lat": 48.96925,
+   "lon": 89.964917,
+   "aimag_code": "42",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Баян-Өлгий",
+   "aimag_en": "Bayan-Ulgii"
+  },
+  {
+   "code": "10201",
+   "name_mn": "Улаангом-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "no2",
+    "so2"
+   ],
+   "lat": 49.971556,
+   "lon": 92.068611,
+   "aimag_code": "45",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Увс",
+   "aimag_en": "Uvs"
+  },
+  {
+   "code": "10301",
+   "name_mn": "Ховд-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 48.126339,
+   "lon": 91.373375,
+   "aimag_code": "43",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Ховд",
+   "aimag_en": "Khovd"
+  },
+  {
+   "code": "10401",
+   "name_mn": "Улиастай-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "no2",
+    "so2"
+   ],
+   "lat": 47.726889,
+   "lon": 96.847389,
+   "aimag_code": "46",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Завхан",
+   "aimag_en": "Zavkhan"
+  },
+  {
+   "code": "10501",
+   "name_mn": "Aлтай-01",
+   "address_mn": "Аймгийн төв, Ундарга-Алтай",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "no2",
+    "so2"
+   ],
+   "lat": 46.37375,
+   "lon": 96.261444,
+   "aimag_code": "48",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Говь-Алтай",
+   "aimag_en": "Govi-Altai"
+  },
+  {
+   "code": "10602",
+   "name_mn": "Баянхонгор-02",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "no2",
+    "so2"
+   ],
+   "lat": 46.197056,
+   "lon": 100.72,
+   "aimag_code": "44",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Баянхонгор",
+   "aimag_en": "Bayankhongor"
+  },
+  {
+   "code": "10701",
+   "name_mn": "Өндөрхаан-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 47.321192,
+   "lon": 110.661525,
+   "aimag_code": "56",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Хэнтий",
+   "aimag_en": "Khentii"
+  },
+  {
+   "code": "10702",
+   "name_mn": "Өндөрхаан-02",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [],
+   "aimag_code": "56",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Хэнтий",
+   "aimag_en": "Khentii"
+  },
+  {
+   "code": "10801",
+   "name_mn": "Чойбалсан-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 48.116989,
+   "lon": 114.508822,
+   "aimag_code": "58",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Дорнод",
+   "aimag_en": "Dornod"
+  },
+  {
+   "code": "10901",
+   "name_mn": "Баруун-Урт-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "so2"
+   ],
+   "lat": 46.672858,
+   "lon": 113.282314,
+   "aimag_code": "51",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Сүхбаатар",
+   "aimag_en": "Sukhbaatar"
+  },
+  {
+   "code": "11001",
+   "name_mn": "Мөрөн-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 49.638719,
+   "lon": 100.166472,
+   "aimag_code": "38",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Хөвсгөл",
+   "aimag_en": "Khuvsgul"
+  },
+  {
+   "code": "11101",
+   "name_mn": "Цэцэрлэг-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв, 7-р баг",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "no2",
+    "so2"
+   ],
+   "lat": 47.471411,
+   "lon": 101.462925,
+   "aimag_code": "33",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Архангай",
+   "aimag_en": "Arkhangai"
+  },
+  {
+   "code": "11201",
+   "name_mn": "Арвайхээр-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25"
+   ],
+   "lat": 46.259061,
+   "lon": 102.789344,
+   "aimag_code": "32",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Өвөрхангай",
+   "aimag_en": "Uvurkhangai"
+  },
+  {
+   "code": "11301",
+   "name_mn": "Булган-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "no2",
+    "so2"
+   ],
+   "lat": 48.818292,
+   "lon": 103.518731,
+   "aimag_code": "34",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Булган",
+   "aimag_en": "Bulgan"
+  },
+  {
+   "code": "11403",
+   "name_mn": "Эрдэнэт-03",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 49.036686,
+   "lon": 104.035825,
+   "aimag_code": "35",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Орхон",
+   "aimag_en": "Orkhon"
+  },
+  {
+   "code": "11404",
+   "name_mn": "Эрдэнэт 2-р цэцэрлэг",
+   "address_mn": "Орхон аймаг, Баян-Өндөр сум, Говил баг, 2 дугаар цэцэрлэг",
+   "items_live": [],
+   "lat": 49.06104,
+   "lon": 104.11652,
+   "aimag_code": "35",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Орхон",
+   "aimag_en": "Orkhon"
+  },
+  {
+   "code": "11405",
+   "name_mn": "Эрдэнэт уурхай",
+   "address_mn": "Орхон аймаг, Баян-Өндөр сум, Эрдэнэт үйлдвэр, Хаягдлын сан",
+   "items_live": [],
+   "lat": 49.0333,
+   "lon": 104.0833,
+   "aimag_code": "35",
+   "mang_code": "4",
+   "search_page": true,
+   "aimag_mn": "Орхон",
+   "aimag_en": "Orkhon"
+  },
+  {
+   "code": "11501",
+   "name_mn": "Сүхбаатар-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "no2",
+    "so2"
+   ],
+   "lat": 50.239736,
+   "lon": 106.192375,
+   "aimag_code": "36",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Сэлэнгэ",
+   "aimag_en": "Selenge"
+  },
+  {
+   "code": "11601",
+   "name_mn": "Дархан-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 49.490389,
+   "lon": 105.9065,
+   "aimag_code": "37",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Дархан-Уул",
+   "aimag_en": "Darkhan-Uul"
+  },
+  {
+   "code": "11701",
+   "name_mn": "Зуунмод-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "no2",
+    "so2"
+   ],
+   "lat": 47.713314,
+   "lon": 106.951731,
+   "aimag_code": "27",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Төв",
+   "aimag_en": "Tuv"
+  },
+  {
+   "code": "11801",
+   "name_mn": "Чойр-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "no2",
+    "so2"
+   ],
+   "lat": 46.349819,
+   "lon": 108.374306,
+   "aimag_code": "54",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Говьсүмбэр",
+   "aimag_en": "Govisumber"
+  },
+  {
+   "code": "11902",
+   "name_mn": "Даланзадгад-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 43.569258,
+   "lon": 104.418389,
+   "aimag_code": "53",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Өмнөговь",
+   "aimag_en": "Umnugovi"
+  },
+  {
+   "code": "12001",
+   "name_mn": "Мандалговь-01",
+   "address_mn": "Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25"
+   ],
+   "lat": 45.743283,
+   "lon": 106.264317,
+   "aimag_code": "59",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Дундговь",
+   "aimag_en": "Dundgovi"
+  },
+  {
+   "code": "12101",
+   "name_mn": "Сайншанд-01",
+   "address_mn": "Аймгийн төв, 2-р сургууль",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 44.899972,
+   "lon": 110.135278,
+   "aimag_code": "52",
+   "mang_code": "2",
+   "search_page": true,
+   "aimag_mn": "Дорноговь",
+   "aimag_en": "Dornogovi"
+  },
+  {
+   "code": "12301",
+   "name_mn": "Бөхийн өргөө",
+   "address_mn": "Баянзүрх дүүрэг, 15-р хороо, Бөхийн өргөөний зүүн талд",
+   "items_live": [
+    "pm10"
+   ],
+   "lat": 47.91755,
+   "lon": 106.937478,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12303",
+   "name_mn": "Ургах наран",
+   "address_mn": "Баянзүрх дүүрэг, 11-р хороо, Ургах наран хорооллын зүүн талд",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2",
+    "so2"
+   ],
+   "lat": 47.866467,
+   "lon": 107.118775,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12304",
+   "name_mn": "Шархад",
+   "address_mn": "Баянзүрх дүүрэг, 9-р хороо Шар хад СЭМҮТ-ийн хашаанд",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 47.933744,
+   "lon": 107.010403,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12305",
+   "name_mn": "Амгалан-3",
+   "address_mn": "Баянзүрх дүүрэг 8-р хороо, ӨНӨ-АМГАЛАН төвийн хашаанд",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2"
+   ],
+   "lat": 47.913503,
+   "lon": 106.997911,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12306",
+   "name_mn": "Шинэ 100 айл төв",
+   "address_mn": "БЗД-ийн 36-р хороо, Улаанбаатар 13271 БЗД-ийн 36-р хороо, Улаанбаатар 13271",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 47.90445,
+   "lon": 106.980743,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12401",
+   "name_mn": "1-р хороолол",
+   "address_mn": "Сонгинохайрхан дүүрэг, 12-р хороо, УБ хот Ус цаг уур, орчны шинжилгээний төв",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "no2",
+    "so2"
+   ],
+   "lat": 47.918069,
+   "lon": 106.847819,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12402",
+   "name_mn": "Толгойт-1",
+   "address_mn": "Сонгинохайрхан дүүрэг, 3-р хороо, 65 дугаар сургуулийн хойно",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 47.922489,
+   "lon": 106.794842,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12403",
+   "name_mn": "Баянхошуу-6",
+   "address_mn": "Сонгинохайрхан дүүрэг Монлаа ХХК-ний хуучин худгийн хойно",
+   "items_live": [
+    "pm25"
+   ],
+   "lat": 47.863956,
+   "lon": 106.931942,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12404",
+   "name_mn": "5 Шар",
+   "address_mn": "СХД-ийн 18-р хороо, 5 шар СХД-ийн 18-р хороо, 5 шар",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 47.912121,
+   "lon": 106.814642,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12501",
+   "name_mn": "100 айл",
+   "address_mn": "Сүхбаатар дүүрэг, 10-р хороо, 69 дүгээр цэцэрлэг",
+   "items_live": [
+    "pm25",
+    "o3",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 47.932892,
+   "lon": 106.921361,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12503",
+   "name_mn": "5 буудал",
+   "address_mn": "Сүхбаатар дүүрэг, 13-р хороо 159 дугаар сургуулийн хашаанд",
+   "items_live": [
+    "pm10",
+    "no2",
+    "so2"
+   ],
+   "lat": 47.954994,
+   "lon": 106.920956,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12504",
+   "name_mn": "Дамбадаржаа-5",
+   "address_mn": "СБД-ийн 16-р хороо, Дамбадаржаагийн булгийн хамгаалалтын хашааны хойно",
+   "items_live": [
+    "pm25"
+   ],
+   "lat": 47.957533,
+   "lon": 106.822631,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12601",
+   "name_mn": "Мишээл экспо",
+   "address_mn": "Хан-Уул дүүрэг, 3-р хороо, Мишээл экспо, БОХЗТЛ-ийн хашаанд",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "co",
+    "so2"
+   ],
+   "lat": 47.894064,
+   "lon": 106.882403,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12602",
+   "name_mn": "Витафит милк",
+   "address_mn": "Хан-Уул дүүрэг, 20-р хороо, Монгол газар  ХХК",
+   "items_live": [
+    "pm25",
+    "co",
+    "so2"
+   ],
+   "lat": 47.905583,
+   "lon": 106.84245,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12603",
+   "name_mn": "Богд хааны ордон музей",
+   "address_mn": "Хан-Уул дүүрэг, Богд хааны ордон музей",
+   "items_live": [
+    "pm10",
+    "no2"
+   ],
+   "lat": 47.89695,
+   "lon": 106.906839,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12604",
+   "name_mn": "Яармаг",
+   "address_mn": "Хан-Уул дүүрэг, Яармаг Арцатын ам",
+   "items_live": [
+    "o3",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 47.86833,
+   "lon": 106.835,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12605",
+   "name_mn": "Нисэх-4",
+   "address_mn": "ХУД-ийн 9-р хороо Нисэх",
+   "items_live": [],
+   "lat": 47.863956,
+   "lon": 106.7791,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12701",
+   "name_mn": "Хайлааст",
+   "address_mn": "Чингэлтэй дүүрэг, 16-р хороо, 83 дугаар цэцэрлэгийн хашаанд",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "no2",
+    "co"
+   ],
+   "lat": 47.958269,
+   "lon": 106.906839,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12801",
+   "name_mn": "Баруун 4 зам",
+   "address_mn": "Баянгол дүүрэг, 17-р хороо Барилгын коллежийн хашаанд",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 47.915372,
+   "lon": 106.894189,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12802",
+   "name_mn": "MНTҮ-2",
+   "address_mn": "Баянгол дүүрэг 12-р хороо, МҮ-ний телевизийн төв байрны хойно",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2",
+    "co"
+   ],
+   "lat": 47.929736,
+   "lon": 106.888597,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12803",
+   "name_mn": "3, 4-р Хорооллын эцэс",
+   "address_mn": "БГД-ийн 9-р хороо, Улаанбаатар 16093 БГД-ийн 9-р хороо, Улаанбаатар 16093",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 47.925744,
+   "lon": 106.867381,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  },
+  {
+   "code": "12901",
+   "name_mn": "Налайх",
+   "address_mn": "Налайх дүүрэг, 7-р хорооны хашаанд",
+   "items_live": [
+    "pm10",
+    "pm25",
+    "o3",
+    "no2",
+    "co",
+    "so2"
+   ],
+   "lat": 47.777031,
+   "lon": 107.25255,
+   "aimag_code": "11",
+   "mang_code": "1",
+   "search_page": true,
+   "aimag_mn": "Улаанбаатар",
+   "aimag_en": "Ulaanbaatar"
+  }
+ ]
+}

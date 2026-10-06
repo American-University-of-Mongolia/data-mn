@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Улаанбаатарын хяналтын станцуудын PM2.5-ын дундаж 50 мкг/м³-аас хэтэрсэн өдрийн тоо, сараар, 2025 оны 10-р сараас 2026 оны 9-р сар.",
+  "data": {
+    "url": "/datasets/pm25-unhealthy-days-ulaanbaatar-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "on": "pointerover",
+        "clear": "pointerout",
+        "fields": [
+          "сар"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "#4c78a8",
+    "cornerRadiusEnd": 3,
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "сар",
+      "type": "temporal",
+      "timeUnit": "yearmonth",
+      "title": "Сар",
+      "axis": {
+        "grid": false,
+        "format": "%Y-%m",
+        "labelAngle": -45
+      }
+    },
+    "y": {
+      "field": "хэмжээ_давсан_өдөр",
+      "type": "quantitative",
+      "title": "50 мкг/м³-аас дээш өдөр",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 5
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "hover",
+        "value": 1
+      },
+      "value": 0.8
+    },
+    "tooltip": [
+      {
+        "field": "сар",
+        "type": "temporal",
+        "timeUnit": "yearmonth",
+        "title": "Сар",
+        "format": "%Y-%m"
+      },
+      {
+        "field": "хэмжээ_давсан_өдөр",
+        "type": "quantitative",
+        "title": "50 мкг/м³-аас дээш өдөр",
+        "format": "d"
+      },
+      {
+        "field": "мэдээлэлтэй_өдөр",
+        "type": "quantitative",
+        "title": "Мэдээлэлтэй өдөр",
+        "format": "d"
+      },
+      {
+        "field": "хотын_дээд_дундаж_мкг_м3",
+        "type": "quantitative",
+        "title": "Хотын өдрийн дундажийн дээд (мкг/м³)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

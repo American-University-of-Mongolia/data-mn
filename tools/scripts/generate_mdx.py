@@ -21,6 +21,11 @@ SOURCE_DEFAULTS = {
         "https://data.1212.mn",
     ),
     "mongolbank": ("Bank of Mongolia", "Монголбанк", "https://www.mongolbank.mn"),
+    "agaar": (
+        "National Agency for Meteorology and Environmental Monitoring (NAMEM)",
+        "Цаг уур, орчны шинжилгээний газар",
+        "https://agaar.gov.mn",
+    ),
     "mrpam": (
         "Mineral Resources and Petroleum Authority",
         "Ашигт малтмал, газрын тосны газар",

@@ -1,0 +1,245 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Monthly mean PM2.5 in Ulaanbaatar and aimag centres, October 2025 to September 2026, µg/m³",
+  "data": {
+    "url": "/datasets/pm25-monthly-ulaanbaatar-aimags-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "y": {
+      "field": "pm25_ug_m3",
+      "type": "quantitative",
+      "title": "PM2.5, µg/m³",
+      "scale": {
+        "domain": [
+          0,
+          80
+        ]
+      },
+      "axis": {
+        "format": "d"
+      }
+    }
+  },
+  "layer": [
+    {
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "strokeWidth": 2.5,
+            "interpolate": "monotone"
+          }
+        },
+        {
+          "params": [
+            {
+              "name": "hover",
+              "select": {
+                "type": "point",
+                "nearest": true,
+                "on": "pointerover",
+                "clear": "pointerout",
+                "fields": [
+                  "month"
+                ]
+              }
+            }
+          ],
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "size": 80
+          },
+          "encoding": {
+            "opacity": {
+              "condition": {
+                "param": "hover",
+                "empty": false,
+                "value": 1
+              },
+              "value": 0
+            },
+            "tooltip": [
+              {
+                "field": "month",
+                "type": "temporal",
+                "title": "Month",
+                "format": "%B %Y"
+              },
+              {
+                "field": "area",
+                "title": "Area"
+              },
+              {
+                "field": "pm25_ug_m3",
+                "title": "PM2.5, µg/m³",
+                "format": ".1f"
+              },
+              {
+                "field": "stations",
+                "title": "Stations"
+              }
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal",
+          "title": "Month",
+          "axis": {
+            "format": "%b %Y",
+            "grid": false,
+            "labelAngle": -45
+          }
+        },
+        "color": {
+          "field": "area",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "Ulaanbaatar",
+              "Aimag centres"
+            ],
+            "range": [
+              "#e45756",
+              "#4c78a8"
+            ]
+          },
+          "legend": {
+            "orient": "top",
+            "title": null
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "y": 50,
+            "label": "Mongolian limit (50)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          6,
+          4
+        ],
+        "color": "#64748b",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "y": 50,
+            "label": "Mongolian limit (50)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dy": -6,
+        "fontSize": 13,
+        "color": "#64748b",
+        "baseline": "bottom",
+        "x": "width",
+        "dx": -4
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "y": 15,
+            "label": "WHO guideline (15)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          6,
+          4
+        ],
+        "color": "#54a24b",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "y": 15,
+            "label": "WHO guideline (15)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dy": -6,
+        "fontSize": 13,
+        "color": "#54a24b",
+        "baseline": "bottom",
+        "x": "width",
+        "dx": -4
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

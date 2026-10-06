@@ -1,0 +1,50 @@
+---
+title: Winter PM2.5 by Aimag Centre (December 2025 to February 2026)
+publishDate: 2026-10-06
+author: Data.mn
+dataVersion: 1
+dataDate: 2026-10-06
+excerpt: Mean PM2.5 (µg/m³) in 21 aimag centres and Ulaanbaatar, December 2025 to February 2026. Murun in Khuvsgul had the highest winter mean at 111.3, ahead of Khovd (82.8) and Darkhan-Uul (81.0); Ulaanbaatar averaged 61.5, and 10 of 22 places were above the 50 µg/m³ limit.
+category: Environment
+tags:
+- mongolia
+- environment
+- air quality
+- pm25
+- aimag
+- ulaanbaatar
+- winter
+keywords:
+- winter pm2.5 mongolia
+- aimag air quality
+- pm2.5 by aimag centre
+- mongolia air pollution
+dataFiles:
+- path: /datasets/pm25-winter-by-aimag-centre-all-en.csv
+  format: csv
+  size: 322 B
+  description: Download as CSV (all data)
+- path: /datasets/pm25-winter-by-aimag-centre.xlsx
+  format: xlsx
+  size: 6 KB
+  description: Open in Excel
+source:
+  name: National Agency for Meteorology and Environmental Monitoring (NAMEM)
+  url: https://agaar.gov.mn
+  tableId: agaar-daily-station-means
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Mean PM2.5 (µg/m³) in 21 aimag centres and Ulaanbaatar, December 2025 to February 2026. Murun in Khuvsgul had the highest winter mean at 111.3, ahead of Khovd (82.8) and Darkhan-Uul (81.0); Ulaanbaatar averaged 61.5, and 10 of 22 places were above the 50 µg/m³ limit.
+
+Each value is the mean for the aimag centre town (one station each, except Ulaanbaatar with 18 stations and Orkhon, i.e. Erdenet, with 3), not for the whole aimag. Only places with at least 60 station-days in the period are shown. Ulaanbaatar is included for reference. The dashed line is Mongolia's 24-hour PM2.5 limit of 50 µg/m³ (MNS 4585:2016).
+
+## How this was cleaned
+
+Daily PM2.5 station values come from [agaar.gov.mn](https://agaar.gov.mn) (NAMEM). A station-day was dropped if PM2.5 was negative, if PM2.5 exceeded 1.1 times PM10 on the same day (and 50), if it was more than 5 times that day's median across all stations (and above 150), or if the same value repeated on 5 or more consecutive days at one station. In all, 163 of 16,115 station-days to 6 October 2026 were dropped. Related: [Air Pollution Concentration in Ulaanbaatar (SO₂)](/en/data/air-pollution-concentration).
+
+<VegaChart
+  spec="/charts/pm25-winter-by-aimag-centre-en.json"
+  title="Winter PM2.5 by Aimag Centre (December 2025 to February 2026)"
+/>

@@ -1,0 +1,245 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Улаанбаатар болон аймгийн төвүүдийн PM2.5-ын сарын дундаж, 2025 оны 10-р сараас 2026 оны 9-р сар, мкг/м³",
+  "data": {
+    "url": "/datasets/pm25-monthly-ulaanbaatar-aimags-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "y": {
+      "field": "pm25_мкг_м3",
+      "type": "quantitative",
+      "title": "PM2.5, мкг/м³",
+      "scale": {
+        "domain": [
+          0,
+          80
+        ]
+      },
+      "axis": {
+        "format": "d"
+      }
+    }
+  },
+  "layer": [
+    {
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "strokeWidth": 2.5,
+            "interpolate": "monotone"
+          }
+        },
+        {
+          "params": [
+            {
+              "name": "hover",
+              "select": {
+                "type": "point",
+                "nearest": true,
+                "on": "pointerover",
+                "clear": "pointerout",
+                "fields": [
+                  "сар"
+                ]
+              }
+            }
+          ],
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "size": 80
+          },
+          "encoding": {
+            "opacity": {
+              "condition": {
+                "param": "hover",
+                "empty": false,
+                "value": 1
+              },
+              "value": 0
+            },
+            "tooltip": [
+              {
+                "field": "сар",
+                "type": "temporal",
+                "title": "Сар",
+                "format": "%Y-%m"
+              },
+              {
+                "field": "бүс",
+                "title": "Бүс"
+              },
+              {
+                "field": "pm25_мкг_м3",
+                "title": "PM2.5, мкг/м³",
+                "format": ".1f"
+              },
+              {
+                "field": "станц",
+                "title": "Станц"
+              }
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "сар",
+          "type": "temporal",
+          "title": "Сар",
+          "axis": {
+            "format": "%Y-%m",
+            "grid": false,
+            "labelAngle": -45
+          }
+        },
+        "color": {
+          "field": "бүс",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "Улаанбаатар",
+              "Аймгийн төвүүд"
+            ],
+            "range": [
+              "#e45756",
+              "#4c78a8"
+            ]
+          },
+          "legend": {
+            "orient": "top",
+            "title": null
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "y": 50,
+            "label": "Монгол стандарт (50)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          6,
+          4
+        ],
+        "color": "#64748b",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "y": 50,
+            "label": "Монгол стандарт (50)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dy": -6,
+        "fontSize": 13,
+        "color": "#64748b",
+        "baseline": "bottom",
+        "x": "width",
+        "dx": -4
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "y": 15,
+            "label": "ДЭМБ-ын зөвлөмж (15)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          6,
+          4
+        ],
+        "color": "#54a24b",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "y": 15,
+            "label": "ДЭМБ-ын зөвлөмж (15)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dy": -6,
+        "fontSize": 13,
+        "color": "#54a24b",
+        "baseline": "bottom",
+        "x": "width",
+        "dx": -4
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

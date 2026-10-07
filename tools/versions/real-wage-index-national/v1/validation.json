@@ -8,8 +8,18 @@
   "missing_values": 0,
   "base_2023": 100,
   "source_hashes_verified": true,
-  "dashed_connectors_before": [
-    2014,
+  "chart_years": [
+    2000,
+    2025
+  ],
+  "continuous_line_years": [
+    2000,
+    2024
+  ],
+  "source_change_rules": [
+    2014
+  ],
+  "disconnected_points": [
     2025
   ]
 }

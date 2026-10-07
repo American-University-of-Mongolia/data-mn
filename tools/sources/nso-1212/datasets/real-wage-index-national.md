@@ -6,7 +6,7 @@
 - Frequency: annual; national aggregate, sector code `0`
 - Coverage: 1992–2025, 34 observations per language, no missing national values
 - Unit: index points, 2023 = 100. Do not format these levels as percentages or currency.
-- Status: local draft for review. No publication or automatic updates enabled.
+- Status: pending review. No publication or automatic updates enabled.
 
 ## Meaning and scope
 
@@ -20,7 +20,9 @@ Open https://data.1212.mn/pxweb/en/NSO/ and choose Labour, business → Wages �
 
 NSO's [2018 Statistical Yearbook](https://downloads.1212.mn/YEARBOOK_2018.pdf), table 4.19, printed page 92, explains that wages for 2000–2013 came from the establishment sample survey; from 2014 the source changed to the Social Insurance Fund. This establishes a source transition, not an explicit NSO declaration of non-comparability. Neither harmonization nor comparability across 2014 has been confirmed. The note does not establish the collection method before 2000. Do not infer a fully harmonized 1992–2024 series or attribute movements at the break solely to earnings.
 
-The current annual table explicitly states that 2025 wages use a revised methodology and cannot be compared with previous years. Its source pages are archived alongside API responses. The chart uses solid line segments for 1992–2013 and 2014–2024, dashed connectors across the 2014 and 2025 changes, and an orange point for 2025. Dashed connectors flag the boundaries; they do not resolve the uncertain comparability at 2014 or the explicit non-comparability at 2025. All observations remain in downloads. Do not assert comparable growth across 2025. Treat comparisons across 2014 cautiously until coverage and harmonization have been clarified. The full-history presentation remains a review question for Robert.
+The current annual table explicitly states that 2025 wages use a revised methodology and cannot be compared with previous years. Its source pages are archived alongside API responses. The chart starts at 2000 because the pre-2000 collection method is undocumented. CSV and Excel downloads retain all 34 observations from 1992–2025; both chart descriptions state this scope.
+
+The chart uses one continuous solid line from 2000 through 2024: NSO publishes these observations as one rebased index and does not declare 2014 non-comparable. A labelled vertical rule marks the 2014 source change without implying that the change was harmonized. An orange point for 2025 is disconnected from the line and labelled as not comparable in both languages. Do not calculate comparable growth from 2024 to 2025. Axis domains follow the data, with a zero baseline for the index and pixel padding to keep the 2025 point clear of the phone action menu. Each caption is one short sentence about the full-history downloads.
 
 Annual-average inflation is missing before 2006 in the checked NSO inflation table `DT_NSO_0600_013V2.px`. Year-end inflation is not a substitute for annual-average inflation. Historical nominal wages from selected years in 1960–1992 cannot simply extend the real-wage series.
 
@@ -31,9 +33,17 @@ Annual-average inflation is missing before 2006 in the checked NSO inflation tab
 python tools/scripts/build_real_wage_index.py
 # Regenerate page-language Excel and download metadata.
 python tools/scripts/rebuild_downloads.py --dataset real-wage-index-national --apply
+# Format generated pages/specs, then regenerate thumbnails and build the site.
+cd data.mn
+npx prettier --write public/charts/real-wage-index-national-{en,mn}.json src/data/data/{en,mn}/real-wage-index-national.mdx
+npm run build
+# In another terminal, start npm run dev from data.mn before these checks.
+cd ..
+python3 tools/scripts/screenshot_charts.py real-wage-index-national --lang en
+python3 tools/scripts/screenshot_charts.py real-wage-index-national --lang mn
 ```
 
-Each page offers its matching CSV and single-language Excel workbook (`excelLanguage: page`). English and Монгол workbooks contain exactly the 34 source observations, with years as rows, frozen headers, filters, and styled tables. The original bilingual workbook remains available for the existing demo download path. Page captions and this definition explain the comparability limits.
+Each page offers its matching CSV and single-language Excel workbook (`excelLanguage: page`). English and Монгол workbooks contain exactly the 34 source observations, with years as rows, frozen headers, filters, and styled tables. The original bilingual workbook remains available for the existing demo download path. Chart annotations and this definition explain the comparability limits. The screenshot script captures both desktop (1280px) and phone (390px) layouts.
 
 The original fetch used `python tools/scripts/build_real_wage_index.py --fetch`. It selects all sectors and years in both languages, archives metadata, query, response and source HTML, then exports only national code `0`. Year codes are positional: map them through labels instead of treating them as calendar years. Refresh into a new version directory and review methodology, base year and bilingual parity before publication. Do not overwrite v1 or silently append new years.
 

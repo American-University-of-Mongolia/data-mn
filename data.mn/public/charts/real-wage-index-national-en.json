@@ -1,20 +1,26 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Mongolia Real Wage Index (1992–2025). Index: 2023 = 100. Dashed lines mark a source change in 2014 and a methodology change in 2025. Comparability across 2014 has not been confirmed; NSO explicitly states that 2025 (orange point) is not comparable with earlier years.",
+  "description": "Mongolia Real Wage Index (1992–2025). Chart shows 2000–2025; CSV and Excel downloads include all years, 1992–2025. The continuous line through 2024 marks the 2014 source change. The separate 2025 point is not comparable with earlier years.",
   "data": {
     "url": "/datasets/real-wage-index-national-en.csv",
     "format": {
       "type": "csv"
     }
   },
+  "transform": [
+    {
+      "filter": "datum['Year'] >= 2000"
+    }
+  ],
   "encoding": {
     "x": {
       "field": "Year",
       "type": "quantitative",
       "title": "Year",
       "scale": {
-        "domain": [1992, 2026],
-        "nice": false
+        "zero": false,
+        "nice": false,
+        "padding": 8
       },
       "axis": {
         "format": "d",
@@ -31,7 +37,12 @@
       "title": "Index (2023=100)",
       "scale": {
         "zero": true,
-        "domainMax": 140
+        "range": [
+          {
+            "expr": "height"
+          },
+          40
+        ]
       },
       "axis": {
         "format": ".0f",
@@ -43,7 +54,52 @@
     {
       "transform": [
         {
-          "filter": "datum['Year'] < 2014"
+          "filter": "datum['Year'] == 2014"
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "strokeDash": [5, 4],
+        "strokeWidth": 1.5,
+        "color": "#64748b"
+      },
+      "encoding": {
+        "y": {
+          "value": 0
+        },
+        "y2": {
+          "value": "height"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Year'] == 2014"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "top",
+        "dx": -6,
+        "dy": -50,
+        "fontSize": 12,
+        "color": "#64748b"
+      },
+      "encoding": {
+        "y": {
+          "value": "height"
+        },
+        "text": {
+          "value": ["2014", "Source change"]
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Year'] < 2025"
         }
       ],
       "mark": {
@@ -53,176 +109,28 @@
         "interpolate": "linear"
       },
       "encoding": {
-        "x": {
-          "field": "Year",
-          "type": "quantitative",
-          "title": "Year",
-          "scale": {
-            "domain": [1992, 2026],
-            "nice": false
+        "tooltip": [
+          {
+            "field": "Year",
+            "title": "Year",
+            "type": "quantitative",
+            "format": "d"
           },
-          "axis": {
-            "format": "d",
-            "tickCount": 6,
-            "grid": false,
-            "labelAngle": 0,
-            "labelOverlap": "greedy",
-            "labelSeparation": 8
+          {
+            "field": "Real wage index (2023=100)",
+            "title": "Real wage index (2023=100)",
+            "type": "quantitative",
+            "format": ".1f"
           }
-        },
-        "y": {
-          "field": "Real wage index (2023=100)",
-          "type": "quantitative",
-          "title": "Index (2023=100)",
-          "scale": {
-            "zero": true,
-            "domainMax": 140
-          },
-          "axis": {
-            "format": ".0f",
-            "gridOpacity": 0.25
-          }
-        }
+        ]
       }
     },
     {
       "transform": [
         {
-          "filter": "datum['Year'] >= 2014 && datum['Year'] < 2025"
+          "filter": "datum['Year'] < 2025"
         }
       ],
-      "mark": {
-        "type": "line",
-        "strokeWidth": 2.5,
-        "color": "#1f77b4",
-        "interpolate": "linear"
-      },
-      "encoding": {
-        "x": {
-          "field": "Year",
-          "type": "quantitative",
-          "title": "Year",
-          "scale": {
-            "domain": [1992, 2026],
-            "nice": false
-          },
-          "axis": {
-            "format": "d",
-            "tickCount": 6,
-            "grid": false,
-            "labelAngle": 0,
-            "labelOverlap": "greedy",
-            "labelSeparation": 8
-          }
-        },
-        "y": {
-          "field": "Real wage index (2023=100)",
-          "type": "quantitative",
-          "title": "Index (2023=100)",
-          "scale": {
-            "zero": true,
-            "domainMax": 140
-          },
-          "axis": {
-            "format": ".0f",
-            "gridOpacity": 0.25
-          }
-        }
-      }
-    },
-    {
-      "transform": [
-        {
-          "filter": "datum['Year'] >= 2013 && datum['Year'] <= 2014"
-        }
-      ],
-      "mark": {
-        "type": "line",
-        "strokeWidth": 2.5,
-        "color": "#1f77b4",
-        "interpolate": "linear",
-        "strokeDash": [5, 4]
-      },
-      "encoding": {
-        "x": {
-          "field": "Year",
-          "type": "quantitative",
-          "title": "Year",
-          "scale": {
-            "domain": [1992, 2026],
-            "nice": false
-          },
-          "axis": {
-            "format": "d",
-            "tickCount": 6,
-            "grid": false,
-            "labelAngle": 0,
-            "labelOverlap": "greedy",
-            "labelSeparation": 8
-          }
-        },
-        "y": {
-          "field": "Real wage index (2023=100)",
-          "type": "quantitative",
-          "title": "Index (2023=100)",
-          "scale": {
-            "zero": true,
-            "domainMax": 140
-          },
-          "axis": {
-            "format": ".0f",
-            "gridOpacity": 0.25
-          }
-        }
-      }
-    },
-    {
-      "transform": [
-        {
-          "filter": "datum['Year'] >= 2024 && datum['Year'] <= 2025"
-        }
-      ],
-      "mark": {
-        "type": "line",
-        "strokeWidth": 2.5,
-        "color": "#d97706",
-        "interpolate": "linear",
-        "strokeDash": [5, 4]
-      },
-      "encoding": {
-        "x": {
-          "field": "Year",
-          "type": "quantitative",
-          "title": "Year",
-          "scale": {
-            "domain": [1992, 2026],
-            "nice": false
-          },
-          "axis": {
-            "format": "d",
-            "tickCount": 6,
-            "grid": false,
-            "labelAngle": 0,
-            "labelOverlap": "greedy",
-            "labelSeparation": 8
-          }
-        },
-        "y": {
-          "field": "Real wage index (2023=100)",
-          "type": "quantitative",
-          "title": "Index (2023=100)",
-          "scale": {
-            "zero": true,
-            "domainMax": 140
-          },
-          "axis": {
-            "format": ".0f",
-            "gridOpacity": 0.25
-          }
-        }
-      }
-    },
-    {
       "params": [
         {
           "name": "hover",
@@ -241,36 +149,6 @@
         "color": "#1f77b4"
       },
       "encoding": {
-        "x": {
-          "field": "Year",
-          "type": "quantitative",
-          "title": "Year",
-          "scale": {
-            "domain": [1992, 2026],
-            "nice": false
-          },
-          "axis": {
-            "format": "d",
-            "tickCount": 6,
-            "grid": false,
-            "labelAngle": 0,
-            "labelOverlap": "greedy",
-            "labelSeparation": 8
-          }
-        },
-        "y": {
-          "field": "Real wage index (2023=100)",
-          "type": "quantitative",
-          "title": "Index (2023=100)",
-          "scale": {
-            "zero": true,
-            "domainMax": 140
-          },
-          "axis": {
-            "format": ".0f",
-            "gridOpacity": 0.25
-          }
-        },
         "tooltip": [
           {
             "field": "Year",
@@ -307,36 +185,6 @@
         "color": "#d97706"
       },
       "encoding": {
-        "x": {
-          "field": "Year",
-          "type": "quantitative",
-          "title": "Year",
-          "scale": {
-            "domain": [1992, 2026],
-            "nice": false
-          },
-          "axis": {
-            "format": "d",
-            "tickCount": 6,
-            "grid": false,
-            "labelAngle": 0,
-            "labelOverlap": "greedy",
-            "labelSeparation": 8
-          }
-        },
-        "y": {
-          "field": "Real wage index (2023=100)",
-          "type": "quantitative",
-          "title": "Index (2023=100)",
-          "scale": {
-            "zero": true,
-            "domainMax": 140
-          },
-          "axis": {
-            "format": ".0f",
-            "gridOpacity": 0.25
-          }
-        },
         "tooltip": [
           {
             "field": "Year",
@@ -351,6 +199,27 @@
             "format": ".1f"
           }
         ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Year'] == 2025"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "top",
+        "dx": -10,
+        "dy": -40,
+        "fontSize": 12,
+        "color": "#b45309"
+      },
+      "encoding": {
+        "text": {
+          "value": ["2025", "Not comparable"]
+        }
       }
     }
   ],

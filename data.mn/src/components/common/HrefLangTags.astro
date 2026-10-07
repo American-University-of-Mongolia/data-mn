@@ -13,9 +13,7 @@ const pathname = currentUrl.pathname;
 
 // Extract path parts
 const pathParts = pathname.split('/').filter(Boolean);
-const pathWithoutLang = pathParts[0] === 'en' || pathParts[0] === 'mn'
-  ? '/' + pathParts.slice(1).join('/')
-  : pathname;
+const pathWithoutLang = pathParts[0] === 'en' || pathParts[0] === 'mn' ? '/' + pathParts.slice(1).join('/') : pathname;
 
 // Get base URL
 const baseUrl = SITE?.site || currentUrl.origin;
@@ -30,10 +28,12 @@ const enUrl = `${baseUrl}/en${pathWithoutLang}`;
 const mnUrl = `${baseUrl}/mn${pathWithoutLang}`;
 ---
 
-{isLangPage && (
-  <>
-    <link rel="alternate" hreflang="en" href={enUrl} />
-    <link rel="alternate" hreflang="mn" href={mnUrl} />
-    <link rel="alternate" hreflang="x-default" href={mnUrl} />
-  </>
-)}
+{
+  isLangPage && (
+    <>
+      <link rel="alternate" hreflang="en" href={enUrl} />
+      <link rel="alternate" hreflang="mn" href={mnUrl} />
+      <link rel="alternate" hreflang="x-default" href={mnUrl} />
+    </>
+  )
+}

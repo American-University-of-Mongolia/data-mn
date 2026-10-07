@@ -4,10 +4,7 @@ import { useTranslations, type Language } from '~/i18n';
 import { getCollection } from 'astro:content';
 
 export const getStaticPaths = () => {
-  return [
-    { params: { lang: 'en' } },
-    { params: { lang: 'mn' } },
-  ];
+  return [{ params: { lang: 'en' } }, { params: { lang: 'mn' } }];
 };
 
 const { lang } = Astro.params;
@@ -44,7 +41,7 @@ function formatDate(date: Date, lang: string): string {
 
 // Group entries by date
 const entriesByDate = new Map<string, typeof changelogEntries>();
-changelogEntries.forEach(entry => {
+changelogEntries.forEach((entry) => {
   const dateKey = entry.data.date.toISOString().split('T')[0]; // YYYY-MM-DD
   if (!entriesByDate.has(dateKey)) {
     entriesByDate.set(dateKey, []);
@@ -59,7 +56,7 @@ const actionOrder: ActionType[] = ['added', 'updated', 'removed'];
 function groupByAction(entries: typeof changelogEntries) {
   const grouped = new Map<ActionType, typeof changelogEntries>();
 
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     const action = entry.data.action as ActionType;
     if (!grouped.has(action)) {
       grouped.set(action, []);
@@ -78,83 +75,84 @@ function groupByAction(entries: typeof changelogEntries) {
       <p class="text-base text-muted dark:text-slate-400">{t('changelog.description')}</p>
     </header>
 
-    {changelogEntries.length === 0 ? (
-      <div class="text-center py-12">
-        <p class="text-muted dark:text-slate-400">{t('changelog.noChanges')}</p>
-      </div>
-    ) : (
-      <div class="space-y-8">
-        {Array.from(entriesByDate.entries()).map(([dateKey, entries]) => {
-          const firstEntry = entries[0];
-          const formattedDate = formatDate(firstEntry.data.date, currentLang);
-          const groupedByAction = groupByAction(entries);
+    {
+      changelogEntries.length === 0 ? (
+        <div class="text-center py-12">
+          <p class="text-muted dark:text-slate-400">{t('changelog.noChanges')}</p>
+        </div>
+      ) : (
+        <div class="space-y-8">
+          {Array.from(entriesByDate.entries()).map(([dateKey, entries]) => {
+            const firstEntry = entries[0];
+            const formattedDate = formatDate(firstEntry.data.date, currentLang);
+            const groupedByAction = groupByAction(entries);
 
-          return (
-            <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-8">
-              {/* Date column (left) */}
-              <div class="md:text-right">
-                <time
-                  class="text-sm font-medium text-gray-700 dark:text-gray-300 md:sticky md:top-24"
-                  datetime={dateKey}
-                >
-                  {formattedDate}
-                </time>
-              </div>
+            return (
+              <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-8">
+                {/* Date column (left) */}
+                <div class="md:text-right">
+                  <time
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300 md:sticky md:top-24"
+                    datetime={dateKey}
+                  >
+                    {formattedDate}
+                  </time>
+                </div>
 
-              {/* Entries column (right) */}
-              <div class="space-y-4">
-                {actionOrder.map((action) => {
-                  const actionEntries = groupedByAction.get(action);
-                  if (!actionEntries || actionEntries.length === 0) return null;
+                {/* Entries column (right) */}
+                <div class="space-y-4">
+                  {actionOrder.map((action) => {
+                    const actionEntries = groupedByAction.get(action);
+                    if (!actionEntries || actionEntries.length === 0) return null;
 
-                  const actionLabel = t(`changelog.action.${action}`);
+                    const actionLabel = t(`changelog.action.${action}`);
 
-                  return (
-                    <div class="space-y-2">
-                      {/* Action subheading */}
-                      <h3 class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
-                        {actionLabel}
-                      </h3>
+                    return (
+                      <div class="space-y-2">
+                        {/* Action subheading */}
+                        <h3 class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
+                          {actionLabel}
+                        </h3>
 
-                      {/* Entries for this action */}
-                      {actionEntries.map((entry) => {
-                        const { dataset_id, dataset_name_en, dataset_name_mn, description_en, description_mn } = entry.data;
-                        const datasetName = currentLang === 'en' ? dataset_name_en : dataset_name_mn;
-                        const description = currentLang === 'en' ? description_en : description_mn;
+                        {/* Entries for this action */}
+                        {actionEntries.map((entry) => {
+                          const { dataset_id, dataset_name_en, dataset_name_mn, description_en, description_mn } =
+                            entry.data;
+                          const datasetName = currentLang === 'en' ? dataset_name_en : dataset_name_mn;
+                          const description = currentLang === 'en' ? description_en : description_mn;
 
-                        return (
-                          <div class="flex gap-3 text-sm">
-                            {/* Bullet point */}
-                            <span class="text-gray-400 dark:text-gray-600 mt-1 select-none">•</span>
+                          return (
+                            <div class="flex gap-3 text-sm">
+                              {/* Bullet point */}
+                              <span class="text-gray-400 dark:text-gray-600 mt-1 select-none">•</span>
 
-                            {/* Content */}
-                            <div class="flex-1 leading-relaxed">
-                              <a
-                                href={`/${currentLang}/data/${dataset_id}`}
-                                class="text-gray-900 dark:text-white hover:text-primary dark:hover:text-primary transition-colors font-medium"
-                              >
-                                {datasetName}
-                              </a>
-                              {description && (
-                                <>
-                                  {' — '}
-                                  <span class="text-gray-600 dark:text-gray-400">
-                                    {description}
-                                  </span>
-                                </>
-                              )}
+                              {/* Content */}
+                              <div class="flex-1 leading-relaxed">
+                                <a
+                                  href={`/${currentLang}/data/${dataset_id}`}
+                                  class="text-gray-900 dark:text-white hover:text-primary dark:hover:text-primary transition-colors font-medium"
+                                >
+                                  {datasetName}
+                                </a>
+                                {description && (
+                                  <>
+                                    {' — '}
+                                    <span class="text-gray-600 dark:text-gray-400">{description}</span>
+                                  </>
+                                )}
+                              </div>
                             </div>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  );
-                })}
+                          );
+                        })}
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
-    )}
+            );
+          })}
+        </div>
+      )
+    }
   </div>
 </Layout>

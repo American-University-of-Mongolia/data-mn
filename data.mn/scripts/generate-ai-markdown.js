@@ -68,7 +68,8 @@ const LABELS = {
     tags: 'Түлхүүр үг',
     data: 'Өгөгдөл',
     chart: 'График',
-    truncatedNote: (shown, total) => `*Нийт ${total} мөрөөс эхний ${shown}-г харуулж байна. Бүрэн өгөгдлийг татаж авах боломжтой.*`,
+    truncatedNote: (shown, total) =>
+      `*Нийт ${total} мөрөөс эхний ${shown}-г харуулж байна. Бүрэн өгөгдлийг татаж авах боломжтой.*`,
     downloads: 'Татах',
     downloadCSV: 'CSV татах',
     downloadExcel: 'Excel татах',

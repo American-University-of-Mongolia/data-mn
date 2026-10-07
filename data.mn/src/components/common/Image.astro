@@ -43,8 +43,7 @@ let image: ImageType | undefined = undefined;
 
 // Local public/ images can't be measured by astro:assets at build time
 // (inferSize needs a fetchable URL), so they render as a native img tag.
-const isLocalPublicImage =
-  typeof _image === 'string' && _image.startsWith('/') && !_image.startsWith('//');
+const isLocalPublicImage = typeof _image === 'string' && _image.startsWith('/') && !_image.startsWith('//');
 
 if (
   typeof _image === 'string' &&

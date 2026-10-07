@@ -25,25 +25,30 @@ const isInlineSpec = typeof spec === 'object';
 ---
 
 <div class="vega-chart-container my-4 not-prose">
-  {title && <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">{title}{yearGroup && <span data-selected-year class="ml-2 tabular-nums text-gray-500 dark:text-gray-400" />}</h3>}
+  {
+    title &&
+      // Keep the title and the year span adjacent: a line break between them renders as a space.
+      // prettier-ignore
+      <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">{title}{yearGroup && <span data-selected-year class="ml-2 tabular-nums text-gray-500 dark:text-gray-400" />}</h3>
+  }
   <ChartControls enabled={interactive}>
-
-  <div
-    id={chartId}
-    class="vega-chart w-full"
-    data-spec={isInlineSpec ? JSON.stringify(spec) : spec}
-    data-is-inline={isInlineSpec}
-    data-aspect-ratio={aspectRatio}
-    data-interactive={interactive}
-    data-year-group={yearGroup}
-  ></div>
+    <!-- prettier-ignore -->
+    <div
+      id={chartId}
+      class="vega-chart w-full"
+      data-spec={isInlineSpec ? JSON.stringify(spec) : spec}
+      data-is-inline={isInlineSpec}
+      data-aspect-ratio={aspectRatio}
+      data-interactive={interactive}
+      data-year-group={yearGroup}
+    ></div>
   </ChartControls>
 
   {caption && <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 italic">{caption}</p>}
 </div>
 
 <script is:inline>
-  (function() {
+  (function () {
     // Prevent multiple initializations
     if (window._vegaChartInitialized) return;
     window._vegaChartInitialized = true;
@@ -52,7 +57,7 @@ const isInlineSpec = typeof spec === 'object';
     let chartViews = {};
     let linkedYears = {};
     let resizeTimeout = null;
-    const decimalNumberFormat = ",.6~f";
+    const decimalNumberFormat = ',.6~f';
     const legendLayoutTools = import('/scripts/chart-legend-layout.js');
 
     // Vega treats a bare "," as a general-number format and can render
@@ -62,7 +67,7 @@ const isInlineSpec = typeof spec === 'object';
       if (Array.isArray(value)) {
         value.forEach(normalizeNumberFormats);
       } else if (value && typeof value === 'object') {
-        Object.keys(value).forEach(function(key) {
+        Object.keys(value).forEach(function (key) {
           const child = value[key];
           if (
             key === 'format' &&
@@ -87,17 +92,34 @@ const isInlineSpec = typeof spec === 'object';
     // A single-view bar chart whose y axis lists categories (e.g. sectors).
     function isCategoryBarChart(spec) {
       const y = spec.encoding && spec.encoding.y;
-      return !!y && (y.type === 'nominal' || y.type === 'ordinal') &&
-        !spec.facet && !spec.encoding.row && !spec.concat && !spec.hconcat && !spec.vconcat &&
-        hasBarMark(spec);
+      return (
+        !!y &&
+        (y.type === 'nominal' || y.type === 'ordinal') &&
+        !spec.facet &&
+        !spec.encoding.row &&
+        !spec.concat &&
+        !spec.hconcat &&
+        !spec.vconcat &&
+        hasBarMark(spec)
+      );
     }
 
     // Vega expression splitting a label at the last space before `n`
     // characters; the second line is ellipsized by labelLimit if still long.
     function wrapLabelExpr(n) {
-      const cut = "lastindexof(substring(datum.label, 0, " + n + "), ' ')";
-      return "length(datum.label) <= " + n + " || " + cut + " < 1 ? datum.label : " +
-        "[substring(datum.label, 0, " + cut + "), substring(datum.label, " + cut + " + 1)]";
+      const cut = 'lastindexof(substring(datum.label, 0, ' + n + "), ' ')";
+      return (
+        'length(datum.label) <= ' +
+        n +
+        ' || ' +
+        cut +
+        ' < 1 ? datum.label : ' +
+        '[substring(datum.label, 0, ' +
+        cut +
+        '), substring(datum.label, ' +
+        cut +
+        ' + 1)]'
+      );
     }
 
     async function loadFieldValues(spec, field) {
@@ -105,10 +127,16 @@ const isInlineSpec = typeof spec === 'object';
         let rows = spec.data && spec.data.values;
         if (!rows && spec.data && spec.data.url) {
           rows = window.vega.read(await window.vega.loader().load(spec.data.url), {
-            type: (spec.data.format && spec.data.format.type) || 'csv'
+            type: (spec.data.format && spec.data.format.type) || 'csv',
           });
         }
-        return Array.from(new Set((rows || []).map(function(row) { return String(row[field]); })));
+        return Array.from(
+          new Set(
+            (rows || []).map(function (row) {
+              return String(row[field]);
+            })
+          )
+        );
       } catch (error) {
         console.warn('Could not inspect chart labels:', error);
         return [];
@@ -122,9 +150,9 @@ const isInlineSpec = typeof spec === 'object';
       try {
         const text = await window.vega.loader().load(spec.data.url);
         const rows = window.vega.read(text, {
-        type: (spec.data.format && spec.data.format.type) || 'csv',
-        parse: 'auto'
-      });
+          type: (spec.data.format && spec.data.format.type) || 'csv',
+          parse: 'auto',
+        });
         return tools.categoricalLegendLabels(spec, rows);
       } catch (error) {
         console.warn('Could not inspect chart legend labels:', error);
@@ -134,17 +162,17 @@ const isInlineSpec = typeof spec === 'object';
 
     // Load Vega libraries dynamically (only once)
     function loadVegaLibraries() {
-      return new Promise(function(resolve, reject) {
+      return new Promise(function (resolve, reject) {
         if (window.vegaEmbed) {
           resolve();
           return;
         }
 
         const scripts = [
-        'https://cdn.jsdelivr.net/npm/vega@5.30.0',
-        'https://cdn.jsdelivr.net/npm/vega-lite@5.21.0',
-        'https://cdn.jsdelivr.net/npm/vega-embed@6.26.0'
-      ];
+          'https://cdn.jsdelivr.net/npm/vega@5.30.0',
+          'https://cdn.jsdelivr.net/npm/vega-lite@5.21.0',
+          'https://cdn.jsdelivr.net/npm/vega-embed@6.26.0',
+        ];
 
         function loadScript(index) {
           if (index >= scripts.length) {
@@ -153,14 +181,27 @@ const isInlineSpec = typeof spec === 'object';
           }
 
           // Check if already loaded
-          if (index === 0 && window.vega) { loadScript(1); return; }
-          if (index === 1 && window.vegaLite) { loadScript(2); return; }
-          if (index === 2 && window.vegaEmbed) { resolve(); return; }
+          if (index === 0 && window.vega) {
+            loadScript(1);
+            return;
+          }
+          if (index === 1 && window.vegaLite) {
+            loadScript(2);
+            return;
+          }
+          if (index === 2 && window.vegaEmbed) {
+            resolve();
+            return;
+          }
 
           const script = document.createElement('script');
           script.src = scripts[index];
-          script.onload = function() { loadScript(index + 1); };
-          script.onerror = function() { reject(new Error('Failed to load ' + scripts[index])); };
+          script.onload = function () {
+            loadScript(index + 1);
+          };
+          script.onerror = function () {
+            reject(new Error('Failed to load ' + scripts[index]));
+          };
           document.head.appendChild(script);
         }
 
@@ -175,25 +216,50 @@ const isInlineSpec = typeof spec === 'object';
       if (el.dataset.interactive !== 'true' || !config) return null;
       const controls = el.closest('.chart-controls');
       const hasYears = !!config.yearField;
-      const rows = window.vega.read(await window.vega.loader().load(spec.data.url), {type: 'csv', parse: 'auto'});
-      spec.data = {values: rows};
-      const years = hasYears ? Array.from(new Set(rows.map(function(row) { return +row[config.yearField]; }))).sort(function(a, b) { return a - b; }) : [];
-      const categories = Array.from(new Set(rows.map(function(row) { return row[config.categoryField]; }))).sort();
+      const rows = window.vega.read(await window.vega.loader().load(spec.data.url), { type: 'csv', parse: 'auto' });
+      spec.data = { values: rows };
+      const years = hasYears
+        ? Array.from(
+            new Set(
+              rows.map(function (row) {
+                return +row[config.yearField];
+              })
+            )
+          ).sort(function (a, b) {
+            return a - b;
+          })
+        : [];
+      const categories = Array.from(
+        new Set(
+          rows.map(function (row) {
+            return row[config.categoryField];
+          })
+        )
+      ).sort();
       const defaults = {};
-      spec.params.forEach(function(param) { defaults[param.name] = param.value; });
-      const state = el._explorerState || Object.assign({
-        selectedCategories: defaults.selectedCategories.slice(),
-        pending: Promise.resolve()
-      }, hasYears ? {yearStart: defaults.yearStart, yearEnd: defaults.yearEnd} : {});
+      spec.params.forEach(function (param) {
+        defaults[param.name] = param.value;
+      });
+      const state =
+        el._explorerState ||
+        Object.assign(
+          {
+            selectedCategories: defaults.selectedCategories.slice(),
+            pending: Promise.resolve(),
+          },
+          hasYears ? { yearStart: defaults.yearStart, yearEnd: defaults.yearEnd } : {}
+        );
       el._explorerState = state;
-      spec.params.forEach(function(param) { param.value = state[param.name]; });
+      spec.params.forEach(function (param) {
+        param.value = state[param.name];
+      });
       const start = controls.querySelector('[data-year-start]');
       const end = controls.querySelector('[data-year-end]');
       const options = controls.querySelector('.category-options');
       const picker = controls.querySelector('details');
       controls.querySelector('[data-category-title]').textContent = spec.encoding.color.title;
       options.replaceChildren();
-      categories.forEach(function(category) {
+      categories.forEach(function (category) {
         const label = document.createElement('label');
         const input = document.createElement('input');
         input.type = 'checkbox';
@@ -206,15 +272,17 @@ const isInlineSpec = typeof spec === 'object';
         options.append(label);
       });
       if (hasYears) {
-        [start, end].forEach(function(select) {
+        [start, end].forEach(function (select) {
           select.replaceChildren();
-          years.forEach(function(year) { select.add(new Option(String(year), String(year))); });
+          years.forEach(function (year) {
+            select.add(new Option(String(year), String(year)));
+          });
         });
       } else {
         controls.querySelector('[data-controls-section]').classList.add('no-years');
       }
       function decorateLegend() {
-        el.querySelectorAll('.role-legend-label text').forEach(function(label, index) {
+        el.querySelectorAll('.role-legend-label text').forEach(function (label, index) {
           const category = state.selectedCategories[index];
           label.setAttribute('tabindex', '0');
           label.setAttribute('role', 'button');
@@ -222,14 +290,16 @@ const isInlineSpec = typeof spec === 'object';
           label.setAttribute('aria-label', category);
           label.style.cursor = 'pointer';
           label.style.pointerEvents = 'all';
-          label.onclick = function() { hideCategory(category); };
+          label.onclick = function () {
+            hideCategory(category);
+          };
           const symbol = label.parentElement.parentElement.querySelector('.role-legend-symbol path');
           if (symbol) {
             symbol.style.pointerEvents = 'all';
             symbol.style.cursor = 'pointer';
             symbol.onclick = label.onclick;
           }
-          label.onkeydown = function(event) {
+          label.onkeydown = function (event) {
             if (event.key === 'Enter' || event.key === ' ') {
               event.preventDefault();
               hideCategory(category);
@@ -241,39 +311,52 @@ const isInlineSpec = typeof spec === 'object';
         if (hasYears) {
           start.value = String(state.yearStart);
           end.value = String(state.yearEnd);
-          Array.from(start.options).forEach(function(option) { option.disabled = +option.value > state.yearEnd; });
-          Array.from(end.options).forEach(function(option) { option.disabled = +option.value < state.yearStart; });
+          Array.from(start.options).forEach(function (option) {
+            option.disabled = +option.value > state.yearEnd;
+          });
+          Array.from(end.options).forEach(function (option) {
+            option.disabled = +option.value < state.yearStart;
+          });
         }
-        options.querySelectorAll('input').forEach(function(input) { input.checked = state.selectedCategories.includes(input.value); });
-        controls.querySelector('[data-selection-count]').textContent = state.selectedCategories.length + ' / ' + categories.length;
+        options.querySelectorAll('input').forEach(function (input) {
+          input.checked = state.selectedCategories.includes(input.value);
+        });
+        controls.querySelector('[data-selection-count]').textContent =
+          state.selectedCategories.length + ' / ' + categories.length;
         controls.querySelector('.chart-empty').hidden = state.selectedCategories.length !== 0;
       }
       function update() {
         syncControls();
-        state.pending = state.pending.then(async function() {
-          const view = chartViews[el.id];
-          if (!view) return;
-          let sig = view.signal('selectedCategories', state.selectedCategories.slice());
-          if (hasYears) sig = sig.signal('yearStart', state.yearStart).signal('yearEnd', state.yearEnd);
-          await sig.resize().runAsync();
-          decorateLegend();
-        }).catch(function(error) { console.error('Error updating chart filters:', error); });
+        state.pending = state.pending
+          .then(async function () {
+            const view = chartViews[el.id];
+            if (!view) return;
+            let sig = view.signal('selectedCategories', state.selectedCategories.slice());
+            if (hasYears) sig = sig.signal('yearStart', state.yearStart).signal('yearEnd', state.yearEnd);
+            await sig.resize().runAsync();
+            decorateLegend();
+          })
+          .catch(function (error) {
+            console.error('Error updating chart filters:', error);
+          });
       }
       function hideCategory(category) {
-        state.selectedCategories = state.selectedCategories.filter(function(value) { return value !== category; });
+        state.selectedCategories = state.selectedCategories.filter(function (value) {
+          return value !== category;
+        });
         update();
       }
-      controls.onchange = function(event) {
+      controls.onchange = function (event) {
         if (hasYears && event.target === start) state.yearStart = +start.value;
         else if (hasYears && event.target === end) state.yearEnd = +end.value;
         else if (event.target.type === 'checkbox') {
-          state.selectedCategories = categories.filter(function(category) {
+          state.selectedCategories = categories.filter(function (category) {
             return category === event.target.value ? event.target.checked : state.selectedCategories.includes(category);
           });
         }
         update();
       };
-      controls.onclick = function(event) {
+      controls.onclick = function (event) {
         const button = event.target.closest('button');
         if (!button) return;
         if (button.hasAttribute('data-select-all')) state.selectedCategories = categories.slice();
@@ -298,7 +381,7 @@ const isInlineSpec = typeof spec === 'object';
       function filterOptions() {
         const query = search.value.toLocaleLowerCase().trim();
         let matches = 0;
-        options.querySelectorAll('label').forEach(function(label) {
+        options.querySelectorAll('label').forEach(function (label) {
           label.hidden = !label.textContent.toLocaleLowerCase().includes(query);
           if (!label.hidden) matches++;
         });
@@ -306,17 +389,19 @@ const isInlineSpec = typeof spec === 'object';
       }
       search.oninput = filterOptions;
       filterOptions();
-      picker.ontoggle = function() {
-        if (picker.open) picker.querySelector('.category-panel').scrollIntoView({block: 'nearest'});
+      picker.ontoggle = function () {
+        if (picker.open) picker.querySelector('.category-panel').scrollIntoView({ block: 'nearest' });
       };
-      controls.onkeydown = function(event) {
+      controls.onkeydown = function (event) {
         if (event.key === 'Escape' && picker.open) {
           picker.open = false;
           picker.querySelector('summary').focus();
         }
       };
       syncControls();
-      controls.querySelectorAll('[data-controls-section]').forEach(function(section) { section.hidden = false; });
+      controls.querySelectorAll('[data-controls-section]').forEach(function (section) {
+        section.hidden = false;
+      });
       return decorateLegend;
     }
 
@@ -374,8 +459,8 @@ const isInlineSpec = typeof spec === 'object';
     // Debounced resize handler
     function handleResize() {
       if (resizeTimeout) clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(function() {
-        Object.keys(chartViews).forEach(function(chartId) {
+      resizeTimeout = setTimeout(function () {
+        Object.keys(chartViews).forEach(function (chartId) {
           const el = document.getElementById(chartId);
           if (el && chartViews[chartId]) {
             chartViews[chartId].finalize();
@@ -402,7 +487,7 @@ const isInlineSpec = typeof spec === 'object';
       }
       const legendTools = await legendLayoutTools;
 
-      charts.forEach(async function(el) {
+      charts.forEach(async function (el) {
         const chartId = el.id;
 
         // Skip if already rendered
@@ -415,7 +500,9 @@ const isInlineSpec = typeof spec === 'object';
         // Measure container width
         const containerWidth = el.offsetWidth;
         if (containerWidth < 100) {
-          setTimeout(function() { initVegaCharts(); }, 100);
+          setTimeout(function () {
+            initVegaCharts();
+          }, 100);
           return;
         }
 
@@ -450,7 +537,9 @@ const isInlineSpec = typeof spec === 'object';
             chartSpec.background = '#1e293b';
             chartSpec.config = chartSpec.config || {};
             chartSpec.config.axis = Object.assign({}, chartSpec.config.axis || {}, {
-              labelColor: '#cbd5e1', titleColor: '#e2e8f0', gridColor: '#475569'
+              labelColor: '#cbd5e1',
+              titleColor: '#e2e8f0',
+              gridColor: '#475569',
             });
           }
 
@@ -460,20 +549,20 @@ const isInlineSpec = typeof spec === 'object';
           chartSpec = Object.assign({}, chartSpec, {
             width: containerWidth,
             height: calculatedHeight,
-            padding: {"left": 5, "right": 5, "top": 5, "bottom": 0},
-            autosize: {"type": "fit", "contains": "padding"},
+            padding: { left: 5, right: 5, top: 5, bottom: 0 },
+            autosize: { type: 'fit', contains: 'padding' },
             config: Object.assign({}, existingConfig, {
               // Never let Vega's default general formatter switch large or
               // small quantitative values to scientific notation.
               numberFormat: decimalNumberFormat,
               legend: Object.assign({}, existingConfig.legend || {}, {
                 columns: legendLayout.columns,
-                labelLimit: legendLayout.labelLimit
+                labelLimit: legendLayout.labelLimit,
               }),
               range: Object.assign({}, existingConfig.range || {}, {
-                category: {scheme: "category10"}
-              })
-            })
+                category: { scheme: 'category10' },
+              }),
+            }),
           });
 
           if (!attachExplorer && isCategoryBarChart(chartSpec)) {
@@ -485,19 +574,27 @@ const isInlineSpec = typeof spec === 'object';
             const wrapChars = Math.max(14, Math.floor(labelWidth / 7.5));
             const yAxis = chartSpec.encoding.y.axis || {};
             const yLabels = await loadFieldValues(chartSpec, chartSpec.encoding.y.field);
-            const wraps = yLabels.some(function(label) { return label.length > wrapChars; });
-            chartSpec.encoding.y.axis = Object.assign(wraps ? {
-              labelExpr: wrapLabelExpr(wrapChars),
-              labelLineHeight: 15,
-            } : {}, yAxis, {labelLimit: Math.min(yAxis.labelLimit || labelWidth, labelWidth)});
-            chartSpec.height = {step: wraps ? 34 : 24};
-            chartSpec.autosize = {type: 'fit-x', contains: 'padding'};
+            const wraps = yLabels.some(function (label) {
+              return label.length > wrapChars;
+            });
+            chartSpec.encoding.y.axis = Object.assign(
+              wraps
+                ? {
+                    labelExpr: wrapLabelExpr(wrapChars),
+                    labelLineHeight: 15,
+                  }
+                : {},
+              yAxis,
+              { labelLimit: Math.min(yAxis.labelLimit || labelWidth, labelWidth) }
+            );
+            chartSpec.height = { step: wraps ? 34 : 24 };
+            chartSpec.autosize = { type: 'fit-x', contains: 'padding' };
           }
 
           if (attachExplorer) {
             // Fit the available width while allowing axes and the legend to
             // add height. Recompute layout whenever the selection changes.
-            chartSpec.autosize = {type: 'fit-x', contains: 'padding', resize: true};
+            chartSpec.autosize = { type: 'fit-x', contains: 'padding', resize: true };
             chartSpec.height = containerWidth < 480 ? 320 : Math.min(Math.max(containerWidth * 0.5, 380), 520);
             if (window.innerWidth >= 1024) {
               await document.fonts.ready;
@@ -509,52 +606,59 @@ const isInlineSpec = typeof spec === 'object';
               if (chartHeight >= 300) {
                 // Reserve space for the entire chart, including legend and
                 // axes, in the first desktop viewport. Controls follow below.
-                chartSpec.autosize = {type: 'fit', contains: 'padding', resize: true};
+                chartSpec.autosize = { type: 'fit', contains: 'padding', resize: true };
                 chartSpec.height = Math.min(600, chartHeight);
               }
             }
             const colorLegend = chartSpec.encoding.color.legend;
             if (colorLegend !== null && colorLegend !== false) {
               chartSpec.encoding.color.legend = Object.assign({}, colorLegend, {
-                orient: 'top', columns: legendLayout.columns, labelLimit: legendLayout.labelLimit,
-                rowPadding: 10, columnPadding: 18, labelFontSize: 14, offset: 20
+                orient: 'top',
+                columns: legendLayout.columns,
+                labelLimit: legendLayout.labelLimit,
+                rowPadding: 10,
+                columnPadding: 18,
+                labelFontSize: 14,
+                offset: 20,
               });
             }
             if (chartSpec.encoding.x.type !== 'nominal' && chartSpec.encoding.x.type !== 'ordinal') {
               chartSpec.encoding.x.axis = Object.assign({}, chartSpec.encoding.x.axis, {
-                tickCount: Math.max(3, Math.floor(containerWidth / 90))
+                tickCount: Math.max(3, Math.floor(containerWidth / 90)),
               });
             }
             if (containerWidth < 480) {
-              chartSpec.config.axis = Object.assign({}, chartSpec.config.axis, {labelFontSize: 12, titleFontSize: 14});
+              chartSpec.config.axis = Object.assign({}, chartSpec.config.axis, {
+                labelFontSize: 12,
+                titleFontSize: 14,
+              });
               // Long category labels squeeze the plot and clip centered axis
               // titles on narrow screens; cap the y-axis label width so the
               // plot keeps room. Harmless for quantitative y-axes (short labels).
               const yAxis = (chartSpec.encoding.y && chartSpec.encoding.y.axis) || {};
               chartSpec.encoding.y = Object.assign({}, chartSpec.encoding.y, {
-                axis: Object.assign({}, yAxis, {labelLimit: Math.min(yAxis.labelLimit || 250, 150)})
+                axis: Object.assign({}, yAxis, { labelLimit: Math.min(yAxis.labelLimit || 250, 150) }),
               });
             }
           }
 
           const options = {
-          actions: {
-            export: { png: true, svg: true },
-            source: false,
-            editor: false,
-          },
-          theme: document.documentElement.classList.contains('dark') ? 'dark' : 'vox',
-          renderer: 'svg',
-          // 4x resolution for PNG exports (default scaleFactor 1 looks blurry)
-          scaleFactor: 4,
-        };
+            actions: {
+              export: { png: true, svg: true },
+              source: false,
+              editor: false,
+            },
+            theme: document.documentElement.classList.contains('dark') ? 'dark' : 'vox',
+            renderer: 'svg',
+            // 4x resolution for PNG exports (default scaleFactor 1 looks blurry)
+            scaleFactor: 4,
+          };
 
           const result = await window.vegaEmbed('#' + chartId, chartSpec, options);
           chartViews[chartId] = result.view;
           if (attachLinkedYear) await attachLinkedYear(result.view);
           if (attachExplorer) attachExplorer(result.view);
           el.setAttribute('data-rendered', 'true');
-
         } catch (error) {
           console.error('Error rendering Vega chart:', error);
           el.innerHTML = '<div class="text-red-600 p-4">Error loading chart: ' + error.message + '</div>';
@@ -566,7 +670,7 @@ const isInlineSpec = typeof spec === 'object';
 
     // One delegated handler also covers charts reached through Astro navigation.
     function dismissOutsidePicker(event) {
-      document.querySelectorAll('.vega-chart-container .category-picker[open]').forEach(function(picker) {
+      document.querySelectorAll('.vega-chart-container .category-picker[open]').forEach(function (picker) {
         if (!picker.contains(event.target)) picker.open = false;
       });
     }
@@ -587,8 +691,10 @@ const isInlineSpec = typeof spec === 'object';
     }
 
     // Re-run on Astro page transitions
-    document.addEventListener('astro:page-load', function() {
-      Object.keys(chartViews).forEach(function (id) { chartViews[id].finalize(); });
+    document.addEventListener('astro:page-load', function () {
+      Object.keys(chartViews).forEach(function (id) {
+        chartViews[id].finalize();
+      });
       chartViews = {};
       linkedYears = {};
       initVegaCharts();

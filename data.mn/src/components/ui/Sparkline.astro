@@ -52,24 +52,15 @@ const areaPath = linePath + ` L ${points[points.length - 1].x},${height} L 0,${h
 const gradientId = `sparkline-gradient-${Math.random().toString(36).substr(2, 9)}`;
 ---
 
-<svg
-  viewBox={`0 0 ${width} ${height}`}
-  class:list={['sparkline', className]}
-  preserveAspectRatio="none"
->
+<svg viewBox={`0 0 ${width} ${height}`} class:list={['sparkline', className]} preserveAspectRatio="none">
   <defs>
     <linearGradient id={gradientId} x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style={`stop-color: ${color}; stop-opacity: 0.3`} />
-      <stop offset="100%" style={`stop-color: ${color}; stop-opacity: 0.05`} />
+      <stop offset="0%" style={`stop-color: ${color}; stop-opacity: 0.3`}></stop>
+      <stop offset="100%" style={`stop-color: ${color}; stop-opacity: 0.05`}></stop>
     </linearGradient>
   </defs>
 
-  {showArea && (
-    <path
-      d={areaPath}
-      fill={`url(#${gradientId})`}
-    />
-  )}
+  {showArea && <path d={areaPath} fill={`url(#${gradientId})`} />}
 
   <path
     d={linePath}
@@ -77,8 +68,7 @@ const gradientId = `sparkline-gradient-${Math.random().toString(36).substr(2, 9)
     stroke={color}
     stroke-width={strokeWidth}
     stroke-linecap="round"
-    stroke-linejoin="round"
-  />
+    stroke-linejoin="round"></path>
 </svg>
 
 <style>

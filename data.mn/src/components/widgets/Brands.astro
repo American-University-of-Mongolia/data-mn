@@ -29,7 +29,12 @@ const {
             image.src && (
               <div class="flex justify-center items-center py-2 px-3">
                 {image.href ? (
-                  <a href={image.href} target="_blank" rel="noopener noreferrer" class="hover:opacity-100 transition-opacity">
+                  <a
+                    href={image.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:opacity-100 transition-opacity"
+                  >
                     <img
                       src={typeof image.src === 'string' ? image.src : image.src.src}
                       alt={image.alt || ''}

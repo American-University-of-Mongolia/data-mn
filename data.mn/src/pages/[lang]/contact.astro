@@ -4,10 +4,7 @@ import { Icon } from 'astro-icon/components';
 import { useTranslations, type Language } from '~/i18n';
 
 export const getStaticPaths = () => {
-  return [
-    { params: { lang: 'en' } },
-    { params: { lang: 'mn' } },
-  ];
+  return [{ params: { lang: 'en' } }, { params: { lang: 'mn' } }];
 };
 
 const { lang } = Astro.params;
@@ -41,7 +38,9 @@ const metadata = {
         </p>
 
         <!-- Email Card -->
-        <div class="inline-block rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow-lg p-8 md:p-10">
+        <div
+          class="inline-block rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow-lg p-8 md:p-10"
+        >
           <p class="text-sm text-muted dark:text-slate-400 uppercase tracking-wider mb-3">
             {t('contact.emailLabel')}
           </p>

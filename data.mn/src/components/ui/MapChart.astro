@@ -24,6 +24,7 @@ export interface Props {
 const { spec, title, caption, aspectRatio = 0.5 } = Astro.props;
 const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
 ---
+
 <!-- Static Leaflet CSS: part of the swapped page body, so it survives
      Astro ClientRouter navigation (runtime-injected head links don't). -->
 <link data-leaflet-css rel="stylesheet" href="/vendor/leaflet/leaflet.css" />
@@ -45,7 +46,7 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
 </div>
 
 <script is:inline>
-  (function() {
+  (function () {
     // Prevent multiple initializations
     if (window._leafletMapInitialized) return;
     window._leafletMapInitialized = true;
@@ -55,11 +56,22 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
 
     // Vega-compatible palettes (d3 schemeOranges[9] + category10)
     const ORANGES = ['#fff5eb', '#fee6ce', '#fdd0a2', '#fdae6b', '#fd8d3c', '#f16913', '#d94801', '#a63603', '#7f2704'];
-    const CATEGORY10 = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'];
+    const CATEGORY10 = [
+      '#1f77b4',
+      '#ff7f0e',
+      '#2ca02c',
+      '#d62728',
+      '#9467bd',
+      '#8c564b',
+      '#e377c2',
+      '#7f7f7f',
+      '#bcbd22',
+      '#17becf',
+    ];
     const NULL_COLOR = '#e5e7eb';
 
     function loadLeaflet() {
-      return new Promise(function(resolve, reject) {
+      return new Promise(function (resolve, reject) {
         // CSS first: re-ensure the stylesheet even when window.L already
         // exists — Astro swaps drop runtime-injected head elements.
         if (!document.querySelector('link[data-leaflet-css]')) {
@@ -77,11 +89,15 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
           window._leafletLoading.then(resolve, reject);
           return;
         }
-        window._leafletLoading = new Promise(function(res2, rej2) {
+        window._leafletLoading = new Promise(function (res2, rej2) {
           const script = document.createElement('script');
           script.src = '/vendor/leaflet/leaflet.js';
-          script.onload = function() { res2(); };
-          script.onerror = function() { rej2(new Error('Failed to load Leaflet')); };
+          script.onload = function () {
+            res2();
+          };
+          script.onerror = function () {
+            rej2(new Error('Failed to load Leaflet'));
+          };
           document.head.appendChild(script);
         });
         window._leafletLoading.then(resolve, reject);
@@ -98,8 +114,12 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
         const ch = text[i];
         if (inQuotes) {
           if (ch === '"') {
-            if (text[i + 1] === '"') { field += '"'; i++; }
-            else { inQuotes = false; }
+            if (text[i + 1] === '"') {
+              field += '"';
+              i++;
+            } else {
+              inQuotes = false;
+            }
           } else {
             field += ch;
           }
@@ -122,19 +142,17 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
         rows.push(row);
       }
       const header = rows.shift() || [];
-      return rows.map(function(r) {
+      return rows.map(function (r) {
         const obj = {};
-        header.forEach(function(h, idx) { obj[h] = r[idx] !== undefined ? r[idx] : ''; });
+        header.forEach(function (h, idx) {
+          obj[h] = r[idx] !== undefined ? r[idx] : '';
+        });
         return obj;
       });
     }
 
     function escapeHtml(value) {
-      return String(value)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
+      return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     }
 
     // The small subset of d3 formats our specs use
@@ -144,7 +162,7 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
       const num = parseFloat(value);
       if (isNaN(num)) return String(value);
       if (format === ',.1f') {
-        return num.toLocaleString('en-US', {minimumFractionDigits: 1, maximumFractionDigits: 1});
+        return num.toLocaleString('en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
       }
       return Math.round(num).toLocaleString('en-US');
     }
@@ -159,7 +177,9 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
       const f = t - i;
       const a = hexToRgb(ORANGES[i]);
       const b = hexToRgb(ORANGES[i + 1]);
-      const rgb = a.map(function(v, idx) { return Math.round(v + (b[idx] - v) * f); });
+      const rgb = a.map(function (v, idx) {
+        return Math.round(v + (b[idx] - v) * f);
+      });
       return 'rgb(' + rgb.join(',') + ')';
     }
 
@@ -179,11 +199,14 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
       for (let i = 0; i < attempts; i++) {
         try {
           const res = await fetch(url);
-          if (!res.ok) throw new Error(res.statusText || ('HTTP ' + res.status));
+          if (!res.ok) throw new Error(res.statusText || 'HTTP ' + res.status);
           return res;
         } catch (err) {
           lastError = err;
-          if (i + 1 < attempts) await new Promise(function(r) { setTimeout(r, 1500); });
+          if (i + 1 < attempts)
+            await new Promise(function (r) {
+              setTimeout(r, 1500);
+            });
         }
       }
       throw new Error(label + ': ' + (lastError && lastError.message ? lastError.message : lastError));
@@ -210,7 +233,7 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
       const joinedByKey = {};
       if (csvUrl && joinKey) {
         const csvRes = await fetchWithRetry(csvUrl, 'Failed to load values');
-        parseCSV(await csvRes.text()).forEach(function(row) {
+        parseCSV(await csvRes.text()).forEach(function (row) {
           joinedByKey[String(row[joinKey])] = row;
         });
       }
@@ -222,7 +245,7 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
 
       // Build the color scale from joined values
       const values = [];
-      geojson.features.forEach(function(feature) {
+      geojson.features.forEach(function (feature) {
         if (!colorField) return;
         const joined = lookupRef ? joinedByKey[String(resolveField(lookupRef, feature.properties, null))] : null;
         const v = resolveField(colorField, feature.properties, joined);
@@ -247,38 +270,45 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
 
       el.innerHTML = '';
       const map = window.L.map(el, {
-      scrollWheelZoom: true,
-      zoomSnap: 0.5,
-      zoomDelta: 0.5,
-    });
+        scrollWheelZoom: true,
+        zoomSnap: 0.5,
+        zoomDelta: 0.5,
+      });
       mapViews[el.id] = map;
 
       function tooltipFor(props, joined) {
-        return tooltips.map(function(t) {
-          const raw = resolveField(t.field, props, joined);
-          return '<div><strong>' + escapeHtml(t.title || t.field) + ':</strong> ' +
-            escapeHtml(formatValue(raw, t.format)) + '</div>';
-        }).join('');
+        return tooltips
+          .map(function (t) {
+            const raw = resolveField(t.field, props, joined);
+            return (
+              '<div><strong>' +
+              escapeHtml(t.title || t.field) +
+              ':</strong> ' +
+              escapeHtml(formatValue(raw, t.format)) +
+              '</div>'
+            );
+          })
+          .join('');
       }
 
       const layer = window.L.geoJSON(geojson, {
-      style: function(feature) {
-        const joined = lookupRef ? joinedByKey[String(resolveField(lookupRef, feature.properties, null))] : null;
-        return {
-          fillColor: colorFor(feature.properties, joined),
-          fillOpacity: 1,
-          color: mark.stroke || '#ffffff',
-          weight: mark.strokeWidth !== undefined ? mark.strokeWidth : 1,
-        };
-      },
-      onEachFeature: function(feature, shapeLayer) {
-        if (!tooltips.length) return;
-        const joined = lookupRef ? joinedByKey[String(resolveField(lookupRef, feature.properties, null))] : null;
-        shapeLayer.bindTooltip(tooltipFor(feature.properties, joined), {sticky: true});
-      },
-    }).addTo(map);
+        style: function (feature) {
+          const joined = lookupRef ? joinedByKey[String(resolveField(lookupRef, feature.properties, null))] : null;
+          return {
+            fillColor: colorFor(feature.properties, joined),
+            fillOpacity: 1,
+            color: mark.stroke || '#ffffff',
+            weight: mark.strokeWidth !== undefined ? mark.strokeWidth : 1,
+          };
+        },
+        onEachFeature: function (feature, shapeLayer) {
+          if (!tooltips.length) return;
+          const joined = lookupRef ? joinedByKey[String(resolveField(lookupRef, feature.properties, null))] : null;
+          shapeLayer.bindTooltip(tooltipFor(feature.properties, joined), { sticky: true });
+        },
+      }).addTo(map);
       const initialBounds = layer.getBounds();
-      map.fitBounds(initialBounds, {padding: [8, 8]});
+      map.fitBounds(initialBounds, { padding: [8, 8] });
 
       // Plain-text attribution: Leaflet's default prefix carries a
       // Ukrainian flag emoji, which we don't want on data.mn.
@@ -288,8 +318,8 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
       const isMn = document.documentElement.lang === 'mn';
       const resetLabel = isMn ? 'Шинэчлэх' : 'Reset';
       const resetTitle = isMn ? 'Харагдацыг шинэчлэх' : 'Reset view';
-      const resetControl = window.L.control({position: 'bottomleft'});
-      resetControl.onAdd = function() {
+      const resetControl = window.L.control({ position: 'bottomleft' });
+      resetControl.onAdd = function () {
         const container = window.L.DomUtil.create('div', 'leaflet-bar leaflet-control');
         const btn = window.L.DomUtil.create('a', '', container);
         btn.href = '#';
@@ -297,11 +327,12 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
         btn.setAttribute('role', 'button');
         btn.setAttribute('aria-label', resetTitle);
         btn.textContent = resetLabel;
-        btn.style.cssText = 'display: block; padding: 0 10px; width: auto; height: 30px; line-height: 30px; font-size: 12px; color: #111;';
-        window.L.DomEvent.on(btn, 'click', function(e) {
+        btn.style.cssText =
+          'display: block; padding: 0 10px; width: auto; height: 30px; line-height: 30px; font-size: 12px; color: #111;';
+        window.L.DomEvent.on(btn, 'click', function (e) {
           window.L.DomEvent.preventDefault(e);
           window.L.DomEvent.stopPropagation(e);
-          map.fitBounds(initialBounds, {padding: [8, 8]});
+          map.fitBounds(initialBounds, { padding: [8, 8] });
         });
         window.L.DomEvent.disableClickPropagation(container);
         window.L.DomEvent.disableScrollPropagation(container);
@@ -311,18 +342,36 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
 
       // Legend (top-right floating card)
       if (!colorValue && values.length) {
-        const legend = window.L.control({position: 'topright'});
-        legend.onAdd = function() {
+        const legend = window.L.control({ position: 'topright' });
+        legend.onAdd = function () {
           const div = window.L.DomUtil.create('div');
-          div.style.cssText = 'background: rgba(255,255,255,0.92); padding: 8px 10px; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.2); font-size: 12px; line-height: 1.5; max-height: 220px; overflow: auto; color: #111;';
-          let html = legendTitle ? '<div style="font-weight: 600; margin-bottom: 4px;">' + escapeHtml(legendTitle) + '</div>' : '';
+          div.style.cssText =
+            'background: rgba(255,255,255,0.92); padding: 8px 10px; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.2); font-size: 12px; line-height: 1.5; max-height: 220px; overflow: auto; color: #111;';
+          let html = legendTitle
+            ? '<div style="font-weight: 600; margin-bottom: 4px;">' + escapeHtml(legendTitle) + '</div>'
+            : '';
           if (colorType === 'quantitative') {
-            html += '<div style="height: 10px; border-radius: 2px; background: linear-gradient(to right, ' + ORANGES.join(',') + ');"></div>' +
-              '<div style="display: flex; justify-content: space-between;"><span>' + escapeHtml(formatValue(domainMin)) + '</span><span>' + escapeHtml(formatValue(domainMax)) + '</span></div>';
+            html +=
+              '<div style="height: 10px; border-radius: 2px; background: linear-gradient(to right, ' +
+              ORANGES.join(',') +
+              ');"></div>' +
+              '<div style="display: flex; justify-content: space-between;"><span>' +
+              escapeHtml(formatValue(domainMin)) +
+              '</span><span>' +
+              escapeHtml(formatValue(domainMax)) +
+              '</span></div>';
           } else {
-            html += domain.map(function(v, i) {
-              return '<div style="white-space: nowrap;"><span style="display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 5px; background: ' + CATEGORY10[i % CATEGORY10.length] + ';"></span>' + escapeHtml(v) + '</div>';
-            }).join('');
+            html += domain
+              .map(function (v, i) {
+                return (
+                  '<div style="white-space: nowrap;"><span style="display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 5px; background: ' +
+                  CATEGORY10[i % CATEGORY10.length] +
+                  ';"></span>' +
+                  escapeHtml(v) +
+                  '</div>'
+                );
+              })
+              .join('');
           }
           div.innerHTML = html;
           return div;
@@ -333,8 +382,8 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
 
     function handleResize() {
       if (resizeTimeout) clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(function() {
-        Object.keys(mapViews).forEach(function(mapId) {
+      resizeTimeout = setTimeout(function () {
+        Object.keys(mapViews).forEach(function (mapId) {
           if (document.getElementById(mapId)) mapViews[mapId].invalidateSize();
         });
       }, 250);
@@ -351,7 +400,7 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
         return;
       }
 
-      maps.forEach(async function(el) {
+      maps.forEach(async function (el) {
         if (el.getAttribute('data-rendered') === 'true' || el.dataset.rendering === 'true') return;
         if (el.offsetWidth < 100) {
           setTimeout(initLeafletMaps, 100);
@@ -364,11 +413,15 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
         } catch (error) {
           console.error('Error rendering map:', error);
           const retryLabel = document.documentElement.lang === 'mn' ? 'Дахин оролдох' : 'Retry';
-          el.innerHTML = '<div class="text-red-600 p-4">Error loading map: ' + escapeHtml(error.message) +
-            ' <button type="button" class="underline" data-retry>' + retryLabel + '</button></div>';
+          el.innerHTML =
+            '<div class="text-red-600 p-4">Error loading map: ' +
+            escapeHtml(error.message) +
+            ' <button type="button" class="underline" data-retry>' +
+            retryLabel +
+            '</button></div>';
           const retryBtn = el.querySelector('[data-retry]');
           if (retryBtn) {
-            retryBtn.addEventListener('click', function() {
+            retryBtn.addEventListener('click', function () {
               el.removeAttribute('data-rendered');
               initLeafletMaps();
             });
@@ -390,9 +443,13 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
       initLeafletMaps();
     }
 
-    document.addEventListener('astro:page-load', function() {
-      Object.keys(mapViews).forEach(function(mapId) {
-        try { mapViews[mapId].remove(); } catch { /* already gone */ }
+    document.addEventListener('astro:page-load', function () {
+      Object.keys(mapViews).forEach(function (mapId) {
+        try {
+          mapViews[mapId].remove();
+        } catch {
+          /* already gone */
+        }
       });
       mapViews = {};
       initLeafletMaps();

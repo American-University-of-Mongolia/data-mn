@@ -19,13 +19,11 @@ const { opacity, class: className } = Astro.props;
 ---
 
 <div
-  class:list={[
-    'grain-overlay pointer-events-none absolute inset-0',
-    className,
-  ]}
+  class:list={['grain-overlay pointer-events-none absolute inset-0', className]}
   style={opacity ? `--grain-opacity: ${opacity}` : undefined}
   aria-hidden="true"
-/>
+>
+</div>
 
 <style>
   .grain-overlay {

@@ -20,3 +20,7 @@ public/datasets
 
 # Claude Code writes its own settings file
 .claude
+
+# prettier-plugin-astro rewrites the empty <select>s in the toolbar
+# expression as <select />, which Astro can't compile.
+src/components/ui/ChartControls.astro

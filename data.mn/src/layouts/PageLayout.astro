@@ -84,11 +84,13 @@ const footerData = {
 ---
 
 <Layout metadata={metadata}>
-  {showAnnouncement && (
-    <slot name="announcement">
-      <Announcement />
-    </slot>
-  )}
+  {
+    showAnnouncement && (
+      <slot name="announcement">
+        <Announcement />
+      </slot>
+    )
+  }
   <slot name="header">
     <Header {...headerData} lang={currentLang} homeUrl={homeUrl} isSticky showToggleTheme />
   </slot>

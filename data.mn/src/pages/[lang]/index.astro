@@ -16,10 +16,7 @@ const t = useTranslations(currentLang);
 
 // Add getStaticPaths for static generation
 export const getStaticPaths = () => {
-  return [
-    { params: { lang: 'en' } },
-    { params: { lang: 'mn' } },
-  ];
+  return [{ params: { lang: 'en' } }, { params: { lang: 'mn' } }];
 };
 
 const metadata = {
@@ -28,9 +25,7 @@ const metadata = {
 };
 
 // Get content counts - filter by language
-const allData = await getCollection('data', ({ id, data }) =>
-  id.startsWith(`${currentLang}/`) && data.draft !== true
-);
+const allData = await getCollection('data', ({ id, data }) => id.startsWith(`${currentLang}/`) && data.draft !== true);
 
 // Get trending/featured data (most recent 6)
 const trendingData = allData
@@ -61,13 +56,19 @@ const popularTopics = generatedCategories.map((category) => ({
       class="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-500"
       style="background-image: url('/images/hero/hero-1.webp');"
       aria-hidden="true"
-    ></div>
+    >
+    </div>
 
     <!-- Gradient Overlay - dark at top for text readability -->
-    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 via-50% to-transparent" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 via-50% to-transparent" aria-hidden="true">
+    </div>
 
     <!-- Bottom fade to page background for seamless transition -->
-    <div class="absolute inset-x-0 bottom-0 h-32 md:h-40 bg-gradient-to-t from-white dark:from-slate-900 to-transparent" aria-hidden="true"></div>
+    <div
+      class="absolute inset-x-0 bottom-0 h-32 md:h-40 bg-gradient-to-t from-white dark:from-slate-900 to-transparent"
+      aria-hidden="true"
+    >
+    </div>
 
     <!-- Content - centered vertically -->
     <div class="relative flex-1 flex items-center max-w-7xl mx-auto px-4 sm:px-6 w-full">
@@ -79,11 +80,13 @@ const popularTopics = generatedCategories.map((category) => ({
             {t('home.hero.title')}
           </h1>
           <div class="max-w-3xl mx-auto">
-            {/* Subtitle commented out - may not be needed
+            {
+              /* Subtitle commented out - may not be needed
             <p class="text-xl md:text-2xl text-white/90 mb-10 drop-shadow-md font-light">
               {t('home.hero.subtitle')}
             </p>
-            */}
+            */
+            }
 
             <!-- Search Box with entrance animation -->
             <div class="max-w-2xl mx-auto hero-search">
@@ -111,7 +114,7 @@ const popularTopics = generatedCategories.map((category) => ({
 
   <!-- Random Hero Image Selection -->
   <script is:inline>
-    (function() {
+    (function () {
       const heroImages = [
         '/images/hero/hero-1.webp',
         '/images/hero/hero-2.webp',
@@ -159,42 +162,45 @@ const popularTopics = generatedCategories.map((category) => ({
           // Auto-derive thumbnail URL from slug (same convention as GridCards)
           const thumbnailUrl = `/thumbnails/${slug}-${currentLang}.webp`;
           return (
-          <a
-            href={`/${currentLang}/data/${slug}`}
-            class="group relative flex items-center gap-4 p-4 bg-white dark:bg-slate-900 rounded-lg border border-gray-200 dark:border-slate-800 hover:border-primary dark:hover:border-primary transition-all duration-200 hover:shadow-[0_8px_20px_-6px_rgba(0,0,0,0.12)] dark:hover:shadow-[0_8px_20px_-6px_rgba(0,0,0,0.35)] hover:-translate-y-0.5 motion-safe:opacity-0 motion-safe:animate-fade"
-            style={`animation-delay: ${index * 75}ms`}
-          >
-            {/* Chart thumbnail from auto-generated WebP (16:9 aspect ratio) */}
-            <div class="relative w-28 flex-shrink-0 overflow-hidden rounded-lg bg-gradient-to-br from-primary/10 to-primary/5">
-              <div class="aspect-video">
-                <img
-                  src={thumbnailUrl}
-                  alt={item.data.title}
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                  width={112}
-                  height={63}
-                  loading="lazy"
-                  decoding="async"
-                  onerror="this.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';"
-                />
+            <a
+              href={`/${currentLang}/data/${slug}`}
+              class="group relative flex items-center gap-4 p-4 bg-white dark:bg-slate-900 rounded-lg border border-gray-200 dark:border-slate-800 hover:border-primary dark:hover:border-primary transition-all duration-200 hover:shadow-[0_8px_20px_-6px_rgba(0,0,0,0.12)] dark:hover:shadow-[0_8px_20px_-6px_rgba(0,0,0,0.35)] hover:-translate-y-0.5 motion-safe:opacity-0 motion-safe:animate-fade"
+              style={`animation-delay: ${index * 75}ms`}
+            >
+              {/* Chart thumbnail from auto-generated WebP (16:9 aspect ratio) */}
+              <div class="relative w-28 flex-shrink-0 overflow-hidden rounded-lg bg-gradient-to-br from-primary/10 to-primary/5">
+                <div class="aspect-video">
+                  <img
+                    src={thumbnailUrl}
+                    alt={item.data.title}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                    width={112}
+                    height={63}
+                    loading="lazy"
+                    decoding="async"
+                    onerror="this.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';"
+                  />
+                </div>
+                {/* Fallback icon if thumbnail fails to load */}
+                <div class="absolute inset-0 items-center justify-center hidden">
+                  <Icon name="tabler:chart-bar" class="w-8 h-8 text-primary" />
+                </div>
               </div>
-              {/* Fallback icon if thumbnail fails to load */}
-              <div class="absolute inset-0 items-center justify-center hidden">
-                <Icon name="tabler:chart-bar" class="w-8 h-8 text-primary" />
+
+              <div class="flex-1 min-w-0">
+                <h3 class="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary transition-colors line-clamp-2">
+                  {item.data.title}
+                </h3>
+                {item.data.category && (
+                  <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">{item.data.category}</p>
+                )}
               </div>
-            </div>
 
-            <div class="flex-1 min-w-0">
-              <h3 class="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary transition-colors line-clamp-2">
-                {item.data.title}
-              </h3>
-              {item.data.category && (
-                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">{item.data.category}</p>
-              )}
-            </div>
-
-            <Icon name="tabler:chevron-right" class="w-5 h-5 text-gray-400 group-hover:text-primary transition-colors flex-shrink-0" />
-          </a>
+              <Icon
+                name="tabler:chevron-right"
+                class="w-5 h-5 text-gray-400 group-hover:text-primary transition-colors flex-shrink-0"
+              />
+            </a>
           );
         })
       }
@@ -240,7 +246,8 @@ const popularTopics = generatedCategories.map((category) => ({
     </div>
   </WidgetWrapper>
 
-  {/* <!-- TEMPORARILY HIDDEN - Featured Reports Section *******************
+  {
+    /* <!-- TEMPORARILY HIDDEN - Featured Reports Section *******************
   To re-enable, also restore the Image import and featuredReports (the 4 most
   recent reports by publishDate) in the frontmatter.
   <section class="relative not-prose scroll-mt-[72px] overflow-hidden">
@@ -322,14 +329,18 @@ const popularTopics = generatedCategories.map((category) => ({
       </div>
     </div>
   </section>
-  --> */}
+  --> */
+  }
 
   <!-- Latest Insights Section ******************* -->
   <section class="relative not-prose scroll-mt-[72px] overflow-hidden">
     <!-- Textured background with gradient glow -->
     <div class="absolute inset-0 bg-dark dark:bg-transparent" aria-hidden="true">
       <!-- Radial gradient glows for atmosphere -->
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(0,82,204,0.15)_0%,transparent_50%),radial-gradient(ellipse_at_80%_80%,rgba(212,175,55,0.08)_0%,transparent_50%)]"></div>
+      <div
+        class="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(0,82,204,0.15)_0%,transparent_50%),radial-gradient(ellipse_at_80%_80%,rgba(212,175,55,0.08)_0%,transparent_50%)]"
+      >
+      </div>
       <!-- Grain overlay for texture -->
       <GrainOverlay opacity={0.04} />
     </div>

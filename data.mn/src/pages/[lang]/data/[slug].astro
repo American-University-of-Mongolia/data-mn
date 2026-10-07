@@ -58,12 +58,15 @@ const labels = {
       <!-- Breadcrumb -->
       <nav class="text-sm mb-2">
         <a href={`/${currentLang}/data`} class="text-primary hover:underline">{t('nav.data')}</a>
-        {category && (
-          <>
-            <span class="text-gray-400 mx-2">›</span>
-            <a href={`/${currentLang}/data?category=${category}`} class="text-primary hover:underline">{category}</a>
-          </>
-        )}
+        {
+          category &&
+            // Keep the link text inline: line breaks inside the link render as spaces.
+            // prettier-ignore
+            <>
+              <span class="text-gray-400 mx-2">›</span>
+              <a href={`/${currentLang}/data?category=${category}`} class="text-primary hover:underline">{category}</a>
+            </>
+        }
       </nav>
 
       <!-- Title -->
@@ -83,7 +86,9 @@ const labels = {
       <div class="flex-1 min-w-0">
         <!-- Chart Container (from MDX) -->
         <div class="bg-white dark:bg-slate-800 rounded-lg border border-gray-200 dark:border-slate-700 p-4">
-          <div class="prose prose-sm dark:prose-invert max-w-none [&_.vega-chart-container]:my-0 [&>p]:hidden [&_h3]:hidden [&_.data-download-section]:hidden">
+          <div
+            class="prose prose-sm dark:prose-invert max-w-none [&_.vega-chart-container]:my-0 [&>p]:hidden [&_h3]:hidden [&_.data-download-section]:hidden"
+          >
             <Content />
           </div>
         </div>
@@ -91,92 +96,104 @@ const labels = {
 
       <!-- Right: Sidebar -->
       <aside class:list={['flex-shrink-0', { 'lg:w-72': !wideChart }]}>
-        <div class:list={['bg-gray-50 dark:bg-slate-800 rounded-lg border border-gray-200 dark:border-slate-700 p-4', wideChart ? 'grid gap-5 sm:grid-cols-2' : 'space-y-4 sticky top-4']}>
+        <div
+          class:list={[
+            'bg-gray-50 dark:bg-slate-800 rounded-lg border border-gray-200 dark:border-slate-700 p-4',
+            wideChart ? 'grid gap-5 sm:grid-cols-2' : 'space-y-4 sticky top-4',
+          ]}
+        >
           <!-- Download Section -->
-          {dataFiles && dataFiles.length > 0 && (
-            <div>
-              <h3 class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">
-                {labels.download}
-              </h3>
-              <div class="flex flex-wrap gap-2">
-                {/* Sort files: GeoJSON first, then Excel, then CSV */}
-                {[...dataFiles].sort((a, b) => {
-                  const order = { geojson: 0, xlsx: 1, xls: 2, csv: 3 };
-                  return (order[a.format.toLowerCase()] ?? 99) - (order[b.format.toLowerCase()] ?? 99);
-                }).map((file) => {
-                  const format = file.format.toLowerCase();
-                  const isExcel = format === 'xlsx' || format === 'xls';
-                  const isGeojson = format === 'geojson';
-                  const iconName = isExcel ? 'tabler:table' : isGeojson ? 'tabler:map' : 'tabler:file-text';
-                  const shortLabel = isExcel ? 'Excel' : isGeojson ? 'GeoJSON' : 'Text/CSV';
-                  const label = file.label ?? (wideChart && file.description ? file.description : shortLabel);
-                  return (
-                    <div>
-                      <a
-                        href={file.path}
-                        download
-                        class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 rounded hover:border-primary hover:text-primary transition-colors"
-                      >
-                        <Icon name={iconName} class="w-4 h-4" />
-                        {label}
-                      </a>
-                      {file.label && file.description && (
-                        <p class="mt-1 text-xs leading-relaxed text-gray-500 dark:text-gray-400">
-                          {file.description}
-                        </p>
-                      )}
-                    </div>
-                  );
-                })}
+          {
+            dataFiles && dataFiles.length > 0 && (
+              <div>
+                <h3 class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">
+                  {labels.download}
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  {/* Sort files: GeoJSON first, then Excel, then CSV */}
+                  {[...dataFiles]
+                    .sort((a, b) => {
+                      const order = { geojson: 0, xlsx: 1, xls: 2, csv: 3 };
+                      return (order[a.format.toLowerCase()] ?? 99) - (order[b.format.toLowerCase()] ?? 99);
+                    })
+                    .map((file) => {
+                      const format = file.format.toLowerCase();
+                      const isExcel = format === 'xlsx' || format === 'xls';
+                      const isGeojson = format === 'geojson';
+                      const iconName = isExcel ? 'tabler:table' : isGeojson ? 'tabler:map' : 'tabler:file-text';
+                      const shortLabel = isExcel ? 'Excel' : isGeojson ? 'GeoJSON' : 'Text/CSV';
+                      const label = file.label ?? (wideChart && file.description ? file.description : shortLabel);
+                      return (
+                        <div>
+                          <a
+                            href={file.path}
+                            download
+                            class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 rounded hover:border-primary hover:text-primary transition-colors"
+                          >
+                            <Icon name={iconName} class="w-4 h-4" />
+                            {label}
+                          </a>
+                          {file.label && file.description && (
+                            <p class="mt-1 text-xs leading-relaxed text-gray-500 dark:text-gray-400">
+                              {file.description}
+                            </p>
+                          )}
+                        </div>
+                      );
+                    })}
+                </div>
               </div>
-            </div>
-          )}
+            )
+          }
 
           <!-- Source -->
-          {source && (
-            <div>
-              <h3 class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-1">
-                {labels.source}
-              </h3>
-              <a href={source.url} target="_blank" rel="noopener" class="text-sm text-primary hover:underline">
-                {source.name}
-              </a>
-              {source.tableId && (
-                <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5 font-mono">
-                  {source.tableId}
-                </p>
-              )}
-            </div>
-          )}
+          {
+            source && (
+              <div>
+                <h3 class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-1">
+                  {labels.source}
+                </h3>
+                <a href={source.url} target="_blank" rel="noopener" class="text-sm text-primary hover:underline">
+                  {source.name}
+                </a>
+                {source.tableId && (
+                  <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5 font-mono">{source.tableId}</p>
+                )}
+              </div>
+            )
+          }
 
           <!-- Published Date -->
-          {publishDate && (
-            <div>
-              <h3 class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-1">
-                {labels.published}
-              </h3>
-              <p class="text-sm text-gray-700 dark:text-gray-300">
-                {publishDate.toISOString().split('T')[0].replace(/-/g, '/')}
-              </p>
-            </div>
-          )}
-
+          {
+            publishDate && (
+              <div>
+                <h3 class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-1">
+                  {labels.published}
+                </h3>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  {publishDate.toISOString().split('T')[0].replace(/-/g, '/')}
+                </p>
+              </div>
+            )
+          }
 
           <!-- Tags (with divider line instead of label) -->
-          {tags && tags.length > 0 && (
-            <div class="pt-3 border-t border-gray-200 dark:border-slate-600">
-              <div class="flex flex-wrap gap-1.5">
-                {tags.map((tag) => (
-                  <a
-                    href={`/${currentLang}/data?tag=${tag}`}
-                    class="px-2 py-1 text-xs bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 text-gray-600 dark:text-gray-400 rounded hover:border-primary hover:text-primary transition-colors"
-                  >
-                    {tag}
-                  </a>
-                ))}
+          {
+            tags && tags.length > 0 && (
+              <div class="pt-3 border-t border-gray-200 dark:border-slate-600">
+                <div class="flex flex-wrap gap-1.5">
+                  {tags.map((tag) => (
+                    <a
+                      href={`/${currentLang}/data?tag=${tag}`}
+                      class="px-2 py-1 text-xs bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 text-gray-600 dark:text-gray-400 rounded hover:border-primary hover:text-primary transition-colors"
+                    >
+                      {tag}
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
-          )}
+            )
+          }
         </div>
       </aside>
     </div>

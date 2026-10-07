@@ -16,14 +16,14 @@ export type Language = keyof typeof languages;
 
 export const ui = {
   en: {
-    'chart.search': "Search regions…",
-    'chart.selectAll': "Select all",
-    'chart.clear': "Clear",
-    'chart.noMatches': "No matching regions.",
-    'chart.from': "From",
-    'chart.to': "To",
-    'chart.reset': "Reset",
-    'chart.empty': "Choose at least one region to display the chart.",
+    'chart.search': 'Search regions…',
+    'chart.selectAll': 'Select all',
+    'chart.clear': 'Clear',
+    'chart.noMatches': 'No matching regions.',
+    'chart.from': 'From',
+    'chart.to': 'To',
+    'chart.reset': 'Reset',
+    'chart.empty': 'Choose at least one region to display the chart.',
     // Site
     'site.name': 'Data.mn',
     'site.tagline': 'Statistics & Insights for Mongolia',
@@ -100,7 +100,7 @@ export const ui = {
     // Contact
     'contact.title': 'Contact',
     'contact.heading': 'Get in Touch',
-    'contact.description': 'For data inquiries, partnership opportunities, or feedback — we\'d love to hear from you.',
+    'contact.description': "For data inquiries, partnership opportunities, or feedback — we'd love to hear from you.",
     'contact.emailLabel': 'Email us at',
     'contact.responseTime': 'We typically respond within 1-2 business days.',
 
@@ -142,14 +142,14 @@ export const ui = {
     'changelog.viewDataset': 'View dataset',
   },
   mn: {
-    'chart.search': "Аймаг, хот хайх…",
-    'chart.selectAll': "Бүгдийг сонгох",
-    'chart.clear': "Цэвэрлэх",
-    'chart.noMatches': "Тохирох аймаг, хот олдсонгүй.",
-    'chart.from': "Эхлэх он",
-    'chart.to': "Дуусах он",
-    'chart.reset': "Анхны сонголт",
-    'chart.empty': "График харахын тулд дор хаяж нэг аймаг, хот сонгоно уу.",
+    'chart.search': 'Аймаг, хот хайх…',
+    'chart.selectAll': 'Бүгдийг сонгох',
+    'chart.clear': 'Цэвэрлэх',
+    'chart.noMatches': 'Тохирох аймаг, хот олдсонгүй.',
+    'chart.from': 'Эхлэх он',
+    'chart.to': 'Дуусах он',
+    'chart.reset': 'Анхны сонголт',
+    'chart.empty': 'График харахын тулд дор хаяж нэг аймаг, хот сонгоно уу.',
     // Site
     'site.name': 'Data.mn',
     'site.tagline': 'Монголын статистик ба шинжилгээ',
@@ -226,7 +226,8 @@ export const ui = {
     // Contact
     'contact.title': 'Холбоо барих',
     'contact.heading': 'Холбоо барих',
-    'contact.description': 'Өгөгдлийн асуулт, хамтын ажиллагааны санал, эсвэл санал хүсэлт байвал бидэнтэй холбогдоорой.',
+    'contact.description':
+      'Өгөгдлийн асуулт, хамтын ажиллагааны санал, эсвэл санал хүсэлт байвал бидэнтэй холбогдоорой.',
     'contact.emailLabel': 'Имэйл хаяг',
     'contact.responseTime': 'Бид ихэвчлэн 1-2 ажлын өдрийн дотор хариу өгдөг.',
 

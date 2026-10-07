@@ -11,10 +11,7 @@ import kraftLogo from '~/assets/images/partners/kraft-logo-grey.png';
 import cymbolLogo from '~/assets/images/partners/cymbol-logo-grey.png';
 
 export const getStaticPaths = () => {
-  return [
-    { params: { lang: 'en' } },
-    { params: { lang: 'mn' } },
-  ];
+  return [{ params: { lang: 'en' } }, { params: { lang: 'mn' } }];
 };
 
 const { lang } = Astro.params;
@@ -40,22 +37,26 @@ const content = {
       items: [
         {
           title: 'Government Sources',
-          description: 'We collect data from official Mongolian sources including the National Statistics Office, Bank of Mongolia, and other government agencies.',
+          description:
+            'We collect data from official Mongolian sources including the National Statistics Office, Bank of Mongolia, and other government agencies.',
           icon: 'tabler:building-bank',
         },
         {
           title: 'Open & Free',
-          description: 'All data on this platform is freely available. Download datasets in CSV or Excel format, or use our interactive charts.',
+          description:
+            'All data on this platform is freely available. Download datasets in CSV or Excel format, or use our interactive charts.',
           icon: 'tabler:lock-open',
         },
         {
           title: 'Clear Attribution',
-          description: 'Every dataset includes its original source and methodology. We believe in transparency about where data comes from.',
+          description:
+            'Every dataset includes its original source and methodology. We believe in transparency about where data comes from.',
           icon: 'tabler:quote',
         },
         {
           title: 'Regular Updates',
-          description: 'We monitor our sources and update datasets when new data becomes available, typically on a quarterly basis.',
+          description:
+            'We monitor our sources and update datasets when new data becomes available, typically on a quarterly basis.',
           icon: 'tabler:refresh',
         },
       ],
@@ -66,27 +67,32 @@ const content = {
       items: [
         {
           title: 'Is this official government data?',
-          description: 'Data.mn is not a government website. We aggregate and republish data from official Mongolian government sources like the National Statistics Office (1212.mn) and Bank of Mongolia. We always cite our sources and link to the original data. Think of us as a more user-friendly way to access public government statistics.',
+          description:
+            'Data.mn is not a government website. We aggregate and republish data from official Mongolian government sources like the National Statistics Office (1212.mn) and Bank of Mongolia. We always cite our sources and link to the original data. Think of us as a more user-friendly way to access public government statistics.',
           icon: 'tabler:help',
         },
         {
           title: 'Can I use this data for my research or business?',
-          description: 'Yes! All data on Data.mn is free to use for any purpose, including academic research, journalism, business analysis, and personal projects. We encourage you to cite Data.mn and the original government source when publishing.',
+          description:
+            'Yes! All data on Data.mn is free to use for any purpose, including academic research, journalism, business analysis, and personal projects. We encourage you to cite Data.mn and the original government source when publishing.',
           icon: 'tabler:license',
         },
         {
           title: 'How do I cite data from Data.mn?',
-          description: 'For academic citations, include both Data.mn and the original source. Example: "Population of Mongolia (2024). Data.mn, sourced from National Statistics Office of Mongolia." Each dataset page shows the specific source to cite.',
+          description:
+            'For academic citations, include both Data.mn and the original source. Example: "Population of Mongolia (2024). Data.mn, sourced from National Statistics Office of Mongolia." Each dataset page shows the specific source to cite.',
           icon: 'tabler:blockquote',
         },
         {
           title: 'How often is the data updated?',
-          description: 'Update frequency depends on the source. Most economic and demographic data is updated quarterly when new government releases are available. Some datasets like exchange rates may update more frequently. Each dataset page shows when it was last updated.',
+          description:
+            'Update frequency depends on the source. Most economic and demographic data is updated quarterly when new government releases are available. Some datasets like exchange rates may update more frequently. Each dataset page shows when it was last updated.',
           icon: 'tabler:calendar-repeat',
         },
         {
           title: 'How can I contribute or report an error?',
-          description: 'We welcome feedback! If you find an error, have a suggestion for new datasets, or want to collaborate, please contact us at robert@aum.edu.mn. We\'re especially interested in hearing from researchers and journalists about what data would be most useful.',
+          description:
+            "We welcome feedback! If you find an error, have a suggestion for new datasets, or want to collaborate, please contact us at robert@aum.edu.mn. We're especially interested in hearing from researchers and journalists about what data would be most useful.",
           icon: 'tabler:message-circle',
         },
       ],
@@ -105,17 +111,20 @@ const content = {
       items: [
         {
           title: 'Төрийн эх сурвалж',
-          description: 'Бид Үндэсний Статистикийн Хороо, Монголбанк болон бусад төрийн байгууллагуудаас албан ёсны мэдээлэл цуглуулдаг.',
+          description:
+            'Бид Үндэсний Статистикийн Хороо, Монголбанк болон бусад төрийн байгууллагуудаас албан ёсны мэдээлэл цуглуулдаг.',
           icon: 'tabler:building-bank',
         },
         {
           title: 'Нээлттэй & Үнэгүй',
-          description: 'Энэ платформ дээрх бүх өгөгдөл үнэ төлбөргүй. CSV эсвэл Excel форматаар татаж авах, эсвэл интерактив графикуудыг ашиглах боломжтой.',
+          description:
+            'Энэ платформ дээрх бүх өгөгдөл үнэ төлбөргүй. CSV эсвэл Excel форматаар татаж авах, эсвэл интерактив графикуудыг ашиглах боломжтой.',
           icon: 'tabler:lock-open',
         },
         {
           title: 'Тодорхой эх сурвалж',
-          description: 'Өгөгдөл бүр анхны эх сурвалж, арга зүйгээ агуулдаг. Бид өгөгдөл хаанаас ирснийг ил тод байлгахыг чухалчилдаг.',
+          description:
+            'Өгөгдөл бүр анхны эх сурвалж, арга зүйгээ агуулдаг. Бид өгөгдөл хаанаас ирснийг ил тод байлгахыг чухалчилдаг.',
           icon: 'tabler:quote',
         },
         {
@@ -131,27 +140,32 @@ const content = {
       items: [
         {
           title: 'Энэ албан ёсны төрийн өгөгдөл үү?',
-          description: 'Data.mn нь төрийн вэбсайт биш юм. Бид Үндэсний Статистикийн Хороо (1212.mn), Монголбанк зэрэг албан ёсны эх сурвалжуудаас өгөгдлийг нэгтгэн дахин нийтэлдэг. Бид үргэлж эх сурвалжаа дурдаж, анхны өгөгдөлд холбоос өгдөг. Биднийг төрийн статистикт хандах илүү хэрэглэгчдэд ээлтэй арга гэж ойлгоорой.',
+          description:
+            'Data.mn нь төрийн вэбсайт биш юм. Бид Үндэсний Статистикийн Хороо (1212.mn), Монголбанк зэрэг албан ёсны эх сурвалжуудаас өгөгдлийг нэгтгэн дахин нийтэлдэг. Бид үргэлж эх сурвалжаа дурдаж, анхны өгөгдөлд холбоос өгдөг. Биднийг төрийн статистикт хандах илүү хэрэглэгчдэд ээлтэй арга гэж ойлгоорой.',
           icon: 'tabler:help',
         },
         {
           title: 'Би энэ өгөгдлийг судалгаа эсвэл бизнестээ ашиглаж болох уу?',
-          description: 'Тийм! Data.mn дээрх бүх өгөгдлийг эрдэм шинжилгээ, сэтгүүл зүй, бизнесийн шинжилгээ, хувийн төсөл зэрэг ямар ч зорилгоор үнэ төлбөргүй ашиглаж болно. Нийтлэхдээ Data.mn болон анхны төрийн эх сурвалжийг дурдахыг зөвлөж байна.',
+          description:
+            'Тийм! Data.mn дээрх бүх өгөгдлийг эрдэм шинжилгээ, сэтгүүл зүй, бизнесийн шинжилгээ, хувийн төсөл зэрэг ямар ч зорилгоор үнэ төлбөргүй ашиглаж болно. Нийтлэхдээ Data.mn болон анхны төрийн эх сурвалжийг дурдахыг зөвлөж байна.',
           icon: 'tabler:license',
         },
         {
           title: 'Data.mn-ээс авсан өгөгдлийг хэрхэн эшлэх вэ?',
-          description: 'Эрдэм шинжилгээний эшлэлд Data.mn болон анхны эх сурвалжийг хоёуланг нь оруулна уу. Жишээ: "Монгол Улсын хүн ам (2024). Data.mn, Үндэсний Статистикийн Хорооноос авсан." Өгөгдөл бүрийн хуудсанд эшлэх эх сурвалжийг харуулсан байгаа.',
+          description:
+            'Эрдэм шинжилгээний эшлэлд Data.mn болон анхны эх сурвалжийг хоёуланг нь оруулна уу. Жишээ: "Монгол Улсын хүн ам (2024). Data.mn, Үндэсний Статистикийн Хорооноос авсан." Өгөгдөл бүрийн хуудсанд эшлэх эх сурвалжийг харуулсан байгаа.',
           icon: 'tabler:blockquote',
         },
         {
           title: 'Өгөгдөл хэр тогтмол шинэчлэгддэг вэ?',
-          description: 'Шинэчлэлийн давтамж эх сурвалжаас хамаарна. Ихэнх эдийн засаг, хүн ам зүйн өгөгдөл засгийн газрын шинэ мэдээлэл гарах үед улирал тутам шинэчлэгддэг. Валютын ханш зэрэг зарим өгөгдөл илүү олон удаа шинэчлэгдэж болно. Өгөгдөл бүрийн хуудсанд хамгийн сүүлд хэзээ шинэчлэгдсэнийг харуулдаг.',
+          description:
+            'Шинэчлэлийн давтамж эх сурвалжаас хамаарна. Ихэнх эдийн засаг, хүн ам зүйн өгөгдөл засгийн газрын шинэ мэдээлэл гарах үед улирал тутам шинэчлэгддэг. Валютын ханш зэрэг зарим өгөгдөл илүү олон удаа шинэчлэгдэж болно. Өгөгдөл бүрийн хуудсанд хамгийн сүүлд хэзээ шинэчлэгдсэнийг харуулдаг.',
           icon: 'tabler:calendar-repeat',
         },
         {
           title: 'Хэрхэн хувь нэмэр оруулах эсвэл алдаа мэдээлэх вэ?',
-          description: 'Бид санал хүсэлтийг тавтай хүлээн авна! Хэрэв та алдаа олсон, шинэ өгөгдлийн санал байгаа, эсвэл хамтран ажиллахыг хүсвэл robert@aum.edu.mn хаягаар холбогдоно уу. Бид ялангуяа судлаачид, сэтгүүлчдээс ямар өгөгдөл хамгийн хэрэгтэй байхыг сонсохыг хүсэж байна.',
+          description:
+            'Бид санал хүсэлтийг тавтай хүлээн авна! Хэрэв та алдаа олсон, шинэ өгөгдлийн санал байгаа, эсвэл хамтран ажиллахыг хүсвэл robert@aum.edu.mn хаягаар холбогдоно уу. Бид ялангуяа судлаачид, сэтгүүлчдээс ямар өгөгдөл хамгийн хэрэгтэй байхыг сонсохыг хүсэж байна.',
           icon: 'tabler:message-circle',
         },
       ],
@@ -189,11 +203,7 @@ const partnerLogos = [
   </section>
 
   <!-- Partners Widget ****************** -->
-  <Brands
-    title={c.partners.title}
-    images={partnerLogos}
-    classes={{ container: 'max-w-5xl' }}
-  />
+  <Brands title={c.partners.title} images={partnerLogos} classes={{ container: 'max-w-5xl' }} />
 
   <!-- Approach Widget ************** -->
   <Features3

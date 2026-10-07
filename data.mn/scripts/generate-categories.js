@@ -50,10 +50,10 @@ function generateCategories() {
       }
 
       // Transform rows into the format we need
-      const categories = rows.map(row => ({
+      const categories = rows.map((row) => ({
         en: row.category_en,
         mn: row.category_mn || row.category_en, // Fallback to EN if MN is null
-        count: row.count
+        count: row.count,
       }));
 
       db.close((err) => {
@@ -87,7 +87,7 @@ async function main() {
     const categories = await generateCategories();
 
     console.log(`Found ${categories.length} categories:`);
-    categories.forEach(cat => {
+    categories.forEach((cat) => {
       console.log(`  - ${cat.en} / ${cat.mn} (${cat.count} datasets)`);
     });
 

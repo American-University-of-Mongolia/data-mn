@@ -1,10 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Average monthly wages by economic sector in Mongolia (2001-2024)",
+  "description": "Average monthly wages by economic sector in Mongolia (2001-2025)",
   "data": {
     "url": "/datasets/average-wages-en.csv",
     "format": {
-      "type": "csv"
+      "type": "csv",
+      "parse": {
+        "Salary (MNT 1000s)": "number"
+      }
     }
   },
   "encoding": {

@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монголын эдийн засгийн салбар тус бүрийн сарын дундаж цалин (2001-2024)",
+  "description": "Монголын эдийн засгийн салбар тус бүрийн сарын дундаж цалин (2001-2025)",
   "data": {
     "url": "/datasets/average-wages-mn.csv",
     "format": {
@@ -9,7 +9,7 @@
   },
   "transform": [
     {
-      "calculate": "datum['Цалин (мян.төг)']",
+      "calculate": "toNumber(datum['Цалин (мян.төг)'])",
       "as": "цалин"
     }
   ],

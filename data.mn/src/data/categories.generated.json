@@ -17,7 +17,7 @@
   {
     "en": "Labor Market",
     "mn": "Хөдөлмөрийн зах зээл",
-    "count": 12
+    "count": 13
   },
   {
     "en": "Trade",
@@ -83,11 +83,6 @@
     "en": "Government & Politics",
     "mn": "Засаглал ба улс төр",
     "count": 2
-  },
-  {
-    "en": "Employment",
-    "mn": "Хөдөлмөр эрхлэлт",
-    "count": 1
   },
   {
     "en": "Public Safety",

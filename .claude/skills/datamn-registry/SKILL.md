@@ -340,7 +340,7 @@ Groups related datasets measuring the same indicator at different granularities.
 |---------|-----------|
 | Demographics | Хүн ам зүй |
 | Economy | Эдийн засаг |
-| Employment | Хөдөлмөр эрхлэлт |
+| Labor Market | Хөдөлмөрийн зах зээл |
 | Housing | Орон сууц |
 | Mining & Resources | Уул уурхай |
 | Finance | Санхүү |

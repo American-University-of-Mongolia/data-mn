@@ -387,7 +387,7 @@ When creating split configs, use these bilingual categories:
 |---------|-----------|
 | Demographics | Хүн ам зүй |
 | Economy | Эдийн засаг |
-| Employment | Хөдөлмөр эрхлэлт |
+| Labor Market | Хөдөлмөрийн зах зээл |
 | Housing | Орон сууц |
 | Mining & Resources | Уул уурхай |
 | Finance | Санхүү |

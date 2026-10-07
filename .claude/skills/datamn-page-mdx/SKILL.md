@@ -175,7 +175,7 @@ The chart shows a readable subset; the downloads contain everything.
 |--------------|----------------|-------------|
 | Demographics | Хүн ам зүй | Population, vital statistics |
 | Economy | Эдийн засаг | GDP, trade, inflation |
-| Employment | Хөдөлмөр эрхлэлт | Labor force, unemployment |
+| Labor Market | Хөдөлмөрийн зах зээл | Labor force, unemployment |
 | Housing | Орон сууц | Prices, construction |
 | Mining & Resources | Уул уурхай | Production, exports |
 | Finance | Санхүү | Banking, exchange rates |

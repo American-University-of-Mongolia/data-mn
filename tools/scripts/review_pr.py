@@ -14,6 +14,7 @@ Usage:
     .venv/bin/python tools/scripts/review_pr.py 132 --lint   # include npm check
 
 Requires: gh CLI (authenticated), repo .venv with pytest/pandas/pyyaml.
+--build/--lint also need npm: the worktree gets a fresh `npm ci` first.
 
 Exit code 0 if all executed checks pass, 1 otherwise.
 """
@@ -85,7 +86,7 @@ class Report:
             print(f"| {mark:4} {step.name[:width - 7]}".ljust(width + 1)
                   + "|")
             if step.passed is False and step.detail:
-                for line in step.detail.strip().splitlines()[:8]:
+                for line in step.detail.strip().splitlines()[:15]:
                     print(f"|        {line[:width - 9]}".ljust(width + 1)
                           + "|")
         print("+" + "=" * width + "+")
@@ -133,6 +134,13 @@ def detect_datasets(files: list[dict]) -> list[str]:
 
 def tail(text: str, lines: int = 8) -> str:
     return "\n".join(text.strip().splitlines()[-lines:])
+
+
+def npm_errors(text: str, lines: int = 15) -> str:
+    # npm states the cause first and ends with usage/log boilerplate.
+    errors = [line for line in text.splitlines()
+              if line.startswith(("npm error ", "npm ERR! "))]
+    return "\n".join(errors[:lines]) if errors else tail(text, lines)
 
 
 def changed_dataset_ids(base_db: Path, head_db: Path) -> list[str]:
@@ -299,26 +307,53 @@ def main() -> int:
             report.add("Charts (vega --all)", code == 0,
                        "" if code == 0 else tail(out))
 
-        if args.build and not args.fast:
+        want_build = args.build and not args.fast
+        want_lint = args.lint and not args.fast
+
+        # node_modules is gitignored, so the worktree starts without one.
+        # Install the PR's lockfile: the main checkout's node_modules can
+        # lag its own lockfile, and symlinking it breaks Astro's path
+        # resolution. Seconds with a warm npm cache.
+        deps_ok = False
+        if want_build or want_lint:
+            code, out = run(["npm", "ci", "--no-audit", "--no-fund",
+                             "--prefer-offline"], cwd=wt_data_mn,
+                            timeout=900)
+            deps_ok = code == 0
+            report.add("Node deps (npm ci)", deps_ok,
+                       "" if deps_ok else npm_errors(out))
+        else:
+            report.add("Node deps (npm ci)", None,
+                       "only for --build/--lint")
+
+        if not want_build:
+            report.add("Build (npm)", None, "skipped (pass --build)")
+        elif not deps_ok:
+            report.add("Build (npm)", None, "not run (npm ci failed)")
+        else:
             code, out = run(["npm", "run", "build"], cwd=wt_data_mn,
                             timeout=1800)
             report.add("Build (npm)", code == 0,
                        "" if code == 0 else tail(out, 15))
-        else:
-            report.add("Build (npm)", None, "skipped (pass --build)")
 
-        if args.lint and not args.fast:
+        if not want_lint:
+            report.add("Lint (npm)", None, "skipped (pass --lint)")
+        elif not deps_ok:
+            report.add("Lint (npm)", None, "not run (npm ci failed)")
+        else:
             code, out = run(["npm", "run", "check"], cwd=wt_data_mn,
                             timeout=900)
             report.add("Lint (npm)", code == 0,
                        "" if code == 0 else tail(out, 15))
-        else:
-            report.add("Lint (npm)", None, "skipped (pass --lint)")
     finally:
         run(["git", "worktree", "remove", "--force", str(worktree)],
             cwd=REPO_ROOT)
         run(["git", "worktree", "prune"], cwd=REPO_ROOT)
 
+    # Temp-worktree paths push file names out of the report lines and mean
+    # nothing in a PR comment.
+    for step in report.steps:
+        step.detail = step.detail.replace(f"{worktree}/", "")
     report.print()
     return 1 if report.failed else 0
 

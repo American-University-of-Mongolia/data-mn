@@ -28,8 +28,21 @@ Flags:
 
 - `--fast` — skip slow steps (all-charts validation, build, lint). Good first pass.
 - (no flags) — full validation including all charts. Run before merging.
-- `--build` — also run `npm run build` in the PR worktree (slow, minutes).
-- `--lint` — also run `npm run check` (astro + eslint + prettier).
+- `--build` — also run `npm run build` in the PR worktree (adds ~75 s; a
+  `--build` review of PR 159 took ~90 s on ritz).
+- `--lint` — also run `npm run check` (astro + eslint + prettier; adds
+  ~15 s). As of 2026-10-07 this fails on main too: 643 eslint errors (506
+  from the vendored `public/vendor/leaflet/leaflet.js`) and ~680 files
+  prettier flags, mostly generated MDX and chart JSON. A Lint FAIL is only
+  the PR's problem if the errors are in files it changed.
+
+`--build` and `--lint` first run `npm ci` in the worktree's `data.mn`,
+reported as its own `Node deps (npm ci)` row (seconds with the warm
+`~/.npm` cache). The worktree has no `node_modules` (it's gitignored), and
+the script never borrows the main checkout's: a symlink breaks Astro's path
+resolution, and a copy can lag behind the PR's lockfile. If `npm ci` fails
+(e.g. `package.json` and `package-lock.json` out of sync), Build/Lint show
+SKIP and the verdict is NEEDS FIXES.
 
 ## What the script does
 
@@ -49,7 +62,9 @@ Flags:
    (via MDX or registry-row changes) so unrelated issues don't block.
 6. If `tools/registry/data.db` changed, prints a human-readable row diff
    of base vs PR (the DB is binary, otherwise unreviewable).
-7. Prints a PASS/FAIL report with a READY TO MERGE / NEEDS FIXES verdict.
+7. With `--build`/`--lint`: `npm ci` from the PR's lockfile, then
+   `npm run build` and/or `npm run check` in the worktree's `data.mn`.
+8. Prints a PASS/FAIL report with a READY TO MERGE / NEEDS FIXES verdict.
 
 Exit code 0 means every executed check passed.
 
@@ -90,3 +105,6 @@ Exit code 0 means every executed check passed.
   checks (MDX files, deprecation, charts) always cover the whole worktree.
 - `npm run build` also regenerates chart thumbnails; a Fontconfig warning
   in containers without fonts is harmless (see root AGENTS.md).
+- `npm ci` uses the normal npm cache (`~/.npm`). Where that is read-only
+  (the Campfire container), export `npm_config_cache=/tmp/datamn-npm-cache`
+  before running with `--build`/`--lint`.

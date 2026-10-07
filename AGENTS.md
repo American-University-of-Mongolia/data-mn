@@ -573,7 +573,12 @@ What it does:
    (exit 0 = all executed checks passed)
 
 Flags: `--fast` skips charts/build/lint; `--build` and `--lint` opt into
-`npm run build` / `npm run check` in the worktree (slow).
+`npm run build` / `npm run check` in the worktree (~75 s / ~15 s extra).
+Either one first runs `npm ci` there from the PR's lockfile (its own report
+row, seconds with a warm npm cache), so the build uses the PR's
+dependencies, not whatever is installed in your checkout. `npm run check`
+currently fails on main too (pre-existing eslint/prettier errors), so a
+Lint FAIL only blocks a PR for errors in files it changed.
 
 If all checks pass, confirm with Robert, then merge and deploy:
 

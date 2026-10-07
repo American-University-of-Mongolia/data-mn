@@ -17,11 +17,7 @@ import sharp from 'sharp';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { createCanvas } from 'canvas';
-import {
-  applyCategoricalLegendLayout,
-  categoricalLegendLabels,
-} from '../public/scripts/chart-legend-layout.js';
+import { applyCategoricalLegendLayout, categoricalLegendLabels } from '../public/scripts/chart-legend-layout.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -92,9 +88,31 @@ const voxTheme = {
     titleFontWeight: 'bold',
   },
   range: {
-    category: ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'],
+    category: [
+      '#1f77b4',
+      '#ff7f0e',
+      '#2ca02c',
+      '#d62728',
+      '#9467bd',
+      '#8c564b',
+      '#e377c2',
+      '#7f7f7f',
+      '#bcbd22',
+      '#17becf',
+    ],
     diverging: ['#e7ba52', '#c7c7c7', '#aec7e8', '#1f77b4', '#9467bd'],
-    heatmap: ['#fcfcfc', '#f2f2f2', '#dedede', '#d4d4d4', '#c2c2c2', '#b0b0b0', '#9e9e9e', '#8c8c8c', '#7a7a7a', '#686868'],
+    heatmap: [
+      '#fcfcfc',
+      '#f2f2f2',
+      '#dedede',
+      '#d4d4d4',
+      '#c2c2c2',
+      '#b0b0b0',
+      '#9e9e9e',
+      '#8c8c8c',
+      '#7a7a7a',
+      '#686868',
+    ],
     ramp: ['#f2f2f2', '#dedede', '#d4d4d4', '#c2c2c2', '#b0b0b0', '#9e9e9e', '#8c8c8c', '#7a7a7a', '#686868'],
   },
   title: {
@@ -210,8 +228,10 @@ async function exportChart(specPath, outputPath) {
 
   // Remove any existing width/height from nested specs (for layered charts)
   if (chartSpec.layer) {
-    chartSpec.layer = chartSpec.layer.map(layer => {
-      const { width, height, ...rest } = layer;
+    chartSpec.layer = chartSpec.layer.map((layer) => {
+      const rest = { ...layer };
+      delete rest.width;
+      delete rest.height;
       return rest;
     });
   }
@@ -250,7 +270,7 @@ async function exportChart(specPath, outputPath) {
   await sharp(pngBuffer)
     .resize(WIDTH, HEIGHT, {
       fit: 'contain',
-      background: { r: 255, g: 255, b: 255, alpha: 1 }
+      background: { r: 255, g: 255, b: 255, alpha: 1 },
     })
     .webp({ quality: WEBP_QUALITY })
     .toFile(outputPath);
@@ -273,8 +293,7 @@ async function main() {
     return;
   }
 
-  const chartFiles = fs.readdirSync(CHARTS_DIR)
-    .filter(f => f.endsWith('.json'));
+  const chartFiles = fs.readdirSync(CHARTS_DIR).filter((f) => f.endsWith('.json'));
 
   if (chartFiles.length === 0) {
     console.log('⚠️  No chart files found');
@@ -307,7 +326,7 @@ async function main() {
 }
 
 // Run
-main().catch(err => {
+main().catch((err) => {
   console.error('Fatal error:', err);
   process.exit(1);
 });

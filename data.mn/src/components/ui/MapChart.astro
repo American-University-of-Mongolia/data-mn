@@ -24,6 +24,7 @@ export interface Props {
 const { spec, title, caption, aspectRatio = 0.5 } = Astro.props;
 const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
 ---
+
 <!-- Static Leaflet CSS: part of the swapped page body, so it survives
      Astro ClientRouter navigation (runtime-injected head links don't). -->
 <link data-leaflet-css rel="stylesheet" href="/vendor/leaflet/leaflet.css" />
@@ -45,25 +46,36 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
 </div>
 
 <script is:inline>
-  (function() {
+  (function () {
     // Prevent multiple initializations
     if (window._leafletMapInitialized) return;
     window._leafletMapInitialized = true;
 
-    var mapViews = {};
-    var resizeTimeout = null;
+    let mapViews = {};
+    let resizeTimeout = null;
 
     // Vega-compatible palettes (d3 schemeOranges[9] + category10)
-    var ORANGES = ['#fff5eb', '#fee6ce', '#fdd0a2', '#fdae6b', '#fd8d3c', '#f16913', '#d94801', '#a63603', '#7f2704'];
-    var CATEGORY10 = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'];
-    var NULL_COLOR = '#e5e7eb';
+    const ORANGES = ['#fff5eb', '#fee6ce', '#fdd0a2', '#fdae6b', '#fd8d3c', '#f16913', '#d94801', '#a63603', '#7f2704'];
+    const CATEGORY10 = [
+      '#1f77b4',
+      '#ff7f0e',
+      '#2ca02c',
+      '#d62728',
+      '#9467bd',
+      '#8c564b',
+      '#e377c2',
+      '#7f7f7f',
+      '#bcbd22',
+      '#17becf',
+    ];
+    const NULL_COLOR = '#e5e7eb';
 
     function loadLeaflet() {
-      return new Promise(function(resolve, reject) {
+      return new Promise(function (resolve, reject) {
         // CSS first: re-ensure the stylesheet even when window.L already
         // exists — Astro swaps drop runtime-injected head elements.
         if (!document.querySelector('link[data-leaflet-css]')) {
-          var link = document.createElement('link');
+          const link = document.createElement('link');
           link.rel = 'stylesheet';
           link.setAttribute('data-leaflet-css', 'true');
           link.href = '/vendor/leaflet/leaflet.css';
@@ -77,11 +89,15 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
           window._leafletLoading.then(resolve, reject);
           return;
         }
-        window._leafletLoading = new Promise(function(res2, rej2) {
-          var script = document.createElement('script');
+        window._leafletLoading = new Promise(function (res2, rej2) {
+          const script = document.createElement('script');
           script.src = '/vendor/leaflet/leaflet.js';
-          script.onload = function() { res2(); };
-          script.onerror = function() { rej2(new Error('Failed to load Leaflet')); };
+          script.onload = function () {
+            res2();
+          };
+          script.onerror = function () {
+            rej2(new Error('Failed to load Leaflet'));
+          };
           document.head.appendChild(script);
         });
         window._leafletLoading.then(resolve, reject);
@@ -90,16 +106,20 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
 
     // Minimal RFC4180 parser (quoted commas, escaped quotes, CRLF)
     function parseCSV(text) {
-      var rows = [];
-      var row = [];
-      var field = '';
-      var inQuotes = false;
-      for (var i = 0; i < text.length; i++) {
-        var ch = text[i];
+      const rows = [];
+      let row = [];
+      let field = '';
+      let inQuotes = false;
+      for (let i = 0; i < text.length; i++) {
+        const ch = text[i];
         if (inQuotes) {
           if (ch === '"') {
-            if (text[i + 1] === '"') { field += '"'; i++; }
-            else { inQuotes = false; }
+            if (text[i + 1] === '"') {
+              field += '"';
+              i++;
+            } else {
+              inQuotes = false;
+            }
           } else {
             field += ch;
           }
@@ -121,30 +141,28 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
         row.push(field);
         rows.push(row);
       }
-      var header = rows.shift() || [];
-      return rows.map(function(r) {
-        var obj = {};
-        header.forEach(function(h, idx) { obj[h] = r[idx] !== undefined ? r[idx] : ''; });
+      const header = rows.shift() || [];
+      return rows.map(function (r) {
+        const obj = {};
+        header.forEach(function (h, idx) {
+          obj[h] = r[idx] !== undefined ? r[idx] : '';
+        });
         return obj;
       });
     }
 
     function escapeHtml(value) {
-      return String(value)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
+      return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     }
 
     // The small subset of d3 formats our specs use
     function formatValue(value, format) {
       if (value === null || value === undefined || value === '') return '–';
       if (!format) return String(value);
-      var num = parseFloat(value);
+      const num = parseFloat(value);
       if (isNaN(num)) return String(value);
       if (format === ',.1f') {
-        return num.toLocaleString('en-US', {minimumFractionDigits: 1, maximumFractionDigits: 1});
+        return num.toLocaleString('en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
       }
       return Math.round(num).toLocaleString('en-US');
     }
@@ -155,11 +173,13 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
 
     function oranges(t) {
       t = Math.max(0, Math.min(1, t)) * (ORANGES.length - 1);
-      var i = Math.min(Math.floor(t), ORANGES.length - 2);
-      var f = t - i;
-      var a = hexToRgb(ORANGES[i]);
-      var b = hexToRgb(ORANGES[i + 1]);
-      var rgb = a.map(function(v, idx) { return Math.round(v + (b[idx] - v) * f); });
+      const i = Math.min(Math.floor(t), ORANGES.length - 2);
+      const f = t - i;
+      const a = hexToRgb(ORANGES[i]);
+      const b = hexToRgb(ORANGES[i + 1]);
+      const rgb = a.map(function (v, idx) {
+        return Math.round(v + (b[idx] - v) * f);
+      });
       return 'rgb(' + rgb.join(',') + ')';
     }
 
@@ -174,79 +194,82 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
     // Fetch with retries so transient failures (e.g. a server restart
     // mid-load) heal instead of sticking on an error box.
     async function fetchWithRetry(url, label) {
-      var attempts = 3;
-      var lastError = null;
-      for (var i = 0; i < attempts; i++) {
+      const attempts = 3;
+      let lastError = null;
+      for (let i = 0; i < attempts; i++) {
         try {
-          var res = await fetch(url);
-          if (!res.ok) throw new Error(res.statusText || ('HTTP ' + res.status));
+          const res = await fetch(url);
+          if (!res.ok) throw new Error(res.statusText || 'HTTP ' + res.status);
           return res;
         } catch (err) {
           lastError = err;
-          if (i + 1 < attempts) await new Promise(function(r) { setTimeout(r, 1500); });
+          if (i + 1 < attempts)
+            await new Promise(function (r) {
+              setTimeout(r, 1500);
+            });
         }
       }
       throw new Error(label + ': ' + (lastError && lastError.message ? lastError.message : lastError));
     }
 
     async function renderMap(el) {
-      var specData = el.dataset.spec;
-      var response = await fetchWithRetry(specData, 'Failed to load map spec');
-      var mapSpec = await response.json();
+      const specData = el.dataset.spec;
+      const response = await fetchWithRetry(specData, 'Failed to load map spec');
+      const mapSpec = await response.json();
 
-      var geoUrl = mapSpec.data.url;
-      var transform = (mapSpec.transform || [])[0] || {};
-      var lookupRef = transform.lookup;
-      var from = transform.from || {};
-      var csvUrl = from.data && from.data.url;
-      var joinKey = from.key;
-      var colorEnc = mapSpec.encoding.color || {};
-      var tooltips = mapSpec.encoding.tooltip || [];
-      var mark = mapSpec.mark || {};
+      const geoUrl = mapSpec.data.url;
+      const transform = (mapSpec.transform || [])[0] || {};
+      const lookupRef = transform.lookup;
+      const from = transform.from || {};
+      const csvUrl = from.data && from.data.url;
+      const joinKey = from.key;
+      const colorEnc = mapSpec.encoding.color || {};
+      const tooltips = mapSpec.encoding.tooltip || [];
+      const mark = mapSpec.mark || {};
 
-      var geoRes = await fetchWithRetry(geoUrl, 'Failed to load shapes');
-      var geojson = await geoRes.json();
+      const geoRes = await fetchWithRetry(geoUrl, 'Failed to load shapes');
+      const geojson = await geoRes.json();
 
-      var joinedByKey = {};
+      const joinedByKey = {};
       if (csvUrl && joinKey) {
-        var csvRes = await fetchWithRetry(csvUrl, 'Failed to load values');
-        parseCSV(await csvRes.text()).forEach(function(row) {
+        const csvRes = await fetchWithRetry(csvUrl, 'Failed to load values');
+        parseCSV(await csvRes.text()).forEach(function (row) {
           joinedByKey[String(row[joinKey])] = row;
         });
       }
 
-      var colorField = colorEnc.field;
-      var colorType = colorEnc.type || 'nominal';
-      var colorValue = colorEnc.value;
-      var legendTitle = (colorEnc.legend && colorEnc.legend.title) || '';
+      const colorField = colorEnc.field;
+      const colorType = colorEnc.type || 'nominal';
+      const colorValue = colorEnc.value;
+      const legendTitle = (colorEnc.legend && colorEnc.legend.title) || '';
 
       // Build the color scale from joined values
-      var values = [];
-      geojson.features.forEach(function(feature) {
+      const values = [];
+      geojson.features.forEach(function (feature) {
         if (!colorField) return;
-        var joined = lookupRef ? joinedByKey[String(resolveField(lookupRef, feature.properties, null))] : null;
-        var v = resolveField(colorField, feature.properties, joined);
+        const joined = lookupRef ? joinedByKey[String(resolveField(lookupRef, feature.properties, null))] : null;
+        const v = resolveField(colorField, feature.properties, joined);
         if (v !== null && v !== undefined && v !== '') {
           values.push(colorType === 'quantitative' ? parseFloat(v) : String(v));
         }
       });
-      var domainMin = Math.min.apply(null, values);
-      var domainMax = Math.max.apply(null, values);
-      var domain = Array.from(new Set(values)).sort();
+      const domainMin = Math.min.apply(null, values);
+      const domainMax = Math.max.apply(null, values);
+      const domain = Array.from(new Set(values)).sort();
       function colorFor(props, joined) {
         if (colorValue) return colorValue;
-        var v = resolveField(colorField, props, joined);
+        const v = resolveField(colorField, props, joined);
         if (v === null || v === undefined || v === '') return NULL_COLOR;
         if (colorType === 'quantitative') {
           if (domainMax === domainMin) return ORANGES[ORANGES.length - 1];
           return oranges((parseFloat(v) - domainMin) / (domainMax - domainMin));
         }
-        var idx = domain.indexOf(String(v));
+        const idx = domain.indexOf(String(v));
         return idx === -1 ? NULL_COLOR : CATEGORY10[idx % CATEGORY10.length];
       }
 
       el.innerHTML = '';
-      var map = window.L.map(el, {
+      const map = window.L.map(el, {
         scrollWheelZoom: true,
         zoomSnap: 0.5,
         zoomDelta: 0.5,
@@ -254,16 +277,23 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
       mapViews[el.id] = map;
 
       function tooltipFor(props, joined) {
-        return tooltips.map(function(t) {
-          var raw = resolveField(t.field, props, joined);
-          return '<div><strong>' + escapeHtml(t.title || t.field) + ':</strong> ' +
-            escapeHtml(formatValue(raw, t.format)) + '</div>';
-        }).join('');
+        return tooltips
+          .map(function (t) {
+            const raw = resolveField(t.field, props, joined);
+            return (
+              '<div><strong>' +
+              escapeHtml(t.title || t.field) +
+              ':</strong> ' +
+              escapeHtml(formatValue(raw, t.format)) +
+              '</div>'
+            );
+          })
+          .join('');
       }
 
-      var layer = window.L.geoJSON(geojson, {
-        style: function(feature) {
-          var joined = lookupRef ? joinedByKey[String(resolveField(lookupRef, feature.properties, null))] : null;
+      const layer = window.L.geoJSON(geojson, {
+        style: function (feature) {
+          const joined = lookupRef ? joinedByKey[String(resolveField(lookupRef, feature.properties, null))] : null;
           return {
             fillColor: colorFor(feature.properties, joined),
             fillOpacity: 1,
@@ -271,37 +301,38 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
             weight: mark.strokeWidth !== undefined ? mark.strokeWidth : 1,
           };
         },
-        onEachFeature: function(feature, shapeLayer) {
+        onEachFeature: function (feature, shapeLayer) {
           if (!tooltips.length) return;
-          var joined = lookupRef ? joinedByKey[String(resolveField(lookupRef, feature.properties, null))] : null;
-          shapeLayer.bindTooltip(tooltipFor(feature.properties, joined), {sticky: true});
+          const joined = lookupRef ? joinedByKey[String(resolveField(lookupRef, feature.properties, null))] : null;
+          shapeLayer.bindTooltip(tooltipFor(feature.properties, joined), { sticky: true });
         },
       }).addTo(map);
-      var initialBounds = layer.getBounds();
-      map.fitBounds(initialBounds, {padding: [8, 8]});
+      const initialBounds = layer.getBounds();
+      map.fitBounds(initialBounds, { padding: [8, 8] });
 
       // Plain-text attribution: Leaflet's default prefix carries a
       // Ukrainian flag emoji, which we don't want on data.mn.
       map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
 
       // Reset-view button under the zoom controls
-      var isMn = document.documentElement.lang === 'mn';
-      var resetLabel = isMn ? 'Шинэчлэх' : 'Reset';
-      var resetTitle = isMn ? 'Харагдацыг шинэчлэх' : 'Reset view';
-      var resetControl = window.L.control({position: 'bottomleft'});
-      resetControl.onAdd = function() {
-        var container = window.L.DomUtil.create('div', 'leaflet-bar leaflet-control');
-        var btn = window.L.DomUtil.create('a', '', container);
+      const isMn = document.documentElement.lang === 'mn';
+      const resetLabel = isMn ? 'Шинэчлэх' : 'Reset';
+      const resetTitle = isMn ? 'Харагдацыг шинэчлэх' : 'Reset view';
+      const resetControl = window.L.control({ position: 'bottomleft' });
+      resetControl.onAdd = function () {
+        const container = window.L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+        const btn = window.L.DomUtil.create('a', '', container);
         btn.href = '#';
         btn.title = resetTitle;
         btn.setAttribute('role', 'button');
         btn.setAttribute('aria-label', resetTitle);
         btn.textContent = resetLabel;
-        btn.style.cssText = 'display: block; padding: 0 10px; width: auto; height: 30px; line-height: 30px; font-size: 12px; color: #111;';
-        window.L.DomEvent.on(btn, 'click', function(e) {
+        btn.style.cssText =
+          'display: block; padding: 0 10px; width: auto; height: 30px; line-height: 30px; font-size: 12px; color: #111;';
+        window.L.DomEvent.on(btn, 'click', function (e) {
           window.L.DomEvent.preventDefault(e);
           window.L.DomEvent.stopPropagation(e);
-          map.fitBounds(initialBounds, {padding: [8, 8]});
+          map.fitBounds(initialBounds, { padding: [8, 8] });
         });
         window.L.DomEvent.disableClickPropagation(container);
         window.L.DomEvent.disableScrollPropagation(container);
@@ -311,18 +342,36 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
 
       // Legend (top-right floating card)
       if (!colorValue && values.length) {
-        var legend = window.L.control({position: 'topright'});
-        legend.onAdd = function() {
-          var div = window.L.DomUtil.create('div');
-          div.style.cssText = 'background: rgba(255,255,255,0.92); padding: 8px 10px; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.2); font-size: 12px; line-height: 1.5; max-height: 220px; overflow: auto; color: #111;';
-          var html = legendTitle ? '<div style="font-weight: 600; margin-bottom: 4px;">' + escapeHtml(legendTitle) + '</div>' : '';
+        const legend = window.L.control({ position: 'topright' });
+        legend.onAdd = function () {
+          const div = window.L.DomUtil.create('div');
+          div.style.cssText =
+            'background: rgba(255,255,255,0.92); padding: 8px 10px; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.2); font-size: 12px; line-height: 1.5; max-height: 220px; overflow: auto; color: #111;';
+          let html = legendTitle
+            ? '<div style="font-weight: 600; margin-bottom: 4px;">' + escapeHtml(legendTitle) + '</div>'
+            : '';
           if (colorType === 'quantitative') {
-            html += '<div style="height: 10px; border-radius: 2px; background: linear-gradient(to right, ' + ORANGES.join(',') + ');"></div>' +
-              '<div style="display: flex; justify-content: space-between;"><span>' + escapeHtml(formatValue(domainMin)) + '</span><span>' + escapeHtml(formatValue(domainMax)) + '</span></div>';
+            html +=
+              '<div style="height: 10px; border-radius: 2px; background: linear-gradient(to right, ' +
+              ORANGES.join(',') +
+              ');"></div>' +
+              '<div style="display: flex; justify-content: space-between;"><span>' +
+              escapeHtml(formatValue(domainMin)) +
+              '</span><span>' +
+              escapeHtml(formatValue(domainMax)) +
+              '</span></div>';
           } else {
-            html += domain.map(function(v, i) {
-              return '<div style="white-space: nowrap;"><span style="display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 5px; background: ' + CATEGORY10[i % CATEGORY10.length] + ';"></span>' + escapeHtml(v) + '</div>';
-            }).join('');
+            html += domain
+              .map(function (v, i) {
+                return (
+                  '<div style="white-space: nowrap;"><span style="display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 5px; background: ' +
+                  CATEGORY10[i % CATEGORY10.length] +
+                  ';"></span>' +
+                  escapeHtml(v) +
+                  '</div>'
+                );
+              })
+              .join('');
           }
           div.innerHTML = html;
           return div;
@@ -333,15 +382,15 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
 
     function handleResize() {
       if (resizeTimeout) clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(function() {
-        Object.keys(mapViews).forEach(function(mapId) {
+      resizeTimeout = setTimeout(function () {
+        Object.keys(mapViews).forEach(function (mapId) {
           if (document.getElementById(mapId)) mapViews[mapId].invalidateSize();
         });
       }, 250);
     }
 
     async function initLeafletMaps() {
-      var maps = document.querySelectorAll('.leaflet-map[data-spec]');
+      const maps = document.querySelectorAll('.leaflet-map[data-spec]');
       if (maps.length === 0) return;
 
       try {
@@ -351,7 +400,7 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
         return;
       }
 
-      maps.forEach(async function(el) {
+      maps.forEach(async function (el) {
         if (el.getAttribute('data-rendered') === 'true' || el.dataset.rendering === 'true') return;
         if (el.offsetWidth < 100) {
           setTimeout(initLeafletMaps, 100);
@@ -363,12 +412,16 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
           el.setAttribute('data-rendered', 'true');
         } catch (error) {
           console.error('Error rendering map:', error);
-          var retryLabel = document.documentElement.lang === 'mn' ? 'Дахин оролдох' : 'Retry';
-          el.innerHTML = '<div class="text-red-600 p-4">Error loading map: ' + escapeHtml(error.message) +
-            ' <button type="button" class="underline" data-retry>' + retryLabel + '</button></div>';
-          var retryBtn = el.querySelector('[data-retry]');
+          const retryLabel = document.documentElement.lang === 'mn' ? 'Дахин оролдох' : 'Retry';
+          el.innerHTML =
+            '<div class="text-red-600 p-4">Error loading map: ' +
+            escapeHtml(error.message) +
+            ' <button type="button" class="underline" data-retry>' +
+            retryLabel +
+            '</button></div>';
+          const retryBtn = el.querySelector('[data-retry]');
           if (retryBtn) {
-            retryBtn.addEventListener('click', function() {
+            retryBtn.addEventListener('click', function () {
               el.removeAttribute('data-rendered');
               initLeafletMaps();
             });
@@ -390,9 +443,13 @@ const mapId = `map-${Math.random().toString(36).substring(2, 11)}`;
       initLeafletMaps();
     }
 
-    document.addEventListener('astro:page-load', function() {
-      Object.keys(mapViews).forEach(function(mapId) {
-        try { mapViews[mapId].remove(); } catch (e) { /* already gone */ }
+    document.addEventListener('astro:page-load', function () {
+      Object.keys(mapViews).forEach(function (mapId) {
+        try {
+          mapViews[mapId].remove();
+        } catch {
+          /* already gone */
+        }
       });
       mapViews = {};
       initLeafletMaps();

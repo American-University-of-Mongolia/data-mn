@@ -31,10 +31,9 @@ Flags:
 - `--build` — also run `npm run build` in the PR worktree (adds ~75 s; a
   `--build` review of PR 159 took ~90 s on ritz).
 - `--lint` — also run `npm run check` (astro + eslint + prettier; adds
-  ~15 s). As of 2026-10-07 this fails on main too: 643 eslint errors (506
-  from the vendored `public/vendor/leaflet/leaflet.js`) and ~680 files
-  prettier flags, mostly generated MDX and chart JSON. A Lint FAIL is only
-  the PR's problem if the errors are in files it changed.
+  ~15 s). Main passes it. A PR branched before the lint cleanup (its
+  `data.mn/.prettierignore` doesn't list `src/data`) fails on old
+  errors until main is merged into it.
 
 `--build` and `--lint` first run `npm ci` in the worktree's `data.mn`,
 reported as its own `Node deps (npm ci)` row (seconds with the warm

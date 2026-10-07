@@ -79,27 +79,37 @@ const dataCollection = defineCollection({
 
     // Data files for download
     excelLanguage: z.enum(['page']).optional(),
-    dataFiles: z.array(z.object({
-      path: z.string(),
-      format: z.string(), // csv, xlsx, json, etc.
-      label: z.string().optional(),
-      size: z.string().optional(),
-      description: z.string().optional(),
-    })).optional(),
+    dataFiles: z
+      .array(
+        z.object({
+          path: z.string(),
+          format: z.string(), // csv, xlsx, json, etc.
+          label: z.string().optional(),
+          size: z.string().optional(),
+          description: z.string().optional(),
+        })
+      )
+      .optional(),
 
     // Source attribution
-    source: z.object({
-      name: z.string(),
-      url: z.string().url(),
-      tableId: z.string().optional(),
-    }).optional(),
+    source: z
+      .object({
+        name: z.string(),
+        url: z.string().url(),
+        tableId: z.string().optional(),
+      })
+      .optional(),
 
     // Previous versions for reference
-    previousVersions: z.array(z.object({
-      version: z.number(),
-      date: z.date(),
-      path: z.string().optional(),
-    })).optional(),
+    previousVersions: z
+      .array(
+        z.object({
+          version: z.number(),
+          date: z.date(),
+          path: z.string().optional(),
+        })
+      )
+      .optional(),
   }),
 });
 

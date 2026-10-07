@@ -11,7 +11,7 @@ metadata:
   title:
     default: Data.mn
     template: '%s — Data.mn'
-  description: "Statistics, data visualizations, and insights for Mongolia and beyond. Your source for reliable data and analytical reports."
+  description: 'Statistics, data visualizations, and insights for Mongolia and beyond. Your source for reliable data and analytical reports.'
   robots:
     index: true
     follow: true

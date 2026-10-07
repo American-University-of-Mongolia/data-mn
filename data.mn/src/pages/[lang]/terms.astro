@@ -1,17 +1,13 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import { useTranslations, type Language } from '~/i18n';
+import type { Language } from '~/i18n';
 
 export const getStaticPaths = () => {
-  return [
-    { params: { lang: 'en' } },
-    { params: { lang: 'mn' } },
-  ];
+  return [{ params: { lang: 'en' } }, { params: { lang: 'mn' } }];
 };
 
 const { lang } = Astro.params;
 const currentLang = (lang as Language) || 'mn';
-const t = useTranslations(currentLang);
 
 const metadata = {
   title: currentLang === 'en' ? 'Terms of Service' : 'Үйлчилгээний нөхцөл',
@@ -24,11 +20,13 @@ const content = {
     sections: [
       {
         title: 'Acceptance of Terms',
-        content: 'By accessing or using Data.mn ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our Service.',
+        content:
+          'By accessing or using Data.mn ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our Service.',
       },
       {
         title: 'Description of Service',
-        content: 'Data.mn is an open data platform that provides free access to statistics, reports, and insights about Mongolia. We aggregate data from official government sources and present it in accessible formats with visualizations and downloadable files.',
+        content:
+          'Data.mn is an open data platform that provides free access to statistics, reports, and insights about Mongolia. We aggregate data from official government sources and present it in accessible formats with visualizations and downloadable files.',
       },
       {
         title: 'Use of Service',
@@ -81,23 +79,28 @@ Content on Data.mn is for informational purposes only and should not be consider
       },
       {
         title: 'Limitation of Liability',
-        content: 'To the maximum extent permitted by law, Data.mn shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or business opportunities arising from your use of the Service or reliance on data presented on the platform.',
+        content:
+          'To the maximum extent permitted by law, Data.mn shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or business opportunities arising from your use of the Service or reliance on data presented on the platform.',
       },
       {
         title: 'Indemnification',
-        content: 'You agree to indemnify and hold Data.mn harmless from any claims, damages, or expenses arising from your use of the Service or violation of these Terms.',
+        content:
+          'You agree to indemnify and hold Data.mn harmless from any claims, damages, or expenses arising from your use of the Service or violation of these Terms.',
       },
       {
         title: 'Privacy',
-        content: 'Your privacy is important to us. Please review our <a href="privacy" class="text-primary hover:underline">Privacy Policy</a>, which also governs your use of the Service.',
+        content:
+          'Your privacy is important to us. Please review our <a href="privacy" class="text-primary hover:underline">Privacy Policy</a>, which also governs your use of the Service.',
       },
       {
         title: 'Governing Law',
-        content: 'These Terms are governed by the laws of Mongolia. Any disputes will be resolved in the courts of Mongolia.',
+        content:
+          'These Terms are governed by the laws of Mongolia. Any disputes will be resolved in the courts of Mongolia.',
       },
       {
         title: 'Changes to Terms',
-        content: 'We may modify these Terms at any time. We will notify users of significant changes by posting the updated Terms on this page and updating the "Last updated" date. Continued use after changes constitutes acceptance of the new Terms.',
+        content:
+          'We may modify these Terms at any time. We will notify users of significant changes by posting the updated Terms on this page and updating the "Last updated" date. Continued use after changes constitutes acceptance of the new Terms.',
       },
       {
         title: 'Contact Information',
@@ -113,11 +116,13 @@ Website: data.mn`,
     sections: [
       {
         title: 'Нөхцөлийг хүлээн зөвшөөрөх',
-        content: 'Data.mn ("Үйлчилгээ")-д хандах эсвэл ашиглахдаа та эдгээр Үйлчилгээний нөхцөлийг ("Нөхцөл") дагаж мөрдөхийг зөвшөөрч байна. Хэрэв та эдгээр Нөхцлийг зөвшөөрөхгүй бол манай Үйлчилгээг бүү ашиглана уу.',
+        content:
+          'Data.mn ("Үйлчилгээ")-д хандах эсвэл ашиглахдаа та эдгээр Үйлчилгээний нөхцөлийг ("Нөхцөл") дагаж мөрдөхийг зөвшөөрч байна. Хэрэв та эдгээр Нөхцлийг зөвшөөрөхгүй бол манай Үйлчилгээг бүү ашиглана уу.',
       },
       {
         title: 'Үйлчилгээний тодорхойлолт',
-        content: 'Data.mn нь Монгол Улсын статистик, тайлан, дүн шинжилгээнд үнэ төлбөргүй хандах боломж олгодог нээлттэй өгөгдлийн платформ юм. Бид албан ёсны төрийн эх сурвалжаас өгөгдлийг нэгтгэж, визуалчлал болон татаж авах боломжтой файлуудаар хүртээмжтэй хэлбэрээр толилуулдаг.',
+        content:
+          'Data.mn нь Монгол Улсын статистик, тайлан, дүн шинжилгээнд үнэ төлбөргүй хандах боломж олгодог нээлттэй өгөгдлийн платформ юм. Бид албан ёсны төрийн эх сурвалжаас өгөгдлийг нэгтгэж, визуалчлал болон татаж авах боломжтой файлуудаар хүртээмжтэй хэлбэрээр толилуулдаг.',
       },
       {
         title: 'Үйлчилгээний хэрэглээ',
@@ -170,23 +175,28 @@ Data.mn дээрх агуулга нь зөвхөн мэдээллийн зор�
       },
       {
         title: 'Хариуцлагын хязгаарлалт',
-        content: 'Хуулиар зөвшөөрөгдсөн хамгийн дээд хэмжээнд Data.mn нь Үйлчилгээг ашигласан эсвэл платформд толилуулсан өгөгдөлд найдсанаас үүссэн ашиг, өгөгдөл, бизнесийн боломж алдагдсан зэрэг шууд бус, санамсаргүй, онцгой, үр дагавартай эсвэл шийтгэлийн хохирлыг хариуцахгүй.',
+        content:
+          'Хуулиар зөвшөөрөгдсөн хамгийн дээд хэмжээнд Data.mn нь Үйлчилгээг ашигласан эсвэл платформд толилуулсан өгөгдөлд найдсанаас үүссэн ашиг, өгөгдөл, бизнесийн боломж алдагдсан зэрэг шууд бус, санамсаргүй, онцгой, үр дагавартай эсвэл шийтгэлийн хохирлыг хариуцахгүй.',
       },
       {
         title: 'Нөхөн төлбөр',
-        content: 'Та Үйлчилгээг ашигласан эсвэл эдгээр Нөхцөлийг зөрчсөнөөс үүссэн аливаа нэхэмжлэл, хохирол, зардлаас Data.mn-ийг чөлөөлж, хор хохиролгүй байлгахыг зөвшөөрч байна.',
+        content:
+          'Та Үйлчилгээг ашигласан эсвэл эдгээр Нөхцөлийг зөрчсөнөөс үүссэн аливаа нэхэмжлэл, хохирол, зардлаас Data.mn-ийг чөлөөлж, хор хохиролгүй байлгахыг зөвшөөрч байна.',
       },
       {
         title: 'Нууцлал',
-        content: 'Таны нууцлал бидний хувьд чухал. Үйлчилгээг ашиглахад мөн хамаарах манай <a href="privacy" class="text-primary hover:underline">Нууцлалын бодлого</a>-ыг уншина уу.',
+        content:
+          'Таны нууцлал бидний хувьд чухал. Үйлчилгээг ашиглахад мөн хамаарах манай <a href="privacy" class="text-primary hover:underline">Нууцлалын бодлого</a>-ыг уншина уу.',
       },
       {
         title: 'Хамаарах хууль',
-        content: 'Эдгээр Нөхцөл нь Монгол Улсын хуулиар зохицуулагдана. Аливаа маргааныг Монгол Улсын шүүхээр шийдвэрлэнэ.',
+        content:
+          'Эдгээр Нөхцөл нь Монгол Улсын хуулиар зохицуулагдана. Аливаа маргааныг Монгол Улсын шүүхээр шийдвэрлэнэ.',
       },
       {
         title: 'Нөхцөлийн өөрчлөлт',
-        content: 'Бид эдгээр Нөхцлийг хүссэн үедээ өөрчилж болно. Бид шинэчилсэн Нөхцлийг энэ хуудсанд байршуулж, "Сүүлд шинэчилсэн" огноог шинэчлэх замаар хэрэглэгчдэд чухал өөрчлөлтүүдийг мэдэгдэх болно. Өөрчлөлтийн дараа үргэлжлүүлэн ашиглах нь шинэ Нөхцлийг хүлээн зөвшөөрсөнд тооцогдоно.',
+        content:
+          'Бид эдгээр Нөхцлийг хүссэн үедээ өөрчилж болно. Бид шинэчилсэн Нөхцлийг энэ хуудсанд байршуулж, "Сүүлд шинэчилсэн" огноог шинэчлэх замаар хэрэглэгчдэд чухал өөрчлөлтүүдийг мэдэгдэх болно. Өөрчлөлтийн дараа үргэлжлүүлэн ашиглах нь шинэ Нөхцлийг хүлээн зөвшөөрсөнд тооцогдоно.',
       },
       {
         title: 'Холбоо барих мэдээлэл',
@@ -209,12 +219,14 @@ const c = content[currentLang];
     </header>
 
     <article class="prose prose-lg dark:prose-invert max-w-none">
-      {c.sections.map((section) => (
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold dark:text-white mb-3">{section.title}</h2>
-          <div class="text-muted dark:text-slate-300 leading-relaxed" set:html={section.content} />
-        </section>
-      ))}
+      {
+        c.sections.map((section) => (
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold dark:text-white mb-3">{section.title}</h2>
+            <div class="text-muted dark:text-slate-300 leading-relaxed" set:html={section.content} />
+          </section>
+        ))
+      }
     </article>
   </div>
 </Layout>

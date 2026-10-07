@@ -38,11 +38,8 @@ interface Props {
   stats?: StatCard[];
 }
 
-const { title, lang = 'mn' } = Astro.props;
+const { lang = 'mn' } = Astro.props;
 const t = useTranslations(lang);
-
-// Default title from translations if not provided
-const sectionTitle = title || t('home.keyIndicators');
 
 // Build language-aware links
 const langPrefix = `/${lang}`;
@@ -192,7 +189,13 @@ const rightStats = stats.slice(2);
                   </p>
                 </div>
                 <div class="absolute inset-x-0 bottom-0 h-2/3 overflow-hidden">
-                  <Sparkline data={stat.sparklineData} width={200} height={100} color={stat.color || '#2563eb'} class="w-full h-full" />
+                  <Sparkline
+                    data={stat.sparklineData}
+                    width={200}
+                    height={100}
+                    color={stat.color || '#2563eb'}
+                    class="w-full h-full"
+                  />
                 </div>
                 <div class="absolute bottom-4 left-4 z-10">
                   <span class="text-2xl font-bold text-primary">
@@ -270,12 +273,20 @@ const rightStats = stats.slice(2);
                     </p>
                   </div>
                   <div class="absolute inset-x-0 bottom-0 h-2/3 overflow-hidden">
-                    <Sparkline data={stat.sparklineData} width={250} height={100} color={stat.color || '#2563eb'} class="w-full h-full" />
+                    <Sparkline
+                      data={stat.sparklineData}
+                      width={250}
+                      height={100}
+                      color={stat.color || '#2563eb'}
+                      class="w-full h-full"
+                    />
                   </div>
                   <div class="absolute bottom-5 left-5 z-10">
                     <span class="text-3xl font-bold text-primary">
                       {stat.value}
-                      {stat.unit && <span class="text-lg font-normal text-gray-600 dark:text-gray-400">{stat.unit}</span>}
+                      {stat.unit && (
+                        <span class="text-lg font-normal text-gray-600 dark:text-gray-400">{stat.unit}</span>
+                      )}
                     </span>
                   </div>
                 </>
@@ -289,7 +300,9 @@ const rightStats = stats.slice(2);
                   <div class="flex items-end justify-between mt-auto">
                     <span class="text-3xl font-bold text-primary">
                       {stat.value}
-                      {stat.unit && <span class="text-lg font-normal text-gray-600 dark:text-gray-400">{stat.unit}</span>}
+                      {stat.unit && (
+                        <span class="text-lg font-normal text-gray-600 dark:text-gray-400">{stat.unit}</span>
+                      )}
                     </span>
                     {stat.icon && <span class="text-5xl">{stat.icon}</span>}
                   </div>
@@ -322,12 +335,20 @@ const rightStats = stats.slice(2);
                   </p>
                 </div>
                 <div class="absolute inset-x-0 bottom-0 h-2/3 overflow-hidden">
-                  <Sparkline data={stat.sparklineData} width={250} height={100} color={stat.color || '#2563eb'} class="w-full h-full" />
+                  <Sparkline
+                    data={stat.sparklineData}
+                    width={250}
+                    height={100}
+                    color={stat.color || '#2563eb'}
+                    class="w-full h-full"
+                  />
                 </div>
                 <div class="absolute bottom-5 left-5 z-10">
                   <span class="text-2xl font-bold text-primary">
                     {stat.value}
-                    {stat.unit && <span class="text-base font-normal text-gray-600 dark:text-gray-400">{stat.unit}</span>}
+                    {stat.unit && (
+                      <span class="text-base font-normal text-gray-600 dark:text-gray-400">{stat.unit}</span>
+                    )}
                   </span>
                 </div>
               </>
@@ -341,7 +362,9 @@ const rightStats = stats.slice(2);
                 <div class="flex items-end justify-between mt-auto">
                   <span class="text-2xl font-bold text-primary">
                     {stat.value}
-                    {stat.unit && <span class="text-base font-normal text-gray-600 dark:text-gray-400">{stat.unit}</span>}
+                    {stat.unit && (
+                      <span class="text-base font-normal text-gray-600 dark:text-gray-400">{stat.unit}</span>
+                    )}
                   </span>
                   {stat.icon && <span class="text-4xl">{stat.icon}</span>}
                 </div>

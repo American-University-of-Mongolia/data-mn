@@ -6,7 +6,6 @@ import Announcement from '~/components/widgets/Announcement.astro';
 
 import { UI } from 'astrowind:config';
 import { getLangFromUrl, useTranslations, type Language } from '~/i18n';
-import { getAsset } from '~/utils/permalinks';
 
 import type { MetaData } from '~/types';
 
@@ -85,11 +84,13 @@ const footerData = {
 ---
 
 <Layout metadata={metadata}>
-  {showAnnouncement && (
-    <slot name="announcement">
-      <Announcement />
-    </slot>
-  )}
+  {
+    showAnnouncement && (
+      <slot name="announcement">
+        <Announcement />
+      </slot>
+    )
+  }
   <slot name="header">
     <Header {...headerData} lang={currentLang} homeUrl={homeUrl} isSticky showToggleTheme />
   </slot>

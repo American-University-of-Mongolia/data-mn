@@ -15,6 +15,7 @@ Files should be named using the following pattern:
 ```
 
 Examples:
+
 - `2025-12-05-population-total.mdx`
 - `2025-12-01-gdp-quarterly.mdx`
 - `2025-11-28-mining-permits.mdx`
@@ -32,15 +33,15 @@ All changelog entries must include the following frontmatter fields:
 
 ```yaml
 ---
-date: 2025-12-05  # Date of the change (YYYY-MM-DD format)
-action: added     # One of: added, updated, removed
-dataset_id: population-total  # The dataset's ID (slug)
-dataset_name_en: Mongolia Total Population (1956-2024)  # English dataset name
-dataset_name_mn: Монгол Улсын нийт хүн ам (1956-2024)  # Mongolian dataset name
-description_en: Initial release of historical population data from NSO 1212.mn  # English description
-description_mn: ҮСХ 1212.mn-ээс авсан түүхэн хүн амын өгөгдлийн анхны хувилбар  # Mongolian description
-source: National Statistics Office  # Optional: data source name
-version: 1  # Optional: version number
+date: 2025-12-05 # Date of the change (YYYY-MM-DD format)
+action: added # One of: added, updated, removed
+dataset_id: population-total # The dataset's ID (slug)
+dataset_name_en: Mongolia Total Population (1956-2024) # English dataset name
+dataset_name_mn: Монгол Улсын нийт хүн ам (1956-2024) # Mongolian dataset name
+description_en: Initial release of historical population data from NSO 1212.mn # English description
+description_mn: ҮСХ 1212.mn-ээс авсан түүхэн хүн амын өгөгдлийн анхны хувилбар # Mongolian description
+source: National Statistics Office # Optional: data source name
+version: 1 # Optional: version number
 ---
 ```
 
@@ -134,14 +135,17 @@ source: National Statistics Office
 ### Examples
 
 **For "added" actions:**
+
 - "Initial release of monthly inflation data from NSO 1212.mn covering January 2000 to November 2024."
 - "New dataset tracking mining permits by region and mineral type, sourced from MRPAM monthly reports."
 
 **For "updated" actions:**
+
 - "Updated with November 2024 data from NSO. Added seasonal adjustment calculations."
 - "Refreshed with Q4 2024 data. Extended historical coverage back to 1990."
 
 **For "removed" actions:**
+
 - "Deprecated and replaced by the consolidated trade statistics dataset."
 - "Removed due to data quality issues. Will be re-added when source data is corrected."
 
@@ -168,6 +172,7 @@ source: National Statistics Office
 ## Questions?
 
 If you have questions about creating changelog entries, refer to:
+
 - The Data.mn AGENTS.md file
 - The `/data-add` and `/data-update` slash command documentation
 - Existing changelog entries in `src/data/changelog/en/` and `mn/` for examples

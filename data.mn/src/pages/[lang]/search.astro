@@ -7,10 +7,7 @@ import { useTranslations, type Language } from '~/i18n';
 export const prerender = true;
 
 export const getStaticPaths = () => {
-  return [
-    { params: { lang: 'en' } },
-    { params: { lang: 'mn' } },
-  ];
+  return [{ params: { lang: 'en' } }, { params: { lang: 'mn' } }];
 };
 
 const { lang } = Astro.params;
@@ -18,14 +15,17 @@ const currentLang = (lang as Language) || 'mn';
 const t = useTranslations(currentLang);
 
 // Get all content from all collections at build time, filtered by language
-const dataPages = await getCollection('data', ({ id, data }) =>
-  id.startsWith(`${currentLang}/`) && data.draft !== true
+const dataPages = await getCollection(
+  'data',
+  ({ id, data }) => id.startsWith(`${currentLang}/`) && data.draft !== true
 );
-const reports = await getCollection('reports', ({ id, data }) =>
-  id.startsWith(`${currentLang}/`) && data.draft !== true
+const reports = await getCollection(
+  'reports',
+  ({ id, data }) => id.startsWith(`${currentLang}/`) && data.draft !== true
 );
-const insights = await getCollection('insights', ({ id, data }) =>
-  id.startsWith(`${currentLang}/`) && data.draft !== true
+const insights = await getCollection(
+  'insights',
+  ({ id, data }) => id.startsWith(`${currentLang}/`) && data.draft !== true
 );
 
 // Helper to extract slug from ID
@@ -149,7 +149,7 @@ const uiTranslations = {
     const wordMap = {
       // === Multi-word phrases (checked first due to length sorting) ===
       'hun am': 'хүн ам',
-      'hunam': 'хүн ам',
+      hunam: 'хүн ам',
       'ediin zasag': 'эдийн засаг',
       'eruul mend': 'эрүүл мэнд',
       'erchim huch': 'эрчим хүч',
@@ -158,103 +158,129 @@ const uiTranslations = {
       'nasni butets': 'насны бүтэц',
 
       // === Single word stems (romanized Mongolian) ===
-      'mongol': 'монгол',
-      'hun': 'хүн',
-      'am': 'ам',
-      'ediin': 'эдийн',
-      'zasag': 'засаг',
-      'eruul': 'эрүүл',
-      'mend': 'мэнд',
-      'bolovsrol': 'боловсрол',
-      'ajilguidel': 'ажилгүйдэл',
-      'ajil': 'ажил',
-      'hudaldaa': 'худалдаа',
-      'tsalin': 'цалин',
-      'mal': 'мал',
-      'inflyatsi': 'инфляци',
-      'uilchilgee': 'үйлчилгээ',
-      'ayalal': 'аялал',
-      'erchim': 'эрчим',
-      'huch': 'хүч',
-      'pyramid': 'пирамид',
-      'piramid': 'пирамид',
-      'huis': 'хүйс',
-      'eregtei': 'эрэгтэй',
-      'emegtei': 'эмэгтэй',
-      'nas': 'нас',
-      'nasni': 'насны',
-      'butets': 'бүтэц',
-      'toollogo': 'тооллого',
-      'orlogo': 'орлого',
-      'orts': 'өрх',
-      'orokh': 'өрх',
-      'uls': 'улс',
-      'niit': 'нийт',
-      'osolт': 'өсөлт',
+      mongol: 'монгол',
+      hun: 'хүн',
+      am: 'ам',
+      ediin: 'эдийн',
+      zasag: 'засаг',
+      eruul: 'эрүүл',
+      mend: 'мэнд',
+      bolovsrol: 'боловсрол',
+      ajilguidel: 'ажилгүйдэл',
+      ajil: 'ажил',
+      hudaldaa: 'худалдаа',
+      tsalin: 'цалин',
+      mal: 'мал',
+      inflyatsi: 'инфляци',
+      uilchilgee: 'үйлчилгээ',
+      ayalal: 'аялал',
+      erchim: 'эрчим',
+      huch: 'хүч',
+      pyramid: 'пирамид',
+      piramid: 'пирамид',
+      huis: 'хүйс',
+      eregtei: 'эрэгтэй',
+      emegtei: 'эмэгтэй',
+      nas: 'нас',
+      nasni: 'насны',
+      butets: 'бүтэц',
+      toollogo: 'тооллого',
+      orlogo: 'орлого',
+      orts: 'өрх',
+      orokh: 'өрх',
+      uls: 'улс',
+      niit: 'нийт',
+      osolт: 'өсөлт',
 
       // === English concept translations ===
-      'population': 'хүн ам',
-      'demographic': 'хүн ам',
-      'demographics': 'хүн ам',
-      'economy': 'эдийн засаг',
-      'economic': 'эдийн засаг',
-      'gdp': 'ДНБ',
-      'education': 'боловсрол',
-      'unemployment': 'ажилгүйдэл',
-      'employment': 'ажил',
-      'job': 'ажил',
-      'jobs': 'ажил',
-      'healthcare': 'эрүүл мэнд',
-      'health': 'эрүүл мэнд',
-      'medical': 'эрүүл мэнд',
-      'trade': 'худалдаа',
-      'commerce': 'худалдаа',
-      'salary': 'цалин',
-      'wage': 'цалин',
-      'wages': 'цалин',
-      'income': 'орлого',
-      'livestock': 'мал',
-      'cattle': 'мал',
-      'herding': 'мал',
-      'inflation': 'инфляци',
-      'price': 'үнэ',
-      'prices': 'үнэ',
-      'service': 'үйлчилгээ',
-      'services': 'үйлчилгээ',
-      'tourism': 'аялал жуулчлал',
-      'travel': 'аялал',
-      'energy': 'эрчим хүч',
-      'power': 'эрчим хүч',
-      'electricity': 'эрчим хүч',
-      'sex': 'хүйс',
-      'gender': 'хүйс',
-      'male': 'эрэгтэй',
-      'female': 'эмэгтэй',
-      'men': 'эрэгтэй',
-      'women': 'эмэгтэй',
-      'age': 'нас',
-      'census': 'тооллого',
-      'count': 'тоо',
-      'household': 'өрх',
-      'family': 'өрх',
-      'total': 'нийт',
-      'growth': 'өсөлт',
-      'mongolia': 'монгол',
-      'mongolian': 'монгол',
+      population: 'хүн ам',
+      demographic: 'хүн ам',
+      demographics: 'хүн ам',
+      economy: 'эдийн засаг',
+      economic: 'эдийн засаг',
+      gdp: 'ДНБ',
+      education: 'боловсрол',
+      unemployment: 'ажилгүйдэл',
+      employment: 'ажил',
+      job: 'ажил',
+      jobs: 'ажил',
+      healthcare: 'эрүүл мэнд',
+      health: 'эрүүл мэнд',
+      medical: 'эрүүл мэнд',
+      trade: 'худалдаа',
+      commerce: 'худалдаа',
+      salary: 'цалин',
+      wage: 'цалин',
+      wages: 'цалин',
+      income: 'орлого',
+      livestock: 'мал',
+      cattle: 'мал',
+      herding: 'мал',
+      inflation: 'инфляци',
+      price: 'үнэ',
+      prices: 'үнэ',
+      service: 'үйлчилгээ',
+      services: 'үйлчилгээ',
+      tourism: 'аялал жуулчлал',
+      travel: 'аялал',
+      energy: 'эрчим хүч',
+      power: 'эрчим хүч',
+      electricity: 'эрчим хүч',
+      sex: 'хүйс',
+      gender: 'хүйс',
+      male: 'эрэгтэй',
+      female: 'эмэгтэй',
+      men: 'эрэгтэй',
+      women: 'эмэгтэй',
+      age: 'нас',
+      census: 'тооллого',
+      count: 'тоо',
+      household: 'өрх',
+      family: 'өрх',
+      total: 'нийт',
+      growth: 'өсөлт',
+      mongolia: 'монгол',
+      mongolian: 'монгол',
     };
 
     // Character-level Latin to Cyrillic mapping (fallback for unknown words)
     // Based on common Mongolian romanization patterns
     const charMap = {
       // Digraphs (must be processed before single chars)
-      'kh': 'х', 'ts': 'ц', 'ch': 'ч', 'sh': 'ш', 'zh': 'ж',
-      'yo': 'ё', 'yu': 'ю', 'ya': 'я', 'ye': 'е',
+      kh: 'х',
+      ts: 'ц',
+      ch: 'ч',
+      sh: 'ш',
+      zh: 'ж',
+      yo: 'ё',
+      yu: 'ю',
+      ya: 'я',
+      ye: 'е',
       // Single characters
-      'a': 'а', 'b': 'б', 'v': 'в', 'g': 'г', 'd': 'д',
-      'e': 'э', 'z': 'з', 'i': 'и', 'j': 'ж', 'k': 'к',
-      'l': 'л', 'm': 'м', 'n': 'н', 'o': 'о', 'p': 'п',
-      'r': 'р', 's': 'с', 't': 'т', 'u': 'ү', 'f': 'ф',
-      'h': 'х', 'c': 'ц', 'y': 'й', 'w': 'в',
+      a: 'а',
+      b: 'б',
+      v: 'в',
+      g: 'г',
+      d: 'д',
+      e: 'э',
+      z: 'з',
+      i: 'и',
+      j: 'ж',
+      k: 'к',
+      l: 'л',
+      m: 'м',
+      n: 'н',
+      o: 'о',
+      p: 'п',
+      r: 'р',
+      s: 'с',
+      t: 'т',
+      u: 'ү',
+      f: 'ф',
+      h: 'х',
+      c: 'ц',
+      y: 'й',
+      w: 'в',
     };
 
     // Transliterate a single word using character mapping
@@ -266,7 +292,10 @@ const uiTranslations = {
         result = result.split(di).join(charMap[di] || di);
       }
       // Then single characters
-      result = result.split('').map(c => charMap[c] || c).join('');
+      result = result
+        .split('')
+        .map((c) => charMap[c] || c)
+        .join('');
       return result;
     }
 
@@ -292,14 +321,17 @@ const uiTranslations = {
       // Step 2: For any remaining Latin words, apply character-level transliteration
       if (hasLatinChars(result)) {
         // Split by spaces, transliterate Latin words, rejoin
-        result = result.split(/\s+/).map(word => {
-          if (hasLatinChars(word)) {
-            const transliterated = transliterateChars(word);
-            if (transliterated !== word) changed = true;
-            return transliterated;
-          }
-          return word;
-        }).join(' ');
+        result = result
+          .split(/\s+/)
+          .map((word) => {
+            if (hasLatinChars(word)) {
+              const transliterated = transliterateChars(word);
+              if (transliterated !== word) changed = true;
+              return transliterated;
+            }
+            return word;
+          })
+          .join(' ');
       }
 
       return { result, changed };
@@ -370,23 +402,23 @@ const uiTranslations = {
 
       // Strategy 1: Try matching ALL transliterated keywords
       if (wasTransliterated) {
-        results = searchIndex.filter(item => itemMatchesAllKeywords(item, transliteratedKeywords));
+        results = searchIndex.filter((item) => itemMatchesAllKeywords(item, transliteratedKeywords));
       }
 
       // Strategy 2: If no results, try ALL original keywords
       if (results.length === 0) {
-        results = searchIndex.filter(item => itemMatchesAllKeywords(item, originalKeywords));
+        results = searchIndex.filter((item) => itemMatchesAllKeywords(item, originalKeywords));
       }
 
       // Strategy 3: If still no results, try ANY keyword (more lenient)
       if (results.length === 0 && allKeywords.length > 1) {
-        results = searchIndex.filter(item => itemMatchesAnyKeyword(item, allKeywords));
+        results = searchIndex.filter((item) => itemMatchesAnyKeyword(item, allKeywords));
       }
 
       // Strategy 4: If still no results, try each keyword individually
       if (results.length === 0) {
         for (const kw of allKeywords) {
-          const kwResults = searchIndex.filter(item => itemMatchesKeyword(item, kw));
+          const kwResults = searchIndex.filter((item) => itemMatchesKeyword(item, kw));
           if (kwResults.length > 0) {
             results = kwResults;
             break;
@@ -396,10 +428,12 @@ const uiTranslations = {
 
       // Rank results by relevance score
       if (results.length > 1) {
-        results = results.map(item => ({
-          ...item,
-          _score: scoreItem(item, allKeywords)
-        })).sort((a, b) => b._score - a._score);
+        results = results
+          .map((item) => ({
+            ...item,
+            _score: scoreItem(item, allKeywords),
+          }))
+          .sort((a, b) => b._score - a._score);
       }
 
       return {
@@ -494,7 +528,10 @@ const uiTranslations = {
                   <div class="flex flex-wrap gap-2">
                     ${result.tags
                       .slice(0, 3)
-                      .map((tag) => `<span class="px-2 py-1 text-xs bg-gray-100 dark:bg-slate-700 rounded">${escapeHtml(tag)}</span>`)
+                      .map(
+                        (tag) =>
+                          `<span class="px-2 py-1 text-xs bg-gray-100 dark:bg-slate-700 rounded">${escapeHtml(tag)}</span>`
+                      )
                       .join('')}
                   </div>
                 `

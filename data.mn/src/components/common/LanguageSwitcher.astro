@@ -6,7 +6,7 @@
  * <LanguageSwitcher lang={currentLang} />
  */
 
-import { languages, getAlternateLang, localizedPath, type Language } from '~/i18n';
+import { localizedPath, type Language } from '~/i18n';
 
 interface Props {
   lang: Language;
@@ -18,13 +18,7 @@ const { lang, class: className = '' } = Astro.props;
 // Get the current path without language prefix
 const pathname = Astro.url.pathname;
 const pathParts = pathname.split('/').filter(Boolean);
-const pathWithoutLang = pathParts[0] === 'en' || pathParts[0] === 'mn'
-  ? '/' + pathParts.slice(1).join('/')
-  : pathname;
-
-// Get alternate language
-const altLang = getAlternateLang(lang);
-const altUrl = localizedPath(altLang, pathWithoutLang || '/');
+const pathWithoutLang = pathParts[0] === 'en' || pathParts[0] === 'mn' ? '/' + pathParts.slice(1).join('/') : pathname;
 ---
 
 <div class:list={['language-switcher flex items-center gap-1', className]}>
@@ -34,7 +28,7 @@ const altUrl = localizedPath(altLang, pathWithoutLang || '/');
       'px-2 py-1 text-sm font-medium rounded transition-colors',
       lang === 'mn'
         ? 'bg-primary text-white'
-        : 'text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary'
+        : 'text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary',
     ]}
     aria-label="Монгол хэл"
   >
@@ -47,7 +41,7 @@ const altUrl = localizedPath(altLang, pathWithoutLang || '/');
       'px-2 py-1 text-sm font-medium rounded transition-colors',
       lang === 'en'
         ? 'bg-primary text-white'
-        : 'text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary'
+        : 'text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary',
     ]}
     aria-label="English"
   >

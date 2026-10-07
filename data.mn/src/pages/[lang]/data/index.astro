@@ -4,15 +4,12 @@ import Layout from '~/layouts/PageLayout.astro';
 import GridCards from '~/components/blog/GridCards.astro';
 import Headline from '~/components/blog/Headline.astro';
 import CategoryFilter from '~/components/ui/CategoryFilter.astro';
-import { getLangFromUrl, useTranslations, type Language } from '~/i18n';
+import { useTranslations, type Language } from '~/i18n';
 
 export const prerender = true;
 
 export const getStaticPaths = () => {
-  return [
-    { params: { lang: 'en' } },
-    { params: { lang: 'mn' } },
-  ];
+  return [{ params: { lang: 'en' } }, { params: { lang: 'mn' } }];
 };
 
 const { lang } = Astro.params;
@@ -20,8 +17,9 @@ const currentLang = (lang as Language) || 'en';
 const t = useTranslations(currentLang);
 
 // Get all data pages for the current language
-const allDataPages = await getCollection('data', ({ id, data }) =>
-  id.startsWith(`${currentLang}/`) && data.draft !== true
+const allDataPages = await getCollection(
+  'data',
+  ({ id, data }) => id.startsWith(`${currentLang}/`) && data.draft !== true
 );
 
 // Sort by publish date, most recent first
@@ -58,9 +56,10 @@ const posts = sortedData.map((item) => {
 
 const metadata = {
   title: t('nav.data'),
-  description: currentLang === 'en'
-    ? 'Browse our collection of statistical data, charts, and datasets.'
-    : 'Статистик мэдээлэл, график, өгөгдлийн цуглуулга',
+  description:
+    currentLang === 'en'
+      ? 'Browse our collection of statistical data, charts, and datasets.'
+      : 'Статистик мэдээлэл, график, өгөгдлийн цуглуулга',
   robots: {
     index: true,
     follow: true,
@@ -72,9 +71,11 @@ const allLabel = currentLang === 'en' ? 'All' : 'Бүгд';
 
 <Layout metadata={metadata}>
   <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-5xl">
-    <Headline subtitle={currentLang === 'en'
-      ? 'Browse statistical data, interactive charts, and downloadable datasets'
-      : 'Статистик мэдээлэл, интерактив график, өгөгдлийн цуглуулга'}>
+    <Headline
+      subtitle={currentLang === 'en'
+        ? 'Browse statistical data, interactive charts, and downloadable datasets'
+        : 'Статистик мэдээлэл, интерактив график, өгөгдлийн цуглуулга'}
+    >
       {t('nav.data')}
     </Headline>
     <CategoryFilter categories={categories} allLabel={allLabel} />

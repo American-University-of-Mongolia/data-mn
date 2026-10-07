@@ -68,7 +68,8 @@ const LABELS = {
     tags: 'Түлхүүр үг',
     data: 'Өгөгдөл',
     chart: 'График',
-    truncatedNote: (shown, total) => `*Нийт ${total} мөрөөс эхний ${shown}-г харуулж байна. Бүрэн өгөгдлийг татаж авах боломжтой.*`,
+    truncatedNote: (shown, total) =>
+      `*Нийт ${total} мөрөөс эхний ${shown}-г харуулж байна. Бүрэн өгөгдлийг татаж авах боломжтой.*`,
     downloads: 'Татах',
     downloadCSV: 'CSV татах',
     downloadExcel: 'Excel татах',
@@ -295,7 +296,6 @@ function generateInsightMarkdown(frontmatter, bodyMd, lang, slug) {
  */
 function generateMarkdown(frontmatter, excelData, lang, slug) {
   const t = LABELS[lang];
-  const otherLang = lang === 'en' ? 'mn' : 'en';
 
   let md = `# ${frontmatter.title}\n\n`;
   md += `> ${frontmatter.excerpt}\n\n`;

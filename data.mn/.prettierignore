@@ -2,3 +2,25 @@ dist
 node_modules
 .github
 .changeset
+
+# Vendored third-party code (minified Leaflet)
+public/vendor
+
+# Content and pipeline output, not code. The Python tools, agents and
+# `npm run build` (categories.generated.json) write these, and the Python
+# validators check them. Prettier's style (single quotes, wrapped arrays)
+# would fight the generators on every refresh, and
+# tools/scripts/refresh_homepage_indicators.py matches the pages'
+# double-quoted frontmatter.
+src/data
+src/redirects.generated.ts
+public/charts
+public/maps
+public/datasets
+
+# Claude Code writes its own settings file
+.claude
+
+# prettier-plugin-astro rewrites the empty <select>s in the toolbar
+# expression as <select />, which Astro can't compile.
+src/components/ui/ChartControls.astro

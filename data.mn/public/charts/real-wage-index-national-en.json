@@ -1,0 +1,238 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia Real Wage Index (1992–2025). Chart shows 2000–2025; CSV and Excel downloads include all years, 1992–2025. The continuous line through 2024 marks the 2014 source change. The separate 2025 point is not comparable with earlier years.",
+  "data": {
+    "url": "/datasets/real-wage-index-national-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum['Year'] >= 2000"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "quantitative",
+      "title": "Year",
+      "scale": {
+        "zero": false,
+        "nice": false,
+        "padding": 8
+      },
+      "axis": {
+        "format": "d",
+        "tickCount": 6,
+        "grid": false,
+        "labelAngle": 0,
+        "labelOverlap": "greedy",
+        "labelSeparation": 8
+      }
+    },
+    "y": {
+      "field": "Real wage index (2023=100)",
+      "type": "quantitative",
+      "title": "Index (2023=100)",
+      "scale": {
+        "zero": true,
+        "range": [
+          {
+            "expr": "height"
+          },
+          40
+        ]
+      },
+      "axis": {
+        "format": ".0f",
+        "gridOpacity": 0.25
+      }
+    }
+  },
+  "layer": [
+    {
+      "transform": [
+        {
+          "filter": "datum['Year'] == 2014"
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "strokeDash": [5, 4],
+        "strokeWidth": 1.5,
+        "color": "#64748b"
+      },
+      "encoding": {
+        "y": {
+          "value": 0
+        },
+        "y2": {
+          "value": "height"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Year'] == 2014"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "top",
+        "dx": -6,
+        "dy": -50,
+        "fontSize": 12,
+        "color": "#64748b"
+      },
+      "encoding": {
+        "y": {
+          "value": "height"
+        },
+        "text": {
+          "value": ["2014", "Source change"]
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Year'] < 2025"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "color": "#1f77b4",
+        "interpolate": "linear"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "Year",
+            "title": "Year",
+            "type": "quantitative",
+            "format": "d"
+          },
+          {
+            "field": "Real wage index (2023=100)",
+            "title": "Real wage index (2023=100)",
+            "type": "quantitative",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Year'] < 2025"
+        }
+      ],
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 70,
+        "color": "#1f77b4"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "Year",
+            "title": "Year",
+            "type": "quantitative",
+            "format": "d"
+          },
+          {
+            "field": "Real wage index (2023=100)",
+            "title": "Real wage index (2023=100)",
+            "type": "quantitative",
+            "format": ".1f"
+          }
+        ],
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Year'] == 2025"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 110,
+        "color": "#d97706"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "Year",
+            "title": "Year",
+            "type": "quantitative",
+            "format": "d"
+          },
+          {
+            "field": "Real wage index (2023=100)",
+            "title": "Real wage index (2023=100)",
+            "type": "quantitative",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Year'] == 2025"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "top",
+        "dx": -10,
+        "dy": -40,
+        "fontSize": 12,
+        "color": "#b45309"
+      },
+      "encoding": {
+        "text": {
+          "value": ["2025", "Not comparable"]
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    }
+  }
+}

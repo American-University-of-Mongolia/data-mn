@@ -1,0 +1,42 @@
+---
+title: Mongolia Real Wage Index (1992–2025)
+publishDate: 2026-09-30
+excerpt: Mongolia's real wage index, 1992–2025, adjusted for consumer prices; 2025
+  is not comparable with earlier years.
+category: Labor Market
+tags:
+  - mongolia
+  - real wages
+  - purchasing power
+  - inflation
+  - labor
+keywords:
+  - mongolia real wages
+  - real wage index
+  - inflation-adjusted wages
+author: Data.mn
+dataVersion: 1
+dataDate: 2025-12-31
+excelLanguage: page
+dataFiles:
+  - path: /datasets/real-wage-index-national-en.csv
+    format: csv
+    size: 1 KB
+    description: Download as CSV
+  - path: /datasets/real-wage-index-national-en.xlsx
+    format: xlsx
+    size: 6 KB
+    description: Open in Excel
+source:
+  name: National Statistics Office of Mongolia
+  url: https://data.1212.mn/pxweb/en/NSO/NSO__Labour%2C%20business__Wages__REAL%20WAGE%20INDEX%20%282023%3D100%29%2C%20by%20divisions%20of%20economic%20activities/DT_NSO_0400_036V4.px/
+  tableId: DT_NSO_0400_036V4.px
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<VegaChart
+  spec="/charts/real-wage-index-national-en.json"
+  title="Mongolia Real Wage Index (1992–2025)"
+  caption="Downloads include the full 1992–2025 series."
+/>

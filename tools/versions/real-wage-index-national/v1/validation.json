@@ -1,0 +1,25 @@
+{
+  "rows_per_language": 34,
+  "years": [
+    1992,
+    2025
+  ],
+  "bilingual_numeric_parity": true,
+  "missing_values": 0,
+  "base_2023": 100,
+  "source_hashes_verified": true,
+  "chart_years": [
+    2000,
+    2025
+  ],
+  "continuous_line_years": [
+    2000,
+    2024
+  ],
+  "source_change_rules": [
+    2014
+  ],
+  "disconnected_points": [
+    2025
+  ]
+}

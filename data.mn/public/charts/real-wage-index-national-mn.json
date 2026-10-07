@@ -1,0 +1,238 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын бодит цалингийн индекс (1992–2025). Графикт 2000–2025 оныг харуулав; CSV болон Excel файлуудад 1992–2025 оны бүх утга багтсан. 2024 он хүртэлх үргэлжилсэн шугам дээр 2014 оны эх үүсвэрийн өөрчлөлтийг тэмдэглэв. Тусдаа цэгээр харуулсан 2025 оныг өмнөх онуудтай харьцуулах боломжгүй.",
+  "data": {
+    "url": "/datasets/real-wage-index-national-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum['Он'] >= 2000"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Он",
+      "type": "quantitative",
+      "title": "Он",
+      "scale": {
+        "zero": false,
+        "nice": false,
+        "padding": 8
+      },
+      "axis": {
+        "format": "d",
+        "tickCount": 6,
+        "grid": false,
+        "labelAngle": 0,
+        "labelOverlap": "greedy",
+        "labelSeparation": 8
+      }
+    },
+    "y": {
+      "field": "Бодит цалингийн индекс (2023=100)",
+      "type": "quantitative",
+      "title": "Индекс (2023=100)",
+      "scale": {
+        "zero": true,
+        "range": [
+          {
+            "expr": "height"
+          },
+          40
+        ]
+      },
+      "axis": {
+        "format": ".0f",
+        "gridOpacity": 0.25
+      }
+    }
+  },
+  "layer": [
+    {
+      "transform": [
+        {
+          "filter": "datum['Он'] == 2014"
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "strokeDash": [5, 4],
+        "strokeWidth": 1.5,
+        "color": "#64748b"
+      },
+      "encoding": {
+        "y": {
+          "value": 0
+        },
+        "y2": {
+          "value": "height"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Он'] == 2014"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "top",
+        "dx": -6,
+        "dy": -50,
+        "fontSize": 12,
+        "color": "#64748b"
+      },
+      "encoding": {
+        "y": {
+          "value": "height"
+        },
+        "text": {
+          "value": ["2014", "Эх үүсвэрийн", "өөрчлөлт"]
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Он'] < 2025"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "color": "#1f77b4",
+        "interpolate": "linear"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "Он",
+            "title": "Он",
+            "type": "quantitative",
+            "format": "d"
+          },
+          {
+            "field": "Бодит цалингийн индекс (2023=100)",
+            "title": "Бодит цалингийн индекс (2023=100)",
+            "type": "quantitative",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Он'] < 2025"
+        }
+      ],
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 70,
+        "color": "#1f77b4"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "Он",
+            "title": "Он",
+            "type": "quantitative",
+            "format": "d"
+          },
+          {
+            "field": "Бодит цалингийн индекс (2023=100)",
+            "title": "Бодит цалингийн индекс (2023=100)",
+            "type": "quantitative",
+            "format": ".1f"
+          }
+        ],
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Он'] == 2025"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 110,
+        "color": "#d97706"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "Он",
+            "title": "Он",
+            "type": "quantitative",
+            "format": "d"
+          },
+          {
+            "field": "Бодит цалингийн индекс (2023=100)",
+            "title": "Бодит цалингийн индекс (2023=100)",
+            "type": "quantitative",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Он'] == 2025"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "top",
+        "dx": -10,
+        "dy": -40,
+        "fontSize": 12,
+        "color": "#b45309"
+      },
+      "encoding": {
+        "text": {
+          "value": ["2025", "Харьцуулах", "боломжгүй"]
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 10,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    }
+  }
+}

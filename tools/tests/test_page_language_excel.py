@@ -6,6 +6,7 @@ import sys
 
 import pandas as pd
 import pytest
+import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 
@@ -14,17 +15,35 @@ import validate_dataset as validator
 
 DATASET = 'livestock-losses-by-aimag'
 PROJECT = Path(__file__).resolve().parents[2] / 'data.mn'
+LABELS = {'en': {'csv': 'CSV (English)', 'xlsx': 'Excel (English)'},
+          'mn': {'csv': 'CSV (Монгол)', 'xlsx': 'Excel (Монгол)'}}
+PAGE = """---
+excelLanguage: page
+dataFiles:
+  - path: /datasets/{dataset}-{lang}.csv
+    format: csv
+    label: {csv}
+  - path: /datasets/{dataset}-{lang}.xlsx
+    format: xlsx
+    label: {xlsx}
+source:
+  name: National Statistics Office of Mongolia
+---
+"""
 
 
 @pytest.fixture
 def project(tmp_path):
-    for folder, pattern in [('public/datasets', f'{DATASET}*'),
-                            ('src/data/data/en', f'{DATASET}.mdx'),
-                            ('src/data/data/mn', f'{DATASET}.mdx')]:
-        target = tmp_path / folder
-        target.mkdir(parents=True)
-        for source in (PROJECT / folder).glob(pattern):
-            shutil.copyfile(source, target / source.name)
+    datasets = tmp_path / 'public/datasets'
+    datasets.mkdir(parents=True)
+    for source in (PROJECT / 'public/datasets').glob(f'{DATASET}*'):
+        shutil.copyfile(source, datasets / source.name)
+    # Pages are written, not copied: live frontmatter gets edited for reasons
+    # unrelated to downloads (e.g. its labels were dropped).
+    for lang, labels in LABELS.items():
+        page = tmp_path / f'src/data/data/{lang}/{DATASET}.mdx'
+        page.parent.mkdir(parents=True)
+        page.write_text(PAGE.format(dataset=DATASET, lang=lang, **labels))
     return tmp_path
 
 
@@ -85,4 +104,6 @@ def test_rebuild_preserves_download_language(project, monkeypatch, mode):
         page = (project / f'src/data/data/{lang}/{DATASET}.mdx').read_text()
         filename = f'{DATASET}-{lang}.xlsx' if mode == 'page' else f'{DATASET}.xlsx'
         assert f'/datasets/{filename}' in page
-        assert 'label:' in page  # Rebuilds preserve the site's explicit labels.
+        # Rebuilds preserve the site's explicit labels.
+        files = yaml.safe_load(page.split('---', 2)[1])['dataFiles']
+        assert {f['format']: f.get('label') for f in files} == LABELS[lang]

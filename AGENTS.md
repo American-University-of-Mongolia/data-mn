@@ -577,8 +577,9 @@ Flags: `--fast` skips charts/build/lint; `--build` and `--lint` opt into
 Either one first runs `npm ci` there from the PR's lockfile (its own report
 row, seconds with a warm npm cache), so the build uses the PR's
 dependencies, not whatever is installed in your checkout. `npm run check`
-currently fails on main too (pre-existing eslint/prettier errors), so a
-Lint FAIL only blocks a PR for errors in files it changed.
+passes on main; a PR branched before the lint cleanup (its
+`data.mn/.prettierignore` doesn't list `src/data`) needs main merged in
+before `--lint` means anything.
 
 If all checks pass, confirm with Robert, then merge and deploy:
 

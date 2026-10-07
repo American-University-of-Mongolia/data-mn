@@ -272,6 +272,25 @@ npm run build      # Build for production
 npm run preview    # Preview production build
 ```
 
+### Lint and Format
+
+```bash
+npm run check      # astro check + eslint + prettier --check (must pass)
+npm run fix        # eslint --fix + prettier --write
+```
+
+The checks cover hand-written code only. `.prettierignore` and
+`eslint.config.js` exclude vendored Leaflet (`public/vendor`) and content
+written by the pipeline, agents or `npm run build`: `src/data/`,
+`src/redirects.generated.ts`, `public/charts`, `public/maps`,
+`public/datasets`. The Python validators check those instead.
+
+Prettier formats markup inside `{...}` in `.astro` files by JSX rules, where
+a line break adds no whitespace, but Astro renders it. After formatting,
+check that no space appeared between inline elements (e.g. a title and the
+`<span>` after it). Where it matters, keep the markup on one line under a
+`// prettier-ignore` comment (see VegaChart.astro).
+
 ### Creating New Content
 
 1. Create MDX file in appropriate language folder:

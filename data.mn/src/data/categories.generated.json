@@ -17,7 +17,7 @@
   {
     "en": "Labor Market",
     "mn": "Хөдөлмөрийн зах зээл",
-    "count": 11
+    "count": 12
   },
   {
     "en": "Trade",
@@ -32,7 +32,7 @@
   {
     "en": "Agriculture",
     "mn": "Хөдөө аж ахуй",
-    "count": 8
+    "count": 9
   },
   {
     "en": "Prices & Inflation",
@@ -47,6 +47,11 @@
   {
     "en": "Education",
     "mn": "Боловсрол",
+    "count": 5
+  },
+  {
+    "en": "Environment",
+    "mn": "Байгаль орчин",
     "count": 5
   },
   {
@@ -75,6 +80,11 @@
     "count": 2
   },
   {
+    "en": "Government & Politics",
+    "mn": "Засаглал ба улс төр",
+    "count": 2
+  },
+  {
     "en": "Mining & Resources",
     "mn": "Уул уурхай",
     "count": 2
@@ -82,11 +92,6 @@
   {
     "en": "Employment",
     "mn": "Хөдөлмөр эрхлэлт",
-    "count": 1
-  },
-  {
-    "en": "Environment",
-    "mn": "Байгаль орчин",
     "count": 1
   },
   {

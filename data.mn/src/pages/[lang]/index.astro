@@ -2,14 +2,12 @@
 import { getCollection } from 'astro:content';
 import Layout from '~/layouts/PageLayout.astro';
 import { Icon } from 'astro-icon/components';
-import Stats from '~/components/widgets/Stats.astro';
 import LatestInsights from '~/components/widgets/LatestInsights.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Button from '~/components/ui/Button.astro';
-import Image from '~/components/common/Image.astro';
 import OpenDataStats from '~/components/widgets/OpenDataStats.astro';
 import GrainOverlay from '~/components/ui/GrainOverlay.astro';
-import { getLangFromUrl, useTranslations, type Language } from '~/i18n';
+import { useTranslations, type Language } from '~/i18n';
 
 // Get language from URL parameter
 const { lang } = Astro.params;
@@ -33,12 +31,6 @@ const metadata = {
 const allData = await getCollection('data', ({ id, data }) =>
   id.startsWith(`${currentLang}/`) && data.draft !== true
 );
-const allReports = await getCollection('reports', ({ id, data }) =>
-  id.startsWith(`${currentLang}/`) && data.draft !== true
-);
-const allInsights = await getCollection('insights', ({ id, data }) =>
-  id.startsWith(`${currentLang}/`) && data.draft !== true
-);
 
 // Get trending/featured data (most recent 6)
 const trendingData = allData
@@ -49,15 +41,6 @@ const trendingData = allData
   })
   .slice(0, 6);
 
-// Get featured reports (most recent 4)
-const featuredReports = allReports
-  .sort((a, b) => {
-    const dateA = a.data.publishDate ? new Date(a.data.publishDate).valueOf() : 0;
-    const dateB = b.data.publishDate ? new Date(b.data.publishDate).valueOf() : 0;
-    return dateB - dateA;
-  })
-  .slice(0, 4);
-
 // Import generated categories from registry database
 import generatedCategories from '~/data/categories.generated.json';
 
@@ -67,9 +50,6 @@ const popularTopics = generatedCategories.map((category) => ({
   slug: currentLang === 'en' ? category.en : category.mn,
   count: category.count,
 }));
-
-// Count visualizations (data pages with charts)
-const visualizationCount = allData.length; // All data pages have charts
 ---
 
 <Layout metadata={metadata}>
@@ -221,7 +201,9 @@ const visualizationCount = allData.length; // All data pages have charts
     </div>
   </WidgetWrapper>
 
-  <!-- Stats Section (commented out for now - uncomment when we have more content)
+  <!-- Stats Section (commented out for now - uncomment when we have more content;
+       also restore the Stats import and the allReports, allInsights and
+       visualizationCount values in the frontmatter)
   <Stats
     title="Data.mn by the numbers"
     stats={[
@@ -259,6 +241,8 @@ const visualizationCount = allData.length; // All data pages have charts
   </WidgetWrapper>
 
   {/* <!-- TEMPORARILY HIDDEN - Featured Reports Section *******************
+  To re-enable, also restore the Image import and featuredReports (the 4 most
+  recent reports by publishDate) in the frontmatter.
   <section class="relative not-prose scroll-mt-[72px] overflow-hidden">
     <div class="absolute inset-0 bg-dark dark:bg-transparent" aria-hidden="true">
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(0,82,204,0.15)_0%,transparent_50%),radial-gradient(ellipse_at_80%_80%,rgba(212,175,55,0.08)_0%,transparent_50%)]"></div>

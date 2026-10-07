@@ -2,7 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
 import Layout from '~/layouts/PageLayout.astro';
-import { useTranslations, formatDate, type Language } from '~/i18n';
+import { formatDate, type Language } from '~/i18n';
 import { cleanSlug } from '~/utils/permalinks';
 
 export const prerender = true;
@@ -27,7 +27,6 @@ export const getStaticPaths = (async () => {
 const { insight } = Astro.props;
 const { lang } = Astro.params;
 const currentLang = (lang as Language) || 'en';
-const t = useTranslations(currentLang);
 
 const { Content } = await render(insight);
 

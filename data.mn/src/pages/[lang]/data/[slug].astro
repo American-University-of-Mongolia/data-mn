@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
 import Layout from '~/layouts/PageLayout.astro';
 import { Icon } from 'astro-icon/components';
-import { useTranslations, formatDate, type Language } from '~/i18n';
+import { useTranslations, type Language } from '~/i18n';
 
 export const prerender = true;
 
@@ -30,7 +30,7 @@ const t = useTranslations(currentLang);
 
 const { Content } = await render(page);
 
-const { title, excerpt, publishDate, updateDate, author, category, tags, dataFiles, dataVersion, dataDate, source } = page.data;
+const { title, excerpt, publishDate, category, tags, dataFiles, source } = page.data;
 
 const wideChart = page.data.chartLayout === 'wide';
 

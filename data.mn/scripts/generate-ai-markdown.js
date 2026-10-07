@@ -295,7 +295,6 @@ function generateInsightMarkdown(frontmatter, bodyMd, lang, slug) {
  */
 function generateMarkdown(frontmatter, excelData, lang, slug) {
   const t = LABELS[lang];
-  const otherLang = lang === 'en' ? 'mn' : 'en';
 
   let md = `# ${frontmatter.title}\n\n`;
   md += `> ${frontmatter.excerpt}\n\n`;

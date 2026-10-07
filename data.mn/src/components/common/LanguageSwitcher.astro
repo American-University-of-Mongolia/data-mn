@@ -6,7 +6,7 @@
  * <LanguageSwitcher lang={currentLang} />
  */
 
-import { languages, getAlternateLang, localizedPath, type Language } from '~/i18n';
+import { localizedPath, type Language } from '~/i18n';
 
 interface Props {
   lang: Language;
@@ -21,10 +21,6 @@ const pathParts = pathname.split('/').filter(Boolean);
 const pathWithoutLang = pathParts[0] === 'en' || pathParts[0] === 'mn'
   ? '/' + pathParts.slice(1).join('/')
   : pathname;
-
-// Get alternate language
-const altLang = getAlternateLang(lang);
-const altUrl = localizedPath(altLang, pathWithoutLang || '/');
 ---
 
 <div class:list={['language-switcher flex items-center gap-1', className]}>

@@ -49,12 +49,11 @@ const isInlineSpec = typeof spec === 'object';
     window._vegaChartInitialized = true;
 
     // Store chart views for resize handling
-    var chartViews = {};
+    let chartViews = {};
     let linkedYears = {};
-    var resizeTimeout = null;
-    var vegaLoaded = false;
-    var decimalNumberFormat = ",.6~f";
-    var legendLayoutTools = import('/scripts/chart-legend-layout.js');
+    let resizeTimeout = null;
+    const decimalNumberFormat = ",.6~f";
+    const legendLayoutTools = import('/scripts/chart-legend-layout.js');
 
     // Vega treats a bare "," as a general-number format and can render
     // thousands as 1e+4. Normalize legacy and explicitly exponential formats
@@ -64,7 +63,7 @@ const isInlineSpec = typeof spec === 'object';
         value.forEach(normalizeNumberFormats);
       } else if (value && typeof value === 'object') {
         Object.keys(value).forEach(function(key) {
-          var child = value[key];
+          const child = value[key];
           if (
             key === 'format' &&
             typeof child === 'string' &&
@@ -80,14 +79,14 @@ const isInlineSpec = typeof spec === 'object';
     }
 
     function hasBarMark(spec) {
-      var mark = spec.mark && (spec.mark.type || spec.mark);
+      const mark = spec.mark && (spec.mark.type || spec.mark);
       if (mark === 'bar') return true;
       return (spec.layer || []).some(hasBarMark);
     }
 
     // A single-view bar chart whose y axis lists categories (e.g. sectors).
     function isCategoryBarChart(spec) {
-      var y = spec.encoding && spec.encoding.y;
+      const y = spec.encoding && spec.encoding.y;
       return !!y && (y.type === 'nominal' || y.type === 'ordinal') &&
         !spec.facet && !spec.encoding.row && !spec.concat && !spec.hconcat && !spec.vconcat &&
         hasBarMark(spec);
@@ -96,14 +95,14 @@ const isInlineSpec = typeof spec === 'object';
     // Vega expression splitting a label at the last space before `n`
     // characters; the second line is ellipsized by labelLimit if still long.
     function wrapLabelExpr(n) {
-      var cut = "lastindexof(substring(datum.label, 0, " + n + "), ' ')";
+      const cut = "lastindexof(substring(datum.label, 0, " + n + "), ' ')";
       return "length(datum.label) <= " + n + " || " + cut + " < 1 ? datum.label : " +
         "[substring(datum.label, 0, " + cut + "), substring(datum.label, " + cut + " + 1)]";
     }
 
     async function loadFieldValues(spec, field) {
       try {
-        var rows = spec.data && spec.data.values;
+        let rows = spec.data && spec.data.values;
         if (!rows && spec.data && spec.data.url) {
           rows = window.vega.read(await window.vega.loader().load(spec.data.url), {
             type: (spec.data.format && spec.data.format.type) || 'csv'
@@ -117,15 +116,15 @@ const isInlineSpec = typeof spec === 'object';
     }
 
     async function loadCategoricalLegendLabels(spec, tools) {
-      var labels = tools.categoricalLegendLabels(spec);
+      const labels = tools.categoricalLegendLabels(spec);
       if (labels.length || !spec.data || !spec.data.url) return labels;
 
       try {
-        var text = await window.vega.loader().load(spec.data.url);
-        var rows = window.vega.read(text, {
-          type: (spec.data.format && spec.data.format.type) || 'csv',
-          parse: 'auto'
-        });
+        const text = await window.vega.loader().load(spec.data.url);
+        const rows = window.vega.read(text, {
+        type: (spec.data.format && spec.data.format.type) || 'csv',
+        parse: 'auto'
+      });
         return tools.categoricalLegendLabels(spec, rows);
       } catch (error) {
         console.warn('Could not inspect chart legend labels:', error);
@@ -141,11 +140,11 @@ const isInlineSpec = typeof spec === 'object';
           return;
         }
 
-        var scripts = [
-          'https://cdn.jsdelivr.net/npm/vega@5.30.0',
-          'https://cdn.jsdelivr.net/npm/vega-lite@5.21.0',
-          'https://cdn.jsdelivr.net/npm/vega-embed@6.26.0'
-        ];
+        const scripts = [
+        'https://cdn.jsdelivr.net/npm/vega@5.30.0',
+        'https://cdn.jsdelivr.net/npm/vega-lite@5.21.0',
+        'https://cdn.jsdelivr.net/npm/vega-embed@6.26.0'
+      ];
 
         function loadScript(index) {
           if (index >= scripts.length) {
@@ -158,7 +157,7 @@ const isInlineSpec = typeof spec === 'object';
           if (index === 1 && window.vegaLite) { loadScript(2); return; }
           if (index === 2 && window.vegaEmbed) { resolve(); return; }
 
-          var script = document.createElement('script');
+          const script = document.createElement('script');
           script.src = scripts[index];
           script.onload = function() { loadScript(index + 1); };
           script.onerror = function() { reject(new Error('Failed to load ' + scripts[index])); };
@@ -377,7 +376,7 @@ const isInlineSpec = typeof spec === 'object';
       if (resizeTimeout) clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(function() {
         Object.keys(chartViews).forEach(function(chartId) {
-          var el = document.getElementById(chartId);
+          const el = document.getElementById(chartId);
           if (el && chartViews[chartId]) {
             chartViews[chartId].finalize();
             delete chartViews[chartId];
@@ -391,7 +390,7 @@ const isInlineSpec = typeof spec === 'object';
 
     // Initialize all Vega charts on the page
     async function initVegaCharts() {
-      var charts = document.querySelectorAll('.vega-chart[data-spec]');
+      const charts = document.querySelectorAll('.vega-chart[data-spec]');
       if (charts.length === 0) return;
 
       // Ensure libraries are loaded
@@ -401,36 +400,36 @@ const isInlineSpec = typeof spec === 'object';
         console.error('Failed to load Vega libraries:', error);
         return;
       }
-      var legendTools = await legendLayoutTools;
+      const legendTools = await legendLayoutTools;
 
       charts.forEach(async function(el) {
-        var chartId = el.id;
+        const chartId = el.id;
 
         // Skip if already rendered
         if (el.getAttribute('data-rendered') === 'true' || el.dataset.rendering === 'true') return;
 
-        var isInline = el.dataset.isInline === 'true';
-        var specData = el.dataset.spec;
-        var aspectRatio = parseFloat(el.dataset.aspectRatio) || 0.5;
+        const isInline = el.dataset.isInline === 'true';
+        const specData = el.dataset.spec;
+        const aspectRatio = parseFloat(el.dataset.aspectRatio) || 0.5;
 
         // Measure container width
-        var containerWidth = el.offsetWidth;
+        const containerWidth = el.offsetWidth;
         if (containerWidth < 100) {
           setTimeout(function() { initVegaCharts(); }, 100);
           return;
         }
 
-        var minimumHeight = containerWidth < 480 ? 400 : 250;
-        var calculatedHeight = Math.min(Math.max(containerWidth * aspectRatio, minimumHeight), 500);
+        const minimumHeight = containerWidth < 480 ? 400 : 250;
+        const calculatedHeight = Math.min(Math.max(containerWidth * aspectRatio, minimumHeight), 500);
 
         el.dataset.rendering = 'true';
         try {
-          var chartSpec;
+          let chartSpec;
 
           if (isInline) {
             chartSpec = JSON.parse(specData);
           } else {
-            var response = await fetch(specData);
+            const response = await fetch(specData);
             if (!response.ok) {
               throw new Error('Failed to load chart spec: ' + response.statusText);
             }
@@ -457,7 +456,7 @@ const isInlineSpec = typeof spec === 'object';
 
           // Asymmetric padding: more on left/bottom for axes, minimal on right/top
           // Use category10 color scheme (D3 default) - brighter than tableau10
-          var existingConfig = chartSpec.config || {};
+          const existingConfig = chartSpec.config || {};
           chartSpec = Object.assign({}, chartSpec, {
             width: containerWidth,
             height: calculatedHeight,
@@ -482,11 +481,11 @@ const isInlineSpec = typeof spec === 'object';
             // height instead of squeezing every row into the default chart
             // height, and wrap names onto two lines within a width that leaves
             // the plot at least ~55% of the container, even on phones.
-            var labelWidth = Math.round(Math.min(300, Math.max(120, containerWidth * 0.4)));
-            var wrapChars = Math.max(14, Math.floor(labelWidth / 7.5));
-            var yAxis = chartSpec.encoding.y.axis || {};
-            var yLabels = await loadFieldValues(chartSpec, chartSpec.encoding.y.field);
-            var wraps = yLabels.some(function(label) { return label.length > wrapChars; });
+            const labelWidth = Math.round(Math.min(300, Math.max(120, containerWidth * 0.4)));
+            const wrapChars = Math.max(14, Math.floor(labelWidth / 7.5));
+            const yAxis = chartSpec.encoding.y.axis || {};
+            const yLabels = await loadFieldValues(chartSpec, chartSpec.encoding.y.field);
+            const wraps = yLabels.some(function(label) { return label.length > wrapChars; });
             chartSpec.encoding.y.axis = Object.assign(wraps ? {
               labelExpr: wrapLabelExpr(wrapChars),
               labelLineHeight: 15,
@@ -538,19 +537,19 @@ const isInlineSpec = typeof spec === 'object';
             }
           }
 
-          var options = {
-            actions: {
-              export: { png: true, svg: true },
-              source: false,
-              editor: false,
-            },
-            theme: document.documentElement.classList.contains('dark') ? 'dark' : 'vox',
-            renderer: 'svg',
-            // 4x resolution for PNG exports (default scaleFactor 1 looks blurry)
-            scaleFactor: 4,
-          };
+          const options = {
+          actions: {
+            export: { png: true, svg: true },
+            source: false,
+            editor: false,
+          },
+          theme: document.documentElement.classList.contains('dark') ? 'dark' : 'vox',
+          renderer: 'svg',
+          // 4x resolution for PNG exports (default scaleFactor 1 looks blurry)
+          scaleFactor: 4,
+        };
 
-          var result = await window.vegaEmbed('#' + chartId, chartSpec, options);
+          const result = await window.vegaEmbed('#' + chartId, chartSpec, options);
           chartViews[chartId] = result.view;
           if (attachLinkedYear) await attachLinkedYear(result.view);
           if (attachExplorer) attachExplorer(result.view);

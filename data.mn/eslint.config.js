@@ -54,6 +54,7 @@ export default [
     },
   },
   {
-    ignores: ['dist', 'node_modules', '.github', 'types.generated.d.ts', '.astro'],
+    // public/vendor holds minified third-party code (Leaflet), not ours to lint.
+    ignores: ['dist', 'node_modules', '.github', 'types.generated.d.ts', '.astro', 'public/vendor'],
   },
 ];

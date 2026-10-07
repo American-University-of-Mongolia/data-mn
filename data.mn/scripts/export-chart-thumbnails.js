@@ -17,7 +17,6 @@ import sharp from 'sharp';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { createCanvas } from 'canvas';
 import {
   applyCategoricalLegendLayout,
   categoricalLegendLabels,
@@ -211,7 +210,9 @@ async function exportChart(specPath, outputPath) {
   // Remove any existing width/height from nested specs (for layered charts)
   if (chartSpec.layer) {
     chartSpec.layer = chartSpec.layer.map(layer => {
-      const { width, height, ...rest } = layer;
+      const rest = { ...layer };
+      delete rest.width;
+      delete rest.height;
       return rest;
     });
   }

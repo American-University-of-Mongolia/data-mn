@@ -13,7 +13,6 @@ const pathname = currentUrl.pathname;
 
 // Extract path parts
 const pathParts = pathname.split('/').filter(Boolean);
-const currentLang = pathParts[0] === 'en' || pathParts[0] === 'mn' ? pathParts[0] : 'mn';
 const pathWithoutLang = pathParts[0] === 'en' || pathParts[0] === 'mn'
   ? '/' + pathParts.slice(1).join('/')
   : pathname;

@@ -91,8 +91,11 @@ const uniqueCategories = [...new Set(categories)].filter(Boolean).sort();
     const categoryParam = urlParams.get('category');
 
     if (categoryParam) {
-      // Pre-select the category from URL parameter
-      activateCategory(categoryParam);
+      // Pre-select the category from URL parameter. A category with no pill
+      // (e.g. an old link to one since merged away) shows everything rather
+      // than an empty grid.
+      const known = Array.from(filterBtns).some((btn) => btn.getAttribute('data-category') === categoryParam);
+      activateCategory(known ? categoryParam : 'all');
     }
   }
 

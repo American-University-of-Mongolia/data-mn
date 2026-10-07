@@ -55,6 +55,11 @@
     "count": 5
   },
   {
+    "en": "Mining & Resources",
+    "mn": "Уул уурхай",
+    "count": 5
+  },
+  {
     "en": "Household & Income",
     "mn": "Өрх ба орлого",
     "count": 4
@@ -70,11 +75,6 @@
     "count": 3
   },
   {
-    "en": "Mining",
-    "mn": "Уул уурхай",
-    "count": 3
-  },
-  {
     "en": "Energy",
     "mn": "Эрчим хүч",
     "count": 2
@@ -82,11 +82,6 @@
   {
     "en": "Government & Politics",
     "mn": "Засаглал ба улс төр",
-    "count": 2
-  },
-  {
-    "en": "Mining & Resources",
-    "mn": "Уул уурхай",
     "count": 2
   },
   {

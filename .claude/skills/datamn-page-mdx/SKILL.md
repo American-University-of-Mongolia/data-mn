@@ -177,7 +177,7 @@ The chart shows a readable subset; the downloads contain everything.
 | Economy | Эдийн засаг | GDP, trade, inflation |
 | Employment | Хөдөлмөр эрхлэлт | Labor force, unemployment |
 | Housing | Орон сууц | Prices, construction |
-| Mining | Уул уурхай | Production, exports |
+| Mining & Resources | Уул уурхай | Production, exports |
 | Finance | Санхүү | Banking, exchange rates |
 | Agriculture | Хөдөө аж ахуй | Livestock, crops |
 | Education | Боловсрол | Schools, enrollment |

@@ -77,7 +77,7 @@ def load_categories_config():
     config_path = Path(__file__).parent.parent / 'config' / 'categories.json'
 
     # Default fallback categories
-    fallback_en = ["Demographics", "Economy", "Labor Market", "Housing", "Mining",
+    fallback_en = ["Demographics", "Economy", "Labor Market", "Housing", "Mining & Resources",
                    "Finance", "Agriculture", "Education", "Health", "Trade",
                    "Energy", "Tourism", "Environment", "Transport", "Technology"]
     fallback_mn = ["Хүн ам зүй", "Эдийн засаг", "Хөдөлмөрийн зах зээл", "Орон сууц",

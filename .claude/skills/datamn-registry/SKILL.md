@@ -342,7 +342,7 @@ Groups related datasets measuring the same indicator at different granularities.
 | Economy | Эдийн засаг |
 | Employment | Хөдөлмөр эрхлэлт |
 | Housing | Орон сууц |
-| Mining | Уул уурхай |
+| Mining & Resources | Уул уурхай |
 | Finance | Санхүү |
 | Agriculture | Хөдөө аж ахуй |
 | Education | Боловсрол |

@@ -389,7 +389,7 @@ When creating split configs, use these bilingual categories:
 | Economy | Эдийн засаг |
 | Employment | Хөдөлмөр эрхлэлт |
 | Housing | Орон сууц |
-| Mining | Уул уурхай |
+| Mining & Resources | Уул уурхай |
 | Finance | Санхүү |
 | Agriculture | Хөдөө аж ахуй |
 | Education | Боловсрол |

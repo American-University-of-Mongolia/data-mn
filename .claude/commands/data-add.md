@@ -548,7 +548,7 @@ Create file at `tools/sources/{source}/datasets/{dataset-id}.md`:
 
 ## Identification
 - **ID**: {source}-{topic}
-- **Category**: {Demographics | Economy | Mining | etc.}
+- **Category**: {Demographics | Economy | Mining & Resources | etc.}
 - **Tags**: [tag1, tag2, ...]
 
 ## Source Reference

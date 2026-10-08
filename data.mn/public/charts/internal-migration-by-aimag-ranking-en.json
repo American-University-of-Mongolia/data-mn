@@ -1,0 +1,104 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "/datasets/internal-migration-by-aimag-en.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "incoming": "number",
+        "outgoing": "number",
+        "net": "number"
+      }
+    }
+  },
+  "description": "All 21 aimags and the capital, ranked by recorded net migration in the year selected on the map.",
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum[\"year\"] == selectedYear"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 2
+  },
+  "encoding": {
+    "y": {
+      "field": "region",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null
+    },
+    "x": {
+      "field": "net",
+      "type": "quantitative",
+      "title": "Net migration (people)",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "format": ",.0f",
+        "tickCount": 4
+      }
+    },
+    "color": {
+      "condition": {
+        "test": "datum[\"net\"] >= 0",
+        "value": "#1f77b4"
+      },
+      "value": "#d6604d"
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "quantitative",
+        "title": "Year",
+        "format": "d"
+      },
+      {
+        "field": "region",
+        "type": "nominal",
+        "title": "Aimag / capital"
+      },
+      {
+        "field": "incoming",
+        "type": "quantitative",
+        "title": "Arrivals",
+        "format": ",.0f"
+      },
+      {
+        "field": "outgoing",
+        "type": "quantitative",
+        "title": "Departures",
+        "format": ",.0f"
+      },
+      {
+        "field": "net",
+        "type": "quantitative",
+        "title": "Net migration (people)",
+        "format": ",.0f"
+      }
+    ]
+  }
+}

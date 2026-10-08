@@ -1,0 +1,104 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "/datasets/internal-migration-by-aimag-mn.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "он": "number",
+        "ирсэн": "number",
+        "явсан": "number",
+        "цэвэр": "number"
+      }
+    }
+  },
+  "description": "Газрын зураг дээр сонгосон оны бүртгэгдсэн цэвэр шилжилтээр эрэмбэлсэн 21 аймаг, нийслэлийн дүн.",
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum[\"он\"] == selectedYear"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 2
+  },
+  "encoding": {
+    "y": {
+      "field": "бүс",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null
+    },
+    "x": {
+      "field": "цэвэр",
+      "type": "quantitative",
+      "title": "Цэвэр шилжилт (хүн)",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "format": ",.0f",
+        "tickCount": 4
+      }
+    },
+    "color": {
+      "condition": {
+        "test": "datum[\"цэвэр\"] >= 0",
+        "value": "#1f77b4"
+      },
+      "value": "#d6604d"
+    },
+    "tooltip": [
+      {
+        "field": "он",
+        "type": "quantitative",
+        "title": "Он",
+        "format": "d"
+      },
+      {
+        "field": "бүс",
+        "type": "nominal",
+        "title": "Аймаг / нийслэл"
+      },
+      {
+        "field": "ирсэн",
+        "type": "quantitative",
+        "title": "Шилжин ирсэн",
+        "format": ",.0f"
+      },
+      {
+        "field": "явсан",
+        "type": "quantitative",
+        "title": "Шилжин явсан",
+        "format": ",.0f"
+      },
+      {
+        "field": "цэвэр",
+        "type": "quantitative",
+        "title": "Цэвэр шилжилт (хүн)",
+        "format": ",.0f"
+      }
+    ]
+  }
+}

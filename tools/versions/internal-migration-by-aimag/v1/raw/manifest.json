@@ -1,0 +1,13 @@
+{
+  "retrieved_at": "2026-10-06T17:17:19.759558+00:00",
+  "table": "DT_NSO_0300_040V1.px",
+  "source_path": "Population, household/1_Population, household/DT_NSO_0300_040V1.px",
+  "files": {
+    "data-en.json": "8b8640367324f19ff21ebe1d0892935d4a79efd8140f610653de9cb31fc10140",
+    "metadata-mn.json": "ad1b68056a4d73cb9abf5c321de7f9f7b7503e555b600bc350bb017900abf5a6",
+    "query-en.json": "2016f98197035262dfee92d27309050ef325d70e5491f972acd2347ce7386110",
+    "metadata-en.json": "59ed1ac18d266e5583ec7856c8f945514b910da8f73b182ebed24cee457eaafd",
+    "query-mn.json": "2016f98197035262dfee92d27309050ef325d70e5491f972acd2347ce7386110",
+    "data-mn.json": "94efe1587cddcc65ebedb0ef5aba24cfec90ec5d0fedf1dba36bfd548d78dcf7"
+  }
+}

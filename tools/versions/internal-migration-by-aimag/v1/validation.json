@@ -1,0 +1,184 @@
+{
+  "source_hashes_verified": true,
+  "bilingual_values_match": true,
+  "province_sums_match_national": true,
+  "province_year_rows": 946,
+  "years": [
+    1983,
+    2025
+  ],
+  "national_balance": [
+    {
+      "year": 2025,
+      "difference": 0
+    },
+    {
+      "year": 2024,
+      "difference": 0
+    },
+    {
+      "year": 2023,
+      "difference": 0
+    },
+    {
+      "year": 2022,
+      "difference": 0
+    },
+    {
+      "year": 2021,
+      "difference": 0
+    },
+    {
+      "year": 2020,
+      "difference": 0
+    },
+    {
+      "year": 2019,
+      "difference": 147
+    },
+    {
+      "year": 2018,
+      "difference": 1619
+    },
+    {
+      "year": 2017,
+      "difference": 4637
+    },
+    {
+      "year": 2016,
+      "difference": -1506
+    },
+    {
+      "year": 2015,
+      "difference": 228
+    },
+    {
+      "year": 2014,
+      "difference": -1474
+    },
+    {
+      "year": 2013,
+      "difference": -1337
+    },
+    {
+      "year": 2012,
+      "difference": 3471
+    },
+    {
+      "year": 2011,
+      "difference": -102
+    },
+    {
+      "year": 2010,
+      "difference": 5803
+    },
+    {
+      "year": 2009,
+      "difference": -1438
+    },
+    {
+      "year": 2008,
+      "difference": 2659
+    },
+    {
+      "year": 2007,
+      "difference": 1070
+    },
+    {
+      "year": 2006,
+      "difference": 2789
+    },
+    {
+      "year": 2005,
+      "difference": 1815
+    },
+    {
+      "year": 2004,
+      "difference": -9247
+    },
+    {
+      "year": 2003,
+      "difference": 9270
+    },
+    {
+      "year": 2002,
+      "difference": 3451
+    },
+    {
+      "year": 2001,
+      "difference": -14880
+    },
+    {
+      "year": 2000,
+      "difference": -2216
+    },
+    {
+      "year": 1999,
+      "difference": -2923
+    },
+    {
+      "year": 1998,
+      "difference": -8875
+    },
+    {
+      "year": 1997,
+      "difference": -7935
+    },
+    {
+      "year": 1996,
+      "difference": -9595
+    },
+    {
+      "year": 1995,
+      "difference": -6658
+    },
+    {
+      "year": 1994,
+      "difference": -13269
+    },
+    {
+      "year": 1993,
+      "difference": -34395
+    },
+    {
+      "year": 1992,
+      "difference": -3654
+    },
+    {
+      "year": 1991,
+      "difference": 28998
+    },
+    {
+      "year": 1990,
+      "difference": 8220
+    },
+    {
+      "year": 1989,
+      "difference": 4670
+    },
+    {
+      "year": 1988,
+      "difference": -487
+    },
+    {
+      "year": 1987,
+      "difference": 1131
+    },
+    {
+      "year": 1986,
+      "difference": -4428
+    },
+    {
+      "year": 1985,
+      "difference": -2368
+    },
+    {
+      "year": 1984,
+      "difference": -4511
+    },
+    {
+      "year": 1983,
+      "difference": -4808
+    }
+  ]
+}

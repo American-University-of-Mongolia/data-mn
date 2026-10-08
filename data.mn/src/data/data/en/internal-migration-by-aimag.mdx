@@ -1,0 +1,38 @@
+---
+title: "Mongolia Internal Migration by Aimag, People (1983–2025)"
+publishDate: 2026-10-08
+excerpt: "Recorded arrivals, departures and net migration across Mongolia’s 21 aimags and Ulaanbaatar. Select a year on the map to compare places."
+category: "Demographics"
+tags: ["mongolia", "migration", "population"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-31
+dataFiles:
+- path: /datasets/internal-migration-by-aimag-all-en.csv
+  format: csv
+  size: 105 KB
+  description: Full source history, 1983–2025. Read historical limitations.
+- path: /datasets/internal-migration-by-aimag-en.xlsx
+  format: xlsx
+  size: 22 KB
+  description: Excel download
+source: {"name": "National Statistics Office of Mongolia", "url": "https://data.1212.mn/pxweb/en/NSO/NSO__Population%2C%20household__1_Population%2C%20household/DT_NSO_0300_040V1.px/", "tableId": "DT_NSO_0300_040V1.px"}
+keywords: ["internal migration Mongolia", "migration by aimag", "Ulaanbaatar migration"]
+excelLanguage: "page"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<div role="note" className="mb-4 text-sm text-slate-600 dark:text-slate-400">Historical data: national arrivals and departures do not balance before 2020. Govisumber has unexplained source zeros in 1983–1990. The map uses current boundaries for all years; historical comparisons need caution.</div>
+
+<h2>Net migration across Mongolia</h2>
+
+<VegaChart spec="/charts/internal-migration-by-aimag-en.json" title="Net migration across Mongolia" caption="Blue = net gain; red = net loss. Hover for arrivals and departures. Use the year slider below the map." aspectRatio={0.625} yearGroup="internal-migration-by-aimag" />
+
+<h2>Net migration by aimag</h2>
+
+<VegaChart spec="/charts/internal-migration-by-aimag-ranking-en.json" title="Net migration by aimag" caption="All 22 places, for the year selected above. Counts are not adjusted for population size." aspectRatio={0.8} yearGroup="internal-migration-by-aimag" />
+
+<h2>Arrivals and departures over time</h2>
+
+<VegaChart spec="/charts/internal-migration-by-aimag-trend-en.json" title="Arrivals and departures over time" caption="Select an aimag below the chart. Net migration = arrivals − departures." aspectRatio={0.65} />

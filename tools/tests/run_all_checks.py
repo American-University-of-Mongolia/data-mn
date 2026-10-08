@@ -92,10 +92,18 @@ def run_scripted_checks(dataset_id: str, base_dir: Path) -> list[CheckResult]:
         ("1.2", "MDX page (MN)", mdx_mn),
         ("1.3", "CSV data (EN)", csv_en),
         ("1.4", "CSV data (MN)", csv_mn),
-        ("1.5", "Excel file", xlsx),
         ("1.6", "Chart spec (EN)", chart_en),
         ("1.7", "Chart spec (MN)", chart_mn),
     ]
+
+    # Page-language downloads are an explicit alternative to one bilingual file.
+    pages = [parse_frontmatter(p) if p.exists() else {} for p in (mdx_en, mdx_mn)]
+    if all(page.get('excelLanguage') == 'page' for page in pages):
+        file_checks.extend((f'1.5-{lang.upper()}', f'Excel file ({lang.upper()})',
+                            base_dir / f'public/datasets/{dataset_id}-{lang}.xlsx')
+                           for lang in ('en', 'mn'))
+    else:
+        file_checks.append(('1.5', 'Excel file', xlsx))
 
     for check_id, desc, path in file_checks:
         exists = path.exists()

@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "/datasets/internal-migration-by-aimag-en.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "incoming": "number",
+        "outgoing": "number",
+        "net": "number"
+      }
+    }
+  },
+  "description": "Recorded internal migration, 1983–2025. Net = arrivals minus departures. Fixed symmetric color scale across all years. Historical data shown on current boundaries; see source limitations. Boundaries: geoBoundaries (ODbL) / OpenStreetMap contributors.",
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "range",
+        "min": 1983,
+        "max": 2025,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum[\"year\"] == selectedYear"
+    },
+    {
+      "lookup": "region",
+      "from": {
+        "data": {
+          "url": "/maps/mongolia-aimags.json",
+          "format": {
+            "type": "json",
+            "property": "features"
+          }
+        },
+        "key": "properties.name"
+      },
+      "as": "boundary"
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "#94a3b8",
+    "strokeWidth": 0.7
+  },
+  "encoding": {
+    "shape": {
+      "field": "boundary",
+      "type": "geojson"
+    },
+    "color": {
+      "field": "net",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          -40246,
+          40246
+        ],
+        "domainMid": 0,
+        "scheme": "redblue"
+      },
+      "legend": {
+        "orient": "top",
+        "title": "Net migration (people)",
+        "format": ",.0f",
+        "gradientLength": 230,
+        "tickCount": 3,
+        "values": [
+          -30000,
+          0,
+          30000
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "quantitative",
+        "title": "Year",
+        "format": "d"
+      },
+      {
+        "field": "region",
+        "type": "nominal",
+        "title": "Aimag / capital"
+      },
+      {
+        "field": "incoming",
+        "type": "quantitative",
+        "title": "Arrivals",
+        "format": ",.0f"
+      },
+      {
+        "field": "outgoing",
+        "type": "quantitative",
+        "title": "Departures",
+        "format": ",.0f"
+      },
+      {
+        "field": "net",
+        "type": "quantitative",
+        "title": "Net migration (people)",
+        "format": ",.0f"
+      }
+    ]
+  }
+}

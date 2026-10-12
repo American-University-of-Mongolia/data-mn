@@ -12,6 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 
 import rebuild_downloads as rebuild
 import validate_dataset as validator
+from run_all_checks import run_scripted_checks
 
 DATASET = 'livestock-losses-by-aimag'
 PROJECT = Path(__file__).resolve().parents[2] / 'data.mn'
@@ -30,6 +31,20 @@ source:
   name: National Statistics Office of Mongolia
 ---
 """
+
+
+@pytest.mark.parametrize('missing_language', [None, 'en', 'mn'])
+def test_unified_runner_checks_both_page_language_workbooks(project, missing_language):
+    # The old runner wrongly required an unlisted bilingual workbook and could
+    # overlook a missing language-specific download.
+    legacy = project / f'public/datasets/{DATASET}.xlsx'
+    legacy.unlink(missing_ok=True)
+    if missing_language:
+        (project / f'public/datasets/{DATASET}-{missing_language}.xlsx').unlink()
+    checks = [c for c in run_scripted_checks(DATASET, project) if c.check_id.startswith('1.5')]
+    assert len(checks) == 2
+    assert [c.check_id for c in checks if not c.passed] == (
+        [f'1.5-{missing_language.upper()}'] if missing_language else [])
 
 
 @pytest.fixture

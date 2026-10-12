@@ -676,7 +676,11 @@ def validate_dataset_ai_checks(dataset_id: str) -> dict:
         results['4.13'] = check_4_13_column_count_match(csv_en, csv_mn)
         results['4.14'] = check_4_14_numeric_values_match(csv_en, csv_mn)
 
-    if xlsx.exists():
+    if fm_en.get('excelLanguage') == fm_mn.get('excelLanguage') == 'page':
+        for lang in ('en', 'mn'):
+            path = DATA_MN_DIR / f'public/datasets/{dataset_id}-{lang}.xlsx'
+            results[f'5.5-{lang.upper()}'] = check_5_5_wide_form(path, dataset_id)
+    elif xlsx.exists():
         results['5.5'] = check_5_5_wide_form(xlsx, dataset_id)
 
     results['8.2'] = check_8_2_category_match(fm_en, fm_mn)

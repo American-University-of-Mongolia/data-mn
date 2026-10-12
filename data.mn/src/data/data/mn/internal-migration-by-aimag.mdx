@@ -1,0 +1,38 @@
+---
+title: "Монгол Улсын дотоод шилжилт хөдөлгөөн, аймгаар, хүн (1983–2025)"
+publishDate: 2026-10-08
+excerpt: "Монгол Улсын 21 аймаг, Улаанбаатарын шилжин ирсэн, явсан хүний тоо болон цэвэр шилжилт. Газрын зураг дээрх оноо сонгон харьцуулна уу."
+category: "Хүн ам зүй"
+tags: ["монгол", "шилжилт хөдөлгөөн", "хүн ам"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-31
+dataFiles:
+- path: /datasets/internal-migration-by-aimag-all-mn.csv
+  format: csv
+  size: 161 KB
+  description: Бүтэн түүхэн өгөгдөл, 1983–2025. Хязгаарлалтыг уншина уу.
+- path: /datasets/internal-migration-by-aimag-mn.xlsx
+  format: xlsx
+  size: 23 KB
+  description: Excel татах
+source: {"name": "Үндэсний статистикийн хороо", "url": "https://data.1212.mn/pxweb/mn/NSO/NSO__Population%2C%20household__1_Population%2C%20household/DT_NSO_0300_040V1.px/", "tableId": "DT_NSO_0300_040V1.px"}
+keywords: ["монголын дотоод шилжилт", "аймгийн шилжилт хөдөлгөөн", "улаанбаатарын шилжилт"]
+excelLanguage: "page"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+<div role="note" className="mb-4 text-sm text-slate-600 dark:text-slate-400">Түүхэн өгөгдөл: 2020 оноос өмнөх улсын нийт ирсэн, явсан хүний тоо тэнцэхгүй. Говьсүмбэрийн 1983–1990 оны эх сурвалжийн тэг утгын тайлбар тодорхойгүй. Бүх оныг өнөөгийн хилээр харуулсан тул түүхэн харьцуулалтыг болгоомжтой хийнэ үү.</div>
+
+<h2>Монголын цэвэр шилжилт хөдөлгөөн</h2>
+
+<VegaChart spec="/charts/internal-migration-by-aimag-mn.json" title="Монголын цэвэр шилжилт хөдөлгөөн" caption="Цэнхэр: эерэг, улаан: сөрөг цэвэр шилжилт. Аймаг дээр заахад ирсэн, явсан хүний тоо харагдана. Доорх гулсуураар оноо сонгоно уу." aspectRatio={0.625} yearGroup="internal-migration-by-aimag" />
+
+<h2>Цэвэр шилжилт, аймгаар</h2>
+
+<VegaChart spec="/charts/internal-migration-by-aimag-ranking-mn.json" title="Цэвэр шилжилт, аймгаар" caption="Дээр сонгосон оны нийт 22 газрын дүн. Хүн амын хэмжээнд харьцуулаагүй хүний тоо." aspectRatio={0.8} yearGroup="internal-migration-by-aimag" />
+
+<h2>Шилжин ирсэн, явсан хүний тооны өөрчлөлт</h2>
+
+<VegaChart spec="/charts/internal-migration-by-aimag-trend-mn.json" title="Шилжин ирсэн, явсан хүний тооны өөрчлөлт" caption="Графикийн доороос аймгаа сонгоно уу. Цэвэр шилжилт = ирсэн − явсан." aspectRatio={0.65} />

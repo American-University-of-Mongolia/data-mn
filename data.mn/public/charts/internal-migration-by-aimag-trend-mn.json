@@ -1,0 +1,206 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "/datasets/internal-migration-by-aimag-mn.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "он": "number",
+        "ирсэн": "number",
+        "явсан": "number",
+        "цэвэр": "number"
+      }
+    }
+  },
+  "description": "Сонгосон аймгийн шилжин ирсэн, явсан хүний тоо болон цэвэр шилжилт, 1983–2025. Түүхэн эх утгуудыг өөрчлөөгүй; харьцуулах хязгаарлалтыг анхаарна уу.",
+  "params": [
+    {
+      "name": "selectedRegion",
+      "value": "Улаанбаатар",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Архангай",
+          "Баян-Өлгий",
+          "Баянхонгор",
+          "Булган",
+          "Говь-Алтай",
+          "Говьсүмбэр",
+          "Дархан-Уул",
+          "Дорноговь",
+          "Дорнод",
+          "Дундговь",
+          "Завхан",
+          "Орхон",
+          "Сэлэнгэ",
+          "Сүхбаатар",
+          "Төв",
+          "Увс",
+          "Улаанбаатар",
+          "Ховд",
+          "Хэнтий",
+          "Хөвсгөл",
+          "Өвөрхангай",
+          "Өмнөговь"
+        ],
+        "name": "Аймаг / нийслэл: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum[\"бүс\"] == selectedRegion"
+    },
+    {
+      "fold": [
+        "ирсэн",
+        "явсан",
+        "цэвэр"
+      ],
+      "as": [
+        "measure",
+        "value"
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "scale": {
+        "zero": false,
+        "domain": [
+          1983,
+          2025
+        ],
+        "nice": false
+      },
+      "axis": {
+        "grid": false,
+        "format": "d",
+        "tickMinStep": 1,
+        "tickCount": 4,
+        "values": [
+          1983,
+          1990,
+          2000,
+          2010,
+          2025
+        ]
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Хүн",
+      "axis": {
+        "format": ",.0f",
+        "tickCount": 5
+      }
+    },
+    "color": {
+      "field": "measure",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "ирсэн",
+          "явсан",
+          "цэвэр"
+        ],
+        "range": [
+          "#1f77b4",
+          "#d6604d",
+          "#2ca02c"
+        ]
+      },
+      "legend": {
+        "orient": "top",
+        "labelExpr": "datum.label === 'ирсэн' ? 'Шилжин ирсэн' : datum.label === 'явсан' ? 'Шилжин явсан' : 'Цэвэр шилжилт'"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 90
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "type": "quantitative",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "бүс",
+            "type": "nominal",
+            "title": "Аймаг / нийслэл"
+          },
+          {
+            "field": "ирсэн",
+            "type": "quantitative",
+            "title": "Шилжин ирсэн",
+            "format": ",.0f"
+          },
+          {
+            "field": "явсан",
+            "type": "quantitative",
+            "title": "Шилжин явсан",
+            "format": ",.0f"
+          },
+          {
+            "field": "цэвэр",
+            "type": "quantitative",
+            "title": "Цэвэр шилжилт (хүн)",
+            "format": ",.0f"
+          }
+        ]
+      }
+    }
+  ]
+}

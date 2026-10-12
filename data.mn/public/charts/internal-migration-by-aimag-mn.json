@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "/datasets/internal-migration-by-aimag-mn.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "он": "number",
+        "ирсэн": "number",
+        "явсан": "number",
+        "цэвэр": "number"
+      }
+    }
+  },
+  "description": "Бүртгэгдсэн дотоод шилжилт хөдөлгөөн, 1983–2025. Цэвэр шилжилт = ирсэн − явсан. Өнгөний хуваарь бүх онд тогтмол. Өнөөгийн хилээр харуулсан; түүхэн хязгаарлалтыг анхаарна уу. Хил: geoBoundaries (ODbL) / OpenStreetMap contributors.",
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "range",
+        "min": 1983,
+        "max": 2025,
+        "step": 1,
+        "name": "Он: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum[\"он\"] == selectedYear"
+    },
+    {
+      "lookup": "бүс",
+      "from": {
+        "data": {
+          "url": "/maps/mongolia-aimags.json",
+          "format": {
+            "type": "json",
+            "property": "features"
+          }
+        },
+        "key": "properties.name_mn"
+      },
+      "as": "boundary"
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "#94a3b8",
+    "strokeWidth": 0.7
+  },
+  "encoding": {
+    "shape": {
+      "field": "boundary",
+      "type": "geojson"
+    },
+    "color": {
+      "field": "цэвэр",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          -40246,
+          40246
+        ],
+        "domainMid": 0,
+        "scheme": "redblue"
+      },
+      "legend": {
+        "orient": "top",
+        "title": "Цэвэр шилжилт (хүн)",
+        "format": ",.0f",
+        "gradientLength": 230,
+        "tickCount": 3,
+        "values": [
+          -30000,
+          0,
+          30000
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "он",
+        "type": "quantitative",
+        "title": "Он",
+        "format": "d"
+      },
+      {
+        "field": "бүс",
+        "type": "nominal",
+        "title": "Аймаг / нийслэл"
+      },
+      {
+        "field": "ирсэн",
+        "type": "quantitative",
+        "title": "Шилжин ирсэн",
+        "format": ",.0f"
+      },
+      {
+        "field": "явсан",
+        "type": "quantitative",
+        "title": "Шилжин явсан",
+        "format": ",.0f"
+      },
+      {
+        "field": "цэвэр",
+        "type": "quantitative",
+        "title": "Цэвэр шилжилт (хүн)",
+        "format": ",.0f"
+      }
+    ]
+  }
+}

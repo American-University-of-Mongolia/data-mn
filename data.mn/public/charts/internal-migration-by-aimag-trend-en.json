@@ -1,0 +1,206 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "/datasets/internal-migration-by-aimag-en.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "incoming": "number",
+        "outgoing": "number",
+        "net": "number"
+      }
+    }
+  },
+  "description": "Annual arrivals, departures and derived net migration for a selected aimag, 1983–2025. Historical source values are unchanged; see comparability limitations.",
+  "params": [
+    {
+      "name": "selectedRegion",
+      "value": "Ulaanbaatar",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Arkhangai",
+          "Bayan-Ulgii",
+          "Bayankhongor",
+          "Bulgan",
+          "Darkhan-Uul",
+          "Dornod",
+          "Dornogovi",
+          "Dundgovi",
+          "Govi-Altai",
+          "Govisumber",
+          "Khentii",
+          "Khovd",
+          "Khuvsgul",
+          "Orkhon",
+          "Selenge",
+          "Sukhbaatar",
+          "Tuv",
+          "Ulaanbaatar",
+          "Umnugovi",
+          "Uvs",
+          "Uvurkhangai",
+          "Zavkhan"
+        ],
+        "name": "Aimag / capital: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum[\"region\"] == selectedRegion"
+    },
+    {
+      "fold": [
+        "incoming",
+        "outgoing",
+        "net"
+      ],
+      "as": [
+        "measure",
+        "value"
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "scale": {
+        "zero": false,
+        "domain": [
+          1983,
+          2025
+        ],
+        "nice": false
+      },
+      "axis": {
+        "grid": false,
+        "format": "d",
+        "tickMinStep": 1,
+        "tickCount": 4,
+        "values": [
+          1983,
+          1990,
+          2000,
+          2010,
+          2025
+        ]
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "People",
+      "axis": {
+        "format": ",.0f",
+        "tickCount": 5
+      }
+    },
+    "color": {
+      "field": "measure",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "incoming",
+          "outgoing",
+          "net"
+        ],
+        "range": [
+          "#1f77b4",
+          "#d6604d",
+          "#2ca02c"
+        ]
+      },
+      "legend": {
+        "orient": "top",
+        "labelExpr": "datum.label === 'incoming' ? 'Arrivals' : datum.label === 'outgoing' ? 'Departures' : 'Net migration'"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 90
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "region",
+            "type": "nominal",
+            "title": "Aimag / capital"
+          },
+          {
+            "field": "incoming",
+            "type": "quantitative",
+            "title": "Arrivals",
+            "format": ",.0f"
+          },
+          {
+            "field": "outgoing",
+            "type": "quantitative",
+            "title": "Departures",
+            "format": ",.0f"
+          },
+          {
+            "field": "net",
+            "type": "quantitative",
+            "title": "Net migration (people)",
+            "format": ",.0f"
+          }
+        ]
+      }
+    }
+  ]
+}

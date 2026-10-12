@@ -1,0 +1,18 @@
+{
+  "version": 3,
+  "date": "2026-10-12",
+  "source_tables": [
+    "DT_NSO_2400_015V1.px (SO2)",
+    "DT_NSO_2400_015V4.px (PM10)",
+    "DT_NSO_2400_015V5.px (PM2.5)"
+  ],
+  "source_path": "Economy, environment / Environment / CONCENTRATION OF AIR POLLUTION, by location, by month",
+  "source_updated": "2026-10-08",
+  "rows": 704,
+  "pollutants": ["PM2.5", "PM10", "SO2"],
+  "locations": "17 fixed Ulaanbaatar monitoring stations; monthly mean of stations with data (2-15 per month)",
+  "month_range": {"SO2": "2002-02 to 2026-09", "PM10": "2008-12 to 2026-09", "PM2.5": "2010-07 to 2026-08"},
+  "peaks_mg_m3": {"PM2.5": [0.622, "2013-01"], "PM10": [0.8362, "2012-01"], "SO2": [0.2158, "2021-01"]},
+  "build_script": "tools/scripts/build_air_pollution_concentration.py",
+  "notes": "TABLE SWITCH to the NSO air-pollution folder tables; PM10/PM2.5 restored. NSO renamed 5 UB stations (mapped to the same 17). SO2 2002-01 no longer has UB station values in the source, so SO2 starts 2002-02. New 2026 UB stations (Yarmag, Nalaikh, Sharkhad, 5 Buudal) excluded. PM2.5 2026-09 dropped: NSO values are copies of PM10. Overlapping months match v1 (PM) and v2 (SO2) exactly. Raw tables stored gzipped."
+}

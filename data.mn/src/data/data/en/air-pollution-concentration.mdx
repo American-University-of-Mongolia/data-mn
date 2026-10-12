@@ -1,31 +1,31 @@
 ---
 title: "Air Pollution Concentration in Ulaanbaatar (2002-2026)"
 publishDate: 2026-03-14
-excerpt: "Monthly average sulphur dioxide (SO₂) concentration in Ulaanbaatar from 2002 to 2026: the mean of the city monitoring stations that reported each month, between 2 and 14 of the 17 stations NSO lists. SO₂ peaked at 0.216 mg/m³ in January 2021. Replaces the discontinued PM2.5/PM10 source tables."
+excerpt: "Monthly average PM2.5, PM10 and sulphur dioxide (SO₂) concentrations in Ulaanbaatar from 2002 to 2026, averaged across the city monitoring stations that reported each month (of 17 stations NSO lists). PM2.5 peaked at 0.622 mg/m³ in January 2013, PM10 at 0.836 mg/m³ in January 2012 and SO₂ at 0.216 mg/m³ in January 2021."
 category: "Environment"
-tags: ["mongolia", "environment", "air quality", "pollution", "ulaanbaatar", "SO2"]
-keywords: ["ulaanbaatar air pollution", "mongolia air quality", "SO2 mongolia", "sulphur dioxide ulaanbaatar", "air pollution ulaanbaatar", "ub smog"]
+tags: ["mongolia", "environment", "air quality", "pollution", "ulaanbaatar", "PM2.5", "PM10", "SO2"]
+keywords: ["ulaanbaatar air pollution", "mongolia air quality", "SO2 mongolia", "sulphur dioxide ulaanbaatar", "air pollution ulaanbaatar", "ub smog", "pm2.5 ulaanbaatar", "pm10 mongolia"]
 author: "Data.mn"
-dataVersion: 2
-dataDate: 2026-09-08
+dataVersion: 3
+dataDate: 2026-10-12
 dataFiles:
-  - path: "/datasets/air-pollution-concentration-en.csv"
-    format: "csv"
-    size: "5 KB"
-    description: "Download as CSV"
-  - path: "/datasets/air-pollution-concentration.xlsx"
-    format: "xlsx"
-    size: "13 KB"
-    description: "Open in Excel"
+- path: /datasets/air-pollution-concentration-en.csv
+  format: csv
+  size: 13 KB
+  description: Download as CSV
+- path: /datasets/air-pollution-concentration.xlsx
+  format: xlsx
+  size: 19 KB
+  description: Open in Excel
 source:
   name: "National Statistics Office of Mongolia"
   url: "https://data.1212.mn"
-  tableId: "DT_NSO_2400_015V3.px"
+  tableId: "DT_NSO_2400_015V1, V4, V5"
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
-<div role="note" className="mb-4 text-sm text-slate-600 dark:text-slate-400"><strong>Methodology.</strong> Each monthly value is a simple average of the NSO "Average" SO₂ concentration across the Ulaanbaatar stations that have data that month. Stations without data are left out, and no values are estimated or interpolated. The 17 stations NSO lists did not all operate for the whole period: 2–4 stations have data each month in 2002–2007 and 8–14 from 2015 onward, and no month has all 17. Only three stations (13th micro district, 1st micro district and West crossroad) have data from 2002 onward. Part of any change over time can therefore come from which stations were reporting. For trend analysis, use the station-level NSO table "SULPHUR DIOXIDE, by location, by month", which also gives each station's number of measurements.</div>
+<div role="note" className="mb-4 text-sm text-slate-600 dark:text-slate-400"><strong>Methodology.</strong> Each monthly value is a simple average of the NSO "Average" concentration across the 17 Ulaanbaatar stations in the NSO tables that have data that month. Stations without data are left out, and no values are estimated or interpolated. SO₂ starts in February 2002, PM10 in December 2008 and PM2.5 in July 2010; months with no reporting station (PM10 in April 2009, PM2.5 in August 2010) are blank. The stations did not all operate for the whole period, so the mix changes over time: before 2015, 2–8 stations have SO₂ data each month and at most 2 have PM2.5, while from 2015 between 4 and 15 report. No month has all 17, so part of any change over time can come from which stations were reporting. Four stations NSO added in 2026 (Yarmag, Nalaikh, Sharkhad and 5 Buudal) are not included, to keep the station set fixed. PM2.5 for September 2026 is left out because NSO's published values repeat PM10. For trend analysis, use the station-level NSO tables (for example "SULPHUR DIOXIDE, by location, by month"), which also give each station's number of measurements.</div>
 
 <VegaChart
   spec="/charts/air-pollution-concentration-en.json"

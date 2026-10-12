@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Monthly average sulphur dioxide (SO₂) concentration in Ulaanbaatar (2002-2026, mg/m³), averaged across 17 UB monitoring stations.",
+  "description": "Monthly average PM2.5, PM10 and sulphur dioxide (SO₂) concentrations in Ulaanbaatar (2002-2026, mg/m³), averaged across the 17 UB monitoring stations that reported each month.",
   "data": {
     "url": "/datasets/air-pollution-concentration-en.csv",
     "format": { "type": "csv" }
@@ -23,8 +23,8 @@
       "type": "nominal",
       "title": "Pollutant",
       "scale": {
-        "domain": ["SO2"],
-        "range": ["#4c78a8"]
+        "domain": ["PM2.5", "PM10", "SO2"],
+        "range": ["#ef4444", "#f97316", "#4c78a8"]
       },
       "legend": { "orient": "top" }
     }

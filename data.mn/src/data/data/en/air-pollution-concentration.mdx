@@ -1,7 +1,7 @@
 ---
 title: "Air Pollution Concentration in Ulaanbaatar (2002-2026)"
 publishDate: 2026-03-14
-excerpt: "Monthly average sulphur dioxide (SO₂) concentration in Ulaanbaatar from 2002 to 2026, averaged across 17 city monitoring stations. SO₂ peaked at 0.216 mg/m³ in January 2021; all 296 months in the series have data. Replaces the discontinued PM2.5/PM10 source tables."
+excerpt: "Monthly average sulphur dioxide (SO₂) concentration in Ulaanbaatar from 2002 to 2026: the mean of the city monitoring stations that reported each month, between 2 and 14 of the 17 stations NSO lists. SO₂ peaked at 0.216 mg/m³ in January 2021. Replaces the discontinued PM2.5/PM10 source tables."
 category: "Environment"
 tags: ["mongolia", "environment", "air quality", "pollution", "ulaanbaatar", "SO2"]
 keywords: ["ulaanbaatar air pollution", "mongolia air quality", "SO2 mongolia", "sulphur dioxide ulaanbaatar", "air pollution ulaanbaatar", "ub smog"]
@@ -24,6 +24,8 @@ source:
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
+
+<div role="note" className="mb-4 text-sm text-slate-600 dark:text-slate-400"><strong>Methodology.</strong> Each monthly value is a simple average of the NSO "Average" SO₂ concentration across the Ulaanbaatar stations that have data that month. Stations without data are left out, and no values are estimated or interpolated. The 17 stations NSO lists did not all operate for the whole period: 2–4 stations have data each month in 2002–2007 and 8–14 from 2015 onward, and no month has all 17. Only three stations (13th micro district, 1st micro district and West crossroad) have data from 2002 onward. Part of any change over time can therefore come from which stations were reporting. For trend analysis, use the station-level NSO table "SULPHUR DIOXIDE, by location, by month", which also gives each station's number of measurements.</div>
 
 <VegaChart
   spec="/charts/air-pollution-concentration-en.json"

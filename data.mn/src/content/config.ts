@@ -73,6 +73,9 @@ const dataCollection = defineCollection({
 
     chartLayout: z.enum(['wide']).optional(),
 
+    // Methodology note shown in a collapsible section under the chart
+    methodology: z.string().optional(),
+
     // Data versioning fields
     dataVersion: z.number().optional(),
     dataDate: z.date().optional(),

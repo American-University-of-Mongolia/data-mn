@@ -30,7 +30,7 @@ const t = useTranslations(currentLang);
 
 const { Content } = await render(page);
 
-const { title, excerpt, publishDate, category, tags, dataFiles, source } = page.data;
+const { title, excerpt, publishDate, category, tags, dataFiles, source, methodology } = page.data;
 
 const wideChart = page.data.chartLayout === 'wide';
 
@@ -48,6 +48,7 @@ const labels = {
   updated: currentLang === 'en' ? 'Updated' : 'Шинэчилсэн',
   version: currentLang === 'en' ? 'Version' : 'Хувилбар',
   by: currentLang === 'en' ? 'by' : '',
+  methodology: currentLang === 'en' ? 'Methodology' : 'Аргачлал',
 };
 ---
 
@@ -92,6 +93,26 @@ const labels = {
             <Content />
           </div>
         </div>
+
+        {
+          methodology && (
+            <details class="group mt-3 rounded-lg border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800">
+              <summary class="flex cursor-pointer list-none items-center gap-2 px-4 py-3 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary [&::-webkit-details-marker]:hidden">
+                <Icon name="tabler:info-circle" class="w-4 h-4" />
+                {labels.methodology}
+                <Icon name="tabler:chevron-down" class="ml-auto w-4 h-4 transition-transform group-open:rotate-180" />
+              </summary>
+              <div class="space-y-2 px-4 pb-4 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+                {methodology
+                  .trim()
+                  .split(/\n\s*\n/)
+                  .map((para) => (
+                    <p>{para}</p>
+                  ))}
+              </div>
+            </details>
+          )
+        }
       </div>
 
       <!-- Right: Sidebar -->

@@ -31,7 +31,7 @@ for (const lang of ['en', 'mn']) {
     for (const dark of [false, true, false]) {
       const spec = structuredClone(source);
       const attach = context.prepareBoundParameters(element, spec);
-      context.applyChartTheme(spec, dark);
+      context.applyChartTheme(spec, dark, true);
       if (expectedColors) assert.equal(spec.params[0].value, chosen, 'Selected parameter survives a redraw');
       assert.deepEqual(spec.data, source.data);
       assert.deepEqual(spec.transform, source.transform);
@@ -67,7 +67,10 @@ const layered = {
   config: { axisY: { labelColor: '#111' } },
   layer: [{ encoding: { x: { axis: { labelColor: '#111' } }, color: { legend: null, scale: { range: ['red'] } } } }],
 };
-context.applyChartTheme(layered, true);
+const unmodified = structuredClone(layered);
+context.applyChartTheme(layered, true, false);
+assert.deepEqual(layered, unmodified, 'Non-opted-in specs retain every custom color');
+context.applyChartTheme(layered, true, true);
 assert.equal(layered.layer[0].encoding.x.axis.labelColor, '#cbd5e1');
 assert.equal(layered.config.axisY.labelColor, '#cbd5e1');
 assert.equal(layered.layer[0].encoding.color.legend, null);
@@ -75,3 +78,67 @@ assert.deepEqual(layered.layer[0].encoding.color.scale.range, ['red']);
 console.log(
   'PASS: EN/MN light → dark → light, comparison/year persistence, SVG exports, nested overrides and stable colors.'
 );
+
+// Multiple inline chart scripts must share one observer and use the current handler.
+let darkMode = false;
+let observerCount = 0;
+let observerCallback;
+const observerContext = vm.createContext({
+  window: {},
+  document: { documentElement: { classList: { contains: () => darkMode } } },
+  MutationObserver: class {
+    constructor(callback) {
+      observerCount++;
+      observerCallback = callback;
+    }
+    observe() {}
+  },
+});
+const observerCode = component.slice(
+  component.indexOf('if (!window._vegaThemeObserverAdded)'),
+  component.indexOf('// Run on initial load')
+);
+for (let i = 0; i < 3; i++) vm.runInContext(observerCode, observerContext);
+assert.equal(observerCount, 1, 'One observer for multiple chart instances');
+let refreshCount = 0;
+observerContext.window.refreshVegaCharts = (themeOnly) => {
+  assert.equal(themeOnly, true);
+  refreshCount++;
+};
+observerCallback();
+assert.equal(refreshCount, 0, 'Unrelated class changes do not redraw charts');
+darkMode = true;
+observerCallback();
+assert.equal(refreshCount, 1, 'One refresh per theme toggle');
+observerContext.window.refreshVegaCharts = () => {
+  refreshCount += 10;
+};
+darkMode = false;
+observerCallback();
+assert.equal(refreshCount, 11, 'Observer calls the current global handler');
+const selectors = [];
+const refreshed = [];
+const refreshContext = vm.createContext({
+  document: {
+    querySelectorAll: (selector) => {
+      selectors.push(selector);
+      return ['chart'];
+    },
+  },
+  invalidateChart: (chart) => refreshed.push(chart),
+  initVegaCharts: () => {},
+});
+vm.runInContext(
+  component.slice(component.indexOf('function refreshCharts('), component.indexOf('// Debounced resize handler')),
+  refreshContext
+);
+refreshContext.refreshCharts(true);
+assert.equal(
+  selectors[0],
+  '.vega-chart[data-spec][data-theme-aware="true"]',
+  'Theme refresh targets only opted-in charts'
+);
+refreshContext.refreshCharts();
+assert.equal(selectors[1], '.vega-chart[data-spec]', 'Resize still targets all charts');
+assert.equal(refreshed.length, 2);
+console.log('PASS: opt-in styling, scoped theme refresh, one observer and current global callback.');

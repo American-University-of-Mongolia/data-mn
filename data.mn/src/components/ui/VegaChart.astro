@@ -17,6 +17,7 @@ export interface Props {
   aspectRatio?: number; // height/width ratio, default 0.5 (2:1)
   interactive?: boolean;
   prominentControls?: boolean;
+  themeAware?: boolean; // Opt in to live theme changes and neutral dark chart colors.
   yearGroup?: string; // Share selectedYear with charts in the same group.
 }
 
@@ -27,6 +28,7 @@ const {
   aspectRatio = 0.5,
   interactive = false,
   prominentControls = false,
+  themeAware = false,
   yearGroup,
 } = Astro.props;
 const chartId = `chart-${Math.random().toString(36).substring(2, 11)}`;
@@ -49,6 +51,7 @@ const isInlineSpec = typeof spec === 'object';
       data-is-inline={isInlineSpec}
       data-aspect-ratio={aspectRatio}
       data-interactive={interactive}
+      data-theme-aware={themeAware}
       data-year-group={yearGroup}
     ></div>
   </ChartControls>
@@ -416,8 +419,8 @@ const isInlineSpec = typeof spec === 'object';
 
     // Specs are freshly loaded for every render, so returning to light mode
     // restores their original colors instead of keeping the dark overrides.
-    function applyChartTheme(spec, dark) {
-      if (!dark) return;
+    function applyChartTheme(spec, dark, themeAware) {
+      if (!dark || !themeAware) return;
       const axisColors = {
         labelColor: '#cbd5e1',
         titleColor: '#e2e8f0',
@@ -533,8 +536,9 @@ const isInlineSpec = typeof spec === 'object';
       el.removeAttribute('data-rendered');
     }
 
-    function refreshCharts() {
-      document.querySelectorAll('.vega-chart[data-spec]').forEach(invalidateChart);
+    function refreshCharts(themeOnly = false) {
+      const selector = themeOnly ? '.vega-chart[data-spec][data-theme-aware="true"]' : '.vega-chart[data-spec]';
+      document.querySelectorAll(selector).forEach(invalidateChart);
       initVegaCharts();
     }
 
@@ -625,6 +629,17 @@ const isInlineSpec = typeof spec === 'object';
             containerWidth,
             attachExplorer ? 14 : 13
           );
+          // Preserve the existing explorer-only dark styling for charts that
+          // have not opted in to the new theme behavior.
+          if (attachExplorer && document.documentElement.classList.contains('dark')) {
+            chartSpec.background = '#1e293b';
+            chartSpec.config = chartSpec.config || {};
+            chartSpec.config.axis = Object.assign({}, chartSpec.config.axis || {}, {
+              labelColor: '#cbd5e1',
+              titleColor: '#e2e8f0',
+              gridColor: '#475569',
+            });
+          }
           // Asymmetric padding: more on left/bottom for axes, minimal on right/top
           // Use category10 color scheme (D3 default) - brighter than tableau10
           const existingConfig = chartSpec.config || {};
@@ -725,7 +740,7 @@ const isInlineSpec = typeof spec === 'object';
           }
 
           const dark = document.documentElement.classList.contains('dark');
-          applyChartTheme(chartSpec, dark);
+          applyChartTheme(chartSpec, dark, el.dataset.themeAware === 'true');
           const options = {
             actions: {
               export: { png: true, svg: true },
@@ -779,13 +794,17 @@ const isInlineSpec = typeof spec === 'object';
 
     // Observe the site's existing theme class, including system/navigation
     // changes. Ignore unrelated classes and finish any in-flight render first.
-    let darkMode = document.documentElement.classList.contains('dark');
-    new MutationObserver(function () {
-      const nextDarkMode = document.documentElement.classList.contains('dark');
-      if (nextDarkMode === darkMode) return;
-      darkMode = nextDarkMode;
-      refreshCharts();
-    }).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+    window.refreshVegaCharts = refreshCharts;
+    if (!window._vegaThemeObserverAdded) {
+      let darkMode = document.documentElement.classList.contains('dark');
+      new MutationObserver(function () {
+        const nextDarkMode = document.documentElement.classList.contains('dark');
+        if (nextDarkMode === darkMode) return;
+        darkMode = nextDarkMode;
+        window.refreshVegaCharts(true);
+      }).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+      window._vegaThemeObserverAdded = true;
+    }
 
     // Run on initial load
     if (document.readyState === 'loading') {

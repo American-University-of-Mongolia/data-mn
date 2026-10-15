@@ -11,16 +11,22 @@ dataDate: 2025-12-31
 excelLanguage: "page"
 dataFiles: [{"path": "/datasets/youth-neet-rate-en.csv", "format": "csv", "size": "3.5 KB", "description": "Download all 10 groups, 2009–2025"}, {"path": "/datasets/youth-neet-rate-en.xlsx", "format": "xlsx", "size": "6 KB", "description": "Open in Excel"}]
 source: {"name": "National Statistics Office of Mongolia", "url": "https://data.1212.mn/pxweb/en/NSO/NSO__Labour%2C%20business__Decent%20work/DT_NSO_0400_050V1.px/", "tableId": "DT_NSO_0400_050V1.px"}
+methodology: |
+  The NEET rate is the percentage of all young people aged 15–24 in each group who are neither employed nor in education or training. It includes those who are not looking for work, so it differs from the unemployment rate.
+
+  Male, female, urban, rural and regional figures use their own youth populations as denominators and must not be added together.
+
+  The data come from the Labour Force Survey; the source cites the labour-statistics methodology adopted in January 2019 and revised survey weights for 2019–2023. Trends alone do not explain why rates changed.
+
+  CSV and Excel include all 10 groups and all 17 years. Excel uses years as rows, groups as columns, and the language of this page. Values are percentages, so 9.1 means 9.1%.
 ---
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
-<VegaChart spec="/charts/youth-neet-rate-en.json" title="Youth outside employment, education or training" caption="Ages 15–24. Use the comparison selector below the chart. Hover over a point for its value." prominentControls />
+<VegaChart spec="/charts/youth-neet-rate-en.json" title="Youth outside employment, education or training" caption="Ages 15–24. Use the comparison selector below the chart. Hover over a point for its value." prominentControls themeAware />
 
 <div role="note" className="text-sm text-slate-600 dark:text-slate-400 mt-3">NSO revised its 2019–2023 estimates after updating survey weights in 2024. The dataset uses the currently published values.</div>
 
-<details className="mt-5"><summary>Definition and source notes</summary><div className="mt-3 text-sm leading-relaxed">The NEET rate is the percentage of all young people aged 15–24 in each group who are neither employed nor in education or training. It includes those who are not looking for work, so it differs from the unemployment rate. Male, female, urban, rural and regional figures use their own youth populations as denominators and must not be added together. The data come from the Labour Force Survey; the source cites the labour-statistics methodology adopted in January 2019 and revised survey weights for 2019–2023. Trends alone do not explain why rates changed. CSV and Excel include all 10 groups and all 17 years. Excel uses years as rows, groups as columns, and the language of this page. Values are percentages, so 9.1 means 9.1%.</div></details>
-
 <h2>Compare regions</h2>
 
-<VegaChart spec="/charts/youth-neet-rate-regions-en.json" title="Youth NEET rate by region" caption="Four major regions and Ulaanbaatar. Select a year below; the 0–40% scale stays fixed." aspectRatio={0.6} />
+<VegaChart spec="/charts/youth-neet-rate-regions-en.json" title="Youth NEET rate by region" caption="Four major regions and Ulaanbaatar. Select a year below; the 0–40% scale stays fixed." aspectRatio={0.6} themeAware />

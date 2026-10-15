@@ -1,0 +1,115 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/youth-neet-rate-mn.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "он": "number",
+        "хувь": "number"
+      }
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "description": "Хөдөлмөр эрхлээгүй, боловсрол, сургалтад хамрагдаагүй 15–24 насны залуучуудын эзлэх хувь, дөрвөн бүс ба Улаанбаатараар. Аймгийн түвшний өгөгдөл биш.",
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "range",
+        "min": 2009,
+        "max": 2025,
+        "step": 1,
+        "name": "Он: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "indexof([\"Баруун бүс\", \"Хангайн бүс\", \"Төвийн бүс\", \"Зүүн бүс\", \"Улаанбаатар\"], datum[\"\\u04af\\u0437\\u04af\\u04af\\u043b\\u044d\\u043b\\u0442\"]) >= 0 && datum[\"\\u043e\\u043d\"] == selectedYear"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 2
+  },
+  "encoding": {
+    "y": {
+      "field": "үзүүлэлт",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null
+    },
+    "x": {
+      "field": "хувь",
+      "type": "quantitative",
+      "title": "Залуучуудын эзлэх хувь (%)",
+      "scale": {
+        "domain": [
+          0,
+          40
+        ],
+        "nice": false
+      },
+      "axis": {
+        "format": ".0f",
+        "tickCount": 5
+      }
+    },
+    "color": {
+      "field": "үзүүлэлт",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Баруун бүс",
+          "Хангайн бүс",
+          "Төвийн бүс",
+          "Зүүн бүс",
+          "Улаанбаатар"
+        ],
+        "range": [
+          "#4e79a7",
+          "#f28e2b",
+          "#59a14f",
+          "#b07aa1",
+          "#e15759"
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "он",
+        "type": "quantitative",
+        "title": "Он",
+        "format": "d"
+      },
+      {
+        "field": "үзүүлэлт",
+        "type": "nominal",
+        "title": "Бүлэг"
+      },
+      {
+        "field": "хувь",
+        "type": "quantitative",
+        "title": "Залуучуудын эзлэх хувь (%)",
+        "format": ".1f"
+      }
+    ]
+  }
+}

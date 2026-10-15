@@ -1,0 +1,178 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/youth-neet-rate-mn.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "он": "number",
+        "хувь": "number"
+      }
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "description": "Хөдөлмөр эрхлээгүй, боловсрол, сургалтад хамрагдаагүй залуучууд, хувь (2009–2025). Ажиллах хүчний судалгааны одоо нийтэлсэн жинг ашигласан дүн. Татах файлд бүх он, бүх арван бүлэг багтсан.",
+  "params": [
+    {
+      "name": "comparison",
+      "value": "Хүйсээр",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Хүйсээр",
+          "Хот, орон нутаг"
+        ],
+        "name": "Харьцуулах: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "indexof(comparison === \"Хүйсээр\" ? [\"Бүгд\", \"Эрэгтэй\", \"Эмэгтэй\"] : [\"Бүгд\", \"Хот\", \"Орон нутаг\"], datum[\"\\u04af\\u0437\\u04af\\u04af\\u043b\\u044d\\u043b\\u0442\"]) >= 0"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "scale": {
+        "domain": [
+          2009,
+          2025
+        ],
+        "zero": false,
+        "nice": false
+      },
+      "axis": {
+        "grid": false,
+        "format": "d",
+        "values": [
+          2009,
+          2013,
+          2017,
+          2021,
+          2025
+        ]
+      }
+    },
+    "y": {
+      "field": "хувь",
+      "type": "quantitative",
+      "title": "Залуучуудын эзлэх хувь (%)",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "format": ".0f",
+        "tickCount": 5
+      }
+    },
+    "color": {
+      "field": "үзүүлэлт",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Бүгд",
+        "Эрэгтэй",
+        "Эмэгтэй",
+        "Хот",
+        "Орон нутаг"
+      ],
+      "legend": {
+        "orient": "top",
+        "gridAlign": "none",
+        "columnPadding": 24,
+        "rowPadding": 10
+      }
+    },
+    "tooltip": [
+      {
+        "field": "он",
+        "type": "quantitative",
+        "title": "Он",
+        "format": "d"
+      },
+      {
+        "field": "үзүүлэлт",
+        "type": "nominal",
+        "title": "Бүлэг"
+      },
+      {
+        "field": "хувь",
+        "type": "quantitative",
+        "title": "Залуучуудын эзлэх хувь (%)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 90
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "type": "quantitative",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "үзүүлэлт",
+            "type": "nominal",
+            "title": "Бүлэг"
+          },
+          {
+            "field": "хувь",
+            "type": "quantitative",
+            "title": "Залуучуудын эзлэх хувь (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ]
+}

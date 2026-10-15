@@ -16,15 +16,24 @@ export interface Props {
   caption?: string;
   aspectRatio?: number; // height/width ratio, default 0.5 (2:1)
   interactive?: boolean;
+  prominentControls?: boolean;
   yearGroup?: string; // Share selectedYear with charts in the same group.
 }
 
-const { spec, title, caption, aspectRatio = 0.5, interactive = false, yearGroup } = Astro.props;
+const {
+  spec,
+  title,
+  caption,
+  aspectRatio = 0.5,
+  interactive = false,
+  prominentControls = false,
+  yearGroup,
+} = Astro.props;
 const chartId = `chart-${Math.random().toString(36).substring(2, 11)}`;
 const isInlineSpec = typeof spec === 'object';
 ---
 
-<div class="vega-chart-container my-4 not-prose">
+<div class="vega-chart-container my-4 not-prose" data-prominent-controls={prominentControls || undefined}>
   {
     title &&
       // Keep the title and the year span adjacent: a line break between them renders as a space.
@@ -523,6 +532,31 @@ const isInlineSpec = typeof spec === 'object';
             chartSpec = await response.json();
           }
 
+          // Rebuild opt-in comparison charts with the selected value. Vega's
+          // legend facets can retain the previous labels' widths after a swap.
+          // Keeping this state also preserves the choice across screen resizes.
+          const prominentControls = el.closest('[data-prominent-controls]');
+          if (prominentControls) {
+            (chartSpec.params || []).forEach(function (param) {
+              if (el._bindingValues && Object.hasOwn(el._bindingValues, param.name)) {
+                param.value = el._bindingValues[param.name];
+              }
+            });
+            if (!el._comparisonChangeBound) {
+              el.addEventListener('change', function (event) {
+                const control = event.target;
+                if (!(control instanceof HTMLSelectElement)) return;
+                el._bindingValues = Object.assign({}, el._bindingValues, { [control.name]: control.value });
+                if (chartViews[chartId]) chartViews[chartId].finalize();
+                delete chartViews[chartId];
+                el.removeAttribute('data-rendered');
+                el._restoreComparisonFocus = true;
+                initVegaCharts();
+              });
+              el._comparisonChangeBound = true;
+            }
+          }
+
           const attachExplorer = await prepareExplorer(el, chartSpec);
           const attachLinkedYear = prepareLinkedYear(el, chartSpec);
           normalizeNumberFormats(chartSpec);
@@ -659,6 +693,10 @@ const isInlineSpec = typeof spec === 'object';
           if (attachLinkedYear) await attachLinkedYear(result.view);
           if (attachExplorer) attachExplorer(result.view);
           el.setAttribute('data-rendered', 'true');
+          if (el._restoreComparisonFocus) {
+            el.querySelector('select')?.focus({ preventScroll: true });
+            delete el._restoreComparisonFocus;
+          }
         } catch (error) {
           console.error('Error rendering Vega chart:', error);
           el.innerHTML = '<div class="text-red-600 p-4">Error loading chart: ' + error.message + '</div>';
@@ -705,6 +743,87 @@ const isInlineSpec = typeof spec === 'object';
 </script>
 
 <style>
+  .vega-chart-container[data-prominent-controls] :global(.vega-bindings) {
+    margin-top: 1rem;
+  }
+
+  .vega-chart-container[data-prominent-controls] :global(.vega-bind label) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: min(220px, 100%);
+    min-height: 56px;
+    padding: 0.25rem 0.8rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+    background: #fff;
+    color: #334155;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+
+  .vega-chart-container[data-prominent-controls] :global(.vega-bind-name) {
+    font-size: 0.75rem;
+    color: #64748b;
+  }
+
+  .vega-chart-container[data-prominent-controls] :global(.vega-bind label::after) {
+    content: '⌄';
+    position: absolute;
+    right: 0.65rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  .vega-chart-container[data-prominent-controls] :global(select) {
+    appearance: none;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    padding: 0 1rem 0 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .vega-chart-container[data-prominent-controls] :global(.vega-bind label:hover) {
+    background: #f1f5f9;
+  }
+
+  .vega-chart-container[data-prominent-controls] :global(.vega-bind label:has(select:focus-visible)) {
+    outline: 2px solid #2563eb;
+    outline-offset: 3px;
+  }
+
+  .vega-chart-container[data-prominent-controls] :global(select:focus-visible) {
+    outline: none;
+  }
+
+  :global(.dark) .vega-chart-container[data-prominent-controls] :global(.vega-bind label) {
+    border-color: #475569;
+    background: #1e293b;
+    color: #e2e8f0;
+    color-scheme: dark;
+  }
+
+  :global(.dark) .vega-chart-container[data-prominent-controls] :global(.vega-bind-name) {
+    color: #cbd5e1;
+  }
+
+  :global(.dark) .vega-chart-container[data-prominent-controls] :global(.vega-bind label:hover) {
+    background: #334155;
+  }
+
+  @media (max-width: 540px) {
+    .vega-chart-container[data-prominent-controls] :global(select) {
+      font-size: 16px;
+    }
+  }
+
   .vega-chart-container :global(.vega-embed) {
     padding: 0 !important;
     width: 100% !important;

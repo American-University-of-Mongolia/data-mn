@@ -12,6 +12,7 @@
     "start": "astro dev",
     "thumbnails": "node scripts/export-chart-thumbnails.js",
     "test:chart-legends": "node scripts/export-chart-thumbnails.js --validate-legends",
+    "test:chart-theme": "node scripts/test-chart-theme.mjs",
     "categories": "node scripts/generate-categories.js",
     "ai-markdown": "node scripts/generate-ai-markdown.js",
     "llms-txt": "node scripts/generate-llms-txt.js",

@@ -55,10 +55,13 @@ const isInlineSpec = typeof spec === 'object';
 
     // Store chart views for resize handling
     let chartViews = {};
+    let chartFinalizers = {};
     let linkedYears = {};
     let resizeTimeout = null;
+    let pageGeneration = 0;
     const decimalNumberFormat = ',.6~f';
     const legendLayoutTools = import('/scripts/chart-legend-layout.js');
+    const chartThemeTools = import('/scripts/chart-theme.js');
 
     // Vega treats a bare "," as a general-number format and can render
     // thousands as 1e+4. Normalize legacy and explicitly exponential formats
@@ -405,6 +408,38 @@ const isInlineSpec = typeof spec === 'object';
       return decorateLegend;
     }
 
+    // Keep bound dropdown/slider values across theme changes and resizing.
+    // Hover selections are transient and should not be restored.
+    function prepareBoundParameters(el, spec) {
+      const params = (spec.params || []).filter(function (param) {
+        return param.bind && !param.select && Object.hasOwn(param, 'value');
+      });
+      // Legend-bound selections use Vega data stores, not scalar signals.
+      el._selectionStores = (spec.params || [])
+        .filter(function (param) {
+          return param.bind && param.select;
+        })
+        .map(function (param) {
+          return param.name + '_store';
+        });
+      params.forEach(function (param) {
+        if (el._bindingValues && Object.hasOwn(el._bindingValues, param.name)) {
+          param.value = el._bindingValues[param.name];
+        }
+      });
+      return async function (view) {
+        if (el._selectionState) {
+          view.setState(el._selectionState);
+          await view.runAsync();
+        }
+        params.forEach(function (param) {
+          view.addSignalListener(param.name, function (name, value) {
+            el._bindingValues = Object.assign({}, el._bindingValues, { [name]: value });
+          });
+        });
+      };
+    }
+
     // Opt-in year linking. State survives responsive re-embedding, and a
     // chart finishing its initial load later receives the current selection.
     function prepareLinkedYear(el, spec) {
@@ -456,25 +491,46 @@ const isInlineSpec = typeof spec === 'object';
       };
     }
 
+    function invalidateChart(el) {
+      // Never embed twice into the same element. A change during loading
+      // is replayed after that render finishes, using the latest theme.
+      if (el.dataset.rendering === 'true') {
+        el._refreshAfterRender = true;
+        return;
+      }
+      if (chartViews[el.id]) {
+        if (el._selectionStores?.length) {
+          el._selectionState = chartViews[el.id].getState({
+            signals: function () {
+              return false;
+            },
+            data: function (name) {
+              return el._selectionStores.includes(name);
+            },
+            recurse: false,
+          });
+        }
+        chartFinalizers[el.id]();
+        delete chartViews[el.id];
+        delete chartFinalizers[el.id];
+      }
+      el.removeAttribute('data-rendered');
+    }
+
+    function refreshCharts() {
+      document.querySelectorAll('.vega-chart[data-spec]').forEach(invalidateChart);
+      initVegaCharts();
+    }
+
     // Debounced resize handler
     function handleResize() {
       if (resizeTimeout) clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(function () {
-        Object.keys(chartViews).forEach(function (chartId) {
-          const el = document.getElementById(chartId);
-          if (el && chartViews[chartId]) {
-            chartViews[chartId].finalize();
-            delete chartViews[chartId];
-            el.innerHTML = '';
-            el.removeAttribute('data-rendered');
-          }
-        });
-        initVegaCharts();
-      }, 250);
+      resizeTimeout = setTimeout(refreshCharts, 250);
     }
 
     // Initialize all Vega charts on the page
     async function initVegaCharts() {
+      const generation = pageGeneration;
       const charts = document.querySelectorAll('.vega-chart[data-spec]');
       if (charts.length === 0) return;
 
@@ -486,12 +542,14 @@ const isInlineSpec = typeof spec === 'object';
         return;
       }
       const legendTools = await legendLayoutTools;
+      const themeTools = await chartThemeTools;
+      if (generation !== pageGeneration) return;
 
       charts.forEach(async function (el) {
         const chartId = el.id;
 
         // Skip if already rendered
-        if (el.getAttribute('data-rendered') === 'true' || el.dataset.rendering === 'true') return;
+        if (!el.isConnected || el.getAttribute('data-rendered') === 'true' || el.dataset.rendering === 'true') return;
 
         const isInline = el.dataset.isInline === 'true';
         const specData = el.dataset.spec;
@@ -523,7 +581,10 @@ const isInlineSpec = typeof spec === 'object';
             chartSpec = await response.json();
           }
 
+          if (generation !== pageGeneration || !el.isConnected) return;
+          const attachBindings = prepareBoundParameters(el, chartSpec);
           const attachExplorer = await prepareExplorer(el, chartSpec);
+          if (generation !== pageGeneration || !el.isConnected) return;
           const attachLinkedYear = prepareLinkedYear(el, chartSpec);
           normalizeNumberFormats(chartSpec);
           const legendLabels = await loadCategoricalLegendLabels(chartSpec, legendTools);
@@ -533,16 +594,6 @@ const isInlineSpec = typeof spec === 'object';
             containerWidth,
             attachExplorer ? 14 : 13
           );
-          if (attachExplorer && document.documentElement.classList.contains('dark')) {
-            chartSpec.background = '#1e293b';
-            chartSpec.config = chartSpec.config || {};
-            chartSpec.config.axis = Object.assign({}, chartSpec.config.axis || {}, {
-              labelColor: '#cbd5e1',
-              titleColor: '#e2e8f0',
-              gridColor: '#475569',
-            });
-          }
-
           // Asymmetric padding: more on left/bottom for axes, minimal on right/top
           // Use category10 color scheme (D3 default) - brighter than tableau10
           const existingConfig = chartSpec.config || {};
@@ -642,28 +693,46 @@ const isInlineSpec = typeof spec === 'object';
             }
           }
 
+          // The spec is freshly loaded each time, so light mode restores its
+          // original styling. Apply dark colors after all layout overrides.
+          const dark = document.documentElement.classList.contains('dark');
+          themeTools.applyChartTheme(chartSpec, dark);
           const options = {
             actions: {
               export: { png: true, svg: true },
               source: false,
               editor: false,
             },
-            theme: document.documentElement.classList.contains('dark') ? 'dark' : 'vox',
+            theme: dark ? 'dark' : 'vox',
             renderer: 'svg',
             // 4x resolution for PNG exports (default scaleFactor 1 looks blurry)
             scaleFactor: 4,
           };
 
-          const result = await window.vegaEmbed('#' + chartId, chartSpec, options);
+          if (generation !== pageGeneration || !el.isConnected) return;
+          const result = await window.vegaEmbed(el, chartSpec, options);
+          if (generation !== pageGeneration || !el.isConnected) {
+            result.finalize();
+            return;
+          }
           chartViews[chartId] = result.view;
+          // Embed also owns the export menu's document listener.
+          chartFinalizers[chartId] = result.finalize;
+          await attachBindings(result.view);
           if (attachLinkedYear) await attachLinkedYear(result.view);
           if (attachExplorer) attachExplorer(result.view);
           el.setAttribute('data-rendered', 'true');
         } catch (error) {
+          if (generation !== pageGeneration || !el.isConnected) return;
           console.error('Error rendering Vega chart:', error);
           el.innerHTML = '<div class="text-red-600 p-4">Error loading chart: ' + error.message + '</div>';
         } finally {
           delete el.dataset.rendering;
+          if (el._refreshAfterRender && generation === pageGeneration && el.isConnected) {
+            delete el._refreshAfterRender;
+            invalidateChart(el);
+            initVegaCharts();
+          }
         }
       });
     }
@@ -683,6 +752,16 @@ const isInlineSpec = typeof spec === 'object';
       window._vegaResizeListenerAdded = true;
     }
 
+    // The theme button changes the root class. Observe that shared state so
+    // every chart updates, without coupling this component to the button.
+    let darkMode = document.documentElement.classList.contains('dark');
+    new MutationObserver(function () {
+      const nextDarkMode = document.documentElement.classList.contains('dark');
+      if (nextDarkMode === darkMode) return;
+      darkMode = nextDarkMode;
+      refreshCharts();
+    }).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
     // Run on initial load
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', initVegaCharts);
@@ -690,15 +769,19 @@ const isInlineSpec = typeof spec === 'object';
       initVegaCharts();
     }
 
-    // Re-run on Astro page transitions
-    document.addEventListener('astro:page-load', function () {
+    // Dispose the outgoing page before the new charts initialize. In-flight
+    // renders also check this generation before registering their views.
+    document.addEventListener('astro:before-swap', function () {
+      pageGeneration++;
+      clearTimeout(resizeTimeout);
       Object.keys(chartViews).forEach(function (id) {
-        chartViews[id].finalize();
+        chartFinalizers[id]();
       });
       chartViews = {};
+      chartFinalizers = {};
       linkedYears = {};
-      initVegaCharts();
     });
+    document.addEventListener('astro:page-load', initVegaCharts);
 
     window.initVegaCharts = initVegaCharts;
   })();

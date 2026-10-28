@@ -1,0 +1,17 @@
+{
+  "dataset_id": "mrpam-petroleum-production",
+  "version": 3,
+  "created_at": "2026-10-28T14:02:15Z",
+  "data_as_of": "2026-09-30",
+  "coverage_time_start": "2021-01",
+  "coverage_time_end": "2026-09",
+  "coverage_frequency": "monthly",
+  "row_count": 69,
+  "column_count": 4,
+  "data_hash_sha256": "a064a907adbf5d6b432474c049eca8574ee5030e1f533f5dae754ecec82c8c03",
+  "source": {
+    "id": "mrpam",
+    "report": "2026.09.mon.pdf",
+    "report_url": "https://mrpam.gov.mn/public/pages/732/2026.09.mon.pdf"
+  }
+}

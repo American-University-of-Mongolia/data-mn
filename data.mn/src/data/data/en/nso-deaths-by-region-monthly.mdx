@@ -1,20 +1,20 @@
 ---
 title: "Mongolia Deaths by Region (2016–2026)"
 publishDate: 2026-05-08
-dataVersion: 2
-dataDate: 2026-07-31
-excerpt: "Monthly death counts across Mongolia's four regions and Ulaanbaatar from January 2016 to July 2026, sourced from the National Statistics Office."
+dataVersion: 3
+dataDate: 2026-09-30
+excerpt: "Monthly death counts across Mongolia's four regions and Ulaanbaatar from January 2016 to September 2026, sourced from the National Statistics Office."
 category: "Demographics"
 tags: ["mongolia", "demographics", "deaths", "mortality", "regions", "vital-statistics"]
 keywords: ["mongolia deaths by region", "mongolia mortality regional", "ulaanbaatar deaths monthly", "vital statistics mongolia regions"]
 dataFiles:
   - path: "/datasets/nso-deaths-by-region-monthly-all-en.csv"
     format: "csv"
-    size: "54 KB"
+    size: "56 KB"
     description: "Download as CSV"
   - path: "/datasets/nso-deaths-by-region-monthly.xlsx"
     format: "xlsx"
-    size: "29 KB"
+    size: "30 KB"
     description: "Open in Excel"
 source:
   name: "National Statistics Office of Mongolia"
@@ -24,7 +24,7 @@ source:
 
 import VegaChart from '~/components/ui/VegaChart.astro';
 
-Monthly death counts across Mongolia's four regions and Ulaanbaatar from January 2016 to July 2026, sourced from the National Statistics Office.
+Monthly death counts across Mongolia's four regions and Ulaanbaatar from January 2016 to September 2026, sourced from the National Statistics Office.
 
 <VegaChart
   spec="/charts/nso-deaths-by-region-monthly-en.json"

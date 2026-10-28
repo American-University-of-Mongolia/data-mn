@@ -13,11 +13,11 @@ GET /api/v1/{lang}/NSO/Industry%2C%20service/Industry/DT_NSO_1100_001V2.px
 
 ## Dimensions
 1. **Subdivision** (Дэд салбар): 37 values (see full list below)
-2. **Month** (Сар): 2017-09 to 2026-03 (monthly, YYYY-MM format)
+2. **Month** (Сар): 2017-09 to 2026-09 (monthly, YYYY-MM format)
 
 ## Time Range
 - **Start**: 2017-09
-- **End**: 2026-03 (latest as of fetch)
+- **End**: 2026-09 (latest as of fetch)
 - **Frequency**: Monthly
 
 ## Subdivisions (English)

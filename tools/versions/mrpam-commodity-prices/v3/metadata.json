@@ -1,0 +1,17 @@
+{
+  "dataset_id": "mrpam-commodity-prices",
+  "version": 3,
+  "created_at": "2026-10-28T14:02:15Z",
+  "data_as_of": "2026-09-30",
+  "coverage_time_start": "2021-01",
+  "coverage_time_end": "2026-09",
+  "coverage_frequency": "monthly",
+  "row_count": 1021,
+  "column_count": 5,
+  "data_hash_sha256": "26c89ef521c1a00da86b5b7edb027875a08d590a3e324a0185414895572b9fac",
+  "source": {
+    "id": "mrpam",
+    "report": "2026.09.mon.pdf",
+    "report_url": "https://mrpam.gov.mn/public/pages/732/2026.09.mon.pdf"
+  }
+}

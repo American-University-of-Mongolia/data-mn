@@ -1,67 +1,73 @@
 Subdivision,Month,value
-Total,2026-03,5999641.3
-Total,2026-02,5286055.3
-Total,2026-01,5120473.0
-Total,2025-12,5776627.4
-Total,2025-11,5236350.3
-Total,2025-10,5284475.2
-Total,2025-09,4961821.1
-Total,2025-08,4849317.4
-Total,2025-07,4363733.3
-Total,2025-06,3856777.2
-Total,2025-05,4458207.4
-Total,2025-04,4017367.2
-Total,2025-03,3442037.2
-Total,2025-02,3284362.1
-Total,2025-01,3448816.4
-Total,2024-12,4085657.5
-Total,2024-11,4072330.4
-Total,2024-10,4536347.4
-Total,2024-09,4158294.1
-Total,2024-08,4067888.9
-Total,2024-07,4091190.8
-Total,2024-06,4689480.0
-Total,2024-05,4788282.3
-Total,2024-04,4390635.7
-Total,2024-03,4321306.7
-Total,2024-02,3684012.4
-Total,2024-01,3647124.1
-Total,2023-12,3816709.5
-Total,2023-11,3770525.9
-Total,2023-10,3646484.9
-Total,2023-09,3716420.0
-Total,2023-08,3769962.1
-Total,2023-07,2972650.9
-Total,2023-06,3108367.0
-Total,2023-05,3069472.2
-Total,2023-04,3070490.9
-Total,2023-03,3085048.0
-Total,2023-02,2655804.2
-Total,2023-01,2931287.9
-Total,2022-12,2782861.7
-Total,2022-11,2624473.2
-Total,2022-10,2807774.6
-Total,2022-09,2573767.7
-Total,2022-08,2557286.7
-Total,2022-07,1893466.4
-Total,2022-06,2027321.9
-Total,2022-05,1841489.0
-Total,2022-04,1705560.0
-Total,2022-03,1423055.8
-Total,2022-02,1300231.9
-Total,2022-01,1651918.6
-Total,2021-12,1542715.6
-Total,2021-11,1530513.7
-Total,2021-10,1617495.4
-Total,2021-09,1444494.0
-Total,2021-08,1465255.4
-Total,2021-07,1407842.5
-Total,2021-06,1600803.4
-Total,2021-05,1675331.1
-Total,2021-04,1449463.5
-Total,2021-03,1539529.6
-Total,2021-02,1289080.0
-Total,2021-01,1355627.8
+Total,2026-09,7233677.4
+Total,2026-08,6856263.2
+Total,2026-07,7062269.2
+Total,2026-06,6999286.3
+Total,2026-05,6598782.8
+Total,2026-04,5783785.5
+Total,2026-03,5851266.5
+Total,2026-02,5330506.6
+Total,2026-01,5297295.9
+Total,2025-12,5860699.3
+Total,2025-11,5283971.0
+Total,2025-10,5319653.3
+Total,2025-09,4984112.0
+Total,2025-08,4875563.3
+Total,2025-07,4378020.2
+Total,2025-06,3869094.5
+Total,2025-05,4476845.6
+Total,2025-04,4030630.8
+Total,2025-03,3468660.7
+Total,2025-02,3299923.0
+Total,2025-01,3494225.1
+Total,2024-12,4102031.5
+Total,2024-11,4084594.5
+Total,2024-10,4553240.2
+Total,2024-09,4174030.6
+Total,2024-08,4078425.1
+Total,2024-07,4102022.4
+Total,2024-06,4700163.2
+Total,2024-05,4806963.5
+Total,2024-04,4395567.9
+Total,2024-03,4312727.9
+Total,2024-02,3676307.3
+Total,2024-01,3657201.9
+Total,2023-12,3851424.4
+Total,2023-11,3818687.1
+Total,2023-10,3686809.4
+Total,2023-09,3753425.8
+Total,2023-08,3806042.6
+Total,2023-07,3006131.4
+Total,2023-06,3152680.7
+Total,2023-05,3093686.2
+Total,2023-04,3091089.0
+Total,2023-03,3103075.0
+Total,2023-02,2672335.4
+Total,2023-01,2951938.1
+Total,2022-12,2796568.7
+Total,2022-11,2636434.5
+Total,2022-10,2822940.9
+Total,2022-09,2590772.5
+Total,2022-08,2563799.6
+Total,2022-07,1906237.4
+Total,2022-06,2054938.8
+Total,2022-05,1867472.0
+Total,2022-04,1716006.8
+Total,2022-03,1428307.4
+Total,2022-02,1302471.2
+Total,2022-01,1653067.3
+Total,2021-12,1541284.4
+Total,2021-11,1537948.3
+Total,2021-10,1628058.9
+Total,2021-09,1457312.6
+Total,2021-08,1488643.7
+Total,2021-07,1430548.5
+Total,2021-06,1625380.6
+Total,2021-05,1689564.0
+Total,2021-04,1469441.2
+Total,2021-03,1562291.1
+Total,2021-02,1305428.3
+Total,2021-01,1378283.1
 Total,2020-12,1801591.4
 Total,2020-11,1730039.3
 Total,2020-10,1912147.8
@@ -102,69 +108,75 @@ Total,2017-12,1104169.7
 Total,2017-11,1127627.3
 Total,2017-10,1298474.2
 Total,2017-09,1283334.2
- Mining and quarrying,2026-03,5042751.2
- Mining and quarrying,2026-02,4373472.2
- Mining and quarrying,2026-01,4167087.2
- Mining and quarrying,2025-12,4695524.5
- Mining and quarrying,2025-11,4247592.0
- Mining and quarrying,2025-10,4187688.2
- Mining and quarrying,2025-09,3846040.0
- Mining and quarrying,2025-08,3772363.5
- Mining and quarrying,2025-07,3559925.9
- Mining and quarrying,2025-06,2916711.3
- Mining and quarrying,2025-05,3564331.8
- Mining and quarrying,2025-04,3246276.0
- Mining and quarrying,2025-03,2727641.1
- Mining and quarrying,2025-02,2453567.7
- Mining and quarrying,2025-01,2616568.4
- Mining and quarrying,2024-12,3169915.0
- Mining and quarrying,2024-11,3222859.9
- Mining and quarrying,2024-10,3682366.3
- Mining and quarrying,2024-09,3336305.8
- Mining and quarrying,2024-08,3257336.1
- Mining and quarrying,2024-07,3292789.8
- Mining and quarrying,2024-06,3804763.3
- Mining and quarrying,2024-05,3924215.1
- Mining and quarrying,2024-04,3685607.4
- Mining and quarrying,2024-03,3627522.3
- Mining and quarrying,2024-02,3059732.0
- Mining and quarrying,2024-01,2863211.2
- Mining and quarrying,2023-12,2873199.9
- Mining and quarrying,2023-11,2938139.3
- Mining and quarrying,2023-10,2814735.1
- Mining and quarrying,2023-09,2941353.1
- Mining and quarrying,2023-08,2916481.8
- Mining and quarrying,2023-07,2217623.7
- Mining and quarrying,2023-06,2280996.1
- Mining and quarrying,2023-05,2303974.5
- Mining and quarrying,2023-04,2433935.0
- Mining and quarrying,2023-03,2450987.4
- Mining and quarrying,2023-02,2053581.9
- Mining and quarrying,2023-01,2280564.1
- Mining and quarrying,2022-12,2058383.0
- Mining and quarrying,2022-11,2044544.4
- Mining and quarrying,2022-10,2158102.5
- Mining and quarrying,2022-09,2008461.2
- Mining and quarrying,2022-08,1972263.0
- Mining and quarrying,2022-07,1384752.3
- Mining and quarrying,2022-06,1360595.3
- Mining and quarrying,2022-05,1197333.6
- Mining and quarrying,2022-04,1196930.6
- Mining and quarrying,2022-03,973513.9
- Mining and quarrying,2022-02,895146.4
- Mining and quarrying,2022-01,1116569.9
- Mining and quarrying,2021-12,899132.9
- Mining and quarrying,2021-11,995514.5
- Mining and quarrying,2021-10,1137500.6
- Mining and quarrying,2021-09,1020126.0
- Mining and quarrying,2021-08,1037176.9
- Mining and quarrying,2021-07,1022565.7
- Mining and quarrying,2021-06,1057418.2
- Mining and quarrying,2021-05,1121457.0
- Mining and quarrying,2021-04,1013817.1
- Mining and quarrying,2021-03,1081596.2
- Mining and quarrying,2021-02,880534.6
- Mining and quarrying,2021-01,920437.7
+ Mining and quarrying,2026-09,5907234.7
+ Mining and quarrying,2026-08,5695704.0
+ Mining and quarrying,2026-07,6016611.9
+ Mining and quarrying,2026-06,5760027.9
+ Mining and quarrying,2026-05,5562099.2
+ Mining and quarrying,2026-04,4850706.8
+ Mining and quarrying,2026-03,4997203.5
+ Mining and quarrying,2026-02,4547674.4
+ Mining and quarrying,2026-01,4422496.0
+ Mining and quarrying,2025-12,4774054.3
+ Mining and quarrying,2025-11,4284286.3
+ Mining and quarrying,2025-10,4206168.2
+ Mining and quarrying,2025-09,3850379.9
+ Mining and quarrying,2025-08,3791653.2
+ Mining and quarrying,2025-07,3559149.3
+ Mining and quarrying,2025-06,2924011.5
+ Mining and quarrying,2025-05,3575037.7
+ Mining and quarrying,2025-04,3249471.0
+ Mining and quarrying,2025-03,2744775.0
+ Mining and quarrying,2025-02,2461316.5
+ Mining and quarrying,2025-01,2651931.0
+ Mining and quarrying,2024-12,3191371.9
+ Mining and quarrying,2024-11,3238999.9
+ Mining and quarrying,2024-10,3702102.1
+ Mining and quarrying,2024-09,3353178.3
+ Mining and quarrying,2024-08,3268006.2
+ Mining and quarrying,2024-07,3303775.1
+ Mining and quarrying,2024-06,3815591.9
+ Mining and quarrying,2024-05,3944422.9
+ Mining and quarrying,2024-04,3693548.2
+ Mining and quarrying,2024-03,3622570.3
+ Mining and quarrying,2024-02,3056461.1
+ Mining and quarrying,2024-01,2878482.5
+ Mining and quarrying,2023-12,2912342.2
+ Mining and quarrying,2023-11,2990172.8
+ Mining and quarrying,2023-10,2857910.4
+ Mining and quarrying,2023-09,2979324.6
+ Mining and quarrying,2023-08,2952682.9
+ Mining and quarrying,2023-07,2251476.0
+ Mining and quarrying,2023-06,2325673.3
+ Mining and quarrying,2023-05,2329471.6
+ Mining and quarrying,2023-04,2457280.9
+ Mining and quarrying,2023-03,2471886.5
+ Mining and quarrying,2023-02,2073198.5
+ Mining and quarrying,2023-01,2304691.6
+ Mining and quarrying,2022-12,2075674.3
+ Mining and quarrying,2022-11,2059681.1
+ Mining and quarrying,2022-10,2175328.3
+ Mining and quarrying,2022-09,2026374.9
+ Mining and quarrying,2022-08,1979069.8
+ Mining and quarrying,2022-07,1397746.0
+ Mining and quarrying,2022-06,1388394.5
+ Mining and quarrying,2022-05,1224083.2
+ Mining and quarrying,2022-04,1209316.3
+ Mining and quarrying,2022-03,981046.8
+ Mining and quarrying,2022-02,900337.1
+ Mining and quarrying,2022-01,1120719.8
+ Mining and quarrying,2021-12,900979.3
+ Mining and quarrying,2021-11,1005875.3
+ Mining and quarrying,2021-10,1150457.2
+ Mining and quarrying,2021-09,1033554.0
+ Mining and quarrying,2021-08,1060627.0
+ Mining and quarrying,2021-07,1045329.6
+ Mining and quarrying,2021-06,1082109.7
+ Mining and quarrying,2021-05,1136307.9
+ Mining and quarrying,2021-04,1035394.1
+ Mining and quarrying,2021-03,1106122.8
+ Mining and quarrying,2021-02,899160.2
+ Mining and quarrying,2021-01,945268.9
  Mining and quarrying,2020-12,1390622.3
  Mining and quarrying,2020-11,1363523.9
  Mining and quarrying,2020-10,1479721.8
@@ -205,9 +217,15 @@ Total,2017-09,1283334.2
  Mining and quarrying,2017-11,783935.9
  Mining and quarrying,2017-10,957055.5
  Mining and quarrying,2017-09,972177.1
- Mining of coal and lignite,2026-03,1788840.1
- Mining of coal and lignite,2026-02,1408286.2
- Mining of coal and lignite,2026-01,1523624.7
+ Mining of coal and lignite,2026-09,2409336.3
+ Mining of coal and lignite,2026-08,2164092.9
+ Mining of coal and lignite,2026-07,2457877.3
+ Mining of coal and lignite,2026-06,2434298.5
+ Mining of coal and lignite,2026-05,2488512.3
+ Mining of coal and lignite,2026-04,1781640.7
+ Mining of coal and lignite,2026-03,1789720.1
+ Mining of coal and lignite,2026-02,1514180.3
+ Mining of coal and lignite,2026-01,1730016.1
  Mining of coal and lignite,2025-12,1715826.8
  Mining of coal and lignite,2025-11,1528125.4
  Mining of coal and lignite,2025-10,1405495.4
@@ -262,11 +280,11 @@ Total,2017-09,1283334.2
  Mining of coal and lignite,2021-09,148920.9
  Mining of coal and lignite,2021-08,73287.4
  Mining of coal and lignite,2021-07,84924.5
- Mining of coal and lignite,2021-06,140331.5
+ Mining of coal and lignite,2021-06,140283.3
  Mining of coal and lignite,2021-05,151044.8
  Mining of coal and lignite,2021-04,197341.1
  Mining of coal and lignite,2021-03,280577.5
- Mining of coal and lignite,2021-02,282077.4
+ Mining of coal and lignite,2021-02,282125.6
  Mining of coal and lignite,2021-01,329274.5
  Mining of coal and lignite,2020-12,622365.4
  Mining of coal and lignite,2020-11,657554.9
@@ -308,9 +326,15 @@ Total,2017-09,1283334.2
  Mining of coal and lignite,2017-11,216789.8
  Mining of coal and lignite,2017-10,227612.5
  Mining of coal and lignite,2017-09,252174.9
- Extraction of crude petroleum and natural gas,2026-03,72328.0
- Extraction of crude petroleum and natural gas,2026-02,57732.4
- Extraction of crude petroleum and natural gas,2026-01,63543.2
+ Extraction of crude petroleum and natural gas,2026-09,84732.9
+ Extraction of crude petroleum and natural gas,2026-08,84053.2
+ Extraction of crude petroleum and natural gas,2026-07,89256.6
+ Extraction of crude petroleum and natural gas,2026-06,101815.6
+ Extraction of crude petroleum and natural gas,2026-05,105296.5
+ Extraction of crude petroleum and natural gas,2026-04,98691.9
+ Extraction of crude petroleum and natural gas,2026-03,72706.8
+ Extraction of crude petroleum and natural gas,2026-02,59747.1
+ Extraction of crude petroleum and natural gas,2026-01,63547.4
  Extraction of crude petroleum and natural gas,2025-12,67072.3
  Extraction of crude petroleum and natural gas,2025-11,67857.3
  Extraction of crude petroleum and natural gas,2025-10,73029.9
@@ -411,33 +435,39 @@ Total,2017-09,1283334.2
  Extraction of crude petroleum and natural gas,2017-11,86113.3
  Extraction of crude petroleum and natural gas,2017-10,82112.1
  Extraction of crude petroleum and natural gas,2017-09,75000.4
- Mining of metal ores,2026-03,3102716.8
- Mining of metal ores,2026-02,2840546.2
+ Mining of metal ores,2026-09,3206911.9
+ Mining of metal ores,2026-08,3252859.5
+ Mining of metal ores,2026-07,3312541.1
+ Mining of metal ores,2026-06,3038424.6
+ Mining of metal ores,2026-05,2823135.0
+ Mining of metal ores,2026-04,2838348.2
+ Mining of metal ores,2026-03,3021708.2
+ Mining of metal ores,2026-02,2859271.8
  Mining of metal ores,2026-01,2506242.0
- Mining of metal ores,2025-12,2805494.7
+ Mining of metal ores,2025-12,2829942.0
  Mining of metal ores,2025-11,2550236.8
- Mining of metal ores,2025-10,2600020.5
- Mining of metal ores,2025-09,2182834.5
- Mining of metal ores,2025-08,2387674.5
- Mining of metal ores,2025-07,2184988.3
- Mining of metal ores,2025-06,1821833.5
- Mining of metal ores,2025-05,1869091.3
- Mining of metal ores,2025-04,1606870.4
- Mining of metal ores,2025-03,1476002.4
- Mining of metal ores,2025-02,1077762.2
- Mining of metal ores,2025-01,1132476.3
- Mining of metal ores,2024-12,1395007.1
- Mining of metal ores,2024-11,1218473.6
- Mining of metal ores,2024-10,1430393.1
- Mining of metal ores,2024-09,1246130.8
- Mining of metal ores,2024-08,1106658.3
- Mining of metal ores,2024-07,1100262.1
- Mining of metal ores,2024-06,1211611.0
- Mining of metal ores,2024-05,1222091.7
- Mining of metal ores,2024-04,1058136.2
- Mining of metal ores,2024-03,866901.8
- Mining of metal ores,2024-02,774876.5
- Mining of metal ores,2024-01,922506.4
+ Mining of metal ores,2025-10,2579493.4
+ Mining of metal ores,2025-09,2158588.0
+ Mining of metal ores,2025-08,2381240.1
+ Mining of metal ores,2025-07,2169623.9
+ Mining of metal ores,2025-06,1806301.5
+ Mining of metal ores,2025-05,1852437.3
+ Mining of metal ores,2025-04,1592710.8
+ Mining of metal ores,2025-03,1467226.7
+ Mining of metal ores,2025-02,1057545.6
+ Mining of metal ores,2025-01,1115698.7
+ Mining of metal ores,2024-12,1376297.2
+ Mining of metal ores,2024-11,1196105.7
+ Mining of metal ores,2024-10,1408588.1
+ Mining of metal ores,2024-09,1224792.4
+ Mining of metal ores,2024-08,1085406.4
+ Mining of metal ores,2024-07,1080888.7
+ Mining of metal ores,2024-06,1192113.9
+ Mining of metal ores,2024-05,1211811.7
+ Mining of metal ores,2024-04,1046017.2
+ Mining of metal ores,2024-03,842771.4
+ Mining of metal ores,2024-02,751162.1
+ Mining of metal ores,2024-01,903549.6
  Mining of metal ores,2023-12,826076.6
  Mining of metal ores,2023-11,1064237.2
  Mining of metal ores,2023-10,1078428.1
@@ -514,69 +544,75 @@ Total,2017-09,1283334.2
  Mining of metal ores,2017-11,469713.7
  Mining of metal ores,2017-10,638887.8
  Mining of metal ores,2017-09,634693.1
- Other mining and quarrying,2026-03,32972.5
- Other mining and quarrying,2026-02,27394.5
- Other mining and quarrying,2026-01,31924.4
- Other mining and quarrying,2025-12,61367.9
- Other mining and quarrying,2025-11,54831.7
- Other mining and quarrying,2025-10,68431.0
- Other mining and quarrying,2025-09,59080.9
- Other mining and quarrying,2025-08,62937.3
- Other mining and quarrying,2025-07,48381.6
- Other mining and quarrying,2025-06,43535.9
- Other mining and quarrying,2025-05,45418.8
- Other mining and quarrying,2025-04,38498.3
- Other mining and quarrying,2025-03,32472.0
- Other mining and quarrying,2025-02,27261.3
- Other mining and quarrying,2025-01,35273.4
- Other mining and quarrying,2024-12,39807.4
- Other mining and quarrying,2024-11,34611.4
- Other mining and quarrying,2024-10,42905.2
- Other mining and quarrying,2024-09,33108.4
- Other mining and quarrying,2024-08,29727.1
- Other mining and quarrying,2024-07,32490.6
- Other mining and quarrying,2024-06,44195.4
- Other mining and quarrying,2024-05,36151.9
- Other mining and quarrying,2024-04,32858.1
- Other mining and quarrying,2024-03,25399.5
- Other mining and quarrying,2024-02,25900.9
- Other mining and quarrying,2024-01,18950.3
- Other mining and quarrying,2023-12,29399.1
- Other mining and quarrying,2023-11,27145.5
- Other mining and quarrying,2023-10,36690.1
- Other mining and quarrying,2023-09,31644.8
- Other mining and quarrying,2023-08,28074.3
- Other mining and quarrying,2023-07,27152.9
- Other mining and quarrying,2023-06,27466.8
- Other mining and quarrying,2023-05,32235.1
- Other mining and quarrying,2023-04,20524.7
- Other mining and quarrying,2023-03,17380.8
- Other mining and quarrying,2023-02,11010.4
- Other mining and quarrying,2023-01,16206.7
- Other mining and quarrying,2022-12,19500.9
- Other mining and quarrying,2022-11,17266.7
- Other mining and quarrying,2022-10,16758.5
- Other mining and quarrying,2022-09,20616.7
- Other mining and quarrying,2022-08,23399.6
- Other mining and quarrying,2022-07,20788.8
- Other mining and quarrying,2022-06,16750.4
- Other mining and quarrying,2022-05,17335.3
- Other mining and quarrying,2022-04,15853.2
- Other mining and quarrying,2022-03,11091.3
- Other mining and quarrying,2022-02,11478.2
- Other mining and quarrying,2022-01,8683.0
- Other mining and quarrying,2021-12,12244.7
- Other mining and quarrying,2021-11,12318.8
- Other mining and quarrying,2021-10,19607.5
- Other mining and quarrying,2021-09,22815.1
- Other mining and quarrying,2021-08,20842.6
- Other mining and quarrying,2021-07,17300.0
- Other mining and quarrying,2021-06,25079.6
- Other mining and quarrying,2021-05,28473.0
- Other mining and quarrying,2021-04,16442.6
- Other mining and quarrying,2021-03,14844.5
- Other mining and quarrying,2021-02,13424.8
- Other mining and quarrying,2021-01,12261.0
+ Other mining and quarrying,2026-09,147700.1
+ Other mining and quarrying,2026-08,135495.7
+ Other mining and quarrying,2026-07,98444.8
+ Other mining and quarrying,2026-06,128751.9
+ Other mining and quarrying,2026-05,89996.1
+ Other mining and quarrying,2026-04,83452.3
+ Other mining and quarrying,2026-03,67174.6
+ Other mining and quarrying,2026-02,74962.3
+ Other mining and quarrying,2026-01,80937.5
+ Other mining and quarrying,2025-12,115450.2
+ Other mining and quarrying,2025-11,91525.9
+ Other mining and quarrying,2025-10,107438.2
+ Other mining and quarrying,2025-09,87667.3
+ Other mining and quarrying,2025-08,88661.5
+ Other mining and quarrying,2025-07,62969.4
+ Other mining and quarrying,2025-06,66368.1
+ Other mining and quarrying,2025-05,72778.7
+ Other mining and quarrying,2025-04,55852.9
+ Other mining and quarrying,2025-03,58381.7
+ Other mining and quarrying,2025-02,55226.7
+ Other mining and quarrying,2025-01,87413.6
+ Other mining and quarrying,2024-12,79974.2
+ Other mining and quarrying,2024-11,73119.2
+ Other mining and quarrying,2024-10,84446.0
+ Other mining and quarrying,2024-09,71319.2
+ Other mining and quarrying,2024-08,61649.1
+ Other mining and quarrying,2024-07,62849.3
+ Other mining and quarrying,2024-06,74521.0
+ Other mining and quarrying,2024-05,66639.7
+ Other mining and quarrying,2024-04,52917.9
+ Other mining and quarrying,2024-03,44577.9
+ Other mining and quarrying,2024-02,46344.4
+ Other mining and quarrying,2024-01,53178.5
+ Other mining and quarrying,2023-12,68541.3
+ Other mining and quarrying,2023-11,79179.0
+ Other mining and quarrying,2023-10,79865.4
+ Other mining and quarrying,2023-09,69616.3
+ Other mining and quarrying,2023-08,64275.4
+ Other mining and quarrying,2023-07,61005.3
+ Other mining and quarrying,2023-06,72144.1
+ Other mining and quarrying,2023-05,57732.2
+ Other mining and quarrying,2023-04,43870.6
+ Other mining and quarrying,2023-03,38279.9
+ Other mining and quarrying,2023-02,30627.0
+ Other mining and quarrying,2023-01,40334.1
+ Other mining and quarrying,2022-12,36792.2
+ Other mining and quarrying,2022-11,32403.4
+ Other mining and quarrying,2022-10,33984.3
+ Other mining and quarrying,2022-09,38530.4
+ Other mining and quarrying,2022-08,30206.4
+ Other mining and quarrying,2022-07,33782.5
+ Other mining and quarrying,2022-06,44549.6
+ Other mining and quarrying,2022-05,44084.9
+ Other mining and quarrying,2022-04,28238.9
+ Other mining and quarrying,2022-03,18624.1
+ Other mining and quarrying,2022-02,16668.8
+ Other mining and quarrying,2022-01,12832.8
+ Other mining and quarrying,2021-12,14091.1
+ Other mining and quarrying,2021-11,22679.7
+ Other mining and quarrying,2021-10,32564.0
+ Other mining and quarrying,2021-09,36243.1
+ Other mining and quarrying,2021-08,44292.8
+ Other mining and quarrying,2021-07,40063.9
+ Other mining and quarrying,2021-06,49819.3
+ Other mining and quarrying,2021-05,43323.9
+ Other mining and quarrying,2021-04,38019.6
+ Other mining and quarrying,2021-03,39371.1
+ Other mining and quarrying,2021-02,32002.2
+ Other mining and quarrying,2021-01,37092.1
  Other mining and quarrying,2020-12,26899.1
  Other mining and quarrying,2020-11,13085.5
  Other mining and quarrying,2020-10,21186.0
@@ -617,6 +653,12 @@ Total,2017-09,1283334.2
  Other mining and quarrying,2017-11,11319.0
  Other mining and quarrying,2017-10,8443.1
  Other mining and quarrying,2017-09,10308.6
+ Mining support service activities,2026-09,58553.5
+ Mining support service activities,2026-08,59202.8
+ Mining support service activities,2026-07,58492.2
+ Mining support service activities,2026-06,56737.3
+ Mining support service activities,2026-05,55159.2
+ Mining support service activities,2026-04,48573.6
  Mining support service activities,2026-03,45893.8
  Mining support service activities,2026-02,39512.9
  Mining support service activities,2026-01,41752.9
@@ -720,23 +762,29 @@ Total,2017-09,1283334.2
  Mining support service activities,2017-11,0.0
  Mining support service activities,2017-10,0.0
  Mining support service activities,2017-09,0.0
- Manufacturing,2026-03,551664.5
- Manufacturing,2026-02,481516.8
- Manufacturing,2026-01,554391.8
- Manufacturing,2025-12,748870.8
- Manufacturing,2025-11,687721.5
- Manufacturing,2025-10,828286.7
- Manufacturing,2025-09,907633.3
- Manufacturing,2025-08,888811.1
- Manufacturing,2025-07,623014.0
- Manufacturing,2025-06,750225.6
- Manufacturing,2025-05,664165.5
- Manufacturing,2025-04,519050.5
- Manufacturing,2025-03,443116.9
- Manufacturing,2025-02,539508.6
- Manufacturing,2025-01,527943.3
+ Manufacturing,2026-09,1072800.9
+ Manufacturing,2026-08,927096.7
+ Manufacturing,2026-07,815158.8
+ Manufacturing,2026-06,1019716.7
+ Manufacturing,2026-05,815039.8
+ Manufacturing,2026-04,668334.5
+ Manufacturing,2026-03,560865.7
+ Manufacturing,2026-02,485922.0
+ Manufacturing,2026-01,560909.7
+ Manufacturing,2025-12,760787.8
+ Manufacturing,2025-11,703792.2
+ Manufacturing,2025-10,848991.1
+ Manufacturing,2025-09,927083.6
+ Manufacturing,2025-08,896570.1
+ Manufacturing,2025-07,638783.9
+ Manufacturing,2025-06,755352.0
+ Manufacturing,2025-05,673962.0
+ Manufacturing,2025-04,532933.0
+ Manufacturing,2025-03,457045.4
+ Manufacturing,2025-02,553038.6
+ Manufacturing,2025-01,543286.7
  Manufacturing,2024-12,627287.7
- Manufacturing,2024-11,618568.1
+ Manufacturing,2024-11,618553.4
  Manufacturing,2024-10,650036.6
  Manufacturing,2024-09,664477.5
  Manufacturing,2024-08,673982.2
@@ -823,9 +871,15 @@ Total,2017-09,1283334.2
  Manufacturing,2017-11,212365.7
  Manufacturing,2017-10,219596.1
  Manufacturing,2017-09,208902.3
- Manufacture of food products,2026-03,201126.6
- Manufacture of food products,2026-02,170705.2
- Manufacture of food products,2026-01,225367.9
+ Manufacture of food products,2026-09,362346.6
+ Manufacture of food products,2026-08,301729.7
+ Manufacture of food products,2026-07,212164.2
+ Manufacture of food products,2026-06,273555.0
+ Manufacture of food products,2026-05,237372.3
+ Manufacture of food products,2026-04,252041.6
+ Manufacture of food products,2026-03,209061.4
+ Manufacture of food products,2026-02,175071.2
+ Manufacture of food products,2026-01,231880.3
  Manufacture of food products,2025-12,326452.2
  Manufacture of food products,2025-11,314735.6
  Manufacture of food products,2025-10,324735.6
@@ -926,9 +980,15 @@ Total,2017-09,1283334.2
  Manufacture of food products,2017-11,68747.6
  Manufacture of food products,2017-10,66409.2
  Manufacture of food products,2017-09,57744.1
- Processing and preserving of meat,2026-03,39832.8
- Processing and preserving of meat,2026-02,47321.8
- Processing and preserving of meat,2026-01,61344.2
+ Processing and preserving of meat,2026-09,159213.8
+ Processing and preserving of meat,2026-08,103588.9
+ Processing and preserving of meat,2026-07,56869.2
+ Processing and preserving of meat,2026-06,86640.3
+ Processing and preserving of meat,2026-05,50957.7
+ Processing and preserving of meat,2026-04,66826.4
+ Processing and preserving of meat,2026-03,46818.2
+ Processing and preserving of meat,2026-02,50898.2
+ Processing and preserving of meat,2026-01,67666.4
  Processing and preserving of meat,2025-12,150920.7
  Processing and preserving of meat,2025-11,163146.9
  Processing and preserving of meat,2025-10,161564.9
@@ -1029,6 +1089,12 @@ Total,2017-09,1283334.2
  Processing and preserving of meat,2017-11,23612.5
  Processing and preserving of meat,2017-10,23945.2
  Processing and preserving of meat,2017-09,15395.8
+ Processing and preserving of fruit and vegetables,2026-09,8986.0
+ Processing and preserving of fruit and vegetables,2026-08,11663.5
+ Processing and preserving of fruit and vegetables,2026-07,2540.5
+ Processing and preserving of fruit and vegetables,2026-06,8624.5
+ Processing and preserving of fruit and vegetables,2026-05,4967.5
+ Processing and preserving of fruit and vegetables,2026-04,7087.4
  Processing and preserving of fruit and vegetables,2026-03,5858.3
  Processing and preserving of fruit and vegetables,2026-02,5188.1
  Processing and preserving of fruit and vegetables,2026-01,5612.5
@@ -1038,7 +1104,7 @@ Total,2017-09,1283334.2
  Processing and preserving of fruit and vegetables,2025-09,4520.8
  Processing and preserving of fruit and vegetables,2025-08,7495.5
  Processing and preserving of fruit and vegetables,2025-07,3007.9
- Processing and preserving of fruit and vegetables,2025-06,3533.9
+ Processing and preserving of fruit and vegetables,2025-06,3532.1
  Processing and preserving of fruit and vegetables,2025-05,2654.3
  Processing and preserving of fruit and vegetables,2025-04,5590.5
  Processing and preserving of fruit and vegetables,2025-03,5607.1
@@ -1132,8 +1198,14 @@ Total,2017-09,1283334.2
  Processing and preserving of fruit and vegetables,2017-11,562.2
  Processing and preserving of fruit and vegetables,2017-10,488.3
  Processing and preserving of fruit and vegetables,2017-09,511.6
- Manufacture of dairy products,2026-03,69143.2
- Manufacture of dairy products,2026-02,44683.5
+ Manufacture of dairy products,2026-09,76078.0
+ Manufacture of dairy products,2026-08,74982.4
+ Manufacture of dairy products,2026-07,64263.8
+ Manufacture of dairy products,2026-06,73380.0
+ Manufacture of dairy products,2026-05,81521.1
+ Manufacture of dairy products,2026-04,74443.0
+ Manufacture of dairy products,2026-03,69727.1
+ Manufacture of dairy products,2026-02,45243.5
  Manufacture of dairy products,2026-01,53281.3
  Manufacture of dairy products,2025-12,45664.2
  Manufacture of dairy products,2025-11,51955.0
@@ -1235,7 +1307,13 @@ Total,2017-09,1283334.2
  Manufacture of dairy products,2017-11,10046.6
  Manufacture of dairy products,2017-10,10333.3
  Manufacture of dairy products,2017-09,10493.4
-" Manufacture of grain mill products, starches and starch products",2026-03,27328.6
+" Manufacture of grain mill products, starches and starch products",2026-09,45307.5
+" Manufacture of grain mill products, starches and starch products",2026-08,39091.9
+" Manufacture of grain mill products, starches and starch products",2026-07,23827.5
+" Manufacture of grain mill products, starches and starch products",2026-06,35739.7
+" Manufacture of grain mill products, starches and starch products",2026-05,29475.1
+" Manufacture of grain mill products, starches and starch products",2026-04,41075.6
+" Manufacture of grain mill products, starches and starch products",2026-03,27435.8
 " Manufacture of grain mill products, starches and starch products",2026-02,19559.1
 " Manufacture of grain mill products, starches and starch products",2026-01,36945.6
 " Manufacture of grain mill products, starches and starch products",2025-12,39186.9
@@ -1338,9 +1416,15 @@ Total,2017-09,1283334.2
 " Manufacture of grain mill products, starches and starch products",2017-11,19118.1
 " Manufacture of grain mill products, starches and starch products",2017-10,13624.5
 " Manufacture of grain mill products, starches and starch products",2017-09,16991.8
- Manufacture of other food products,2026-03,58963.7
- Manufacture of other food products,2026-02,53952.6
- Manufacture of other food products,2026-01,68184.1
+ Manufacture of other food products,2026-09,72761.3
+ Manufacture of other food products,2026-08,72403.0
+ Manufacture of other food products,2026-07,64663.2
+ Manufacture of other food products,2026-06,69170.5
+ Manufacture of other food products,2026-05,70450.9
+ Manufacture of other food products,2026-04,62609.2
+ Manufacture of other food products,2026-03,59221.9
+ Manufacture of other food products,2026-02,54182.4
+ Manufacture of other food products,2026-01,68374.4
  Manufacture of other food products,2025-12,84097.5
  Manufacture of other food products,2025-11,61449.5
  Manufacture of other food products,2025-10,65468.4
@@ -1441,6 +1525,12 @@ Total,2017-09,1283334.2
  Manufacture of other food products,2017-11,15408.1
  Manufacture of other food products,2017-10,18017.8
  Manufacture of other food products,2017-09,14351.5
+ Manufacture of beverages,2026-09,117447.1
+ Manufacture of beverages,2026-08,128050.6
+ Manufacture of beverages,2026-07,136260.4
+ Manufacture of beverages,2026-06,138962.7
+ Manufacture of beverages,2026-05,160423.4
+ Manufacture of beverages,2026-04,118176.5
  Manufacture of beverages,2026-03,115135.1
  Manufacture of beverages,2026-02,113659.7
  Manufacture of beverages,2026-01,121879.2
@@ -1448,10 +1538,10 @@ Total,2017-09,1283334.2
  Manufacture of beverages,2025-11,86892.4
  Manufacture of beverages,2025-10,87656.9
  Manufacture of beverages,2025-09,105972.7
- Manufacture of beverages,2025-08,137080.6
+ Manufacture of beverages,2025-08,126134.9
  Manufacture of beverages,2025-07,107890.3
- Manufacture of beverages,2025-06,119366.9
- Manufacture of beverages,2025-05,130008.8
+ Manufacture of beverages,2025-06,107597.6
+ Manufacture of beverages,2025-05,120691.6
  Manufacture of beverages,2025-04,107889.9
  Manufacture of beverages,2025-03,110504.7
  Manufacture of beverages,2025-02,95141.2
@@ -1544,6 +1634,12 @@ Total,2017-09,1283334.2
  Manufacture of beverages,2017-11,50197.4
  Manufacture of beverages,2017-10,54455.9
  Manufacture of beverages,2017-09,46491.1
+ Manufacture of tobacco products,2026-09,1231.1
+ Manufacture of tobacco products,2026-08,722.7
+ Manufacture of tobacco products,2026-07,3278.3
+ Manufacture of tobacco products,2026-06,1106.2
+ Manufacture of tobacco products,2026-05,0.0
+ Manufacture of tobacco products,2026-04,392.0
  Manufacture of tobacco products,2026-03,1918.5
  Manufacture of tobacco products,2026-02,2832.8
  Manufacture of tobacco products,2026-01,5601.0
@@ -1647,6 +1743,12 @@ Total,2017-09,1283334.2
  Manufacture of tobacco products,2017-11,2790.0
  Manufacture of tobacco products,2017-10,2605.7
  Manufacture of tobacco products,2017-09,2569.8
+ Manufacture of textiles,2026-09,212067.8
+ Manufacture of textiles,2026-08,162660.0
+ Manufacture of textiles,2026-07,188895.0
+ Manufacture of textiles,2026-06,255599.9
+ Manufacture of textiles,2026-05,87240.6
+ Manufacture of textiles,2026-04,23346.7
  Manufacture of textiles,2026-03,12990.8
  Manufacture of textiles,2026-02,16450.9
  Manufacture of textiles,2026-01,25644.1
@@ -1663,7 +1765,7 @@ Total,2017-09,1283334.2
  Manufacture of textiles,2025-02,25543.5
  Manufacture of textiles,2025-01,23960.9
  Manufacture of textiles,2024-12,28101.1
- Manufacture of textiles,2024-11,48436.0
+ Manufacture of textiles,2024-11,48421.4
  Manufacture of textiles,2024-10,31623.6
  Manufacture of textiles,2024-09,56534.5
  Manufacture of textiles,2024-08,118166.8
@@ -1750,21 +1852,27 @@ Total,2017-09,1283334.2
  Manufacture of textiles,2017-11,25440.2
  Manufacture of textiles,2017-10,24632.1
  Manufacture of textiles,2017-09,25840.3
- Manufacture of wearing apparel,2026-03,36438.6
- Manufacture of wearing apparel,2026-02,29349.1
- Manufacture of wearing apparel,2026-01,33993.7
- Manufacture of wearing apparel,2025-12,26442.5
- Manufacture of wearing apparel,2025-11,23626.1
- Manufacture of wearing apparel,2025-10,26592.8
- Manufacture of wearing apparel,2025-09,26969.0
- Manufacture of wearing apparel,2025-08,26275.8
- Manufacture of wearing apparel,2025-07,20314.3
- Manufacture of wearing apparel,2025-06,23637.8
- Manufacture of wearing apparel,2025-05,22668.0
- Manufacture of wearing apparel,2025-04,16331.4
- Manufacture of wearing apparel,2025-03,15186.4
- Manufacture of wearing apparel,2025-02,15352.0
- Manufacture of wearing apparel,2025-01,19817.3
+ Manufacture of wearing apparel,2026-09,59937.6
+ Manufacture of wearing apparel,2026-08,57393.6
+ Manufacture of wearing apparel,2026-07,43951.8
+ Manufacture of wearing apparel,2026-06,46764.4
+ Manufacture of wearing apparel,2026-05,52114.1
+ Manufacture of wearing apparel,2026-04,35167.3
+ Manufacture of wearing apparel,2026-03,36245.9
+ Manufacture of wearing apparel,2026-02,29353.1
+ Manufacture of wearing apparel,2026-01,33998.3
+ Manufacture of wearing apparel,2025-12,38352.1
+ Manufacture of wearing apparel,2025-11,39704.5
+ Manufacture of wearing apparel,2025-10,47297.2
+ Manufacture of wearing apparel,2025-09,46412.0
+ Manufacture of wearing apparel,2025-08,44972.2
+ Manufacture of wearing apparel,2025-07,36076.5
+ Manufacture of wearing apparel,2025-06,41120.6
+ Manufacture of wearing apparel,2025-05,42425.8
+ Manufacture of wearing apparel,2025-04,30217.9
+ Manufacture of wearing apparel,2025-03,29114.9
+ Manufacture of wearing apparel,2025-02,28882.1
+ Manufacture of wearing apparel,2025-01,35160.6
  Manufacture of wearing apparel,2024-12,16961.5
  Manufacture of wearing apparel,2024-11,17167.8
  Manufacture of wearing apparel,2024-10,18396.5
@@ -1853,18 +1961,24 @@ Total,2017-09,1283334.2
  Manufacture of wearing apparel,2017-11,26530.5
  Manufacture of wearing apparel,2017-10,23011.2
  Manufacture of wearing apparel,2017-09,23485.3
- Manufacture of leather and related products,2026-03,5677.8
+ Manufacture of leather and related products,2026-09,6641.1
+ Manufacture of leather and related products,2026-08,4546.8
+ Manufacture of leather and related products,2026-07,3382.7
+ Manufacture of leather and related products,2026-06,5802.5
+ Manufacture of leather and related products,2026-05,6259.4
+ Manufacture of leather and related products,2026-04,6005.8
+ Manufacture of leather and related products,2026-03,5536.6
  Manufacture of leather and related products,2026-02,5831.7
  Manufacture of leather and related products,2026-01,7289.3
- Manufacture of leather and related products,2025-12,7254.6
- Manufacture of leather and related products,2025-11,6039.4
+ Manufacture of leather and related products,2025-12,7262.2
+ Manufacture of leather and related products,2025-11,6031.6
  Manufacture of leather and related products,2025-10,7114.0
- Manufacture of leather and related products,2025-09,5663.9
- Manufacture of leather and related products,2025-08,5398.8
- Manufacture of leather and related products,2025-07,2978.8
- Manufacture of leather and related products,2025-06,6227.4
- Manufacture of leather and related products,2025-05,5780.8
- Manufacture of leather and related products,2025-04,5192.9
+ Manufacture of leather and related products,2025-09,5671.2
+ Manufacture of leather and related products,2025-08,5407.3
+ Manufacture of leather and related products,2025-07,2986.4
+ Manufacture of leather and related products,2025-06,5640.3
+ Manufacture of leather and related products,2025-05,5136.5
+ Manufacture of leather and related products,2025-04,5188.9
  Manufacture of leather and related products,2025-03,5424.9
  Manufacture of leather and related products,2025-02,4735.3
  Manufacture of leather and related products,2025-01,5224.7
@@ -1956,6 +2070,12 @@ Total,2017-09,1283334.2
  Manufacture of leather and related products,2017-11,2607.2
  Manufacture of leather and related products,2017-10,3436.5
  Manufacture of leather and related products,2017-09,2451.3
+" Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",2026-09,2135.0
+" Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",2026-08,981.9
+" Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",2026-07,875.2
+" Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",2026-06,2498.6
+" Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",2026-05,2123.7
+" Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",2026-04,1495.3
 " Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",2026-03,1445.3
 " Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",2026-02,1035.0
 " Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",2026-01,1150.3
@@ -2059,6 +2179,12 @@ Total,2017-09,1283334.2
 " Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",2017-11,1312.7
 " Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",2017-10,1455.7
 " Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",2017-09,1719.9
+ Manufacture of paper and paper products,2026-09,8315.9
+ Manufacture of paper and paper products,2026-08,8165.8
+ Manufacture of paper and paper products,2026-07,7561.1
+ Manufacture of paper and paper products,2026-06,8706.6
+ Manufacture of paper and paper products,2026-05,7726.9
+ Manufacture of paper and paper products,2026-04,8530.4
  Manufacture of paper and paper products,2026-03,6454.1
  Manufacture of paper and paper products,2026-02,6360.7
  Manufacture of paper and paper products,2026-01,6909.9
@@ -2162,7 +2288,13 @@ Total,2017-09,1283334.2
  Manufacture of paper and paper products,2017-11,2785.8
  Manufacture of paper and paper products,2017-10,2168.4
  Manufacture of paper and paper products,2017-09,1821.2
- Printing and reproduction of recorded media,2026-03,4779.4
+ Printing and reproduction of recorded media,2026-09,4694.1
+ Printing and reproduction of recorded media,2026-08,5378.7
+ Printing and reproduction of recorded media,2026-07,5716.1
+ Printing and reproduction of recorded media,2026-06,6079.7
+ Printing and reproduction of recorded media,2026-05,6348.3
+ Printing and reproduction of recorded media,2026-04,5153.8
+ Printing and reproduction of recorded media,2026-03,4775.5
  Printing and reproduction of recorded media,2026-02,3660.8
  Printing and reproduction of recorded media,2026-01,3813.9
  Printing and reproduction of recorded media,2025-12,7155.0
@@ -2265,6 +2397,12 @@ Total,2017-09,1283334.2
  Printing and reproduction of recorded media,2017-11,1074.8
  Printing and reproduction of recorded media,2017-10,947.8
  Printing and reproduction of recorded media,2017-09,1149.4
+ Manufacture of coke and refined petroleum products,2026-09,20817.6
+ Manufacture of coke and refined petroleum products,2026-08,9141.7
+ Manufacture of coke and refined petroleum products,2026-07,0.0
+ Manufacture of coke and refined petroleum products,2026-06,0.0
+ Manufacture of coke and refined petroleum products,2026-05,0.0
+ Manufacture of coke and refined petroleum products,2026-04,0.0
  Manufacture of coke and refined petroleum products,2026-03,0.0
  Manufacture of coke and refined petroleum products,2026-02,0.0
  Manufacture of coke and refined petroleum products,2026-01,0.0
@@ -2368,9 +2506,15 @@ Total,2017-09,1283334.2
  Manufacture of coke and refined petroleum products,2017-11,20.4
  Manufacture of coke and refined petroleum products,2017-10,16.9
  Manufacture of coke and refined petroleum products,2017-09,0.0
- Manufacture of chemicals and chemical products,2026-03,48413.8
- Manufacture of chemicals and chemical products,2026-02,43665.3
- Manufacture of chemicals and chemical products,2026-01,33738.9
+ Manufacture of chemicals and chemical products,2026-09,67417.4
+ Manufacture of chemicals and chemical products,2026-08,64446.1
+ Manufacture of chemicals and chemical products,2026-07,51050.8
+ Manufacture of chemicals and chemical products,2026-06,51134.5
+ Manufacture of chemicals and chemical products,2026-05,50935.8
+ Manufacture of chemicals and chemical products,2026-04,50452.0
+ Manufacture of chemicals and chemical products,2026-03,48411.7
+ Manufacture of chemicals and chemical products,2026-02,43666.1
+ Manufacture of chemicals and chemical products,2026-01,33739.7
  Manufacture of chemicals and chemical products,2025-12,40456.7
  Manufacture of chemicals and chemical products,2025-11,31388.1
  Manufacture of chemicals and chemical products,2025-10,38463.6
@@ -2471,6 +2615,12 @@ Total,2017-09,1283334.2
  Manufacture of chemicals and chemical products,2017-11,359.8
  Manufacture of chemicals and chemical products,2017-10,571.6
  Manufacture of chemicals and chemical products,2017-09,320.7
+" Manufacture of pharmaceuticals, medicinal chemical and botanical products",2026-09,8177.3
+" Manufacture of pharmaceuticals, medicinal chemical and botanical products",2026-08,7359.8
+" Manufacture of pharmaceuticals, medicinal chemical and botanical products",2026-07,3560.6
+" Manufacture of pharmaceuticals, medicinal chemical and botanical products",2026-06,10887.6
+" Manufacture of pharmaceuticals, medicinal chemical and botanical products",2026-05,10554.9
+" Manufacture of pharmaceuticals, medicinal chemical and botanical products",2026-04,11143.9
 " Manufacture of pharmaceuticals, medicinal chemical and botanical products",2026-03,9756.1
 " Manufacture of pharmaceuticals, medicinal chemical and botanical products",2026-02,7567.8
 " Manufacture of pharmaceuticals, medicinal chemical and botanical products",2026-01,8921.4
@@ -2574,8 +2724,14 @@ Total,2017-09,1283334.2
 " Manufacture of pharmaceuticals, medicinal chemical and botanical products",2017-11,2200.8
 " Manufacture of pharmaceuticals, medicinal chemical and botanical products",2017-10,2668.9
 " Manufacture of pharmaceuticals, medicinal chemical and botanical products",2017-09,2227.0
- Manufacture of rubber and plastics products,2026-03,11240.7
- Manufacture of rubber and plastics products,2026-02,8785.7
+ Manufacture of rubber and plastics products,2026-09,13919.6
+ Manufacture of rubber and plastics products,2026-08,12675.4
+ Manufacture of rubber and plastics products,2026-07,14246.8
+ Manufacture of rubber and plastics products,2026-06,15543.1
+ Manufacture of rubber and plastics products,2026-05,13939.2
+ Manufacture of rubber and plastics products,2026-04,12060.7
+ Manufacture of rubber and plastics products,2026-03,11244.6
+ Manufacture of rubber and plastics products,2026-02,8788.0
  Manufacture of rubber and plastics products,2026-01,7673.9
  Manufacture of rubber and plastics products,2025-12,12231.3
  Manufacture of rubber and plastics products,2025-11,9654.9
@@ -2677,7 +2833,13 @@ Total,2017-09,1283334.2
  Manufacture of rubber and plastics products,2017-11,2790.5
  Manufacture of rubber and plastics products,2017-10,2659.5
  Manufacture of rubber and plastics products,2017-09,2817.3
- Manufacture of other non-metallic mineral products,2026-03,35081.8
+ Manufacture of other non-metallic mineral products,2026-09,109813.9
+ Manufacture of other non-metallic mineral products,2026-08,97020.7
+ Manufacture of other non-metallic mineral products,2026-07,95309.1
+ Manufacture of other non-metallic mineral products,2026-06,129107.3
+ Manufacture of other non-metallic mineral products,2026-05,108299.2
+ Manufacture of other non-metallic mineral products,2026-04,85435.6
+ Manufacture of other non-metallic mineral products,2026-03,35192.8
  Manufacture of other non-metallic mineral products,2026-02,14793.8
  Manufacture of other non-metallic mineral products,2026-01,15214.2
  Manufacture of other non-metallic mineral products,2025-12,31453.0
@@ -2780,7 +2942,13 @@ Total,2017-09,1283334.2
  Manufacture of other non-metallic mineral products,2017-11,9301.3
  Manufacture of other non-metallic mineral products,2017-10,15131.7
  Manufacture of other non-metallic mineral products,2017-09,21881.9
- Manufacture of basic metals,2026-03,23713.3
+ Manufacture of basic metals,2026-09,33974.9
+ Manufacture of basic metals,2026-08,32205.5
+ Manufacture of basic metals,2026-07,12592.9
+ Manufacture of basic metals,2026-06,34061.1
+ Manufacture of basic metals,2026-05,33995.6
+ Manufacture of basic metals,2026-04,28675.8
+ Manufacture of basic metals,2026-03,25151.0
  Manufacture of basic metals,2026-02,22549.7
  Manufacture of basic metals,2026-01,30562.2
  Manufacture of basic metals,2025-12,26537.7
@@ -2883,8 +3051,14 @@ Total,2017-09,1283334.2
  Manufacture of basic metals,2017-11,4353.1
  Manufacture of basic metals,2017-10,4494.4
  Manufacture of basic metals,2017-09,4756.4
-" Manufacture of fabricated metal products, except machinery and equipment",2026-03,672.7
-" Manufacture of fabricated metal products, except machinery and equipment",2026-02,399.5
+" Manufacture of fabricated metal products, except machinery and equipment",2026-09,7886.2
+" Manufacture of fabricated metal products, except machinery and equipment",2026-08,1568.6
+" Manufacture of fabricated metal products, except machinery and equipment",2026-07,1234.6
+" Manufacture of fabricated metal products, except machinery and equipment",2026-06,2011.5
+" Manufacture of fabricated metal products, except machinery and equipment",2026-05,1444.8
+" Manufacture of fabricated metal products, except machinery and equipment",2026-04,881.4
+" Manufacture of fabricated metal products, except machinery and equipment",2026-03,667.3
+" Manufacture of fabricated metal products, except machinery and equipment",2026-02,421.2
 " Manufacture of fabricated metal products, except machinery and equipment",2026-01,505.0
 " Manufacture of fabricated metal products, except machinery and equipment",2025-12,4168.5
 " Manufacture of fabricated metal products, except machinery and equipment",2025-11,838.4
@@ -2986,6 +3160,12 @@ Total,2017-09,1283334.2
 " Manufacture of fabricated metal products, except machinery and equipment",2017-11,357.1
 " Manufacture of fabricated metal products, except machinery and equipment",2017-10,535.4
 " Manufacture of fabricated metal products, except machinery and equipment",2017-09,477.2
+ Manufacture of other transport equipment,2026-09,912.6
+ Manufacture of other transport equipment,2026-08,577.3
+ Manufacture of other transport equipment,2026-07,580.5
+ Manufacture of other transport equipment,2026-06,265.4
+ Manufacture of other transport equipment,2026-05,958.2
+ Manufacture of other transport equipment,2026-04,1093.1
  Manufacture of other transport equipment,2026-03,823.1
  Manufacture of other transport equipment,2026-02,590.6
  Manufacture of other transport equipment,2026-01,567.2
@@ -3089,6 +3269,12 @@ Total,2017-09,1283334.2
  Manufacture of other transport equipment,2017-11,252.5
  Manufacture of other transport equipment,2017-10,275.7
  Manufacture of other transport equipment,2017-09,262.0
+ Manufacture of furniture,2026-09,1579.9
+ Manufacture of furniture,2026-08,2548.7
+ Manufacture of furniture,2026-07,3696.6
+ Manufacture of furniture,2026-06,2466.3
+ Manufacture of furniture,2026-05,1585.9
+ Manufacture of furniture,2026-04,1047.0
  Manufacture of furniture,2026-03,1276.1
  Manufacture of furniture,2026-02,1963.8
  Manufacture of furniture,2026-01,1823.5
@@ -3192,8 +3378,14 @@ Total,2017-09,1283334.2
  Manufacture of furniture,2017-11,0.0
  Manufacture of furniture,2017-10,0.0
  Manufacture of furniture,2017-09,0.0
- Other manufacturing,2026-03,34720.7
- Other manufacturing,2026-02,31314.7
+ Other manufacturing,2026-09,33485.2
+ Other manufacturing,2026-08,29923.0
+ Other manufacturing,2026-07,30802.1
+ Other manufacturing,2026-06,35164.2
+ Other manufacturing,2026-05,33717.4
+ Other manufacturing,2026-04,27235.6
+ Other manufacturing,2026-03,34779.8
+ Other manufacturing,2026-02,31325.0
  Other manufacturing,2026-01,23736.4
  Other manufacturing,2025-12,38294.2
  Other manufacturing,2025-11,27829.1
@@ -3295,69 +3487,75 @@ Total,2017-09,1283334.2
  Other manufacturing,2017-11,11244.0
  Other manufacturing,2017-10,14119.4
  Other manufacturing,2017-09,12887.4
-" Electricity, gas, steam and air conditioning supply",2026-03,379308.8
-" Electricity, gas, steam and air conditioning supply",2026-02,406244.4
-" Electricity, gas, steam and air conditioning supply",2026-01,373579.9
-" Electricity, gas, steam and air conditioning supply",2025-12,306286.0
-" Electricity, gas, steam and air conditioning supply",2025-11,275001.3
-" Electricity, gas, steam and air conditioning supply",2025-10,240765.9
-" Electricity, gas, steam and air conditioning supply",2025-09,181026.9
-" Electricity, gas, steam and air conditioning supply",2025-08,165525.7
-" Electricity, gas, steam and air conditioning supply",2025-07,158434.2
-" Electricity, gas, steam and air conditioning supply",2025-06,165641.6
-" Electricity, gas, steam and air conditioning supply",2025-05,203405.2
-" Electricity, gas, steam and air conditioning supply",2025-04,226404.4
-" Electricity, gas, steam and air conditioning supply",2025-03,245970.5
-" Electricity, gas, steam and air conditioning supply",2025-02,266260.0
-" Electricity, gas, steam and air conditioning supply",2025-01,278139.5
-" Electricity, gas, steam and air conditioning supply",2024-12,264104.5
-" Electricity, gas, steam and air conditioning supply",2024-11,205826.3
-" Electricity, gas, steam and air conditioning supply",2024-10,178909.7
-" Electricity, gas, steam and air conditioning supply",2024-09,135186.1
-" Electricity, gas, steam and air conditioning supply",2024-08,115298.4
-" Electricity, gas, steam and air conditioning supply",2024-07,112476.8
-" Electricity, gas, steam and air conditioning supply",2024-06,121283.9
-" Electricity, gas, steam and air conditioning supply",2024-05,141114.8
-" Electricity, gas, steam and air conditioning supply",2024-04,169062.5
-" Electricity, gas, steam and air conditioning supply",2024-03,194582.3
-" Electricity, gas, steam and air conditioning supply",2024-02,211023.0
-" Electricity, gas, steam and air conditioning supply",2024-01,216977.8
-" Electricity, gas, steam and air conditioning supply",2023-12,207458.9
-" Electricity, gas, steam and air conditioning supply",2023-11,195529.3
-" Electricity, gas, steam and air conditioning supply",2023-10,155124.5
-" Electricity, gas, steam and air conditioning supply",2023-09,126177.7
-" Electricity, gas, steam and air conditioning supply",2023-08,112349.0
-" Electricity, gas, steam and air conditioning supply",2023-07,108538.0
-" Electricity, gas, steam and air conditioning supply",2023-06,112428.1
-" Electricity, gas, steam and air conditioning supply",2023-05,136898.0
-" Electricity, gas, steam and air conditioning supply",2023-04,180318.5
-" Electricity, gas, steam and air conditioning supply",2023-03,158555.0
-" Electricity, gas, steam and air conditioning supply",2023-02,180505.7
-" Electricity, gas, steam and air conditioning supply",2023-01,201282.1
-" Electricity, gas, steam and air conditioning supply",2022-12,188884.4
-" Electricity, gas, steam and air conditioning supply",2022-11,152466.1
-" Electricity, gas, steam and air conditioning supply",2022-10,130039.9
-" Electricity, gas, steam and air conditioning supply",2022-09,94595.3
-" Electricity, gas, steam and air conditioning supply",2022-08,82693.3
-" Electricity, gas, steam and air conditioning supply",2022-07,78748.5
-" Electricity, gas, steam and air conditioning supply",2022-06,84239.8
-" Electricity, gas, steam and air conditioning supply",2022-05,101715.4
-" Electricity, gas, steam and air conditioning supply",2022-04,125940.2
-" Electricity, gas, steam and air conditioning supply",2022-03,137286.7
-" Electricity, gas, steam and air conditioning supply",2022-02,148291.7
-" Electricity, gas, steam and air conditioning supply",2022-01,151513.0
-" Electricity, gas, steam and air conditioning supply",2021-12,159784.9
-" Electricity, gas, steam and air conditioning supply",2021-11,137398.0
-" Electricity, gas, steam and air conditioning supply",2021-10,119755.1
-" Electricity, gas, steam and air conditioning supply",2021-09,90294.0
-" Electricity, gas, steam and air conditioning supply",2021-08,79119.0
-" Electricity, gas, steam and air conditioning supply",2021-07,73904.1
-" Electricity, gas, steam and air conditioning supply",2021-06,84689.4
-" Electricity, gas, steam and air conditioning supply",2021-05,98454.3
-" Electricity, gas, steam and air conditioning supply",2021-04,117884.4
-" Electricity, gas, steam and air conditioning supply",2021-03,128723.4
-" Electricity, gas, steam and air conditioning supply",2021-02,138979.8
-" Electricity, gas, steam and air conditioning supply",2021-01,140474.3
+" Electricity, gas, steam and air conditioning supply",2026-09,221472.2
+" Electricity, gas, steam and air conditioning supply",2026-08,203887.9
+" Electricity, gas, steam and air conditioning supply",2026-07,202074.5
+" Electricity, gas, steam and air conditioning supply",2026-06,191408.7
+" Electricity, gas, steam and air conditioning supply",2026-05,194927.7
+" Electricity, gas, steam and air conditioning supply",2026-04,238045.6
+" Electricity, gas, steam and air conditioning supply",2026-03,267390.4
+" Electricity, gas, steam and air conditioning supply",2026-02,272136.1
+" Electricity, gas, steam and air conditioning supply",2026-01,288528.4
+" Electricity, gas, steam and air conditioning supply",2025-12,299911.2
+" Electricity, gas, steam and air conditioning supply",2025-11,269857.1
+" Electricity, gas, steam and air conditioning supply",2025-10,236759.6
+" Electricity, gas, steam and air conditioning supply",2025-09,179527.6
+" Electricity, gas, steam and air conditioning supply",2025-08,164722.8
+" Electricity, gas, steam and air conditioning supply",2025-07,157727.9
+" Electricity, gas, steam and air conditioning supply",2025-06,165532.5
+" Electricity, gas, steam and air conditioning supply",2025-05,201541.1
+" Electricity, gas, steam and air conditioning supply",2025-04,222590.4
+" Electricity, gas, steam and air conditioning supply",2025-03,241531.5
+" Electricity, gas, steam and air conditioning supply",2025-02,260542.0
+" Electricity, gas, steam and air conditioning supply",2025-01,272842.2
+" Electricity, gas, steam and air conditioning supply",2024-12,259021.6
+" Electricity, gas, steam and air conditioning supply",2024-11,201965.0
+" Electricity, gas, steam and air conditioning supply",2024-10,176066.7
+" Electricity, gas, steam and air conditioning supply",2024-09,134050.2
+" Electricity, gas, steam and air conditioning supply",2024-08,115164.5
+" Electricity, gas, steam and air conditioning supply",2024-07,112323.3
+" Electricity, gas, steam and air conditioning supply",2024-06,121138.5
+" Electricity, gas, steam and air conditioning supply",2024-05,139588.3
+" Electricity, gas, steam and air conditioning supply",2024-04,166053.9
+" Electricity, gas, steam and air conditioning supply",2024-03,190955.5
+" Electricity, gas, steam and air conditioning supply",2024-02,206588.8
+" Electricity, gas, steam and air conditioning supply",2024-01,211784.3
+" Electricity, gas, steam and air conditioning supply",2023-12,203031.6
+" Electricity, gas, steam and air conditioning supply",2023-11,191657.1
+" Electricity, gas, steam and air conditioning supply",2023-10,152273.7
+" Electricity, gas, steam and air conditioning supply",2023-09,125212.0
+" Electricity, gas, steam and air conditioning supply",2023-08,112228.4
+" Electricity, gas, steam and air conditioning supply",2023-07,108166.1
+" Electricity, gas, steam and air conditioning supply",2023-06,112064.5
+" Electricity, gas, steam and air conditioning supply",2023-05,135614.9
+" Electricity, gas, steam and air conditioning supply",2023-04,177570.6
+" Electricity, gas, steam and air conditioning supply",2023-03,155682.8
+" Electricity, gas, steam and air conditioning supply",2023-02,177420.4
+" Electricity, gas, steam and air conditioning supply",2023-01,197804.8
+" Electricity, gas, steam and air conditioning supply",2022-12,185300.1
+" Electricity, gas, steam and air conditioning supply",2022-11,149290.7
+" Electricity, gas, steam and air conditioning supply",2022-10,127980.4
+" Electricity, gas, steam and air conditioning supply",2022-09,93686.5
+" Electricity, gas, steam and air conditioning supply",2022-08,82399.6
+" Electricity, gas, steam and air conditioning supply",2022-07,78525.8
+" Electricity, gas, steam and air conditioning supply",2022-06,84057.5
+" Electricity, gas, steam and air conditioning supply",2022-05,100948.7
+" Electricity, gas, steam and air conditioning supply",2022-04,124001.3
+" Electricity, gas, steam and air conditioning supply",2022-03,135005.3
+" Electricity, gas, steam and air conditioning supply",2022-02,145340.4
+" Electricity, gas, steam and air conditioning supply",2022-01,148511.9
+" Electricity, gas, steam and air conditioning supply",2021-12,156507.4
+" Electricity, gas, steam and air conditioning supply",2021-11,134471.7
+" Electricity, gas, steam and air conditioning supply",2021-10,117362.0
+" Electricity, gas, steam and air conditioning supply",2021-09,89684.6
+" Electricity, gas, steam and air conditioning supply",2021-08,79057.2
+" Electricity, gas, steam and air conditioning supply",2021-07,73846.2
+" Electricity, gas, steam and air conditioning supply",2021-06,84575.0
+" Electricity, gas, steam and air conditioning supply",2021-05,97836.3
+" Electricity, gas, steam and air conditioning supply",2021-04,116285.1
+" Electricity, gas, steam and air conditioning supply",2021-03,126958.3
+" Electricity, gas, steam and air conditioning supply",2021-02,136702.6
+" Electricity, gas, steam and air conditioning supply",2021-01,138298.5
 " Electricity, gas, steam and air conditioning supply",2020-12,129900.1
 " Electricity, gas, steam and air conditioning supply",2020-11,116565.9
 " Electricity, gas, steam and air conditioning supply",2020-10,101959.2
@@ -3398,69 +3596,75 @@ Total,2017-09,1283334.2
 " Electricity, gas, steam and air conditioning supply",2017-11,84082.9
 " Electricity, gas, steam and air conditioning supply",2017-10,74476.9
 " Electricity, gas, steam and air conditioning supply",2017-09,56306.3
-"  Electricity, gas, steam and air conditioning supply",2026-03,379308.8
-"  Electricity, gas, steam and air conditioning supply",2026-02,406244.4
-"  Electricity, gas, steam and air conditioning supply",2026-01,373579.9
-"  Electricity, gas, steam and air conditioning supply",2025-12,306286.0
-"  Electricity, gas, steam and air conditioning supply",2025-11,275001.3
-"  Electricity, gas, steam and air conditioning supply",2025-10,240765.9
-"  Electricity, gas, steam and air conditioning supply",2025-09,181026.9
-"  Electricity, gas, steam and air conditioning supply",2025-08,165525.7
-"  Electricity, gas, steam and air conditioning supply",2025-07,158434.2
-"  Electricity, gas, steam and air conditioning supply",2025-06,165641.6
-"  Electricity, gas, steam and air conditioning supply",2025-05,203405.2
-"  Electricity, gas, steam and air conditioning supply",2025-04,226404.4
-"  Electricity, gas, steam and air conditioning supply",2025-03,245970.5
-"  Electricity, gas, steam and air conditioning supply",2025-02,266260.0
-"  Electricity, gas, steam and air conditioning supply",2025-01,278139.5
-"  Electricity, gas, steam and air conditioning supply",2024-12,264104.5
-"  Electricity, gas, steam and air conditioning supply",2024-11,205826.3
-"  Electricity, gas, steam and air conditioning supply",2024-10,178909.7
-"  Electricity, gas, steam and air conditioning supply",2024-09,135186.1
-"  Electricity, gas, steam and air conditioning supply",2024-08,115298.4
-"  Electricity, gas, steam and air conditioning supply",2024-07,112476.8
-"  Electricity, gas, steam and air conditioning supply",2024-06,121283.9
-"  Electricity, gas, steam and air conditioning supply",2024-05,141114.8
-"  Electricity, gas, steam and air conditioning supply",2024-04,169062.5
-"  Electricity, gas, steam and air conditioning supply",2024-03,194582.3
-"  Electricity, gas, steam and air conditioning supply",2024-02,211023.0
-"  Electricity, gas, steam and air conditioning supply",2024-01,216977.8
-"  Electricity, gas, steam and air conditioning supply",2023-12,207458.9
-"  Electricity, gas, steam and air conditioning supply",2023-11,195529.3
-"  Electricity, gas, steam and air conditioning supply",2023-10,155124.5
-"  Electricity, gas, steam and air conditioning supply",2023-09,126177.7
-"  Electricity, gas, steam and air conditioning supply",2023-08,112349.0
-"  Electricity, gas, steam and air conditioning supply",2023-07,108538.0
-"  Electricity, gas, steam and air conditioning supply",2023-06,112428.1
-"  Electricity, gas, steam and air conditioning supply",2023-05,136898.0
-"  Electricity, gas, steam and air conditioning supply",2023-04,180318.5
-"  Electricity, gas, steam and air conditioning supply",2023-03,158555.0
-"  Electricity, gas, steam and air conditioning supply",2023-02,180505.7
-"  Electricity, gas, steam and air conditioning supply",2023-01,201282.1
-"  Electricity, gas, steam and air conditioning supply",2022-12,188884.4
-"  Electricity, gas, steam and air conditioning supply",2022-11,152466.1
-"  Electricity, gas, steam and air conditioning supply",2022-10,130039.9
-"  Electricity, gas, steam and air conditioning supply",2022-09,94595.3
-"  Electricity, gas, steam and air conditioning supply",2022-08,82693.3
-"  Electricity, gas, steam and air conditioning supply",2022-07,78748.5
-"  Electricity, gas, steam and air conditioning supply",2022-06,84239.8
-"  Electricity, gas, steam and air conditioning supply",2022-05,101715.4
-"  Electricity, gas, steam and air conditioning supply",2022-04,125940.2
-"  Electricity, gas, steam and air conditioning supply",2022-03,137286.7
-"  Electricity, gas, steam and air conditioning supply",2022-02,148291.7
-"  Electricity, gas, steam and air conditioning supply",2022-01,151513.0
-"  Electricity, gas, steam and air conditioning supply",2021-12,159784.9
-"  Electricity, gas, steam and air conditioning supply",2021-11,137398.0
-"  Electricity, gas, steam and air conditioning supply",2021-10,119755.1
-"  Electricity, gas, steam and air conditioning supply",2021-09,90294.0
-"  Electricity, gas, steam and air conditioning supply",2021-08,79119.0
-"  Electricity, gas, steam and air conditioning supply",2021-07,73904.1
-"  Electricity, gas, steam and air conditioning supply",2021-06,84689.4
-"  Electricity, gas, steam and air conditioning supply",2021-05,98454.3
-"  Electricity, gas, steam and air conditioning supply",2021-04,117884.4
-"  Electricity, gas, steam and air conditioning supply",2021-03,128723.4
-"  Electricity, gas, steam and air conditioning supply",2021-02,138979.8
-"  Electricity, gas, steam and air conditioning supply",2021-01,140474.3
+"  Electricity, gas, steam and air conditioning supply",2026-09,221472.2
+"  Electricity, gas, steam and air conditioning supply",2026-08,203887.9
+"  Electricity, gas, steam and air conditioning supply",2026-07,202074.5
+"  Electricity, gas, steam and air conditioning supply",2026-06,191408.7
+"  Electricity, gas, steam and air conditioning supply",2026-05,194927.7
+"  Electricity, gas, steam and air conditioning supply",2026-04,238045.6
+"  Electricity, gas, steam and air conditioning supply",2026-03,267390.4
+"  Electricity, gas, steam and air conditioning supply",2026-02,272136.1
+"  Electricity, gas, steam and air conditioning supply",2026-01,288528.4
+"  Electricity, gas, steam and air conditioning supply",2025-12,299911.2
+"  Electricity, gas, steam and air conditioning supply",2025-11,269857.1
+"  Electricity, gas, steam and air conditioning supply",2025-10,236759.6
+"  Electricity, gas, steam and air conditioning supply",2025-09,179527.6
+"  Electricity, gas, steam and air conditioning supply",2025-08,164722.8
+"  Electricity, gas, steam and air conditioning supply",2025-07,157727.9
+"  Electricity, gas, steam and air conditioning supply",2025-06,165532.5
+"  Electricity, gas, steam and air conditioning supply",2025-05,201541.1
+"  Electricity, gas, steam and air conditioning supply",2025-04,222590.4
+"  Electricity, gas, steam and air conditioning supply",2025-03,241531.5
+"  Electricity, gas, steam and air conditioning supply",2025-02,260542.0
+"  Electricity, gas, steam and air conditioning supply",2025-01,272842.2
+"  Electricity, gas, steam and air conditioning supply",2024-12,259021.6
+"  Electricity, gas, steam and air conditioning supply",2024-11,201965.0
+"  Electricity, gas, steam and air conditioning supply",2024-10,176066.7
+"  Electricity, gas, steam and air conditioning supply",2024-09,134050.2
+"  Electricity, gas, steam and air conditioning supply",2024-08,115164.5
+"  Electricity, gas, steam and air conditioning supply",2024-07,112323.3
+"  Electricity, gas, steam and air conditioning supply",2024-06,121138.5
+"  Electricity, gas, steam and air conditioning supply",2024-05,139588.3
+"  Electricity, gas, steam and air conditioning supply",2024-04,166053.9
+"  Electricity, gas, steam and air conditioning supply",2024-03,190955.5
+"  Electricity, gas, steam and air conditioning supply",2024-02,206588.8
+"  Electricity, gas, steam and air conditioning supply",2024-01,211784.3
+"  Electricity, gas, steam and air conditioning supply",2023-12,203031.6
+"  Electricity, gas, steam and air conditioning supply",2023-11,191657.1
+"  Electricity, gas, steam and air conditioning supply",2023-10,152273.7
+"  Electricity, gas, steam and air conditioning supply",2023-09,125212.0
+"  Electricity, gas, steam and air conditioning supply",2023-08,112228.4
+"  Electricity, gas, steam and air conditioning supply",2023-07,108166.1
+"  Electricity, gas, steam and air conditioning supply",2023-06,112064.5
+"  Electricity, gas, steam and air conditioning supply",2023-05,135614.9
+"  Electricity, gas, steam and air conditioning supply",2023-04,177570.6
+"  Electricity, gas, steam and air conditioning supply",2023-03,155682.8
+"  Electricity, gas, steam and air conditioning supply",2023-02,177420.4
+"  Electricity, gas, steam and air conditioning supply",2023-01,197804.8
+"  Electricity, gas, steam and air conditioning supply",2022-12,185300.1
+"  Electricity, gas, steam and air conditioning supply",2022-11,149290.7
+"  Electricity, gas, steam and air conditioning supply",2022-10,127980.4
+"  Electricity, gas, steam and air conditioning supply",2022-09,93686.5
+"  Electricity, gas, steam and air conditioning supply",2022-08,82399.6
+"  Electricity, gas, steam and air conditioning supply",2022-07,78525.8
+"  Electricity, gas, steam and air conditioning supply",2022-06,84057.5
+"  Electricity, gas, steam and air conditioning supply",2022-05,100948.7
+"  Electricity, gas, steam and air conditioning supply",2022-04,124001.3
+"  Electricity, gas, steam and air conditioning supply",2022-03,135005.3
+"  Electricity, gas, steam and air conditioning supply",2022-02,145340.4
+"  Electricity, gas, steam and air conditioning supply",2022-01,148511.9
+"  Electricity, gas, steam and air conditioning supply",2021-12,156507.4
+"  Electricity, gas, steam and air conditioning supply",2021-11,134471.7
+"  Electricity, gas, steam and air conditioning supply",2021-10,117362.0
+"  Electricity, gas, steam and air conditioning supply",2021-09,89684.6
+"  Electricity, gas, steam and air conditioning supply",2021-08,79057.2
+"  Electricity, gas, steam and air conditioning supply",2021-07,73846.2
+"  Electricity, gas, steam and air conditioning supply",2021-06,84575.0
+"  Electricity, gas, steam and air conditioning supply",2021-05,97836.3
+"  Electricity, gas, steam and air conditioning supply",2021-04,116285.1
+"  Electricity, gas, steam and air conditioning supply",2021-03,126958.3
+"  Electricity, gas, steam and air conditioning supply",2021-02,136702.6
+"  Electricity, gas, steam and air conditioning supply",2021-01,138298.5
 "  Electricity, gas, steam and air conditioning supply",2020-12,129900.1
 "  Electricity, gas, steam and air conditioning supply",2020-11,116565.9
 "  Electricity, gas, steam and air conditioning supply",2020-10,101959.2
@@ -3501,9 +3705,15 @@ Total,2017-09,1283334.2
 "  Electricity, gas, steam and air conditioning supply",2017-11,84082.9
 "  Electricity, gas, steam and air conditioning supply",2017-10,74476.9
 "  Electricity, gas, steam and air conditioning supply",2017-09,56306.3
-" Water supply; sewerage, waste management and remediation activities",2026-03,25916.8
-" Water supply; sewerage, waste management and remediation activities",2026-02,24821.9
-" Water supply; sewerage, waste management and remediation activities",2026-01,25414.1
+" Water supply; sewerage, waste management and remediation activities",2026-09,32169.6
+" Water supply; sewerage, waste management and remediation activities",2026-08,29574.6
+" Water supply; sewerage, waste management and remediation activities",2026-07,28424.0
+" Water supply; sewerage, waste management and remediation activities",2026-06,28133.0
+" Water supply; sewerage, waste management and remediation activities",2026-05,26716.1
+" Water supply; sewerage, waste management and remediation activities",2026-04,26698.7
+" Water supply; sewerage, waste management and remediation activities",2026-03,25807.0
+" Water supply; sewerage, waste management and remediation activities",2026-02,24774.1
+" Water supply; sewerage, waste management and remediation activities",2026-01,25361.8
 " Water supply; sewerage, waste management and remediation activities",2025-12,25946.1
 " Water supply; sewerage, waste management and remediation activities",2025-11,26035.5
 " Water supply; sewerage, waste management and remediation activities",2025-10,27734.4
@@ -3604,9 +3814,15 @@ Total,2017-09,1283334.2
 " Water supply; sewerage, waste management and remediation activities",2017-11,47242.8
 " Water supply; sewerage, waste management and remediation activities",2017-10,47345.7
 " Water supply; sewerage, waste management and remediation activities",2017-09,45948.5
-" Water collection, treatment and supply",2026-03,17519.2
-" Water collection, treatment and supply",2026-02,17532.1
-" Water collection, treatment and supply",2026-01,17866.0
+" Water collection, treatment and supply",2026-09,23608.4
+" Water collection, treatment and supply",2026-08,21297.9
+" Water collection, treatment and supply",2026-07,19846.7
+" Water collection, treatment and supply",2026-06,19699.1
+" Water collection, treatment and supply",2026-05,17751.2
+" Water collection, treatment and supply",2026-04,18541.7
+" Water collection, treatment and supply",2026-03,17409.4
+" Water collection, treatment and supply",2026-02,17436.1
+" Water collection, treatment and supply",2026-01,17765.0
 " Water collection, treatment and supply",2025-12,18188.2
 " Water collection, treatment and supply",2025-11,17971.4
 " Water collection, treatment and supply",2025-10,18424.2
@@ -3707,9 +3923,15 @@ Total,2017-09,1283334.2
 " Water collection, treatment and supply",2017-11,7006.9
 " Water collection, treatment and supply",2017-10,7033.2
 " Water collection, treatment and supply",2017-09,5842.2
+" Waste collection, treatment and disposal activities; materials recovery",2026-09,8348.5
+" Waste collection, treatment and disposal activities; materials recovery",2026-08,8101.3
+" Waste collection, treatment and disposal activities; materials recovery",2026-07,8199.8
+" Waste collection, treatment and disposal activities; materials recovery",2026-06,8281.0
+" Waste collection, treatment and disposal activities; materials recovery",2026-05,8695.7
+" Waste collection, treatment and disposal activities; materials recovery",2026-04,8024.9
 " Waste collection, treatment and disposal activities; materials recovery",2026-03,8256.6
-" Waste collection, treatment and disposal activities; materials recovery",2026-02,7239.5
-" Waste collection, treatment and disposal activities; materials recovery",2026-01,7410.6
+" Waste collection, treatment and disposal activities; materials recovery",2026-02,7287.7
+" Waste collection, treatment and disposal activities; materials recovery",2026-01,7459.3
 " Waste collection, treatment and disposal activities; materials recovery",2025-12,7598.5
 " Waste collection, treatment and disposal activities; materials recovery",2025-11,7999.0
 " Waste collection, treatment and disposal activities; materials recovery",2025-10,9052.9
@@ -3810,6 +4032,12 @@ Total,2017-09,1283334.2
 " Waste collection, treatment and disposal activities; materials recovery",2017-11,39851.3
 " Waste collection, treatment and disposal activities; materials recovery",2017-10,39878.9
 " Waste collection, treatment and disposal activities; materials recovery",2017-09,39827.3
+ Remediation activities and other waste management services,2026-09,212.8
+ Remediation activities and other waste management services,2026-08,175.3
+ Remediation activities and other waste management services,2026-07,377.5
+ Remediation activities and other waste management services,2026-06,152.9
+ Remediation activities and other waste management services,2026-05,269.2
+ Remediation activities and other waste management services,2026-04,132.0
  Remediation activities and other waste management services,2026-03,140.9
  Remediation activities and other waste management services,2026-02,50.3
  Remediation activities and other waste management services,2026-01,137.4

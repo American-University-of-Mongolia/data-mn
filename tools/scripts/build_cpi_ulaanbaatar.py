@@ -3,7 +3,7 @@
 Rebuild the Ulaanbaatar month-over-month CPI splits from the parent snapshot.
 
 Parent: nso-cpi-ulaanbaatar-mom (NSO DT_NSO_0600_003V4.px), snapshot in
-tools/versions/nso-cpi-ulaanbaatar-mom/v1. NSO publishes the same MoM
+tools/versions/nso-cpi-ulaanbaatar-mom/v2. NSO publishes the same MoM
 change on two reference bases whose baskets differ, so the series are
 joined with a marked break instead of being silently spliced:
 
@@ -45,7 +45,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 ROOT = Path(__file__).resolve().parents[2]
-SNAPSHOT = ROOT / "tools/versions/nso-cpi-ulaanbaatar-mom/v1"
+SNAPSHOT = ROOT / "tools/versions/nso-cpi-ulaanbaatar-mom/v2"
 PUBLIC = ROOT / "data.mn/public"
 BREAK_LAST_2020 = "2025-01"
 DATASETS = ["cpi-monthly-ulaanbaatar", "cpi-food-ulaanbaatar", "cpi-by-category-ulaanbaatar"]
@@ -145,7 +145,7 @@ def render(dataset_id: str, en: pd.DataFrame, mn: pd.DataFrame, first_new: str):
     if dataset_id == "cpi-monthly-ulaanbaatar":
         files[PUBLIC / f"datasets/{dataset_id}-all-en.csv"] = csv(en)
         files[PUBLIC / f"datasets/{dataset_id}-all-mn.csv"] = csv(mn)
-    version = 3 if dataset_id == "cpi-by-category-ulaanbaatar" else 2
+    version = 4 if dataset_id == "cpi-by-category-ulaanbaatar" else 3
     for lang in ("en", "mn"):
         path = PUBLIC / f"charts/{dataset_id}-{lang}.json"
         spec = patch_chart(json.loads(path.read_text()), first_new, lang, f"{dataset_id}-{lang}.csv", version)

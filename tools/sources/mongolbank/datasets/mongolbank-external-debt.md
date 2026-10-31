@@ -48,16 +48,16 @@ Body: {
 
 ## Data Details
 - **Frequency**: Quarterly (Q1=Mar, Q2=Jun, Q3=Sep, Q4=Dec)
-- **Range**: Q1 2000 to Q4 2025 (104 data points)
+- **Range**: Q1 2000 to Q2 2026 (106 data points)
 - **Unit**: Million USD (no conversion needed)
 - **Indicator**: 58812 (Gross External Debt Position — total)
 
 ## Dataset: mongolbank-external-debt
 - **Content**: Total gross external debt position
 - **Columns**: Date, External Debt (USD million)
-- **Rows**: 104 (quarterly 2000-Q1 to 2025-Q4)
+- **Rows**: 106 (quarterly 2000-Q1 to 2026-Q2)
 - **Chart**: Area chart showing debt growth over time
 
 ## Update Detection
 - Check `report/list?lang=en&parentId=1108` for `maxdate` field
-- Current maxdate: 2025-12-01
+- Current maxdate: 2026-06-01

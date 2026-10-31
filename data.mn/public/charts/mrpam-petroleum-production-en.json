@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Monthly crude petroleum production and exports in Mongolia from January 2021 through July 2026, in barrels. Missing exports reflect source reports with no reported value.",
+  "description": "Monthly crude petroleum production and exports in Mongolia from January 2021 through September 2026, in barrels. Missing exports reflect source reports with no reported value.",
   "data": {
     "url": "/datasets/mrpam-petroleum-production-en.csv",
     "format": {"type": "csv"}

@@ -1,0 +1,8 @@
+{
+  "dataset_id": "nso-live-births-monthly",
+  "version": 3,
+  "fetched_at": "2026-10-28T00:00:00+00:00",
+  "source_updated_at": "2026-10-12T16:48:08",
+  "source_table": "DT_NSO_2100_018V5.px",
+  "source_files": ["nso-live-births-monthly-en.csv", "nso-live-births-monthly-mn.csv"]
+}

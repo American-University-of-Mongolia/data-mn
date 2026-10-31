@@ -286,6 +286,14 @@ product,date,price
 "Beef, kg",2026-08-17,31680.0
 "Beef, kg",2026-08-24,31530.0
 "Beef, kg",2026-08-31,31269.0
+"Beef, kg",2026-09-07,31457.0
+"Beef, kg",2026-09-14,31186.0
+"Beef, kg",2026-09-21,31091.0
+"Beef, kg",2026-09-28,31106.0
+"Beef, kg",2026-10-05,30804.0
+"Beef, kg",2026-10-12,30695.0
+"Beef, kg",2026-10-19,30270.0
+"Beef, kg",2026-10-26,29709.0
 "Beef, without bones, kg",2021-01-06,12564.0
 "Beef, without bones, kg",2021-01-13,12795.0
 "Beef, without bones, kg",2021-01-20,13014.0
@@ -573,6 +581,14 @@ product,date,price
 "Beef, without bones, kg",2026-08-17,36611.0
 "Beef, without bones, kg",2026-08-24,35508.0
 "Beef, without bones, kg",2026-08-31,35552.0
+"Beef, without bones, kg",2026-09-07,35724.0
+"Beef, without bones, kg",2026-09-14,34821.0
+"Beef, without bones, kg",2026-09-21,34821.0
+"Beef, without bones, kg",2026-09-28,34737.0
+"Beef, without bones, kg",2026-10-05,34737.0
+"Beef, without bones, kg",2026-10-12,34737.0
+"Beef, without bones, kg",2026-10-19,34376.0
+"Beef, without bones, kg",2026-10-26,33663.0
 "Goat meat, kg",2021-01-06,7500.0
 "Goat meat, kg",2021-01-13,7800.0
 "Goat meat, kg",2021-01-20,7800.0
@@ -860,6 +876,14 @@ product,date,price
 "Goat meat, kg",2026-08-17,20328.0
 "Goat meat, kg",2026-08-24,20824.0
 "Goat meat, kg",2026-08-31,20824.0
+"Goat meat, kg",2026-09-07,20984.0
+"Goat meat, kg",2026-09-14,20984.0
+"Goat meat, kg",2026-09-21,20824.0
+"Goat meat, kg",2026-09-28,20824.0
+"Goat meat, kg",2026-10-05,20661.0
+"Goat meat, kg",2026-10-12,20328.0
+"Goat meat, kg",2026-10-19,20328.0
+"Goat meat, kg",2026-10-26,20328.0
 "Horse meat, kg",2021-01-06,9091.0
 "Horse meat, kg",2021-01-13,9028.0
 "Horse meat, kg",2021-01-20,9028.0
@@ -1147,6 +1171,14 @@ product,date,price
 "Horse meat, kg",2026-08-17,18440.0
 "Horse meat, kg",2026-08-24,18354.0
 "Horse meat, kg",2026-08-31,18436.0
+"Horse meat, kg",2026-09-07,18464.0
+"Horse meat, kg",2026-09-14,18539.0
+"Horse meat, kg",2026-09-21,18449.0
+"Horse meat, kg",2026-09-28,18116.0
+"Horse meat, kg",2026-10-05,18389.0
+"Horse meat, kg",2026-10-12,18300.0
+"Horse meat, kg",2026-10-19,18300.0
+"Horse meat, kg",2026-10-26,18300.0
 "Mutton, kg",2021-01-06,8728.0
 "Mutton, kg",2021-01-13,8797.0
 "Mutton, kg",2021-01-20,9261.0
@@ -1434,3 +1466,11 @@ product,date,price
 "Mutton, kg",2026-08-17,26152.0
 "Mutton, kg",2026-08-24,25882.0
 "Mutton, kg",2026-08-31,25930.0
+"Mutton, kg",2026-09-07,26342.0
+"Mutton, kg",2026-09-14,26294.0
+"Mutton, kg",2026-09-21,25973.0
+"Mutton, kg",2026-09-28,25923.0
+"Mutton, kg",2026-10-05,25674.0
+"Mutton, kg",2026-10-12,25519.0
+"Mutton, kg",2026-10-19,25480.0
+"Mutton, kg",2026-10-26,25434.0

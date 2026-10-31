@@ -1,0 +1,75 @@
+{
+  "title": "8.6.1 PROPORTION OF YOUTH (AGED 15-24) NOT IN EDUCATION, EMPLOYMENT OR TRAINING PERCENT, by sex, location, region, and by year",
+  "variables": [
+    {
+      "code": "Үзүүлэлт",
+      "text": "Indicator",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "valueTexts": [
+        "Total",
+        "        Male",
+        "        Female",
+        "        Urban",
+        "        Rural",
+        "        Western region",
+        "        Khangai region",
+        "        Central region",
+        "        Eastern region",
+        "        Ulaanbaatar"
+      ]
+    },
+    {
+      "code": "Он",
+      "text": "Year",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "valueTexts": [
+        "2025",
+        "2024",
+        "2023",
+        "2022",
+        "2021",
+        "2020",
+        "2019",
+        "2018",
+        "2017",
+        "2016",
+        "2015",
+        "2014",
+        "2013",
+        "2012",
+        "2011",
+        "2010",
+        "2009"
+      ]
+    }
+  ]
+}

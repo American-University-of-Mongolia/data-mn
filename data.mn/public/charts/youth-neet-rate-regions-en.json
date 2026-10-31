@@ -1,0 +1,115 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/youth-neet-rate-en.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "rate_percent": "number"
+      }
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "description": "Youth NEET rate by four major regions and Ulaanbaatar. Percent of the population aged 15–24 within each region. These are not aimag-level observations.",
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "range",
+        "min": 2009,
+        "max": 2025,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "indexof([\"Western region\", \"Khangai region\", \"Central region\", \"Eastern region\", \"Ulaanbaatar\"], datum[\"indicator\"]) >= 0 && datum[\"year\"] == selectedYear"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 2
+  },
+  "encoding": {
+    "y": {
+      "field": "indicator",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null
+    },
+    "x": {
+      "field": "rate_percent",
+      "type": "quantitative",
+      "title": "Share of youth (%)",
+      "scale": {
+        "domain": [
+          0,
+          40
+        ],
+        "nice": false
+      },
+      "axis": {
+        "format": ".0f",
+        "tickCount": 5
+      }
+    },
+    "color": {
+      "field": "indicator",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Western region",
+          "Khangai region",
+          "Central region",
+          "Eastern region",
+          "Ulaanbaatar"
+        ],
+        "range": [
+          "#4e79a7",
+          "#f28e2b",
+          "#59a14f",
+          "#b07aa1",
+          "#e15759"
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "quantitative",
+        "title": "Year",
+        "format": "d"
+      },
+      {
+        "field": "indicator",
+        "type": "nominal",
+        "title": "Group"
+      },
+      {
+        "field": "rate_percent",
+        "type": "quantitative",
+        "title": "Share of youth (%)",
+        "format": ".1f"
+      }
+    ]
+  }
+}

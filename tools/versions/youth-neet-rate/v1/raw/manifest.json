@@ -1,0 +1,14 @@
+{
+  "table": "DT_NSO_0400_050V1.px",
+  "source_path": "Labour, business/Decent work/DT_NSO_0400_050V1.px",
+  "snapshot_date": "2026-10-14",
+  "source_updated_at": "2026-06-03T00:00:00Z",
+  "files": {
+    "en-data.json": "16793f556a0b3e3d38217d1d1ebf3c8b163b93cbb51c0ffeb0232b57b9e6321c",
+    "en-metadata.json": "97c59a6ea12a5f8170f881dadaa7ca31cead41098cb166570c049a57daba6d00",
+    "en-query.json": "56b109a3c53db9779560e52ed925ecc3497771ad0bf7f12051b6f9ba49992809",
+    "mn-data.json": "4ca36887c17580ad9ba23723c6d43d39a447e721b739ca3068c7e4e74a36718f",
+    "mn-metadata.json": "d5604839e2a71eb2387bcd6b572e8fee6d80fa1b8e1ba6ba19153ab9d5ac61b4",
+    "mn-query.json": "56b109a3c53db9779560e52ed925ecc3497771ad0bf7f12051b6f9ba49992809"
+  }
+}

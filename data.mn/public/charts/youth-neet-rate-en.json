@@ -1,0 +1,178 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/youth-neet-rate-en.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "rate_percent": "number"
+      }
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "description": "Mongolia Youth Not in Employment, Education or Training, % (2009–2025). Labour Force Survey rates using the currently published source weights. Full history and all ten groups are included in downloads.",
+  "params": [
+    {
+      "name": "comparison",
+      "value": "By sex",
+      "bind": {
+        "input": "select",
+        "options": [
+          "By sex",
+          "Urban and rural"
+        ],
+        "name": "Compare: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "indexof(comparison === \"By sex\" ? [\"Total\", \"Male\", \"Female\"] : [\"Total\", \"Urban\", \"Rural\"], datum[\"indicator\"]) >= 0"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "scale": {
+        "domain": [
+          2009,
+          2025
+        ],
+        "zero": false,
+        "nice": false
+      },
+      "axis": {
+        "grid": false,
+        "format": "d",
+        "values": [
+          2009,
+          2013,
+          2017,
+          2021,
+          2025
+        ]
+      }
+    },
+    "y": {
+      "field": "rate_percent",
+      "type": "quantitative",
+      "title": "Share of youth (%)",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "format": ".0f",
+        "tickCount": 5
+      }
+    },
+    "color": {
+      "field": "indicator",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Total",
+        "Male",
+        "Female",
+        "Urban",
+        "Rural"
+      ],
+      "legend": {
+        "orient": "top",
+        "gridAlign": "none",
+        "columnPadding": 24,
+        "rowPadding": 10
+      }
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "quantitative",
+        "title": "Year",
+        "format": "d"
+      },
+      {
+        "field": "indicator",
+        "type": "nominal",
+        "title": "Group"
+      },
+      {
+        "field": "rate_percent",
+        "type": "quantitative",
+        "title": "Share of youth (%)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 90
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "indicator",
+            "type": "nominal",
+            "title": "Group"
+          },
+          {
+            "field": "rate_percent",
+            "type": "quantitative",
+            "title": "Share of youth (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ]
+}

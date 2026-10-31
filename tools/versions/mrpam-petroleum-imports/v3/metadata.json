@@ -1,0 +1,17 @@
+{
+  "dataset_id": "mrpam-petroleum-imports",
+  "version": 3,
+  "created_at": "2026-10-28T14:02:15Z",
+  "data_as_of": "2026-09-30",
+  "coverage_time_start": "2021-01",
+  "coverage_time_end": "2026-09",
+  "coverage_frequency": "monthly",
+  "row_count": 597,
+  "column_count": 4,
+  "data_hash_sha256": "3840562302fcd9506c65356d520db8634ac51ffff28629ebf9588f162bcb3d48",
+  "source": {
+    "id": "mrpam",
+    "report": "2026.09.mon.pdf",
+    "report_url": "https://mrpam.gov.mn/public/pages/732/2026.09.mon.pdf"
+  }
+}

@@ -42,5 +42,5 @@ datasets:
 
 ## Current Version
 
-Version 1 contains six years of data through 2024. Its bilingual raw files are
-stored in `tools/versions/nso-university-graduates-by-field/v1/`.
+Version 2 contains seven years of data through 2025. Its bilingual raw files are
+stored in `tools/versions/nso-university-graduates-by-field/v2/`.

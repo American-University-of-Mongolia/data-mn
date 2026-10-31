@@ -1,0 +1,17 @@
+{
+  "dataset_id": "mrpam-fuel-prices",
+  "version": 3,
+  "created_at": "2026-10-28T14:02:15Z",
+  "data_as_of": "2026-09-30",
+  "coverage_time_start": "2021-01",
+  "coverage_time_end": "2026-09",
+  "coverage_frequency": "monthly",
+  "row_count": 1481,
+  "column_count": 8,
+  "data_hash_sha256": "516b7c47384c38af9b1a7269fe61c383081ce3b37951c21cf8f6f35669887575",
+  "source": {
+    "id": "mrpam",
+    "report": "2026.09.mon.pdf",
+    "report_url": "https://mrpam.gov.mn/public/pages/732/2026.09.mon.pdf"
+  }
+}

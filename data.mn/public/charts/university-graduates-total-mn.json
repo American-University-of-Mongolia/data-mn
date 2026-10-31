@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Монгол Улсын их, дээд сургуулийн нийт төгсөгчид 2019-2024 он",
+  "description": "Монгол Улсын их, дээд сургуулийн нийт төгсөгчид 2019-2025 он",
   "data": {
     "url": "/datasets/university-graduates-total-mn.csv",
     "format": {"type": "csv"}

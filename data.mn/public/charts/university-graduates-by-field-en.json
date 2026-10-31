@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "University and college graduates in Mongolia by professional field from 2019 to 2024",
+  "description": "University and college graduates in Mongolia by professional field from 2019 to 2025",
   "data": {
     "url": "/datasets/university-graduates-by-field-en.csv",
     "format": {

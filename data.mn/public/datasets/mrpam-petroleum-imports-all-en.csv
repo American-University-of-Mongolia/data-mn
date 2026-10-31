@@ -524,57 +524,75 @@ month,product,volume_t
 2026-01,Total,267852.0
 2026-01,Jet fuel TS-1,3078.0
 2026-01,Liquefied petroleum gas,4054.0
-2026-02,Gasoline AI-92 Euro-5,18218.0
 2026-02,Gasoline AI-92,90870.0
 2026-02,Gasoline AI-95,2733.0
 2026-02,Other,2517.0
 2026-02,Diesel fuel,130546.0
-2026-02,Diesel Euro-5,25343.0
 2026-02,Total,279927.0
 2026-02,Jet fuel TS-1,5406.0
 2026-02,Liquefied petroleum gas,4294.0
-2026-03,Gasoline AI-92 Euro-5,14033.0
+2026-02,Gasoline AI-92 Euro-5,18218.0
+2026-02,Diesel Euro-5,25343.0
 2026-03,Gasoline AI-92,81106.0
 2026-03,Gasoline AI-95,4547.0
 2026-03,Other,7075.0
 2026-03,Diesel fuel,144131.0
-2026-03,Diesel Euro-5,26396.0
 2026-03,Total,288191.0
 2026-03,Jet fuel TS-1,6197.0
 2026-03,Liquefied petroleum gas,4706.0
-2026-04,Gasoline AI-92 Euro-5,6401.0
+2026-03,Gasoline AI-92 Euro-5,14033.0
+2026-03,Diesel Euro-5,26396.0
 2026-04,Gasoline AI-92,49862.0
 2026-04,Gasoline AI-95,1794.0
 2026-04,Other,14453.0
 2026-04,Diesel fuel,146027.0
-2026-04,Diesel Euro-5,49562.0
 2026-04,Total,284097.0
 2026-04,Jet fuel TS-1,11588.0
 2026-04,Liquefied petroleum gas,4409.0
-2026-05,Gasoline AI-92 Euro-5,3352.0
+2026-04,Gasoline AI-92 Euro-5,6401.0
+2026-04,Diesel Euro-5,49562.0
 2026-05,Gasoline AI-92,67787.0
 2026-05,Gasoline AI-95,913.0
 2026-05,Other,16975.0
 2026-05,Diesel fuel,118622.0
-2026-05,Diesel Euro-5,45244.0
 2026-05,Total,264818.0
 2026-05,Jet fuel TS-1,8883.0
 2026-05,Liquefied petroleum gas,3043.0
-2026-06,Gasoline AI-92 Euro-5,521.0
+2026-05,Gasoline AI-92 Euro-5,3352.0
+2026-05,Diesel Euro-5,45244.0
 2026-06,Gasoline AI-92,57353.0
 2026-06,Gasoline AI-95,
 2026-06,Other,17957.0
 2026-06,Diesel fuel,114874.0
-2026-06,Diesel Euro-5,21574.0
 2026-06,Total,221575.0
 2026-06,Jet fuel TS-1,5253.0
 2026-06,Liquefied petroleum gas,4043.0
-2026-07,Gasoline AI-92 Euro-5,526.0
+2026-06,Gasoline AI-92 Euro-5,521.0
+2026-06,Diesel Euro-5,21574.0
 2026-07,Gasoline AI-92,46562.0
 2026-07,Gasoline AI-95,617.0
 2026-07,Other,18348.0
 2026-07,Diesel fuel,118849.0
-2026-07,Diesel Euro-5,13911.0
 2026-07,Total,203292.0
 2026-07,Jet fuel TS-1,2112.0
 2026-07,Liquefied petroleum gas,2367.0
+2026-07,Gasoline AI-92 Euro-5,526.0
+2026-07,Diesel Euro-5,13911.0
+2026-08,Gasoline AI-92,65207.0
+2026-08,Gasoline AI-95,980.0
+2026-08,Other,27161.0
+2026-08,Diesel fuel,154252.0
+2026-08,Total,273205.0
+2026-08,Jet fuel TS-1,4186.0
+2026-08,Liquefied petroleum gas,3367.0
+2026-08,Gasoline AI-92 Euro-5,2730.0
+2026-08,Diesel Euro-5,15321.0
+2026-09,Gasoline AI-92,54678.0
+2026-09,Gasoline AI-95,5.0
+2026-09,Other,32260.0
+2026-09,Diesel fuel,183205.0
+2026-09,Total,312881.0
+2026-09,Jet fuel TS-1,9425.0
+2026-09,Liquefied petroleum gas,3822.0
+2026-09,Gasoline AI-92 Euro-5,9896.0
+2026-09,Diesel Euro-5,19590.0

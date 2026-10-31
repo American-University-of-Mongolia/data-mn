@@ -1,9 +1,11 @@
 indicator,month,value_usd_mn
-Total turnover,2026-07,2857.11
-Total turnover,2026-06,3159.12
-Total turnover,2026-05,2867.21
-Total turnover,2026-04,3112.23
-Total turnover,2026-03,2746.14
+Total turnover,2026-09,3163.39
+Total turnover,2026-08,3398.2
+Total turnover,2026-07,2855.81
+Total turnover,2026-06,3158.86
+Total turnover,2026-05,2867.14
+Total turnover,2026-04,3112.21
+Total turnover,2026-03,2745.77
 Total turnover,2026-02,2018.68
 Total turnover,2026-01,2603.5
 Total turnover,2025-12,3071.5
@@ -354,11 +356,13 @@ Total turnover,1997-04,69.27
 Total turnover,1997-03,90.12
 Total turnover,1997-02,43.28
 Total turnover,1997-01,39.29
-Exports,2026-07,1812.04
+Exports,2026-09,1804.07
+Exports,2026-08,2188.7
+Exports,2026-07,1812.0
 Exports,2026-06,1923.38
 Exports,2026-05,1657.46
 Exports,2026-04,1923.81
-Exports,2026-03,1842.83
+Exports,2026-03,1842.77
 Exports,2026-02,1285.87
 Exports,2026-01,1760.52
 Exports,2025-12,1964.56
@@ -709,11 +713,13 @@ Exports,1997-04,36.28
 Exports,1997-03,55.18
 Exports,1997-02,23.42
 Exports,1997-01,23.38
-Imports,2026-07,1045.07
-Imports,2026-06,1235.73
-Imports,2026-05,1209.74
-Imports,2026-04,1188.42
-Imports,2026-03,903.31
+Imports,2026-09,1359.31
+Imports,2026-08,1209.5
+Imports,2026-07,1043.8
+Imports,2026-06,1235.49
+Imports,2026-05,1209.68
+Imports,2026-04,1188.4
+Imports,2026-03,903.0
 Imports,2026-02,732.81
 Imports,2026-01,842.98
 Imports,2025-12,1106.93
@@ -1064,11 +1070,13 @@ Imports,1997-04,32.99
 Imports,1997-03,34.94
 Imports,1997-02,19.86
 Imports,1997-01,15.92
-Balance,2026-07,766.97
-Balance,2026-06,687.65
-Balance,2026-05,447.72
-Balance,2026-04,735.39
-Balance,2026-03,939.52
+Balance,2026-09,444.76
+Balance,2026-08,979.2
+Balance,2026-07,768.2
+Balance,2026-06,687.89
+Balance,2026-05,447.78
+Balance,2026-04,735.41
+Balance,2026-03,939.76
 Balance,2026-02,553.07
 Balance,2026-01,917.54
 Balance,2025-12,857.63

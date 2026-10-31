@@ -1,0 +1,10 @@
+{
+  "dataset_id": "nso-foreign-trade-monthly",
+  "version": 2,
+  "fetched_at": "2026-10-28T13:43:00.073093+00:00",
+  "source_updated_at": "2026-10-09T14:48:33",
+  "source_files": [
+    "nso-foreign-trade-monthly-en.csv",
+    "nso-foreign-trade-monthly-mn.csv"
+  ]
+}

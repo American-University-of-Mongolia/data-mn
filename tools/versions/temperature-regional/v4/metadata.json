@@ -1,0 +1,11 @@
+{
+  "dataset_id": "temperature-regional",
+  "version": 4,
+  "fetched_at": "2026-10-28T13:46:24.310329+00:00",
+  "source_updated_at": "2026-10-12T10:27:31",
+  "files": [
+    "temperature-regional-en.csv",
+    "temperature-regional-mn.csv",
+    "temperature-regional.xlsx"
+  ]
+}

@@ -126,6 +126,8 @@ Central region,2026-04,232
 Central region,2026-05,238
 Central region,2026-06,196
 Central region,2026-07,228
+Central region,2026-08,234
+Central region,2026-09,250
 Eastern region,2016-01,91
 Eastern region,2016-02,101
 Eastern region,2016-03,115
@@ -253,6 +255,8 @@ Eastern region,2026-04,90
 Eastern region,2026-05,76
 Eastern region,2026-06,84
 Eastern region,2026-07,87
+Eastern region,2026-08,98
+Eastern region,2026-09,106
 Khangai region,2016-01,260
 Khangai region,2016-02,297
 Khangai region,2016-03,304
@@ -380,6 +384,8 @@ Khangai region,2026-04,238
 Khangai region,2026-05,286
 Khangai region,2026-06,264
 Khangai region,2026-07,308
+Khangai region,2026-08,262
+Khangai region,2026-09,260
 Ulaanbaatar,2016-01,576
 Ulaanbaatar,2016-02,582
 Ulaanbaatar,2016-03,640
@@ -507,6 +513,8 @@ Ulaanbaatar,2026-04,664
 Ulaanbaatar,2026-05,645
 Ulaanbaatar,2026-06,718
 Ulaanbaatar,2026-07,843
+Ulaanbaatar,2026-08,654
+Ulaanbaatar,2026-09,792
 Western region,2016-01,167
 Western region,2016-02,159
 Western region,2016-03,197
@@ -634,3 +642,5 @@ Western region,2026-04,140
 Western region,2026-05,183
 Western region,2026-06,151
 Western region,2026-07,171
+Western region,2026-08,155
+Western region,2026-09,162

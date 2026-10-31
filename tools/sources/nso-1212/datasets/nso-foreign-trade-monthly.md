@@ -21,7 +21,7 @@
 
 ## Description
 
-Monthly foreign trade data for Mongolia from January 1997 to July 2026, covering total turnover, exports, imports, and trade balance in million USD, sourced from the National Statistics Office. Monthly data reveals strong seasonality in Mongolia's trade flows — exports spike during summer and autumn coal shipping seasons, while imports rise mid-year alongside construction material deliveries.
+Monthly foreign trade data for Mongolia from January 1997 to September 2026, covering total turnover, exports, imports, and trade balance in million USD, sourced from the National Statistics Office. Monthly data reveals strong seasonality in Mongolia's trade flows — exports spike during summer and autumn coal shipping seasons, while imports rise mid-year alongside construction material deliveries.
 
 ## Variables
 
@@ -33,13 +33,13 @@ Four indicators/series:
 - `Balance` / `Тэнцэл`: Trade balance (exports minus imports, may be negative)
 
 ### Month (Сар)
-Monthly data from 1997-01 to 2026-07 (355 months), format `YYYY-MM`
+Monthly data from 1997-01 to 2026-09 (357 months), format `YYYY-MM`
 
 ### Value
 - **Unit**: Million USD
 - **Columns EN**: `indicator`, `month`, `value_usd_mn`
 - **Columns MN**: `үзүүлэлт`, `сар`, `value_usd_mn`
-- **Rows**: 1420 (355 months x 4 indicators)
+- **Rows**: 1428 (357 months x 4 indicators)
 
 ## Update Instructions
 
@@ -85,7 +85,7 @@ python3 fetch_data.py --table DT_NSO_1400_003V1.px --output ./output
 
 ### Validation
 
-- All four indicators should have matching months (355 each)
+- All four indicators should have matching months (357 each)
 - Total turnover should equal Exports + Imports per month
 - Balance should equal Exports - Imports per month
 - EN/MN row counts and totals must match
@@ -139,9 +139,9 @@ Auto-extract for MDX page:
 
 ### Excerpt Templates
 
-**EN**: "Monthly foreign trade data for Mongolia from January 1997 to July 2026, covering total turnover, exports, imports, and trade balance in million USD, sourced from the National Statistics Office."
+**EN**: "Monthly foreign trade data for Mongolia from January 1997 to September 2026, covering total turnover, exports, imports, and trade balance in million USD, sourced from the National Statistics Office."
 
-**MN**: "Монгол Улсын 1997 оны 1-р сараас 2026 оны 7-р сар хүртэлх гадаад худалдааны нийт эргэлт, экспорт, импорт, баланс сараар сая ам.доллараар."
+**MN**: "Монгол Улсын 1997 оны 1-р сараас 2026 оны 9-р сар хүртэлх гадаад худалдааны нийт эргэлт, экспорт, импорт, баланс сараар сая ам.доллараар."
 
 ## Notes
 

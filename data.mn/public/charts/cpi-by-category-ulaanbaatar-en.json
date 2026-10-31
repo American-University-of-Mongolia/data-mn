@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Monthly CPI changes by category group in Ulaanbaatar (2020-2026). Categories grouped into 5 major spending areas.",
   "data": {
-    "url": "/datasets/cpi-by-category-ulaanbaatar-en.csv?v=3",
+    "url": "/datasets/cpi-by-category-ulaanbaatar-en.csv?v=4",
     "format": {
       "type": "csv"
     }

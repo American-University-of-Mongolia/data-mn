@@ -1,0 +1,38 @@
+---
+title: "Pupils per Teacher in Mongolia by Aimag (2007–2025)"
+publishDate: 2026-11-01
+excerpt: "Compare school staffing across Mongolia’s 21 aimags and Ulaanbaatar. In 2025, the primary-school ratio was 35.8 in Orkhon, 31.2 in Ulaanbaatar and 29.7 nationally."
+category: "Education"
+tags: ["mongolia", "education", "teachers", "schools"]
+keywords: ["pupil teacher ratio", "primary education", "aimag", "school staffing"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-31
+excelLanguage: "page"
+dataFiles: [{"path": "/datasets/pupil-teacher-ratio-en.csv", "format": "csv", "size": "26.3 KB", "description": "Download all data (CSV)"}, {"path": "/datasets/pupil-teacher-ratio-en.xlsx", "format": "xlsx", "size": "10.1 KB", "description": "Open in Excel"}]
+source: {"name": "National Statistics Office of Mongolia", "url": "https://data.1212.mn/pxweb/en/NSO/NSO__Education%2C%20health__General%20educational%20schools/DT_NSO_2002_015V1.px/", "tableId": "DT_NSO_2002_015V1.px"}
+methodology: |
+  Pupils per teacher is the average number of pupils for each teacher at the selected education level. Primary and all-level ratios use their respective pupil and teacher populations. This measure is not class size and does not by itself measure teaching quality.
+
+  The source is the Ministry of Education, published by NSO. NSO’s definition describes pupils per teacher, although its web metadata displays “%”. Values are retained unchanged and shown as pupils per teacher, not percentages.
+
+  Years retain the annual labels published by NSO. The definition refers to a school year. For context, the Ministry’s 2025–2026 totals of 819,907 pupils and 39,126 teachers give 21.0 pupils per teacher after rounding, matching NSO’s 2025 all-level national value. Earlier source years have not been independently mapped to school-year spans.
+
+  NSO cites its education-statistics methodology dated 16 December 2013. The table does not establish that definitions and coverage are unchanged throughout 2007–2025. Historical values are displayed as published, with no interpolation or adjustment.
+
+  Downloads contain 874 observations: 19 years, two education levels and 23 locations (21 aimags, Ulaanbaatar and the national average). The overlapping macroregion aggregates are excluded; the city-level Ulaanbaatar entry is retained once. The national average is the official source value, not an average of aimag ratios.
+
+  CSV uses one observation per row. Its series label combines education level and location with “ / ”. Excel has one row per year and one column per level/location combination. Chart selections do not limit downloads.
+---
+
+import PupilTeacherChart from '~/components/ui/PupilTeacherChart.astro';
+
+<PupilTeacherChart spec="/charts/pupil-teacher-ratio-en.json" title="Compare aimags and Ulaanbaatar" caption="Choose an education level and year. Colors show geographic regions; the dashed line marks the national average. Hover for exact values." />
+
+<div className="text-sm text-slate-600 dark:text-slate-400">Pupils per teacher measures school staffing. It is not the number of pupils in a classroom.</div>
+
+<h2>Compare changes over time</h2>
+
+<PupilTeacherChart spec="/charts/pupil-teacher-ratio-trend-en.json" title="Pupils per teacher, 2007–2025" caption="Choose up to two locations and compare with the national average. Blue is location 1, orange is location 2. Selecting the same location twice shows it once." aspectRatio={0.65} />
+
+<div className="text-sm">School-year context: <a href="https://moe.gov.mn/post/170077">Ministry of Education, 2025–2026 statistics</a>.</div>

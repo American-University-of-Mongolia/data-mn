@@ -1,0 +1,76 @@
+---
+import VegaChart from './VegaChart.astro';
+
+interface Props {
+  spec: string;
+  title: string;
+  caption: string;
+  aspectRatio?: number;
+}
+const { spec, title, caption, aspectRatio = 0.65 } = Astro.props;
+---
+
+<div class="pupil-teacher-chart">
+  <VegaChart {spec} {title} {caption} {aspectRatio} />
+</div>
+
+<style>
+  /* Dataset-local presentation of Vega's native controls. The shared component
+     owns rendering, cleanup, and selection persistence through theme changes. */
+  .pupil-teacher-chart :global(.vega-embed),
+  .pupil-teacher-chart :global(.chart-wrapper) {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .pupil-teacher-chart :global(.vega-bindings) {
+    order: -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 0.5rem 0 1.25rem;
+    width: 100%;
+  }
+  .pupil-teacher-chart :global(.vega-bind) {
+    flex: 1 1 10rem;
+    min-width: 0;
+  }
+  .pupil-teacher-chart :global(.vega-bind label) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+    background: white;
+    color: #64748b;
+    font-size: 0.75rem;
+  }
+  .pupil-teacher-chart :global(.vega-bind select) {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    padding: 0.15rem 1.5rem 0.15rem 0;
+    background-color: transparent;
+    color: #334155;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .pupil-teacher-chart :global(.vega-bind select:focus-visible) {
+    outline: 2px solid #2563eb;
+    outline-offset: 3px;
+    border-radius: 0.2rem;
+  }
+  :global(.dark) .pupil-teacher-chart :global(.mark-text text) {
+    fill: #e2e8f0;
+  }
+  :global(.dark) .pupil-teacher-chart :global(.vega-bind label) {
+    background: #1e293b;
+    border-color: #475569;
+    color: #cbd5e1;
+  }
+  :global(.dark) .pupil-teacher-chart :global(.vega-bind select) {
+    color: #e2e8f0;
+    color-scheme: dark;
+  }
+</style>

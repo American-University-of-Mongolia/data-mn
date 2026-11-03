@@ -1,0 +1,34 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { sports } from '~/i18n/sports';
+import '~/assets/styles/sports.css';
+export const prerender = true;
+export const getStaticPaths = () => ['en', 'mn'].map((lang) => ({ params: { lang } }));
+const lang = Astro.params.lang as 'en' | 'mn';
+const copy = sports[lang];
+---
+
+<Layout
+  lang={lang}
+  metadata={{
+    title: `${copy.basketball} | data.mn`,
+    description: copy.subtitle,
+    robots: { index: false, follow: true },
+  }}
+>
+  <div id="sports-app" data-language={lang} data-copy={JSON.stringify(copy)}>
+    <div class="sports-loading" role="status">
+      {lang === 'mn' ? 'Статистикийг ачаалж байна…' : 'Loading basketball statistics…'}
+    </div>
+  </div>
+  <noscript
+    >{
+      lang === 'mn'
+        ? 'Статистикийг үзэхийн тулд JavaScript идэвхжүүлнэ үү.'
+        : 'Enable JavaScript to explore the statistics.'
+    }</noscript
+  >
+</Layout>
+<script>
+  import '~/scripts/sports-browser.js';
+</script>

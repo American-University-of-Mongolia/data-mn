@@ -1,0 +1,2702 @@
+[
+  {
+    "game_id": "MBA-614",
+    "team_code": "KUL",
+    "previous_score": 65,
+    "website_header": 65,
+    "recorded_score": 65,
+    "team_points": 65,
+    "player_points": 65,
+    "source_url": "https://mongolia.basketball/en/games/223"
+  },
+  {
+    "game_id": "MBA-614",
+    "team_code": "BTM",
+    "previous_score": 70,
+    "website_header": 70,
+    "recorded_score": 70,
+    "team_points": 70,
+    "player_points": 70,
+    "source_url": "https://mongolia.basketball/en/games/223"
+  },
+  {
+    "game_id": "MBA-615",
+    "team_code": "ZVB",
+    "previous_score": 81,
+    "website_header": 81,
+    "recorded_score": 81,
+    "team_points": 81,
+    "player_points": 81,
+    "source_url": "https://mongolia.basketball/en/games/192"
+  },
+  {
+    "game_id": "MBA-615",
+    "team_code": "KUL",
+    "previous_score": 91,
+    "website_header": 91,
+    "recorded_score": 91,
+    "team_points": 91,
+    "player_points": 91,
+    "source_url": "https://mongolia.basketball/en/games/192"
+  },
+  {
+    "game_id": "MBA-616",
+    "team_code": "DUA",
+    "previous_score": 88,
+    "website_header": 88,
+    "recorded_score": 88,
+    "team_points": 88,
+    "player_points": 88,
+    "source_url": "https://mongolia.basketball/en/games/261"
+  },
+  {
+    "game_id": "MBA-616",
+    "team_code": "BCH",
+    "previous_score": 101,
+    "website_header": 101,
+    "recorded_score": 101,
+    "team_points": 101,
+    "player_points": 101,
+    "source_url": "https://mongolia.basketball/en/games/261"
+  },
+  {
+    "game_id": "MBA-617",
+    "team_code": "SEL",
+    "previous_score": 79,
+    "website_header": 79,
+    "recorded_score": 79,
+    "team_points": 79,
+    "player_points": 79,
+    "source_url": "https://mongolia.basketball/en/games/167"
+  },
+  {
+    "game_id": "MBA-617",
+    "team_code": "BSM",
+    "previous_score": 85,
+    "website_header": 85,
+    "recorded_score": 85,
+    "team_points": 85,
+    "player_points": 85,
+    "source_url": "https://mongolia.basketball/en/games/167"
+  },
+  {
+    "game_id": "MBA-618",
+    "team_code": "BTM",
+    "previous_score": 74,
+    "website_header": 74,
+    "recorded_score": 74,
+    "team_points": 74,
+    "player_points": 74,
+    "source_url": "https://mongolia.basketball/en/games/178"
+  },
+  {
+    "game_id": "MBA-618",
+    "team_code": "SGA",
+    "previous_score": 77,
+    "website_header": 77,
+    "recorded_score": 77,
+    "team_points": 77,
+    "player_points": 77,
+    "source_url": "https://mongolia.basketball/en/games/178"
+  },
+  {
+    "game_id": "MBA-619",
+    "team_code": "DUA",
+    "previous_score": 71,
+    "website_header": 71,
+    "recorded_score": 71,
+    "team_points": 71,
+    "player_points": 71,
+    "source_url": "https://mongolia.basketball/en/games/196"
+  },
+  {
+    "game_id": "MBA-619",
+    "team_code": "KHF",
+    "previous_score": 83,
+    "website_header": 83,
+    "recorded_score": 83,
+    "team_points": 83,
+    "player_points": 83,
+    "source_url": "https://mongolia.basketball/en/games/196"
+  },
+  {
+    "game_id": "MBA-620",
+    "team_code": "KHF",
+    "previous_score": 66,
+    "website_header": 66,
+    "recorded_score": 66,
+    "team_points": 66,
+    "player_points": 66,
+    "source_url": "https://mongolia.basketball/en/games/202"
+  },
+  {
+    "game_id": "MBA-620",
+    "team_code": "KUL",
+    "previous_score": 85,
+    "website_header": 85,
+    "recorded_score": 85,
+    "team_points": 85,
+    "player_points": 85,
+    "source_url": "https://mongolia.basketball/en/games/202"
+  },
+  {
+    "game_id": "MBA-621",
+    "team_code": "BCH",
+    "previous_score": 82,
+    "website_header": 82,
+    "recorded_score": 82,
+    "team_points": 82,
+    "player_points": 82,
+    "source_url": "https://mongolia.basketball/en/games/154"
+  },
+  {
+    "game_id": "MBA-621",
+    "team_code": "SEL",
+    "previous_score": 79,
+    "website_header": 79,
+    "recorded_score": 79,
+    "team_points": 79,
+    "player_points": 79,
+    "source_url": "https://mongolia.basketball/en/games/154"
+  },
+  {
+    "game_id": "MBA-622",
+    "team_code": "BSM",
+    "previous_score": 70,
+    "website_header": 70,
+    "recorded_score": 70,
+    "team_points": 70,
+    "player_points": 70,
+    "source_url": "https://mongolia.basketball/en/games/148"
+  },
+  {
+    "game_id": "MBA-622",
+    "team_code": "ZVB",
+    "previous_score": 95,
+    "website_header": 95,
+    "recorded_score": 95,
+    "team_points": 95,
+    "player_points": 95,
+    "source_url": "https://mongolia.basketball/en/games/148"
+  },
+  {
+    "game_id": "MBA-623",
+    "team_code": "SGA",
+    "previous_score": 65,
+    "website_header": 65,
+    "recorded_score": 65,
+    "team_points": 65,
+    "player_points": 65,
+    "source_url": "https://mongolia.basketball/en/games/248"
+  },
+  {
+    "game_id": "MBA-623",
+    "team_code": "ETM",
+    "previous_score": 87,
+    "website_header": 87,
+    "recorded_score": 87,
+    "team_points": 87,
+    "player_points": 87,
+    "source_url": "https://mongolia.basketball/en/games/248"
+  },
+  {
+    "game_id": "MBA-624",
+    "team_code": "BSM",
+    "previous_score": 69,
+    "website_header": 69,
+    "recorded_score": 69,
+    "team_points": 69,
+    "player_points": 69,
+    "source_url": "https://mongolia.basketball/en/games/245"
+  },
+  {
+    "game_id": "MBA-624",
+    "team_code": "ETM",
+    "previous_score": 82,
+    "website_header": 82,
+    "recorded_score": 82,
+    "team_points": 82,
+    "player_points": 82,
+    "source_url": "https://mongolia.basketball/en/games/245"
+  },
+  {
+    "game_id": "MBA-625",
+    "team_code": "BTM",
+    "previous_score": 73,
+    "website_header": 73,
+    "recorded_score": 73,
+    "team_points": 73,
+    "player_points": 73,
+    "source_url": "https://mongolia.basketball/en/games/140"
+  },
+  {
+    "game_id": "MBA-625",
+    "team_code": "SEL",
+    "previous_score": 93,
+    "website_header": 93,
+    "recorded_score": 93,
+    "team_points": 93,
+    "player_points": 93,
+    "source_url": "https://mongolia.basketball/en/games/140"
+  },
+  {
+    "game_id": "MBA-626",
+    "team_code": "SGA",
+    "previous_score": 109,
+    "website_header": 109,
+    "recorded_score": 109,
+    "team_points": 109,
+    "player_points": 109,
+    "source_url": "https://mongolia.basketball/en/games/228"
+  },
+  {
+    "game_id": "MBA-626",
+    "team_code": "DUA",
+    "previous_score": 95,
+    "website_header": 95,
+    "recorded_score": 95,
+    "team_points": 95,
+    "player_points": 95,
+    "source_url": "https://mongolia.basketball/en/games/228"
+  },
+  {
+    "game_id": "MBA-627",
+    "team_code": "ZVB",
+    "previous_score": 84,
+    "website_header": 84,
+    "recorded_score": 84,
+    "team_points": 84,
+    "player_points": 84,
+    "source_url": "https://mongolia.basketball/en/games/240"
+  },
+  {
+    "game_id": "MBA-627",
+    "team_code": "BCH",
+    "previous_score": 105,
+    "website_header": 105,
+    "recorded_score": 105,
+    "team_points": 105,
+    "player_points": 105,
+    "source_url": "https://mongolia.basketball/en/games/240"
+  },
+  {
+    "game_id": "MBA-628",
+    "team_code": "KHF",
+    "previous_score": 75,
+    "website_header": 75,
+    "recorded_score": 75,
+    "team_points": 75,
+    "player_points": 75,
+    "source_url": "https://mongolia.basketball/en/games/231"
+  },
+  {
+    "game_id": "MBA-628",
+    "team_code": "SGA",
+    "previous_score": 78,
+    "website_header": 78,
+    "recorded_score": 78,
+    "team_points": 78,
+    "player_points": 78,
+    "source_url": "https://mongolia.basketball/en/games/231"
+  },
+  {
+    "game_id": "MBA-629",
+    "team_code": "BTM",
+    "previous_score": 73,
+    "website_header": 73,
+    "recorded_score": 73,
+    "team_points": 73,
+    "player_points": 73,
+    "source_url": "https://mongolia.basketball/en/games/157"
+  },
+  {
+    "game_id": "MBA-629",
+    "team_code": "SEL",
+    "previous_score": 82,
+    "website_header": 82,
+    "recorded_score": 82,
+    "team_points": 82,
+    "player_points": 82,
+    "source_url": "https://mongolia.basketball/en/games/157"
+  },
+  {
+    "game_id": "MBA-630",
+    "team_code": "ETM",
+    "previous_score": 68,
+    "website_header": 68,
+    "recorded_score": 68,
+    "team_points": 68,
+    "player_points": 68,
+    "source_url": "https://mongolia.basketball/en/games/172"
+  },
+  {
+    "game_id": "MBA-630",
+    "team_code": "ZVB",
+    "previous_score": 69,
+    "website_header": 69,
+    "recorded_score": 69,
+    "team_points": 69,
+    "player_points": 69,
+    "source_url": "https://mongolia.basketball/en/games/172"
+  },
+  {
+    "game_id": "MBA-631",
+    "team_code": "SGA",
+    "previous_score": 74,
+    "website_header": 74,
+    "recorded_score": 74,
+    "team_points": 74,
+    "player_points": 74,
+    "source_url": "https://mongolia.basketball/en/games/214"
+  },
+  {
+    "game_id": "MBA-631",
+    "team_code": "KUL",
+    "previous_score": 73,
+    "website_header": 73,
+    "recorded_score": 73,
+    "team_points": 73,
+    "player_points": 73,
+    "source_url": "https://mongolia.basketball/en/games/214"
+  },
+  {
+    "game_id": "MBA-632",
+    "team_code": "BCH",
+    "previous_score": 88,
+    "website_header": 88,
+    "recorded_score": 88,
+    "team_points": 88,
+    "player_points": 88,
+    "source_url": "https://mongolia.basketball/en/games/203"
+  },
+  {
+    "game_id": "MBA-632",
+    "team_code": "KHF",
+    "previous_score": 101,
+    "website_header": 109,
+    "recorded_score": 101,
+    "team_points": 101,
+    "player_points": 101,
+    "source_url": "https://mongolia.basketball/en/games/203"
+  },
+  {
+    "game_id": "MBA-633",
+    "team_code": "KUL",
+    "previous_score": 86,
+    "website_header": 86,
+    "recorded_score": 86,
+    "team_points": 86,
+    "player_points": 86,
+    "source_url": "https://mongolia.basketball/en/games/162"
+  },
+  {
+    "game_id": "MBA-633",
+    "team_code": "BSM",
+    "previous_score": 67,
+    "website_header": 67,
+    "recorded_score": 67,
+    "team_points": 67,
+    "player_points": 67,
+    "source_url": "https://mongolia.basketball/en/games/162"
+  },
+  {
+    "game_id": "MBA-634",
+    "team_code": "SEL",
+    "previous_score": 81,
+    "website_header": 81,
+    "recorded_score": 81,
+    "team_points": 81,
+    "player_points": 81,
+    "source_url": "https://mongolia.basketball/en/games/253"
+  },
+  {
+    "game_id": "MBA-634",
+    "team_code": "DUA",
+    "previous_score": 87,
+    "website_header": 87,
+    "recorded_score": 87,
+    "team_points": 87,
+    "player_points": 87,
+    "source_url": "https://mongolia.basketball/en/games/253"
+  },
+  {
+    "game_id": "MBA-635",
+    "team_code": "BTM",
+    "previous_score": 91,
+    "website_header": 91,
+    "recorded_score": 91,
+    "team_points": 91,
+    "player_points": 91,
+    "source_url": "https://mongolia.basketball/en/games/215"
+  },
+  {
+    "game_id": "MBA-635",
+    "team_code": "ZVB",
+    "previous_score": 90,
+    "website_header": 90,
+    "recorded_score": 90,
+    "team_points": 90,
+    "player_points": 90,
+    "source_url": "https://mongolia.basketball/en/games/215"
+  },
+  {
+    "game_id": "MBA-636",
+    "team_code": "SGA",
+    "previous_score": 98,
+    "website_header": 98,
+    "recorded_score": 98,
+    "team_points": 98,
+    "player_points": 98,
+    "source_url": "https://mongolia.basketball/en/games/244"
+  },
+  {
+    "game_id": "MBA-636",
+    "team_code": "BSM",
+    "previous_score": 91,
+    "website_header": 91,
+    "recorded_score": 91,
+    "team_points": 91,
+    "player_points": 91,
+    "source_url": "https://mongolia.basketball/en/games/244"
+  },
+  {
+    "game_id": "MBA-637",
+    "team_code": "BTM",
+    "previous_score": 75,
+    "website_header": 75,
+    "recorded_score": 75,
+    "team_points": 75,
+    "player_points": 75,
+    "source_url": "https://mongolia.basketball/en/games/242"
+  },
+  {
+    "game_id": "MBA-637",
+    "team_code": "BSM",
+    "previous_score": 72,
+    "website_header": 72,
+    "recorded_score": 72,
+    "team_points": 72,
+    "player_points": 72,
+    "source_url": "https://mongolia.basketball/en/games/242"
+  },
+  {
+    "game_id": "MBA-638",
+    "team_code": "KUL",
+    "previous_score": 92,
+    "website_header": 92,
+    "recorded_score": 92,
+    "team_points": 92,
+    "player_points": 92,
+    "source_url": "https://mongolia.basketball/en/games/188"
+  },
+  {
+    "game_id": "MBA-638",
+    "team_code": "BCH",
+    "previous_score": 99,
+    "website_header": 99,
+    "recorded_score": 99,
+    "team_points": 99,
+    "player_points": 99,
+    "source_url": "https://mongolia.basketball/en/games/188"
+  },
+  {
+    "game_id": "MBA-639",
+    "team_code": "ZVB",
+    "previous_score": 93,
+    "website_header": 93,
+    "recorded_score": 93,
+    "team_points": 93,
+    "player_points": 93,
+    "source_url": "https://mongolia.basketball/en/games/190"
+  },
+  {
+    "game_id": "MBA-639",
+    "team_code": "DUA",
+    "previous_score": 94,
+    "website_header": 94,
+    "recorded_score": 94,
+    "team_points": 94,
+    "player_points": 94,
+    "source_url": "https://mongolia.basketball/en/games/190"
+  },
+  {
+    "game_id": "MBA-640",
+    "team_code": "SEL",
+    "previous_score": 72,
+    "website_header": 72,
+    "recorded_score": 72,
+    "team_points": 72,
+    "player_points": 72,
+    "source_url": "https://mongolia.basketball/en/games/254"
+  },
+  {
+    "game_id": "MBA-640",
+    "team_code": "ETM",
+    "previous_score": 70,
+    "website_header": 70,
+    "recorded_score": 70,
+    "team_points": 70,
+    "player_points": 70,
+    "source_url": "https://mongolia.basketball/en/games/254"
+  },
+  {
+    "game_id": "MBA-641",
+    "team_code": "KHF",
+    "previous_score": 88,
+    "website_header": 88,
+    "recorded_score": 88,
+    "team_points": 88,
+    "player_points": 88,
+    "source_url": "https://mongolia.basketball/en/games/207"
+  },
+  {
+    "game_id": "MBA-641",
+    "team_code": "ZVB",
+    "previous_score": 102,
+    "website_header": 102,
+    "recorded_score": 102,
+    "team_points": 102,
+    "player_points": 102,
+    "source_url": "https://mongolia.basketball/en/games/207"
+  },
+  {
+    "game_id": "MBA-642",
+    "team_code": "SGA",
+    "previous_score": 91,
+    "website_header": 91,
+    "recorded_score": 91,
+    "team_points": 91,
+    "player_points": 91,
+    "source_url": "https://mongolia.basketball/en/games/259"
+  },
+  {
+    "game_id": "MBA-642",
+    "team_code": "BCH",
+    "previous_score": 79,
+    "website_header": 79,
+    "recorded_score": 79,
+    "team_points": 79,
+    "player_points": 79,
+    "source_url": "https://mongolia.basketball/en/games/259"
+  },
+  {
+    "game_id": "MBA-643",
+    "team_code": "ZVB",
+    "previous_score": 86,
+    "website_header": 86,
+    "recorded_score": 86,
+    "team_points": 86,
+    "player_points": 86,
+    "source_url": "https://mongolia.basketball/en/games/246"
+  },
+  {
+    "game_id": "MBA-643",
+    "team_code": "ETM",
+    "previous_score": 80,
+    "website_header": 80,
+    "recorded_score": 80,
+    "team_points": 80,
+    "player_points": 80,
+    "source_url": "https://mongolia.basketball/en/games/246"
+  },
+  {
+    "game_id": "MBA-644",
+    "team_code": "BTM",
+    "previous_score": 94,
+    "website_header": 94,
+    "recorded_score": 94,
+    "team_points": 94,
+    "player_points": 94,
+    "source_url": "https://mongolia.basketball/en/games/182"
+  },
+  {
+    "game_id": "MBA-644",
+    "team_code": "SGA",
+    "previous_score": 93,
+    "website_header": 93,
+    "recorded_score": 93,
+    "team_points": 93,
+    "player_points": 93,
+    "source_url": "https://mongolia.basketball/en/games/182"
+  },
+  {
+    "game_id": "MBA-645",
+    "team_code": "ETM",
+    "previous_score": 82,
+    "website_header": 82,
+    "recorded_score": 82,
+    "team_points": 82,
+    "player_points": 82,
+    "source_url": "https://mongolia.basketball/en/games/269"
+  },
+  {
+    "game_id": "MBA-645",
+    "team_code": "KHF",
+    "previous_score": 73,
+    "website_header": 73,
+    "recorded_score": 73,
+    "team_points": 73,
+    "player_points": 73,
+    "source_url": "https://mongolia.basketball/en/games/269"
+  },
+  {
+    "game_id": "MBA-646",
+    "team_code": "BSM",
+    "previous_score": 87,
+    "website_header": 87,
+    "recorded_score": 87,
+    "team_points": 87,
+    "player_points": 87,
+    "source_url": "https://mongolia.basketball/en/games/156"
+  },
+  {
+    "game_id": "MBA-646",
+    "team_code": "DUA",
+    "previous_score": 92,
+    "website_header": 92,
+    "recorded_score": 92,
+    "team_points": 92,
+    "player_points": 92,
+    "source_url": "https://mongolia.basketball/en/games/156"
+  },
+  {
+    "game_id": "MBA-647",
+    "team_code": "DUA",
+    "previous_score": 88,
+    "website_header": 97,
+    "recorded_score": 88,
+    "team_points": 88,
+    "player_points": 88,
+    "source_url": "https://mongolia.basketball/en/games/151"
+  },
+  {
+    "game_id": "MBA-647",
+    "team_code": "BTM",
+    "previous_score": 74,
+    "website_header": 74,
+    "recorded_score": 74,
+    "team_points": 74,
+    "player_points": 74,
+    "source_url": "https://mongolia.basketball/en/games/151"
+  },
+  {
+    "game_id": "MBA-648",
+    "team_code": "SEL",
+    "previous_score": 58,
+    "website_header": 58,
+    "recorded_score": 58,
+    "team_points": 58,
+    "player_points": 58,
+    "source_url": "https://mongolia.basketball/en/games/185"
+  },
+  {
+    "game_id": "MBA-648",
+    "team_code": "SGA",
+    "previous_score": 72,
+    "website_header": 72,
+    "recorded_score": 72,
+    "team_points": 72,
+    "player_points": 72,
+    "source_url": "https://mongolia.basketball/en/games/185"
+  },
+  {
+    "game_id": "MBA-649",
+    "team_code": "BSM",
+    "previous_score": 91,
+    "website_header": 91,
+    "recorded_score": 91,
+    "team_points": 91,
+    "player_points": 91,
+    "source_url": "https://mongolia.basketball/en/games/170"
+  },
+  {
+    "game_id": "MBA-649",
+    "team_code": "KHF",
+    "previous_score": 93,
+    "website_header": 93,
+    "recorded_score": 93,
+    "team_points": 93,
+    "player_points": 93,
+    "source_url": "https://mongolia.basketball/en/games/170"
+  },
+  {
+    "game_id": "MBA-650",
+    "team_code": "BCH",
+    "previous_score": 83,
+    "website_header": 83,
+    "recorded_score": 83,
+    "team_points": 83,
+    "player_points": 83,
+    "source_url": "https://mongolia.basketball/en/games/250"
+  },
+  {
+    "game_id": "MBA-650",
+    "team_code": "BTM",
+    "previous_score": 80,
+    "website_header": 80,
+    "recorded_score": 80,
+    "team_points": 80,
+    "player_points": 80,
+    "source_url": "https://mongolia.basketball/en/games/250"
+  },
+  {
+    "game_id": "MBA-651",
+    "team_code": "KHF",
+    "previous_score": 88,
+    "website_header": 88,
+    "recorded_score": 88,
+    "team_points": 88,
+    "player_points": 88,
+    "source_url": "https://mongolia.basketball/en/games/256"
+  },
+  {
+    "game_id": "MBA-651",
+    "team_code": "SEL",
+    "previous_score": 98,
+    "website_header": 98,
+    "recorded_score": 98,
+    "team_points": 98,
+    "player_points": 98,
+    "source_url": "https://mongolia.basketball/en/games/256"
+  },
+  {
+    "game_id": "MBA-652",
+    "team_code": "KUL",
+    "previous_score": 76,
+    "website_header": 76,
+    "recorded_score": 76,
+    "team_points": 76,
+    "player_points": 76,
+    "source_url": "https://mongolia.basketball/en/games/210"
+  },
+  {
+    "game_id": "MBA-652",
+    "team_code": "ETM",
+    "previous_score": 67,
+    "website_header": 67,
+    "recorded_score": 67,
+    "team_points": 67,
+    "player_points": 67,
+    "source_url": "https://mongolia.basketball/en/games/210"
+  },
+  {
+    "game_id": "MBA-653",
+    "team_code": "KUL",
+    "previous_score": 84,
+    "website_header": 84,
+    "recorded_score": 84,
+    "team_points": 84,
+    "player_points": 84,
+    "source_url": "https://mongolia.basketball/en/games/181"
+  },
+  {
+    "game_id": "MBA-653",
+    "team_code": "DUA",
+    "previous_score": 81,
+    "website_header": 81,
+    "recorded_score": 81,
+    "team_points": 81,
+    "player_points": 81,
+    "source_url": "https://mongolia.basketball/en/games/181"
+  },
+  {
+    "game_id": "MBA-654",
+    "team_code": "BCH",
+    "previous_score": 98,
+    "website_header": 98,
+    "recorded_score": 98,
+    "team_points": 98,
+    "player_points": 98,
+    "source_url": "https://mongolia.basketball/en/games/272"
+  },
+  {
+    "game_id": "MBA-654",
+    "team_code": "BSM",
+    "previous_score": 78,
+    "website_header": 78,
+    "recorded_score": 78,
+    "team_points": 78,
+    "player_points": 78,
+    "source_url": "https://mongolia.basketball/en/games/272"
+  },
+  {
+    "game_id": "MBA-655",
+    "team_code": "ZVB",
+    "previous_score": 85,
+    "website_header": 85,
+    "recorded_score": 85,
+    "team_points": 85,
+    "player_points": 85,
+    "source_url": "https://mongolia.basketball/en/games/222"
+  },
+  {
+    "game_id": "MBA-655",
+    "team_code": "SGA",
+    "previous_score": 87,
+    "website_header": 87,
+    "recorded_score": 87,
+    "team_points": 87,
+    "player_points": 87,
+    "source_url": "https://mongolia.basketball/en/games/222"
+  },
+  {
+    "game_id": "MBA-656",
+    "team_code": "ETM",
+    "previous_score": 78,
+    "website_header": 78,
+    "recorded_score": 78,
+    "team_points": 78,
+    "player_points": 78,
+    "source_url": "https://mongolia.basketball/en/games/236"
+  },
+  {
+    "game_id": "MBA-656",
+    "team_code": "BTM",
+    "previous_score": 70,
+    "website_header": 70,
+    "recorded_score": 70,
+    "team_points": 70,
+    "player_points": 70,
+    "source_url": "https://mongolia.basketball/en/games/236"
+  },
+  {
+    "game_id": "MBA-657",
+    "team_code": "BSM",
+    "previous_score": 59,
+    "website_header": 61,
+    "recorded_score": 59,
+    "team_points": 59,
+    "player_points": 59,
+    "source_url": "https://mongolia.basketball/en/games/263"
+  },
+  {
+    "game_id": "MBA-657",
+    "team_code": "KUL",
+    "previous_score": 78,
+    "website_header": 86,
+    "recorded_score": 78,
+    "team_points": 78,
+    "player_points": 78,
+    "source_url": "https://mongolia.basketball/en/games/263"
+  },
+  {
+    "game_id": "MBA-658",
+    "team_code": "SGA",
+    "previous_score": 81,
+    "website_header": 81,
+    "recorded_score": 81,
+    "team_points": 81,
+    "player_points": 81,
+    "source_url": "https://mongolia.basketball/en/games/267"
+  },
+  {
+    "game_id": "MBA-658",
+    "team_code": "BCH",
+    "previous_score": 108,
+    "website_header": 108,
+    "recorded_score": 108,
+    "team_points": 108,
+    "player_points": 108,
+    "source_url": "https://mongolia.basketball/en/games/267"
+  },
+  {
+    "game_id": "MBA-659",
+    "team_code": "SEL",
+    "previous_score": 77,
+    "website_header": 77,
+    "recorded_score": 77,
+    "team_points": 77,
+    "player_points": 77,
+    "source_url": "https://mongolia.basketball/en/games/161"
+  },
+  {
+    "game_id": "MBA-659",
+    "team_code": "ZVB",
+    "previous_score": 83,
+    "website_header": 83,
+    "recorded_score": 83,
+    "team_points": 83,
+    "player_points": 83,
+    "source_url": "https://mongolia.basketball/en/games/161"
+  },
+  {
+    "game_id": "MBA-660",
+    "team_code": "ETM",
+    "previous_score": 87,
+    "website_header": 87,
+    "recorded_score": 87,
+    "team_points": 87,
+    "player_points": 87,
+    "source_url": "https://mongolia.basketball/en/games/158"
+  },
+  {
+    "game_id": "MBA-660",
+    "team_code": "BTM",
+    "previous_score": 73,
+    "website_header": 73,
+    "recorded_score": 73,
+    "team_points": 73,
+    "player_points": 73,
+    "source_url": "https://mongolia.basketball/en/games/158"
+  },
+  {
+    "game_id": "MBA-661",
+    "team_code": "KHF",
+    "previous_score": 89,
+    "website_header": 89,
+    "recorded_score": 89,
+    "team_points": 89,
+    "player_points": 89,
+    "source_url": "https://mongolia.basketball/en/games/166"
+  },
+  {
+    "game_id": "MBA-661",
+    "team_code": "BTM",
+    "previous_score": 97,
+    "website_header": 97,
+    "recorded_score": 97,
+    "team_points": 97,
+    "player_points": 97,
+    "source_url": "https://mongolia.basketball/en/games/166"
+  },
+  {
+    "game_id": "MBA-662",
+    "team_code": "DUA",
+    "previous_score": 79,
+    "website_header": 79,
+    "recorded_score": 79,
+    "team_points": 79,
+    "player_points": 79,
+    "source_url": "https://mongolia.basketball/en/games/211"
+  },
+  {
+    "game_id": "MBA-662",
+    "team_code": "SGA",
+    "previous_score": 63,
+    "website_header": 63,
+    "recorded_score": 63,
+    "team_points": 63,
+    "player_points": 63,
+    "source_url": "https://mongolia.basketball/en/games/211"
+  },
+  {
+    "game_id": "MBA-663",
+    "team_code": "ETM",
+    "previous_score": 77,
+    "website_header": 77,
+    "recorded_score": 77,
+    "team_points": 77,
+    "player_points": 77,
+    "source_url": "https://mongolia.basketball/en/games/143"
+  },
+  {
+    "game_id": "MBA-663",
+    "team_code": "BSM",
+    "previous_score": 76,
+    "website_header": 76,
+    "recorded_score": 76,
+    "team_points": 76,
+    "player_points": 76,
+    "source_url": "https://mongolia.basketball/en/games/143"
+  },
+  {
+    "game_id": "MBA-664",
+    "team_code": "SEL",
+    "previous_score": 108,
+    "website_header": 108,
+    "recorded_score": 108,
+    "team_points": 108,
+    "player_points": 108,
+    "source_url": "https://mongolia.basketball/en/games/262"
+  },
+  {
+    "game_id": "MBA-664",
+    "team_code": "SGA",
+    "previous_score": 92,
+    "website_header": 92,
+    "recorded_score": 92,
+    "team_points": 92,
+    "player_points": 92,
+    "source_url": "https://mongolia.basketball/en/games/262"
+  },
+  {
+    "game_id": "MBA-665",
+    "team_code": "SGA",
+    "previous_score": 89,
+    "website_header": 89,
+    "recorded_score": 89,
+    "team_points": 89,
+    "player_points": 89,
+    "source_url": "https://mongolia.basketball/en/games/229"
+  },
+  {
+    "game_id": "MBA-665",
+    "team_code": "KHF",
+    "previous_score": 90,
+    "website_header": 90,
+    "recorded_score": 90,
+    "team_points": 90,
+    "player_points": 90,
+    "source_url": "https://mongolia.basketball/en/games/229"
+  },
+  {
+    "game_id": "MBA-666",
+    "team_code": "ETM",
+    "previous_score": 71,
+    "website_header": 71,
+    "recorded_score": 71,
+    "team_points": 71,
+    "player_points": 71,
+    "source_url": "https://mongolia.basketball/en/games/174"
+  },
+  {
+    "game_id": "MBA-666",
+    "team_code": "BCH",
+    "previous_score": 73,
+    "website_header": 73,
+    "recorded_score": 73,
+    "team_points": 73,
+    "player_points": 73,
+    "source_url": "https://mongolia.basketball/en/games/174"
+  },
+  {
+    "game_id": "MBA-667",
+    "team_code": "ZVB",
+    "previous_score": 101,
+    "website_header": 101,
+    "recorded_score": 101,
+    "team_points": 101,
+    "player_points": 101,
+    "source_url": "https://mongolia.basketball/en/games/239"
+  },
+  {
+    "game_id": "MBA-667",
+    "team_code": "BSM",
+    "previous_score": 93,
+    "website_header": 93,
+    "recorded_score": 93,
+    "team_points": 93,
+    "player_points": 93,
+    "source_url": "https://mongolia.basketball/en/games/239"
+  },
+  {
+    "game_id": "MBA-668",
+    "team_code": "BTM",
+    "previous_score": 64,
+    "website_header": 64,
+    "recorded_score": 64,
+    "team_points": 64,
+    "player_points": 64,
+    "source_url": "https://mongolia.basketball/en/games/146"
+  },
+  {
+    "game_id": "MBA-668",
+    "team_code": "KUL",
+    "previous_score": 74,
+    "website_header": 74,
+    "recorded_score": 74,
+    "team_points": 74,
+    "player_points": 74,
+    "source_url": "https://mongolia.basketball/en/games/146"
+  },
+  {
+    "game_id": "MBA-669",
+    "team_code": "DUA",
+    "previous_score": 67,
+    "website_header": 67,
+    "recorded_score": 67,
+    "team_points": 67,
+    "player_points": 67,
+    "source_url": "https://mongolia.basketball/en/games/176"
+  },
+  {
+    "game_id": "MBA-669",
+    "team_code": "SEL",
+    "previous_score": 81,
+    "website_header": 81,
+    "recorded_score": 81,
+    "team_points": 81,
+    "player_points": 81,
+    "source_url": "https://mongolia.basketball/en/games/176"
+  },
+  {
+    "game_id": "MBA-670",
+    "team_code": "ZVB",
+    "previous_score": 94,
+    "website_header": 94,
+    "recorded_score": 94,
+    "team_points": 94,
+    "player_points": 94,
+    "source_url": "https://mongolia.basketball/en/games/187"
+  },
+  {
+    "game_id": "MBA-670",
+    "team_code": "BCH",
+    "previous_score": 108,
+    "website_header": 108,
+    "recorded_score": 108,
+    "team_points": 108,
+    "player_points": 108,
+    "source_url": "https://mongolia.basketball/en/games/187"
+  },
+  {
+    "game_id": "MBA-671",
+    "team_code": "BCH",
+    "previous_score": 74,
+    "website_header": 74,
+    "recorded_score": 74,
+    "team_points": 74,
+    "player_points": 74,
+    "source_url": "https://mongolia.basketball/en/games/258"
+  },
+  {
+    "game_id": "MBA-671",
+    "team_code": "DUA",
+    "previous_score": 70,
+    "website_header": 70,
+    "recorded_score": 70,
+    "team_points": 70,
+    "player_points": 70,
+    "source_url": "https://mongolia.basketball/en/games/258"
+  },
+  {
+    "game_id": "MBA-672",
+    "team_code": "ZVB",
+    "previous_score": 65,
+    "website_header": 65,
+    "recorded_score": 65,
+    "team_points": 65,
+    "player_points": 65,
+    "source_url": "https://mongolia.basketball/en/games/193"
+  },
+  {
+    "game_id": "MBA-672",
+    "team_code": "BTM",
+    "previous_score": 80,
+    "website_header": 80,
+    "recorded_score": 80,
+    "team_points": 80,
+    "player_points": 80,
+    "source_url": "https://mongolia.basketball/en/games/193"
+  },
+  {
+    "game_id": "MBA-673",
+    "team_code": "SGA",
+    "previous_score": 69,
+    "website_header": 69,
+    "recorded_score": 69,
+    "team_points": 69,
+    "player_points": 69,
+    "source_url": "https://mongolia.basketball/en/games/257"
+  },
+  {
+    "game_id": "MBA-673",
+    "team_code": "KUL",
+    "previous_score": 90,
+    "website_header": 90,
+    "recorded_score": 90,
+    "team_points": 90,
+    "player_points": 90,
+    "source_url": "https://mongolia.basketball/en/games/257"
+  },
+  {
+    "game_id": "MBA-674",
+    "team_code": "KHF",
+    "previous_score": 83,
+    "website_header": 83,
+    "recorded_score": 83,
+    "team_points": 83,
+    "player_points": 83,
+    "source_url": "https://mongolia.basketball/en/games/255"
+  },
+  {
+    "game_id": "MBA-674",
+    "team_code": "BCH",
+    "previous_score": 93,
+    "website_header": 93,
+    "recorded_score": 93,
+    "team_points": 93,
+    "player_points": 93,
+    "source_url": "https://mongolia.basketball/en/games/255"
+  },
+  {
+    "game_id": "MBA-675",
+    "team_code": "BSM",
+    "previous_score": 84,
+    "website_header": 84,
+    "recorded_score": 84,
+    "team_points": 84,
+    "player_points": 84,
+    "source_url": "https://mongolia.basketball/en/games/175"
+  },
+  {
+    "game_id": "MBA-675",
+    "team_code": "BTM",
+    "previous_score": 58,
+    "website_header": 58,
+    "recorded_score": 58,
+    "team_points": 58,
+    "player_points": 58,
+    "source_url": "https://mongolia.basketball/en/games/175"
+  },
+  {
+    "game_id": "MBA-676",
+    "team_code": "KHF",
+    "previous_score": 91,
+    "website_header": 91,
+    "recorded_score": 91,
+    "team_points": 91,
+    "player_points": 91,
+    "source_url": "https://mongolia.basketball/en/games/205"
+  },
+  {
+    "game_id": "MBA-676",
+    "team_code": "DUA",
+    "previous_score": 64,
+    "website_header": 64,
+    "recorded_score": 64,
+    "team_points": 64,
+    "player_points": 64,
+    "source_url": "https://mongolia.basketball/en/games/205"
+  },
+  {
+    "game_id": "MBA-677",
+    "team_code": "ETM",
+    "previous_score": 83,
+    "website_header": 83,
+    "recorded_score": 83,
+    "team_points": 83,
+    "player_points": 83,
+    "source_url": "https://mongolia.basketball/en/games/273"
+  },
+  {
+    "game_id": "MBA-677",
+    "team_code": "SEL",
+    "previous_score": 78,
+    "website_header": 78,
+    "recorded_score": 78,
+    "team_points": 78,
+    "player_points": 78,
+    "source_url": "https://mongolia.basketball/en/games/273"
+  },
+  {
+    "game_id": "MBA-678",
+    "team_code": "ZVB",
+    "previous_score": 80,
+    "website_header": 80,
+    "recorded_score": 80,
+    "team_points": 80,
+    "player_points": 80,
+    "source_url": "https://mongolia.basketball/en/games/224"
+  },
+  {
+    "game_id": "MBA-678",
+    "team_code": "SEL",
+    "previous_score": 71,
+    "website_header": 71,
+    "recorded_score": 71,
+    "team_points": 71,
+    "player_points": 71,
+    "source_url": "https://mongolia.basketball/en/games/224"
+  },
+  {
+    "game_id": "MBA-679",
+    "team_code": "BSM",
+    "previous_score": 79,
+    "website_header": 79,
+    "recorded_score": 79,
+    "team_points": 79,
+    "player_points": 79,
+    "source_url": "https://mongolia.basketball/en/games/180"
+  },
+  {
+    "game_id": "MBA-679",
+    "team_code": "SGA",
+    "previous_score": 88,
+    "website_header": 88,
+    "recorded_score": 88,
+    "team_points": 88,
+    "player_points": 88,
+    "source_url": "https://mongolia.basketball/en/games/180"
+  },
+  {
+    "game_id": "MBA-680",
+    "team_code": "ETM",
+    "previous_score": 70,
+    "website_header": 70,
+    "recorded_score": 70,
+    "team_points": 70,
+    "player_points": 70,
+    "source_url": "https://mongolia.basketball/en/games/169"
+  },
+  {
+    "game_id": "MBA-680",
+    "team_code": "DUA",
+    "previous_score": 63,
+    "website_header": 68,
+    "recorded_score": 68,
+    "team_points": 68,
+    "player_points": 68,
+    "source_url": "https://mongolia.basketball/en/games/169"
+  },
+  {
+    "game_id": "MBA-681",
+    "team_code": "BCH",
+    "previous_score": 66,
+    "website_header": 66,
+    "recorded_score": 66,
+    "team_points": 66,
+    "player_points": 66,
+    "source_url": "https://mongolia.basketball/en/games/206"
+  },
+  {
+    "game_id": "MBA-681",
+    "team_code": "BTM",
+    "previous_score": 61,
+    "website_header": 61,
+    "recorded_score": 61,
+    "team_points": 61,
+    "player_points": 61,
+    "source_url": "https://mongolia.basketball/en/games/206"
+  },
+  {
+    "game_id": "MBA-682",
+    "team_code": "SEL",
+    "previous_score": 71,
+    "website_header": 71,
+    "recorded_score": 71,
+    "team_points": 71,
+    "player_points": 71,
+    "source_url": "https://mongolia.basketball/en/games/179"
+  },
+  {
+    "game_id": "MBA-682",
+    "team_code": "KHF",
+    "previous_score": 83,
+    "website_header": 83,
+    "recorded_score": 83,
+    "team_points": 83,
+    "player_points": 83,
+    "source_url": "https://mongolia.basketball/en/games/179"
+  },
+  {
+    "game_id": "MBA-683",
+    "team_code": "DUA",
+    "previous_score": 79,
+    "website_header": 79,
+    "recorded_score": 79,
+    "team_points": 79,
+    "player_points": 79,
+    "source_url": "https://mongolia.basketball/en/games/147"
+  },
+  {
+    "game_id": "MBA-683",
+    "team_code": "BSM",
+    "previous_score": 69,
+    "website_header": 69,
+    "recorded_score": 69,
+    "team_points": 69,
+    "player_points": 69,
+    "source_url": "https://mongolia.basketball/en/games/147"
+  },
+  {
+    "game_id": "MBA-684",
+    "team_code": "KHF",
+    "previous_score": 77,
+    "website_header": 77,
+    "recorded_score": 77,
+    "team_points": 77,
+    "player_points": 77,
+    "source_url": "https://mongolia.basketball/en/games/152"
+  },
+  {
+    "game_id": "MBA-684",
+    "team_code": "ETM",
+    "previous_score": 74,
+    "website_header": 74,
+    "recorded_score": 74,
+    "team_points": 74,
+    "player_points": 74,
+    "source_url": "https://mongolia.basketball/en/games/152"
+  },
+  {
+    "game_id": "MBA-685",
+    "team_code": "KUL",
+    "previous_score": 92,
+    "website_header": 92,
+    "recorded_score": 92,
+    "team_points": 92,
+    "player_points": 92,
+    "source_url": "https://mongolia.basketball/en/games/271"
+  },
+  {
+    "game_id": "MBA-685",
+    "team_code": "BCH",
+    "previous_score": 81,
+    "website_header": 81,
+    "recorded_score": 81,
+    "team_points": 81,
+    "player_points": 81,
+    "source_url": "https://mongolia.basketball/en/games/271"
+  },
+  {
+    "game_id": "MBA-686",
+    "team_code": "KUL",
+    "previous_score": 93,
+    "website_header": 93,
+    "recorded_score": 93,
+    "team_points": 93,
+    "player_points": 93,
+    "source_url": "https://mongolia.basketball/en/games/238"
+  },
+  {
+    "game_id": "MBA-686",
+    "team_code": "ZVB",
+    "previous_score": 76,
+    "website_header": 76,
+    "recorded_score": 76,
+    "team_points": 76,
+    "player_points": 76,
+    "source_url": "https://mongolia.basketball/en/games/238"
+  },
+  {
+    "game_id": "MBA-687",
+    "team_code": "BSM",
+    "previous_score": 95,
+    "website_header": 95,
+    "recorded_score": 95,
+    "team_points": 95,
+    "player_points": 95,
+    "source_url": "https://mongolia.basketball/en/games/232"
+  },
+  {
+    "game_id": "MBA-687",
+    "team_code": "BCH",
+    "previous_score": 78,
+    "website_header": 78,
+    "recorded_score": 78,
+    "team_points": 78,
+    "player_points": 78,
+    "source_url": "https://mongolia.basketball/en/games/232"
+  },
+  {
+    "game_id": "MBA-688",
+    "team_code": "ZVB",
+    "previous_score": 84,
+    "website_header": 84,
+    "recorded_score": 84,
+    "team_points": 84,
+    "player_points": 84,
+    "source_url": "https://mongolia.basketball/en/games/247"
+  },
+  {
+    "game_id": "MBA-688",
+    "team_code": "KHF",
+    "previous_score": 76,
+    "website_header": 76,
+    "recorded_score": 76,
+    "team_points": 76,
+    "player_points": 76,
+    "source_url": "https://mongolia.basketball/en/games/247"
+  },
+  {
+    "game_id": "MBA-689",
+    "team_code": "SGA",
+    "previous_score": 79,
+    "website_header": 79,
+    "recorded_score": 79,
+    "team_points": 79,
+    "player_points": 79,
+    "source_url": "https://mongolia.basketball/en/games/251"
+  },
+  {
+    "game_id": "MBA-689",
+    "team_code": "ETM",
+    "previous_score": 74,
+    "website_header": 74,
+    "recorded_score": 74,
+    "team_points": 74,
+    "player_points": 74,
+    "source_url": "https://mongolia.basketball/en/games/251"
+  },
+  {
+    "game_id": "MBA-690",
+    "team_code": "KUL",
+    "previous_score": 72,
+    "website_header": 72,
+    "recorded_score": 72,
+    "team_points": 72,
+    "player_points": 72,
+    "source_url": "https://mongolia.basketball/en/games/144"
+  },
+  {
+    "game_id": "MBA-690",
+    "team_code": "BTM",
+    "previous_score": 65,
+    "website_header": 65,
+    "recorded_score": 65,
+    "team_points": 65,
+    "player_points": 65,
+    "source_url": "https://mongolia.basketball/en/games/144"
+  },
+  {
+    "game_id": "MBA-691",
+    "team_code": "SGA",
+    "previous_score": 65,
+    "website_header": 65,
+    "recorded_score": 65,
+    "team_points": 65,
+    "player_points": 65,
+    "source_url": "https://mongolia.basketball/en/games/264"
+  },
+  {
+    "game_id": "MBA-691",
+    "team_code": "SEL",
+    "previous_score": 70,
+    "website_header": 70,
+    "recorded_score": 70,
+    "team_points": 70,
+    "player_points": 70,
+    "source_url": "https://mongolia.basketball/en/games/264"
+  },
+  {
+    "game_id": "MBA-692",
+    "team_code": "DUA",
+    "previous_score": 68,
+    "website_header": 68,
+    "recorded_score": 68,
+    "team_points": 68,
+    "player_points": 68,
+    "source_url": "https://mongolia.basketball/en/games/160"
+  },
+  {
+    "game_id": "MBA-692",
+    "team_code": "ETM",
+    "previous_score": 70,
+    "website_header": 70,
+    "recorded_score": 70,
+    "team_points": 70,
+    "player_points": 70,
+    "source_url": "https://mongolia.basketball/en/games/160"
+  },
+  {
+    "game_id": "MBA-693",
+    "team_code": "BCH",
+    "previous_score": 105,
+    "website_header": 105,
+    "recorded_score": 105,
+    "team_points": 105,
+    "player_points": 105,
+    "source_url": "https://mongolia.basketball/en/games/155"
+  },
+  {
+    "game_id": "MBA-693",
+    "team_code": "KUL",
+    "previous_score": 114,
+    "website_header": 114,
+    "recorded_score": 114,
+    "team_points": 114,
+    "player_points": 114,
+    "source_url": "https://mongolia.basketball/en/games/155"
+  },
+  {
+    "game_id": "MBA-694",
+    "team_code": "KHF",
+    "previous_score": 92,
+    "website_header": 92,
+    "recorded_score": 92,
+    "team_points": 92,
+    "player_points": 92,
+    "source_url": "https://mongolia.basketball/en/games/194"
+  },
+  {
+    "game_id": "MBA-694",
+    "team_code": "BSM",
+    "previous_score": 87,
+    "website_header": 87,
+    "recorded_score": 87,
+    "team_points": 87,
+    "player_points": 87,
+    "source_url": "https://mongolia.basketball/en/games/194"
+  },
+  {
+    "game_id": "MBA-695",
+    "team_code": "SGA",
+    "previous_score": 63,
+    "website_header": 63,
+    "recorded_score": 63,
+    "team_points": 63,
+    "player_points": 63,
+    "source_url": "https://mongolia.basketball/en/games/260"
+  },
+  {
+    "game_id": "MBA-695",
+    "team_code": "BTM",
+    "previous_score": 57,
+    "website_header": 57,
+    "recorded_score": 57,
+    "team_points": 57,
+    "player_points": 57,
+    "source_url": "https://mongolia.basketball/en/games/260"
+  },
+  {
+    "game_id": "MBA-696",
+    "team_code": "DUA",
+    "previous_score": 101,
+    "website_header": 101,
+    "recorded_score": 101,
+    "team_points": 101,
+    "player_points": 101,
+    "source_url": "https://mongolia.basketball/en/games/204"
+  },
+  {
+    "game_id": "MBA-696",
+    "team_code": "ZVB",
+    "previous_score": 91,
+    "website_header": 91,
+    "recorded_score": 91,
+    "team_points": 91,
+    "player_points": 91,
+    "source_url": "https://mongolia.basketball/en/games/204"
+  },
+  {
+    "game_id": "MBA-697",
+    "team_code": "KUL",
+    "previous_score": 77,
+    "website_header": 77,
+    "recorded_score": 77,
+    "team_points": 77,
+    "player_points": 77,
+    "source_url": "https://mongolia.basketball/en/games/141"
+  },
+  {
+    "game_id": "MBA-697",
+    "team_code": "SEL",
+    "previous_score": 69,
+    "website_header": 69,
+    "recorded_score": 69,
+    "team_points": 69,
+    "player_points": 69,
+    "source_url": "https://mongolia.basketball/en/games/141"
+  },
+  {
+    "game_id": "MBA-698",
+    "team_code": "KUL",
+    "previous_score": 91,
+    "website_header": 91,
+    "recorded_score": 91,
+    "team_points": 91,
+    "player_points": 91,
+    "source_url": "https://mongolia.basketball/en/games/189"
+  },
+  {
+    "game_id": "MBA-698",
+    "team_code": "KHF",
+    "previous_score": 96,
+    "website_header": 96,
+    "recorded_score": 96,
+    "team_points": 96,
+    "player_points": 96,
+    "source_url": "https://mongolia.basketball/en/games/189"
+  },
+  {
+    "game_id": "MBA-699",
+    "team_code": "SGA",
+    "previous_score": 82,
+    "website_header": 82,
+    "recorded_score": 82,
+    "team_points": 82,
+    "player_points": 82,
+    "source_url": "https://mongolia.basketball/en/games/184"
+  },
+  {
+    "game_id": "MBA-699",
+    "team_code": "ZVB",
+    "previous_score": 80,
+    "website_header": 80,
+    "recorded_score": 80,
+    "team_points": 80,
+    "player_points": 80,
+    "source_url": "https://mongolia.basketball/en/games/184"
+  },
+  {
+    "game_id": "MBA-700",
+    "team_code": "BSM",
+    "previous_score": 91,
+    "website_header": 91,
+    "recorded_score": 91,
+    "team_points": 91,
+    "player_points": 91,
+    "source_url": "https://mongolia.basketball/en/games/225"
+  },
+  {
+    "game_id": "MBA-700",
+    "team_code": "SEL",
+    "previous_score": 68,
+    "website_header": 68,
+    "recorded_score": 68,
+    "team_points": 68,
+    "player_points": 68,
+    "source_url": "https://mongolia.basketball/en/games/225"
+  },
+  {
+    "game_id": "MBA-701",
+    "team_code": "ETM",
+    "previous_score": 74,
+    "website_header": 74,
+    "recorded_score": 74,
+    "team_points": 74,
+    "player_points": 74,
+    "source_url": "https://mongolia.basketball/en/games/197"
+  },
+  {
+    "game_id": "MBA-701",
+    "team_code": "BCH",
+    "previous_score": 83,
+    "website_header": 83,
+    "recorded_score": 83,
+    "team_points": 83,
+    "player_points": 83,
+    "source_url": "https://mongolia.basketball/en/games/197"
+  },
+  {
+    "game_id": "MBA-702",
+    "team_code": "DUA",
+    "previous_score": 97,
+    "website_header": 97,
+    "recorded_score": 97,
+    "team_points": 97,
+    "player_points": 97,
+    "source_url": "https://mongolia.basketball/en/games/237"
+  },
+  {
+    "game_id": "MBA-702",
+    "team_code": "KUL",
+    "previous_score": 106,
+    "website_header": 106,
+    "recorded_score": 106,
+    "team_points": 106,
+    "player_points": 106,
+    "source_url": "https://mongolia.basketball/en/games/237"
+  },
+  {
+    "game_id": "MBA-703",
+    "team_code": "BTM",
+    "previous_score": 74,
+    "website_header": 74,
+    "recorded_score": 74,
+    "team_points": 74,
+    "player_points": 74,
+    "source_url": "https://mongolia.basketball/en/games/218"
+  },
+  {
+    "game_id": "MBA-703",
+    "team_code": "BCH",
+    "previous_score": 81,
+    "website_header": 81,
+    "recorded_score": 81,
+    "team_points": 81,
+    "player_points": 81,
+    "source_url": "https://mongolia.basketball/en/games/218"
+  },
+  {
+    "game_id": "MBA-704",
+    "team_code": "KHF",
+    "previous_score": 83,
+    "website_header": 83,
+    "recorded_score": 83,
+    "team_points": 83,
+    "player_points": 83,
+    "source_url": "https://mongolia.basketball/en/games/268"
+  },
+  {
+    "game_id": "MBA-704",
+    "team_code": "ZVB",
+    "previous_score": 90,
+    "website_header": 90,
+    "recorded_score": 90,
+    "team_points": 90,
+    "player_points": 90,
+    "source_url": "https://mongolia.basketball/en/games/268"
+  },
+  {
+    "game_id": "MBA-705",
+    "team_code": "KUL",
+    "previous_score": 61,
+    "website_header": 61,
+    "recorded_score": 61,
+    "team_points": 61,
+    "player_points": 61,
+    "source_url": "https://mongolia.basketball/en/games/165"
+  },
+  {
+    "game_id": "MBA-705",
+    "team_code": "SGA",
+    "previous_score": 68,
+    "website_header": 68,
+    "recorded_score": 68,
+    "team_points": 68,
+    "player_points": 68,
+    "source_url": "https://mongolia.basketball/en/games/165"
+  },
+  {
+    "game_id": "MBA-706",
+    "team_code": "BTM",
+    "previous_score": 74,
+    "website_header": 74,
+    "recorded_score": 74,
+    "team_points": 74,
+    "player_points": 74,
+    "source_url": "https://mongolia.basketball/en/games/153"
+  },
+  {
+    "game_id": "MBA-706",
+    "team_code": "KHF",
+    "previous_score": 79,
+    "website_header": 79,
+    "recorded_score": 79,
+    "team_points": 79,
+    "player_points": 79,
+    "source_url": "https://mongolia.basketball/en/games/153"
+  },
+  {
+    "game_id": "MBA-707",
+    "team_code": "BCH",
+    "previous_score": 77,
+    "website_header": 77,
+    "recorded_score": 77,
+    "team_points": 77,
+    "player_points": 77,
+    "source_url": "https://mongolia.basketball/en/games/142"
+  },
+  {
+    "game_id": "MBA-707",
+    "team_code": "SGA",
+    "previous_score": 81,
+    "website_header": 81,
+    "recorded_score": 81,
+    "team_points": 81,
+    "player_points": 81,
+    "source_url": "https://mongolia.basketball/en/games/142"
+  },
+  {
+    "game_id": "MBA-708",
+    "team_code": "SEL",
+    "previous_score": 76,
+    "website_header": 76,
+    "recorded_score": 76,
+    "team_points": 76,
+    "player_points": 76,
+    "source_url": "https://mongolia.basketball/en/games/212"
+  },
+  {
+    "game_id": "MBA-708",
+    "team_code": "DUA",
+    "previous_score": 74,
+    "website_header": 74,
+    "recorded_score": 74,
+    "team_points": 74,
+    "player_points": 74,
+    "source_url": "https://mongolia.basketball/en/games/212"
+  },
+  {
+    "game_id": "MBA-709",
+    "team_code": "BSM",
+    "previous_score": 63,
+    "website_header": 63,
+    "recorded_score": 63,
+    "team_points": 63,
+    "player_points": 63,
+    "source_url": "https://mongolia.basketball/en/games/252"
+  },
+  {
+    "game_id": "MBA-709",
+    "team_code": "ETM",
+    "previous_score": 80,
+    "website_header": 80,
+    "recorded_score": 80,
+    "team_points": 80,
+    "player_points": 80,
+    "source_url": "https://mongolia.basketball/en/games/252"
+  },
+  {
+    "game_id": "MBA-710",
+    "team_code": "DUA",
+    "previous_score": 76,
+    "website_header": 80,
+    "recorded_score": 80,
+    "team_points": 80,
+    "player_points": 80,
+    "source_url": "https://mongolia.basketball/en/games/241"
+  },
+  {
+    "game_id": "MBA-710",
+    "team_code": "BTM",
+    "previous_score": 83,
+    "website_header": 83,
+    "recorded_score": 83,
+    "team_points": 83,
+    "player_points": 83,
+    "source_url": "https://mongolia.basketball/en/games/241"
+  },
+  {
+    "game_id": "MBA-711",
+    "team_code": "BCH",
+    "previous_score": 91,
+    "website_header": 93,
+    "recorded_score": 93,
+    "team_points": 93,
+    "player_points": 93,
+    "source_url": "https://mongolia.basketball/en/games/235"
+  },
+  {
+    "game_id": "MBA-711",
+    "team_code": "ZVB",
+    "previous_score": 88,
+    "website_header": 88,
+    "recorded_score": 88,
+    "team_points": 88,
+    "player_points": 88,
+    "source_url": "https://mongolia.basketball/en/games/235"
+  },
+  {
+    "game_id": "MBA-712",
+    "team_code": "SEL",
+    "previous_score": 78,
+    "website_header": 78,
+    "recorded_score": 78,
+    "team_points": 78,
+    "player_points": 78,
+    "source_url": "https://mongolia.basketball/en/games/219"
+  },
+  {
+    "game_id": "MBA-712",
+    "team_code": "KUL",
+    "previous_score": 88,
+    "website_header": 88,
+    "recorded_score": 88,
+    "team_points": 88,
+    "player_points": 88,
+    "source_url": "https://mongolia.basketball/en/games/219"
+  },
+  {
+    "game_id": "MBA-713",
+    "team_code": "KUL",
+    "previous_score": 75,
+    "website_header": 75,
+    "recorded_score": 75,
+    "team_points": 75,
+    "player_points": 75,
+    "source_url": "https://mongolia.basketball/en/games/191"
+  },
+  {
+    "game_id": "MBA-713",
+    "team_code": "BSM",
+    "previous_score": 93,
+    "website_header": 93,
+    "recorded_score": 93,
+    "team_points": 93,
+    "player_points": 93,
+    "source_url": "https://mongolia.basketball/en/games/191"
+  },
+  {
+    "game_id": "MBA-714",
+    "team_code": "SGA",
+    "previous_score": 103,
+    "website_header": 103,
+    "recorded_score": 103,
+    "team_points": 103,
+    "player_points": 103,
+    "source_url": "https://mongolia.basketball/en/games/233"
+  },
+  {
+    "game_id": "MBA-714",
+    "team_code": "DUA",
+    "previous_score": 96,
+    "website_header": 96,
+    "recorded_score": 96,
+    "team_points": 96,
+    "player_points": 96,
+    "source_url": "https://mongolia.basketball/en/games/233"
+  },
+  {
+    "game_id": "MBA-715",
+    "team_code": "BCH",
+    "previous_score": 90,
+    "website_header": 90,
+    "recorded_score": 90,
+    "team_points": 90,
+    "player_points": 90,
+    "source_url": "https://mongolia.basketball/en/games/209"
+  },
+  {
+    "game_id": "MBA-715",
+    "team_code": "KHF",
+    "previous_score": 68,
+    "website_header": 68,
+    "recorded_score": 68,
+    "team_points": 68,
+    "player_points": 68,
+    "source_url": "https://mongolia.basketball/en/games/209"
+  },
+  {
+    "game_id": "MBA-716",
+    "team_code": "ZVB",
+    "previous_score": 74,
+    "website_header": 74,
+    "recorded_score": 74,
+    "team_points": 74,
+    "player_points": 74,
+    "source_url": "https://mongolia.basketball/en/games/198"
+  },
+  {
+    "game_id": "MBA-716",
+    "team_code": "SEL",
+    "previous_score": 79,
+    "website_header": 79,
+    "recorded_score": 79,
+    "team_points": 79,
+    "player_points": 79,
+    "source_url": "https://mongolia.basketball/en/games/198"
+  },
+  {
+    "game_id": "MBA-717",
+    "team_code": "KHF",
+    "previous_score": 84,
+    "website_header": 84,
+    "recorded_score": 84,
+    "team_points": 84,
+    "player_points": 84,
+    "source_url": "https://mongolia.basketball/en/games/226"
+  },
+  {
+    "game_id": "MBA-717",
+    "team_code": "SGA",
+    "previous_score": 85,
+    "website_header": 85,
+    "recorded_score": 85,
+    "team_points": 85,
+    "player_points": 85,
+    "source_url": "https://mongolia.basketball/en/games/226"
+  },
+  {
+    "game_id": "MBA-718",
+    "team_code": "ETM",
+    "previous_score": 76,
+    "website_header": 76,
+    "recorded_score": 76,
+    "team_points": 76,
+    "player_points": 76,
+    "source_url": "https://mongolia.basketball/en/games/186"
+  },
+  {
+    "game_id": "MBA-718",
+    "team_code": "KUL",
+    "previous_score": 86,
+    "website_header": 86,
+    "recorded_score": 86,
+    "team_points": 86,
+    "player_points": 86,
+    "source_url": "https://mongolia.basketball/en/games/186"
+  },
+  {
+    "game_id": "MBA-719",
+    "team_code": "DUA",
+    "previous_score": 101,
+    "website_header": 101,
+    "recorded_score": 101,
+    "team_points": 101,
+    "player_points": 101,
+    "source_url": "https://mongolia.basketball/en/games/164"
+  },
+  {
+    "game_id": "MBA-719",
+    "team_code": "BCH",
+    "previous_score": 104,
+    "website_header": 104,
+    "recorded_score": 104,
+    "team_points": 104,
+    "player_points": 104,
+    "source_url": "https://mongolia.basketball/en/games/164"
+  },
+  {
+    "game_id": "MBA-720",
+    "team_code": "SEL",
+    "previous_score": 89,
+    "website_header": 89,
+    "recorded_score": 89,
+    "team_points": 89,
+    "player_points": 89,
+    "source_url": "https://mongolia.basketball/en/games/173"
+  },
+  {
+    "game_id": "MBA-720",
+    "team_code": "BTM",
+    "previous_score": 82,
+    "website_header": 82,
+    "recorded_score": 82,
+    "team_points": 82,
+    "player_points": 82,
+    "source_url": "https://mongolia.basketball/en/games/173"
+  },
+  {
+    "game_id": "MBA-721",
+    "team_code": "DUA",
+    "previous_score": 83,
+    "website_header": 83,
+    "recorded_score": 83,
+    "team_points": 83,
+    "player_points": 83,
+    "source_url": "https://mongolia.basketball/en/games/266"
+  },
+  {
+    "game_id": "MBA-721",
+    "team_code": "ETM",
+    "previous_score": 85,
+    "website_header": 85,
+    "recorded_score": 85,
+    "team_points": 85,
+    "player_points": 85,
+    "source_url": "https://mongolia.basketball/en/games/266"
+  },
+  {
+    "game_id": "MBA-722",
+    "team_code": "BTM",
+    "previous_score": 79,
+    "website_header": 79,
+    "recorded_score": 79,
+    "team_points": 79,
+    "player_points": 79,
+    "source_url": "https://mongolia.basketball/en/games/208"
+  },
+  {
+    "game_id": "MBA-722",
+    "team_code": "BSM",
+    "previous_score": 84,
+    "website_header": 84,
+    "recorded_score": 84,
+    "team_points": 84,
+    "player_points": 84,
+    "source_url": "https://mongolia.basketball/en/games/208"
+  },
+  {
+    "game_id": "MBA-723",
+    "team_code": "KHF",
+    "previous_score": 93,
+    "website_header": 93,
+    "recorded_score": 93,
+    "team_points": 93,
+    "player_points": 93,
+    "source_url": "https://mongolia.basketball/en/games/183"
+  },
+  {
+    "game_id": "MBA-723",
+    "team_code": "SEL",
+    "previous_score": 94,
+    "website_header": 94,
+    "recorded_score": 94,
+    "team_points": 94,
+    "player_points": 94,
+    "source_url": "https://mongolia.basketball/en/games/183"
+  },
+  {
+    "game_id": "MBA-724",
+    "team_code": "ZVB",
+    "previous_score": 88,
+    "website_header": 88,
+    "recorded_score": 88,
+    "team_points": 88,
+    "player_points": 88,
+    "source_url": "https://mongolia.basketball/en/games/216"
+  },
+  {
+    "game_id": "MBA-724",
+    "team_code": "KUL",
+    "previous_score": 94,
+    "website_header": 94,
+    "recorded_score": 94,
+    "team_points": 94,
+    "player_points": 94,
+    "source_url": "https://mongolia.basketball/en/games/216"
+  },
+  {
+    "game_id": "MBA-725",
+    "team_code": "ETM",
+    "previous_score": 72,
+    "website_header": 72,
+    "recorded_score": 72,
+    "team_points": 72,
+    "player_points": 72,
+    "source_url": "https://mongolia.basketball/en/games/227"
+  },
+  {
+    "game_id": "MBA-725",
+    "team_code": "ZVB",
+    "previous_score": 70,
+    "website_header": 70,
+    "recorded_score": 70,
+    "team_points": 70,
+    "player_points": 70,
+    "source_url": "https://mongolia.basketball/en/games/227"
+  },
+  {
+    "game_id": "MBA-726",
+    "team_code": "BCH",
+    "previous_score": 94,
+    "website_header": 94,
+    "recorded_score": 94,
+    "team_points": 94,
+    "player_points": 94,
+    "source_url": "https://mongolia.basketball/en/games/195"
+  },
+  {
+    "game_id": "MBA-726",
+    "team_code": "BSM",
+    "previous_score": 99,
+    "website_header": 99,
+    "recorded_score": 99,
+    "team_points": 99,
+    "player_points": 99,
+    "source_url": "https://mongolia.basketball/en/games/195"
+  },
+  {
+    "game_id": "MBA-727",
+    "team_code": "KUL",
+    "previous_score": 69,
+    "website_header": 69,
+    "recorded_score": 69,
+    "team_points": 69,
+    "player_points": 69,
+    "source_url": "https://mongolia.basketball/en/games/220"
+  },
+  {
+    "game_id": "MBA-727",
+    "team_code": "DUA",
+    "previous_score": 82,
+    "website_header": 82,
+    "recorded_score": 82,
+    "team_points": 82,
+    "player_points": 82,
+    "source_url": "https://mongolia.basketball/en/games/220"
+  },
+  {
+    "game_id": "MBA-728",
+    "team_code": "SEL",
+    "previous_score": 86,
+    "website_header": 86,
+    "recorded_score": 86,
+    "team_points": 86,
+    "player_points": 86,
+    "source_url": "https://mongolia.basketball/en/games/221"
+  },
+  {
+    "game_id": "MBA-728",
+    "team_code": "BCH",
+    "previous_score": 85,
+    "website_header": 85,
+    "recorded_score": 85,
+    "team_points": 85,
+    "player_points": 85,
+    "source_url": "https://mongolia.basketball/en/games/221"
+  },
+  {
+    "game_id": "MBA-729",
+    "team_code": "BSM",
+    "previous_score": 73,
+    "website_header": 73,
+    "recorded_score": 73,
+    "team_points": 73,
+    "player_points": 73,
+    "source_url": "https://mongolia.basketball/en/games/177"
+  },
+  {
+    "game_id": "MBA-729",
+    "team_code": "ZVB",
+    "previous_score": 79,
+    "website_header": 79,
+    "recorded_score": 79,
+    "team_points": 79,
+    "player_points": 79,
+    "source_url": "https://mongolia.basketball/en/games/177"
+  },
+  {
+    "game_id": "MBA-730",
+    "team_code": "BTM",
+    "previous_score": 54,
+    "website_header": 54,
+    "recorded_score": 54,
+    "team_points": 54,
+    "player_points": 54,
+    "source_url": "https://mongolia.basketball/en/games/149"
+  },
+  {
+    "game_id": "MBA-730",
+    "team_code": "ETM",
+    "previous_score": 86,
+    "website_header": 86,
+    "recorded_score": 86,
+    "team_points": 86,
+    "player_points": 86,
+    "source_url": "https://mongolia.basketball/en/games/149"
+  },
+  {
+    "game_id": "MBA-731",
+    "team_code": "DUA",
+    "previous_score": 93,
+    "website_header": 93,
+    "recorded_score": 93,
+    "team_points": 93,
+    "player_points": 93,
+    "source_url": "https://mongolia.basketball/en/games/145"
+  },
+  {
+    "game_id": "MBA-731",
+    "team_code": "KHF",
+    "previous_score": 87,
+    "website_header": 87,
+    "recorded_score": 87,
+    "team_points": 87,
+    "player_points": 87,
+    "source_url": "https://mongolia.basketball/en/games/145"
+  },
+  {
+    "game_id": "MBA-732",
+    "team_code": "SEL",
+    "previous_score": 81,
+    "website_header": 81,
+    "recorded_score": 81,
+    "team_points": 81,
+    "player_points": 81,
+    "source_url": "https://mongolia.basketball/en/games/168"
+  },
+  {
+    "game_id": "MBA-732",
+    "team_code": "KUL",
+    "previous_score": 83,
+    "website_header": 83,
+    "recorded_score": 83,
+    "team_points": 83,
+    "player_points": 83,
+    "source_url": "https://mongolia.basketball/en/games/168"
+  },
+  {
+    "game_id": "MBA-733",
+    "team_code": "ZVB",
+    "previous_score": 84,
+    "website_header": 84,
+    "recorded_score": 84,
+    "team_points": 84,
+    "player_points": 84,
+    "source_url": "https://mongolia.basketball/en/games/274"
+  },
+  {
+    "game_id": "MBA-733",
+    "team_code": "DUA",
+    "previous_score": 74,
+    "website_header": 74,
+    "recorded_score": 74,
+    "team_points": 74,
+    "player_points": 74,
+    "source_url": "https://mongolia.basketball/en/games/274"
+  },
+  {
+    "game_id": "MBA-734",
+    "team_code": "ETM",
+    "previous_score": 77,
+    "website_header": 77,
+    "recorded_score": 77,
+    "team_points": 77,
+    "player_points": 77,
+    "source_url": "https://mongolia.basketball/en/games/199"
+  },
+  {
+    "game_id": "MBA-734",
+    "team_code": "SGA",
+    "previous_score": 80,
+    "website_header": 80,
+    "recorded_score": 80,
+    "team_points": 80,
+    "player_points": 80,
+    "source_url": "https://mongolia.basketball/en/games/199"
+  },
+  {
+    "game_id": "MBA-735",
+    "team_code": "BSM",
+    "previous_score": 41,
+    "website_header": 41,
+    "recorded_score": 41,
+    "team_points": 41,
+    "player_points": 41,
+    "source_url": "https://mongolia.basketball/en/games/217"
+  },
+  {
+    "game_id": "MBA-735",
+    "team_code": "KHF",
+    "previous_score": 120,
+    "website_header": 120,
+    "recorded_score": 120,
+    "team_points": 120,
+    "player_points": 120,
+    "source_url": "https://mongolia.basketball/en/games/217"
+  },
+  {
+    "game_id": "MBA-736",
+    "team_code": "BCH",
+    "previous_score": 100,
+    "website_header": 100,
+    "recorded_score": 100,
+    "team_points": 100,
+    "player_points": 100,
+    "source_url": "https://mongolia.basketball/en/games/213"
+  },
+  {
+    "game_id": "MBA-736",
+    "team_code": "SEL",
+    "previous_score": 106,
+    "website_header": 106,
+    "recorded_score": 106,
+    "team_points": 106,
+    "player_points": 106,
+    "source_url": "https://mongolia.basketball/en/games/213"
+  },
+  {
+    "game_id": "MBA-737",
+    "team_code": "BTM",
+    "previous_score": 67,
+    "website_header": 67,
+    "recorded_score": 67,
+    "team_points": 67,
+    "player_points": 67,
+    "source_url": "https://mongolia.basketball/en/games/265"
+  },
+  {
+    "game_id": "MBA-737",
+    "team_code": "DUA",
+    "previous_score": 88,
+    "website_header": 88,
+    "recorded_score": 88,
+    "team_points": 88,
+    "player_points": 88,
+    "source_url": "https://mongolia.basketball/en/games/265"
+  },
+  {
+    "game_id": "MBA-738",
+    "team_code": "SEL",
+    "previous_score": 88,
+    "website_header": 88,
+    "recorded_score": 88,
+    "team_points": 88,
+    "player_points": 88,
+    "source_url": "https://mongolia.basketball/en/games/159"
+  },
+  {
+    "game_id": "MBA-738",
+    "team_code": "ETM",
+    "previous_score": 69,
+    "website_header": 69,
+    "recorded_score": 69,
+    "team_points": 69,
+    "player_points": 69,
+    "source_url": "https://mongolia.basketball/en/games/159"
+  },
+  {
+    "game_id": "MBA-739",
+    "team_code": "ETM",
+    "previous_score": 108,
+    "website_header": 108,
+    "recorded_score": 108,
+    "team_points": 108,
+    "player_points": 108,
+    "source_url": "https://mongolia.basketball/en/games/171"
+  },
+  {
+    "game_id": "MBA-739",
+    "team_code": "KHF",
+    "previous_score": 90,
+    "website_header": 90,
+    "recorded_score": 90,
+    "team_points": 90,
+    "player_points": 90,
+    "source_url": "https://mongolia.basketball/en/games/171"
+  },
+  {
+    "game_id": "MBA-740",
+    "team_code": "SGA",
+    "previous_score": 88,
+    "website_header": 88,
+    "recorded_score": 88,
+    "team_points": 88,
+    "player_points": 88,
+    "source_url": "https://mongolia.basketball/en/games/270"
+  },
+  {
+    "game_id": "MBA-740",
+    "team_code": "BSM",
+    "previous_score": 95,
+    "website_header": 95,
+    "recorded_score": 95,
+    "team_points": 95,
+    "player_points": 95,
+    "source_url": "https://mongolia.basketball/en/games/270"
+  },
+  {
+    "game_id": "MBA-741",
+    "team_code": "BTM",
+    "previous_score": 84,
+    "website_header": 84,
+    "recorded_score": 84,
+    "team_points": 84,
+    "player_points": 84,
+    "source_url": "https://mongolia.basketball/en/games/201"
+  },
+  {
+    "game_id": "MBA-741",
+    "team_code": "ZVB",
+    "previous_score": 78,
+    "website_header": 78,
+    "recorded_score": 78,
+    "team_points": 78,
+    "player_points": 78,
+    "source_url": "https://mongolia.basketball/en/games/201"
+  },
+  {
+    "game_id": "MBA-742",
+    "team_code": "KUL",
+    "previous_score": 74,
+    "website_header": 74,
+    "recorded_score": 74,
+    "team_points": 74,
+    "player_points": 74,
+    "source_url": "https://mongolia.basketball/en/games/249"
+  },
+  {
+    "game_id": "MBA-742",
+    "team_code": "ETM",
+    "previous_score": 90,
+    "website_header": 90,
+    "recorded_score": 90,
+    "team_points": 90,
+    "player_points": 90,
+    "source_url": "https://mongolia.basketball/en/games/249"
+  },
+  {
+    "game_id": "MBA-743",
+    "team_code": "BTM",
+    "previous_score": 59,
+    "website_header": 59,
+    "recorded_score": 59,
+    "team_points": 59,
+    "player_points": 59,
+    "source_url": "https://mongolia.basketball/en/games/234"
+  },
+  {
+    "game_id": "MBA-743",
+    "team_code": "KHF",
+    "previous_score": 69,
+    "website_header": 69,
+    "recorded_score": 69,
+    "team_points": 69,
+    "player_points": 69,
+    "source_url": "https://mongolia.basketball/en/games/234"
+  },
+  {
+    "game_id": "MBA-744",
+    "team_code": "SEL",
+    "previous_score": 98,
+    "website_header": 98,
+    "recorded_score": 98,
+    "team_points": 98,
+    "player_points": 98,
+    "source_url": "https://mongolia.basketball/en/games/163"
+  },
+  {
+    "game_id": "MBA-744",
+    "team_code": "BSM",
+    "previous_score": 78,
+    "website_header": 78,
+    "recorded_score": 78,
+    "team_points": 78,
+    "player_points": 78,
+    "source_url": "https://mongolia.basketball/en/games/163"
+  },
+  {
+    "game_id": "MBA-745",
+    "team_code": "ZVB",
+    "previous_score": 80,
+    "website_header": 80,
+    "recorded_score": 80,
+    "team_points": 80,
+    "player_points": 80,
+    "source_url": "https://mongolia.basketball/en/games/243"
+  },
+  {
+    "game_id": "MBA-745",
+    "team_code": "SGA",
+    "previous_score": 85,
+    "website_header": 85,
+    "recorded_score": 85,
+    "team_points": 85,
+    "player_points": 85,
+    "source_url": "https://mongolia.basketball/en/games/243"
+  },
+  {
+    "game_id": "MBA-746",
+    "team_code": "BCH",
+    "previous_score": 75,
+    "website_header": 75,
+    "recorded_score": 75,
+    "team_points": 75,
+    "player_points": 75,
+    "source_url": "https://mongolia.basketball/en/games/150"
+  },
+  {
+    "game_id": "MBA-746",
+    "team_code": "ETM",
+    "previous_score": 81,
+    "website_header": 81,
+    "recorded_score": 81,
+    "team_points": 81,
+    "player_points": 81,
+    "source_url": "https://mongolia.basketball/en/games/150"
+  },
+  {
+    "game_id": "MBA-747",
+    "team_code": "KHF",
+    "previous_score": 79,
+    "website_header": 79,
+    "recorded_score": 79,
+    "team_points": 79,
+    "player_points": 79,
+    "source_url": "https://mongolia.basketball/en/games/200"
+  },
+  {
+    "game_id": "MBA-747",
+    "team_code": "KUL",
+    "previous_score": 65,
+    "website_header": 65,
+    "recorded_score": 65,
+    "team_points": 65,
+    "player_points": 65,
+    "source_url": "https://mongolia.basketball/en/games/200"
+  },
+  {
+    "game_id": "MBA-748",
+    "team_code": "BSM",
+    "previous_score": 68,
+    "website_header": 68,
+    "recorded_score": 68,
+    "team_points": 68,
+    "player_points": 68,
+    "source_url": "https://mongolia.basketball/en/games/230"
+  },
+  {
+    "game_id": "MBA-748",
+    "team_code": "DUA",
+    "previous_score": 92,
+    "website_header": 92,
+    "recorded_score": 92,
+    "team_points": 92,
+    "player_points": 92,
+    "source_url": "https://mongolia.basketball/en/games/230"
+  }
+]

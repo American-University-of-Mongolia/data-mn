@@ -1,0 +1,53 @@
+---
+title: Аймаг, нийслэлийн хадсан өвс, бэлтгэсэн тэжээл, мянган тонн (1960–2025)
+publishDate: 2026-11-05
+excerpt: Монгол Улсын 21 аймаг, Улаанбаатар хотын 1960–2025 оны хадсан өвс, өвлийн бэлтгэсэн тэжээл, мянган тонноор. 2025 онд улсын дүн ойролцоогоор 1.81 сая тонн байсан бөгөөд Архангай аймаг 356.12 мянган тонноор тэргүүлжээ.
+category: Хөдөө аж ахуй
+tags:
+- монгол
+- хөдөө аж ахуй
+- хадлан
+- тэжээл
+- зуд
+keywords:
+- хадсан өвс аймгаар
+- бэлтгэсэн тэжээл
+- зудын бэлтгэл өвс тэжээл
+author: Data.mn
+dataVersion: 1
+dataDate: 2025-12-31
+excelLanguage: page
+dataFiles:
+- path: /datasets/hay-harvest-by-aimag-mn.csv
+  format: csv
+  size: 36 KB
+  description: Бүх өгөгдөл, нэг мөрөнд нэг ажиглалт. Excel-д оруулахдаа UTF-8 кодчилол, таслал тусгаарлагчийг сонгоно уу.
+- path: /datasets/hay-harvest-by-aimag-mn.xlsx
+  format: xlsx
+  size: 14 KB
+  description: 1960–2025 оны өгөгдөл, монгол хэлээр.
+source:
+  name: Үндэсний Статистикийн Хороо
+  url: https://data.1212.mn/pxweb/mn/NSO/NSO__Industry,%20service__Agriculture/DT_NSO_1002_007V1.px/
+  tableId: DT_NSO_1002_007V1.px
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Монгол Улсын 21 аймаг, Улаанбаатар хотын 1960–2025 оны хадсан өвс, өвлийн бэлтгэсэн тэжээл, мянган тонноор. 2025 онд улсын дүн ойролцоогоор 1.81 сая тонн байсан бөгөөд Архангай аймаг 356.12 мянган тонноор тэргүүлжээ.
+
+<VegaChart
+  spec="/charts/hay-harvest-by-aimag-mn.json"
+  title="Монгол Улсын өвс, тэжээл бэлтгэл"
+  caption="Хадсан өвс болон өвөлжилтөд бэлтгэсэн тэжээл аймгаар, мянган тонн. Өрх, аж ахуйн нэгжийн нийлбэр. Зудын бэлтгэлийн гол үзүүлэлт. Саарал өнгө нь мэдээлэлгүйг илэрхийлнэ."
+  aspectRatio={0.625}
+  yearGroup="hay-harvest-by-aimag"
+/>
+
+<VegaChart
+  spec="/charts/hay-harvest-by-aimag-ranking-mn.json"
+  title="Оноор хамгийн их өвс, тэжээл бэлтгэсэн нутаг дэвсгэр"
+  caption="Сонгосон онд хамгийн өндөр үзүүлэлттэй зургаан нутаг дэвсгэр."
+  aspectRatio={0.6}
+  yearGroup="hay-harvest-by-aimag"
+/>

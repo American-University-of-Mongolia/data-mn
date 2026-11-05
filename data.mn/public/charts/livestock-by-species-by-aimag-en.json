@@ -1,0 +1,108 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mongolia livestock by species and aimag, thousand head, selectable year (1970-2025)",
+  "data": {
+    "url": "/datasets/livestock-by-species-by-aimag-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "params": [
+    {
+      "name": "yearSelect",
+      "value": 2025,
+      "bind": {
+        "input": "range",
+        "min": 1970,
+        "max": 2025,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "toNumber(datum.year) == yearSelect"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
+  "encoding": {
+    "y": {
+      "field": "region",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "op": "sum",
+        "field": "value",
+        "order": "descending"
+      }
+    },
+    "x": {
+      "field": "value",
+      "type": "quantitative",
+      "stack": "zero",
+      "title": "Livestock (thousand head)",
+      "axis": {
+        "format": ",.0f"
+      }
+    },
+    "color": {
+      "field": "species",
+      "type": "nominal",
+      "title": "Species",
+      "scale": {
+        "domain": [
+          "Horse",
+          "Cattle",
+          "Camel",
+          "Sheep",
+          "Goat"
+        ],
+        "range": [
+          "#4c78a8",
+          "#f58518",
+          "#e45756",
+          "#72b7b2",
+          "#54a24b"
+        ]
+      },
+      "legend": {
+        "orient": "top"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "region",
+        "title": "Aimag / city"
+      },
+      {
+        "field": "species",
+        "title": "Species"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Count",
+        "format": ",.1f"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

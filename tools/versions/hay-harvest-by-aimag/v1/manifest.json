@@ -1,0 +1,18 @@
+{
+  "table": "DT_NSO_1002_007V1.px",
+  "unit_en": "thousand tonnes",
+  "unit_mn": "мян.тн",
+  "years": [
+    1960,
+    2025
+  ],
+  "source_updated": "2026-01-15",
+  "files": {
+    "data-en.json": "cd781ef38057baf3c37a857de8b274956a6a0c0c5d2ab543c20654175428de8f",
+    "data-mn.json": "2741d9282f0508d786d312f383fc4abd522fc9d3116488bbcca684fcaab77b65",
+    "metadata-en.json": "a6324e5bee369f906210db305ac841b78a07b0a80f2097c3c24fd015682015ca",
+    "metadata-mn.json": "3f67dc14bc566e4bc47d1e502ef83e36a481e7349ef96db23af69bb39ed0473d",
+    "query-en.json": "747bce18778d8b1529a8a3333af95bb3b9b92506be450bfa0f642150d172978b",
+    "query-mn.json": "747bce18778d8b1529a8a3333af95bb3b9b92506be450bfa0f642150d172978b"
+  }
+}

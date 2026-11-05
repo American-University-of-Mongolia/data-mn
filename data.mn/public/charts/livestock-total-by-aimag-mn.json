@@ -1,0 +1,120 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Монгол Улсын 21 аймаг, Улаанбаатар хотын малын нийт тоо, 1970–2025 он, мянган толгойгоор. Boundaries: geoBoundaries (ODbL) / OpenStreetMap contributors.",
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "/datasets/livestock-total-by-aimag-mn.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "он": "number",
+        "утга": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "range",
+        "min": 1970,
+        "max": 2025,
+        "step": 1,
+        "name": "Он: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum['он'] == selectedYear"
+    },
+    {
+      "lookup": "бүс",
+      "from": {
+        "data": {
+          "url": "/maps/mongolia-aimags.json",
+          "format": {
+            "type": "json",
+            "property": "features"
+          }
+        },
+        "key": "properties.name_mn"
+      },
+      "as": "boundary"
+    },
+    {
+      "calculate": "isValid(datum['утга']) ? format(datum['утга'], ',.2f') : 'Мэдээлэлгүй'",
+      "as": "display_value"
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 1,
+    "invalid": null
+  },
+  "encoding": {
+    "shape": {
+      "field": "boundary",
+      "type": "geojson"
+    },
+    "color": {
+      "field": "утга",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "oranges",
+        "domain": [
+          0,
+          6254.1
+        ]
+      },
+      "condition": {
+        "test": "!isValid(datum['утга'])",
+        "value": "#cbd5e1"
+      },
+      "legend": {
+        "orient": "top",
+        "title": "Малын тоо (мянган толгой)",
+        "format": ",.1f",
+        "titleLimit": 350,
+        "gradientLength": 250
+      }
+    },
+    "tooltip": [
+      {
+        "field": "бүс",
+        "type": "nominal",
+        "title": "Аймаг, нийслэл"
+      },
+      {
+        "field": "он",
+        "type": "quantitative",
+        "title": "Он",
+        "format": "d"
+      },
+      {
+        "field": "display_value",
+        "type": "nominal",
+        "title": "Малын тоо (мянган толгой)"
+      }
+    ]
+  }
+}

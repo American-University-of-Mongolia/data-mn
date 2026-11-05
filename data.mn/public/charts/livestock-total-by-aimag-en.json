@@ -93,7 +93,7 @@
       "legend": {
         "orient": "top",
         "title": "Livestock (thousand head)",
-        "format": ",.1f",
+        "format": ",.0f",
         "titleLimit": 350,
         "gradientLength": 250
       }

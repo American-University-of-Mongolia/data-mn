@@ -93,7 +93,7 @@
       "legend": {
         "orient": "top",
         "title": "Малын тоо (мянган толгой)",
-        "format": ",.1f",
+        "format": ",.0f",
         "titleLimit": 350,
         "gradientLength": 250
       }

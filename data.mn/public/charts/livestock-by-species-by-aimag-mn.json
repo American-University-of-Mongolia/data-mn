@@ -23,6 +23,18 @@
   "transform": [
     {
       "filter": "toNumber(datum['он']) == yearSelect"
+    },
+    {
+      "calculate": "split(datum['ангилал'], ' — ')[0]",
+      "as": "бүс"
+    },
+    {
+      "calculate": "split(datum['ангилал'], ' — ')[1]",
+      "as": "төрөл"
+    },
+    {
+      "calculate": "indexof([\"Адуу\", \"Үхэр\", \"Тэмээ\", \"Хонь\", \"Ямаа\"], datum['төрөл'])",
+      "as": "species_order"
     }
   ],
   "mark": {
@@ -88,7 +100,11 @@
         "title": "Тоо толгой",
         "format": ",.1f"
       }
-    ]
+    ],
+    "order": {
+      "field": "species_order",
+      "type": "quantitative"
+    }
   },
   "config": {
     "axis": {

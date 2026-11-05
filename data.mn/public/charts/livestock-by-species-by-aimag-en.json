@@ -23,6 +23,18 @@
   "transform": [
     {
       "filter": "toNumber(datum.year) == yearSelect"
+    },
+    {
+      "calculate": "split(datum['category'], ' — ')[0]",
+      "as": "region"
+    },
+    {
+      "calculate": "split(datum['category'], ' — ')[1]",
+      "as": "species"
+    },
+    {
+      "calculate": "indexof([\"Horse\", \"Cattle\", \"Camel\", \"Sheep\", \"Goat\"], datum['species'])",
+      "as": "species_order"
     }
   ],
   "mark": {
@@ -88,7 +100,11 @@
         "title": "Count",
         "format": ",.1f"
       }
-    ]
+    ],
+    "order": {
+      "field": "species_order",
+      "type": "quantitative"
+    }
   },
   "config": {
     "axis": {

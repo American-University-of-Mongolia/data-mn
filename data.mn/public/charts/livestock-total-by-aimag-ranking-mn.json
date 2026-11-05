@@ -83,7 +83,7 @@
         "zero": true
       },
       "axis": {
-        "format": ",.1f"
+        "format": ",.0f"
       }
     },
     "tooltip": [

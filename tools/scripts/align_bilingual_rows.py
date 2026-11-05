@@ -38,15 +38,30 @@ def roles(df: pd.DataFrame):
     """(category, date, value) column names for a 3-column long CSV."""
     if df.shape[1] != 3:
         raise ValueError(f"expected 3 columns (category, date, value), got {list(df.columns)}")
-    value = next(c for c in df.columns if pd.api.types.is_numeric_dtype(df[c]))
-    date = next(c for c in df.columns if c != value and df[c].astype(str).str.match(r"^\d{4}-\d{2}").all())
+    def is_date(col):
+        s = df[col].astype(str)
+        if s.str.match(r"^\d{4}-\d{2}").all():
+            return True  # YYYY-MM[-DD...]
+        # Plain years (1970): integer column of 4-digit values, never the float value column.
+        return not pd.api.types.is_float_dtype(df[col]) and s.str.fullmatch(r"\d{4}").all()
+
+    date = next(c for c in df.columns if is_date(c))
+    value = next(c for c in df.columns if c != date and pd.api.types.is_numeric_dtype(df[c]))
     category = next(c for c in df.columns if c not in (value, date))
     return category, date, value
 
 
+def same_values(a, b) -> bool:
+    """Element-wise equal, counting two blanks (NaN) as equal."""
+    a, b = pd.Series(a).reset_index(drop=True), pd.Series(b).reset_index(drop=True)
+    return bool(((a == b) | (a.isna() & b.isna())).all())
+
+
 def series_key(df, category, date, value, label):
     part = df[df[category] == label].sort_values(date)
-    return tuple(zip(part[date].astype(str), part[value].round(6)))
+    # Blank cells (NaN) never compare equal, so key them as None to pair series with gaps.
+    values = [None if pd.isna(v) else v for v in part[value].round(6)]
+    return tuple(zip(part[date].astype(str), values))
 
 
 def load(dataset_id: str):
@@ -84,7 +99,7 @@ def align_snapshot(dataset_id: str, pairs_from: str, write: bool) -> bool:
         raise ValueError(f"{dataset_id}: no pairing in {pairs_from} for {sorted(missing)}")
     mn_sorted = pd.DataFrame({mc: en[ec].map(pairing)}).merge(
         mn, on=mc, how="left", validate="one_to_one")[list(mn.columns)]
-    if not (mn_sorted[mv].values == en[ev].values).all():
+    if not same_values(mn_sorted[mv], en[ev]):
         raise ValueError(f"{dataset_id}: values differ after pairing via {pairs_from}")
     aligned = mn.equals(mn_sorted)
     if write and not aligned:
@@ -102,7 +117,7 @@ def align(dataset_id: str, write: bool, pairs_from: str = None) -> bool:
     pairing = category_pairing(dataset_id)
     corresponds = ((mn[mc].values == en[ec].map(pairing).values).all()
                    and (mn[md].astype(str).values == en[ed].astype(str).values).all()
-                   and (mn[mv].values == en[ev].values).all())
+                   and same_values(mn[mv], en[ev]))
     if corresponds:
         # Already row-aligned in some order (e.g. by date, then label): keep it.
         print(f"{'aligned':10} {dataset_id} ({len(pairing)} categories)")
@@ -112,7 +127,7 @@ def align(dataset_id: str, write: bool, pairs_from: str = None) -> bool:
     keys = pd.DataFrame({mc: en_sorted[ec].map(pairing), md: en_sorted[ed].astype(str)})
     mn_indexed = mn.assign(**{md: mn[md].astype(str)})
     mn_sorted = keys.merge(mn_indexed, on=[mc, md], how="left", validate="one_to_one")[list(mn.columns)]
-    assert (mn_sorted[mv].values == en_sorted[ev].values).all()
+    assert same_values(mn_sorted[mv], en_sorted[ev])
 
     aligned = False
     if write:

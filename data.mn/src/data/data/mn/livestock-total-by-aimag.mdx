@@ -1,0 +1,52 @@
+---
+title: Аймаг, нийслэлийн малын тоо, мянган толгой (1970–2025)
+publishDate: 2026-11-05
+excerpt: Монгол Улсын 21 аймаг, Улаанбаатар хотын малын тоо 1970–2025 онд, мянган толгойгоор; 2025 онд 22 нэгж нийт 58,104.2 мянган толгой бөгөөд Хөвсгөл 5,314.05 мянган толгойгоор тэргүүлжээ.
+category: Хөдөө аж ахуй
+tags:
+  - монгол
+  - мал аж ахуй
+  - хөдөө аж ахуй
+  - аймаг
+keywords:
+  - малын тоо аймгаар
+  - нийт малын тоо
+  - мал аж ахуй аймаг
+author: Data.mn
+dataVersion: 1
+dataDate: 2025-12-31
+excelLanguage: page
+dataFiles:
+  - path: /datasets/livestock-total-by-aimag-mn.csv
+    format: csv
+    size: 35 KB
+    description: Бүх өгөгдөл, нэг мөрөнд нэг ажиглалт. Excel-д оруулахдаа UTF-8 кодчилол, таслал тусгаарлагчийг сонгоно уу.
+  - path: /datasets/livestock-total-by-aimag-mn.xlsx
+    format: xlsx
+    size: 14 KB
+    description: 1970–2025 оны бүх өгөгдөл, монгол хэлээр.
+source:
+  name: Үндэсний Статистикийн Хороо
+  url: https://data.1212.mn/pxweb/mn/NSO/Regional%20development/Livestock/DT_NSO_1001_109V1.px/
+  tableId: DT_NSO_1001_109V1.px
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Монгол Улсын 21 аймаг, Улаанбаатар хотын малын тоо 1970–2025 онд, мянган толгойгоор; 2025 онд 22 нэгж нийт 58,104.2 мянган толгой бөгөөд Хөвсгөл 5,314.05 мянган толгойгоор тэргүүлжээ.
+
+<VegaChart
+  spec="/charts/livestock-total-by-aimag-mn.json"
+  title="Монгол Улсын малын тоо"
+  caption="Нийт малын тоо аймгаар, мянган толгой. Саарал өнгө нь мэдээлэлгүйг илэрхийлнэ."
+  aspectRatio={0.625}
+  yearGroup="livestock-total-by-aimag"
+/>
+
+<VegaChart
+  spec="/charts/livestock-total-by-aimag-ranking-mn.json"
+  title="Оноор хамгийн их малтай нутаг дэвсгэр"
+  caption="Сонгосон онд хамгийн өндөр үзүүлэлттэй зургаан нутаг дэвсгэр."
+  aspectRatio={0.6}
+  yearGroup="livestock-total-by-aimag"
+/>

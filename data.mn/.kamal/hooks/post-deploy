@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+# Purge Cloudflare's cache for data.mn after a deploy.
+#
+# HTML pages are cached at Cloudflare's edge (Cache Rule "Cache HTML pages"),
+# so without a purge visitors can see the previous build for up to the edge
+# TTL. Needs a token with Zone > Cache Purge permission on data.mn:
+#
+#   export CLOUDFLARE_API_TOKEN=...      # or put it in ~/.config/datamn/cloudflare.env
+#   export CLOUDFLARE_ZONE_ID=...        # optional; looked up by name if unset
+#
+# A failed purge only warns: the deploy has already succeeded.
+
+set -uo pipefail
+
+ENV_FILE="${HOME}/.config/datamn/cloudflare.env"
+# shellcheck disable=SC1090
+[ -z "${CLOUDFLARE_API_TOKEN:-}" ] && [ -f "$ENV_FILE" ] && . "$ENV_FILE"
+
+if [ -z "${CLOUDFLARE_API_TOKEN:-}" ]; then
+  echo "post-deploy: CLOUDFLARE_API_TOKEN not set; skipping Cloudflare purge." >&2
+  echo "post-deploy: pages may serve the old build until the edge TTL expires." >&2
+  exit 0
+fi
+
+API="https://api.cloudflare.com/client/v4"
+AUTH=(-H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" -H "Content-Type: application/json")
+
+if [ -z "${CLOUDFLARE_ZONE_ID:-}" ]; then
+  CLOUDFLARE_ZONE_ID=$(curl -fsS "${AUTH[@]}" "${API}/zones?name=data.mn" |
+    python3 -c 'import json,sys; r=json.load(sys.stdin)["result"]; print(r[0]["id"] if r else "")')
+fi
+
+if [ -z "${CLOUDFLARE_ZONE_ID:-}" ]; then
+  echo "post-deploy: could not find the data.mn zone; skipping purge." >&2
+  exit 0
+fi
+
+if curl -fsS "${AUTH[@]}" -X POST "${API}/zones/${CLOUDFLARE_ZONE_ID}/purge_cache" \
+  --data '{"purge_everything":true}' | grep -q '"success":true'; then
+  echo "post-deploy: purged Cloudflare cache for data.mn."
+else
+  echo "post-deploy: Cloudflare purge failed; purge manually in the dashboard." >&2
+fi
+exit 0

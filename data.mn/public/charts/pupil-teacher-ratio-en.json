@@ -1,0 +1,280 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/pupil-teacher-ratio-en.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "pupils_per_teacher": "number"
+      }
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "description": "Pupils per teacher by aimag and Ulaanbaatar, 2007–2025. Primary and all general-school levels. The dashed line is the official national ratio.",
+  "params": [
+    {
+      "name": "educationLevel",
+      "value": "Primary",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Primary",
+          "All levels"
+        ],
+        "name": "Education level: "
+      }
+    },
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "select",
+        "options": [
+          2025,
+          2024,
+          2023,
+          2022,
+          2021,
+          2020,
+          2019,
+          2018,
+          2017,
+          2016,
+          2015,
+          2014,
+          2013,
+          2012,
+          2011,
+          2010,
+          2009,
+          2008,
+          2007
+        ],
+        "name": "Year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "split(datum[\"series\"], \" / \")[0]",
+      "as": "level"
+    },
+    {
+      "calculate": "split(datum[\"series\"], \" / \")[1]",
+      "as": "place"
+    },
+    {
+      "filter": "datum.level === educationLevel && datum[\"year\"] === selectedYear"
+    },
+    {
+      "calculate": "indexof([\"Bayan-Ulgii\", \"Govi-Altai\", \"Khovd\", \"Uvs\", \"Zavkhan\"], datum.place) >= 0 ? \"Western\" : indexof([\"Arkhangai\", \"Bayankhongor\", \"Bulgan\", \"Khuvsgul\", \"Orkhon\", \"Uvurkhangai\"], datum.place) >= 0 ? \"Khangai\" : indexof([\"Darkhan-Uul\", \"Dornogovi\", \"Dundgovi\", \"Govisumber\", \"Selenge\", \"Tuv\", \"Umnugovi\"], datum.place) >= 0 ? \"Central\" : indexof([\"Dornod\", \"Khentii\", \"Sukhbaatar\"], datum.place) >= 0 ? \"Eastern\" : \"Ulaanbaatar\"",
+      "as": "macroregion"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "place",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "pupils_per_teacher",
+        "op": "max",
+        "order": "descending"
+      },
+      "axis": {
+        "labelLimit": 140
+      }
+    },
+    "x": {
+      "field": "pupils_per_teacher",
+      "type": "quantitative",
+      "title": "Pupils per teacher",
+      "stack": null,
+      "scale": {
+        "domain": [
+          0,
+          40
+        ],
+        "nice": false
+      },
+      "axis": {
+        "format": ".0f",
+        "tickCount": 5
+      }
+    }
+  },
+  "layer": [
+    {
+      "transform": [
+        {
+          "filter": "datum.place !== \"National average\""
+        }
+      ],
+      "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 2
+      },
+      "encoding": {
+        "color": {
+          "field": "macroregion",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "Western",
+              "Khangai",
+              "Central",
+              "Eastern",
+              "Ulaanbaatar"
+            ],
+            "range": [
+              "#4e79a7",
+              "#59a14f",
+              "#f28e2b",
+              "#b07aa1",
+              "#e15759"
+            ]
+          },
+          "legend": {
+            "orient": "top",
+            "rowPadding": 8
+          }
+        },
+        "tooltip": [
+          {
+            "field": "place",
+            "type": "nominal",
+            "title": "Location"
+          },
+          {
+            "field": "year",
+            "type": "quantitative",
+            "format": "d",
+            "title": "Year"
+          },
+          {
+            "field": "level",
+            "type": "nominal",
+            "title": "Level"
+          },
+          {
+            "field": "pupils_per_teacher",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Pupils per teacher"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.place !== \"National average\""
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "fontSize": 11,
+        "color": "#334155"
+      },
+      "encoding": {
+        "text": {
+          "field": "pupils_per_teacher",
+          "type": "quantitative",
+          "format": ".1f"
+        },
+        "tooltip": [
+          {
+            "field": "place",
+            "type": "nominal",
+            "title": "Location"
+          },
+          {
+            "field": "year",
+            "type": "quantitative",
+            "format": "d",
+            "title": "Year"
+          },
+          {
+            "field": "level",
+            "type": "nominal",
+            "title": "Level"
+          },
+          {
+            "field": "pupils_per_teacher",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Pupils per teacher"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.place === \"National average\""
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          5,
+          4
+        ],
+        "color": "#64748b",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "y": {
+          "value": 0
+        },
+        "y2": {
+          "value": {
+            "expr": "height"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "place",
+            "type": "nominal",
+            "title": "Location"
+          },
+          {
+            "field": "year",
+            "type": "quantitative",
+            "format": "d",
+            "title": "Year"
+          },
+          {
+            "field": "level",
+            "type": "nominal",
+            "title": "Level"
+          },
+          {
+            "field": "pupils_per_teacher",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Pupils per teacher"
+          }
+        ]
+      }
+    }
+  ]
+}

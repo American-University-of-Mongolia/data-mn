@@ -1,0 +1,292 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/pupil-teacher-ratio-mn.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "он": "number",
+        "нэг_багшид_ногдох_сурагч": "number"
+      }
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "description": "Хоёр аймаг, нийслэлийн сурагч-багшийн харьцааг улсын дундажтай харьцуулах, 2007–2025.",
+  "params": [
+    {
+      "name": "educationLevel",
+      "value": "Бага боловсрол",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Бага боловсрол",
+          "Бүх түвшин"
+        ],
+        "name": "Боловсролын түвшин: "
+      }
+    },
+    {
+      "name": "locationOne",
+      "value": "Орхон",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Архангай",
+          "Баян-Өлгий",
+          "Баянхонгор",
+          "Булган",
+          "Дархан-Уул",
+          "Дорнод",
+          "Дорноговь",
+          "Дундговь",
+          "Говь-Алтай",
+          "Говьсүмбэр",
+          "Хэнтий",
+          "Ховд",
+          "Хөвсгөл",
+          "Орхон",
+          "Сэлэнгэ",
+          "Сүхбаатар",
+          "Төв",
+          "Улаанбаатар",
+          "Өмнөговь",
+          "Увс",
+          "Өвөрхангай",
+          "Завхан"
+        ],
+        "name": "Аймаг, нийслэл 1: "
+      }
+    },
+    {
+      "name": "locationTwo",
+      "value": "Улаанбаатар",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Сонгохгүй",
+          "Архангай",
+          "Баян-Өлгий",
+          "Баянхонгор",
+          "Булган",
+          "Дархан-Уул",
+          "Дорнод",
+          "Дорноговь",
+          "Дундговь",
+          "Говь-Алтай",
+          "Говьсүмбэр",
+          "Хэнтий",
+          "Ховд",
+          "Хөвсгөл",
+          "Орхон",
+          "Сэлэнгэ",
+          "Сүхбаатар",
+          "Төв",
+          "Улаанбаатар",
+          "Өмнөговь",
+          "Увс",
+          "Өвөрхангай",
+          "Завхан"
+        ],
+        "name": "Аймаг, нийслэл 2: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "split(datum[\"үзүүлэлт\"], \" / \")[0]",
+      "as": "level"
+    },
+    {
+      "calculate": "split(datum[\"үзүүлэлт\"], \" / \")[1]",
+      "as": "place"
+    },
+    {
+      "filter": "datum.level === educationLevel && (datum.place === locationOne || datum.place === locationTwo || datum.place === \"Улсын дундаж\")"
+    },
+    {
+      "calculate": "datum.place === \"Улсын дундаж\" ? \"Улсын дундаж\" : datum.place === locationOne ? \"Аймаг, нийслэл 1\" : \"Аймаг, нийслэл 2\"",
+      "as": "comparison"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "scale": {
+        "domain": [
+          2007,
+          2025
+        ],
+        "zero": false,
+        "nice": false
+      },
+      "axis": {
+        "format": "d",
+        "values": [
+          2007,
+          2011,
+          2015,
+          2019,
+          2023,
+          2025
+        ],
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "нэг_багшид_ногдох_сурагч",
+      "type": "quantitative",
+      "title": "Нэг багшид ногдох сурагч",
+      "scale": {
+        "domain": [
+          0,
+          40
+        ],
+        "nice": false
+      },
+      "axis": {
+        "tickCount": 5,
+        "format": ".0f"
+      }
+    },
+    "color": {
+      "field": "comparison",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "Аймаг, нийслэл 1",
+          "Аймаг, нийслэл 2",
+          "Улсын дундаж"
+        ],
+        "range": [
+          "#2563eb",
+          "#e07b16",
+          "#64748b"
+        ]
+      },
+      "legend": {
+        "orient": "top",
+        "rowPadding": 8
+      }
+    },
+    "tooltip": [
+      {
+        "field": "place",
+        "type": "nominal",
+        "title": "Аймаг, нийслэл"
+      },
+      {
+        "field": "он",
+        "type": "quantitative",
+        "format": "d",
+        "title": "Он"
+      },
+      {
+        "field": "level",
+        "type": "nominal",
+        "title": "Түвшин"
+      },
+      {
+        "field": "нэг_багшид_ногдох_сурагч",
+        "type": "quantitative",
+        "format": ".1f",
+        "title": "Нэг багшид ногдох сурагч"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "point": {
+          "filled": true,
+          "size": 25
+        }
+      },
+      "encoding": {
+        "strokeDash": {
+          "condition": {
+            "test": "datum.place === \"Улсын дундаж\"",
+            "value": [
+              6,
+              4
+            ]
+          },
+          "value": [
+            1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "place",
+            "type": "nominal",
+            "title": "Аймаг, нийслэл"
+          },
+          {
+            "field": "он",
+            "type": "quantitative",
+            "format": "d",
+            "title": "Он"
+          },
+          {
+            "field": "level",
+            "type": "nominal",
+            "title": "Түвшин"
+          },
+          {
+            "field": "нэг_багшид_ногдох_сурагч",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Нэг багшид ногдох сурагч"
+          }
+        ]
+      }
+    }
+  ]
+}

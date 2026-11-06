@@ -1,0 +1,875 @@
+year,series,pupils_per_teacher
+2007,All levels / National average,22.5
+2007,All levels / Arkhangai,24.9
+2007,All levels / Bayan-Ulgii,21.1
+2007,All levels / Bayankhongor,26.1
+2007,All levels / Bulgan,21
+2007,All levels / Darkhan-Uul,20.7
+2007,All levels / Dornod,20.6
+2007,All levels / Dornogovi,23.5
+2007,All levels / Dundgovi,21.7
+2007,All levels / Govi-Altai,21.5
+2007,All levels / Govisumber,20.5
+2007,All levels / Khentii,22
+2007,All levels / Khovd,24.8
+2007,All levels / Khuvsgul,23.8
+2007,All levels / Orkhon,20.8
+2007,All levels / Selenge,22.5
+2007,All levels / Sukhbaatar,22.7
+2007,All levels / Tuv,19.8
+2007,All levels / Ulaanbaatar,22.4
+2007,All levels / Umnugovi,23.7
+2007,All levels / Uvs,23.3
+2007,All levels / Uvurkhangai,25.4
+2007,All levels / Zavkhan,21.4
+2007,Primary / National average,30.9
+2007,Primary / Arkhangai,31.6
+2007,Primary / Bayan-Ulgii,27.2
+2007,Primary / Bayankhongor,32.3
+2007,Primary / Bulgan,27.5
+2007,Primary / Darkhan-Uul,29.2
+2007,Primary / Dornod,28.3
+2007,Primary / Dornogovi,28.3
+2007,Primary / Dundgovi,28.7
+2007,Primary / Govi-Altai,29
+2007,Primary / Govisumber,29.2
+2007,Primary / Khentii,27.8
+2007,Primary / Khovd,33.1
+2007,Primary / Khuvsgul,32
+2007,Primary / Orkhon,30.2
+2007,Primary / Selenge,29.4
+2007,Primary / Sukhbaatar,28.6
+2007,Primary / Tuv,25.7
+2007,Primary / Ulaanbaatar,33.6
+2007,Primary / Umnugovi,29.9
+2007,Primary / Uvs,29.5
+2007,Primary / Uvurkhangai,32.1
+2007,Primary / Zavkhan,29.7
+2008,All levels / National average,20.8
+2008,All levels / Arkhangai,21.8
+2008,All levels / Bayan-Ulgii,19.9
+2008,All levels / Bayankhongor,22.6
+2008,All levels / Bulgan,19.5
+2008,All levels / Darkhan-Uul,19.4
+2008,All levels / Dornod,18.6
+2008,All levels / Dornogovi,21.6
+2008,All levels / Dundgovi,19.4
+2008,All levels / Govi-Altai,20.1
+2008,All levels / Govisumber,18.3
+2008,All levels / Khentii,20.4
+2008,All levels / Khovd,23.2
+2008,All levels / Khuvsgul,21.1
+2008,All levels / Orkhon,20.1
+2008,All levels / Selenge,20.7
+2008,All levels / Sukhbaatar,21.1
+2008,All levels / Tuv,18.8
+2008,All levels / Ulaanbaatar,21
+2008,All levels / Umnugovi,22.4
+2008,All levels / Uvs,21.2
+2008,All levels / Uvurkhangai,23.3
+2008,All levels / Zavkhan,19.7
+2008,Primary / National average,30.4
+2008,Primary / Arkhangai,30.5
+2008,Primary / Bayan-Ulgii,27.4
+2008,Primary / Bayankhongor,31
+2008,Primary / Bulgan,26.7
+2008,Primary / Darkhan-Uul,29.2
+2008,Primary / Dornod,27.4
+2008,Primary / Dornogovi,27.8
+2008,Primary / Dundgovi,28.4
+2008,Primary / Govi-Altai,28.4
+2008,Primary / Govisumber,28.3
+2008,Primary / Khentii,27.4
+2008,Primary / Khovd,31.8
+2008,Primary / Khuvsgul,31
+2008,Primary / Orkhon,31.8
+2008,Primary / Selenge,29.6
+2008,Primary / Sukhbaatar,29.2
+2008,Primary / Tuv,26.9
+2008,Primary / Ulaanbaatar,32.5
+2008,Primary / Umnugovi,30.2
+2008,Primary / Uvs,29.6
+2008,Primary / Uvurkhangai,31.5
+2008,Primary / Zavkhan,28.7
+2009,All levels / National average,20
+2009,All levels / Arkhangai,20.9
+2009,All levels / Bayan-Ulgii,18.7
+2009,All levels / Bayankhongor,21.6
+2009,All levels / Bulgan,18.9
+2009,All levels / Darkhan-Uul,18.8
+2009,All levels / Dornod,17.8
+2009,All levels / Dornogovi,21.2
+2009,All levels / Dundgovi,18.3
+2009,All levels / Govi-Altai,19.5
+2009,All levels / Govisumber,17.5
+2009,All levels / Khentii,20.3
+2009,All levels / Khovd,21.7
+2009,All levels / Khuvsgul,20.5
+2009,All levels / Orkhon,19.2
+2009,All levels / Selenge,20.2
+2009,All levels / Sukhbaatar,20.7
+2009,All levels / Tuv,18.4
+2009,All levels / Ulaanbaatar,20.2
+2009,All levels / Umnugovi,20.7
+2009,All levels / Uvs,20.3
+2009,All levels / Uvurkhangai,21.9
+2009,All levels / Zavkhan,19.1
+2009,Primary / National average,30.2
+2009,Primary / Arkhangai,29.9
+2009,Primary / Bayan-Ulgii,27.5
+2009,Primary / Bayankhongor,29.8
+2009,Primary / Bulgan,26.6
+2009,Primary / Darkhan-Uul,30.3
+2009,Primary / Dornod,27.2
+2009,Primary / Dornogovi,29
+2009,Primary / Dundgovi,28.7
+2009,Primary / Govi-Altai,26.8
+2009,Primary / Govisumber,29.3
+2009,Primary / Khentii,27.2
+2009,Primary / Khovd,31.5
+2009,Primary / Khuvsgul,29.9
+2009,Primary / Orkhon,32.6
+2009,Primary / Selenge,29.5
+2009,Primary / Sukhbaatar,29.2
+2009,Primary / Tuv,27.1
+2009,Primary / Ulaanbaatar,32.6
+2009,Primary / Umnugovi,30.3
+2009,Primary / Uvs,28.7
+2009,Primary / Uvurkhangai,30.8
+2009,Primary / Zavkhan,28
+2010,All levels / National average,19.4
+2010,All levels / Arkhangai,20
+2010,All levels / Bayan-Ulgii,17.9
+2010,All levels / Bayankhongor,20.2
+2010,All levels / Bulgan,18.2
+2010,All levels / Darkhan-Uul,18
+2010,All levels / Dornod,17.2
+2010,All levels / Dornogovi,20.6
+2010,All levels / Dundgovi,17.3
+2010,All levels / Govi-Altai,18.7
+2010,All levels / Govisumber,8.4
+2010,All levels / Khentii,19.2
+2010,All levels / Khovd,20.8
+2010,All levels / Khuvsgul,19.8
+2010,All levels / Orkhon,18.6
+2010,All levels / Selenge,19.6
+2010,All levels / Sukhbaatar,20
+2010,All levels / Tuv,17.9
+2010,All levels / Ulaanbaatar,19.9
+2010,All levels / Umnugovi,20.3
+2010,All levels / Uvs,20
+2010,All levels / Uvurkhangai,21.1
+2010,All levels / Zavkhan,17.9
+2010,Primary / National average,29.3
+2010,Primary / Arkhangai,28.5
+2010,Primary / Bayan-Ulgii,26
+2010,Primary / Bayankhongor,28.5
+2010,Primary / Bulgan,25.9
+2010,Primary / Darkhan-Uul,28.9
+2010,Primary / Dornod,26.2
+2010,Primary / Dornogovi,28.4
+2010,Primary / Dundgovi,26.3
+2010,Primary / Govi-Altai,25.6
+2010,Primary / Govisumber,28
+2010,Primary / Khentii,26.3
+2010,Primary / Khovd,30
+2010,Primary / Khuvsgul,29.8
+2010,Primary / Orkhon,31.9
+2010,Primary / Selenge,28.8
+2010,Primary / Sukhbaatar,28.2
+2010,Primary / Tuv,25.8
+2010,Primary / Ulaanbaatar,31.9
+2010,Primary / Umnugovi,29.9
+2010,Primary / Uvs,27.3
+2010,Primary / Uvurkhangai,30.1
+2010,Primary / Zavkhan,26.8
+2011,All levels / National average,19.1
+2011,All levels / Arkhangai,19.4
+2011,All levels / Bayan-Ulgii,17.2
+2011,All levels / Bayankhongor,19.3
+2011,All levels / Bulgan,17.7
+2011,All levels / Darkhan-Uul,17.8
+2011,All levels / Dornod,17.4
+2011,All levels / Dornogovi,20.5
+2011,All levels / Dundgovi,16.8
+2011,All levels / Govi-Altai,18.4
+2011,All levels / Govisumber,17.7
+2011,All levels / Khentii,18.6
+2011,All levels / Khovd,19.6
+2011,All levels / Khuvsgul,18.8
+2011,All levels / Orkhon,18.1
+2011,All levels / Selenge,19.7
+2011,All levels / Sukhbaatar,19.7
+2011,All levels / Tuv,17.5
+2011,All levels / Ulaanbaatar,20
+2011,All levels / Umnugovi,19.1
+2011,All levels / Uvs,19
+2011,All levels / Uvurkhangai,20.3
+2011,All levels / Zavkhan,17
+2011,Primary / National average,28.8
+2011,Primary / Arkhangai,27.5
+2011,Primary / Bayan-Ulgii,25.8
+2011,Primary / Bayankhongor,27
+2011,Primary / Bulgan,25.8
+2011,Primary / Darkhan-Uul,28.1
+2011,Primary / Dornod,26.5
+2011,Primary / Dornogovi,28.1
+2011,Primary / Dundgovi,25.5
+2011,Primary / Govi-Altai,24.7
+2011,Primary / Govisumber,27.9
+2011,Primary / Khentii,25.3
+2011,Primary / Khovd,28.2
+2011,Primary / Khuvsgul,28.5
+2011,Primary / Orkhon,31.3
+2011,Primary / Selenge,28.5
+2011,Primary / Sukhbaatar,27
+2011,Primary / Tuv,25.2
+2011,Primary / Ulaanbaatar,32.2
+2011,Primary / Umnugovi,27.2
+2011,Primary / Uvs,25.7
+2011,Primary / Uvurkhangai,28.8
+2011,Primary / Zavkhan,25.1
+2012,All levels / National average,18.5
+2012,All levels / Arkhangai,18.6
+2012,All levels / Bayan-Ulgii,16.6
+2012,All levels / Bayankhongor,18.2
+2012,All levels / Bulgan,16.5
+2012,All levels / Darkhan-Uul,17.7
+2012,All levels / Dornod,17.5
+2012,All levels / Dornogovi,19.6
+2012,All levels / Dundgovi,16
+2012,All levels / Govi-Altai,17
+2012,All levels / Govisumber,17.4
+2012,All levels / Khentii,17.8
+2012,All levels / Khovd,18.5
+2012,All levels / Khuvsgul,18
+2012,All levels / Orkhon,18.1
+2012,All levels / Selenge,18.6
+2012,All levels / Sukhbaatar,19.5
+2012,All levels / Tuv,17.5
+2012,All levels / Ulaanbaatar,19.5
+2012,All levels / Umnugovi,17.9
+2012,All levels / Uvs,18
+2012,All levels / Uvurkhangai,19.5
+2012,All levels / Zavkhan,16.5
+2012,Primary / National average,27.6
+2012,Primary / Arkhangai,26
+2012,Primary / Bayan-Ulgii,24.7
+2012,Primary / Bayankhongor,25.1
+2012,Primary / Bulgan,23.6
+2012,Primary / Darkhan-Uul,27.2
+2012,Primary / Dornod,25.4
+2012,Primary / Dornogovi,27.6
+2012,Primary / Dundgovi,24.9
+2012,Primary / Govi-Altai,23.1
+2012,Primary / Govisumber,26.4
+2012,Primary / Khentii,23.6
+2012,Primary / Khovd,25.8
+2012,Primary / Khuvsgul,26.7
+2012,Primary / Orkhon,31.4
+2012,Primary / Selenge,27.5
+2012,Primary / Sukhbaatar,27.2
+2012,Primary / Tuv,24.6
+2012,Primary / Ulaanbaatar,30.8
+2012,Primary / Umnugovi,26.3
+2012,Primary / Uvs,24.8
+2012,Primary / Uvurkhangai,27.8
+2012,Primary / Zavkhan,24
+2013,All levels / National average,18.3
+2013,All levels / Arkhangai,18.3
+2013,All levels / Bayan-Ulgii,16
+2013,All levels / Bayankhongor,17.8
+2013,All levels / Bulgan,16.4
+2013,All levels / Darkhan-Uul,17.5
+2013,All levels / Dornod,17.4
+2013,All levels / Dornogovi,20.1
+2013,All levels / Dundgovi,15.7
+2013,All levels / Govi-Altai,16.9
+2013,All levels / Govisumber,17.9
+2013,All levels / Khentii,17.7
+2013,All levels / Khovd,18
+2013,All levels / Khuvsgul,17.6
+2013,All levels / Orkhon,17.7
+2013,All levels / Selenge,18.2
+2013,All levels / Sukhbaatar,19
+2013,All levels / Tuv,17.6
+2013,All levels / Ulaanbaatar,19.4
+2013,All levels / Umnugovi,17.8
+2013,All levels / Uvs,17.5
+2013,All levels / Uvurkhangai,19
+2013,All levels / Zavkhan,16.3
+2013,Primary / National average,27.2
+2013,Primary / Arkhangai,25
+2013,Primary / Bayan-Ulgii,23.7
+2013,Primary / Bayankhongor,25
+2013,Primary / Bulgan,23.6
+2013,Primary / Darkhan-Uul,27.9
+2013,Primary / Dornod,25.8
+2013,Primary / Dornogovi,28
+2013,Primary / Dundgovi,24.2
+2013,Primary / Govi-Altai,22.7
+2013,Primary / Govisumber,26.9
+2013,Primary / Khentii,23.6
+2013,Primary / Khovd,25
+2013,Primary / Khuvsgul,25.9
+2013,Primary / Orkhon,31.4
+2013,Primary / Selenge,26.8
+2013,Primary / Sukhbaatar,26.9
+2013,Primary / Tuv,24.3
+2013,Primary / Ulaanbaatar,30.2
+2013,Primary / Umnugovi,26.4
+2013,Primary / Uvs,23.3
+2013,Primary / Uvurkhangai,27.3
+2013,Primary / Zavkhan,24.4
+2014,All levels / National average,18.4
+2014,All levels / Arkhangai,17.5
+2014,All levels / Bayan-Ulgii,15.5
+2014,All levels / Bayankhongor,17.9
+2014,All levels / Bulgan,16.8
+2014,All levels / Darkhan-Uul,17.5
+2014,All levels / Dornod,17.9
+2014,All levels / Dornogovi,19.7
+2014,All levels / Dundgovi,15.6
+2014,All levels / Govi-Altai,16.8
+2014,All levels / Govisumber,17.8
+2014,All levels / Khentii,17.9
+2014,All levels / Khovd,17.9
+2014,All levels / Khuvsgul,17.9
+2014,All levels / Orkhon,17.7
+2014,All levels / Selenge,17.9
+2014,All levels / Sukhbaatar,19.1
+2014,All levels / Tuv,17.2
+2014,All levels / Ulaanbaatar,20
+2014,All levels / Umnugovi,18.2
+2014,All levels / Uvs,17.2
+2014,All levels / Uvurkhangai,18.6
+2014,All levels / Zavkhan,16.1
+2014,Primary / National average,28.2
+2014,Primary / Arkhangai,25.1
+2014,Primary / Bayan-Ulgii,22.3
+2014,Primary / Bayankhongor,25.6
+2014,Primary / Bulgan,25.2
+2014,Primary / Darkhan-Uul,29
+2014,Primary / Dornod,26.8
+2014,Primary / Dornogovi,28.4
+2014,Primary / Dundgovi,24.1
+2014,Primary / Govi-Altai,22.8
+2014,Primary / Govisumber,27.3
+2014,Primary / Khentii,23.7
+2014,Primary / Khovd,26.1
+2014,Primary / Khuvsgul,26.9
+2014,Primary / Orkhon,31.6
+2014,Primary / Selenge,27.1
+2014,Primary / Sukhbaatar,26.7
+2014,Primary / Tuv,24.5
+2014,Primary / Ulaanbaatar,32.4
+2014,Primary / Umnugovi,27.1
+2014,Primary / Uvs,23.8
+2014,Primary / Uvurkhangai,27.1
+2014,Primary / Zavkhan,24.4
+2015,All levels / National average,18.8
+2015,All levels / Arkhangai,17.2
+2015,All levels / Bayan-Ulgii,15.4
+2015,All levels / Bayankhongor,17.8
+2015,All levels / Bulgan,17
+2015,All levels / Darkhan-Uul,18.2
+2015,All levels / Dornod,17.7
+2015,All levels / Dornogovi,20.1
+2015,All levels / Dundgovi,15.1
+2015,All levels / Govi-Altai,16.4
+2015,All levels / Govisumber,18.4
+2015,All levels / Khentii,17.5
+2015,All levels / Khovd,17.7
+2015,All levels / Khuvsgul,17.6
+2015,All levels / Orkhon,18.8
+2015,All levels / Selenge,17.8
+2015,All levels / Sukhbaatar,19.2
+2015,All levels / Tuv,17.3
+2015,All levels / Ulaanbaatar,21
+2015,All levels / Umnugovi,18.4
+2015,All levels / Uvs,16.6
+2015,All levels / Uvurkhangai,18.5
+2015,All levels / Zavkhan,16.3
+2015,Primary / National average,27.5
+2015,Primary / Arkhangai,24.5
+2015,Primary / Bayan-Ulgii,18.9
+2015,Primary / Bayankhongor,25.6
+2015,Primary / Bulgan,24
+2015,Primary / Darkhan-Uul,30.2
+2015,Primary / Dornod,26.8
+2015,Primary / Dornogovi,28.8
+2015,Primary / Dundgovi,23
+2015,Primary / Govi-Altai,21.8
+2015,Primary / Govisumber,28.3
+2015,Primary / Khentii,23.4
+2015,Primary / Khovd,25.3
+2015,Primary / Khuvsgul,26.5
+2015,Primary / Orkhon,31.4
+2015,Primary / Selenge,25.8
+2015,Primary / Sukhbaatar,27.4
+2015,Primary / Tuv,23.9
+2015,Primary / Ulaanbaatar,31.4
+2015,Primary / Umnugovi,27.4
+2015,Primary / Uvs,21.6
+2015,Primary / Uvurkhangai,26.7
+2015,Primary / Zavkhan,25.1
+2016,All levels / National average,19.1
+2016,All levels / Arkhangai,17.5
+2016,All levels / Bayan-Ulgii,15.1
+2016,All levels / Bayankhongor,18.1
+2016,All levels / Bulgan,17
+2016,All levels / Darkhan-Uul,18.8
+2016,All levels / Dornod,18.5
+2016,All levels / Dornogovi,20.5
+2016,All levels / Dundgovi,15.9
+2016,All levels / Govi-Altai,16.2
+2016,All levels / Govisumber,18.5
+2016,All levels / Khentii,18.9
+2016,All levels / Khovd,18
+2016,All levels / Khuvsgul,18.1
+2016,All levels / Orkhon,18.4
+2016,All levels / Selenge,18.4
+2016,All levels / Sukhbaatar,20.4
+2016,All levels / Tuv,19.1
+2016,All levels / Ulaanbaatar,21.1
+2016,All levels / Umnugovi,18.8
+2016,All levels / Uvs,16.9
+2016,All levels / Uvurkhangai,19.1
+2016,All levels / Zavkhan,16.3
+2016,Primary / National average,28.9
+2016,Primary / Arkhangai,26.1
+2016,Primary / Bayan-Ulgii,19.3
+2016,Primary / Bayankhongor,26.6
+2016,Primary / Bulgan,24.7
+2016,Primary / Darkhan-Uul,31.2
+2016,Primary / Dornod,29.1
+2016,Primary / Dornogovi,30
+2016,Primary / Dundgovi,23.5
+2016,Primary / Govi-Altai,21.4
+2016,Primary / Govisumber,29
+2016,Primary / Khentii,26
+2016,Primary / Khovd,26.5
+2016,Primary / Khuvsgul,27.8
+2016,Primary / Orkhon,31.6
+2016,Primary / Selenge,28.1
+2016,Primary / Sukhbaatar,29.7
+2016,Primary / Tuv,26.7
+2016,Primary / Ulaanbaatar,32.7
+2016,Primary / Umnugovi,29.6
+2016,Primary / Uvs,23.7
+2016,Primary / Uvurkhangai,27.5
+2016,Primary / Zavkhan,25.4
+2017,All levels / National average,19.6
+2017,All levels / Arkhangai,17.7
+2017,All levels / Bayan-Ulgii,15.3
+2017,All levels / Bayankhongor,18.4
+2017,All levels / Bulgan,16.5
+2017,All levels / Darkhan-Uul,18.9
+2017,All levels / Dornod,18.9
+2017,All levels / Dornogovi,20.4
+2017,All levels / Dundgovi,15.6
+2017,All levels / Govi-Altai,16.2
+2017,All levels / Govisumber,19.3
+2017,All levels / Khentii,19.7
+2017,All levels / Khovd,18.1
+2017,All levels / Khuvsgul,18.4
+2017,All levels / Orkhon,18.7
+2017,All levels / Selenge,18.5
+2017,All levels / Sukhbaatar,20.2
+2017,All levels / Tuv,19.4
+2017,All levels / Ulaanbaatar,22
+2017,All levels / Umnugovi,18.9
+2017,All levels / Uvs,17.9
+2017,All levels / Uvurkhangai,18.8
+2017,All levels / Zavkhan,16.4
+2017,Primary / National average,30.2
+2017,Primary / Arkhangai,27
+2017,Primary / Bayan-Ulgii,19.9
+2017,Primary / Bayankhongor,28.6
+2017,Primary / Bulgan,25.6
+2017,Primary / Darkhan-Uul,31.7
+2017,Primary / Dornod,29.9
+2017,Primary / Dornogovi,31.2
+2017,Primary / Dundgovi,24.4
+2017,Primary / Govi-Altai,21.8
+2017,Primary / Govisumber,31.1
+2017,Primary / Khentii,27
+2017,Primary / Khovd,28.2
+2017,Primary / Khuvsgul,29.1
+2017,Primary / Orkhon,33.7
+2017,Primary / Selenge,28
+2017,Primary / Sukhbaatar,30.4
+2017,Primary / Tuv,27.3
+2017,Primary / Ulaanbaatar,34.4
+2017,Primary / Umnugovi,30.3
+2017,Primary / Uvs,25.2
+2017,Primary / Uvurkhangai,27.8
+2017,Primary / Zavkhan,26.5
+2018,All levels / National average,19.5
+2018,All levels / Arkhangai,17.4
+2018,All levels / Bayan-Ulgii,15.1
+2018,All levels / Bayankhongor,18.3
+2018,All levels / Bulgan,17.2
+2018,All levels / Darkhan-Uul,19
+2018,All levels / Dornod,19.3
+2018,All levels / Dornogovi,20.7
+2018,All levels / Dundgovi,15.8
+2018,All levels / Govi-Altai,15.9
+2018,All levels / Govisumber,18.5
+2018,All levels / Khentii,19
+2018,All levels / Khovd,18.1
+2018,All levels / Khuvsgul,18.1
+2018,All levels / Orkhon,19.2
+2018,All levels / Selenge,18.5
+2018,All levels / Sukhbaatar,20.1
+2018,All levels / Tuv,18.6
+2018,All levels / Ulaanbaatar,21.8
+2018,All levels / Umnugovi,19.1
+2018,All levels / Uvs,17.2
+2018,All levels / Uvurkhangai,18.9
+2018,All levels / Zavkhan,16.1
+2018,Primary / National average,30.5
+2018,Primary / Arkhangai,27.7
+2018,Primary / Bayan-Ulgii,20.5
+2018,Primary / Bayankhongor,29.2
+2018,Primary / Bulgan,25.4
+2018,Primary / Darkhan-Uul,32.7
+2018,Primary / Dornod,30.9
+2018,Primary / Dornogovi,31.9
+2018,Primary / Dundgovi,25.2
+2018,Primary / Govi-Altai,22.4
+2018,Primary / Govisumber,29.5
+2018,Primary / Khentii,26.8
+2018,Primary / Khovd,29.3
+2018,Primary / Khuvsgul,29.5
+2018,Primary / Orkhon,35.5
+2018,Primary / Selenge,28.6
+2018,Primary / Sukhbaatar,30.5
+2018,Primary / Tuv,26.6
+2018,Primary / Ulaanbaatar,33.9
+2018,Primary / Umnugovi,31.7
+2018,Primary / Uvs,25.4
+2018,Primary / Uvurkhangai,28.3
+2018,Primary / Zavkhan,26.9
+2019,All levels / National average,20
+2019,All levels / Arkhangai,18
+2019,All levels / Bayan-Ulgii,14.9
+2019,All levels / Bayankhongor,18.9
+2019,All levels / Bulgan,17.8
+2019,All levels / Darkhan-Uul,19.9
+2019,All levels / Dornod,20.1
+2019,All levels / Dornogovi,21.5
+2019,All levels / Dundgovi,16.2
+2019,All levels / Govi-Altai,15.6
+2019,All levels / Govisumber,20.5
+2019,All levels / Khentii,20
+2019,All levels / Khovd,19
+2019,All levels / Khuvsgul,18.8
+2019,All levels / Orkhon,19.4
+2019,All levels / Selenge,18.9
+2019,All levels / Sukhbaatar,20.2
+2019,All levels / Tuv,19.3
+2019,All levels / Ulaanbaatar,22.1
+2019,All levels / Umnugovi,19.4
+2019,All levels / Uvs,17.6
+2019,All levels / Uvurkhangai,19.2
+2019,All levels / Zavkhan,16.6
+2019,Primary / National average,31.1
+2019,Primary / Arkhangai,28.1
+2019,Primary / Bayan-Ulgii,21.2
+2019,Primary / Bayankhongor,29.9
+2019,Primary / Bulgan,25.9
+2019,Primary / Darkhan-Uul,32.9
+2019,Primary / Dornod,31.6
+2019,Primary / Dornogovi,32.4
+2019,Primary / Dundgovi,26.3
+2019,Primary / Govi-Altai,22.9
+2019,Primary / Govisumber,31.1
+2019,Primary / Khentii,27.4
+2019,Primary / Khovd,29.8
+2019,Primary / Khuvsgul,30.1
+2019,Primary / Orkhon,35.8
+2019,Primary / Selenge,28.8
+2019,Primary / Sukhbaatar,30.4
+2019,Primary / Tuv,27.3
+2019,Primary / Ulaanbaatar,34.6
+2019,Primary / Umnugovi,31.5
+2019,Primary / Uvs,25.7
+2019,Primary / Uvurkhangai,27.8
+2019,Primary / Zavkhan,26.8
+2020,All levels / National average,20
+2020,All levels / Arkhangai,18.2
+2020,All levels / Bayan-Ulgii,15.1
+2020,All levels / Bayankhongor,19.4
+2020,All levels / Bulgan,17.4
+2020,All levels / Darkhan-Uul,20.2
+2020,All levels / Dornod,20.2
+2020,All levels / Dornogovi,22
+2020,All levels / Dundgovi,16.2
+2020,All levels / Govi-Altai,15.3
+2020,All levels / Govisumber,20.8
+2020,All levels / Khentii,19.9
+2020,All levels / Khovd,19.2
+2020,All levels / Khuvsgul,18.9
+2020,All levels / Orkhon,19.4
+2020,All levels / Selenge,19.3
+2020,All levels / Sukhbaatar,20.6
+2020,All levels / Tuv,20
+2020,All levels / Ulaanbaatar,21.8
+2020,All levels / Umnugovi,19.6
+2020,All levels / Uvs,17.6
+2020,All levels / Uvurkhangai,18.7
+2020,All levels / Zavkhan,16.8
+2020,Primary / National average,31.1
+2020,Primary / Arkhangai,27.7
+2020,Primary / Bayan-Ulgii,20.8
+2020,Primary / Bayankhongor,29.9
+2020,Primary / Bulgan,26.5
+2020,Primary / Darkhan-Uul,32.8
+2020,Primary / Dornod,31.7
+2020,Primary / Dornogovi,32.3
+2020,Primary / Dundgovi,25.4
+2020,Primary / Govi-Altai,22.5
+2020,Primary / Govisumber,33.3
+2020,Primary / Khentii,27.5
+2020,Primary / Khovd,30.1
+2020,Primary / Khuvsgul,30.5
+2020,Primary / Orkhon,36.2
+2020,Primary / Selenge,29
+2020,Primary / Sukhbaatar,30.8
+2020,Primary / Tuv,27.9
+2020,Primary / Ulaanbaatar,34.6
+2020,Primary / Umnugovi,31.9
+2020,Primary / Uvs,25.3
+2020,Primary / Uvurkhangai,27.4
+2020,Primary / Zavkhan,26.2
+2021,All levels / National average,20.3
+2021,All levels / Arkhangai,18.6
+2021,All levels / Bayan-Ulgii,14.9
+2021,All levels / Bayankhongor,19.7
+2021,All levels / Bulgan,17.7
+2021,All levels / Darkhan-Uul,21.1
+2021,All levels / Dornod,20.9
+2021,All levels / Dornogovi,22.1
+2021,All levels / Dundgovi,16.2
+2021,All levels / Govi-Altai,14.9
+2021,All levels / Govisumber,20.1
+2021,All levels / Khentii,20.2
+2021,All levels / Khovd,19.3
+2021,All levels / Khuvsgul,19
+2021,All levels / Orkhon,20.5
+2021,All levels / Selenge,19.6
+2021,All levels / Sukhbaatar,20.9
+2021,All levels / Tuv,20.6
+2021,All levels / Ulaanbaatar,22.2
+2021,All levels / Umnugovi,20.2
+2021,All levels / Uvs,18
+2021,All levels / Uvurkhangai,18.5
+2021,All levels / Zavkhan,17
+2021,Primary / National average,31.4
+2021,Primary / Arkhangai,28.7
+2021,Primary / Bayan-Ulgii,21.4
+2021,Primary / Bayankhongor,29.7
+2021,Primary / Bulgan,26.4
+2021,Primary / Darkhan-Uul,33.2
+2021,Primary / Dornod,32.1
+2021,Primary / Dornogovi,32.7
+2021,Primary / Dundgovi,25.7
+2021,Primary / Govi-Altai,22.1
+2021,Primary / Govisumber,29.6
+2021,Primary / Khentii,27.8
+2021,Primary / Khovd,30.8
+2021,Primary / Khuvsgul,30.2
+2021,Primary / Orkhon,37.1
+2021,Primary / Selenge,28.8
+2021,Primary / Sukhbaatar,31.3
+2021,Primary / Tuv,28.3
+2021,Primary / Ulaanbaatar,34.9
+2021,Primary / Umnugovi,32.4
+2021,Primary / Uvs,25.3
+2021,Primary / Uvurkhangai,28.2
+2021,Primary / Zavkhan,26.7
+2022,All levels / National average,20.7
+2022,All levels / Arkhangai,19.3
+2022,All levels / Bayan-Ulgii,14.8
+2022,All levels / Bayankhongor,18.9
+2022,All levels / Bulgan,17.3
+2022,All levels / Darkhan-Uul,21
+2022,All levels / Dornod,21.4
+2022,All levels / Dornogovi,21.9
+2022,All levels / Dundgovi,16.8
+2022,All levels / Govi-Altai,15
+2022,All levels / Govisumber,19.7
+2022,All levels / Khentii,20.5
+2022,All levels / Khovd,19.5
+2022,All levels / Khuvsgul,19.3
+2022,All levels / Orkhon,20.5
+2022,All levels / Selenge,19.4
+2022,All levels / Sukhbaatar,21.4
+2022,All levels / Tuv,20.7
+2022,All levels / Ulaanbaatar,22.8
+2022,All levels / Umnugovi,20.7
+2022,All levels / Uvs,18.4
+2022,All levels / Uvurkhangai,18.9
+2022,All levels / Zavkhan,16.8
+2022,Primary / National average,31.6
+2022,Primary / Arkhangai,29
+2022,Primary / Bayan-Ulgii,21.5
+2022,Primary / Bayankhongor,28.2
+2022,Primary / Bulgan,26.5
+2022,Primary / Darkhan-Uul,33.8
+2022,Primary / Dornod,32.2
+2022,Primary / Dornogovi,31.9
+2022,Primary / Dundgovi,26.5
+2022,Primary / Govi-Altai,21.9
+2022,Primary / Govisumber,32
+2022,Primary / Khentii,28.3
+2022,Primary / Khovd,31
+2022,Primary / Khuvsgul,30.4
+2022,Primary / Orkhon,35.6
+2022,Primary / Selenge,28.7
+2022,Primary / Sukhbaatar,31
+2022,Primary / Tuv,29
+2022,Primary / Ulaanbaatar,34.9
+2022,Primary / Umnugovi,31.7
+2022,Primary / Uvs,26.2
+2022,Primary / Uvurkhangai,28.9
+2022,Primary / Zavkhan,26.2
+2023,All levels / National average,20.9
+2023,All levels / Arkhangai,19.6
+2023,All levels / Bayan-Ulgii,14.8
+2023,All levels / Bayankhongor,19.1
+2023,All levels / Bulgan,17.4
+2023,All levels / Darkhan-Uul,21
+2023,All levels / Dornod,22.1
+2023,All levels / Dornogovi,21.8
+2023,All levels / Dundgovi,17.1
+2023,All levels / Govi-Altai,15
+2023,All levels / Govisumber,20.3
+2023,All levels / Khentii,20
+2023,All levels / Khovd,20.1
+2023,All levels / Khuvsgul,19.4
+2023,All levels / Orkhon,20.8
+2023,All levels / Selenge,19.7
+2023,All levels / Sukhbaatar,21.4
+2023,All levels / Tuv,21.5
+2023,All levels / Ulaanbaatar,22.8
+2023,All levels / Umnugovi,21
+2023,All levels / Uvs,19.3
+2023,All levels / Uvurkhangai,19.2
+2023,All levels / Zavkhan,16.5
+2023,Primary / National average,31
+2023,Primary / Arkhangai,29.6
+2023,Primary / Bayan-Ulgii,22
+2023,Primary / Bayankhongor,28.6
+2023,Primary / Bulgan,25.6
+2023,Primary / Darkhan-Uul,33.4
+2023,Primary / Dornod,33.3
+2023,Primary / Dornogovi,30.4
+2023,Primary / Dundgovi,26.4
+2023,Primary / Govi-Altai,21.1
+2023,Primary / Govisumber,30.7
+2023,Primary / Khentii,27.7
+2023,Primary / Khovd,30.8
+2023,Primary / Khuvsgul,30.1
+2023,Primary / Orkhon,35.5
+2023,Primary / Selenge,28.4
+2023,Primary / Sukhbaatar,30.7
+2023,Primary / Tuv,28.5
+2023,Primary / Ulaanbaatar,33.5
+2023,Primary / Umnugovi,31.9
+2023,Primary / Uvs,27.2
+2023,Primary / Uvurkhangai,28.7
+2023,Primary / Zavkhan,25.7
+2024,All levels / National average,21.1
+2024,All levels / Arkhangai,19.6
+2024,All levels / Bayan-Ulgii,15
+2024,All levels / Bayankhongor,19.3
+2024,All levels / Bulgan,17.5
+2024,All levels / Darkhan-Uul,21.3
+2024,All levels / Dornod,22.5
+2024,All levels / Dornogovi,22.2
+2024,All levels / Dundgovi,17.1
+2024,All levels / Govi-Altai,14.9
+2024,All levels / Govisumber,21.4
+2024,All levels / Khentii,20.4
+2024,All levels / Khovd,20.4
+2024,All levels / Khuvsgul,19.3
+2024,All levels / Orkhon,20.9
+2024,All levels / Selenge,19.9
+2024,All levels / Sukhbaatar,21.6
+2024,All levels / Tuv,21.2
+2024,All levels / Ulaanbaatar,23.2
+2024,All levels / Umnugovi,21.4
+2024,All levels / Uvs,19.2
+2024,All levels / Uvurkhangai,19.2
+2024,All levels / Zavkhan,16.4
+2024,Primary / National average,30.5
+2024,Primary / Arkhangai,28.9
+2024,Primary / Bayan-Ulgii,22
+2024,Primary / Bayankhongor,28
+2024,Primary / Bulgan,25.4
+2024,Primary / Darkhan-Uul,33
+2024,Primary / Dornod,33.5
+2024,Primary / Dornogovi,30.7
+2024,Primary / Dundgovi,26.7
+2024,Primary / Govi-Altai,20.6
+2024,Primary / Govisumber,32.1
+2024,Primary / Khentii,27.7
+2024,Primary / Khovd,30.8
+2024,Primary / Khuvsgul,29.9
+2024,Primary / Orkhon,36.2
+2024,Primary / Selenge,28.2
+2024,Primary / Sukhbaatar,30.6
+2024,Primary / Tuv,28.6
+2024,Primary / Ulaanbaatar,32.8
+2024,Primary / Umnugovi,31.7
+2024,Primary / Uvs,26.2
+2024,Primary / Uvurkhangai,28.5
+2024,Primary / Zavkhan,25.7
+2025,All levels / National average,21
+2025,All levels / Arkhangai,19.2
+2025,All levels / Bayan-Ulgii,15.1
+2025,All levels / Bayankhongor,19.7
+2025,All levels / Bulgan,17.3
+2025,All levels / Darkhan-Uul,21.7
+2025,All levels / Dornod,22.9
+2025,All levels / Dornogovi,21.6
+2025,All levels / Dundgovi,17.2
+2025,All levels / Govi-Altai,15.2
+2025,All levels / Govisumber,21.6
+2025,All levels / Khentii,20
+2025,All levels / Khovd,20.4
+2025,All levels / Khuvsgul,19.3
+2025,All levels / Orkhon,21.4
+2025,All levels / Selenge,19.8
+2025,All levels / Sukhbaatar,21.5
+2025,All levels / Tuv,21.2
+2025,All levels / Ulaanbaatar,22.8
+2025,All levels / Umnugovi,19.7
+2025,All levels / Uvs,19.1
+2025,All levels / Uvurkhangai,19.6
+2025,All levels / Zavkhan,16.2
+2025,Primary / National average,29.7
+2025,Primary / Arkhangai,28.5
+2025,Primary / Bayan-Ulgii,22.3
+2025,Primary / Bayankhongor,27
+2025,Primary / Bulgan,24.6
+2025,Primary / Darkhan-Uul,33.2
+2025,Primary / Dornod,32.6
+2025,Primary / Dornogovi,30.4
+2025,Primary / Dundgovi,27.3
+2025,Primary / Govi-Altai,21.2
+2025,Primary / Govisumber,32.3
+2025,Primary / Khentii,28.4
+2025,Primary / Khovd,30.7
+2025,Primary / Khuvsgul,29.1
+2025,Primary / Orkhon,35.8
+2025,Primary / Selenge,28.2
+2025,Primary / Sukhbaatar,30.6
+2025,Primary / Tuv,28.4
+2025,Primary / Ulaanbaatar,31.2
+2025,Primary / Umnugovi,29
+2025,Primary / Uvs,26.2
+2025,Primary / Uvurkhangai,29.1
+2025,Primary / Zavkhan,25.5

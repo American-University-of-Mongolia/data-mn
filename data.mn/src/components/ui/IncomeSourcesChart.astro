@@ -1,0 +1,82 @@
+---
+import VegaChart from './VegaChart.astro';
+
+interface Props {
+  spec: string;
+  title: string;
+  caption: string;
+  legend?: string[];
+}
+const { spec, title, caption, legend = [] } = Astro.props;
+const colors = ['#2563eb', '#b45309', '#15803d', '#7c3aed', '#be185d', '#0e7490'];
+---
+
+<div class="income-sources-chart">
+  <VegaChart {spec} {title} {caption} aspectRatio={0.6} prominentControls />
+  {
+    legend.length > 0 && (
+      <ul class="income-legend not-prose">
+        {legend.map((label, i) => (
+          <li>
+            <span class="swatch" style={{ backgroundColor: colors[i] }} aria-hidden="true" />
+            <span>{label}</span>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</div>
+
+<style>
+  .income-sources-chart :global(.chart-wrapper) {
+    display: flex;
+    flex-direction: column;
+  }
+  .income-sources-chart :global(.vega-bindings) {
+    order: -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 0 0 1rem !important;
+  }
+
+  .income-sources-chart :global(.vega-bind) {
+    min-width: 0;
+    flex: 1 1 14rem;
+  }
+  .income-sources-chart :global(.vega-bind label) {
+    width: 100% !important;
+    min-width: 0;
+  }
+  .income-legend {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem 1.25rem;
+    padding: 0;
+    margin: 1rem 0 1.5rem;
+    list-style: none;
+    color: #475569;
+    font-size: 0.875rem;
+    line-height: 1.45;
+  }
+  .income-legend li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin: 0;
+  }
+  .swatch {
+    flex: 0 0 0.8rem;
+    height: 0.8rem;
+    margin-top: 0.2rem;
+    border-radius: 0.15rem;
+  }
+  :global(.dark) .income-legend {
+    color: #cbd5e1;
+  }
+  @media (max-width: 440px) {
+    .income-legend {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

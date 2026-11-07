@@ -1,0 +1,12 @@
+{
+  "observations_per_language": 456,
+  "years": [
+    2007,
+    2025
+  ],
+  "bilingual_values_equal": true,
+  "missing_values": 0,
+  "component_totals": 100,
+  "monetary_subtotals_verified": true,
+  "source_hashes_verified": true
+}

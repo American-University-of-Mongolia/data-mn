@@ -1,0 +1,32 @@
+---
+title: "Household Income Sources in Mongolia: Urban vs Rural (2007–2025)"
+publishDate: 2026-11-07
+excerpt: "Explore how wages, pensions, household businesses and non-cash sources contribute to household income. In 2025, wages accounted for 62.7% of urban income and 32.8% of rural income."
+category: "Household & Income"
+tags: ["mongolia", "household", "income", "urban", "rural"]
+keywords: ["income sources", "wages", "pensions", "household businesses"]
+author: "Data.mn"
+dataVersion: 1
+dataDate: 2025-12-31
+excelLanguage: "page"
+dataFiles: [{"path": "/datasets/household-income-sources-en.csv", "format": "csv", "size": "19.5 KB", "description": "Download all data (CSV)"}, {"path": "/datasets/household-income-sources-en.xlsx", "format": "xlsx", "size": "8.1 KB", "description": "Download all data (XLSX)"}]
+source: {"name": "National Statistics Office of Mongolia", "url": "https://data.1212.mn/pxweb/en/NSO/NSO__Society%2C%20development__Household%20income%20and%20expenditure/DT_NSO_1900_003V1.px/", "tableId": "DT_NSO_1900_003V1.px"}
+methodology: |
+  Shares of average monthly household total income, as published by NSO’s Household Socio-Economic Survey. Unit: percent. The national figure is the official survey estimate, not a simple average of urban and rural values. Source updated 29 May 2026; retrieved 7 November 2026.
+
+  Total income includes monetary income, the value of items received free of charge, and food consumed from own farming. Wages, pensions and allowances, household businesses and other monetary income make up the monetary subtotal. Charts show only the six mutually exclusive components; totals and subtotals are excluded from the stack. These shares do not measure the percentage of households receiving each income source.
+
+  This page focuses on 2007–2025. All 456 observations in this selected period are present. The source extends to 1997, with missing non-cash components in 1997–1999; the complete source response is archived separately. Published historical values are retained without interpolation. The table does not provide uncertainty intervals or a complete account of survey-design changes, so long-run comparisons should be interpreted with that limitation.
+
+  Each download contains the full 2007–2025 page coverage: 19 years, three locations and eight source series (including total income and the monetary subtotal). CSV has one observation per row; Excel has years down rows and location/source combinations across columns. Values are percentages on a 0–100 scale. Chart selections do not limit downloads.
+---
+
+import IncomeSourcesChart from '~/components/ui/IncomeSourcesChart.astro';
+
+<IncomeSourcesChart spec="/charts/household-income-sources-en.json" title="Where does household income come from?" caption="Each bar totals 100%. Labels show shares of 7% or more; hover or tap for every value." legend={["Wages and salaries", "Pensions and allowances", "Income from household businesses", "Other", "Received from others free of charge", "Food consumption from own farming"]} />
+
+<div className="my-4 text-sm text-gray-600 dark:text-gray-300">Total income includes non-cash items, such as food produced and consumed by the household. The percentages describe the income mix, not how many households receive each source.</div>
+
+<h2>How has the income mix changed?</h2>
+
+<IncomeSourcesChart spec="/charts/household-income-sources-trend-en.json" title="" caption="Choose an income source and compare locations. The dashed line shows the official national share." />

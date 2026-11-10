@@ -7,8 +7,9 @@ preview inputs, not newly published registry datasets.
 ## Files retained in Git
 
 - `archive-manifest.json`: 718 paths, lengths, SHA-256 hashes and proposed
-  MinIO object keys. Storage status is **pending-upload**.
-- `archive-package.json`: ZIP filename, length and SHA-256.
+  MinIO object keys. Permanent storage status is **awaiting-maintainer-storage**.
+- `archive-package.json`: ZIP filename, length, SHA-256 and the Google Drive
+  handoff link with its access-verification date.
 - `league-pages-manifest.json`: original URLs, UTC retrieval times and hashes
   for 276 saved schedule/game pages (135 games in each language).
 - `game-id-mapping.json`: reviewed website-to-MBA IDs, checked against date
@@ -20,19 +21,27 @@ preview inputs, not newly published registry datasets.
 
 ## Storage status
 
-Documented endpoint: `https://s3.data.mn`; bucket: `data.mn`.
-Proposed new prefix: `basketball/pr-183/2026-11-03/`.
+The maintainer confirmed that `https://s3.data.mn` was intentionally turned off
+and requested a Google Drive link so he can load the archive himself. The
+[verified 718-file ZIP](https://drive.google.com/file/d/1ZGPoyDxaowE2R3PwXGv9jQ2XhNollggh/view?usp=sharing)
+was uploaded on November 5, 2026. Access is restricted to the author and Robert
+Ritz, who has viewer access; this was rechecked on November 10. Other reviewers
+must request access from the author. The local backup is retained outside Git.
 
-The endpoint fails TLS negotiation from this workstation. No upload or public
-access has been verified and no bucket policy was changed. The author holds
-a verified external backup and the ZIP named in `archive-package.json`.
-Proposed object keys are not live URLs.
+Download the ZIP and run `restore_archive.py` below to verify its SHA-256 and
+every archived file before importing. Drive confirmed upload completion; the
+package has not been independently downloaded and hashed from Drive.
 
-Once the approved endpoint is reachable, configure credentials through the
-standard AWS environment/profile mechanism and run:
+Permanent storage and a future update system are deferred to the maintainer.
+The old bucket `data.mn` and prefix `basketball/pr-183/2026-11-03/` remain
+proposed provenance fields, not live object locations. No MinIO upload or
+bucket-policy change occurred.
+
+If a working S3-compatible destination is chosen later, configure credentials
+through the standard AWS environment/profile mechanism and run:
 
 ```sh
-python tools/sources/basketball/upload_archive.py /path/to/restored/archive --endpoint https://s3.data.mn --bucket data.mn --receipt /path/to/upload-receipt.json
+python tools/sources/basketball/upload_archive.py /path/to/restored/archive --endpoint <approved-endpoint> --bucket <approved-bucket> --receipt /path/to/upload-receipt.json
 ```
 
 The uploader refuses to overwrite a different object and downloads each

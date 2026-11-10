@@ -4,8 +4,9 @@
     "endpoint": "https://s3.data.mn",
     "bucket": "data.mn",
     "prefix": "basketball/pr-183/2026-11-03/",
-    "status": "pending-upload",
-    "reason": "Documented endpoint fails TLS handshake; local backup verified. Object keys are proposed destinations, not confirmed uploads."
+    "status": "awaiting-maintainer-storage",
+    "reason": "Maintainer confirmed s3.data.mn was intentionally disabled and requested a Google Drive handoff. The verified ZIP is uploaded and shared with the maintainer; permanent storage and an update system will be arranged later. Object keys remain proposed destinations, not confirmed uploads.",
+    "handoff_package": "archive-package.json"
   },
   "files": [
     {

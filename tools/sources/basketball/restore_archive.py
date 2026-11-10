@@ -1,8 +1,8 @@
 """Verify and restore the archived basketball inputs from a local ZIP.
 
 Usage: python restore_archive.py ARCHIVE.zip DESTINATION
-The manifest is committed; the bulky sources belong in object storage. Until
-storage is reachable, obtain the verified ZIP from the PR author.
+The manifest is committed; the bulky sources are stored outside Git. Obtain
+the ZIP using the restricted handoff link recorded in archive-package.json.
 """
 import argparse
 import hashlib

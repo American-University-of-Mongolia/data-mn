@@ -81,11 +81,15 @@ Git. The website needs only `data.mn/public/sports/basketball.json`. Manifests
 retain original paths, sizes, SHA-256 hashes, source URLs and retrieval times.
 See the [source guide](../tools/sources/basketball/source.md).
 
-**Storage transfer remains pending.** The documented MinIO endpoint
-`https://s3.data.mn` failed TLS negotiation on November 3, 2026. A verified
-718-file ZIP is backed up outside the repository. Proposed object keys are
-not live download links. Transfer to reachable storage is required before
-reviewers can reproduce the import without obtaining the ZIP from the author.
+**Google Drive handoff is available.** The maintainer confirmed that
+`https://s3.data.mn` was intentionally disabled and requested the archive through
+Drive. The [verified 718-file ZIP](https://drive.google.com/file/d/1ZGPoyDxaowE2R3PwXGv9jQ2XhNollggh/view?usp=sharing)
+is uploaded, with restricted viewer access for Robert Ritz confirmed on
+November 10, 2026. Other reviewers can request access from the author.
+The restore command below verifies the downloaded ZIP and every source file.
+Permanent storage and the future update system will be arranged by the maintainer;
+proposed MinIO object keys are not live download links. The local backup remains
+outside the repository.
 
 Separate Koo archives preserve 90 regular-season results for 2022–23
 (10 teams, 18 games each) and 156 for 2023–24 (13 teams, 24 games each).

@@ -24,6 +24,10 @@ const {
   twitter = {},
 } = Astro.props;
 
+// og:locale follows the page language (/mn/... pages were tagged "en").
+const pathLang = Astro.url.pathname.split('/')[1];
+const ogLocale = pathLang === 'mn' ? 'mn_MN' : pathLang === 'en' ? 'en_US' : I18N?.language || 'en';
+
 const seoProps: AstroSeoProps = merge(
   {
     title: '',
@@ -36,7 +40,7 @@ const seoProps: AstroSeoProps = merge(
       url: canonical,
       site_name: SITE?.name,
       images: [],
-      locale: I18N?.language || 'en',
+      locale: ogLocale,
       type: 'website',
     },
     twitter: {

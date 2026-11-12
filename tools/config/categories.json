@@ -1,7 +1,7 @@
 {
   "_description": "Canonical category definitions for data.mn. Edit this file to add/modify categories.",
   "_usage": "This is the single source of truth for allowed categories. Validation scripts read from this file.",
-  "_updated": "2026-09-23",
+  "_updated": "2026-11-12",
 
   "categories": [
     {
@@ -81,6 +81,12 @@
       "en": "Government & Politics",
       "mn": "Засаглал ба улс төр",
       "description": "Parliament, elections, public institutions, representation, and government accountability"
+    },
+    {
+      "id": "sports",
+      "en": "Sports",
+      "mn": "Спорт",
+      "description": "Sports results, team records and player statistics"
     }
   ],
 

@@ -1,0 +1,1217 @@
+[
+  {
+    "previous_game_id": "MBA-614",
+    "site_game_id": "223",
+    "date": "2025-10-01",
+    "home_code": "KUL",
+    "away_code": "BTM",
+    "source_mn": "https://mongolia.basketball/mn/games/223",
+    "source_en": "https://mongolia.basketball/en/games/223"
+  },
+  {
+    "previous_game_id": "MBA-615",
+    "site_game_id": "192",
+    "date": "2025-10-04",
+    "home_code": "ZVB",
+    "away_code": "KUL",
+    "source_mn": "https://mongolia.basketball/mn/games/192",
+    "source_en": "https://mongolia.basketball/en/games/192"
+  },
+  {
+    "previous_game_id": "MBA-616",
+    "site_game_id": "261",
+    "date": "2025-10-04",
+    "home_code": "DUA",
+    "away_code": "BCH",
+    "source_mn": "https://mongolia.basketball/mn/games/261",
+    "source_en": "https://mongolia.basketball/en/games/261"
+  },
+  {
+    "previous_game_id": "MBA-617",
+    "site_game_id": "167",
+    "date": "2025-10-05",
+    "home_code": "SEL",
+    "away_code": "BSM",
+    "source_mn": "https://mongolia.basketball/mn/games/167",
+    "source_en": "https://mongolia.basketball/en/games/167"
+  },
+  {
+    "previous_game_id": "MBA-618",
+    "site_game_id": "178",
+    "date": "2025-10-06",
+    "home_code": "BTM",
+    "away_code": "SGA",
+    "source_mn": "https://mongolia.basketball/mn/games/178",
+    "source_en": "https://mongolia.basketball/en/games/178"
+  },
+  {
+    "previous_game_id": "MBA-619",
+    "site_game_id": "196",
+    "date": "2025-10-07",
+    "home_code": "DUA",
+    "away_code": "KHF",
+    "source_mn": "https://mongolia.basketball/mn/games/196",
+    "source_en": "https://mongolia.basketball/en/games/196"
+  },
+  {
+    "previous_game_id": "MBA-620",
+    "site_game_id": "202",
+    "date": "2025-10-11",
+    "home_code": "KHF",
+    "away_code": "KUL",
+    "source_mn": "https://mongolia.basketball/mn/games/202",
+    "source_en": "https://mongolia.basketball/en/games/202"
+  },
+  {
+    "previous_game_id": "MBA-621",
+    "site_game_id": "154",
+    "date": "2025-10-11",
+    "home_code": "BCH",
+    "away_code": "SEL",
+    "source_mn": "https://mongolia.basketball/mn/games/154",
+    "source_en": "https://mongolia.basketball/en/games/154"
+  },
+  {
+    "previous_game_id": "MBA-622",
+    "site_game_id": "148",
+    "date": "2025-10-12",
+    "home_code": "BSM",
+    "away_code": "ZVB",
+    "source_mn": "https://mongolia.basketball/mn/games/148",
+    "source_en": "https://mongolia.basketball/en/games/148"
+  },
+  {
+    "previous_game_id": "MBA-623",
+    "site_game_id": "248",
+    "date": "2025-10-12",
+    "home_code": "SGA",
+    "away_code": "ETM",
+    "source_mn": "https://mongolia.basketball/mn/games/248",
+    "source_en": "https://mongolia.basketball/en/games/248"
+  },
+  {
+    "previous_game_id": "MBA-624",
+    "site_game_id": "245",
+    "date": "2025-10-14",
+    "home_code": "BSM",
+    "away_code": "ETM",
+    "source_mn": "https://mongolia.basketball/mn/games/245",
+    "source_en": "https://mongolia.basketball/en/games/245"
+  },
+  {
+    "previous_game_id": "MBA-625",
+    "site_game_id": "140",
+    "date": "2025-10-14",
+    "home_code": "BTM",
+    "away_code": "SEL",
+    "source_mn": "https://mongolia.basketball/mn/games/140",
+    "source_en": "https://mongolia.basketball/en/games/140"
+  },
+  {
+    "previous_game_id": "MBA-626",
+    "site_game_id": "228",
+    "date": "2025-10-15",
+    "home_code": "SGA",
+    "away_code": "DUA",
+    "source_mn": "https://mongolia.basketball/mn/games/228",
+    "source_en": "https://mongolia.basketball/en/games/228"
+  },
+  {
+    "previous_game_id": "MBA-627",
+    "site_game_id": "240",
+    "date": "2025-10-15",
+    "home_code": "ZVB",
+    "away_code": "BCH",
+    "source_mn": "https://mongolia.basketball/mn/games/240",
+    "source_en": "https://mongolia.basketball/en/games/240"
+  },
+  {
+    "previous_game_id": "MBA-628",
+    "site_game_id": "231",
+    "date": "2025-10-18",
+    "home_code": "KHF",
+    "away_code": "SGA",
+    "source_mn": "https://mongolia.basketball/mn/games/231",
+    "source_en": "https://mongolia.basketball/en/games/231"
+  },
+  {
+    "previous_game_id": "MBA-629",
+    "site_game_id": "157",
+    "date": "2025-10-18",
+    "home_code": "BTM",
+    "away_code": "SEL",
+    "source_mn": "https://mongolia.basketball/mn/games/157",
+    "source_en": "https://mongolia.basketball/en/games/157"
+  },
+  {
+    "previous_game_id": "MBA-630",
+    "site_game_id": "172",
+    "date": "2025-10-19",
+    "home_code": "ETM",
+    "away_code": "ZVB",
+    "source_mn": "https://mongolia.basketball/mn/games/172",
+    "source_en": "https://mongolia.basketball/en/games/172"
+  },
+  {
+    "previous_game_id": "MBA-631",
+    "site_game_id": "214",
+    "date": "2025-10-19",
+    "home_code": "SGA",
+    "away_code": "KUL",
+    "source_mn": "https://mongolia.basketball/mn/games/214",
+    "source_en": "https://mongolia.basketball/en/games/214"
+  },
+  {
+    "previous_game_id": "MBA-632",
+    "site_game_id": "203",
+    "date": "2025-10-21",
+    "home_code": "BCH",
+    "away_code": "KHF",
+    "source_mn": "https://mongolia.basketball/mn/games/203",
+    "source_en": "https://mongolia.basketball/en/games/203"
+  },
+  {
+    "previous_game_id": "MBA-633",
+    "site_game_id": "162",
+    "date": "2025-10-21",
+    "home_code": "KUL",
+    "away_code": "BSM",
+    "source_mn": "https://mongolia.basketball/mn/games/162",
+    "source_en": "https://mongolia.basketball/en/games/162"
+  },
+  {
+    "previous_game_id": "MBA-634",
+    "site_game_id": "253",
+    "date": "2025-10-22",
+    "home_code": "SEL",
+    "away_code": "DUA",
+    "source_mn": "https://mongolia.basketball/mn/games/253",
+    "source_en": "https://mongolia.basketball/en/games/253"
+  },
+  {
+    "previous_game_id": "MBA-635",
+    "site_game_id": "215",
+    "date": "2025-10-23",
+    "home_code": "BTM",
+    "away_code": "ZVB",
+    "source_mn": "https://mongolia.basketball/mn/games/215",
+    "source_en": "https://mongolia.basketball/en/games/215"
+  },
+  {
+    "previous_game_id": "MBA-636",
+    "site_game_id": "244",
+    "date": "2025-10-23",
+    "home_code": "SGA",
+    "away_code": "BSM",
+    "source_mn": "https://mongolia.basketball/mn/games/244",
+    "source_en": "https://mongolia.basketball/en/games/244"
+  },
+  {
+    "previous_game_id": "MBA-637",
+    "site_game_id": "242",
+    "date": "2025-10-26",
+    "home_code": "BTM",
+    "away_code": "BSM",
+    "source_mn": "https://mongolia.basketball/mn/games/242",
+    "source_en": "https://mongolia.basketball/en/games/242"
+  },
+  {
+    "previous_game_id": "MBA-638",
+    "site_game_id": "188",
+    "date": "2025-10-26",
+    "home_code": "KUL",
+    "away_code": "BCH",
+    "source_mn": "https://mongolia.basketball/mn/games/188",
+    "source_en": "https://mongolia.basketball/en/games/188"
+  },
+  {
+    "previous_game_id": "MBA-639",
+    "site_game_id": "190",
+    "date": "2025-10-28",
+    "home_code": "ZVB",
+    "away_code": "DUA",
+    "source_mn": "https://mongolia.basketball/mn/games/190",
+    "source_en": "https://mongolia.basketball/en/games/190"
+  },
+  {
+    "previous_game_id": "MBA-640",
+    "site_game_id": "254",
+    "date": "2025-10-28",
+    "home_code": "SEL",
+    "away_code": "ETM",
+    "source_mn": "https://mongolia.basketball/mn/games/254",
+    "source_en": "https://mongolia.basketball/en/games/254"
+  },
+  {
+    "previous_game_id": "MBA-641",
+    "site_game_id": "207",
+    "date": "2025-10-29",
+    "home_code": "KHF",
+    "away_code": "ZVB",
+    "source_mn": "https://mongolia.basketball/mn/games/207",
+    "source_en": "https://mongolia.basketball/en/games/207"
+  },
+  {
+    "previous_game_id": "MBA-642",
+    "site_game_id": "259",
+    "date": "2025-10-29",
+    "home_code": "SGA",
+    "away_code": "BCH",
+    "source_mn": "https://mongolia.basketball/mn/games/259",
+    "source_en": "https://mongolia.basketball/en/games/259"
+  },
+  {
+    "previous_game_id": "MBA-643",
+    "site_game_id": "246",
+    "date": "2025-11-09",
+    "home_code": "ZVB",
+    "away_code": "ETM",
+    "source_mn": "https://mongolia.basketball/mn/games/246",
+    "source_en": "https://mongolia.basketball/en/games/246"
+  },
+  {
+    "previous_game_id": "MBA-644",
+    "site_game_id": "182",
+    "date": "2025-11-09",
+    "home_code": "BTM",
+    "away_code": "SGA",
+    "source_mn": "https://mongolia.basketball/mn/games/182",
+    "source_en": "https://mongolia.basketball/en/games/182"
+  },
+  {
+    "previous_game_id": "MBA-645",
+    "site_game_id": "269",
+    "date": "2025-11-11",
+    "home_code": "ETM",
+    "away_code": "KHF",
+    "source_mn": "https://mongolia.basketball/mn/games/269",
+    "source_en": "https://mongolia.basketball/en/games/269"
+  },
+  {
+    "previous_game_id": "MBA-646",
+    "site_game_id": "156",
+    "date": "2025-11-11",
+    "home_code": "BSM",
+    "away_code": "DUA",
+    "source_mn": "https://mongolia.basketball/mn/games/156",
+    "source_en": "https://mongolia.basketball/en/games/156"
+  },
+  {
+    "previous_game_id": "MBA-647",
+    "site_game_id": "151",
+    "date": "2025-11-12",
+    "home_code": "DUA",
+    "away_code": "BTM",
+    "source_mn": "https://mongolia.basketball/mn/games/151",
+    "source_en": "https://mongolia.basketball/en/games/151"
+  },
+  {
+    "previous_game_id": "MBA-648",
+    "site_game_id": "185",
+    "date": "2025-11-12",
+    "home_code": "SEL",
+    "away_code": "SGA",
+    "source_mn": "https://mongolia.basketball/mn/games/185",
+    "source_en": "https://mongolia.basketball/en/games/185"
+  },
+  {
+    "previous_game_id": "MBA-649",
+    "site_game_id": "170",
+    "date": "2025-11-15",
+    "home_code": "BSM",
+    "away_code": "KHF",
+    "source_mn": "https://mongolia.basketball/mn/games/170",
+    "source_en": "https://mongolia.basketball/en/games/170"
+  },
+  {
+    "previous_game_id": "MBA-650",
+    "site_game_id": "250",
+    "date": "2025-11-15",
+    "home_code": "BCH",
+    "away_code": "BTM",
+    "source_mn": "https://mongolia.basketball/mn/games/250",
+    "source_en": "https://mongolia.basketball/en/games/250"
+  },
+  {
+    "previous_game_id": "MBA-651",
+    "site_game_id": "256",
+    "date": "2025-11-16",
+    "home_code": "KHF",
+    "away_code": "SEL",
+    "source_mn": "https://mongolia.basketball/mn/games/256",
+    "source_en": "https://mongolia.basketball/en/games/256"
+  },
+  {
+    "previous_game_id": "MBA-652",
+    "site_game_id": "210",
+    "date": "2025-11-16",
+    "home_code": "KUL",
+    "away_code": "ETM",
+    "source_mn": "https://mongolia.basketball/mn/games/210",
+    "source_en": "https://mongolia.basketball/en/games/210"
+  },
+  {
+    "previous_game_id": "MBA-653",
+    "site_game_id": "181",
+    "date": "2025-11-18",
+    "home_code": "KUL",
+    "away_code": "DUA",
+    "source_mn": "https://mongolia.basketball/mn/games/181",
+    "source_en": "https://mongolia.basketball/en/games/181"
+  },
+  {
+    "previous_game_id": "MBA-654",
+    "site_game_id": "272",
+    "date": "2025-11-18",
+    "home_code": "BCH",
+    "away_code": "BSM",
+    "source_mn": "https://mongolia.basketball/mn/games/272",
+    "source_en": "https://mongolia.basketball/en/games/272"
+  },
+  {
+    "previous_game_id": "MBA-655",
+    "site_game_id": "222",
+    "date": "2025-11-19",
+    "home_code": "ZVB",
+    "away_code": "SGA",
+    "source_mn": "https://mongolia.basketball/mn/games/222",
+    "source_en": "https://mongolia.basketball/en/games/222"
+  },
+  {
+    "previous_game_id": "MBA-656",
+    "site_game_id": "236",
+    "date": "2025-11-19",
+    "home_code": "ETM",
+    "away_code": "BTM",
+    "source_mn": "https://mongolia.basketball/mn/games/236",
+    "source_en": "https://mongolia.basketball/en/games/236"
+  },
+  {
+    "previous_game_id": "MBA-657",
+    "site_game_id": "263",
+    "date": "2025-11-22",
+    "home_code": "BSM",
+    "away_code": "KUL",
+    "source_mn": "https://mongolia.basketball/mn/games/263",
+    "source_en": "https://mongolia.basketball/en/games/263"
+  },
+  {
+    "previous_game_id": "MBA-658",
+    "site_game_id": "267",
+    "date": "2025-11-22",
+    "home_code": "SGA",
+    "away_code": "BCH",
+    "source_mn": "https://mongolia.basketball/mn/games/267",
+    "source_en": "https://mongolia.basketball/en/games/267"
+  },
+  {
+    "previous_game_id": "MBA-659",
+    "site_game_id": "161",
+    "date": "2025-11-23",
+    "home_code": "SEL",
+    "away_code": "ZVB",
+    "source_mn": "https://mongolia.basketball/mn/games/161",
+    "source_en": "https://mongolia.basketball/en/games/161"
+  },
+  {
+    "previous_game_id": "MBA-660",
+    "site_game_id": "158",
+    "date": "2025-11-23",
+    "home_code": "ETM",
+    "away_code": "BTM",
+    "source_mn": "https://mongolia.basketball/mn/games/158",
+    "source_en": "https://mongolia.basketball/en/games/158"
+  },
+  {
+    "previous_game_id": "MBA-661",
+    "site_game_id": "166",
+    "date": "2025-11-25",
+    "home_code": "KHF",
+    "away_code": "BTM",
+    "source_mn": "https://mongolia.basketball/mn/games/166",
+    "source_en": "https://mongolia.basketball/en/games/166"
+  },
+  {
+    "previous_game_id": "MBA-662",
+    "site_game_id": "211",
+    "date": "2025-11-25",
+    "home_code": "DUA",
+    "away_code": "SGA",
+    "source_mn": "https://mongolia.basketball/mn/games/211",
+    "source_en": "https://mongolia.basketball/en/games/211"
+  },
+  {
+    "previous_game_id": "MBA-663",
+    "site_game_id": "143",
+    "date": "2025-11-26",
+    "home_code": "ETM",
+    "away_code": "BSM",
+    "source_mn": "https://mongolia.basketball/mn/games/143",
+    "source_en": "https://mongolia.basketball/en/games/143"
+  },
+  {
+    "previous_game_id": "MBA-664",
+    "site_game_id": "262",
+    "date": "2025-11-26",
+    "home_code": "SEL",
+    "away_code": "SGA",
+    "source_mn": "https://mongolia.basketball/mn/games/262",
+    "source_en": "https://mongolia.basketball/en/games/262"
+  },
+  {
+    "previous_game_id": "MBA-665",
+    "site_game_id": "229",
+    "date": "2025-11-29",
+    "home_code": "SGA",
+    "away_code": "KHF",
+    "source_mn": "https://mongolia.basketball/mn/games/229",
+    "source_en": "https://mongolia.basketball/en/games/229"
+  },
+  {
+    "previous_game_id": "MBA-666",
+    "site_game_id": "174",
+    "date": "2025-11-29",
+    "home_code": "ETM",
+    "away_code": "BCH",
+    "source_mn": "https://mongolia.basketball/mn/games/174",
+    "source_en": "https://mongolia.basketball/en/games/174"
+  },
+  {
+    "previous_game_id": "MBA-667",
+    "site_game_id": "239",
+    "date": "2025-11-30",
+    "home_code": "ZVB",
+    "away_code": "BSM",
+    "source_mn": "https://mongolia.basketball/mn/games/239",
+    "source_en": "https://mongolia.basketball/en/games/239"
+  },
+  {
+    "previous_game_id": "MBA-668",
+    "site_game_id": "146",
+    "date": "2025-11-30",
+    "home_code": "BTM",
+    "away_code": "KUL",
+    "source_mn": "https://mongolia.basketball/mn/games/146",
+    "source_en": "https://mongolia.basketball/en/games/146"
+  },
+  {
+    "previous_game_id": "MBA-669",
+    "site_game_id": "176",
+    "date": "2025-12-01",
+    "home_code": "DUA",
+    "away_code": "SEL",
+    "source_mn": "https://mongolia.basketball/mn/games/176",
+    "source_en": "https://mongolia.basketball/en/games/176"
+  },
+  {
+    "previous_game_id": "MBA-670",
+    "site_game_id": "187",
+    "date": "2025-12-01",
+    "home_code": "ZVB",
+    "away_code": "BCH",
+    "source_mn": "https://mongolia.basketball/mn/games/187",
+    "source_en": "https://mongolia.basketball/en/games/187"
+  },
+  {
+    "previous_game_id": "MBA-671",
+    "site_game_id": "258",
+    "date": "2025-12-02",
+    "home_code": "BCH",
+    "away_code": "DUA",
+    "source_mn": "https://mongolia.basketball/mn/games/258",
+    "source_en": "https://mongolia.basketball/en/games/258"
+  },
+  {
+    "previous_game_id": "MBA-672",
+    "site_game_id": "193",
+    "date": "2025-12-03",
+    "home_code": "ZVB",
+    "away_code": "BTM",
+    "source_mn": "https://mongolia.basketball/mn/games/193",
+    "source_en": "https://mongolia.basketball/en/games/193"
+  },
+  {
+    "previous_game_id": "MBA-673",
+    "site_game_id": "257",
+    "date": "2025-12-03",
+    "home_code": "SGA",
+    "away_code": "KUL",
+    "source_mn": "https://mongolia.basketball/mn/games/257",
+    "source_en": "https://mongolia.basketball/en/games/257"
+  },
+  {
+    "previous_game_id": "MBA-674",
+    "site_game_id": "255",
+    "date": "2025-12-04",
+    "home_code": "KHF",
+    "away_code": "BCH",
+    "source_mn": "https://mongolia.basketball/mn/games/255",
+    "source_en": "https://mongolia.basketball/en/games/255"
+  },
+  {
+    "previous_game_id": "MBA-675",
+    "site_game_id": "175",
+    "date": "2025-12-04",
+    "home_code": "BSM",
+    "away_code": "BTM",
+    "source_mn": "https://mongolia.basketball/mn/games/175",
+    "source_en": "https://mongolia.basketball/en/games/175"
+  },
+  {
+    "previous_game_id": "MBA-676",
+    "site_game_id": "205",
+    "date": "2025-12-08",
+    "home_code": "KHF",
+    "away_code": "DUA",
+    "source_mn": "https://mongolia.basketball/mn/games/205",
+    "source_en": "https://mongolia.basketball/en/games/205"
+  },
+  {
+    "previous_game_id": "MBA-677",
+    "site_game_id": "273",
+    "date": "2025-12-08",
+    "home_code": "ETM",
+    "away_code": "SEL",
+    "source_mn": "https://mongolia.basketball/mn/games/273",
+    "source_en": "https://mongolia.basketball/en/games/273"
+  },
+  {
+    "previous_game_id": "MBA-678",
+    "site_game_id": "224",
+    "date": "2025-12-09",
+    "home_code": "ZVB",
+    "away_code": "SEL",
+    "source_mn": "https://mongolia.basketball/mn/games/224",
+    "source_en": "https://mongolia.basketball/en/games/224"
+  },
+  {
+    "previous_game_id": "MBA-679",
+    "site_game_id": "180",
+    "date": "2025-12-09",
+    "home_code": "BSM",
+    "away_code": "SGA",
+    "source_mn": "https://mongolia.basketball/mn/games/180",
+    "source_en": "https://mongolia.basketball/en/games/180"
+  },
+  {
+    "previous_game_id": "MBA-680",
+    "site_game_id": "169",
+    "date": "2025-12-10",
+    "home_code": "ETM",
+    "away_code": "DUA",
+    "source_mn": "https://mongolia.basketball/mn/games/169",
+    "source_en": "https://mongolia.basketball/en/games/169"
+  },
+  {
+    "previous_game_id": "MBA-681",
+    "site_game_id": "206",
+    "date": "2025-12-10",
+    "home_code": "BCH",
+    "away_code": "BTM",
+    "source_mn": "https://mongolia.basketball/mn/games/206",
+    "source_en": "https://mongolia.basketball/en/games/206"
+  },
+  {
+    "previous_game_id": "MBA-682",
+    "site_game_id": "179",
+    "date": "2025-12-16",
+    "home_code": "SEL",
+    "away_code": "KHF",
+    "source_mn": "https://mongolia.basketball/mn/games/179",
+    "source_en": "https://mongolia.basketball/en/games/179"
+  },
+  {
+    "previous_game_id": "MBA-683",
+    "site_game_id": "147",
+    "date": "2025-12-16",
+    "home_code": "DUA",
+    "away_code": "BSM",
+    "source_mn": "https://mongolia.basketball/mn/games/147",
+    "source_en": "https://mongolia.basketball/en/games/147"
+  },
+  {
+    "previous_game_id": "MBA-684",
+    "site_game_id": "152",
+    "date": "2025-12-17",
+    "home_code": "KHF",
+    "away_code": "ETM",
+    "source_mn": "https://mongolia.basketball/mn/games/152",
+    "source_en": "https://mongolia.basketball/en/games/152"
+  },
+  {
+    "previous_game_id": "MBA-685",
+    "site_game_id": "271",
+    "date": "2025-12-17",
+    "home_code": "KUL",
+    "away_code": "BCH",
+    "source_mn": "https://mongolia.basketball/mn/games/271",
+    "source_en": "https://mongolia.basketball/en/games/271"
+  },
+  {
+    "previous_game_id": "MBA-686",
+    "site_game_id": "238",
+    "date": "2025-12-23",
+    "home_code": "KUL",
+    "away_code": "ZVB",
+    "source_mn": "https://mongolia.basketball/mn/games/238",
+    "source_en": "https://mongolia.basketball/en/games/238"
+  },
+  {
+    "previous_game_id": "MBA-687",
+    "site_game_id": "232",
+    "date": "2025-12-23",
+    "home_code": "BSM",
+    "away_code": "BCH",
+    "source_mn": "https://mongolia.basketball/mn/games/232",
+    "source_en": "https://mongolia.basketball/en/games/232"
+  },
+  {
+    "previous_game_id": "MBA-688",
+    "site_game_id": "247",
+    "date": "2025-12-24",
+    "home_code": "ZVB",
+    "away_code": "KHF",
+    "source_mn": "https://mongolia.basketball/mn/games/247",
+    "source_en": "https://mongolia.basketball/en/games/247"
+  },
+  {
+    "previous_game_id": "MBA-689",
+    "site_game_id": "251",
+    "date": "2025-12-24",
+    "home_code": "SGA",
+    "away_code": "ETM",
+    "source_mn": "https://mongolia.basketball/mn/games/251",
+    "source_en": "https://mongolia.basketball/en/games/251"
+  },
+  {
+    "previous_game_id": "MBA-690",
+    "site_game_id": "144",
+    "date": "2025-12-25",
+    "home_code": "KUL",
+    "away_code": "BTM",
+    "source_mn": "https://mongolia.basketball/mn/games/144",
+    "source_en": "https://mongolia.basketball/en/games/144"
+  },
+  {
+    "previous_game_id": "MBA-691",
+    "site_game_id": "264",
+    "date": "2025-12-31",
+    "home_code": "SGA",
+    "away_code": "SEL",
+    "source_mn": "https://mongolia.basketball/mn/games/264",
+    "source_en": "https://mongolia.basketball/en/games/264"
+  },
+  {
+    "previous_game_id": "MBA-692",
+    "site_game_id": "160",
+    "date": "2026-01-01",
+    "home_code": "DUA",
+    "away_code": "ETM",
+    "source_mn": "https://mongolia.basketball/mn/games/160",
+    "source_en": "https://mongolia.basketball/en/games/160"
+  },
+  {
+    "previous_game_id": "MBA-693",
+    "site_game_id": "155",
+    "date": "2026-01-01",
+    "home_code": "BCH",
+    "away_code": "KUL",
+    "source_mn": "https://mongolia.basketball/mn/games/155",
+    "source_en": "https://mongolia.basketball/en/games/155"
+  },
+  {
+    "previous_game_id": "MBA-694",
+    "site_game_id": "194",
+    "date": "2026-01-03",
+    "home_code": "KHF",
+    "away_code": "BSM",
+    "source_mn": "https://mongolia.basketball/mn/games/194",
+    "source_en": "https://mongolia.basketball/en/games/194"
+  },
+  {
+    "previous_game_id": "MBA-695",
+    "site_game_id": "260",
+    "date": "2026-01-03",
+    "home_code": "SGA",
+    "away_code": "BTM",
+    "source_mn": "https://mongolia.basketball/mn/games/260",
+    "source_en": "https://mongolia.basketball/en/games/260"
+  },
+  {
+    "previous_game_id": "MBA-696",
+    "site_game_id": "204",
+    "date": "2026-01-04",
+    "home_code": "DUA",
+    "away_code": "ZVB",
+    "source_mn": "https://mongolia.basketball/mn/games/204",
+    "source_en": "https://mongolia.basketball/en/games/204"
+  },
+  {
+    "previous_game_id": "MBA-697",
+    "site_game_id": "141",
+    "date": "2026-01-04",
+    "home_code": "KUL",
+    "away_code": "SEL",
+    "source_mn": "https://mongolia.basketball/mn/games/141",
+    "source_en": "https://mongolia.basketball/en/games/141"
+  },
+  {
+    "previous_game_id": "MBA-698",
+    "site_game_id": "189",
+    "date": "2026-01-06",
+    "home_code": "KUL",
+    "away_code": "KHF",
+    "source_mn": "https://mongolia.basketball/mn/games/189",
+    "source_en": "https://mongolia.basketball/en/games/189"
+  },
+  {
+    "previous_game_id": "MBA-699",
+    "site_game_id": "184",
+    "date": "2026-01-06",
+    "home_code": "SGA",
+    "away_code": "ZVB",
+    "source_mn": "https://mongolia.basketball/mn/games/184",
+    "source_en": "https://mongolia.basketball/en/games/184"
+  },
+  {
+    "previous_game_id": "MBA-700",
+    "site_game_id": "225",
+    "date": "2026-01-07",
+    "home_code": "BSM",
+    "away_code": "SEL",
+    "source_mn": "https://mongolia.basketball/mn/games/225",
+    "source_en": "https://mongolia.basketball/en/games/225"
+  },
+  {
+    "previous_game_id": "MBA-701",
+    "site_game_id": "197",
+    "date": "2026-01-07",
+    "home_code": "ETM",
+    "away_code": "BCH",
+    "source_mn": "https://mongolia.basketball/mn/games/197",
+    "source_en": "https://mongolia.basketball/en/games/197"
+  },
+  {
+    "previous_game_id": "MBA-702",
+    "site_game_id": "237",
+    "date": "2026-01-10",
+    "home_code": "DUA",
+    "away_code": "KUL",
+    "source_mn": "https://mongolia.basketball/mn/games/237",
+    "source_en": "https://mongolia.basketball/en/games/237"
+  },
+  {
+    "previous_game_id": "MBA-703",
+    "site_game_id": "218",
+    "date": "2026-01-10",
+    "home_code": "BTM",
+    "away_code": "BCH",
+    "source_mn": "https://mongolia.basketball/mn/games/218",
+    "source_en": "https://mongolia.basketball/en/games/218"
+  },
+  {
+    "previous_game_id": "MBA-704",
+    "site_game_id": "268",
+    "date": "2026-01-11",
+    "home_code": "KHF",
+    "away_code": "ZVB",
+    "source_mn": "https://mongolia.basketball/mn/games/268",
+    "source_en": "https://mongolia.basketball/en/games/268"
+  },
+  {
+    "previous_game_id": "MBA-705",
+    "site_game_id": "165",
+    "date": "2026-01-11",
+    "home_code": "KUL",
+    "away_code": "SGA",
+    "source_mn": "https://mongolia.basketball/mn/games/165",
+    "source_en": "https://mongolia.basketball/en/games/165"
+  },
+  {
+    "previous_game_id": "MBA-706",
+    "site_game_id": "153",
+    "date": "2026-01-13",
+    "home_code": "BTM",
+    "away_code": "KHF",
+    "source_mn": "https://mongolia.basketball/mn/games/153",
+    "source_en": "https://mongolia.basketball/en/games/153"
+  },
+  {
+    "previous_game_id": "MBA-707",
+    "site_game_id": "142",
+    "date": "2026-01-13",
+    "home_code": "BCH",
+    "away_code": "SGA",
+    "source_mn": "https://mongolia.basketball/mn/games/142",
+    "source_en": "https://mongolia.basketball/en/games/142"
+  },
+  {
+    "previous_game_id": "MBA-708",
+    "site_game_id": "212",
+    "date": "2026-01-14",
+    "home_code": "SEL",
+    "away_code": "DUA",
+    "source_mn": "https://mongolia.basketball/mn/games/212",
+    "source_en": "https://mongolia.basketball/en/games/212"
+  },
+  {
+    "previous_game_id": "MBA-709",
+    "site_game_id": "252",
+    "date": "2026-01-14",
+    "home_code": "BSM",
+    "away_code": "ETM",
+    "source_mn": "https://mongolia.basketball/mn/games/252",
+    "source_en": "https://mongolia.basketball/en/games/252"
+  },
+  {
+    "previous_game_id": "MBA-710",
+    "site_game_id": "241",
+    "date": "2026-01-18",
+    "home_code": "DUA",
+    "away_code": "BTM",
+    "source_mn": "https://mongolia.basketball/mn/games/241",
+    "source_en": "https://mongolia.basketball/en/games/241"
+  },
+  {
+    "previous_game_id": "MBA-711",
+    "site_game_id": "235",
+    "date": "2026-01-18",
+    "home_code": "BCH",
+    "away_code": "ZVB",
+    "source_mn": "https://mongolia.basketball/mn/games/235",
+    "source_en": "https://mongolia.basketball/en/games/235"
+  },
+  {
+    "previous_game_id": "MBA-712",
+    "site_game_id": "219",
+    "date": "2026-01-18",
+    "home_code": "SEL",
+    "away_code": "KUL",
+    "source_mn": "https://mongolia.basketball/mn/games/219",
+    "source_en": "https://mongolia.basketball/en/games/219"
+  },
+  {
+    "previous_game_id": "MBA-713",
+    "site_game_id": "191",
+    "date": "2026-01-20",
+    "home_code": "KUL",
+    "away_code": "BSM",
+    "source_mn": "https://mongolia.basketball/mn/games/191",
+    "source_en": "https://mongolia.basketball/en/games/191"
+  },
+  {
+    "previous_game_id": "MBA-714",
+    "site_game_id": "233",
+    "date": "2026-01-20",
+    "home_code": "SGA",
+    "away_code": "DUA",
+    "source_mn": "https://mongolia.basketball/mn/games/233",
+    "source_en": "https://mongolia.basketball/en/games/233"
+  },
+  {
+    "previous_game_id": "MBA-715",
+    "site_game_id": "209",
+    "date": "2026-01-21",
+    "home_code": "BCH",
+    "away_code": "KHF",
+    "source_mn": "https://mongolia.basketball/mn/games/209",
+    "source_en": "https://mongolia.basketball/en/games/209"
+  },
+  {
+    "previous_game_id": "MBA-716",
+    "site_game_id": "198",
+    "date": "2026-01-21",
+    "home_code": "ZVB",
+    "away_code": "SEL",
+    "source_mn": "https://mongolia.basketball/mn/games/198",
+    "source_en": "https://mongolia.basketball/en/games/198"
+  },
+  {
+    "previous_game_id": "MBA-717",
+    "site_game_id": "226",
+    "date": "2026-01-24",
+    "home_code": "KHF",
+    "away_code": "SGA",
+    "source_mn": "https://mongolia.basketball/mn/games/226",
+    "source_en": "https://mongolia.basketball/en/games/226"
+  },
+  {
+    "previous_game_id": "MBA-718",
+    "site_game_id": "186",
+    "date": "2026-01-24",
+    "home_code": "ETM",
+    "away_code": "KUL",
+    "source_mn": "https://mongolia.basketball/mn/games/186",
+    "source_en": "https://mongolia.basketball/en/games/186"
+  },
+  {
+    "previous_game_id": "MBA-719",
+    "site_game_id": "164",
+    "date": "2026-01-25",
+    "home_code": "DUA",
+    "away_code": "BCH",
+    "source_mn": "https://mongolia.basketball/mn/games/164",
+    "source_en": "https://mongolia.basketball/en/games/164"
+  },
+  {
+    "previous_game_id": "MBA-720",
+    "site_game_id": "173",
+    "date": "2026-01-25",
+    "home_code": "SEL",
+    "away_code": "BTM",
+    "source_mn": "https://mongolia.basketball/mn/games/173",
+    "source_en": "https://mongolia.basketball/en/games/173"
+  },
+  {
+    "previous_game_id": "MBA-721",
+    "site_game_id": "266",
+    "date": "2026-01-27",
+    "home_code": "DUA",
+    "away_code": "ETM",
+    "source_mn": "https://mongolia.basketball/mn/games/266",
+    "source_en": "https://mongolia.basketball/en/games/266"
+  },
+  {
+    "previous_game_id": "MBA-722",
+    "site_game_id": "208",
+    "date": "2026-01-27",
+    "home_code": "BTM",
+    "away_code": "BSM",
+    "source_mn": "https://mongolia.basketball/mn/games/208",
+    "source_en": "https://mongolia.basketball/en/games/208"
+  },
+  {
+    "previous_game_id": "MBA-723",
+    "site_game_id": "183",
+    "date": "2026-01-28",
+    "home_code": "KHF",
+    "away_code": "SEL",
+    "source_mn": "https://mongolia.basketball/mn/games/183",
+    "source_en": "https://mongolia.basketball/en/games/183"
+  },
+  {
+    "previous_game_id": "MBA-724",
+    "site_game_id": "216",
+    "date": "2026-01-28",
+    "home_code": "ZVB",
+    "away_code": "KUL",
+    "source_mn": "https://mongolia.basketball/mn/games/216",
+    "source_en": "https://mongolia.basketball/en/games/216"
+  },
+  {
+    "previous_game_id": "MBA-725",
+    "site_game_id": "227",
+    "date": "2026-01-31",
+    "home_code": "ETM",
+    "away_code": "ZVB",
+    "source_mn": "https://mongolia.basketball/mn/games/227",
+    "source_en": "https://mongolia.basketball/en/games/227"
+  },
+  {
+    "previous_game_id": "MBA-726",
+    "site_game_id": "195",
+    "date": "2026-01-31",
+    "home_code": "BCH",
+    "away_code": "BSM",
+    "source_mn": "https://mongolia.basketball/mn/games/195",
+    "source_en": "https://mongolia.basketball/en/games/195"
+  },
+  {
+    "previous_game_id": "MBA-727",
+    "site_game_id": "220",
+    "date": "2026-02-01",
+    "home_code": "KUL",
+    "away_code": "DUA",
+    "source_mn": "https://mongolia.basketball/mn/games/220",
+    "source_en": "https://mongolia.basketball/en/games/220"
+  },
+  {
+    "previous_game_id": "MBA-728",
+    "site_game_id": "221",
+    "date": "2026-02-01",
+    "home_code": "SEL",
+    "away_code": "BCH",
+    "source_mn": "https://mongolia.basketball/mn/games/221",
+    "source_en": "https://mongolia.basketball/en/games/221"
+  },
+  {
+    "previous_game_id": "MBA-729",
+    "site_game_id": "177",
+    "date": "2026-02-03",
+    "home_code": "BSM",
+    "away_code": "ZVB",
+    "source_mn": "https://mongolia.basketball/mn/games/177",
+    "source_en": "https://mongolia.basketball/en/games/177"
+  },
+  {
+    "previous_game_id": "MBA-730",
+    "site_game_id": "149",
+    "date": "2026-02-03",
+    "home_code": "BTM",
+    "away_code": "ETM",
+    "source_mn": "https://mongolia.basketball/mn/games/149",
+    "source_en": "https://mongolia.basketball/en/games/149"
+  },
+  {
+    "previous_game_id": "MBA-731",
+    "site_game_id": "145",
+    "date": "2026-02-04",
+    "home_code": "DUA",
+    "away_code": "KHF",
+    "source_mn": "https://mongolia.basketball/mn/games/145",
+    "source_en": "https://mongolia.basketball/en/games/145"
+  },
+  {
+    "previous_game_id": "MBA-732",
+    "site_game_id": "168",
+    "date": "2026-02-04",
+    "home_code": "SEL",
+    "away_code": "KUL",
+    "source_mn": "https://mongolia.basketball/mn/games/168",
+    "source_en": "https://mongolia.basketball/en/games/168"
+  },
+  {
+    "previous_game_id": "MBA-733",
+    "site_game_id": "274",
+    "date": "2026-02-06",
+    "home_code": "ZVB",
+    "away_code": "DUA",
+    "source_mn": "https://mongolia.basketball/mn/games/274",
+    "source_en": "https://mongolia.basketball/en/games/274"
+  },
+  {
+    "previous_game_id": "MBA-734",
+    "site_game_id": "199",
+    "date": "2026-02-06",
+    "home_code": "ETM",
+    "away_code": "SGA",
+    "source_mn": "https://mongolia.basketball/mn/games/199",
+    "source_en": "https://mongolia.basketball/en/games/199"
+  },
+  {
+    "previous_game_id": "MBA-735",
+    "site_game_id": "217",
+    "date": "2026-02-07",
+    "home_code": "BSM",
+    "away_code": "KHF",
+    "source_mn": "https://mongolia.basketball/mn/games/217",
+    "source_en": "https://mongolia.basketball/en/games/217"
+  },
+  {
+    "previous_game_id": "MBA-736",
+    "site_game_id": "213",
+    "date": "2026-02-07",
+    "home_code": "BCH",
+    "away_code": "SEL",
+    "source_mn": "https://mongolia.basketball/mn/games/213",
+    "source_en": "https://mongolia.basketball/en/games/213"
+  },
+  {
+    "previous_game_id": "MBA-737",
+    "site_game_id": "265",
+    "date": "2026-02-15",
+    "home_code": "BTM",
+    "away_code": "DUA",
+    "source_mn": "https://mongolia.basketball/mn/games/265",
+    "source_en": "https://mongolia.basketball/en/games/265"
+  },
+  {
+    "previous_game_id": "MBA-738",
+    "site_game_id": "159",
+    "date": "2026-02-15",
+    "home_code": "SEL",
+    "away_code": "ETM",
+    "source_mn": "https://mongolia.basketball/mn/games/159",
+    "source_en": "https://mongolia.basketball/en/games/159"
+  },
+  {
+    "previous_game_id": "MBA-739",
+    "site_game_id": "171",
+    "date": "2026-02-17",
+    "home_code": "ETM",
+    "away_code": "KHF",
+    "source_mn": "https://mongolia.basketball/mn/games/171",
+    "source_en": "https://mongolia.basketball/en/games/171"
+  },
+  {
+    "previous_game_id": "MBA-740",
+    "site_game_id": "270",
+    "date": "2026-02-17",
+    "home_code": "SGA",
+    "away_code": "BSM",
+    "source_mn": "https://mongolia.basketball/mn/games/270",
+    "source_en": "https://mongolia.basketball/en/games/270"
+  },
+  {
+    "previous_game_id": "MBA-741",
+    "site_game_id": "201",
+    "date": "2026-02-20",
+    "home_code": "BTM",
+    "away_code": "ZVB",
+    "source_mn": "https://mongolia.basketball/mn/games/201",
+    "source_en": "https://mongolia.basketball/en/games/201"
+  },
+  {
+    "previous_game_id": "MBA-742",
+    "site_game_id": "249",
+    "date": "2026-02-20",
+    "home_code": "KUL",
+    "away_code": "ETM",
+    "source_mn": "https://mongolia.basketball/mn/games/249",
+    "source_en": "https://mongolia.basketball/en/games/249"
+  },
+  {
+    "previous_game_id": "MBA-743",
+    "site_game_id": "234",
+    "date": "2026-02-22",
+    "home_code": "BTM",
+    "away_code": "KHF",
+    "source_mn": "https://mongolia.basketball/mn/games/234",
+    "source_en": "https://mongolia.basketball/en/games/234"
+  },
+  {
+    "previous_game_id": "MBA-744",
+    "site_game_id": "163",
+    "date": "2026-02-22",
+    "home_code": "SEL",
+    "away_code": "BSM",
+    "source_mn": "https://mongolia.basketball/mn/games/163",
+    "source_en": "https://mongolia.basketball/en/games/163"
+  },
+  {
+    "previous_game_id": "MBA-745",
+    "site_game_id": "243",
+    "date": "2026-02-24",
+    "home_code": "ZVB",
+    "away_code": "SGA",
+    "source_mn": "https://mongolia.basketball/mn/games/243",
+    "source_en": "https://mongolia.basketball/en/games/243"
+  },
+  {
+    "previous_game_id": "MBA-746",
+    "site_game_id": "150",
+    "date": "2026-02-24",
+    "home_code": "BCH",
+    "away_code": "ETM",
+    "source_mn": "https://mongolia.basketball/mn/games/150",
+    "source_en": "https://mongolia.basketball/en/games/150"
+  },
+  {
+    "previous_game_id": "MBA-747",
+    "site_game_id": "200",
+    "date": "2026-02-25",
+    "home_code": "KHF",
+    "away_code": "KUL",
+    "source_mn": "https://mongolia.basketball/mn/games/200",
+    "source_en": "https://mongolia.basketball/en/games/200"
+  },
+  {
+    "previous_game_id": "MBA-748",
+    "site_game_id": "230",
+    "date": "2026-02-25",
+    "home_code": "BSM",
+    "away_code": "DUA",
+    "source_mn": "https://mongolia.basketball/mn/games/230",
+    "source_en": "https://mongolia.basketball/en/games/230"
+  }
+]

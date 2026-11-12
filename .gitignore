@@ -79,3 +79,8 @@ data.mn-history.bundle
 
 # scratch data pulls (not for the repo)
 tools/temp/
+
+# Basketball sources and generated previews are archived outside Git.
+outputs/*basketball*/
+outputs/*basketball*.zip
+tools/sources/basketball/archive/

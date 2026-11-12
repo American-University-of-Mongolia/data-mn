@@ -3,6 +3,9 @@ node_modules
 .github
 .changeset
 
+# Git checks this symlink out as a path-only file on some Windows machines.
+CLAUDE.md
+
 # Vendored third-party code (minified Leaflet)
 public/vendor
 
@@ -17,6 +20,7 @@ src/redirects.generated.ts
 public/charts
 public/maps
 public/datasets
+public/sports
 
 # Claude Code writes its own settings file
 .claude

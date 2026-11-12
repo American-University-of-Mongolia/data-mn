@@ -1,0 +1,74 @@
+[
+  {
+    "site_game_id": "203",
+    "source_url": "https://mongolia.basketball/en/games/203",
+    "final_play_by_play_event": {
+      "type": "end",
+      "made": "$undefined",
+      "points": 0,
+      "home": 96,
+      "away": 93,
+      "text": "End of game"
+    }
+  },
+  {
+    "site_game_id": "151",
+    "source_url": "https://mongolia.basketball/en/games/151",
+    "final_play_by_play_event": {
+      "type": "end",
+      "made": "$undefined",
+      "points": 0,
+      "home": 88,
+      "away": 74,
+      "text": "End of game"
+    }
+  },
+  {
+    "site_game_id": "263",
+    "source_url": "https://mongolia.basketball/en/games/263",
+    "final_play_by_play_event": {
+      "type": "end",
+      "made": "$undefined",
+      "points": 0,
+      "home": 59,
+      "away": 78,
+      "text": "End of game"
+    }
+  },
+  {
+    "site_game_id": "169",
+    "source_url": "https://mongolia.basketball/en/games/169",
+    "final_play_by_play_event": {
+      "type": "end",
+      "made": "$undefined",
+      "points": 0,
+      "home": 70,
+      "away": 68,
+      "text": "End of game"
+    }
+  },
+  {
+    "site_game_id": "241",
+    "source_url": "https://mongolia.basketball/en/games/241",
+    "final_play_by_play_event": {
+      "type": "end",
+      "made": "$undefined",
+      "points": 0,
+      "home": 80,
+      "away": 83,
+      "text": "End of game"
+    }
+  },
+  {
+    "site_game_id": "235",
+    "source_url": "https://mongolia.basketball/en/games/235",
+    "final_play_by_play_event": {
+      "type": "end",
+      "made": "$undefined",
+      "points": 0,
+      "home": 93,
+      "away": 88,
+      "text": "End of game"
+    }
+  }
+]

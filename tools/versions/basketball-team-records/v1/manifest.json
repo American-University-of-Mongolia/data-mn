@@ -1,0 +1,11 @@
+{
+  "dataset": "basketball-team-records",
+  "version": 1,
+  "input": "data.mn/public/sports/basketball.json",
+  "input_sha256": "e158cdf39465470f525bff0dc8f8e7c51e9b22b7d47211ebb87d53d056dba533",
+  "files": {
+    "data-en.csv": "60f2d43215b07210ca91e4354d1876c3b2df8ac496bb917a6cf67f07cddab66d",
+    "data-mn.csv": "4467b2771904f8b0e2cc2bdeff6ef527021588333b41870f45e4ab5fcb4c4778"
+  },
+  "command": "python tools/sources/basketball/build_public.py"
+}

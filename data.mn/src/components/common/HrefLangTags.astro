@@ -13,15 +13,21 @@ const pathname = currentUrl.pathname;
 
 // Extract path parts
 const pathParts = pathname.split('/').filter(Boolean);
-const pathWithoutLang = pathParts[0] === 'en' || pathParts[0] === 'mn' ? '/' + pathParts.slice(1).join('/') : pathname;
+// No trailing slash, so alternates match the canonical URLs ("/mn", not "/mn/").
+const rest = pathParts.slice(1).join('/');
+const pathWithoutLang = rest ? `/${rest}` : '';
 
 // Get base URL
 const baseUrl = SITE?.site || currentUrl.origin;
 
 // Only emit hreflang on bilingual routes (/en/... and /mn/...).
-// Unprefixed pages (landing demos, template posts, etc.) have no translations,
+// Unprefixed pages (404, the / redirect stub) have no translations,
 // so advertising /en + /mn alternates would point Google at URLs that 404.
-const isLangPage = pathParts[0] === 'en' || pathParts[0] === 'mn';
+// Author pages are the exception: their slug comes from the author's name in
+// each language (e.g. "byambatsogt" vs "byambacogt"), so the other-language
+// URL usually doesn't exist. They get no alternates.
+const isAuthorPage = pathParts[1] === 'insights' && pathParts[2] === 'author';
+const isLangPage = (pathParts[0] === 'en' || pathParts[0] === 'mn') && !isAuthorPage;
 
 // Generate alternate URLs
 const enUrl = `${baseUrl}/en${pathWithoutLang}`;

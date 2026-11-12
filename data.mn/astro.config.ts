@@ -21,18 +21,9 @@ import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin, lazyImagesRehype
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-// Unprefixed demo/template routes that are noindexed (see LandingLayout,
-// index-original, src/data/post/*). '/landing' also covers '/landing/*'
-// but not '/tag/landing-pages' (matched only on exact or slash boundary).
-const DEMO_PATHS = [
-  '/landing',
-  '/index-original',
-  '/astrowind-template-in-depth',
-  '/get-started-website-with-astro-tailwind-css',
-  '/how-to-customize-astrowind-to-your-brand',
-  '/markdown-elements-demo-post',
-  '/useful-resources-to-create-websites',
-];
+// Only the bilingual /en and /mn routes belong in the sitemap. Anything
+// unprefixed (the / redirect, 404, legacy redirect stubs) is left out.
+const isLocalizedPath = (pathname: string) => /^\/(en|mn)(\/|$)/.test(pathname);
 
 const hasExternalScripts = false;
 const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroIntegration)[] = []) =>
@@ -63,10 +54,11 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
     sitemap({
-      // Astrowind demo/template pages are noindexed — don't submit them either.
-      filter: (page) => {
-        const { pathname } = new URL(page);
-        return !DEMO_PATHS.some((p) => pathname === p || pathname.startsWith(`${p}/`));
+      filter: (page) => isLocalizedPath(new URL(page).pathname),
+      // Emits <xhtml:link rel="alternate" hreflang> for each /en <-> /mn pair.
+      i18n: {
+        defaultLocale: 'mn',
+        locales: { mn: 'mn', en: 'en' },
       },
     }),
     mdx(),

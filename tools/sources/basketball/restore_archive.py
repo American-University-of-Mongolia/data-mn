@@ -2,7 +2,7 @@
 
 Usage: python restore_archive.py ARCHIVE.zip DESTINATION
 The manifest is committed; the bulky sources are stored outside Git. Obtain
-the ZIP using the restricted handoff link recorded in archive-package.json.
+the ZIP from a maintainer before running this command.
 """
 import argparse
 import hashlib

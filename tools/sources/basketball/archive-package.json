@@ -3,13 +3,6 @@
   "bytes": 125692339,
   "sha256": "d3441fd385dce33396106cb29e230db960b491082627bee89b3412f4c34c1e16",
   "files": 718,
-  "status": "uploaded-to-google-drive",
-  "handoff": {
-    "url": "https://drive.google.com/file/d/1ZGPoyDxaowE2R3PwXGv9jQ2XhNollggh/view?usp=sharing",
-    "access": "restricted",
-    "maintainer_permission": "viewer",
-    "uploaded_on": "2026-11-05",
-    "access_verified_on": "2026-11-10",
-    "verification": "Local ZIP SHA-256 matches this manifest; Drive confirmed upload completion and maintainer viewer access."
-  }
+  "status": "maintainer-held",
+  "note": "The archive is held by the maintainers. Ask a maintainer for a copy."
 }

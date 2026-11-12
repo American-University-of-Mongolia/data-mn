@@ -1,2 +1,0 @@
-# Keep website text compatible with Prettier on Windows and Unix checkouts.
-* text=auto eol=lf

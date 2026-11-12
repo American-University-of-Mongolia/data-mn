@@ -1,0 +1,594 @@
+season,game_id,date,stage,team_a_id,team_a,score_a,team_b_id,team_b,score_b,box_score_available,source_type,source_url,review_flag
+2022-23,KOO-2022-23-17804,2022-12-01,Regular season,KOO-2022-23-DAI,Altan Dornodyn Daichid,106,KOO-2022-23-MET,Tenuun Ulzii Metal,97,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=16,0
+2022-23,KOO-2022-23-17805,2022-12-01,Regular season,KOO-2022-23-MIN,Erdenet Miners,95,KOO-2022-23-KHU,Khasin Khuleguud,69,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=15,0
+2022-23,KOO-2022-23-17808,2022-12-03,Regular season,KOO-2022-23-KHA,Bayangol Khartsaga,81,KOO-2022-23-SHA,SHUTIS Sharks,92,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=15,0
+2022-23,KOO-2022-23-17809,2022-12-03,Regular season,KOO-2022-23-GAR,M Garid,110,KOO-2022-23-BIZ,Nalaikh Bison,74,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=15,0
+2022-23,KOO-2022-23-17810,2022-12-03,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,80,KOO-2022-23-APE,IHC Apes,88,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=15,0
+2022-23,KOO-2022-23-17812,2022-12-04,Regular season,KOO-2022-23-SHA,SHUTIS Sharks,78,KOO-2022-23-DAI,Altan Dornodyn Daichid,74,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=15,0
+2022-23,KOO-2022-23-17813,2022-12-04,Regular season,KOO-2022-23-BIZ,Nalaikh Bison,86,KOO-2022-23-MET,Tenuun Ulzii Metal,94,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=15,0
+2022-23,KOO-2022-23-17814,2022-12-04,Regular season,KOO-2022-23-KHU,Khasin Khuleguud,94,KOO-2022-23-APE,IHC Apes,102,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=14,0
+2022-23,KOO-2022-23-17816,2022-12-05,Regular season,KOO-2022-23-GAR,M Garid,86,KOO-2022-23-KHA,Bayangol Khartsaga,63,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=14,0
+2022-23,KOO-2022-23-17817,2022-12-05,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,75,KOO-2022-23-MIN,Erdenet Miners,85,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=14,0
+2022-23,KOO-2022-23-17820,2022-12-07,Regular season,KOO-2022-23-SHA,SHUTIS Sharks,80,KOO-2022-23-KHU,Khasin Khuleguud,82,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=14,0
+2022-23,KOO-2022-23-17821,2022-12-07,Regular season,KOO-2022-23-BIZ,Nalaikh Bison,65,KOO-2022-23-MIN,Erdenet Miners,81,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=14,0
+2022-23,KOO-2022-23-17823,2022-12-09,Regular season,KOO-2022-23-KHA,Bayangol Khartsaga,76,KOO-2022-23-DAI,Altan Dornodyn Daichid,84,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=14,0
+2022-23,KOO-2022-23-17824,2022-12-09,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,77,KOO-2022-23-MET,Tenuun Ulzii Metal,100,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=13,0
+2022-23,KOO-2022-23-17828,2022-12-12,Regular season,KOO-2022-23-SHA,SHUTIS Sharks,63,KOO-2022-23-APE,IHC Apes,95,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=13,0
+2022-23,KOO-2022-23-17829,2022-12-12,Regular season,KOO-2022-23-GAR,M Garid,65,KOO-2022-23-MIN,Erdenet Miners,78,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=13,0
+2022-23,KOO-2022-23-17832,2022-12-14,Regular season,KOO-2022-23-DAI,Altan Dornodyn Daichid,92,KOO-2022-23-APE,IHC Apes,100,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=13,0
+2022-23,KOO-2022-23-18010,2022-12-14,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,83,KOO-2022-23-KHA,Bayangol Khartsaga,85,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=13,0
+2022-23,KOO-2022-23-17834,2022-12-15,Regular season,KOO-2022-23-BIZ,Nalaikh Bison,74,KOO-2022-23-KHU,Khasin Khuleguud,73,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=13,0
+2022-23,KOO-2022-23-17835,2022-12-15,Regular season,KOO-2022-23-GAR,M Garid,83,KOO-2022-23-MET,Tenuun Ulzii Metal,88,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=12,0
+2022-23,KOO-2022-23-17837,2022-12-19,Regular season,KOO-2022-23-SHA,SHUTIS Sharks,71,KOO-2022-23-MET,Tenuun Ulzii Metal,87,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=12,0
+2022-23,KOO-2022-23-17838,2022-12-19,Regular season,KOO-2022-23-MIN,Erdenet Miners,94,KOO-2022-23-DAI,Altan Dornodyn Daichid,69,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=12,0
+2022-23,KOO-2022-23-17840,2022-12-21,Regular season,KOO-2022-23-KHA,Bayangol Khartsaga,93,KOO-2022-23-APE,IHC Apes,104,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=12,0
+2022-23,KOO-2022-23-17841,2022-12-21,Regular season,KOO-2022-23-GAR,M Garid,91,KOO-2022-23-KHU,Khasin Khuleguud,100,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=12,0
+2022-23,KOO-2022-23-17843,2022-12-23,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,105,KOO-2022-23-BIZ,Nalaikh Bison,94,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=12,0
+2022-23,KOO-2022-23-17844,2022-12-23,Regular season,KOO-2022-23-MET,Tenuun Ulzii Metal,88,KOO-2022-23-APE,IHC Apes,92,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=11,0
+2022-23,KOO-2022-23-17846,2022-12-26,Regular season,KOO-2022-23-SHA,SHUTIS Sharks,77,KOO-2022-23-MIN,Erdenet Miners,103,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=11,0
+2022-23,KOO-2022-23-17847,2022-12-26,Regular season,KOO-2022-23-BIZ,Nalaikh Bison,83,KOO-2022-23-DAI,Altan Dornodyn Daichid,89,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=11,0
+2022-23,KOO-2022-23-17849,2022-12-28,Regular season,KOO-2022-23-KHA,Bayangol Khartsaga,82,KOO-2022-23-KHU,Khasin Khuleguud,107,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=11,0
+2022-23,KOO-2022-23-17850,2022-12-28,Regular season,KOO-2022-23-GAR,M Garid,80,KOO-2022-23-BRO,Zavkhan Brothers,78,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=11,0
+2022-23,KOO-2022-23-17852,2022-12-31,Regular season,KOO-2022-23-MIN,Erdenet Miners,102,KOO-2022-23-APE,IHC Apes,65,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=11,0
+2022-23,KOO-2022-23-17853,2022-12-31,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,89,KOO-2022-23-KHU,Khasin Khuleguud,101,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=10,0
+2022-23,KOO-2022-23-18061,2023-01-03,Regular season,KOO-2022-23-BIZ,Nalaikh Bison,107,KOO-2022-23-SHA,SHUTIS Sharks,105,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=10,0
+2022-23,KOO-2022-23-18062,2023-01-03,Regular season,KOO-2022-23-KHA,Bayangol Khartsaga,88,KOO-2022-23-MET,Tenuun Ulzii Metal,98,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=10,0
+2022-23,KOO-2022-23-18064,2023-01-05,Regular season,KOO-2022-23-GAR,M Garid,85,KOO-2022-23-SHA,SHUTIS Sharks,100,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=10,0
+2022-23,KOO-2022-23-18065,2023-01-05,Regular season,KOO-2022-23-BIZ,Nalaikh Bison,81,KOO-2022-23-APE,IHC Apes,70,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=10,0
+2022-23,KOO-2022-23-18067,2023-01-07,Regular season,KOO-2022-23-KHA,Bayangol Khartsaga,61,KOO-2022-23-MIN,Erdenet Miners,93,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=10,0
+2022-23,KOO-2022-23-18068,2023-01-07,Regular season,KOO-2022-23-GAR,M Garid,84,KOO-2022-23-DAI,Altan Dornodyn Daichid,90,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=9,0
+2022-23,KOO-2022-23-18069,2023-01-07,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,84,KOO-2022-23-SHA,SHUTIS Sharks,83,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=9,0
+2022-23,KOO-2022-23-18076,2023-01-08,Regular season,KOO-2022-23-KHA,Bayangol Khartsaga,93,KOO-2022-23-BIZ,Nalaikh Bison,103,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=9,0
+2022-23,KOO-2022-23-18077,2023-01-08,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,88,KOO-2022-23-DAI,Altan Dornodyn Daichid,82,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=9,0
+2022-23,KOO-2022-23-18078,2023-01-08,Regular season,KOO-2022-23-KHU,Khasin Khuleguud,89,KOO-2022-23-MET,Tenuun Ulzii Metal,94,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=9,0
+2022-23,KOO-2022-23-18079,2023-01-10,Regular season,KOO-2022-23-SHA,SHUTIS Sharks,65,KOO-2022-23-KHU,Khasin Khuleguud,84,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=9,0
+2022-23,KOO-2022-23-18080,2023-01-10,Regular season,KOO-2022-23-BIZ,Nalaikh Bison,53,KOO-2022-23-MIN,Erdenet Miners,70,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=8,0
+2022-23,KOO-2022-23-18081,2023-01-10,Regular season,KOO-2022-23-GAR,M Garid,82,KOO-2022-23-APE,IHC Apes,67,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=8,0
+2022-23,KOO-2022-23-18197,2023-01-12,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,91,KOO-2022-23-KHA,Bayangol Khartsaga,76,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=8,0
+2022-23,KOO-2022-23-18198,2023-01-12,Regular season,KOO-2022-23-MIN,Erdenet Miners,76,KOO-2022-23-MET,Tenuun Ulzii Metal,74,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=8,0
+2022-23,KOO-2022-23-18262,2023-01-14,Regular season,KOO-2022-23-SHA,SHUTIS Sharks,97,KOO-2022-23-APE,IHC Apes,95,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=8,0
+2022-23,KOO-2022-23-18263,2023-01-14,Regular season,KOO-2022-23-KHU,Khasin Khuleguud,104,KOO-2022-23-DAI,Altan Dornodyn Daichid,92,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=8,0
+2022-23,KOO-2022-23-18264,2023-01-14,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,89,KOO-2022-23-MET,Tenuun Ulzii Metal,73,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=7,0
+2022-23,KOO-2022-23-18266,2023-01-15,Regular season,KOO-2022-23-KHA,Bayangol Khartsaga,88,KOO-2022-23-DAI,Altan Dornodyn Daichid,92,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=7,0
+2022-23,KOO-2022-23-18268,2023-01-15,Regular season,KOO-2022-23-BIZ,Nalaikh Bison,84,KOO-2022-23-KHU,Khasin Khuleguud,69,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=7,0
+2022-23,KOO-2022-23-18269,2023-01-15,Regular season,KOO-2022-23-GAR,M Garid,77,KOO-2022-23-MIN,Erdenet Miners,83,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=7,0
+2022-23,KOO-2022-23-18372,2023-01-17,Regular season,KOO-2022-23-KHA,Bayangol Khartsaga,98,KOO-2022-23-SHA,SHUTIS Sharks,78,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=7,0
+2022-23,KOO-2022-23-18373,2023-01-17,Regular season,KOO-2022-23-DAI,Altan Dornodyn Daichid,76,KOO-2022-23-APE,IHC Apes,95,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=7,0
+2022-23,KOO-2022-23-18378,2023-01-18,Regular season,KOO-2022-23-GAR,M Garid,79,KOO-2022-23-BIZ,Nalaikh Bison,71,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=6,0
+2022-23,KOO-2022-23-18379,2023-01-18,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,78,KOO-2022-23-MIN,Erdenet Miners,104,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=6,0
+2022-23,KOO-2022-23-18381,2023-01-19,Regular season,KOO-2022-23-SHA,SHUTIS Sharks,69,KOO-2022-23-MET,Tenuun Ulzii Metal,78,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=6,0
+2022-23,KOO-2022-23-18382,2023-01-19,Regular season,KOO-2022-23-KHU,Khasin Khuleguud,89,KOO-2022-23-APE,IHC Apes,86,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=6,0
+2022-23,KOO-2022-23-18410,2023-01-21,Regular season,KOO-2022-23-KHA,Bayangol Khartsaga,89,KOO-2022-23-APE,IHC Apes,96,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=6,0
+2022-23,KOO-2022-23-18411,2023-01-21,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,95,KOO-2022-23-BIZ,Nalaikh Bison,92,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=6,0
+2022-23,KOO-2022-23-18412,2023-01-21,Regular season,KOO-2022-23-GAR,M Garid,89,KOO-2022-23-KHU,Khasin Khuleguud,76,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=5,0
+2022-23,KOO-2022-23-18413,2023-01-22,Regular season,KOO-2022-23-DAI,Altan Dornodyn Daichid,86,KOO-2022-23-MET,Tenuun Ulzii Metal,93,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=5,0
+2022-23,KOO-2022-23-18414,2023-01-22,Regular season,KOO-2022-23-SHA,SHUTIS Sharks,75,KOO-2022-23-MIN,Erdenet Miners,97,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=5,0
+2022-23,KOO-2022-23-18416,2023-01-24,Regular season,KOO-2022-23-KHA,Bayangol Khartsaga,84,KOO-2022-23-KHU,Khasin Khuleguud,86,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=5,0
+2022-23,KOO-2022-23-18417,2023-01-24,Regular season,KOO-2022-23-MIN,Erdenet Miners,75,KOO-2022-23-DAI,Altan Dornodyn Daichid,64,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=5,0
+2022-23,KOO-2022-23-18432,2023-01-25,Regular season,KOO-2022-23-KHA,Bayangol Khartsaga,101,KOO-2022-23-MET,Tenuun Ulzii Metal,95,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=5,0
+2022-23,KOO-2022-23-18433,2023-01-25,Regular season,KOO-2022-23-BIZ,Nalaikh Bison,83,KOO-2022-23-SHA,SHUTIS Sharks,78,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=4,0
+2022-23,KOO-2022-23-18434,2023-01-25,Regular season,KOO-2022-23-GAR,M Garid,97,KOO-2022-23-BRO,Zavkhan Brothers,88,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=4,0
+2022-23,KOO-2022-23-18435,2023-01-26,Regular season,KOO-2022-23-BIZ,Nalaikh Bison,80,KOO-2022-23-DAI,Altan Dornodyn Daichid,99,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=4,0
+2022-23,KOO-2022-23-18436,2023-01-26,Regular season,KOO-2022-23-MET,Tenuun Ulzii Metal,93,KOO-2022-23-APE,IHC Apes,81,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=4,0
+2022-23,KOO-2022-23-18438,2023-01-28,Regular season,KOO-2022-23-GAR,M Garid,100,KOO-2022-23-MET,Tenuun Ulzii Metal,69,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=4,0
+2022-23,KOO-2022-23-18439,2023-01-28,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,89,KOO-2022-23-KHU,Khasin Khuleguud,86,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=4,0
+2022-23,KOO-2022-23-18444,2023-01-29,Regular season,KOO-2022-23-KHA,Bayangol Khartsaga,84,KOO-2022-23-BIZ,Nalaikh Bison,86,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=3,0
+2022-23,KOO-2022-23-18445,2023-01-29,Regular season,KOO-2022-23-GAR,M Garid,94,KOO-2022-23-DAI,Altan Dornodyn Daichid,68,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=3,0
+2022-23,KOO-2022-23-18446,2023-01-29,Regular season,KOO-2022-23-MIN,Erdenet Miners,67,KOO-2022-23-APE,IHC Apes,63,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=3,0
+2022-23,KOO-2022-23-18447,2023-01-31,Regular season,KOO-2022-23-GAR,M Garid,98,KOO-2022-23-KHA,Bayangol Khartsaga,92,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=3,0
+2022-23,KOO-2022-23-18448,2023-01-31,Regular season,KOO-2022-23-KHU,Khasin Khuleguud,92,KOO-2022-23-MET,Tenuun Ulzii Metal,95,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=3,0
+2022-23,KOO-2022-23-18449,2023-02-02,Regular season,KOO-2022-23-KHA,Bayangol Khartsaga,58,KOO-2022-23-MIN,Erdenet Miners,94,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=3,0
+2022-23,KOO-2022-23-18450,2023-02-02,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,83,KOO-2022-23-APE,IHC Apes,90,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=2,0
+2022-23,KOO-2022-23-18451,2023-02-04,Regular season,KOO-2022-23-MIN,Erdenet Miners,72,KOO-2022-23-KHU,Khasin Khuleguud,74,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=2,0
+2022-23,KOO-2022-23-18452,2023-02-04,Regular season,KOO-2022-23-GAR,M Garid,84,KOO-2022-23-APE,IHC Apes,89,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=2,0
+2022-23,KOO-2022-23-18453,2023-02-04,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,89,KOO-2022-23-DAI,Altan Dornodyn Daichid,96,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=2,0
+2022-23,KOO-2022-23-18454,2023-02-05,Regular season,KOO-2022-23-BRO,Zavkhan Brothers,101,KOO-2022-23-SHA,SHUTIS Sharks,96,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=2,0
+2022-23,KOO-2022-23-18455,2023-02-05,Regular season,KOO-2022-23-BIZ,Nalaikh Bison,104,KOO-2022-23-APE,IHC Apes,109,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/?page=2,0
+2022-23,KOO-2022-23-18457,2023-02-07,Regular season,KOO-2022-23-BIZ,Nalaikh Bison,89,KOO-2022-23-MET,Tenuun Ulzii Metal,62,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/,0
+2022-23,KOO-2022-23-18458,2023-02-09,Regular season,KOO-2022-23-SHA,SHUTIS Sharks,83,KOO-2022-23-DAI,Altan Dornodyn Daichid,93,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/,0
+2022-23,KOO-2022-23-18459,2023-02-09,Regular season,KOO-2022-23-MIN,Erdenet Miners,96,KOO-2022-23-MET,Tenuun Ulzii Metal,104,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/,0
+2022-23,KOO-2022-23-18460,2023-02-10,Regular season,KOO-2022-23-GAR,M Garid,95,KOO-2022-23-SHA,SHUTIS Sharks,87,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/,0
+2022-23,KOO-2022-23-18461,2023-02-10,Regular season,KOO-2022-23-KHU,Khasin Khuleguud,100,KOO-2022-23-DAI,Altan Dornodyn Daichid,85,0,koo archive,https://www.koo.mn/basketball/men/results/2022-23/,0
+2023-24,KOO-2023-24-19251,2023-11-03,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,91,KOO-2023-24-KHU,Khasin Khuleguud,70,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=26,0
+2023-24,KOO-2023-24-19253,2023-11-04,Regular season,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,85,KOO-2023-24-TLG,Inut Yeis TLG,83,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=26,0
+2023-24,KOO-2023-24-19254,2023-11-04,Regular season,KOO-2023-24-MIN,Erdenet Miners,84,KOO-2023-24-APE,IHC Apes,81,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=26,0
+2023-24,KOO-2023-24-19255,2023-11-04,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,83,KOO-2023-24-BOD,Selenge Bodonguud,96,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=26,0
+2023-24,KOO-2023-24-19259,2023-11-05,Regular season,KOO-2023-24-UNI,Darkhan United,79,KOO-2023-24-YOL,Umnugovi Yoluud,89,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=26,0
+2023-24,KOO-2023-24-19260,2023-11-05,Regular season,KOO-2023-24-MET,Tenuun Ulzii Metal,73,KOO-2023-24-GAR,BCH Garid,85,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=26,0
+2023-24,KOO-2023-24-19296,2023-11-06,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,87,KOO-2023-24-SHA,SHUTIS Sharks,83,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=25,0
+2023-24,KOO-2023-24-19297,2023-11-06,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,95,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,77,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=25,0
+2023-24,KOO-2023-24-19298,2023-11-06,Regular season,KOO-2023-24-TLG,Inut Yeis TLG,87,KOO-2023-24-YOL,Umnugovi Yoluud,85,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=25,0
+2023-24,KOO-2023-24-19300,2023-11-07,Regular season,KOO-2023-24-UNI,Darkhan United,87,KOO-2023-24-BOD,Selenge Bodonguud,89,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=25,0
+2023-24,KOO-2023-24-19301,2023-11-07,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,83,KOO-2023-24-APE,IHC Apes,96,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=25,0
+2023-24,KOO-2023-24-19302,2023-11-08,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,101,KOO-2023-24-BOD,Selenge Bodonguud,106,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=25,0
+2023-24,KOO-2023-24-19303,2023-11-08,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,90,KOO-2023-24-TLG,Inut Yeis TLG,106,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=24,0
+2023-24,KOO-2023-24-19304,2023-11-08,Regular season,KOO-2023-24-MIN,Erdenet Miners,67,KOO-2023-24-MET,Tenuun Ulzii Metal,62,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=24,0
+2023-24,KOO-2023-24-19306,2023-11-09,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,79,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,82,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=24,0
+2023-24,KOO-2023-24-19307,2023-11-09,Regular season,KOO-2023-24-APE,IHC Apes,105,KOO-2023-24-YOL,Umnugovi Yoluud,77,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=24,0
+2023-24,KOO-2023-24-19336,2023-11-11,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,75,KOO-2023-24-BIZ,Nalaikh Bison,84,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=24,0
+2023-24,KOO-2023-24-19337,2023-11-11,Regular season,KOO-2023-24-UNI,Darkhan United,52,KOO-2023-24-GAR,BCH Garid,95,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=24,0
+2023-24,KOO-2023-24-19338,2023-11-11,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,79,KOO-2023-24-MET,Tenuun Ulzii Metal,109,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=23,0
+2023-24,KOO-2023-24-19340,2023-11-12,Regular season,KOO-2023-24-APE,IHC Apes,88,KOO-2023-24-BOD,Selenge Bodonguud,72,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=23,0
+2023-24,KOO-2023-24-19341,2023-11-12,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,78,KOO-2023-24-YOL,Umnugovi Yoluud,77,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=23,0
+2023-24,KOO-2023-24-19342,2023-11-12,Regular season,KOO-2023-24-MIN,Erdenet Miners,87,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,64,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=23,0
+2023-24,KOO-2023-24-19343,2023-11-13,Regular season,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,76,KOO-2023-24-YOL,Umnugovi Yoluud,84,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=23,0
+2023-24,KOO-2023-24-19344,2023-11-13,Regular season,KOO-2023-24-MET,Tenuun Ulzii Metal,92,KOO-2023-24-UNI,Darkhan United,78,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=23,0
+2023-24,KOO-2023-24-19345,2023-11-13,Regular season,KOO-2023-24-TLG,Inut Yeis TLG,88,KOO-2023-24-GAR,BCH Garid,104,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=22,0
+2023-24,KOO-2023-24-19347,2023-11-14,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,88,KOO-2023-24-BOD,Selenge Bodonguud,71,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=22,0
+2023-24,KOO-2023-24-19348,2023-11-14,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,75,KOO-2023-24-MIN,Erdenet Miners,95,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=22,0
+2023-24,KOO-2023-24-19349,2023-11-15,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,84,KOO-2023-24-APE,IHC Apes,92,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=22,0
+2023-24,KOO-2023-24-19350,2023-11-15,Regular season,KOO-2023-24-MET,Tenuun Ulzii Metal,96,KOO-2023-24-TLG,Inut Yeis TLG,78,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=22,0
+2023-24,KOO-2023-24-19351,2023-11-15,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,95,KOO-2023-24-GAR,BCH Garid,99,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=22,0
+2023-24,KOO-2023-24-19353,2023-11-16,Regular season,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,94,KOO-2023-24-BOD,Selenge Bodonguud,92,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=21,0
+2023-24,KOO-2023-24-19354,2023-11-16,Regular season,KOO-2023-24-MIN,Erdenet Miners,90,KOO-2023-24-YOL,Umnugovi Yoluud,70,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=21,0
+2023-24,KOO-2023-24-19356,2023-11-18,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,85,KOO-2023-24-UNI,Darkhan United,87,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=21,0
+2023-24,KOO-2023-24-19357,2023-11-18,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,61,KOO-2023-24-KHU,Khasin Khuleguud,72,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=21,0
+2023-24,KOO-2023-24-19358,2023-11-18,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,87,KOO-2023-24-MET,Tenuun Ulzii Metal,100,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=21,0
+2023-24,KOO-2023-24-19360,2023-11-19,Regular season,KOO-2023-24-BOD,Selenge Bodonguud,86,KOO-2023-24-YOL,Umnugovi Yoluud,87,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=21,0
+2023-24,KOO-2023-24-19361,2023-11-19,Regular season,KOO-2023-24-MIN,Erdenet Miners,100,KOO-2023-24-UNI,Darkhan United,67,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=20,0
+2023-24,KOO-2023-24-19362,2023-11-19,Regular season,KOO-2023-24-APE,IHC Apes,82,KOO-2023-24-GAR,BCH Garid,73,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=20,0
+2023-24,KOO-2023-24-19363,2023-11-20,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,99,KOO-2023-24-TLG,Inut Yeis TLG,96,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=20,0
+2023-24,KOO-2023-24-19364,2023-11-20,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,77,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,69,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=20,0
+2023-24,KOO-2023-24-19365,2023-11-20,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,69,KOO-2023-24-GAR,BCH Garid,75,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=20,0
+2023-24,KOO-2023-24-19376,2023-11-21,Regular season,KOO-2023-24-MIN,Erdenet Miners,74,KOO-2023-24-BOD,Selenge Bodonguud,70,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=20,0
+2023-24,KOO-2023-24-19377,2023-11-21,Regular season,KOO-2023-24-MET,Tenuun Ulzii Metal,87,KOO-2023-24-APE,IHC Apes,94,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=19,0
+2023-24,KOO-2023-24-19378,2023-11-22,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,96,KOO-2023-24-YOL,Umnugovi Yoluud,100,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=19,0
+2023-24,KOO-2023-24-19379,2023-11-22,Regular season,KOO-2023-24-TLG,Inut Yeis TLG,78,KOO-2023-24-UNI,Darkhan United,66,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=19,0
+2023-24,KOO-2023-24-19380,2023-11-22,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,85,KOO-2023-24-SHA,SHUTIS Sharks,84,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=19,0
+2023-24,KOO-2023-24-19382,2023-11-23,Regular season,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,87,KOO-2023-24-GAR,BCH Garid,96,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=19,0
+2023-24,KOO-2023-24-19383,2023-11-23,Regular season,KOO-2023-24-MIN,Erdenet Miners,96,KOO-2023-24-TLG,Inut Yeis TLG,66,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=19,0
+2023-24,KOO-2023-24-19385,2023-11-26,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,104,KOO-2023-24-BOD,Selenge Bodonguud,102,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=18,0
+2023-24,KOO-2023-24-19386,2023-11-26,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,88,KOO-2023-24-UNI,Darkhan United,74,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=18,0
+2023-24,KOO-2023-24-19387,2023-11-26,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,66,KOO-2023-24-MET,Tenuun Ulzii Metal,77,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=18,0
+2023-24,KOO-2023-24-19388,2023-11-27,Regular season,KOO-2023-24-MET,Tenuun Ulzii Metal,82,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,79,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=18,0
+2023-24,KOO-2023-24-19389,2023-11-27,Regular season,KOO-2023-24-GAR,BCH Garid,98,KOO-2023-24-YOL,Umnugovi Yoluud,78,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=18,0
+2023-24,KOO-2023-24-19390,2023-11-27,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,93,KOO-2023-24-APE,IHC Apes,107,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=18,0
+2023-24,KOO-2023-24-19392,2023-11-28,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,68,KOO-2023-24-MIN,Erdenet Miners,84,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=17,0
+2023-24,KOO-2023-24-19393,2023-11-28,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,78,KOO-2023-24-TLG,Inut Yeis TLG,90,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=17,0
+2023-24,KOO-2023-24-19394,2023-11-29,Regular season,KOO-2023-24-BOD,Selenge Bodonguud,88,KOO-2023-24-GAR,BCH Garid,100,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=17,0
+2023-24,KOO-2023-24-19395,2023-11-29,Regular season,KOO-2023-24-MET,Tenuun Ulzii Metal,100,KOO-2023-24-YOL,Umnugovi Yoluud,88,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=17,0
+2023-24,KOO-2023-24-19396,2023-11-29,Regular season,KOO-2023-24-APE,IHC Apes,69,KOO-2023-24-UNI,Darkhan United,82,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=17,0
+2023-24,KOO-2023-24-19398,2023-11-30,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,85,KOO-2023-24-KHU,Khasin Khuleguud,92,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=17,0
+2023-24,KOO-2023-24-19399,2023-11-30,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,86,KOO-2023-24-MIN,Erdenet Miners,90,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=16,0
+2023-24,KOO-2023-24-19405,2023-12-01,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,83,KOO-2023-24-GAR,BCH Garid,91,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=16,0
+2023-24,KOO-2023-24-19406,2023-12-01,Regular season,KOO-2023-24-APE,IHC Apes,106,KOO-2023-24-TLG,Inut Yeis TLG,100,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=16,0
+2023-24,KOO-2023-24-19407,2023-12-02,Regular season,KOO-2023-24-MET,Tenuun Ulzii Metal,78,KOO-2023-24-BOD,Selenge Bodonguud,80,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=16,0
+2023-24,KOO-2023-24-19408,2023-12-02,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,77,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,82,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=16,0
+2023-24,KOO-2023-24-19409,2023-12-02,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,70,KOO-2023-24-UNI,Darkhan United,63,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=16,0
+2023-24,KOO-2023-24-19410,2023-12-02,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,94,KOO-2023-24-APE,IHC Apes,100,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=15,0
+2023-24,KOO-2023-24-19411,2023-12-03,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,80,KOO-2023-24-MET,Tenuun Ulzii Metal,88,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=15,0
+2023-24,KOO-2023-24-19412,2023-12-03,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,69,KOO-2023-24-TLG,Inut Yeis TLG,71,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=15,0
+2023-24,KOO-2023-24-19413,2023-12-03,Regular season,KOO-2023-24-MIN,Erdenet Miners,70,KOO-2023-24-GAR,BCH Garid,62,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=15,0
+2023-24,KOO-2023-24-19415,2023-12-07,Regular season,KOO-2023-24-TLG,Inut Yeis TLG,80,KOO-2023-24-BOD,Selenge Bodonguud,90,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=15,0
+2023-24,KOO-2023-24-19416,2023-12-07,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,101,KOO-2023-24-YOL,Umnugovi Yoluud,90,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=15,0
+2023-24,KOO-2023-24-19418,2023-12-09,Regular season,KOO-2023-24-APE,IHC Apes,91,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,72,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=14,0
+2023-24,KOO-2023-24-19419,2023-12-09,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,75,KOO-2023-24-GAR,BCH Garid,96,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=14,0
+2023-24,KOO-2023-24-19421,2023-12-10,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,84,KOO-2023-24-TLG,Inut Yeis TLG,87,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=14,0
+2023-24,KOO-2023-24-19422,2023-12-10,Regular season,KOO-2023-24-MIN,Erdenet Miners,71,KOO-2023-24-KHU,Khasin Khuleguud,76,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=14,0
+2023-24,KOO-2023-24-19508,2023-12-11,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,92,KOO-2023-24-YOL,Umnugovi Yoluud,87,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=14,0
+2023-24,KOO-2023-24-19509,2023-12-11,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,101,KOO-2023-24-UNI,Darkhan United,95,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=14,0
+2023-24,KOO-2023-24-19510,2023-12-12,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,68,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,64,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=13,0
+2023-24,KOO-2023-24-19511,2023-12-12,Regular season,KOO-2023-24-APE,IHC Apes,117,KOO-2023-24-YOL,Umnugovi Yoluud,73,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=13,0
+2023-24,KOO-2023-24-19512,2023-12-12,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,101,KOO-2023-24-BOD,Selenge Bodonguud,77,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=13,0
+2023-24,KOO-2023-24-19514,2023-12-13,Regular season,KOO-2023-24-UNI,Darkhan United,84,KOO-2023-24-GAR,BCH Garid,105,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=13,0
+2023-24,KOO-2023-24-19515,2023-12-13,Regular season,KOO-2023-24-MET,Tenuun Ulzii Metal,104,KOO-2023-24-TLG,Inut Yeis TLG,96,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=13,0
+2023-24,KOO-2023-24-19516,2023-12-14,Regular season,KOO-2023-24-MIN,Erdenet Miners,91,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,89,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=13,0
+2023-24,KOO-2023-24-19517,2023-12-14,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,85,KOO-2023-24-BIZ,Nalaikh Bison,77,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=12,0
+2023-24,KOO-2023-24-19518,2023-12-14,Regular season,KOO-2023-24-APE,IHC Apes,113,KOO-2023-24-BOD,Selenge Bodonguud,67,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=12,0
+2023-24,KOO-2023-24-19520,2023-12-25,Regular season,KOO-2023-24-MET,Tenuun Ulzii Metal,86,KOO-2023-24-UNI,Darkhan United,80,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=12,0
+2023-24,KOO-2023-24-19521,2023-12-25,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,80,KOO-2023-24-APE,IHC Apes,88,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=12,0
+2023-24,KOO-2023-24-19522,2023-12-26,Regular season,KOO-2023-24-TLG,Inut Yeis TLG,78,KOO-2023-24-GAR,BCH Garid,95,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=12,0
+2023-24,KOO-2023-24-19523,2023-12-26,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,63,KOO-2023-24-MIN,Erdenet Miners,80,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=12,0
+2023-24,KOO-2023-24-19524,2023-12-26,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,88,KOO-2023-24-YOL,Umnugovi Yoluud,68,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=11,0
+2023-24,KOO-2023-24-19525,2023-12-31,Regular season,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,97,KOO-2023-24-YOL,Umnugovi Yoluud,94,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=11,0
+2023-24,KOO-2023-24-19527,2023-12-31,Regular season,KOO-2023-24-MIN,Erdenet Miners,62,KOO-2023-24-GAR,BCH Garid,75,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=11,0
+2023-24,KOO-2023-24-19530,2024-01-01,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,92,KOO-2023-24-MET,Tenuun Ulzii Metal,111,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=11,0
+2023-24,KOO-2023-24-19531,2024-01-01,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,88,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,80,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=11,0
+2023-24,KOO-2023-24-19532,2024-01-01,Regular season,KOO-2023-24-UNI,Darkhan United,78,KOO-2023-24-BOD,Selenge Bodonguud,83,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=11,0
+2023-24,KOO-2023-24-19534,2024-01-02,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,63,KOO-2023-24-APE,IHC Apes,76,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=10,0
+2023-24,KOO-2023-24-19535,2024-01-02,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,97,KOO-2023-24-BOD,Selenge Bodonguud,70,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=10,0
+2023-24,KOO-2023-24-19537,2024-01-03,Regular season,KOO-2023-24-MIN,Erdenet Miners,88,KOO-2023-24-YOL,Umnugovi Yoluud,69,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=10,0
+2023-24,KOO-2023-24-19538,2024-01-03,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,75,KOO-2023-24-GAR,BCH Garid,85,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=10,0
+2023-24,KOO-2023-24-19540,2024-01-04,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,76,KOO-2023-24-UNI,Darkhan United,79,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=10,0
+2023-24,KOO-2023-24-19541,2024-01-04,Regular season,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,88,KOO-2023-24-BOD,Selenge Bodonguud,112,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=10,0
+2023-24,KOO-2023-24-19543,2024-01-05,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,69,KOO-2023-24-KHU,Khasin Khuleguud,76,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=9,0
+2023-24,KOO-2023-24-19544,2024-01-05,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,65,KOO-2023-24-MET,Tenuun Ulzii Metal,93,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=9,0
+2023-24,KOO-2023-24-19546,2024-01-06,Regular season,KOO-2023-24-MIN,Erdenet Miners,75,KOO-2023-24-UNI,Darkhan United,66,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=9,0
+2023-24,KOO-2023-24-19547,2024-01-06,Regular season,KOO-2023-24-BOD,Selenge Bodonguud,103,KOO-2023-24-YOL,Umnugovi Yoluud,82,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=9,0
+2023-24,KOO-2023-24-19548,2024-01-06,Regular season,KOO-2023-24-APE,IHC Apes,78,KOO-2023-24-GAR,BCH Garid,75,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=9,0
+2023-24,KOO-2023-24-19550,2024-01-07,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,78,KOO-2023-24-TLG,Inut Yeis TLG,77,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=9,0
+2023-24,KOO-2023-24-19551,2024-01-07,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,93,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,102,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=8,0
+2023-24,KOO-2023-24-19552,2024-01-07,Regular season,KOO-2023-24-MET,Tenuun Ulzii Metal,90,KOO-2023-24-APE,IHC Apes,75,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=8,0
+2023-24,KOO-2023-24-19554,2024-01-08,Regular season,KOO-2023-24-MIN,Erdenet Miners,64,KOO-2023-24-BOD,Selenge Bodonguud,90,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=8,0
+2023-24,KOO-2023-24-19555,2024-01-08,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,89,KOO-2023-24-GAR,BCH Garid,79,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=8,0
+2023-24,KOO-2023-24-19556,2024-01-09,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,101,KOO-2023-24-YOL,Umnugovi Yoluud,74,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=8,0
+2023-24,KOO-2023-24-19557,2024-01-09,Regular season,KOO-2023-24-TLG,Inut Yeis TLG,79,KOO-2023-24-UNI,Darkhan United,86,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=8,0
+2023-24,KOO-2023-24-19558,2024-01-09,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,79,KOO-2023-24-SHA,SHUTIS Sharks,78,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=7,0
+2023-24,KOO-2023-24-19559,2024-01-10,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,87,KOO-2023-24-BOD,Selenge Bodonguud,73,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=7,0
+2023-24,KOO-2023-24-19560,2024-01-10,Regular season,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,56,KOO-2023-24-GAR,BCH Garid,95,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=7,0
+2023-24,KOO-2023-24-19561,2024-01-10,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,103,KOO-2023-24-YOL,Umnugovi Yoluud,95,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=7,0
+2023-24,KOO-2023-24-19562,2024-01-10,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,58,KOO-2023-24-MET,Tenuun Ulzii Metal,62,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=7,0
+2023-24,KOO-2023-24-19563,2024-01-14,Regular season,KOO-2023-24-MIN,Erdenet Miners,84,KOO-2023-24-TLG,Inut Yeis TLG,75,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=7,0
+2023-24,KOO-2023-24-19564,2024-01-14,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,70,KOO-2023-24-UNI,Darkhan United,76,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=6,0
+2023-24,KOO-2023-24-19565,2024-01-14,Regular season,KOO-2023-24-GAR,BCH Garid,116,KOO-2023-24-YOL,Umnugovi Yoluud,87,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=6,0
+2023-24,KOO-2023-24-19566,2024-01-15,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,95,KOO-2023-24-APE,IHC Apes,118,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=6,0
+2023-24,KOO-2023-24-19567,2024-01-15,Regular season,KOO-2023-24-MET,Tenuun Ulzii Metal,84,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,60,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=6,0
+2023-24,KOO-2023-24-19568,2024-01-16,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,90,KOO-2023-24-MIN,Erdenet Miners,70,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=6,0
+2023-24,KOO-2023-24-19569,2024-01-16,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,93,KOO-2023-24-TLG,Inut Yeis TLG,85,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=6,0
+2023-24,KOO-2023-24-19570,2024-01-17,Regular season,KOO-2023-24-APE,IHC Apes,81,KOO-2023-24-UNI,Darkhan United,93,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=5,0
+2023-24,KOO-2023-24-19571,2024-01-17,Regular season,KOO-2023-24-BOD,Selenge Bodonguud,88,KOO-2023-24-GAR,BCH Garid,90,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=5,0
+2023-24,KOO-2023-24-19572,2024-01-18,Regular season,KOO-2023-24-MET,Tenuun Ulzii Metal,102,KOO-2023-24-YOL,Umnugovi Yoluud,82,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=5,0
+2023-24,KOO-2023-24-19573,2024-01-18,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,69,KOO-2023-24-KHU,Khasin Khuleguud,91,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=5,0
+2023-24,KOO-2023-24-19574,2024-01-19,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,106,KOO-2023-24-GAR,BCH Garid,94,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=5,0
+2023-24,KOO-2023-24-19575,2024-01-19,Regular season,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,79,KOO-2023-24-UNI,Darkhan United,76,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=5,0
+2023-24,KOO-2023-24-19576,2024-01-19,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,80,KOO-2023-24-MIN,Erdenet Miners,94,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=4,0
+2023-24,KOO-2023-24-19577,2024-01-20,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,93,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,86,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=4,0
+2023-24,KOO-2023-24-19578,2024-01-20,Regular season,KOO-2023-24-APE,IHC Apes,105,KOO-2023-24-TLG,Inut Yeis TLG,97,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=4,0
+2023-24,KOO-2023-24-19579,2024-01-20,Regular season,KOO-2023-24-MET,Tenuun Ulzii Metal,83,KOO-2023-24-BOD,Selenge Bodonguud,69,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=4,0
+2023-24,KOO-2023-24-19580,2024-01-21,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,103,KOO-2023-24-YOL,Umnugovi Yoluud,93,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=4,0
+2023-24,KOO-2023-24-19581,2024-01-21,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,70,KOO-2023-24-MET,Tenuun Ulzii Metal,77,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=4,0
+2023-24,KOO-2023-24-19582,2024-01-21,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,89,KOO-2023-24-UNI,Darkhan United,82,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=3,0
+2023-24,KOO-2023-24-19583,2024-01-22,Regular season,KOO-2023-24-KHU,Khasin Khuleguud,78,KOO-2023-24-TLG,Inut Yeis TLG,73,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=3,0
+2023-24,KOO-2023-24-19584,2024-01-22,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,85,KOO-2023-24-APE,IHC Apes,101,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=3,0
+2023-24,KOO-2023-24-19585,2024-01-23,Regular season,KOO-2023-24-TLG,Inut Yeis TLG,108,KOO-2023-24-YOL,Umnugovi Yoluud,115,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=3,0
+2023-24,KOO-2023-24-19586,2024-01-23,Regular season,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,81,KOO-2023-24-UNI,Darkhan United,82,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=3,0
+2023-24,KOO-2023-24-19587,2024-01-23,Regular season,KOO-2023-24-MET,Tenuun Ulzii Metal,72,KOO-2023-24-GAR,BCH Garid,67,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=3,0
+2023-24,KOO-2023-24-19588,2024-01-24,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,81,KOO-2023-24-BOD,Selenge Bodonguud,88,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=2,0
+2023-24,KOO-2023-24-19589,2024-01-24,Regular season,KOO-2023-24-MIN,Erdenet Miners,88,KOO-2023-24-APE,IHC Apes,82,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=2,0
+2023-24,KOO-2023-24-19590,2024-01-25,Regular season,KOO-2023-24-UNI,Darkhan United,104,KOO-2023-24-YOL,Umnugovi Yoluud,107,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=2,0
+2023-24,KOO-2023-24-19591,2024-01-25,Regular season,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,86,KOO-2023-24-TLG,Inut Yeis TLG,90,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=2,0
+2023-24,KOO-2023-24-19592,2024-01-25,Regular season,KOO-2023-24-BIZ,Nalaikh Bison,98,KOO-2023-24-KHU,Khasin Khuleguud,104,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=2,0
+2023-24,KOO-2023-24-19593,2024-01-26,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,98,KOO-2023-24-SHA,SHUTIS Sharks,93,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/?page=2,0
+2023-24,KOO-2023-24-19594,2024-01-26,Regular season,KOO-2023-24-TLG,Inut Yeis TLG,92,KOO-2023-24-BOD,Selenge Bodonguud,96,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/,0
+2023-24,KOO-2023-24-19595,2024-01-26,Regular season,KOO-2023-24-MIN,Erdenet Miners,74,KOO-2023-24-MET,Tenuun Ulzii Metal,67,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/,0
+2023-24,KOO-2023-24-19596,2024-01-27,Regular season,KOO-2023-24-APE,IHC Apes,106,KOO-2023-24-MON,Sumber Tsamkhag Mongolians,105,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/,0
+2023-24,KOO-2023-24-19597,2024-01-27,Regular season,KOO-2023-24-SHA,SHUTIS Sharks,55,KOO-2023-24-GAR,BCH Garid,85,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/,0
+2023-24,KOO-2023-24-19598,2024-01-27,Regular season,KOO-2023-24-BRO,Zavkhan Brothers,87,KOO-2023-24-UNI,Darkhan United,111,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/,0
+2023-24,KOO-2023-24-19599,2024-01-27,Regular season,KOO-2023-24-MIN,Erdenet Miners,47,KOO-2023-24-KHU,Khasin Khuleguud,80,0,koo archive,https://www.koo.mn/basketball/men/results/2023-24/,0
+2024-25,5049134,2024-10-12,Regular season,BCH,BCH Knights,81,DUA,Darkhan United,85,1,transcribed image,,1
+2024-25,poster-17,2024-10-12,Regular season,KUL,Khuleguud,66,BTM,Bishrelt Metall,59,0,transcribed image,,0
+2024-25,5049445,2024-10-13,Regular season,BIS,Nalaikh Bison,84,SGA,SG Apes,95,1,transcribed image,,1
+2024-25,5049446,2024-10-15,Regular season,ETM,Erdenet Miners,69,BIS,Nalaikh Bison,77,1,transcribed image,,0
+2024-25,5049447,2024-10-15,Regular season,SEL,Selenge Bodons,65,KUL,Khuleguud,68,1,transcribed image,,0
+2024-25,5049448,2024-10-17,Regular season,TLG,Inut Yes TLG,92,BTM,Bishrelt Metall,90,1,transcribed image,,0
+2024-25,5049452,2024-10-17,Regular season,SGA,SG Apes,88,ZVB,Zavkhan Brothers,85,1,transcribed image,,0
+2024-25,5049454,2024-10-17,Regular season,BIS,Nalaikh Bison,64,SEL,Selenge Bodons,71,1,transcribed image,,0
+2024-25,5049449,2024-10-19,Regular season,DUA,Darkhan United,76,SEL,Selenge Bodons,71,1,transcribed image,,0
+2024-25,5049451,2024-10-19,Regular season,BTM,Bishrelt Metall,86,ZVB,Zavkhan Brothers,67,1,transcribed image,,0
+2024-25,5049455,2024-10-20,Regular season,TLG,Inut Yes TLG,77,BIS,Nalaikh Bison,93,1,transcribed image,,0
+2024-25,5049457,2024-10-20,Regular season,BCH,BCH Knights,58,KUL,Khuleguud,75,1,transcribed image,,0
+2024-25,5049461,2024-10-22,Regular season,BCH,BCH Knights,81,TLG,Inut Yes TLG,65,1,transcribed image,,0
+2024-25,poster-28,2024-10-22,Regular season,KUL,Khuleguud,67,ETM,Erdenet Miners,49,0,transcribed image,,0
+2024-25,5049464,2024-10-23,Regular season,BIS,Nalaikh Bison,76,ZVB,Zavkhan Brothers,88,1,transcribed image,,0
+2024-25,5049466,2024-10-24,Regular season,DUA,Darkhan United,93,ETM,Erdenet Miners,78,1,transcribed image,,0
+2024-25,5049469,2024-10-24,Regular season,SEL,Selenge Bodons,70,BTM,Bishrelt Metall,78,1,transcribed image,,0
+2024-25,5053140,2024-10-26,Regular season,DUA,Darkhan United,66,TLG,Inut Yes TLG,80,1,transcribed image,,0
+2024-25,5054436,2024-10-26,Regular season,SEL,Selenge Bodons,80,SGA,SG Apes,72,1,transcribed image,,0
+2024-25,5053141,2024-10-27,Regular season,BCH,BCH Knights,84,ZVB,Zavkhan Brothers,82,1,transcribed image,,0
+2024-25,5053143,2024-10-27,Regular season,BTM,Bishrelt Metall,78,BIS,Nalaikh Bison,93,1,transcribed image,,0
+2024-25,5054951,2024-10-29,Regular season,SEL,Selenge Bodons,84,ETM,Erdenet Miners,77,1,transcribed image,,0
+2024-25,5054952,2024-10-29,Regular season,BCH,BCH Knights,97,BIS,Nalaikh Bison,76,1,transcribed image,,0
+2024-25,5054953,2024-10-31,Regular season,ZVB,Zavkhan Brothers,106,TLG,Inut Yes TLG,100,1,transcribed image,,0
+2024-25,5054954,2024-10-31,Regular season,DUA,Darkhan United,67,SGA,SG Apes,81,1,transcribed image,,0
+2024-25,5055965,2024-11-01,Regular season,SGA,SG Apes,80,TLG,Inut Yes TLG,88,1,transcribed image,,0
+2024-25,5055966,2024-11-01,Regular season,BTM,Bishrelt Metall,97,DUA,Darkhan United,101,1,transcribed image,,0
+2024-25,5055967,2024-11-01,Regular season,BIS,Nalaikh Bison,86,KUL,Khuleguud,91,1,transcribed image,,0
+2024-25,5055968,2024-11-02,Regular season,ZVB,Zavkhan Brothers,104,ETM,Erdenet Miners,98,1,transcribed image,,0
+2024-25,5055969,2024-11-02,Regular season,BCH,BCH Knights,70,SEL,Selenge Bodons,66,1,transcribed image,,0
+2024-25,5055970,2024-11-03,Regular season,BCH,BCH Knights,76,ETM,Erdenet Miners,82,1,transcribed image,,0
+2024-25,5055971,2024-11-03,Regular season,KUL,Khuleguud,65,SGA,SG Apes,55,1,transcribed image,,0
+2024-25,5055972,2024-11-05,Regular season,SEL,Selenge Bodons,93,TLG,Inut Yes TLG,84,1,transcribed image,,0
+2024-25,5055973,2024-11-05,Regular season,KUL,Khuleguud,73,DUA,Darkhan United,67,1,transcribed image,,0
+2024-25,5055975,2024-11-05,Regular season,BCH,BCH Knights,81,BTM,Bishrelt Metall,76,1,transcribed image,,0
+2024-25,5055976,2024-11-07,Regular season,SGA,SG Apes,66,ETM,Erdenet Miners,62,1,transcribed image,,0
+2024-25,5055977,2024-11-07,Regular season,ZVB,Zavkhan Brothers,67,SEL,Selenge Bodons,72,1,transcribed image,,0
+2024-25,5055978,2024-11-07,Regular season,BIS,Nalaikh Bison,87,DUA,Darkhan United,94,1,transcribed image,,0
+2024-25,5057057,2024-11-26,Regular season,BIS,Nalaikh Bison,66,SEL,Selenge Bodons,91,1,transcribed image,,0
+2024-25,5062124,2024-11-26,Regular season,ETM,Erdenet Miners,74,BTM,Bishrelt Metall,83,1,transcribed image,,0
+2024-25,5057058,2024-11-28,Regular season,TLG,Inut Yes TLG,89,ETM,Erdenet Miners,90,1,transcribed image,,0
+2024-25,5057059,2024-11-28,Regular season,ZVB,Zavkhan Brothers,80,KUL,Khuleguud,86,1,transcribed image,,0
+2024-25,5057060,2024-11-30,Regular season,KUL,Khuleguud,65,SEL,Selenge Bodons,56,1,transcribed image,,0
+2024-25,5057061,2024-11-30,Regular season,DUA,Darkhan United,81,ZVB,Zavkhan Brothers,83,1,transcribed image,,0
+2024-25,5057062,2024-12-01,Regular season,TLG,Inut Yes TLG,74,KUL,Khuleguud,80,1,transcribed image,,0
+2024-25,5057063,2024-12-01,Regular season,BTM,Bishrelt Metall,82,SGA,SG Apes,75,1,transcribed image,,0
+2024-25,5057065,2024-12-03,Regular season,KUL,Khuleguud,74,BIS,Nalaikh Bison,65,1,transcribed image,,0
+2024-25,5057066,2024-12-05,Regular season,BIS,Nalaikh Bison,86,ETM,Erdenet Miners,97,1,transcribed image,,0
+2024-25,5057067,2024-12-05,Regular season,ZVB,Zavkhan Brothers,74,BTM,Bishrelt Metall,88,1,transcribed image,,0
+2024-25,5057068,2024-12-07,Regular season,SGA,SG Apes,83,BIS,Nalaikh Bison,86,1,transcribed image,,0
+2024-25,5057070,2024-12-08,Regular season,BCH,BCH Knights,60,BTM,Bishrelt Metall,74,1,transcribed image,,0
+2024-25,5057071,2024-12-10,Regular season,BTM,Bishrelt Metall,96,TLG,Inut Yes TLG,80,1,transcribed image,,0
+2024-25,5057072,2024-12-10,Regular season,KUL,Khuleguud,79,BCH,BCH Knights,82,1,transcribed image,,0
+2024-25,5057073,2024-12-12,Regular season,TLG,Inut Yes TLG,72,BCH,BCH Knights,70,1,transcribed image,,0
+2024-25,5057075,2024-12-12,Regular season,SEL,Selenge Bodons,80,DUA,Darkhan United,62,1,transcribed image,,0
+2024-25,5057076,2024-12-12,Regular season,ZVB,Zavkhan Brothers,86,SGA,SG Apes,85,1,transcribed image,,0
+2024-25,5057074,2024-12-24,Regular season,KUL,Khuleguud,79,ETM,Erdenet Miners,76,1,transcribed image,,0
+2024-25,5057077,2024-12-24,Regular season,ZVB,Zavkhan Brothers,89,BIS,Nalaikh Bison,83,1,transcribed image,,0
+2024-25,5057078,2024-12-25,Regular season,BTM,Bishrelt Metall,86,SEL,Selenge Bodons,90,1,transcribed image,,0
+2024-25,5057079,2024-12-25,Regular season,BCH,BCH Knights,67,SGA,SG Apes,82,1,transcribed image,,0
+2024-25,5057080,2024-12-26,Regular season,ETM,Erdenet Miners,84,DUA,Darkhan United,89,1,transcribed image,,0
+2024-25,5057081,2024-12-26,Regular season,BIS,Nalaikh Bison,101,TLG,Inut Yes TLG,89,1,transcribed image,,0
+2024-25,5057083,2024-12-28,Regular season,ZVB,Zavkhan Brothers,85,BCH,BCH Knights,91,1,transcribed image,,0
+2024-25,poster-78,2024-12-28,Regular season,BTM,Bishrelt Metall,75,KUL,Khuleguud,64,0,transcribed image,,0
+2024-25,5057084,2024-12-29,Regular season,ETM,Erdenet Miners,67,SEL,Selenge Bodons,84,1,transcribed image,,0
+2024-25,5057085,2024-12-29,Regular season,SGA,SG Apes,91,DUA,Darkhan United,79,1,transcribed image,,0
+2024-25,5057086,2024-12-31,Regular season,TLG,Inut Yes TLG,86,ZVB,Zavkhan Brothers,89,1,transcribed image,,0
+2024-25,5057087,2024-12-31,Regular season,BTM,Bishrelt Metall,81,BCH,BCH Knights,63,1,transcribed image,,0
+2024-25,5057088,2025-01-02,Regular season,ETM,Erdenet Miners,92,ZVB,Zavkhan Brothers,85,1,transcribed image,,0
+2024-25,5057090,2025-01-02,Regular season,SEL,Selenge Bodons,73,SGA,SG Apes,80,1,transcribed image,,0
+2024-25,5057091,2025-01-04,Regular season,DUA,Darkhan United,77,BTM,Bishrelt Metall,75,1,transcribed image,,0
+2024-25,5057093,2025-01-04,Regular season,BIS,Nalaikh Bison,88,BCH,BCH Knights,96,1,transcribed image,,0
+2024-25,5057095,2025-01-04,Regular season,SGA,SG Apes,76,KUL,Khuleguud,81,1,transcribed image,,0
+2024-25,5057097,2025-01-05,Regular season,SEL,Selenge Bodons,76,BCH,BCH Knights,73,1,transcribed image,,0
+2024-25,5057098,2025-01-07,Regular season,ETM,Erdenet Miners,96,BCH,BCH Knights,78,1,transcribed image,,0
+2024-25,5057100,2025-01-07,Regular season,TLG,Inut Yes TLG,74,SGA,SG Apes,84,1,transcribed image,,0
+2024-25,5057101,2025-01-07,Regular season,BIS,Nalaikh Bison,73,BTM,Bishrelt Metall,91,1,transcribed image,,0
+2024-25,5057103,2025-01-09,Regular season,ETM,Erdenet Miners,68,BTM,Bishrelt Metall,66,1,transcribed image,,0
+2024-25,5057105,2025-01-09,Regular season,TLG,Inut Yes TLG,98,SEL,Selenge Bodons,102,1,transcribed image,,0
+2024-25,5057107,2025-01-09,Regular season,DUA,Darkhan United,73,KUL,Khuleguud,79,1,transcribed image,,0
+2024-25,5057108,2025-01-11,Regular season,ETM,Erdenet Miners,64,SGA,SG Apes,96,1,transcribed image,,0
+2024-25,poster-96,2025-01-11,Regular season,DUA,Darkhan United,107,BIS,Nalaikh Bison,102,0,transcribed image,,0
+2024-25,5057110,2025-01-12,Regular season,KUL,Khuleguud,90,ZVB,Zavkhan Brothers,84,1,transcribed image,,0
+2024-25,5057111,2025-01-12,Regular season,SGA,SG Apes,75,BTM,Bishrelt Metall,80,1,transcribed image,,0
+2024-25,5057112,2025-01-14,Regular season,DUA,Darkhan United,92,TLG,Inut Yes TLG,75,1,transcribed image,,0
+2024-25,5057113,2025-01-14,Regular season,BIS,Nalaikh Bison,95,KUL,Khuleguud,100,1,transcribed image,,0
+2024-25,5057114,2025-01-14,Regular season,SEL,Selenge Bodons,87,ZVB,Zavkhan Brothers,108,1,transcribed image,,0
+2024-25,5057115,2025-01-16,Regular season,ETM,Erdenet Miners,79,TLG,Inut Yes TLG,74,1,transcribed image,,0
+2024-25,5057116,2025-01-16,Regular season,ZVB,Zavkhan Brothers,99,DUA,Darkhan United,85,1,transcribed image,,0
+2024-25,5057117,2025-01-16,Regular season,BCH,BCH Knights,62,SGA,SG Apes,68,1,transcribed image,,0
+2024-25,5057119,2025-01-18,Regular season,SEL,Selenge Bodons,81,BIS,Nalaikh Bison,69,1,transcribed image,,0
+2024-25,poster-104,2025-01-18,Regular season,KUL,Khuleguud,84,TLG,Inut Yes TLG,58,0,transcribed image,,0
+2024-25,5057120,2025-01-19,Regular season,DUA,Darkhan United,87,ZVB,Zavkhan Brothers,95,1,transcribed image,,0
+2024-25,5057121,2025-01-19,Regular season,BTM,Bishrelt Metall,99,ETM,Erdenet Miners,105,1,transcribed image,,0
+2024-25,5057122,2025-01-19,Regular season,SGA,SG Apes,79,BCH,BCH Knights,69,1,transcribed image,,0
+2024-25,5057123,2025-01-21,Regular season,BCH,BCH Knights,98,DUA,Darkhan United,70,1,transcribed image,,0
+2024-25,5057124,2025-01-21,Regular season,BTM,Bishrelt Metall,94,ZVB,Zavkhan Brothers,61,1,transcribed image,,0
+2024-25,5057126,2025-01-23,Regular season,ETM,Erdenet Miners,95,BIS,Nalaikh Bison,91,1,transcribed image,,0
+2024-25,5057127,2025-01-23,Regular season,SEL,Selenge Bodons,84,KUL,Khuleguud,77,1,transcribed image,,0
+2024-25,5057129,2025-01-25,Regular season,TLG,Inut Yes TLG,78,BTM,Bishrelt Metall,89,1,transcribed image,,0
+2024-25,5057130,2025-01-25,Regular season,BCH,BCH Knights,71,KUL,Khuleguud,56,1,transcribed image,,0
+2024-25,5057131,2025-01-26,Regular season,ZVB,Zavkhan Brothers,88,ETM,Erdenet Miners,93,1,transcribed image,,0
+2024-25,5057132,2025-01-26,Regular season,DUA,Darkhan United,85,SEL,Selenge Bodons,80,1,transcribed image,,0
+2024-25,5057133,2025-01-26,Regular season,BIS,Nalaikh Bison,84,SGA,SG Apes,86,1,transcribed image,,0
+2024-25,5057134,2025-01-28,Regular season,BCH,BCH Knights,74,TLG,Inut Yes TLG,55,1,transcribed image,,0
+2024-25,5057135,2025-01-28,Regular season,DUA,Darkhan United,82,SGA,SG Apes,95,1,transcribed image,,0
+2024-25,5057136,2025-01-30,Regular season,ETM,Erdenet Miners,92,KUL,Khuleguud,91,1,transcribed image,,0
+2024-25,5057137,2025-01-30,Regular season,BIS,Nalaikh Bison,90,ZVB,Zavkhan Brothers,106,1,transcribed image,,0
+2024-25,5057138,2025-02-01,Regular season,TLG,Inut Yes TLG,88,BIS,Nalaikh Bison,97,1,transcribed image,,0
+2024-25,5057139,2025-02-01,Regular season,SEL,Selenge Bodons,69,BTM,Bishrelt Metall,89,1,transcribed image,,0
+2024-25,5057140,2025-02-01,Regular season,BCH,BCH Knights,84,ZVB,Zavkhan Brothers,93,1,transcribed image,,0
+2024-25,5057141,2025-02-02,Regular season,DUA,Darkhan United,93,ETM,Erdenet Miners,99,1,transcribed image,,0
+2024-25,5057142,2025-02-02,Regular season,KUL,Khuleguud,74,BTM,Bishrelt Metall,78,1,transcribed image,,0
+2024-25,5057143,2025-02-02,Regular season,SGA,SG Apes,81,SEL,Selenge Bodons,78,1,transcribed image,,1
+2024-25,5057144,2025-02-04,Regular season,SEL,Selenge Bodons,81,ETM,Erdenet Miners,87,1,transcribed image,,0
+2024-25,5057145,2025-02-04,Regular season,BCH,BCH Knights,93,BIS,Nalaikh Bison,56,1,transcribed image,,0
+2024-25,5057146,2025-02-06,Regular season,BTM,Bishrelt Metall,94,DUA,Darkhan United,87,1,transcribed image,,0
+2024-25,5057147,2025-02-06,Regular season,SGA,SG Apes,75,ZVB,Zavkhan Brothers,70,1,transcribed image,,0
+2024-25,5057148,2025-02-25,Regular season,ZVB,Zavkhan Brothers,107,TLG,Inut Yes TLG,73,1,transcribed image,,0
+2024-25,5057149,2025-02-25,Regular season,KUL,Khuleguud,80,SGA,SG Apes,78,1,transcribed image,,0
+2024-25,5057150,2025-02-27,Regular season,BCH,BCH Knights,86,SEL,Selenge Bodons,81,1,transcribed image,,0
+2024-25,5057152,2025-03-01,Regular season,SGA,SG Apes,79,TLG,Inut Yes TLG,68,1,transcribed image,,0
+2024-25,5057153,2025-03-01,Regular season,BCH,BCH Knights,77,ETM,Erdenet Miners,70,1,transcribed image,,0
+2024-25,5057154,2025-03-01,Regular season,KUL,Khuleguud,57,DUA,Darkhan United,72,1,transcribed image,,0
+2024-25,5057155,2025-03-02,Regular season,SEL,Selenge Bodons,93,TLG,Inut Yes TLG,81,1,transcribed image,,0
+2024-25,5057157,2025-03-02,Regular season,BTM,Bishrelt Metall,108,SGA,SG Apes,86,1,transcribed image,,0
+2024-25,5057158,2025-03-04,Regular season,ZVB,Zavkhan Brothers,85,KUL,Khuleguud,72,1,transcribed image,,0
+2024-25,5057159,2025-03-04,Regular season,TLG,Inut Yes TLG,89,DUA,Darkhan United,92,1,transcribed image,,0
+2024-25,5057160,2025-03-06,Regular season,SGA,SG Apes,83,ETM,Erdenet Miners,87,1,transcribed image,,0
+2024-25,5057161,2025-03-06,Regular season,ZVB,Zavkhan Brothers,74,SEL,Selenge Bodons,86,1,transcribed image,,0
+2024-25,5087391,2025-03-09,Play-in,BIS,Nalaikh Bison,81,MFC,Chi Forest Mongolians,85,1,transcribed image,,0
+2024-25,5087397,2025-03-09,Playoffs,BTM,Bishrelt Metall,83,ZVB,Zavkhan Brothers,79,1,transcribed image,,0
+2024-25,5087398,2025-03-09,Playoffs,SGA,SG Apes,87,ETM,Erdenet Miners,68,1,transcribed image,,0
+2024-25,5087392,2025-03-10,Play-in,TLG,Inut Yes TLG,86,XOB,Khovd Shonhoruud,98,1,transcribed image,,0
+2024-25,5087400,2025-03-10,Playoffs,KUL,Khuleguud,92,DUA,Darkhan United,70,1,transcribed image,,0
+2024-25,5087401,2025-03-10,Playoffs,BCH,BCH Knights,66,SEL,Selenge Bodons,77,1,transcribed image,,0
+2024-25,5087393,2025-03-11,Play-in,MFC,Chi Forest Mongolians,66,BIS,Nalaikh Bison,81,1,transcribed image,,0
+2024-25,5087402,2025-03-11,Playoffs,ETM,Erdenet Miners,101,SGA,SG Apes,96,1,transcribed image,,0
+2024-25,5087403,2025-03-11,Playoffs,ZVB,Zavkhan Brothers,94,BTM,Bishrelt Metall,104,1,transcribed image,,0
+2024-25,5087394,2025-03-12,Play-in,XOB,Khovd Shonhoruud,81,TLG,Inut Yes TLG,78,1,transcribed image,,0
+2024-25,5087404,2025-03-12,Playoffs,SEL,Selenge Bodons,81,BCH,BCH Knights,77,1,transcribed image,,0
+2024-25,5087405,2025-03-12,Playoffs,DUA,Darkhan United,64,KUL,Khuleguud,94,1,transcribed image,,0
+2024-25,5087406,2025-03-13,Playoffs,BTM,Bishrelt Metall,87,ZVB,Zavkhan Brothers,60,1,transcribed image,,0
+2024-25,5087407,2025-03-13,Playoffs,SGA,SG Apes,85,ETM,Erdenet Miners,76,1,transcribed image,,0
+2024-25,5087395,2025-03-14,Play-in,BIS,Nalaikh Bison,76,MFC,Chi Forest Mongolians,79,1,transcribed image,,0
+2024-25,5087408,2025-03-14,Playoffs,KUL,Khuleguud,77,DUA,Darkhan United,83,1,transcribed image,,0
+2024-25,5087409,2025-03-14,Playoffs,BCH,BCH Knights,69,SEL,Selenge Bodons,67,1,transcribed image,,0
+2024-25,5087412,2025-03-15,Playoffs,ZVB,Zavkhan Brothers,82,BTM,Bishrelt Metall,94,1,transcribed image,,0
+2024-25,5087413,2025-03-16,Playoffs,SEL,Selenge Bodons,77,BCH,BCH Knights,70,1,transcribed image,,0
+2024-25,5087415,2025-03-16,Playoffs,DUA,Darkhan United,71,KUL,Khuleguud,75,1,transcribed image,,0
+2024-25,5087417,2025-03-17,Playoffs,SGA,SG Apes,84,ETM,Erdenet Miners,86,1,transcribed image,,0
+2024-25,5087419,2025-03-18,Playoffs,KUL,Khuleguud,88,DUA,Darkhan United,74,1,transcribed image,,0
+2024-25,5087420,2025-03-18,Playoffs,BCH,BCH Knights,82,SEL,Selenge Bodons,84,1,transcribed image,,0
+2024-25,5087421,2025-03-19,Playoffs,ETM,Erdenet Miners,91,SGA,SG Apes,96,1,transcribed image,,0
+2024-25,5090603,2025-03-21,Playoffs,KUL,Khuleguud,80,SEL,Selenge Bodons,75,1,transcribed image,,0
+2024-25,5090604,2025-03-23,Playoffs,SEL,Selenge Bodons,97,KUL,Khuleguud,83,1,transcribed image,,0
+2024-25,5090605,2025-03-27,Playoffs,KUL,Khuleguud,97,SEL,Selenge Bodons,87,1,transcribed image,,0
+2024-25,5090606,2025-03-28,Playoffs,BTM,Bishrelt Metall,85,SGA,SG Apes,86,1,transcribed image,,0
+2024-25,5090607,2025-03-29,Playoffs,SEL,Selenge Bodons,72,KUL,Khuleguud,84,1,transcribed image,,1
+2024-25,5090608,2025-03-30,Playoffs,SGA,SG Apes,79,BTM,Bishrelt Metall,73,1,transcribed image,,0
+2024-25,5090609,2025-03-31,Playoffs,KUL,Khuleguud,90,SEL,Selenge Bodons,101,1,transcribed image,,0
+2024-25,5090610,2025-04-01,Playoffs,BTM,Bishrelt Metall,84,SGA,SG Apes,87,1,transcribed image,,0
+2024-25,5090611,2025-04-03,Playoffs,SEL,Selenge Bodons,84,KUL,Khuleguud,83,1,transcribed image,,1
+2024-25,5095111,2025-04-08,Playoffs,SGA,SG Apes,79,BTM,Bishrelt Metall,81,1,transcribed image,,0
+2024-25,5095112,2025-04-14,Playoffs,BTM,Bishrelt Metall,82,SGA,SG Apes,80,1,transcribed image,,0
+2024-25,5097275,2025-04-18,Playoffs,BTM,Bishrelt Metall,67,SGA,SG Apes,61,1,transcribed image,,0
+2024-25,5097992,2025-04-21,Playoffs,KUL,Khuleguud,82,BTM,Bishrelt Metall,85,1,transcribed image,,0
+2024-25,5097993,2025-04-23,Playoffs,BTM,Bishrelt Metall,81,KUL,Khuleguud,83,1,transcribed image,,0
+2024-25,5097994,2025-04-26,Playoffs,KUL,Khuleguud,84,BTM,Bishrelt Metall,70,1,transcribed image,,0
+2024-25,5103408,2025-05-17,Playoffs,BTM,Bishrelt Metall,86,KUL,Khuleguud,78,1,transcribed image,,0
+2024-25,5104135,2025-05-19,Playoffs,KUL,Khuleguud,84,BTM,Bishrelt Metall,48,1,transcribed image,,0
+2024-25,5104734,2025-05-21,Playoffs,BTM,Bishrelt Metall,78,KUL,Khuleguud,81,1,transcribed image,,0
+2025-26,MBA-614,2025-10-01,Regular season,KUL,Khuleguud,65,BTM,Bishrelt Metall,70,1,league page,https://mongolia.basketball/en/games/223,0
+2025-26,MBA-615,2025-10-04,Regular season,ZVB,Zavkhan Brothers,81,KUL,Khuleguud,91,1,league page,https://mongolia.basketball/en/games/192,0
+2025-26,MBA-616,2025-10-04,Regular season,DUA,Darkhan United,88,BCH,BCH Knights,101,1,league page,https://mongolia.basketball/en/games/261,0
+2025-26,MBA-617,2025-10-05,Regular season,SEL,Selenge Bodons,79,BSM,Burens Score Mongolians,85,1,league page,https://mongolia.basketball/en/games/167,0
+2025-26,MBA-618,2025-10-06,Regular season,BTM,Bishrelt Metall,74,SGA,SG Apes,77,1,league page,https://mongolia.basketball/en/games/178,0
+2025-26,MBA-619,2025-10-07,Regular season,DUA,Darkhan United,71,KHF,Khan Falcons,83,1,league page,https://mongolia.basketball/en/games/196,0
+2025-26,MBA-620,2025-10-11,Regular season,KHF,Khan Falcons,66,KUL,Khuleguud,85,1,league page,https://mongolia.basketball/en/games/202,0
+2025-26,MBA-621,2025-10-11,Regular season,BCH,BCH Knights,82,SEL,Selenge Bodons,79,1,league page,https://mongolia.basketball/en/games/154,0
+2025-26,MBA-622,2025-10-12,Regular season,BSM,Burens Score Mongolians,70,ZVB,Zavkhan Brothers,95,1,league page,https://mongolia.basketball/en/games/148,0
+2025-26,MBA-623,2025-10-12,Regular season,SGA,SG Apes,65,ETM,Erdenet Miners,87,1,league page,https://mongolia.basketball/en/games/248,0
+2025-26,MBA-624,2025-10-14,Regular season,BSM,Burens Score Mongolians,69,ETM,Erdenet Miners,82,1,league page,https://mongolia.basketball/en/games/245,0
+2025-26,MBA-625,2025-10-14,Regular season,BTM,Bishrelt Metall,73,SEL,Selenge Bodons,93,1,league page,https://mongolia.basketball/en/games/140,0
+2025-26,MBA-626,2025-10-15,Regular season,SGA,SG Apes,109,DUA,Darkhan United,95,1,league page,https://mongolia.basketball/en/games/228,0
+2025-26,MBA-627,2025-10-15,Regular season,ZVB,Zavkhan Brothers,84,BCH,BCH Knights,105,1,league page,https://mongolia.basketball/en/games/240,1
+2025-26,MBA-628,2025-10-18,Regular season,KHF,Khan Falcons,75,SGA,SG Apes,78,1,league page,https://mongolia.basketball/en/games/231,0
+2025-26,MBA-629,2025-10-18,Regular season,BTM,Bishrelt Metall,73,SEL,Selenge Bodons,82,1,league page,https://mongolia.basketball/en/games/157,0
+2025-26,MBA-630,2025-10-19,Regular season,ETM,Erdenet Miners,68,ZVB,Zavkhan Brothers,69,1,league page,https://mongolia.basketball/en/games/172,0
+2025-26,MBA-631,2025-10-19,Regular season,SGA,SG Apes,74,KUL,Khuleguud,73,1,league page,https://mongolia.basketball/en/games/214,0
+2025-26,MBA-632,2025-10-21,Regular season,BCH,BCH Knights,88,KHF,Khan Falcons,101,1,league page,https://mongolia.basketball/en/games/203,1
+2025-26,MBA-633,2025-10-21,Regular season,KUL,Khuleguud,86,BSM,Burens Score Mongolians,67,1,league page,https://mongolia.basketball/en/games/162,1
+2025-26,MBA-634,2025-10-22,Regular season,SEL,Selenge Bodons,81,DUA,Darkhan United,87,1,league page,https://mongolia.basketball/en/games/253,0
+2025-26,MBA-635,2025-10-23,Regular season,BTM,Bishrelt Metall,91,ZVB,Zavkhan Brothers,90,1,league page,https://mongolia.basketball/en/games/215,0
+2025-26,MBA-636,2025-10-23,Regular season,SGA,SG Apes,98,BSM,Burens Score Mongolians,91,1,league page,https://mongolia.basketball/en/games/244,0
+2025-26,MBA-637,2025-10-26,Regular season,BTM,Bishrelt Metall,75,BSM,Burens Score Mongolians,72,1,league page,https://mongolia.basketball/en/games/242,1
+2025-26,MBA-638,2025-10-26,Regular season,KUL,Khuleguud,92,BCH,BCH Knights,99,1,league page,https://mongolia.basketball/en/games/188,0
+2025-26,MBA-639,2025-10-28,Regular season,ZVB,Zavkhan Brothers,93,DUA,Darkhan United,94,1,league page,https://mongolia.basketball/en/games/190,0
+2025-26,MBA-640,2025-10-28,Regular season,SEL,Selenge Bodons,72,ETM,Erdenet Miners,70,1,league page,https://mongolia.basketball/en/games/254,0
+2025-26,MBA-641,2025-10-29,Regular season,KHF,Khan Falcons,88,ZVB,Zavkhan Brothers,102,1,league page,https://mongolia.basketball/en/games/207,1
+2025-26,MBA-642,2025-10-29,Regular season,SGA,SG Apes,91,BCH,BCH Knights,79,1,league page,https://mongolia.basketball/en/games/259,0
+2025-26,MBA-643,2025-11-09,Regular season,ZVB,Zavkhan Brothers,86,ETM,Erdenet Miners,80,1,league page,https://mongolia.basketball/en/games/246,0
+2025-26,MBA-644,2025-11-09,Regular season,BTM,Bishrelt Metall,94,SGA,SG Apes,93,1,league page,https://mongolia.basketball/en/games/182,0
+2025-26,MBA-645,2025-11-11,Regular season,ETM,Erdenet Miners,82,KHF,Khan Falcons,73,1,league page,https://mongolia.basketball/en/games/269,0
+2025-26,MBA-646,2025-11-11,Regular season,BSM,Burens Score Mongolians,87,DUA,Darkhan United,92,1,league page,https://mongolia.basketball/en/games/156,0
+2025-26,MBA-647,2025-11-12,Regular season,DUA,Darkhan United,88,BTM,Bishrelt Metall,74,1,league page,https://mongolia.basketball/en/games/151,1
+2025-26,MBA-648,2025-11-12,Regular season,SEL,Selenge Bodons,58,SGA,SG Apes,72,1,league page,https://mongolia.basketball/en/games/185,0
+2025-26,MBA-649,2025-11-15,Regular season,BSM,Burens Score Mongolians,91,KHF,Khan Falcons,93,1,league page,https://mongolia.basketball/en/games/170,0
+2025-26,MBA-650,2025-11-15,Regular season,BCH,BCH Knights,83,BTM,Bishrelt Metall,80,1,league page,https://mongolia.basketball/en/games/250,0
+2025-26,MBA-651,2025-11-16,Regular season,KHF,Khan Falcons,88,SEL,Selenge Bodons,98,1,league page,https://mongolia.basketball/en/games/256,0
+2025-26,MBA-652,2025-11-16,Regular season,KUL,Khuleguud,76,ETM,Erdenet Miners,67,1,league page,https://mongolia.basketball/en/games/210,0
+2025-26,MBA-653,2025-11-18,Regular season,KUL,Khuleguud,84,DUA,Darkhan United,81,1,league page,https://mongolia.basketball/en/games/181,0
+2025-26,MBA-654,2025-11-18,Regular season,BCH,BCH Knights,98,BSM,Burens Score Mongolians,78,1,league page,https://mongolia.basketball/en/games/272,0
+2025-26,MBA-655,2025-11-19,Regular season,ZVB,Zavkhan Brothers,85,SGA,SG Apes,87,1,league page,https://mongolia.basketball/en/games/222,0
+2025-26,MBA-656,2025-11-19,Regular season,ETM,Erdenet Miners,78,BTM,Bishrelt Metall,70,1,league page,https://mongolia.basketball/en/games/236,0
+2025-26,MBA-657,2025-11-22,Regular season,BSM,Burens Score Mongolians,59,KUL,Khuleguud,78,1,league page,https://mongolia.basketball/en/games/263,1
+2025-26,MBA-658,2025-11-22,Regular season,SGA,SG Apes,81,BCH,BCH Knights,108,1,league page,https://mongolia.basketball/en/games/267,0
+2025-26,MBA-659,2025-11-23,Regular season,SEL,Selenge Bodons,77,ZVB,Zavkhan Brothers,83,1,league page,https://mongolia.basketball/en/games/161,0
+2025-26,MBA-660,2025-11-23,Regular season,ETM,Erdenet Miners,87,BTM,Bishrelt Metall,73,1,league page,https://mongolia.basketball/en/games/158,0
+2025-26,MBA-661,2025-11-25,Regular season,KHF,Khan Falcons,89,BTM,Bishrelt Metall,97,1,league page,https://mongolia.basketball/en/games/166,0
+2025-26,MBA-662,2025-11-25,Regular season,DUA,Darkhan United,79,SGA,SG Apes,63,1,league page,https://mongolia.basketball/en/games/211,0
+2025-26,MBA-663,2025-11-26,Regular season,ETM,Erdenet Miners,77,BSM,Burens Score Mongolians,76,1,league page,https://mongolia.basketball/en/games/143,0
+2025-26,MBA-664,2025-11-26,Regular season,SEL,Selenge Bodons,108,SGA,SG Apes,92,1,league page,https://mongolia.basketball/en/games/262,0
+2025-26,MBA-665,2025-11-29,Regular season,SGA,SG Apes,89,KHF,Khan Falcons,90,1,league page,https://mongolia.basketball/en/games/229,0
+2025-26,MBA-666,2025-11-29,Regular season,ETM,Erdenet Miners,71,BCH,BCH Knights,73,1,league page,https://mongolia.basketball/en/games/174,0
+2025-26,MBA-667,2025-11-30,Regular season,ZVB,Zavkhan Brothers,101,BSM,Burens Score Mongolians,93,1,league page,https://mongolia.basketball/en/games/239,0
+2025-26,MBA-668,2025-11-30,Regular season,BTM,Bishrelt Metall,64,KUL,Khuleguud,74,1,league page,https://mongolia.basketball/en/games/146,0
+2025-26,MBA-669,2025-12-01,Regular season,DUA,Darkhan United,67,SEL,Selenge Bodons,81,1,league page,https://mongolia.basketball/en/games/176,0
+2025-26,MBA-670,2025-12-01,Regular season,ZVB,Zavkhan Brothers,94,BCH,BCH Knights,108,1,league page,https://mongolia.basketball/en/games/187,0
+2025-26,MBA-671,2025-12-02,Regular season,BCH,BCH Knights,74,DUA,Darkhan United,70,1,league page,https://mongolia.basketball/en/games/258,0
+2025-26,MBA-672,2025-12-03,Regular season,ZVB,Zavkhan Brothers,65,BTM,Bishrelt Metall,80,1,league page,https://mongolia.basketball/en/games/193,0
+2025-26,MBA-673,2025-12-03,Regular season,SGA,SG Apes,69,KUL,Khuleguud,90,1,league page,https://mongolia.basketball/en/games/257,0
+2025-26,MBA-674,2025-12-04,Regular season,KHF,Khan Falcons,83,BCH,BCH Knights,93,1,league page,https://mongolia.basketball/en/games/255,0
+2025-26,MBA-675,2025-12-04,Regular season,BSM,Burens Score Mongolians,84,BTM,Bishrelt Metall,58,1,league page,https://mongolia.basketball/en/games/175,0
+2025-26,MBA-676,2025-12-08,Regular season,KHF,Khan Falcons,91,DUA,Darkhan United,64,1,league page,https://mongolia.basketball/en/games/205,0
+2025-26,MBA-677,2025-12-08,Regular season,ETM,Erdenet Miners,83,SEL,Selenge Bodons,78,1,league page,https://mongolia.basketball/en/games/273,0
+2025-26,MBA-678,2025-12-09,Regular season,ZVB,Zavkhan Brothers,80,SEL,Selenge Bodons,71,1,league page,https://mongolia.basketball/en/games/224,0
+2025-26,MBA-679,2025-12-09,Regular season,BSM,Burens Score Mongolians,79,SGA,SG Apes,88,1,league page,https://mongolia.basketball/en/games/180,0
+2025-26,MBA-680,2025-12-10,Regular season,ETM,Erdenet Miners,70,DUA,Darkhan United,68,1,league page,https://mongolia.basketball/en/games/169,1
+2025-26,MBA-681,2025-12-10,Regular season,BCH,BCH Knights,66,BTM,Bishrelt Metall,61,1,league page,https://mongolia.basketball/en/games/206,0
+2025-26,MBA-682,2025-12-16,Regular season,SEL,Selenge Bodons,71,KHF,Khan Falcons,83,1,league page,https://mongolia.basketball/en/games/179,0
+2025-26,MBA-683,2025-12-16,Regular season,DUA,Darkhan United,79,BSM,Burens Score Mongolians,69,1,league page,https://mongolia.basketball/en/games/147,0
+2025-26,MBA-684,2025-12-17,Regular season,KHF,Khan Falcons,77,ETM,Erdenet Miners,74,1,league page,https://mongolia.basketball/en/games/152,0
+2025-26,MBA-685,2025-12-17,Regular season,KUL,Khuleguud,92,BCH,BCH Knights,81,1,league page,https://mongolia.basketball/en/games/271,1
+2025-26,MBA-686,2025-12-23,Regular season,KUL,Khuleguud,93,ZVB,Zavkhan Brothers,76,1,league page,https://mongolia.basketball/en/games/238,0
+2025-26,MBA-687,2025-12-23,Regular season,BSM,Burens Score Mongolians,95,BCH,BCH Knights,78,1,league page,https://mongolia.basketball/en/games/232,0
+2025-26,MBA-688,2025-12-24,Regular season,ZVB,Zavkhan Brothers,84,KHF,Khan Falcons,76,1,league page,https://mongolia.basketball/en/games/247,0
+2025-26,MBA-689,2025-12-24,Regular season,SGA,SG Apes,79,ETM,Erdenet Miners,74,1,league page,https://mongolia.basketball/en/games/251,0
+2025-26,MBA-690,2025-12-25,Regular season,KUL,Khuleguud,72,BTM,Bishrelt Metall,65,1,league page,https://mongolia.basketball/en/games/144,0
+2025-26,MBA-691,2025-12-31,Regular season,SGA,SG Apes,65,SEL,Selenge Bodons,70,1,league page,https://mongolia.basketball/en/games/264,0
+2025-26,MBA-692,2026-01-01,Regular season,DUA,Darkhan United,68,ETM,Erdenet Miners,70,1,league page,https://mongolia.basketball/en/games/160,0
+2025-26,MBA-693,2026-01-01,Regular season,BCH,BCH Knights,105,KUL,Khuleguud,114,1,league page,https://mongolia.basketball/en/games/155,0
+2025-26,MBA-694,2026-01-03,Regular season,KHF,Khan Falcons,92,BSM,Burens Score Mongolians,87,1,league page,https://mongolia.basketball/en/games/194,0
+2025-26,MBA-695,2026-01-03,Regular season,SGA,SG Apes,63,BTM,Bishrelt Metall,57,1,league page,https://mongolia.basketball/en/games/260,1
+2025-26,MBA-696,2026-01-04,Regular season,DUA,Darkhan United,101,ZVB,Zavkhan Brothers,91,1,league page,https://mongolia.basketball/en/games/204,0
+2025-26,MBA-697,2026-01-04,Regular season,KUL,Khuleguud,77,SEL,Selenge Bodons,69,1,league page,https://mongolia.basketball/en/games/141,0
+2025-26,MBA-698,2026-01-06,Regular season,KUL,Khuleguud,91,KHF,Khan Falcons,96,1,league page,https://mongolia.basketball/en/games/189,0
+2025-26,MBA-699,2026-01-06,Regular season,SGA,SG Apes,82,ZVB,Zavkhan Brothers,80,1,league page,https://mongolia.basketball/en/games/184,0
+2025-26,MBA-700,2026-01-07,Regular season,BSM,Burens Score Mongolians,91,SEL,Selenge Bodons,68,1,league page,https://mongolia.basketball/en/games/225,0
+2025-26,MBA-701,2026-01-07,Regular season,ETM,Erdenet Miners,74,BCH,BCH Knights,83,1,league page,https://mongolia.basketball/en/games/197,0
+2025-26,MBA-702,2026-01-10,Regular season,DUA,Darkhan United,97,KUL,Khuleguud,106,1,league page,https://mongolia.basketball/en/games/237,0
+2025-26,MBA-703,2026-01-10,Regular season,BTM,Bishrelt Metall,74,BCH,BCH Knights,81,1,league page,https://mongolia.basketball/en/games/218,0
+2025-26,MBA-704,2026-01-11,Regular season,KHF,Khan Falcons,83,ZVB,Zavkhan Brothers,90,1,league page,https://mongolia.basketball/en/games/268,0
+2025-26,MBA-705,2026-01-11,Regular season,KUL,Khuleguud,61,SGA,SG Apes,68,1,league page,https://mongolia.basketball/en/games/165,0
+2025-26,MBA-706,2026-01-13,Regular season,BTM,Bishrelt Metall,74,KHF,Khan Falcons,79,1,league page,https://mongolia.basketball/en/games/153,0
+2025-26,MBA-707,2026-01-13,Regular season,BCH,BCH Knights,77,SGA,SG Apes,81,1,league page,https://mongolia.basketball/en/games/142,0
+2025-26,MBA-708,2026-01-14,Regular season,SEL,Selenge Bodons,76,DUA,Darkhan United,74,1,league page,https://mongolia.basketball/en/games/212,0
+2025-26,MBA-709,2026-01-14,Regular season,BSM,Burens Score Mongolians,63,ETM,Erdenet Miners,80,1,league page,https://mongolia.basketball/en/games/252,0
+2025-26,MBA-710,2026-01-18,Regular season,DUA,Darkhan United,80,BTM,Bishrelt Metall,83,1,league page,https://mongolia.basketball/en/games/241,1
+2025-26,MBA-711,2026-01-18,Regular season,BCH,BCH Knights,93,ZVB,Zavkhan Brothers,88,1,league page,https://mongolia.basketball/en/games/235,1
+2025-26,MBA-712,2026-01-18,Regular season,SEL,Selenge Bodons,78,KUL,Khuleguud,88,1,league page,https://mongolia.basketball/en/games/219,0
+2025-26,MBA-713,2026-01-20,Regular season,KUL,Khuleguud,75,BSM,Burens Score Mongolians,93,1,league page,https://mongolia.basketball/en/games/191,0
+2025-26,MBA-714,2026-01-20,Regular season,SGA,SG Apes,103,DUA,Darkhan United,96,1,league page,https://mongolia.basketball/en/games/233,0
+2025-26,MBA-715,2026-01-21,Regular season,BCH,BCH Knights,90,KHF,Khan Falcons,68,1,league page,https://mongolia.basketball/en/games/209,0
+2025-26,MBA-716,2026-01-21,Regular season,ZVB,Zavkhan Brothers,74,SEL,Selenge Bodons,79,1,league page,https://mongolia.basketball/en/games/198,0
+2025-26,MBA-717,2026-01-24,Regular season,KHF,Khan Falcons,84,SGA,SG Apes,85,1,league page,https://mongolia.basketball/en/games/226,1
+2025-26,MBA-718,2026-01-24,Regular season,ETM,Erdenet Miners,76,KUL,Khuleguud,86,1,league page,https://mongolia.basketball/en/games/186,0
+2025-26,MBA-719,2026-01-25,Regular season,DUA,Darkhan United,101,BCH,BCH Knights,104,1,league page,https://mongolia.basketball/en/games/164,0
+2025-26,MBA-720,2026-01-25,Regular season,SEL,Selenge Bodons,89,BTM,Bishrelt Metall,82,1,league page,https://mongolia.basketball/en/games/173,0
+2025-26,MBA-721,2026-01-27,Regular season,DUA,Darkhan United,83,ETM,Erdenet Miners,85,1,league page,https://mongolia.basketball/en/games/266,0
+2025-26,MBA-722,2026-01-27,Regular season,BTM,Bishrelt Metall,79,BSM,Burens Score Mongolians,84,1,league page,https://mongolia.basketball/en/games/208,0
+2025-26,MBA-723,2026-01-28,Regular season,KHF,Khan Falcons,93,SEL,Selenge Bodons,94,1,league page,https://mongolia.basketball/en/games/183,0
+2025-26,MBA-724,2026-01-28,Regular season,ZVB,Zavkhan Brothers,88,KUL,Khuleguud,94,1,league page,https://mongolia.basketball/en/games/216,1
+2025-26,MBA-725,2026-01-31,Regular season,ETM,Erdenet Miners,72,ZVB,Zavkhan Brothers,70,1,league page,https://mongolia.basketball/en/games/227,0
+2025-26,MBA-726,2026-01-31,Regular season,BCH,BCH Knights,94,BSM,Burens Score Mongolians,99,1,league page,https://mongolia.basketball/en/games/195,0
+2025-26,MBA-727,2026-02-01,Regular season,KUL,Khuleguud,69,DUA,Darkhan United,82,1,league page,https://mongolia.basketball/en/games/220,0
+2025-26,MBA-728,2026-02-01,Regular season,SEL,Selenge Bodons,86,BCH,BCH Knights,85,1,league page,https://mongolia.basketball/en/games/221,0
+2025-26,MBA-729,2026-02-03,Regular season,BSM,Burens Score Mongolians,73,ZVB,Zavkhan Brothers,79,1,league page,https://mongolia.basketball/en/games/177,0
+2025-26,MBA-730,2026-02-03,Regular season,BTM,Bishrelt Metall,54,ETM,Erdenet Miners,86,1,league page,https://mongolia.basketball/en/games/149,0
+2025-26,MBA-731,2026-02-04,Regular season,DUA,Darkhan United,93,KHF,Khan Falcons,87,1,league page,https://mongolia.basketball/en/games/145,0
+2025-26,MBA-732,2026-02-04,Regular season,SEL,Selenge Bodons,81,KUL,Khuleguud,83,1,league page,https://mongolia.basketball/en/games/168,0
+2025-26,MBA-733,2026-02-06,Regular season,ZVB,Zavkhan Brothers,84,DUA,Darkhan United,74,1,league page,https://mongolia.basketball/en/games/274,0
+2025-26,MBA-734,2026-02-06,Regular season,ETM,Erdenet Miners,77,SGA,SG Apes,80,1,league page,https://mongolia.basketball/en/games/199,0
+2025-26,MBA-735,2026-02-07,Regular season,BSM,Burens Score Mongolians,41,KHF,Khan Falcons,120,1,league page,https://mongolia.basketball/en/games/217,1
+2025-26,MBA-736,2026-02-07,Regular season,BCH,BCH Knights,100,SEL,Selenge Bodons,106,1,league page,https://mongolia.basketball/en/games/213,0
+2025-26,MBA-737,2026-02-15,Regular season,BTM,Bishrelt Metall,67,DUA,Darkhan United,88,1,league page,https://mongolia.basketball/en/games/265,0
+2025-26,MBA-738,2026-02-15,Regular season,SEL,Selenge Bodons,88,ETM,Erdenet Miners,69,1,league page,https://mongolia.basketball/en/games/159,0
+2025-26,MBA-739,2026-02-17,Regular season,ETM,Erdenet Miners,108,KHF,Khan Falcons,90,1,league page,https://mongolia.basketball/en/games/171,0
+2025-26,MBA-740,2026-02-17,Regular season,SGA,SG Apes,88,BSM,Burens Score Mongolians,95,1,league page,https://mongolia.basketball/en/games/270,0
+2025-26,MBA-741,2026-02-20,Regular season,BTM,Bishrelt Metall,84,ZVB,Zavkhan Brothers,78,1,league page,https://mongolia.basketball/en/games/201,1
+2025-26,MBA-742,2026-02-20,Regular season,KUL,Khuleguud,74,ETM,Erdenet Miners,90,1,league page,https://mongolia.basketball/en/games/249,0
+2025-26,MBA-743,2026-02-22,Regular season,BTM,Bishrelt Metall,59,KHF,Khan Falcons,69,1,league page,https://mongolia.basketball/en/games/234,0
+2025-26,MBA-744,2026-02-22,Regular season,SEL,Selenge Bodons,98,BSM,Burens Score Mongolians,78,1,league page,https://mongolia.basketball/en/games/163,0
+2025-26,MBA-745,2026-02-24,Regular season,ZVB,Zavkhan Brothers,80,SGA,SG Apes,85,1,league page,https://mongolia.basketball/en/games/243,0
+2025-26,MBA-746,2026-02-24,Regular season,BCH,BCH Knights,75,ETM,Erdenet Miners,81,1,league page,https://mongolia.basketball/en/games/150,0
+2025-26,MBA-747,2026-02-25,Regular season,KHF,Khan Falcons,79,KUL,Khuleguud,65,1,league page,https://mongolia.basketball/en/games/200,0
+2025-26,MBA-748,2026-02-25,Regular season,BSM,Burens Score Mongolians,68,DUA,Darkhan United,92,1,league page,https://mongolia.basketball/en/games/230,0
+2025-26,5189509,2026-02-28,Playoffs,SGA,SG Apes,82,ZVB,Zavkhan Brothers,73,1,transcribed image,,0
+2025-26,5189510,2026-02-28,Playoffs,ETM,Erdenet Miners,81,SEL,Selenge Bodons,90,1,transcribed image,,0
+2025-26,5190076,2026-03-01,Playoffs,KUL,Khuleguud,85,DUA,Darkhan United,67,1,transcribed image,,0
+2025-26,5190077,2026-03-01,Playoffs,BCH,BCH Knights,85,KHF,Khan Falcons,79,1,transcribed image,,0
+2025-26,5190078,2026-03-02,Playoffs,SEL,Selenge Bodons,80,ETM,Erdenet Miners,85,1,transcribed image,,0
+2025-26,5190079,2026-03-02,Playoffs,ZVB,Zavkhan Brothers,81,SGA,SG Apes,75,1,transcribed image,,0
+2025-26,5190080,2026-03-03,Playoffs,KHF,Khan Falcons,80,BCH,BCH Knights,81,1,transcribed image,,0
+2025-26,5190081,2026-03-03,Playoffs,DUA,Darkhan United,75,KUL,Khuleguud,86,1,transcribed image,,0
+2025-26,5191310,2026-03-05,Playoffs,SGA,SG Apes,80,ZVB,Zavkhan Brothers,65,1,transcribed image,,0
+2025-26,5191311,2026-03-05,Playoffs,ETM,Erdenet Miners,74,SEL,Selenge Bodons,78,1,transcribed image,,0
+2025-26,5191312,2026-03-06,Playoffs,KUL,Khuleguud,93,DUA,Darkhan United,81,1,transcribed image,,0
+2025-26,5191313,2026-03-06,Playoffs,BCH,BCH Knights,93,KHF,Khan Falcons,103,1,transcribed image,,0
+2025-26,5191314,2026-03-09,Playoffs,SEL,Selenge Bodons,73,ETM,Erdenet Miners,72,1,transcribed image,,0
+2025-26,5191315,2026-03-09,Playoffs,ZVB,Zavkhan Brothers,69,SGA,SG Apes,78,1,transcribed image,,0
+2025-26,5191316,2026-03-10,Playoffs,KHF,Khan Falcons,102,BCH,BCH Knights,87,1,transcribed image,,1
+2025-26,5191317,2026-03-10,Playoffs,DUA,Darkhan United,83,KUL,Khuleguud,91,1,transcribed image,,1
+2025-26,5193363,2026-03-11,Playoffs,SGA,SG Apes,86,ZVB,Zavkhan Brothers,81,1,transcribed image,,0
+2025-26,5193364,2026-03-11,Playoffs,ETM,Erdenet Miners,82,SEL,Selenge Bodons,85,1,transcribed image,,1
+2025-26,5193365,2026-03-12,Playoffs,BCH,BCH Knights,86,KHF,Khan Falcons,103,1,transcribed image,,1
+2025-26,5194096,2026-03-14,Playoffs,SGA,SG Apes,82,SEL,Selenge Bodons,80,1,transcribed image,,1
+2025-26,5194460,2026-03-15,Playoffs,KHF,Khan Falcons,85,BCH,BCH Knights,84,1,transcribed image,,1
+2025-26,5194615,2026-03-16,Playoffs,SEL,Selenge Bodons,87,SGA,SG Apes,81,1,transcribed image,,1
+2025-26,5194852,2026-03-18,Playoffs,KUL,Khuleguud,93,KHF,Khan Falcons,58,1,transcribed image,,1
+2025-26,5194853,2026-03-19,Playoffs,SGA,SG Apes,78,SEL,Selenge Bodons,101,1,transcribed image,,1
+2025-26,5194854,2026-03-20,Playoffs,KHF,Khan Falcons,74,KUL,Khuleguud,87,1,transcribed image,,1
+2025-26,5194855,2026-03-22,Playoffs,SEL,Selenge Bodons,72,SGA,SG Apes,84,1,transcribed image,,1
+2025-26,5194856,2026-03-23,Playoffs,KUL,Khuleguud,83,KHF,Khan Falcons,86,1,transcribed image,,1
+2025-26,5194857,2026-03-24,Playoffs,SGA,SG Apes,88,SEL,Selenge Bodons,76,1,transcribed image,,1
+2025-26,5196480,2026-03-24,Play-in,BSM,Burens Score Mongolians,73,TLG,Inut Yes TLG,76,1,transcribed image,,0
+2025-26,5196481,2026-03-26,Play-in,TLG,Inut Yes TLG,65,BSM,Burens Score Mongolians,71,1,transcribed image,,0
+2025-26,5197523,2026-03-26,Playoffs,KHF,Khan Falcons,76,KUL,Khuleguud,87,1,transcribed image,,1
+2025-26,5198459,2026-03-27,Playoffs,SEL,Selenge Bodons,91,SGA,SG Apes,90,1,transcribed image,,1
+2025-26,5197952,2026-03-28,Play-in,BSM,Burens Score Mongolians,75,TLG,Inut Yes TLG,76,1,transcribed image,,0
+2025-26,5197954,2026-03-28,Playoffs,KUL,Khuleguud,88,KHF,Khan Falcons,72,1,transcribed image,,1
+2025-26,5197976,2026-03-29,Playoffs,SGA,SG Apes,86,SEL,Selenge Bodons,99,1,transcribed image,,1
+2025-26,5198088,2026-04-01,Playoffs,KUL,Khuleguud,77,SEL,Selenge Bodons,76,1,transcribed image,,1
+2025-26,5199142,2026-04-03,Playoffs,SEL,Selenge Bodons,62,KUL,Khuleguud,87,1,transcribed image,,1
+2025-26,5201212,2026-04-14,Playoffs,KUL,Khuleguud,79,SEL,Selenge Bodons,69,1,transcribed image,,1
+2025-26,5201213,2026-04-16,Playoffs,SEL,Selenge Bodons,82,KUL,Khuleguud,70,1,transcribed image,,1
+2025-26,5204042,2026-04-24,Playoffs,KUL,Khuleguud,89,SEL,Selenge Bodons,70,1,transcribed image,,1

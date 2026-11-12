@@ -77,7 +77,8 @@ checks all 684 supplied team box scores against player points and final scores.
 ## Source archives and reproduction
 
 Images, screenshots, ZIPs, workbooks and intermediate collections are outside
-Git. The website needs only `data.mn/public/sports/basketball.json`. Manifests
+Git. The browser uses `data.mn/public/sports/basketball.json`; dataset downloads
+are generated from that same JSON. Manifests
 retain original paths, sizes, SHA-256 hashes, source URLs and retrieval times.
 See the [source guide](../tools/sources/basketball/source.md).
 
@@ -113,6 +114,38 @@ The play-in importer remains reproducible after restoring its source images:
 Run `npm ci`, `npm run check` and `npm run build` from `data.mn` for clean
 website validation. `node data.mn/scripts/export-basketball-preview.mjs`
 generates an optional offline preview under the ignored `outputs/` tree.
+
+## Published dataset files
+
+The dataset pages provide a language-matched CSV and a bilingual XLSX:
+
+| Dataset ID | Row grain | Current rows |
+| --- | --- | ---: |
+| `basketball-game-results` | One recorded game | 593 |
+| `basketball-team-records` | One team, season and stage | 65 |
+| `basketball-player-game-stats` | One rostered player in one game | 9,082 |
+
+The last dataset includes 1,746 explicit did-not-play rows. Team records use
+final scores, so they also cover the two results-only seasons. The player
+dataset covers only 2024–25 and 2025–26. Missing statistics stay blank;
+source types, public game URLs and review flags are retained. The datasets
+are linked from the browser's coverage tab and its Full datasets menu.
+
+Rebuilding downloads and adding a new season from public league pages do not
+require the private archive. See **Adding a season** in the
+[source guide](../tools/sources/basketball/source.md). After building, run:
+
+```powershell
+python tools/sources/basketball/test_public.py
+python tools/scripts/validate_dataset.py --all basketball-game-results
+python tools/scripts/validate_dataset.py --all basketball-team-records
+python tools/scripts/validate_dataset.py --all basketball-player-game-stats
+Set-Location data.mn
+python ../tools/scripts/validate_vega.py --all
+npm run check
+npm run build
+Set-Location ..
+```
 
 ## Design references
 

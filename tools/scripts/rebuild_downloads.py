@@ -50,6 +50,9 @@ TIME_NAMES = TIME_NAMES_EN | TIME_NAMES_MN
 # Most are timeless snapshots; a small number are multi-attribute analytical
 # tables whose metadata columns are intentionally retained in long form.
 EXEMPT_WIDE = {
+    "basketball-game-results",
+    "basketball-team-records",
+    "basketball-player-game-stats",
     "gdp-by-sector",
     "health-facilities-by-aimag",
     "health-facilities-by-type",
@@ -63,6 +66,9 @@ EXEMPT_WIDE = {
 }
 
 EXEMPT_WIDE_REASONS = {
+    "basketball-game-results": "game event records retain both teams, scores, provenance and review flags",
+    "basketball-team-records": "multi-metric team-season-stage records retain games, wins, losses and scoring averages",
+    "basketball-player-game-stats": "player-game event records retain multiple box-score measures and provenance",
     "gdp-by-sector": "single-year snapshot, no time dimension to pivot",
     "health-facilities-by-aimag": "cross-sectional count by aimag, no time dimension",
     "health-facilities-by-type": "cross-sectional count by facility type, no time dimension",
@@ -180,6 +186,11 @@ def detect_roles(df, dataset_id=None):
                if c != time and pd.api.types.is_numeric_dtype(df[c])]
     if len(numeric) == 0:
         return None, None, None, "no numeric value column"
+    if dataset_id in {"basketball-game-results", "basketball-player-game-stats"}:
+        # These are explicitly specified event records, not a single-value time series.
+        if time is None:
+            return None, None, None, "basketball event records require a date"
+        return time, None, numeric[-1], None
     if len(numeric) > 1 and time is None and dataset_id in EXEMPT_WIDE:
         # Documented cross-sectional tables may carry several numeric
         # columns (code, measure, count); the measure is the float column.

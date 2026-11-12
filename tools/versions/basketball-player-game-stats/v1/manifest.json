@@ -1,0 +1,11 @@
+{
+  "dataset": "basketball-player-game-stats",
+  "version": 1,
+  "input": "data.mn/public/sports/basketball.json",
+  "input_sha256": "e158cdf39465470f525bff0dc8f8e7c51e9b22b7d47211ebb87d53d056dba533",
+  "files": {
+    "data-en.csv": "bd0d339f517eceacaf80f3cecc0cbe2ef4593d6581743b823fed61c814ddc444",
+    "data-mn.csv": "5a0b1ee8599cde91d02bd9837a7251d7e079fcd2567065f2edc88285accfc89b"
+  },
+  "command": "python tools/sources/basketball/build_public.py"
+}

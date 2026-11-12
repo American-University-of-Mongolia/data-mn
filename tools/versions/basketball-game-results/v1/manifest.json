@@ -1,0 +1,11 @@
+{
+  "dataset": "basketball-game-results",
+  "version": 1,
+  "input": "data.mn/public/sports/basketball.json",
+  "input_sha256": "e158cdf39465470f525bff0dc8f8e7c51e9b22b7d47211ebb87d53d056dba533",
+  "files": {
+    "data-en.csv": "a8bdd31f18a36523c68ccea60aa94fa4f2a8076a091acaee3c811e51eacac507",
+    "data-mn.csv": "db2b94951f80f79bc263569a7dff3a03e233ca34fc40e107dbe24dc5a015ab65"
+  },
+  "command": "python tools/sources/basketball/build_public.py"
+}

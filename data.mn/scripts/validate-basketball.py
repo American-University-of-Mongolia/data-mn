@@ -43,7 +43,7 @@ for season in data['seasons']:
                 flagged+=1
     report.append({'season':season['id'],'games':len(games),'player_rows':len(roster_keys),
                    'point_reconciliations':reconciled,'flagged_point_gaps':flagged,'review_flags':len(season['issues'])})
-regular=data['seasons'][-1]
+regular=next(s for s in data['seasons'] if s['id']=='2025-26')
 regular_ids={g['id'] for g in regular['games'] if g['phase']=='Regular season'}
 assert len(regular_ids)==135
 players=[p for p in regular['players'] if p['game'] in regular_ids]

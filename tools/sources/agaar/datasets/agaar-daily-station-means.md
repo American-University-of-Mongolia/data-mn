@@ -11,7 +11,8 @@
 - **Built file**: `tools/sources/agaar/derived/agaar-daily-station-means.csv`
   (+ `.meta.json` with coverage and dropped counts)
 - **Build**: `python3 tools/sources/agaar/build_daily_means.py`. It also writes the
-  four page tables `tools/sources/agaar/derived/pm25-*.csv`.
+  four page tables `tools/sources/agaar/derived/pm25-*.csv`;
+  `build_page_downloads.py` turns those into the pages' CSV/XLSX downloads.
 
 ## Variables
 
@@ -48,12 +49,78 @@ Reference levels: Mongolian standard MNS 4585:2016, 24-hour PM2.5 limit
 
 ## Update Instructions
 
-1. The scheduled archive job refreshes `raw/` monthly (`tools/scheduled/agaar-archive/`).
-2. Run `build_daily_means.py`, then `tools/sources/agaar/register.py` to refresh
-   the parent metadata.
-3. Regenerate each split's CSV/XLSX from its `derived/pm25-*.csv` table, and
-   update titles, excerpts and dropped counts. The winter pages change only
-   when a new winter is added (update `WINTER` in the build script).
+Run every command from the repo root unless it says `cd`. With the conda
+`datamn` environment, `python3` is enough; with the repo venv on Windows use
+`.venv/Scripts/python.exe` and set `PYTHONUTF8=1` (Cyrillic output).
+
+1. **Archive run.** The scheduled job refreshes `raw/` monthly
+   (`tools/scheduled/agaar-archive/`). Never edit the raw files,
+   `fetch_data.py` or `stations.json`.
+
+2. **Check the archive run.**
+
+   ```bash
+   cd .claude/skills/datamn-source-agaar && python3 -m unittest discover -s tests && cd -
+   python3 tools/sources/agaar/check_archive.py          # vs origin/main
+   ```
+
+   The tests must all pass, and `check_archive.py` must print
+   `OK: 0 rows lost, 0 values lost`. If it doesn't, stop and report it.
+   "Values changed" are the site revising real-time numbers and are fine.
+
+3. **Rebuild the parent and the page tables, refresh the registry.**
+
+   ```bash
+   python3 tools/sources/agaar/build_daily_means.py
+   python3 tools/sources/agaar/register.py
+   ```
+
+   Note `last_full_month`, `station_days` and `dropped_total` from the printed
+   meta (also in `derived/agaar-daily-station-means.meta.json`).
+
+4. **Write the download files.**
+
+   ```bash
+   python3 tools/sources/agaar/build_page_downloads.py
+   ```
+
+   This writes the 16 split CSVs in `data.mn/public/datasets/` from
+   `derived/pm25-*.csv`, then rebuilds the XLSX and MDX `dataFiles` sizes for
+   every split that changed. `--check` only reports.
+
+5. **Update the page text by hand** (EN and MN, in frontmatter and body):
+   - every page: `dataDate` = meta `last_date`, and the cleaning clause with
+     the new counts: "Implausible readings (173 of 17,191 station-days) were
+     removed before averaging." / "Дундажийг тооцохдоо бодит бус утгатай 173
+     станц-өдрийг (нийт 17,191-ээс) хассан."
+   - monthly and unhealthy-days pages: the span in the title, excerpt,
+     `<VegaChart title>` and the chart JSON `description` ends at
+     `last_full_month`; add the newest month's figures to the excerpt from the
+     page CSV.
+   - winter pages: data changes only when a new winter is added (update
+     `WINTER` in `build_daily_means.py`); otherwise only the clause above.
+   - Incomplete months are never shown (the build cuts at `last_full_month`).
+
+6. **Validate.** All must pass.
+
+   ```bash
+   for id in pm25-monthly-ulaanbaatar-aimags pm25-unhealthy-days-ulaanbaatar pm25-winter-by-aimag-centre pm25-winter-by-station-ulaanbaatar; do
+     python3 tools/scripts/validate_dataset.py --all $id --base-dir data.mn
+   done
+   python3 tools/scripts/validate_title_years.py
+   python3 tools/scripts/validate_claims.py
+   cd data.mn && python3 ../tools/scripts/validate_vega.py --all && cd -
+   ```
+
+7. **Look at the charts at phone width.** Start `npm run dev` in `data.mn`
+   (add `-- --host` to open it on a phone on the same Wi-Fi at
+   `http://<PC IP>:4321/en/data/<id>`), then:
+
+   ```bash
+   python3 tools/scripts/screenshot_charts.py pm25-monthly-ulaanbaatar-aimags pm25-unhealthy-days-ulaanbaatar pm25-winter-by-aimag-centre pm25-winter-by-station-ulaanbaatar
+   ```
+
+   (needs `pip install playwright && python3 -m playwright install chromium`).
 
 ## Splits
 

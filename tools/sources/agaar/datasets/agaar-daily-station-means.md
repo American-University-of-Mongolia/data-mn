@@ -35,7 +35,9 @@ served"). This build drops a PM2.5 station-day for the first rule it meets:
 | `flat` | Same value on 5+ consecutive days at one station (stuck sensor) |
 
 As of the first build (data to 2026-10-06): 163 of 16,115 station-days dropped
-(2 negative, 90 above PM10, 42 spike, 29 flat). Every page states the rules and
+(2 negative, 90 above PM10, 42 spike, 29 flat).
+As of the 2026-11 refresh (data to 2026-11-02): 173 of 17,191 dropped
+(8 negative, 94 above PM10, 42 spike, 29 flat). Every page states the rules and
 the current count from `agaar-daily-station-means.meta.json`.
 
 Pages use data from 2025-10 (first full month with Ulaanbaatar stations), and
@@ -60,16 +62,16 @@ All splits are aggregations of the cleaned parent. Each split's
 
 ### 1. pm25-monthly-ulaanbaatar-aimags
 - **Table**: `derived/pm25-monthly-ulaanbaatar-aimags.csv`
-- **Title EN**: PM2.5 in Ulaanbaatar and Aimag Centres by Month (October 2025 to September 2026)
-- **Title MN**: Улаанбаатар болон аймгийн төвүүдийн PM2.5, сараар (2025 оны 10-р сараас 2026 оны 9-р сар)
+- **Title EN**: PM2.5 in Ulaanbaatar and Aimag Centres by Month (October 2025 to October 2026)
+- **Title MN**: Улаанбаатар болон аймгийн төвүүдийн PM2.5, сараар (2025 оны 10-р сараас 2026 оны 10-р сар)
 - **Aggregation**: mean of cleaned station-day values per month, UB stations vs aimag-centre stations
 - **Chart**: 2-line chart (month temporal x, pm25 y), dashed reference rules at 50 (MNS) and 15 (WHO)
 - **split_filter**: `{"table": "pm25-monthly-ulaanbaatar-aimags", "from": "2025-10", "aggregate": "monthly mean by area"}`
 
 ### 2. pm25-unhealthy-days-ulaanbaatar
 - **Table**: `derived/pm25-unhealthy-days-ulaanbaatar.csv`
-- **Title EN**: Days Above Mongolia's PM2.5 Limit in Ulaanbaatar by Month (October 2025 to September 2026)
-- **Title MN**: Улаанбаатарт PM2.5-ын зөвшөөрөгдөх хэмжээг давсан өдрийн тоо, сараар (2025 оны 10-р сараас 2026 оны 9-р сар)
+- **Title EN**: Days Above Mongolia's PM2.5 Limit in Ulaanbaatar by Month (October 2025 to October 2026)
+- **Title MN**: Улаанбаатарт PM2.5-ын зөвшөөрөгдөх хэмжээг давсан өдрийн тоо, сараар (2025 оны 10-р сараас 2026 оны 10-р сар)
 - **Aggregation**: city daily mean = mean of UB stations (day counts only with 8+ stations); count days > 50 µg/m³
 - **Chart**: bar chart, days_above_limit per month (temporal x)
 - **split_filter**: `{"table": "pm25-unhealthy-days-ulaanbaatar", "from": "2025-10", "limit": 50, "min_stations": 8}`
@@ -94,7 +96,7 @@ All splits are aggregations of the cleaned parent. Each split's
 
 Minimal pages like every data page: frontmatter, the excerpt, the chart. The
 page template hides body text, so the cleaning disclosure is the excerpt's last
-clause: "Implausible readings (163 of 16,115 station-days) were removed before
+clause: "Implausible readings (173 of 17,191 station-days) were removed before
 averaging." Update the counts from `agaar-daily-station-means.meta.json` on
 each refresh. The full rules live in this file and in source.md.
 Related: `air-pollution-concentration` (NSO SO₂, 2002–2026), whose page notes

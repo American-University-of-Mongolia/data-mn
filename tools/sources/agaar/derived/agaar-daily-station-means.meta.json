@@ -1,12 +1,12 @@
 {
- "built_at": "2026-10-06T09:32:03+00:00",
+ "built_at": "2026-11-12T13:18:59+00:00",
  "first_date": "2025-06-01",
- "last_date": "2026-10-06",
- "station_days": 16115,
- "station_days_kept": 15952,
+ "last_date": "2026-11-02",
+ "station_days": 17191,
+ "station_days_kept": 17018,
  "dropped": {
-  "negative": 2,
-  "above_pm10": 90,
+  "negative": 8,
+  "above_pm10": 94,
   "spike": 42,
   "flat": 29
  },
@@ -18,12 +18,12 @@
   "flat_days": 5
  },
  "stations": 44,
- "dropped_total": 163,
+ "dropped_total": 173,
  "page_tables": {
-  "pm25-monthly-ulaanbaatar-aimags": 24,
-  "pm25-unhealthy-days-ulaanbaatar": 12,
+  "pm25-monthly-ulaanbaatar-aimags": 26,
+  "pm25-unhealthy-days-ulaanbaatar": 13,
   "pm25-winter-by-aimag-centre": 22,
   "pm25-winter-by-station-ulaanbaatar": 17
  },
- "last_full_month": "2026-09"
+ "last_full_month": "2026-10"
 }

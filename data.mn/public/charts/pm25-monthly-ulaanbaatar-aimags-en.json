@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Monthly mean PM2.5 in Ulaanbaatar and aimag centres, October 2025 to September 2026, µg/m³",
+  "description": "Monthly mean PM2.5 in Ulaanbaatar and aimag centres, October 2025 to October 2026, µg/m³",
   "data": {
     "url": "/datasets/pm25-monthly-ulaanbaatar-aimags-en.csv",
     "format": {

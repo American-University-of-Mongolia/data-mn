@@ -20,6 +20,11 @@
     "count": 14
   },
   {
+    "en": "Agriculture",
+    "mn": "Хөдөө аж ахуй",
+    "count": 12
+  },
+  {
     "en": "Trade",
     "mn": "Худалдаа",
     "count": 11
@@ -28,11 +33,6 @@
     "en": "Health",
     "mn": "Эрүүл мэнд",
     "count": 10
-  },
-  {
-    "en": "Agriculture",
-    "mn": "Хөдөө аж ахуй",
-    "count": 9
   },
   {
     "en": "Prices & Inflation",

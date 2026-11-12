@@ -1,5 +1,6 @@
 """Archive public bilingual league schedules and box scores (standard library only)."""
 import os
+import argparse
 import gzip
 import hashlib
 import html
@@ -32,6 +33,7 @@ def fetch(url, filename, seed=None):
     global last_request
     path = ARCHIVE / (filename + '.html.gz')
     if path.exists():
+        assert manifest[filename]['url'] == url, 'Cache belongs to another URL; use a new output directory'
         raw = gzip.decompress(path.read_bytes())
         assert hashlib.sha256(raw).hexdigest() == manifest[filename]['sha256_html']
         return raw.decode('utf8')
@@ -129,7 +131,8 @@ def parse_game(source, url):
     teams = []
     for side, table, period in zip(('home', 'away'), parser.tables[1:], periods[1:]):
         headers = table['rows'][0]['cells']
-        assert headers[2:] == ['MIN', 'PTS', 'REB', 'AST', 'STL', 'BLK', 'FG', '3P', 'FT', 'TO'], (url, headers)
+        core = ['MIN', 'PTS', 'REB', 'AST', 'STL', 'BLK', 'FG', '3P', 'FT', 'TO']
+        assert headers[2:] in (core, core + ['PF']), (url, headers)
         players = []
         for row in table['rows'][1:-1]:
             cells = row['cells']
@@ -137,7 +140,7 @@ def parse_game(source, url):
             number = re.search(r'#\s*(\d+)\s*$', cells[0])
             assert number, (url, cells[0])
             dnp = len(cells) == 3 and 'DNP' in cells[2]
-            assert dnp or len(cells) == 12, (url, cells)
+            assert dnp or len(cells) == len(headers), (url, cells)
             players.append({
                 'name': row['name'], 'profile_url': urljoin(BASE, row['profile']),
                 'player_slug': urlsplit(row['profile']).path.split('/players/')[1],
@@ -165,15 +168,15 @@ def run():
     ARCHIVE.mkdir(parents=True, exist_ok=True)
     initial = fetch(SCHEDULE, 'schedule')
     month_links = list(dict.fromkeys(html.unescape(x) for x in re.findall(r'href="([^"]+month=\d{4}-\d{2})"', initial)))
-    assert len(month_links) == 5, ('Unexpected months', month_links)
-    game_links = []
+    game_links = list(dict.fromkeys(re.findall(r'href="(/mn/games/\d+)"', initial)))
     for relative in month_links:
         month = relative.rsplit('=', 1)[1]
         page = fetch(urljoin(BASE, relative), 'schedule-' + month)
         links = list(dict.fromkeys(re.findall(r'href="(/mn/games/\d+)"', page)))
         print('Month', month, len(links), flush=True)
         game_links.extend(links)
-    assert len(game_links) == len(set(game_links)), 'Duplicate schedule game'
+    game_links = list(dict.fromkeys(game_links))
+    assert game_links, 'No game links found; check the schedule URL and source layout'
     print('Schedule game count:', len(game_links), flush=True)
     games = []
     failures = []
@@ -197,4 +200,15 @@ def run():
 
 
 if __name__ == '__main__':
-    run()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--schedule-url', default=SCHEDULE, help='Public Mongolian schedule URL with season and type selected')
+    parser.add_argument('--output', type=Path, default=OUT, help='New directory for this public collection')
+    args = parser.parse_args()
+    if not args.schedule_url.startswith(BASE + '/mn/competitions/league/schedule?'):
+        parser.error('Use the public mongolia.basketball Mongolian league schedule URL')
+    SCHEDULE, OUT = args.schedule_url, args.output
+    ARCHIVE, manifest_path = OUT / 'sources', OUT / 'manifest.json'
+    manifest = json.loads(manifest_path.read_text(encoding='utf8')) if manifest_path.exists() else {}
+    games, errors = run()
+    write_json(OUT / 'collection-meta.json', {'schedule_url': SCHEDULE, 'games': len(games), 'errors': len(errors)})
+    raise SystemExit(1 if errors else 0)

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mean team scoring by season and stage",
+  "data": {
+    "url": "/datasets/basketball-team-records-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "y": {
+      "field": "season",
+      "type": "nominal",
+      "title": "Season",
+      "sort": "ascending",
+      "axis": {
+        "grid": false
+      }
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "points_for_per_game",
+      "type": "quantitative",
+      "title": "Points",
+      "axis": {
+        "format": ".1f"
+      }
+    },
+    "color": {
+      "field": "stage",
+      "type": "nominal",
+      "title": "Stage",
+      "legend": {
+        "orient": "top"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "season",
+        "type": "nominal"
+      },
+      {
+        "field": "stage",
+        "type": "nominal"
+      },
+      {
+        "aggregate": "mean",
+        "field": "points_for_per_game",
+        "type": "quantitative",
+        "title": "Points",
+        "format": ".2f"
+      }
+    ],
+    "yOffset": {
+      "field": "stage"
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": null
+    }
+  }
+}

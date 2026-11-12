@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Mean points per player appearance",
+  "data": {
+    "url": "/datasets/basketball-player-game-stats-en.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "y": {
+      "field": "season",
+      "type": "nominal",
+      "title": "Season",
+      "sort": "ascending",
+      "axis": {
+        "grid": false
+      }
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "points",
+      "type": "quantitative",
+      "title": "Points",
+      "axis": {
+        "format": ".1f"
+      }
+    },
+    "color": {
+      "field": "stage",
+      "type": "nominal",
+      "title": "Stage",
+      "legend": {
+        "orient": "top"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "season",
+        "type": "nominal"
+      },
+      {
+        "field": "stage",
+        "type": "nominal"
+      },
+      {
+        "aggregate": "mean",
+        "field": "points",
+        "type": "quantitative",
+        "title": "Points",
+        "format": ".2f"
+      }
+    ],
+    "yOffset": {
+      "field": "stage"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum['did_not_play'] == 0"
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": null
+    }
+  }
+}

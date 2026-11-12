@@ -1,0 +1,53 @@
+---
+title: Mongolia Hay Harvest and Fodder Prepared by Aimag, Thousand Tonnes (1960–2025)
+publishDate: 2026-11-05
+excerpt: Hay cut and fodder laid in for winter across Mongolia's 21 aimags and Ulaanbaatar, in thousand tonnes, 1960 to 2025. In 2025 the national total was about 1.81 million tonnes, led by Arkhangai at 356.12 thousand tonnes.
+category: Agriculture
+tags:
+- mongolia
+- agriculture
+- hay harvest
+- fodder
+- dzud
+keywords:
+- mongolia hay harvest
+- fodder prepared by aimag
+- dzud preparedness fodder
+author: Data.mn
+dataVersion: 1
+dataDate: 2025-12-31
+excelLanguage: page
+dataFiles:
+- path: /datasets/hay-harvest-by-aimag-en.csv
+  format: csv
+  size: 26 KB
+  description: All data, one observation per row. For Excel, import as UTF-8 with a comma delimiter.
+- path: /datasets/hay-harvest-by-aimag-en.xlsx
+  format: xlsx
+  size: 14 KB
+  description: Formatted table for 1960–2025, in English.
+source:
+  name: National Statistics Office of Mongolia
+  url: https://data.1212.mn/pxweb/en/NSO/NSO__Industry,%20service__Agriculture/DT_NSO_1002_007V1.px/
+  tableId: DT_NSO_1002_007V1.px
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Hay cut and fodder laid in for winter across Mongolia's 21 aimags and Ulaanbaatar, in thousand tonnes, 1960 to 2025. In 2025 the national total was about 1.81 million tonnes, led by Arkhangai at 356.12 thousand tonnes.
+
+<VegaChart
+  spec="/charts/hay-harvest-by-aimag-en.json"
+  title="Hay and fodder across Mongolia"
+  caption="Hay cut plus fodder laid in for winter, by aimag, thousand tonnes. Households and enterprises combined. A key dzud preparedness indicator. Grey means data unavailable."
+  aspectRatio={0.625}
+  yearGroup="hay-harvest-by-aimag"
+/>
+
+<VegaChart
+  spec="/charts/hay-harvest-by-aimag-ranking-en.json"
+  title="Highest hay and fodder by year"
+  caption="Top six regions in the selected year."
+  aspectRatio={0.6}
+  yearGroup="hay-harvest-by-aimag"
+/>

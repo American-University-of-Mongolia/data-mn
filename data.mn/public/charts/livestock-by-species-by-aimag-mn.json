@@ -1,0 +1,124 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Аймаг, нийслэлийн малын тоо төрлөөр, мянган толгой, он сонгох (1970-2025)",
+  "data": {
+    "url": "/datasets/livestock-by-species-by-aimag-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "params": [
+    {
+      "name": "yearSelect",
+      "value": 2025,
+      "bind": {
+        "input": "range",
+        "min": 1970,
+        "max": 2025,
+        "step": 1,
+        "name": "Он: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "toNumber(datum['он']) == yearSelect"
+    },
+    {
+      "calculate": "split(datum['ангилал'], ' — ')[0]",
+      "as": "бүс"
+    },
+    {
+      "calculate": "split(datum['ангилал'], ' — ')[1]",
+      "as": "төрөл"
+    },
+    {
+      "calculate": "indexof([\"Адуу\", \"Үхэр\", \"Тэмээ\", \"Хонь\", \"Ямаа\"], datum['төрөл'])",
+      "as": "species_order"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
+  "encoding": {
+    "y": {
+      "field": "бүс",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "op": "sum",
+        "field": "утга",
+        "order": "descending"
+      }
+    },
+    "x": {
+      "field": "утга",
+      "type": "quantitative",
+      "stack": "zero",
+      "title": "Мал (мянган толгой)",
+      "axis": {
+        "format": ",.0f"
+      }
+    },
+    "color": {
+      "field": "төрөл",
+      "type": "nominal",
+      "title": "Төрөл",
+      "scale": {
+        "domain": [
+          "Адуу",
+          "Үхэр",
+          "Тэмээ",
+          "Хонь",
+          "Ямаа"
+        ],
+        "range": [
+          "#4c78a8",
+          "#f58518",
+          "#e45756",
+          "#72b7b2",
+          "#54a24b"
+        ]
+      },
+      "legend": {
+        "orient": "top"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "бүс",
+        "title": "Аймаг, нийслэл"
+      },
+      {
+        "field": "төрөл",
+        "title": "Төрөл"
+      },
+      {
+        "field": "утга",
+        "type": "quantitative",
+        "title": "Тоо толгой",
+        "format": ",.1f"
+      }
+    ],
+    "order": {
+      "field": "species_order",
+      "type": "quantitative"
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "view": {
+      "stroke": "transparent"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    }
+  }
+}

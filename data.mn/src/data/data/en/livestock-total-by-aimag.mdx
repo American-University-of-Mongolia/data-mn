@@ -1,0 +1,52 @@
+---
+title: Mongolia Livestock by Aimag, Thousand Head (1970–2025)
+publishDate: 2026-11-05
+excerpt: Number of livestock in Mongolia’s 21 aimags and Ulaanbaatar from 1970 to 2025, in thousand head; the 22 units total 58,104.2 thousand head in 2025, led by Khuvsgul with 5,314.05 thousand.
+category: Agriculture
+tags:
+  - mongolia
+  - livestock
+  - agriculture
+  - aimag
+keywords:
+  - Mongolia livestock by aimag
+  - livestock numbers by province
+  - total livestock count
+author: Data.mn
+dataVersion: 1
+dataDate: 2025-12-31
+excelLanguage: page
+dataFiles:
+  - path: /datasets/livestock-total-by-aimag-en.csv
+    format: csv
+    size: 27 KB
+    description: All data, one observation per row. For Excel, import as UTF-8 with a comma delimiter.
+  - path: /datasets/livestock-total-by-aimag-en.xlsx
+    format: xlsx
+    size: 14 KB
+    description: Formatted table for 1970–2025, in English.
+source:
+  name: National Statistics Office of Mongolia
+  url: https://data.1212.mn/pxweb/en/NSO/Regional%20development/Livestock/DT_NSO_1001_109V1.px/
+  tableId: DT_NSO_1001_109V1.px
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Number of livestock in Mongolia’s 21 aimags and Ulaanbaatar from 1970 to 2025, in thousand head; the 22 units total 58,104.2 thousand head in 2025, led by Khuvsgul with 5,314.05 thousand.
+
+<VegaChart
+  spec="/charts/livestock-total-by-aimag-en.json"
+  title="Livestock across Mongolia"
+  caption="Total livestock by region, thousand head. Grey means data unavailable."
+  aspectRatio={0.625}
+  yearGroup="livestock-total-by-aimag"
+/>
+
+<VegaChart
+  spec="/charts/livestock-total-by-aimag-ranking-en.json"
+  title="Most livestock by year"
+  caption="Top six regions in the selected year."
+  aspectRatio={0.6}
+  yearGroup="livestock-total-by-aimag"
+/>

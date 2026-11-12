@@ -1,0 +1,41 @@
+---
+title: Mongolia Livestock by Species and Aimag, Thousand Head (1970–2025)
+publishDate: 2026-11-05
+author: Data.mn
+dataVersion: 1
+dataDate: 2025-12-31
+excerpt: In 2025 Bayankhongor had the most goats (2,493.94 thousand head) and Uvurkhangai the most sheep (2,360.36 thousand head) among 21 aimags and Ulaanbaatar.
+category: Agriculture
+tags:
+- mongolia
+- livestock
+- aimag
+- species
+- agriculture
+keywords:
+- mongolia livestock by aimag
+- livestock by species
+excelLanguage: page
+dataFiles:
+- path: /datasets/livestock-by-species-by-aimag-en.csv
+  format: csv
+  size: 188 KB
+  description: Download as CSV (all data)
+- path: /datasets/livestock-by-species-by-aimag-en.xlsx
+  format: xlsx
+  size: 46 KB
+  description: Open in Excel
+source:
+  name: National Statistics Office of Mongolia
+  url: https://data.1212.mn
+  tableId: DT_NSO_1001_109V1.px
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+In 2025 Bayankhongor had the most goats (2,493.94 thousand head) and Uvurkhangai the most sheep (2,360.36 thousand head) among 21 aimags and Ulaanbaatar.
+
+<VegaChart
+  spec="/charts/livestock-by-species-by-aimag-en.json"
+  title="Mongolia Livestock by Species and Aimag, Thousand Head (1970–2025)"
+/>

@@ -1,0 +1,3599 @@
+{
+  "version": 1,
+  "storage": {
+    "status": "maintainer-held",
+    "note": "The archive is held by the maintainers. Ask a maintainer for a copy."
+  },
+  "files": [
+    {
+      "path": "outputs/basketball-site-preview/basketball-preview.html",
+      "bytes": 4164429,
+      "sha256": "265f6da3dcf2943b83cb1ec43f591268abcb430a80c72b8ff2d85b0f3c2461dd"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/.gitattributes",
+      "bytes": 86,
+      "sha256": "d5ef3dc700c342f2981ab352e5618442dc111f7128157916dcde6db208353b96"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/audit/excluded-match.json",
+      "bytes": 662,
+      "sha256": "d4be78b2f0ffb56b82f31149f07268f1b4fb45768ed2db350c60ea63d915de13"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/coverage.json",
+      "bytes": 1781,
+      "sha256": "b4dac10e51f189b424c4484f480c6c77e70a0ce3d27376574066577729818213"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/data/results-en.csv",
+      "bytes": 12148,
+      "sha256": "880b5d854de954e16d9e4ae10dd37a15d6d27d04bcec6d57a41464651cea2840"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/data/results-mn.csv",
+      "bytes": 14140,
+      "sha256": "17efc0a4266666624708d09f6bb41c15b29858f21ec35b411bc10b1a43b12d5b"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/data/season.json",
+      "bytes": 50222,
+      "sha256": "640f161da3c93277ef0da941e02091c14f20e1c5001eb9f76dcfff3eb7ff03f7"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/data/teams-en.csv",
+      "bytes": 1409,
+      "sha256": "803d79b9e2b30630e63cebcf95422bbdfa29d84e6a572b336d41826dabe59bd3"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/data/teams-mn.csv",
+      "bytes": 1539,
+      "sha256": "56be26637e28e9c0da80b5eff55587c70485e7fb2d35938dd2ac4a76401b4748"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-01.html",
+      "bytes": 78979,
+      "sha256": "1bdcfabf9cb503e3c69fc0905c2162d709c6a28040271050f62470025258eb97"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-02.html",
+      "bytes": 79552,
+      "sha256": "0f9dc5a8c85c6c5f31e5815be4ceca59c4606d2e99e36bc6197ed0d771b321b1"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-03.html",
+      "bytes": 79876,
+      "sha256": "5de21e1e7b0bee663cc6a740dedf76825652aed3aa5aec30269ba8c255b87bbd"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-04.html",
+      "bytes": 79981,
+      "sha256": "8a97054e508dda8db3b4cb23698855210cf288a95621087bc4ac2ad3c26d9b5f"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-05.html",
+      "bytes": 80109,
+      "sha256": "c08d7ad958c271fe3bcf24f48d5df4b1136e48bc15d49c318ac345cccf9ae5dc"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-06.html",
+      "bytes": 80049,
+      "sha256": "55d9b784a1cb838f8c2189ccd52629d5e14afc0332842563cca1b46fcfbc5b8b"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-07.html",
+      "bytes": 80107,
+      "sha256": "b29e24d7667db5f361a90700a7c7649ea1eefad51ee9b1b64d9883a87823c64e"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-08.html",
+      "bytes": 80125,
+      "sha256": "619c71e33f7b775b70f8024c044f451d769e1654ee919700d6f30d5948001b90"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-09.html",
+      "bytes": 80012,
+      "sha256": "cb9910103efeade63a4d5e6e1599d0c962c4037fc781460fe8cce0de9d7dc779"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-10.html",
+      "bytes": 79982,
+      "sha256": "fb548c13497d957a18e3b8c5b365dfe18f4a03a46a1451636aec7a3a7864f90d"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-11.html",
+      "bytes": 80151,
+      "sha256": "ec97d321a792426fdc0879877fa3afab2c895cb9066019928819efcacbf02fbc"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-12.html",
+      "bytes": 80030,
+      "sha256": "3fd27e57adb088a5b3beceb4ebdb91f4b32ba4b890537cbd571f0b4d80deda22"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-13.html",
+      "bytes": 80149,
+      "sha256": "384e350bd8dbc6d6e2a7f1279251e54f19cc816321787578e11b40a651c5890b"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-14.html",
+      "bytes": 79904,
+      "sha256": "d2a14d5b7b27a9d73056162ae965fe509952bcf502bc0b101505e5134435656a"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-15.html",
+      "bytes": 79435,
+      "sha256": "4f80f68c0936df2e1217e484f2b1436e96dc643c38606ab2308ef2bc2d6d5555"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/results-16.html",
+      "bytes": 58009,
+      "sha256": "69ed5642f81b8076a061739ab12322cf309ce183fffc4f44b2046d024eea0a48"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/raw/robots.txt",
+      "bytes": 60,
+      "sha256": "51b091004a8bc2d3951043f2c5ac92946a87a725a564cca0bc960d9e41772349"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/README.md",
+      "bytes": 3579,
+      "sha256": "6b5239104552d487bf5f52a300e63f76c89217cb43ff11026ae2950d7cfe080f"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/requirements.txt",
+      "bytes": 12,
+      "sha256": "c995ff55dba00307b3b1f961a0ce713b5e7f180133ff25e4c6e41558593604ef"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/scrape.py",
+      "bytes": 14840,
+      "sha256": "36a3f0ab51af5481eb9a1b42eb9bf52224a4292190672d2c13d8f58bd1d622f4"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/source-manifest.json",
+      "bytes": 4797,
+      "sha256": "a6bf24ab8700d11f9fa9fb0f8c7f370b3129512184536d2bf0db421e3a8986d2"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23/validation.json",
+      "bytes": 549,
+      "sha256": "11b2d6294d929ff0c17e40785139d136d653ab78802e8b2b06b14fa73454767a"
+    },
+    {
+      "path": "outputs/koo-basketball-2022-23.zip",
+      "bytes": 205498,
+      "sha256": "49e54cb4ea37b4985afc7d27b265c2a14a26754ea48e57cbbcfa21ec783e8a26"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/coverage.json",
+      "bytes": 1970,
+      "sha256": "baa6fc12feaf2321226b3a20e410a63938fd7c94c467b31d3f00938a90b8ac52"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/data/calculated-team-totals-en.csv",
+      "bytes": 723,
+      "sha256": "78be12b1e1f254e3fe757f5337872041e4f8788c8ce368046e558206a14a08ea"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/data/calculated-team-totals-mn.csv",
+      "bytes": 925,
+      "sha256": "726811509aef25cde136ee15053cff582a6e24e3a279505b2b8a88abfbeef353"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/data/results-en.csv",
+      "bytes": 21153,
+      "sha256": "478f1f9d3183caed896b24b12ca9cb55632052f48c5bddb3252b5e51099f9f81"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/data/results-mn.csv",
+      "bytes": 24699,
+      "sha256": "f4d208fffed2f0c87d91200b37ff3a6b50a02eb528409e962eb541cd875baf06"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/data/schedule-en.csv",
+      "bytes": 114,
+      "sha256": "0b1911ecf7c8a15fd69b026372c9626fddc5dd3b760616af070c845fde6ffd8d"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/data/schedule-mn.csv",
+      "bytes": 180,
+      "sha256": "36518a7b87c0c2676e964cb167ab2e41facb6049a3036e254c07ce2ea3a5b1e3"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/data/season.json",
+      "bytes": 95863,
+      "sha256": "eee42a4ad87389a47fc965b5c76eadbd0d102579de5eded50c1593dd6c421b92"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/data/standings-discrepancies-en.csv",
+      "bytes": 55,
+      "sha256": "147c2b9bcb954dc956997eed27ca046930c92e2928276d8a73ca55c4abaf167a"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/data/standings-discrepancies-mn.csv",
+      "bytes": 89,
+      "sha256": "157e7fc9f48815cc2380ea3ad8985a683a65b418486a5c11559635a2723208cd"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/data/standings-en.csv",
+      "bytes": 1633,
+      "sha256": "63f3ea53a181b4e3653151ad36dd426d1cf4d71c2b03587ff39e6a63bc3ea447"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/data/standings-mn.csv",
+      "bytes": 1877,
+      "sha256": "5816fdf09f6a204fd288f8c9eec49ab136692697a3442ac86473925d07dbc3aa"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/data/teams-en.csv",
+      "bytes": 2047,
+      "sha256": "c2ad538440a279a4e92e32189a0b7e9ae8ffcf7d6bdf4ccca37593a2608e9d46"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/data/teams-mn.csv",
+      "bytes": 2221,
+      "sha256": "e84cf3521e889cd79c4a051da5bb0ba5518e95c469f4d03fba148ad6cc59fae6"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-01.html",
+      "bytes": 79202,
+      "sha256": "f55f4bb6768aafbd703d243c35fcb376fa8702403958f869f3dcae8745f872af"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-02.html",
+      "bytes": 79449,
+      "sha256": "ccd96e3df1c9981457c9a1ad7011bda026099bd657ebee1f65dc600f4201ff8c"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-03.html",
+      "bytes": 80062,
+      "sha256": "1bc1523674b0c6e23d8f361dc0de2d2827ce4b388d3a423e92b9571a06eb7c76"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-04.html",
+      "bytes": 80148,
+      "sha256": "1f8faf478bc7fb376b7d473f07b2b12582add925907e870f1b617e4682034815"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-05.html",
+      "bytes": 80455,
+      "sha256": "f5a9cd1d100a5fb8ba5db1d314e78a11244a856a240d5b5b2056a6eca83f29fd"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-06.html",
+      "bytes": 80212,
+      "sha256": "43fb9021dd88701ebedf21886f467ef99b4460e7398da46de00c3b5624a166c9"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-07.html",
+      "bytes": 80178,
+      "sha256": "594d6cc2206958b2b543a50d417765fdf026c648dbe4d4afae935334593a45f9"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-08.html",
+      "bytes": 80316,
+      "sha256": "38cb40fee33b31b8e198444cd64af17161184964163e94ebe71492ad1721d854"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-09.html",
+      "bytes": 80180,
+      "sha256": "50567fd18b483e1ecd2b357883a2bb8f74a0828af6153d6caf7972bd3199c2fb"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-10.html",
+      "bytes": 80297,
+      "sha256": "5e1b7d0a036be182b5ec62ef528d66b5e326a1c77018756b5cdc30bf40e0c656"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-11.html",
+      "bytes": 80316,
+      "sha256": "721487e6314316fd354c34e89d358f029adf11da1689ff509e8ea4cd45ebf42e"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-12.html",
+      "bytes": 80292,
+      "sha256": "460ea1faba6056635fc667eed7bb846fd5d50d2f5b790c0f5d936eb1e450b121"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-13.html",
+      "bytes": 80390,
+      "sha256": "dbeec2f647ecaef21ddce0e703e049f02afe324f6192c6659d29032c4ed16933"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-14.html",
+      "bytes": 80220,
+      "sha256": "ef3922ceaab9dea7b70b868b77e554601931a3c1e88711e719cab822d26bff46"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-15.html",
+      "bytes": 80182,
+      "sha256": "bc847dcbee1dd1fc0d3dedf5c53b04bfc9e39f94d5f62bd0ec2db770173737c6"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-16.html",
+      "bytes": 80298,
+      "sha256": "f50c2dd2c90ef1699eaf808497d495c9abc5e4ec072cfd5d159c35d48c1998ee"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-17.html",
+      "bytes": 80210,
+      "sha256": "71e8b6124ae3bed6cd6cfb5c9a176aa2f2b579df0bdba799e99d4bce8543cd08"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-18.html",
+      "bytes": 80359,
+      "sha256": "8ebbe1fdb706b7550f6f07840c94e1ea46a20861460c8c920e868c649eec0873"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-19.html",
+      "bytes": 80207,
+      "sha256": "2598dbcd37a7982eaa284c715a0fdc8b68da62d5f464305e1cda83ba75e0458d"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-20.html",
+      "bytes": 80419,
+      "sha256": "8ba2490abf06896dbd59d798e592e7a193f1f976bc7e0d81ff73e2f99d4fb8d6"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-21.html",
+      "bytes": 80112,
+      "sha256": "d241eb9922c253af36c889cfa7a1d793fa8afc32f95a30f5d09ae0059be25be1"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-22.html",
+      "bytes": 80335,
+      "sha256": "984e4c75f467cb06e9f12ed1e6874ae6f0a1ece8309335f581bb2def1c8b8ce8"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-23.html",
+      "bytes": 80308,
+      "sha256": "89e4c56007f703841ab1edc54ae8346c33528da67e698256bd4ab066a75ebadf"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-24.html",
+      "bytes": 80138,
+      "sha256": "87ee862669be537db1803b6212a73d42f1820451590276da0ce93274c1f5b0e6"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-25.html",
+      "bytes": 79498,
+      "sha256": "b3aa756667b04574c7605a59ea34e9f1dff37bf774591c2ff648a24bad413879"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/results-26.html",
+      "bytes": 79192,
+      "sha256": "9051e9433b0d5f135ba91b8bff09cabda135ad2b7d3ebabf9b0492057fa432ab"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/robots.txt",
+      "bytes": 64,
+      "sha256": "06d8ab3fca9aa8d4f590dd1c4d02da49aa42e8a22caa69c0dea0d5057980d21c"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/schedule.html",
+      "bytes": 51303,
+      "sha256": "6a8a7dbd7c0955661a215c16b00107a9fe02f82eeea5f697f41f1bcfb1f87bde"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/raw/standings.html",
+      "bytes": 70350,
+      "sha256": "634929d64ec619fe592f55f866106fb5248c206632b73ea45f0f068429494f13"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/README.md",
+      "bytes": 6137,
+      "sha256": "d18777463e92f11a3b5c0d4c66ce101ecb768184f285772e2874493ec7fbe5f4"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/requirements.txt",
+      "bytes": 12,
+      "sha256": "c995ff55dba00307b3b1f961a0ce713b5e7f180133ff25e4c6e41558593604ef"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/scrape.py",
+      "bytes": 18771,
+      "sha256": "5dcf96df7fa1d79822988c02f7832625e95ef726a5c7baf1c68dc3e71d398a18"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/source-manifest.json",
+      "bytes": 8201,
+      "sha256": "0220f444d67a8a37b96ce9c53a9c9b0e5b1ced879c4866568953da8df914cba1"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24/validation.json",
+      "bytes": 641,
+      "sha256": "0b559d4bcc7caa1320ed5d041eeaef7124352480abdd9893aed49b8d5a57eb90"
+    },
+    {
+      "path": "outputs/koo-basketball-2023-24.zip",
+      "bytes": 364839,
+      "sha256": "6bbca4ac1e86c0ab322b51e46230d81bff577fc5db9aae95663d25f501f185c5"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/audit/cell_patches.json",
+      "bytes": 751,
+      "sha256": "9572a2deac610b80ca970058d621fded26b68c8a97e820626f24bae0ab993b4b"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/audit/cell_patches.txt",
+      "bytes": 2139,
+      "sha256": "9c68d73c473b88039ea9e2faf2bc246a70f84fa224e8ed4e31304380708d46c0"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/audit/checks.json",
+      "bytes": 429,
+      "sha256": "abda4ecaf1b7eb3b4f6b9de1f6c00ef48b66028758eb46cd3490a7262880f2ae"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/audit/export_validation.json",
+      "bytes": 673,
+      "sha256": "9609e5414f58776c295a8c400485e5b6b988fa470f31c45acbde2e2b3a3ed50c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/audit/finish_names.py",
+      "bytes": 6465,
+      "sha256": "1b0a651f07222fd3b4653c1316f8edb784bc423409767b3eedb311e85e5cf432"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/audit/header_patches.txt",
+      "bytes": 2260,
+      "sha256": "5caece55f5bb195ef582160988d2b170d688e895666d9270dd92f328ae2776a0"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/audit/input_manifest.json",
+      "bytes": 18655,
+      "sha256": "32f793ab90901b17d78335ee45ef563f04cc3f28d2ec2c550b7fb6aafbf68a06"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/audit/manifest.json",
+      "bytes": 45608,
+      "sha256": "d9f5e3812654e80440cd78e5c58ead5318c3b049e87da5f1eab3dac63e9e1344"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/audit/merge_season.py",
+      "bytes": 9006,
+      "sha256": "d441fc433134713b8e1c2d9ad8fc5ff861d05fa3c472d9cec0099c169c39e1f1"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/audit/minus_four.txt",
+      "bytes": 716,
+      "sha256": "e491723d218c4cd685d5e434dfef9e4f5a81a2cf3a3cad276f0858653af38f98"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/audit/name_mapping_final.json",
+      "bytes": 404677,
+      "sha256": "bc86bbed0d8cfb692e131402a81d12832165350b7b54c790f6187d51ecf9b28e"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/audit/parse.py",
+      "bytes": 12739,
+      "sha256": "567386bfa8605dc02eb800514bd27dec4e9134a14cb52fbd513acc517e0e4a6d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/audit/source_hashes.json",
+      "bytes": 33751,
+      "sha256": "4b5a68601a15bb9b05b261ef048c128e59ae9afa50616adafd4f54db505d33a2"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/audit/starter_detected.json",
+      "bytes": 14732,
+      "sha256": "3be2a46dca3ce127f0a803aaff45376627f7273fcdbdc8f712078525e17973ce"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/audit/validation.json",
+      "bytes": 6193,
+      "sha256": "13731fe5a4e45755fe0a4d8fb6f1888351e63e67869e362c834d2cd68fdb051a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/data/collection.json",
+      "bytes": 8262206,
+      "sha256": "65c0798be7ab1ab20172f1e745ace595fb249dac1d00ccfce27db8926ee6d7c7"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/data/correction_log.csv",
+      "bytes": 256963,
+      "sha256": "0893bdecc322f4fb9f60460e1ec9ffb49dce6ae62a105db78508df6e5896938c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/data/games.csv",
+      "bytes": 58568,
+      "sha256": "3a2efab24a8250177a2179ec18522eabd2d62c6aef4a45614f5382ba298b2032"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/data/head_to_head.csv",
+      "bytes": 7500,
+      "sha256": "ad151a0860124641dc64b646ea0c8046745272816c88ed1af0721661ce2c09bf"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/data/missing_reports.csv",
+      "bytes": 3233,
+      "sha256": "072628e5c659a1a906bc255ec87aa0f332d9b724ab9afe7c9003b418d06d4e48"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/data/player_boxscores.csv",
+      "bytes": 2013385,
+      "sha256": "30a3328326a96c2fe6c9b9a339057810569914f879c1b349875c91d516bd4e09"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/data/reconciliation.csv",
+      "bytes": 1537,
+      "sha256": "6e47049fac0f8461b5c8087e29c068ecc1b482d5e936253330a53c6cd6ba410e"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/data/team_boxscores.csv",
+      "bytes": 93322,
+      "sha256": "c2c7bd26f36e27f6d2102a506c7eda624b6e16a5b7aa628797279a6c293f3cbc"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/data/team_coach_rows.csv",
+      "bytes": 25882,
+      "sha256": "e7f40fc001e5a487f2010ba977fccc19b23ca79df7d959f118b6da9f2710553b"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/data/upload_manifest.csv",
+      "bytes": 11177,
+      "sha256": "4f35b772d15e3711aa93a2839f59c9e967e7d837f3a1e8ad7551bf7589e6ab2c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/mongolian_basketball_2024_25.xlsx",
+      "bytes": 1349825,
+      "sha256": "4a937c97209e20cc95784e7c0a37259ad467ab7eb1ac88dbaa81833e93602c6e"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/README.md",
+      "bytes": 3023,
+      "sha256": "cf99c70e98e81dda257bb3c991b60659ffc7e589185e6fec4f92f4c0a711e2c0"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485361832_1158861436031788_6317014965932431195_n.jpg",
+      "bytes": 402208,
+      "sha256": "880958b55c06a0cfdca96764c2c171a1856ab6b8e4f60748eca3584941862bef"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485405486_1158844352700163_8759643098956557490_n.jpg",
+      "bytes": 381657,
+      "sha256": "00e520353f8ea4ccfeef8a01c9570b2debe98d1c6424e81c738287a6cafeb82f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485412896_1158853832699215_6141243132966922789_n.jpg",
+      "bytes": 403032,
+      "sha256": "14f07b781550dcad084f478ecd8094bde51266c01e5b66f3df5667140824ca60"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485413851_1158848746033057_7221862421656249186_n.jpg",
+      "bytes": 389425,
+      "sha256": "de139b24a2c7a8e58db27e29e5563d46ae72ebdcf614efc800c1988f0d6557e2"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485619587_1158859149365350_6889215007225804821_n.jpg",
+      "bytes": 390235,
+      "sha256": "9f4f1c640ac72ea6b71cc3c642a9ac76f57dc7d63965cf9d82c2a4165c95429f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485666979_1158846649366600_6037975429297186663_n.jpg",
+      "bytes": 261919,
+      "sha256": "0788453fc43356b9b80b34baeacdbad0ab750185d56392c2caac7eadd86fea48"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485670059_1158843482700250_4102509365423826773_n.jpg",
+      "bytes": 383348,
+      "sha256": "3c7d25b3618e3de9571204a8d4da0f38f5b6ba9bae609f4b44bfef1ca656ba77"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485744903_1159633815954550_5236649076970848761_n.jpg",
+      "bytes": 388674,
+      "sha256": "9692fe3926da01fbcb0c9a0d8f821f5e804248d63b59430b993401e0cb28f44a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485759640_1159645939286671_2460253342955202203_n.jpg",
+      "bytes": 380247,
+      "sha256": "602b7da7bb8eb384fb5470f8e8368e510b851da4a7ef018886156f01ddb29e2c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485760768_1159616932622905_8308371813898610563_n.jpg",
+      "bytes": 406813,
+      "sha256": "c62047965a3320368df4a4b9d4c2fe766c8c854d96a312557d3d39ffa42ec707"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485775930_1159639569287308_3839977436739148887_n.jpg",
+      "bytes": 409683,
+      "sha256": "35ab5a7f2455e0943f9160c9c45616d883839f3aae81c22bee6650bce99e908c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485786202_1158965779354687_6265273220155544088_n.jpg",
+      "bytes": 381876,
+      "sha256": "8f1f5591df6bb8507bda18d1856bd3b440da9f1218c1668a69f51c46948a3d87"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485811047_1158843449366920_1209826129635286267_n.jpg",
+      "bytes": 366494,
+      "sha256": "a893f28da85b02abd40f41aeb3efc22cdbc24ece69e5c29d4be7e1462d7bf577"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485811055_1158865476031384_2743977741130404897_n.jpg",
+      "bytes": 392463,
+      "sha256": "137882e96cd328784eadaf2d0ad136f071e737b88013dce5fbd7d9312c000b0c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485832545_1158967076021224_7103289149964302124_n.jpg",
+      "bytes": 257403,
+      "sha256": "f147179e69127732df46be41c52592905dc6bc76fb993a4aac53391f88f54886"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485876364_1159519162632682_8294890898361589842_n.jpg",
+      "bytes": 380898,
+      "sha256": "ec8d2b1632ab7e8a7c37580590c2f4f6d2dcc9164e2426443382eb19dc0684eb"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485900514_1158842239367041_2663088732219648695_n.jpg",
+      "bytes": 392416,
+      "sha256": "60339c522137d3e634ef5af6a7cec67c546cff022540ce140a09dfc207933b80"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485907118_1159639745953957_1499284426773845652_n.jpg",
+      "bytes": 363295,
+      "sha256": "7057b34c5e34180ec93eccdd7e0b06860ce70b674640e42e508c641808791849"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485927067_1158842306033701_1850036847451269364_n.jpg",
+      "bytes": 392019,
+      "sha256": "dad217e93ed042a3760436706e40525cd812469a1b217facc0135aff14ccee0b"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485942144_1158865429364722_589281976252742295_n.jpg",
+      "bytes": 404506,
+      "sha256": "63bf8eb1409955d8a487d32b141c3a4210766453b35995c00f8e742309d0c687"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/485980000_1158973409353924_4805293802662877544_n.jpg",
+      "bytes": 381022,
+      "sha256": "d1904248691c9977f00d2653fbf8dd119706bba44bb8d8be6cece055b469fb22"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486020174_1158836659367599_275636887894754458_n.jpg",
+      "bytes": 373713,
+      "sha256": "6032336b66b97db127710a08cd49f83182990e010f2f21a2c8627d03bd5b96ee"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486022571_1158854482699150_7505734031179560416_n.jpg",
+      "bytes": 393833,
+      "sha256": "10bc716355af72d8cc44299fb9d6030ff2e625dca76125283d9bded31f71553e"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486042208_1159150946002837_2667646097058356633_n.jpg",
+      "bytes": 387454,
+      "sha256": "658cded762d4c9606be8543a8d53ca4e5b76ce6d2449d587a9d1abc1966b366d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486063709_1158847456033186_6496030785518745446_n.jpg",
+      "bytes": 248473,
+      "sha256": "204cbeb72a5e7da559dbc59c18b861d28dd3530aa24e718182d93d4dd00091fc"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486066415_1158835672701031_9014719236522128422_n.jpg",
+      "bytes": 390504,
+      "sha256": "d4e81cfa1445244c9a0b9abee7a5424f06b08a5eabbb53f31c174234dca50495"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486094555_1158964612688137_3541416246711826544_n.jpg",
+      "bytes": 362651,
+      "sha256": "f85f855b6de9bb18fe8d5a4bdbc4e7448ce55eacfae866bdb7f276d2901736cb"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486095404_1159509152633683_1540484706465475829_n.jpg",
+      "bytes": 370063,
+      "sha256": "18b18bc950945505d9735c3338de3670f0cf50ae79bfb10c5a4417207bbf7e4a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486105091_1159154469335818_8756935684915364449_n.jpg",
+      "bytes": 385502,
+      "sha256": "75da489b4444bc73dd841fceccd2afa510eeea7dc6b57677c3c50bc18c49a28a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486108248_1159523419298923_3233937066617743036_n.jpg",
+      "bytes": 377773,
+      "sha256": "97f7f2f985a0877f326a9148e541dbbdb5467234b97f27628443367f5dd4b8be"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486114022_1159154329335832_4966024248306798076_n.jpg",
+      "bytes": 393521,
+      "sha256": "fd00496331817d25dc98bf497e30446743c2e6d53c1b28f3561fa4552be82421"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486135105_1158969442687654_1238092054691796569_n.jpg",
+      "bytes": 393623,
+      "sha256": "d211034ce3617f0239ec03b2f11f28f663a19224521962fde09458662516970d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486143720_1159646025953329_6497831964597515770_n.jpg",
+      "bytes": 371072,
+      "sha256": "ea8eeb750ddf7e2e058e6770f42589a27ee5a86de68671765bbf803000666c24"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486145266_1159625735955358_1485722216479200635_n.jpg",
+      "bytes": 392528,
+      "sha256": "418667dfcfd8f69c4324240177447cfca2f5fa8f461889f7cd59a1cf70230640"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486149884_1159148502669748_4051081167680518548_n.jpg",
+      "bytes": 382529,
+      "sha256": "d9721ec2233470ada28f61a56275bb2d8b10f33b10372ab2f066acc5284cc67d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486152330_1159625802622018_7199222603855002669_n.jpg",
+      "bytes": 390157,
+      "sha256": "40db16f336f0a2e2ae3dadfc50540fda60c10e6442bc32cc9b3799f6148ec7f4"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486165227_1158966892687909_3492347325857683975_n.jpg",
+      "bytes": 389678,
+      "sha256": "06762ec981f857a15957fe60cbbb239724cb080e89cf92390aba81e5cae4e527"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486166765_1158969349354330_5284690911503978867_n.jpg",
+      "bytes": 386437,
+      "sha256": "e58afb191b939d4ff4a30b73c748fc6194866314627285af5918eb6ac8b0aa96"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486176632_1159511819300083_7238847525130133918_n.jpg",
+      "bytes": 255830,
+      "sha256": "446102dc29c3d1668682417fbec040344c35827eae315b219b5ea57effd9a87e"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486184367_1158863802698218_5139052808857838142_n.jpg",
+      "bytes": 404827,
+      "sha256": "2b0e065f6ced0d5143f4d6c1baa8d97fc49fc243f6e50c22d98d5197306824bf"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486185982_1159509849300280_5799460309279197366_n.jpg",
+      "bytes": 392347,
+      "sha256": "136f32cb8589712f83c1c11bfb464e6d1ea1ee51d54d6ea31de0d567b4844027"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486236487_1159633765954555_4126455297914442202_n.jpg",
+      "bytes": 363463,
+      "sha256": "a2fcd124dd1753545062467555aa3b8b814c1471be0d747b012d8ca5a17cfba9"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486240650_1158856852698913_7599634193326100616_n.jpg",
+      "bytes": 376606,
+      "sha256": "da29fc5559d4fac0d4749d229c9ee468011f5fc391209a4a133c2ba04513dcbf"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486259959_1158851062699492_1253109169560848143_n.jpg",
+      "bytes": 382319,
+      "sha256": "c9a700e59892d4e1706eda8573aa07f053b5313033545a2b1a488172db98d7f2"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486264629_1159145999336665_7762440450286300810_n.jpg",
+      "bytes": 409605,
+      "sha256": "e852e36db631707c8b457c287f0ab3b18f663f21c72f9df801b8ad59705f2376"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486265658_1158856919365573_5876384059903394898_n.jpg",
+      "bytes": 386737,
+      "sha256": "fd8109b67fb021161558c41c00a5260ce95ea2a1a4517960d66a391ec9a1231c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486270681_1159621079289157_2931492707601025270_n.jpg",
+      "bytes": 411663,
+      "sha256": "90e07cd8d9997d9b1d5834b0298bf3fe5c5d93157407ecb93fa55ffca3a49a6c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486270709_1159630309288234_4017560572625814050_n.jpg",
+      "bytes": 394481,
+      "sha256": "84b4584af6aed7e85d1148d89889ca46dbecd16cc2ed0ec9e702553d17fbd28d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486279983_1158848592699739_374403434453767285_n.jpg",
+      "bytes": 393549,
+      "sha256": "22e877e979bd3b031557f36d0c7ce12b9dba995196e80780d217e237a5c4faf1"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486281877_1159538542630744_3039904299714135565_n.jpg",
+      "bytes": 402023,
+      "sha256": "9235fc529f1b701eb1e14f34b5936c36a56de5b2cf7629daecafa2e8c762debd"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486283984_1159627482621850_3396551465311210220_n.jpg",
+      "bytes": 391853,
+      "sha256": "2a5dad1d61476471cdd2a0b3fc7fa8137422a5c53de96368ab5b8c353115773f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486286641_1158853076032624_7696056336535931505_n.jpg",
+      "bytes": 389046,
+      "sha256": "da7bc39ac6665291789dd75486da4bda015e302dfb33d850fa55c513d1499b06"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486288081_1159627429288522_5893808963325399114_n.jpg",
+      "bytes": 370397,
+      "sha256": "dce97ce578203ade1a83f3a8d22acb4fabe56f5c9eecb1d1f63de3ceb907fb36"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486301249_1159645932620005_5296607404059763650_n.jpg",
+      "bytes": 382946,
+      "sha256": "50bc9bce7c18fc0d4fe9b8da8f70a7c37b33b5da7a00793e4fbf6ee23c2e655e"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486321054_1159630732621525_3140884892190331184_n.jpg",
+      "bytes": 383959,
+      "sha256": "83e47935ceddd6238c7d888e4fbdfc3d977784d1bbacc5e38c3eeb0e94b58582"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486321173_1158863772698221_8557803144597833467_n.jpg",
+      "bytes": 370344,
+      "sha256": "636e12cff2bb9ad8214ea184af447c0aa88603dce5aeedd0384124a582afdd11"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486322319_1158838126034119_7201374523459750443_n.jpg",
+      "bytes": 351295,
+      "sha256": "312a25e160623a9a176486f151eb58625b6ed59ebc0011abdce8ed34d18ce2d1"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486322817_1159617125956219_5393503039151920045_n.jpg",
+      "bytes": 396034,
+      "sha256": "a870cf82ba374fa1fe622695bd2fcceca5db54e5402ab38230616dbbe4d9d8ca"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486324285_1158972262687372_9132175879707282688_n.jpg",
+      "bytes": 399499,
+      "sha256": "3aef0de3fffe180587b9baf68f2fd8758ade301aae60dd21a11725f1ccbbddcf"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486325645_1158969436020988_925829251802332030_n.jpg",
+      "bytes": 397153,
+      "sha256": "ac48f131e53898371c3bee9185c6a954a61a672c4a421717775ed3f6b33c3594"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486337091_1159538469297418_8062609542983108572_n.jpg",
+      "bytes": 391024,
+      "sha256": "7cec15ba577bd36bd058899c2a4dd0e30f91ef9220d8b93e0b69d65e0dfbaed1"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486338586_1158973636020568_2608358061865607108_n.jpg",
+      "bytes": 389022,
+      "sha256": "eb4133c043b470ae0471abb318e491aba71aece07d39590db3294c3436d7f28c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486350951_1159638025954129_9040196965088319175_n.jpg",
+      "bytes": 390577,
+      "sha256": "16fc24a1ee881e5bc4941227366ec6f23ba1a31c7807937db809ca53450b4659"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486352481_1159523452632253_3849968185449780228_n.jpg",
+      "bytes": 403752,
+      "sha256": "3bb54b51066b9a3c8dfc38fd081f47190e9da330c45fbc0fa54a5724ac765f9f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486354137_1159724065945525_6869675602998756472_n.jpg",
+      "bytes": 510933,
+      "sha256": "6c3522f0dae76bc66f02558df32fda60aefd71524b1f940957e372fff1ccc749"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486366420_1159515749299690_3919660457274057138_n.jpg",
+      "bytes": 386377,
+      "sha256": "882fff3ada3fd75f21f2faccdf1faf247b4ab0893ad70312affb328a48209342"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486368185_1159745992609999_2224987317464264177_n.jpg",
+      "bytes": 390947,
+      "sha256": "64a8de4efd22fba273ae9d70b8303c9a4b2f1606777bffa7780b66ad95403bd2"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486368187_1158851126032819_6964149056986235896_n.jpg",
+      "bytes": 397961,
+      "sha256": "31123efad098fc7ab012436a24802b80a12e4cf0225cdddaf11688606a146202"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486369383_1159727379278527_8606102214320196922_n.jpg",
+      "bytes": 406149,
+      "sha256": "303a673eec600f7a8bd37b49a629b56342d69b12fc66ff04b4d33a03e244cbe6"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486373996_1159629185955013_986387215326834621_n.jpg",
+      "bytes": 392224,
+      "sha256": "b92e02eaa98f1bca72f7c440bf379428a4d332bab5343f163ae21d4337a588e0"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486376170_1159735735944358_709104397337184804_n.jpg",
+      "bytes": 372182,
+      "sha256": "2ae63aba27cc2fab7dc04207c599aa4e571b0a06ae5a8460438659a5e81e571d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486376175_1159724879278777_5421748205638477076_n.jpg",
+      "bytes": 396630,
+      "sha256": "a8fc0ae4b3ef0c319054ee9fec91e4ed9f653979d6493a851bc53d49013d4ced"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486377101_1159537479297517_3275746712423197713_n.jpg",
+      "bytes": 393661,
+      "sha256": "a1c65d9b4af6e99d6df2f63635fb11d8e01b58a83f971fe8ca15cc6ebae42587"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486381752_1159515195966412_2903096650667770139_n.jpg",
+      "bytes": 391576,
+      "sha256": "5567273fe8197e6634e6b35c90ce667b2c154a99e23708352640a58b533bab9f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486386316_1158865496031382_2301009814095311581_n.jpg",
+      "bytes": 399716,
+      "sha256": "111a89fc6c52b1812c9ff360fea4db5aad47d9ec53dc039ae88ec293f703e2b0"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486389280_1159627585955173_8680632374476839201_n.jpg",
+      "bytes": 397669,
+      "sha256": "56820b2a8eb680eebac74e829832665b365d9faab41b2d4a7c3850a32fd73c8f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486395323_1159735729277692_7061641214726484775_n.jpg",
+      "bytes": 366081,
+      "sha256": "9a837511f7eca0cce766bbe5771127de2c00dcdf48c8358b0faafeef94c5c19c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486405540_1159622112622387_1445774735727978697_n.jpg",
+      "bytes": 396284,
+      "sha256": "b6c2c2dd7aa5006d16cde72a5eb7c9b0045d62a2cb12799d30152a5a23d2befa"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486413798_1159737835944148_5720952562589069444_n.jpg",
+      "bytes": 379631,
+      "sha256": "35ae57e8f71f495379e65ab811a2676b3c10b3741acdf8fba752205e4d3935a8"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486417783_1159146092669989_6020403959670540531_n.jpg",
+      "bytes": 405407,
+      "sha256": "9d84aa391054d3e38bffd23d71bad89cb74249997b8a284e30853e7a1958d6bf"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486433341_1159740412610557_4697342532239286513_n.jpg",
+      "bytes": 378842,
+      "sha256": "e5800236c951bd72c2eedae6c7be8dfcb54ec9b3d37fba787e7fac93adaa5546"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486439683_1159523609298904_6271251279817642592_n.jpg",
+      "bytes": 373400,
+      "sha256": "7ef90f8acc55f753eccd6ba7483595e3eb07b0cf14b701232867978490fdad0a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486471553_1159731342611464_1015996984560356907_n.jpg",
+      "bytes": 395044,
+      "sha256": "a6a0a922e856307ab30022551d28242d7ae3acde1556063cc2b336855f1d521a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486473730_1159521092632489_44478938575430383_n.jpg",
+      "bytes": 403220,
+      "sha256": "5c5e784aa4328f07fd402b76125265a3300523a98869b9dea62429444e9e5f85"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486477442_1159742519277013_6413485954300203737_n.jpg",
+      "bytes": 398318,
+      "sha256": "10e69de4b3f261a64d0ad46e61e8a6cc2e89001d3b8893c3101339c7d7032342"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486477446_1159733789277886_7494075425280386306_n.jpg",
+      "bytes": 392513,
+      "sha256": "9df9a0b84e54fb2ddb4bd29495823249ae4466602e000ef07dd016bcd438e0d3"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486481376_1159735869277678_4692515694702242953_n.jpg",
+      "bytes": 389131,
+      "sha256": "e25ab2e13755bf68dc5dc43367b201dd767a0a20c54de2a82d19c61e10018be8"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486505148_1159623082622290_2484338476213155792_n.jpg",
+      "bytes": 406073,
+      "sha256": "b222d6f4cde526f26a8bdcde06ed55a4f4777e041755a03258c47f2ea4064488"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486505265_1158859216032010_6794260498713605529_n.jpg",
+      "bytes": 406891,
+      "sha256": "840af9e43e633a8943252570bf85473127de9a532ea2aab5b3aa3d4b93c37ecc"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486516276_1159621355955796_6877818519192974993_n.jpg",
+      "bytes": 400453,
+      "sha256": "e5e3b65bf7f70fdbe0ba1ac1de0bc073ede56917fe943e93e5f36efb841648f5"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486519742_1159634979287767_1209171394430162297_n.jpg",
+      "bytes": 417904,
+      "sha256": "71efa92a335b2522be84b046687d7a8ec0d63b99c4294974895fc0a246450db8"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486531410_1159728209278444_9052995925808447710_n.jpg",
+      "bytes": 387206,
+      "sha256": "4d5cc9db5b9f6db786294a8bfb5273d758132c6868a513f5ae4fd9ab3e12265c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486543324_1159743132610285_8936522834322435639_n.jpg",
+      "bytes": 391390,
+      "sha256": "94abde6a37a510fd8768ff2090b9356c79acce787e317935aa599647c99a51a9"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486546189_1159725129278752_2465765008840732831_n.jpg",
+      "bytes": 388304,
+      "sha256": "1ac1129b1f3f491725446d116ca31218c705a00e56c971a307fbb033f18112ba"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486552243_1159731472611451_8507529441813476168_n.jpg",
+      "bytes": 391654,
+      "sha256": "df2ede045bd8dc25ad99d41890e5249bab3ceb7f8e6fe5fdaea39f5eff4650b2"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486582442_1159738955944036_3979575894102487072_n.jpg",
+      "bytes": 398978,
+      "sha256": "2421b9670fb4b35d13c628e7d194bc2ddb44f74f447a2b3b64ecc3eea19de487"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486599538_1159633515954580_7887399398758434040_n.jpg",
+      "bytes": 380806,
+      "sha256": "2de89c2c65f540cb531f99b21e8d74058586b114403a5de4b359e939e86d1716"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486606936_1159733992611199_18676062109415744_n.jpg",
+      "bytes": 370365,
+      "sha256": "6f1c4e38d5d122197e69a46e1de1f7bb4abc6fa89d45480912b0cb0a44d526a4"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486609951_1159724912612107_8059997968163734155_n.jpg",
+      "bytes": 387756,
+      "sha256": "e8ab150c0d7261ce798488bc675c9faa3def0ad03da6141af3b1ccdaeaf5fa88"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486616949_1159743145943617_6582707243522575318_n.jpg",
+      "bytes": 359218,
+      "sha256": "cf849d524561d5c21250591e1a0c111fe64a764e9c696fd77fb876842f9145fc"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486637204_1159537385964193_1706319198864441587_n.jpg",
+      "bytes": 398420,
+      "sha256": "3776bd4e5d8fb3c7b0434b02736d74f788f5cc517db65f8e15df160e1887ef56"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486649068_1159637872620811_6721991616460265767_n.jpg",
+      "bytes": 378205,
+      "sha256": "44faddc9d56f2ca6d75ab27372c10e1417b5ee5fddeffb6ea84a56a1649a17c7"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486649078_1159743085943623_6934116269576263485_n.jpg",
+      "bytes": 383415,
+      "sha256": "8ecfe0ffe7c5bdc6b2bcd773807891e2df599398c6a866af0b4ffac51146e646"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486657284_1159636329287632_2904747635825133296_n.jpg",
+      "bytes": 463041,
+      "sha256": "4b4334af3a09a564ae0aabe12146a33240e18ca73cc362c7909c997d13a13653"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486657695_1159743485943583_7566762929350570379_n.jpg",
+      "bytes": 368142,
+      "sha256": "daa7e54f946015a21f3ac01d55c48ddfb7b002ec0d78f0d5f2c29bd32a13d7d3"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486657864_1158861782698420_765357529550194812_n.jpg",
+      "bytes": 395369,
+      "sha256": "b6c64955edf262777345aaf7a131588c4f4d0e28bbdec6ebe122214557985163"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486662055_1159741925943739_6776658061633350235_n.jpg",
+      "bytes": 380169,
+      "sha256": "e9595962de10c61955e90c2aaa7b83349c81482d0d4276a4bdf5612159fa9664"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486664678_1159639672620631_6013267176241112598_n.jpg",
+      "bytes": 383544,
+      "sha256": "1b3eec8359bc795126d24261e34571b9bc83dadd17a4195f0fcdafe57cbca58a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486673629_1159518792632719_9002696870496758539_n.jpg",
+      "bytes": 382219,
+      "sha256": "96644ebcba371dd2f96103d9d74a82e2c13fc6e29633b7ca4e028b0d91b0ce2d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486682926_1159740405943891_1236057215345776312_n.jpg",
+      "bytes": 405539,
+      "sha256": "08fe61795a9fca8fb8fc5df1c93ee0e55f9ebca0c5404cf4c1278314803f5813"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486686873_1159521882632410_1288976248364466146_n.jpg",
+      "bytes": 369965,
+      "sha256": "9a59cea8c92ca9d2751936955952a178fbf36ffaadf4605c904b63ae158313b0"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486690472_1159746025943329_488424585149175850_n.jpg",
+      "bytes": 394971,
+      "sha256": "adb6305ae227f903255426c0c5d6c0aef578fe42d2def9b8be05cae52f4cdc53"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486690475_1159724852612113_3658200545250202854_n.jpg",
+      "bytes": 380448,
+      "sha256": "5bd31abfb5681979ce299844e964f284ef5fe68c6edc431134ccf43fc4078272"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486703445_1159630312621567_3913539631726457600_n.jpg",
+      "bytes": 395213,
+      "sha256": "b37a8cc9d262bbd141e811856817b5ce1425faf9b664b1a2f1e46323b2a4e48f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486712606_1159748862609712_3668186138719553714_n.jpg",
+      "bytes": 351841,
+      "sha256": "fd0f0ddeb641f0f8fdf0ef2d275be67473ad184361b84ec4743ea93941deeda0"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486732082_1160958199155445_5005530305271089342_n.jpg",
+      "bytes": 380278,
+      "sha256": "74645a63ac03df700a3d40763947bb9cee4f4ff9b89823d702e3b086158a8e49"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486757571_1163075295610402_4609898129535068743_n.jpg",
+      "bytes": 383512,
+      "sha256": "8d004542bb6d7ca24d3748380cad23168d5f77b805ee8aa1eb103c7ad7c40137"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486790685_1159619705955961_5393894304607538960_n.jpg",
+      "bytes": 375437,
+      "sha256": "2cf95c5c10c4e6ad92bad6245a2b80f8cfee773294a963e4a81eed0aa08ae4c5"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486915871_1162438202340778_5957665834551968933_n.jpg",
+      "bytes": 394331,
+      "sha256": "6967be03993646e8cbfd6f3f9653a19b67214f8b19cd9a9d1beb2bbdfe36c9ec"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/486999076_1159619595955972_6151282825190402645_n.jpg",
+      "bytes": 462507,
+      "sha256": "244164624b0f922ed010215b827eabe56125d48470eccfea64846d8dd70c932a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/487076246_1159748099276455_4023511856362328746_n.jpg",
+      "bytes": 375420,
+      "sha256": "5268f1fa9824e2faeb9584c20c20bde679be102b422b5691193b6799041e9add"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/487093929_1161641365753795_877812802571864547_n.jpg",
+      "bytes": 380214,
+      "sha256": "afc75627d26dcc78f4a4a241a0e2289094ff3e430e0edaf352e0f032deed9017"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/487103115_1163879302196668_7681460444907163189_n.jpg",
+      "bytes": 382012,
+      "sha256": "6ed756db63706b99dafba01e3cd18b6f648839de53acd8734fd0dde7f0ade963"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/487136094_1162514975666434_2403496175006962267_n.jpg",
+      "bytes": 395300,
+      "sha256": "014e2c5190c76c472c273f174750a8db8abc81acf3c7585d8721ed0496fd8cb6"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/487168443_1160786692505929_2867712342897630243_n.jpg",
+      "bytes": 380131,
+      "sha256": "19d97c64d21c7e049046d0313fde07fdc9a00b9380436ae90a62f037c8acd430"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/487209442_1163961702188428_8080779414683039416_n.jpg",
+      "bytes": 393166,
+      "sha256": "92953ed64e88e36ae684e56e78f890c5029298a8c395abd2636a7263ac7ef8db"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/487315355_1164543452130253_5037361033601199976_n.jpg",
+      "bytes": 391548,
+      "sha256": "804d1c5fd3331dd120f632a63639825539b17e137bc7cd765749e849e3249f5a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/487429990_1163864502198148_7361975919273876813_n.jpg",
+      "bytes": 381868,
+      "sha256": "953a9a5f609031117869b411ac84edb57fad7b7207d7e0d76e812866c857049c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/487508256_1168114785106453_2105127456292290621_n.jpg",
+      "bytes": 400406,
+      "sha256": "e1dae573470f335439773e36d1369a36407832300a0e20347f2123d02a2ee701"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/487806449_1164046648846600_9073339462528259301_n.jpg",
+      "bytes": 404768,
+      "sha256": "e274b661be4fc9bd63e0697fa52be8bb045039daa99b1f6227d04c760e5389de"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/487824212_1164825958768669_1478591524989190026_n.jpg",
+      "bytes": 377318,
+      "sha256": "1f5da34d9e2d7af8e7f7fc685852b5652186f22a33f9d8a0c2323d5d63751ff4"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/487839324_1164817152102883_8340736901628587634_n.jpg",
+      "bytes": 388683,
+      "sha256": "9519ff5f2633f737b467c3e3e28ac33df28a6605af4af941b20453394aabe79c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/488493288_1165607578690507_5602522135855599838_n.jpg",
+      "bytes": 371792,
+      "sha256": "525af4aa2faea3201552736e9015efc010439961051016542f646ed26ba0f1c1"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/488509092_1166305158620749_4565603267402995367_n.jpg",
+      "bytes": 368392,
+      "sha256": "f5ab2bc1269ccdca0cf9d5ff4fdc29c6414386fb382d43ca88fa6064c86c2a3a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/488564544_1167314305186501_5494605625836158207_n.jpg",
+      "bytes": 391357,
+      "sha256": "6ea3dcbcb8720aaf919cc8feaf28c2b0ea86c07203a2c2b9b8bfbc13228c4c8d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/488648916_1166492641935334_5756091946376997782_n.jpg",
+      "bytes": 408513,
+      "sha256": "3e365b444a4aefe5d177f43fbe56c3615d7af813329a1f4ef3e10cc153297841"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/490065988_1171361681448430_6768522494358277602_n.jpg",
+      "bytes": 382040,
+      "sha256": "f0aa059f49c65629835883a040773dc4205fd7172958c60f4e81c3549c4a532a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/490066965_1173764767874788_6651750686319383856_n.jpg",
+      "bytes": 387418,
+      "sha256": "544709a7259fa0d0147e2479d5994eb6ce45816e465c3829f3f329c23499cf4a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/490103840_1172896374628294_1793503187953636053_n.jpg",
+      "bytes": 374603,
+      "sha256": "f447068bdfdd4e8bba1011dabfeef30490f4bdf63c35446d221f368a05e824d6"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/490267183_1175309987720266_1124895335082831592_n.jpg",
+      "bytes": 395660,
+      "sha256": "4302ebf478ea6465f9311d16ef18d4f29d6b06dc9e0fe535dd3327d61d4dccaf"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/490294199_1174403231144275_2505398674386663500_n.jpg",
+      "bytes": 377142,
+      "sha256": "c41ce6e425c35dd93f0c7ce48b67318afd9827c6f82dd1bd3b70723c9866054d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/490362522_1172802954637636_2644804301785159968_n.jpg",
+      "bytes": 372197,
+      "sha256": "bf280de099579ca06388173829db1370dc9bda653d9edbda7101b7b5ce7e691f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/490369328_1173681677883097_7873047619970545596_n.jpg",
+      "bytes": 405001,
+      "sha256": "7bbcf0a8a47183ee0705d064d4d0a19c244e3408868e7542a21953d6870fc636"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/490516837_1176118080972790_6642915254651033425_n.jpg",
+      "bytes": 388209,
+      "sha256": "9a653dad7a5f576790207897d93c22e6690a1f6dbe26f274d598b148365558a2"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/490550195_1178467260737872_1604967192996028616_n.jpg",
+      "bytes": 359928,
+      "sha256": "30af9cba06b780a801e41df3892fb62bec4a4fc421398a6f4b0fefd9dfd0c99c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/490573077_1172979194620012_3040404442680619795_n.jpg",
+      "bytes": 411477,
+      "sha256": "75c793775e7245d2bbc0f68bbae8709b9e4e234dcd31fdfa426218600fef87ca"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/490596316_1174486457802619_237292859571113089_n.jpg",
+      "bytes": 388761,
+      "sha256": "2bd6b167e11ffe7cc78026739d6d9681f24b0436f9f232d32fee2e5b711b68ef"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/490744119_1177742550810343_2380242365597879065_n.jpg",
+      "bytes": 395859,
+      "sha256": "4bceb552eeefd9c23adebcc8473e3e3281a309e39c8c787bbec4d3eac1af1929"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/490792278_1176088714309060_2628497454443252253_n.jpg",
+      "bytes": 360592,
+      "sha256": "abda13bcd4134a09139deeac31dd22635c30e92f738fac02f0cce2ee72d6f1f4"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/490834238_1176006997650565_4489108462070053142_n.jpg",
+      "bytes": 357050,
+      "sha256": "37edeb7741db9592e403eef10e5c49574d91e441c2c993bfae79ea40b1d5df5e"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/490995641_1174583197792945_3268577735333492161_n.jpg",
+      "bytes": 380051,
+      "sha256": "7149bfb0fead5571a15fa5d1fd271c1c6ef4b5f2fb5f4973aa3bf69c68dcc64c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/491267500_1183042490280349_2640077033225575797_n.jpg",
+      "bytes": 387860,
+      "sha256": "a1c5f6ae6fec0e6415ed3b303eb2cd3338facbddcf15c6916cbb698ffd9c006c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/491403124_1179238570660741_725075270882989234_n.jpg",
+      "bytes": 352109,
+      "sha256": "8bf66d53c1963f15db0441cb0300ed7b9a2675623055a2682502ca766136494c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/491499787_1179966147254650_7482595675918077535_n.jpg",
+      "bytes": 396336,
+      "sha256": "fa2b92f70ce1e3c3d0932960068c803f90298ae877712ef8193598e5895aec10"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/491744923_1176915707559694_3647679212025007541_n.jpg",
+      "bytes": 371000,
+      "sha256": "d6efe78778edc8bc95044b715f43c0afb09636e85c5673c5c0201260d76ea4a0"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/491929545_1185228740061724_5271254644605347968_n.jpg",
+      "bytes": 389688,
+      "sha256": "549b825b4bb0b0ad2d2999f48e3827cf1a4c09b26d301439559e7d17853fd0b8"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/491970133_1181507253767206_6560807564082534990_n.jpg",
+      "bytes": 398990,
+      "sha256": "631b7eb957038c38789ef517d1e5635454ed6477e93667f18003e6dd160709ca"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/492007730_1177632687487996_1200612829618438764_n.jpg",
+      "bytes": 398652,
+      "sha256": "58fdd794f1a291c015f6cb940e5ae168868c6c136011612d6e63a12f8b150f0f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/492095840_1181355800449018_6414032756251159769_n.jpg",
+      "bytes": 402876,
+      "sha256": "1377588ed690f9795195a3b7f6ea3a2cfcbd514e0973acb9c27635ea74802d51"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/497894510_1200304141887517_2349862367726269593_n.jpg",
+      "bytes": 387920,
+      "sha256": "e90c6cdff74d3d2426a369e0ea9bca5d74d4909aae320eb7a514446460b70c23"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/499625660_1201901011727830_1400435767686737680_n.jpg",
+      "bytes": 400847,
+      "sha256": "163f57bd6d777ab5a2b29a8217e5cbe7a226774c407a61fb60b6b8284bc0ae40"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/499732426_1203374874913777_6636532442177212925_n.jpg",
+      "bytes": 365992,
+      "sha256": "f8e1965bec58d2f7c31d0a150ee63ea3b578adb8c94a6a802c031dc9fe352f0c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/codex-clipboard-2380f25e-1192-46c6-b76d-74748e3ce483.jpg",
+      "bytes": 381234,
+      "sha256": "01f52ac6c36c5d94aeb310d0998bf4a2ceef09760de1255bc77fbb3fc8ff92f8"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/codex-clipboard-25ee1495-2527-4284-93e1-9f9eab7a1164.jpg",
+      "bytes": 383339,
+      "sha256": "8de693f5d9bba2dd21eb5a632581291c03ec3aad247c16908dceb98806baaf91"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/codex-clipboard-2e033c7e-e574-47fb-8ec8-f2b684bdf707.jpg",
+      "bytes": 401913,
+      "sha256": "cec5276552a0318c9bc5567a1b00fe4b1a1119afab6d3260020c9ade28adacbe"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/codex-clipboard-489597c2-2833-4bbd-b272-89da9eb30e00.jpg",
+      "bytes": 406929,
+      "sha256": "57301d0374042101b8d4ca13a1a36c33a749963e9516558b54675e18b6a18347"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/codex-clipboard-56025749-e327-446b-b3b1-7de5f286cb5d.jpg",
+      "bytes": 360491,
+      "sha256": "03b4b306af0f55872529a4a705de5b218f49e9fe44ef1146c349e1f42f575ab6"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/codex-clipboard-6297cf43-e0c8-4402-8e35-0f3dcace106b.jpg",
+      "bytes": 393948,
+      "sha256": "5fe3f899dbaaf230347e0c32086baf922ded4fde95848398c617173ad4f11d3d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/codex-clipboard-694df491-fd9a-4c81-8fd9-576555831c02.jpg",
+      "bytes": 388828,
+      "sha256": "eab8b126498f1da279a28b9166f110534fb8c66b44bcd5e3024926d8d5ff1dfc"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/codex-clipboard-79882299-ff50-4415-8a27-07d8b52d9f3e.jpg",
+      "bytes": 377863,
+      "sha256": "71b2a981d7bdd6875c759f533f4cca847789066a1392f1b0b7e77418e5120b7d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/codex-clipboard-8ad9a19b-4af3-485e-909e-443008c9f7d3.jpg",
+      "bytes": 359416,
+      "sha256": "bf3cf2d226d9e27d3225038d027d7aa7d4b95de2d4771c0e7d999080b55222f8"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25/sources/codex-clipboard-92474954-1c99-4d57-97af-a4200dc65a6b.jpg",
+      "bytes": 357019,
+      "sha256": "4dcb3643daee56e4ad87d7d86c10f38107430223261ac0d0221e9e120e3f48a5"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/additional_checks.csv",
+      "bytes": 9328,
+      "sha256": "13f25f90cd443edfa467746c8431ac3d2e526857353ae3f14d537c7816221183"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/applied_repairs.json",
+      "bytes": 501078,
+      "sha256": "8c1e8968329303aa40e71b7a622c768fc7c44e1406ead622044ee2899fc9c0d4"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/audit_checks.json",
+      "bytes": 84076,
+      "sha256": "1c416401867d349600ebc55363884a5bb0685bd91d6735d8c17ce9826fd89662"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/AUDIT_REPORT.md",
+      "bytes": 11453,
+      "sha256": "c91dee0fafd4fb1b69f4d67d5fb4ea0e4d5846218c75d7868a63ce837903f175"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/confirmed_corrections.csv",
+      "bytes": 3896,
+      "sha256": "22913596b62bd34e3069aab87d4a512406a22cb840002ef43c71549b0c7c8328"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/final_export_checks.py",
+      "bytes": 10326,
+      "sha256": "393b54c012e3c7e5768089625b652417fe842a9b3d8653c2b3936fe55498921f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/final_validation.json",
+      "bytes": 2493,
+      "sha256": "3dd810de5a2d77d8e3aa12590e8f60a2cce696b3946706c35f1caebaa059c9fa"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/missing_games.csv",
+      "bytes": 786,
+      "sha256": "3691ee5c417cf5b770a891b37105cbc1542778d65a23bcbe69f592a92f7c2faa"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/missing_player_rows.csv",
+      "bytes": 268,
+      "sha256": "a52e4164f8e3052e8755bee332e27ab094c310bd85970b0326dd6e434d813e1a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/pending_repairs.json",
+      "bytes": 394,
+      "sha256": "5c0e4fa727005199e95937314de61bbd20cd09f7095a2f5348a8566976d6d2e4"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/post_repair_checks.csv",
+      "bytes": 1883,
+      "sha256": "1bef7c407cdc10bea7dad4228ce678ea37564f73d1c0110e58da9bc39e548b09"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/post_repair_checks.json",
+      "bytes": 5779,
+      "sha256": "442c0af35c7bd5be1634a0e9b48d2732f643f25d745250cb7206abf87416c332"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/pre_repair_collection.json",
+      "bytes": 1506129,
+      "sha256": "3882f40af3fff364ec90def2ee0f4f4918ffa3b5bad597c5c769b0cb71ba74de"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/REPAIR_REPORT.md",
+      "bytes": 4987,
+      "sha256": "b89517c0957023c64161120b7d36ea9e138e618b369b33393f79d0bcef63dbb9"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/roster_names.tsv",
+      "bytes": 7114,
+      "sha256": "1433ce85db1eb0dd071d57ab1c6e1d986ce2ce40594dfd343a84f05c33919c04"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/run_checks.py",
+      "bytes": 5707,
+      "sha256": "ad3b388244627175ec7a3257d533dfe8d9e588142b8381ed932e6dd969a81dc7"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/score_checks.csv",
+      "bytes": 2231,
+      "sha256": "8f23c7b77b2e7b82516ffcc585fae644f1bda9c9885c6a30d765fc2d068ac140"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/season_comparison.csv",
+      "bytes": 134,
+      "sha256": "6d64fb5e16e40479f7e3a0972ab1c5888051caa3d554c683862b39d843ca4c1f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/source_repairs.json",
+      "bytes": 55936,
+      "sha256": "e0eb2f300889c94399839f6179b3887f525af82fb4d1b9a1bb1c0601144e234d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/team_margin_checks.csv",
+      "bytes": 186,
+      "sha256": "6542cd3e74d168abc47f31757c874deb92fef83cea138722e83f501b4664e976"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/audit/workbook_spot_checks.json",
+      "bytes": 1335,
+      "sha256": "24f1cf6e92c025857b27793058afcb97c8d2c37e8dfcd8a15dcf0826e84fba6b"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/data/collection.json",
+      "bytes": 2707663,
+      "sha256": "10efc19439fe76221ba3701fb9e74026a4cedfdbd15970308f5255ae96743efa"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/data/correction_log.csv",
+      "bytes": 256963,
+      "sha256": "0893bdecc322f4fb9f60460e1ec9ffb49dce6ae62a105db78508df6e5896938c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/data/games.csv",
+      "bytes": 12070,
+      "sha256": "d4ecab892c5419eb8718ce128fe9113cf1bf7346a277bd3b448defec57a57a94"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/data/head_to_head.csv",
+      "bytes": 1437,
+      "sha256": "e380be5f4b5ce8986059810d37ce8a2372c4124a8381f33fd43817f2f6ea0329"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/data/missing_reports.csv",
+      "bytes": 786,
+      "sha256": "3691ee5c417cf5b770a891b37105cbc1542778d65a23bcbe69f592a92f7c2faa"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/data/player_boxscores.csv",
+      "bytes": 582596,
+      "sha256": "bafc315bf7a647b6cadb6e8e2667677d431f25606ad6e3affb0e99a37424ae85"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/data/reconciliation.csv",
+      "bytes": 811,
+      "sha256": "7731c41a5028a6c13e9bd9bc80061eae957cd99c6ac0b3fe78cea151430b9a76"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/data/team_boxscores.csv",
+      "bytes": 24698,
+      "sha256": "7e827c181d8182dbb46d5beb4d75a13fb8542d78c7f5c953a903e85410e6ff2d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/data/team_coach_rows.csv",
+      "bytes": 6806,
+      "sha256": "e418e29ded1de71a680bef7776fa2b09a83c6aba2e0c5636a5117a6628dae9d9"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/mongolian_basketball_2024_25_playoffs.xlsx",
+      "bytes": 326958,
+      "sha256": "703d5e51b98ee5a43cb059a9307b05cb2fc4224cb3351b97c3d6252c00e996d4"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/README.md",
+      "bytes": 3693,
+      "sha256": "266a2394de6517f169745e875bbe88490234f090274ccd5304bb0d48a1215d17"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/486757571_1163075295610402_4609898129535068743_n.jpg",
+      "bytes": 383512,
+      "sha256": "8d004542bb6d7ca24d3748380cad23168d5f77b805ee8aa1eb103c7ad7c40137"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/486915871_1162438202340778_5957665834551968933_n.jpg",
+      "bytes": 394331,
+      "sha256": "6967be03993646e8cbfd6f3f9653a19b67214f8b19cd9a9d1beb2bbdfe36c9ec"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/487093929_1161641365753795_877812802571864547_n.jpg",
+      "bytes": 380214,
+      "sha256": "afc75627d26dcc78f4a4a241a0e2289094ff3e430e0edaf352e0f032deed9017"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/487429990_1163864502198148_7361975919273876813_n.jpg",
+      "bytes": 381868,
+      "sha256": "953a9a5f609031117869b411ac84edb57fad7b7207d7e0d76e812866c857049c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/487839324_1164817152102883_8340736901628587634_n.jpg",
+      "bytes": 388683,
+      "sha256": "9519ff5f2633f737b467c3e3e28ac33df28a6605af4af941b20453394aabe79c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/488493288_1165607578690507_5602522135855599838_n.jpg",
+      "bytes": 371792,
+      "sha256": "525af4aa2faea3201552736e9015efc010439961051016542f646ed26ba0f1c1"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/488564544_1167314305186501_5494605625836158207_n.jpg",
+      "bytes": 391357,
+      "sha256": "6ea3dcbcb8720aaf919cc8feaf28c2b0ea86c07203a2c2b9b8bfbc13228c4c8d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/490065988_1171361681448430_6768522494358277602_n.jpg",
+      "bytes": 382040,
+      "sha256": "f0aa059f49c65629835883a040773dc4205fd7172958c60f4e81c3549c4a532a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/490066965_1173764767874788_6651750686319383856_n.jpg",
+      "bytes": 387418,
+      "sha256": "544709a7259fa0d0147e2479d5994eb6ce45816e465c3829f3f329c23499cf4a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/490103840_1172896374628294_1793503187953636053_n.jpg",
+      "bytes": 374603,
+      "sha256": "f447068bdfdd4e8bba1011dabfeef30490f4bdf63c35446d221f368a05e824d6"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/490267183_1175309987720266_1124895335082831592_n.jpg",
+      "bytes": 395660,
+      "sha256": "4302ebf478ea6465f9311d16ef18d4f29d6b06dc9e0fe535dd3327d61d4dccaf"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/490294199_1174403231144275_2505398674386663500_n.jpg",
+      "bytes": 377142,
+      "sha256": "c41ce6e425c35dd93f0c7ce48b67318afd9827c6f82dd1bd3b70723c9866054d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/490362522_1172802954637636_2644804301785159968_n.jpg",
+      "bytes": 372197,
+      "sha256": "bf280de099579ca06388173829db1370dc9bda653d9edbda7101b7b5ce7e691f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/490369328_1173681677883097_7873047619970545596_n.jpg",
+      "bytes": 405001,
+      "sha256": "7bbcf0a8a47183ee0705d064d4d0a19c244e3408868e7542a21953d6870fc636"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/490516837_1176118080972790_6642915254651033425_n.jpg",
+      "bytes": 388209,
+      "sha256": "9a653dad7a5f576790207897d93c22e6690a1f6dbe26f274d598b148365558a2"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/490550195_1178467260737872_1604967192996028616_n.jpg",
+      "bytes": 359928,
+      "sha256": "30af9cba06b780a801e41df3892fb62bec4a4fc421398a6f4b0fefd9dfd0c99c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/490573077_1172979194620012_3040404442680619795_n.jpg",
+      "bytes": 411477,
+      "sha256": "75c793775e7245d2bbc0f68bbae8709b9e4e234dcd31fdfa426218600fef87ca"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/490596316_1174486457802619_237292859571113089_n.jpg",
+      "bytes": 388761,
+      "sha256": "2bd6b167e11ffe7cc78026739d6d9681f24b0436f9f232d32fee2e5b711b68ef"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/490744119_1177742550810343_2380242365597879065_n.jpg",
+      "bytes": 395859,
+      "sha256": "4bceb552eeefd9c23adebcc8473e3e3281a309e39c8c787bbec4d3eac1af1929"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/490792278_1176088714309060_2628497454443252253_n.jpg",
+      "bytes": 360592,
+      "sha256": "abda13bcd4134a09139deeac31dd22635c30e92f738fac02f0cce2ee72d6f1f4"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/490834238_1176006997650565_4489108462070053142_n.jpg",
+      "bytes": 357050,
+      "sha256": "37edeb7741db9592e403eef10e5c49574d91e441c2c993bfae79ea40b1d5df5e"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/490995641_1174583197792945_3268577735333492161_n.jpg",
+      "bytes": 380051,
+      "sha256": "7149bfb0fead5571a15fa5d1fd271c1c6ef4b5f2fb5f4973aa3bf69c68dcc64c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/491267500_1183042490280349_2640077033225575797_n.jpg",
+      "bytes": 387860,
+      "sha256": "a1c5f6ae6fec0e6415ed3b303eb2cd3338facbddcf15c6916cbb698ffd9c006c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/491403124_1179238570660741_725075270882989234_n.jpg",
+      "bytes": 352109,
+      "sha256": "8bf66d53c1963f15db0441cb0300ed7b9a2675623055a2682502ca766136494c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/491499787_1179966147254650_7482595675918077535_n.jpg",
+      "bytes": 396336,
+      "sha256": "fa2b92f70ce1e3c3d0932960068c803f90298ae877712ef8193598e5895aec10"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/491744923_1176915707559694_3647679212025007541_n.jpg",
+      "bytes": 371000,
+      "sha256": "d6efe78778edc8bc95044b715f43c0afb09636e85c5673c5c0201260d76ea4a0"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/491929545_1185228740061724_5271254644605347968_n.jpg",
+      "bytes": 389688,
+      "sha256": "549b825b4bb0b0ad2d2999f48e3827cf1a4c09b26d301439559e7d17853fd0b8"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/491970133_1181507253767206_6560807564082534990_n.jpg",
+      "bytes": 398990,
+      "sha256": "631b7eb957038c38789ef517d1e5635454ed6477e93667f18003e6dd160709ca"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/492007730_1177632687487996_1200612829618438764_n.jpg",
+      "bytes": 398652,
+      "sha256": "58fdd794f1a291c015f6cb940e5ae168868c6c136011612d6e63a12f8b150f0f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/492095840_1181355800449018_6414032756251159769_n.jpg",
+      "bytes": 402876,
+      "sha256": "1377588ed690f9795195a3b7f6ea3a2cfcbd514e0973acb9c27635ea74802d51"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/497894510_1200304141887517_2349862367726269593_n.jpg",
+      "bytes": 387920,
+      "sha256": "e90c6cdff74d3d2426a369e0ea9bca5d74d4909aae320eb7a514446460b70c23"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/499625660_1201901011727830_1400435767686737680_n.jpg",
+      "bytes": 400847,
+      "sha256": "163f57bd6d777ab5a2b29a8217e5cbe7a226774c407a61fb60b6b8284bc0ae40"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/499732426_1203374874913777_6636532442177212925_n.jpg",
+      "bytes": 365992,
+      "sha256": "f8e1965bec58d2f7c31d0a150ee63ea3b578adb8c94a6a802c031dc9fe352f0c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/codex-clipboard-2380f25e-1192-46c6-b76d-74748e3ce483.jpg",
+      "bytes": 381234,
+      "sha256": "01f52ac6c36c5d94aeb310d0998bf4a2ceef09760de1255bc77fbb3fc8ff92f8"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/codex-clipboard-25ee1495-2527-4284-93e1-9f9eab7a1164.jpg",
+      "bytes": 383339,
+      "sha256": "8de693f5d9bba2dd21eb5a632581291c03ec3aad247c16908dceb98806baaf91"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/codex-clipboard-2e033c7e-e574-47fb-8ec8-f2b684bdf707.jpg",
+      "bytes": 401913,
+      "sha256": "cec5276552a0318c9bc5567a1b00fe4b1a1119afab6d3260020c9ade28adacbe"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/codex-clipboard-489597c2-2833-4bbd-b272-89da9eb30e00.jpg",
+      "bytes": 406929,
+      "sha256": "57301d0374042101b8d4ca13a1a36c33a749963e9516558b54675e18b6a18347"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/codex-clipboard-56025749-e327-446b-b3b1-7de5f286cb5d.jpg",
+      "bytes": 360491,
+      "sha256": "03b4b306af0f55872529a4a705de5b218f49e9fe44ef1146c349e1f42f575ab6"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/codex-clipboard-6297cf43-e0c8-4402-8e35-0f3dcace106b.jpg",
+      "bytes": 393948,
+      "sha256": "5fe3f899dbaaf230347e0c32086baf922ded4fde95848398c617173ad4f11d3d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/codex-clipboard-694df491-fd9a-4c81-8fd9-576555831c02.jpg",
+      "bytes": 388828,
+      "sha256": "eab8b126498f1da279a28b9166f110534fb8c66b44bcd5e3024926d8d5ff1dfc"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/codex-clipboard-79882299-ff50-4415-8a27-07d8b52d9f3e.jpg",
+      "bytes": 377863,
+      "sha256": "71b2a981d7bdd6875c759f533f4cca847789066a1392f1b0b7e77418e5120b7d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/codex-clipboard-8ad9a19b-4af3-485e-909e-443008c9f7d3.jpg",
+      "bytes": 359416,
+      "sha256": "bf3cf2d226d9e27d3225038d027d7aa7d4b95de2d4771c0e7d999080b55222f8"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2024-25-playoffs/sources/codex-clipboard-92474954-1c99-4d57-97af-a4200dc65a6b.jpg",
+      "bytes": 357019,
+      "sha256": "4dcb3643daee56e4ad87d7d86c10f38107430223261ac0d0221e9e120e3f48a5"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-playin/data/collection.json",
+      "bytes": 87912,
+      "sha256": "aa0025cd147a7d8dab83572a80cc2b930065125003fb512d3d937d64cdc2d951"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-playin/data/games-en.csv",
+      "bytes": 752,
+      "sha256": "617d946bd03c2f513e9b3f7ffb4e387c8afe0547cb8584411159245fb4a82b7d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-playin/data/games-mn.csv",
+      "bytes": 1012,
+      "sha256": "68d6958a0503e62a51ec7d394b7fd65b94245fbd076f2eac6c15b60243d2255d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-playin/data/players-en.csv",
+      "bytes": 16992,
+      "sha256": "10d3a0333ab3098054769a1b5655ed2a85e64d93a2066261c0d1d0787ea553b7"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-playin/data/players-mn.csv",
+      "bytes": 18149,
+      "sha256": "b80f26653a886dcb952df06a6af1266d64279f84a33ced5ffdd64c3e6bf45ddd"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-playin/data/team_totals-en.csv",
+      "bytes": 1570,
+      "sha256": "79a5c1806ea9e2e382b74f7eed416c105e43e6180658a40ec402949163dcfda1"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-playin/data/team_totals-mn.csv",
+      "bytes": 2250,
+      "sha256": "908702adcb8c812643c48e4cb509829f9898f9ca1e43b0716494424af00e1728"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-playin/README.md",
+      "bytes": 1780,
+      "sha256": "dcadcfb8ea24f785aa5b36e1547d1f8788dde4006707033c83f872858624ebe5"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-playin/source-manifest.json",
+      "bytes": 573,
+      "sha256": "518d377bb77ec70c8b0e4847ad27620cc045f10fbc13c062dbdc18f3507c2f6d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-playin/sources/880870260_990035433529532_5420118400063388803_n.jpg",
+      "bytes": 408488,
+      "sha256": "8b93153687275361f4f3033137d66acbe81c772c579ad43c4293dc00ebb2fa01"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-playin/sources/881387860_2172173860351401_6745540216514604579_n.jpg",
+      "bytes": 383238,
+      "sha256": "ed63d975c49888aacdbb7a7c50a986612b6e8c5c9eea47c37923d2fc397c1d46"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-playin/sources/881507872_955564280687987_125731774450485901_n.jpg",
+      "bytes": 403837,
+      "sha256": "ffb1e78e6001b5ca87c67f923b831486a4956f952211c3ba6615e6737d05be3b"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-playin/validation.json",
+      "bytes": 38,
+      "sha256": "b30fe73c7619c090d8f1ab047a024e591f293283ec843edb7fe220ccbf8ddf03"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular/data/collection.json",
+      "bytes": 2764189,
+      "sha256": "b7742dd483cce23481955f953749171b56a56db299b9b3bc572a742cb7d67f86"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular/README.md",
+      "bytes": 741,
+      "sha256": "4e82aaae20044c46bb2098638920bfaacd83041f69923881faef90f0fcc1eb20"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular/sources/mba-player-game-stats-2025-2026-en.csv",
+      "bytes": 1114126,
+      "sha256": "196108993a84bc11825e8a3d1517c82bc52b0dbd23709b2d3d0b0850c5b092eb"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular/sources/mba-player-game-stats-2025-2026-mn.csv",
+      "bytes": 1169550,
+      "sha256": "b806739ec645471ee8fc69a4c5a725d9cbd8d396cc94d860650be5bc4aa60090"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular/sources/mba-regular-season-games-2025-2026-en.csv",
+      "bytes": 16433,
+      "sha256": "38ab2cde3d148c55de0f4aad4fdcef6bf1183123d248811c951faae6c651658d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular/sources/mba-regular-season-games-2025-2026-mn.csv",
+      "bytes": 18181,
+      "sha256": "4cec1336e0fb61429aff2d639644895c8f331b7715d9a9de4251077953b77312"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular/sources/mba-team-game-stats-2025-2026-en.csv",
+      "bytes": 461065,
+      "sha256": "31f4a3233479b2fae1d2791031af2143ff926c523eba13e645962ad8d2046a28"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular/sources/mba-team-game-stats-2025-2026-mn.csv",
+      "bytes": 473572,
+      "sha256": "30528ad267673dd42867c718e0d67d0e8364747d71dd8ccbefff63b245f3cc24"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular-web/data/collection.json",
+      "bytes": 3169941,
+      "sha256": "6bcb1352420f8f1c303b0c14b6e2c181717d39e4066421bb00c8639896650bd0"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular-web/data/games-en.csv",
+      "bytes": 37604,
+      "sha256": "e7a251b999edd7e60dcc0e0a304c87ffbc72bae637f420ddf7ac08e9462d2fa9"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular-web/data/games-mn.csv",
+      "bytes": 37604,
+      "sha256": "e7a251b999edd7e60dcc0e0a304c87ffbc72bae637f420ddf7ac08e9462d2fa9"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular-web/data/players-en.csv",
+      "bytes": 778481,
+      "sha256": "094f92103cc59e23ea4d07e0111f93dbcf8369117505a3bdfc6cd9428baf87e4"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular-web/data/players-mn.csv",
+      "bytes": 781175,
+      "sha256": "b786e80e598aa61d11a181b4f7c451135172dd9995b4b6ef6cc5bde5a98b94be"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular-web/data/team_totals-en.csv",
+      "bytes": 17085,
+      "sha256": "7ce7de4e0b9a5a1062df3d2ab27b5414179bcedd479405a47e78983ac8c33045"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular-web/data/team_totals-mn.csv",
+      "bytes": 17085,
+      "sha256": "7ce7de4e0b9a5a1062df3d2ab27b5414179bcedd479405a47e78983ac8c33045"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular-web/reconciliation.json",
+      "bytes": 69225,
+      "sha256": "1d1833889ed24dfcc46537ad234f124b8960a6cd8ca27c55c1ebc68d516b881f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-2025-26-regular-web/validation.json",
+      "bytes": 148,
+      "sha256": "87de27ff7d48a918a4dd8bea6648a02d5605ae77dedb82c71f4403365b4b6b0d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/data/collection.json",
+      "bytes": 1252218,
+      "sha256": "2160d0b993833f8615733750eec2124eb095c16402d1d04d62abf742a182e233"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/data/games.csv",
+      "bytes": 7663,
+      "sha256": "96edaf0b063f6fc31b578b8f6c87904fe5d8cd55cbafb7179ac1912a3b09cd67"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/data/head_to_head.csv",
+      "bytes": 671,
+      "sha256": "7c743baf35f30d45b2b520f3631c13d93d0cf0abc6e65c1391f4580d755751a7"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/data/player_boxscores.csv",
+      "bytes": 234625,
+      "sha256": "20d94344d15b13b4f3b969ba2437dbf5a963490640a272b975c6de56a1185bd8"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/data/reconciliation.csv",
+      "bytes": 8936,
+      "sha256": "a103efe51f6c06e4173ba4a84a0fa29398647b0089a09ea2dd8b5ee2c5fa885f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/data/team_boxscores.csv",
+      "bytes": 18413,
+      "sha256": "a4680fc6485102c53e6f9c48910649892267130daa822b70bbcc5bb1d783190e"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/mongolian_basketball_2025_26_playoffs.xlsx",
+      "bytes": 203157,
+      "sha256": "26ae3ed49a02d9a99443d3bcf7474eaa42e403e1d5bb4770239b516afa6d19c5"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/README.md",
+      "bytes": 3130,
+      "sha256": "8e7180e85ad61d1b95ba2af0eee2209238f5ac4dd2fdbbc3e8d066bc0e33b943"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/838658515_2028345468015684_9135644501338586154_n.jpg",
+      "bytes": 410526,
+      "sha256": "744e7f55f8c62d10c56b430b9b5485b0f0446c43c8804867d9bb2f917a05a41b"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/838892394_1641854157545649_5407745904111968468_n.jpg",
+      "bytes": 398255,
+      "sha256": "2323864c71270c9a1e63c50efb815fec043373939613513ba5679bfd107d5b67"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/839229743_4530436950618647_6929630212918908084_n.jpg",
+      "bytes": 406969,
+      "sha256": "87c5c804e8e75c94736357b5a302c02d7bf142043b9507b574752c0957d2082f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/839278349_1846136523226518_2437057256038866877_n.jpg",
+      "bytes": 428223,
+      "sha256": "76024362edd235db79cdc6bac02093606ac70e1c6e5ae4227972e0c95d7567d4"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/839670310_1120006940442128_880844181805332669_n.jpg",
+      "bytes": 399924,
+      "sha256": "aab3d4803b392b0a0915d83ad362cfcd2d757e58f497ab5ff4168877479d4e3f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/839724233_2370620490376263_4357252777807246507_n.jpg",
+      "bytes": 418410,
+      "sha256": "b50353c4fd1058bad01c0abe05dd7756a9fadc2bc653c733bdbad00f516cfa4c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/839805657_1492939856003330_3142373322527772851_n.jpg",
+      "bytes": 412778,
+      "sha256": "a89a51ba2079b1c99fe4fbaf45fdf0e61d250cc1eb694142b8391157b6593010"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/841192112_1344440250955199_8804147765609048481_n.jpg",
+      "bytes": 407378,
+      "sha256": "420fc591656a7a05578cd767737f161f2883d55a1244f6ab17aa0a90d135ff8d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/841885306_1804898380830793_187034471272017399_n.jpg",
+      "bytes": 393926,
+      "sha256": "867a8327291286c5d8e4a4d7d9dedad23ac8a8a72abea2eb16827358580e4713"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/841927603_2550777315426821_8149352680669566380_n.jpg",
+      "bytes": 402863,
+      "sha256": "04e6f4ea283d43cdcbd298a5b1a7c4a1042c075bb442a06a302bae2b61eac66f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/842005017_4624028224544308_3399256595228494555_n.jpg",
+      "bytes": 403048,
+      "sha256": "5dee5bfa7b3ec56366547ef9fb916a35e0f7b4105d3f8c7c234b1b9dcbd39a3a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/843315018_981571334255190_6941659403261388109_n.jpg",
+      "bytes": 412120,
+      "sha256": "d001fef6393d7eed1a27c8728c1660c5ed0af637feca51b3033175493b86436e"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-0e3e0590-5f3c-4ef2-9a32-9a85d8fef080.png",
+      "bytes": 874172,
+      "sha256": "6314824cf914963b62790486c489e9275a019d6b51b283a10c9970d2b0a97624"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-128e3de8-9d81-4df9-8aad-114479c9442c.png",
+      "bytes": 980787,
+      "sha256": "2dd9df1db99dbd56d1b67943fec5c7dc17adc09f3580e0ee17847f2a8a74be43"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-13aaea5d-c5db-48a2-ae8c-bacc20ff2a99.png",
+      "bytes": 897426,
+      "sha256": "bec66c3dc5a1873d2072c006617916b12b42cd0c919366cdb3edcf8df9a867d2"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-19cf5266-fff6-4545-8edc-ef38afd44703.png",
+      "bytes": 892942,
+      "sha256": "2e1c410713523e62bd09b91582a34f3dcb1e8f743962313989181ce132537408"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-1a2ec4b0-17a3-46d7-a980-151179518869.png",
+      "bytes": 979810,
+      "sha256": "4e6e62dd20a0a87f3f6d74af67851170a60ca2d56b1f9698c298cab95a589075"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-1ba36600-8b91-4027-bdb8-b37087d7e48f.png",
+      "bytes": 855915,
+      "sha256": "614d2cd1971ec472280ac558c0780e2abf4783dcd2b0c969646d935edf0a285b"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-1f4f9aeb-1277-4178-8b1a-14844648ea94.png",
+      "bytes": 954193,
+      "sha256": "ddaaeb9487a00e3cd7c5268b7e4fb983e44536fd87c4e8a400aaa954811bc946"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-4e319940-758b-420f-a43b-8a5f74c8cd6f.png",
+      "bytes": 821905,
+      "sha256": "043e71660ab6f69e8a609fff4bdb813f4a8296db257dc7c9dae71de55825b5e1"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-5562ee10-5136-4513-88fc-916560a6b9a8.png",
+      "bytes": 990687,
+      "sha256": "06fec912da638ef2c19d7222273ecab87af37bc18a84d0981512b295e492ef2f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-557cfd47-203f-401d-93b0-0be99edfc121.png",
+      "bytes": 885025,
+      "sha256": "5f05cf747e9b46f36772862882655268fe83f22e86914bb87753af234873f038"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-57f1c682-e781-4717-8ecf-161eb31bba45.png",
+      "bytes": 980990,
+      "sha256": "b8d0d032b416be2cb40d5d0b691bee4c52690ba31cd133d8c4493aae5a7209ff"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-5a328257-b8f1-4770-a15d-6b893511de17.png",
+      "bytes": 893623,
+      "sha256": "b1445987d069ded62945e175f8698d62dbe0e75eb73ec1537c3e5a35ae2f4170"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-5cce59c3-a11f-411a-95b6-85b02c253aed.png",
+      "bytes": 873386,
+      "sha256": "833f45cdb65a761ebf69bd2a857daa9662290f926c62f59f283eefac681cf01f"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-6a281736-ebf0-4cbd-9987-c0af11d63c69.png",
+      "bytes": 910899,
+      "sha256": "811c48ad46d187400ddc4171594b495cb22e4384660deac35569437c06dea0a3"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-6b0006a3-f2b8-415c-abaf-8442e5ca7a4e.png",
+      "bytes": 920352,
+      "sha256": "305e4cc2b8bed9c79aa32a78306bc66a3413e8671a59eddce0a6937fa37a3673"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-711c760c-d8cd-4ffd-8ed7-b5232d320f15.png",
+      "bytes": 861199,
+      "sha256": "cfb43d83d928aa4f18060b989e7b3f23c895c63f69f198bf530a48ff59b4c8a5"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-723b0f97-f580-4a64-87df-0627e326b26e.png",
+      "bytes": 950683,
+      "sha256": "ff27b382c8856e0f59faae787f0b554bc929e07eaad12a76f76b33a05a5ad62d"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-7e484cce-77ad-4f49-a2b3-c261dde3be14.png",
+      "bytes": 991258,
+      "sha256": "132e21c07d062b70ca5d465225caad8b057510ccaf28f40e0eea29a3c261909b"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-7fde0673-7db0-4309-afac-e1c405e21cf6.png",
+      "bytes": 952174,
+      "sha256": "93c06f70534146c4fa4d7f9509086f30a867a9cf1b3b393ced37f03dadedd310"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-821976dd-ff45-4a93-9440-d51e88bc971b.png",
+      "bytes": 859779,
+      "sha256": "0815558b5e3a9d1da0c725a03e2511d1aee4d8015a2d10f4877ae111272e0c9a"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-8e4a0efb-beb2-4b9e-a9b5-f1f87db433c0.png",
+      "bytes": 953071,
+      "sha256": "608391272578369e24f3dd7814a197fcf2a627bcd47d44701c669283c929a80c"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-a0afd2bd-64bf-43bf-9240-bac7cefd2e55.png",
+      "bytes": 1004498,
+      "sha256": "1309e2792cef4dcf78980c697a6f85bdaac8d8979a09e2ad50b3421853e7fca5"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-ad7a2c9f-3cff-4032-98e5-9ce1ed96da8a.png",
+      "bytes": 962203,
+      "sha256": "58886a67b08d992fe678dc002b936e99c08c8047c39310c51e25300f95a22564"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-c5a25250-3015-43fc-82a9-a6310988ace8.png",
+      "bytes": 974241,
+      "sha256": "18ca5626d2024c8167c3ae937e8ae176d1154fd94142c5fac9cbb3b7f799d26e"
+    },
+    {
+      "path": "outputs/mongolian-basketball-playoff-screenshots-2026-10-06/sources/codex-clipboard-c80dba3b-05b1-4737-8057-3edd8893acf5.png",
+      "bytes": 891275,
+      "sha256": "45810ab02c85546718a98e7acbd22d5c2884e99cb282be3d81826327ba111fef"
+    },
+    {
+      "path": "league-web-2025-26/boxscores.json",
+      "bytes": 5658066,
+      "sha256": "e426b269c9b8bd918704ddd4af67f66d6c6e0980f251c3e47c3972533e7fed46"
+    },
+    {
+      "path": "league-web-2025-26/conflicting-score-play-by-play.json",
+      "bytes": 1697,
+      "sha256": "3067de3a5b06a422b55615d88c93baaa0db4f0754bc3b95dc9cbe6f76dd32ccb"
+    },
+    {
+      "path": "league-web-2025-26/fetch-errors.json",
+      "bytes": 4,
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "league-web-2025-26/fetch_verify.py",
+      "bytes": 8850,
+      "sha256": "29e0501a3aa62920ee261de9af90730354a649ec2a40770e3ecbcfa75c095935"
+    },
+    {
+      "path": "league-web-2025-26/game-id-mapping.json",
+      "bytes": 37130,
+      "sha256": "686d4045fdbb49dbf6a6553d590e97ff7362a6a9b3bb00c0570c5b0978246902"
+    },
+    {
+      "path": "league-web-2025-26/manifest.json",
+      "bytes": 115385,
+      "sha256": "ef8bc60ff82bd01d58979006ed3b469baefe926279742a20928f548ae281a49e"
+    },
+    {
+      "path": "league-web-2025-26/previous-point-gaps.json",
+      "bytes": 24507,
+      "sha256": "aa39fabfd52b4e3bbfbf341d40dfce4bc4a9ae31e43d97fba8b2594930a6a37d"
+    },
+    {
+      "path": "league-web-2025-26/README.md",
+      "bytes": 6439,
+      "sha256": "74b202a56ca774bb162a7b131017310c4655ee9d9d0d9f151797a5c8adda6029"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-140-en.html.gz",
+      "bytes": 71588,
+      "sha256": "35858f50f8ef8722abc84c2d5ec14e3004b01cfc27978a65c75d3f5b84666da1"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-140-mn.html.gz",
+      "bytes": 74257,
+      "sha256": "91b82e2ee6765144ca3515a6848eed66eb7f6d63cfe8851d8fd75c3c02d2c5b2"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-141-en.html.gz",
+      "bytes": 70481,
+      "sha256": "cf2c338079bea99aee3b4c48583de7aae12ff5b255bb72e9a98614640f61a5af"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-141-mn.html.gz",
+      "bytes": 73384,
+      "sha256": "cb18627919fa45fc76a7d09f1d4c442b15628f957deb68968115308999b95d6d"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-142-en.html.gz",
+      "bytes": 69299,
+      "sha256": "855a6b69a96c493ef15bb40bdb0cdbeb260c86257e6d50a025756280cb3083bd"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-142-mn.html.gz",
+      "bytes": 72398,
+      "sha256": "a7b295d45d6f9f04035c9439666704f236f7126745b50a8c834a453f1671dadd"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-143-en.html.gz",
+      "bytes": 71267,
+      "sha256": "dfaa7e7220622d1f1f5be545e1deacdcf57d5f3c1c9cc01c864469c986216e85"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-143-mn.html.gz",
+      "bytes": 73820,
+      "sha256": "80a0f9ccfd895abdd292e900848293a44097c6a1a3c61cb0ac29d6ae3c560081"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-144-en.html.gz",
+      "bytes": 71760,
+      "sha256": "7a6cb4dc2f3aadf2be21a7d0597a00767f1cae44b4c2c621670820a70a8a9e10"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-144-mn.html.gz",
+      "bytes": 74356,
+      "sha256": "b93f3bc0ab0cbd5cd3d115ac7b60978f92adb704cd32614d1bfaa00a6ae05a91"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-145-en.html.gz",
+      "bytes": 79081,
+      "sha256": "2c3497824f92963c61518fafd3fd7a1bcddfca72bc06a68c0c93a2472226959e"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-145-mn.html.gz",
+      "bytes": 82546,
+      "sha256": "cb4f54d8603b9c59532be9db5dae498b867cddeae60c14747590da8d08abefdd"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-146-en.html.gz",
+      "bytes": 70653,
+      "sha256": "8fd51e96cb4897765a551e7480245f9ac36d1cc30faa9d4d318d50f6b7a24ff8"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-146-mn.html.gz",
+      "bytes": 73106,
+      "sha256": "a63dcbba53385722472f6d7772f5a7c32f09e25538bbd1472dc78cc1c2d38885"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-147-en.html.gz",
+      "bytes": 70095,
+      "sha256": "2cb5a8c5e6af4e3e2c0b3139cddc44443ffaea7b41f3cb1bbefdcb15582df66b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-147-mn.html.gz",
+      "bytes": 73281,
+      "sha256": "273be37404b97f5ceac55f09df11b4270066d418b25cd9d8f3ae22f60f9cd4c4"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-148-en.html.gz",
+      "bytes": 72880,
+      "sha256": "1c6223973245bdcd2c251473586a75f19a36bceedf0d49d376fbfeca323a9b85"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-148-mn.html.gz",
+      "bytes": 75628,
+      "sha256": "026f230fa492703218d2847e34197269f43719b07d3862765518d213a63b4acc"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-149-en.html.gz",
+      "bytes": 68287,
+      "sha256": "02863e11b709ccf134fadf0470ae7a2919e68067ccc580127c15df389b885371"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-149-mn.html.gz",
+      "bytes": 70980,
+      "sha256": "3dd28ce4d21c4879b0ffba2c2d412b10bbdd3de0d5385a2025f4a417f50fde79"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-150-en.html.gz",
+      "bytes": 75171,
+      "sha256": "f738399b128e79df352226095a0b429627cce52406bced1395b0b37a8e6e2514"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-150-mn.html.gz",
+      "bytes": 77749,
+      "sha256": "38be51084259d0437792427b02df15a8314e91bd42d4cc3d9078ab364cbd906a"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-151-en.html.gz",
+      "bytes": 70676,
+      "sha256": "12fc94ca0e2ad1b2835499a420ee36d9037611fe68c1f8044a2fc91d8cba077c"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-151-mn.html.gz",
+      "bytes": 73419,
+      "sha256": "854378765040dc2b49969aa85341769102ca2a03b8e079a890cfb46f4bfceb1a"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-152-en.html.gz",
+      "bytes": 73130,
+      "sha256": "ed3495e12cd92a18fdc76b57f5f7789241601ef859518f3508fa802787d5d08a"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-152-mn.html.gz",
+      "bytes": 75920,
+      "sha256": "914217efe0b0dd59b2ea2b15b833e30ca95aa952a39087fbf1097d6eb5411814"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-153-en.html.gz",
+      "bytes": 70311,
+      "sha256": "5b7b6cc3df244f659e1dd23d8547c030af18e338098debde962260d62eadbde5"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-153-mn.html.gz",
+      "bytes": 73063,
+      "sha256": "871debf0dc2d23bad659b6a3169e0a28cb51f9712966b59860ded1beb04ed21b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-154-en.html.gz",
+      "bytes": 75967,
+      "sha256": "6b4d6846e0910575089aa75baef2d4dcb704865c8f0e9c7c4ec693934c2dbb04"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-154-mn.html.gz",
+      "bytes": 78822,
+      "sha256": "29f24b6ba9ddf18ab9c6fa817bef82576cbdfc280347fc44d8f05d325f79f020"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-155-en.html.gz",
+      "bytes": 75972,
+      "sha256": "b3142ad6abe82bafbf6c010da0c8353f9a011bca728ccd2049077344b4d3fa54"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-155-mn.html.gz",
+      "bytes": 79291,
+      "sha256": "568fce7e012ea724dca8662727b93375816f30c15c6b878bb18208c872ec9adc"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-156-en.html.gz",
+      "bytes": 74158,
+      "sha256": "01a724f2e1f811d89bece95287312f24022f1cdd587ba6d7bd68798d97721a67"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-156-mn.html.gz",
+      "bytes": 77334,
+      "sha256": "746f3c6ab0af230446fb6ad1fca597afe7d015298a9fe392c85819cd0ff21c1e"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-157-en.html.gz",
+      "bytes": 75836,
+      "sha256": "81921ac37dc73b0efeb4feacd0d521e75344c2ed1306d1c8335486313ccb215f"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-157-mn.html.gz",
+      "bytes": 78745,
+      "sha256": "d0324d8cae08979593ae42d98790e8da6fd3662fee803b471ce711e402378412"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-158-en.html.gz",
+      "bytes": 72252,
+      "sha256": "9bb24ca80d772503db717b1a7f3d3b17cd38f0488c954e076a67bb5da1b8f90d"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-158-mn.html.gz",
+      "bytes": 75158,
+      "sha256": "4373825ff03f161fac5dd1c44fac586475108498ca8a81cd4b409b8eb0f3ab11"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-159-en.html.gz",
+      "bytes": 72128,
+      "sha256": "cf889481b9c70fde6c1c7b841b7ad24fafe75a45528ab9ea1ba3831975de2ef6"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-159-mn.html.gz",
+      "bytes": 74737,
+      "sha256": "736f9b40964db0b59df68305db91d871cd9e9432d81d9034a8c54641d3feb1ae"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-160-en.html.gz",
+      "bytes": 74002,
+      "sha256": "f6d0f6de513e24b0c597bc0da5af622c13c30120ce58e93ebb310251796e1364"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-160-mn.html.gz",
+      "bytes": 77175,
+      "sha256": "e869eeeecff4e58df64e149bce791cade690ea3a648f86dd34094d8f56bab290"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-161-en.html.gz",
+      "bytes": 80693,
+      "sha256": "1ca4f9f021a17726275f66d34c744d6edebc7df5e4cb4dbc490b678ee51614ee"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-161-mn.html.gz",
+      "bytes": 83694,
+      "sha256": "e546d0823a6829277ba9124af0a865c64fa15cf24383bc31c995cf2a06994c20"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-162-en.html.gz",
+      "bytes": 72511,
+      "sha256": "ed3250b5e6e1946a38c9d2988ae582e69cfcf1b187bf6e70cc6e76f33b73517b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-162-mn.html.gz",
+      "bytes": 74949,
+      "sha256": "c9dec0e8888827733f73fefdc1f8d54afb39356d1dd137a4aec9b37f4a5195bb"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-163-en.html.gz",
+      "bytes": 69678,
+      "sha256": "d39d478b75609be8353eccb0557d3d66a219590bae94f55b9f375dfcaf9a63b2"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-163-mn.html.gz",
+      "bytes": 72271,
+      "sha256": "7cab77e5de12def8c55d8dfdcb283ab486d8bd6cfdc90a35e56af740d5dca571"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-164-en.html.gz",
+      "bytes": 79758,
+      "sha256": "fa61b3e9cac4e710f078dc8098c17cce7d6feff2299daf4bbec31aa59c017294"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-164-mn.html.gz",
+      "bytes": 82981,
+      "sha256": "c3d938126dc636360ebfb137a281df032fa81b44bc488a27bcb9072b5f7ff2cb"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-165-en.html.gz",
+      "bytes": 69028,
+      "sha256": "44f7359aa25b61b2dcdf6b736924c69bf07ee8989f2bdd48b8979f27fb8f1c5b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-165-mn.html.gz",
+      "bytes": 71440,
+      "sha256": "d12e541f04f1fa328af02800b133835e9e206af81650bcf74993324235632655"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-166-en.html.gz",
+      "bytes": 79934,
+      "sha256": "895abd94324f3cf040db48e7422493fd60ff942c92d46ae4dc4839fc0acbead6"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-166-mn.html.gz",
+      "bytes": 82708,
+      "sha256": "dbeeea7c56b2b71496c3e00bc120e8e4691296b4e07cb97a1e1950c5c6494a5f"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-167-en.html.gz",
+      "bytes": 81573,
+      "sha256": "73fb6759b0b3a09430e7b0e98706e9224e1f73c08a7788ac2787a31e6c26abdd"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-167-mn.html.gz",
+      "bytes": 84585,
+      "sha256": "f9d853a1ccf9728a53843497b4cba4a4e4c65e9c5ba478f7148512324f1f61c8"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-168-en.html.gz",
+      "bytes": 71993,
+      "sha256": "d1ae2ee790adb89eea2bb81dd18da78b7c400f4ca66cbf45f0c62a5adfe1cdb5"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-168-mn.html.gz",
+      "bytes": 74211,
+      "sha256": "88b4058925893343961f70cbe8450c41ce0a21e5f05013b5a5efe7aae19f3458"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-169-en.html.gz",
+      "bytes": 66898,
+      "sha256": "497c66f84946fd8863de51471ca17b0a1437ca5425cfa215396f99345874f613"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-169-mn.html.gz",
+      "bytes": 69593,
+      "sha256": "df9804d073dad9cd894f69e4a64341bde1ea675c7a8382630cb707baeff5c623"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-170-en.html.gz",
+      "bytes": 83100,
+      "sha256": "367da383b3e7cd9110ffc65e45fc17caf4c55508c37db1c514921792d804a9c8"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-170-mn.html.gz",
+      "bytes": 86490,
+      "sha256": "64b3628e726d61edfbed25f42bd370373e413e0cc1a830d63c37880232299c63"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-171-en.html.gz",
+      "bytes": 70331,
+      "sha256": "f7c3a36f9b068559dece95fe6e933402d5de59bb6bae054be8d60b2d2f2a1a32"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-171-mn.html.gz",
+      "bytes": 73034,
+      "sha256": "55f9369286c0e80487fd222c3d3c0924a6bfa13e4bbf2faf0adf7fb1f22b7d41"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-172-en.html.gz",
+      "bytes": 68642,
+      "sha256": "735eaef94ec53f38576d08ceeb2fb676b8220271cd39f1b8df99cb53ecae024a"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-172-mn.html.gz",
+      "bytes": 71640,
+      "sha256": "a3a46bd8c948c6506cf308de07873ac759713cc77ebef470918d7559c81274d1"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-173-en.html.gz",
+      "bytes": 72991,
+      "sha256": "ca9ac2f1aab51102a01c30fef3b62d92fd7081a9c1147151f59c1a02e397714a"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-173-mn.html.gz",
+      "bytes": 75873,
+      "sha256": "729e683f17e63fcbbb4f910a8d61186fcb8f22b35acc61aee83d574669dc344e"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-174-en.html.gz",
+      "bytes": 71076,
+      "sha256": "30cfe99cc02ab2b256a9063ea5e11160df524a7d2327f9f95ae1954d8b734d7d"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-174-mn.html.gz",
+      "bytes": 74045,
+      "sha256": "1737b6ee26029b7ad9c98e4efbf86c34c0cf13e08f32b5c4c04d15de77b71a9c"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-175-en.html.gz",
+      "bytes": 72380,
+      "sha256": "b32f95c3ae9d85a033ca6f63a704334da11b89cedd0affd7912f031aa879c294"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-175-mn.html.gz",
+      "bytes": 74978,
+      "sha256": "b45baabe8e4d21d46208cf669db960c9d41215c9882e30e7d18c953ae59d2c30"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-176-en.html.gz",
+      "bytes": 66964,
+      "sha256": "7b5a7e78448ee9e7d9f84c6056e7ac55a30dc103bec24840f44c9d2ad544fddb"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-176-mn.html.gz",
+      "bytes": 69494,
+      "sha256": "503f13bc26b178c31302ce37cd89a60c1b5af951307a9071fc5f41d7efe6fb58"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-177-en.html.gz",
+      "bytes": 71310,
+      "sha256": "82a07ade9e73bc2ab6fe9e11c355e39af51bf2c319c13cba3792aaf196aae3fe"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-177-mn.html.gz",
+      "bytes": 74232,
+      "sha256": "4d81e62e24f61a30be7b053f0dddcd87c5dca8be422f1732ee87f2d601fa737b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-178-en.html.gz",
+      "bytes": 68980,
+      "sha256": "624ec27f05e8a9f116e4f4cfdb39243393183c8b32369d55a3f74038a24d0dcc"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-178-mn.html.gz",
+      "bytes": 71357,
+      "sha256": "490b74fc04072a5db06f18a7ac943564ce5124be8597aeb4bc698302a8bc47fd"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-179-en.html.gz",
+      "bytes": 75985,
+      "sha256": "9112e95fe5e8bdbd39557442c67ec635a44b4f257536827a0e52beb44788bb5c"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-179-mn.html.gz",
+      "bytes": 79192,
+      "sha256": "5a8a351b9a4105b4d5ff224ee083bdae71057302ea6fb2f3fdc6e1e48cd6cdb5"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-180-en.html.gz",
+      "bytes": 72641,
+      "sha256": "56c28b0d00ee5010333052821962ffa41e2ec4821bb83bea06a25d2190fd9068"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-180-mn.html.gz",
+      "bytes": 75681,
+      "sha256": "969547bf01d76c3e9f3dc12c64e6c17cb704bd6b0bc5a73da846103ebf37f795"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-181-en.html.gz",
+      "bytes": 72360,
+      "sha256": "1e5bb7ef48e6762c230d82b6dba971785e4b090a1973fba2600491419e1254ad"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-181-mn.html.gz",
+      "bytes": 74881,
+      "sha256": "6a9f6615390dff86a89be2135cf8d5d06114ad9dafe719f64380e59496424c07"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-182-en.html.gz",
+      "bytes": 76031,
+      "sha256": "9338879538aad95092180c7d01195020afd27658f17bb1ee40f9a54827e2eb12"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-182-mn.html.gz",
+      "bytes": 78710,
+      "sha256": "bcd6307c7bf0afb4552f7a03f4358eba44cf1733fc0914fdee2fd671fedd6ff1"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-183-en.html.gz",
+      "bytes": 75940,
+      "sha256": "b4411e656f5c7f452f9641dd43163e3d860cb26c486da5c497d3b85bd6238195"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-183-mn.html.gz",
+      "bytes": 78614,
+      "sha256": "bfa8e88137c5fc77a3653a5c26275ab40b906da47fbcdc28f30ee2df03764201"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-184-en.html.gz",
+      "bytes": 71664,
+      "sha256": "5e02b06ea3f12a46cc2e7a2f29ed3fed75af09ac0af2c64e514bcec484058a9a"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-184-mn.html.gz",
+      "bytes": 74427,
+      "sha256": "c8532ddccb2c831966896f28dccf1aa05d2d248ff1bbfd06afd56b00f383d89b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-185-en.html.gz",
+      "bytes": 76959,
+      "sha256": "cb8e244c456fa1c41d4f8be42638b69c8f33414d23d61fff3b63fe5ad292475e"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-185-mn.html.gz",
+      "bytes": 79995,
+      "sha256": "2a95eb2fa1b43d77d836f1ba52b6f8878829b58fc3820e6ec46230c535d4e879"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-186-en.html.gz",
+      "bytes": 67658,
+      "sha256": "43895d931d766d5338e76273152d366dd37799f0a9e165375f01346c654d51fa"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-186-mn.html.gz",
+      "bytes": 69854,
+      "sha256": "9da501e4bb8966df62b566c2f2f524af854d600f82bdc221ca621de12d66ce23"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-187-en.html.gz",
+      "bytes": 78517,
+      "sha256": "c6c3ea829cb98adc642cf818c375ad49e6c629f61773e8241b5132ede2e6c01b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-187-mn.html.gz",
+      "bytes": 81991,
+      "sha256": "0e7773594cf2ddab210b7d55b6b144a018c9cecb1e95fb381a232ecf3393ef8f"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-188-en.html.gz",
+      "bytes": 74180,
+      "sha256": "b810e4ff12edfda0d6458a3796239377a4d121f2782e776137a8fd6bf31177a9"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-188-mn.html.gz",
+      "bytes": 77289,
+      "sha256": "6c22fd948e89201d474cd6a37ba5669bd503c062a52686f63f3846c321b21bc0"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-189-en.html.gz",
+      "bytes": 73202,
+      "sha256": "eccc21314097f4bf3d47e739d1b9900560beeb8b529ec15f02c400c55f051547"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-189-mn.html.gz",
+      "bytes": 75992,
+      "sha256": "ebd6c9c175bafdcfff5f02898c8a8c4dc0a6eccc4fba71055bae3170f944d995"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-190-en.html.gz",
+      "bytes": 76337,
+      "sha256": "9b3f6cb32e568d2b218350b69f212bcef8b6af50e7829ef35e9ca5b9e30097d6"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-190-mn.html.gz",
+      "bytes": 79327,
+      "sha256": "5a95d40b7559c48fdcea78a678074fdb277e2a8592bd3a52cf32e8d5ea7e6a9d"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-191-en.html.gz",
+      "bytes": 68765,
+      "sha256": "5b0968188c9b99fd7f4d1393ff51533a225f01a8e49b8b54493cd25fe53da161"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-191-mn.html.gz",
+      "bytes": 71152,
+      "sha256": "1e49346b23ad178e4b1a0fd3181a2ea6eaa57ac9936b7d210c41b2453084f294"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-192-en.html.gz",
+      "bytes": 74820,
+      "sha256": "dce5a5b14d774d51066a4f39763a77d2891e3435e34339eb3bad5eb128258f0c"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-192-mn.html.gz",
+      "bytes": 77312,
+      "sha256": "7aec093c715074f4fa14897d5d21e0cde316b6042614069d5a59ada4679bc9b2"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-193-en.html.gz",
+      "bytes": 68940,
+      "sha256": "5f9f070e49624baf3da0de951745fd3568ea294b22cdc77e405da7c000236156"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-193-mn.html.gz",
+      "bytes": 71142,
+      "sha256": "1a1901c575b884b477c36ffa17c745f5994a23b5814b91e1f1e154959f1a0330"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-194-en.html.gz",
+      "bytes": 71995,
+      "sha256": "dd65bd3fba0b36be444395374a67331691f0b2827cb6363e9418ecfe56edbd45"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-194-mn.html.gz",
+      "bytes": 74941,
+      "sha256": "c530ddc6df9f9d366b8113370aee3d0150a3b361e70f2277588a7acfad687dbf"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-195-en.html.gz",
+      "bytes": 75435,
+      "sha256": "1125b09f1809daf046dc9881b2ba45d16cc7a67920eb3718089a8618ecbb87a7"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-195-mn.html.gz",
+      "bytes": 78683,
+      "sha256": "2ac88294acd12006693c6e38efdfbf6f0c1423a9876d8672049f07bd204112a5"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-196-en.html.gz",
+      "bytes": 80682,
+      "sha256": "713a7bad3998766890af71823abd7e00603a8ef02526b14c75f8e7041921145b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-196-mn.html.gz",
+      "bytes": 84377,
+      "sha256": "f7b71ac368a9f7c317f4a68342aeb4cfa7bec7668dc53f89f121fa7776f1dce1"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-197-en.html.gz",
+      "bytes": 71858,
+      "sha256": "b308416d28d2aed2b26e6ecd9e9db6b5109d6dba3dafd26fb6a27fbd607427af"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-197-mn.html.gz",
+      "bytes": 74954,
+      "sha256": "d184b1a56e846a92e91126979a3ff138b702d73f68bc04b5f18d1ee06420a7b2"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-198-en.html.gz",
+      "bytes": 68608,
+      "sha256": "41bf9dde3c46a5664a307afee7d6d52d1c15fa09150e522ea9b8c634f7c261c6"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-198-mn.html.gz",
+      "bytes": 71133,
+      "sha256": "bf3a1e1139eb7845ade50427b3674d5166ed08a037ff517f1d01849732f09ab1"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-199-en.html.gz",
+      "bytes": 69654,
+      "sha256": "4688a6cd29442f944e458e1ac3f5be0cad910ddc428bf1391461aa858b88de72"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-199-mn.html.gz",
+      "bytes": 72307,
+      "sha256": "c94ea4102ab01fa569e480e039867d0616317c480eb6cecffda4256c064b7d47"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-200-en.html.gz",
+      "bytes": 73214,
+      "sha256": "d0a8dd57d7d6f86fa0cd27e6a63f47e836a7e0cd2faf20ee85318b422db808c7"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-200-mn.html.gz",
+      "bytes": 75802,
+      "sha256": "fbdd81974ba8fe6fc10037d39b981cea1d490664daebebd6a9079c2f193a4657"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-201-en.html.gz",
+      "bytes": 75426,
+      "sha256": "57dfa5c3df37198289e3407858600982aaf1065dee0dadb8a3d0a907dc541feb"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-201-mn.html.gz",
+      "bytes": 78285,
+      "sha256": "b75dee24065ceb146640ddbc030c5df910fe797837b877ca82b50044f69ca157"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-202-en.html.gz",
+      "bytes": 73072,
+      "sha256": "50ef8377548f58168af73cc15bf1ed17c35c003af4b2b50313a151a3b2963d22"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-202-mn.html.gz",
+      "bytes": 75702,
+      "sha256": "a0bc48cbaf9baef0972c44fce801ae8f81430034ca45f4aa9154cf41edbc67d9"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-203-en.html.gz",
+      "bytes": 77581,
+      "sha256": "3c99c367e205bb6449cdba0ab9bdcd04c31b3aab654c79f5eb2df26aa219e0c9"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-203-mn.html.gz",
+      "bytes": 81068,
+      "sha256": "4f898049fbdf89b67f3186be6dd9bcbd373e42df814590df8a26540f8c31da0d"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-204-en.html.gz",
+      "bytes": 74567,
+      "sha256": "94274dcbba5b05f9a8dca75b56407d10da3d30c171aa3f4549e374336881d337"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-204-mn.html.gz",
+      "bytes": 77601,
+      "sha256": "09f7aeb6f655ef60c12564d025c88f32ae5301e16453d46629e3b9632812ee51"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-205-en.html.gz",
+      "bytes": 78582,
+      "sha256": "95aa95ba425436d170496a57b78f9041071ab30f98f82cd26c604f890f582e3f"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-205-mn.html.gz",
+      "bytes": 81650,
+      "sha256": "c85721e4dbb4670234d3d39e5fffac247c7e640fbc2306f729b1ef8aa42bc407"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-206-en.html.gz",
+      "bytes": 68588,
+      "sha256": "f314dfe3ed39ba43151b2175f8454f2e7cbe84e9bd15deae90de4d80eb5337d1"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-206-mn.html.gz",
+      "bytes": 71053,
+      "sha256": "2e67bd1c3c1c0886815a0ca51e914b573a8763a0cecbc336af0b79e28da5afb6"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-207-en.html.gz",
+      "bytes": 74212,
+      "sha256": "9e67d15db73287ae020fea1338af6b6e872e665b22bd8adb3033897625e445bb"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-207-mn.html.gz",
+      "bytes": 76676,
+      "sha256": "094bafbb4684c51a540efb698c77d1e8b3af76de73813f03504f50bab4e42f3b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-208-en.html.gz",
+      "bytes": 69809,
+      "sha256": "d87feea69ef634a3b4860bee4da33901e8effab057f508bfcc7f084f4b2bdd67"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-208-mn.html.gz",
+      "bytes": 72539,
+      "sha256": "f917ad5c740dfbfa663753c06845908ac86bd2fcc6fd276dd07cde12d68fe582"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-209-en.html.gz",
+      "bytes": 76504,
+      "sha256": "d3ef9d5c3e99daabe500030b79d6dbe8fff21437b6758908a31e5dfa4b6def1a"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-209-mn.html.gz",
+      "bytes": 79507,
+      "sha256": "fd047e303bff56c8d62c77aff6644a898eebd1de3109541536399ea5cf3bb8ba"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-210-en.html.gz",
+      "bytes": 68743,
+      "sha256": "4d9d74683febe1b9f7cf1a1d17581225b2e73c8e1c2261ec785fdbfb0e690a75"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-210-mn.html.gz",
+      "bytes": 70982,
+      "sha256": "955aabc2f3f8df214b8ad1f5c141f818ebe572685c5b27a98d87dcef1cafa8ec"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-211-en.html.gz",
+      "bytes": 76250,
+      "sha256": "2b9172121f0cde5f52e8cbd5b76e287e317a9f9124e64ceaeadf625406bbf43f"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-211-mn.html.gz",
+      "bytes": 79253,
+      "sha256": "c78b33c6ebf66ff2a25481ab4a0e9c8bb4586628f40698dc0d93664624369307"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-212-en.html.gz",
+      "bytes": 74990,
+      "sha256": "cb8139f0b0140a0d32f90e164d46ec1cff97c72e8b1c0fca71c17afe7e4673cf"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-212-mn.html.gz",
+      "bytes": 78050,
+      "sha256": "1236ee4a4df1add75f038073859fa1bb8e06f8c3eeebf4f6def1286c9304761c"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-213-en.html.gz",
+      "bytes": 71470,
+      "sha256": "4abe52cec9686fa46962207e32e8290b842c8dc4cd1e2fb572e80fdf7de46651"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-213-mn.html.gz",
+      "bytes": 74531,
+      "sha256": "531870db589e290e362ed57fc6879fa8776b44075741a871ed4120e0979292a8"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-214-en.html.gz",
+      "bytes": 70585,
+      "sha256": "7f79067c4f65cd941fee69aef0a08369d15ce1c9c73df2ec942c1fa12fc0dae7"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-214-mn.html.gz",
+      "bytes": 72954,
+      "sha256": "497260e39b58f1a781f40b4328c78170fddfa94e20a46a9b107aa7e678999caa"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-215-en.html.gz",
+      "bytes": 71946,
+      "sha256": "ab37a5dccc9c291dd85bcb6658918b357c27d151db969b3451183cc9367a305a"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-215-mn.html.gz",
+      "bytes": 74752,
+      "sha256": "730eb14e3b1917d4e66953b6426b5871419ba86b09af0894db3997f7a12e3a34"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-216-en.html.gz",
+      "bytes": 72157,
+      "sha256": "9a59e304130d944e68bfb581ba7999be515493ef39377432af26ecee8b75d6e7"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-216-mn.html.gz",
+      "bytes": 74378,
+      "sha256": "3be859fe9ed1765b46a4ad88351945103730bd6023a452ff12da6cb22b9dacbb"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-217-en.html.gz",
+      "bytes": 75867,
+      "sha256": "880d90a1a64dad0d06011c61b93f76d32c585f7a6e19a19c62d9bba554384a2a"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-217-mn.html.gz",
+      "bytes": 78678,
+      "sha256": "10af2906a1d27049d4a963dfc6abfe187e8cbb3dd88e66c18cbdc8eec4d1bc8c"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-218-en.html.gz",
+      "bytes": 69446,
+      "sha256": "7acf04778da85fb5ad7ee39cdae2779c97b461e951348b9a5dad5be160cb9aa2"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-218-mn.html.gz",
+      "bytes": 72334,
+      "sha256": "869998b8c5bb876f99450440e13dcd919d1b92e62759730254a0d8383e34acff"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-219-en.html.gz",
+      "bytes": 70288,
+      "sha256": "4f704cc7e64c3afac0ef524679d2432c3a099fb4f0ee07c63c359f0a9b40209b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-219-mn.html.gz",
+      "bytes": 73019,
+      "sha256": "6c5f091c0e17c3769976def8453b0b8b84a9deed02b0cefdc72ff8edec0c335f"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-220-en.html.gz",
+      "bytes": 70697,
+      "sha256": "1cf1690efed29ad94970413f4b36e196186d08452e650167f1c6ac74d033f0e8"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-220-mn.html.gz",
+      "bytes": 73699,
+      "sha256": "564d244763762738448420201e70426f0ae9a656b69b1922bb7167ab6f56430b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-221-en.html.gz",
+      "bytes": 70847,
+      "sha256": "bb4530eccf684d97b754887ae3bd0543c7e69ba6221c63738b462d05338b09c3"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-221-mn.html.gz",
+      "bytes": 73549,
+      "sha256": "0ecde658e60e261b370e1cd42d2590d022bb133002ff2a038c0b1b5c5ee28b9c"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-222-en.html.gz",
+      "bytes": 75115,
+      "sha256": "222f9634241e88d6b341e84908a5dc0034068b3d0c15cf210a41dd6a8c9008c5"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-222-mn.html.gz",
+      "bytes": 77704,
+      "sha256": "d677e00d4d19963a0bb05f498aeff3336a79a59cffec6c89d52ec34c939e8aba"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-223-en.html.gz",
+      "bytes": 74462,
+      "sha256": "b14a2c6a87bb646657aa7c73c88eb13ac55419b3bbdcfb7da747560e81626219"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-223-mn.html.gz",
+      "bytes": 76896,
+      "sha256": "ef17c9bdba09b1de57cb44a49dbecc502e656d8f8a8679194bf1b02599b0f489"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-224-en.html.gz",
+      "bytes": 71269,
+      "sha256": "b5dffe079b575728818ce275537594e6a07476a7eed4e2824373c8cf38df74b8"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-224-mn.html.gz",
+      "bytes": 73766,
+      "sha256": "1463daf6075954dca7655fb5a5f0cdf58ee9bbc36164ee750c34b918f6f11b51"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-225-en.html.gz",
+      "bytes": 69889,
+      "sha256": "ee6308f30d3000e221c9f8f7ceeb754bd1541327ea72b1c61ad9eb8e2598585b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-225-mn.html.gz",
+      "bytes": 72374,
+      "sha256": "e966b8b697bcd642096613cdb9fb5b0ce21a2e2ad827f3b0146e52eba5a4ac4b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-226-en.html.gz",
+      "bytes": 72528,
+      "sha256": "6af2a2d941af6d14ede94ce4de783286310f31c7488c42873cfabb935d3713df"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-226-mn.html.gz",
+      "bytes": 75330,
+      "sha256": "13b50949ac2891ac51d21b9382cbba59561ebda9ac3741ffd2b46d28ff7d520d"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-227-en.html.gz",
+      "bytes": 70758,
+      "sha256": "1389c04211e022afa3dbe96de2fcfda7743762e69b79fb9532d0c00e42ef5a74"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-227-mn.html.gz",
+      "bytes": 73440,
+      "sha256": "536d05f4a615e8cbe20d802f78afccdddd6f9078b6cfcc59ed3e52441f86b232"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-228-en.html.gz",
+      "bytes": 78842,
+      "sha256": "835bfb5e0b48aca83ed9219f2c8303f6b57fc64968a357c585bf4fb86d29dc55"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-228-mn.html.gz",
+      "bytes": 82012,
+      "sha256": "8f128ea1de6ebdc1955ecaed9ec105f3e8f13965cbd50667740024680e638489"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-229-en.html.gz",
+      "bytes": 74477,
+      "sha256": "9f1a04dd35e414e7604311f053694ab135ee8180506a55403d66d8abb4b7aeb8"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-229-mn.html.gz",
+      "bytes": 77239,
+      "sha256": "886069891a987638e40ddc20ff6b543e1f9ccf80fda4e66f1ee5a3a9a01651db"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-230-en.html.gz",
+      "bytes": 71646,
+      "sha256": "fb9f6d6d153bf7d38381160a7bc8b90de5c9eb9f73856dc6441ad84859b0d26b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-230-mn.html.gz",
+      "bytes": 74271,
+      "sha256": "41e8c7eb3cfe4fba21080f2f506b9841ce49b70c6fc6b3888b2c918480408c62"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-231-en.html.gz",
+      "bytes": 74986,
+      "sha256": "35ab46539dc35df76f719124e815c3a44c21231fcb821c15c1135e39e8af7fc4"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-231-mn.html.gz",
+      "bytes": 77698,
+      "sha256": "40a9c65baed8d165e962393f1489c2c27bee1185914864f9e26cd7679c6389e5"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-232-en.html.gz",
+      "bytes": 73157,
+      "sha256": "990227d899fc294421b47b70157525ad47e526a3102b20ab818a0c41a30396ca"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-232-mn.html.gz",
+      "bytes": 75886,
+      "sha256": "71d63731dbfdbcdd70d14f5ff4c30614322f9aa534810529256acb4b6215989d"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-233-en.html.gz",
+      "bytes": 84176,
+      "sha256": "ce76943c7e29fd1083bc5429d6ddab0d4f0688b8cae9bb04dd49d881c94c02f1"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-233-mn.html.gz",
+      "bytes": 87661,
+      "sha256": "c0ddd468e8709b5d633ee1b519dc7b6f8b149f3cb4cd06592933032735df9808"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-234-en.html.gz",
+      "bytes": 72120,
+      "sha256": "5f2605a027898ce89df011f103fc15bd98f3f3c59c213e4ee315f0a4f92069d4"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-234-mn.html.gz",
+      "bytes": 74958,
+      "sha256": "2fc8d2a1181f49e1c179d5cf3484753f863e2d44731620ed0eb8399f154e1304"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-235-en.html.gz",
+      "bytes": 73755,
+      "sha256": "3b542d9ff1bc4182ee7c14ec30d5f5639f8ffc10ab3305bea84844fdede02149"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-235-mn.html.gz",
+      "bytes": 76929,
+      "sha256": "8773064c5de00e723899cf8825a829f8f0f756472c24991435f0aa0a75cb5db6"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-236-en.html.gz",
+      "bytes": 72031,
+      "sha256": "8a6f876ddd695c13e6c73a48f1a12f225541109afaf95e630807b3d6d2600095"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-236-mn.html.gz",
+      "bytes": 74358,
+      "sha256": "5de0d6e22fee9e351b646dbb298fa3c90e2ba91bb4f690e8ae56e41910086a65"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-237-en.html.gz",
+      "bytes": 76002,
+      "sha256": "22b6ee8dd40faf28f55ce05b3be2cbf3fa8e59a72f52d350fe8211f73a144d4b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-237-mn.html.gz",
+      "bytes": 78650,
+      "sha256": "69f0a9c718e8b3f2844854470665463172b0c2a0b37b988642569db203080128"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-238-en.html.gz",
+      "bytes": 76745,
+      "sha256": "c2e221a74b72013428bcdfe3d1aefa0adcab96f7307a75688ae6a9b2123c4f19"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-238-mn.html.gz",
+      "bytes": 79175,
+      "sha256": "2b720513a321fb6a400d3bbe2d30a9296fe7e52b1e8e0191412af5c19d8242ff"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-239-en.html.gz",
+      "bytes": 70282,
+      "sha256": "3713f697ce632e0519a0fd49316a552a2b20796cc9a89a7cf7b9c20fb56981bd"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-239-mn.html.gz",
+      "bytes": 73089,
+      "sha256": "6090087ce966873cad19878c7a5f584041eca9f1be59f42ed910eca9dbc59205"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-240-en.html.gz",
+      "bytes": 74622,
+      "sha256": "7d3899bca6f51ffee0df6ab2ff8f60712bc7d2381a2eddfb9a236bd7449ef790"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-240-mn.html.gz",
+      "bytes": 78026,
+      "sha256": "ec4bc0c6ee6cebf78eacf68731d91cc298ffba58eb8129762c12ff6ba3a4fa9f"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-241-en.html.gz",
+      "bytes": 67874,
+      "sha256": "4224e3809dcc17b54612941f50a4db78c8e6f25b851779055349e1af6add091d"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-241-mn.html.gz",
+      "bytes": 70428,
+      "sha256": "3adb10c0bddb4f14688b395cefbfc469d6c0a3089f8d1a44153da5cac739747b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-242-en.html.gz",
+      "bytes": 72645,
+      "sha256": "9c3112f051795a4bc8cc389d297816b1292c4c591edde37d2a6c64873db03054"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-242-mn.html.gz",
+      "bytes": 75213,
+      "sha256": "2a2803790000c8c2af76644b6ddc68910ebae761c576092b8a05537009c8b674"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-243-en.html.gz",
+      "bytes": 73004,
+      "sha256": "7bf8bf8fc1b7a928dc3e6b30d6b715af56b28e3a59ae06a4fa1494b63e0e035f"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-243-mn.html.gz",
+      "bytes": 75829,
+      "sha256": "a38c7bc3e5b4878aedb90e952b7e0d606afd03046befa257df2d6f8868de9ab4"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-244-en.html.gz",
+      "bytes": 72518,
+      "sha256": "4a9d72e417091f21f0fd73c6e96b41fd8514918c827f63389d2c95b9849eb270"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-244-mn.html.gz",
+      "bytes": 75187,
+      "sha256": "3069514c1ed66f17bc59795dab57983e2feae67331d3fbe19bff4dacea9bbbc7"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-245-en.html.gz",
+      "bytes": 72162,
+      "sha256": "19775985555922698bf4854ed6cfb4c59703c5955af232f4d4e7a65f3b95bb79"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-245-mn.html.gz",
+      "bytes": 74901,
+      "sha256": "f0d102efe88ada9c19c033a29583df6cfd28cd9750c1ab62871ce4d0cde7f208"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-246-en.html.gz",
+      "bytes": 67910,
+      "sha256": "ffd185cc6b7178754433f21ebb26684938c01bae39eb126ee86eafc6e81be407"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-246-mn.html.gz",
+      "bytes": 69935,
+      "sha256": "d904d5566ad0b6006c0f7e7f55e1cf4c6c592166252a140991199d1ac6a7ea65"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-247-en.html.gz",
+      "bytes": 79411,
+      "sha256": "ed4461d4420bb09501eb0c304aafd25ef38d9a1bc977bfd42b84ab84260dfbda"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-247-mn.html.gz",
+      "bytes": 82548,
+      "sha256": "b356a32ef092cd237838aa63b9f479f685c52b910e95951eb5a6c23fbcf43eeb"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-248-en.html.gz",
+      "bytes": 71514,
+      "sha256": "cab260447b05b356b155d1808636c73b2b0e782523b8e9b6ad9bc2209bb7d7e1"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-248-mn.html.gz",
+      "bytes": 74238,
+      "sha256": "ee5a615b51c876eeb3e7cd03378583b62451e32f66339c57504552ed95ee72fa"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-249-en.html.gz",
+      "bytes": 68421,
+      "sha256": "4c9ba080920c9e7f4046c11fa791f1d4800b6fd73c2724b677e58e9f0b8950a7"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-249-mn.html.gz",
+      "bytes": 70613,
+      "sha256": "007d1a97b23e4c6c6d1f655bfd8ca163001d46aa831fc0b6ac71578c44484f3d"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-250-en.html.gz",
+      "bytes": 76675,
+      "sha256": "43e9b13dbe4a0ac81c9f130ab2599a0b40adc0d145bbb6321b2b8487a7011980"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-250-mn.html.gz",
+      "bytes": 79758,
+      "sha256": "dc14276853b16b9dfcffb1cc644c876017aae93ef3466f649d01368c7dd81a87"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-251-en.html.gz",
+      "bytes": 71135,
+      "sha256": "c5bdaf3b625928f060bbd1f72e97873554df05d49b97291a1204c6fb24571529"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-251-mn.html.gz",
+      "bytes": 73548,
+      "sha256": "3a48cc0e70e250dc731e5f7b3719099765cdd3c38c5dd8f48937e66af4a8d77d"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-252-en.html.gz",
+      "bytes": 68746,
+      "sha256": "9cbdd3cfbaa4e95d722baec099f77b8f79d3fd02aaf21823083ad9e33282af94"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-252-mn.html.gz",
+      "bytes": 71301,
+      "sha256": "0e34bb4d733d21554bcccfa7d268c96e9a1cb65a0ee20263602811d8f00e40a3"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-253-en.html.gz",
+      "bytes": 75841,
+      "sha256": "50d85e0113a210057c064d92fa6a8f78cab1b6e222657c825c4d678b5ddd5f28"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-253-mn.html.gz",
+      "bytes": 79196,
+      "sha256": "4df3fe3ae45367c5f46b75bab59f474a7cfe57d651b09d880365d5336e7b8749"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-254-en.html.gz",
+      "bytes": 69261,
+      "sha256": "20f5d6df96164510783400b87a170c9bb07a249fe8c4889e80d4613b53c2a7cc"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-254-mn.html.gz",
+      "bytes": 71803,
+      "sha256": "1a719a14cb05858f0ab6ca228bdfa588684f2024884ce33c39f4f01953168401"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-255-en.html.gz",
+      "bytes": 72685,
+      "sha256": "e843b21c2d36e7a1251281c1b57973a377b24bdc288c70c858bc158e122c5f45"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-255-mn.html.gz",
+      "bytes": 75211,
+      "sha256": "bc4f093dbd5a4a8a063e08d2fda82f593143ac4ce43bd9309e17e1a59cdb8950"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-256-en.html.gz",
+      "bytes": 74515,
+      "sha256": "97c4a897584acad25043e82f321604671ebb7e838bc832aff81c6ea3e8d96537"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-256-mn.html.gz",
+      "bytes": 77355,
+      "sha256": "03a792fc24ab27d79a3619f4e9a006b5e52610cc187bd8768881e3d73055eea7"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-257-en.html.gz",
+      "bytes": 73185,
+      "sha256": "646f94cbc09d5ed16118389e165716bb856d245c7960f2523ebb47c21280f6d6"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-257-mn.html.gz",
+      "bytes": 75647,
+      "sha256": "200d0234eac42d64f01f90400f066133a33eebdff72a92b84165b802bb080ad4"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-258-en.html.gz",
+      "bytes": 71866,
+      "sha256": "c223e5b97d6832f2cd2421be27a90de9bf1d1a36460acfbb3d77f85cdaf15c34"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-258-mn.html.gz",
+      "bytes": 75024,
+      "sha256": "44b207d849843df4de7ee9af77cade5695793b3f90e8456c69404da8095c591f"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-259-en.html.gz",
+      "bytes": 71418,
+      "sha256": "8ea90d28fce7dcae190262a8a04316db59cae88f4c4b3d06f3db4319b04db04f"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-259-mn.html.gz",
+      "bytes": 73965,
+      "sha256": "c359aac38773c04145bc6de7ead8d2c1c16693b634656d3d62261f8a37f85380"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-260-en.html.gz",
+      "bytes": 70788,
+      "sha256": "4aacbf58155154d5e37751d8ee5e65ee002caaeddb0cca60b7b79d4eaff0cd22"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-260-mn.html.gz",
+      "bytes": 73296,
+      "sha256": "f73114fda656d70accac0d0045e3b31e0daad88e93619121d0ccafcb4b59a5e2"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-261-en.html.gz",
+      "bytes": 77731,
+      "sha256": "49c746bbac92db02cf3540e576ae7a82b96a8a04344ae72085aa4a9aca3c33f9"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-261-mn.html.gz",
+      "bytes": 81570,
+      "sha256": "a842f0467cf55e53827941b573aa41bbf0b64fbbee0b639f6e8564fde0ace68d"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-262-en.html.gz",
+      "bytes": 83644,
+      "sha256": "af4f023864e480a16edd3e7f8d961fc4864a333cd458c75ecda7218d0b2efcda"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-262-mn.html.gz",
+      "bytes": 86792,
+      "sha256": "01cde5702f5b88162930672c50a2596e52e43a6f4cc2f5afe66ed46e5face452"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-263-en.html.gz",
+      "bytes": 73502,
+      "sha256": "18616d8052ea6f8d1f40d84ab09311cd74b13ebe772bc1d693ef6a861af32e5d"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-263-mn.html.gz",
+      "bytes": 76287,
+      "sha256": "f3ab86873b341b852190b8c56202a8f8d6ef109bd7da43be45e51e17272ba23a"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-264-en.html.gz",
+      "bytes": 71671,
+      "sha256": "7e6aa007e62941cc4d5838c21e9fdf319e6962bc47e015fc3ae282095c39d7c0"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-264-mn.html.gz",
+      "bytes": 74555,
+      "sha256": "ac3bfa06783d507711e1481d3fb3651ba5b1f08dbef10911d8c09d2f2966f0a0"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-265-en.html.gz",
+      "bytes": 71555,
+      "sha256": "4a6c34c8d3f4248d533c834c7aa386716938d1d0e505163d051eeae2dae9e4b3"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-265-mn.html.gz",
+      "bytes": 74570,
+      "sha256": "c0ecf374ba2183eff7e8bcea09de06a68b110c2fbf81a3ccec4968c9461b2f81"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-266-en.html.gz",
+      "bytes": 71396,
+      "sha256": "a55f7bea093197590fb7739f96e2202258ea3ec516a880a5eee6861df6614b83"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-266-mn.html.gz",
+      "bytes": 74189,
+      "sha256": "823d2230875de52f5519f2bee578d175aaa6a3e297ed841f220b0b7ff02f97fd"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-267-en.html.gz",
+      "bytes": 79283,
+      "sha256": "df357615a179f2190f8019203a4cd75e5a03afc6e2314c1691851cd13918dc17"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-267-mn.html.gz",
+      "bytes": 82075,
+      "sha256": "26dfda40ee17dcd967381793e1a8ed6ba780415ff4dbb078594edcc5190aba62"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-268-en.html.gz",
+      "bytes": 69412,
+      "sha256": "11834a22778c097716096e5838b35ab1705c3cf6ec0832d7405007fce398ca46"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-268-mn.html.gz",
+      "bytes": 72012,
+      "sha256": "a4cece3aedb1a65c5dacfc325ffcb0d2916f189a3ca21219c334bad297556b8c"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-269-en.html.gz",
+      "bytes": 75428,
+      "sha256": "872cd25ab2290c88320f12d37690e518d09959fddc86ea2d6bfaa3a1fb978bdc"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-269-mn.html.gz",
+      "bytes": 78148,
+      "sha256": "e230f1c1b2b98fce3a4cec16c26d17cf9e36e97aa9bfe36e238b1c850830a98b"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-270-en.html.gz",
+      "bytes": 69940,
+      "sha256": "adc091e78411087a9477bba520a14d7b058607416cb2a0571c44b4bf8d1a5cfd"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-270-mn.html.gz",
+      "bytes": 72831,
+      "sha256": "1d67537e1bc77b1cddd3a39b24b150518dd751d9e7de7d653ee6436b89093674"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-271-en.html.gz",
+      "bytes": 74543,
+      "sha256": "5d7700064a4aa9d507ddab581de89049668d9d5f344ab137b956df7cd6d2a2eb"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-271-mn.html.gz",
+      "bytes": 77316,
+      "sha256": "c0e35ae79718e4cc88483459bcb24b6974f7ad1b6a93282462d15dd84d708d2a"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-272-en.html.gz",
+      "bytes": 76763,
+      "sha256": "465bbc004bc7762d16dfb607a363f1d8d7f0941b8b40871a028f94431949468e"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-272-mn.html.gz",
+      "bytes": 79829,
+      "sha256": "a374bcda97e65caae88208ebb4ad4d1a6bccdd20b458e1e172b4eb4f13843035"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-273-en.html.gz",
+      "bytes": 68978,
+      "sha256": "2612bcfa264101ac1df8292ffd661a6803bc7656a8dbb0d9cd56b61486fa01dc"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-273-mn.html.gz",
+      "bytes": 71679,
+      "sha256": "a4f0456a9b67be7a7bd5d8ce82debae6cd7cfca08343ce9e4a17f08add604b0f"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-274-en.html.gz",
+      "bytes": 74038,
+      "sha256": "bc50653cf99b21721a3a31eb19876bb69034900b2da655040415acccccb405df"
+    },
+    {
+      "path": "league-web-2025-26/sources/game-274-mn.html.gz",
+      "bytes": 77062,
+      "sha256": "bc81afef15708e60ac91ba57af80aa2672cd3eff867c82c34739fd32926918ac"
+    },
+    {
+      "path": "league-web-2025-26/sources/schedule-2025-10.html.gz",
+      "bytes": 24381,
+      "sha256": "2a7ebd3164430672231d8427f595640707d70a8b232822455e25a82ea3b34c77"
+    },
+    {
+      "path": "league-web-2025-26/sources/schedule-2025-11.html.gz",
+      "bytes": 23955,
+      "sha256": "65f16c2afc7f20dee416cf3ae9c24dd549936bb72ba3aa4805ae1f77ffbf380d"
+    },
+    {
+      "path": "league-web-2025-26/sources/schedule-2025-12.html.gz",
+      "bytes": 23665,
+      "sha256": "7466683759fd731debe2674990f1ce57d04f6a93133a42d532d11f2ec98995a0"
+    },
+    {
+      "path": "league-web-2025-26/sources/schedule-2026-01.html.gz",
+      "bytes": 25268,
+      "sha256": "d3eba0c5f14a425e4d213ce63961b9497d8a716b3828725852641f645f53187e"
+    },
+    {
+      "path": "league-web-2025-26/sources/schedule-2026-02.html.gz",
+      "bytes": 23460,
+      "sha256": "33932693a63869b329053cb932a6ef1021445c35750cdc9234b13435b6608349"
+    },
+    {
+      "path": "league-web-2025-26/sources/schedule.html.gz",
+      "bytes": 23381,
+      "sha256": "a053621b83b873261a4cf66a452aee47ea259aac6cb9110f1c0b07a666be8fb4"
+    },
+    {
+      "path": "league-web-2025-26/team-game-reconciliation.json",
+      "bytes": 75131,
+      "sha256": "c7d65603da587996ebe54bc3a3fb8469f9859646bd4e7048d5f1deaeae0d29b5"
+    },
+    {
+      "path": "league-web-2025-26/validate.py",
+      "bytes": 8382,
+      "sha256": "63e3223354c6d05f9da12c5df16285ff491693b1ed801b5b55664ca0e3e82246"
+    },
+    {
+      "path": "league-web-2025-26/validation.json",
+      "bytes": 4821,
+      "sha256": "91b8567367fb811b262239fc6ef1bcc485aef52652e859000e28a50dbb12be3b"
+    },
+    {
+      "path": "league-web-2025-26/write_report.py",
+      "bytes": 8539,
+      "sha256": "5fe7b8474d1839848f358393a588e35f4a51862f1d659ea680fd387a3f1137d5"
+    }
+  ]
+}

@@ -7,21 +7,25 @@ import { compile } from 'vega-lite';
 import { applyChartTheme } from '../public/scripts/chart-theme.js';
 
 const root = new URL('../', import.meta.url);
+const metadata = await readFile(new URL('src/data/data/en/pupil-teacher-ratio.mdx', root), 'utf8');
+const version = Number(metadata.match(/^dataVersion: (\d+)/m)[1]);
 let cases = 0;
 for (const lang of ['en', 'mn']) {
   const csv = await readFile(new URL(`public/datasets/pupil-teacher-ratio-${lang}.csv`, root), 'utf8');
   const rows = vega.read(csv, { type: 'csv', parse: 'auto' });
   const [year, series, value] = Object.keys(rows[0]);
   const source = JSON.parse(
-    await readFile(new URL(`../tools/versions/pupil-teacher-ratio/v1/raw/${lang}-data.json`, root), 'utf8')
+    await readFile(new URL(`../tools/versions/pupil-teacher-ratio/v${version}/raw/${lang}-data.json`, root), 'utf8')
   );
   const [levelDim, placeDim, yearDim] = source.id.map((id) => source.dimension[id].category);
   const levels = lang === 'en' ? ['All levels', 'Primary'] : ['Бүх түвшин', 'Бага боловсрол'];
   const national = lang === 'en' ? 'National average' : 'Улсын дундаж';
   const sourceValue = (l, p, y) =>
-    source.value[levelDim.index[l] * 28 * 19 + placeDim.index[p] * 19 + yearDim.index[y]];
+    source.value[
+      levelDim.index[l] * source.size[1] * source.size[2] + placeDim.index[p] * source.size[2] + yearDim.index[y]
+    ];
   const yearCodes = Object.entries(yearDim.label).map(([code, label]) => [code, Number(label)]);
-  assert.equal(rows.length, 874);
+  assert.equal(rows.length, yearCodes.length * 46);
   const placeCodes = Object.keys(placeDim.index).filter((p) => p.length === 3);
 
   async function build(kind, dark = false) {
@@ -66,7 +70,7 @@ for (const lang of ['en', 'mn']) {
   const trend = await build('-trend');
   const first = placeDim.label['262'].trim();
   const second = placeDim.label['511'].trim();
-  assert.equal(trend.data('data_0').length, 57);
+  assert.equal(trend.data('data_0').length, yearCodes.length * 3);
   for (const levelName of levels) {
     for (const p of placeCodes) {
       const place = placeDim.label[p].trim();
@@ -76,7 +80,7 @@ for (const lang of ['en', 'mn']) {
         .signal('locationTwo', second)
         .runAsync();
       const actual = trend.data('data_0');
-      assert.equal(actual.length, place === second ? 38 : 57);
+      assert.equal(actual.length, yearCodes.length * (place === second ? 2 : 3));
       const expected = rows.filter(
         (r) => r[series].startsWith(`${levelName} / `) && [place, second, national].includes(r[series].split(' / ')[1])
       );
@@ -90,7 +94,7 @@ for (const lang of ['en', 'mn']) {
     .signal('locationOne', first)
     .signal('locationTwo', lang === 'en' ? 'None' : 'Сонгохгүй')
     .runAsync();
-  assert.equal(trend.data('data_0').length, 38);
+  assert.equal(trend.data('data_0').length, yearCodes.length * 2);
   trend.finalize();
 }
 console.log(`Pupil–teacher ratio: ${cases} year/level/location/theme cases passed in EN and MN.`);

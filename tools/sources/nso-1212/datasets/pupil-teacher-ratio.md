@@ -72,30 +72,81 @@ The second location can be disabled. When both selectors choose the same
 location, draw it once. Stable comparison-slot colors and legend labels
 avoid changing legend widths when place names change. Both charts reuse
 VegaChart's existing theme, resize, and navigation lifecycle. The small
-PupilTeacherChart wrapper styles only this dataset's native controls.
+DatasetChart wrapper styles native controls and is shared with the household-income page.
 
-## Reproduction
+## Reproduction and refresh
+
+Run from the repository root. Use Python 3.12 and the packages in
+`requirements.txt` (`requests` for fetching, `openpyxl` for Excel; the validators
+also use `pandas` and `PyYAML`). For site checks, install Node 22 LTS and npm,
+then use the checked-in website lockfile. Initial setup:
 
 ```bash
-# Offline, hash-verified build; emits CSVs, charts, pages and wide JSON.
-python tools/scripts/build_pupil_teacher_ratio.py
-# Generate Excel with @oai/artifact-tool available to Node.
-node tools/scripts/build_pupil_teacher_excel.mjs
-# Refresh download sizes in MDX after Excel export.
-python tools/scripts/build_pupil_teacher_ratio.py
-# Add pending registry entry and version once, without publishing.
-python tools/scripts/build_pupil_teacher_ratio.py --register
-python tools/tests/run_all_checks.py pupil-teacher-ratio
-python tools/scripts/validate_dataset.py --all pupil-teacher-ratio --base-dir data.mn
-cd data.mn
-node scripts/test-pupil-teacher.mjs
-npm run check
-npm run build
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+npm --prefix data.mn ci
 ```
 
-`fetch_pupil_teacher_ratio.py` creates the first immutable snapshot and
-refuses to overwrite an existing one. For a refresh, archive a new version,
-re-read dimension codes and definitions, review changed years and values,
-and update the builder's explicit coverage assertions. Never assume that
-year-code `0` still means 2025. Verify all four chart specs and both language
-pages at desktop and mobile widths, including theme and control changes.
+The former `build_pupil_teacher_excel.mjs` has been replaced by the shared
+`build_wide_excel.py`. It needs only the public `openpyxl` dependency above;
+no Codex installation, private JavaScript package, or bundled runtime is needed.
+It preserves numeric values, page-language sheets, one-decimal formatting,
+wrapped headers, and frozen year/header panes. Committed v1 workbooks retain
+their original styling; a rebuild can change XLSX bytes without changing data.
+
+Reproduce the existing v1 snapshot offline, in this order:
+
+```bash
+.venv/bin/python tools/scripts/build_pupil_teacher_ratio.py --version 1 --end-year 2025
+.venv/bin/python tools/scripts/build_wide_excel.py pupil-teacher-ratio --input tools/temp/pupil-teacher-excel.json
+.venv/bin/python tools/scripts/build_pupil_teacher_ratio.py --version 1 --end-year 2025
+.venv/bin/python tools/tests/run_all_checks.py pupil-teacher-ratio
+.venv/bin/python tools/scripts/validate_dataset.py --all pupil-teacher-ratio --base-dir data.mn
+(cd data.mn && node scripts/test-pupil-teacher.mjs)
+(cd data.mn && ../.venv/bin/python ../tools/scripts/validate_vega.py --all)
+npm --prefix data.mn run check
+npm --prefix data.mn run build
+```
+
+For the next release, use an unused version number and the latest **source year**,
+not the year when you download it. For example, once NSO publishes 2026 data,
+these are the commands for v2 through 2026 (change both flags if appropriate):
+
+```bash
+.venv/bin/python tools/scripts/fetch_pupil_teacher_ratio.py --version 2
+.venv/bin/python tools/scripts/build_pupil_teacher_ratio.py --version 2 --end-year 2026
+.venv/bin/python tools/scripts/build_wide_excel.py pupil-teacher-ratio --input tools/temp/pupil-teacher-excel.json
+.venv/bin/python tools/scripts/build_pupil_teacher_ratio.py --version 2 --end-year 2026
+.venv/bin/python tools/tests/run_all_checks.py pupil-teacher-ratio
+.venv/bin/python tools/scripts/validate_dataset.py --all pupil-teacher-ratio --base-dir data.mn
+(cd data.mn && node scripts/test-pupil-teacher.mjs)
+(cd data.mn && ../.venv/bin/python ../tools/scripts/validate_vega.py --all)
+npm --prefix data.mn run check
+npm --prefix data.mn run build
+```
+
+The fetcher refuses to overwrite any raw snapshot. The builder validates source
+codes, dimensions, consecutive source years and bilingual values. Stop and review
+any failure; do not relax assertions to force a changed source through. The
+2025–2026 Ministry comparison remains a historical methodology example.
+Review changed source definitions, historical revisions, excerpts, coverage, and
+these documented v1 counts before registering a new version.
+
+Check both languages in the browser at 390px and desktop width using
+`npm --prefix data.mn run dev -- --host 127.0.0.1 --port 8774`, including all
+selectors, long labels, hover details and dark/light mode. Inspect the complete
+Excel headers after rebuilding. Only after those checks, register the release:
+
+```bash
+.venv/bin/python tools/scripts/build_pupil_teacher_ratio.py --version 2 --end-year 2026 --register
+```
+
+For the initial v1 registration, the equivalent final command is:
+
+```bash
+.venv/bin/python tools/scripts/build_pupil_teacher_ratio.py --version 1 --end-year 2025 --register
+```
+
+Registration is repeatable and does not publish the dataset. Maintainers run
+`(cd tools && ../.venv/bin/python -m registry publish pupil-teacher-ratio)` at
+merge time. Start registry edits from current main so unrelated rows survive.

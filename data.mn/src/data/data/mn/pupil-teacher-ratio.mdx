@@ -25,14 +25,14 @@ methodology: |
   CSV файлын нэг мөр нэг утга агуулна. Үзүүлэлтийн нэр нь боловсролын түвшин, байршлыг “ / ” тэмдэгтээр холбоно. Excel-д онууд мөрөөр, түвшин ба байршлын хослолууд баганаар байрлана. Графикийн сонголт татах файлын хамрах хүрээг хязгаарлахгүй.
 ---
 
-import PupilTeacherChart from '~/components/ui/PupilTeacherChart.astro';
+import DatasetChart from '~/components/ui/DatasetChart.astro';
 
-<PupilTeacherChart spec="/charts/pupil-teacher-ratio-mn.json" title="Аймаг, Улаанбаатарыг харьцуулах" caption="Боловсролын түвшин, оноо сонгоно уу. Өнгө нь бүсийг, тасархай шугам нь улсын дунджийг илэрхийлнэ. Дээр нь заахад утга харагдана." />
+<DatasetChart themeText spec="/charts/pupil-teacher-ratio-mn.json" title="Аймаг, Улаанбаатарыг харьцуулах" caption="Боловсролын түвшин, оноо сонгоно уу. Өнгө нь бүсийг, тасархай шугам нь улсын дунджийг илэрхийлнэ. Дээр нь заахад утга харагдана." />
 
 <div className="text-sm text-slate-600 dark:text-slate-400">Энэ үзүүлэлт нь сурагч-багшийн харьцаа бөгөөд нэг ангийн сурагчдын тоо биш.</div>
 
 <h2>Олон жилийн өөрчлөлтийг харьцуулах</h2>
 
-<PupilTeacherChart spec="/charts/pupil-teacher-ratio-trend-mn.json" title="Нэг багшид ногдох сурагч, 2007–2025" caption="Хоёр хүртэлх аймаг, нийслэлийг улсын дундажтай харьцуулна уу. Цэнхэр нь эхний, улбар шар нь хоёр дахь сонголт. Ижил байршлыг хоёр сонговол нэг удаа харуулна." aspectRatio={0.65} />
+<DatasetChart themeText spec="/charts/pupil-teacher-ratio-trend-mn.json" title="Нэг багшид ногдох сурагч, 2007–2025" caption="Хоёр хүртэлх аймаг, нийслэлийг улсын дундажтай харьцуулна уу. Цэнхэр нь эхний, улбар шар нь хоёр дахь сонголт. Ижил байршлыг хоёр сонговол нэг удаа харуулна." aspectRatio={0.65} />
 
 <div className="text-sm">Хичээлийн жилийн тайлбар: <a href="https://moe.gov.mn/post/170077">Боловсролын яамны 2025–2026 оны статистик</a>.</div>

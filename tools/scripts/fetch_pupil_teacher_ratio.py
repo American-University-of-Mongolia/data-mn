@@ -1,4 +1,5 @@
 """Archive a new bilingual NSO pupil–teacher ratio snapshot; never overwrite one."""
+import argparse
 import hashlib
 import json
 from datetime import datetime, timezone
@@ -7,11 +8,17 @@ from pathlib import Path
 import requests
 
 ROOT = Path(__file__).resolve().parents[2]
-RAW = ROOT / 'tools/versions/pupil-teacher-ratio/v1/raw'
+SLUG = 'pupil-teacher-ratio'
 SOURCE_PATH = 'Education, health/General educational schools/DT_NSO_2002_015V1.px'
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--version', type=int, required=True)
+    args = parser.parse_args()
+    if args.version < 1:
+        parser.error('version must be positive')
+    RAW = ROOT / 'tools/versions' / SLUG / f'v{args.version}' / 'raw'
     if RAW.exists():
         raise SystemExit('Snapshot exists. Preserve v1; use a new version for a refresh.')
     RAW.mkdir(parents=True)
@@ -41,7 +48,7 @@ def main():
     entry = next(t for t in response.json() if t['id'] == SOURCE_PATH.rsplit('/', 1)[1])
     save('table-listing.json', entry)
     manifest = {'source_path': SOURCE_PATH, 'retrieved_at': datetime.now(timezone.utc).isoformat(),
-                'snapshot_date': '2026-11-01', 'source_updated_at': entry['updated'], 'files': files}
+                'snapshot_date': datetime.now(timezone.utc).date().isoformat(), 'source_updated_at': entry['updated'], 'files': files}
     (RAW / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
     print(json.dumps(manifest, indent=2))
 

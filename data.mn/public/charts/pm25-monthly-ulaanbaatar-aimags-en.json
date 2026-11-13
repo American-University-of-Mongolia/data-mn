@@ -202,19 +202,20 @@
         "values": [
           {
             "y": 15,
-            "label": "WHO guideline (15)"
+            "label": "WHO guideline\n(15)",
+            "month": "2025-10-01"
           }
         ]
       },
       "mark": {
         "type": "text",
-        "align": "right",
-        "dy": -6,
+        "align": "left",
+        "dy": 4,
         "fontSize": 13,
         "color": "#54a24b",
-        "baseline": "bottom",
-        "x": "width",
-        "dx": -4
+        "baseline": "top",
+        "dx": 4,
+        "lineBreak": "\n"
       },
       "encoding": {
         "y": {
@@ -223,6 +224,11 @@
         },
         "text": {
           "field": "label"
+        },
+        "x": {
+          "field": "month",
+          "type": "temporal",
+          "title": "Month"
         }
       }
     }

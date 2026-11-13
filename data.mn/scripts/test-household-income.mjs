@@ -12,6 +12,7 @@ for (const lang of ['en', 'mn']) {
     parse: 'auto',
   });
   const [year, series, value] = Object.keys(rows[0]);
+  const years = [...new Set(rows.map((r) => r[year]))];
   for (const dark of [false, true]) {
     for (const kind of ['', '-trend']) {
       const spec = JSON.parse(
@@ -36,7 +37,7 @@ for (const lang of ['en', 'mn']) {
       };
       if (!kind) {
         const dataset = findData(compiled.marks, 'rect');
-        for (let y = 2007; y <= 2025; y++) {
+        for (const y of years) {
           await view.signal('selectedYear', y).runAsync();
           const actual = view.data(dataset);
           assert.equal(actual.length, 18);
@@ -70,7 +71,7 @@ for (const lang of ['en', 'mn']) {
               const [place, income] = r[series].split(' / ');
               return income === source && (location === locations[0] || place === location);
             });
-            assert.equal(expected.length, location === locations[0] ? 57 : 19);
+            assert.equal(expected.length, years.length * (location === locations[0] ? 3 : 1));
             assert.deepEqual(normalize(view.data(dataset)), normalize(expected));
             cases++;
           }

@@ -1,4 +1,5 @@
 """Archive bilingual NSO income composition, preserving the complete source."""
+import argparse
 import hashlib
 import json
 from datetime import datetime, timezone
@@ -6,11 +7,17 @@ from pathlib import Path
 import requests
 
 ROOT = Path(__file__).resolve().parents[2]
-RAW = ROOT / 'tools/versions/household-income-sources/v1/raw'
+SLUG = 'household-income-sources'
 SOURCE = 'Society, development/Household income and expenditure/DT_NSO_1900_003V1.px'
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--version', type=int, required=True)
+    args = parser.parse_args()
+    if args.version < 1:
+        parser.error('version must be positive')
+    RAW = ROOT / 'tools/versions' / SLUG / f'v{args.version}' / 'raw'
     if RAW.exists():
         raise SystemExit('Snapshot already exists; use a new version for refreshes.')
     RAW.mkdir(parents=True)
@@ -38,7 +45,7 @@ def main():
     listing = next(row for row in r.json() if row['id'] == SOURCE.rsplit('/', 1)[1])
     save('table-listing.json', listing)
     manifest = {'source_path': SOURCE, 'retrieved_at': datetime.now(timezone.utc).isoformat(),
-                'snapshot_date': '2026-11-07', 'source_updated_at': listing['updated'], 'files': hashes}
+                'snapshot_date': datetime.now(timezone.utc).date().isoformat(), 'source_updated_at': listing['updated'], 'files': hashes}
     (RAW / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
     print(f'Archived both languages; source updated {listing["updated"]}.')
 

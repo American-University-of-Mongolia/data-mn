@@ -1,0 +1,15 @@
+{
+  "source_path": "Education, health/General educational schools/DT_NSO_2002_015V1.px",
+  "retrieved_at": "2026-10-31T22:37:11.589877+00:00",
+  "snapshot_date": "2026-11-01",
+  "source_updated_at": "2026-05-22T15:52:53",
+  "files": {
+    "en-metadata.json": "12bbc5cec399efc825df61b87ca2ee4ad5cb27a473ce75717598374f6eb344a1",
+    "en-query.json": "7930df127cae2d6a5587b42e6d50803b1e6d1c225771089b57a61b147392d02f",
+    "en-data.json": "d841e5d4d8fb16db85c66727e31c6ba959c30e50a2ee9f399428dd87f6e7db51",
+    "mn-metadata.json": "6aace2870838ede08d729c1f814281049fcec91aa28cdd187299e73ac6dfe1f3",
+    "mn-query.json": "7930df127cae2d6a5587b42e6d50803b1e6d1c225771089b57a61b147392d02f",
+    "mn-data.json": "11b75e607ac3cdd0c8d430d01665eb9af92f68d1178da1ee3bcd41d440c5e3e0",
+    "table-listing.json": "e4de38b9415f35d8b789b4134e705c92629d90c1d4dbdf838bbaa06019bd44fa"
+  }
+}

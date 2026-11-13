@@ -51,6 +51,14 @@ Everything the site served, 2025-02 → 2026-10-03, all 46 catalog stations.
   CSVs use LF, so the files were normalized to LF. Real-time quirks: 11201 NO2 down to -90.9 µg/m³ (2026-09),
   CO > 50 mg/m³ at 11403 (2026-08-31) and 10301 (2026-09-28/29), and 11404/11405 silent since 2026-09-17.
 
+## 2026-11-02: scheduled run
+
+- Re-fetched 2025-12, 2026-08 to 2026-10, and the new 2026-11 (hourly + daily), 0 failed. 2026-10 filled out (hourly +25,162 rows, all with
+  concentrations; daily +1,056), and 2026-11 started (1,387 hourly / 80 daily rows). The other months were byte-identical. No newly validated months:
+  2026-07 is still the latest validated. 2025-11 passed the 12-month cutoff unvalidated (it was skipped, last fetched 2026-10-06), and 2025-12 reaches it next run.
+  0 rows and 0 values lost. One new unavailable day: daily 12304 2026-10-30. 12305, 12503 and 12603 went silent on 10-26, 10-29 and 10-30 (no data in 2026-11, nothing live).
+  Real-time quirks: O3 997.5 µg/m³ at 10801 (2026-10-23 17–18h), CO flat at 0 for 140 h at 12306, and PM10 900+ at several gobi stations on 2026-10-22 (likely dust).
+
 ## Next runs
 
 `fetch_data.py --update`, at least monthly (see source.md). Add a dated line

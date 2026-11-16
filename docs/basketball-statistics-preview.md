@@ -1,7 +1,8 @@
 # Basketball statistics preview
 
 Direct routes: `/en/sports/basketball` and `/mn/sports/basketball`. Both remain
-`noindex`; Sports is hidden from the main navigation pending launch approval.
+`noindex`; Sports / Спорт in the main navigation links to these pages.
+Search indexing remains disabled pending completion of the dataset rollout.
 
 The browser provides sortable team records, scoring leaders, player averages,
 searchable games, game reports, comparisons and CSV downloads. Players CSVs

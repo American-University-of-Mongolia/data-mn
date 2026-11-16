@@ -86,7 +86,7 @@ function isLinkActive(href: string | undefined): boolean {
         'md:flex md:justify-between': position !== 'center',
       },
       {
-        'md:grid md:grid-cols-3 md:items-center': position === 'center',
+        'md:grid md:grid-cols-[auto_minmax(0,1fr)_auto] lg:grid-cols-3 md:items-center': position === 'center',
       },
       {
         'max-w-7xl': !isFullWidth,
@@ -139,9 +139,9 @@ function isLinkActive(href: string | undefined): boolean {
               ) : (
                 <a
                   class:list={[
-                    'relative px-4 py-3 flex items-center whitespace-nowrap hover:text-link dark:hover:text-white',
+                    'relative px-4 md:px-2 lg:px-4 py-3 flex items-center whitespace-nowrap hover:text-link dark:hover:text-white',
                     isLinkActive(href)
-                      ? 'text-primary after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:rounded-full'
+                      ? 'text-primary after:absolute after:bottom-1 after:left-4 after:right-4 md:after:left-2 md:after:right-2 lg:after:left-4 lg:after:right-4 after:h-0.5 after:bg-primary after:rounded-full'
                       : '',
                   ]}
                   href={href}

@@ -31,6 +31,7 @@ export const ui = {
 
     // Navigation
     'nav.data': 'Data',
+    'nav.sports': 'Sports',
     'nav.reports': 'Reports',
     'nav.insights': 'Insights',
     'nav.about': 'About',
@@ -157,6 +158,7 @@ export const ui = {
 
     // Navigation
     'nav.data': 'Өгөгдөл',
+    'nav.sports': 'Спорт',
     'nav.reports': 'Тайлан',
     'nav.insights': 'Нийтлэл',
     'nav.about': 'Тухай',

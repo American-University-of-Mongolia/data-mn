@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Тоглогчийн нэг тоглолтын онооны дундаж",
+  "data": {
+    "url": "/datasets/basketball-player-game-stats-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "y": {
+      "field": "Тэмцээний улирал",
+      "type": "nominal",
+      "title": "Улирал",
+      "sort": "ascending",
+      "axis": {
+        "grid": false
+      }
+    },
+    "x": {
+      "aggregate": "mean",
+      "field": "Оноо",
+      "type": "quantitative",
+      "title": "Оноо",
+      "axis": {
+        "format": ".1f"
+      }
+    },
+    "color": {
+      "field": "Шат",
+      "type": "nominal",
+      "title": "Шат",
+      "legend": {
+        "orient": "top"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Тэмцээний улирал",
+        "type": "nominal"
+      },
+      {
+        "field": "Шат",
+        "type": "nominal"
+      },
+      {
+        "aggregate": "mean",
+        "field": "Оноо",
+        "type": "quantitative",
+        "title": "Оноо",
+        "format": ".2f"
+      }
+    ],
+    "yOffset": {
+      "field": "Шат"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum['Тоглоогүй'] == 0"
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": null
+    }
+  }
+}

@@ -1,0 +1,39 @@
+---
+title: "Mongolian Basketball Game Results"
+publishDate: 2026-11-12
+excerpt: "Recorded game dates, stages, teams and final scores, with public source links and review flags."
+category: Sports
+tags: ["Mongolia", "basketball", "sports"]
+keywords: ["Mongolian basketball statistics", "Mongolian Basketball Game Results"]
+chartLayout: wide
+author: 'Data.mn'
+dataVersion: 1
+dataDate: 2026-04-24
+dataFiles:
+- path: /datasets/basketball-game-results-en.csv
+  format: csv
+  size: 87 KB
+  description: Download all data as CSV
+- path: /datasets/basketball-game-results.xlsx
+  format: xlsx
+  size: 83 KB
+  description: Open in Excel
+source:
+  name: "Mongolian Basketball Association and Koo archive"
+  url: 'https://mongolia.basketball/'
+  tableId: "Game reports and archived results"
+---
+
+import VegaChart from '~/components/ui/VegaChart.astro';
+
+Recorded game dates, stages, teams and final scores, with public source links and review flags.
+
+<aside aria-label="Coverage and limitations" className="mb-6 rounded-lg border border-gray-200 dark:border-gray-700 p-4 text-sm">
+<p><strong>Coverage and limitations</strong></p>
+<p>The 2022–23 and 2023–24 seasons contain results only, with no player box scores. The 2024–25 collection has 172 recorded games: 167 have box scores and five have only results. Its reports and result posters were transcribed from images. The 2025–26 collection has 175 recorded games with box scores: 135 regular-season games from bilingual league pages, plus 37 playoff and three play-in games transcribed from images. These counts describe the recorded collection, not a claim that every season is complete.</p>
+<p>Missing source fields stay empty, not zero. Review flags identify games with documented source inconsistencies; a flag does not necessarily indicate a scoring discrepancy. All 684 supplied team box scores reconcile player points with team totals and recorded final scores. English names use the league spelling where available; other names are transliterations and are not verified official spellings.</p>
+<p>Each row retains both teams and their recorded final scores.</p>
+<p><a href="/en/sports/basketball">Explore teams, players and games in the basketball browser</a>.</p>
+</aside>
+
+<VegaChart spec="/charts/basketball-game-results-en.json" title="Recorded games by season and stage" caption="Counts include results-only games." />

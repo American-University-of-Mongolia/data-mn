@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Улирал, шат бүрийн бүртгэгдсэн тоглолт",
+  "data": {
+    "url": "/datasets/basketball-game-results-mn.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "y": {
+      "field": "Тэмцээний улирал",
+      "type": "nominal",
+      "title": "Улирал",
+      "sort": "ascending",
+      "axis": {
+        "grid": false
+      }
+    },
+    "x": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Тоглолт",
+      "axis": {
+        "format": ",.0f"
+      },
+      "field": "Тоглолтын дугаар"
+    },
+    "color": {
+      "field": "Шат",
+      "type": "nominal",
+      "title": "Шат",
+      "legend": {
+        "orient": "top"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Тэмцээний улирал",
+        "type": "nominal"
+      },
+      {
+        "field": "Шат",
+        "type": "nominal"
+      },
+      {
+        "aggregate": "count",
+        "type": "quantitative",
+        "title": "Тоглолт",
+        "format": ",.0f",
+        "field": "Тоглолтын дугаар"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13,
+      "titleFontSize": 14
+    },
+    "view": {
+      "stroke": null
+    }
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/household-income-sources-mn.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "он": "number",
+        "эзлэх_хувь": "number"
+      }
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 12,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "description": "Орлогын эх үүсвэрийн эзлэх хувийн өөрчлөлт, 2007–2025.",
+  "params": [
+    {
+      "name": "selectedSource",
+      "value": "Цалин хөлс",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Цалин хөлс",
+          "Тэтгэвэр, тэтгэмж",
+          "Өрхийн үйлдвэрлэл, үйлчилгээний орлого",
+          "Бусад",
+          "Бусдаас үнэгүй авсан",
+          "Өөрийн аж ахуйгаас хэрэглэсэн хүнсний бүтээгдэхүүн"
+        ],
+        "labels": [
+          "Цалин хөлс",
+          "Тэтгэвэр, тэтгэмж",
+          "Өрхийн үйлдвэрлэл, үйлчилгээ",
+          "Бусад орлого",
+          "Бусдаас үнэгүй авсан",
+          "Өөрийн аж ахуйн хүнс"
+        ],
+        "name": "Орлогын эх үүсвэр: "
+      }
+    },
+    {
+      "name": "selectedLocation",
+      "value": "Бүх байршил",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Бүх байршил",
+          "Улсын дундаж",
+          "Хот",
+          "Хөдөө"
+        ],
+        "name": "Байршил: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "split(datum[\"үзүүлэлт\"], \" / \")[0]",
+      "as": "place"
+    },
+    {
+      "calculate": "split(datum[\"үзүүлэлт\"], \" / \")[1]",
+      "as": "income"
+    },
+    {
+      "calculate": "indexof([\"Цалин хөлс\", \"Тэтгэвэр, тэтгэмж\", \"Өрхийн үйлдвэрлэл, үйлчилгээний орлого\", \"Бусад\", \"Бусдаас үнэгүй авсан\", \"Өөрийн аж ахуйгаас хэрэглэсэн хүнсний бүтээгдэхүүн\"], datum.income)",
+      "as": "sourceOrder"
+    },
+    {
+      "filter": "datum.sourceOrder >= 0"
+    },
+    {
+      "filter": "datum.income === selectedSource && (selectedLocation === \"Бүх байршил\" || datum.place === selectedLocation)"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "point": {
+          "filled": true,
+          "size": 28
+        }
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "type": "quantitative",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "place",
+            "type": "nominal",
+            "title": "Байршил"
+          },
+          {
+            "field": "income",
+            "type": "nominal",
+            "title": "Орлогын эх үүсвэр"
+          },
+          {
+            "field": "эзлэх_хувь",
+            "type": "quantitative",
+            "title": "Эзлэх хувь (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "он",
+      "type": "quantitative",
+      "title": "Он",
+      "scale": {
+        "domain": [
+          2007,
+          2025
+        ],
+        "zero": false,
+        "nice": false
+      },
+      "axis": {
+        "values": [
+          2007,
+          2010,
+          2015,
+          2020,
+          2025
+        ],
+        "format": "d",
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "эзлэх_хувь",
+      "type": "quantitative",
+      "title": "Нийт орлогод эзлэх хувь (%)",
+      "scale": {
+        "domain": [
+          0,
+          100
+        ],
+        "nice": false
+      },
+      "axis": {
+        "values": [
+          0,
+          25,
+          50,
+          75,
+          100
+        ],
+        "format": ".0f"
+      }
+    },
+    "color": {
+      "field": "place",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "Улсын дундаж",
+          "Хот",
+          "Хөдөө"
+        ],
+        "range": [
+          "#64748b",
+          "#2563eb",
+          "#b45309"
+        ]
+      },
+      "legend": {
+        "orient": "top"
+      }
+    },
+    "strokeDash": {
+      "condition": {
+        "test": "datum.place === \"Улсын дундаж\"",
+        "value": [
+          6,
+          4
+        ]
+      },
+      "value": [
+        1,
+        0
+      ]
+    },
+    "tooltip": [
+      {
+        "field": "он",
+        "type": "quantitative",
+        "title": "Он",
+        "format": "d"
+      },
+      {
+        "field": "place",
+        "type": "nominal",
+        "title": "Байршил"
+      },
+      {
+        "field": "income",
+        "type": "nominal",
+        "title": "Орлогын эх үүсвэр"
+      },
+      {
+        "field": "эзлэх_хувь",
+        "type": "quantitative",
+        "title": "Эзлэх хувь (%)",
+        "format": ".1f"
+      }
+    ]
+  }
+}

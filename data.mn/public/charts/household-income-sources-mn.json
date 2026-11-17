@@ -1,0 +1,248 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/household-income-sources-mn.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "он": "number",
+        "эзлэх_хувь": "number"
+      }
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 12,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "description": "Өрхийн орлогын бүтэц, улсын дундаж, хот, хөдөө, 2007–2025.",
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "select",
+        "options": [
+          2025,
+          2024,
+          2023,
+          2022,
+          2021,
+          2020,
+          2019,
+          2018,
+          2017,
+          2016,
+          2015,
+          2014,
+          2013,
+          2012,
+          2011,
+          2010,
+          2009,
+          2008,
+          2007
+        ],
+        "name": "Он: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "split(datum[\"үзүүлэлт\"], \" / \")[0]",
+      "as": "place"
+    },
+    {
+      "calculate": "split(datum[\"үзүүлэлт\"], \" / \")[1]",
+      "as": "income"
+    },
+    {
+      "calculate": "indexof([\"Цалин хөлс\", \"Тэтгэвэр, тэтгэмж\", \"Өрхийн үйлдвэрлэл, үйлчилгээний орлого\", \"Бусад\", \"Бусдаас үнэгүй авсан\", \"Өөрийн аж ахуйгаас хэрэглэсэн хүнсний бүтээгдэхүүн\"], datum.income)",
+      "as": "sourceOrder"
+    },
+    {
+      "filter": "datum.sourceOrder >= 0"
+    },
+    {
+      "filter": "datum[\"он\"] === selectedYear"
+    },
+    {
+      "stack": "эзлэх_хувь",
+      "groupby": [
+        "place"
+      ],
+      "sort": [
+        {
+          "field": "sourceOrder",
+          "order": "ascending"
+        }
+      ],
+      "as": [
+        "y0",
+        "y1"
+      ]
+    },
+    {
+      "calculate": "(datum.y0 + datum.y1) / 2",
+      "as": "mid"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "place",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Улсын дундаж",
+        "Хот",
+        "Хөдөө"
+      ],
+      "axis": {
+        "labelAngle": 0,
+        "labelLimit": 140
+      },
+      "scale": {
+        "padding": 0.32
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "y": {
+          "field": "y1",
+          "type": "quantitative",
+          "title": "Нийт орлогод эзлэх хувь (%)",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ],
+            "nice": false
+          },
+          "axis": {
+            "values": [
+              0,
+              25,
+              50,
+              75,
+              100
+            ],
+            "format": ".0f"
+          }
+        },
+        "y2": {
+          "field": "y0"
+        },
+        "color": {
+          "field": "income",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Цалин хөлс",
+              "Тэтгэвэр, тэтгэмж",
+              "Өрхийн үйлдвэрлэл, үйлчилгээний орлого",
+              "Бусад",
+              "Бусдаас үнэгүй авсан",
+              "Өөрийн аж ахуйгаас хэрэглэсэн хүнсний бүтээгдэхүүн"
+            ],
+            "range": [
+              "#2563eb",
+              "#b45309",
+              "#15803d",
+              "#7c3aed",
+              "#be185d",
+              "#0e7490"
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "type": "quantitative",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "place",
+            "type": "nominal",
+            "title": "Байршил"
+          },
+          {
+            "field": "income",
+            "type": "nominal",
+            "title": "Орлогын эх үүсвэр"
+          },
+          {
+            "field": "эзлэх_хувь",
+            "type": "quantitative",
+            "title": "Эзлэх хувь (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum[\"эзлэх_хувь\"] >= 7"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fill": "#ffffff",
+        "fontWeight": "bold",
+        "fontSize": 12
+      },
+      "encoding": {
+        "y": {
+          "field": "mid",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "эзлэх_хувь",
+          "type": "quantitative",
+          "format": ".1f"
+        },
+        "tooltip": [
+          {
+            "field": "он",
+            "type": "quantitative",
+            "title": "Он",
+            "format": "d"
+          },
+          {
+            "field": "place",
+            "type": "nominal",
+            "title": "Байршил"
+          },
+          {
+            "field": "income",
+            "type": "nominal",
+            "title": "Орлогын эх үүсвэр"
+          },
+          {
+            "field": "эзлэх_хувь",
+            "type": "quantitative",
+            "title": "Эзлэх хувь (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ]
+}

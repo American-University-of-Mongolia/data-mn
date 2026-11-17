@@ -1,0 +1,15 @@
+{
+  "source_path": "Society, development/Household income and expenditure/DT_NSO_1900_003V1.px",
+  "retrieved_at": "2026-11-06T17:43:40.035809+00:00",
+  "snapshot_date": "2026-11-07",
+  "source_updated_at": "2026-05-29T14:41:11",
+  "files": {
+    "en-metadata.json": "4eab054c7a0a0f9bd9e0817b4765619904ed952b64c7be39907252601fbbc5fb",
+    "en-query.json": "82f4f3c29fc3d57fce89aaafa09934b4db05d6f24bd8502035eddeafa193df0a",
+    "en-data.json": "e6de6143f3d3242c431144cb82f16c2be68849e1b3ce4d46fe8b99dbcdbe5e6a",
+    "mn-metadata.json": "7f1caa47e12cff5122af3f8af2657dc7447a5038c7b76741c97421047065bd44",
+    "mn-query.json": "82f4f3c29fc3d57fce89aaafa09934b4db05d6f24bd8502035eddeafa193df0a",
+    "mn-data.json": "603ee0b0eb53f8e14336aca70e33ce6f1759efc08e54a5bd4a8650761fb03b01",
+    "table-listing.json": "debcf82fb5c775d8294f050fc088bb656c1be9d2df7d5e33d5d526b50ed1c55d"
+  }
+}

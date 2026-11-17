@@ -1,0 +1,248 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "/datasets/household-income-sources-en.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "share_pct": "number"
+      }
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 16,
+      "titlePadding": 12,
+      "labelColor": "#64748b",
+      "titleColor": "#334155"
+    },
+    "legend": {
+      "labelFontSize": 13
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "description": "Household income composition, national, urban and rural, 2007–2025.",
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "select",
+        "options": [
+          2025,
+          2024,
+          2023,
+          2022,
+          2021,
+          2020,
+          2019,
+          2018,
+          2017,
+          2016,
+          2015,
+          2014,
+          2013,
+          2012,
+          2011,
+          2010,
+          2009,
+          2008,
+          2007
+        ],
+        "name": "Year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "split(datum[\"series\"], \" / \")[0]",
+      "as": "place"
+    },
+    {
+      "calculate": "split(datum[\"series\"], \" / \")[1]",
+      "as": "income"
+    },
+    {
+      "calculate": "indexof([\"Wages and salaries\", \"Pensions and allowances\", \"Income from household businesses\", \"Other\", \"Received from others free of charge\", \"Food consumption from own farming\"], datum.income)",
+      "as": "sourceOrder"
+    },
+    {
+      "filter": "datum.sourceOrder >= 0"
+    },
+    {
+      "filter": "datum[\"year\"] === selectedYear"
+    },
+    {
+      "stack": "share_pct",
+      "groupby": [
+        "place"
+      ],
+      "sort": [
+        {
+          "field": "sourceOrder",
+          "order": "ascending"
+        }
+      ],
+      "as": [
+        "y0",
+        "y1"
+      ]
+    },
+    {
+      "calculate": "(datum.y0 + datum.y1) / 2",
+      "as": "mid"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "place",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "National average",
+        "Urban",
+        "Rural"
+      ],
+      "axis": {
+        "labelAngle": 0,
+        "labelLimit": 140
+      },
+      "scale": {
+        "padding": 0.32
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "y": {
+          "field": "y1",
+          "type": "quantitative",
+          "title": "Share of total income (%)",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ],
+            "nice": false
+          },
+          "axis": {
+            "values": [
+              0,
+              25,
+              50,
+              75,
+              100
+            ],
+            "format": ".0f"
+          }
+        },
+        "y2": {
+          "field": "y0"
+        },
+        "color": {
+          "field": "income",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Wages and salaries",
+              "Pensions and allowances",
+              "Income from household businesses",
+              "Other",
+              "Received from others free of charge",
+              "Food consumption from own farming"
+            ],
+            "range": [
+              "#2563eb",
+              "#b45309",
+              "#15803d",
+              "#7c3aed",
+              "#be185d",
+              "#0e7490"
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "place",
+            "type": "nominal",
+            "title": "Location"
+          },
+          {
+            "field": "income",
+            "type": "nominal",
+            "title": "Income source"
+          },
+          {
+            "field": "share_pct",
+            "type": "quantitative",
+            "title": "Share (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum[\"share_pct\"] >= 7"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fill": "#ffffff",
+        "fontWeight": "bold",
+        "fontSize": 12
+      },
+      "encoding": {
+        "y": {
+          "field": "mid",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "share_pct",
+          "type": "quantitative",
+          "format": ".1f"
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "place",
+            "type": "nominal",
+            "title": "Location"
+          },
+          {
+            "field": "income",
+            "type": "nominal",
+            "title": "Income source"
+          },
+          {
+            "field": "share_pct",
+            "type": "quantitative",
+            "title": "Share (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ]
+}

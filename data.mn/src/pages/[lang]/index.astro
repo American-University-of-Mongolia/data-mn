@@ -403,34 +403,34 @@ const popularTopics = generatedCategories.map((category) => ({
     padding-top: 0 !important;
   }
 
-  /* Make header text white ONLY when NOT scrolled (over hero image) */
-  :global(header#header:not(.scroll) a),
-  :global(header#header:not(.scroll) button),
-  :global(header#header:not(.scroll) .text-muted),
-  :global(header#header:not(.scroll) span) {
+  /* Use white text over the hero; an open mobile menu uses the page theme. */
+  :global(header#header:not(.scroll):not(.expanded) a),
+  :global(header#header:not(.scroll):not(.expanded) button),
+  :global(header#header:not(.scroll):not(.expanded) .text-muted),
+  :global(header#header:not(.scroll):not(.expanded) span) {
     color: white !important;
   }
 
-  :global(header#header:not(.scroll) a:hover),
-  :global(header#header:not(.scroll) button:hover) {
+  :global(header#header:not(.scroll):not(.expanded) a:hover),
+  :global(header#header:not(.scroll):not(.expanded) button:hover) {
     color: rgba(255, 255, 255, 0.8) !important;
   }
 
   /* Logo text white when not scrolled */
-  :global(header#header:not(.scroll) .font-bold) {
+  :global(header#header:not(.scroll):not(.expanded) .font-bold) {
     color: white !important;
   }
 
   /* Language switcher adjustments when not scrolled */
-  :global(header#header:not(.scroll) .language-switcher a) {
+  :global(header#header:not(.scroll):not(.expanded) .language-switcher a) {
     color: white !important;
   }
-  :global(header#header:not(.scroll) .language-switcher span) {
+  :global(header#header:not(.scroll):not(.expanded) .language-switcher span) {
     color: rgba(255, 255, 255, 0.5) !important;
   }
 
   /* Mobile hamburger menu white when not scrolled */
-  :global(header#header:not(.scroll) [data-aw-toggle-menu] span) {
+  :global(header#header:not(.scroll):not(.expanded) [data-aw-toggle-menu] span) {
     background-color: white !important;
   }
 </style>

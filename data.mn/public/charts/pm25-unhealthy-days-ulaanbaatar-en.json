@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Number of days per month when the average PM2.5 of Ulaanbaatar monitoring stations exceeded 50 µg/m³, October 2025 to September 2026.",
+  "description": "Number of days per month when the average PM2.5 of Ulaanbaatar monitoring stations exceeded 50 µg/m³, October 2025 to October 2026.",
   "data": {
     "url": "/datasets/pm25-unhealthy-days-ulaanbaatar-en.csv",
     "format": {

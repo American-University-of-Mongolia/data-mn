@@ -83,5 +83,6 @@ https://agaar.gov.mn/web/detailViewDown?pMENU_SN=125. MinIO also holds
 `build_daily_means.py` turns the raw daily archive into the cleaned parent
 `agaar-daily-station-means` (`derived/`) and four PM2.5 page tables; see
 `datasets/agaar-daily-station-means.md` for the cleaning rules and splits, and
-`register.py` for the registry rows. Refresh: run the build, then `register.py`,
-then regenerate each page (title spans, excerpts, dropped counts).
+`register.py` for the registry rows. Refresh: follow "Update Instructions" in
+that file (`check_archive.py`, `build_daily_means.py`, `register.py`,
+`build_page_downloads.py`, then page text and validators).

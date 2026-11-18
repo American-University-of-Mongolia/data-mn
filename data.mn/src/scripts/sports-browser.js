@@ -111,7 +111,11 @@ async function mountSports() {
   };
   const shortCode = (c) => data.teams[c]?.[3] || c;
   const initials = (c) => (c === 'KUL' ? 'KH' : shortCode(c).slice(0, 2));
-  const badge = (c) => `<span class="sp-badge" style="--team:${teamColor(c)}">${initials(c)}</span>`;
+  const logoTeams = new Set(['BCH', 'BSM', 'BTM', 'DUA', 'ETM', 'KHF', 'KUL', 'SEL', 'SGA', 'ZVB']);
+  const badge = (c, seasonId = state.season) =>
+    seasonId === '2025-26' && logoTeams.has(c)
+      ? `<span class="sp-badge sp-badge-logo"><img src="/sports/logos/2025-26/${c}.webp" alt="" width="192" height="192" loading="lazy" decoding="async"></span>`
+      : `<span class="sp-badge" style="--team:${teamColor(c)}">${initials(c)}</span>`;
   const teamLink = (c) =>
     `<button class="sp-team-link" data-team="${c}">${badge(c)}<span>${escape(teamName(c))}<small>${shortCode(c)}</small></span></button>`;
   const matches = (value) => String(value).toLocaleLowerCase().includes(state.query.toLocaleLowerCase());
@@ -333,7 +337,7 @@ async function mountSports() {
       ],
       rows: metrics.map(([k, label]) => ({ metric: label, a: fmt(a?.[k], k), b: fmt(b?.[k], k) })),
     };
-    return `<section class="sp-panel sp-comparison"><div class="sp-section-heading"><h2>${t.compare}</h2><span class="sp-unit">${phaseName(state.phase)}</span></div><p class="sp-caption">${t.comparisonText}</p>${!a?.box || !b?.box ? `<p class="sp-table-note">${t.resultComparison}</p>` : ''}<div class="sp-compare-select"><label>${t.team} A<select id="sp-compare-a">${compareOptions(state.compareA)}</select></label><span>${t.versus}</span><label>${t.team} B<select id="sp-compare-b">${compareOptions(state.compareB)}</select></label></div><div class="sp-compare-hero"><div>${badge(ca)}<h3>${escape(teamName(ca))}</h3><p>${sa} · ${a ? `${a.w}–${a.l}` : '—'}</p></div><span>${svg('compare')}</span><div>${badge(cb)}<h3>${escape(teamName(cb))}</h3><p>${sb} · ${b ? `${b.w}–${b.l}` : '—'}</p></div></div>${metrics
+    return `<section class="sp-panel sp-comparison"><div class="sp-section-heading"><h2>${t.compare}</h2><span class="sp-unit">${phaseName(state.phase)}</span></div><p class="sp-caption">${t.comparisonText}</p>${!a?.box || !b?.box ? `<p class="sp-table-note">${t.resultComparison}</p>` : ''}<div class="sp-compare-select"><label>${t.team} A<select id="sp-compare-a">${compareOptions(state.compareA)}</select></label><span>${t.versus}</span><label>${t.team} B<select id="sp-compare-b">${compareOptions(state.compareB)}</select></label></div><div class="sp-compare-hero"><div>${badge(ca, sa)}<h3>${escape(teamName(ca))}</h3><p>${sa} · ${a ? `${a.w}–${a.l}` : '—'}</p></div><span>${svg('compare')}</span><div>${badge(cb, sb)}<h3>${escape(teamName(cb))}</h3><p>${sb} · ${b ? `${b.w}–${b.l}` : '—'}</p></div></div>${metrics
       .map(([k, label]) => {
         const x = a?.[k],
           y = b?.[k],

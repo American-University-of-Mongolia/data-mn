@@ -111,11 +111,17 @@ async function mountSports() {
   };
   const shortCode = (c) => data.teams[c]?.[3] || c;
   const initials = (c) => (c === 'KUL' ? 'KH' : shortCode(c).slice(0, 2));
-  const logoTeams = new Set(['BCH', 'BSM', 'BTM', 'DUA', 'ETM', 'KHF', 'KUL', 'SEL', 'SGA', 'ZVB']);
-  const badge = (c, seasonId = state.season) =>
-    seasonId === '2025-26' && logoTeams.has(c)
-      ? `<span class="sp-badge sp-badge-logo"><img src="/sports/logos/2025-26/${c}.webp" alt="" width="192" height="192" loading="lazy" decoding="async"></span>`
+  const logoTeams = {
+    '2024-25': new Set(['BCH', 'BIS', 'BTM', 'DUA', 'ETM', 'KUL', 'SEL', 'SGA', 'TLG', 'ZVB']),
+    '2025-26': new Set(['BCH', 'BSM', 'BTM', 'DUA', 'ETM', 'KHF', 'KUL', 'SEL', 'SGA', 'ZVB']),
+  };
+  const badge = (c, seasonId = state.season) => {
+    // Reuse identical artwork; Miners, Bison and TLG have separate 2024–25 assets.
+    const folder = seasonId === '2024-25' && ['BIS', 'ETM', 'TLG'].includes(c) ? '2024-25' : '2025-26';
+    return logoTeams[seasonId]?.has(c)
+      ? `<span class="sp-badge sp-badge-logo"><img src="/sports/logos/${folder}/${c}.webp" alt="" width="192" height="192" loading="lazy" decoding="async"></span>`
       : `<span class="sp-badge" style="--team:${teamColor(c)}">${initials(c)}</span>`;
+  };
   const teamLink = (c) =>
     `<button class="sp-team-link" data-team="${c}">${badge(c)}<span>${escape(teamName(c))}<small>${shortCode(c)}</small></span></button>`;
   const matches = (value) => String(value).toLocaleLowerCase().includes(state.query.toLocaleLowerCase());

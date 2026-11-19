@@ -111,7 +111,53 @@ async function mountSports() {
   };
   const shortCode = (c) => data.teams[c]?.[3] || c;
   const initials = (c) => (c === 'KUL' ? 'KH' : shortCode(c).slice(0, 2));
-  const badge = (c) => `<span class="sp-badge" style="--team:${teamColor(c)}">${initials(c)}</span>`;
+  const teamLogos = {
+    '2023-24': {
+      'KOO-2023-24-APE': '2023-24/APE',
+      'KOO-2023-24-BIZ': '2024-25/BIS',
+      'KOO-2023-24-BOD': '2023-24/BOD',
+      'KOO-2023-24-BRO': '2025-26/ZVB',
+      'KOO-2023-24-GAR': '2023-24/GAR',
+      'KOO-2023-24-KHU': '2025-26/KUL',
+      'KOO-2023-24-MET': '2023-24/MET',
+      'KOO-2023-24-MIN': '2023-24/MIN',
+      'KOO-2023-24-MON': '2023-24/MON',
+      'KOO-2023-24-SHA': '2023-24/SHA',
+      'KOO-2023-24-TLG': '2023-24/TLG',
+      'KOO-2023-24-UNI': '2025-26/DUA',
+      'KOO-2023-24-YOL': '2023-24/YOL',
+    },
+    '2024-25': {
+      BCH: '2025-26/BCH',
+      BIS: '2024-25/BIS',
+      BTM: '2025-26/BTM',
+      DUA: '2025-26/DUA',
+      ETM: '2024-25/ETM',
+      KUL: '2025-26/KUL',
+      SEL: '2025-26/SEL',
+      SGA: '2025-26/SGA',
+      TLG: '2024-25/TLG',
+      ZVB: '2025-26/ZVB',
+    },
+    '2025-26': {
+      BCH: '2025-26/BCH',
+      BSM: '2025-26/BSM',
+      BTM: '2025-26/BTM',
+      DUA: '2025-26/DUA',
+      ETM: '2025-26/ETM',
+      KHF: '2025-26/KHF',
+      KUL: '2025-26/KUL',
+      SEL: '2025-26/SEL',
+      SGA: '2025-26/SGA',
+      ZVB: '2025-26/ZVB',
+    },
+  };
+  const badge = (c, seasonId = state.season) => {
+    const logo = teamLogos[seasonId]?.[c];
+    return logo
+      ? `<span class="sp-badge sp-badge-logo"><img src="/sports/logos/${logo}.webp" alt="" width="192" height="192" loading="lazy" decoding="async"></span>`
+      : `<span class="sp-badge" style="--team:${teamColor(c)}">${initials(c)}</span>`;
+  };
   const teamLink = (c) =>
     `<button class="sp-team-link" data-team="${c}">${badge(c)}<span>${escape(teamName(c))}<small>${shortCode(c)}</small></span></button>`;
   const matches = (value) => String(value).toLocaleLowerCase().includes(state.query.toLocaleLowerCase());
@@ -333,7 +379,7 @@ async function mountSports() {
       ],
       rows: metrics.map(([k, label]) => ({ metric: label, a: fmt(a?.[k], k), b: fmt(b?.[k], k) })),
     };
-    return `<section class="sp-panel sp-comparison"><div class="sp-section-heading"><h2>${t.compare}</h2><span class="sp-unit">${phaseName(state.phase)}</span></div><p class="sp-caption">${t.comparisonText}</p>${!a?.box || !b?.box ? `<p class="sp-table-note">${t.resultComparison}</p>` : ''}<div class="sp-compare-select"><label>${t.team} A<select id="sp-compare-a">${compareOptions(state.compareA)}</select></label><span>${t.versus}</span><label>${t.team} B<select id="sp-compare-b">${compareOptions(state.compareB)}</select></label></div><div class="sp-compare-hero"><div>${badge(ca)}<h3>${escape(teamName(ca))}</h3><p>${sa} · ${a ? `${a.w}–${a.l}` : '—'}</p></div><span>${svg('compare')}</span><div>${badge(cb)}<h3>${escape(teamName(cb))}</h3><p>${sb} · ${b ? `${b.w}–${b.l}` : '—'}</p></div></div>${metrics
+    return `<section class="sp-panel sp-comparison"><div class="sp-section-heading"><h2>${t.compare}</h2><span class="sp-unit">${phaseName(state.phase)}</span></div><p class="sp-caption">${t.comparisonText}</p>${!a?.box || !b?.box ? `<p class="sp-table-note">${t.resultComparison}</p>` : ''}<div class="sp-compare-select"><label>${t.team} A<select id="sp-compare-a">${compareOptions(state.compareA)}</select></label><span>${t.versus}</span><label>${t.team} B<select id="sp-compare-b">${compareOptions(state.compareB)}</select></label></div><div class="sp-compare-hero"><div>${badge(ca, sa)}<h3>${escape(teamName(ca))}</h3><p>${sa} · ${a ? `${a.w}–${a.l}` : '—'}</p></div><span>${svg('compare')}</span><div>${badge(cb, sb)}<h3>${escape(teamName(cb))}</h3><p>${sb} · ${b ? `${b.w}–${b.l}` : '—'}</p></div></div>${metrics
       .map(([k, label]) => {
         const x = a?.[k],
           y = b?.[k],

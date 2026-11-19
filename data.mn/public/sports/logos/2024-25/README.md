@@ -1,6 +1,6 @@
 # 2024–25 team logos
 
-Contributor-supplied PNG logos, resized proportionally to fit within 192 × 192 pixels without enlargement and encoded as WebP (quality 90). Original artwork and transparency are preserved. Identical logos reuse the existing 2025–26 assets.
+Contributor-supplied PNG logos, resized proportionally to fit within 192 × 192 pixels without enlargement and encoded as WebP (quality 90). Original artwork and transparency are preserved. Identical logos reuse the existing 2025–26 assets. Bison's matching artwork is also reused for [2023–24](../2023-24/README.md).
 
 | Asset               | Team             | Supplied PNG filename prefix |
 | ------------------- | ---------------- | ---------------------------- |

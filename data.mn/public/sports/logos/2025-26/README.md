@@ -1,6 +1,6 @@
 # 2025–26 team logos
 
-Contributor-supplied PNG logos, resized proportionally to fit within 192 × 192 pixels and encoded as WebP (quality 90). The original artwork and transparency are preserved. Matching artwork is also reused for the teams listed in [2024–25](../2024-25/README.md). Other seasons and teams without supplied logos retain initials.
+Contributor-supplied PNG logos, resized proportionally to fit within 192 × 192 pixels and encoded as WebP (quality 90). The original artwork and transparency are preserved. Matching artwork is also reused for the teams listed in [2023–24](../2023-24/README.md) and [2024–25](../2024-25/README.md). Other seasons and teams without supplied logos retain initials.
 
 | Asset    | Team                                                   | Supplied PNG filename prefix |
 | -------- | ------------------------------------------------------ | ---------------------------- |

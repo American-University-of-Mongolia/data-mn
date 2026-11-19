@@ -111,15 +111,51 @@ async function mountSports() {
   };
   const shortCode = (c) => data.teams[c]?.[3] || c;
   const initials = (c) => (c === 'KUL' ? 'KH' : shortCode(c).slice(0, 2));
-  const logoTeams = {
-    '2024-25': new Set(['BCH', 'BIS', 'BTM', 'DUA', 'ETM', 'KUL', 'SEL', 'SGA', 'TLG', 'ZVB']),
-    '2025-26': new Set(['BCH', 'BSM', 'BTM', 'DUA', 'ETM', 'KHF', 'KUL', 'SEL', 'SGA', 'ZVB']),
+  const teamLogos = {
+    '2023-24': {
+      'KOO-2023-24-APE': '2023-24/APE',
+      'KOO-2023-24-BIZ': '2024-25/BIS',
+      'KOO-2023-24-BOD': '2023-24/BOD',
+      'KOO-2023-24-BRO': '2025-26/ZVB',
+      'KOO-2023-24-GAR': '2023-24/GAR',
+      'KOO-2023-24-KHU': '2025-26/KUL',
+      'KOO-2023-24-MET': '2023-24/MET',
+      'KOO-2023-24-MIN': '2023-24/MIN',
+      'KOO-2023-24-MON': '2023-24/MON',
+      'KOO-2023-24-SHA': '2023-24/SHA',
+      'KOO-2023-24-TLG': '2023-24/TLG',
+      'KOO-2023-24-UNI': '2025-26/DUA',
+      'KOO-2023-24-YOL': '2023-24/YOL',
+    },
+    '2024-25': {
+      BCH: '2025-26/BCH',
+      BIS: '2024-25/BIS',
+      BTM: '2025-26/BTM',
+      DUA: '2025-26/DUA',
+      ETM: '2024-25/ETM',
+      KUL: '2025-26/KUL',
+      SEL: '2025-26/SEL',
+      SGA: '2025-26/SGA',
+      TLG: '2024-25/TLG',
+      ZVB: '2025-26/ZVB',
+    },
+    '2025-26': {
+      BCH: '2025-26/BCH',
+      BSM: '2025-26/BSM',
+      BTM: '2025-26/BTM',
+      DUA: '2025-26/DUA',
+      ETM: '2025-26/ETM',
+      KHF: '2025-26/KHF',
+      KUL: '2025-26/KUL',
+      SEL: '2025-26/SEL',
+      SGA: '2025-26/SGA',
+      ZVB: '2025-26/ZVB',
+    },
   };
   const badge = (c, seasonId = state.season) => {
-    // Reuse identical artwork; Miners, Bison and TLG have separate 2024–25 assets.
-    const folder = seasonId === '2024-25' && ['BIS', 'ETM', 'TLG'].includes(c) ? '2024-25' : '2025-26';
-    return logoTeams[seasonId]?.has(c)
-      ? `<span class="sp-badge sp-badge-logo"><img src="/sports/logos/${folder}/${c}.webp" alt="" width="192" height="192" loading="lazy" decoding="async"></span>`
+    const logo = teamLogos[seasonId]?.[c];
+    return logo
+      ? `<span class="sp-badge sp-badge-logo"><img src="/sports/logos/${logo}.webp" alt="" width="192" height="192" loading="lazy" decoding="async"></span>`
       : `<span class="sp-badge" style="--team:${teamColor(c)}">${initials(c)}</span>`;
   };
   const teamLink = (c) =>

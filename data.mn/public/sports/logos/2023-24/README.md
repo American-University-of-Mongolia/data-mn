@@ -1,6 +1,6 @@
 # 2023–24 team logos
 
-Contributor-supplied artwork for all thirteen teams already represented in the 2023–24 archive. New assets are resized proportionally to fit within 192 × 192 pixels without enlargement and encoded as WebP (quality 90), preserving the artwork and background. Four identical images reuse existing assets.
+Contributor-supplied artwork for all thirteen teams already represented in the 2023–24 archive. New assets are resized proportionally to fit within 192 × 192 pixels without enlargement and encoded as WebP (quality 90), preserving the artwork and background. Four identical images reuse existing assets. Apes, Metal, Miners and Sharks artwork is also reused for [2022–23](../2022-23/README.md).
 
 | Season team code | Asset               | Archive team name          | Supplied filename                                        |
 | ---------------- | ------------------- | -------------------------- | -------------------------------------------------------- |

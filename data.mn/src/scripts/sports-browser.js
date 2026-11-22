@@ -112,6 +112,18 @@ async function mountSports() {
   const shortCode = (c) => data.teams[c]?.[3] || c;
   const initials = (c) => (c === 'KUL' ? 'KH' : shortCode(c).slice(0, 2));
   const teamLogos = {
+    '2022-23': {
+      'KOO-2022-23-APE': '2023-24/APE',
+      'KOO-2022-23-BIZ': '2022-23/BIZ',
+      'KOO-2022-23-BRO': '2025-26/ZVB',
+      'KOO-2022-23-DAI': '2022-23/DAI',
+      'KOO-2022-23-GAR': '2022-23/GAR',
+      'KOO-2022-23-KHA': '2022-23/KHA',
+      'KOO-2022-23-KHU': '2022-23/KHU',
+      'KOO-2022-23-MET': '2023-24/MET',
+      'KOO-2022-23-MIN': '2023-24/MIN',
+      'KOO-2022-23-SHA': '2023-24/SHA',
+    },
     '2023-24': {
       'KOO-2023-24-APE': '2023-24/APE',
       'KOO-2023-24-BIZ': '2024-25/BIS',

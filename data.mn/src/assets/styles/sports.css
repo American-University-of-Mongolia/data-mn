@@ -522,6 +522,16 @@
   font-size: 12px;
   border-radius: 5px;
 }
+.sp-badge.sp-badge-logo {
+  background: white;
+  border-color: #dce2eb;
+  padding: 2px;
+}
+.sp-badge-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .sp-main-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 255px;

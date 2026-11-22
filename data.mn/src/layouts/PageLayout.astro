@@ -12,9 +12,10 @@ import type { MetaData } from '~/types';
 export interface Props {
   metadata?: MetaData;
   lang?: Language;
+  headerFullWidth?: boolean;
 }
 
-const { metadata, lang: propLang } = Astro.props;
+const { metadata, lang: propLang, headerFullWidth = false } = Astro.props;
 const showAnnouncement = UI?.showAnnouncement ?? false;
 
 // Detect language from URL or use prop
@@ -96,7 +97,14 @@ const footerData = {
     )
   }
   <slot name="header">
-    <Header {...headerData} lang={currentLang} homeUrl={homeUrl} isSticky showToggleTheme />
+    <Header
+      {...headerData}
+      lang={currentLang}
+      homeUrl={homeUrl}
+      isFullWidth={headerFullWidth}
+      isSticky
+      showToggleTheme
+    />
   </slot>
   <main>
     <slot />

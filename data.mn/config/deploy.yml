@@ -10,11 +10,11 @@ retain_containers: 1
 servers:
   - 78.46.40.253
 
-# Credentials for your image host.
+# Kamal's own registry on Ritz: the image goes to the server over SSH and
+# never reaches Docker Hub (robertritz/datamn there was public).
+# Port 5556 because ritz-local-registry already holds 5555.
 registry:
-  username: robertritz
-  password:
-    - KAMAL_REGISTRY_PASSWORD
+  server: localhost:5556
 
 # Configure builder setup.
 builder:
